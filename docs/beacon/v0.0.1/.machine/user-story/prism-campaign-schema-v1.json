@@ -3,9 +3,9 @@
   "feature": "prism-campaign-schema-v1",
   "feature_slug": "prism-campaign-schema-v1",
   "version": "v0.0.1",
-  "current_revision_id": "R4",
+  "current_revision_id": "R5",
   "lifecycle_status": "frozen",
-  "updated_at": "2026-08-11T15:19:35.586680+00:00",
+  "updated_at": "2026-08-11T15:22:25.454709+00:00",
   "revisions": [
     {
       "revision_id": "R1",
@@ -54,12 +54,26 @@
       "feature_slug": "prism-campaign-schema-v1",
       "source_revision_id": "R3",
       "reason": "add legal walk marker for domain FSM QA gate",
+      "doc_status": "superseded",
+      "delivery_status": "superseded",
+      "baseline_hash": "sha256:75836a098979ed04232549623ab64cbd7a5df17a6676b314af8c3394c7b8af42",
+      "superseded_by": "R5",
+      "created_at": "2026-08-11T15:19:35.339316+00:00",
+      "frozen_at": "2026-08-11T15:19:35.631378+00:00",
+      "accepted_at": null,
+      "accepted_by": null
+    },
+    {
+      "revision_id": "R5",
+      "feature_slug": "prism-campaign-schema-v1",
+      "source_revision_id": "R4",
+      "reason": "implementation-first-reconciliation",
       "doc_status": "frozen",
       "delivery_status": "idle",
       "baseline_hash": "sha256:75836a098979ed04232549623ab64cbd7a5df17a6676b314af8c3394c7b8af42",
       "superseded_by": null,
-      "created_at": "2026-08-11T15:19:35.339316+00:00",
-      "frozen_at": "2026-08-11T15:19:35.631378+00:00",
+      "created_at": "2026-08-11T15:22:25.266961+00:00",
+      "frozen_at": "2026-08-11T15:22:25.503119+00:00",
       "accepted_at": null,
       "accepted_by": null
     }
@@ -253,7 +267,7 @@
       "revision_id": "R4",
       "title": "prism-campaign-schema-v1",
       "priority": "medium",
-      "status": "frozen",
+      "status": "superseded",
       "items": [
         {
           "id": "AC-001",
@@ -291,6 +305,67 @@
           "verified_by_run_id": null,
           "accepted_at": null,
           "changed_in_revision": "R4",
+          "covers": [
+            "AC-001"
+          ],
+          "story_id": "",
+          "source": "fallback"
+        }
+      ],
+      "research_projection": {
+        "schema_version": "1.0",
+        "feature": "prism-campaign-schema-v1",
+        "version": "v0.0.1",
+        "source": "research:/Users/apple/Developer/Personal/products/prism/docs/beacon/v0.0.1/research/prism-campaign-schema-v1.md",
+        "present": true,
+        "section_count": 0,
+        "sections": {},
+        "derived_items": []
+      }
+    },
+    {
+      "story_id": "US-001",
+      "revision_id": "R5",
+      "title": "prism-campaign-schema-v1",
+      "priority": "medium",
+      "status": "frozen",
+      "items": [
+        {
+          "id": "AC-001",
+          "kind": "ac",
+          "theme": "general",
+          "text": "Acceptance criteria TBD",
+          "required": true,
+          "status": "draft",
+          "implemented_by_run_id": null,
+          "verified_by_run_id": null,
+          "accepted_at": null,
+          "changed_in_revision": "R5",
+          "story_id": "",
+          "details": [],
+          "source": "fallback"
+        },
+        {
+          "id": "TASK-001",
+          "kind": "task",
+          "text": "Implement current frozen revision",
+          "required": true,
+          "status": "draft",
+          "implemented_by_run_id": null,
+          "verified_by_run_id": null,
+          "accepted_at": null,
+          "changed_in_revision": "R5"
+        },
+        {
+          "id": "TEST-001",
+          "kind": "test",
+          "text": "Verify AC-001 — Acceptance criteria TBD",
+          "required": true,
+          "status": "draft",
+          "implemented_by_run_id": null,
+          "verified_by_run_id": null,
+          "accepted_at": null,
+          "changed_in_revision": "R5",
           "covers": [
             "AC-001"
           ],

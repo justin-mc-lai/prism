@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "transaction_id": "tx-change-refreeze-prism-campaign-schema-v1-20260811t151935z",
+  "transaction_id": "tx-change-refreeze-prism-campaign-schema-v1-20260811t152225z",
   "feature": "prism-campaign-schema-v1",
   "feature_slug": "prism-campaign-schema-v1",
   "version": "v0.0.1",
-  "change_reason": "add legal walk marker for domain FSM QA gate",
+  "change_reason": "implementation-first-reconciliation",
   "touched_surfaces": [
     "change",
     "truth",
@@ -72,13 +72,13 @@
     }
   },
   "truth_revision_before": {
-    "revision_id": "R3",
+    "revision_id": "R4",
     "doc_status": "frozen",
     "lifecycle_status": "idle",
-    "baseline_hash": "sha256:6e8251658741265ac644a6605840b2ba71ce9899342712e941de8f0735360989"
+    "baseline_hash": "sha256:75836a098979ed04232549623ab64cbd7a5df17a6676b314af8c3394c7b8af42"
   },
   "truth_revision_after": {
-    "revision_id": "R4",
+    "revision_id": "R5",
     "doc_status": "frozen",
     "lifecycle_status": "frozen",
     "baseline_hash": "sha256:75836a098979ed04232549623ab64cbd7a5df17a6676b314af8c3394c7b8af42"
@@ -95,21 +95,21 @@
     "qa_executed": false,
     "release_executed": false
   },
-  "created_at": "2026-08-11T15:19:35.227955+00:00",
+  "created_at": "2026-08-11T15:22:25.156183+00:00",
   "previous_revision": {
-    "revision_id": "R3",
+    "revision_id": "R4",
     "doc_status": "superseded",
     "lifecycle_status": "superseded",
-    "baseline_hash": "sha256:6e8251658741265ac644a6605840b2ba71ce9899342712e941de8f0735360989"
+    "baseline_hash": "sha256:75836a098979ed04232549623ab64cbd7a5df17a6676b314af8c3394c7b8af42"
   },
   "opened_revision": {
-    "revision_id": "R4",
+    "revision_id": "R5",
     "doc_status": "draft",
     "lifecycle_status": "draft",
     "baseline_hash": ""
   },
   "story_reopen": {
-    "current_revision_id": "R4",
+    "current_revision_id": "R5",
     "lifecycle_status": "draft"
   },
   "requirement_package": {
@@ -211,7 +211,7 @@
       "path": "docs/beacon/v0.0.1/.machine/user-story/prism-campaign-schema-v1.json",
       "feature": "prism-campaign-schema-v1",
       "version": "v0.0.1",
-      "revision_id": "R4",
+      "revision_id": "R5",
       "ac_count": 1,
       "test_count": 1,
       "story_ids": [
@@ -249,7 +249,7 @@
         "review_gates": [],
         "qa_coverage_hints": [],
         "evidence_lines": {},
-        "generated_at": "2026-08-11T15:19:35.592121+00:00",
+        "generated_at": "2026-08-11T15:22:25.461072+00:00",
         "feature": "prism-campaign-schema-v1",
         "feature_slug": "prism-campaign-schema-v1",
         "prd_ref": "docs/beacon/v0.0.1/prd/prism-campaign-schema-v1.md",
@@ -968,7 +968,7 @@
       "finding_count": 0,
       "run_id": "",
       "source": "change.refreeze-chain",
-      "written_at": "2026-08-11T15:19:35.601654+00:00",
+      "written_at": "2026-08-11T15:22:25.471703+00:00",
       "state_path": ".beacon/state/requirement-clarity-prism-campaign-schema-v1.json"
     }
   },
@@ -1013,7 +1013,7 @@
         "review_gates": [],
         "qa_coverage_hints": [],
         "evidence_lines": {},
-        "generated_at": "2026-08-11T15:19:35.605344+00:00",
+        "generated_at": "2026-08-11T15:22:25.476058+00:00",
         "feature": "prism-campaign-schema-v1",
         "feature_slug": "prism-campaign-schema-v1",
         "prd_ref": "docs/beacon/v0.0.1/prd/prism-campaign-schema-v1.md",
@@ -2338,7 +2338,7 @@
       "status": "pass",
       "blocked": false,
       "reason_code": "",
-      "generated_at": "2026-08-11T15:19:35.626523+00:00",
+      "generated_at": "2026-08-11T15:22:25.498707+00:00",
       "package_dir": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1",
       "truth_frontmatter": {
         "slug": "prism-campaign-schema-v1",
@@ -2402,8 +2402,8 @@
     "feature": "prism-campaign-schema-v1",
     "feature_slug": "prism-campaign-schema-v1",
     "version": "v0.0.1",
-    "revision_id": "R4",
-    "source_revision_id": "R3",
+    "revision_id": "R5",
+    "source_revision_id": "R4",
     "status": "not_applicable",
     "cleanup_required": false,
     "removed_requirement_count": 0,
@@ -2415,7 +2415,7 @@
     "current_baseline_hash": "sha256:75836a098979ed04232549623ab64cbd7a5df17a6676b314af8c3394c7b8af42",
     "source_baseline_hash": "",
     "story_state_ref": "docs/beacon/v0.0.1/.machine/user-story/prism-campaign-schema-v1.json",
-    "generated_at": "2026-08-11T15:19:35.632577+00:00",
+    "generated_at": "2026-08-11T15:22:25.504870+00:00",
     "json_ref": "docs/beacon/v0.0.1/.machine/execution/revision-delta-prism-campaign-schema-v1.json",
     "markdown_ref": "docs/beacon/v0.0.1/execution/revision-delta-prism-campaign-schema-v1.md"
   },
@@ -2449,7 +2449,7 @@
         "summary": "Maintains release-facing version aggregate projection guards so QA accepted features are included in version change scope before release check.",
         "status": "generated",
         "accepted_at": "",
-        "revision_id": "R4",
+        "revision_id": "R5",
         "projection_role": {
           "artifact_role": "version_aggregate_projection",
           "truth_source": false,
@@ -2478,7 +2478,7 @@
           "docs/beacon/v0.0.1/qa/test-cases/prism-campaign-schema-v1.md",
           "docs/beacon/v0.0.1/.machine/execution/prism-campaign-schema-v1.revision.json"
         ],
-        "generated_at": "2026-08-11T15:19:35.632903+00:00"
+        "generated_at": "2026-08-11T15:22:25.505286+00:00"
       }
     },
     "version_aggregate_projection": {

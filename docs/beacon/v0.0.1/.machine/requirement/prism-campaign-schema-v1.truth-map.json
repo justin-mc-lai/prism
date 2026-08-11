@@ -393,7 +393,7 @@
         "truth_authority": false,
         "json_authority": false,
         "generated_governance_state": true,
-        "source_hash": "3eae8a3432ae5993d308764fd38a01a7d400d24d2417dc32ef9167cb7d79f3a1"
+        "source_hash": "22a4cfda98a948f3805405477281410a7b88e46094b0db822d87674e0389cb81"
       },
       "qa_status": {
         "schema_version": "1.0",
@@ -680,7 +680,7 @@
     ]
   },
   "generated_by": "beacon.truth_map.resolver",
-  "generated_at": "2026-08-11T15:19:35.580841+00:00",
+  "generated_at": "2026-08-11T15:22:25.448086+00:00",
   "truth_authority": false,
   "source_paths": {
     "truth": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",

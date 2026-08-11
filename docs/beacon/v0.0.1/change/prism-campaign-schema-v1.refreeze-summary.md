@@ -1,12 +1,12 @@
 # Change Refreeze Summary: prism-campaign-schema-v1
 
 - version: `v0.0.1`
-- change_reason: `add legal walk marker for domain FSM QA gate`
+- change_reason: `implementation-first-reconciliation`
 - refreeze_status: `complete`
 - blocked_reason: ``
 - next_route: `beacon-implement`
-- revision_before: `R3`
-- revision_after: `R4`
+- revision_before: `R4`
+- revision_after: `R5`
 
 ## Surface Statuses
 - `change`: `present` (docs/beacon/v0.0.1/change/prism-campaign-schema-v1.md)
