@@ -1,0 +1,26 @@
+{
+  "feature": "prism-campaign-schema-v1",
+  "scenarios_total": 15,
+  "scenarios_pass": 15,
+  "ac_total": 10,
+  "ac_pass": 10,
+  "run_id": "run-20260811T150500Z",
+  "surfaces_gate": "pass",
+  "matrix": [
+    {"tc": "TC-SCHEMA-001", "ac": "AC-SCHEMA-001", "result": "pass"},
+    {"tc": "TC-SCHEMA-002", "ac": "AC-SCHEMA-002", "result": "pass"},
+    {"tc": "TC-SCHEMA-003", "ac": "AC-SCHEMA-003", "result": "pass"},
+    {"tc": "TC-SCHEMA-004", "ac": "AC-SCHEMA-004", "result": "pass"},
+    {"tc": "TC-SCHEMA-005", "ac": "AC-SCHEMA-005", "result": "pass"},
+    {"tc": "TC-SCHEMA-006", "ac": "AC-SCHEMA-006", "result": "pass"},
+    {"tc": "TC-SCHEMA-007", "ac": "AC-SCHEMA-007", "result": "pass"},
+    {"tc": "TC-SCHEMA-008", "ac": "AC-SCHEMA-008", "result": "pass"},
+    {"tc": "TC-SCHEMA-009", "ac": "AC-SCHEMA-009", "result": "pass"},
+    {"tc": "TC-SCHEMA-010", "ac": "AC-SCHEMA-010", "result": "pass"},
+    {"tc": "TC-SCHEMA-011", "ac": "AC-SCHEMA-002", "result": "pass"},
+    {"tc": "TC-SCHEMA-012", "ac": "AC-SCHEMA-003", "result": "pass"},
+    {"tc": "TC-SCHEMA-013", "ac": "AC-SCHEMA-004", "result": "pass"},
+    {"tc": "TC-SCHEMA-014", "ac": "AC-SCHEMA-007", "result": "pass"},
+    {"tc": "TC-SCHEMA-015", "ac": "AC-SCHEMA-001", "result": "pass"}
+  ]
+}

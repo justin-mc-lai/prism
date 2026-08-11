@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "artifact": "implementation_first_reconciliation",
+  "feature": "prism-campaign-schema-v1",
+  "feature_slug": "prism-campaign-schema-v1",
+  "version": "v0.0.1",
+  "status": "required",
+  "reason_code": "implementation_first_reconciliation_required",
+  "recovery_kind": "implementation_first_reconciliation",
+  "delivery_mode": "recovery_not_normal_delivery",
+  "drift_detected_at": "2026-08-11T15:07:36.549530+00:00",
+  "detected_revision_id": "R2",
+  "source_revision_id": "R1",
+  "implementation_artifacts": [
+    {
+      "revision_id": "R1",
+      "run_id": "run-20260811T080515Z-5c7f",
+      "recorded_at": "2026-08-11T08:05:15.547812+00:00",
+      "implemented_item_ids": [
+        "AC-001",
+        "TASK-001",
+        "TEST-001"
+      ],
+      "changed_files": [
+        "registry/content-schema.yaml",
+        "contracts/master-content.schema.yaml",
+        "contracts/storyworld.schema.yaml",
+        "contracts/campaign.schema.yaml",
+        "contracts/narrative-episode.schema.yaml",
+        "contracts/distribution-binding.schema.yaml",
+        "contracts/master-freeze-checklist.md",
+        "content/masters/README.md",
+        "content/storyworlds/README.md",
+        "scripts/check_content_schema.sh",
+        "registry/adapter-migration-matrix.md",
+        "skills/_internal/orchestration/pipeline-contract.md",
+        "skills/prism-goal/references/modes/loop-campaign.md",
+        "docs/beacon/v0.0.1/source-architecture/index.md",
+        "."
+      ]
+    }
+  ],
+  "missing_truth_surfaces": [
+    "prd",
+    "user-story",
+    "qa/test-cases"
+  ],
+  "recovery_reason": "implementation evidence exists on earlier revision lineage and must be reconciled through beacon-change without erasing provenance",
+  "truth_surfaces_backfilled": [
+    "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md"
+  ],
+  "re_freeze_status": "completed",
+  "reprojection_targets": [
+    "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+    "qa_proof",
+    "release_facing_proof"
+  ],
+  "provenance": {
+    "post_hoc_writeback_occurred": true,
+    "preserve_drift_history": true,
+    "current_revision_id": "R2",
+    "current_delivery_status": "implemented"
+  },
+  "change_route": {
+    "action": "beacon-change",
+    "command": "beacon change \"prism-campaign-schema-v1\" --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-campaign-schema-v1 --version v0.0.1 --reason \"implementation-first-reconciliation\""
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "ac_id": "AC-SCHEMA-002",
+  "status": "pass",
+  "tcs": [
+    "TC-SCHEMA-002",
+    "TC-SCHEMA-011"
+  ],
+  "run_id": "run-20260811T150500Z"
+}

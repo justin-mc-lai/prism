@@ -1,0 +1,21 @@
+{
+  "feature": "prism-campaign-schema-v1",
+  "version": "v0.0.1",
+  "lake": "C",
+  "run_id": "run-20260811T150500Z",
+  "artifacts": [
+    "AC-SCHEMA-001.json",
+    "AC-SCHEMA-002.json",
+    "AC-SCHEMA-003.json",
+    "AC-SCHEMA-004.json",
+    "AC-SCHEMA-005.json",
+    "AC-SCHEMA-006.json",
+    "AC-SCHEMA-007.json",
+    "AC-SCHEMA-008.json",
+    "AC-SCHEMA-009.json",
+    "AC-SCHEMA-010.json",
+    "GATES.json",
+    "QA-MATRIX.json",
+    "manifest.json"
+  ]
+}
