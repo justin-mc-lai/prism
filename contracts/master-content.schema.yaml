@@ -1,0 +1,30 @@
+schema_id: master-content
+schema_version: "1"
+entity: MasterContent
+path_pattern: content/masters/{vertical}/{slug}/
+description: Canonical master content authority for factual and narrative source material.
+kind_enum:
+  - fact
+  - story
+required_files:
+  - meta.yaml
+  - MASTER.md
+optional_files:
+  - briefing.md
+  - humanized.md
+  - assets/
+required_fields:
+  meta.yaml:
+    - vertical
+    - slug
+    - title
+    - kind
+  MASTER.md:
+    - canonical authority body
+guards:
+  no_new_claims_without_source_trace: true
+  story_kind_requires_world_or_canon_ref: true
+notes:
+  kind: fact|story
+  fact_master: source_refs + canonical_claims + 来源证据
+  story_master: story bible + canon ledger + 角色/时间线/episode

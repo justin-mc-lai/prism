@@ -1,0 +1,24 @@
+schema_id: storyworld
+schema_version: "1"
+entity: StoryWorld
+path_pattern: content/storyworlds/{world_slug}/
+description: Canonical world bundle for bible, canon ledger, characters, and timeline.
+required_files:
+  - world.yaml
+  - bible.md
+  - canon-ledger.yaml
+  - characters/
+  - timeline/
+optional_files:
+  - episodes/
+required_fields:
+  world.yaml:
+    - world_slug
+    - title
+    - canon_policy
+    - default_lane
+  canon-ledger.yaml:
+    - entries
+guards:
+  default_lane_must_be_canon_or_standard: true
+  canon_policy_fail_closed: true

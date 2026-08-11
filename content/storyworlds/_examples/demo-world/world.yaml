@@ -1,0 +1,4 @@
+world_slug: demo-world
+title: Demo World
+canon_policy: fail_closed
+default_lane: canon

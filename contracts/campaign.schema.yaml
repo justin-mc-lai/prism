@@ -1,0 +1,22 @@
+schema_id: campaign
+schema_version: "1"
+entity: Campaign
+path_pattern: content/distribution/campaigns/{campaign_id}.yaml
+description: Root campaign or serial dossier for long-run content orchestration.
+required_fields:
+  - campaign_id
+  - title
+  - lane
+  - objective
+  - master_refs
+  - schedule_intent
+optional_fields:
+  - world_slug
+  - target_profiles
+  - endpoint_refs
+lane_enum:
+  - standard
+  - canon
+guards:
+  canon_lane_disables_fast_lane_skip: true
+  master_refs_min_items: 1

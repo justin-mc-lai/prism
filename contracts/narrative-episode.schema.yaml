@@ -1,0 +1,22 @@
+schema_id: narrative-episode
+schema_version: "1"
+entity: NarrativeEpisode
+path_pattern: content/storyworlds/{world_slug}/episodes/{episode_id}.yaml
+description: Episode-level narrative unit bound to one story world and one master authority.
+required_fields:
+  - episode_id
+  - world_slug
+  - master_id
+  - sequence
+  - canon_gate_status
+optional_fields:
+  - title
+  - summary
+  - continuity_refs
+canon_gate_status_enum:
+  - review_required
+  - passed
+  - failed
+guards:
+  illegal_if_generated_before_canon_pass: true
+  canon_gate_status_review_required_is_non_publishable: true

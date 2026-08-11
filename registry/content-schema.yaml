@@ -1,0 +1,27 @@
+schema_version: "1"
+feature: prism-campaign-schema-v1
+lake: C
+objects:
+  - schema_id: master-content
+    contract: contracts/master-content.schema.yaml
+    root: content/masters/{vertical}/{slug}/
+    authority: canonical
+  - schema_id: storyworld
+    contract: contracts/storyworld.schema.yaml
+    root: content/storyworlds/{world_slug}/
+    authority: canonical
+  - schema_id: campaign
+    contract: contracts/campaign.schema.yaml
+    root: content/distribution/campaigns/{campaign_id}.yaml
+    authority: canonical
+  - schema_id: narrative-episode
+    contract: contracts/narrative-episode.schema.yaml
+    root: content/storyworlds/{world_slug}/episodes/{episode_id}.yaml
+    authority: canonical
+  - schema_id: distribution-binding
+    contract: contracts/distribution-binding.schema.yaml
+    root: content/distribution/bindings/{binding_id}.yaml
+    authority: canonical
+guards:
+  canon_lane_disables_fast_lane_skip: true
+  episode_requires_canon_gate_before_generated: true

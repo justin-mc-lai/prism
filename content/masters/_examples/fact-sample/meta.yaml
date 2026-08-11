@@ -1,0 +1,7 @@
+vertical: examples
+slug: fact-sample
+kind: fact
+title: Fact Sample
+one_line_conclusion: Example factual authority object for schema validation.
+source_refs:
+  - example://source

@@ -1,0 +1,6 @@
+vertical: examples
+slug: story-sample
+kind: story
+title: Story Sample
+world_slug: demo-world
+one_line_conclusion: Example narrative authority object for schema validation.

@@ -51,6 +51,13 @@ Goal never executes maker/checker/release verdicts. It only routes and records.
 4. List required evidence for that handoff (paths or missing).
 5. Emit human card + machine face; stop.
 
+For Lake C+ campaign work, prefer these dossier anchors when present:
+
+- `content/distribution/campaigns/{campaign_id}.yaml`
+- `content/distribution/bindings/{binding_id}.yaml`
+- `content/storyworlds/{world_slug}/`
+- `content/masters/{vertical}/{slug}/`
+
 ## Adapter policy
 
 - Resolve producers via `registry/adapter-migration-matrix.md` strategies (`bridge` | `distill` | `vendor_pin` | `defer`).

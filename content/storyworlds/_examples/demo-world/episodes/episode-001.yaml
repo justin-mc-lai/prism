@@ -1,0 +1,6 @@
+episode_id: episode-001
+world_slug: demo-world
+master_id: examples/story-sample
+sequence: 1
+canon_gate_status: review_required
+title: Demo Episode

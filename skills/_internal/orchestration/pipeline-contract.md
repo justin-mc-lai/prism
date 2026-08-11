@@ -49,7 +49,14 @@ content/presentations/{vertical}/{slug}/{presentation_slug}/
     release-approval.md
 
 content/distribution/campaigns/{campaign_id}.yaml
-content/distribution/bindings/{campaign_id}.yaml
+content/distribution/bindings/{binding_id}.yaml
+content/storyworlds/{world_slug}/
+  world.yaml
+  bible.md
+  canon-ledger.yaml
+  characters/
+  timeline/
+  episodes/{episode_id}.yaml
 content/publications/{platform}/{account}/{slug}/{publication_id}.yaml
 ```
 
@@ -74,11 +81,14 @@ Rules:
 - `briefed → directed` requires a director treatment or a labeled reason for skipping director.
 - `directed → generated` requires a presentation map and asset assumptions.
 - `generated → qa-pass` requires evidence for text, visual, platform, and source checks.
+- `generated → qa-pass` for story episodes also requires `canon_gate_status=passed`.
 - `qa-pass → release-candidate` requires supervisor review.
 - `release-candidate → human-approved-*` requires explicit human approval.
 - `human-approved-draft` permits draft upload only.
 - `human-approved-image-draft` permits WeChat Official Account 「贴图」Tab draft upload only. It must use `media_type: image` / `kind: image_post`; generic article draft upload is not allowed for this state.
 - `human-approved-publish` permits public publish or scheduling within the approved scope.
+- `lane=canon` disables `fast_lane_skip`.
+- It is illegal for a StoryMaster episode with `canon_gate_status=review_required` or `failed` to enter `generated`.
 
 ## Minimal `presentation.yaml`
 

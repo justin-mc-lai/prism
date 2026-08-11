@@ -1,0 +1,16 @@
+schema_id: distribution-binding
+schema_version: "1"
+entity: DistributionBinding
+path_pattern: content/distribution/bindings/{binding_id}.yaml
+description: Connects one campaign presentation to one destination endpoint.
+required_fields:
+  - binding_id
+  - campaign_id
+  - presentation_id
+  - endpoint_ref
+optional_fields:
+  - account_ref
+  - publish_mode
+guards:
+  endpoint_ref_required_before_job_creation: true
+  publish_mode_defaults_to_draft: true
