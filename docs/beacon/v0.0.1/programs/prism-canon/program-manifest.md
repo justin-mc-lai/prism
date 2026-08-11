@@ -51,7 +51,7 @@ source_deferral: DL-002
 
 ## Lake C delivery
 
-- status: re_plan_done_then_freeze
+- status: qa_passed_release_candidate
 - feature: prism-campaign-schema-v1 @ v0.0.1 R1
 - worktree: .beacon/worktrees/v0.0.1/prism-campaign-schema-v1
 - branch: beacon/v0.0.1/prism-campaign-schema-v1
@@ -68,3 +68,10 @@ planner-review 发现 main 树四件套被占位草稿覆盖、machine 投影与
 3. **四件套重建**：从 delivery worktree 的权威全量包（truth/tests/tasks/evidence）回写 main，
    替换占位草稿；truth 含 INT-C01…13、FSM 五元组、illegal、DL-C01…07。
 4. **后续门**：Truth Review Gate → freeze → implement（worktree 已有实现，补齐证据）→ QA → release 人工门。
+
+## Lake C 交付状态（2026-08-11 晚）
+
+- truth：R5 frozen（含实现证据 reconciliation；baseline `sha256:75836a09…`）
+- implement：15/15 TC pass（`scripts/check_content_schema.sh` exec-layer PASS）
+- QA：`run-20260811T232406916560` · 10/10 AC · 15/15 scenario · release_confidence 1.0 · `release_ready=true`
+- release：人工门待确认（不自动公开发布）

@@ -2,7 +2,7 @@
 slug: prism-campaign-schema-v1
 version: v0.0.1
 revision_id: R1
-materials_status: stale
+materials_status: current
 package_shape: v1.6.10
 ---
 

@@ -46,3 +46,6 @@
 
 ## Notes
 
+
+Prism Lake C（prism-campaign-schema-v1）：QA `run-20260811T232406916560` passed
+（10/10 AC · 15/15 TC · release_confidence 1.0）；release 待人工确认，不自动公开发布。

@@ -5,7 +5,7 @@
   "truth_package_contract": "beacon-feature-package-v2",
   "machine_json_role": "generated_state_not_truth",
   "generated_by": "beacon.truth_map.resolver",
-  "generated_at": "2026-08-11T15:22:25.449015+00:00",
+  "generated_at": "2026-08-11T15:35:32.554997+00:00",
   "feature": "prism-campaign-schema-v1",
   "feature_slug": "prism-campaign-schema-v1",
   "version": "v0.0.1",
@@ -19,7 +19,7 @@
   },
   "source_hashes": {
     "truth": "b8700830f8ca2da1453272d38721e31fa532e239a778400570aab6cd32f7ca2d",
-    "tests": "0563a015e25ed1333d956c4335dd5fc7230124cf4b154315cd14450be7db3007",
+    "tests": "6070ec3897c91c2cfff571206bb19eda8adf87d4a6ac1852ad1184c9e7e430b9",
     "tasks": "15fab035cd9237cef4c547944ce466898d001361040cbdd8372702092432cb53",
     "evidence": "99e06242cebff3fa6a820f12f7e5dde06d4deefe3ea918a321b7dc2b7436d8e3"
   },

@@ -2,11 +2,35 @@
   "schema_version": "1.0",
   "artifact": "implementation_delivery_host",
   "version": "v0.0.1",
-  "feature_count": 1,
+  "feature_count": 2,
   "feature_slugs": [
+    "prism-campaign-schema-v1",
     "prism-extract-v1"
   ],
   "features": [
+    {
+      "feature": "prism-campaign-schema-v1",
+      "feature_slug": "prism-campaign-schema-v1",
+      "revision_id": "R5",
+      "baseline_id": "impl-delivery-baseline-v0.0.1-prism-campaign-schema-v1-R5",
+      "transaction_id": "tx-20dcb24ead65e579c",
+      "source_hash": "sha256:8ed6568b270b7c6be9a4215a09f85e52e9ca4ef61a02bb570cd91a4860d70195",
+      "baseline_ref": "docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-campaign-schema-v1.json",
+      "default_target_branch": "beacon/v0.0.1/prism-campaign-schema-v1",
+      "worktree_root": "/Users/apple/Developer/Personal/products/prism",
+      "workspace_root": "/Users/apple/Developer/Personal/products/prism",
+      "direct_delivery_services": [
+        "."
+      ],
+      "writable_services": [
+        "."
+      ],
+      "reference_only_services": [
+        "docs"
+      ],
+      "depends_on_features": [],
+      "updated_at": "2026-08-11T15:31:58.626713+00:00"
+    },
     {
       "feature": "prism-extract-v1",
       "feature_slug": "prism-extract-v1",
@@ -33,10 +57,11 @@
   ],
   "services_map": {
     ".": [
+      "prism-campaign-schema-v1",
       "prism-extract-v1"
     ]
   },
-  "source_hash": "sha256:55c2ca6da5f1f9ae4cf7aa7c6ec694a76c5ec921550e12f248e33ac93e9dadda",
-  "transaction_id": "tx-2c173ade469118768",
-  "generated_at": "2026-08-11T04:16:47.419055+00:00"
+  "source_hash": "sha256:93af648fef6039b27b8fa639168a116f3f399e16076ce5abc3f8f0ea90cc4b95",
+  "transaction_id": "tx-524cb87d49d1b3fce",
+  "generated_at": "2026-08-11T15:31:58.627950+00:00"
 }
