@@ -1,0 +1,7 @@
+4:path_pattern: content/distribution/campaigns/{campaign_id}.yaml
+7:  - campaign_id
+9:  - lane
+17:lane_enum:
+21:  canon_lane_disables_fast_lane_skip: true
+11:  - master_refs
+22:  master_refs_min_items: 1

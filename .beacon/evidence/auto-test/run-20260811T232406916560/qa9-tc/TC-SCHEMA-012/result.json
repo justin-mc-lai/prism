@@ -1,0 +1,29 @@
+{
+  "layer": "contract",
+  "command": "test -f content/storyworlds/README.md && test -f content/storyworlds/_examples/demo-world/world.yaml",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 0,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "de2b6152016a4e204e1c8d84c0c011a3bd23d308be4badabff12e926747b51c7",
+  "started_at": "2026-08-11T23:24:08.452656",
+  "ended_at": "2026-08-11T23:24:08.462219",
+  "junit_path": "",
+  "junit_valid": false,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260811T232406916560/qa9-tc/TC-SCHEMA-012/command.txt",
+    ".beacon/evidence/auto-test/run-20260811T232406916560/qa9-tc/TC-SCHEMA-012/stdout.log",
+    ".beacon/evidence/auto-test/run-20260811T232406916560/qa9-tc/TC-SCHEMA-012/stderr.log"
+  ],
+  "tc_id": "TC-SCHEMA-012",
+  "ac_id": "AC-SCHEMA-003"
+}

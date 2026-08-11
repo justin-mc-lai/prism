@@ -1,0 +1,1 @@
+test -f content/masters/README.md && test -f content/masters/_examples/fact-sample/meta.yaml && test -f content/masters/_examples/story-sample/meta.yaml

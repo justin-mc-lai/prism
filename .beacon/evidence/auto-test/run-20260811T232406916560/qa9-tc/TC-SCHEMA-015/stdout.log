@@ -1,0 +1,58 @@
+1:schema_version: "1"
+2:feature: prism-campaign-schema-v1
+5:  - schema_id: master-content
+6:    contract: contracts/master-content.schema.yaml
+9:  - schema_id: storyworld
+10:    contract: contracts/storyworld.schema.yaml
+11:    root: content/storyworlds/{world_slug}/
+13:  - schema_id: campaign
+14:    contract: contracts/campaign.schema.yaml
+15:    root: content/distribution/campaigns/{campaign_id}.yaml
+17:  - schema_id: narrative-episode
+18:    contract: contracts/narrative-episode.schema.yaml
+19:    root: content/storyworlds/{world_slug}/episodes/{episode_id}.yaml
+21:  - schema_id: distribution-binding
+22:    contract: contracts/distribution-binding.schema.yaml
+5:description: Canonical master content authority for factual and narrative source material.
+6:kind_enum:
+7:  - fact
+8:  - story
+26:  story_kind_requires_world_or_canon_ref: true
+28:  kind: fact|story
+29:  fact_master: source_refs + canonical_claims + 来源证据
+30:  story_master: story bible + canon ledger + 角色/时间线/episode
+9:  - canon-ledger.yaml
+10:  - characters/
+11:  - timeline/
+20:  canon-ledger.yaml:
+4:path_pattern: content/distribution/campaigns/{campaign_id}.yaml
+7:  - campaign_id
+9:  - lane
+11:  - master_refs
+17:lane_enum:
+21:  canon_lane_disables_fast_lane_skip: true
+22:  master_refs_min_items: 1
+11:  - canon_gate_status
+16:canon_gate_status_enum:
+17:  - review_required
+18:  - passed
+19:  - failed
+22:  canon_gate_status_review_required_is_non_publishable: true
+4:path_pattern: content/distribution/bindings/{binding_id}.yaml
+7:  - binding_id
+10:  - endpoint_ref
+15:  endpoint_ref_required_before_job_creation: true
+registry/adapter-migration-matrix.md:18:| MAP-004 | `content/masters/**` + MASTER 规范 | `prism-master` | **distill** MASTER freeze rules; content stays data | C | master freeze checklist + Fact/Story split | path bridge to source masters until Prism `content/` exists | — | distilled_schema |
+registry/adapter-migration-matrix.md:39:| C | campaign/master schema; deepen MAP-004 distill |
+contracts/master-freeze-checklist.md:3:Lake C deepens `MAP-004` by making MASTER freeze rules explicit for Prism-native `content/masters/`.
+contracts/master-freeze-checklist.md:19:## MAP-004 outcome
+contracts/master-freeze-checklist.md:21:- status: `distilled_schema`
+56:- `content/distribution/campaigns/{campaign_id}.yaml`
+58:- `content/storyworlds/{world_slug}/`
+71:  → generated
+82:- `directed → generated` requires a presentation map and asset assumptions.
+83:- `generated → qa-pass` requires evidence for text, visual, platform, and source checks.
+84:- `generated → qa-pass` for story episodes also requires `canon_gate_status=passed`.
+90:- `lane=canon` disables `fast_lane_skip`.
+91:- It is illegal for a StoryMaster episode with `canon_gate_status=review_required` or `failed` to enter `generated`.
+check_content_schema: pass

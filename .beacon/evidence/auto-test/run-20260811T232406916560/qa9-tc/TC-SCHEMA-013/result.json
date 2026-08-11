@@ -1,0 +1,29 @@
+{
+  "layer": "contract",
+  "command": "test -f content/distribution/campaigns/_examples/serial-demo.yaml",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 0,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "d40fd0e8a6eedbdbb774979f8c2bd43430dc36d3e21521cfe21e0ed450baf639",
+  "started_at": "2026-08-11T23:24:08.543875",
+  "ended_at": "2026-08-11T23:24:08.557973",
+  "junit_path": "",
+  "junit_valid": false,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260811T232406916560/qa9-tc/TC-SCHEMA-013/command.txt",
+    ".beacon/evidence/auto-test/run-20260811T232406916560/qa9-tc/TC-SCHEMA-013/stdout.log",
+    ".beacon/evidence/auto-test/run-20260811T232406916560/qa9-tc/TC-SCHEMA-013/stderr.log"
+  ],
+  "tc_id": "TC-SCHEMA-013",
+  "ac_id": "AC-SCHEMA-004"
+}

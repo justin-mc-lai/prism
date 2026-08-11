@@ -1,0 +1,5 @@
+4:path_pattern: content/storyworlds/{world_slug}/episodes/{episode_id}.yaml
+7:  - episode_id
+11:  - canon_gate_status
+16:canon_gate_status_enum:
+22:  canon_gate_status_review_required_is_non_publishable: true

@@ -1,0 +1,1 @@
+test -f contracts/campaign.schema.yaml && rg -n "campaign_id" contracts/campaign.schema.yaml && rg -n "lane" contracts/campaign.schema.yaml && rg -n "master_refs" contracts/campaign.schema.yaml

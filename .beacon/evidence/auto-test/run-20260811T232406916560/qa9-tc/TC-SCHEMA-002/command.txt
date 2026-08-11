@@ -1,0 +1,1 @@
+test -f contracts/master-content.schema.yaml && rg -n "kind:" contracts/master-content.schema.yaml && rg -n "fact\|story" contracts/master-content.schema.yaml && rg -n "content/masters" contracts/master-content.schema.yaml

@@ -1,0 +1,1 @@
+rg -n "canon gate|canon_gate|illegal" contracts/narrative-episode.schema.yaml skills/_internal/orchestration/pipeline-contract.md && rg -n "fast_lane_skip" skills/_internal/orchestration/pipeline-contract.md

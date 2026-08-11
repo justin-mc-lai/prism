@@ -1,0 +1,3 @@
+4:path_pattern: content/distribution/bindings/{binding_id}.yaml
+7:  - binding_id
+4:path_pattern: content/distribution/bindings/{binding_id}.yaml

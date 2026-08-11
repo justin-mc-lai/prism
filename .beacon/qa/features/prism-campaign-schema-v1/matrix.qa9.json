@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-campaign-schema-v1",
+  "feature_slug": "prism-campaign-schema-v1",
+  "version": "v0.0.1",
+  "generated_at": "2026-08-11T15:24:06.531241+00:00",
+  "execution_mode": "feature-aware",
+  "source_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-campaign-schema-v1.ac-test-matrix.json",
+  "story_scenario_map_path": ".beacon/qa/features/prism-campaign-schema-v1/story-scenario-map.json",
+  "reason_codes": [
+    "no_prior_feature_qa"
+  ],
+  "qa_types": [
+    "contract"
+  ],
+  "entries": [
+    {
+      "ac_id": "AC-SCHEMA-001",
+      "tc_id": "TC-SCHEMA-001",
+      "layer": "contract",
+      "command": "test -f registry/content-schema.yaml && rg -n \"schema_version\" registry/content-schema.yaml && rg -n \"master-content\" registry/content-schema.yaml && rg -n \"storyworld\" registry/content-schema.yaml && rg -n \"campaign\" registry/content-schema.yaml",
+      "assertion": "schema 注册表存在",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-campaign-schema-v1/tc-schema-001/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-campaign-schema-v1/docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-SCHEMA-002",
+      "tc_id": "TC-SCHEMA-002",
+      "layer": "contract",
+      "command": "test -f contracts/master-content.schema.yaml && rg -n \"kind:\" contracts/master-content.schema.yaml && rg -n \"fact\\|story\" contracts/master-content.schema.yaml && rg -n \"content/masters\" contracts/master-content.schema.yaml",
+      "assertion": "Master 布局契约存在",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-campaign-schema-v1/tc-schema-002/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-campaign-schema-v1/docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-SCHEMA-003",
+      "tc_id": "TC-SCHEMA-003",
+      "layer": "contract",
+      "command": "test -f contracts/storyworld.schema.yaml && rg -n \"canon-ledger\" contracts/storyworld.schema.yaml && rg -n \"content/storyworlds\" contracts/storyworld.schema.yaml",
+      "assertion": "StoryWorld 契约存在",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-campaign-schema-v1/tc-schema-003/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-campaign-schema-v1/docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-SCHEMA-004",
+      "tc_id": "TC-SCHEMA-004",
+      "layer": "contract",
+      "command": "test -f contracts/campaign.schema.yaml && rg -n \"campaign_id\" contracts/campaign.schema.yaml && rg -n \"lane\" contracts/campaign.schema.yaml && rg -n \"master_refs\" contracts/campaign.schema.yaml",
+      "assertion": "Campaign 契约存在",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-campaign-schema-v1/tc-schema-004/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-campaign-schema-v1/docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-SCHEMA-005",
+      "tc_id": "TC-SCHEMA-005",
+      "layer": "contract",
+      "command": "test -f contracts/narrative-episode.schema.yaml && rg -n \"episode_id\" contracts/narrative-episode.schema.yaml && rg -n \"canon_gate_status\" contracts/narrative-episode.schema.yaml",
+      "assertion": "Episode 契约存在",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-campaign-schema-v1/tc-schema-005/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-campaign-schema-v1/docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-SCHEMA-006",
+      "tc_id": "TC-SCHEMA-006",
+      "layer": "contract",
+      "command": "test -f contracts/distribution-binding.schema.yaml && rg -n \"binding_id\" contracts/distribution-binding.schema.yaml && rg -n \"content/distribution\" contracts/distribution-binding.schema.yaml",
+      "assertion": "Binding 契约存在",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-campaign-schema-v1/tc-schema-006/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-campaign-schema-v1/docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-SCHEMA-007",
+      "tc_id": "TC-SCHEMA-007",
+      "layer": "contract",
+      "command": "rg -n \"canon gate|canon_gate|illegal\" contracts/narrative-episode.schema.yaml skills/_internal/orchestration/pipeline-contract.md && rg -n \"fast_lane_skip\" skills/_internal/orchestration/pipeline-contract.md",
+      "assertion": "canon 钩子与 illegal 声明",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-campaign-schema-v1/tc-schema-007/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-campaign-schema-v1/docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-SCHEMA-008",
+      "tc_id": "TC-SCHEMA-008",
+      "layer": "contract",
+      "command": "test -f contracts/master-freeze-checklist.md && rg -n \"MAP-004\" registry/adapter-migration-matrix.md && rg -n \"distilled_schema\" registry/adapter-migration-matrix.md",
+      "assertion": "MAP-004 加深",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-campaign-schema-v1/tc-schema-008/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-campaign-schema-v1/docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-SCHEMA-009",
+      "tc_id": "TC-SCHEMA-009",
+      "layer": "contract",
+      "command": "rg -n \"US-PRISM-002|连载\" docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md && rg -n \"content/distribution/campaigns\" skills/prism-goal/references/modes/loop-campaign.md",
+      "assertion": "连载旅程路径对齐",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-campaign-schema-v1/tc-schema-009/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-campaign-schema-v1/docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-SCHEMA-010",
+      "tc_id": "TC-SCHEMA-010",
+      "layer": "contract",
+      "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md && rg -n \"Lake D\" docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+      "assertion": "分湖边界存在",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-campaign-schema-v1/tc-schema-010/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-campaign-schema-v1/docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-SCHEMA-002",
+      "tc_id": "TC-SCHEMA-011",
+      "layer": "contract",
+      "command": "test -f content/masters/README.md && test -f content/masters/_examples/fact-sample/meta.yaml && test -f content/masters/_examples/story-sample/meta.yaml",
+      "assertion": "master scaffold 示例",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-campaign-schema-v1/tc-schema-011/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-campaign-schema-v1/docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-SCHEMA-003",
+      "tc_id": "TC-SCHEMA-012",
+      "layer": "contract",
+      "command": "test -f content/storyworlds/README.md && test -f content/storyworlds/_examples/demo-world/world.yaml",
+      "assertion": "storyworld scaffold 示例",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-campaign-schema-v1/tc-schema-012/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-campaign-schema-v1/docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-SCHEMA-004",
+      "tc_id": "TC-SCHEMA-013",
+      "layer": "contract",
+      "command": "test -f content/distribution/campaigns/_examples/serial-demo.yaml",
+      "assertion": "campaign 示例文件",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-campaign-schema-v1/tc-schema-013/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-campaign-schema-v1/docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-SCHEMA-007",
+      "tc_id": "TC-SCHEMA-014",
+      "layer": "contract",
+      "command": "rg -n \"Illegal transitions|illegal\" docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+      "assertion": "illegal 转移在 truth 中覆盖",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-campaign-schema-v1/tc-schema-014/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-campaign-schema-v1/docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-SCHEMA-001",
+      "tc_id": "TC-SCHEMA-015",
+      "layer": "contract",
+      "command": "bash scripts/check_content_schema.sh",
+      "assertion": "exec-layer schema 校验脚本 PASS（合法路径）",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-campaign-schema-v1/tc-schema-015/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-campaign-schema-v1/docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    }
+  ]
+}

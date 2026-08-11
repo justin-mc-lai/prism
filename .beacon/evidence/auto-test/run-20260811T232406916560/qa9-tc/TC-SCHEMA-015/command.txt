@@ -1,0 +1,1 @@
+bash scripts/check_content_schema.sh

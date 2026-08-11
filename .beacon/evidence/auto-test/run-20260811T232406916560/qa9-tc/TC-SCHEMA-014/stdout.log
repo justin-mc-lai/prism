@@ -1,0 +1,6 @@
+116:| canon_hooks_bound | scaffold_present | canon gate fields + illegal transitions in contracts |
+122:## Illegal transitions
+126:- StoryMaster episode `canon_gate_status: review_required` → content_state `generated`（illegal）
+127:- lane=canon 使用 `fast_lane_skip`（illegal）
+181:| AC-SCHEMA-007 | Canon 钩子：contracts 与 `skills/_internal/orchestration/pipeline-contract.md` 声明 illegal：episode 未过 canon gate → generated；canon lane 禁用 fast_lane_skip |
+184:| AC-SCHEMA-010 | Non-goals 排除 Lake D/E/F；illegal：宣称形态生产链完成 / metrics 系统已交付 / 跳过 qa_pass；不得宣称海 closure |

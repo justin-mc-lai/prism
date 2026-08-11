@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "artifact": "qa_acceptance_runtime_projection",
+  "version": "v0.0.1",
+  "feature": "prism-campaign-schema-v1",
+  "feature_slug": "prism-campaign-schema-v1",
+  "revision_id": "R5",
+  "verdict": "passed",
+  "transaction_id": "tx-qa-acceptance-prism-campaign-schema-v1-632c1b56c709",
+  "source_hash": "sha256:632c1b56c709e6113ec0ece4a50ded8f7d9163d8219d32fa078a5166d872ec05",
+  "projection_seq": 1,
+  "committed_at": "2026-08-11T15:24:08.956679+00:00",
+  "write_status": "applied",
+  "failed_sinks": [],
+  "machine_ref": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-campaign-schema-v1.json",
+  "markdown_ref": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-campaign-schema-v1.md",
+  "runtime_projection_ref": ".beacon/transactions/qa-acceptance-prism-campaign-schema-v1.json",
+  "sink_checksums": {
+    "machine": "sha256:30e9c33d376f029c4d1299c864676f506571dc00d60c868b33e2a7cb82de92d8",
+    "human": "sha256:607120fe23f57672c8afe39470f4e89e73025e2ce49fbdb9649e79bcc9575db7",
+    "runtime": "sha256:29b3a1e5eb639a9361972226a6c6125a75ded1b300b6dd94a7fe5769a1414acc"
+  }
+}

@@ -1,0 +1,1 @@
+test -f content/storyworlds/README.md && test -f content/storyworlds/_examples/demo-world/world.yaml

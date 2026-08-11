@@ -1,0 +1,29 @@
+{
+  "layer": "contract",
+  "command": "test -f contracts/distribution-binding.schema.yaml && rg -n \"binding_id\" contracts/distribution-binding.schema.yaml && rg -n \"content/distribution\" contracts/distribution-binding.schema.yaml",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 0,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "c0294450eb29fbb3514c2a0ef7cf82921429ebbdf15eaa4b8256ce4699e38653",
+  "started_at": "2026-08-11T23:24:07.749656",
+  "ended_at": "2026-08-11T23:24:07.769109",
+  "junit_path": "",
+  "junit_valid": false,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260811T232406916560/qa9-tc/TC-SCHEMA-006/command.txt",
+    ".beacon/evidence/auto-test/run-20260811T232406916560/qa9-tc/TC-SCHEMA-006/stdout.log",
+    ".beacon/evidence/auto-test/run-20260811T232406916560/qa9-tc/TC-SCHEMA-006/stderr.log"
+  ],
+  "tc_id": "TC-SCHEMA-006",
+  "ac_id": "AC-SCHEMA-006"
+}

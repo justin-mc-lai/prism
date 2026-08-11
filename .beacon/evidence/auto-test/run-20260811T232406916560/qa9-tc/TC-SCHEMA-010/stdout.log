@@ -1,0 +1,14 @@
+157:10. Non-goals / 分湖边界（AC-SCHEMA-010）
+184:| AC-SCHEMA-010 | Non-goals 排除 Lake D/E/F；illegal：宣称形态生产链完成 / metrics 系统已交付 / 跳过 qa_pass；不得宣称海 closure |
+186:## Non-goals
+37:- 不能做：form producer chains（Lake D）；metrics/learning loop（Lake E）；monetization（Lake F）；全量 vendor 搬迁；分发 API 自动化；把 schema 冻结宣称为完整创作能力已交付
+73:| INT-C11 | sea | must | Lake D form producers | deferred |
+129:- 宣称 Lake D 形态生产链已完成
+163:| DL-C01 | form producer chains | accepted | Lake D |
+166:| DL-C04 | vendor_pin 全量搬迁 | accepted | Lake D+ |
+168:| DL-C06 | 三车道路由引擎实现 | accepted | Lake D |
+184:| AC-SCHEMA-010 | Non-goals 排除 Lake D/E/F；illegal：宣称形态生产链完成 / metrics 系统已交付 / 跳过 qa_pass；不得宣称海 closure |
+34:Lake B 已把 Prism 独立仓、公开面壳和 adapter 索引搭好；本湖要把 **campaign / storyworld / master 内容 schema** 落成可验证的文件契约与目录布局，支撑 US-PRISM-002 连载旅程与 canon 车道。只做正典/连载容器与 schema 注册，不实现八形态生产链，不做指标回流，不宣称海 closure。
+131:- schema 冻结即海 closure
+169:| DL-C07 | 本湖宣称海 closure | rejected | FP-PRISM-013 |
+184:| AC-SCHEMA-010 | Non-goals 排除 Lake D/E/F；illegal：宣称形态生产链完成 / metrics 系统已交付 / 跳过 qa_pass；不得宣称海 closure |

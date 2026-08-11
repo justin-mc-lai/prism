@@ -1,0 +1,11 @@
+1:schema_version: "1"
+5:  - schema_id: master-content
+6:    contract: contracts/master-content.schema.yaml
+9:  - schema_id: storyworld
+10:    contract: contracts/storyworld.schema.yaml
+11:    root: content/storyworlds/{world_slug}/
+19:    root: content/storyworlds/{world_slug}/episodes/{episode_id}.yaml
+2:feature: prism-campaign-schema-v1
+13:  - schema_id: campaign
+14:    contract: contracts/campaign.schema.yaml
+15:    root: content/distribution/campaigns/{campaign_id}.yaml

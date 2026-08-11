@@ -1,0 +1,1 @@
+test -f registry/content-schema.yaml && rg -n "schema_version" registry/content-schema.yaml && rg -n "master-content" registry/content-schema.yaml && rg -n "storyworld" registry/content-schema.yaml && rg -n "campaign" registry/content-schema.yaml

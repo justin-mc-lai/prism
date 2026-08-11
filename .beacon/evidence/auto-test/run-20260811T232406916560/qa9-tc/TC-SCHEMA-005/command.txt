@@ -1,0 +1,1 @@
+test -f contracts/narrative-episode.schema.yaml && rg -n "episode_id" contracts/narrative-episode.schema.yaml && rg -n "canon_gate_status" contracts/narrative-episode.schema.yaml

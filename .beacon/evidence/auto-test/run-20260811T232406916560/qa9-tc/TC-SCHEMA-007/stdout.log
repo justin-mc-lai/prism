@@ -1,0 +1,7 @@
+skills/_internal/orchestration/pipeline-contract.md:84:- `generated → qa-pass` for story episodes also requires `canon_gate_status=passed`.
+skills/_internal/orchestration/pipeline-contract.md:91:- It is illegal for a StoryMaster episode with `canon_gate_status=review_required` or `failed` to enter `generated`.
+contracts/narrative-episode.schema.yaml:11:  - canon_gate_status
+contracts/narrative-episode.schema.yaml:16:canon_gate_status_enum:
+contracts/narrative-episode.schema.yaml:21:  illegal_if_generated_before_canon_pass: true
+contracts/narrative-episode.schema.yaml:22:  canon_gate_status_review_required_is_non_publishable: true
+90:- `lane=canon` disables `fast_lane_skip`.

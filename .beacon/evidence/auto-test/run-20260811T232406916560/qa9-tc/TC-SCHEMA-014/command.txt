@@ -1,0 +1,1 @@
+rg -n "Illegal transitions|illegal" docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md

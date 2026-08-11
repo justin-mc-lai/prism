@@ -1,0 +1,1 @@
+test -f contracts/storyworld.schema.yaml && rg -n "canon-ledger" contracts/storyworld.schema.yaml && rg -n "content/storyworlds" contracts/storyworld.schema.yaml

@@ -5,7 +5,7 @@
   "version": "v0.0.1",
   "current_revision_id": "R5",
   "lifecycle_status": "frozen",
-  "updated_at": "2026-08-11T15:22:25.454709+00:00",
+  "updated_at": "2026-08-11T15:24:08.957882+00:00",
   "revisions": [
     {
       "revision_id": "R1",
@@ -328,7 +328,7 @@
       "revision_id": "R5",
       "title": "prism-campaign-schema-v1",
       "priority": "medium",
-      "status": "frozen",
+      "status": "accepted",
       "items": [
         {
           "id": "AC-001",
@@ -361,9 +361,9 @@
           "kind": "test",
           "text": "Verify AC-001 — Acceptance criteria TBD",
           "required": true,
-          "status": "draft",
+          "status": "passed",
           "implemented_by_run_id": null,
-          "verified_by_run_id": null,
+          "verified_by_run_id": "run-20260811T232406916560",
           "accepted_at": null,
           "changed_in_revision": "R5",
           "covers": [
@@ -382,7 +382,19 @@
         "section_count": 0,
         "sections": {},
         "derived_items": []
-      }
+      },
+      "feature": "prism-campaign-schema-v1",
+      "feature_slug": "prism-campaign-schema-v1",
+      "version": "v0.0.1",
+      "verification_evidence": [
+        ".beacon/auto-test-status.json",
+        ".beacon/qa/status.json",
+        "docs/beacon/v0.0.1/.machine/qa/prism-campaign-schema-v1.ac-test-matrix.json",
+        ".beacon/coverage-summary.json",
+        ".beacon/release-gate-report.json"
+      ],
+      "accepted_at": "2026-08-11T15:24:08.951253+00:00",
+      "accepted_by": "qa"
     }
   ]
 }

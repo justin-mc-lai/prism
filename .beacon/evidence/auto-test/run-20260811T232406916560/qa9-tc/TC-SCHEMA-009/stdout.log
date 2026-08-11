@@ -1,0 +1,8 @@
+34:Lake B 已把 Prism 独立仓、公开面壳和 adapter 索引搭好；本湖要把 **campaign / storyworld / master 内容 schema** 落成可验证的文件契约与目录布局，支撑 US-PRISM-002 连载旅程与 canon 车道。只做正典/连载容器与 schema 注册，不实现八形态生产链，不做指标回流，不宣称海 closure。
+42:继续 Lake C：在独立 Prism 仓落地 campaign / storyworld schema（DL-002），深化 MAP-004，为连载/正典容器提供文件级真值。
+82:| FP-SCHEMA-002 | Campaign 是营销/连载战役根对象，可派生多个 Master；不替代 Master 正典 |
+90:US-SCHEMA-001（= US-PRISM-002）：用户要连载小说或漫画。prism-goal/campaign 定连载计划 → prism-master 冻结 StoryMaster → prism-director 出 episode 大纲或分镜 → prism-produce 产章节 → prism-qa 过正典/连续性门 → prism-release → 连载发布。（本湖只冻 schema 与路径，不执行生产链。）
+100:| Campaign | campaign_id | 营销/连载战役根；`lane`；`master_refs[]`；可选 `world_slug` |
+156:9. US-PRISM-002 / loop-campaign 路径对齐（AC-SCHEMA-009）
+183:| AC-SCHEMA-009 | US-PRISM-002 可追溯：truth 含连载旅程；`skills/prism-goal/references/modes/loop-campaign.md` 引用 `content/distribution/campaigns/` 与 storyworld 路径 |
+56:- `content/distribution/campaigns/{campaign_id}.yaml`

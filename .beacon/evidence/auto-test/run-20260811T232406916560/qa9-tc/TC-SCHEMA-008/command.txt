@@ -1,0 +1,1 @@
+test -f contracts/master-freeze-checklist.md && rg -n "MAP-004" registry/adapter-migration-matrix.md && rg -n "distilled_schema" registry/adapter-migration-matrix.md

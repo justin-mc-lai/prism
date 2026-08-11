@@ -1,0 +1,3 @@
+9:  - canon-ledger.yaml
+20:  canon-ledger.yaml:
+4:path_pattern: content/storyworlds/{world_slug}/

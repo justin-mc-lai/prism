@@ -1,0 +1,1 @@
+test -f contracts/distribution-binding.schema.yaml && rg -n "binding_id" contracts/distribution-binding.schema.yaml && rg -n "content/distribution" contracts/distribution-binding.schema.yaml
