@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "run_id": "run-20260811T080515Z-5c7f",
+  "import_id": "run-20260811T080515Z-5c7f",
+  "feature": "prism-campaign-schema-v1",
+  "feature_slug": "prism-campaign-schema-v1",
+  "version": "v0.0.1",
+  "runner": "import-evidence",
+  "skill": "beacon-implement",
+  "status": "completed",
+  "imported": true,
+  "source_refs": [
+    "contracts/*.schema.yaml",
+    "registry/content-schema.yaml",
+    "content/",
+    "scripts/check_content_schema.sh"
+  ],
+  "changed_files": [
+    "registry/content-schema.yaml",
+    "contracts/master-content.schema.yaml",
+    "contracts/storyworld.schema.yaml",
+    "contracts/campaign.schema.yaml",
+    "contracts/narrative-episode.schema.yaml",
+    "contracts/distribution-binding.schema.yaml",
+    "contracts/master-freeze-checklist.md",
+    "content/masters/README.md",
+    "content/storyworlds/README.md",
+    "scripts/check_content_schema.sh",
+    "registry/adapter-migration-matrix.md",
+    "skills/_internal/orchestration/pipeline-contract.md",
+    "skills/prism-goal/references/modes/loop-campaign.md",
+    "docs/beacon/v0.0.1/source-architecture/index.md"
+  ],
+  "service_dirs": [
+    "."
+  ],
+  "summary_ref": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/evidence.md",
+  "approved_by": "agent-cursor",
+  "prompt_boundary": {
+    "schema_version": "1.0",
+    "feature": "prism-campaign-schema-v1",
+    "feature_slug": "prism-campaign-schema-v1",
+    "version": "v0.0.1",
+    "required": false,
+    "prompt": "Import externally produced implementation evidence for the scoped Beacon feature. Read Beacon source of truth and bind the imported evidence to the frozen feature package truth. Implement only against the frozen feature package truth above. Evidence refs: contracts/*.schema.yaml, registry/content-schema.yaml, content/, scripts/check_content_schema.sh, docs/beacon/v0.0.1/features/prism-campaign-schema-v1/evidence.md. Changed files or service directories: registry/content-schema.yaml, contracts/master-content.schema.yaml, contracts/storyworld.schema.yaml, contracts/campaign.schema.yaml, contracts/narrative-episode.schema.yaml, contracts/distribution-binding.schema.yaml, contracts/master-freeze-checklist.md, content/masters/README.md, content/storyworlds/README.md, scripts/check_content_schema.sh, registry/adapter-migration-matrix.md, skills/_internal/orchestration/pipeline-contract.md, skills/prism-goal/references/modes/loop-campaign.md, docs/beacon/v0.0.1/source-architecture/index.md, ..",
+    "classification": "",
+    "blocked": false,
+    "status": "not_required",
+    "reason_code": "",
+    "next_action": "",
+    "recommended_command": "",
+    "matched_signals": [],
+    "frozen_refs": [
+      "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+      "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+      "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tasks.md",
+      "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/evidence.md"
+    ],
+    "surface": "import-evidence"
+  },
+  "created_at": "2026-08-11T08:05:15.545425+00:00",
+  "generated_at": "2026-08-11T08:05:15.545431+00:00"
+}
