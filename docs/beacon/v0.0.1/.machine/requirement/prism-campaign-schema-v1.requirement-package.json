@@ -5,7 +5,7 @@
   "truth_package_contract": "beacon-feature-package-v2",
   "machine_json_role": "generated_state_not_truth",
   "generated_by": "beacon.truth_map.resolver",
-  "generated_at": "2026-08-11T15:03:01.896056+00:00",
+  "generated_at": "2026-08-11T15:15:06.960358+00:00",
   "feature": "prism-campaign-schema-v1",
   "feature_slug": "prism-campaign-schema-v1",
   "version": "v0.0.1",

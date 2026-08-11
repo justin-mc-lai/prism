@@ -1,0 +1,2545 @@
+{
+  "schema_version": "1.0",
+  "transaction_id": "tx-change-refreeze-prism-campaign-schema-v1-20260811t151506z",
+  "feature": "prism-campaign-schema-v1",
+  "feature_slug": "prism-campaign-schema-v1",
+  "version": "v0.0.1",
+  "change_reason": "implementation-first-reconciliation",
+  "touched_surfaces": [
+    "change",
+    "truth",
+    "tests",
+    "tasks",
+    "evidence",
+    "requirement_clarity",
+    "freeze",
+    "feature_package_validation"
+  ],
+  "surface_statuses": {
+    "change": {
+      "path": "docs/beacon/v0.0.1/change/prism-campaign-schema-v1.md",
+      "exists": false,
+      "status": "package_change_optional",
+      "required": false,
+      "authority": "change_record_not_requirement_truth"
+    },
+    "truth": {
+      "path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+      "exists": true,
+      "status": "present",
+      "required": true,
+      "authority": "markdown_feature_package"
+    },
+    "tests": {
+      "path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+      "exists": true,
+      "status": "present",
+      "required": true,
+      "authority": "markdown_feature_package"
+    },
+    "tasks": {
+      "path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tasks.md",
+      "exists": true,
+      "status": "present",
+      "required": true,
+      "authority": "markdown_feature_package"
+    },
+    "evidence": {
+      "path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/evidence.md",
+      "exists": true,
+      "status": "present",
+      "required": true,
+      "authority": "markdown_feature_package"
+    },
+    "requirement_clarity": {
+      "path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-campaign-schema-v1.json",
+      "exists": true,
+      "status": "passed",
+      "required": true
+    },
+    "freeze": {
+      "path": "docs/beacon/v0.0.1/.machine/change/prism-campaign-schema-v1.refreeze-transaction.json",
+      "exists": true,
+      "status": "complete",
+      "required": true
+    },
+    "feature_package_validation": {
+      "path": "docs/beacon/v0.0.1/.machine/requirement/feature-package-validation.json",
+      "exists": true,
+      "status": "passed",
+      "required": true,
+      "diagnostics": []
+    }
+  },
+  "truth_revision_before": {
+    "revision_id": "R2",
+    "doc_status": "frozen",
+    "lifecycle_status": "idle",
+    "baseline_hash": "sha256:08eef0b04fb3201db608545db44aa2ea9d5a915adade6451a1e61592cab4817d"
+  },
+  "truth_revision_after": {
+    "revision_id": "R3",
+    "doc_status": "frozen",
+    "lifecycle_status": "frozen",
+    "baseline_hash": "sha256:6e8251658741265ac644a6605840b2ba71ce9899342712e941de8f0735360989"
+  },
+  "refreeze_status": "complete",
+  "next_route": {
+    "target_surface": "beacon-implement",
+    "command": "beacon implement \"prism-campaign-schema-v1\" --project /Users/apple/Developer/Personal/products/prism --version v0.0.1",
+    "why": "refreeze transaction completed; implementation may plan against the refreshed frozen truth"
+  },
+  "blocked_reason": "",
+  "delivery_execution": {
+    "implement_executed": false,
+    "qa_executed": false,
+    "release_executed": false
+  },
+  "created_at": "2026-08-11T15:15:06.651463+00:00",
+  "previous_revision": {
+    "revision_id": "R2",
+    "doc_status": "superseded",
+    "lifecycle_status": "superseded",
+    "baseline_hash": "sha256:08eef0b04fb3201db608545db44aa2ea9d5a915adade6451a1e61592cab4817d"
+  },
+  "opened_revision": {
+    "revision_id": "R3",
+    "doc_status": "draft",
+    "lifecycle_status": "draft",
+    "baseline_hash": ""
+  },
+  "story_reopen": {
+    "current_revision_id": "R3",
+    "lifecycle_status": "draft"
+  },
+  "requirement_package": {
+    "schema_version": "1.0",
+    "project_root": "/Users/apple/Developer/Personal/products/prism",
+    "version": "v0.0.1",
+    "feature": "prism-campaign-schema-v1",
+    "status": "synced",
+    "authority_state": "feature_package_authoritative",
+    "truth_authority": "markdown_feature_package",
+    "requirement_refs": {
+      "source_of_truth_root": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1",
+      "prd": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+      "truth": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+      "tests": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+      "tasks": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tasks.md",
+      "evidence": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/evidence.md"
+    },
+    "story_path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+    "qa_matrix_path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+    "qa9_matrix_path": "",
+    "story_scenario_map_path": "",
+    "machine_rebuild": {
+      "schema_version": "1.0",
+      "truth_map_contract": "beacon-truth-map-v1",
+      "truth_source_model": "feature_package_authoritative",
+      "truth_package_contract": "beacon-feature-package-v2",
+      "machine_json_role": "generated_state_not_truth",
+      "generated_by": "beacon.truth_map.resolver",
+      "feature": "prism-campaign-schema-v1",
+      "feature_slug": "prism-campaign-schema-v1",
+      "version": "v0.0.1",
+      "status": "rebuilt",
+      "blocked": false,
+      "validation_status": "pass",
+      "source_paths": {
+        "truth": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+        "tests": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+        "tasks": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tasks.md",
+        "evidence": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/evidence.md"
+      },
+      "source_hashes": {
+        "truth": "b8700830f8ca2da1453272d38721e31fa532e239a778400570aab6cd32f7ca2d",
+        "tests": "42dcd182ffdf1ca6e961860927127c0fa2d8614c7aae408e1139eac7d7a72faa",
+        "tasks": "15fab035cd9237cef4c547944ce466898d001361040cbdd8372702092432cb53",
+        "evidence": "99e06242cebff3fa6a820f12f7e5dde06d4deefe3ea918a321b7dc2b7436d8e3"
+      },
+      "plan": {
+        "schema_version": "1.0",
+        "truth_map_contract": "beacon-truth-map-v1",
+        "truth_source_model": "feature_package_authoritative",
+        "truth_package_contract": "beacon-feature-package-v2",
+        "machine_json_role": "generated_state_not_truth",
+        "generated_by": "beacon.truth_map.resolver",
+        "feature": "prism-campaign-schema-v1",
+        "feature_slug": "prism-campaign-schema-v1",
+        "version": "v0.0.1",
+        "source_paths": {
+          "truth": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+          "tests": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+          "tasks": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tasks.md",
+          "evidence": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/evidence.md"
+        },
+        "outputs": {
+          "truth_map_projection": "docs/beacon/v0.0.1/.machine/requirement/prism-campaign-schema-v1.truth-map.json",
+          "requirement_package_state": "docs/beacon/v0.0.1/.machine/requirement/prism-campaign-schema-v1.requirement-package.json",
+          "feature_package_validation": "docs/beacon/v0.0.1/.machine/requirement/feature-package-validation.json"
+        },
+        "runtime_json_exemption": {
+          "role": "runtime_process_record_not_requirement_truth",
+          "applies_to": [
+            ".beacon/runs/**",
+            ".beacon/qa/**",
+            "runtime/process execution records"
+          ],
+          "requires_markdown_twin": false,
+          "requirement_authority": false
+        },
+        "routes": {
+          "doctor_rebuild": {
+            "status": "legacy_output_only",
+            "command": "beacon truth-map rebuild-machine prism-campaign-schema-v1 --version v0.0.1"
+          },
+          "change_absorb": {
+            "status": "package_truth_target_only",
+            "command": "beacon change prism-campaign-schema-v1 --version v0.0.1 --reason absorb-legacy-truth-into-feature-package"
+          }
+        }
+      },
+      "written": [
+        "docs/beacon/v0.0.1/.machine/requirement/prism-campaign-schema-v1.truth-map.json",
+        "docs/beacon/v0.0.1/.machine/requirement/prism-campaign-schema-v1.requirement-package.json",
+        "docs/beacon/v0.0.1/.machine/requirement/feature-package-validation.json"
+      ]
+    },
+    "story_sync": {
+      "path": "docs/beacon/v0.0.1/.machine/user-story/prism-campaign-schema-v1.json",
+      "feature": "prism-campaign-schema-v1",
+      "version": "v0.0.1",
+      "revision_id": "R3",
+      "ac_count": 1,
+      "test_count": 1,
+      "story_ids": [
+        ""
+      ]
+    }
+  },
+  "requirement_clarity": {
+    "gate": {
+      "schema_version": "1.0",
+      "feature": "prism-campaign-schema-v1",
+      "feature_slug": "prism-campaign-schema-v1",
+      "version": "v0.0.1",
+      "runtime_version": "v1.6.12",
+      "runtime_capability_line": "v1.3.3",
+      "required": true,
+      "reason_code": "",
+      "blocked": false,
+      "status": "pass",
+      "findings": [],
+      "report_json_path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-campaign-schema-v1.json",
+      "report_markdown_path": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-campaign-schema-v1.md",
+      "state_path": ".beacon/state/requirement-clarity-prism-campaign-schema-v1.json",
+      "diagram_truth": {
+        "schema_version": "1.0",
+        "version": "v0.0.1",
+        "supported": false,
+        "required": false,
+        "ready": false,
+        "diagram_types": [],
+        "state_axes": [],
+        "missing_diagram_types": [],
+        "missing_state_axes": false,
+        "complexity_signals": [],
+        "review_gates": [],
+        "qa_coverage_hints": [],
+        "evidence_lines": {},
+        "generated_at": "2026-08-11T15:15:06.971377+00:00",
+        "feature": "prism-campaign-schema-v1",
+        "feature_slug": "prism-campaign-schema-v1",
+        "prd_ref": "docs/beacon/v0.0.1/prd/prism-campaign-schema-v1.md",
+        "user_story_ref": "docs/beacon/v0.0.1/user-story/prism-campaign-schema-v1.md"
+      },
+      "domain_fsm_gate": {
+        "schema_version": "1.0",
+        "feature": "prism-campaign-schema-v1",
+        "feature_slug": "prism-campaign-schema-v1",
+        "version": "v0.0.1",
+        "truth_path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+        "tests_path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+        "required": true,
+        "blocked": false,
+        "status": "pass",
+        "reason_code": "",
+        "findings": [],
+        "requirement": {
+          "required": true,
+          "reason": "explicit_domain_mark",
+          "explicit": true,
+          "partial": true,
+          "complexity": false,
+          "business_signal": false,
+          "version_supported": false
+        },
+        "projection": {
+          "schema_version": "1.0",
+          "domain_fsm_schema": "domain-fsm.v1",
+          "entity_precedence_schema": "entity-precedence.v1",
+          "frontmatter": {
+            "slug": "prism-campaign-schema-v1",
+            "version": "v0.0.1",
+            "status": "frozen",
+            "revision_id": "R1",
+            "language": "zh",
+            "domain_required": "true",
+            "ux_required": "false",
+            "parser_contract": "beacon-feature-package-v2",
+            "materials_status": "current",
+            "package_maturity": "filled",
+            "truth_source_model": "intent_first",
+            "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+            "canonical_refs": {
+              "prd": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+              "user_story": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+              "test_case": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md"
+            },
+            "provenance": {
+              "- ac_id": "AC-SCHEMA-009",
+              "source_type": "user_intent",
+              "source_ref": "utterance 2026-08-11: 同意继续 Lake C freeze package"
+            }
+          },
+          "frontmatter_errors": [],
+          "has_domain_model_section": true,
+          "has_domain_fsm_section": true,
+          "has_illegal_transition_section": true,
+          "entities": [
+            {
+              "entity": "Campaign",
+              "key": "campaign_id",
+              "precedence": "营销/连载战役根；`lane`；`master_refs[]`；可选 `world_slug`",
+              "requires": "营销/连载战役根；`lane`；`master_refs[]`；可选 `world_slug`"
+            },
+            {
+              "entity": "MasterContent",
+              "key": "master_id",
+              "precedence": "`kind: fact\\",
+              "requires": "`kind: fact\\"
+            },
+            {
+              "entity": "StoryWorld",
+              "key": "world_slug",
+              "precedence": "bible / canon ledger / 角色 / 时间线",
+              "requires": "bible / canon ledger / 角色 / 时间线"
+            },
+            {
+              "entity": "NarrativeEpisode",
+              "key": "episode_id",
+              "precedence": "属于 StoryWorld；引用 `master_id`；`canon_gate_status`",
+              "requires": "属于 StoryWorld；引用 `master_id`；`canon_gate_status`"
+            },
+            {
+              "entity": "DistributionBinding",
+              "key": "binding_id",
+              "precedence": "campaign × presentation × endpoint",
+              "requires": "campaign × presentation × endpoint"
+            },
+            {
+              "entity": "SchemaRegistry",
+              "key": "schema_id",
+              "precedence": "本湖契约版本索引",
+              "requires": "本湖契约版本索引"
+            }
+          ],
+          "entity_precedence": [
+            {
+              "entity": "Campaign",
+              "key": "campaign_id",
+              "precedence": "营销/连载战役根；`lane`；`master_refs[]`；可选 `world_slug`",
+              "requires": "营销/连载战役根；`lane`；`master_refs[]`；可选 `world_slug`"
+            },
+            {
+              "entity": "MasterContent",
+              "key": "master_id",
+              "precedence": "`kind: fact\\",
+              "requires": "`kind: fact\\"
+            },
+            {
+              "entity": "StoryWorld",
+              "key": "world_slug",
+              "precedence": "bible / canon ledger / 角色 / 时间线",
+              "requires": "bible / canon ledger / 角色 / 时间线"
+            },
+            {
+              "entity": "NarrativeEpisode",
+              "key": "episode_id",
+              "precedence": "属于 StoryWorld；引用 `master_id`；`canon_gate_status`",
+              "requires": "属于 StoryWorld；引用 `master_id`；`canon_gate_status`"
+            },
+            {
+              "entity": "DistributionBinding",
+              "key": "binding_id",
+              "precedence": "campaign × presentation × endpoint",
+              "requires": "campaign × presentation × endpoint"
+            },
+            {
+              "entity": "SchemaRegistry",
+              "key": "schema_id",
+              "precedence": "本湖契约版本索引",
+              "requires": "本湖契约版本索引"
+            }
+          ],
+          "aggregates": [
+            {
+              "name": "落地）",
+              "states": [
+                "canon_hooks_bound",
+                "human_accepted",
+                "indexed",
+                "layout_contracts_written",
+                "qa_pass",
+                "registry_indexed",
+                "release_candidate",
+                "scaffold_present",
+                "schema_planned"
+              ],
+              "transitions": [
+                {
+                  "from": "schema_planned",
+                  "to": "registry_indexed",
+                  "guard": "`registry/content-schema.yaml` present"
+                },
+                {
+                  "from": "registry_indexed",
+                  "to": "layout_contracts_written",
+                  "guard": "master/storyworld/campaign/episode/binding contracts"
+                },
+                {
+                  "from": "layout_contracts_written",
+                  "to": "scaffold_present",
+                  "guard": "example dirs + README under `content/`"
+                },
+                {
+                  "from": "scaffold_present",
+                  "to": "canon_hooks_bound",
+                  "guard": "canon gate fields + illegal transitions in contracts"
+                },
+                {
+                  "from": "canon_hooks_bound",
+                  "to": "indexed",
+                  "guard": "MAP-004 deepen + source-architecture updated"
+                },
+                {
+                  "from": "indexed",
+                  "to": "qa_pass",
+                  "guard": "all TC pass"
+                },
+                {
+                  "from": "qa_pass",
+                  "to": "release_candidate",
+                  "guard": "evidence complete"
+                },
+                {
+                  "from": "release_candidate",
+                  "to": "human_accepted",
+                  "guard": "human confirmed"
+                }
+              ]
+            }
+          ],
+          "illegal_transition_slots": [
+            {
+              "description": "schema_planned → scaffold_present（跳过 registry 与 contracts）",
+              "aggregate": "",
+              "source": "truth"
+            },
+            {
+              "description": "canon_hooks_bound → qa_pass（跳过 indexed / MAP-004）",
+              "aggregate": "",
+              "source": "truth"
+            },
+            {
+              "description": "StoryMaster episode `canon_gate_status: review_required` → content_state `generated`（illegal）",
+              "aggregate": "",
+              "source": "truth"
+            },
+            {
+              "description": "lane=canon 使用 `fast_lane_skip`（illegal）",
+              "aggregate": "",
+              "source": "truth"
+            },
+            {
+              "description": "indexed → human_accepted（跳过 QA）",
+              "aggregate": "",
+              "source": "truth"
+            },
+            {
+              "description": "宣称 Lake D 形态生产链已完成",
+              "aggregate": "",
+              "source": "truth"
+            },
+            {
+              "description": "宣称 metrics 回流系统已交付（Lake E）",
+              "aggregate": "",
+              "source": "truth"
+            },
+            {
+              "description": "schema 冻结即海 closure",
+              "aggregate": "",
+              "source": "truth"
+            }
+          ],
+          "acceptance_criteria": [
+            {
+              "ac_id": "AC-SCHEMA-001",
+              "description": "进入 `registry_indexed`：`registry/content-schema.yaml` 登记 master / storyworld / campaign / episode / binding 五类契约及 `schema_version`"
+            },
+            {
+              "ac_id": "AC-SCHEMA-002",
+              "description": "进入 `layout_contracts_written`：`contracts/master-content.schema.yaml` 定义 FactMaster / StoryMaster 的 `content/masters/{vertical}/{slug}/` 必填文件（meta.yaml、MASTER.md）与 `kind` 枚举"
+            },
+            {
+              "ac_id": "AC-SCHEMA-003",
+              "description": "`contracts/storyworld.schema.yaml` 定义 `content/storyworlds/{world_slug}/`（world.yaml、bible.md、canon-ledger.yaml、characters/、timeline/）"
+            },
+            {
+              "ac_id": "AC-SCHEMA-004",
+              "description": "`contracts/campaign.schema.yaml` 定义 `content/distribution/campaigns/{campaign_id}.yaml`：campaign_id、lane、objective、master_refs、可选 world_slug、schedule_intent"
+            },
+            {
+              "ac_id": "AC-SCHEMA-005",
+              "description": "`contracts/narrative-episode.schema.yaml` 定义 episode_id、world_slug、master_id、sequence、canon_gate_status（`review_required` / `passed` / `failed`）"
+            },
+            {
+              "ac_id": "AC-SCHEMA-006",
+              "description": "`contracts/distribution-binding.schema.yaml` 定义 binding_id、campaign_id、presentation_id、endpoint_ref；与 pipeline-contract 路径一致"
+            },
+            {
+              "ac_id": "AC-SCHEMA-007",
+              "description": "Canon 钩子：contracts 与 `skills/_internal/orchestration/pipeline-contract.md` 声明 illegal：episode 未过 canon gate → generated；canon lane 禁用 fast_lane_skip"
+            },
+            {
+              "ac_id": "AC-SCHEMA-008",
+              "description": "MAP-004 加深：`contracts/master-freeze-checklist.md` 存在；`registry/adapter-migration-matrix.md` MAP-004 行 status 更新为 `distilled_schema`"
+            },
+            {
+              "ac_id": "AC-SCHEMA-009",
+              "description": "US-PRISM-002 可追溯：truth 含连载旅程；`skills/prism-goal/references/modes/loop-campaign.md` 引用 `content/distribution/campaigns/` 与 storyworld 路径"
+            },
+            {
+              "ac_id": "AC-SCHEMA-010",
+              "description": "Non-goals 排除 Lake D/E/F；illegal：宣称形态生产链完成 / metrics 系统已交付 / 跳过 qa_pass；不得宣称海 closure"
+            }
+          ],
+          "bound_ac_ids": [
+            "AC-SCHEMA-001",
+            "AC-SCHEMA-002",
+            "AC-SCHEMA-003",
+            "AC-SCHEMA-004",
+            "AC-SCHEMA-006",
+            "AC-SCHEMA-007",
+            "AC-SCHEMA-008",
+            "AC-SCHEMA-009",
+            "AC-SCHEMA-010"
+          ],
+          "orphan_ac_ids": [],
+          "aggregates_missing_illegal_slots": [],
+          "raw_section_titles": [
+            "人话",
+            "User Intent",
+            "User Intent Snapshot",
+            "Intent Coverage Matrix",
+            "First principles（域）",
+            "用户旅程 / 故事",
+            "Domain Model",
+            "Domain FSM（schema 落地）",
+            "Illegal transitions",
+            "FSM 五元组",
+            "Alignment Surface",
+            "Deferral Ledger",
+            "Acceptance Criteria",
+            "Non-goals",
+            "Freeze readiness"
+          ]
+        },
+        "validation": {
+          "schema_version": "1.0",
+          "required": true,
+          "blocked": false,
+          "status": "pass",
+          "reason_code": "",
+          "findings": [],
+          "projection": {
+            "schema_version": "1.0",
+            "domain_fsm_schema": "domain-fsm.v1",
+            "entity_precedence_schema": "entity-precedence.v1",
+            "frontmatter": {
+              "slug": "prism-campaign-schema-v1",
+              "version": "v0.0.1",
+              "status": "frozen",
+              "revision_id": "R1",
+              "language": "zh",
+              "domain_required": "true",
+              "ux_required": "false",
+              "parser_contract": "beacon-feature-package-v2",
+              "materials_status": "current",
+              "package_maturity": "filled",
+              "truth_source_model": "intent_first",
+              "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+              "canonical_refs": {
+                "prd": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+                "user_story": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+                "test_case": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md"
+              },
+              "provenance": {
+                "- ac_id": "AC-SCHEMA-009",
+                "source_type": "user_intent",
+                "source_ref": "utterance 2026-08-11: 同意继续 Lake C freeze package"
+              }
+            },
+            "frontmatter_errors": [],
+            "has_domain_model_section": true,
+            "has_domain_fsm_section": true,
+            "has_illegal_transition_section": true,
+            "entities": [
+              {
+                "entity": "Campaign",
+                "key": "campaign_id",
+                "precedence": "营销/连载战役根；`lane`；`master_refs[]`；可选 `world_slug`",
+                "requires": "营销/连载战役根；`lane`；`master_refs[]`；可选 `world_slug`"
+              },
+              {
+                "entity": "MasterContent",
+                "key": "master_id",
+                "precedence": "`kind: fact\\",
+                "requires": "`kind: fact\\"
+              },
+              {
+                "entity": "StoryWorld",
+                "key": "world_slug",
+                "precedence": "bible / canon ledger / 角色 / 时间线",
+                "requires": "bible / canon ledger / 角色 / 时间线"
+              },
+              {
+                "entity": "NarrativeEpisode",
+                "key": "episode_id",
+                "precedence": "属于 StoryWorld；引用 `master_id`；`canon_gate_status`",
+                "requires": "属于 StoryWorld；引用 `master_id`；`canon_gate_status`"
+              },
+              {
+                "entity": "DistributionBinding",
+                "key": "binding_id",
+                "precedence": "campaign × presentation × endpoint",
+                "requires": "campaign × presentation × endpoint"
+              },
+              {
+                "entity": "SchemaRegistry",
+                "key": "schema_id",
+                "precedence": "本湖契约版本索引",
+                "requires": "本湖契约版本索引"
+              }
+            ],
+            "entity_precedence": [
+              {
+                "entity": "Campaign",
+                "key": "campaign_id",
+                "precedence": "营销/连载战役根；`lane`；`master_refs[]`；可选 `world_slug`",
+                "requires": "营销/连载战役根；`lane`；`master_refs[]`；可选 `world_slug`"
+              },
+              {
+                "entity": "MasterContent",
+                "key": "master_id",
+                "precedence": "`kind: fact\\",
+                "requires": "`kind: fact\\"
+              },
+              {
+                "entity": "StoryWorld",
+                "key": "world_slug",
+                "precedence": "bible / canon ledger / 角色 / 时间线",
+                "requires": "bible / canon ledger / 角色 / 时间线"
+              },
+              {
+                "entity": "NarrativeEpisode",
+                "key": "episode_id",
+                "precedence": "属于 StoryWorld；引用 `master_id`；`canon_gate_status`",
+                "requires": "属于 StoryWorld；引用 `master_id`；`canon_gate_status`"
+              },
+              {
+                "entity": "DistributionBinding",
+                "key": "binding_id",
+                "precedence": "campaign × presentation × endpoint",
+                "requires": "campaign × presentation × endpoint"
+              },
+              {
+                "entity": "SchemaRegistry",
+                "key": "schema_id",
+                "precedence": "本湖契约版本索引",
+                "requires": "本湖契约版本索引"
+              }
+            ],
+            "aggregates": [
+              {
+                "name": "落地）",
+                "states": [
+                  "canon_hooks_bound",
+                  "human_accepted",
+                  "indexed",
+                  "layout_contracts_written",
+                  "qa_pass",
+                  "registry_indexed",
+                  "release_candidate",
+                  "scaffold_present",
+                  "schema_planned"
+                ],
+                "transitions": [
+                  {
+                    "from": "schema_planned",
+                    "to": "registry_indexed",
+                    "guard": "`registry/content-schema.yaml` present"
+                  },
+                  {
+                    "from": "registry_indexed",
+                    "to": "layout_contracts_written",
+                    "guard": "master/storyworld/campaign/episode/binding contracts"
+                  },
+                  {
+                    "from": "layout_contracts_written",
+                    "to": "scaffold_present",
+                    "guard": "example dirs + README under `content/`"
+                  },
+                  {
+                    "from": "scaffold_present",
+                    "to": "canon_hooks_bound",
+                    "guard": "canon gate fields + illegal transitions in contracts"
+                  },
+                  {
+                    "from": "canon_hooks_bound",
+                    "to": "indexed",
+                    "guard": "MAP-004 deepen + source-architecture updated"
+                  },
+                  {
+                    "from": "indexed",
+                    "to": "qa_pass",
+                    "guard": "all TC pass"
+                  },
+                  {
+                    "from": "qa_pass",
+                    "to": "release_candidate",
+                    "guard": "evidence complete"
+                  },
+                  {
+                    "from": "release_candidate",
+                    "to": "human_accepted",
+                    "guard": "human confirmed"
+                  }
+                ]
+              }
+            ],
+            "illegal_transition_slots": [
+              {
+                "description": "schema_planned → scaffold_present（跳过 registry 与 contracts）",
+                "aggregate": "",
+                "source": "truth"
+              },
+              {
+                "description": "canon_hooks_bound → qa_pass（跳过 indexed / MAP-004）",
+                "aggregate": "",
+                "source": "truth"
+              },
+              {
+                "description": "StoryMaster episode `canon_gate_status: review_required` → content_state `generated`（illegal）",
+                "aggregate": "",
+                "source": "truth"
+              },
+              {
+                "description": "lane=canon 使用 `fast_lane_skip`（illegal）",
+                "aggregate": "",
+                "source": "truth"
+              },
+              {
+                "description": "indexed → human_accepted（跳过 QA）",
+                "aggregate": "",
+                "source": "truth"
+              },
+              {
+                "description": "宣称 Lake D 形态生产链已完成",
+                "aggregate": "",
+                "source": "truth"
+              },
+              {
+                "description": "宣称 metrics 回流系统已交付（Lake E）",
+                "aggregate": "",
+                "source": "truth"
+              },
+              {
+                "description": "schema 冻结即海 closure",
+                "aggregate": "",
+                "source": "truth"
+              }
+            ],
+            "acceptance_criteria": [
+              {
+                "ac_id": "AC-SCHEMA-001",
+                "description": "进入 `registry_indexed`：`registry/content-schema.yaml` 登记 master / storyworld / campaign / episode / binding 五类契约及 `schema_version`"
+              },
+              {
+                "ac_id": "AC-SCHEMA-002",
+                "description": "进入 `layout_contracts_written`：`contracts/master-content.schema.yaml` 定义 FactMaster / StoryMaster 的 `content/masters/{vertical}/{slug}/` 必填文件（meta.yaml、MASTER.md）与 `kind` 枚举"
+              },
+              {
+                "ac_id": "AC-SCHEMA-003",
+                "description": "`contracts/storyworld.schema.yaml` 定义 `content/storyworlds/{world_slug}/`（world.yaml、bible.md、canon-ledger.yaml、characters/、timeline/）"
+              },
+              {
+                "ac_id": "AC-SCHEMA-004",
+                "description": "`contracts/campaign.schema.yaml` 定义 `content/distribution/campaigns/{campaign_id}.yaml`：campaign_id、lane、objective、master_refs、可选 world_slug、schedule_intent"
+              },
+              {
+                "ac_id": "AC-SCHEMA-005",
+                "description": "`contracts/narrative-episode.schema.yaml` 定义 episode_id、world_slug、master_id、sequence、canon_gate_status（`review_required` / `passed` / `failed`）"
+              },
+              {
+                "ac_id": "AC-SCHEMA-006",
+                "description": "`contracts/distribution-binding.schema.yaml` 定义 binding_id、campaign_id、presentation_id、endpoint_ref；与 pipeline-contract 路径一致"
+              },
+              {
+                "ac_id": "AC-SCHEMA-007",
+                "description": "Canon 钩子：contracts 与 `skills/_internal/orchestration/pipeline-contract.md` 声明 illegal：episode 未过 canon gate → generated；canon lane 禁用 fast_lane_skip"
+              },
+              {
+                "ac_id": "AC-SCHEMA-008",
+                "description": "MAP-004 加深：`contracts/master-freeze-checklist.md` 存在；`registry/adapter-migration-matrix.md` MAP-004 行 status 更新为 `distilled_schema`"
+              },
+              {
+                "ac_id": "AC-SCHEMA-009",
+                "description": "US-PRISM-002 可追溯：truth 含连载旅程；`skills/prism-goal/references/modes/loop-campaign.md` 引用 `content/distribution/campaigns/` 与 storyworld 路径"
+              },
+              {
+                "ac_id": "AC-SCHEMA-010",
+                "description": "Non-goals 排除 Lake D/E/F；illegal：宣称形态生产链完成 / metrics 系统已交付 / 跳过 qa_pass；不得宣称海 closure"
+              }
+            ],
+            "bound_ac_ids": [
+              "AC-SCHEMA-001",
+              "AC-SCHEMA-002",
+              "AC-SCHEMA-003",
+              "AC-SCHEMA-004",
+              "AC-SCHEMA-006",
+              "AC-SCHEMA-007",
+              "AC-SCHEMA-008",
+              "AC-SCHEMA-009",
+              "AC-SCHEMA-010"
+            ],
+            "orphan_ac_ids": [],
+            "aggregates_missing_illegal_slots": [],
+            "raw_section_titles": [
+              "人话",
+              "User Intent",
+              "User Intent Snapshot",
+              "Intent Coverage Matrix",
+              "First principles（域）",
+              "用户旅程 / 故事",
+              "Domain Model",
+              "Domain FSM（schema 落地）",
+              "Illegal transitions",
+              "FSM 五元组",
+              "Alignment Surface",
+              "Deferral Ledger",
+              "Acceptance Criteria",
+              "Non-goals",
+              "Freeze readiness"
+            ]
+          },
+          "summary": {
+            "entity_count": 6,
+            "aggregate_count": 1,
+            "illegal_slot_count": 8,
+            "orphan_ac_count": 0,
+            "bound_ac_count": 9
+          }
+        },
+        "recommended_action": ""
+      },
+      "human_closure_contract": {
+        "required": false,
+        "research_path": "docs/beacon/v0.0.1/research/prism-campaign-schema-v1.md",
+        "research_exists": true,
+        "source_architecture_path": "docs/beacon/v0.0.1/source-architecture/index.md",
+        "source_architecture_exists": true,
+        "required_sections": [
+          "architecture",
+          "business_flow"
+        ],
+        "missing_sections": [
+          "architecture",
+          "business_flow"
+        ],
+        "diagram_types": [],
+        "complexity_signals": []
+      },
+      "requirement_closure_contract": {
+        "required": true,
+        "chain_order": [
+          "research",
+          "prd",
+          "user_story",
+          "test_case",
+          "requirement_clarity",
+          "freeze"
+        ],
+        "human_closure_required": false,
+        "paths": {
+          "research": "docs/beacon/v0.0.1/research/prism-campaign-schema-v1.md",
+          "prd": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+          "user_story": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+          "test_case": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md"
+        },
+        "exists": {
+          "research": true,
+          "prd": true,
+          "user_story": true,
+          "test_case": true
+        },
+        "required_research_sections": [],
+        "missing_research_sections": [],
+        "ac_projection": {
+          "prd_ac_ids": [],
+          "user_story_ac_ids": [],
+          "test_case_ac_ids": [],
+          "upstream_ac_ids": [],
+          "missing_test_case_ac_ids": []
+        }
+      },
+      "version_projection_truth_contract": {
+        "required": false,
+        "supported": false,
+        "projection_types": [],
+        "research_path": "docs/beacon/v0.0.1/research/prism-campaign-schema-v1.md",
+        "research_exists": true,
+        "required_fields": [
+          "prd_refs",
+          "user_story_refs",
+          "test_case_refs",
+          "coverage_notes",
+          "out_of_scope_notes"
+        ],
+        "field_presence": {
+          "prd_refs": false,
+          "user_story_refs": false,
+          "test_case_refs": false,
+          "coverage_notes": false,
+          "out_of_scope_notes": false
+        },
+        "missing_fields": [],
+        "required_refs": {
+          "prd_refs": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+          "user_story_refs": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+          "test_case_refs": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md"
+        },
+        "missing_ref_targets": [],
+        "ready": false
+      },
+      "support_write_topology_contract": {
+        "schema_version": "1.0",
+        "supported": true,
+        "status": "pass",
+        "blocked": false,
+        "reason_code": "",
+        "diagnostics": []
+      },
+      "required_artifacts": [],
+      "scanned_files": [
+        "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+        "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+        "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tasks.md",
+        "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/evidence.md",
+        "docs/beacon/v0.0.1/research/prism-campaign-schema-v1.md"
+      ]
+    },
+    "report": {
+      "json": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-campaign-schema-v1.json",
+      "markdown": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-campaign-schema-v1.md"
+    },
+    "writeback": {
+      "schema_version": "1.0",
+      "feature": "prism-campaign-schema-v1",
+      "feature_slug": "prism-campaign-schema-v1",
+      "version": "v0.0.1",
+      "status": "pass",
+      "blocked": false,
+      "reason_code": "",
+      "report_json_path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-campaign-schema-v1.json",
+      "report_markdown_path": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-campaign-schema-v1.md",
+      "finding_count": 0,
+      "run_id": "",
+      "source": "change.refreeze-chain",
+      "written_at": "2026-08-11T15:15:06.980671+00:00",
+      "state_path": ".beacon/state/requirement-clarity-prism-campaign-schema-v1.json"
+    }
+  },
+  "truth_integrity_gate": {
+    "schema_version": "1.0",
+    "feature": "prism-campaign-schema-v1",
+    "feature_slug": "prism-campaign-schema-v1",
+    "version": "v0.0.1",
+    "mode": "block",
+    "truth_status": "frozen",
+    "status": "pass",
+    "blocked": false,
+    "reason_code": "",
+    "findings": [],
+    "finding_count": 0,
+    "requirement_clarity": {
+      "schema_version": "1.0",
+      "feature": "prism-campaign-schema-v1",
+      "feature_slug": "prism-campaign-schema-v1",
+      "version": "v0.0.1",
+      "runtime_version": "v1.6.12",
+      "runtime_capability_line": "v1.3.3",
+      "required": true,
+      "reason_code": "",
+      "blocked": false,
+      "status": "pass",
+      "findings": [],
+      "report_json_path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-campaign-schema-v1.json",
+      "report_markdown_path": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-campaign-schema-v1.md",
+      "state_path": ".beacon/state/requirement-clarity-prism-campaign-schema-v1.json",
+      "diagram_truth": {
+        "schema_version": "1.0",
+        "version": "v0.0.1",
+        "supported": false,
+        "required": false,
+        "ready": false,
+        "diagram_types": [],
+        "state_axes": [],
+        "missing_diagram_types": [],
+        "missing_state_axes": false,
+        "complexity_signals": [],
+        "review_gates": [],
+        "qa_coverage_hints": [],
+        "evidence_lines": {},
+        "generated_at": "2026-08-11T15:15:06.985230+00:00",
+        "feature": "prism-campaign-schema-v1",
+        "feature_slug": "prism-campaign-schema-v1",
+        "prd_ref": "docs/beacon/v0.0.1/prd/prism-campaign-schema-v1.md",
+        "user_story_ref": "docs/beacon/v0.0.1/user-story/prism-campaign-schema-v1.md"
+      },
+      "domain_fsm_gate": {
+        "schema_version": "1.0",
+        "feature": "prism-campaign-schema-v1",
+        "feature_slug": "prism-campaign-schema-v1",
+        "version": "v0.0.1",
+        "truth_path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+        "tests_path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+        "required": true,
+        "blocked": false,
+        "status": "pass",
+        "reason_code": "",
+        "findings": [],
+        "requirement": {
+          "required": true,
+          "reason": "explicit_domain_mark",
+          "explicit": true,
+          "partial": true,
+          "complexity": false,
+          "business_signal": false,
+          "version_supported": false
+        },
+        "projection": {
+          "schema_version": "1.0",
+          "domain_fsm_schema": "domain-fsm.v1",
+          "entity_precedence_schema": "entity-precedence.v1",
+          "frontmatter": {
+            "slug": "prism-campaign-schema-v1",
+            "version": "v0.0.1",
+            "status": "frozen",
+            "revision_id": "R1",
+            "language": "zh",
+            "domain_required": "true",
+            "ux_required": "false",
+            "parser_contract": "beacon-feature-package-v2",
+            "materials_status": "current",
+            "package_maturity": "filled",
+            "truth_source_model": "intent_first",
+            "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+            "canonical_refs": {
+              "prd": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+              "user_story": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+              "test_case": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md"
+            },
+            "provenance": {
+              "- ac_id": "AC-SCHEMA-009",
+              "source_type": "user_intent",
+              "source_ref": "utterance 2026-08-11: 同意继续 Lake C freeze package"
+            }
+          },
+          "frontmatter_errors": [],
+          "has_domain_model_section": true,
+          "has_domain_fsm_section": true,
+          "has_illegal_transition_section": true,
+          "entities": [
+            {
+              "entity": "Campaign",
+              "key": "campaign_id",
+              "precedence": "营销/连载战役根；`lane`；`master_refs[]`；可选 `world_slug`",
+              "requires": "营销/连载战役根；`lane`；`master_refs[]`；可选 `world_slug`"
+            },
+            {
+              "entity": "MasterContent",
+              "key": "master_id",
+              "precedence": "`kind: fact\\",
+              "requires": "`kind: fact\\"
+            },
+            {
+              "entity": "StoryWorld",
+              "key": "world_slug",
+              "precedence": "bible / canon ledger / 角色 / 时间线",
+              "requires": "bible / canon ledger / 角色 / 时间线"
+            },
+            {
+              "entity": "NarrativeEpisode",
+              "key": "episode_id",
+              "precedence": "属于 StoryWorld；引用 `master_id`；`canon_gate_status`",
+              "requires": "属于 StoryWorld；引用 `master_id`；`canon_gate_status`"
+            },
+            {
+              "entity": "DistributionBinding",
+              "key": "binding_id",
+              "precedence": "campaign × presentation × endpoint",
+              "requires": "campaign × presentation × endpoint"
+            },
+            {
+              "entity": "SchemaRegistry",
+              "key": "schema_id",
+              "precedence": "本湖契约版本索引",
+              "requires": "本湖契约版本索引"
+            }
+          ],
+          "entity_precedence": [
+            {
+              "entity": "Campaign",
+              "key": "campaign_id",
+              "precedence": "营销/连载战役根；`lane`；`master_refs[]`；可选 `world_slug`",
+              "requires": "营销/连载战役根；`lane`；`master_refs[]`；可选 `world_slug`"
+            },
+            {
+              "entity": "MasterContent",
+              "key": "master_id",
+              "precedence": "`kind: fact\\",
+              "requires": "`kind: fact\\"
+            },
+            {
+              "entity": "StoryWorld",
+              "key": "world_slug",
+              "precedence": "bible / canon ledger / 角色 / 时间线",
+              "requires": "bible / canon ledger / 角色 / 时间线"
+            },
+            {
+              "entity": "NarrativeEpisode",
+              "key": "episode_id",
+              "precedence": "属于 StoryWorld；引用 `master_id`；`canon_gate_status`",
+              "requires": "属于 StoryWorld；引用 `master_id`；`canon_gate_status`"
+            },
+            {
+              "entity": "DistributionBinding",
+              "key": "binding_id",
+              "precedence": "campaign × presentation × endpoint",
+              "requires": "campaign × presentation × endpoint"
+            },
+            {
+              "entity": "SchemaRegistry",
+              "key": "schema_id",
+              "precedence": "本湖契约版本索引",
+              "requires": "本湖契约版本索引"
+            }
+          ],
+          "aggregates": [
+            {
+              "name": "落地）",
+              "states": [
+                "canon_hooks_bound",
+                "human_accepted",
+                "indexed",
+                "layout_contracts_written",
+                "qa_pass",
+                "registry_indexed",
+                "release_candidate",
+                "scaffold_present",
+                "schema_planned"
+              ],
+              "transitions": [
+                {
+                  "from": "schema_planned",
+                  "to": "registry_indexed",
+                  "guard": "`registry/content-schema.yaml` present"
+                },
+                {
+                  "from": "registry_indexed",
+                  "to": "layout_contracts_written",
+                  "guard": "master/storyworld/campaign/episode/binding contracts"
+                },
+                {
+                  "from": "layout_contracts_written",
+                  "to": "scaffold_present",
+                  "guard": "example dirs + README under `content/`"
+                },
+                {
+                  "from": "scaffold_present",
+                  "to": "canon_hooks_bound",
+                  "guard": "canon gate fields + illegal transitions in contracts"
+                },
+                {
+                  "from": "canon_hooks_bound",
+                  "to": "indexed",
+                  "guard": "MAP-004 deepen + source-architecture updated"
+                },
+                {
+                  "from": "indexed",
+                  "to": "qa_pass",
+                  "guard": "all TC pass"
+                },
+                {
+                  "from": "qa_pass",
+                  "to": "release_candidate",
+                  "guard": "evidence complete"
+                },
+                {
+                  "from": "release_candidate",
+                  "to": "human_accepted",
+                  "guard": "human confirmed"
+                }
+              ]
+            }
+          ],
+          "illegal_transition_slots": [
+            {
+              "description": "schema_planned → scaffold_present（跳过 registry 与 contracts）",
+              "aggregate": "",
+              "source": "truth"
+            },
+            {
+              "description": "canon_hooks_bound → qa_pass（跳过 indexed / MAP-004）",
+              "aggregate": "",
+              "source": "truth"
+            },
+            {
+              "description": "StoryMaster episode `canon_gate_status: review_required` → content_state `generated`（illegal）",
+              "aggregate": "",
+              "source": "truth"
+            },
+            {
+              "description": "lane=canon 使用 `fast_lane_skip`（illegal）",
+              "aggregate": "",
+              "source": "truth"
+            },
+            {
+              "description": "indexed → human_accepted（跳过 QA）",
+              "aggregate": "",
+              "source": "truth"
+            },
+            {
+              "description": "宣称 Lake D 形态生产链已完成",
+              "aggregate": "",
+              "source": "truth"
+            },
+            {
+              "description": "宣称 metrics 回流系统已交付（Lake E）",
+              "aggregate": "",
+              "source": "truth"
+            },
+            {
+              "description": "schema 冻结即海 closure",
+              "aggregate": "",
+              "source": "truth"
+            }
+          ],
+          "acceptance_criteria": [
+            {
+              "ac_id": "AC-SCHEMA-001",
+              "description": "进入 `registry_indexed`：`registry/content-schema.yaml` 登记 master / storyworld / campaign / episode / binding 五类契约及 `schema_version`"
+            },
+            {
+              "ac_id": "AC-SCHEMA-002",
+              "description": "进入 `layout_contracts_written`：`contracts/master-content.schema.yaml` 定义 FactMaster / StoryMaster 的 `content/masters/{vertical}/{slug}/` 必填文件（meta.yaml、MASTER.md）与 `kind` 枚举"
+            },
+            {
+              "ac_id": "AC-SCHEMA-003",
+              "description": "`contracts/storyworld.schema.yaml` 定义 `content/storyworlds/{world_slug}/`（world.yaml、bible.md、canon-ledger.yaml、characters/、timeline/）"
+            },
+            {
+              "ac_id": "AC-SCHEMA-004",
+              "description": "`contracts/campaign.schema.yaml` 定义 `content/distribution/campaigns/{campaign_id}.yaml`：campaign_id、lane、objective、master_refs、可选 world_slug、schedule_intent"
+            },
+            {
+              "ac_id": "AC-SCHEMA-005",
+              "description": "`contracts/narrative-episode.schema.yaml` 定义 episode_id、world_slug、master_id、sequence、canon_gate_status（`review_required` / `passed` / `failed`）"
+            },
+            {
+              "ac_id": "AC-SCHEMA-006",
+              "description": "`contracts/distribution-binding.schema.yaml` 定义 binding_id、campaign_id、presentation_id、endpoint_ref；与 pipeline-contract 路径一致"
+            },
+            {
+              "ac_id": "AC-SCHEMA-007",
+              "description": "Canon 钩子：contracts 与 `skills/_internal/orchestration/pipeline-contract.md` 声明 illegal：episode 未过 canon gate → generated；canon lane 禁用 fast_lane_skip"
+            },
+            {
+              "ac_id": "AC-SCHEMA-008",
+              "description": "MAP-004 加深：`contracts/master-freeze-checklist.md` 存在；`registry/adapter-migration-matrix.md` MAP-004 行 status 更新为 `distilled_schema`"
+            },
+            {
+              "ac_id": "AC-SCHEMA-009",
+              "description": "US-PRISM-002 可追溯：truth 含连载旅程；`skills/prism-goal/references/modes/loop-campaign.md` 引用 `content/distribution/campaigns/` 与 storyworld 路径"
+            },
+            {
+              "ac_id": "AC-SCHEMA-010",
+              "description": "Non-goals 排除 Lake D/E/F；illegal：宣称形态生产链完成 / metrics 系统已交付 / 跳过 qa_pass；不得宣称海 closure"
+            }
+          ],
+          "bound_ac_ids": [
+            "AC-SCHEMA-001",
+            "AC-SCHEMA-002",
+            "AC-SCHEMA-003",
+            "AC-SCHEMA-004",
+            "AC-SCHEMA-006",
+            "AC-SCHEMA-007",
+            "AC-SCHEMA-008",
+            "AC-SCHEMA-009",
+            "AC-SCHEMA-010"
+          ],
+          "orphan_ac_ids": [],
+          "aggregates_missing_illegal_slots": [],
+          "raw_section_titles": [
+            "人话",
+            "User Intent",
+            "User Intent Snapshot",
+            "Intent Coverage Matrix",
+            "First principles（域）",
+            "用户旅程 / 故事",
+            "Domain Model",
+            "Domain FSM（schema 落地）",
+            "Illegal transitions",
+            "FSM 五元组",
+            "Alignment Surface",
+            "Deferral Ledger",
+            "Acceptance Criteria",
+            "Non-goals",
+            "Freeze readiness"
+          ]
+        },
+        "validation": {
+          "schema_version": "1.0",
+          "required": true,
+          "blocked": false,
+          "status": "pass",
+          "reason_code": "",
+          "findings": [],
+          "projection": {
+            "schema_version": "1.0",
+            "domain_fsm_schema": "domain-fsm.v1",
+            "entity_precedence_schema": "entity-precedence.v1",
+            "frontmatter": {
+              "slug": "prism-campaign-schema-v1",
+              "version": "v0.0.1",
+              "status": "frozen",
+              "revision_id": "R1",
+              "language": "zh",
+              "domain_required": "true",
+              "ux_required": "false",
+              "parser_contract": "beacon-feature-package-v2",
+              "materials_status": "current",
+              "package_maturity": "filled",
+              "truth_source_model": "intent_first",
+              "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+              "canonical_refs": {
+                "prd": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+                "user_story": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+                "test_case": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md"
+              },
+              "provenance": {
+                "- ac_id": "AC-SCHEMA-009",
+                "source_type": "user_intent",
+                "source_ref": "utterance 2026-08-11: 同意继续 Lake C freeze package"
+              }
+            },
+            "frontmatter_errors": [],
+            "has_domain_model_section": true,
+            "has_domain_fsm_section": true,
+            "has_illegal_transition_section": true,
+            "entities": [
+              {
+                "entity": "Campaign",
+                "key": "campaign_id",
+                "precedence": "营销/连载战役根；`lane`；`master_refs[]`；可选 `world_slug`",
+                "requires": "营销/连载战役根；`lane`；`master_refs[]`；可选 `world_slug`"
+              },
+              {
+                "entity": "MasterContent",
+                "key": "master_id",
+                "precedence": "`kind: fact\\",
+                "requires": "`kind: fact\\"
+              },
+              {
+                "entity": "StoryWorld",
+                "key": "world_slug",
+                "precedence": "bible / canon ledger / 角色 / 时间线",
+                "requires": "bible / canon ledger / 角色 / 时间线"
+              },
+              {
+                "entity": "NarrativeEpisode",
+                "key": "episode_id",
+                "precedence": "属于 StoryWorld；引用 `master_id`；`canon_gate_status`",
+                "requires": "属于 StoryWorld；引用 `master_id`；`canon_gate_status`"
+              },
+              {
+                "entity": "DistributionBinding",
+                "key": "binding_id",
+                "precedence": "campaign × presentation × endpoint",
+                "requires": "campaign × presentation × endpoint"
+              },
+              {
+                "entity": "SchemaRegistry",
+                "key": "schema_id",
+                "precedence": "本湖契约版本索引",
+                "requires": "本湖契约版本索引"
+              }
+            ],
+            "entity_precedence": [
+              {
+                "entity": "Campaign",
+                "key": "campaign_id",
+                "precedence": "营销/连载战役根；`lane`；`master_refs[]`；可选 `world_slug`",
+                "requires": "营销/连载战役根；`lane`；`master_refs[]`；可选 `world_slug`"
+              },
+              {
+                "entity": "MasterContent",
+                "key": "master_id",
+                "precedence": "`kind: fact\\",
+                "requires": "`kind: fact\\"
+              },
+              {
+                "entity": "StoryWorld",
+                "key": "world_slug",
+                "precedence": "bible / canon ledger / 角色 / 时间线",
+                "requires": "bible / canon ledger / 角色 / 时间线"
+              },
+              {
+                "entity": "NarrativeEpisode",
+                "key": "episode_id",
+                "precedence": "属于 StoryWorld；引用 `master_id`；`canon_gate_status`",
+                "requires": "属于 StoryWorld；引用 `master_id`；`canon_gate_status`"
+              },
+              {
+                "entity": "DistributionBinding",
+                "key": "binding_id",
+                "precedence": "campaign × presentation × endpoint",
+                "requires": "campaign × presentation × endpoint"
+              },
+              {
+                "entity": "SchemaRegistry",
+                "key": "schema_id",
+                "precedence": "本湖契约版本索引",
+                "requires": "本湖契约版本索引"
+              }
+            ],
+            "aggregates": [
+              {
+                "name": "落地）",
+                "states": [
+                  "canon_hooks_bound",
+                  "human_accepted",
+                  "indexed",
+                  "layout_contracts_written",
+                  "qa_pass",
+                  "registry_indexed",
+                  "release_candidate",
+                  "scaffold_present",
+                  "schema_planned"
+                ],
+                "transitions": [
+                  {
+                    "from": "schema_planned",
+                    "to": "registry_indexed",
+                    "guard": "`registry/content-schema.yaml` present"
+                  },
+                  {
+                    "from": "registry_indexed",
+                    "to": "layout_contracts_written",
+                    "guard": "master/storyworld/campaign/episode/binding contracts"
+                  },
+                  {
+                    "from": "layout_contracts_written",
+                    "to": "scaffold_present",
+                    "guard": "example dirs + README under `content/`"
+                  },
+                  {
+                    "from": "scaffold_present",
+                    "to": "canon_hooks_bound",
+                    "guard": "canon gate fields + illegal transitions in contracts"
+                  },
+                  {
+                    "from": "canon_hooks_bound",
+                    "to": "indexed",
+                    "guard": "MAP-004 deepen + source-architecture updated"
+                  },
+                  {
+                    "from": "indexed",
+                    "to": "qa_pass",
+                    "guard": "all TC pass"
+                  },
+                  {
+                    "from": "qa_pass",
+                    "to": "release_candidate",
+                    "guard": "evidence complete"
+                  },
+                  {
+                    "from": "release_candidate",
+                    "to": "human_accepted",
+                    "guard": "human confirmed"
+                  }
+                ]
+              }
+            ],
+            "illegal_transition_slots": [
+              {
+                "description": "schema_planned → scaffold_present（跳过 registry 与 contracts）",
+                "aggregate": "",
+                "source": "truth"
+              },
+              {
+                "description": "canon_hooks_bound → qa_pass（跳过 indexed / MAP-004）",
+                "aggregate": "",
+                "source": "truth"
+              },
+              {
+                "description": "StoryMaster episode `canon_gate_status: review_required` → content_state `generated`（illegal）",
+                "aggregate": "",
+                "source": "truth"
+              },
+              {
+                "description": "lane=canon 使用 `fast_lane_skip`（illegal）",
+                "aggregate": "",
+                "source": "truth"
+              },
+              {
+                "description": "indexed → human_accepted（跳过 QA）",
+                "aggregate": "",
+                "source": "truth"
+              },
+              {
+                "description": "宣称 Lake D 形态生产链已完成",
+                "aggregate": "",
+                "source": "truth"
+              },
+              {
+                "description": "宣称 metrics 回流系统已交付（Lake E）",
+                "aggregate": "",
+                "source": "truth"
+              },
+              {
+                "description": "schema 冻结即海 closure",
+                "aggregate": "",
+                "source": "truth"
+              }
+            ],
+            "acceptance_criteria": [
+              {
+                "ac_id": "AC-SCHEMA-001",
+                "description": "进入 `registry_indexed`：`registry/content-schema.yaml` 登记 master / storyworld / campaign / episode / binding 五类契约及 `schema_version`"
+              },
+              {
+                "ac_id": "AC-SCHEMA-002",
+                "description": "进入 `layout_contracts_written`：`contracts/master-content.schema.yaml` 定义 FactMaster / StoryMaster 的 `content/masters/{vertical}/{slug}/` 必填文件（meta.yaml、MASTER.md）与 `kind` 枚举"
+              },
+              {
+                "ac_id": "AC-SCHEMA-003",
+                "description": "`contracts/storyworld.schema.yaml` 定义 `content/storyworlds/{world_slug}/`（world.yaml、bible.md、canon-ledger.yaml、characters/、timeline/）"
+              },
+              {
+                "ac_id": "AC-SCHEMA-004",
+                "description": "`contracts/campaign.schema.yaml` 定义 `content/distribution/campaigns/{campaign_id}.yaml`：campaign_id、lane、objective、master_refs、可选 world_slug、schedule_intent"
+              },
+              {
+                "ac_id": "AC-SCHEMA-005",
+                "description": "`contracts/narrative-episode.schema.yaml` 定义 episode_id、world_slug、master_id、sequence、canon_gate_status（`review_required` / `passed` / `failed`）"
+              },
+              {
+                "ac_id": "AC-SCHEMA-006",
+                "description": "`contracts/distribution-binding.schema.yaml` 定义 binding_id、campaign_id、presentation_id、endpoint_ref；与 pipeline-contract 路径一致"
+              },
+              {
+                "ac_id": "AC-SCHEMA-007",
+                "description": "Canon 钩子：contracts 与 `skills/_internal/orchestration/pipeline-contract.md` 声明 illegal：episode 未过 canon gate → generated；canon lane 禁用 fast_lane_skip"
+              },
+              {
+                "ac_id": "AC-SCHEMA-008",
+                "description": "MAP-004 加深：`contracts/master-freeze-checklist.md` 存在；`registry/adapter-migration-matrix.md` MAP-004 行 status 更新为 `distilled_schema`"
+              },
+              {
+                "ac_id": "AC-SCHEMA-009",
+                "description": "US-PRISM-002 可追溯：truth 含连载旅程；`skills/prism-goal/references/modes/loop-campaign.md` 引用 `content/distribution/campaigns/` 与 storyworld 路径"
+              },
+              {
+                "ac_id": "AC-SCHEMA-010",
+                "description": "Non-goals 排除 Lake D/E/F；illegal：宣称形态生产链完成 / metrics 系统已交付 / 跳过 qa_pass；不得宣称海 closure"
+              }
+            ],
+            "bound_ac_ids": [
+              "AC-SCHEMA-001",
+              "AC-SCHEMA-002",
+              "AC-SCHEMA-003",
+              "AC-SCHEMA-004",
+              "AC-SCHEMA-006",
+              "AC-SCHEMA-007",
+              "AC-SCHEMA-008",
+              "AC-SCHEMA-009",
+              "AC-SCHEMA-010"
+            ],
+            "orphan_ac_ids": [],
+            "aggregates_missing_illegal_slots": [],
+            "raw_section_titles": [
+              "人话",
+              "User Intent",
+              "User Intent Snapshot",
+              "Intent Coverage Matrix",
+              "First principles（域）",
+              "用户旅程 / 故事",
+              "Domain Model",
+              "Domain FSM（schema 落地）",
+              "Illegal transitions",
+              "FSM 五元组",
+              "Alignment Surface",
+              "Deferral Ledger",
+              "Acceptance Criteria",
+              "Non-goals",
+              "Freeze readiness"
+            ]
+          },
+          "summary": {
+            "entity_count": 6,
+            "aggregate_count": 1,
+            "illegal_slot_count": 8,
+            "orphan_ac_count": 0,
+            "bound_ac_count": 9
+          }
+        },
+        "recommended_action": ""
+      },
+      "human_closure_contract": {
+        "required": false,
+        "research_path": "docs/beacon/v0.0.1/research/prism-campaign-schema-v1.md",
+        "research_exists": true,
+        "source_architecture_path": "docs/beacon/v0.0.1/source-architecture/index.md",
+        "source_architecture_exists": true,
+        "required_sections": [
+          "architecture",
+          "business_flow"
+        ],
+        "missing_sections": [
+          "architecture",
+          "business_flow"
+        ],
+        "diagram_types": [],
+        "complexity_signals": []
+      },
+      "requirement_closure_contract": {
+        "required": true,
+        "chain_order": [
+          "research",
+          "prd",
+          "user_story",
+          "test_case",
+          "requirement_clarity",
+          "freeze"
+        ],
+        "human_closure_required": false,
+        "paths": {
+          "research": "docs/beacon/v0.0.1/research/prism-campaign-schema-v1.md",
+          "prd": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+          "user_story": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+          "test_case": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md"
+        },
+        "exists": {
+          "research": true,
+          "prd": true,
+          "user_story": true,
+          "test_case": true
+        },
+        "required_research_sections": [],
+        "missing_research_sections": [],
+        "ac_projection": {
+          "prd_ac_ids": [],
+          "user_story_ac_ids": [],
+          "test_case_ac_ids": [],
+          "upstream_ac_ids": [],
+          "missing_test_case_ac_ids": []
+        }
+      },
+      "version_projection_truth_contract": {
+        "required": false,
+        "supported": false,
+        "projection_types": [],
+        "research_path": "docs/beacon/v0.0.1/research/prism-campaign-schema-v1.md",
+        "research_exists": true,
+        "required_fields": [
+          "prd_refs",
+          "user_story_refs",
+          "test_case_refs",
+          "coverage_notes",
+          "out_of_scope_notes"
+        ],
+        "field_presence": {
+          "prd_refs": false,
+          "user_story_refs": false,
+          "test_case_refs": false,
+          "coverage_notes": false,
+          "out_of_scope_notes": false
+        },
+        "missing_fields": [],
+        "required_refs": {
+          "prd_refs": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+          "user_story_refs": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+          "test_case_refs": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md"
+        },
+        "missing_ref_targets": [],
+        "ready": false
+      },
+      "support_write_topology_contract": {
+        "schema_version": "1.0",
+        "supported": true,
+        "status": "pass",
+        "blocked": false,
+        "reason_code": "",
+        "diagnostics": []
+      },
+      "required_artifacts": [],
+      "scanned_files": [
+        "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+        "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+        "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tasks.md",
+        "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/evidence.md",
+        "docs/beacon/v0.0.1/research/prism-campaign-schema-v1.md"
+      ]
+    },
+    "domain_fsm": {
+      "schema_version": "1.0",
+      "feature": "prism-campaign-schema-v1",
+      "feature_slug": "prism-campaign-schema-v1",
+      "version": "v0.0.1",
+      "truth_path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+      "tests_path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+      "required": true,
+      "blocked": false,
+      "status": "pass",
+      "reason_code": "",
+      "findings": [],
+      "requirement": {
+        "required": true,
+        "reason": "explicit_domain_mark",
+        "explicit": true,
+        "partial": true,
+        "complexity": false,
+        "business_signal": false,
+        "version_supported": false
+      },
+      "projection": {
+        "schema_version": "1.0",
+        "domain_fsm_schema": "domain-fsm.v1",
+        "entity_precedence_schema": "entity-precedence.v1",
+        "frontmatter": {
+          "slug": "prism-campaign-schema-v1",
+          "version": "v0.0.1",
+          "status": "frozen",
+          "revision_id": "R1",
+          "language": "zh",
+          "domain_required": "true",
+          "ux_required": "false",
+          "parser_contract": "beacon-feature-package-v2",
+          "materials_status": "current",
+          "package_maturity": "filled",
+          "truth_source_model": "intent_first",
+          "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+          "canonical_refs": {
+            "prd": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+            "user_story": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+            "test_case": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md"
+          },
+          "provenance": {
+            "- ac_id": "AC-SCHEMA-009",
+            "source_type": "user_intent",
+            "source_ref": "utterance 2026-08-11: 同意继续 Lake C freeze package"
+          }
+        },
+        "frontmatter_errors": [],
+        "has_domain_model_section": true,
+        "has_domain_fsm_section": true,
+        "has_illegal_transition_section": true,
+        "entities": [
+          {
+            "entity": "Campaign",
+            "key": "campaign_id",
+            "precedence": "营销/连载战役根；`lane`；`master_refs[]`；可选 `world_slug`",
+            "requires": "营销/连载战役根；`lane`；`master_refs[]`；可选 `world_slug`"
+          },
+          {
+            "entity": "MasterContent",
+            "key": "master_id",
+            "precedence": "`kind: fact\\",
+            "requires": "`kind: fact\\"
+          },
+          {
+            "entity": "StoryWorld",
+            "key": "world_slug",
+            "precedence": "bible / canon ledger / 角色 / 时间线",
+            "requires": "bible / canon ledger / 角色 / 时间线"
+          },
+          {
+            "entity": "NarrativeEpisode",
+            "key": "episode_id",
+            "precedence": "属于 StoryWorld；引用 `master_id`；`canon_gate_status`",
+            "requires": "属于 StoryWorld；引用 `master_id`；`canon_gate_status`"
+          },
+          {
+            "entity": "DistributionBinding",
+            "key": "binding_id",
+            "precedence": "campaign × presentation × endpoint",
+            "requires": "campaign × presentation × endpoint"
+          },
+          {
+            "entity": "SchemaRegistry",
+            "key": "schema_id",
+            "precedence": "本湖契约版本索引",
+            "requires": "本湖契约版本索引"
+          }
+        ],
+        "entity_precedence": [
+          {
+            "entity": "Campaign",
+            "key": "campaign_id",
+            "precedence": "营销/连载战役根；`lane`；`master_refs[]`；可选 `world_slug`",
+            "requires": "营销/连载战役根；`lane`；`master_refs[]`；可选 `world_slug`"
+          },
+          {
+            "entity": "MasterContent",
+            "key": "master_id",
+            "precedence": "`kind: fact\\",
+            "requires": "`kind: fact\\"
+          },
+          {
+            "entity": "StoryWorld",
+            "key": "world_slug",
+            "precedence": "bible / canon ledger / 角色 / 时间线",
+            "requires": "bible / canon ledger / 角色 / 时间线"
+          },
+          {
+            "entity": "NarrativeEpisode",
+            "key": "episode_id",
+            "precedence": "属于 StoryWorld；引用 `master_id`；`canon_gate_status`",
+            "requires": "属于 StoryWorld；引用 `master_id`；`canon_gate_status`"
+          },
+          {
+            "entity": "DistributionBinding",
+            "key": "binding_id",
+            "precedence": "campaign × presentation × endpoint",
+            "requires": "campaign × presentation × endpoint"
+          },
+          {
+            "entity": "SchemaRegistry",
+            "key": "schema_id",
+            "precedence": "本湖契约版本索引",
+            "requires": "本湖契约版本索引"
+          }
+        ],
+        "aggregates": [
+          {
+            "name": "落地）",
+            "states": [
+              "canon_hooks_bound",
+              "human_accepted",
+              "indexed",
+              "layout_contracts_written",
+              "qa_pass",
+              "registry_indexed",
+              "release_candidate",
+              "scaffold_present",
+              "schema_planned"
+            ],
+            "transitions": [
+              {
+                "from": "schema_planned",
+                "to": "registry_indexed",
+                "guard": "`registry/content-schema.yaml` present"
+              },
+              {
+                "from": "registry_indexed",
+                "to": "layout_contracts_written",
+                "guard": "master/storyworld/campaign/episode/binding contracts"
+              },
+              {
+                "from": "layout_contracts_written",
+                "to": "scaffold_present",
+                "guard": "example dirs + README under `content/`"
+              },
+              {
+                "from": "scaffold_present",
+                "to": "canon_hooks_bound",
+                "guard": "canon gate fields + illegal transitions in contracts"
+              },
+              {
+                "from": "canon_hooks_bound",
+                "to": "indexed",
+                "guard": "MAP-004 deepen + source-architecture updated"
+              },
+              {
+                "from": "indexed",
+                "to": "qa_pass",
+                "guard": "all TC pass"
+              },
+              {
+                "from": "qa_pass",
+                "to": "release_candidate",
+                "guard": "evidence complete"
+              },
+              {
+                "from": "release_candidate",
+                "to": "human_accepted",
+                "guard": "human confirmed"
+              }
+            ]
+          }
+        ],
+        "illegal_transition_slots": [
+          {
+            "description": "schema_planned → scaffold_present（跳过 registry 与 contracts）",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "canon_hooks_bound → qa_pass（跳过 indexed / MAP-004）",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "StoryMaster episode `canon_gate_status: review_required` → content_state `generated`（illegal）",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "lane=canon 使用 `fast_lane_skip`（illegal）",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "indexed → human_accepted（跳过 QA）",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "宣称 Lake D 形态生产链已完成",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "宣称 metrics 回流系统已交付（Lake E）",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "schema 冻结即海 closure",
+            "aggregate": "",
+            "source": "truth"
+          }
+        ],
+        "acceptance_criteria": [
+          {
+            "ac_id": "AC-SCHEMA-001",
+            "description": "进入 `registry_indexed`：`registry/content-schema.yaml` 登记 master / storyworld / campaign / episode / binding 五类契约及 `schema_version`"
+          },
+          {
+            "ac_id": "AC-SCHEMA-002",
+            "description": "进入 `layout_contracts_written`：`contracts/master-content.schema.yaml` 定义 FactMaster / StoryMaster 的 `content/masters/{vertical}/{slug}/` 必填文件（meta.yaml、MASTER.md）与 `kind` 枚举"
+          },
+          {
+            "ac_id": "AC-SCHEMA-003",
+            "description": "`contracts/storyworld.schema.yaml` 定义 `content/storyworlds/{world_slug}/`（world.yaml、bible.md、canon-ledger.yaml、characters/、timeline/）"
+          },
+          {
+            "ac_id": "AC-SCHEMA-004",
+            "description": "`contracts/campaign.schema.yaml` 定义 `content/distribution/campaigns/{campaign_id}.yaml`：campaign_id、lane、objective、master_refs、可选 world_slug、schedule_intent"
+          },
+          {
+            "ac_id": "AC-SCHEMA-005",
+            "description": "`contracts/narrative-episode.schema.yaml` 定义 episode_id、world_slug、master_id、sequence、canon_gate_status（`review_required` / `passed` / `failed`）"
+          },
+          {
+            "ac_id": "AC-SCHEMA-006",
+            "description": "`contracts/distribution-binding.schema.yaml` 定义 binding_id、campaign_id、presentation_id、endpoint_ref；与 pipeline-contract 路径一致"
+          },
+          {
+            "ac_id": "AC-SCHEMA-007",
+            "description": "Canon 钩子：contracts 与 `skills/_internal/orchestration/pipeline-contract.md` 声明 illegal：episode 未过 canon gate → generated；canon lane 禁用 fast_lane_skip"
+          },
+          {
+            "ac_id": "AC-SCHEMA-008",
+            "description": "MAP-004 加深：`contracts/master-freeze-checklist.md` 存在；`registry/adapter-migration-matrix.md` MAP-004 行 status 更新为 `distilled_schema`"
+          },
+          {
+            "ac_id": "AC-SCHEMA-009",
+            "description": "US-PRISM-002 可追溯：truth 含连载旅程；`skills/prism-goal/references/modes/loop-campaign.md` 引用 `content/distribution/campaigns/` 与 storyworld 路径"
+          },
+          {
+            "ac_id": "AC-SCHEMA-010",
+            "description": "Non-goals 排除 Lake D/E/F；illegal：宣称形态生产链完成 / metrics 系统已交付 / 跳过 qa_pass；不得宣称海 closure"
+          }
+        ],
+        "bound_ac_ids": [
+          "AC-SCHEMA-001",
+          "AC-SCHEMA-002",
+          "AC-SCHEMA-003",
+          "AC-SCHEMA-004",
+          "AC-SCHEMA-006",
+          "AC-SCHEMA-007",
+          "AC-SCHEMA-008",
+          "AC-SCHEMA-009",
+          "AC-SCHEMA-010"
+        ],
+        "orphan_ac_ids": [],
+        "aggregates_missing_illegal_slots": [],
+        "raw_section_titles": [
+          "人话",
+          "User Intent",
+          "User Intent Snapshot",
+          "Intent Coverage Matrix",
+          "First principles（域）",
+          "用户旅程 / 故事",
+          "Domain Model",
+          "Domain FSM（schema 落地）",
+          "Illegal transitions",
+          "FSM 五元组",
+          "Alignment Surface",
+          "Deferral Ledger",
+          "Acceptance Criteria",
+          "Non-goals",
+          "Freeze readiness"
+        ]
+      },
+      "validation": {
+        "schema_version": "1.0",
+        "required": true,
+        "blocked": false,
+        "status": "pass",
+        "reason_code": "",
+        "findings": [],
+        "projection": {
+          "schema_version": "1.0",
+          "domain_fsm_schema": "domain-fsm.v1",
+          "entity_precedence_schema": "entity-precedence.v1",
+          "frontmatter": {
+            "slug": "prism-campaign-schema-v1",
+            "version": "v0.0.1",
+            "status": "frozen",
+            "revision_id": "R1",
+            "language": "zh",
+            "domain_required": "true",
+            "ux_required": "false",
+            "parser_contract": "beacon-feature-package-v2",
+            "materials_status": "current",
+            "package_maturity": "filled",
+            "truth_source_model": "intent_first",
+            "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+            "canonical_refs": {
+              "prd": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+              "user_story": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+              "test_case": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md"
+            },
+            "provenance": {
+              "- ac_id": "AC-SCHEMA-009",
+              "source_type": "user_intent",
+              "source_ref": "utterance 2026-08-11: 同意继续 Lake C freeze package"
+            }
+          },
+          "frontmatter_errors": [],
+          "has_domain_model_section": true,
+          "has_domain_fsm_section": true,
+          "has_illegal_transition_section": true,
+          "entities": [
+            {
+              "entity": "Campaign",
+              "key": "campaign_id",
+              "precedence": "营销/连载战役根；`lane`；`master_refs[]`；可选 `world_slug`",
+              "requires": "营销/连载战役根；`lane`；`master_refs[]`；可选 `world_slug`"
+            },
+            {
+              "entity": "MasterContent",
+              "key": "master_id",
+              "precedence": "`kind: fact\\",
+              "requires": "`kind: fact\\"
+            },
+            {
+              "entity": "StoryWorld",
+              "key": "world_slug",
+              "precedence": "bible / canon ledger / 角色 / 时间线",
+              "requires": "bible / canon ledger / 角色 / 时间线"
+            },
+            {
+              "entity": "NarrativeEpisode",
+              "key": "episode_id",
+              "precedence": "属于 StoryWorld；引用 `master_id`；`canon_gate_status`",
+              "requires": "属于 StoryWorld；引用 `master_id`；`canon_gate_status`"
+            },
+            {
+              "entity": "DistributionBinding",
+              "key": "binding_id",
+              "precedence": "campaign × presentation × endpoint",
+              "requires": "campaign × presentation × endpoint"
+            },
+            {
+              "entity": "SchemaRegistry",
+              "key": "schema_id",
+              "precedence": "本湖契约版本索引",
+              "requires": "本湖契约版本索引"
+            }
+          ],
+          "entity_precedence": [
+            {
+              "entity": "Campaign",
+              "key": "campaign_id",
+              "precedence": "营销/连载战役根；`lane`；`master_refs[]`；可选 `world_slug`",
+              "requires": "营销/连载战役根；`lane`；`master_refs[]`；可选 `world_slug`"
+            },
+            {
+              "entity": "MasterContent",
+              "key": "master_id",
+              "precedence": "`kind: fact\\",
+              "requires": "`kind: fact\\"
+            },
+            {
+              "entity": "StoryWorld",
+              "key": "world_slug",
+              "precedence": "bible / canon ledger / 角色 / 时间线",
+              "requires": "bible / canon ledger / 角色 / 时间线"
+            },
+            {
+              "entity": "NarrativeEpisode",
+              "key": "episode_id",
+              "precedence": "属于 StoryWorld；引用 `master_id`；`canon_gate_status`",
+              "requires": "属于 StoryWorld；引用 `master_id`；`canon_gate_status`"
+            },
+            {
+              "entity": "DistributionBinding",
+              "key": "binding_id",
+              "precedence": "campaign × presentation × endpoint",
+              "requires": "campaign × presentation × endpoint"
+            },
+            {
+              "entity": "SchemaRegistry",
+              "key": "schema_id",
+              "precedence": "本湖契约版本索引",
+              "requires": "本湖契约版本索引"
+            }
+          ],
+          "aggregates": [
+            {
+              "name": "落地）",
+              "states": [
+                "canon_hooks_bound",
+                "human_accepted",
+                "indexed",
+                "layout_contracts_written",
+                "qa_pass",
+                "registry_indexed",
+                "release_candidate",
+                "scaffold_present",
+                "schema_planned"
+              ],
+              "transitions": [
+                {
+                  "from": "schema_planned",
+                  "to": "registry_indexed",
+                  "guard": "`registry/content-schema.yaml` present"
+                },
+                {
+                  "from": "registry_indexed",
+                  "to": "layout_contracts_written",
+                  "guard": "master/storyworld/campaign/episode/binding contracts"
+                },
+                {
+                  "from": "layout_contracts_written",
+                  "to": "scaffold_present",
+                  "guard": "example dirs + README under `content/`"
+                },
+                {
+                  "from": "scaffold_present",
+                  "to": "canon_hooks_bound",
+                  "guard": "canon gate fields + illegal transitions in contracts"
+                },
+                {
+                  "from": "canon_hooks_bound",
+                  "to": "indexed",
+                  "guard": "MAP-004 deepen + source-architecture updated"
+                },
+                {
+                  "from": "indexed",
+                  "to": "qa_pass",
+                  "guard": "all TC pass"
+                },
+                {
+                  "from": "qa_pass",
+                  "to": "release_candidate",
+                  "guard": "evidence complete"
+                },
+                {
+                  "from": "release_candidate",
+                  "to": "human_accepted",
+                  "guard": "human confirmed"
+                }
+              ]
+            }
+          ],
+          "illegal_transition_slots": [
+            {
+              "description": "schema_planned → scaffold_present（跳过 registry 与 contracts）",
+              "aggregate": "",
+              "source": "truth"
+            },
+            {
+              "description": "canon_hooks_bound → qa_pass（跳过 indexed / MAP-004）",
+              "aggregate": "",
+              "source": "truth"
+            },
+            {
+              "description": "StoryMaster episode `canon_gate_status: review_required` → content_state `generated`（illegal）",
+              "aggregate": "",
+              "source": "truth"
+            },
+            {
+              "description": "lane=canon 使用 `fast_lane_skip`（illegal）",
+              "aggregate": "",
+              "source": "truth"
+            },
+            {
+              "description": "indexed → human_accepted（跳过 QA）",
+              "aggregate": "",
+              "source": "truth"
+            },
+            {
+              "description": "宣称 Lake D 形态生产链已完成",
+              "aggregate": "",
+              "source": "truth"
+            },
+            {
+              "description": "宣称 metrics 回流系统已交付（Lake E）",
+              "aggregate": "",
+              "source": "truth"
+            },
+            {
+              "description": "schema 冻结即海 closure",
+              "aggregate": "",
+              "source": "truth"
+            }
+          ],
+          "acceptance_criteria": [
+            {
+              "ac_id": "AC-SCHEMA-001",
+              "description": "进入 `registry_indexed`：`registry/content-schema.yaml` 登记 master / storyworld / campaign / episode / binding 五类契约及 `schema_version`"
+            },
+            {
+              "ac_id": "AC-SCHEMA-002",
+              "description": "进入 `layout_contracts_written`：`contracts/master-content.schema.yaml` 定义 FactMaster / StoryMaster 的 `content/masters/{vertical}/{slug}/` 必填文件（meta.yaml、MASTER.md）与 `kind` 枚举"
+            },
+            {
+              "ac_id": "AC-SCHEMA-003",
+              "description": "`contracts/storyworld.schema.yaml` 定义 `content/storyworlds/{world_slug}/`（world.yaml、bible.md、canon-ledger.yaml、characters/、timeline/）"
+            },
+            {
+              "ac_id": "AC-SCHEMA-004",
+              "description": "`contracts/campaign.schema.yaml` 定义 `content/distribution/campaigns/{campaign_id}.yaml`：campaign_id、lane、objective、master_refs、可选 world_slug、schedule_intent"
+            },
+            {
+              "ac_id": "AC-SCHEMA-005",
+              "description": "`contracts/narrative-episode.schema.yaml` 定义 episode_id、world_slug、master_id、sequence、canon_gate_status（`review_required` / `passed` / `failed`）"
+            },
+            {
+              "ac_id": "AC-SCHEMA-006",
+              "description": "`contracts/distribution-binding.schema.yaml` 定义 binding_id、campaign_id、presentation_id、endpoint_ref；与 pipeline-contract 路径一致"
+            },
+            {
+              "ac_id": "AC-SCHEMA-007",
+              "description": "Canon 钩子：contracts 与 `skills/_internal/orchestration/pipeline-contract.md` 声明 illegal：episode 未过 canon gate → generated；canon lane 禁用 fast_lane_skip"
+            },
+            {
+              "ac_id": "AC-SCHEMA-008",
+              "description": "MAP-004 加深：`contracts/master-freeze-checklist.md` 存在；`registry/adapter-migration-matrix.md` MAP-004 行 status 更新为 `distilled_schema`"
+            },
+            {
+              "ac_id": "AC-SCHEMA-009",
+              "description": "US-PRISM-002 可追溯：truth 含连载旅程；`skills/prism-goal/references/modes/loop-campaign.md` 引用 `content/distribution/campaigns/` 与 storyworld 路径"
+            },
+            {
+              "ac_id": "AC-SCHEMA-010",
+              "description": "Non-goals 排除 Lake D/E/F；illegal：宣称形态生产链完成 / metrics 系统已交付 / 跳过 qa_pass；不得宣称海 closure"
+            }
+          ],
+          "bound_ac_ids": [
+            "AC-SCHEMA-001",
+            "AC-SCHEMA-002",
+            "AC-SCHEMA-003",
+            "AC-SCHEMA-004",
+            "AC-SCHEMA-006",
+            "AC-SCHEMA-007",
+            "AC-SCHEMA-008",
+            "AC-SCHEMA-009",
+            "AC-SCHEMA-010"
+          ],
+          "orphan_ac_ids": [],
+          "aggregates_missing_illegal_slots": [],
+          "raw_section_titles": [
+            "人话",
+            "User Intent",
+            "User Intent Snapshot",
+            "Intent Coverage Matrix",
+            "First principles（域）",
+            "用户旅程 / 故事",
+            "Domain Model",
+            "Domain FSM（schema 落地）",
+            "Illegal transitions",
+            "FSM 五元组",
+            "Alignment Surface",
+            "Deferral Ledger",
+            "Acceptance Criteria",
+            "Non-goals",
+            "Freeze readiness"
+          ]
+        },
+        "summary": {
+          "entity_count": 6,
+          "aggregate_count": 1,
+          "illegal_slot_count": 8,
+          "orphan_ac_count": 0,
+          "bound_ac_count": 9
+        }
+      },
+      "recommended_action": ""
+    },
+    "fake_delivery": {
+      "schema_version": "1.0",
+      "status": "pass",
+      "ok": true,
+      "closure_allowed": true,
+      "detected": [],
+      "policy_terms": [
+        "placeholder implementation",
+        "docs-only completion",
+        "fake runner evidence",
+        "zero assertions",
+        "placeholder evidence"
+      ],
+      "reason_code": ""
+    },
+    "feature_package_validation": {
+      "schema_version": "1.0",
+      "feature": "prism-campaign-schema-v1",
+      "feature_slug": "prism-campaign-schema-v1",
+      "version": "v0.0.1",
+      "status": "pass",
+      "blocked": false,
+      "reason_code": "",
+      "generated_at": "2026-08-11T15:15:07.006096+00:00",
+      "package_dir": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1",
+      "truth_frontmatter": {
+        "slug": "prism-campaign-schema-v1",
+        "version": "v0.0.1",
+        "status": "frozen",
+        "revision_id": "R1",
+        "language": "zh",
+        "domain_required": "true",
+        "ux_required": "false",
+        "parser_contract": "beacon-feature-package-v2",
+        "materials_status": "current",
+        "package_maturity": "filled",
+        "truth_source_model": "intent_first",
+        "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+        "canonical_refs": {
+          "prd": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+          "user_story": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+          "test_case": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md"
+        },
+        "provenance": {
+          "- ac_id": "AC-SCHEMA-009",
+          "source_type": "user_intent",
+          "source_ref": "utterance 2026-08-11: 同意继续 Lake C freeze package"
+        }
+      },
+      "ac_count": 10,
+      "test_count": 15,
+      "checkbox_count": 12,
+      "evidence_row_count": 21,
+      "gate_authority": "canonical_surfaces_preserved",
+      "checkbox_gate_bypass": false,
+      "task_evidence_gate": {
+        "pass": true,
+        "checked_ok": 0,
+        "checked_bad": 0,
+        "unbound": 0,
+        "findings": [],
+        "reason_code": ""
+      },
+      "evidence_gate_truth": false,
+      "diagnostics": [],
+      "report_path": "docs/beacon/v0.0.1/.machine/requirement/feature-package-validation.json"
+    },
+    "determinism_check": {
+      "placeholder_count": 0,
+      "hollow_template_count": 0
+    },
+    "closure_contract": {
+      "closure_allowed": true,
+      "detected": []
+    },
+    "recommended_action": ""
+  },
+  "truth_frontmatter_sync": {
+    "updated": false,
+    "status": "frozen",
+    "path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md"
+  },
+  "revision_delta": {
+    "schema_version": "1.0",
+    "feature": "prism-campaign-schema-v1",
+    "feature_slug": "prism-campaign-schema-v1",
+    "version": "v0.0.1",
+    "revision_id": "R3",
+    "source_revision_id": "R2",
+    "status": "not_applicable",
+    "cleanup_required": false,
+    "removed_requirement_count": 0,
+    "added_requirement_count": 0,
+    "retained_requirement_count": 0,
+    "removed_requirement_surfaces": [],
+    "added_requirement_surfaces": [],
+    "retained_requirement_surfaces": [],
+    "current_baseline_hash": "sha256:6e8251658741265ac644a6605840b2ba71ce9899342712e941de8f0735360989",
+    "source_baseline_hash": "",
+    "story_state_ref": "docs/beacon/v0.0.1/.machine/user-story/prism-campaign-schema-v1.json",
+    "generated_at": "2026-08-11T15:15:07.011872+00:00",
+    "json_ref": "docs/beacon/v0.0.1/.machine/execution/revision-delta-prism-campaign-schema-v1.json",
+    "markdown_ref": "docs/beacon/v0.0.1/execution/revision-delta-prism-campaign-schema-v1.md"
+  },
+  "release_projection_sync": {
+    "status": "pass",
+    "truth_authority": false,
+    "lifecycle_stage": false,
+    "release_publish_action": false,
+    "feature_projection": {
+      "schema_version": "1.0",
+      "status": "pass",
+      "feature": "prism-campaign-schema-v1",
+      "feature_slug": "prism-campaign-schema-v1",
+      "version": "v0.0.1",
+      "json_path": "docs/beacon/v0.0.1/.machine/change/prism-campaign-schema-v1.json",
+      "markdown_path": "docs/beacon/v0.0.1/change/prism-campaign-schema-v1.md",
+      "json_written": true,
+      "markdown_exists": true,
+      "projection_role": {
+        "artifact_role": "version_aggregate_projection",
+        "truth_source": false,
+        "gate_source": false,
+        "lifecycle_stage": false,
+        "release_publish_action": false
+      },
+      "payload": {
+        "schema_version": "1.0",
+        "version": "v0.0.1",
+        "feature": "prism-campaign-schema-v1",
+        "feature_slug": "prism-campaign-schema-v1",
+        "summary": "Maintains release-facing version aggregate projection guards so QA accepted features are included in version change scope before release check.",
+        "status": "generated",
+        "accepted_at": "",
+        "revision_id": "R3",
+        "projection_role": {
+          "artifact_role": "version_aggregate_projection",
+          "truth_source": false,
+          "gate_source": false,
+          "lifecycle_stage": false,
+          "release_publish_action": false
+        },
+        "truth_authority": false,
+        "lifecycle_stage": false,
+        "added": [
+          "Feature-level release projection input for QA accepted current feature",
+          "Version aggregate projection inclusion guard and repair metadata",
+          "Repair-only projection rebuild path for release preflight artifacts"
+        ],
+        "removed": [
+          "Manual-only version aggregate projection repair before release check"
+        ],
+        "fixed": [
+          "Release check can route missing current feature projection to an actionable repair path",
+          "Version aggregate projection remains a read model instead of requirement truth"
+        ],
+        "traceability_refs": [
+          "docs/beacon/v0.0.1/change/prism-campaign-schema-v1.md",
+          "docs/beacon/v0.0.1/prd/prism-campaign-schema-v1.md",
+          "docs/beacon/v0.0.1/user-story/prism-campaign-schema-v1.md",
+          "docs/beacon/v0.0.1/qa/test-cases/prism-campaign-schema-v1.md",
+          "docs/beacon/v0.0.1/.machine/execution/prism-campaign-schema-v1.revision.json"
+        ],
+        "generated_at": "2026-08-11T15:15:07.012213+00:00"
+      }
+    },
+    "version_aggregate_projection": {
+      "schema_version": "1.0",
+      "status": "pass",
+      "version": "v0.0.1",
+      "markdown_path": "docs/beacon/v0.0.1/change/v0.0.1.md",
+      "json_path": "docs/beacon/v0.0.1/.machine/change/v0.0.1.json",
+      "feature_count": 2,
+      "feature_slugs": [
+        "prism-campaign-schema-v1",
+        "prism-extract-v1"
+      ],
+      "projection_role": {
+        "artifact_role": "version_aggregate_projection",
+        "truth_source": false,
+        "gate_source": false,
+        "lifecycle_stage": false,
+        "release_publish_action": false
+      },
+      "truth_authority": false,
+      "lifecycle_stage": false,
+      "release_publish_action": false,
+      "implementation_order": {
+        "status": "analyzed",
+        "feature_count": 2,
+        "ordered_feature_slugs": [
+          "prism-extract-v1",
+          "prism-campaign-schema-v1"
+        ],
+        "waves": [
+          {
+            "wave": 1,
+            "parallelizable": true,
+            "features": [
+              {
+                "feature": "prism-extract-v1",
+                "feature_slug": "prism-extract-v1",
+                "depends_on_features": [],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": true,
+                "reason_code": "parallel_no_conflict"
+              },
+              {
+                "feature": "prism-campaign-schema-v1",
+                "feature_slug": "prism-campaign-schema-v1",
+                "depends_on_features": [],
+                "direct_delivery_services": [],
+                "writable_services": [],
+                "parallelizable": true,
+                "reason_code": "parallel_no_conflict"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

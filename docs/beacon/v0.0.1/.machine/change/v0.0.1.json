@@ -13,8 +13,14 @@
   "truth_authority": false,
   "lifecycle_stage": false,
   "release_publish_action": false,
-  "feature_count": 1,
+  "feature_count": 2,
   "features": [
+    {
+      "feature": "prism-campaign-schema-v1",
+      "feature_slug": "prism-campaign-schema-v1",
+      "summary": "Maintains release-facing version aggregate projection guards so QA accepted features are included in version change scope before release check.",
+      "status": "generated"
+    },
     {
       "feature": "prism-extract-v1",
       "feature_slug": "prism-extract-v1",
@@ -24,14 +30,15 @@
   ],
   "implementation_order": {
     "status": "analyzed",
-    "feature_count": 1,
+    "feature_count": 2,
     "ordered_feature_slugs": [
-      "prism-extract-v1"
+      "prism-extract-v1",
+      "prism-campaign-schema-v1"
     ],
     "waves": [
       {
         "wave": 1,
-        "parallelizable": false,
+        "parallelizable": true,
         "features": [
           {
             "feature": "prism-extract-v1",
@@ -45,24 +52,45 @@
             ],
             "parallelizable": true,
             "reason_code": "parallel_no_conflict"
+          },
+          {
+            "feature": "prism-campaign-schema-v1",
+            "feature_slug": "prism-campaign-schema-v1",
+            "depends_on_features": [],
+            "direct_delivery_services": [],
+            "writable_services": [],
+            "parallelizable": true,
+            "reason_code": "parallel_no_conflict"
           }
         ]
       }
     ]
   },
   "added": [
+    "[prism-campaign-schema-v1] Feature-level release projection input for QA accepted current feature",
+    "[prism-campaign-schema-v1] Version aggregate projection inclusion guard and repair metadata",
+    "[prism-campaign-schema-v1] Repair-only projection rebuild path for release preflight artifacts",
     "[prism-extract-v1] Feature-level release projection input for QA accepted current feature",
     "[prism-extract-v1] Version aggregate projection inclusion guard and repair metadata",
     "[prism-extract-v1] Repair-only projection rebuild path for release preflight artifacts"
   ],
   "removed": [
+    "[prism-campaign-schema-v1] Manual-only version aggregate projection repair before release check",
     "[prism-extract-v1] Manual-only version aggregate projection repair before release check"
   ],
   "fixed": [
+    "[prism-campaign-schema-v1] Release check can route missing current feature projection to an actionable repair path",
+    "[prism-campaign-schema-v1] Version aggregate projection remains a read model instead of requirement truth",
     "[prism-extract-v1] Release check can route missing current feature projection to an actionable repair path",
     "[prism-extract-v1] Version aggregate projection remains a read model instead of requirement truth"
   ],
   "traceability_refs": [
+    "docs/beacon/v0.0.1/change/prism-campaign-schema-v1.md",
+    "docs/beacon/v0.0.1/prd/prism-campaign-schema-v1.md",
+    "docs/beacon/v0.0.1/user-story/prism-campaign-schema-v1.md",
+    "docs/beacon/v0.0.1/qa/test-cases/prism-campaign-schema-v1.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-campaign-schema-v1.revision.json",
+    "docs/beacon/v0.0.1/.machine/change/prism-campaign-schema-v1.json",
     "docs/beacon/v0.0.1/change/prism-extract-v1.md",
     "docs/beacon/v0.0.1/prd/prism-extract-v1.md",
     "docs/beacon/v0.0.1/user-story/prism-extract-v1.md",
@@ -71,5 +99,5 @@
     "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-extract-v1.json",
     "docs/beacon/v0.0.1/.machine/change/prism-extract-v1.json"
   ],
-  "generated_at": "2026-08-11 12:16"
+  "generated_at": "2026-08-11 23:15"
 }

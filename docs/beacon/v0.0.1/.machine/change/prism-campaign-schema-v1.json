@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "version": "v0.0.1",
+  "feature": "prism-campaign-schema-v1",
+  "feature_slug": "prism-campaign-schema-v1",
+  "summary": "Maintains release-facing version aggregate projection guards so QA accepted features are included in version change scope before release check.",
+  "status": "generated",
+  "accepted_at": "",
+  "revision_id": "R3",
+  "projection_role": {
+    "artifact_role": "version_aggregate_projection",
+    "truth_source": false,
+    "gate_source": false,
+    "lifecycle_stage": false,
+    "release_publish_action": false
+  },
+  "truth_authority": false,
+  "lifecycle_stage": false,
+  "added": [
+    "Feature-level release projection input for QA accepted current feature",
+    "Version aggregate projection inclusion guard and repair metadata",
+    "Repair-only projection rebuild path for release preflight artifacts"
+  ],
+  "removed": [
+    "Manual-only version aggregate projection repair before release check"
+  ],
+  "fixed": [
+    "Release check can route missing current feature projection to an actionable repair path",
+    "Version aggregate projection remains a read model instead of requirement truth"
+  ],
+  "traceability_refs": [
+    "docs/beacon/v0.0.1/change/prism-campaign-schema-v1.md",
+    "docs/beacon/v0.0.1/prd/prism-campaign-schema-v1.md",
+    "docs/beacon/v0.0.1/user-story/prism-campaign-schema-v1.md",
+    "docs/beacon/v0.0.1/qa/test-cases/prism-campaign-schema-v1.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-campaign-schema-v1.revision.json"
+  ],
+  "generated_at": "2026-08-11T15:15:07.012213+00:00"
+}
