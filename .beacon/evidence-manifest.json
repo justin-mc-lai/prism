@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "entries": [
+    {
+      "path": "docs/beacon/v0.0.1/.machine/execution/init-report.json",
+      "sha256": "bf7ee04fb8e0d4710c11ea8c5c43f4c115b66300413863e9cf61998f59249807",
+      "updated_at": "2026-08-11T03:08:53.038185+00:00"
+    },
+    {
+      "path": "docs/beacon/v0.0.1/execution/init-report.md",
+      "sha256": "8552a209a67ce3818b81b5fc7f9892a6d1f3e8d7b9be851c3b6638baace0a467",
+      "updated_at": "2026-08-11T03:08:53.038246+00:00"
+    }
+  ],
+  "updated_at": "2026-08-11T03:08:53.038252+00:00",
+  "version": "v0.0.1"
+}

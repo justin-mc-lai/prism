@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0",
+  "agents": {
+    "cursor": {
+      "agent": "cursor",
+      "surface_root": ".cursor/skills",
+      "rules_path": ".cursor/rules/beacon-agent-surface.mdc",
+      "source_root": "/Users/apple/Developer/Personal/products/beacon/skills/beacon",
+      "source_kind": "packaged_skill_directory",
+      "taxonomy_version": "",
+      "installed_skills": [
+        {
+          "id": "beacon-design",
+          "path": ".cursor/skills/beacon-design",
+          "source_path": "beacon-design",
+          "source_kind": "packaged_skill_directory",
+          "source_hash": "4a25ffaed3d4550f4f0200f61ae443f62839cc2ec0eedba4217cfc6308000396"
+        },
+        {
+          "id": "beacon-goal",
+          "path": ".cursor/skills/beacon-goal",
+          "source_path": "beacon-goal",
+          "source_kind": "packaged_skill_directory",
+          "source_hash": "e96e0005b2503d5df835c6d3132838b386277845bac39a2e5d51420f4979f70a"
+        },
+        {
+          "id": "beacon-implement",
+          "path": ".cursor/skills/beacon-implement",
+          "source_path": "beacon-implement",
+          "source_kind": "packaged_skill_directory",
+          "source_hash": "9c45465eb3b227eaa7ab9b6bf3311c1ee2f51b863e7c3f4d914597ba53f82f83"
+        },
+        {
+          "id": "beacon-plan",
+          "path": ".cursor/skills/beacon-plan",
+          "source_path": "beacon-plan",
+          "source_kind": "packaged_skill_directory",
+          "source_hash": "3ac42f1d1264c8165dcacf5f39e184db42a72a76412c225a21d2f48666af2010"
+        },
+        {
+          "id": "beacon-qa",
+          "path": ".cursor/skills/beacon-qa",
+          "source_path": "beacon-qa",
+          "source_kind": "packaged_skill_directory",
+          "source_hash": "d9b02a512a757d48c5c66077a04fac8400cafb0f2d127275fd0fb71ba12eab28"
+        },
+        {
+          "id": "beacon-release",
+          "path": ".cursor/skills/beacon-release",
+          "source_path": "beacon-release",
+          "source_kind": "packaged_skill_directory",
+          "source_hash": "eab85d2c6c49b5ecef3de84fc2d4452a4fae0f97222801c75d4a9d8efb7bedfc"
+        },
+        {
+          "id": "beacon-truth",
+          "path": ".cursor/skills/beacon-truth",
+          "source_path": "beacon-truth",
+          "source_kind": "packaged_skill_directory",
+          "source_hash": "1b9800d58970c66eabd3a79aafbd840e24cbca7280534b3ad8a4e159fd61c5e0"
+        }
+      ]
+    },
+    "codex": {
+      "agent": "codex",
+      "surface_root": ".agents/skills",
+      "rules_path": "",
+      "source_root": "/Users/apple/Developer/Personal/products/beacon/skills/beacon",
+      "source_kind": "packaged_skill_directory",
+      "taxonomy_version": "",
+      "installed_skills": [
+        {
+          "id": "beacon-design",
+          "path": ".agents/skills/beacon-design",
+          "source_path": "beacon-design",
+          "source_kind": "packaged_skill_directory",
+          "source_hash": "4a25ffaed3d4550f4f0200f61ae443f62839cc2ec0eedba4217cfc6308000396"
+        },
+        {
+          "id": "beacon-goal",
+          "path": ".agents/skills/beacon-goal",
+          "source_path": "beacon-goal",
+          "source_kind": "packaged_skill_directory",
+          "source_hash": "e96e0005b2503d5df835c6d3132838b386277845bac39a2e5d51420f4979f70a"
+        },
+        {
+          "id": "beacon-implement",
+          "path": ".agents/skills/beacon-implement",
+          "source_path": "beacon-implement",
+          "source_kind": "packaged_skill_directory",
+          "source_hash": "9c45465eb3b227eaa7ab9b6bf3311c1ee2f51b863e7c3f4d914597ba53f82f83"
+        },
+        {
+          "id": "beacon-plan",
+          "path": ".agents/skills/beacon-plan",
+          "source_path": "beacon-plan",
+          "source_kind": "packaged_skill_directory",
+          "source_hash": "3ac42f1d1264c8165dcacf5f39e184db42a72a76412c225a21d2f48666af2010"
+        },
+        {
+          "id": "beacon-qa",
+          "path": ".agents/skills/beacon-qa",
+          "source_path": "beacon-qa",
+          "source_kind": "packaged_skill_directory",
+          "source_hash": "d9b02a512a757d48c5c66077a04fac8400cafb0f2d127275fd0fb71ba12eab28"
+        },
+        {
+          "id": "beacon-release",
+          "path": ".agents/skills/beacon-release",
+          "source_path": "beacon-release",
+          "source_kind": "packaged_skill_directory",
+          "source_hash": "eab85d2c6c49b5ecef3de84fc2d4452a4fae0f97222801c75d4a9d8efb7bedfc"
+        },
+        {
+          "id": "beacon-truth",
+          "path": ".agents/skills/beacon-truth",
+          "source_path": "beacon-truth",
+          "source_kind": "packaged_skill_directory",
+          "source_hash": "1b9800d58970c66eabd3a79aafbd840e24cbca7280534b3ad8a4e159fd61c5e0"
+        }
+      ]
+    }
+  },
+  "updated_at": "2026-08-11T03:09:04.125352+00:00",
+  "runtime_version": "v1.6.12",
+  "docs_version": "v0.0.1"
+}

@@ -1,0 +1,25 @@
+---
+description: Beacon v1.6.12 agent skill surface and routing
+alwaysApply: true
+---
+<!-- BEACON:AGENT_SURFACE:START -->
+<!-- BEACON:VERSION:v1.6.12 -->
+<!-- BEACON:DOCS_VERSION:v0.0.1 -->
+# Beacon Cursor Agent Surface
+
+- Beacon skills are materialized under `.cursor/skills/`.
+- Use `beacon <subcommand>` as the stable local execution surface.
+- Treat `docs/beacon/global-boundaries.md` and `docs/beacon/<version>/` as canonical truth.
+- Refresh with `beacon doctor setup-agent-surface --project-root . --agent cursor`.
+- Verify with `beacon doctor verify-agent-surface --project-root . --agent cursor --strict`.
+
+## Installed Beacon Skills
+
+- `beacon-design`
+- `beacon-goal`
+- `beacon-implement`
+- `beacon-plan`
+- `beacon-qa`
+- `beacon-release`
+- `beacon-truth`
+<!-- BEACON:AGENT_SURFACE:END -->
