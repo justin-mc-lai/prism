@@ -27,7 +27,7 @@
     "review_gates": [],
     "qa_coverage_hints": [],
     "evidence_lines": {},
-    "generated_at": "2026-08-11T15:15:06.971377+00:00",
+    "generated_at": "2026-08-11T15:19:35.592121+00:00",
     "feature": "prism-campaign-schema-v1",
     "feature_slug": "prism-campaign-schema-v1",
     "prd_ref": "docs/beacon/v0.0.1/prd/prism-campaign-schema-v1.md",

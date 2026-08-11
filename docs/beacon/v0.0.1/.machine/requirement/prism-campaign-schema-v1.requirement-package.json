@@ -5,7 +5,7 @@
   "truth_package_contract": "beacon-feature-package-v2",
   "machine_json_role": "generated_state_not_truth",
   "generated_by": "beacon.truth_map.resolver",
-  "generated_at": "2026-08-11T15:15:06.960358+00:00",
+  "generated_at": "2026-08-11T15:19:35.581828+00:00",
   "feature": "prism-campaign-schema-v1",
   "feature_slug": "prism-campaign-schema-v1",
   "version": "v0.0.1",
@@ -19,7 +19,7 @@
   },
   "source_hashes": {
     "truth": "b8700830f8ca2da1453272d38721e31fa532e239a778400570aab6cd32f7ca2d",
-    "tests": "42dcd182ffdf1ca6e961860927127c0fa2d8614c7aae408e1139eac7d7a72faa",
+    "tests": "0563a015e25ed1333d956c4335dd5fc7230124cf4b154315cd14450be7db3007",
     "tasks": "15fab035cd9237cef4c547944ce466898d001361040cbdd8372702092432cb53",
     "evidence": "99e06242cebff3fa6a820f12f7e5dde06d4deefe3ea918a321b7dc2b7436d8e3"
   },
@@ -232,7 +232,7 @@
       "tc_id": "TC-SCHEMA-015",
       "layer": "",
       "command": "`bash scripts/check_content_schema.sh`",
-      "assertion": "exec-layer schema 校验脚本 PASS",
+      "assertion": "exec-layer schema 校验脚本 PASS（合法路径）",
       "evidence_path": "",
       "source": ""
     }

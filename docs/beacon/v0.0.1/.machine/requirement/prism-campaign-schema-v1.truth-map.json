@@ -68,7 +68,7 @@
     },
     "source_hashes": {
       "truth": "b8700830f8ca2da1453272d38721e31fa532e239a778400570aab6cd32f7ca2d",
-      "tests": "42dcd182ffdf1ca6e961860927127c0fa2d8614c7aae408e1139eac7d7a72faa",
+      "tests": "0563a015e25ed1333d956c4335dd5fc7230124cf4b154315cd14450be7db3007",
       "tasks": "15fab035cd9237cef4c547944ce466898d001361040cbdd8372702092432cb53",
       "evidence": "99e06242cebff3fa6a820f12f7e5dde06d4deefe3ea918a321b7dc2b7436d8e3"
     },
@@ -101,7 +101,7 @@
         "filename": "tests.md",
         "path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
         "exists": true,
-        "source_hash": "42dcd182ffdf1ca6e961860927127c0fa2d8614c7aae408e1139eac7d7a72faa",
+        "source_hash": "0563a015e25ed1333d956c4335dd5fc7230124cf4b154315cd14450be7db3007",
         "authority": "markdown_feature_package",
         "json_authority": false
       },
@@ -393,7 +393,7 @@
         "truth_authority": false,
         "json_authority": false,
         "generated_governance_state": true,
-        "source_hash": "fab01b46b74e162c42faf8fc07fc9fa3fad3312d8ee27888e09a00162661a925"
+        "source_hash": "3eae8a3432ae5993d308764fd38a01a7d400d24d2417dc32ef9167cb7d79f3a1"
       },
       "qa_status": {
         "schema_version": "1.0",
@@ -680,7 +680,7 @@
     ]
   },
   "generated_by": "beacon.truth_map.resolver",
-  "generated_at": "2026-08-11T15:15:06.959532+00:00",
+  "generated_at": "2026-08-11T15:19:35.580841+00:00",
   "truth_authority": false,
   "source_paths": {
     "truth": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
@@ -690,7 +690,7 @@
   },
   "source_hashes": {
     "truth": "b8700830f8ca2da1453272d38721e31fa532e239a778400570aab6cd32f7ca2d",
-    "tests": "42dcd182ffdf1ca6e961860927127c0fa2d8614c7aae408e1139eac7d7a72faa",
+    "tests": "0563a015e25ed1333d956c4335dd5fc7230124cf4b154315cd14450be7db3007",
     "tasks": "15fab035cd9237cef4c547944ce466898d001361040cbdd8372702092432cb53",
     "evidence": "99e06242cebff3fa6a820f12f7e5dde06d4deefe3ea918a321b7dc2b7436d8e3"
   }

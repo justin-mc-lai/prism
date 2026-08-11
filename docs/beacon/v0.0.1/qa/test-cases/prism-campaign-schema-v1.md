@@ -24,4 +24,4 @@ package_shape: v1.6.10
 | TC-SCHEMA-012 | AC-SCHEMA-003 | `test -f content/storyworlds/README.md && test -f content/storyworlds/_examples/demo-world/world.yaml` | storyworld scaffold 示例 |
 | TC-SCHEMA-013 | AC-SCHEMA-004 | `test -f content/distribution/campaigns/_examples/serial-demo.yaml` | campaign 示例文件 |
 | TC-SCHEMA-014 | AC-SCHEMA-007 | `rg -n "Illegal transitions|illegal" docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md` | illegal 转移在 truth 中覆盖 |
-| TC-SCHEMA-015 | AC-SCHEMA-001 | `bash scripts/check_content_schema.sh` | exec-layer schema 校验脚本 PASS |
+| TC-SCHEMA-015 | AC-SCHEMA-001 | `bash scripts/check_content_schema.sh` | exec-layer schema 校验脚本 PASS（合法路径） |
