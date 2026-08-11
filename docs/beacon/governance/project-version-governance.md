@@ -3,10 +3,10 @@ schema_version: "1.0"
 project_root: "/Users/apple/Developer/Personal/products/prism"
 topology_kind: "single_repo"
 default_execution_service: "prism"
-transaction_id: "tx-project-governance-558d39cd0dead5ff"
-committed_at: "2026-08-11T03:30:35.682583+00:00"
-source_hash: "558d39cd0dead5ff81daa0b0ad78e5bd7948a94f0ef892cb2d6dd22c5af20e08"
-event_type: "update"
+transaction_id: "tx-project-governance-b0f240c7b98d5085"
+committed_at: "2026-08-11T15:03:01.901338+00:00"
+source_hash: "b0f240c7b98d5085e165a8dafe050382c78087936d4d06843cd725d06cfe9820"
+event_type: "freeze-version-contract"
 parser_contract: "beacon-project-governance-v1"
 ---
 
@@ -26,7 +26,15 @@ parser_contract: "beacon-project-governance-v1"
 - branch_guard_mode: `strict`
 - validation_state: `active`
 - per_service_canonical_branch:
-  - `prism`: `beacon/v0.0.1/prism-extract-v1`
+  - `prism`: `beacon/v0.0.1`
 - truth_canonical: `main`
-- worktree_mode: `branch-only`
-- worktree_path: `/Users/apple/Developer/Personal/products/prism/prism-extract-v1`
+- branch_governance_template: `standard-feature`
+- previous_version_baseline_branch: `main`
+- next_version_feature_branch: `beacon/v0.0.1/<feature-slug>`
+- worktree_mode: `dedicated`
+- worktree_path: `.beacon/worktrees/v0.0.1`
+- require_workspace_admission: `true`
+- merge_direction_policy: `master->beacon/v0.0.1`
+- merge_direction_policy: `beacon/v0.0.1->uat`
+- forbidden_directions: `uat->beacon/v0.0.1`
+- forbidden_directions: `uat_as_feature_base`
