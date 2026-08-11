@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "run_id": "run-20260811T113106143903",
+  "version": "v0.0.1",
+  "generated_at": "2026-08-11T03:31:07.744954+00:00",
+  "layers": {
+    "user_story": {
+      "hash": "0b4e1e9dd05938617198402dc790d5b0e9a9e15ba427a6a046811393934435b8",
+      "count": 1,
+      "files": [
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+          "sha256": "c2c5d4dfdee3c44759efbbf01c8a5e52c8e6029ce7943476559e1e5c7b2bae82"
+        }
+      ]
+    },
+    "prd": {
+      "hash": "0b4e1e9dd05938617198402dc790d5b0e9a9e15ba427a6a046811393934435b8",
+      "count": 1,
+      "files": [
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+          "sha256": "c2c5d4dfdee3c44759efbbf01c8a5e52c8e6029ce7943476559e1e5c7b2bae82"
+        }
+      ]
+    },
+    "test_case": {
+      "hash": "3743c6c563422402ff0247c0560edc9172fe1e29e0406360e8d7485b7ec4a878",
+      "count": 2,
+      "files": [
+        {
+          "path": "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json",
+          "sha256": "2d7518b7618ceae7d011ae166cde102725f3379bb9405d4209765385a173e132"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-extract-v1/tests.md",
+          "sha256": "6f5567b63c2b771a6b71efc593a408d23ae77e972614cc42f6a914c82bbe4aa2"
+        }
+      ]
+    }
+  },
+  "fingerprint_hash": "11f74a87c2ddb44a717f191932abc22063ab384c590ccb9dbffe96f1de556f56"
+}

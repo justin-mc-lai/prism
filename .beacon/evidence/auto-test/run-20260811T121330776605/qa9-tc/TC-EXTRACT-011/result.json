@@ -1,0 +1,29 @@
+{
+  "layer": "contract",
+  "command": "python3 -c \"from pathlib import Path; n=sum(1 for p in Path('skills').glob('prism-*/SKILL.md') if 'public_surface: true' in p.read_text()); raise SystemExit(0 if n==7 else 1)\"",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 0,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "ed83f16ad0192cc26577705d3b7f6935a4cf9592f392c0aae2d4516bd1933f5a",
+  "started_at": "2026-08-11T12:13:32.249603",
+  "ended_at": "2026-08-11T12:13:32.332452",
+  "junit_path": "",
+  "junit_valid": false,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-011/command.txt",
+    ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-011/stdout.log",
+    ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-011/stderr.log"
+  ],
+  "tc_id": "TC-EXTRACT-011",
+  "ac_id": "AC-EXTRACT-003"
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-extract-v1",
+  "feature_slug": "prism-extract-v1",
+  "version": "v0.0.1",
+  "revision_id": "R1",
+  "review_status": "approved",
+  "approved_by": "human:continue-next-step",
+  "reviewed_at": "2026-08-11T04:16:47.419993+00:00",
+  "contract_json_path": "docs/beacon/v0.0.1/.machine/execution/deterministic-implementation-contract-prism-extract-v1.json",
+  "contract_markdown_path": "docs/beacon/v0.0.1/execution/deterministic-implementation-contract-prism-extract-v1.md",
+  "run_id": "",
+  "source": "doctor.sync-technical-review-contract",
+  "written_at": "2026-08-11T04:16:47.420795+00:00"
+}

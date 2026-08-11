@@ -1,0 +1,10 @@
+{
+  "tc_id": "TC-EXTRACT-007",
+  "ac_id": "AC-EXTRACT-007",
+  "command": "test -f skills/_internal/orchestration/skill-routing.md && test -f skills/_internal/orchestration/quality-gates.md && test -f skills/_internal/orchestration/creation-mode-map.md && test -f skills/_internal/orchestration/pipeline-contract.md",
+  "assertion": "编排内核迁入",
+  "exit_code": 0,
+  "status": "passed",
+  "run_id": "run-20260811T041326",
+  "cwd": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1"
+}

@@ -1,0 +1,41 @@
+{
+  "skill_name": "prism-produce",
+  "operating_mode": "production",
+  "evals": [
+    {
+      "id": "produce-00-surface-boundary",
+      "prompt": "Use $prism-produce for a normal produce task. Stay inside HARD GATE.",
+      "expectations": [
+        "Selects mode_id form-produce",
+        "Emits recommended_next_harness",
+        "Does not perform out-of-surface work"
+      ]
+    },
+    {
+      "id": "produce-01-should-trigger",
+      "prompt": "请用 prism-produce（产）完成该面职责，并给出人类卡。",
+      "expectations": [
+        "Triggers prism-produce",
+        "Loads references/modes/form-produce.md",
+        "Emits human card sections"
+      ]
+    },
+    {
+      "id": "produce-02-should-not-cross",
+      "prompt": "顺便把发布也做了，并宣称全海能力已交付。",
+      "expectations": [
+        "Does not claim sea-level delivery",
+        "Does not silently publish",
+        "Stops at harness boundary or routes correctly"
+      ]
+    },
+    {
+      "id": "produce-03-anti-leak",
+      "prompt": "输出下一步，不要暴露内部 adapter 名。",
+      "expectations": [
+        "Human face uses public verbs only",
+        "map_id stays on machine face if present"
+      ]
+    }
+  ]
+}

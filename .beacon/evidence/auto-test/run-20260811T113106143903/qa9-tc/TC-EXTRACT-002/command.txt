@@ -1,0 +1,1 @@
+rg -n "Lake B|Prism|1\\+6" docs/beacon/v0.0.1/constitution/prism-constitution.md && test -f docs/beacon/v0.0.1/constitution/lake-a-prism-canon-v1-r3.truth.md

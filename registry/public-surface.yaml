@@ -1,0 +1,57 @@
+# Prism Scheme A — 1+6 public surface (exactly 7 host-visible skills)
+# Design-philosophy alignment with Beacon call shape only.
+# Source: selfmedia-creator docs/beacon/v0.0.6/features/prism-canon-v1 (R3) → Lake B extract
+
+scheme: A-1plus6
+brand: Prism
+brand_zh: 棱镜
+source_repo: selfmedia-creator
+source_truth: docs/beacon/v0.0.6/features/prism-canon-v1/truth.md@R3
+lake: B
+version: v0.0.1
+
+public_surfaces:
+  - public_id: goal
+    skill_dir: skills/prism-goal
+    human_verb: 做/连载
+    beacon_alias: goal
+    role: cross_cutting
+    hard_gate: 长跑才进；不算第 7 面
+  - public_id: intel
+    skill_dir: skills/prism-intel
+    human_verb: 选
+    beacon_alias: plan
+    hard_gate: 不编造趋势与指标
+  - public_id: master
+    skill_dir: skills/prism-master
+    human_verb: 定
+    beacon_alias: truth
+    hard_gate: 事实或正典未核完不冻结
+  - public_id: director
+    skill_dir: skills/prism-director
+    human_verb: 导
+    beacon_alias: design
+    hard_gate: 无核心意图不出方案
+  - public_id: produce
+    skill_dir: skills/prism-produce
+    human_verb: 产
+    beacon_alias: implement
+    hard_gate: 只按已冻结母稿生产
+  - public_id: qa
+    skill_dir: skills/prism-qa
+    human_verb: 验
+    beacon_alias: qa
+    hard_gate: maker 不自证；缺证据不过
+  - public_id: release
+    skill_dir: skills/prism-release
+    human_verb: 发
+    beacon_alias: release
+    hard_gate: 公开必须人工二次批准
+
+rules:
+  max_public_harnesses: 6
+  cross_cutting_not_counted: goal
+  adapters_host_visible: false
+  adapters_root: skills/_internal/adapters
+  orchestration_root: skills/_internal/orchestration
+  anti_leak: true

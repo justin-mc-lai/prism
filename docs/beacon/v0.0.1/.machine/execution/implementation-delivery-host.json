@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "artifact": "implementation_delivery_host",
+  "version": "v0.0.1",
+  "feature_count": 1,
+  "feature_slugs": [
+    "prism-extract-v1"
+  ],
+  "features": [
+    {
+      "feature": "prism-extract-v1",
+      "feature_slug": "prism-extract-v1",
+      "revision_id": "R1",
+      "baseline_id": "impl-delivery-baseline-v0.0.1-prism-extract-v1-R1",
+      "transaction_id": "tx-068582666a201875e",
+      "source_hash": "sha256:c61d7315393905a35b5df35cffba86a06515bebd8ba8521f4dd73731c51b3b1a",
+      "baseline_ref": "docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-extract-v1.json",
+      "default_target_branch": "beacon/v0.0.1/prism-extract-v1",
+      "worktree_root": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1",
+      "workspace_root": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1",
+      "direct_delivery_services": [
+        "."
+      ],
+      "writable_services": [
+        "."
+      ],
+      "reference_only_services": [
+        "docs"
+      ],
+      "depends_on_features": [],
+      "updated_at": "2026-08-11T04:16:47.417891+00:00"
+    }
+  ],
+  "services_map": {
+    ".": [
+      "prism-extract-v1"
+    ]
+  },
+  "source_hash": "sha256:55c2ca6da5f1f9ae4cf7aa7c6ec694a76c5ec921550e12f248e33ac93e9dadda",
+  "transaction_id": "tx-2c173ade469118768",
+  "generated_at": "2026-08-11T04:16:47.419055+00:00"
+}

@@ -1,0 +1,10 @@
+150:10. Non-goals / 分湖边界（AC-EXTRACT-010）
+175:| AC-EXTRACT-010 | Non-goals 排除 Lake C/D；illegal：宣称 Lake D 完成 / 跳过 `qa_pass` 直接 `human_accepted`；不得宣称海 closure |
+177:## Non-goals
+37:- 不能做：不实现 form producer chains（Lake D）；不落 campaign schema（Lake C）；不改 Beacon 编码能力；不自动公开发布
+75:| INT-B11 | sea | must | Lake D form chains | deferred |
+124:- 宣称 Lake D 完成
+156:| DL-B01 | form producer chains | accepted | Lake D |
+160:| DL-B05 | 全量 skill 正文搬迁 | accepted | Lake D 加深；本湖索引+壳 |
+175:| AC-EXTRACT-010 | Non-goals 排除 Lake C/D；illegal：宣称 Lake D 完成 / 跳过 `qa_pass` 直接 `human_accepted`；不得宣称海 closure |
+175:| AC-EXTRACT-010 | Non-goals 排除 Lake C/D；illegal：宣称 Lake D 完成 / 跳过 `qa_pass` 直接 `human_accepted`；不得宣称海 closure |

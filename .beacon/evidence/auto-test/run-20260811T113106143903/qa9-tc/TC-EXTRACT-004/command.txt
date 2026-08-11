@@ -1,0 +1,1 @@
+rg -n "scheme: A-1plus6" registry/public-surface.yaml && rg -n "max_public_harnesses: 6" registry/public-surface.yaml && rg -n "public_id: goal" registry/public-surface.yaml

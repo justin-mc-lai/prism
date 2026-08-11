@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-extract-v1",
+  "feature_slug": "prism-extract-v1",
+  "version": "v0.0.1",
+  "revision_id": "R1",
+  "source_revision_id": "",
+  "reason": "freeze",
+  "doc_status": "frozen",
+  "delivery_status": "accepted",
+  "lifecycle_status": "accepted",
+  "baseline_hash": "sha256:a21567f3779dc5f719baa78b6570e38ce55d44c61a36b6d2dced84feff28d960",
+  "superseded_by": "",
+  "created_at": "2026-08-11T03:20:14.451552+00:00",
+  "frozen_at": "2026-08-11T03:20:14.452259+00:00",
+  "accepted_at": "2026-08-11T04:13:32.863799+00:00",
+  "last_implementation_run_id": "run-20260811T041326Z-3aaa",
+  "changed_files": [
+    "skills/prism-goal/SKILL.md",
+    "skills/prism-intel/SKILL.md",
+    "skills/prism-release/SKILL.md",
+    "registry/adapter-migration-matrix.md"
+  ],
+  "last_verification_run_id": "run-20260811T121330776605",
+  "verification_evidence": [
+    ".beacon/auto-test-status.json",
+    ".beacon/qa/status.json",
+    "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json",
+    ".beacon/coverage-summary.json",
+    ".beacon/release-gate-report.json"
+  ],
+  "accepted_by": "qa"
+}

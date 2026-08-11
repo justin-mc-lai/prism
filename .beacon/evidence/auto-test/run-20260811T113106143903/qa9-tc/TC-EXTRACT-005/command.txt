@@ -1,0 +1,1 @@
+rg -n "^## 1\\. identity" contracts/skill-contract-7seg.tpl.md && rg -n "^## 2\\. 决策边界" contracts/skill-contract-7seg.tpl.md && rg -n "^## 7\\. 失败处理" contracts/skill-contract-7seg.tpl.md

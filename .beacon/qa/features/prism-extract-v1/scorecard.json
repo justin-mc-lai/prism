@@ -1,0 +1,604 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-extract-v1",
+  "feature_slug": "prism-extract-v1",
+  "run_id": "run-20260811T121330776605",
+  "ac_total": 10,
+  "ac_accepted": 10,
+  "scenario_total": 13,
+  "scenario_passed": 13,
+  "release_confidence_min": 1.0,
+  "release_confidence_avg": 1.0,
+  "review_required_count": 0,
+  "needs_replay_count": 0,
+  "false_complete_risk": 0.0,
+  "unresolved_closure_outcomes": [],
+  "project_profile_gate_status": "not_configured",
+  "project_profile_id": "",
+  "coverage_current": {
+    "required_scenarios": 13,
+    "executed_scenarios": 13,
+    "coverage_rate": 1.0,
+    "required_scenario_families": [
+      "boundary",
+      "compatibility",
+      "happy",
+      "negative",
+      "recovery"
+    ],
+    "covered_scenario_families": [
+      "primary"
+    ],
+    "missing_scenario_families": [],
+    "missing_test_case_ids": []
+  },
+  "coverage_gap": {
+    "missing_axes": [],
+    "missing_replay_scenarios": [],
+    "missing_browser_evidence_scenarios": [],
+    "missing_scenario_families": [],
+    "missing_test_case_ids": [],
+    "open_closure_outcomes": []
+  },
+  "boundary_evidence": {
+    "boundary_principles": [],
+    "assumption_capture_required": true,
+    "goal_driven_verification_required": true,
+    "verification_item_count": 13,
+    "targeted_scope_only": true
+  },
+  "design_truth_verdict": {
+    "schema_version": "1.0",
+    "status": "not_applicable",
+    "blocked": false,
+    "reason_codes": [],
+    "source_surface": "implement-to-qa-handoff",
+    "verification_surface": "qa",
+    "docs_version": "v0.0.1",
+    "runtime_version": "v1.6.12",
+    "findings": []
+  },
+  "qa_outcome_taxonomy": {
+    "status": "not_applicable",
+    "failure_classes": [],
+    "primary_class": "",
+    "stable_taxonomy": [
+      "product_failed",
+      "test_failed",
+      "runner_admission_blocked",
+      "environment_blocked",
+      "auth_session_blocked",
+      "evidence_binding_missing",
+      "coverage_gap",
+      "truth_projection_gap"
+    ]
+  },
+  "qa_attribution": {
+    "schema_version": "1.0",
+    "status": "not_applicable",
+    "support_evidence_only": true,
+    "runtime_evidence_only": true,
+    "truth_authority": false,
+    "verdict_authority": false,
+    "release_pass_evidence": false,
+    "attribution_count": 0,
+    "accepted_count": 0,
+    "blocked_count": 0,
+    "release_blocking_count": 0,
+    "proposal_count": 0,
+    "family_counts": {
+      "implementation_gap": 0,
+      "truth_drift": 0,
+      "coverage_gap": 0,
+      "execution_lapse": 0,
+      "skill_defect": 0,
+      "runner_admission_blocker": 0,
+      "evidence_insufficient": 0
+    },
+    "route_counts": {},
+    "attributions": []
+  },
+  "qa_acceptance_capability": {
+    "schema_version": "1.0",
+    "status": "blocked",
+    "blocked": true,
+    "taxonomy": {
+      "schema_version": "1.0",
+      "status": "pass",
+      "blocked": false,
+      "full_layers": [
+        "unit",
+        "interface",
+        "contract",
+        "integration",
+        "smoke",
+        "functional",
+        "regression",
+        "exception",
+        "compatibility",
+        "browser_e2e"
+      ],
+      "non_browser_layers": [
+        "unit",
+        "interface",
+        "contract",
+        "integration",
+        "smoke",
+        "functional",
+        "regression",
+        "exception",
+        "compatibility"
+      ],
+      "browser_layer": "browser_e2e",
+      "qa9_layers": [
+        "unit",
+        "interface",
+        "contract",
+        "integration",
+        "smoke",
+        "functional",
+        "regression",
+        "exception",
+        "compatibility"
+      ],
+      "requested_layers": [
+        "contract"
+      ],
+      "unknown_layers": []
+    },
+    "profile_completeness": {
+      "schema_version": "1.0",
+      "profile": "feature-matrix",
+      "browser_required": false,
+      "required_layers": [
+        "contract"
+      ],
+      "executed_layers": [
+        "contract"
+      ],
+      "skipped_layers": [],
+      "blocked_layers": [],
+      "not_applicable_layers": [],
+      "not_applicable_reasons": {},
+      "missing_layers": [],
+      "confidence_chain": {
+        "schema_version": "1.0",
+        "layers": [
+          {
+            "layer": "unit",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit"
+            ]
+          },
+          {
+            "layer": "interface",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface"
+            ]
+          },
+          {
+            "layer": "contract",
+            "status": "executed",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit",
+              "interface"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface"
+            ]
+          },
+          {
+            "layer": "integration",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit",
+              "interface",
+              "contract"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface",
+              "integration"
+            ]
+          },
+          {
+            "layer": "smoke",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit",
+              "interface",
+              "contract",
+              "integration"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface",
+              "integration",
+              "smoke"
+            ]
+          },
+          {
+            "layer": "functional",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit",
+              "interface",
+              "contract",
+              "integration",
+              "smoke"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface",
+              "integration",
+              "smoke",
+              "functional"
+            ]
+          },
+          {
+            "layer": "regression",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit",
+              "interface",
+              "contract",
+              "integration",
+              "smoke",
+              "functional"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface",
+              "integration",
+              "smoke",
+              "functional",
+              "regression"
+            ]
+          },
+          {
+            "layer": "exception",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit",
+              "interface",
+              "contract",
+              "integration",
+              "smoke",
+              "functional",
+              "regression"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface",
+              "integration",
+              "smoke",
+              "functional",
+              "regression",
+              "exception"
+            ]
+          },
+          {
+            "layer": "compatibility",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit",
+              "interface",
+              "contract",
+              "integration",
+              "smoke",
+              "functional",
+              "regression",
+              "exception"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface",
+              "integration",
+              "smoke",
+              "functional",
+              "regression",
+              "exception",
+              "compatibility"
+            ]
+          },
+          {
+            "layer": "browser_e2e",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit",
+              "interface",
+              "contract",
+              "integration",
+              "smoke",
+              "functional",
+              "regression",
+              "exception",
+              "compatibility"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface",
+              "integration",
+              "smoke",
+              "functional",
+              "regression",
+              "exception",
+              "compatibility",
+              "browser_e2e"
+            ]
+          }
+        ],
+        "chain_direction": "unit_to_browser_e2e",
+        "terminal_layer": "browser_e2e",
+        "chain_broken": true,
+        "downstream_gap_layers": [
+          "browser_e2e",
+          "compatibility",
+          "exception",
+          "functional",
+          "integration",
+          "interface",
+          "regression",
+          "smoke",
+          "unit"
+        ]
+      },
+      "state_machine_coverage": {},
+      "is_complete": false,
+      "partial": true,
+      "status": "partial"
+    },
+    "browser_evidence_contract": {
+      "status": "not_required",
+      "blocked": false
+    },
+    "browser_runner_registry": [
+      "playwright",
+      "playwright-extension",
+      "playwright-cli",
+      "playwright-cdp",
+      "browser-use",
+      "agent-browser",
+      "attached-browser",
+      "web-access",
+      "obscura-cdp"
+    ],
+    "non_acceptance_evidence_kinds": [
+      "listing",
+      "placeholder",
+      "documentation_only",
+      "dry_run"
+    ],
+    "failure_attribution_routes": {
+      "product_bug": "beacon-implement",
+      "implementation_gap": "beacon-implement",
+      "test_script_bug": "beacon-test-case",
+      "environment_blocker": "beacon-qa",
+      "auth_session_blocker": "beacon-qa",
+      "runner_admission_blocker": "blocked",
+      "coverage_gap": "beacon-test-case",
+      "truth_drift": "beacon-change",
+      "evidence_insufficient": "beacon-qa"
+    },
+    "truth_authority": false,
+    "release_pass_evidence": false
+  },
+  "reconciliation": {
+    "required": false,
+    "reason_code": "",
+    "artifact_path": "",
+    "artifact": {}
+  },
+  "deep_absorption": {
+    "schema_version": "1.0",
+    "status": "not_applicable",
+    "eligible_for_release_supplement": false,
+    "findings": [],
+    "absorbed_count": 0,
+    "deferred_count": 0,
+    "blocked_count": 0,
+    "not_applicable_count": 0
+  },
+  "release_supplement_input": {
+    "deep_findings_absorbed": false,
+    "absorbed_finding_count": 0,
+    "advisory_or_blocked_finding_count": 0,
+    "policy": "absorbed_deep_findings_only"
+  },
+  "continue_decision": "stop_for_repair",
+  "stop_reasons": [
+    "assertion_count_zero_pass",
+    "junit_missing_or_invalid"
+  ],
+  "test_case_backfill_required": false,
+  "resume_command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/prism-extract-v1 --version v0.0.1 --feature \"prism-extract-v1\"",
+  "repair_handoff": {
+    "action": "qa-repair",
+    "reason": "assertion_count_zero_pass, junit_missing_or_invalid",
+    "command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/prism-extract-v1 --version v0.0.1 --feature \"prism-extract-v1\""
+  },
+  "release_ready": true,
+  "domain_fsm_coverage": {
+    "schema_version": "1.0",
+    "required": true,
+    "blocked": false,
+    "status": "pass",
+    "reason_code": "",
+    "findings": [],
+    "threshold": 1.0,
+    "coverage_ratio": 1.0,
+    "legal_walk": {
+      "required": 1,
+      "present": 1,
+      "covered": 1,
+      "rows": [
+        {
+          "ac_id": "TC-EXTRACT-004",
+          "tc_id": "AC-EXTRACT-004",
+          "path_type": "`rg -n \"scheme: A-1plus6\" registry/public-surface.yaml && rg -n \"max_public_harnesses: 6\" registry/public-surface.yaml && rg -n \"public_id: goal\" registry/public-surface.yaml`",
+          "raw": "TC-EXTRACT-004 | AC-EXTRACT-004 | `rg -n \"scheme: A-1plus6\" registry/public-surface.yaml && rg -n \"max_public_harnesses: 6\" registry/public-surface.yaml && rg -n \"public_id: goal\" registry/public-surface.yaml` | 公开面注册表合法"
+        }
+      ]
+    },
+    "illegal": {
+      "required": 1,
+      "present": 1,
+      "covered": 1,
+      "rows": [
+        {
+          "ac_id": "TC-EXTRACT-013",
+          "tc_id": "AC-EXTRACT-010",
+          "path_type": "`rg -n \"Illegal transitions",
+          "raw": "TC-EXTRACT-013 | AC-EXTRACT-010 | `rg -n \"Illegal transitions | illegal | 跳过 QA | 宣称 Lake D\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md` | illegal 转移覆盖存在"
+        }
+      ]
+    },
+    "matrix": {
+      "legal_walk_rows": [
+        {
+          "ac_id": "TC-EXTRACT-004",
+          "tc_id": "AC-EXTRACT-004",
+          "path_type": "`rg -n \"scheme: A-1plus6\" registry/public-surface.yaml && rg -n \"max_public_harnesses: 6\" registry/public-surface.yaml && rg -n \"public_id: goal\" registry/public-surface.yaml`",
+          "raw": "TC-EXTRACT-004 | AC-EXTRACT-004 | `rg -n \"scheme: A-1plus6\" registry/public-surface.yaml && rg -n \"max_public_harnesses: 6\" registry/public-surface.yaml && rg -n \"public_id: goal\" registry/public-surface.yaml` | 公开面注册表合法"
+        }
+      ],
+      "illegal_rows": [
+        {
+          "ac_id": "TC-EXTRACT-013",
+          "tc_id": "AC-EXTRACT-010",
+          "path_type": "`rg -n \"Illegal transitions",
+          "raw": "TC-EXTRACT-013 | AC-EXTRACT-010 | `rg -n \"Illegal transitions | illegal | 跳过 QA | 宣称 Lake D\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md` | illegal 转移覆盖存在"
+        }
+      ],
+      "other_rows": [
+        {
+          "ac_id": "TC-EXTRACT-001",
+          "tc_id": "AC-EXTRACT-001",
+          "path_type": "`test -e .git && test -f README.md && test -f AGENTS.md`",
+          "raw": "TC-EXTRACT-001 | AC-EXTRACT-001 | `test -e .git && test -f README.md && test -f AGENTS.md` | 独立仓存在"
+        },
+        {
+          "ac_id": "TC-EXTRACT-002",
+          "tc_id": "AC-EXTRACT-002",
+          "path_type": "`rg -n \"Lake B",
+          "raw": "TC-EXTRACT-002 | AC-EXTRACT-002 | `rg -n \"Lake B | Prism | 1\\\\+6\" docs/beacon/v0.0.1/constitution/prism-constitution.md && test -f docs/beacon/v0.0.1/constitution/lake-a-prism-canon-v1-r3.truth.md` | 宪法迁入存在"
+        },
+        {
+          "ac_id": "TC-EXTRACT-003",
+          "tc_id": "AC-EXTRACT-003",
+          "path_type": "`test -f skills/prism-goal/SKILL.md && test -f skills/prism-intel/SKILL.md && test -f skills/prism-master/SKILL.md && test -f skills/prism-director/SKILL.md && test -f skills/prism-produce/SKILL.md && test -f skills/prism-qa/SKILL.md && test -f skills/prism-release/SKILL.md`",
+          "raw": "TC-EXTRACT-003 | AC-EXTRACT-003 | `test -f skills/prism-goal/SKILL.md && test -f skills/prism-intel/SKILL.md && test -f skills/prism-master/SKILL.md && test -f skills/prism-director/SKILL.md && test -f skills/prism-produce/SKILL.md && test -f skills/prism-qa/SKILL.md && test -f skills/prism-release/SKILL.md` | 七公开面壳存在"
+        },
+        {
+          "ac_id": "TC-EXTRACT-005",
+          "tc_id": "AC-EXTRACT-005",
+          "path_type": "`rg -n \"^## 1\\\\. identity\" contracts/skill-contract-7seg.tpl.md && rg -n \"^## 2\\\\. 决策边界\" contracts/skill-contract-7seg.tpl.md && rg -n \"^## 7\\\\. 失败处理\" contracts/skill-contract-7seg.tpl.md`",
+          "raw": "TC-EXTRACT-005 | AC-EXTRACT-005 | `rg -n \"^## 1\\\\. identity\" contracts/skill-contract-7seg.tpl.md && rg -n \"^## 2\\\\. 决策边界\" contracts/skill-contract-7seg.tpl.md && rg -n \"^## 7\\\\. 失败处理\" contracts/skill-contract-7seg.tpl.md` | 七段模板存在"
+        },
+        {
+          "ac_id": "TC-EXTRACT-006",
+          "tc_id": "AC-EXTRACT-006",
+          "path_type": "`rg -n \"这次做了什么\" contracts/human-card.md && rg -n \"需要你决定\" contracts/human-card.md && rg -n \"下一步\" contracts/human-card.md && rg -n \"机器面\" contracts/human-card.md`",
+          "raw": "TC-EXTRACT-006 | AC-EXTRACT-006 | `rg -n \"这次做了什么\" contracts/human-card.md && rg -n \"需要你决定\" contracts/human-card.md && rg -n \"下一步\" contracts/human-card.md && rg -n \"机器面\" contracts/human-card.md` | 人类卡契约存在"
+        },
+        {
+          "ac_id": "TC-EXTRACT-007",
+          "tc_id": "AC-EXTRACT-007",
+          "path_type": "`test -f skills/_internal/orchestration/skill-routing.md && test -f skills/_internal/orchestration/quality-gates.md && test -f skills/_internal/orchestration/creation-mode-map.md && test -f skills/_internal/orchestration/pipeline-contract.md`",
+          "raw": "TC-EXTRACT-007 | AC-EXTRACT-007 | `test -f skills/_internal/orchestration/skill-routing.md && test -f skills/_internal/orchestration/quality-gates.md && test -f skills/_internal/orchestration/creation-mode-map.md && test -f skills/_internal/orchestration/pipeline-contract.md` | 编排内核迁入"
+        },
+        {
+          "ac_id": "TC-EXTRACT-008",
+          "tc_id": "AC-EXTRACT-008",
+          "path_type": "`rg -n \"MAP-001\" registry/adapter-index.yaml && rg -n \"MAP-009\" registry/adapter-index.yaml && test ! -f skills/_internal/adapters/SKILL.md`",
+          "raw": "TC-EXTRACT-008 | AC-EXTRACT-008 | `rg -n \"MAP-001\" registry/adapter-index.yaml && rg -n \"MAP-009\" registry/adapter-index.yaml && test ! -f skills/_internal/adapters/SKILL.md` | adapter 索引且不可见"
+        },
+        {
+          "ac_id": "TC-EXTRACT-009",
+          "tc_id": "AC-EXTRACT-009",
+          "path_type": "`rg -n \"prism-canon-v1\" docs/beacon/v0.0.1/constitution/prism-constitution.md && rg -n \"selfmedia-creator\" registry/adapter-index.yaml && rg -n \"R3\" docs/beacon/v0.0.1/constitution/prism-constitution.md`",
+          "raw": "TC-EXTRACT-009 | AC-EXTRACT-009 | `rg -n \"prism-canon-v1\" docs/beacon/v0.0.1/constitution/prism-constitution.md && rg -n \"selfmedia-creator\" registry/adapter-index.yaml && rg -n \"R3\" docs/beacon/v0.0.1/constitution/prism-constitution.md` | 源溯源存在"
+        },
+        {
+          "ac_id": "TC-EXTRACT-010",
+          "tc_id": "AC-EXTRACT-010",
+          "path_type": "`rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md && rg -n \"Lake D\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md`",
+          "raw": "TC-EXTRACT-010 | AC-EXTRACT-010 | `rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md && rg -n \"Lake D\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md` | 分湖边界存在"
+        },
+        {
+          "ac_id": "TC-EXTRACT-011",
+          "tc_id": "AC-EXTRACT-003",
+          "path_type": "`python3 -c \"from pathlib import Path; n=sum(1 for p in Path('skills').glob('prism-*/SKILL.md') if 'public_surface: true' in p.read_text()); raise SystemExit(0 if n==7 else 1)\"`",
+          "raw": "TC-EXTRACT-011 | AC-EXTRACT-003 | `python3 -c \"from pathlib import Path; n=sum(1 for p in Path('skills').glob('prism-*/SKILL.md') if 'public_surface: true' in p.read_text()); raise SystemExit(0 if n==7 else 1)\"` | 恰好 7 个公开面 frontmatter"
+        },
+        {
+          "ac_id": "TC-EXTRACT-012",
+          "tc_id": "AC-EXTRACT-008",
+          "path_type": "`python3 -c \"from pathlib import Path; n=len(list(Path('skills/_internal/adapters').glob('*.contract.md'))); raise SystemExit(0 if n>=7 else 1)\"`",
+          "raw": "TC-EXTRACT-012 | AC-EXTRACT-008 | `python3 -c \"from pathlib import Path; n=len(list(Path('skills/_internal/adapters').glob('*.contract.md'))); raise SystemExit(0 if n>=7 else 1)\"` | ≥7 adapter 契约 stub"
+        }
+      ],
+      "has_legal_walk": true,
+      "has_illegal": true
+    },
+    "aggregates": [
+      "FSM（提取落地）"
+    ],
+    "state_machine_coverage": {},
+    "deep_route_recommended": false
+  },
+  "domain_fsm_qa_blocked": false,
+  "domain_fsm_qa_reason_code": "",
+  "design_alignment": {},
+  "design_md_lint": {},
+  "ui_state_matrix": {},
+  "ui_design_ship_blocked": false
+}

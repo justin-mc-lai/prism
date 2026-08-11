@@ -1,0 +1,18 @@
+[
+  {
+    "run_id": "run-20260811T113106143903",
+    "generated_at": "2026-08-11T11:31:07.698621",
+    "summary_path": ".beacon/evidence/auto-test/run-20260811T113106143903/summary.json",
+    "summary_sha256": "b970c0ba75e3d4181646fe869cff043ca01eb2a7c0e89c7b1d5889c772549e41",
+    "manifest_path": ".beacon/evidence-manifest.json",
+    "manifest_sha256": "efe2a2f3d4bc71fe4ceed9a7306aa8968d1bcdadf0bae8f2ae5ed5c43a4ae008"
+  },
+  {
+    "run_id": "run-20260811T121330776605",
+    "generated_at": "2026-08-11T12:13:32.668685",
+    "summary_path": ".beacon/evidence/auto-test/run-20260811T121330776605/summary.json",
+    "summary_sha256": "f5a20b333ccdb297d54cc687a6588be055c902b56272a87edb83d6bc52afc794",
+    "manifest_path": ".beacon/evidence-manifest.json",
+    "manifest_sha256": "8107eb328bd6f2a74bb3e7b8da758843096726ed34637c29acd28ab7dedf77b2"
+  }
+]

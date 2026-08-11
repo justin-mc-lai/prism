@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prism Release"
+  short_description: "Human-gated draft and publish"
+  default_prompt: "Use $prism-release to prepare a draft handoff and list required human publish approvals."

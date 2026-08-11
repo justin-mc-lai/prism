@@ -1,0 +1,145 @@
+{
+  "schema_version": "1.0.2",
+  "feature": "prism-extract-v1",
+  "feature_slug": "prism-extract-v1",
+  "version": "v0.0.1",
+  "qa_profile": "contract-core",
+  "qa_types": [
+    "contract",
+    "smoke",
+    "functional"
+  ],
+  "entries": [
+    {
+      "tc_id": "TC-EXTRACT-001",
+      "ac_id": "AC-EXTRACT-001",
+      "layer": "contract",
+      "command": "test -d .git && test -f README.md && test -f AGENTS.md",
+      "assertion": "独立仓存在",
+      "evidence_path": ".beacon/evidence/test-results/prism-extract-v1/{run_id}/TC-EXTRACT-001.json",
+      "status": "pending",
+      "source": "features/prism-extract-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-EXTRACT-002",
+      "ac_id": "AC-EXTRACT-002",
+      "layer": "contract",
+      "command": "rg -n \"Lake B|Prism|1\\\\+6\" docs/beacon/v0.0.1/constitution/prism-constitution.md && test -f docs/beacon/v0.0.1/constitution/lake-a-prism-canon-v1-r3.truth.md",
+      "assertion": "宪法迁入存在",
+      "evidence_path": ".beacon/evidence/test-results/prism-extract-v1/{run_id}/TC-EXTRACT-002.json",
+      "status": "pending",
+      "source": "features/prism-extract-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-EXTRACT-003",
+      "ac_id": "AC-EXTRACT-003",
+      "layer": "contract",
+      "command": "test -f skills/prism-goal/SKILL.md && test -f skills/prism-intel/SKILL.md && test -f skills/prism-master/SKILL.md && test -f skills/prism-director/SKILL.md && test -f skills/prism-produce/SKILL.md && test -f skills/prism-qa/SKILL.md && test -f skills/prism-release/SKILL.md",
+      "assertion": "七公开面壳存在",
+      "evidence_path": ".beacon/evidence/test-results/prism-extract-v1/{run_id}/TC-EXTRACT-003.json",
+      "status": "pending",
+      "source": "features/prism-extract-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-EXTRACT-004",
+      "ac_id": "AC-EXTRACT-004",
+      "layer": "contract",
+      "command": "rg -n \"scheme: A-1plus6\" registry/public-surface.yaml && rg -n \"max_public_harnesses: 6\" registry/public-surface.yaml && rg -n \"public_id: goal\" registry/public-surface.yaml",
+      "assertion": "公开面注册表合法",
+      "evidence_path": ".beacon/evidence/test-results/prism-extract-v1/{run_id}/TC-EXTRACT-004.json",
+      "status": "pending",
+      "source": "features/prism-extract-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-EXTRACT-005",
+      "ac_id": "AC-EXTRACT-005",
+      "layer": "contract",
+      "command": "rg -n \"^## 1\\\\. identity\" contracts/skill-contract-7seg.tpl.md && rg -n \"^## 2\\\\. 决策边界\" contracts/skill-contract-7seg.tpl.md && rg -n \"^## 7\\\\. 失败处理\" contracts/skill-contract-7seg.tpl.md",
+      "assertion": "七段模板存在",
+      "evidence_path": ".beacon/evidence/test-results/prism-extract-v1/{run_id}/TC-EXTRACT-005.json",
+      "status": "pending",
+      "source": "features/prism-extract-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-EXTRACT-006",
+      "ac_id": "AC-EXTRACT-006",
+      "layer": "contract",
+      "command": "rg -n \"这次做了什么\" contracts/human-card.md && rg -n \"需要你决定\" contracts/human-card.md && rg -n \"下一步\" contracts/human-card.md && rg -n \"机器面\" contracts/human-card.md",
+      "assertion": "人类卡契约存在",
+      "evidence_path": ".beacon/evidence/test-results/prism-extract-v1/{run_id}/TC-EXTRACT-006.json",
+      "status": "pending",
+      "source": "features/prism-extract-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-EXTRACT-007",
+      "ac_id": "AC-EXTRACT-007",
+      "layer": "contract",
+      "command": "test -f skills/_internal/orchestration/skill-routing.md && test -f skills/_internal/orchestration/quality-gates.md && test -f skills/_internal/orchestration/creation-mode-map.md && test -f skills/_internal/orchestration/pipeline-contract.md",
+      "assertion": "编排内核迁入",
+      "evidence_path": ".beacon/evidence/test-results/prism-extract-v1/{run_id}/TC-EXTRACT-007.json",
+      "status": "pending",
+      "source": "features/prism-extract-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-EXTRACT-008",
+      "ac_id": "AC-EXTRACT-008",
+      "layer": "contract",
+      "command": "rg -n \"MAP-001\" registry/adapter-index.yaml && rg -n \"MAP-009\" registry/adapter-index.yaml && test ! -f skills/_internal/adapters/SKILL.md",
+      "assertion": "adapter 索引且不可见",
+      "evidence_path": ".beacon/evidence/test-results/prism-extract-v1/{run_id}/TC-EXTRACT-008.json",
+      "status": "pending",
+      "source": "features/prism-extract-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-EXTRACT-009",
+      "ac_id": "AC-EXTRACT-009",
+      "layer": "contract",
+      "command": "rg -n \"prism-canon-v1\" docs/beacon/v0.0.1/constitution/prism-constitution.md && rg -n \"selfmedia-creator\" registry/adapter-index.yaml && rg -n \"R3\" docs/beacon/v0.0.1/constitution/prism-constitution.md",
+      "assertion": "源溯源存在",
+      "evidence_path": ".beacon/evidence/test-results/prism-extract-v1/{run_id}/TC-EXTRACT-009.json",
+      "status": "pending",
+      "source": "features/prism-extract-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-EXTRACT-010",
+      "ac_id": "AC-EXTRACT-010",
+      "layer": "contract",
+      "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md && rg -n \"Lake D\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+      "assertion": "分湖边界存在",
+      "evidence_path": ".beacon/evidence/test-results/prism-extract-v1/{run_id}/TC-EXTRACT-010.json",
+      "status": "pending",
+      "source": "features/prism-extract-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-EXTRACT-011",
+      "ac_id": "AC-EXTRACT-003",
+      "layer": "contract",
+      "command": "python3 -c \"from pathlib import Path; n=sum(1 for p in Path('skills').glob('prism-*/SKILL.md') if 'public_surface: true' in p.read_text()); raise SystemExit(0 if n==7 else 1)\"",
+      "assertion": "恰好 7 个公开面 frontmatter",
+      "evidence_path": ".beacon/evidence/test-results/prism-extract-v1/{run_id}/TC-EXTRACT-011.json",
+      "status": "pending",
+      "source": "features/prism-extract-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-EXTRACT-012",
+      "ac_id": "AC-EXTRACT-008",
+      "layer": "contract",
+      "command": "python3 -c \"from pathlib import Path; n=len(list(Path('skills/_internal/adapters').glob('*.contract.md'))); raise SystemExit(0 if n>=7 else 1)\"",
+      "assertion": "≥7 adapter 契约 stub",
+      "evidence_path": ".beacon/evidence/test-results/prism-extract-v1/{run_id}/TC-EXTRACT-012.json",
+      "status": "pending",
+      "source": "features/prism-extract-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-EXTRACT-013",
+      "ac_id": "AC-EXTRACT-010",
+      "layer": "contract",
+      "command": "rg -n \"Illegal transitions|illegal|跳过 QA|宣称 Lake D\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+      "assertion": "illegal 转移覆盖存在",
+      "evidence_path": ".beacon/evidence/test-results/prism-extract-v1/{run_id}/TC-EXTRACT-013.json",
+      "status": "pending",
+      "source": "features/prism-extract-v1/tests.md"
+    }
+  ],
+  "generated_at": "2026-08-11T03:26:28.338907+00:00"
+}

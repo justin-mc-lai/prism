@@ -1,0 +1,13 @@
+{
+  "tc": "TC-EXTRACT-005",
+  "ac": "AC-EXTRACT-005",
+  "cmd": "rg -n \"^## 1\\\\. identity\" contracts/skill-contract-7seg.tpl.md && rg -n \"^## 2\\\\. 决策边界\" contracts/skill-contract-7seg.tpl.md && rg -n \"^## 7\\\\. 失败处理\" contracts/skill-contract-7seg.tpl.md",
+  "assertion": "七段模板存在",
+  "exit": 0,
+  "pass": true,
+  "tc_id": "TC-EXTRACT-005",
+  "ac_id": "AC-EXTRACT-005",
+  "command": "rg -n \"^## 1\\\\. identity\" contracts/skill-contract-7seg.tpl.md && rg -n \"^## 2\\\\. 决策边界\" contracts/skill-contract-7seg.tpl.md && rg -n \"^## 7\\\\. 失败处理\" contracts/skill-contract-7seg.tpl.md",
+  "status": "passed",
+  "run_id": "run-20260811T032734"
+}

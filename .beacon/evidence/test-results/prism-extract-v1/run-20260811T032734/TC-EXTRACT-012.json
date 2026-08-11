@@ -1,0 +1,13 @@
+{
+  "tc": "TC-EXTRACT-012",
+  "ac": "AC-EXTRACT-008",
+  "cmd": "python3 -c \"from pathlib import Path; n=len(list(Path('skills/_internal/adapters').glob('*.contract.md'))); raise SystemExit(0 if n>=7 else 1)\"",
+  "assertion": "≥7 adapter 契约 stub",
+  "exit": 0,
+  "pass": true,
+  "tc_id": "TC-EXTRACT-012",
+  "ac_id": "AC-EXTRACT-008",
+  "command": "python3 -c \"from pathlib import Path; n=len(list(Path('skills/_internal/adapters').glob('*.contract.md'))); raise SystemExit(0 if n>=7 else 1)\"",
+  "status": "passed",
+  "run_id": "run-20260811T032734"
+}

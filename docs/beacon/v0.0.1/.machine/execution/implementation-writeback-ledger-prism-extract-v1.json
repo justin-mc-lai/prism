@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "artifact": "implementation_writeback_ledger",
+  "feature": "prism-extract-v1",
+  "feature_slug": "prism-extract-v1",
+  "version": "v0.0.1",
+  "entries": [
+    {
+      "recorded_at": "2026-08-11T03:27:49.015236+00:00",
+      "revision_id": "R1",
+      "run_id": "run-20260811T032749Z-a61c",
+      "implemented_item_ids": [
+        "TEST-001",
+        "AC-001",
+        "TASK-001"
+      ],
+      "changed_files": [
+        "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+        "registry/public-surface.yaml",
+        "skills/prism-goal/SKILL.md"
+      ]
+    },
+    {
+      "recorded_at": "2026-08-11T04:13:26.801577+00:00",
+      "revision_id": "R1",
+      "run_id": "run-20260811T041326Z-3aaa",
+      "implemented_item_ids": [
+        "TASK-001",
+        "TEST-001",
+        "AC-001"
+      ],
+      "changed_files": [
+        "skills/prism-goal/SKILL.md",
+        "skills/prism-intel/SKILL.md",
+        "skills/prism-release/SKILL.md",
+        "registry/adapter-migration-matrix.md"
+      ]
+    }
+  ],
+  "last_recorded_at": "2026-08-11T04:13:26.801577+00:00"
+}

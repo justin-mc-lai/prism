@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "run_id": "run-20260811T041326Z-3aaa",
+  "import_id": "run-20260811T041326Z-3aaa",
+  "feature": "prism-extract-v1",
+  "feature_slug": "prism-extract-v1",
+  "version": "v0.0.1",
+  "runner": "import-evidence",
+  "skill": "beacon-implement",
+  "status": "completed",
+  "imported": true,
+  "source_refs": [
+    ".beacon/evidence/implement/prism-extract-v1/manifest.json",
+    ".beacon/evidence/implement/prism-extract-v1/QA-MATRIX.json",
+    ".beacon/evidence/implement/prism-extract-v1/GATES.json"
+  ],
+  "changed_files": [
+    "skills/prism-goal/SKILL.md",
+    "skills/prism-intel/SKILL.md",
+    "skills/prism-release/SKILL.md",
+    "registry/adapter-migration-matrix.md"
+  ],
+  "service_dirs": [],
+  "summary_ref": ".beacon/evidence/implement/prism-extract-v1/QA-MATRIX.json",
+  "approved_by": "lake-b-qa-rerun",
+  "prompt_boundary": {
+    "schema_version": "1.0",
+    "feature": "prism-extract-v1",
+    "feature_slug": "prism-extract-v1",
+    "version": "v0.0.1",
+    "required": false,
+    "prompt": "Import externally produced implementation evidence for the scoped Beacon feature. Read Beacon source of truth and bind the imported evidence to the frozen feature package truth. Implement only against the frozen feature package truth above. Evidence refs: .beacon/evidence/implement/prism-extract-v1/manifest.json, .beacon/evidence/implement/prism-extract-v1/QA-MATRIX.json, .beacon/evidence/implement/prism-extract-v1/GATES.json, .beacon/evidence/implement/prism-extract-v1/QA-MATRIX.json. Changed files or service directories: skills/prism-goal/SKILL.md, skills/prism-intel/SKILL.md, skills/prism-release/SKILL.md, registry/adapter-migration-matrix.md.",
+    "classification": "",
+    "blocked": false,
+    "status": "not_required",
+    "reason_code": "",
+    "next_action": "",
+    "recommended_command": "",
+    "matched_signals": [],
+    "frozen_refs": [
+      "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+      "docs/beacon/v0.0.1/features/prism-extract-v1/tests.md",
+      "docs/beacon/v0.0.1/features/prism-extract-v1/tasks.md",
+      "docs/beacon/v0.0.1/features/prism-extract-v1/evidence.md"
+    ],
+    "surface": "import-evidence"
+  },
+  "created_at": "2026-08-11T04:13:26.799216+00:00",
+  "generated_at": "2026-08-11T04:13:26.799221+00:00"
+}

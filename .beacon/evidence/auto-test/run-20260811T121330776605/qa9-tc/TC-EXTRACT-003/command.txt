@@ -1,0 +1,1 @@
+test -f skills/prism-goal/SKILL.md && test -f skills/prism-intel/SKILL.md && test -f skills/prism-master/SKILL.md && test -f skills/prism-director/SKILL.md && test -f skills/prism-produce/SKILL.md && test -f skills/prism-qa/SKILL.md && test -f skills/prism-release/SKILL.md

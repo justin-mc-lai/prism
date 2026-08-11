@@ -1,0 +1,2207 @@
+{
+  "scope": "qa9",
+  "timestamp": "2026-08-11T12:13:30.777206",
+  "project": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1",
+  "version": "v0.0.1",
+  "run_id": "run-20260811T121330776605",
+  "spec_fingerprint_hash": "36d19acd001b8bda69c1ec63c800f632fb02872794ef5a3d5cb79c47d70681b0",
+  "status": "passed",
+  "selected_layers": [
+    "contract"
+  ],
+  "execution": {
+    "run_id": "run-20260811T121330776605",
+    "version": "v0.0.1",
+    "evidence_dir": ".beacon/evidence/auto-test/run-20260811T121330776605",
+    "spec_fingerprint": {
+      "fingerprint_hash": "36d19acd001b8bda69c1ec63c800f632fb02872794ef5a3d5cb79c47d70681b0",
+      "version": "v0.0.1",
+      "generated_at": "2026-08-11T04:13:32.793726+00:00"
+    },
+    "layers": [
+      {
+        "layer": "contract",
+        "command": "test -e .git && test -f README.md && test -f AGENTS.md",
+        "exit_code": 0,
+        "status": "passed",
+        "reason_code": "",
+        "timeout_seconds": 300,
+        "assertion_count": 0,
+        "was_flaky": false,
+        "attempt_count": 1,
+        "attempts": [
+          {
+            "attempt": 1,
+            "exit_code": 0
+          }
+        ],
+        "execution_fingerprint": "ae6cb21d81ccf08b9e5bb6dfb51dd45400c940df783eb4bcc2b305f8aa5a9870",
+        "started_at": "2026-08-11T12:13:30.871853",
+        "ended_at": "2026-08-11T12:13:30.883515",
+        "junit_path": "",
+        "junit_valid": false,
+        "evidence_ref": [
+          ".beacon/evidence/auto-test/run-20260811T121330776605/contract/command.txt",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/contract/stdout.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/contract/stderr.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/contract/result.json"
+        ]
+      }
+    ],
+    "ui_action_evidence": {},
+    "matrix_report": {
+      "status": "ok",
+      "matrix_path": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/.beacon/qa/features/prism-extract-v1/matrix.qa9.json",
+      "evidence_generated": 13,
+      "entry_count": 13,
+      "freshness_violations": []
+    },
+    "artifacts": [
+      ".beacon/evidence/auto-test/run-20260811T121330776605/qa9/tc-execution-map.json",
+      ".beacon/evidence/auto-test/run-20260811T121330776605/qa9/tc-results.json",
+      ".beacon/evidence/auto-test/run-20260811T121330776605/summary.json",
+      ".beacon/flaky-history.json",
+      ".beacon/evidence-signature-chain.json"
+    ],
+    "qa9_matrix_schema_version": "1.0",
+    "flaky": {
+      "pass_count": 1,
+      "flaky_pass_count": 0,
+      "flaky_rate": 0.0,
+      "max_flaky_rate": 0.02
+    }
+  },
+  "qa9": {
+    "qa_profile": "web-full",
+    "qa_types": [
+      "contract"
+    ],
+    "qa_matrix_path": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/.beacon/qa/features/prism-extract-v1/matrix.qa9.json",
+    "ui_runner": "playwright",
+    "quality_requirements": {
+      "require_junit": true,
+      "require_assertion_count": true
+    },
+    "compatibility": {
+      "browsers": [],
+      "devices": [],
+      "required_pairs": [],
+      "executed_pairs": []
+    },
+    "summary": {
+      "cases_total": 13,
+      "passed": 13,
+      "failed": 0,
+      "blocked": 0,
+      "pending": 0,
+      "pass_rate": 1.0,
+      "automation_rate": 1.0,
+      "auto_cases_total": 13,
+      "auto_cases_executed": 13,
+      "round_stop_triggered": false,
+      "round_stop_reasons": []
+    },
+    "tc_results": [
+      {
+        "tc_id": "TC-EXTRACT-001",
+        "ac_id": "AC-EXTRACT-001",
+        "source_tc_id": "TC-EXTRACT-001",
+        "scenario_id": "",
+        "scenario_family": "",
+        "qa_type": "contract",
+        "layer": "contract",
+        "automation": "auto",
+        "status": "passed",
+        "layer_status": "passed",
+        "reason_code": "",
+        "assertion_count": 0,
+        "command": "test -e .git && test -f README.md && test -f AGENTS.md",
+        "run_id": "run-20260811T121330776605",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-extract-v1/tc-extract-001/__RUN_ID__.json",
+        "evidence_ref": [
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-001/command.txt",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-001/stdout.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-001/stderr.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-001/result.json"
+        ],
+        "execution_fingerprint": "6f986180093414d350f0fbffe158643fbb51c3d4c94cf358fb3a5fd89b83a328",
+        "started_at": "2026-08-11T12:13:30.979750",
+        "ended_at": "2026-08-11T12:13:30.987322",
+        "junit_path": "",
+        "junit_valid": false,
+        "browser_required": false,
+        "browser_evidence_pack_ref": "",
+        "browser_runner_learning_ref": "",
+        "replay_required": false,
+        "replay_ref": "",
+        "stop_on_fail": false,
+        "round_stop_trigger": false,
+        "round_stop_reasons": [],
+        "round_stop_anchor": ""
+      },
+      {
+        "tc_id": "TC-EXTRACT-002",
+        "ac_id": "AC-EXTRACT-002",
+        "source_tc_id": "TC-EXTRACT-002",
+        "scenario_id": "",
+        "scenario_family": "",
+        "qa_type": "contract",
+        "layer": "contract",
+        "automation": "auto",
+        "status": "passed",
+        "layer_status": "passed",
+        "reason_code": "",
+        "assertion_count": 6,
+        "command": "rg -n \"Lake B|Prism|1\\\\+6\" docs/beacon/v0.0.1/constitution/prism-constitution.md && test -f docs/beacon/v0.0.1/constitution/lake-a-prism-canon-v1-r3.truth.md",
+        "run_id": "run-20260811T121330776605",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-extract-v1/tc-extract-002/__RUN_ID__.json",
+        "evidence_ref": [
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-002/command.txt",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-002/stdout.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-002/stderr.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-002/junit.xml",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-002/result.json"
+        ],
+        "execution_fingerprint": "e253c0bb2a42ff80e0f9e780fdf0cf800e60850c7359840abe0859f688aed209",
+        "started_at": "2026-08-11T12:13:31.066106",
+        "ended_at": "2026-08-11T12:13:31.081406",
+        "junit_path": ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-002/junit.xml",
+        "junit_valid": true,
+        "browser_required": false,
+        "browser_evidence_pack_ref": "",
+        "browser_runner_learning_ref": "",
+        "replay_required": false,
+        "replay_ref": "",
+        "stop_on_fail": false,
+        "round_stop_trigger": false,
+        "round_stop_reasons": [],
+        "round_stop_anchor": ""
+      },
+      {
+        "tc_id": "TC-EXTRACT-003",
+        "ac_id": "AC-EXTRACT-003",
+        "source_tc_id": "TC-EXTRACT-003",
+        "scenario_id": "",
+        "scenario_family": "",
+        "qa_type": "contract",
+        "layer": "contract",
+        "automation": "auto",
+        "status": "passed",
+        "layer_status": "passed",
+        "reason_code": "",
+        "assertion_count": 0,
+        "command": "test -f skills/prism-goal/SKILL.md && test -f skills/prism-intel/SKILL.md && test -f skills/prism-master/SKILL.md && test -f skills/prism-director/SKILL.md && test -f skills/prism-produce/SKILL.md && test -f skills/prism-qa/SKILL.md && test -f skills/prism-release/SKILL.md",
+        "run_id": "run-20260811T121330776605",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-extract-v1/tc-extract-003/__RUN_ID__.json",
+        "evidence_ref": [
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-003/command.txt",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-003/stdout.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-003/stderr.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-003/result.json"
+        ],
+        "execution_fingerprint": "87a25c1baf845261a451785b4fa45fc3919462dc729045c23a68460f2bec630f",
+        "started_at": "2026-08-11T12:13:31.170355",
+        "ended_at": "2026-08-11T12:13:31.178021",
+        "junit_path": "",
+        "junit_valid": false,
+        "browser_required": false,
+        "browser_evidence_pack_ref": "",
+        "browser_runner_learning_ref": "",
+        "replay_required": false,
+        "replay_ref": "",
+        "stop_on_fail": false,
+        "round_stop_trigger": false,
+        "round_stop_reasons": [],
+        "round_stop_anchor": ""
+      },
+      {
+        "tc_id": "TC-EXTRACT-004",
+        "ac_id": "AC-EXTRACT-004",
+        "source_tc_id": "TC-EXTRACT-004",
+        "scenario_id": "",
+        "scenario_family": "",
+        "qa_type": "contract",
+        "layer": "contract",
+        "automation": "auto",
+        "status": "passed",
+        "layer_status": "passed",
+        "reason_code": "",
+        "assertion_count": 3,
+        "command": "rg -n \"scheme: A-1plus6\" registry/public-surface.yaml && rg -n \"max_public_harnesses: 6\" registry/public-surface.yaml && rg -n \"public_id: goal\" registry/public-surface.yaml",
+        "run_id": "run-20260811T121330776605",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-extract-v1/tc-extract-004/__RUN_ID__.json",
+        "evidence_ref": [
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-004/command.txt",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-004/stdout.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-004/stderr.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-004/junit.xml",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-004/result.json"
+        ],
+        "execution_fingerprint": "f5b3ce70e400cc42094230da15670896ce0e7e363557923275e4a9e845dce92e",
+        "started_at": "2026-08-11T12:13:31.262827",
+        "ended_at": "2026-08-11T12:13:31.287773",
+        "junit_path": ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-004/junit.xml",
+        "junit_valid": true,
+        "browser_required": false,
+        "browser_evidence_pack_ref": "",
+        "browser_runner_learning_ref": "",
+        "replay_required": false,
+        "replay_ref": "",
+        "stop_on_fail": false,
+        "round_stop_trigger": false,
+        "round_stop_reasons": [],
+        "round_stop_anchor": ""
+      },
+      {
+        "tc_id": "TC-EXTRACT-005",
+        "ac_id": "AC-EXTRACT-005",
+        "source_tc_id": "TC-EXTRACT-005",
+        "scenario_id": "",
+        "scenario_family": "",
+        "qa_type": "contract",
+        "layer": "contract",
+        "automation": "auto",
+        "status": "passed",
+        "layer_status": "passed",
+        "reason_code": "",
+        "assertion_count": 3,
+        "command": "rg -n \"^## 1\\\\. identity\" contracts/skill-contract-7seg.tpl.md && rg -n \"^## 2\\\\. 决策边界\" contracts/skill-contract-7seg.tpl.md && rg -n \"^## 7\\\\. 失败处理\" contracts/skill-contract-7seg.tpl.md",
+        "run_id": "run-20260811T121330776605",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-extract-v1/tc-extract-005/__RUN_ID__.json",
+        "evidence_ref": [
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-005/command.txt",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-005/stdout.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-005/stderr.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-005/junit.xml",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-005/result.json"
+        ],
+        "execution_fingerprint": "ff5a0cf162616114f12c0dcfb53b47c4a33ae82010ba7941eb06abcdc8c8e73e",
+        "started_at": "2026-08-11T12:13:31.393848",
+        "ended_at": "2026-08-11T12:13:31.435975",
+        "junit_path": ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-005/junit.xml",
+        "junit_valid": true,
+        "browser_required": false,
+        "browser_evidence_pack_ref": "",
+        "browser_runner_learning_ref": "",
+        "replay_required": false,
+        "replay_ref": "",
+        "stop_on_fail": false,
+        "round_stop_trigger": false,
+        "round_stop_reasons": [],
+        "round_stop_anchor": ""
+      },
+      {
+        "tc_id": "TC-EXTRACT-006",
+        "ac_id": "AC-EXTRACT-006",
+        "source_tc_id": "TC-EXTRACT-006",
+        "scenario_id": "",
+        "scenario_family": "",
+        "qa_type": "contract",
+        "layer": "contract",
+        "automation": "auto",
+        "status": "passed",
+        "layer_status": "passed",
+        "reason_code": "",
+        "assertion_count": 5,
+        "command": "rg -n \"这次做了什么\" contracts/human-card.md && rg -n \"需要你决定\" contracts/human-card.md && rg -n \"下一步\" contracts/human-card.md && rg -n \"机器面\" contracts/human-card.md",
+        "run_id": "run-20260811T121330776605",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-extract-v1/tc-extract-006/__RUN_ID__.json",
+        "evidence_ref": [
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-006/command.txt",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-006/stdout.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-006/stderr.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-006/junit.xml",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-006/result.json"
+        ],
+        "execution_fingerprint": "fbb9bed3c418155bdd07f549d950487864653b20a193034ce45f39c13aa9f5bd",
+        "started_at": "2026-08-11T12:13:31.532567",
+        "ended_at": "2026-08-11T12:13:31.593852",
+        "junit_path": ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-006/junit.xml",
+        "junit_valid": true,
+        "browser_required": false,
+        "browser_evidence_pack_ref": "",
+        "browser_runner_learning_ref": "",
+        "replay_required": false,
+        "replay_ref": "",
+        "stop_on_fail": false,
+        "round_stop_trigger": false,
+        "round_stop_reasons": [],
+        "round_stop_anchor": ""
+      },
+      {
+        "tc_id": "TC-EXTRACT-007",
+        "ac_id": "AC-EXTRACT-007",
+        "source_tc_id": "TC-EXTRACT-007",
+        "scenario_id": "",
+        "scenario_family": "",
+        "qa_type": "contract",
+        "layer": "contract",
+        "automation": "auto",
+        "status": "passed",
+        "layer_status": "passed",
+        "reason_code": "",
+        "assertion_count": 0,
+        "command": "test -f skills/_internal/orchestration/skill-routing.md && test -f skills/_internal/orchestration/quality-gates.md && test -f skills/_internal/orchestration/creation-mode-map.md && test -f skills/_internal/orchestration/pipeline-contract.md",
+        "run_id": "run-20260811T121330776605",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-extract-v1/tc-extract-007/__RUN_ID__.json",
+        "evidence_ref": [
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-007/command.txt",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-007/stdout.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-007/stderr.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-007/result.json"
+        ],
+        "execution_fingerprint": "e616e3e4aa91966d034d2bccbddf4402436f9718d89ef73b4e5370571934095e",
+        "started_at": "2026-08-11T12:13:31.759902",
+        "ended_at": "2026-08-11T12:13:31.767397",
+        "junit_path": "",
+        "junit_valid": false,
+        "browser_required": false,
+        "browser_evidence_pack_ref": "",
+        "browser_runner_learning_ref": "",
+        "replay_required": false,
+        "replay_ref": "",
+        "stop_on_fail": false,
+        "round_stop_trigger": false,
+        "round_stop_reasons": [],
+        "round_stop_anchor": ""
+      },
+      {
+        "tc_id": "TC-EXTRACT-008",
+        "ac_id": "AC-EXTRACT-008",
+        "source_tc_id": "TC-EXTRACT-008",
+        "scenario_id": "",
+        "scenario_family": "",
+        "qa_type": "contract",
+        "layer": "contract",
+        "automation": "auto",
+        "status": "passed",
+        "layer_status": "passed",
+        "reason_code": "",
+        "assertion_count": 2,
+        "command": "rg -n \"MAP-001\" registry/adapter-index.yaml && rg -n \"MAP-009\" registry/adapter-index.yaml && test ! -f skills/_internal/adapters/SKILL.md",
+        "run_id": "run-20260811T121330776605",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-extract-v1/tc-extract-008/__RUN_ID__.json",
+        "evidence_ref": [
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-008/command.txt",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-008/stdout.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-008/stderr.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-008/junit.xml",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-008/result.json"
+        ],
+        "execution_fingerprint": "79fa6edefc92c88895a61b98bb752c15e74f00770c5a4657321569b93140b8d5",
+        "started_at": "2026-08-11T12:13:31.853530",
+        "ended_at": "2026-08-11T12:13:31.874671",
+        "junit_path": ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-008/junit.xml",
+        "junit_valid": true,
+        "browser_required": false,
+        "browser_evidence_pack_ref": "",
+        "browser_runner_learning_ref": "",
+        "replay_required": false,
+        "replay_ref": "",
+        "stop_on_fail": false,
+        "round_stop_trigger": false,
+        "round_stop_reasons": [],
+        "round_stop_anchor": ""
+      },
+      {
+        "tc_id": "TC-EXTRACT-009",
+        "ac_id": "AC-EXTRACT-009",
+        "source_tc_id": "TC-EXTRACT-009",
+        "scenario_id": "",
+        "scenario_family": "",
+        "qa_type": "contract",
+        "layer": "contract",
+        "automation": "auto",
+        "status": "passed",
+        "layer_status": "passed",
+        "reason_code": "",
+        "assertion_count": 4,
+        "command": "rg -n \"prism-canon-v1\" docs/beacon/v0.0.1/constitution/prism-constitution.md && rg -n \"selfmedia-creator\" registry/adapter-index.yaml && rg -n \"R3\" docs/beacon/v0.0.1/constitution/prism-constitution.md",
+        "run_id": "run-20260811T121330776605",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-extract-v1/tc-extract-009/__RUN_ID__.json",
+        "evidence_ref": [
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-009/command.txt",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-009/stdout.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-009/stderr.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-009/junit.xml",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-009/result.json"
+        ],
+        "execution_fingerprint": "8c39adc6b72ee2e12764b3f5b54ce46184e5ed2235c74516785c28a3b0c65bb5",
+        "started_at": "2026-08-11T12:13:31.962754",
+        "ended_at": "2026-08-11T12:13:31.994042",
+        "junit_path": ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-009/junit.xml",
+        "junit_valid": true,
+        "browser_required": false,
+        "browser_evidence_pack_ref": "",
+        "browser_runner_learning_ref": "",
+        "replay_required": false,
+        "replay_ref": "",
+        "stop_on_fail": false,
+        "round_stop_trigger": false,
+        "round_stop_reasons": [],
+        "round_stop_anchor": ""
+      },
+      {
+        "tc_id": "TC-EXTRACT-010",
+        "ac_id": "AC-EXTRACT-010",
+        "source_tc_id": "TC-EXTRACT-010",
+        "scenario_id": "",
+        "scenario_family": "",
+        "qa_type": "contract",
+        "layer": "contract",
+        "automation": "auto",
+        "status": "passed",
+        "layer_status": "passed",
+        "reason_code": "",
+        "assertion_count": 10,
+        "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md && rg -n \"Lake D\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+        "run_id": "run-20260811T121330776605",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-extract-v1/tc-extract-010/__RUN_ID__.json",
+        "evidence_ref": [
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-010/command.txt",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-010/stdout.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-010/stderr.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-010/junit.xml",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-010/result.json"
+        ],
+        "execution_fingerprint": "0790665c13410d821e6a547a8538312f1c79b0d7045f549b44093e8669963367",
+        "started_at": "2026-08-11T12:13:32.108040",
+        "ended_at": "2026-08-11T12:13:32.151846",
+        "junit_path": ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-010/junit.xml",
+        "junit_valid": true,
+        "browser_required": false,
+        "browser_evidence_pack_ref": "",
+        "browser_runner_learning_ref": "",
+        "replay_required": false,
+        "replay_ref": "",
+        "stop_on_fail": false,
+        "round_stop_trigger": false,
+        "round_stop_reasons": [],
+        "round_stop_anchor": ""
+      },
+      {
+        "tc_id": "TC-EXTRACT-011",
+        "ac_id": "AC-EXTRACT-003",
+        "source_tc_id": "TC-EXTRACT-011",
+        "scenario_id": "",
+        "scenario_family": "",
+        "qa_type": "contract",
+        "layer": "contract",
+        "automation": "auto",
+        "status": "passed",
+        "layer_status": "passed",
+        "reason_code": "",
+        "assertion_count": 0,
+        "command": "python3 -c \"from pathlib import Path; n=sum(1 for p in Path('skills').glob('prism-*/SKILL.md') if 'public_surface: true' in p.read_text()); raise SystemExit(0 if n==7 else 1)\"",
+        "run_id": "run-20260811T121330776605",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-extract-v1/tc-extract-011/__RUN_ID__.json",
+        "evidence_ref": [
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-011/command.txt",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-011/stdout.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-011/stderr.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-011/result.json"
+        ],
+        "execution_fingerprint": "ed83f16ad0192cc26577705d3b7f6935a4cf9592f392c0aae2d4516bd1933f5a",
+        "started_at": "2026-08-11T12:13:32.249603",
+        "ended_at": "2026-08-11T12:13:32.332452",
+        "junit_path": "",
+        "junit_valid": false,
+        "browser_required": false,
+        "browser_evidence_pack_ref": "",
+        "browser_runner_learning_ref": "",
+        "replay_required": false,
+        "replay_ref": "",
+        "stop_on_fail": false,
+        "round_stop_trigger": false,
+        "round_stop_reasons": [],
+        "round_stop_anchor": ""
+      },
+      {
+        "tc_id": "TC-EXTRACT-012",
+        "ac_id": "AC-EXTRACT-008",
+        "source_tc_id": "TC-EXTRACT-012",
+        "scenario_id": "",
+        "scenario_family": "",
+        "qa_type": "contract",
+        "layer": "contract",
+        "automation": "auto",
+        "status": "passed",
+        "layer_status": "passed",
+        "reason_code": "",
+        "assertion_count": 0,
+        "command": "python3 -c \"from pathlib import Path; n=len(list(Path('skills/_internal/adapters').glob('*.contract.md'))); raise SystemExit(0 if n>=7 else 1)\"",
+        "run_id": "run-20260811T121330776605",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-extract-v1/tc-extract-012/__RUN_ID__.json",
+        "evidence_ref": [
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-012/command.txt",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-012/stdout.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-012/stderr.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-012/result.json"
+        ],
+        "execution_fingerprint": "0f1fb8d4dc99262d0a82a4f50df5cfe8a80f5909566e0fe7527367e69950dc7f",
+        "started_at": "2026-08-11T12:13:32.440636",
+        "ended_at": "2026-08-11T12:13:32.513940",
+        "junit_path": "",
+        "junit_valid": false,
+        "browser_required": false,
+        "browser_evidence_pack_ref": "",
+        "browser_runner_learning_ref": "",
+        "replay_required": false,
+        "replay_ref": "",
+        "stop_on_fail": false,
+        "round_stop_trigger": false,
+        "round_stop_reasons": [],
+        "round_stop_anchor": ""
+      },
+      {
+        "tc_id": "TC-EXTRACT-013",
+        "ac_id": "AC-EXTRACT-010",
+        "source_tc_id": "TC-EXTRACT-013",
+        "scenario_id": "",
+        "scenario_family": "",
+        "qa_type": "contract",
+        "layer": "contract",
+        "automation": "auto",
+        "status": "passed",
+        "layer_status": "passed",
+        "reason_code": "",
+        "assertion_count": 5,
+        "command": "rg -n \"Illegal transitions|illegal|跳过 QA|宣称 Lake D\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+        "run_id": "run-20260811T121330776605",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-extract-v1/tc-extract-013/__RUN_ID__.json",
+        "evidence_ref": [
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-013/command.txt",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-013/stdout.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-013/stderr.log",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-013/junit.xml",
+          ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-013/result.json"
+        ],
+        "execution_fingerprint": "387f1c717c1704730f409054e4615d1bd2dcee7f3e42c9c46ab8cd11d4d87aa7",
+        "started_at": "2026-08-11T12:13:32.619991",
+        "ended_at": "2026-08-11T12:13:32.648705",
+        "junit_path": ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-013/junit.xml",
+        "junit_valid": true,
+        "browser_required": false,
+        "browser_evidence_pack_ref": "",
+        "browser_runner_learning_ref": "",
+        "replay_required": false,
+        "replay_ref": "",
+        "stop_on_fail": false,
+        "round_stop_trigger": false,
+        "round_stop_reasons": [],
+        "round_stop_anchor": ""
+      }
+    ]
+  },
+  "quality_issues": [
+    {
+      "layer": "contract",
+      "reason_code": "assertion_count_zero_pass",
+      "message": "layer contract passed but assertion_count=0"
+    },
+    {
+      "layer": "contract",
+      "reason_code": "junit_missing_or_invalid",
+      "message": "layer contract missing junit.xml"
+    }
+  ],
+  "schema_version": "1.0",
+  "updated_at": "2026-08-11T04:13:32.668908+00:00",
+  "summary": {
+    "feature": "prism-extract-v1",
+    "version": "v0.0.1",
+    "status": "passed",
+    "release_ready": true,
+    "continue_decision": "stop_for_repair",
+    "stop_reasons": [
+      "assertion_count_zero_pass",
+      "junit_missing_or_invalid"
+    ],
+    "reconciliation_required": false,
+    "reconciliation_reason_code": "",
+    "reconciliation_artifact_path": "",
+    "reconciliation_reprojection_targets": [],
+    "repair_action": "qa-repair",
+    "repair_command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/prism-extract-v1 --version v0.0.1 --feature \"prism-extract-v1\""
+  },
+  "qa_status_source": "canonical",
+  "governance_state_role": "generated_governance_state_not_truth",
+  "truth_authority": false,
+  "json_authority": false,
+  "resolver_mode": "resolver_first",
+  "feature": "prism-extract-v1",
+  "feature_slug": "prism-extract-v1",
+  "implementation_done": true,
+  "evidence_done": true,
+  "story_sequence": [
+    {
+      "ac_id": "AC-001",
+      "theme": "general",
+      "text": "Acceptance criteria TBD",
+      "tc_ids": [],
+      "qa_types": []
+    }
+  ],
+  "targeted_rerun": {
+    "required": true,
+    "reason_codes": [
+      "implementation_run_changed"
+    ],
+    "targeted_layers": [
+      "contract"
+    ],
+    "targeted_ac_ids": [
+      "AC-EXTRACT-001",
+      "AC-EXTRACT-002",
+      "AC-EXTRACT-003",
+      "AC-EXTRACT-004",
+      "AC-EXTRACT-005",
+      "AC-EXTRACT-006",
+      "AC-EXTRACT-007",
+      "AC-EXTRACT-008",
+      "AC-EXTRACT-009",
+      "AC-EXTRACT-010"
+    ],
+    "targeted_tc_ids": [
+      "TC-EXTRACT-001",
+      "TC-EXTRACT-002",
+      "TC-EXTRACT-003",
+      "TC-EXTRACT-004",
+      "TC-EXTRACT-005",
+      "TC-EXTRACT-006",
+      "TC-EXTRACT-007",
+      "TC-EXTRACT-008",
+      "TC-EXTRACT-009",
+      "TC-EXTRACT-010",
+      "TC-EXTRACT-011",
+      "TC-EXTRACT-012",
+      "TC-EXTRACT-013"
+    ],
+    "targeted_scenario_ids": [],
+    "targeted_scenario_families": []
+  },
+  "boundary_evidence": {
+    "boundary_principles": [],
+    "assumption_capture_required": true,
+    "goal_driven_verification_required": true,
+    "targeted_scope_only": true,
+    "verification_item_count": 13
+  },
+  "feature_matrix_path": ".beacon/qa/features/prism-extract-v1/matrix.qa9.json",
+  "blocking_artifact_updates": [],
+  "per_item_results": [
+    {
+      "ac_id": "AC-EXTRACT-001",
+      "tc_id": "TC-EXTRACT-001",
+      "source_tc_id": "TC-EXTRACT-001",
+      "scenario_id": "",
+      "scenario_family": "",
+      "test_item_id": "TEST-001",
+      "status": "passed",
+      "reason_code": "",
+      "qa_type": "contract",
+      "browser_required": false,
+      "replay_required": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "replay_ref": "",
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-001/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-001/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-001/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-001/result.json"
+      ]
+    },
+    {
+      "ac_id": "AC-EXTRACT-002",
+      "tc_id": "TC-EXTRACT-002",
+      "source_tc_id": "TC-EXTRACT-002",
+      "scenario_id": "",
+      "scenario_family": "",
+      "test_item_id": "TEST-002",
+      "status": "passed",
+      "reason_code": "",
+      "qa_type": "contract",
+      "browser_required": false,
+      "replay_required": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "replay_ref": "",
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-002/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-002/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-002/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-002/junit.xml",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-002/result.json"
+      ]
+    },
+    {
+      "ac_id": "AC-EXTRACT-003",
+      "tc_id": "TC-EXTRACT-003",
+      "source_tc_id": "TC-EXTRACT-003",
+      "scenario_id": "",
+      "scenario_family": "",
+      "test_item_id": "TEST-003",
+      "status": "passed",
+      "reason_code": "",
+      "qa_type": "contract",
+      "browser_required": false,
+      "replay_required": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "replay_ref": "",
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-003/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-003/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-003/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-003/result.json"
+      ]
+    },
+    {
+      "ac_id": "AC-EXTRACT-004",
+      "tc_id": "TC-EXTRACT-004",
+      "source_tc_id": "TC-EXTRACT-004",
+      "scenario_id": "",
+      "scenario_family": "",
+      "test_item_id": "TEST-004",
+      "status": "passed",
+      "reason_code": "",
+      "qa_type": "contract",
+      "browser_required": false,
+      "replay_required": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "replay_ref": "",
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-004/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-004/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-004/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-004/junit.xml",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-004/result.json"
+      ]
+    },
+    {
+      "ac_id": "AC-EXTRACT-005",
+      "tc_id": "TC-EXTRACT-005",
+      "source_tc_id": "TC-EXTRACT-005",
+      "scenario_id": "",
+      "scenario_family": "",
+      "test_item_id": "TEST-005",
+      "status": "passed",
+      "reason_code": "",
+      "qa_type": "contract",
+      "browser_required": false,
+      "replay_required": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "replay_ref": "",
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-005/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-005/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-005/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-005/junit.xml",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-005/result.json"
+      ]
+    },
+    {
+      "ac_id": "AC-EXTRACT-006",
+      "tc_id": "TC-EXTRACT-006",
+      "source_tc_id": "TC-EXTRACT-006",
+      "scenario_id": "",
+      "scenario_family": "",
+      "test_item_id": "TEST-006",
+      "status": "passed",
+      "reason_code": "",
+      "qa_type": "contract",
+      "browser_required": false,
+      "replay_required": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "replay_ref": "",
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-006/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-006/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-006/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-006/junit.xml",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-006/result.json"
+      ]
+    },
+    {
+      "ac_id": "AC-EXTRACT-007",
+      "tc_id": "TC-EXTRACT-007",
+      "source_tc_id": "TC-EXTRACT-007",
+      "scenario_id": "",
+      "scenario_family": "",
+      "test_item_id": "TEST-007",
+      "status": "passed",
+      "reason_code": "",
+      "qa_type": "contract",
+      "browser_required": false,
+      "replay_required": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "replay_ref": "",
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-007/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-007/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-007/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-007/result.json"
+      ]
+    },
+    {
+      "ac_id": "AC-EXTRACT-008",
+      "tc_id": "TC-EXTRACT-008",
+      "source_tc_id": "TC-EXTRACT-008",
+      "scenario_id": "",
+      "scenario_family": "",
+      "test_item_id": "TEST-008",
+      "status": "passed",
+      "reason_code": "",
+      "qa_type": "contract",
+      "browser_required": false,
+      "replay_required": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "replay_ref": "",
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-008/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-008/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-008/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-008/junit.xml",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-008/result.json"
+      ]
+    },
+    {
+      "ac_id": "AC-EXTRACT-009",
+      "tc_id": "TC-EXTRACT-009",
+      "source_tc_id": "TC-EXTRACT-009",
+      "scenario_id": "",
+      "scenario_family": "",
+      "test_item_id": "TEST-009",
+      "status": "passed",
+      "reason_code": "",
+      "qa_type": "contract",
+      "browser_required": false,
+      "replay_required": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "replay_ref": "",
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-009/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-009/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-009/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-009/junit.xml",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-009/result.json"
+      ]
+    },
+    {
+      "ac_id": "AC-EXTRACT-010",
+      "tc_id": "TC-EXTRACT-010",
+      "source_tc_id": "TC-EXTRACT-010",
+      "scenario_id": "",
+      "scenario_family": "",
+      "test_item_id": "TEST-010",
+      "status": "passed",
+      "reason_code": "",
+      "qa_type": "contract",
+      "browser_required": false,
+      "replay_required": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "replay_ref": "",
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-010/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-010/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-010/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-010/junit.xml",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-010/result.json"
+      ]
+    },
+    {
+      "ac_id": "AC-EXTRACT-003",
+      "tc_id": "TC-EXTRACT-011",
+      "source_tc_id": "TC-EXTRACT-011",
+      "scenario_id": "",
+      "scenario_family": "",
+      "test_item_id": "TEST-011",
+      "status": "passed",
+      "reason_code": "",
+      "qa_type": "contract",
+      "browser_required": false,
+      "replay_required": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "replay_ref": "",
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-011/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-011/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-011/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-011/result.json"
+      ]
+    },
+    {
+      "ac_id": "AC-EXTRACT-008",
+      "tc_id": "TC-EXTRACT-012",
+      "source_tc_id": "TC-EXTRACT-012",
+      "scenario_id": "",
+      "scenario_family": "",
+      "test_item_id": "TEST-012",
+      "status": "passed",
+      "reason_code": "",
+      "qa_type": "contract",
+      "browser_required": false,
+      "replay_required": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "replay_ref": "",
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-012/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-012/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-012/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-012/result.json"
+      ]
+    },
+    {
+      "ac_id": "AC-EXTRACT-010",
+      "tc_id": "TC-EXTRACT-013",
+      "source_tc_id": "TC-EXTRACT-013",
+      "scenario_id": "",
+      "scenario_family": "",
+      "test_item_id": "TEST-013",
+      "status": "passed",
+      "reason_code": "",
+      "qa_type": "contract",
+      "browser_required": false,
+      "replay_required": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "replay_ref": "",
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-013/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-013/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-013/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-013/junit.xml",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-013/result.json"
+      ]
+    }
+  ],
+  "execution_mode": "feature-aware",
+  "project_profile": {},
+  "project_profile_gate": {
+    "status": "not_configured",
+    "profile_id": "",
+    "issues": [],
+    "required_evidence": [],
+    "required_cases": [],
+    "contract_drifts": []
+  },
+  "project_orchestration": {},
+  "current_session_id": "",
+  "design_truth_verdict": {
+    "schema_version": "1.0",
+    "status": "not_applicable",
+    "blocked": false,
+    "reason_codes": [],
+    "source_surface": "implement-to-qa-handoff",
+    "verification_surface": "qa",
+    "docs_version": "v0.0.1",
+    "runtime_version": "v1.6.12",
+    "findings": []
+  },
+  "requirement_completeness_gate": {
+    "schema_version": "1.0",
+    "enabled": false,
+    "status": "pass",
+    "blocked": false,
+    "reason_code": "",
+    "target_stage": "qa",
+    "feature": "prism-extract-v1",
+    "version": "v0.0.1",
+    "recommended_command": ""
+  },
+  "requirement_completeness_verdict": "pass",
+  "requirement_completeness_ref": "",
+  "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json",
+  "exhaustiveness": {
+    "schema_version": "1.0",
+    "feature": "prism-extract-v1",
+    "feature_slug": "prism-extract-v1",
+    "run_id": "run-20260811T121330776605",
+    "generated_at": "2026-08-11T04:13:32.750414+00:00",
+    "execution_mode": "feature-aware",
+    "scenario_count": 13,
+    "browser_scenario_count": 0,
+    "required_families": [],
+    "passed_families": [],
+    "missing_axes": [],
+    "missing_replay_scenarios": [],
+    "missing_browser_evidence_scenarios": [],
+    "scenario_pass_rate": 1.0,
+    "family_coverage_rate": 1.0,
+    "replay_coverage_rate": 1.0,
+    "browser_evidence_rate": 1.0,
+    "score": 1.0,
+    "threshold": 0.6,
+    "status": "passed",
+    "required_next_action": "continue_current_plan",
+    "failure_streak": 0,
+    "escalation_level": "E0"
+  },
+  "scenario_results_v2": [
+    {
+      "scenario_id": "TC-EXTRACT-001",
+      "tc_id": "TC-EXTRACT-001",
+      "source_tc_id": "TC-EXTRACT-001",
+      "ac_id": "AC-EXTRACT-001",
+      "feature_slug": "prism-extract-v1",
+      "scenario_family": "",
+      "status": "passed",
+      "closure_outcome": "accepted",
+      "confidence_raw": 1.0,
+      "confidence_calibrated": 1.0,
+      "confidence_band": "high",
+      "requires_human_review": false,
+      "evidence_sufficiency": "strong",
+      "root_cause_type": "none",
+      "reason_code": "",
+      "browser_required": false,
+      "replay_required": false,
+      "replay_present": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "judge_signals": {
+        "status_score": 1.0,
+        "evidence_score": 1.0,
+        "replay_score": 1.0,
+        "trace_score": 1.0,
+        "flake_penalty": 0.0
+      },
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-001/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-001/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-001/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-001/result.json"
+      ]
+    },
+    {
+      "scenario_id": "TC-EXTRACT-002",
+      "tc_id": "TC-EXTRACT-002",
+      "source_tc_id": "TC-EXTRACT-002",
+      "ac_id": "AC-EXTRACT-002",
+      "feature_slug": "prism-extract-v1",
+      "scenario_family": "",
+      "status": "passed",
+      "closure_outcome": "accepted",
+      "confidence_raw": 1.0,
+      "confidence_calibrated": 1.0,
+      "confidence_band": "high",
+      "requires_human_review": false,
+      "evidence_sufficiency": "strong",
+      "root_cause_type": "none",
+      "reason_code": "",
+      "browser_required": false,
+      "replay_required": false,
+      "replay_present": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "judge_signals": {
+        "status_score": 1.0,
+        "evidence_score": 1.0,
+        "replay_score": 1.0,
+        "trace_score": 1.0,
+        "flake_penalty": 0.0
+      },
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-002/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-002/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-002/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-002/junit.xml",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-002/result.json"
+      ]
+    },
+    {
+      "scenario_id": "TC-EXTRACT-003",
+      "tc_id": "TC-EXTRACT-003",
+      "source_tc_id": "TC-EXTRACT-003",
+      "ac_id": "AC-EXTRACT-003",
+      "feature_slug": "prism-extract-v1",
+      "scenario_family": "",
+      "status": "passed",
+      "closure_outcome": "accepted",
+      "confidence_raw": 1.0,
+      "confidence_calibrated": 1.0,
+      "confidence_band": "high",
+      "requires_human_review": false,
+      "evidence_sufficiency": "strong",
+      "root_cause_type": "none",
+      "reason_code": "",
+      "browser_required": false,
+      "replay_required": false,
+      "replay_present": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "judge_signals": {
+        "status_score": 1.0,
+        "evidence_score": 1.0,
+        "replay_score": 1.0,
+        "trace_score": 1.0,
+        "flake_penalty": 0.0
+      },
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-003/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-003/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-003/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-003/result.json"
+      ]
+    },
+    {
+      "scenario_id": "TC-EXTRACT-004",
+      "tc_id": "TC-EXTRACT-004",
+      "source_tc_id": "TC-EXTRACT-004",
+      "ac_id": "AC-EXTRACT-004",
+      "feature_slug": "prism-extract-v1",
+      "scenario_family": "",
+      "status": "passed",
+      "closure_outcome": "accepted",
+      "confidence_raw": 1.0,
+      "confidence_calibrated": 1.0,
+      "confidence_band": "high",
+      "requires_human_review": false,
+      "evidence_sufficiency": "strong",
+      "root_cause_type": "none",
+      "reason_code": "",
+      "browser_required": false,
+      "replay_required": false,
+      "replay_present": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "judge_signals": {
+        "status_score": 1.0,
+        "evidence_score": 1.0,
+        "replay_score": 1.0,
+        "trace_score": 1.0,
+        "flake_penalty": 0.0
+      },
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-004/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-004/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-004/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-004/junit.xml",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-004/result.json"
+      ]
+    },
+    {
+      "scenario_id": "TC-EXTRACT-005",
+      "tc_id": "TC-EXTRACT-005",
+      "source_tc_id": "TC-EXTRACT-005",
+      "ac_id": "AC-EXTRACT-005",
+      "feature_slug": "prism-extract-v1",
+      "scenario_family": "",
+      "status": "passed",
+      "closure_outcome": "accepted",
+      "confidence_raw": 1.0,
+      "confidence_calibrated": 1.0,
+      "confidence_band": "high",
+      "requires_human_review": false,
+      "evidence_sufficiency": "strong",
+      "root_cause_type": "none",
+      "reason_code": "",
+      "browser_required": false,
+      "replay_required": false,
+      "replay_present": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "judge_signals": {
+        "status_score": 1.0,
+        "evidence_score": 1.0,
+        "replay_score": 1.0,
+        "trace_score": 1.0,
+        "flake_penalty": 0.0
+      },
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-005/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-005/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-005/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-005/junit.xml",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-005/result.json"
+      ]
+    },
+    {
+      "scenario_id": "TC-EXTRACT-006",
+      "tc_id": "TC-EXTRACT-006",
+      "source_tc_id": "TC-EXTRACT-006",
+      "ac_id": "AC-EXTRACT-006",
+      "feature_slug": "prism-extract-v1",
+      "scenario_family": "",
+      "status": "passed",
+      "closure_outcome": "accepted",
+      "confidence_raw": 1.0,
+      "confidence_calibrated": 1.0,
+      "confidence_band": "high",
+      "requires_human_review": false,
+      "evidence_sufficiency": "strong",
+      "root_cause_type": "none",
+      "reason_code": "",
+      "browser_required": false,
+      "replay_required": false,
+      "replay_present": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "judge_signals": {
+        "status_score": 1.0,
+        "evidence_score": 1.0,
+        "replay_score": 1.0,
+        "trace_score": 1.0,
+        "flake_penalty": 0.0
+      },
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-006/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-006/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-006/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-006/junit.xml",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-006/result.json"
+      ]
+    },
+    {
+      "scenario_id": "TC-EXTRACT-007",
+      "tc_id": "TC-EXTRACT-007",
+      "source_tc_id": "TC-EXTRACT-007",
+      "ac_id": "AC-EXTRACT-007",
+      "feature_slug": "prism-extract-v1",
+      "scenario_family": "",
+      "status": "passed",
+      "closure_outcome": "accepted",
+      "confidence_raw": 1.0,
+      "confidence_calibrated": 1.0,
+      "confidence_band": "high",
+      "requires_human_review": false,
+      "evidence_sufficiency": "strong",
+      "root_cause_type": "none",
+      "reason_code": "",
+      "browser_required": false,
+      "replay_required": false,
+      "replay_present": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "judge_signals": {
+        "status_score": 1.0,
+        "evidence_score": 1.0,
+        "replay_score": 1.0,
+        "trace_score": 1.0,
+        "flake_penalty": 0.0
+      },
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-007/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-007/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-007/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-007/result.json"
+      ]
+    },
+    {
+      "scenario_id": "TC-EXTRACT-008",
+      "tc_id": "TC-EXTRACT-008",
+      "source_tc_id": "TC-EXTRACT-008",
+      "ac_id": "AC-EXTRACT-008",
+      "feature_slug": "prism-extract-v1",
+      "scenario_family": "",
+      "status": "passed",
+      "closure_outcome": "accepted",
+      "confidence_raw": 1.0,
+      "confidence_calibrated": 1.0,
+      "confidence_band": "high",
+      "requires_human_review": false,
+      "evidence_sufficiency": "strong",
+      "root_cause_type": "none",
+      "reason_code": "",
+      "browser_required": false,
+      "replay_required": false,
+      "replay_present": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "judge_signals": {
+        "status_score": 1.0,
+        "evidence_score": 1.0,
+        "replay_score": 1.0,
+        "trace_score": 1.0,
+        "flake_penalty": 0.0
+      },
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-008/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-008/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-008/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-008/junit.xml",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-008/result.json"
+      ]
+    },
+    {
+      "scenario_id": "TC-EXTRACT-009",
+      "tc_id": "TC-EXTRACT-009",
+      "source_tc_id": "TC-EXTRACT-009",
+      "ac_id": "AC-EXTRACT-009",
+      "feature_slug": "prism-extract-v1",
+      "scenario_family": "",
+      "status": "passed",
+      "closure_outcome": "accepted",
+      "confidence_raw": 1.0,
+      "confidence_calibrated": 1.0,
+      "confidence_band": "high",
+      "requires_human_review": false,
+      "evidence_sufficiency": "strong",
+      "root_cause_type": "none",
+      "reason_code": "",
+      "browser_required": false,
+      "replay_required": false,
+      "replay_present": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "judge_signals": {
+        "status_score": 1.0,
+        "evidence_score": 1.0,
+        "replay_score": 1.0,
+        "trace_score": 1.0,
+        "flake_penalty": 0.0
+      },
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-009/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-009/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-009/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-009/junit.xml",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-009/result.json"
+      ]
+    },
+    {
+      "scenario_id": "TC-EXTRACT-010",
+      "tc_id": "TC-EXTRACT-010",
+      "source_tc_id": "TC-EXTRACT-010",
+      "ac_id": "AC-EXTRACT-010",
+      "feature_slug": "prism-extract-v1",
+      "scenario_family": "",
+      "status": "passed",
+      "closure_outcome": "accepted",
+      "confidence_raw": 1.0,
+      "confidence_calibrated": 1.0,
+      "confidence_band": "high",
+      "requires_human_review": false,
+      "evidence_sufficiency": "strong",
+      "root_cause_type": "none",
+      "reason_code": "",
+      "browser_required": false,
+      "replay_required": false,
+      "replay_present": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "judge_signals": {
+        "status_score": 1.0,
+        "evidence_score": 1.0,
+        "replay_score": 1.0,
+        "trace_score": 1.0,
+        "flake_penalty": 0.0
+      },
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-010/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-010/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-010/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-010/junit.xml",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-010/result.json"
+      ]
+    },
+    {
+      "scenario_id": "TC-EXTRACT-011",
+      "tc_id": "TC-EXTRACT-011",
+      "source_tc_id": "TC-EXTRACT-011",
+      "ac_id": "AC-EXTRACT-003",
+      "feature_slug": "prism-extract-v1",
+      "scenario_family": "",
+      "status": "passed",
+      "closure_outcome": "accepted",
+      "confidence_raw": 1.0,
+      "confidence_calibrated": 1.0,
+      "confidence_band": "high",
+      "requires_human_review": false,
+      "evidence_sufficiency": "strong",
+      "root_cause_type": "none",
+      "reason_code": "",
+      "browser_required": false,
+      "replay_required": false,
+      "replay_present": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "judge_signals": {
+        "status_score": 1.0,
+        "evidence_score": 1.0,
+        "replay_score": 1.0,
+        "trace_score": 1.0,
+        "flake_penalty": 0.0
+      },
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-011/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-011/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-011/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-011/result.json"
+      ]
+    },
+    {
+      "scenario_id": "TC-EXTRACT-012",
+      "tc_id": "TC-EXTRACT-012",
+      "source_tc_id": "TC-EXTRACT-012",
+      "ac_id": "AC-EXTRACT-008",
+      "feature_slug": "prism-extract-v1",
+      "scenario_family": "",
+      "status": "passed",
+      "closure_outcome": "accepted",
+      "confidence_raw": 1.0,
+      "confidence_calibrated": 1.0,
+      "confidence_band": "high",
+      "requires_human_review": false,
+      "evidence_sufficiency": "strong",
+      "root_cause_type": "none",
+      "reason_code": "",
+      "browser_required": false,
+      "replay_required": false,
+      "replay_present": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "judge_signals": {
+        "status_score": 1.0,
+        "evidence_score": 1.0,
+        "replay_score": 1.0,
+        "trace_score": 1.0,
+        "flake_penalty": 0.0
+      },
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-012/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-012/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-012/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-012/result.json"
+      ]
+    },
+    {
+      "scenario_id": "TC-EXTRACT-013",
+      "tc_id": "TC-EXTRACT-013",
+      "source_tc_id": "TC-EXTRACT-013",
+      "ac_id": "AC-EXTRACT-010",
+      "feature_slug": "prism-extract-v1",
+      "scenario_family": "",
+      "status": "passed",
+      "closure_outcome": "accepted",
+      "confidence_raw": 1.0,
+      "confidence_calibrated": 1.0,
+      "confidence_band": "high",
+      "requires_human_review": false,
+      "evidence_sufficiency": "strong",
+      "root_cause_type": "none",
+      "reason_code": "",
+      "browser_required": false,
+      "replay_required": false,
+      "replay_present": false,
+      "browser_evidence_pack_ref": "",
+      "browser_evidence_authenticity_status": "",
+      "judge_signals": {
+        "status_score": 1.0,
+        "evidence_score": 1.0,
+        "replay_score": 1.0,
+        "trace_score": 1.0,
+        "flake_penalty": 0.0
+      },
+      "evidence_ref": [
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-013/command.txt",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-013/stdout.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-013/stderr.log",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-013/junit.xml",
+        ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-013/result.json"
+      ]
+    }
+  ],
+  "ac_closure_path": ".beacon/qa/features/prism-extract-v1/ac-closure.json",
+  "feature_scorecard_path": ".beacon/qa/features/prism-extract-v1/scorecard.json",
+  "feature_scorecard": {
+    "schema_version": "1.0",
+    "feature": "prism-extract-v1",
+    "feature_slug": "prism-extract-v1",
+    "run_id": "run-20260811T121330776605",
+    "ac_total": 10,
+    "ac_accepted": 10,
+    "scenario_total": 13,
+    "scenario_passed": 13,
+    "release_confidence_min": 1.0,
+    "release_confidence_avg": 1.0,
+    "review_required_count": 0,
+    "needs_replay_count": 0,
+    "false_complete_risk": 0.0,
+    "unresolved_closure_outcomes": [],
+    "project_profile_gate_status": "not_configured",
+    "project_profile_id": "",
+    "coverage_current": {
+      "required_scenarios": 13,
+      "executed_scenarios": 13,
+      "coverage_rate": 1.0,
+      "required_scenario_families": [
+        "boundary",
+        "compatibility",
+        "happy",
+        "negative",
+        "recovery"
+      ],
+      "covered_scenario_families": [
+        "primary"
+      ],
+      "missing_scenario_families": [],
+      "missing_test_case_ids": []
+    },
+    "coverage_gap": {
+      "missing_axes": [],
+      "missing_replay_scenarios": [],
+      "missing_browser_evidence_scenarios": [],
+      "missing_scenario_families": [],
+      "missing_test_case_ids": [],
+      "open_closure_outcomes": []
+    },
+    "boundary_evidence": {
+      "boundary_principles": [],
+      "assumption_capture_required": true,
+      "goal_driven_verification_required": true,
+      "verification_item_count": 13,
+      "targeted_scope_only": true
+    },
+    "design_truth_verdict": {
+      "schema_version": "1.0",
+      "status": "not_applicable",
+      "blocked": false,
+      "reason_codes": [],
+      "source_surface": "implement-to-qa-handoff",
+      "verification_surface": "qa",
+      "docs_version": "v0.0.1",
+      "runtime_version": "v1.6.12",
+      "findings": []
+    },
+    "qa_outcome_taxonomy": {
+      "status": "not_applicable",
+      "failure_classes": [],
+      "primary_class": "",
+      "stable_taxonomy": [
+        "product_failed",
+        "test_failed",
+        "runner_admission_blocked",
+        "environment_blocked",
+        "auth_session_blocked",
+        "evidence_binding_missing",
+        "coverage_gap",
+        "truth_projection_gap"
+      ]
+    },
+    "qa_attribution": {
+      "schema_version": "1.0",
+      "status": "not_applicable",
+      "support_evidence_only": true,
+      "runtime_evidence_only": true,
+      "truth_authority": false,
+      "verdict_authority": false,
+      "release_pass_evidence": false,
+      "attribution_count": 0,
+      "accepted_count": 0,
+      "blocked_count": 0,
+      "release_blocking_count": 0,
+      "proposal_count": 0,
+      "family_counts": {
+        "implementation_gap": 0,
+        "truth_drift": 0,
+        "coverage_gap": 0,
+        "execution_lapse": 0,
+        "skill_defect": 0,
+        "runner_admission_blocker": 0,
+        "evidence_insufficient": 0
+      },
+      "route_counts": {},
+      "attributions": []
+    },
+    "qa_acceptance_capability": {
+      "schema_version": "1.0",
+      "status": "blocked",
+      "blocked": true,
+      "taxonomy": {
+        "schema_version": "1.0",
+        "status": "pass",
+        "blocked": false,
+        "full_layers": [
+          "unit",
+          "interface",
+          "contract",
+          "integration",
+          "smoke",
+          "functional",
+          "regression",
+          "exception",
+          "compatibility",
+          "browser_e2e"
+        ],
+        "non_browser_layers": [
+          "unit",
+          "interface",
+          "contract",
+          "integration",
+          "smoke",
+          "functional",
+          "regression",
+          "exception",
+          "compatibility"
+        ],
+        "browser_layer": "browser_e2e",
+        "qa9_layers": [
+          "unit",
+          "interface",
+          "contract",
+          "integration",
+          "smoke",
+          "functional",
+          "regression",
+          "exception",
+          "compatibility"
+        ],
+        "requested_layers": [
+          "contract"
+        ],
+        "unknown_layers": []
+      },
+      "profile_completeness": {
+        "schema_version": "1.0",
+        "profile": "feature-matrix",
+        "browser_required": false,
+        "required_layers": [
+          "contract"
+        ],
+        "executed_layers": [
+          "contract"
+        ],
+        "skipped_layers": [],
+        "blocked_layers": [],
+        "not_applicable_layers": [],
+        "not_applicable_reasons": {},
+        "missing_layers": [],
+        "confidence_chain": {
+          "schema_version": "1.0",
+          "layers": [
+            {
+              "layer": "unit",
+              "status": "missing",
+              "confidence": 0.0,
+              "depends_on": [],
+              "gap_markers": [
+                "downstream_gap"
+              ],
+              "downstream_gap_sources": [
+                "unit"
+              ]
+            },
+            {
+              "layer": "interface",
+              "status": "missing",
+              "confidence": 0.0,
+              "depends_on": [
+                "unit"
+              ],
+              "gap_markers": [
+                "downstream_gap"
+              ],
+              "downstream_gap_sources": [
+                "unit",
+                "interface"
+              ]
+            },
+            {
+              "layer": "contract",
+              "status": "executed",
+              "confidence": 0.0,
+              "depends_on": [
+                "unit",
+                "interface"
+              ],
+              "gap_markers": [
+                "downstream_gap"
+              ],
+              "downstream_gap_sources": [
+                "unit",
+                "interface"
+              ]
+            },
+            {
+              "layer": "integration",
+              "status": "missing",
+              "confidence": 0.0,
+              "depends_on": [
+                "unit",
+                "interface",
+                "contract"
+              ],
+              "gap_markers": [
+                "downstream_gap"
+              ],
+              "downstream_gap_sources": [
+                "unit",
+                "interface",
+                "integration"
+              ]
+            },
+            {
+              "layer": "smoke",
+              "status": "missing",
+              "confidence": 0.0,
+              "depends_on": [
+                "unit",
+                "interface",
+                "contract",
+                "integration"
+              ],
+              "gap_markers": [
+                "downstream_gap"
+              ],
+              "downstream_gap_sources": [
+                "unit",
+                "interface",
+                "integration",
+                "smoke"
+              ]
+            },
+            {
+              "layer": "functional",
+              "status": "missing",
+              "confidence": 0.0,
+              "depends_on": [
+                "unit",
+                "interface",
+                "contract",
+                "integration",
+                "smoke"
+              ],
+              "gap_markers": [
+                "downstream_gap"
+              ],
+              "downstream_gap_sources": [
+                "unit",
+                "interface",
+                "integration",
+                "smoke",
+                "functional"
+              ]
+            },
+            {
+              "layer": "regression",
+              "status": "missing",
+              "confidence": 0.0,
+              "depends_on": [
+                "unit",
+                "interface",
+                "contract",
+                "integration",
+                "smoke",
+                "functional"
+              ],
+              "gap_markers": [
+                "downstream_gap"
+              ],
+              "downstream_gap_sources": [
+                "unit",
+                "interface",
+                "integration",
+                "smoke",
+                "functional",
+                "regression"
+              ]
+            },
+            {
+              "layer": "exception",
+              "status": "missing",
+              "confidence": 0.0,
+              "depends_on": [
+                "unit",
+                "interface",
+                "contract",
+                "integration",
+                "smoke",
+                "functional",
+                "regression"
+              ],
+              "gap_markers": [
+                "downstream_gap"
+              ],
+              "downstream_gap_sources": [
+                "unit",
+                "interface",
+                "integration",
+                "smoke",
+                "functional",
+                "regression",
+                "exception"
+              ]
+            },
+            {
+              "layer": "compatibility",
+              "status": "missing",
+              "confidence": 0.0,
+              "depends_on": [
+                "unit",
+                "interface",
+                "contract",
+                "integration",
+                "smoke",
+                "functional",
+                "regression",
+                "exception"
+              ],
+              "gap_markers": [
+                "downstream_gap"
+              ],
+              "downstream_gap_sources": [
+                "unit",
+                "interface",
+                "integration",
+                "smoke",
+                "functional",
+                "regression",
+                "exception",
+                "compatibility"
+              ]
+            },
+            {
+              "layer": "browser_e2e",
+              "status": "missing",
+              "confidence": 0.0,
+              "depends_on": [
+                "unit",
+                "interface",
+                "contract",
+                "integration",
+                "smoke",
+                "functional",
+                "regression",
+                "exception",
+                "compatibility"
+              ],
+              "gap_markers": [
+                "downstream_gap"
+              ],
+              "downstream_gap_sources": [
+                "unit",
+                "interface",
+                "integration",
+                "smoke",
+                "functional",
+                "regression",
+                "exception",
+                "compatibility",
+                "browser_e2e"
+              ]
+            }
+          ],
+          "chain_direction": "unit_to_browser_e2e",
+          "terminal_layer": "browser_e2e",
+          "chain_broken": true,
+          "downstream_gap_layers": [
+            "browser_e2e",
+            "compatibility",
+            "exception",
+            "functional",
+            "integration",
+            "interface",
+            "regression",
+            "smoke",
+            "unit"
+          ]
+        },
+        "state_machine_coverage": {},
+        "is_complete": false,
+        "partial": true,
+        "status": "partial"
+      },
+      "browser_evidence_contract": {
+        "status": "not_required",
+        "blocked": false
+      },
+      "browser_runner_registry": [
+        "playwright",
+        "playwright-extension",
+        "playwright-cli",
+        "playwright-cdp",
+        "browser-use",
+        "agent-browser",
+        "attached-browser",
+        "web-access",
+        "obscura-cdp"
+      ],
+      "non_acceptance_evidence_kinds": [
+        "listing",
+        "placeholder",
+        "documentation_only",
+        "dry_run"
+      ],
+      "failure_attribution_routes": {
+        "product_bug": "beacon-implement",
+        "implementation_gap": "beacon-implement",
+        "test_script_bug": "beacon-test-case",
+        "environment_blocker": "beacon-qa",
+        "auth_session_blocker": "beacon-qa",
+        "runner_admission_blocker": "blocked",
+        "coverage_gap": "beacon-test-case",
+        "truth_drift": "beacon-change",
+        "evidence_insufficient": "beacon-qa"
+      },
+      "truth_authority": false,
+      "release_pass_evidence": false
+    },
+    "reconciliation": {
+      "required": false,
+      "reason_code": "",
+      "artifact_path": "",
+      "artifact": {}
+    },
+    "deep_absorption": {
+      "schema_version": "1.0",
+      "status": "not_applicable",
+      "eligible_for_release_supplement": false,
+      "findings": [],
+      "absorbed_count": 0,
+      "deferred_count": 0,
+      "blocked_count": 0,
+      "not_applicable_count": 0
+    },
+    "release_supplement_input": {
+      "deep_findings_absorbed": false,
+      "absorbed_finding_count": 0,
+      "advisory_or_blocked_finding_count": 0,
+      "policy": "absorbed_deep_findings_only"
+    },
+    "continue_decision": "stop_for_repair",
+    "stop_reasons": [
+      "assertion_count_zero_pass",
+      "junit_missing_or_invalid"
+    ],
+    "test_case_backfill_required": false,
+    "resume_command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/prism-extract-v1 --version v0.0.1 --feature \"prism-extract-v1\"",
+    "repair_handoff": {
+      "action": "qa-repair",
+      "reason": "assertion_count_zero_pass, junit_missing_or_invalid",
+      "command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/prism-extract-v1 --version v0.0.1 --feature \"prism-extract-v1\""
+    },
+    "release_ready": true,
+    "domain_fsm_coverage": {
+      "schema_version": "1.0",
+      "required": true,
+      "blocked": false,
+      "status": "pass",
+      "reason_code": "",
+      "findings": [],
+      "threshold": 1.0,
+      "coverage_ratio": 1.0,
+      "legal_walk": {
+        "required": 1,
+        "present": 1,
+        "covered": 1,
+        "rows": [
+          {
+            "ac_id": "TC-EXTRACT-004",
+            "tc_id": "AC-EXTRACT-004",
+            "path_type": "`rg -n \"scheme: A-1plus6\" registry/public-surface.yaml && rg -n \"max_public_harnesses: 6\" registry/public-surface.yaml && rg -n \"public_id: goal\" registry/public-surface.yaml`",
+            "raw": "TC-EXTRACT-004 | AC-EXTRACT-004 | `rg -n \"scheme: A-1plus6\" registry/public-surface.yaml && rg -n \"max_public_harnesses: 6\" registry/public-surface.yaml && rg -n \"public_id: goal\" registry/public-surface.yaml` | 公开面注册表合法"
+          }
+        ]
+      },
+      "illegal": {
+        "required": 1,
+        "present": 1,
+        "covered": 1,
+        "rows": [
+          {
+            "ac_id": "TC-EXTRACT-013",
+            "tc_id": "AC-EXTRACT-010",
+            "path_type": "`rg -n \"Illegal transitions",
+            "raw": "TC-EXTRACT-013 | AC-EXTRACT-010 | `rg -n \"Illegal transitions | illegal | 跳过 QA | 宣称 Lake D\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md` | illegal 转移覆盖存在"
+          }
+        ]
+      },
+      "matrix": {
+        "legal_walk_rows": [
+          {
+            "ac_id": "TC-EXTRACT-004",
+            "tc_id": "AC-EXTRACT-004",
+            "path_type": "`rg -n \"scheme: A-1plus6\" registry/public-surface.yaml && rg -n \"max_public_harnesses: 6\" registry/public-surface.yaml && rg -n \"public_id: goal\" registry/public-surface.yaml`",
+            "raw": "TC-EXTRACT-004 | AC-EXTRACT-004 | `rg -n \"scheme: A-1plus6\" registry/public-surface.yaml && rg -n \"max_public_harnesses: 6\" registry/public-surface.yaml && rg -n \"public_id: goal\" registry/public-surface.yaml` | 公开面注册表合法"
+          }
+        ],
+        "illegal_rows": [
+          {
+            "ac_id": "TC-EXTRACT-013",
+            "tc_id": "AC-EXTRACT-010",
+            "path_type": "`rg -n \"Illegal transitions",
+            "raw": "TC-EXTRACT-013 | AC-EXTRACT-010 | `rg -n \"Illegal transitions | illegal | 跳过 QA | 宣称 Lake D\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md` | illegal 转移覆盖存在"
+          }
+        ],
+        "other_rows": [
+          {
+            "ac_id": "TC-EXTRACT-001",
+            "tc_id": "AC-EXTRACT-001",
+            "path_type": "`test -e .git && test -f README.md && test -f AGENTS.md`",
+            "raw": "TC-EXTRACT-001 | AC-EXTRACT-001 | `test -e .git && test -f README.md && test -f AGENTS.md` | 独立仓存在"
+          },
+          {
+            "ac_id": "TC-EXTRACT-002",
+            "tc_id": "AC-EXTRACT-002",
+            "path_type": "`rg -n \"Lake B",
+            "raw": "TC-EXTRACT-002 | AC-EXTRACT-002 | `rg -n \"Lake B | Prism | 1\\\\+6\" docs/beacon/v0.0.1/constitution/prism-constitution.md && test -f docs/beacon/v0.0.1/constitution/lake-a-prism-canon-v1-r3.truth.md` | 宪法迁入存在"
+          },
+          {
+            "ac_id": "TC-EXTRACT-003",
+            "tc_id": "AC-EXTRACT-003",
+            "path_type": "`test -f skills/prism-goal/SKILL.md && test -f skills/prism-intel/SKILL.md && test -f skills/prism-master/SKILL.md && test -f skills/prism-director/SKILL.md && test -f skills/prism-produce/SKILL.md && test -f skills/prism-qa/SKILL.md && test -f skills/prism-release/SKILL.md`",
+            "raw": "TC-EXTRACT-003 | AC-EXTRACT-003 | `test -f skills/prism-goal/SKILL.md && test -f skills/prism-intel/SKILL.md && test -f skills/prism-master/SKILL.md && test -f skills/prism-director/SKILL.md && test -f skills/prism-produce/SKILL.md && test -f skills/prism-qa/SKILL.md && test -f skills/prism-release/SKILL.md` | 七公开面壳存在"
+          },
+          {
+            "ac_id": "TC-EXTRACT-005",
+            "tc_id": "AC-EXTRACT-005",
+            "path_type": "`rg -n \"^## 1\\\\. identity\" contracts/skill-contract-7seg.tpl.md && rg -n \"^## 2\\\\. 决策边界\" contracts/skill-contract-7seg.tpl.md && rg -n \"^## 7\\\\. 失败处理\" contracts/skill-contract-7seg.tpl.md`",
+            "raw": "TC-EXTRACT-005 | AC-EXTRACT-005 | `rg -n \"^## 1\\\\. identity\" contracts/skill-contract-7seg.tpl.md && rg -n \"^## 2\\\\. 决策边界\" contracts/skill-contract-7seg.tpl.md && rg -n \"^## 7\\\\. 失败处理\" contracts/skill-contract-7seg.tpl.md` | 七段模板存在"
+          },
+          {
+            "ac_id": "TC-EXTRACT-006",
+            "tc_id": "AC-EXTRACT-006",
+            "path_type": "`rg -n \"这次做了什么\" contracts/human-card.md && rg -n \"需要你决定\" contracts/human-card.md && rg -n \"下一步\" contracts/human-card.md && rg -n \"机器面\" contracts/human-card.md`",
+            "raw": "TC-EXTRACT-006 | AC-EXTRACT-006 | `rg -n \"这次做了什么\" contracts/human-card.md && rg -n \"需要你决定\" contracts/human-card.md && rg -n \"下一步\" contracts/human-card.md && rg -n \"机器面\" contracts/human-card.md` | 人类卡契约存在"
+          },
+          {
+            "ac_id": "TC-EXTRACT-007",
+            "tc_id": "AC-EXTRACT-007",
+            "path_type": "`test -f skills/_internal/orchestration/skill-routing.md && test -f skills/_internal/orchestration/quality-gates.md && test -f skills/_internal/orchestration/creation-mode-map.md && test -f skills/_internal/orchestration/pipeline-contract.md`",
+            "raw": "TC-EXTRACT-007 | AC-EXTRACT-007 | `test -f skills/_internal/orchestration/skill-routing.md && test -f skills/_internal/orchestration/quality-gates.md && test -f skills/_internal/orchestration/creation-mode-map.md && test -f skills/_internal/orchestration/pipeline-contract.md` | 编排内核迁入"
+          },
+          {
+            "ac_id": "TC-EXTRACT-008",
+            "tc_id": "AC-EXTRACT-008",
+            "path_type": "`rg -n \"MAP-001\" registry/adapter-index.yaml && rg -n \"MAP-009\" registry/adapter-index.yaml && test ! -f skills/_internal/adapters/SKILL.md`",
+            "raw": "TC-EXTRACT-008 | AC-EXTRACT-008 | `rg -n \"MAP-001\" registry/adapter-index.yaml && rg -n \"MAP-009\" registry/adapter-index.yaml && test ! -f skills/_internal/adapters/SKILL.md` | adapter 索引且不可见"
+          },
+          {
+            "ac_id": "TC-EXTRACT-009",
+            "tc_id": "AC-EXTRACT-009",
+            "path_type": "`rg -n \"prism-canon-v1\" docs/beacon/v0.0.1/constitution/prism-constitution.md && rg -n \"selfmedia-creator\" registry/adapter-index.yaml && rg -n \"R3\" docs/beacon/v0.0.1/constitution/prism-constitution.md`",
+            "raw": "TC-EXTRACT-009 | AC-EXTRACT-009 | `rg -n \"prism-canon-v1\" docs/beacon/v0.0.1/constitution/prism-constitution.md && rg -n \"selfmedia-creator\" registry/adapter-index.yaml && rg -n \"R3\" docs/beacon/v0.0.1/constitution/prism-constitution.md` | 源溯源存在"
+          },
+          {
+            "ac_id": "TC-EXTRACT-010",
+            "tc_id": "AC-EXTRACT-010",
+            "path_type": "`rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md && rg -n \"Lake D\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md`",
+            "raw": "TC-EXTRACT-010 | AC-EXTRACT-010 | `rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md && rg -n \"Lake D\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md` | 分湖边界存在"
+          },
+          {
+            "ac_id": "TC-EXTRACT-011",
+            "tc_id": "AC-EXTRACT-003",
+            "path_type": "`python3 -c \"from pathlib import Path; n=sum(1 for p in Path('skills').glob('prism-*/SKILL.md') if 'public_surface: true' in p.read_text()); raise SystemExit(0 if n==7 else 1)\"`",
+            "raw": "TC-EXTRACT-011 | AC-EXTRACT-003 | `python3 -c \"from pathlib import Path; n=sum(1 for p in Path('skills').glob('prism-*/SKILL.md') if 'public_surface: true' in p.read_text()); raise SystemExit(0 if n==7 else 1)\"` | 恰好 7 个公开面 frontmatter"
+          },
+          {
+            "ac_id": "TC-EXTRACT-012",
+            "tc_id": "AC-EXTRACT-008",
+            "path_type": "`python3 -c \"from pathlib import Path; n=len(list(Path('skills/_internal/adapters').glob('*.contract.md'))); raise SystemExit(0 if n>=7 else 1)\"`",
+            "raw": "TC-EXTRACT-012 | AC-EXTRACT-008 | `python3 -c \"from pathlib import Path; n=len(list(Path('skills/_internal/adapters').glob('*.contract.md'))); raise SystemExit(0 if n>=7 else 1)\"` | ≥7 adapter 契约 stub"
+          }
+        ],
+        "has_legal_walk": true,
+        "has_illegal": true
+      },
+      "aggregates": [
+        "FSM（提取落地）"
+      ],
+      "state_machine_coverage": {},
+      "deep_route_recommended": false
+    },
+    "domain_fsm_qa_blocked": false,
+    "domain_fsm_qa_reason_code": "",
+    "design_alignment": {},
+    "design_md_lint": {},
+    "ui_state_matrix": {},
+    "ui_design_ship_blocked": false
+  },
+  "release_ready": true,
+  "delivery_contract": {
+    "schema_version": "1.0",
+    "feature": "prism-extract-v1",
+    "version": "v0.0.1",
+    "requested_mode": "feature-aware",
+    "effective_mode": "feature-aware",
+    "generator_mode": "feature-aware",
+    "execution_mode": "feature-aware",
+    "runner_mode": "qa",
+    "host_runtime": "codex",
+    "fallback_reason": "",
+    "capability_snapshot": {
+      "schema_version": "1.0",
+      "host_runtime": "codex",
+      "subagent_required": false,
+      "subagent_runtime_status": "",
+      "subagent_delegation_status": "",
+      "host_semantic_ready": false,
+      "provider_available": false
+    },
+    "subagent_prechecks": {},
+    "requirement_binding": {
+      "source_of_truth_root": "docs/beacon/v0.0.1",
+      "feature_matrix_path": ".beacon/qa/features/prism-extract-v1/matrix.qa9.json",
+      "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json"
+    },
+    "traceability_refs": [
+      ".beacon/qa/features/prism-extract-v1/matrix.qa9.json",
+      "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json",
+      ".beacon/qa/features/prism-extract-v1/ac-closure.json",
+      ".beacon/qa/features/prism-extract-v1/scorecard.json",
+      ".beacon/release-gate-report.json"
+    ],
+    "runner": "",
+    "adapter_type": "",
+    "execution_surface": "qa",
+    "team_mode": false,
+    "qa_status": "passed",
+    "gate_status": "",
+    "release_ready": true,
+    "risk_flags": []
+  },
+  "host_native_delivery": {
+    "schema_version": "1.0",
+    "feature": "prism-extract-v1",
+    "version": "v0.0.1",
+    "requested_mode": "feature-aware",
+    "effective_mode": "feature-aware",
+    "generator_mode": "feature-aware",
+    "execution_mode": "feature-aware",
+    "runner_mode": "qa",
+    "host_runtime": "codex",
+    "fallback_reason": "",
+    "capability_snapshot": {
+      "schema_version": "1.0",
+      "host_runtime": "codex",
+      "subagent_required": false,
+      "subagent_runtime_status": "",
+      "subagent_delegation_status": "",
+      "host_semantic_ready": false,
+      "provider_available": false
+    },
+    "subagent_prechecks": {},
+    "requirement_binding": {
+      "source_of_truth_root": "docs/beacon/v0.0.1",
+      "feature_matrix_path": ".beacon/qa/features/prism-extract-v1/matrix.qa9.json",
+      "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json"
+    },
+    "traceability_refs": [
+      ".beacon/qa/features/prism-extract-v1/matrix.qa9.json",
+      "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json",
+      ".beacon/qa/features/prism-extract-v1/ac-closure.json",
+      ".beacon/qa/features/prism-extract-v1/scorecard.json",
+      ".beacon/release-gate-report.json"
+    ],
+    "runner": "",
+    "adapter_type": "",
+    "execution_surface": "qa",
+    "team_mode": false,
+    "qa_status": "passed",
+    "gate_status": "",
+    "release_ready": true,
+    "risk_flags": []
+  },
+  "current_spec_fingerprint_hash": "36d19acd001b8bda69c1ec63c800f632fb02872794ef5a3d5cb79c47d70681b0"
+}

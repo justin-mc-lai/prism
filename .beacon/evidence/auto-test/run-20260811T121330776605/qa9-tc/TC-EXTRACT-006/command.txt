@@ -1,0 +1,1 @@
+rg -n "这次做了什么" contracts/human-card.md && rg -n "需要你决定" contracts/human-card.md && rg -n "下一步" contracts/human-card.md && rg -n "机器面" contracts/human-card.md

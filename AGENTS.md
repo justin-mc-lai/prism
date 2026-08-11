@@ -30,3 +30,11 @@ This file is Beacon-managed agent operation guidance.
 - After runtime/version upgrades on a real project, sync machine requirement materials before QA:
   - `beacon doctor sync-materials --project-root . --version <version> --all-features`
 <!-- BEACON:END -->
+
+
+## Prism 项目规则（Lake B）
+
+- 本仓是独立 Prism（棱镜）内容创作 agent skill 仓。
+- 公开面只有 `prism-goal` + 六个能力面；`skills/_internal/**` 不对人发现。
+- 源仓提取自 `/Users/apple/Developer/Personal/products/selfmedia-creator`；完整生产链属后续湖。
+- 公开发布必须人工批准。

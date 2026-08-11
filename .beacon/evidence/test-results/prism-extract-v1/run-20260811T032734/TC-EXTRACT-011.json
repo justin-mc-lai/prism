@@ -1,0 +1,13 @@
+{
+  "tc": "TC-EXTRACT-011",
+  "ac": "AC-EXTRACT-003",
+  "cmd": "python3 -c \"from pathlib import Path; n=sum(1 for p in Path('skills').glob('prism-*/SKILL.md') if 'public_surface: true' in p.read_text()); raise SystemExit(0 if n==7 else 1)\"",
+  "assertion": "恰好 7 个公开面 frontmatter",
+  "exit": 0,
+  "pass": true,
+  "tc_id": "TC-EXTRACT-011",
+  "ac_id": "AC-EXTRACT-003",
+  "command": "python3 -c \"from pathlib import Path; n=sum(1 for p in Path('skills').glob('prism-*/SKILL.md') if 'public_surface: true' in p.read_text()); raise SystemExit(0 if n==7 else 1)\"",
+  "status": "passed",
+  "run_id": "run-20260811T032734"
+}

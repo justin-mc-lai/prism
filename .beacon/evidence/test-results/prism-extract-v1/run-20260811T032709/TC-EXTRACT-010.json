@@ -1,0 +1,9 @@
+{
+  "tc_id": "TC-EXTRACT-010",
+  "ac_id": "AC-EXTRACT-010",
+  "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md && rg -n \"Lake D\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+  "assertion": "分湖边界存在",
+  "exit_code": 0,
+  "status": "passed",
+  "run_id": "run-20260811T032709"
+}

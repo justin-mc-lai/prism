@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prism Intel"
+  short_description: "Evidence-backed topic briefing"
+  default_prompt: "Use $prism-intel to brief one topic with sources only—no fabricated trends."

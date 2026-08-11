@@ -1,0 +1,1 @@
+rg -n "MAP-001" registry/adapter-index.yaml && rg -n "MAP-009" registry/adapter-index.yaml && test ! -f skills/_internal/adapters/SKILL.md

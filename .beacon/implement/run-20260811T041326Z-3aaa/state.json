@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0",
+  "run_id": "run-20260811T041326Z-3aaa",
+  "import_id": "run-20260811T041326Z-3aaa",
+  "feature": "prism-extract-v1",
+  "feature_slug": "prism-extract-v1",
+  "version": "v0.0.1",
+  "runner": "import-evidence",
+  "skill": "beacon-implement",
+  "status": "completed",
+  "imported": true,
+  "source_refs": [
+    ".beacon/evidence/implement/prism-extract-v1/manifest.json",
+    ".beacon/evidence/implement/prism-extract-v1/QA-MATRIX.json",
+    ".beacon/evidence/implement/prism-extract-v1/GATES.json"
+  ],
+  "changed_files": [
+    "skills/prism-goal/SKILL.md",
+    "skills/prism-intel/SKILL.md",
+    "skills/prism-release/SKILL.md",
+    "registry/adapter-migration-matrix.md"
+  ],
+  "service_dirs": [],
+  "summary_ref": ".beacon/evidence/implement/prism-extract-v1/QA-MATRIX.json",
+  "approved_by": "lake-b-qa-rerun",
+  "prompt_boundary": {
+    "schema_version": "1.0",
+    "feature": "prism-extract-v1",
+    "feature_slug": "prism-extract-v1",
+    "version": "v0.0.1",
+    "required": false,
+    "prompt": "Import externally produced implementation evidence for the scoped Beacon feature. Read Beacon source of truth and bind the imported evidence to the frozen feature package truth. Implement only against the frozen feature package truth above. Evidence refs: .beacon/evidence/implement/prism-extract-v1/manifest.json, .beacon/evidence/implement/prism-extract-v1/QA-MATRIX.json, .beacon/evidence/implement/prism-extract-v1/GATES.json, .beacon/evidence/implement/prism-extract-v1/QA-MATRIX.json. Changed files or service directories: skills/prism-goal/SKILL.md, skills/prism-intel/SKILL.md, skills/prism-release/SKILL.md, registry/adapter-migration-matrix.md.",
+    "classification": "",
+    "blocked": false,
+    "status": "not_required",
+    "reason_code": "",
+    "next_action": "",
+    "recommended_command": "",
+    "matched_signals": [],
+    "frozen_refs": [
+      "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+      "docs/beacon/v0.0.1/features/prism-extract-v1/tests.md",
+      "docs/beacon/v0.0.1/features/prism-extract-v1/tasks.md",
+      "docs/beacon/v0.0.1/features/prism-extract-v1/evidence.md"
+    ],
+    "surface": "import-evidence"
+  },
+  "created_at": "2026-08-11T04:13:26.799216+00:00",
+  "generated_at": "2026-08-11T04:13:26.799221+00:00",
+  "implementation_marker": ".beacon/state/implementation-prism-extract-v1.json",
+  "writeback": {
+    "updated_items": 3,
+    "story": {
+      "story_id": "US-001",
+      "revision_id": "R1",
+      "title": "prism-extract-v1",
+      "priority": "medium",
+      "status": "implemented",
+      "items": [
+        {
+          "id": "AC-001",
+          "kind": "ac",
+          "theme": "general",
+          "text": "Acceptance criteria TBD",
+          "required": true,
+          "status": "implemented",
+          "implemented_by_run_id": "run-20260811T041326Z-3aaa",
+          "verified_by_run_id": null,
+          "accepted_at": null,
+          "changed_in_revision": "R1",
+          "story_id": "",
+          "details": [],
+          "source": "fallback"
+        },
+        {
+          "id": "TASK-001",
+          "kind": "task",
+          "text": "Implement current frozen revision",
+          "required": true,
+          "status": "implemented",
+          "implemented_by_run_id": "run-20260811T041326Z-3aaa",
+          "verified_by_run_id": null,
+          "accepted_at": "2026-08-11T03:31:07.757290+00:00",
+          "changed_in_revision": "R1"
+        },
+        {
+          "id": "TEST-001",
+          "kind": "test",
+          "text": "Verify AC-001 — Acceptance criteria TBD",
+          "required": true,
+          "status": "implemented",
+          "implemented_by_run_id": "run-20260811T041326Z-3aaa",
+          "verified_by_run_id": "run-20260811T113106143903",
+          "accepted_at": null,
+          "changed_in_revision": "R1",
+          "covers": [
+            "AC-001"
+          ],
+          "story_id": "",
+          "source": "fallback"
+        }
+      ],
+      "research_projection": {
+        "schema_version": "1.0",
+        "feature": "prism-extract-v1",
+        "version": "v0.0.1",
+        "source": "research:/Users/apple/Developer/Personal/products/prism/docs/beacon/v0.0.1/research/prism-extract-v1.md",
+        "present": true,
+        "section_count": 0,
+        "sections": {},
+        "derived_items": []
+      },
+      "feature": "prism-extract-v1",
+      "feature_slug": "prism-extract-v1",
+      "version": "v0.0.1",
+      "last_changed_files": [
+        "skills/prism-goal/SKILL.md",
+        "skills/prism-intel/SKILL.md",
+        "skills/prism-release/SKILL.md",
+        "registry/adapter-migration-matrix.md"
+      ],
+      "verification_evidence": [
+        ".beacon/auto-test-status.json",
+        ".beacon/qa/status.json",
+        "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json",
+        ".beacon/coverage-summary.json",
+        ".beacon/release-gate-report.json"
+      ],
+      "accepted_at": "2026-08-11T03:31:07.757290+00:00",
+      "accepted_by": "qa"
+    },
+    "revision": {
+      "schema_version": "1.0",
+      "feature": "prism-extract-v1",
+      "feature_slug": "prism-extract-v1",
+      "version": "v0.0.1",
+      "revision_id": "R1",
+      "source_revision_id": "",
+      "reason": "freeze",
+      "doc_status": "frozen",
+      "delivery_status": "implemented",
+      "lifecycle_status": "accepted",
+      "baseline_hash": "sha256:a21567f3779dc5f719baa78b6570e38ce55d44c61a36b6d2dced84feff28d960",
+      "superseded_by": "",
+      "created_at": "2026-08-11T03:20:14.451552+00:00",
+      "frozen_at": "2026-08-11T03:20:14.452259+00:00",
+      "accepted_at": "2026-08-11T03:31:07.757290+00:00",
+      "last_implementation_run_id": "run-20260811T041326Z-3aaa",
+      "changed_files": [
+        "skills/prism-goal/SKILL.md",
+        "skills/prism-intel/SKILL.md",
+        "skills/prism-release/SKILL.md",
+        "registry/adapter-migration-matrix.md"
+      ],
+      "last_verification_run_id": "run-20260811T113106143903",
+      "verification_evidence": [
+        ".beacon/auto-test-status.json",
+        ".beacon/qa/status.json",
+        "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json",
+        ".beacon/coverage-summary.json",
+        ".beacon/release-gate-report.json"
+      ],
+      "accepted_by": "qa"
+    },
+    "implementation_plan": {}
+  },
+  "next_route": {
+    "target_surface": "beacon-qa",
+    "command": "beacon qa run \"prism-extract-v1\" --project . --version v0.0.1"
+  },
+  "decision_surface": {
+    "stage": "implement",
+    "skill_ref": "skills/beacon/beacon-implement/SKILL.md",
+    "inputs_contract": [],
+    "decision_protocol": [],
+    "anti_inertia_notes": [],
+    "learning_notes": [],
+    "backstop_cli": [],
+    "primary_reason": "",
+    "recommended_command": "",
+    "reason_code": ""
+  },
+  "guardrail_contract": {
+    "stage": "implement",
+    "decision_owner": "skill_surface",
+    "enforcement_owner": "python_guardrail",
+    "blocked": false,
+    "reason_code": "",
+    "dual_read_required_before_cutover": true,
+    "fail_closed": true
+  },
+  "mode": "import-evidence",
+  "adapter_type": "external-evidence",
+  "request_path": "",
+  "result_path": ""
+}
