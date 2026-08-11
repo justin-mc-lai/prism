@@ -1,0 +1,1716 @@
+{
+  "schema_version": "1.0",
+  "version": "v0.0.1",
+  "runtime_version": "v1.6.12",
+  "release_ready": true,
+  "gate": {
+    "status": "Pass",
+    "stage": "release",
+    "blocked_count": 2,
+    "run_id": "run-20260811T121330776605",
+    "artifact_version": "v0.0.1",
+    "version_match": true,
+    "reason_codes": [
+      "assertion_count_zero_pass",
+      "junit_missing_or_invalid"
+    ]
+  },
+  "qa": {
+    "feature": "prism-extract-v1",
+    "status": "passed",
+    "evidence_done": true,
+    "release_ready": true,
+    "execution_mode": "feature-aware",
+    "project_profile_id": "",
+    "project_profile_gate_status": "not_configured",
+    "artifact_version": "v0.0.1",
+    "version_match": true,
+    "acceptance_envelope_path": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-extract-v1.json",
+    "acceptance_transaction_id": "tx-qa-acceptance-prism-extract-v1-d586d569f9dc",
+    "acceptance_verdict": "passed",
+    "acceptance_transaction_status": "pass",
+    "acceptance_transaction_reason_code": "acceptance_projection_transaction_ok"
+  },
+  "delivery": {
+    "type": "initial",
+    "revision_id": "R1",
+    "source_revision_id": ""
+  },
+  "semantic": {},
+  "revision_binding": {
+    "status": "bound",
+    "reason_code": "",
+    "revision_id": "R1",
+    "source_revision_id": "",
+    "superseded_by": "",
+    "doc_status": "frozen",
+    "delivery_status": "accepted",
+    "gate_bound_to_latest_revision": true
+  },
+  "exhaustiveness": {
+    "schema_version": "1.0",
+    "feature": "prism-extract-v1",
+    "feature_slug": "prism-extract-v1",
+    "run_id": "run-20260811T121330776605",
+    "generated_at": "2026-08-11T04:13:32.750414+00:00",
+    "execution_mode": "feature-aware",
+    "scenario_count": 13,
+    "browser_scenario_count": 0,
+    "required_families": [],
+    "passed_families": [],
+    "missing_axes": [],
+    "missing_replay_scenarios": [],
+    "missing_browser_evidence_scenarios": [],
+    "scenario_pass_rate": 1.0,
+    "family_coverage_rate": 1.0,
+    "replay_coverage_rate": 1.0,
+    "browser_evidence_rate": 1.0,
+    "score": 1.0,
+    "threshold": 0.6,
+    "status": "passed",
+    "required_next_action": "continue_current_plan",
+    "failure_streak": 0,
+    "escalation_level": "E0"
+  },
+  "acceptance": {
+    "status": "pass",
+    "source": "qa_acceptance_envelope",
+    "feature": "prism-extract-v1",
+    "qa_status": "passed",
+    "evidence_done": true,
+    "release_ready": true,
+    "continue_decision": "stop_for_repair",
+    "project_profile_gate_status": "not_configured",
+    "unresolved_closure_outcomes": [],
+    "review_required_count": 0,
+    "needs_replay_count": 0,
+    "release_confidence_min": 1.0,
+    "coverage_current": {
+      "required_scenarios": 13,
+      "executed_scenarios": 13,
+      "coverage_rate": 1.0,
+      "required_scenario_families": [
+        "boundary",
+        "compatibility",
+        "happy",
+        "negative",
+        "recovery"
+      ],
+      "covered_scenario_families": [
+        "primary"
+      ],
+      "missing_scenario_families": [],
+      "missing_test_case_ids": []
+    },
+    "acceptance_envelope_path": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-extract-v1.json",
+    "acceptance_transaction_id": "tx-qa-acceptance-prism-extract-v1-d586d569f9dc",
+    "acceptance_verdict": "passed",
+    "qa_status_source": "canonical",
+    "legacy_only_qa_blocked": false
+  },
+  "acceptance_kit": {
+    "present": true,
+    "summary": {
+      "schema_version": "1.0",
+      "feature": "prism-extract-v1",
+      "version": "v0.0.1",
+      "verdict": "passed",
+      "layer_verdicts": {
+        "skill-contract": "pass",
+        "scenario-suite": "pass",
+        "trace-scorecard": "pass",
+        "real-project-proof": "pass"
+      },
+      "layer_details": [
+        {
+          "name": "skill-contract",
+          "status": "pass",
+          "source_truth_ref": "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+          "evidence_ref": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-extract-v1.json"
+        },
+        {
+          "name": "scenario-suite",
+          "status": "pass",
+          "source_truth_ref": "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+          "evidence_ref": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-extract-v1.md"
+        },
+        {
+          "name": "trace-scorecard",
+          "status": "pass",
+          "source_truth_ref": "docs/beacon/v0.0.1/features/prism-extract-v1/tests.md",
+          "evidence_ref": "docs/beacon/v0.0.1/features/prism-extract-v1/tests.md"
+        },
+        {
+          "name": "real-project-proof",
+          "status": "pass",
+          "source_truth_ref": ".beacon/transactions/qa-acceptance-prism-extract-v1.json",
+          "evidence_ref": ".beacon/transactions/qa-acceptance-prism-extract-v1.json"
+        }
+      ],
+      "failed_layers": [],
+      "contract_pass": true,
+      "scenario_pass": true,
+      "trace_pass": true,
+      "real_project_pass": true,
+      "regression_pass": true,
+      "real_project_proof": {
+        "status": "pass",
+        "evidence_refs": [
+          ".beacon/transactions/qa-acceptance-prism-extract-v1.json",
+          "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-extract-v1.md",
+          "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-extract-v1.json",
+          ".beacon/auto-test-status.json",
+          ".beacon/qa/status.json",
+          "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json",
+          ".beacon/coverage-summary.json",
+          ".beacon/release-gate-report.json"
+        ],
+        "source": "qa_acceptance_envelope"
+      },
+      "machine_path": "docs/beacon/v0.0.1/.machine/execution/acceptance-kit-prism-extract-v1.json",
+      "summary": "Contract Pass",
+      "layer_count": 4,
+      "layer_order": [
+        "skill-contract",
+        "scenario-suite",
+        "trace-scorecard",
+        "real-project-proof"
+      ],
+      "all_layers_passed": true
+    },
+    "links": [
+      {
+        "layer": "skill-contract",
+        "status": "pass",
+        "source_truth_ref": "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+        "evidence_ref": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-extract-v1.json"
+      },
+      {
+        "layer": "scenario-suite",
+        "status": "pass",
+        "source_truth_ref": "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+        "evidence_ref": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-extract-v1.md"
+      },
+      {
+        "layer": "trace-scorecard",
+        "status": "pass",
+        "source_truth_ref": "docs/beacon/v0.0.1/features/prism-extract-v1/tests.md",
+        "evidence_ref": "docs/beacon/v0.0.1/features/prism-extract-v1/tests.md"
+      },
+      {
+        "layer": "real-project-proof",
+        "status": "pass",
+        "source_truth_ref": ".beacon/transactions/qa-acceptance-prism-extract-v1.json",
+        "evidence_ref": ".beacon/transactions/qa-acceptance-prism-extract-v1.json"
+      }
+    ],
+    "reason_code": ""
+  },
+  "acceptance_transaction": {
+    "status": "pass",
+    "blocked": false,
+    "reason_code": "acceptance_projection_transaction_ok",
+    "message": "qa acceptance transaction metadata is consistent",
+    "details": {
+      "machine_ref": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-extract-v1.json",
+      "markdown_ref": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-extract-v1.md",
+      "runtime_projection_ref": ".beacon/transactions/qa-acceptance-prism-extract-v1.json",
+      "transaction_id": "tx-qa-acceptance-prism-extract-v1-d586d569f9dc",
+      "source_hash": "sha256:d586d569f9dc9e3ce00430a741382b4dae4880a838e38273506304de0a413d7e",
+      "projection_seq": 2
+    }
+  },
+  "feature_qa_scorecard": {
+    "schema_version": "1.0",
+    "feature": "prism-extract-v1",
+    "feature_slug": "prism-extract-v1",
+    "run_id": "run-20260811T121330776605",
+    "ac_total": 10,
+    "ac_accepted": 10,
+    "scenario_total": 13,
+    "scenario_passed": 13,
+    "release_confidence_min": 1.0,
+    "release_confidence_avg": 1.0,
+    "review_required_count": 0,
+    "needs_replay_count": 0,
+    "false_complete_risk": 0.0,
+    "unresolved_closure_outcomes": [],
+    "project_profile_gate_status": "not_configured",
+    "project_profile_id": "",
+    "coverage_current": {
+      "required_scenarios": 13,
+      "executed_scenarios": 13,
+      "coverage_rate": 1.0,
+      "required_scenario_families": [
+        "boundary",
+        "compatibility",
+        "happy",
+        "negative",
+        "recovery"
+      ],
+      "covered_scenario_families": [
+        "primary"
+      ],
+      "missing_scenario_families": [],
+      "missing_test_case_ids": []
+    },
+    "coverage_gap": {
+      "missing_axes": [],
+      "missing_replay_scenarios": [],
+      "missing_browser_evidence_scenarios": [],
+      "missing_scenario_families": [],
+      "missing_test_case_ids": [],
+      "open_closure_outcomes": []
+    },
+    "boundary_evidence": {
+      "boundary_principles": [],
+      "assumption_capture_required": true,
+      "goal_driven_verification_required": true,
+      "verification_item_count": 13,
+      "targeted_scope_only": true
+    },
+    "design_truth_verdict": {
+      "schema_version": "1.0",
+      "status": "not_applicable",
+      "blocked": false,
+      "reason_codes": [],
+      "source_surface": "implement-to-qa-handoff",
+      "verification_surface": "qa",
+      "docs_version": "v0.0.1",
+      "runtime_version": "v1.6.12",
+      "findings": []
+    },
+    "qa_outcome_taxonomy": {
+      "status": "not_applicable",
+      "failure_classes": [],
+      "primary_class": "",
+      "stable_taxonomy": [
+        "product_failed",
+        "test_failed",
+        "runner_admission_blocked",
+        "environment_blocked",
+        "auth_session_blocked",
+        "evidence_binding_missing",
+        "coverage_gap",
+        "truth_projection_gap"
+      ]
+    },
+    "qa_attribution": {
+      "schema_version": "1.0",
+      "status": "not_applicable",
+      "support_evidence_only": true,
+      "runtime_evidence_only": true,
+      "truth_authority": false,
+      "verdict_authority": false,
+      "release_pass_evidence": false,
+      "attribution_count": 0,
+      "accepted_count": 0,
+      "blocked_count": 0,
+      "release_blocking_count": 0,
+      "proposal_count": 0,
+      "family_counts": {
+        "implementation_gap": 0,
+        "truth_drift": 0,
+        "coverage_gap": 0,
+        "execution_lapse": 0,
+        "skill_defect": 0,
+        "runner_admission_blocker": 0,
+        "evidence_insufficient": 0
+      },
+      "route_counts": {},
+      "attributions": []
+    },
+    "qa_acceptance_capability": {
+      "schema_version": "1.0",
+      "status": "blocked",
+      "blocked": true,
+      "taxonomy": {
+        "schema_version": "1.0",
+        "status": "pass",
+        "blocked": false,
+        "full_layers": [
+          "unit",
+          "interface",
+          "contract",
+          "integration",
+          "smoke",
+          "functional",
+          "regression",
+          "exception",
+          "compatibility",
+          "browser_e2e"
+        ],
+        "non_browser_layers": [
+          "unit",
+          "interface",
+          "contract",
+          "integration",
+          "smoke",
+          "functional",
+          "regression",
+          "exception",
+          "compatibility"
+        ],
+        "browser_layer": "browser_e2e",
+        "qa9_layers": [
+          "unit",
+          "interface",
+          "contract",
+          "integration",
+          "smoke",
+          "functional",
+          "regression",
+          "exception",
+          "compatibility"
+        ],
+        "requested_layers": [
+          "contract"
+        ],
+        "unknown_layers": []
+      },
+      "profile_completeness": {
+        "schema_version": "1.0",
+        "profile": "feature-matrix",
+        "browser_required": false,
+        "required_layers": [
+          "contract"
+        ],
+        "executed_layers": [
+          "contract"
+        ],
+        "skipped_layers": [],
+        "blocked_layers": [],
+        "not_applicable_layers": [],
+        "not_applicable_reasons": {},
+        "missing_layers": [],
+        "confidence_chain": {
+          "schema_version": "1.0",
+          "layers": [
+            {
+              "layer": "unit",
+              "status": "missing",
+              "confidence": 0.0,
+              "depends_on": [],
+              "gap_markers": [
+                "downstream_gap"
+              ],
+              "downstream_gap_sources": [
+                "unit"
+              ]
+            },
+            {
+              "layer": "interface",
+              "status": "missing",
+              "confidence": 0.0,
+              "depends_on": [
+                "unit"
+              ],
+              "gap_markers": [
+                "downstream_gap"
+              ],
+              "downstream_gap_sources": [
+                "unit",
+                "interface"
+              ]
+            },
+            {
+              "layer": "contract",
+              "status": "executed",
+              "confidence": 0.0,
+              "depends_on": [
+                "unit",
+                "interface"
+              ],
+              "gap_markers": [
+                "downstream_gap"
+              ],
+              "downstream_gap_sources": [
+                "unit",
+                "interface"
+              ]
+            },
+            {
+              "layer": "integration",
+              "status": "missing",
+              "confidence": 0.0,
+              "depends_on": [
+                "unit",
+                "interface",
+                "contract"
+              ],
+              "gap_markers": [
+                "downstream_gap"
+              ],
+              "downstream_gap_sources": [
+                "unit",
+                "interface",
+                "integration"
+              ]
+            },
+            {
+              "layer": "smoke",
+              "status": "missing",
+              "confidence": 0.0,
+              "depends_on": [
+                "unit",
+                "interface",
+                "contract",
+                "integration"
+              ],
+              "gap_markers": [
+                "downstream_gap"
+              ],
+              "downstream_gap_sources": [
+                "unit",
+                "interface",
+                "integration",
+                "smoke"
+              ]
+            },
+            {
+              "layer": "functional",
+              "status": "missing",
+              "confidence": 0.0,
+              "depends_on": [
+                "unit",
+                "interface",
+                "contract",
+                "integration",
+                "smoke"
+              ],
+              "gap_markers": [
+                "downstream_gap"
+              ],
+              "downstream_gap_sources": [
+                "unit",
+                "interface",
+                "integration",
+                "smoke",
+                "functional"
+              ]
+            },
+            {
+              "layer": "regression",
+              "status": "missing",
+              "confidence": 0.0,
+              "depends_on": [
+                "unit",
+                "interface",
+                "contract",
+                "integration",
+                "smoke",
+                "functional"
+              ],
+              "gap_markers": [
+                "downstream_gap"
+              ],
+              "downstream_gap_sources": [
+                "unit",
+                "interface",
+                "integration",
+                "smoke",
+                "functional",
+                "regression"
+              ]
+            },
+            {
+              "layer": "exception",
+              "status": "missing",
+              "confidence": 0.0,
+              "depends_on": [
+                "unit",
+                "interface",
+                "contract",
+                "integration",
+                "smoke",
+                "functional",
+                "regression"
+              ],
+              "gap_markers": [
+                "downstream_gap"
+              ],
+              "downstream_gap_sources": [
+                "unit",
+                "interface",
+                "integration",
+                "smoke",
+                "functional",
+                "regression",
+                "exception"
+              ]
+            },
+            {
+              "layer": "compatibility",
+              "status": "missing",
+              "confidence": 0.0,
+              "depends_on": [
+                "unit",
+                "interface",
+                "contract",
+                "integration",
+                "smoke",
+                "functional",
+                "regression",
+                "exception"
+              ],
+              "gap_markers": [
+                "downstream_gap"
+              ],
+              "downstream_gap_sources": [
+                "unit",
+                "interface",
+                "integration",
+                "smoke",
+                "functional",
+                "regression",
+                "exception",
+                "compatibility"
+              ]
+            },
+            {
+              "layer": "browser_e2e",
+              "status": "missing",
+              "confidence": 0.0,
+              "depends_on": [
+                "unit",
+                "interface",
+                "contract",
+                "integration",
+                "smoke",
+                "functional",
+                "regression",
+                "exception",
+                "compatibility"
+              ],
+              "gap_markers": [
+                "downstream_gap"
+              ],
+              "downstream_gap_sources": [
+                "unit",
+                "interface",
+                "integration",
+                "smoke",
+                "functional",
+                "regression",
+                "exception",
+                "compatibility",
+                "browser_e2e"
+              ]
+            }
+          ],
+          "chain_direction": "unit_to_browser_e2e",
+          "terminal_layer": "browser_e2e",
+          "chain_broken": true,
+          "downstream_gap_layers": [
+            "browser_e2e",
+            "compatibility",
+            "exception",
+            "functional",
+            "integration",
+            "interface",
+            "regression",
+            "smoke",
+            "unit"
+          ]
+        },
+        "state_machine_coverage": {},
+        "is_complete": false,
+        "partial": true,
+        "status": "partial"
+      },
+      "browser_evidence_contract": {
+        "status": "not_required",
+        "blocked": false
+      },
+      "browser_runner_registry": [
+        "playwright",
+        "playwright-extension",
+        "playwright-cli",
+        "playwright-cdp",
+        "browser-use",
+        "agent-browser",
+        "attached-browser",
+        "web-access",
+        "obscura-cdp"
+      ],
+      "non_acceptance_evidence_kinds": [
+        "listing",
+        "placeholder",
+        "documentation_only",
+        "dry_run"
+      ],
+      "failure_attribution_routes": {
+        "product_bug": "beacon-implement",
+        "implementation_gap": "beacon-implement",
+        "test_script_bug": "beacon-test-case",
+        "environment_blocker": "beacon-qa",
+        "auth_session_blocker": "beacon-qa",
+        "runner_admission_blocker": "blocked",
+        "coverage_gap": "beacon-test-case",
+        "truth_drift": "beacon-change",
+        "evidence_insufficient": "beacon-qa"
+      },
+      "truth_authority": false,
+      "release_pass_evidence": false
+    },
+    "reconciliation": {
+      "required": false,
+      "reason_code": "",
+      "artifact_path": "",
+      "artifact": {}
+    },
+    "deep_absorption": {
+      "schema_version": "1.0",
+      "status": "not_applicable",
+      "eligible_for_release_supplement": false,
+      "findings": [],
+      "absorbed_count": 0,
+      "deferred_count": 0,
+      "blocked_count": 0,
+      "not_applicable_count": 0
+    },
+    "release_supplement_input": {
+      "deep_findings_absorbed": false,
+      "absorbed_finding_count": 0,
+      "advisory_or_blocked_finding_count": 0,
+      "policy": "absorbed_deep_findings_only"
+    },
+    "continue_decision": "stop_for_repair",
+    "stop_reasons": [
+      "assertion_count_zero_pass",
+      "junit_missing_or_invalid"
+    ],
+    "test_case_backfill_required": false,
+    "resume_command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/prism-extract-v1 --version v0.0.1 --feature \"prism-extract-v1\"",
+    "repair_handoff": {
+      "action": "qa-repair",
+      "reason": "assertion_count_zero_pass, junit_missing_or_invalid",
+      "command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/prism-extract-v1 --version v0.0.1 --feature \"prism-extract-v1\""
+    },
+    "release_ready": true,
+    "domain_fsm_coverage": {
+      "schema_version": "1.0",
+      "required": true,
+      "blocked": false,
+      "status": "pass",
+      "reason_code": "",
+      "findings": [],
+      "threshold": 1.0,
+      "coverage_ratio": 1.0,
+      "legal_walk": {
+        "required": 1,
+        "present": 1,
+        "covered": 1,
+        "rows": [
+          {
+            "ac_id": "TC-EXTRACT-004",
+            "tc_id": "AC-EXTRACT-004",
+            "path_type": "`rg -n \"scheme: A-1plus6\" registry/public-surface.yaml && rg -n \"max_public_harnesses: 6\" registry/public-surface.yaml && rg -n \"public_id: goal\" registry/public-surface.yaml`",
+            "raw": "TC-EXTRACT-004 | AC-EXTRACT-004 | `rg -n \"scheme: A-1plus6\" registry/public-surface.yaml && rg -n \"max_public_harnesses: 6\" registry/public-surface.yaml && rg -n \"public_id: goal\" registry/public-surface.yaml` | 公开面注册表合法"
+          }
+        ]
+      },
+      "illegal": {
+        "required": 1,
+        "present": 1,
+        "covered": 1,
+        "rows": [
+          {
+            "ac_id": "TC-EXTRACT-013",
+            "tc_id": "AC-EXTRACT-010",
+            "path_type": "`rg -n \"Illegal transitions",
+            "raw": "TC-EXTRACT-013 | AC-EXTRACT-010 | `rg -n \"Illegal transitions | illegal | 跳过 QA | 宣称 Lake D\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md` | illegal 转移覆盖存在"
+          }
+        ]
+      },
+      "matrix": {
+        "legal_walk_rows": [
+          {
+            "ac_id": "TC-EXTRACT-004",
+            "tc_id": "AC-EXTRACT-004",
+            "path_type": "`rg -n \"scheme: A-1plus6\" registry/public-surface.yaml && rg -n \"max_public_harnesses: 6\" registry/public-surface.yaml && rg -n \"public_id: goal\" registry/public-surface.yaml`",
+            "raw": "TC-EXTRACT-004 | AC-EXTRACT-004 | `rg -n \"scheme: A-1plus6\" registry/public-surface.yaml && rg -n \"max_public_harnesses: 6\" registry/public-surface.yaml && rg -n \"public_id: goal\" registry/public-surface.yaml` | 公开面注册表合法"
+          }
+        ],
+        "illegal_rows": [
+          {
+            "ac_id": "TC-EXTRACT-013",
+            "tc_id": "AC-EXTRACT-010",
+            "path_type": "`rg -n \"Illegal transitions",
+            "raw": "TC-EXTRACT-013 | AC-EXTRACT-010 | `rg -n \"Illegal transitions | illegal | 跳过 QA | 宣称 Lake D\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md` | illegal 转移覆盖存在"
+          }
+        ],
+        "other_rows": [
+          {
+            "ac_id": "TC-EXTRACT-001",
+            "tc_id": "AC-EXTRACT-001",
+            "path_type": "`test -e .git && test -f README.md && test -f AGENTS.md`",
+            "raw": "TC-EXTRACT-001 | AC-EXTRACT-001 | `test -e .git && test -f README.md && test -f AGENTS.md` | 独立仓存在"
+          },
+          {
+            "ac_id": "TC-EXTRACT-002",
+            "tc_id": "AC-EXTRACT-002",
+            "path_type": "`rg -n \"Lake B",
+            "raw": "TC-EXTRACT-002 | AC-EXTRACT-002 | `rg -n \"Lake B | Prism | 1\\\\+6\" docs/beacon/v0.0.1/constitution/prism-constitution.md && test -f docs/beacon/v0.0.1/constitution/lake-a-prism-canon-v1-r3.truth.md` | 宪法迁入存在"
+          },
+          {
+            "ac_id": "TC-EXTRACT-003",
+            "tc_id": "AC-EXTRACT-003",
+            "path_type": "`test -f skills/prism-goal/SKILL.md && test -f skills/prism-intel/SKILL.md && test -f skills/prism-master/SKILL.md && test -f skills/prism-director/SKILL.md && test -f skills/prism-produce/SKILL.md && test -f skills/prism-qa/SKILL.md && test -f skills/prism-release/SKILL.md`",
+            "raw": "TC-EXTRACT-003 | AC-EXTRACT-003 | `test -f skills/prism-goal/SKILL.md && test -f skills/prism-intel/SKILL.md && test -f skills/prism-master/SKILL.md && test -f skills/prism-director/SKILL.md && test -f skills/prism-produce/SKILL.md && test -f skills/prism-qa/SKILL.md && test -f skills/prism-release/SKILL.md` | 七公开面壳存在"
+          },
+          {
+            "ac_id": "TC-EXTRACT-005",
+            "tc_id": "AC-EXTRACT-005",
+            "path_type": "`rg -n \"^## 1\\\\. identity\" contracts/skill-contract-7seg.tpl.md && rg -n \"^## 2\\\\. 决策边界\" contracts/skill-contract-7seg.tpl.md && rg -n \"^## 7\\\\. 失败处理\" contracts/skill-contract-7seg.tpl.md`",
+            "raw": "TC-EXTRACT-005 | AC-EXTRACT-005 | `rg -n \"^## 1\\\\. identity\" contracts/skill-contract-7seg.tpl.md && rg -n \"^## 2\\\\. 决策边界\" contracts/skill-contract-7seg.tpl.md && rg -n \"^## 7\\\\. 失败处理\" contracts/skill-contract-7seg.tpl.md` | 七段模板存在"
+          },
+          {
+            "ac_id": "TC-EXTRACT-006",
+            "tc_id": "AC-EXTRACT-006",
+            "path_type": "`rg -n \"这次做了什么\" contracts/human-card.md && rg -n \"需要你决定\" contracts/human-card.md && rg -n \"下一步\" contracts/human-card.md && rg -n \"机器面\" contracts/human-card.md`",
+            "raw": "TC-EXTRACT-006 | AC-EXTRACT-006 | `rg -n \"这次做了什么\" contracts/human-card.md && rg -n \"需要你决定\" contracts/human-card.md && rg -n \"下一步\" contracts/human-card.md && rg -n \"机器面\" contracts/human-card.md` | 人类卡契约存在"
+          },
+          {
+            "ac_id": "TC-EXTRACT-007",
+            "tc_id": "AC-EXTRACT-007",
+            "path_type": "`test -f skills/_internal/orchestration/skill-routing.md && test -f skills/_internal/orchestration/quality-gates.md && test -f skills/_internal/orchestration/creation-mode-map.md && test -f skills/_internal/orchestration/pipeline-contract.md`",
+            "raw": "TC-EXTRACT-007 | AC-EXTRACT-007 | `test -f skills/_internal/orchestration/skill-routing.md && test -f skills/_internal/orchestration/quality-gates.md && test -f skills/_internal/orchestration/creation-mode-map.md && test -f skills/_internal/orchestration/pipeline-contract.md` | 编排内核迁入"
+          },
+          {
+            "ac_id": "TC-EXTRACT-008",
+            "tc_id": "AC-EXTRACT-008",
+            "path_type": "`rg -n \"MAP-001\" registry/adapter-index.yaml && rg -n \"MAP-009\" registry/adapter-index.yaml && test ! -f skills/_internal/adapters/SKILL.md`",
+            "raw": "TC-EXTRACT-008 | AC-EXTRACT-008 | `rg -n \"MAP-001\" registry/adapter-index.yaml && rg -n \"MAP-009\" registry/adapter-index.yaml && test ! -f skills/_internal/adapters/SKILL.md` | adapter 索引且不可见"
+          },
+          {
+            "ac_id": "TC-EXTRACT-009",
+            "tc_id": "AC-EXTRACT-009",
+            "path_type": "`rg -n \"prism-canon-v1\" docs/beacon/v0.0.1/constitution/prism-constitution.md && rg -n \"selfmedia-creator\" registry/adapter-index.yaml && rg -n \"R3\" docs/beacon/v0.0.1/constitution/prism-constitution.md`",
+            "raw": "TC-EXTRACT-009 | AC-EXTRACT-009 | `rg -n \"prism-canon-v1\" docs/beacon/v0.0.1/constitution/prism-constitution.md && rg -n \"selfmedia-creator\" registry/adapter-index.yaml && rg -n \"R3\" docs/beacon/v0.0.1/constitution/prism-constitution.md` | 源溯源存在"
+          },
+          {
+            "ac_id": "TC-EXTRACT-010",
+            "tc_id": "AC-EXTRACT-010",
+            "path_type": "`rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md && rg -n \"Lake D\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md`",
+            "raw": "TC-EXTRACT-010 | AC-EXTRACT-010 | `rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md && rg -n \"Lake D\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md` | 分湖边界存在"
+          },
+          {
+            "ac_id": "TC-EXTRACT-011",
+            "tc_id": "AC-EXTRACT-003",
+            "path_type": "`python3 -c \"from pathlib import Path; n=sum(1 for p in Path('skills').glob('prism-*/SKILL.md') if 'public_surface: true' in p.read_text()); raise SystemExit(0 if n==7 else 1)\"`",
+            "raw": "TC-EXTRACT-011 | AC-EXTRACT-003 | `python3 -c \"from pathlib import Path; n=sum(1 for p in Path('skills').glob('prism-*/SKILL.md') if 'public_surface: true' in p.read_text()); raise SystemExit(0 if n==7 else 1)\"` | 恰好 7 个公开面 frontmatter"
+          },
+          {
+            "ac_id": "TC-EXTRACT-012",
+            "tc_id": "AC-EXTRACT-008",
+            "path_type": "`python3 -c \"from pathlib import Path; n=len(list(Path('skills/_internal/adapters').glob('*.contract.md'))); raise SystemExit(0 if n>=7 else 1)\"`",
+            "raw": "TC-EXTRACT-012 | AC-EXTRACT-008 | `python3 -c \"from pathlib import Path; n=len(list(Path('skills/_internal/adapters').glob('*.contract.md'))); raise SystemExit(0 if n>=7 else 1)\"` | ≥7 adapter 契约 stub"
+          }
+        ],
+        "has_legal_walk": true,
+        "has_illegal": true
+      },
+      "aggregates": [
+        "FSM（提取落地）"
+      ],
+      "state_machine_coverage": {},
+      "deep_route_recommended": false
+    },
+    "domain_fsm_qa_blocked": false,
+    "domain_fsm_qa_reason_code": "",
+    "design_alignment": {},
+    "design_md_lint": {},
+    "ui_state_matrix": {},
+    "ui_design_ship_blocked": false
+  },
+  "qa_attribution_release_support": {
+    "schema_version": "1.0",
+    "status": "not_applicable",
+    "support_evidence_only": true,
+    "runtime_evidence_only": true,
+    "truth_authority": false,
+    "verdict_authority": false,
+    "release_pass_evidence": false,
+    "formal_qa_source": "feature_qa_scorecard",
+    "attribution_count": 0,
+    "release_blocking_count": 0,
+    "proposal_count": 0,
+    "family_counts": {
+      "implementation_gap": 0,
+      "truth_drift": 0,
+      "coverage_gap": 0,
+      "execution_lapse": 0,
+      "skill_defect": 0,
+      "runner_admission_blocker": 0,
+      "evidence_insufficient": 0
+    },
+    "route_counts": {}
+  },
+  "qa_browser_memory_release_support": {},
+  "qa_evo_deep_absorption": {
+    "schema_version": "1.0",
+    "status": "not_applicable",
+    "eligible_for_release_supplement": false,
+    "findings": [],
+    "absorbed_count": 0,
+    "deferred_count": 0,
+    "blocked_count": 0,
+    "not_applicable_count": 0
+  },
+  "qa_evo_deep_release_supplement": {
+    "deep_findings_absorbed": false,
+    "absorbed_finding_count": 0,
+    "advisory_or_blocked_finding_count": 0,
+    "policy": "absorbed_deep_findings_only"
+  },
+  "prototype_projection": {
+    "status": "missing",
+    "exists": false,
+    "frozen": false,
+    "stale": false,
+    "inconsistent": false,
+    "inconsistent_reasons": [],
+    "prototype_mode": "wireframe",
+    "ui_kit": "wireframe-markdown-v1",
+    "compiler": {},
+    "review_status": "missing",
+    "design_review_outcome": "missing",
+    "gate_ready": false,
+    "requirement_completeness_gate": {
+      "schema_version": "1.0",
+      "enabled": false,
+      "status": "pass",
+      "blocked": false,
+      "reason_code": "",
+      "target_stage": "prototype",
+      "feature": "prism-extract-v1",
+      "version": "v0.0.1",
+      "recommended_command": ""
+    },
+    "root": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1",
+    "files": {
+      "root": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1",
+      "human_view_dir": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/human-view",
+      "machine_view_dir": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/machine-view",
+      "verification_dir": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/verification",
+      "assets_dir": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/assets",
+      "implementation_dir": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/implementation",
+      "manifest": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/manifest.json",
+      "prototype_plan": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/prototype-plan.json",
+      "prototype_brief": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/prototype-brief.json",
+      "canonical_envelope": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/canonical-envelope.json",
+      "artifact_topology": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/artifact-topology.json",
+      "source_map": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/source-map.json",
+      "freeze": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/freeze.json",
+      "review_json": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/prototype-review.json",
+      "review_md": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/prototype-review.md",
+      "verification_index": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/verification/index.json",
+      "wireframe_summary": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/wireframe-summary.md",
+      "wireframe_manifest": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/wireframe-manifest.json",
+      "navigation_map": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/navigation-map.json",
+      "navigation_map_md": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/navigation-map.md",
+      "state_flow_map": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/state-flow-map.json",
+      "state_flow_map_md": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/state-flow-map.md",
+      "component_catalog": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/component-catalog.json",
+      "component_catalog_md": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/component-catalog.md",
+      "automation_priority_matrix": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/automation-priority-matrix.json",
+      "automation_priority_matrix_md": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/automation-priority-matrix.md",
+      "interaction_map": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/interaction-map.json",
+      "coverage_report": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/coverage-report.json",
+      "theme": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/theme.json",
+      "tokens_css": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/tokens.css",
+      "platform_variants": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/platform-variants.json",
+      "implementation_map": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/implementation-map.json",
+      "implementation_index": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/implementation/index.json",
+      "route_closure_contract": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/route-closure-contract.json",
+      "pages_dir": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/pages",
+      "page_specs_dir": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/page-specs",
+      "design_artifacts_dir": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/design-artifacts",
+      "ux_prd": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/ux-prd.md",
+      "design_md": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/DESIGN.md",
+      "preview_html": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/preview.html",
+      "preview_dark_html": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/preview-dark.html",
+      "index_html": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/index.html"
+    },
+    "paths": {
+      "root": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1",
+      "human_view_dir": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/human-view",
+      "machine_view_dir": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/machine-view",
+      "verification_dir": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/verification",
+      "assets_dir": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/assets",
+      "implementation_dir": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/implementation",
+      "manifest": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/manifest.json",
+      "prototype_plan": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/prototype-plan.json",
+      "prototype_brief": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/prototype-brief.json",
+      "canonical_envelope": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/canonical-envelope.json",
+      "artifact_topology": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/artifact-topology.json",
+      "source_map": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/source-map.json",
+      "freeze": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/freeze.json",
+      "review_json": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/prototype-review.json",
+      "review_md": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/prototype-review.md",
+      "verification_index": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/verification/index.json",
+      "wireframe_summary": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/wireframe-summary.md",
+      "wireframe_manifest": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/wireframe-manifest.json",
+      "navigation_map": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/navigation-map.json",
+      "navigation_map_md": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/navigation-map.md",
+      "state_flow_map": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/state-flow-map.json",
+      "state_flow_map_md": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/state-flow-map.md",
+      "component_catalog": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/component-catalog.json",
+      "component_catalog_md": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/component-catalog.md",
+      "automation_priority_matrix": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/automation-priority-matrix.json",
+      "automation_priority_matrix_md": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/automation-priority-matrix.md",
+      "interaction_map": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/interaction-map.json",
+      "coverage_report": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/coverage-report.json",
+      "theme": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/theme.json",
+      "tokens_css": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/tokens.css",
+      "platform_variants": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/platform-variants.json",
+      "implementation_map": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/implementation-map.json",
+      "implementation_index": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/implementation/index.json",
+      "route_closure_contract": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/route-closure-contract.json",
+      "pages_dir": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/pages",
+      "page_specs_dir": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/page-specs",
+      "design_artifacts_dir": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/design-artifacts",
+      "ux_prd": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/ux-prd.md",
+      "design_md": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/DESIGN.md",
+      "preview_html": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/preview.html",
+      "preview_dark_html": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/preview-dark.html",
+      "index_html": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1/index.html"
+    },
+    "source_fingerprints": {},
+    "recorded_source_fingerprints": {},
+    "human_view_status": "missing",
+    "machine_contract_status": "missing",
+    "sqlite_projection_status": "missing",
+    "drift_status": "missing",
+    "transaction": {},
+    "legacy_source_status": "missing",
+    "legacy_source_path": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/docs/beacon/v0.0.1/prototype/prism-extract-v1.md"
+  },
+  "version_surface_governance": {
+    "reason_code": "",
+    "status": "not_applicable",
+    "ok": true,
+    "blocked": false,
+    "configured": false,
+    "manifest_path": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1/beacon/version-truth.json",
+    "repair_commands": [],
+    "verify_command": "",
+    "checks": []
+  },
+  "truth_map_governance": {
+    "schema_version": "1.0",
+    "truth_map_contract": "beacon-truth-map-v1",
+    "truth_source_model": "feature_package_authoritative",
+    "resolver_mode": "resolver_first",
+    "version": "v0.0.1",
+    "status": "pass",
+    "blocked": false,
+    "authority_classification": {
+      "feature_truth": "markdown_feature_package",
+      "feature_truth_model": "feature_package_authoritative",
+      "version_governance_truth": "version_governance_truth",
+      "generated_governance_state": "generated_governance_state_not_truth",
+      "runtime_process_record": "runtime_process_record_not_requirement_truth"
+    },
+    "governance_projection_roles": {
+      "canonical_commit_surface": "docs/beacon/governance/project-version-governance.md",
+      "canonical_role": "version_governance_truth",
+      "sqlite_projection_surface": "project_governance_sqlite_projection",
+      "sqlite_projection_role": "generated_governance_state_not_truth",
+      "sqlite_ledger_path": "/Users/apple/.beacon/runtime-ledger/runtime-ledger.sqlite3",
+      "deprecated_legacy_json": ".beacon/metadata/project-version-metadata.json",
+      "write_direction": "governance_md_to_sqlite_only"
+    },
+    "truth_surfaces": {
+      "project_governance": {
+        "schema_version": "1.0",
+        "truth_map_contract": "beacon-truth-map-v1",
+        "truth_source_model": "feature_package_authoritative",
+        "resolver_mode": "resolver_first",
+        "version": "v0.0.1",
+        "surface": "project_governance",
+        "path": "docs/beacon/governance/project-version-governance.md",
+        "exists": true,
+        "required": true,
+        "role": "version_governance_truth",
+        "authority": "version_governance_truth",
+        "truth_authority": true,
+        "json_authority": false,
+        "generated_governance_state": false,
+        "source_hash": "56a88f49a16a0861644841bac98121e041d0e02c83006cf87cf49b2cbdb85036"
+      },
+      "global_boundaries": {
+        "schema_version": "1.0",
+        "truth_map_contract": "beacon-truth-map-v1",
+        "truth_source_model": "feature_package_authoritative",
+        "resolver_mode": "resolver_first",
+        "version": "v0.0.1",
+        "surface": "global_boundaries",
+        "path": "docs/beacon/global-boundaries.md",
+        "exists": true,
+        "required": true,
+        "role": "global_governance_truth",
+        "authority": "global_governance_truth",
+        "truth_authority": true,
+        "json_authority": false,
+        "generated_governance_state": false,
+        "source_hash": "1188242c4c6e79eb79c015b2c20f23bad0811497370ed8e6e047b7e6447fee5d"
+      },
+      "summary": {
+        "schema_version": "1.0",
+        "truth_map_contract": "beacon-truth-map-v1",
+        "truth_source_model": "feature_package_authoritative",
+        "resolver_mode": "resolver_first",
+        "version": "v0.0.1",
+        "surface": "summary",
+        "path": "docs/beacon/v0.0.1/SUMMARY.md",
+        "exists": true,
+        "required": true,
+        "role": "version_governance_truth",
+        "authority": "version_governance_truth",
+        "truth_authority": true,
+        "json_authority": false,
+        "generated_governance_state": false,
+        "source_hash": "3f337d830a33cd128178ea0d25085b6cd70ed22133176c50d7cb28753615c8b0"
+      },
+      "execution_boundaries": {
+        "schema_version": "1.0",
+        "truth_map_contract": "beacon-truth-map-v1",
+        "truth_source_model": "feature_package_authoritative",
+        "resolver_mode": "resolver_first",
+        "version": "v0.0.1",
+        "surface": "execution_boundaries",
+        "path": "docs/beacon/v0.0.1/execution/boundaries.md",
+        "exists": true,
+        "required": true,
+        "role": "version_governance_truth",
+        "authority": "version_governance_truth",
+        "truth_authority": true,
+        "json_authority": false,
+        "generated_governance_state": false,
+        "source_hash": "53e90e34833b19a32c77b61835d4cb24412cc63ef0500e916058179a4b45d31b"
+      },
+      "project_skill_blueprint": {
+        "schema_version": "1.0",
+        "truth_map_contract": "beacon-truth-map-v1",
+        "truth_source_model": "feature_package_authoritative",
+        "resolver_mode": "resolver_first",
+        "version": "v0.0.1",
+        "surface": "project_skill_blueprint",
+        "path": "docs/beacon/v0.0.1/execution/project-skill-qa-evolution-blueprint.md",
+        "exists": true,
+        "required": true,
+        "role": "version_governance_truth",
+        "authority": "version_governance_truth",
+        "truth_authority": true,
+        "json_authority": false,
+        "generated_governance_state": false,
+        "source_hash": "ff022b553148833d09112298f3cd167223bc4db6e7454eb7990426831bd713a5"
+      },
+      "source_architecture_index": {
+        "schema_version": "1.0",
+        "truth_map_contract": "beacon-truth-map-v1",
+        "truth_source_model": "feature_package_authoritative",
+        "resolver_mode": "resolver_first",
+        "version": "v0.0.1",
+        "surface": "source_architecture_index",
+        "path": "docs/beacon/v0.0.1/source-architecture/index.md",
+        "exists": true,
+        "required": true,
+        "role": "version_governance_truth",
+        "authority": "version_governance_truth",
+        "truth_authority": true,
+        "json_authority": false,
+        "generated_governance_state": false,
+        "source_hash": "56610b206e6fe912902860bdb337f8c99b59bfc8f875703ea0779fe93417aee6"
+      },
+      "release_notes": {
+        "schema_version": "1.0",
+        "truth_map_contract": "beacon-truth-map-v1",
+        "truth_source_model": "feature_package_authoritative",
+        "resolver_mode": "resolver_first",
+        "version": "v0.0.1",
+        "surface": "release_notes",
+        "path": "docs/beacon/v0.0.1/release/v0.0.1.md",
+        "exists": true,
+        "required": true,
+        "role": "version_governance_truth",
+        "authority": "version_governance_truth",
+        "truth_authority": true,
+        "json_authority": false,
+        "generated_governance_state": false,
+        "source_hash": "108e8a5799df6e8729c2005088c89674229be0703d1071480ceccd8d2f2f75d2"
+      }
+    },
+    "generated_state_surfaces": {
+      "version_feature_manifest": {
+        "schema_version": "1.0",
+        "truth_map_contract": "beacon-truth-map-v1",
+        "truth_source_model": "feature_package_authoritative",
+        "resolver_mode": "resolver_first",
+        "version": "v0.0.1",
+        "surface": "version_feature_manifest",
+        "path": "docs/beacon/v0.0.1/.machine/manifest/version-features.json",
+        "exists": false,
+        "required": false,
+        "role": "generated_governance_state_not_truth",
+        "authority": "generated_governance_state_not_truth",
+        "truth_authority": false,
+        "json_authority": false,
+        "generated_governance_state": true,
+        "source_hash": ""
+      },
+      "project_version_metadata": {
+        "schema_version": "1.0",
+        "truth_map_contract": "beacon-truth-map-v1",
+        "truth_source_model": "feature_package_authoritative",
+        "resolver_mode": "resolver_first",
+        "version": "v0.0.1",
+        "surface": "project_version_metadata",
+        "path": ".beacon/metadata/project-version-metadata.json",
+        "exists": false,
+        "required": false,
+        "role": "generated_governance_state_not_truth",
+        "authority": "generated_governance_state_not_truth",
+        "truth_authority": false,
+        "json_authority": false,
+        "generated_governance_state": true,
+        "source_hash": ""
+      },
+      "project_governance_sqlite_projection": {
+        "schema_version": "1.0",
+        "truth_map_contract": "beacon-truth-map-v1",
+        "truth_source_model": "feature_package_authoritative",
+        "resolver_mode": "resolver_first",
+        "version": "v0.0.1",
+        "surface": "project_governance_sqlite_projection",
+        "path": "/Users/apple/.beacon/runtime-ledger/runtime-ledger.sqlite3",
+        "exists": true,
+        "required": false,
+        "role": "generated_governance_state_not_truth",
+        "authority": "generated_governance_state_not_truth",
+        "truth_authority": false,
+        "json_authority": false,
+        "generated_governance_state": true,
+        "source_hash": "5c81eac4cace952734490a0a39fde6b89e298c6c349c6652af807d705f94c6c6"
+      },
+      "evidence_manifest": {
+        "schema_version": "1.0",
+        "truth_map_contract": "beacon-truth-map-v1",
+        "truth_source_model": "feature_package_authoritative",
+        "resolver_mode": "resolver_first",
+        "version": "v0.0.1",
+        "surface": "evidence_manifest",
+        "path": ".beacon/evidence-manifest.json",
+        "exists": true,
+        "required": false,
+        "role": "generated_governance_state_not_truth",
+        "authority": "generated_governance_state_not_truth",
+        "truth_authority": false,
+        "json_authority": false,
+        "generated_governance_state": true,
+        "source_hash": "7c1ffad114c577313c21f920b6d484836cd9f35f83e1b1af0b66c3360976cda3"
+      },
+      "qa_status": {
+        "schema_version": "1.0",
+        "truth_map_contract": "beacon-truth-map-v1",
+        "truth_source_model": "feature_package_authoritative",
+        "resolver_mode": "resolver_first",
+        "version": "v0.0.1",
+        "surface": "qa_status",
+        "path": ".beacon/qa/status.json",
+        "exists": true,
+        "required": false,
+        "role": "generated_governance_state_not_truth",
+        "authority": "generated_governance_state_not_truth",
+        "truth_authority": false,
+        "json_authority": false,
+        "generated_governance_state": true,
+        "source_hash": "9e92898bd2194d55ebd432ced1e3667d205efd99b712285843d88c8e6eb93676"
+      },
+      "release_gate_report": {
+        "schema_version": "1.0",
+        "truth_map_contract": "beacon-truth-map-v1",
+        "truth_source_model": "feature_package_authoritative",
+        "resolver_mode": "resolver_first",
+        "version": "v0.0.1",
+        "surface": "release_gate_report",
+        "path": ".beacon/release-gate-report.json",
+        "exists": true,
+        "required": false,
+        "role": "generated_governance_state_not_truth",
+        "authority": "generated_governance_state_not_truth",
+        "truth_authority": false,
+        "json_authority": false,
+        "generated_governance_state": true,
+        "source_hash": "960dc1e21687156fb87496b3bb2209f2297103cb4ddf0e37b1387627fe90acd5"
+      }
+    },
+    "manifest_authority": false,
+    "json_authority": false,
+    "diagnostics": []
+  },
+  "implementation_plan": {},
+  "research_projection": {},
+  "git_workflow": {
+    "count": 0,
+    "modes": [],
+    "expected_branches": [],
+    "service_directories": []
+  },
+  "requirement_clarity": {
+    "status": "pass",
+    "blocked": false,
+    "reason_code": "",
+    "finding_count": 0,
+    "state_path": ".beacon/state/requirement-clarity-prism-extract-v1.json",
+    "report_json_path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-extract-v1.json",
+    "report_markdown_path": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-extract-v1.md"
+  },
+  "requirement_completeness": {
+    "schema_version": "1.0",
+    "enabled": false,
+    "status": "pass",
+    "blocked": false,
+    "reason_code": "",
+    "target_stage": "release",
+    "feature": "prism-extract-v1",
+    "version": "v0.0.1",
+    "recommended_command": ""
+  },
+  "technical_review": {
+    "status": "pass",
+    "blocked": false,
+    "reason_code": "",
+    "review_status": "approved",
+    "approved_by": "human:continue-next-step",
+    "state_path": ".beacon/state/technical-review-contract-prism-extract-v1.json",
+    "contract_json_path": "docs/beacon/v0.0.1/.machine/execution/deterministic-implementation-contract-prism-extract-v1.json",
+    "contract_markdown_path": "docs/beacon/v0.0.1/execution/deterministic-implementation-contract-prism-extract-v1.md"
+  },
+  "truth_materials_gate": {
+    "schema": "release-truth-materials-gate.v1",
+    "required": true,
+    "blocked": false,
+    "pass": true,
+    "reason_code": "",
+    "reason_codes": [],
+    "stale_surfaces": [],
+    "report_path": "docs/beacon/v0.0.1/.machine/execution/prism-extract-v1.truth-review-gate.json",
+    "report_pass": true,
+    "feature": "prism-extract-v1",
+    "version": "v0.0.1",
+    "live_review": null
+  },
+  "agent_trace_soft": {
+    "schema": "release-agent-trace-soft.v1",
+    "required": false,
+    "hard_gate": false,
+    "status": "pass",
+    "pass": true,
+    "reason_code": "",
+    "signal": {
+      "signal": "agent_trace_coverage",
+      "status": "pass",
+      "reason_code": "",
+      "findings": [],
+      "valid_run_count": 4
+    },
+    "note": "soft advisory only; missing trace does not hard-block release (INT-TRC-08 deferred)"
+  },
+  "agent_trace_coverage": {
+    "signal": "agent_trace_coverage",
+    "status": "pass",
+    "reason_code": "",
+    "findings": [],
+    "valid_run_count": 4
+  },
+  "deep_release_supplement": {},
+  "test_contract_governance": {},
+  "reconciliation": {
+    "required": false,
+    "reason_code": "",
+    "artifact_path": "",
+    "artifact": {}
+  },
+  "browser_release_reason_codes": [],
+  "prompt_boundary": {
+    "required": false,
+    "status": "not_required",
+    "blocked": false,
+    "classification": "",
+    "reason_code": "",
+    "next_action": "",
+    "recommended_command": "",
+    "surface": "",
+    "prompt": "",
+    "matched_signals": []
+  },
+  "change_documents": {
+    "schema_version": "1.0",
+    "status": "pass",
+    "blocked": false,
+    "reason_code": "",
+    "markdown_path": "docs/beacon/v0.0.1/change/v0.0.1.md",
+    "json_path": "docs/beacon/v0.0.1/.machine/change/v0.0.1.json",
+    "markdown_exists": true,
+    "json_exists": true,
+    "version_match": true,
+    "feature_count": 1,
+    "feature_slugs": [
+      "prism-extract-v1"
+    ],
+    "current_feature_slug": "prism-extract-v1",
+    "includes_current_feature": true,
+    "feature_projection": {
+      "schema_version": "1.0",
+      "status": "pass",
+      "blocked": false,
+      "repairable": false,
+      "reason_code": "",
+      "feature": "prism-extract-v1",
+      "feature_slug": "prism-extract-v1",
+      "version": "v0.0.1",
+      "path": "docs/beacon/v0.0.1/.machine/change/prism-extract-v1.json",
+      "exists": true,
+      "version_match": true,
+      "projection_role": {
+        "artifact_role": "version_aggregate_projection",
+        "truth_source": false,
+        "gate_source": false,
+        "lifecycle_stage": false,
+        "release_publish_action": false
+      },
+      "repair_commands": [
+        "beacon doctor repair-version-aggregate-projection \"prism-extract-v1\" --project-root /Users/apple/Developer/Personal/products/prism/prism-extract-v1 --version v0.0.1 --json",
+        "beacon release create v0.0.1 --project /Users/apple/Developer/Personal/products/prism/prism-extract-v1",
+        "beacon doctor build-test-contract-index \"prism-extract-v1\" --project-root /Users/apple/Developer/Personal/products/prism/prism-extract-v1 --version v0.0.1 --json",
+        "beacon doctor verify-test-contract-index \"prism-extract-v1\" --project-root /Users/apple/Developer/Personal/products/prism/prism-extract-v1 --version v0.0.1 --strict --json"
+      ]
+    },
+    "projection_role": {
+      "artifact_role": "version_aggregate_projection",
+      "truth_source": false,
+      "gate_source": false,
+      "lifecycle_stage": false,
+      "release_publish_action": false
+    },
+    "repair_commands": [
+      "beacon doctor repair-version-aggregate-projection \"prism-extract-v1\" --project-root /Users/apple/Developer/Personal/products/prism/prism-extract-v1 --version v0.0.1 --json",
+      "beacon release create v0.0.1 --project /Users/apple/Developer/Personal/products/prism/prism-extract-v1",
+      "beacon doctor build-test-contract-index \"prism-extract-v1\" --project-root /Users/apple/Developer/Personal/products/prism/prism-extract-v1 --version v0.0.1 --json",
+      "beacon doctor verify-test-contract-index \"prism-extract-v1\" --project-root /Users/apple/Developer/Personal/products/prism/prism-extract-v1 --version v0.0.1 --strict --json"
+    ]
+  },
+  "learning_scorecard": {
+    "main_kpi": "false_complete_rate",
+    "decision_summary": {},
+    "candidate_count": 0
+  },
+  "latest_experiment": {},
+  "evidence_manifest": {
+    "status": "pass",
+    "blocked": false,
+    "blocked_count": 0,
+    "entry_count": 38,
+    "issues": []
+  },
+  "delivery_read_model": {
+    "schema_version": "1.0",
+    "feature": "prism-extract-v1",
+    "version": "v0.0.1",
+    "contract": {
+      "schema_version": "1.0",
+      "feature": "prism-extract-v1",
+      "version": "v0.0.1",
+      "requested_mode": "feature-aware",
+      "effective_mode": "feature-aware",
+      "generator_mode": "feature-aware",
+      "execution_mode": "feature-aware",
+      "runner_mode": "qa",
+      "host_runtime": "codex",
+      "fallback_reason": "",
+      "capability_snapshot": {
+        "schema_version": "1.0",
+        "host_runtime": "codex",
+        "subagent_required": false,
+        "subagent_runtime_status": "",
+        "subagent_delegation_status": "",
+        "host_semantic_ready": false,
+        "provider_available": false
+      },
+      "subagent_prechecks": {
+        "required": false,
+        "host_runtime": "codex",
+        "runtime_readiness": {},
+        "delegation_readiness": {}
+      },
+      "requirement_binding": {
+        "source_of_truth_root": "docs/beacon/v0.0.1",
+        "feature_matrix_path": ".beacon/qa/features/prism-extract-v1/matrix.qa9.json",
+        "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json"
+      },
+      "traceability_refs": [
+        ".beacon/qa/features/prism-extract-v1/matrix.qa9.json",
+        "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json",
+        ".beacon/qa/features/prism-extract-v1/ac-closure.json",
+        ".beacon/qa/features/prism-extract-v1/scorecard.json"
+      ],
+      "runner": "",
+      "adapter_type": "",
+      "execution_surface": "qa",
+      "team_mode": false,
+      "qa_status": "passed",
+      "gate_status": "",
+      "release_ready": true,
+      "risk_flags": []
+    },
+    "implement": {
+      "status": "completed",
+      "run_id": "run-20260811T041326Z-3aaa",
+      "delivery_contract": {
+        "schema_version": "1.0",
+        "feature": "prism-extract-v1",
+        "version": "v0.0.1",
+        "requested_mode": "",
+        "effective_mode": "",
+        "generator_mode": "",
+        "execution_mode": "",
+        "runner_mode": "import-evidence",
+        "host_runtime": "",
+        "fallback_reason": "",
+        "capability_snapshot": {
+          "schema_version": "1.0",
+          "host_runtime": "",
+          "subagent_required": false,
+          "subagent_runtime_status": "",
+          "subagent_delegation_status": "",
+          "host_semantic_ready": false,
+          "provider_available": false
+        },
+        "subagent_prechecks": {},
+        "requirement_binding": {},
+        "traceability_refs": [],
+        "runner": "import-evidence",
+        "adapter_type": "",
+        "execution_surface": "",
+        "team_mode": false,
+        "qa_status": "",
+        "gate_status": "",
+        "release_ready": false,
+        "risk_flags": []
+      },
+      "prompt_boundary": {
+        "required": false,
+        "status": "not_required",
+        "blocked": false,
+        "classification": "",
+        "reason_code": "",
+        "next_action": "",
+        "recommended_command": "",
+        "surface": "",
+        "prompt": "",
+        "matched_signals": []
+      }
+    },
+    "qa": {
+      "status": "passed",
+      "run_id": "run-20260811T121330776605",
+      "release_ready": true,
+      "continue_decision": "stop_for_repair",
+      "delivery_contract": {
+        "schema_version": "1.0",
+        "feature": "prism-extract-v1",
+        "version": "v0.0.1",
+        "requested_mode": "feature-aware",
+        "effective_mode": "feature-aware",
+        "generator_mode": "feature-aware",
+        "execution_mode": "feature-aware",
+        "runner_mode": "qa",
+        "host_runtime": "codex",
+        "fallback_reason": "",
+        "capability_snapshot": {
+          "schema_version": "1.0",
+          "host_runtime": "codex",
+          "subagent_required": false,
+          "subagent_runtime_status": "",
+          "subagent_delegation_status": "",
+          "host_semantic_ready": false,
+          "provider_available": false
+        },
+        "subagent_prechecks": {
+          "required": false,
+          "host_runtime": "codex",
+          "runtime_readiness": {},
+          "delegation_readiness": {}
+        },
+        "requirement_binding": {
+          "source_of_truth_root": "docs/beacon/v0.0.1",
+          "feature_matrix_path": ".beacon/qa/features/prism-extract-v1/matrix.qa9.json",
+          "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json"
+        },
+        "traceability_refs": [
+          ".beacon/qa/features/prism-extract-v1/matrix.qa9.json",
+          "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json",
+          ".beacon/qa/features/prism-extract-v1/ac-closure.json",
+          ".beacon/qa/features/prism-extract-v1/scorecard.json"
+        ],
+        "runner": "",
+        "adapter_type": "",
+        "execution_surface": "qa",
+        "team_mode": false,
+        "qa_status": "passed",
+        "gate_status": "",
+        "release_ready": true,
+        "risk_flags": []
+      }
+    },
+    "release": {
+      "gate_status": "Pass",
+      "release_ready": true,
+      "semantic": {},
+      "revision_binding": {
+        "status": "bound",
+        "reason_code": "",
+        "revision_id": "R1",
+        "source_revision_id": "",
+        "superseded_by": "",
+        "doc_status": "frozen",
+        "delivery_status": "accepted",
+        "gate_bound_to_latest_revision": true
+      },
+      "prompt_boundary": {
+        "required": false,
+        "status": "not_required",
+        "blocked": false,
+        "classification": "",
+        "reason_code": "",
+        "next_action": "",
+        "recommended_command": "",
+        "surface": "",
+        "prompt": "",
+        "matched_signals": []
+      }
+    },
+    "traceability": {
+      "requirement_binding": {
+        "source_of_truth_root": "docs/beacon/v0.0.1",
+        "feature_matrix_path": ".beacon/qa/features/prism-extract-v1/matrix.qa9.json",
+        "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json"
+      },
+      "requirement_refs": [
+        ".beacon/qa/features/prism-extract-v1/matrix.qa9.json",
+        "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json",
+        ".beacon/qa/features/prism-extract-v1/ac-closure.json",
+        ".beacon/qa/features/prism-extract-v1/scorecard.json"
+      ],
+      "runtime_refs": [
+        ".beacon/qa/features/prism-extract-v1/matrix.qa9.json",
+        ".beacon/qa/features/prism-extract-v1/scorecard.json"
+      ]
+    },
+    "risk_flags": []
+  },
+  "host_native_delivery": {
+    "schema_version": "1.0",
+    "implement": {
+      "schema_version": "1.0",
+      "feature": "prism-extract-v1",
+      "version": "v0.0.1",
+      "requested_mode": "",
+      "effective_mode": "",
+      "generator_mode": "",
+      "execution_mode": "",
+      "runner_mode": "import-evidence",
+      "host_runtime": "",
+      "fallback_reason": "",
+      "capability_snapshot": {
+        "schema_version": "1.0",
+        "host_runtime": "",
+        "subagent_required": false,
+        "subagent_runtime_status": "",
+        "subagent_delegation_status": "",
+        "host_semantic_ready": false,
+        "provider_available": false
+      },
+      "subagent_prechecks": {},
+      "requirement_binding": {},
+      "traceability_refs": [],
+      "runner": "import-evidence",
+      "adapter_type": "",
+      "execution_surface": "",
+      "team_mode": false,
+      "qa_status": "",
+      "gate_status": "",
+      "release_ready": false,
+      "risk_flags": []
+    },
+    "qa": {
+      "schema_version": "1.0",
+      "feature": "prism-extract-v1",
+      "version": "v0.0.1",
+      "requested_mode": "feature-aware",
+      "effective_mode": "feature-aware",
+      "generator_mode": "feature-aware",
+      "execution_mode": "feature-aware",
+      "runner_mode": "qa",
+      "host_runtime": "codex",
+      "fallback_reason": "",
+      "capability_snapshot": {
+        "schema_version": "1.0",
+        "host_runtime": "codex",
+        "subagent_required": false,
+        "subagent_runtime_status": "",
+        "subagent_delegation_status": "",
+        "host_semantic_ready": false,
+        "provider_available": false
+      },
+      "subagent_prechecks": {
+        "required": false,
+        "host_runtime": "codex",
+        "runtime_readiness": {},
+        "delegation_readiness": {}
+      },
+      "requirement_binding": {
+        "source_of_truth_root": "docs/beacon/v0.0.1",
+        "feature_matrix_path": ".beacon/qa/features/prism-extract-v1/matrix.qa9.json",
+        "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json"
+      },
+      "traceability_refs": [
+        ".beacon/qa/features/prism-extract-v1/matrix.qa9.json",
+        "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json",
+        ".beacon/qa/features/prism-extract-v1/ac-closure.json",
+        ".beacon/qa/features/prism-extract-v1/scorecard.json"
+      ],
+      "runner": "",
+      "adapter_type": "",
+      "execution_surface": "qa",
+      "team_mode": false,
+      "qa_status": "passed",
+      "gate_status": "",
+      "release_ready": true,
+      "risk_flags": []
+    },
+    "semantic": {},
+    "status": "pass",
+    "reason_codes": [],
+    "traceability": {
+      "requirement_binding": {
+        "source_of_truth_root": "docs/beacon/v0.0.1",
+        "feature_matrix_path": ".beacon/qa/features/prism-extract-v1/matrix.qa9.json",
+        "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json"
+      },
+      "requirement_refs": [
+        ".beacon/qa/features/prism-extract-v1/matrix.qa9.json",
+        "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json",
+        ".beacon/qa/features/prism-extract-v1/ac-closure.json",
+        ".beacon/qa/features/prism-extract-v1/scorecard.json"
+      ],
+      "runtime_refs": [
+        ".beacon/qa/features/prism-extract-v1/matrix.qa9.json",
+        ".beacon/qa/features/prism-extract-v1/scorecard.json"
+      ]
+    }
+  }
+}

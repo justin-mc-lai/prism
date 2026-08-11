@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prism Master"
+  short_description: "Freeze Fact/Story masters"
+  default_prompt: "Use $prism-master to freeze a FactMaster checklist from verified sources."

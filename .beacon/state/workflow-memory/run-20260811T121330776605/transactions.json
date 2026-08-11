@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "items": [
+    {
+      "run_id": "run-20260811T121330776605",
+      "stage": "qa",
+      "action": "memory_writeback",
+      "feature": "prism-extract-v1",
+      "version": "",
+      "evidence_ref": [
+        ".beacon/auto-test-status.json",
+        ".beacon/coverage-summary.json",
+        ".beacon/qa/status.json",
+        ".beacon/release-gate-report.json",
+        "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json"
+      ],
+      "requirement_refs": [],
+      "decision_trace": [
+        {
+          "memory_id": "8cba6487-819c-458f-b976-020e8c9e59b2",
+          "summary": "[qa] prism-extract-v1 => accepted",
+          "source": "workflow.qa.writeback",
+          "updated_at": "2026-08-11T03:31:07.759336+00:00"
+        }
+      ],
+      "blockers": [],
+      "attempt_seq": 1,
+      "previous_transaction_id": "",
+      "lineage_ids": [],
+      "transaction_id": "tx-wf-run-20260811T121330776605-qa-memory_writeback-3c1ad57ad42d",
+      "source_hash": "3c1ad57ad42dcbdf1d36e6cc9bf16a71bebc287aa22a823d8ccd7f8d0e465fe8",
+      "projection_seq": "wf-3c1ad57ad42dcbdf",
+      "occurred_at": "2026-08-11T04:13:32.868451+00:00",
+      "status": "applied",
+      "committed_at": "2026-08-11T04:13:32.870192+00:00",
+      "memory_id": "84131fb2-d723-4738-9606-b6a1b43ae8bb",
+      "event_id": "4361a62a-183a-4d2a-adb6-9cce878d8516",
+      "sink_paths": {
+        "memory_v1": ".beacon/memory/memory-v1.json",
+        "legacy_projection": ".beacon/memory/decisions.json",
+        "workflow_lifecycle": ".beacon/memory/workflow-lifecycle.json"
+      },
+      "sink_checksums": {
+        "memory_v1": "6344426d963e825b91f8352d263a29102f0f6898178e9a7c048405df9b02bd5b",
+        "legacy_projection": "missing",
+        "workflow_lifecycle": "155f77d59d9388dc32a3f8526d0cc138ee8d5cfae5eca68fc4a8c749f797d3cf"
+      }
+    }
+  ],
+  "updated_at": "2026-08-11T04:13:32.870471+00:00"
+}

@@ -1,0 +1,1 @@
+test -e .git && test -f README.md && test -f AGENTS.md

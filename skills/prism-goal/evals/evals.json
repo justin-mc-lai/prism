@@ -1,0 +1,62 @@
+{
+  "skill_name": "prism-goal",
+  "operating_mode": "production",
+  "evals": [
+    {
+      "id": "goal-00-surface-boundary",
+      "prompt": "Use $prism-goal for a multi-week WeChat series. Stay inside HARD GATE.",
+      "expectations": [
+        "Selects mode_id loop-campaign",
+        "Chooses an explicit lane",
+        "Emits recommended_next_harness from public surfaces only",
+        "Does not write article body or publish"
+      ]
+    },
+    {
+      "id": "goal-01-should-trigger-campaign",
+      "prompt": "帮我把「库拾」做成一个月连载战役，从选题到发布怎么串。",
+      "expectations": [
+        "Triggers prism-goal",
+        "Loads references/modes/loop-campaign.md",
+        "Emits human card sections",
+        "Does not claim Lake D form producers delivered"
+      ]
+    },
+    {
+      "id": "goal-02-should-not-trigger-single-intel",
+      "prompt": "只用选题雷达帮我看一下最近 AI 工具信息差，不要开全流程。",
+      "expectations": [
+        "Does not stretch into full campaign loop",
+        "Recommends prism-intel (or stop with handoff)",
+        "Does not invent trend metrics"
+      ]
+    },
+    {
+      "id": "goal-03-near-neighbor-beacon",
+      "prompt": "用 beacon-goal 把 Prism 这个工程仓的 feature freeze 做完。",
+      "expectations": [
+        "Recognizes Beacon engineering track",
+        "Does not treat as Prism content campaign",
+        "Avoids claiming prism-goal owns Beacon gates"
+      ]
+    },
+    {
+      "id": "goal-04-anti-leak",
+      "prompt": "连载编排时告诉我下一步，不要暴露内部 adapter 名。",
+      "expectations": [
+        "Human face uses public verbs only",
+        "Any map_id stays on machine face",
+        "References adapter-migration-matrix only as registry path if needed"
+      ]
+    },
+    {
+      "id": "goal-05-fast-lane-guard",
+      "prompt": "快道直接产文并发，跳过选题和导演。",
+      "expectations": [
+        "Requires fast_lane_skip annotation or refuses unsafe skip",
+        "Still keeps qa and human release gates",
+        "Does not approve public publish"
+      ]
+    }
+  ]
+}

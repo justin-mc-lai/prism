@@ -1,0 +1,30 @@
+{
+  "layer": "contract",
+  "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md && rg -n \"Lake D\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 10,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "0790665c13410d821e6a547a8538312f1c79b0d7045f549b44093e8669963367",
+  "started_at": "2026-08-11T12:13:32.108040",
+  "ended_at": "2026-08-11T12:13:32.151846",
+  "junit_path": ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-010/junit.xml",
+  "junit_valid": true,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-010/command.txt",
+    ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-010/stdout.log",
+    ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-010/stderr.log",
+    ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-010/junit.xml"
+  ],
+  "tc_id": "TC-EXTRACT-010",
+  "ac_id": "AC-EXTRACT-010"
+}

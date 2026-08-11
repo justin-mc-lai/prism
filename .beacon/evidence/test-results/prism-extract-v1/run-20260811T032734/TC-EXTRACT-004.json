@@ -1,0 +1,13 @@
+{
+  "tc": "TC-EXTRACT-004",
+  "ac": "AC-EXTRACT-004",
+  "cmd": "rg -n \"scheme: A-1plus6\" registry/public-surface.yaml && rg -n \"max_public_harnesses: 6\" registry/public-surface.yaml && rg -n \"public_id: goal\" registry/public-surface.yaml",
+  "assertion": "公开面注册表合法",
+  "exit": 0,
+  "pass": true,
+  "tc_id": "TC-EXTRACT-004",
+  "ac_id": "AC-EXTRACT-004",
+  "command": "rg -n \"scheme: A-1plus6\" registry/public-surface.yaml && rg -n \"max_public_harnesses: 6\" registry/public-surface.yaml && rg -n \"public_id: goal\" registry/public-surface.yaml",
+  "status": "passed",
+  "run_id": "run-20260811T032734"
+}

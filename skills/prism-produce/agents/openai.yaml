@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prism Produce"
+  short_description: "Produce forms from masters"
+  default_prompt: "Use $prism-produce to draft one article presentation from a frozen master only."

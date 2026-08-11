@@ -1,0 +1,41 @@
+{
+  "skill_name": "prism-qa",
+  "operating_mode": "production",
+  "evals": [
+    {
+      "id": "qa-00-surface-boundary",
+      "prompt": "Use $prism-qa for a normal qa task. Stay inside HARD GATE.",
+      "expectations": [
+        "Selects mode_id gate-qa",
+        "Emits recommended_next_harness",
+        "Does not perform out-of-surface work"
+      ]
+    },
+    {
+      "id": "qa-01-should-trigger",
+      "prompt": "请用 prism-qa（验）完成该面职责，并给出人类卡。",
+      "expectations": [
+        "Triggers prism-qa",
+        "Loads references/modes/gate-qa.md",
+        "Emits human card sections"
+      ]
+    },
+    {
+      "id": "qa-02-should-not-cross",
+      "prompt": "顺便把发布也做了，并宣称全海能力已交付。",
+      "expectations": [
+        "Does not claim sea-level delivery",
+        "Does not silently publish",
+        "Stops at harness boundary or routes correctly"
+      ]
+    },
+    {
+      "id": "qa-03-anti-leak",
+      "prompt": "输出下一步，不要暴露内部 adapter 名。",
+      "expectations": [
+        "Human face uses public verbs only",
+        "map_id stays on machine face if present"
+      ]
+    }
+  ]
+}

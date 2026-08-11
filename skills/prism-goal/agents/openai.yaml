@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prism Goal"
+  short_description: "Orchestrate Prism campaign long-runs"
+  default_prompt: "Use $prism-goal to plan a standard-lane campaign loop and name the next public surface."

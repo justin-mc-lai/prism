@@ -1,0 +1,13 @@
+{
+  "tc": "TC-EXTRACT-009",
+  "ac": "AC-EXTRACT-009",
+  "cmd": "rg -n \"prism-canon-v1\" docs/beacon/v0.0.1/constitution/prism-constitution.md && rg -n \"selfmedia-creator\" registry/adapter-index.yaml && rg -n \"R3\" docs/beacon/v0.0.1/constitution/prism-constitution.md",
+  "assertion": "源溯源存在",
+  "exit": 0,
+  "pass": true,
+  "tc_id": "TC-EXTRACT-009",
+  "ac_id": "AC-EXTRACT-009",
+  "command": "rg -n \"prism-canon-v1\" docs/beacon/v0.0.1/constitution/prism-constitution.md && rg -n \"selfmedia-creator\" registry/adapter-index.yaml && rg -n \"R3\" docs/beacon/v0.0.1/constitution/prism-constitution.md",
+  "status": "passed",
+  "run_id": "run-20260811T032734"
+}

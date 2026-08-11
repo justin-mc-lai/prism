@@ -1,0 +1,10 @@
+# Local worktrees
+/prism-extract-v1/
+
+# Beacon transient noise
+.beacon/locks/
+.beacon/raw-command-log.jsonl
+.beacon/freeze-attempt.err
+.beacon/memory/
+*.pyc
+.DS_Store

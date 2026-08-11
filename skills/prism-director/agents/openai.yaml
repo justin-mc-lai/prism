@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prism Director"
+  short_description: "Direct treatment from masters"
+  default_prompt: "Use $prism-director to draft a treatment from a frozen master reference."

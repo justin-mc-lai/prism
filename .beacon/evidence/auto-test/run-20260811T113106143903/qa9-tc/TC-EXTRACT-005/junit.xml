@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite name="contract" tests="3" failures="0" errors="0" skipped="0">
+  <properties><property name="command" value="rg -n "^## 1\\. identity" contracts/skill-contract-7seg.tpl.md &amp;&amp; rg -n "^## 2\\. 决策边界" contracts/skill-contract-7seg.tpl.md &amp;&amp; rg -n "^## 7\\. 失败处理" contracts/skill-contract-7seg.tpl.md" /></properties>
+    <testcase classname="contract" name="structured_cli_assertions-001" />
+    <testcase classname="contract" name="structured_cli_assertions-002" />
+    <testcase classname="contract" name="structured_cli_assertions-003" />
+</testsuite>

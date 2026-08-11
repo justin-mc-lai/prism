@@ -1,0 +1,21 @@
+{
+  "feature": "prism-extract-v1",
+  "version": "v0.0.1",
+  "lake": "B",
+  "run_id": "run-20260811T032734",
+  "artifacts": [
+    "AC-EXTRACT-001.json",
+    "AC-EXTRACT-002.json",
+    "AC-EXTRACT-003.json",
+    "AC-EXTRACT-004.json",
+    "AC-EXTRACT-005.json",
+    "AC-EXTRACT-006.json",
+    "AC-EXTRACT-007.json",
+    "AC-EXTRACT-008.json",
+    "AC-EXTRACT-009.json",
+    "AC-EXTRACT-010.json",
+    "GATES.json",
+    "QA-MATRIX.json",
+    "manifest.json"
+  ]
+}

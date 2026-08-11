@@ -1,0 +1,10 @@
+{
+  "tc_id": "TC-EXTRACT-004",
+  "ac_id": "AC-EXTRACT-004",
+  "command": "rg -n \"scheme: A-1plus6\" registry/public-surface.yaml && rg -n \"max_public_harnesses: 6\" registry/public-surface.yaml && rg -n \"public_id: goal\" registry/public-surface.yaml",
+  "assertion": "公开面注册表合法",
+  "exit_code": 0,
+  "status": "passed",
+  "run_id": "run-20260811T032646",
+  "cwd": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1"
+}

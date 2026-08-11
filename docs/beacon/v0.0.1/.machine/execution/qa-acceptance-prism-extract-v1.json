@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "artifact": "qa_acceptance_envelope",
+  "version": "v0.0.1",
+  "feature": "prism-extract-v1",
+  "feature_slug": "prism-extract-v1",
+  "revision_id": "R1",
+  "verdict": "passed",
+  "accepted_at": "2026-08-11T04:13:32.863799+00:00",
+  "accepted_by": "qa",
+  "run_id": "run-20260811T121330776605",
+  "transaction_id": "tx-qa-acceptance-prism-extract-v1-d586d569f9dc",
+  "source_hash": "sha256:d586d569f9dc9e3ce00430a741382b4dae4880a838e38273506304de0a413d7e",
+  "projection_seq": 2,
+  "source_command": "beacon qa run \"prism-extract-v1\" --project-root /Users/apple/Developer/Personal/products/prism/prism-extract-v1 --version v0.0.1",
+  "requirement_refs": [
+    "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-extract-v1/tests.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-extract-v1.revision.json"
+  ],
+  "test_case_refs": [],
+  "evidence_refs": [
+    ".beacon/auto-test-status.json",
+    ".beacon/qa/status.json",
+    "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json",
+    ".beacon/coverage-summary.json",
+    ".beacon/release-gate-report.json"
+  ],
+  "story_status": "implemented",
+  "revision_delivery_status": "implemented",
+  "required_ac_count": 0,
+  "required_test_count": 0,
+  "canonical_envelope_ref": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-extract-v1.json",
+  "markdown_ref": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-extract-v1.md",
+  "transaction_lineage": {
+    "current_transaction_id": "tx-qa-acceptance-prism-extract-v1-d586d569f9dc",
+    "projection_seq": 2,
+    "source_hash": "sha256:d586d569f9dc9e3ce00430a741382b4dae4880a838e38273506304de0a413d7e",
+    "workflow_memory_ref": ".beacon/memory/workflow-lifecycle.json",
+    "memory_event_id": "",
+    "memory_entry_id": "84131fb2-d723-4738-9606-b6a1b43ae8bb"
+  },
+  "sink_checksums": {
+    "machine": "sha256:6c1f6625a4a85f532ad05160e8b5cd6f29e56a2f91a169eb9035427109aace16",
+    "human": "sha256:d7d890c1df04fd955f6138870fe775c688e83e7429374c527feb3bcdf032a251",
+    "runtime": "sha256:858b86a14edd6d64c7905ef2ea2fe6d749557ea9792c179c602bb42648c2bdff"
+  },
+  "runtime_projection_ref": ".beacon/transactions/qa-acceptance-prism-extract-v1.json",
+  "transaction_status": "applied",
+  "failed_sinks": []
+}

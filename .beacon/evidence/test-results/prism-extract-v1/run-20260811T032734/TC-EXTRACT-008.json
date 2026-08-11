@@ -1,0 +1,13 @@
+{
+  "tc": "TC-EXTRACT-008",
+  "ac": "AC-EXTRACT-008",
+  "cmd": "rg -n \"MAP-001\" registry/adapter-index.yaml && rg -n \"MAP-009\" registry/adapter-index.yaml && test ! -f skills/_internal/adapters/SKILL.md",
+  "assertion": "adapter 索引且不可见",
+  "exit": 0,
+  "pass": true,
+  "tc_id": "TC-EXTRACT-008",
+  "ac_id": "AC-EXTRACT-008",
+  "command": "rg -n \"MAP-001\" registry/adapter-index.yaml && rg -n \"MAP-009\" registry/adapter-index.yaml && test ! -f skills/_internal/adapters/SKILL.md",
+  "status": "passed",
+  "run_id": "run-20260811T032734"
+}

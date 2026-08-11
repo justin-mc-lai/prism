@@ -1,0 +1,22 @@
+{
+  "name": "prism-goal",
+  "version": "v0.0.1",
+  "brand": "Prism",
+  "operating_mode": "production",
+  "maturity": "production-sample",
+  "owner": "prism-lake-b",
+  "review_cadence": "per-lake",
+  "public_surface": true,
+  "public_id": "goal",
+  "target_platforms": ["cursor", "codex", "claude"],
+  "skill_ir": "references/skill-ir.md",
+  "canonical_matrix": "registry/adapter-migration-matrix.md",
+  "missing_evidence": [
+    "with-skill vs baseline graded transcripts",
+    "holdout trigger optimization runs"
+  ],
+  "gates_passed_locally": [
+    "quick_validate",
+    "check_goal_shell"
+  ]
+}

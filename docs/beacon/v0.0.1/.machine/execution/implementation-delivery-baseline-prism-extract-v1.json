@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "artifact": "implementation_delivery_baseline_envelope",
+  "baseline_id": "impl-delivery-baseline-v0.0.1-prism-extract-v1-R1",
+  "transaction_id": "tx-068582666a201875e",
+  "source_hash": "sha256:c61d7315393905a35b5df35cffba86a06515bebd8ba8521f4dd73731c51b3b1a",
+  "projection_seq": 1,
+  "version": "v0.0.1",
+  "feature": "prism-extract-v1",
+  "feature_slug": "prism-extract-v1",
+  "workspace_root": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1",
+  "branch_strategy": "single-branch",
+  "base_branch": "main",
+  "branch_prefix": "beacon/",
+  "default_target_branch": "beacon/v0.0.1/prism-extract-v1",
+  "use_git_worktree": false,
+  "worktree_root": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1",
+  "direct_delivery_services": [
+    "."
+  ],
+  "writable_services": [
+    "."
+  ],
+  "reference_only_services": [
+    "docs"
+  ],
+  "depends_on_features": [],
+  "service_branch_map": {
+    ".": "beacon/v0.0.1/prism-extract-v1"
+  },
+  "service_worktree_map": {
+    ".": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1"
+  },
+  "feature_overlays": {
+    "prism-extract-v1": {
+      "feature": "prism-extract-v1",
+      "feature_slug": "prism-extract-v1",
+      "revision_id": "R1",
+      "direct_delivery_services": [
+        "."
+      ],
+      "writable_services": [
+        "."
+      ],
+      "reference_only_services": [
+        "docs"
+      ],
+      "depends_on_features": [],
+      "service_branch_map": {
+        ".": "beacon/v0.0.1/prism-extract-v1"
+      },
+      "service_worktree_map": {
+        ".": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1"
+      }
+    }
+  },
+  "technical_delta": {
+    "project_mode": "greenfield",
+    "source_refs": {
+      "prd": "docs/beacon/v0.0.1/prd/prism-extract-v1.md",
+      "user_story": "docs/beacon/v0.0.1/user-story/prism-extract-v1.md",
+      "test_case": "docs/beacon/v0.0.1/qa/test-cases/prism-extract-v1.md"
+    },
+    "current_state": {},
+    "refactor_boundaries": {},
+    "feature_sections": [],
+    "change_surface": []
+  },
+  "source_payload": {
+    "version": "v0.0.1",
+    "feature": "prism-extract-v1",
+    "revision_id": "R1",
+    "branch_strategy": "single-branch",
+    "base_branch": "main",
+    "default_target_branch": "beacon/v0.0.1/prism-extract-v1",
+    "branch_prefix": "beacon/",
+    "use_git_worktree": false,
+    "worktree_root": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1",
+    "workspace_root": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1",
+    "direct_delivery_services": [
+      "."
+    ],
+    "writable_services": [
+      "."
+    ],
+    "reference_only_services": [
+      "docs"
+    ],
+    "depends_on_features": [],
+    "service_branch_map": {
+      ".": "beacon/v0.0.1/prism-extract-v1"
+    },
+    "service_worktree_map": {
+      ".": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1"
+    },
+    "feature_overlays": {
+      "prism-extract-v1": {
+        "feature": "prism-extract-v1",
+        "feature_slug": "prism-extract-v1",
+        "revision_id": "R1",
+        "direct_delivery_services": [
+          "."
+        ],
+        "writable_services": [
+          "."
+        ],
+        "reference_only_services": [
+          "docs"
+        ],
+        "depends_on_features": [],
+        "service_branch_map": {
+          ".": "beacon/v0.0.1/prism-extract-v1"
+        },
+        "service_worktree_map": {
+          ".": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1"
+        }
+      }
+    },
+    "technical_delta": {
+      "project_mode": "greenfield",
+      "source_refs": {
+        "prd": "docs/beacon/v0.0.1/prd/prism-extract-v1.md",
+        "user_story": "docs/beacon/v0.0.1/user-story/prism-extract-v1.md",
+        "test_case": "docs/beacon/v0.0.1/qa/test-cases/prism-extract-v1.md"
+      },
+      "current_state": {},
+      "refactor_boundaries": {},
+      "feature_sections": [],
+      "change_surface": []
+    }
+  },
+  "generated_at": "2026-08-11T04:16:47.417891+00:00"
+}

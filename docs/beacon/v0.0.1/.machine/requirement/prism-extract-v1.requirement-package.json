@@ -1,0 +1,362 @@
+{
+  "schema_version": "1.0",
+  "truth_map_contract": "beacon-truth-map-v1",
+  "truth_source_model": "feature_package_authoritative",
+  "truth_package_contract": "beacon-feature-package-v2",
+  "machine_json_role": "generated_state_not_truth",
+  "generated_by": "beacon.truth_map.resolver",
+  "generated_at": "2026-08-11T04:12:52.791162+00:00",
+  "feature": "prism-extract-v1",
+  "feature_slug": "prism-extract-v1",
+  "version": "v0.0.1",
+  "truth_authority": false,
+  "json_authority": false,
+  "source_paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-extract-v1/tests.md",
+    "tasks": "docs/beacon/v0.0.1/features/prism-extract-v1/tasks.md",
+    "evidence": "docs/beacon/v0.0.1/features/prism-extract-v1/evidence.md"
+  },
+  "source_hashes": {
+    "truth": "c2c5d4dfdee3c44759efbbf01c8a5e52c8e6029ce7943476559e1e5c7b2bae82",
+    "tests": "6f5567b63c2b771a6b71efc593a408d23ae77e972614cc42f6a914c82bbe4aa2",
+    "tasks": "3c2e67ea33f3cdee6b8a3d51fa66365f74ad9441692fd97787bc91b1108360bd",
+    "evidence": "33bf0489675badadd1f67bc23a5db11cd1d01e5a3f473833bea6dc1922cfbe10"
+  },
+  "truth_frontmatter": {
+    "slug": "prism-extract-v1",
+    "version": "v0.0.1",
+    "status": "frozen",
+    "revision_id": "R1",
+    "language": "zh",
+    "domain_required": "true",
+    "ux_required": "false",
+    "parser_contract": "beacon-feature-package-v2",
+    "materials_status": "current",
+    "package_maturity": "filled",
+    "truth_source_model": "intent_first",
+    "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+    "canonical_refs": {
+      "prd": "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-extract-v1/tests.md"
+    },
+    "provenance": {
+      "- ac_id": "AC-EXTRACT-003",
+      "source_type": "user_intent",
+      "source_ref": "utterance: 把当前的冻结的需求迁移进行实现，通过 beacon-goal v0.0.1"
+    }
+  },
+  "frontmatter_errors": [],
+  "acceptance_criteria": [
+    {
+      "ac_id": "AC-EXTRACT-001",
+      "theme": "PrismRepo 独立 git 仓 create 完成并进入 `repo_bootstrapped`；含 README/AGENTS；路径不在 selfmedia-creator 内",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-EXTRACT-002",
+      "theme": "进入 `constitution_migrated`：`docs/beacon/v0.0.1/constitution/prism-constitution.md` 与 Lake A truth 快照存在",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-EXTRACT-003",
+      "theme": "进入 `surfaces_installed`：恰好 7 个公开面 `skills/prism-*/SKILL.md`（goal+intel+master+director+produce+qa+release）",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-EXTRACT-004",
+      "theme": "PublicSurface 注册表 `registry/public-surface.yaml` 声明 Scheme A，且 `max_public_harnesses: 6`（支撑 `surfaces_installed`）",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-EXTRACT-005",
+      "theme": "SkillContract 七段模板 `contracts/skill-contract-7seg.tpl.md` 存在（支撑 `indexed`）",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-EXTRACT-006",
+      "theme": "HumanCard `contracts/human-card.md` 含人类面三节与机器面（支撑 `indexed`）",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-EXTRACT-007",
+      "theme": "进入 `indexed` 前编排内核就绪：`_internal/orchestration` 含 skill-routing / quality-gates / creation-mode-map / pipeline-contract",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-EXTRACT-008",
+      "theme": "AdapterMap `registry/adapter-index.yaml` 覆盖 MAP-001…009 且 adapters 无顶层 SKILL.md；illegal：adapter 顶层暴露为公开 skill",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-EXTRACT-009",
+      "theme": "溯源指向 selfmedia-creator `prism-canon-v1` R3 / program-manifest（`constitution_migrated` 证据）",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-EXTRACT-010",
+      "theme": "Non-goals 排除 Lake C/D；illegal：宣称 Lake D 完成 / 跳过 `qa_pass` 直接 `human_accepted`；不得宣称海 closure",
+      "description": ""
+    }
+  ],
+  "test_rows": [
+    {
+      "ac_id": "AC-EXTRACT-001",
+      "tc_id": "TC-EXTRACT-001",
+      "layer": "",
+      "command": "`test -e .git && test -f README.md && test -f AGENTS.md`",
+      "assertion": "独立仓存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-EXTRACT-002",
+      "tc_id": "TC-EXTRACT-002",
+      "layer": "",
+      "command": "`rg -n \"Lake B|Prism|1\\\\+6\" docs/beacon/v0.0.1/constitution/prism-constitution.md && test -f docs/beacon/v0.0.1/constitution/lake-a-prism-canon-v1-r3.truth.md`",
+      "assertion": "宪法迁入存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-EXTRACT-003",
+      "tc_id": "TC-EXTRACT-003",
+      "layer": "",
+      "command": "`test -f skills/prism-goal/SKILL.md && test -f skills/prism-intel/SKILL.md && test -f skills/prism-master/SKILL.md && test -f skills/prism-director/SKILL.md && test -f skills/prism-produce/SKILL.md && test -f skills/prism-qa/SKILL.md && test -f skills/prism-release/SKILL.md`",
+      "assertion": "七公开面壳存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-EXTRACT-004",
+      "tc_id": "TC-EXTRACT-004",
+      "layer": "",
+      "command": "`rg -n \"scheme: A-1plus6\" registry/public-surface.yaml && rg -n \"max_public_harnesses: 6\" registry/public-surface.yaml && rg -n \"public_id: goal\" registry/public-surface.yaml`",
+      "assertion": "公开面注册表合法",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-EXTRACT-005",
+      "tc_id": "TC-EXTRACT-005",
+      "layer": "",
+      "command": "`rg -n \"^## 1\\\\. identity\" contracts/skill-contract-7seg.tpl.md && rg -n \"^## 2\\\\. 决策边界\" contracts/skill-contract-7seg.tpl.md && rg -n \"^## 7\\\\. 失败处理\" contracts/skill-contract-7seg.tpl.md`",
+      "assertion": "七段模板存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-EXTRACT-006",
+      "tc_id": "TC-EXTRACT-006",
+      "layer": "",
+      "command": "`rg -n \"这次做了什么\" contracts/human-card.md && rg -n \"需要你决定\" contracts/human-card.md && rg -n \"下一步\" contracts/human-card.md && rg -n \"机器面\" contracts/human-card.md`",
+      "assertion": "人类卡契约存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-EXTRACT-007",
+      "tc_id": "TC-EXTRACT-007",
+      "layer": "",
+      "command": "`test -f skills/_internal/orchestration/skill-routing.md && test -f skills/_internal/orchestration/quality-gates.md && test -f skills/_internal/orchestration/creation-mode-map.md && test -f skills/_internal/orchestration/pipeline-contract.md`",
+      "assertion": "编排内核迁入",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-EXTRACT-008",
+      "tc_id": "TC-EXTRACT-008",
+      "layer": "",
+      "command": "`rg -n \"MAP-001\" registry/adapter-index.yaml && rg -n \"MAP-009\" registry/adapter-index.yaml && test ! -f skills/_internal/adapters/SKILL.md`",
+      "assertion": "adapter 索引且不可见",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-EXTRACT-009",
+      "tc_id": "TC-EXTRACT-009",
+      "layer": "",
+      "command": "`rg -n \"prism-canon-v1\" docs/beacon/v0.0.1/constitution/prism-constitution.md && rg -n \"selfmedia-creator\" registry/adapter-index.yaml && rg -n \"R3\" docs/beacon/v0.0.1/constitution/prism-constitution.md`",
+      "assertion": "源溯源存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-EXTRACT-010",
+      "tc_id": "TC-EXTRACT-010",
+      "layer": "",
+      "command": "`rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md && rg -n \"Lake D\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md`",
+      "assertion": "分湖边界存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-EXTRACT-003",
+      "tc_id": "TC-EXTRACT-011",
+      "layer": "",
+      "command": "`python3 -c \"from pathlib import Path; n=sum(1 for p in Path('skills').glob('prism-*/SKILL.md') if 'public_surface: true' in p.read_text()); raise SystemExit(0 if n==7 else 1)\"`",
+      "assertion": "恰好 7 个公开面 frontmatter",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-EXTRACT-008",
+      "tc_id": "TC-EXTRACT-012",
+      "layer": "",
+      "command": "`python3 -c \"from pathlib import Path; n=len(list(Path('skills/_internal/adapters').glob('*.contract.md'))); raise SystemExit(0 if n>=7 else 1)\"`",
+      "assertion": "≥7 adapter 契约 stub",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-EXTRACT-010",
+      "tc_id": "TC-EXTRACT-013",
+      "layer": "",
+      "command": "`rg -n \"Illegal transitions|illegal|跳过 QA|宣称 Lake D\" docs/beacon/v0.0.1/features/prism-extract-v1/truth.md`",
+      "assertion": "illegal 转移覆盖存在",
+      "evidence_path": "",
+      "source": ""
+    }
+  ],
+  "task_rows": [
+    {
+      "id": "TASK-001",
+      "title": "Implement AC-EXTRACT-001: PrismRepo 独立 git 仓 create 完成并进入 `repo_bootstrapped`；含 README/AGENTS；路... · ac=AC-EXTRACT-001 · evidence=`.beacon/evidence/implement/prism-extract-v1/AC-EXTRACT-001.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-002",
+      "title": "Implement AC-EXTRACT-002: 进入 `constitution_migrated`：`docs/beacon/v0.0.1/constitution/prism-con... · ac=AC-EXTRACT-002 · evidence=`.beacon/evidence/implement/prism-extract-v1/AC-EXTRACT-002.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-003",
+      "title": "Implement AC-EXTRACT-003: 进入 `surfaces_installed`：恰好 7 个公开面 `skills/prism-*/SKILL.md`（goal+inte... · ac=AC-EXTRACT-003 · evidence=`.beacon/evidence/implement/prism-extract-v1/AC-EXTRACT-003.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-004",
+      "title": "Implement AC-EXTRACT-004: PublicSurface 注册表 `registry/public-surface.yaml` 声明 Scheme A，且 `max_p... · ac=AC-EXTRACT-004 · evidence=`.beacon/evidence/implement/prism-extract-v1/AC-EXTRACT-004.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-005",
+      "title": "Implement AC-EXTRACT-005: SkillContract 七段模板 `contracts/skill-contract-7seg.tpl.md` 存在（支撑 `inde... · ac=AC-EXTRACT-005 · evidence=`.beacon/evidence/implement/prism-extract-v1/AC-EXTRACT-005.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-006",
+      "title": "Implement AC-EXTRACT-006: HumanCard `contracts/human-card.md` 含人类面三节与机器面（支撑 `indexed`） · ac=AC-EXTRACT-006 · evidence=`.beacon/evidence/implement/prism-extract-v1/AC-EXTRACT-006.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-007",
+      "title": "Implement AC-EXTRACT-007: 进入 `indexed` 前编排内核就绪：`_internal/orchestration` 含 skill-routing / qual... · ac=AC-EXTRACT-007 · evidence=`.beacon/evidence/implement/prism-extract-v1/AC-EXTRACT-007.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-008",
+      "title": "Implement AC-EXTRACT-008: AdapterMap `registry/adapter-index.yaml` 覆盖 MAP-001…009 且 adapters 无顶... · ac=AC-EXTRACT-008 · evidence=`.beacon/evidence/implement/prism-extract-v1/AC-EXTRACT-008.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-009",
+      "title": "Implement AC-EXTRACT-009: 溯源指向 selfmedia-creator `prism-canon-v1` R3 / program-manifest（`consti... · ac=AC-EXTRACT-009 · evidence=`.beacon/evidence/implement/prism-extract-v1/AC-EXTRACT-009.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-010",
+      "title": "Implement AC-EXTRACT-010: Non-goals 排除 Lake C/D；illegal：宣称 Lake D 完成 / 跳过 `qa_pass` 直接 `human_a... · ac=AC-EXTRACT-010 · evidence=`.beacon/evidence/implement/prism-extract-v1/AC-EXTRACT-010.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-011",
+      "title": "Validate package gates (truth review + freeze ack) · ac=GATES · evidence=`.beacon/evidence/implement/prism-extract-v1/GATES.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-012",
+      "title": "Run QA against AC↔TC matrix + exec-layer evidence · ac=QA · evidence=`.beacon/evidence/implement/prism-extract-v1/QA-MATRIX.json`",
+      "status": "unchecked"
+    }
+  ],
+  "checkbox_errors": [],
+  "evidence_rows": [
+    {
+      "surface": "package",
+      "authority": "requirement_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md"
+    },
+    {
+      "surface": "tests",
+      "authority": "test_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-extract-v1/tests.md"
+    },
+    {
+      "surface": "tasks",
+      "authority": "acceptance_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-extract-v1/tasks.md"
+    },
+    {
+      "surface": "research",
+      "authority": "support_advisory",
+      "path": "docs/beacon/v0.0.1/research/prism-extract-v1.md"
+    },
+    {
+      "surface": "program",
+      "authority": "support_advisory",
+      "path": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md"
+    },
+    {
+      "surface": "constitution",
+      "authority": "support_advisory",
+      "path": "docs/beacon/v0.0.1/constitution/prism-constitution.md"
+    },
+    {
+      "surface": "lake_a_snapshot",
+      "authority": "support_advisory",
+      "path": "docs/beacon/v0.0.1/constitution/lake-a-prism-canon-v1-r3.truth.md"
+    },
+    {
+      "surface": "public_registry",
+      "authority": "support_advisory",
+      "path": "registry/public-surface.yaml"
+    },
+    {
+      "surface": "adapter_index",
+      "authority": "support_advisory",
+      "path": "registry/adapter-index.yaml"
+    },
+    {
+      "surface": "adapter_migration_matrix",
+      "authority": "support_advisory",
+      "path": "registry/adapter-migration-matrix.md"
+    },
+    {
+      "surface": "prism_goal_production_sample",
+      "authority": "support_advisory",
+      "path": "skills/prism-goal/"
+    },
+    {
+      "surface": "prism_public_surfaces_production",
+      "authority": "support_advisory",
+      "path": "skills/prism-{goal,intel,master,director,produce,qa,release}/"
+    },
+    {
+      "surface": "public_surfaces_gate_script",
+      "authority": "support_advisory",
+      "path": "scripts/check_all_public_surfaces.sh"
+    },
+    {
+      "surface": "implement_evidence",
+      "authority": "support_advisory",
+      "path": ".beacon/evidence/implement/prism-extract-v1/manifest.json"
+    },
+    {
+      "surface": "source_repo",
+      "authority": "support_advisory",
+      "path": "/Users/apple/Developer/Personal/products/selfmedia-creator"
+    }
+  ]
+}

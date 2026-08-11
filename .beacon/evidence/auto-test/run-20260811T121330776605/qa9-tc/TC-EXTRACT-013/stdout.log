@@ -1,0 +1,5 @@
+120:## Illegal transitions
+123:- indexed → human_accepted（跳过 QA）
+124:- 宣称 Lake D 完成
+173:| AC-EXTRACT-008 | AdapterMap `registry/adapter-index.yaml` 覆盖 MAP-001…009 且 adapters 无顶层 SKILL.md；illegal：adapter 顶层暴露为公开 skill |
+175:| AC-EXTRACT-010 | Non-goals 排除 Lake C/D；illegal：宣称 Lake D 完成 / 跳过 `qa_pass` 直接 `human_accepted`；不得宣称海 closure |

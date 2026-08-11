@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prism QA"
+  short_description: "Independent content QA gates"
+  default_prompt: "Use $prism-qa to run anti-slop and fact gates on a produce artifact with evidence paths."

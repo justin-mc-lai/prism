@@ -1,0 +1,30 @@
+{
+  "layer": "contract",
+  "command": "rg -n \"这次做了什么\" contracts/human-card.md && rg -n \"需要你决定\" contracts/human-card.md && rg -n \"下一步\" contracts/human-card.md && rg -n \"机器面\" contracts/human-card.md",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 5,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "fbb9bed3c418155bdd07f549d950487864653b20a193034ce45f39c13aa9f5bd",
+  "started_at": "2026-08-11T12:13:31.532567",
+  "ended_at": "2026-08-11T12:13:31.593852",
+  "junit_path": ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-006/junit.xml",
+  "junit_valid": true,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-006/command.txt",
+    ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-006/stdout.log",
+    ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-006/stderr.log",
+    ".beacon/evidence/auto-test/run-20260811T121330776605/qa9-tc/TC-EXTRACT-006/junit.xml"
+  ],
+  "tc_id": "TC-EXTRACT-006",
+  "ac_id": "AC-EXTRACT-006"
+}

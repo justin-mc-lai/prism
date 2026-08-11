@@ -1,0 +1,86 @@
+# Source Skill Inventory → Prism adapter index (Lake B / B′)
+# Full producer chains deferred to Lake D; this lake registers extraction map + shells.
+# Migration policy authority: registry/adapter-migration-matrix.md
+
+source_repo: /Users/apple/Developer/Personal/products/selfmedia-creator
+source_truth_ref: docs/beacon/v0.0.6/features/prism-canon-v1/truth.md#Source-Skill-Inventory
+lake: B
+migration_matrix: registry/adapter-migration-matrix.md
+
+adapters:
+  - map_id: MAP-001
+    source: skills/selfmedia-production-pipeline
+    prism_landing: prism-goal / orchestration kernel
+    role: 总控编排提取源
+    strategy: distill
+    status: extracted_kernel
+    local_path: skills/_internal/orchestration/
+  - map_id: MAP-002
+    source: skills/selfmedia-director
+    prism_landing: prism-director
+    role: 导演
+    strategy: distill
+    status: indexed
+    deepen_lake: D
+    adapter_stub: skills/_internal/adapters/director.contract.md
+  - map_id: MAP-003
+    source: skills/selfmedia-topic-radar|selfmedia-newsnow|selfmedia-last30days|$qi-dev-intel-radar
+    prism_landing: prism-intel adapters
+    role: 选题/信息差
+    strategy: bridge
+    status: indexed
+    bridge: "qi_dev.sh intel-radar"
+    deepen_lake: C/D
+    adapter_stub: skills/_internal/adapters/intel.contract.md
+  - map_id: MAP-004
+    source: content/masters/** + MASTER 规范
+    prism_landing: prism-master
+    role: 母稿/正典
+    strategy: distill
+    status: indexed
+    deepen_lake: C
+    adapter_stub: skills/_internal/adapters/master.contract.md
+  - map_id: MAP-005
+    source: skills/selfmedia-writing|selfmedia-humanize|humanizer-zh|no-ai-slop
+    prism_landing: prism-produce / prism-qa adapters
+    role: 写作与人话
+    strategy: distill+bridge
+    status: indexed
+    deepen_lake: D
+    adapter_stub: skills/_internal/adapters/writing.contract.md
+  - map_id: MAP-006
+    source: skills/selfmedia-account-pipeline / 贴图渲染脚本
+    prism_landing: prism-produce adapters
+    role: 账号落地/贴图
+    strategy: defer
+    status: indexed
+    deepen_lake: D
+    adapter_stub: skills/_internal/adapters/account-pipeline.contract.md
+  - map_id: MAP-007
+    source: skills/openmontage|comic-storyboard|rnskill 视频族
+    prism_landing: prism-produce adapters
+    role: 视频/漫画
+    strategy: defer+bridge
+    status: indexed
+    deepen_lake: D
+    adapter_stub: skills/_internal/adapters/av-comic.contract.md
+  - map_id: MAP-008
+    source: skills/publish-content|schedule-post|sync-ai 桥
+    prism_landing: prism-release adapters
+    role: 草稿/发布（公开仍要人批）
+    strategy: bridge+defer
+    status: indexed
+    deepen_lake: D/E
+    adapter_stub: skills/_internal/adapters/publish.contract.md
+  - map_id: MAP-009
+    source: skills/selfmedia-production-pipeline/references/{creation-mode-map,skill-routing,quality-gates}.md
+    prism_landing: 路由表 / 门禁真值
+    role: 编排合同
+    strategy: distill
+    status: extracted_kernel
+    local_path: skills/_internal/orchestration/
+
+deferred_to_lake_d:
+  - form_producer_chains
+  - three_lane_router_engine
+  - selective_vendor_pin

@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "command": "bash scripts/check_all_public_surfaces.sh",
+  "run_id": "run-20260811T041326",
+  "exit_code": 0
+}

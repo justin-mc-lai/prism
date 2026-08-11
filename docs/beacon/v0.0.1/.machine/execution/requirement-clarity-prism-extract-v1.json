@@ -1,0 +1,657 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-extract-v1",
+  "feature_slug": "prism-extract-v1",
+  "version": "v0.0.1",
+  "runtime_version": "v1.6.12",
+  "runtime_capability_line": "v1.3.3",
+  "required": true,
+  "reason_code": "",
+  "blocked": false,
+  "status": "pass",
+  "findings": [],
+  "report_json_path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-extract-v1.json",
+  "report_markdown_path": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-extract-v1.md",
+  "state_path": ".beacon/state/requirement-clarity-prism-extract-v1.json",
+  "diagram_truth": {
+    "schema_version": "1.0",
+    "version": "v0.0.1",
+    "supported": false,
+    "required": false,
+    "ready": false,
+    "diagram_types": [],
+    "state_axes": [],
+    "missing_diagram_types": [],
+    "missing_state_axes": false,
+    "complexity_signals": [],
+    "review_gates": [],
+    "qa_coverage_hints": [],
+    "evidence_lines": {},
+    "generated_at": "2026-08-11T03:20:14.265966+00:00",
+    "feature": "prism-extract-v1",
+    "feature_slug": "prism-extract-v1",
+    "prd_ref": "docs/beacon/v0.0.1/prd/prism-extract-v1.md",
+    "user_story_ref": "docs/beacon/v0.0.1/user-story/prism-extract-v1.md"
+  },
+  "domain_fsm_gate": {
+    "schema_version": "1.0",
+    "feature": "prism-extract-v1",
+    "feature_slug": "prism-extract-v1",
+    "version": "v0.0.1",
+    "truth_path": "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+    "tests_path": "docs/beacon/v0.0.1/features/prism-extract-v1/tests.md",
+    "required": true,
+    "blocked": false,
+    "status": "pass",
+    "reason_code": "",
+    "findings": [],
+    "requirement": {
+      "required": true,
+      "reason": "explicit_domain_mark",
+      "explicit": true,
+      "partial": true,
+      "complexity": false,
+      "business_signal": true,
+      "version_supported": false
+    },
+    "projection": {
+      "schema_version": "1.0",
+      "domain_fsm_schema": "domain-fsm.v1",
+      "entity_precedence_schema": "entity-precedence.v1",
+      "frontmatter": {
+        "slug": "prism-extract-v1",
+        "version": "v0.0.1",
+        "status": "draft",
+        "revision_id": "R1",
+        "language": "zh",
+        "domain_required": "true",
+        "ux_required": "false",
+        "parser_contract": "beacon-feature-package-v2",
+        "materials_status": "current",
+        "package_maturity": "filled",
+        "truth_source_model": "intent_first",
+        "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+        "canonical_refs": {
+          "prd": "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+          "user_story": "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+          "test_case": "docs/beacon/v0.0.1/features/prism-extract-v1/tests.md"
+        },
+        "provenance": {
+          "- ac_id": "AC-EXTRACT-003",
+          "source_type": "user_intent",
+          "source_ref": "utterance: 把当前的冻结的需求迁移进行实现，通过 beacon-goal v0.0.1"
+        }
+      },
+      "frontmatter_errors": [],
+      "has_domain_model_section": true,
+      "has_domain_fsm_section": true,
+      "has_illegal_transition_section": true,
+      "entities": [
+        {
+          "entity": "PrismRepo",
+          "key": "repo_root",
+          "precedence": "独立 git 仓",
+          "requires": "独立 git 仓"
+        },
+        {
+          "entity": "PublicSurface",
+          "key": "public_id",
+          "precedence": "goal+六能力",
+          "requires": "goal+六能力"
+        },
+        {
+          "entity": "AdapterMap",
+          "key": "map_id",
+          "precedence": "源 skill → 落点",
+          "requires": "源 skill → 落点"
+        },
+        {
+          "entity": "SkillContract",
+          "key": "contract_id",
+          "precedence": "七段模板",
+          "requires": "七段模板"
+        },
+        {
+          "entity": "HumanCard",
+          "key": "card_id",
+          "precedence": "人类面+机器面",
+          "requires": "人类面+机器面"
+        }
+      ],
+      "entity_precedence": [
+        {
+          "entity": "PrismRepo",
+          "key": "repo_root",
+          "precedence": "独立 git 仓",
+          "requires": "独立 git 仓"
+        },
+        {
+          "entity": "PublicSurface",
+          "key": "public_id",
+          "precedence": "goal+六能力",
+          "requires": "goal+六能力"
+        },
+        {
+          "entity": "AdapterMap",
+          "key": "map_id",
+          "precedence": "源 skill → 落点",
+          "requires": "源 skill → 落点"
+        },
+        {
+          "entity": "SkillContract",
+          "key": "contract_id",
+          "precedence": "七段模板",
+          "requires": "七段模板"
+        },
+        {
+          "entity": "HumanCard",
+          "key": "card_id",
+          "precedence": "人类面+机器面",
+          "requires": "人类面+机器面"
+        }
+      ],
+      "aggregates": [
+        {
+          "name": "FSM（提取落地）",
+          "states": [
+            "constitution_migrated",
+            "human_accepted",
+            "indexed",
+            "planned",
+            "qa_pass",
+            "release_candidate",
+            "repo_bootstrapped",
+            "surfaces_installed"
+          ],
+          "transitions": [
+            {
+              "from": "planned",
+              "to": "repo_bootstrapped",
+              "guard": "git_repo_and_beacon_v001"
+            },
+            {
+              "from": "repo_bootstrapped",
+              "to": "constitution_migrated",
+              "guard": "constitution_files_present"
+            },
+            {
+              "from": "constitution_migrated",
+              "to": "surfaces_installed",
+              "guard": "seven_public_skills_present"
+            },
+            {
+              "from": "surfaces_installed",
+              "to": "indexed",
+              "guard": "registry_and_adapters_present"
+            },
+            {
+              "from": "indexed",
+              "to": "qa_pass",
+              "guard": "all_tc_pass"
+            },
+            {
+              "from": "qa_pass",
+              "to": "release_candidate",
+              "guard": "evidence_complete"
+            },
+            {
+              "from": "release_candidate",
+              "to": "human_accepted",
+              "guard": "human_confirmed"
+            }
+          ]
+        }
+      ],
+      "illegal_transition_slots": [
+        {
+          "description": "planned → surfaces_installed（跳过建仓）",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "indexed → human_accepted（跳过 QA）",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "宣称 Lake D 完成",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "adapter 顶层暴露为公开 skill",
+          "aggregate": "",
+          "source": "truth"
+        }
+      ],
+      "acceptance_criteria": [
+        {
+          "ac_id": "AC-EXTRACT-001",
+          "description": "PrismRepo 独立 git 仓 create 完成并进入 `repo_bootstrapped`；含 README/AGENTS；路径不在 selfmedia-creator 内"
+        },
+        {
+          "ac_id": "AC-EXTRACT-002",
+          "description": "进入 `constitution_migrated`：`docs/beacon/v0.0.1/constitution/prism-constitution.md` 与 Lake A truth 快照存在"
+        },
+        {
+          "ac_id": "AC-EXTRACT-003",
+          "description": "进入 `surfaces_installed`：恰好 7 个公开面 `skills/prism-*/SKILL.md`（goal+intel+master+director+produce+qa+release）"
+        },
+        {
+          "ac_id": "AC-EXTRACT-004",
+          "description": "PublicSurface 注册表 `registry/public-surface.yaml` 声明 Scheme A，且 `max_public_harnesses: 6`（支撑 `surfaces_installed`）"
+        },
+        {
+          "ac_id": "AC-EXTRACT-005",
+          "description": "SkillContract 七段模板 `contracts/skill-contract-7seg.tpl.md` 存在（支撑 `indexed`）"
+        },
+        {
+          "ac_id": "AC-EXTRACT-006",
+          "description": "HumanCard `contracts/human-card.md` 含人类面三节与机器面（支撑 `indexed`）"
+        },
+        {
+          "ac_id": "AC-EXTRACT-007",
+          "description": "进入 `indexed` 前编排内核就绪：`_internal/orchestration` 含 skill-routing / quality-gates / creation-mode-map / pipeline-contract"
+        },
+        {
+          "ac_id": "AC-EXTRACT-008",
+          "description": "AdapterMap `registry/adapter-index.yaml` 覆盖 MAP-001…009 且 adapters 无顶层 SKILL.md；illegal：adapter 顶层暴露为公开 skill"
+        },
+        {
+          "ac_id": "AC-EXTRACT-009",
+          "description": "溯源指向 selfmedia-creator `prism-canon-v1` R3 / program-manifest（`constitution_migrated` 证据）"
+        },
+        {
+          "ac_id": "AC-EXTRACT-010",
+          "description": "Non-goals 排除 Lake C/D；illegal：宣称 Lake D 完成 / 跳过 `qa_pass` 直接 `human_accepted`；不得宣称海 closure"
+        }
+      ],
+      "bound_ac_ids": [
+        "AC-EXTRACT-001",
+        "AC-EXTRACT-002",
+        "AC-EXTRACT-003",
+        "AC-EXTRACT-004",
+        "AC-EXTRACT-005",
+        "AC-EXTRACT-006",
+        "AC-EXTRACT-007",
+        "AC-EXTRACT-008",
+        "AC-EXTRACT-009",
+        "AC-EXTRACT-010"
+      ],
+      "orphan_ac_ids": [],
+      "aggregates_missing_illegal_slots": [],
+      "raw_section_titles": [
+        "人话",
+        "User Intent",
+        "User Intent Snapshot",
+        "Intent Coverage Matrix",
+        "First principles（域）",
+        "用户旅程 / 故事",
+        "Domain Model",
+        "Domain FSM（提取落地）",
+        "Illegal transitions",
+        "FSM 五元组",
+        "Alignment Surface",
+        "Deferral Ledger",
+        "Acceptance Criteria",
+        "Non-goals",
+        "Freeze readiness"
+      ]
+    },
+    "validation": {
+      "schema_version": "1.0",
+      "required": true,
+      "blocked": false,
+      "status": "pass",
+      "reason_code": "",
+      "findings": [],
+      "projection": {
+        "schema_version": "1.0",
+        "domain_fsm_schema": "domain-fsm.v1",
+        "entity_precedence_schema": "entity-precedence.v1",
+        "frontmatter": {
+          "slug": "prism-extract-v1",
+          "version": "v0.0.1",
+          "status": "draft",
+          "revision_id": "R1",
+          "language": "zh",
+          "domain_required": "true",
+          "ux_required": "false",
+          "parser_contract": "beacon-feature-package-v2",
+          "materials_status": "current",
+          "package_maturity": "filled",
+          "truth_source_model": "intent_first",
+          "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+          "canonical_refs": {
+            "prd": "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+            "user_story": "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+            "test_case": "docs/beacon/v0.0.1/features/prism-extract-v1/tests.md"
+          },
+          "provenance": {
+            "- ac_id": "AC-EXTRACT-003",
+            "source_type": "user_intent",
+            "source_ref": "utterance: 把当前的冻结的需求迁移进行实现，通过 beacon-goal v0.0.1"
+          }
+        },
+        "frontmatter_errors": [],
+        "has_domain_model_section": true,
+        "has_domain_fsm_section": true,
+        "has_illegal_transition_section": true,
+        "entities": [
+          {
+            "entity": "PrismRepo",
+            "key": "repo_root",
+            "precedence": "独立 git 仓",
+            "requires": "独立 git 仓"
+          },
+          {
+            "entity": "PublicSurface",
+            "key": "public_id",
+            "precedence": "goal+六能力",
+            "requires": "goal+六能力"
+          },
+          {
+            "entity": "AdapterMap",
+            "key": "map_id",
+            "precedence": "源 skill → 落点",
+            "requires": "源 skill → 落点"
+          },
+          {
+            "entity": "SkillContract",
+            "key": "contract_id",
+            "precedence": "七段模板",
+            "requires": "七段模板"
+          },
+          {
+            "entity": "HumanCard",
+            "key": "card_id",
+            "precedence": "人类面+机器面",
+            "requires": "人类面+机器面"
+          }
+        ],
+        "entity_precedence": [
+          {
+            "entity": "PrismRepo",
+            "key": "repo_root",
+            "precedence": "独立 git 仓",
+            "requires": "独立 git 仓"
+          },
+          {
+            "entity": "PublicSurface",
+            "key": "public_id",
+            "precedence": "goal+六能力",
+            "requires": "goal+六能力"
+          },
+          {
+            "entity": "AdapterMap",
+            "key": "map_id",
+            "precedence": "源 skill → 落点",
+            "requires": "源 skill → 落点"
+          },
+          {
+            "entity": "SkillContract",
+            "key": "contract_id",
+            "precedence": "七段模板",
+            "requires": "七段模板"
+          },
+          {
+            "entity": "HumanCard",
+            "key": "card_id",
+            "precedence": "人类面+机器面",
+            "requires": "人类面+机器面"
+          }
+        ],
+        "aggregates": [
+          {
+            "name": "FSM（提取落地）",
+            "states": [
+              "constitution_migrated",
+              "human_accepted",
+              "indexed",
+              "planned",
+              "qa_pass",
+              "release_candidate",
+              "repo_bootstrapped",
+              "surfaces_installed"
+            ],
+            "transitions": [
+              {
+                "from": "planned",
+                "to": "repo_bootstrapped",
+                "guard": "git_repo_and_beacon_v001"
+              },
+              {
+                "from": "repo_bootstrapped",
+                "to": "constitution_migrated",
+                "guard": "constitution_files_present"
+              },
+              {
+                "from": "constitution_migrated",
+                "to": "surfaces_installed",
+                "guard": "seven_public_skills_present"
+              },
+              {
+                "from": "surfaces_installed",
+                "to": "indexed",
+                "guard": "registry_and_adapters_present"
+              },
+              {
+                "from": "indexed",
+                "to": "qa_pass",
+                "guard": "all_tc_pass"
+              },
+              {
+                "from": "qa_pass",
+                "to": "release_candidate",
+                "guard": "evidence_complete"
+              },
+              {
+                "from": "release_candidate",
+                "to": "human_accepted",
+                "guard": "human_confirmed"
+              }
+            ]
+          }
+        ],
+        "illegal_transition_slots": [
+          {
+            "description": "planned → surfaces_installed（跳过建仓）",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "indexed → human_accepted（跳过 QA）",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "宣称 Lake D 完成",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "adapter 顶层暴露为公开 skill",
+            "aggregate": "",
+            "source": "truth"
+          }
+        ],
+        "acceptance_criteria": [
+          {
+            "ac_id": "AC-EXTRACT-001",
+            "description": "PrismRepo 独立 git 仓 create 完成并进入 `repo_bootstrapped`；含 README/AGENTS；路径不在 selfmedia-creator 内"
+          },
+          {
+            "ac_id": "AC-EXTRACT-002",
+            "description": "进入 `constitution_migrated`：`docs/beacon/v0.0.1/constitution/prism-constitution.md` 与 Lake A truth 快照存在"
+          },
+          {
+            "ac_id": "AC-EXTRACT-003",
+            "description": "进入 `surfaces_installed`：恰好 7 个公开面 `skills/prism-*/SKILL.md`（goal+intel+master+director+produce+qa+release）"
+          },
+          {
+            "ac_id": "AC-EXTRACT-004",
+            "description": "PublicSurface 注册表 `registry/public-surface.yaml` 声明 Scheme A，且 `max_public_harnesses: 6`（支撑 `surfaces_installed`）"
+          },
+          {
+            "ac_id": "AC-EXTRACT-005",
+            "description": "SkillContract 七段模板 `contracts/skill-contract-7seg.tpl.md` 存在（支撑 `indexed`）"
+          },
+          {
+            "ac_id": "AC-EXTRACT-006",
+            "description": "HumanCard `contracts/human-card.md` 含人类面三节与机器面（支撑 `indexed`）"
+          },
+          {
+            "ac_id": "AC-EXTRACT-007",
+            "description": "进入 `indexed` 前编排内核就绪：`_internal/orchestration` 含 skill-routing / quality-gates / creation-mode-map / pipeline-contract"
+          },
+          {
+            "ac_id": "AC-EXTRACT-008",
+            "description": "AdapterMap `registry/adapter-index.yaml` 覆盖 MAP-001…009 且 adapters 无顶层 SKILL.md；illegal：adapter 顶层暴露为公开 skill"
+          },
+          {
+            "ac_id": "AC-EXTRACT-009",
+            "description": "溯源指向 selfmedia-creator `prism-canon-v1` R3 / program-manifest（`constitution_migrated` 证据）"
+          },
+          {
+            "ac_id": "AC-EXTRACT-010",
+            "description": "Non-goals 排除 Lake C/D；illegal：宣称 Lake D 完成 / 跳过 `qa_pass` 直接 `human_accepted`；不得宣称海 closure"
+          }
+        ],
+        "bound_ac_ids": [
+          "AC-EXTRACT-001",
+          "AC-EXTRACT-002",
+          "AC-EXTRACT-003",
+          "AC-EXTRACT-004",
+          "AC-EXTRACT-005",
+          "AC-EXTRACT-006",
+          "AC-EXTRACT-007",
+          "AC-EXTRACT-008",
+          "AC-EXTRACT-009",
+          "AC-EXTRACT-010"
+        ],
+        "orphan_ac_ids": [],
+        "aggregates_missing_illegal_slots": [],
+        "raw_section_titles": [
+          "人话",
+          "User Intent",
+          "User Intent Snapshot",
+          "Intent Coverage Matrix",
+          "First principles（域）",
+          "用户旅程 / 故事",
+          "Domain Model",
+          "Domain FSM（提取落地）",
+          "Illegal transitions",
+          "FSM 五元组",
+          "Alignment Surface",
+          "Deferral Ledger",
+          "Acceptance Criteria",
+          "Non-goals",
+          "Freeze readiness"
+        ]
+      },
+      "summary": {
+        "entity_count": 5,
+        "aggregate_count": 1,
+        "illegal_slot_count": 4,
+        "orphan_ac_count": 0,
+        "bound_ac_count": 10
+      }
+    },
+    "recommended_action": ""
+  },
+  "human_closure_contract": {
+    "required": false,
+    "research_path": "docs/beacon/v0.0.1/research/prism-extract-v1.md",
+    "research_exists": true,
+    "source_architecture_path": "docs/beacon/v0.0.1/source-architecture/prism-extract-v1.md",
+    "source_architecture_exists": false,
+    "required_sections": [
+      "architecture",
+      "business_flow"
+    ],
+    "missing_sections": [
+      "architecture",
+      "business_flow"
+    ],
+    "diagram_types": [],
+    "complexity_signals": []
+  },
+  "requirement_closure_contract": {
+    "required": true,
+    "chain_order": [
+      "research",
+      "prd",
+      "user_story",
+      "test_case",
+      "requirement_clarity",
+      "freeze"
+    ],
+    "human_closure_required": false,
+    "paths": {
+      "research": "docs/beacon/v0.0.1/research/prism-extract-v1.md",
+      "prd": "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-extract-v1/tests.md"
+    },
+    "exists": {
+      "research": true,
+      "prd": true,
+      "user_story": true,
+      "test_case": true
+    },
+    "required_research_sections": [],
+    "missing_research_sections": [],
+    "ac_projection": {
+      "prd_ac_ids": [],
+      "user_story_ac_ids": [],
+      "test_case_ac_ids": [],
+      "upstream_ac_ids": [],
+      "missing_test_case_ac_ids": []
+    }
+  },
+  "version_projection_truth_contract": {
+    "required": false,
+    "supported": false,
+    "projection_types": [],
+    "research_path": "docs/beacon/v0.0.1/research/prism-extract-v1.md",
+    "research_exists": true,
+    "required_fields": [
+      "prd_refs",
+      "user_story_refs",
+      "test_case_refs",
+      "coverage_notes",
+      "out_of_scope_notes"
+    ],
+    "field_presence": {
+      "prd_refs": false,
+      "user_story_refs": false,
+      "test_case_refs": false,
+      "coverage_notes": false,
+      "out_of_scope_notes": false
+    },
+    "missing_fields": [],
+    "required_refs": {
+      "prd_refs": "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+      "user_story_refs": "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+      "test_case_refs": "docs/beacon/v0.0.1/features/prism-extract-v1/tests.md"
+    },
+    "missing_ref_targets": [],
+    "ready": false
+  },
+  "support_write_topology_contract": {
+    "schema_version": "1.0",
+    "supported": true,
+    "status": "pass",
+    "blocked": false,
+    "reason_code": "",
+    "diagnostics": []
+  },
+  "required_artifacts": [],
+  "scanned_files": [
+    "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-extract-v1/tests.md",
+    "docs/beacon/v0.0.1/features/prism-extract-v1/tasks.md",
+    "docs/beacon/v0.0.1/features/prism-extract-v1/evidence.md",
+    "docs/beacon/v0.0.1/research/prism-extract-v1.md"
+  ]
+}

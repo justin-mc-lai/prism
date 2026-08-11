@@ -1,0 +1,10 @@
+{
+  "tc_id": "TC-EXTRACT-009",
+  "ac_id": "AC-EXTRACT-009",
+  "command": "rg -n \"prism-canon-v1\" docs/beacon/v0.0.1/constitution/prism-constitution.md && rg -n \"selfmedia-creator\" registry/adapter-index.yaml && rg -n \"R3\" docs/beacon/v0.0.1/constitution/prism-constitution.md",
+  "assertion": "源溯源存在",
+  "exit_code": 0,
+  "status": "passed",
+  "run_id": "run-20260811T032646",
+  "cwd": "/Users/apple/Developer/Personal/products/prism/prism-extract-v1"
+}

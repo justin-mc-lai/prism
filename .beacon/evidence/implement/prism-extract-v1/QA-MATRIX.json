@@ -1,0 +1,76 @@
+{
+  "feature": "prism-extract-v1",
+  "scenarios_total": 13,
+  "scenarios_pass": 13,
+  "ac_total": 10,
+  "ac_pass": 10,
+  "run_id": "run-20260811T041326",
+  "surfaces_gate": "pass",
+  "matrix": [
+    {
+      "tc": "TC-EXTRACT-001",
+      "ac": "AC-EXTRACT-001",
+      "result": "pass"
+    },
+    {
+      "tc": "TC-EXTRACT-002",
+      "ac": "AC-EXTRACT-002",
+      "result": "pass"
+    },
+    {
+      "tc": "TC-EXTRACT-003",
+      "ac": "AC-EXTRACT-003",
+      "result": "pass"
+    },
+    {
+      "tc": "TC-EXTRACT-004",
+      "ac": "AC-EXTRACT-004",
+      "result": "pass"
+    },
+    {
+      "tc": "TC-EXTRACT-005",
+      "ac": "AC-EXTRACT-005",
+      "result": "pass"
+    },
+    {
+      "tc": "TC-EXTRACT-006",
+      "ac": "AC-EXTRACT-006",
+      "result": "pass"
+    },
+    {
+      "tc": "TC-EXTRACT-007",
+      "ac": "AC-EXTRACT-007",
+      "result": "pass"
+    },
+    {
+      "tc": "TC-EXTRACT-008",
+      "ac": "AC-EXTRACT-008",
+      "result": "pass"
+    },
+    {
+      "tc": "TC-EXTRACT-009",
+      "ac": "AC-EXTRACT-009",
+      "result": "pass"
+    },
+    {
+      "tc": "TC-EXTRACT-010",
+      "ac": "AC-EXTRACT-010",
+      "result": "pass"
+    },
+    {
+      "tc": "TC-EXTRACT-011",
+      "ac": "AC-EXTRACT-003",
+      "result": "pass"
+    },
+    {
+      "tc": "TC-EXTRACT-012",
+      "ac": "AC-EXTRACT-008",
+      "result": "pass"
+    },
+    {
+      "tc": "TC-EXTRACT-013",
+      "ac": "AC-EXTRACT-010",
+      "result": "pass"
+    }
+  ]
+}

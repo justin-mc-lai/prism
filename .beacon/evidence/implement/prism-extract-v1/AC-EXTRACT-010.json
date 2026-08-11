@@ -1,0 +1,9 @@
+{
+  "ac_id": "AC-EXTRACT-010",
+  "status": "pass",
+  "tcs": [
+    "TC-EXTRACT-010",
+    "TC-EXTRACT-013"
+  ],
+  "run_id": "run-20260811T032734"
+}
