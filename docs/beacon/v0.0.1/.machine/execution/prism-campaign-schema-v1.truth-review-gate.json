@@ -1,0 +1,233 @@
+{
+  "schema": "truth-review-gate.v1",
+  "schema_version": "1.0",
+  "feature": "prism-campaign-schema-v1",
+  "version": "v0.0.1",
+  "pass": true,
+  "blocked": false,
+  "review_gate_pass": true,
+  "abc_pass": true,
+  "reason_code": "",
+  "domain_required": true,
+  "checks": {
+    "A_intent_coverage": {
+      "pass": true,
+      "check": "A",
+      "name": "intent_coverage",
+      "required": true,
+      "matrix_rows": 13,
+      "missing_must": [],
+      "reason": "",
+      "findings": [],
+      "matrix": [
+        {
+          "intent_id": "INT-C01",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-SCHEMA-001",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-C02",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-SCHEMA-002",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-C03",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-SCHEMA-003",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-C04",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-SCHEMA-004",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-C05",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-SCHEMA-005",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-C06",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-SCHEMA-006",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-C07",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-SCHEMA-007",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-C08",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-SCHEMA-008",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-C09",
+          "source": "migrated",
+          "strength": "should",
+          "landing": "AC-SCHEMA-009",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-C10",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-SCHEMA-010",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-C11",
+          "source": "sea",
+          "strength": "must",
+          "landing": "Lake D form producers",
+          "status": "deferred"
+        },
+        {
+          "intent_id": "INT-C12",
+          "source": "sea",
+          "strength": "should",
+          "landing": "Lake E metrics loop",
+          "status": "deferred"
+        },
+        {
+          "intent_id": "INT-C13",
+          "source": "sea",
+          "strength": "optional",
+          "landing": "Lake F monetization",
+          "status": "deferred"
+        }
+      ]
+    },
+    "B_fsm_audit": {
+      "pass": true,
+      "check": "B",
+      "name": "fsm_audit",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "fsm": {
+        "transition_count": 8,
+        "from_states": [
+          "canon_hooks_bound",
+          "indexed",
+          "layout_contracts_written",
+          "qa_pass",
+          "registry_indexed",
+          "release_candidate",
+          "scaffold_present",
+          "schema_planned"
+        ],
+        "hanging_states": [],
+        "terminals": [
+          "human_accepted"
+        ],
+        "illegal_present": true,
+        "five_tuple_present": true
+      }
+    },
+    "C_testability": {
+      "pass": true,
+      "check": "C",
+      "name": "testability",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "ac_count": 10,
+      "tc_count": 15,
+      "missing_ac": [],
+      "covered": {
+        "AC-SCHEMA-001": [
+          "TC-SCHEMA-001",
+          "TC-SCHEMA-015"
+        ],
+        "AC-SCHEMA-002": [
+          "TC-SCHEMA-002",
+          "TC-SCHEMA-011"
+        ],
+        "AC-SCHEMA-003": [
+          "TC-SCHEMA-003",
+          "TC-SCHEMA-012"
+        ],
+        "AC-SCHEMA-004": [
+          "TC-SCHEMA-004",
+          "TC-SCHEMA-013"
+        ],
+        "AC-SCHEMA-005": [
+          "TC-SCHEMA-005"
+        ],
+        "AC-SCHEMA-006": [
+          "TC-SCHEMA-006"
+        ],
+        "AC-SCHEMA-007": [
+          "TC-SCHEMA-007",
+          "TC-SCHEMA-014"
+        ],
+        "AC-SCHEMA-008": [
+          "TC-SCHEMA-008"
+        ],
+        "AC-SCHEMA-009": [
+          "TC-SCHEMA-009"
+        ],
+        "AC-SCHEMA-010": [
+          "TC-SCHEMA-010"
+        ]
+      }
+    },
+    "C_domain_exec_layer": {
+      "pass": true,
+      "check": "C_exec",
+      "name": "domain_exec_layer",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "exec_tc_count": 4,
+      "exec_tc_ids": [
+        "TC-SCHEMA-011",
+        "TC-SCHEMA-012",
+        "TC-SCHEMA-013",
+        "TC-SCHEMA-015"
+      ],
+      "domain_kind": "business"
+    },
+    "D_fill_depth": {
+      "pass": true,
+      "check": "D",
+      "name": "fill_depth",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "package_maturity": "filled",
+      "domain_kind": "business",
+      "business_domain": true
+    }
+  },
+  "findings": [],
+  "humanizer": {
+    "rule": "humanizer_only_after_abc_pass_before_freeze",
+    "abc_pass": true,
+    "allowed_now": true,
+    "fill_depth_pass": true,
+    "note": "Polish L0/narrative only after A/B/C; preserve_machine_fields=true; freeze needs D+exec too"
+  },
+  "evaluated_at": "2026-08-11T15:03:01.751896+00:00",
+  "paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+    "report": "docs/beacon/v0.0.1/.machine/execution/prism-campaign-schema-v1.truth-review-gate.json"
+  }
+}
