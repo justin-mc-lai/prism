@@ -1,0 +1,16 @@
+{"feature": "prism-monetization-contracts-v1", "scenarios_total": 15, "scenarios_pass": 15, "ac_total": 10, "ac_pass": 10, "run_id": "run-20260812T060000Z", "surfaces_gate": "pass", "matrix": [
+{"tc": "TC-MON-001", "ac": "AC-MON-001", "result": "pass"},
+{"tc": "TC-MON-002", "ac": "AC-MON-002", "result": "pass"},
+{"tc": "TC-MON-003", "ac": "AC-MON-003", "result": "pass"},
+{"tc": "TC-MON-004", "ac": "AC-MON-004", "result": "pass"},
+{"tc": "TC-MON-005", "ac": "AC-MON-005", "result": "pass"},
+{"tc": "TC-MON-006", "ac": "AC-MON-005", "result": "pass"},
+{"tc": "TC-MON-007", "ac": "AC-MON-002", "result": "pass"},
+{"tc": "TC-MON-008", "ac": "AC-MON-006", "result": "pass"},
+{"tc": "TC-MON-009", "ac": "AC-MON-007", "result": "pass"},
+{"tc": "TC-MON-010", "ac": "AC-MON-008", "result": "pass"},
+{"tc": "TC-MON-011", "ac": "AC-MON-009", "result": "pass"},
+{"tc": "TC-MON-012", "ac": "AC-MON-010", "result": "pass"},
+{"tc": "TC-MON-013", "ac": "AC-MON-010", "result": "pass"},
+{"tc": "TC-MON-014", "ac": "AC-MON-001", "result": "pass"},
+{"tc": "TC-MON-015", "ac": "AC-MON-008", "result": "pass"}]}

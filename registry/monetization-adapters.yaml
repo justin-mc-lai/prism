@@ -1,0 +1,29 @@
+# Prism monetization bridge registry（Lake F1）
+
+schema_version: "1"
+feature: prism-monetization-contracts-v1
+lake: F1
+strategy: bridge_monetization_tools
+
+adapters:
+  - name: deal-record
+    role: 变现 deal 登记
+    strategy: bridge
+    bridge_command: "tool:deal-record（content/deals/{deal_id}.yaml）"
+    fail_closed: true
+  - name: compliance-check
+    role: 风险内容合规检查
+    strategy: bridge
+    bridge_command: "tool:compliance-check（health/legal/finance 门）"
+    fail_closed: true
+  - name: disclosure-template
+    role: 广告/赞助披露模板
+    strategy: bridge
+    bridge_command: "tool:disclosure-template（标注生成）"
+    fail_closed: true
+
+guards:
+  human_approval_required: true
+  disclosure_mandatory: true
+  risk_content_compliance_gate: true
+  sensitive_info_never_in_repo: true

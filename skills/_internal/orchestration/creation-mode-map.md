@@ -45,6 +45,8 @@ recommended_next_harness: implement
 > （snapshot_id + publication_ref + collected_at + 空快照），供 E3 复盘。
 > Lake E4（learning-memory）：复盘发现沉淀走 `contracts/learning-memory.contract.md`
 > （advisory only、可回放、可裁剪），工具 bridge 见 `registry/learning-adapters.yaml`。
+> Lake F1（monetization）：变现走 `contracts/monetization.contract.md`
+> （人工批准 + 披露 + 风险合规门 + 敏感信息保护），工具 bridge 见 `registry/monetization-adapters.yaml`。
 
 - plan：定角度、受众、风险、爆款公式；**不**冻结事实、**不**写稿。
 - truth：冻结 MASTER 事实与来源；**不**代生成方决定呈现。
