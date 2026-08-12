@@ -58,3 +58,6 @@ Prism Lake D2（prism-form-blog-thread-v1）：QA `run-20260812T084947791269` pa
 
 Prism Lake D3（prism-form-image-post-v1）：QA `run-20260812T085444996257` passed
 （10/10 AC · 15/15 TC · release_confidence 1.0）；release 待人工确认，不自动公开发布。
+
+Prism Lake D4（prism-form-novel-v1）：QA `run-20260812T085911329188` passed
+（10/10 AC · 15/15 TC · release_confidence 1.0）；release 待人工确认，不自动公开发布。

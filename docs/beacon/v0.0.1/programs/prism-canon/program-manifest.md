@@ -100,3 +100,9 @@ D5 comic/vlog/book_video → D6 publish bridge。详见 `programs/prism-canon/la
 - truth：R1 frozen · implement：15/15 TC pass（`scripts/check_image_post_forms.sh` exec PASS）
 - QA：`run-20260812T085444996257` · 10/10 AC · 15/15 scenario · release_confidence 1.0 · `release_ready=true`
 - 下一子湖：D4（`prism-form-novel-v1`）待启动
+
+## Lake D4 交付状态（2026-08-12）
+
+- truth：R1 frozen · implement：15/15 TC pass（`scripts/check_novel_form.sh` exec PASS）
+- QA：`run-20260812T085911329188` · 10/10 AC · 15/15 scenario · release_confidence 1.0 · `release_ready=true`
+- 下一子湖：D5（`prism-form-av-v1`）待启动

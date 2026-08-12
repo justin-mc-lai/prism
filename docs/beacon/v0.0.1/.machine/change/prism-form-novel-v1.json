@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "version": "v0.0.1",
+  "feature": "prism-form-novel-v1",
+  "feature_slug": "prism-form-novel-v1",
+  "summary": "Lake D4 novel form contract with canon gate hook.",
+  "status": "generated",
+  "accepted_at": "",
+  "revision_id": "R1",
+  "projection_role": {"artifact_role": "version_aggregate_projection", "truth_source": false, "gate_source": false, "lifecycle_stage": false, "release_publish_action": false},
+  "truth_authority": false,
+  "lifecycle_stage": false,
+  "added": ["form-novel.contract.md", "novel form registry entry", "creation-mode-map novel row"],
+  "removed": [],
+  "fixed": [],
+  "traceability_refs": [
+    "docs/beacon/v0.0.1/change/prism-form-novel-v1.md",
+    "docs/beacon/v0.0.1/prd/prism-form-novel-v1.md",
+    "docs/beacon/v0.0.1/user-story/prism-form-novel-v1.md",
+    "docs/beacon/v0.0.1/qa/test-cases/prism-form-novel-v1.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-form-novel-v1.revision.json"
+  ],
+  "generated_at": "2026-08-12T02:10:00.000000+00:00"
+}
