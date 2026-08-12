@@ -13,5 +13,6 @@
   - prism-publish-bridge-v1（Lake D6：发布/排期桥 · release_candidate）
   - prism-metrics-publication-v1（Lake E1：发布证据回流 · release_candidate）
   - prism-metrics-snapshot-v1（Lake E2：MetricsSnapshot 指标快照 · release_candidate）
+  - prism-review-loop-v1（Lake E3：战役复盘/圣经更新 · release_candidate）
 - programs:
   - prism-canon

@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "version": "v0.0.1",
+  "feature": "prism-review-loop-v1",
+  "feature_slug": "prism-review-loop-v1",
+  "summary": "Lake E3 review loop + bible update.",
+  "status": "generated",
+  "accepted_at": "",
+  "revision_id": "R1",
+  "projection_role": {"artifact_role": "version_aggregate_projection", "truth_source": false, "gate_source": false, "lifecycle_stage": false, "release_publish_action": false},
+  "truth_authority": false,
+  "lifecycle_stage": false,
+  "added": ["review-loop.contract.md", "review-adapters.yaml"],
+  "removed": [],
+  "fixed": [],
+  "traceability_refs": [
+    "docs/beacon/v0.0.1/change/prism-review-loop-v1.md",
+    "docs/beacon/v0.0.1/prd/prism-review-loop-v1.md",
+    "docs/beacon/v0.0.1/user-story/prism-review-loop-v1.md",
+    "docs/beacon/v0.0.1/qa/test-cases/prism-review-loop-v1.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-review-loop-v1.revision.json"
+  ],
+  "generated_at": "2026-08-12T05:10:00.000000+00:00"
+}
