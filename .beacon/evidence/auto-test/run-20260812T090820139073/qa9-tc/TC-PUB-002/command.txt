@@ -1,0 +1,1 @@
+test -f registry/publish-adapters.yaml && rg -n "publish-content" registry/publish-adapters.yaml && rg -n "schedule-post" registry/publish-adapters.yaml

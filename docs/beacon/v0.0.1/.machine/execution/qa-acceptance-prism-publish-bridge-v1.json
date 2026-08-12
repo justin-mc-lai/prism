@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "artifact": "qa_acceptance_envelope",
+  "version": "v0.0.1",
+  "feature": "prism-publish-bridge-v1",
+  "feature_slug": "prism-publish-bridge-v1",
+  "revision_id": "R1",
+  "verdict": "passed",
+  "accepted_at": "2026-08-12T01:08:21.978989+00:00",
+  "accepted_by": "qa",
+  "run_id": "run-20260812T090820139073",
+  "transaction_id": "tx-qa-acceptance-prism-publish-bridge-v1-b2e1d9c58600",
+  "source_hash": "sha256:b2e1d9c58600a084e4368848e86e8cb7aba3a711d12af4e8046046f1dd456b18",
+  "projection_seq": 1,
+  "source_command": "beacon qa run \"prism-publish-bridge-v1\" --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-publish-bridge-v1 --version v0.0.1",
+  "requirement_refs": [
+    "docs/beacon/v0.0.1/features/prism-publish-bridge-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-publish-bridge-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-publish-bridge-v1/tests.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-publish-bridge-v1.revision.json"
+  ],
+  "test_case_refs": [],
+  "evidence_refs": [
+    ".beacon/auto-test-status.json",
+    ".beacon/qa/status.json",
+    "docs/beacon/v0.0.1/.machine/qa/prism-publish-bridge-v1.ac-test-matrix.json",
+    ".beacon/coverage-summary.json",
+    ".beacon/release-gate-report.json"
+  ],
+  "story_status": "implemented",
+  "revision_delivery_status": "implemented",
+  "required_ac_count": 0,
+  "required_test_count": 0,
+  "canonical_envelope_ref": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-publish-bridge-v1.json",
+  "markdown_ref": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-publish-bridge-v1.md",
+  "transaction_lineage": {
+    "current_transaction_id": "tx-qa-acceptance-prism-publish-bridge-v1-b2e1d9c58600",
+    "projection_seq": 1,
+    "source_hash": "sha256:b2e1d9c58600a084e4368848e86e8cb7aba3a711d12af4e8046046f1dd456b18",
+    "workflow_memory_ref": ".beacon/memory/workflow-lifecycle.json",
+    "memory_event_id": "",
+    "memory_entry_id": "63dbf5c9-a531-4089-895d-4e01f8ba75c7"
+  },
+  "sink_checksums": {
+    "machine": "sha256:11ff47d6379fe9170bbacc1d3470d864c9aa3d5a2072937fa36a4f02e3fa5425",
+    "human": "sha256:251663461d4d16423003634a1451c8d957047d7e018529af0c03775025a9055a",
+    "runtime": "sha256:a6f1997e3dc463f74a14d778ba301e8ec84c6298d9359ac07754c1f1ee450811"
+  },
+  "runtime_projection_ref": ".beacon/transactions/qa-acceptance-prism-publish-bridge-v1.json",
+  "transaction_status": "applied",
+  "failed_sinks": []
+}

@@ -1,0 +1,3 @@
+9:- one_liner: 发布/排期桥（MAP-008）——草稿-only、人工门、误路由守卫、证据记录
+33:- **误路由守卫**：草稿进入错误 tab/平台 → `superseded-misrouted` + `do_not_publish: true`，重走正确通道
+45:- 必须停: 工具缺失、凭证缺失、未批准公开、误路由未标记

@@ -1,0 +1,7 @@
+33:平台凭证与密钥禁止进仓库；误传目标（tab/平台）必须标记 `superseded-misrouted` +
+34:`do_not_publish`。D1–D5 的产出从这里走向草稿，但绝不自动公开。
+81:| FP-PUB-003 | 误传目标必须标记 superseded-misrouted + do_not_publish |
+91:US-PUB-002：误传目标。检测到草稿进入错误 tab/平台 → 标记 superseded-misrouted +
+92:do_not_publish，重新走正确通道。
+126:- 误传目标未标记 do_not_publish
+170:| AC-PUB-004 | 误路由守卫：误传目标 → superseded-misrouted + do_not_publish |

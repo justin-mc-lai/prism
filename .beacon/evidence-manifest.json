@@ -3,706 +3,791 @@
   "entries": [
     {
       "path": ".beacon/auto-test-status.json",
-      "sha256": "937cb2a9ea31c18789c2c88ac9ab67375001d08a18cbd430927f161940b5c904",
-      "updated_at": "2026-08-12T01:06:53.039318+00:00"
+      "sha256": "89c1cf2d8f1537273f78bd1de9085228c5b6373b40ddc7e318f7e35f6e94894a",
+      "updated_at": "2026-08-12T01:08:22.283821+00:00"
     },
     {
       "path": ".beacon/coverage-summary.json",
-      "sha256": "eb12239ae52a43bb072789a1783b98d34d005ea9e989331748270c60a06f852c",
-      "updated_at": "2026-08-12T01:06:53.039390+00:00"
+      "sha256": "be5ee63e711f6758616669da5401fce02cf4a011ffd35a50cdb0548cca88dba8",
+      "updated_at": "2026-08-12T01:08:22.284028+00:00"
     },
     {
       "path": ".beacon/evidence-signature-chain.json",
-      "sha256": "a049bde6f89d006b3b288085919fe7587494dfcbff2a4db060e3fd1e7b05b9bc",
-      "updated_at": "2026-08-12T01:06:53.039467+00:00"
+      "sha256": "34c54c4f64827b4873b19d09e2c6827dfe519fe5da368d45a5928a8b736edecd",
+      "updated_at": "2026-08-12T01:08:22.272415+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T113106143903/contract/command.txt",
       "sha256": "c6ab71d3fdcc5bde3b266aa5aab90d05f395ae9ca54fe801b7c4f0422394be87",
-      "updated_at": "2026-08-12T01:06:53.039536+00:00"
+      "updated_at": "2026-08-12T01:08:22.272471+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T113106143903/contract/result.json",
       "sha256": "9465cc475af7aead371fe19a007189bd2dcfb029f3e1466b86c661510c3c053f",
-      "updated_at": "2026-08-12T01:06:53.039598+00:00"
+      "updated_at": "2026-08-12T01:08:22.272522+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T113106143903/contract/stderr.log",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "updated_at": "2026-08-12T01:06:53.039661+00:00"
+      "updated_at": "2026-08-12T01:08:22.272570+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T113106143903/contract/stdout.log",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "updated_at": "2026-08-12T01:06:53.039720+00:00"
+      "updated_at": "2026-08-12T01:08:22.272619+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T113106143903/qa9/tc-execution-map.json",
       "sha256": "f2e99c289ccae2268b9560620e1131634d1be10ac7f8ec711e52ccd93329850b",
-      "updated_at": "2026-08-12T01:06:53.039804+00:00"
+      "updated_at": "2026-08-12T01:08:22.272687+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T113106143903/qa9/tc-results.json",
       "sha256": "c0b4ba20b70b7b698347ef1bec7da8a63ab2421eb6a376d79d7267731c087300",
-      "updated_at": "2026-08-12T01:06:53.039888+00:00"
+      "updated_at": "2026-08-12T01:08:22.272756+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T113106143903/summary.json",
       "sha256": "b970c0ba75e3d4181646fe869cff043ca01eb2a7c0e89c7b1d5889c772549e41",
-      "updated_at": "2026-08-12T01:06:53.039967+00:00"
+      "updated_at": "2026-08-12T01:08:22.272829+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T121330776605/contract/command.txt",
       "sha256": "c6ab71d3fdcc5bde3b266aa5aab90d05f395ae9ca54fe801b7c4f0422394be87",
-      "updated_at": "2026-08-12T01:06:53.040029+00:00"
+      "updated_at": "2026-08-12T01:08:22.272881+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T121330776605/contract/result.json",
       "sha256": "6a14498fb054490ec4e28e62dd256ba1d021cab453bb17d89ce27b2921708db9",
-      "updated_at": "2026-08-12T01:06:53.040092+00:00"
+      "updated_at": "2026-08-12T01:08:22.272930+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T121330776605/contract/stderr.log",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "updated_at": "2026-08-12T01:06:53.040151+00:00"
+      "updated_at": "2026-08-12T01:08:22.272983+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T121330776605/contract/stdout.log",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "updated_at": "2026-08-12T01:06:53.040209+00:00"
+      "updated_at": "2026-08-12T01:08:22.273030+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T121330776605/qa9/tc-execution-map.json",
       "sha256": "69fb694dfa874f79c9ea260f5a17fa14e46a2026eaedc28d905aeeb837a3cef5",
-      "updated_at": "2026-08-12T01:06:53.040282+00:00"
+      "updated_at": "2026-08-12T01:08:22.273094+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T121330776605/qa9/tc-results.json",
       "sha256": "f59cd6c489e4f1835e84f8af9296dd7f473e27ec3bb9700e7bbdb9b7693f9b4c",
-      "updated_at": "2026-08-12T01:06:53.040353+00:00"
+      "updated_at": "2026-08-12T01:08:22.273160+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T121330776605/summary.json",
       "sha256": "f5a20b333ccdb297d54cc687a6588be055c902b56272a87edb83d6bc52afc794",
-      "updated_at": "2026-08-12T01:06:53.040432+00:00"
+      "updated_at": "2026-08-12T01:08:22.273230+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T232406916560/contract/command.txt",
       "sha256": "1b60f1512ae3816cd904053e09ac872b819a95ab1481fccb43503ed8a62a32d5",
-      "updated_at": "2026-08-12T01:06:53.040505+00:00"
+      "updated_at": "2026-08-12T01:08:22.273280+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T232406916560/contract/result.json",
       "sha256": "87c7487430da833d0f75efe8fb428b8d059ae4cdf4c7c24ce692519495405cd5",
-      "updated_at": "2026-08-12T01:06:53.040570+00:00"
+      "updated_at": "2026-08-12T01:08:22.273332+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T232406916560/contract/stderr.log",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "updated_at": "2026-08-12T01:06:53.040646+00:00"
+      "updated_at": "2026-08-12T01:08:22.273381+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T232406916560/contract/stdout.log",
       "sha256": "c99927e61f1ead9a32bc911825077e1b281080bd46fc37053d98212f62ba146a",
-      "updated_at": "2026-08-12T01:06:53.040703+00:00"
+      "updated_at": "2026-08-12T01:08:22.273429+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T232406916560/qa9/tc-execution-map.json",
       "sha256": "a55cfba1e4503885a4371c18442765a2012d45deda0be62590a1e801eedd10e8",
-      "updated_at": "2026-08-12T01:06:53.040774+00:00"
+      "updated_at": "2026-08-12T01:08:22.273491+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T232406916560/qa9/tc-results.json",
       "sha256": "9ee02470adab60ab7e07d4d7e386eaf285bc9ddcd607d493d2209bd8eb698712",
-      "updated_at": "2026-08-12T01:06:53.040844+00:00"
+      "updated_at": "2026-08-12T01:08:22.273561+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T232406916560/summary.json",
       "sha256": "2fc4db5fd25d66de3feaa47161d222b2fa6087e5d6f532ecf0bd096e9570c854",
-      "updated_at": "2026-08-12T01:06:53.040917+00:00"
+      "updated_at": "2026-08-12T01:08:22.273630+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T084228065759/contract/command.txt",
       "sha256": "7702080793dbae563fbe7d8302f27a0092caa723f15b928f5275970ee578a069",
-      "updated_at": "2026-08-12T01:06:53.040974+00:00"
+      "updated_at": "2026-08-12T01:08:22.273686+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T084228065759/contract/result.json",
       "sha256": "e15104b880b2b840414d3666892183798a166205b0c41cf81e10f98ea35035cc",
-      "updated_at": "2026-08-12T01:06:53.041030+00:00"
+      "updated_at": "2026-08-12T01:08:22.273735+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T084228065759/contract/stderr.log",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "updated_at": "2026-08-12T01:06:53.041084+00:00"
+      "updated_at": "2026-08-12T01:08:22.273785+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T084228065759/contract/stdout.log",
       "sha256": "50998b61c8b2568a3a9ed42d2c78e4755a4e03e35c53185281a94176f9e93f4f",
-      "updated_at": "2026-08-12T01:06:53.041140+00:00"
+      "updated_at": "2026-08-12T01:08:22.273833+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T084228065759/qa9/tc-execution-map.json",
       "sha256": "eeadc599f84b1e1bc3ae5c35769eca71f5d24927bf5886171620a44175c21e4f",
-      "updated_at": "2026-08-12T01:06:53.041208+00:00"
+      "updated_at": "2026-08-12T01:08:22.273895+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T084228065759/qa9/tc-results.json",
       "sha256": "046fc897a0c50b8814adb66fe1a3b510504c37f49880dae292d86fefb0599d94",
-      "updated_at": "2026-08-12T01:06:53.041280+00:00"
+      "updated_at": "2026-08-12T01:08:22.273959+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T084228065759/summary.json",
       "sha256": "6643951eff5e5f5b2419577cf77fb2b5778de5813d95467ea534d4a4d1065715",
-      "updated_at": "2026-08-12T01:06:53.041359+00:00"
+      "updated_at": "2026-08-12T01:08:22.274036+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T084947791269/contract/command.txt",
       "sha256": "def575652e0bc93ac9e1ac4dd796c7f0ec68ec7b94ca7a357b12f84552aceaaa",
-      "updated_at": "2026-08-12T01:06:53.041420+00:00"
+      "updated_at": "2026-08-12T01:08:22.274093+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T084947791269/contract/result.json",
       "sha256": "52f86fb24ae3ae5158385dff20bd6ae958c40711cc7bbc80447355e3bfa52eeb",
-      "updated_at": "2026-08-12T01:06:53.041490+00:00"
+      "updated_at": "2026-08-12T01:08:22.274143+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T084947791269/contract/stderr.log",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "updated_at": "2026-08-12T01:06:53.041561+00:00"
+      "updated_at": "2026-08-12T01:08:22.274191+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T084947791269/contract/stdout.log",
       "sha256": "96f9817744835419ab8f2fb243f5903f3fbe04de2e4b1a5a6be7f03e34a32064",
-      "updated_at": "2026-08-12T01:06:53.041642+00:00"
+      "updated_at": "2026-08-12T01:08:22.274241+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T084947791269/qa9/tc-execution-map.json",
       "sha256": "d4dcb6883503f8fcc6f8dbb6b170c7f7b2b7d96ab7c5618675904b86e79d01eb",
-      "updated_at": "2026-08-12T01:06:53.041718+00:00"
+      "updated_at": "2026-08-12T01:08:22.274302+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T084947791269/qa9/tc-results.json",
       "sha256": "617a1af79e2e8c55db009d0e26c01b6f2754a40b63a3a93a41371210470a1701",
-      "updated_at": "2026-08-12T01:06:53.041791+00:00"
+      "updated_at": "2026-08-12T01:08:22.274366+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T084947791269/summary.json",
       "sha256": "aed72cd7ed518dfe66aeb9d00e7066836197611533e767f3241a821be772ae34",
-      "updated_at": "2026-08-12T01:06:53.041875+00:00"
+      "updated_at": "2026-08-12T01:08:22.274434+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T085444996257/contract/command.txt",
       "sha256": "37c3fb602afb05f8ddcee4a0120204e99eb616e1040e6772c6426dfe2f7d4a86",
-      "updated_at": "2026-08-12T01:06:53.041940+00:00"
+      "updated_at": "2026-08-12T01:08:22.274486+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T085444996257/contract/result.json",
       "sha256": "23a3483fc3cfd597739f93ba78c301fcba4bbbbfecca13057b7cf1bfcca8fe77",
-      "updated_at": "2026-08-12T01:06:53.042006+00:00"
+      "updated_at": "2026-08-12T01:08:22.274540+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T085444996257/contract/stderr.log",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "updated_at": "2026-08-12T01:06:53.042071+00:00"
+      "updated_at": "2026-08-12T01:08:22.274590+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T085444996257/contract/stdout.log",
       "sha256": "0d52caf855c7754a06af531917d6dcaa4823a2d6efcd34f93130c6f14b02668f",
-      "updated_at": "2026-08-12T01:06:53.042134+00:00"
+      "updated_at": "2026-08-12T01:08:22.274638+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T085444996257/qa9/tc-execution-map.json",
       "sha256": "302d814d8a78f987b0279dbbcec7db2c5456301299ba97473efe7ecdd8894a98",
-      "updated_at": "2026-08-12T01:06:53.042206+00:00"
+      "updated_at": "2026-08-12T01:08:22.274702+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T085444996257/qa9/tc-results.json",
       "sha256": "1fec414129d54fce01bcd1302e4fd3d79a5b70f78bb175f7e25ea70b21d9147f",
-      "updated_at": "2026-08-12T01:06:53.042287+00:00"
+      "updated_at": "2026-08-12T01:08:22.274766+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T085444996257/summary.json",
       "sha256": "aa8456509e2fefbd73adb519466dfcd70260a714d78f4f5aafb0b4723ca6a27f",
-      "updated_at": "2026-08-12T01:06:53.042369+00:00"
+      "updated_at": "2026-08-12T01:08:22.274889+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T085911329188/contract/command.txt",
       "sha256": "1f0c1622ba15beb80f03c3b152d609b291ff8b08f6f4d75ad07367a9e69c0630",
-      "updated_at": "2026-08-12T01:06:53.042431+00:00"
+      "updated_at": "2026-08-12T01:08:22.274946+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T085911329188/contract/result.json",
       "sha256": "4970300c3fabbce2c12e0ede16b25ad8e6439765ff26e29077f24beb8f048f2c",
-      "updated_at": "2026-08-12T01:06:53.042493+00:00"
+      "updated_at": "2026-08-12T01:08:22.274997+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T085911329188/contract/stderr.log",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "updated_at": "2026-08-12T01:06:53.042560+00:00"
+      "updated_at": "2026-08-12T01:08:22.275046+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T085911329188/contract/stdout.log",
       "sha256": "3622ebc487faa5a3d3d810f7ffd4359472cc0b2650fccce5c25aeb466f83f0a9",
-      "updated_at": "2026-08-12T01:06:53.042619+00:00"
+      "updated_at": "2026-08-12T01:08:22.275097+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9/tc-execution-map.json",
       "sha256": "2e901a63353d93aa9061b7451b4ce393ed9ea7352e4a49c560921bd0035746de",
-      "updated_at": "2026-08-12T01:06:53.042696+00:00"
+      "updated_at": "2026-08-12T01:08:22.275161+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9/tc-results.json",
       "sha256": "e32cd211084ca9901aa953c4d2e33cbd270edc87cdd948479afa50e1198e74ff",
-      "updated_at": "2026-08-12T01:06:53.042773+00:00"
+      "updated_at": "2026-08-12T01:08:22.275229+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T085911329188/summary.json",
       "sha256": "b583752e7d3ed9825463621252c427db7277f4f821b7f65fd4620683786a5d9e",
-      "updated_at": "2026-08-12T01:06:53.042858+00:00"
+      "updated_at": "2026-08-12T01:08:22.275295+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T090408217552/contract/command.txt",
       "sha256": "e8090eb01eb673f4fef56a89ba370c5e1c0d4f06b9c5fa2168c5a0355bfa8869",
-      "updated_at": "2026-08-12T01:06:53.042923+00:00"
+      "updated_at": "2026-08-12T01:08:22.275348+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T090408217552/contract/result.json",
       "sha256": "cd9104745a8ae9388e2f4037ae87925bed4522bf68661d47b88a608c9ae626c4",
-      "updated_at": "2026-08-12T01:06:53.042981+00:00"
+      "updated_at": "2026-08-12T01:08:22.275397+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T090408217552/contract/stderr.log",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "updated_at": "2026-08-12T01:06:53.043046+00:00"
+      "updated_at": "2026-08-12T01:08:22.275445+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T090408217552/contract/stdout.log",
       "sha256": "0e86206181991380c62d038bed219ecfd15cc4b1db6ff705d4ca51c66823a00e",
-      "updated_at": "2026-08-12T01:06:53.043108+00:00"
+      "updated_at": "2026-08-12T01:08:22.275493+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T090408217552/qa9/tc-execution-map.json",
       "sha256": "c2451b37538821cec671ab512df5265095a396c7233ba53ba41e26d318935788",
-      "updated_at": "2026-08-12T01:06:53.043185+00:00"
+      "updated_at": "2026-08-12T01:08:22.275555+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T090408217552/qa9/tc-results.json",
       "sha256": "e7a29325837efe4aef9edbd3ee18a46f98892d0b40020c83a6f2f198c2ed33ab",
-      "updated_at": "2026-08-12T01:06:53.043269+00:00"
+      "updated_at": "2026-08-12T01:08:22.275618+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T090408217552/summary.json",
       "sha256": "4f12cb882bb6d00256a708602659b56d4b4a382be7dacb80bd0f9152b5705050",
-      "updated_at": "2026-08-12T01:06:53.043350+00:00"
+      "updated_at": "2026-08-12T01:08:22.275684+00:00"
+    },
+    {
+      "path": ".beacon/evidence/auto-test/run-20260812T090820139073/contract/command.txt",
+      "sha256": "acfb8d5e1eb04f2b718b68adc1f9c2f40f6eeff597cee2608538a90e2e567b54",
+      "updated_at": "2026-08-12T01:08:22.275735+00:00"
+    },
+    {
+      "path": ".beacon/evidence/auto-test/run-20260812T090820139073/contract/result.json",
+      "sha256": "07971daf9536f797939f00acc03e926a8e19eaa335372a3fd7e40d2bb2d936cc",
+      "updated_at": "2026-08-12T01:08:22.275789+00:00"
+    },
+    {
+      "path": ".beacon/evidence/auto-test/run-20260812T090820139073/contract/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "updated_at": "2026-08-12T01:08:22.275836+00:00"
+    },
+    {
+      "path": ".beacon/evidence/auto-test/run-20260812T090820139073/contract/stdout.log",
+      "sha256": "2c751603716304b7b3d990fb19fd0aef33c9d84458d4905f75b8323a0396ab6c",
+      "updated_at": "2026-08-12T01:08:22.275883+00:00"
+    },
+    {
+      "path": ".beacon/evidence/auto-test/run-20260812T090820139073/qa9/tc-execution-map.json",
+      "sha256": "c87bb4d7f3722f1bae4fa5576b27c5bd17da3ec08c7f60e39baecc17b828eaab",
+      "updated_at": "2026-08-12T01:08:22.275945+00:00"
+    },
+    {
+      "path": ".beacon/evidence/auto-test/run-20260812T090820139073/qa9/tc-results.json",
+      "sha256": "ab897b849f3b2e301d23ea15aad84cb57b3e4650aac279dc17b5f29b0f9be165",
+      "updated_at": "2026-08-12T01:08:22.276010+00:00"
+    },
+    {
+      "path": ".beacon/evidence/auto-test/run-20260812T090820139073/summary.json",
+      "sha256": "ba050645c730e97d2072b17b1eda91ad3db34659545f547436076a0cdf28abe8",
+      "updated_at": "2026-08-12T01:08:22.276076+00:00"
     },
     {
       "path": ".beacon/evidence/implement/prism-extract-v1/GATES.json",
       "sha256": "82e16706d89a6b69b686cb0da4d9628775c220814780a7ad64042afd1e9ace75",
-      "updated_at": "2026-08-12T01:06:53.043419+00:00"
+      "updated_at": "2026-08-12T01:08:22.276126+00:00"
     },
     {
       "path": ".beacon/evidence/implement/prism-extract-v1/QA-MATRIX.json",
       "sha256": "117d989f76d289d43543ac501604d574bc5d0edcea0b21a92fe3f894fa22bf6d",
-      "updated_at": "2026-08-12T01:06:53.043484+00:00"
+      "updated_at": "2026-08-12T01:08:22.276175+00:00"
     },
     {
       "path": ".beacon/evidence/implement/prism-extract-v1/manifest.json",
       "sha256": "7119b26d3e69b9f25d6c435cffd43a2a975d9a9858d67859b9eb8dd686825260",
-      "updated_at": "2026-08-12T01:06:53.043543+00:00"
+      "updated_at": "2026-08-12T01:08:22.276226+00:00"
     },
     {
       "path": ".beacon/flaky-history.json",
-      "sha256": "d7b8aab20bbf6fa70edfb1b19f9f5c1f1927ff3e44e6db6a02f10fa281657bf9",
-      "updated_at": "2026-08-12T01:06:53.043601+00:00"
+      "sha256": "859fc083bc9a69c70008d2c9a16c9a42b8c8704b0165a525ab34d8e61fd19fb6",
+      "updated_at": "2026-08-12T01:08:22.276276+00:00"
     },
     {
       "path": ".beacon/gate-report.json",
-      "sha256": "e28d25be7d7f675300a13ba613772ea1e71c0fddffb81e93119f5e0dc087593e",
-      "updated_at": "2026-08-12T01:06:53.043658+00:00"
+      "sha256": "c2d6303e193ec3b9fc05ae103ae705b110e770f9c9fd89e7758a596e20f103f8",
+      "updated_at": "2026-08-12T01:08:22.276324+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-campaign-schema-v1/ac-closure.json",
       "sha256": "66d9ee9a0deaa945e7717d50f87df5c0ba52f5ebf436992616a7f1665b7add27",
-      "updated_at": "2026-08-12T01:06:53.043723+00:00"
+      "updated_at": "2026-08-12T01:08:22.276381+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-campaign-schema-v1/exhaustiveness-report.json",
       "sha256": "afb782c3e5cb2a035e17d6e49b21af8d63abb7188c915feff8e2a8eb8403dc5c",
-      "updated_at": "2026-08-12T01:06:53.043779+00:00"
+      "updated_at": "2026-08-12T01:08:22.276429+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-campaign-schema-v1/matrix.qa9.json",
       "sha256": "a99259a68f1a03185f2f4485405e95dc7bd2e5efb14dac850882d47f04cb5abe",
-      "updated_at": "2026-08-12T01:06:53.043853+00:00"
+      "updated_at": "2026-08-12T01:08:22.276485+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-campaign-schema-v1/plan.json",
       "sha256": "d0920d7e2f191e082ddf6d0c9fe6a0e4e052900638549b67a9cebb09f19254dd",
-      "updated_at": "2026-08-12T01:06:53.043989+00:00"
+      "updated_at": "2026-08-12T01:08:22.276608+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-campaign-schema-v1/scorecard.json",
       "sha256": "3d2a846d43443374476564bb7e550b27d6800b482508fd65dd0a9e755845225a",
-      "updated_at": "2026-08-12T01:06:53.044063+00:00"
+      "updated_at": "2026-08-12T01:08:22.276672+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-campaign-schema-v1/status.json",
       "sha256": "a5e580a41781b37847d9fe85020e45af74b64b94d073e70b5ab488a8139a09f1",
-      "updated_at": "2026-08-12T01:06:53.044303+00:00"
+      "updated_at": "2026-08-12T01:08:22.276892+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-extract-v1/ac-closure.json",
       "sha256": "2ef0a21a51a6b302b935adb38f4c8ea1ad414fd693bc118246359d373e41475f",
-      "updated_at": "2026-08-12T01:06:53.044371+00:00"
+      "updated_at": "2026-08-12T01:08:22.276943+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-extract-v1/exhaustiveness-report.json",
       "sha256": "5cc517c7fa93a394705f61003e59b95383e32455a7019a093a8e34e93c858e25",
-      "updated_at": "2026-08-12T01:06:53.044436+00:00"
+      "updated_at": "2026-08-12T01:08:22.276992+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-extract-v1/matrix.qa9.json",
       "sha256": "5cb81d41728f78154b8efa9d65249a83ce733e066e6a5a020862cdaf0d542ca1",
-      "updated_at": "2026-08-12T01:06:53.044498+00:00"
+      "updated_at": "2026-08-12T01:08:22.277045+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-extract-v1/plan.json",
       "sha256": "ef63221b147c9cd96703969205a05b466883a18a95bf670b2be7497b20284025",
-      "updated_at": "2026-08-12T01:06:53.044610+00:00"
+      "updated_at": "2026-08-12T01:08:22.277138+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-extract-v1/scorecard.json",
       "sha256": "62d60415926f82b83ed91f7bba7ab1aa83b17472946e0820d540ee2338c32d6a",
-      "updated_at": "2026-08-12T01:06:53.044683+00:00"
+      "updated_at": "2026-08-12T01:08:22.277198+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-extract-v1/status.json",
       "sha256": "dba27a758d8e0a90e9b74ac4179531597000ee83baa5281659f5b3503d541012",
-      "updated_at": "2026-08-12T01:06:53.044995+00:00"
+      "updated_at": "2026-08-12T01:08:22.277493+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-av-v1/ac-closure.json",
       "sha256": "b6dd4ff6f43764adb381d6a04f619b400bfd1df0fd9eea9e35b634304ed47a11",
-      "updated_at": "2026-08-12T01:06:53.045068+00:00"
+      "updated_at": "2026-08-12T01:08:22.277544+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-av-v1/exhaustiveness-report.json",
       "sha256": "8fea7537ed511c45bcf949933222556f60a0d8bd4d9b4a671d57c75471bcfaf3",
-      "updated_at": "2026-08-12T01:06:53.045126+00:00"
+      "updated_at": "2026-08-12T01:08:22.277592+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-av-v1/matrix.qa9.json",
       "sha256": "f28faefda8bdaa2cd4237e0c0f239c678cae76ccbe278c564f70f260270f4e55",
-      "updated_at": "2026-08-12T01:06:53.045200+00:00"
+      "updated_at": "2026-08-12T01:08:22.277652+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-av-v1/plan.json",
       "sha256": "a3def8a42b11404b3487f7f8e80785933a90ea235aa99305cbf81d1435415ff4",
-      "updated_at": "2026-08-12T01:06:53.045359+00:00"
+      "updated_at": "2026-08-12T01:08:22.277809+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-av-v1/scorecard.json",
       "sha256": "9bcc39207e7a5ad6ee01d4863553ffaf3f3d8c96ba471fd4cfd80d70e963839d",
-      "updated_at": "2026-08-12T01:06:53.045436+00:00"
+      "updated_at": "2026-08-12T01:08:22.277868+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-av-v1/status.json",
       "sha256": "e22fa2f4732e2417e989d2f646af4804915c80153bfecfabc708d1904456dcb0",
-      "updated_at": "2026-08-12T01:06:53.045704+00:00"
+      "updated_at": "2026-08-12T01:08:22.278110+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-blog-thread-v1/ac-closure.json",
       "sha256": "d58dfc9568783e67c8383aa29f0d0171205b40ebdddce3e782120647c9c50a1e",
-      "updated_at": "2026-08-12T01:06:53.045776+00:00"
+      "updated_at": "2026-08-12T01:08:22.278167+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-blog-thread-v1/exhaustiveness-report.json",
       "sha256": "0b25db1b806ec4815b00f5f77ef2b26b9586ee32b07619c19942eaf766b156ae",
-      "updated_at": "2026-08-12T01:06:53.045849+00:00"
+      "updated_at": "2026-08-12T01:08:22.278215+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-blog-thread-v1/matrix.qa9.json",
       "sha256": "4b3f205a782b41c10e6b6f06a0550cb1115d55841b5986e75613926267bf1af3",
-      "updated_at": "2026-08-12T01:06:53.045917+00:00"
+      "updated_at": "2026-08-12T01:08:22.278269+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-blog-thread-v1/plan.json",
       "sha256": "1aa248e81d24d813b13b3d977aeb5cfdffef6ca58e2606042d3588bb674328b0",
-      "updated_at": "2026-08-12T01:06:53.046106+00:00"
+      "updated_at": "2026-08-12T01:08:22.278447+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-blog-thread-v1/scorecard.json",
       "sha256": "2374e930bf67c645bfea5177ee687e5cba316432995c1b5402ef6c47b3d00d57",
-      "updated_at": "2026-08-12T01:06:53.046185+00:00"
+      "updated_at": "2026-08-12T01:08:22.278509+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-blog-thread-v1/status.json",
       "sha256": "a93b84f0a70d41433fcea038a585866afac4dc0cb13b8d9cad57498ff0db85a7",
-      "updated_at": "2026-08-12T01:06:53.048796+00:00"
+      "updated_at": "2026-08-12T01:08:22.278779+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-image-post-v1/ac-closure.json",
       "sha256": "95534cbaa012d3a739c0d72d1e6b65361f7aa114c92f328e9c8d9c2f9a83232d",
-      "updated_at": "2026-08-12T01:06:53.050194+00:00"
+      "updated_at": "2026-08-12T01:08:22.278831+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-image-post-v1/exhaustiveness-report.json",
       "sha256": "5e4fe6d3df803c31a91ccf841eaec403eec247db528b839174a78635c8047c47",
-      "updated_at": "2026-08-12T01:06:53.050336+00:00"
+      "updated_at": "2026-08-12T01:08:22.278879+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-image-post-v1/matrix.qa9.json",
       "sha256": "620840fa877b3dea6318c7459c2ca62002315285f3ac88ec2913cd266fb66435",
-      "updated_at": "2026-08-12T01:06:53.050439+00:00"
+      "updated_at": "2026-08-12T01:08:22.278933+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-image-post-v1/plan.json",
       "sha256": "9bec12b0beaf894e48d9bca3e1e2b26447a6ca582f84c49a32466ae81816554b",
-      "updated_at": "2026-08-12T01:06:53.050639+00:00"
+      "updated_at": "2026-08-12T01:08:22.279092+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-image-post-v1/scorecard.json",
       "sha256": "12350a04abbeaf82d99b7ee43f004909248ac81f7b70d22de43198bfc2f76037",
-      "updated_at": "2026-08-12T01:06:53.050747+00:00"
+      "updated_at": "2026-08-12T01:08:22.279151+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-image-post-v1/status.json",
       "sha256": "a6f4007a0821e2ad24ec261a3222727b38b53e71868bfb14fc356f4603a04e63",
-      "updated_at": "2026-08-12T01:06:53.051045+00:00"
+      "updated_at": "2026-08-12T01:08:22.279408+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-novel-v1/ac-closure.json",
       "sha256": "a7bd0540e6f8a8e39e7608d1496607ae4fd766e5d099695d2ee5ac12b2483317",
-      "updated_at": "2026-08-12T01:06:53.051127+00:00"
+      "updated_at": "2026-08-12T01:08:22.279461+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-novel-v1/exhaustiveness-report.json",
       "sha256": "7d72c5618b1d5ca3f28a15bdc900f6be966dd2aa3f95d1b59c3553fc938fe309",
-      "updated_at": "2026-08-12T01:06:53.051201+00:00"
+      "updated_at": "2026-08-12T01:08:22.279510+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-novel-v1/matrix.qa9.json",
       "sha256": "4f2eceb53e0d9c113f129c6d234d8c107b3ad4d0fac04ab0e78529658595bc4f",
-      "updated_at": "2026-08-12T01:06:53.051284+00:00"
+      "updated_at": "2026-08-12T01:08:22.279564+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-novel-v1/plan.json",
       "sha256": "07d9ca3a056b51b1f57d2a23ea7893c7c3f18ed8dffb0bcdbee73a98319e498f",
-      "updated_at": "2026-08-12T01:06:53.051522+00:00"
+      "updated_at": "2026-08-12T01:08:22.279726+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-novel-v1/scorecard.json",
       "sha256": "4a4cd1f47b9403850d71145287f7f4f5c5f232087ace88ac6d7e7cba94949e1c",
-      "updated_at": "2026-08-12T01:06:53.051614+00:00"
+      "updated_at": "2026-08-12T01:08:22.279786+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-novel-v1/status.json",
       "sha256": "30bc102d7fa77a4fc5be754fecb257ed3ff669c1ee53e3cbcbb65017062c5903",
-      "updated_at": "2026-08-12T01:06:53.051911+00:00"
+      "updated_at": "2026-08-12T01:08:22.280044+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-writing-v1/ac-closure.json",
       "sha256": "7e7c49ac74ba163cfdc52e0b519c36c64b86d11ddc739cac11ebcaf280a95892",
-      "updated_at": "2026-08-12T01:06:53.051984+00:00"
+      "updated_at": "2026-08-12T01:08:22.280097+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-writing-v1/exhaustiveness-report.json",
       "sha256": "75445f07faade9961db55cbeb6e9e5bf93d49b3b739010c4a09afbb175be032e",
-      "updated_at": "2026-08-12T01:06:53.052064+00:00"
+      "updated_at": "2026-08-12T01:08:22.280145+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-writing-v1/matrix.qa9.json",
       "sha256": "18d0179fb539e6caa33b60534ffa6ecc6c47e3405948e728fcafd6abe4005ad5",
-      "updated_at": "2026-08-12T01:06:53.052136+00:00"
+      "updated_at": "2026-08-12T01:08:22.280199+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-writing-v1/plan.json",
       "sha256": "3cb352a9acd63a4db2467d15cc5586b14a83426b9a810318d4c947f439ac1a24",
-      "updated_at": "2026-08-12T01:06:53.052327+00:00"
+      "updated_at": "2026-08-12T01:08:22.280355+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-writing-v1/scorecard.json",
       "sha256": "eee3e8be8b619b13e8eb094e1eb1af2072d44699f8b26c14104a583e8d2b9195",
-      "updated_at": "2026-08-12T01:06:53.052412+00:00"
+      "updated_at": "2026-08-12T01:08:22.280415+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-writing-v1/status.json",
       "sha256": "f1fad4fc25f66a026055bd1627d652a1c2fe7497ead313d1ad9c7c9eca0f786e",
-      "updated_at": "2026-08-12T01:06:53.052690+00:00"
+      "updated_at": "2026-08-12T01:08:22.280686+00:00"
+    },
+    {
+      "path": ".beacon/qa/features/prism-publish-bridge-v1/ac-closure.json",
+      "sha256": "e6577966d1af2d4b2ce647f249a7ef9f8f536160fabb8eb08ce815a9967a7ab1",
+      "updated_at": "2026-08-12T01:08:22.284085+00:00"
+    },
+    {
+      "path": ".beacon/qa/features/prism-publish-bridge-v1/exhaustiveness-report.json",
+      "sha256": "1d841f083c8198b7c3fa7e40c7978f5e5e4bcc701a0177eacbe8ce7827471fd6",
+      "updated_at": "2026-08-12T01:08:22.284893+00:00"
+    },
+    {
+      "path": ".beacon/qa/features/prism-publish-bridge-v1/matrix.qa9.json",
+      "sha256": "38b88777d8d5509e43219ca8552148b252b9eb057bba0db64d880ec424ef01b0",
+      "updated_at": "2026-08-12T01:08:22.284841+00:00"
+    },
+    {
+      "path": ".beacon/qa/features/prism-publish-bridge-v1/plan.json",
+      "sha256": "3fc06add2c4b6d1060b86071b715bfe21298cc0635ca165503b3a6f721c7ad4f",
+      "updated_at": "2026-08-12T01:08:22.284783+00:00"
+    },
+    {
+      "path": ".beacon/qa/features/prism-publish-bridge-v1/scorecard.json",
+      "sha256": "06d117eb61e4fc3e2ec0587ed37e31e611794855fe7780c66eec603244cc9e8b",
+      "updated_at": "2026-08-12T01:08:22.284155+00:00"
+    },
+    {
+      "path": ".beacon/qa/features/prism-publish-bridge-v1/status.json",
+      "sha256": "bafb6d00e21a21c6216be3d6b7620ffcfb99bb88f270b841577c5f8185d53581",
+      "updated_at": "2026-08-12T01:08:22.284619+00:00"
     },
     {
       "path": ".beacon/qa/status.json",
-      "sha256": "937cb2a9ea31c18789c2c88ac9ab67375001d08a18cbd430927f161940b5c904",
-      "updated_at": "2026-08-12T01:06:53.052837+00:00"
+      "sha256": "89c1cf2d8f1537273f78bd1de9085228c5b6373b40ddc7e318f7e35f6e94894a",
+      "updated_at": "2026-08-12T01:08:22.283925+00:00"
     },
     {
       "path": ".beacon/release-gate-report.json",
-      "sha256": "23eee9b3a47eaa7d9ec2df3f9949f102d82db8fba77a98547f000ba35decac19",
-      "updated_at": "2026-08-12T01:06:53.052914+00:00"
+      "sha256": "2939d5b6a0ddcbf9bd93fc2836aafdaa8019e3eb42413435134e4f351efb90a0",
+      "updated_at": "2026-08-12T01:08:22.284203+00:00"
     },
     {
       "path": ".beacon/state/implementation-prism-extract-v1.json",
       "sha256": "9ae7566ffe931ea8e8e8a9898efbf4791d80c986475d2db447d5b00e26c2b882",
-      "updated_at": "2026-08-12T01:06:53.052996+00:00"
+      "updated_at": "2026-08-12T01:08:22.281562+00:00"
     },
     {
       "path": ".beacon/transactions/qa-acceptance-prism-campaign-schema-v1.json",
       "sha256": "b08391887151318b46564f98793c08caa01b6490a9533b4f9f9cc9eca5fc8d23",
-      "updated_at": "2026-08-12T01:06:53.053067+00:00"
+      "updated_at": "2026-08-12T01:08:22.281617+00:00"
     },
     {
       "path": ".beacon/transactions/qa-acceptance-prism-extract-v1.json",
       "sha256": "d1f09e846524b8c678bc655f64612945f1ca4d584cef3bbd7fa81ae3a63bb0ba",
-      "updated_at": "2026-08-12T01:06:53.053140+00:00"
+      "updated_at": "2026-08-12T01:08:22.281669+00:00"
     },
     {
       "path": ".beacon/transactions/qa-acceptance-prism-form-av-v1.json",
       "sha256": "8a0c93cb1568390aabf69a915ceb74cf52dca0837c47e439ad3a14618ca68584",
-      "updated_at": "2026-08-12T01:06:53.053207+00:00"
+      "updated_at": "2026-08-12T01:08:22.281726+00:00"
     },
     {
       "path": ".beacon/transactions/qa-acceptance-prism-form-blog-thread-v1.json",
       "sha256": "6557f599ad8090ec9fe4bc84e8b395eca07bc6ee56c1067a5957f17454fe4202",
-      "updated_at": "2026-08-12T01:06:53.053278+00:00"
+      "updated_at": "2026-08-12T01:08:22.281780+00:00"
     },
     {
       "path": ".beacon/transactions/qa-acceptance-prism-form-image-post-v1.json",
       "sha256": "6cf231cd45deb7b86f6a7c3b9e91379fc2f806e7df59dd4d453e9568c78903cd",
-      "updated_at": "2026-08-12T01:06:53.053360+00:00"
+      "updated_at": "2026-08-12T01:08:22.281839+00:00"
     },
     {
       "path": ".beacon/transactions/qa-acceptance-prism-form-novel-v1.json",
       "sha256": "3fab3c103faa10cf1aef56cada6ec34e4ec577d9a79daf40c4316ab43220a79a",
-      "updated_at": "2026-08-12T01:06:53.053481+00:00"
+      "updated_at": "2026-08-12T01:08:22.281897+00:00"
     },
     {
       "path": ".beacon/transactions/qa-acceptance-prism-form-writing-v1.json",
       "sha256": "e189d53a967db4e3659dc63525f6192b14720821a1314406b22eb3a161e38b9f",
-      "updated_at": "2026-08-12T01:06:53.053555+00:00"
+      "updated_at": "2026-08-12T01:08:22.281954+00:00"
+    },
+    {
+      "path": ".beacon/transactions/qa-acceptance-prism-publish-bridge-v1.json",
+      "sha256": "c0bb4918b46d64b2ee3ddc42a6947b834fb650e30d8a2b940fb2cabde5d64297",
+      "updated_at": "2026-08-12T01:08:22.284367+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/.machine/execution/init-report.json",
       "sha256": "bf7ee04fb8e0d4710c11ea8c5c43f4c115b66300413863e9cf61998f59249807",
-      "updated_at": "2026-08-12T01:06:53.053663+00:00"
+      "updated_at": "2026-08-12T01:08:22.282072+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-campaign-schema-v1.json",
       "sha256": "0e9fcf8fd0322822ecc889d94b8a41a98cdea6a394d8fb8dae32b59ae2d7460e",
-      "updated_at": "2026-08-12T01:06:53.053747+00:00"
+      "updated_at": "2026-08-12T01:08:22.282124+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-extract-v1.json",
       "sha256": "7918ee80fd340b443551a3450b161c11ae678dab97d596c0004af25b0b506ea5",
-      "updated_at": "2026-08-12T01:06:53.053826+00:00"
+      "updated_at": "2026-08-12T01:08:22.282181+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-form-av-v1.json",
       "sha256": "b2364d416fff4a4d7ca5b1165b6f90e7f64128dde7f7d2fe37314d52e608b9d3",
-      "updated_at": "2026-08-12T01:06:53.053924+00:00"
+      "updated_at": "2026-08-12T01:08:22.282238+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-form-blog-thread-v1.json",
       "sha256": "1d62b74ae09a36d33da4ab43053fa92df62fcd53bfbe1e729bb95e389fa7b6a8",
-      "updated_at": "2026-08-12T01:06:53.054002+00:00"
+      "updated_at": "2026-08-12T01:08:22.282294+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-form-image-post-v1.json",
       "sha256": "848f3ab7b9bfb2670e1c6b900c37b650b935ca35cf55bfe87b91242d69ac52f0",
-      "updated_at": "2026-08-12T01:06:53.054069+00:00"
+      "updated_at": "2026-08-12T01:08:22.282350+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-form-novel-v1.json",
       "sha256": "d77c367d6b4f2b7e2ea6958d9a5e2df31448c460a3765df8a9416e3b8f706971",
-      "updated_at": "2026-08-12T01:06:53.054141+00:00"
+      "updated_at": "2026-08-12T01:08:22.282407+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-form-writing-v1.json",
       "sha256": "119238c0e381ac755dab25e5bdc18b18a5d9e2fd4c3975076538186ab5765d41",
-      "updated_at": "2026-08-12T01:06:53.054226+00:00"
+      "updated_at": "2026-08-12T01:08:22.282485+00:00"
+    },
+    {
+      "path": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-publish-bridge-v1.json",
+      "sha256": "c7dc922d9f4657b5e98f9fb4fda37d798a77ff4241b351489a71359cd15930e6",
+      "updated_at": "2026-08-12T01:08:22.284263+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/.machine/qa/prism-campaign-schema-v1.ac-test-matrix.json",
       "sha256": "42182676687618efe53f3594498ad62e88850e9fc80cd34fd7031db9f68ac1d3",
-      "updated_at": "2026-08-12T01:06:53.054297+00:00"
+      "updated_at": "2026-08-12T01:08:22.282666+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json",
       "sha256": "d0fae487d89534a4c8f6d83323ae85d69984501cbd4541becbc771488ae00e2e",
-      "updated_at": "2026-08-12T01:06:53.054377+00:00"
+      "updated_at": "2026-08-12T01:08:22.282770+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/.machine/qa/prism-form-av-v1.ac-test-matrix.json",
       "sha256": "0ae8fa92b34434d4dc364d5f60b83d69a23a4b3deaae1596bddf8f528cceaff4",
-      "updated_at": "2026-08-12T01:06:53.054462+00:00"
+      "updated_at": "2026-08-12T01:08:22.282901+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/.machine/qa/prism-form-blog-thread-v1.ac-test-matrix.json",
       "sha256": "23fee5c03c6ca04ef8924b2f7a7184935df0269854ffeafbf2345b071c37589b",
-      "updated_at": "2026-08-12T01:06:53.054534+00:00"
+      "updated_at": "2026-08-12T01:08:22.282972+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/.machine/qa/prism-form-image-post-v1.ac-test-matrix.json",
       "sha256": "f3413efc95d8d7f0367111464fa213c25bfbee767994b3f50372752aea27d7fb",
-      "updated_at": "2026-08-12T01:06:53.054608+00:00"
+      "updated_at": "2026-08-12T01:08:22.283033+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/.machine/qa/prism-form-novel-v1.ac-test-matrix.json",
       "sha256": "6883926bc1693fea87003b5a04d2e21ead8f3311ad7f7c0531538b210d1feac3",
-      "updated_at": "2026-08-12T01:06:53.054692+00:00"
+      "updated_at": "2026-08-12T01:08:22.283092+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/.machine/qa/prism-form-writing-v1.ac-test-matrix.json",
       "sha256": "aad39e8139becacb0695b57ff9f2f7793961630d321dab3eab137740b145d338",
-      "updated_at": "2026-08-12T01:06:53.054769+00:00"
+      "updated_at": "2026-08-12T01:08:22.283150+00:00"
+    },
+    {
+      "path": "docs/beacon/v0.0.1/.machine/qa/prism-publish-bridge-v1.ac-test-matrix.json",
+      "sha256": "4284b1565513b7edf65e55ddad9b09600e7e1f6e9133bb229d31f94c2386bb9c",
+      "updated_at": "2026-08-12T01:08:22.283980+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/.machine/requirement/feature-package-validation.json",
       "sha256": "29599ad30237feea34bab23b028581f9b67bc2be421028d29fada4fd084d360b",
-      "updated_at": "2026-08-12T01:06:53.055676+00:00"
+      "updated_at": "2026-08-12T01:08:22.283262+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/execution/init-report.md",
       "sha256": "8552a209a67ce3818b81b5fc7f9892a6d1f3e8d7b9be851c3b6638baace0a467",
-      "updated_at": "2026-08-12T01:06:53.054927+00:00"
+      "updated_at": "2026-08-12T01:08:22.283313+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-campaign-schema-v1.md",
       "sha256": "6e62525998d17c88f556abae5b51f5ba599f212f8e74a3919fe1fbaa8149d765",
-      "updated_at": "2026-08-12T01:06:53.054991+00:00"
+      "updated_at": "2026-08-12T01:08:22.283365+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-extract-v1.md",
       "sha256": "1c8d32dec73cbe41d4d00b782abed2f4cfef1cbfd48defe83caa328cacc4e2ae",
-      "updated_at": "2026-08-12T01:06:53.055063+00:00"
+      "updated_at": "2026-08-12T01:08:22.283414+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-form-av-v1.md",
       "sha256": "021b3be8218377f515209b39b53dad9cc66b2c53c3d902236892825452f80b97",
-      "updated_at": "2026-08-12T01:06:53.055132+00:00"
+      "updated_at": "2026-08-12T01:08:22.283464+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-form-blog-thread-v1.md",
       "sha256": "fdd684792151107ddf3122d4d03cf501a127c1662710b85c2450c2ae41661e4f",
-      "updated_at": "2026-08-12T01:06:53.055234+00:00"
+      "updated_at": "2026-08-12T01:08:22.283514+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-form-image-post-v1.md",
       "sha256": "95ed89f5b71442ceb9db5ef9096e5dd27598f4a7c323a03c72ee8f34e6569922",
-      "updated_at": "2026-08-12T01:06:53.055314+00:00"
+      "updated_at": "2026-08-12T01:08:22.283565+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-form-novel-v1.md",
       "sha256": "e5bf84977d4078e8ba864bb0d3d79cc72bb0a35079c389872d18638776529768",
-      "updated_at": "2026-08-12T01:06:53.055379+00:00"
+      "updated_at": "2026-08-12T01:08:22.283614+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-form-writing-v1.md",
       "sha256": "f48ad0b3befb06dd7b3876cb04e6d2eb8946d7f55f7ac1ce690311983877fc5a",
-      "updated_at": "2026-08-12T01:06:53.055460+00:00"
+      "updated_at": "2026-08-12T01:08:22.283664+00:00"
+    },
+    {
+      "path": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-publish-bridge-v1.md",
+      "sha256": "f638a6b4c9ef1598466d01c96da8f39b1168b6b5734b3bbb419ad074470f0397",
+      "updated_at": "2026-08-12T01:08:22.284318+00:00"
     }
   ],
-  "updated_at": "2026-08-12T01:06:53.055717+00:00",
+  "updated_at": "2026-08-12T01:08:22.284913+00:00",
   "version": "v0.0.1",
-  "run_id": "run-20260812T090408217552"
+  "run_id": "run-20260812T090820139073"
 }

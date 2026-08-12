@@ -1,0 +1,1 @@
+rg -n "superseded-misrouted|do_not_publish|误" contracts/publish-bridge.contract.md

@@ -1,0 +1,4 @@
+9:  - name: publish-content
+12:    bridge_command: "skill:publish-content（源仓 skills/publish-content）"
+14:  - name: schedule-post
+17:    bridge_command: "skill:schedule-post（源仓 skills/schedule-post）"

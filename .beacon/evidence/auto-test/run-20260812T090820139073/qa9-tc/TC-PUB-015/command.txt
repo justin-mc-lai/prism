@@ -1,0 +1,1 @@
+rg -n "US-PUB-002|误传|do_not_publish" docs/beacon/v0.0.1/features/prism-publish-bridge-v1/truth.md

@@ -1,0 +1,1 @@
+rg -n "publish-bridge.contract" skills/_internal/orchestration/creation-mode-map.md

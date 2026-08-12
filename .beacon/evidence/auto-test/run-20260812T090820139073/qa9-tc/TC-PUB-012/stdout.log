@@ -1,0 +1,16 @@
+152:10. Non-goals / deferral（AC-PUB-010）
+176:| AC-PUB-010 | Non-goals：metrics、monetization、vendor sync-ai 显式排除；不得宣称海 closure |
+178:## Non-goals
+37:- 不能做：metrics（E）、monetization（F）、vendor sync-ai、自动公开。
+73:| INT-P11 | sea | should | Lake E metrics 回流 | deferred |
+84:| FP-PUB-006 | 继承 FP-PRISM-002/004/013；不吞 vendor sync-ai |
+158:| DL-P01 | metrics/learning loop | accepted | Lake E |
+159:| DL-P02 | monetization/改编合同 | accepted | Lake F |
+160:| DL-P03 | vendor sync-ai 分发 API 全量 | accepted | 跨仓；bridge 不吞 |
+176:| AC-PUB-010 | Non-goals：metrics、monetization、vendor sync-ai 显式排除；不得宣称海 closure |
+180:- 不做指标采集/学习回流（Lake E）
+181:- 不变现/改编合同（Lake F）
+182:- 不 vendor sync-ai 分发 API
+127:- 宣称海 closure
+161:| DL-P04 | 本子湖宣称海 closure | rejected | FP-PRISM-013 |
+176:| AC-PUB-010 | Non-goals：metrics、monetization、vendor sync-ai 显式排除；不得宣称海 closure |

@@ -1,0 +1,1 @@
+test -f contracts/publish-bridge.contract.md && rg -n "publish-content|schedule-post|x-publish|manage-media" contracts/publish-bridge.contract.md

@@ -1,0 +1,5 @@
+9:- one_liner: 发布/排期桥（MAP-008）——草稿-only、人工门、误路由守卫、证据记录
+14:- 能决定：平台路由、草稿创建、排期意图、证据记录
+26:- 草稿: 平台草稿 ID（draft_id）+ 预览 URL
+28:- 证据: `.beacon/evidence/implement/prism-publish-bridge-v1/AC-PUB-001.json`
+35:- **证据**：无 draft_id/URL 不算已发布；无证据默认不过

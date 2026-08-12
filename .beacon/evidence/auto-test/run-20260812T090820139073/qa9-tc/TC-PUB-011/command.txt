@@ -1,0 +1,1 @@
+rg -n "draft_id|URL|证据|evidence|已发布" contracts/publish-bridge.contract.md

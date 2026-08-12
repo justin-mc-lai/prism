@@ -1,0 +1,11 @@
+31:D6 是 Lake D 的收口子湖：把**发布/排期桥**定下来。Prism 只负责草稿与排期意图，公开发布永远
+34:`do_not_publish`。D1–D5 的产出从这里走向草稿，但绝不自动公开。
+42:完成 Lake D：发布/排期桥 + 人工批准集成，让八形态产出可安全到达“草稿”，公开仍留人工门。
+79:| FP-PUB-001 | Prism 只创建草稿/排期意图；公开发布必须人工二次批准（FP-PRISM-005） |
+88:US-PUB-001：形态产出成稿 → prism-release 按 `publish-bridge.contract` 创建平台草稿 →
+91:US-PUB-002：误传目标。检测到草稿进入错误 tab/平台 → 标记 superseded-misrouted +
+100:| PublishBridgeContract | publish-bridge | 草稿/排期/发布边界 |
+102:| DraftRecord | draft_id | 平台草稿证据 |
+145:3. 草稿-only + 人工门（AC-PUB-003）
+167:| AC-PUB-001 | 进入 `contract_landed`：`contracts/publish-bridge.contract.md` 定义 bridge 路由、草稿-only 边界、人工二次批准、证据记录 |
+169:| AC-PUB-003 | 草稿-only：契约声明只创建草稿/排期意图；公开必须人工二次批准 |

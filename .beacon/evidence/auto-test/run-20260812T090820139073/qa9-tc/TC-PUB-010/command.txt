@@ -1,0 +1,1 @@
+rg -n "凭证|密钥|secrets|\.env|禁止入库" contracts/publish-bridge.contract.md

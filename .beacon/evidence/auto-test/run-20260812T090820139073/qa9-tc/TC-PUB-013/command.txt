@@ -1,0 +1,1 @@
+rg -n "Illegal|illegal|无人工|宣称海" docs/beacon/v0.0.1/features/prism-publish-bridge-v1/truth.md
