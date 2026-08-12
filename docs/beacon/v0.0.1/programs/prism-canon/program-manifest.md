@@ -124,3 +124,9 @@ D5 comic/vlog/book_video → D6 publish bridge。详见 `programs/prism-canon/la
 - 八形态生产链契约已注册：blog / thread / image-post / xhs / novel / comic / vlog / book_video + publish bridge
 - 仍未做：Lake E metrics 回流、Lake F monetization、vendor sync-ai、公开发布人工确认
 - 不得宣称海 closure
+
+## 版本级 Release（2026-08-12 人工确认）
+
+- `release_accepted`：8 features（B/C/D1–D6）全部 QA 通过并合入 main
+- 证据：`docs/beacon/v0.0.1/release/v0.0.1-release-confirmation.md` + `beacon release scorecard v0.0.1`（release_ready=true）
+- 平台公开发布仍逐内容人工门；Lake E 规划待启动

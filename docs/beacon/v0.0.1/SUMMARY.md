@@ -1,6 +1,7 @@
 # Beacon Delivery Tree — v0.0.1
 
 - status: active（Lake C：campaign / storyworld schema）
+- version_release: **release_accepted（2026-08-12 人工确认 · 8 features）**
 - features:
   - prism-extract-v1（Lake B：repo + 1+6 shells + registries + orchestration kernel · release_accepted）
   - prism-campaign-schema-v1（Lake C：campaign / storyworld / master schema · release_candidate）
