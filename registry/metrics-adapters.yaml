@@ -1,0 +1,33 @@
+# Prism metrics bridge registry（Lake E1）
+
+schema_version: "1"
+feature: prism-metrics-publication-v1
+lake: E1
+strategy: bridge_analytics_tools
+
+adapters:
+  - name: analyze-data
+    role: 多平台数据聚合分析
+    strategy: bridge
+    bridge_command: "skill:analyze-data（源仓 skills/analyze-data）"
+    fail_closed: true
+  - name: platform-stats-wechat
+    role: 公众号数据统计
+    strategy: bridge
+    bridge_command: "platform:getWechatGzhStats（凭证走受管 secrets）"
+    fail_closed: true
+  - name: platform-stats-xhs
+    role: 小红书数据统计
+    strategy: bridge
+    bridge_command: "platform:getXiaohongshuStats（凭证走受管 secrets）"
+    fail_closed: true
+  - name: report-builder
+    role: 指标报表生成
+    strategy: bridge
+    bridge_command: "tool:report-builder（本地报表工具）"
+    fail_closed: true
+
+guards:
+  credentials_never_in_repo: true
+  no_fabricated_metrics: true
+  missing_tool_blocks_feedback: true

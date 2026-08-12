@@ -1,0 +1,16 @@
+{"feature": "prism-metrics-publication-v1", "scenarios_total": 15, "scenarios_pass": 15, "ac_total": 10, "ac_pass": 10, "run_id": "run-20260812T040000Z", "surfaces_gate": "pass", "matrix": [
+{"tc": "TC-MPUB-001", "ac": "AC-MPUB-001", "result": "pass"},
+{"tc": "TC-MPUB-002", "ac": "AC-MPUB-002", "result": "pass"},
+{"tc": "TC-MPUB-003", "ac": "AC-MPUB-003", "result": "pass"},
+{"tc": "TC-MPUB-004", "ac": "AC-MPUB-004", "result": "pass"},
+{"tc": "TC-MPUB-005", "ac": "AC-MPUB-005", "result": "pass"},
+{"tc": "TC-MPUB-006", "ac": "AC-MPUB-005", "result": "pass"},
+{"tc": "TC-MPUB-007", "ac": "AC-MPUB-002", "result": "pass"},
+{"tc": "TC-MPUB-008", "ac": "AC-MPUB-006", "result": "pass"},
+{"tc": "TC-MPUB-009", "ac": "AC-MPUB-007", "result": "pass"},
+{"tc": "TC-MPUB-010", "ac": "AC-MPUB-008", "result": "pass"},
+{"tc": "TC-MPUB-011", "ac": "AC-MPUB-009", "result": "pass"},
+{"tc": "TC-MPUB-012", "ac": "AC-MPUB-010", "result": "pass"},
+{"tc": "TC-MPUB-013", "ac": "AC-MPUB-010", "result": "pass"},
+{"tc": "TC-MPUB-014", "ac": "AC-MPUB-001", "result": "pass"},
+{"tc": "TC-MPUB-015", "ac": "AC-MPUB-003", "result": "pass"}]}

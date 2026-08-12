@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "run_id": "run-20260812T040000Z",
+  "import_id": "run-20260812T040000Z",
+  "feature": "prism-metrics-publication-v1",
+  "feature_slug": "prism-metrics-publication-v1",
+  "version": "v0.0.1",
+  "runner": "import-evidence",
+  "skill": "beacon-implement",
+  "status": "completed",
+  "imported": true,
+  "source_refs": ["contracts/metrics-publication.contract.md", "registry/metrics-adapters.yaml", "skills/_internal/orchestration/creation-mode-map.md", "scripts/check_metrics_publication.sh"],
+  "changed_files": ["contracts/metrics-publication.contract.md", "registry/metrics-adapters.yaml", "skills/_internal/orchestration/creation-mode-map.md", "scripts/check_metrics_publication.sh"],
+  "service_dirs": ["."],
+  "summary_ref": "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/evidence.md",
+  "approved_by": "agent-codex",
+  "prompt_boundary": {"schema_version": "1.0", "feature": "prism-metrics-publication-v1", "feature_slug": "prism-metrics-publication-v1", "version": "v0.0.1", "required": false, "prompt": "Implement Lake E1 publication evidence feedback contract.", "classification": "", "blocked": false, "status": "not_required", "reason_code": "", "next_action": "", "recommended_command": "", "matched_signals": [], "frozen_refs": ["docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md", "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tests.md", "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tasks.md", "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/evidence.md"], "surface": "import-evidence"},
+  "created_at": "2026-08-12T04:00:00.000000+00:00",
+  "generated_at": "2026-08-12T04:00:00.000000+00:00"
+}
