@@ -1,0 +1,217 @@
+{
+  "schema": "truth-review-gate.v1",
+  "schema_version": "1.0",
+  "feature": "prism-metrics-snapshot-v1",
+  "version": "v0.0.1",
+  "pass": true,
+  "blocked": false,
+  "review_gate_pass": true,
+  "abc_pass": true,
+  "reason_code": "",
+  "domain_required": true,
+  "checks": {
+    "A_intent_coverage": {
+      "pass": true,
+      "check": "A",
+      "name": "intent_coverage",
+      "required": true,
+      "matrix_rows": 11,
+      "missing_must": [],
+      "reason": "",
+      "findings": [],
+      "matrix": [
+        {
+          "intent_id": "INT-MS01",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-MSNAP-001",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-MS02",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-MSNAP-002",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-MS03",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-MSNAP-003",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-MS04",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-MSNAP-004",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-MS05",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-MSNAP-005",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-MS06",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-MSNAP-006",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-MS07",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-MSNAP-007",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-MS08",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-MSNAP-008",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-MS09",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-MSNAP-009",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-MS10",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-MSNAP-010",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-MS11",
+          "source": "sea",
+          "strength": "should",
+          "landing": "E3/E4 回流面",
+          "status": "deferred"
+        }
+      ]
+    },
+    "B_fsm_audit": {
+      "pass": true,
+      "check": "B",
+      "name": "fsm_audit",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "fsm": {
+        "transition_count": 7,
+        "from_states": [
+          "contract_landed",
+          "indexed",
+          "msnap_planned",
+          "qa_pass",
+          "registry_landed",
+          "release_candidate",
+          "routing_landed"
+        ],
+        "hanging_states": [],
+        "terminals": [
+          "human_accepted"
+        ],
+        "illegal_present": true,
+        "five_tuple_present": true
+      }
+    },
+    "C_testability": {
+      "pass": true,
+      "check": "C",
+      "name": "testability",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "ac_count": 10,
+      "tc_count": 15,
+      "missing_ac": [],
+      "covered": {
+        "AC-MSNAP-001": [
+          "TC-MSNAP-001",
+          "TC-MSNAP-014"
+        ],
+        "AC-MSNAP-002": [
+          "TC-MSNAP-002",
+          "TC-MSNAP-007"
+        ],
+        "AC-MSNAP-003": [
+          "TC-MSNAP-003"
+        ],
+        "AC-MSNAP-004": [
+          "TC-MSNAP-004"
+        ],
+        "AC-MSNAP-005": [
+          "TC-MSNAP-005",
+          "TC-MSNAP-006"
+        ],
+        "AC-MSNAP-006": [
+          "TC-MSNAP-008",
+          "TC-MSNAP-015"
+        ],
+        "AC-MSNAP-007": [
+          "TC-MSNAP-009"
+        ],
+        "AC-MSNAP-008": [
+          "TC-MSNAP-010"
+        ],
+        "AC-MSNAP-009": [
+          "TC-MSNAP-011"
+        ],
+        "AC-MSNAP-010": [
+          "TC-MSNAP-012",
+          "TC-MSNAP-013"
+        ]
+      }
+    },
+    "C_domain_exec_layer": {
+      "pass": true,
+      "check": "C_exec",
+      "name": "domain_exec_layer",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "exec_tc_count": 3,
+      "exec_tc_ids": [
+        "TC-MSNAP-005",
+        "TC-MSNAP-006",
+        "TC-MSNAP-007"
+      ],
+      "domain_kind": "business"
+    },
+    "D_fill_depth": {
+      "pass": true,
+      "check": "D",
+      "name": "fill_depth",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "package_maturity": "filled",
+      "domain_kind": "business",
+      "business_domain": true
+    }
+  },
+  "findings": [],
+  "humanizer": {
+    "rule": "humanizer_only_after_abc_pass_before_freeze",
+    "abc_pass": true,
+    "allowed_now": true,
+    "fill_depth_pass": true,
+    "note": "Polish L0/narrative only after A/B/C; preserve_machine_fields=true; freeze needs D+exec too"
+  },
+  "evaluated_at": "2026-08-12T10:35:12.973306+00:00",
+  "paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+    "report": "docs/beacon/v0.0.1/.machine/execution/prism-metrics-snapshot-v1.truth-review-gate.json"
+  }
+}

@@ -1,0 +1,633 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-metrics-snapshot-v1",
+  "feature_slug": "prism-metrics-snapshot-v1",
+  "version": "v0.0.1",
+  "runtime_version": "v1.6.12",
+  "runtime_capability_line": "v1.3.3",
+  "required": true,
+  "reason_code": "",
+  "blocked": false,
+  "status": "pass",
+  "findings": [],
+  "report_json_path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-metrics-snapshot-v1.json",
+  "report_markdown_path": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-metrics-snapshot-v1.md",
+  "state_path": ".beacon/state/requirement-clarity-prism-metrics-snapshot-v1.json",
+  "diagram_truth": {
+    "schema_version": "1.0",
+    "version": "v0.0.1",
+    "supported": false,
+    "required": false,
+    "ready": false,
+    "diagram_types": [],
+    "state_axes": [],
+    "missing_diagram_types": [],
+    "missing_state_axes": false,
+    "complexity_signals": [],
+    "review_gates": [],
+    "qa_coverage_hints": [],
+    "evidence_lines": {},
+    "generated_at": "2026-08-12T10:35:12.598720+00:00",
+    "feature": "prism-metrics-snapshot-v1",
+    "feature_slug": "prism-metrics-snapshot-v1",
+    "prd_ref": "docs/beacon/v0.0.1/prd/prism-metrics-snapshot-v1.md",
+    "user_story_ref": "docs/beacon/v0.0.1/user-story/prism-metrics-snapshot-v1.md"
+  },
+  "domain_fsm_gate": {
+    "schema_version": "1.0",
+    "feature": "prism-metrics-snapshot-v1",
+    "feature_slug": "prism-metrics-snapshot-v1",
+    "version": "v0.0.1",
+    "truth_path": "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+    "tests_path": "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+    "required": true,
+    "blocked": false,
+    "status": "pass",
+    "reason_code": "",
+    "findings": [],
+    "requirement": {
+      "required": true,
+      "reason": "explicit_domain_mark",
+      "explicit": true,
+      "partial": true,
+      "complexity": false,
+      "business_signal": false,
+      "version_supported": false
+    },
+    "projection": {
+      "schema_version": "1.0",
+      "domain_fsm_schema": "domain-fsm.v1",
+      "entity_precedence_schema": "entity-precedence.v1",
+      "frontmatter": {
+        "slug": "prism-metrics-snapshot-v1",
+        "version": "v0.0.1",
+        "status": "draft",
+        "revision_id": "R1",
+        "language": "zh",
+        "domain_required": "true",
+        "ux_required": "false",
+        "parser_contract": "beacon-feature-package-v2",
+        "materials_status": "current",
+        "package_maturity": "filled",
+        "truth_source_model": "intent_first",
+        "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+        "canonical_refs": {
+          "prd": "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+          "user_story": "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+          "test_case": "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md"
+        },
+        "provenance": {
+          "- ac_id": "AC-MSNAP-002",
+          "source_type": "source_evidence",
+          "source_ref": "analyze-data 平台统计（views/interactions/followers）"
+        }
+      },
+      "frontmatter_errors": [],
+      "has_domain_model_section": true,
+      "has_domain_fsm_section": true,
+      "has_illegal_transition_section": true,
+      "entities": [
+        {
+          "entity": "MetricsSnapshot",
+          "key": "snapshot_id",
+          "precedence": "publication_ref + collected_at + 指标字段",
+          "requires": "publication_ref + collected_at + 指标字段"
+        },
+        {
+          "entity": "PublicationRef",
+          "key": "publication_id",
+          "precedence": "绑定 E1 发布事件",
+          "requires": "绑定 E1 发布事件"
+        },
+        {
+          "entity": "MetricField",
+          "key": "views/interactions/followers",
+          "precedence": "平台真实值或显式空",
+          "requires": "平台真实值或显式空"
+        }
+      ],
+      "entity_precedence": [
+        {
+          "entity": "MetricsSnapshot",
+          "key": "snapshot_id",
+          "precedence": "publication_ref + collected_at + 指标字段",
+          "requires": "publication_ref + collected_at + 指标字段"
+        },
+        {
+          "entity": "PublicationRef",
+          "key": "publication_id",
+          "precedence": "绑定 E1 发布事件",
+          "requires": "绑定 E1 发布事件"
+        },
+        {
+          "entity": "MetricField",
+          "key": "views/interactions/followers",
+          "precedence": "平台真实值或显式空",
+          "requires": "平台真实值或显式空"
+        }
+      ],
+      "aggregates": [
+        {
+          "name": "落地）",
+          "states": [
+            "contract_landed",
+            "human_accepted",
+            "indexed",
+            "msnap_planned",
+            "qa_pass",
+            "registry_landed",
+            "release_candidate",
+            "routing_landed"
+          ],
+          "transitions": [
+            {
+              "from": "msnap_planned",
+              "to": "contract_landed",
+              "guard": "metrics-snapshot.contract present"
+            },
+            {
+              "from": "contract_landed",
+              "to": "registry_landed",
+              "guard": "registry 含快照条目"
+            },
+            {
+              "from": "registry_landed",
+              "to": "routing_landed",
+              "guard": "creation-mode-map 快照引用"
+            },
+            {
+              "from": "routing_landed",
+              "to": "indexed",
+              "guard": "exec 脚本 + 无泄漏"
+            },
+            {
+              "from": "indexed",
+              "to": "qa_pass",
+              "guard": "all TC pass"
+            },
+            {
+              "from": "qa_pass",
+              "to": "release_candidate",
+              "guard": "evidence complete"
+            },
+            {
+              "from": "release_candidate",
+              "to": "human_accepted",
+              "guard": "human confirmed"
+            }
+          ]
+        }
+      ],
+      "illegal_transition_slots": [
+        {
+          "description": "msnap_planned → routing_landed（跳过契约/登记）",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "indexed → human_accepted（跳过 QA）",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "无 publication_ref 生成快照",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "编造指标/趋势",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "凭证入库",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "bridge 缺失仍“采集”",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "宣称海 closure",
+          "aggregate": "",
+          "source": "truth"
+        }
+      ],
+      "acceptance_criteria": [
+        {
+          "ac_id": "AC-MSNAP-001",
+          "description": "进入 `contract_landed`：`contracts/metrics-snapshot.contract.md` 定义 snapshot_id/publication_ref/指标字段/collected_at/来源证据 与 fail-closed"
+        },
+        {
+          "ac_id": "AC-MSNAP-002",
+          "description": "进入 `registry_landed`：`registry/metrics-adapters.yaml` 含 ≥2 个快照采集 bridge 条目"
+        },
+        {
+          "ac_id": "AC-MSNAP-003",
+          "description": "measured 守卫：无 publication_ref 不得生成快照（引用 E1 发布事件）"
+        },
+        {
+          "ac_id": "AC-MSNAP-004",
+          "description": "进入 `routing_landed`：creation-mode-map 快照/measured 引用 metrics-snapshot.contract"
+        },
+        {
+          "ac_id": "AC-MSNAP-005",
+          "description": "进入 `indexed`：`scripts/check_metrics_snapshot.sh` exec-layer 校验 PASS"
+        },
+        {
+          "ac_id": "AC-MSNAP-006",
+          "description": "空快照/不编造：缺数据用显式空快照，禁止猜测"
+        },
+        {
+          "ac_id": "AC-MSNAP-007",
+          "description": "凭证保护：平台凭证/密钥禁止入库"
+        },
+        {
+          "ac_id": "AC-MSNAP-008",
+          "description": "bridge fail-closed：统计工具缺失 → blocked + reason_code"
+        },
+        {
+          "ac_id": "AC-MSNAP-009",
+          "description": "证据要求：快照必须带 collected_at 与来源，缺证据不算采集"
+        },
+        {
+          "ac_id": "AC-MSNAP-010",
+          "description": "Non-goals：E3/E4、平台 API 全量显式排除；不得宣称海 closure"
+        }
+      ],
+      "bound_ac_ids": [
+        "AC-MSNAP-001",
+        "AC-MSNAP-002",
+        "AC-MSNAP-004",
+        "AC-MSNAP-005"
+      ],
+      "orphan_ac_ids": [
+        "AC-MSNAP-003",
+        "AC-MSNAP-007"
+      ],
+      "aggregates_missing_illegal_slots": [],
+      "raw_section_titles": [
+        "人话",
+        "User Intent",
+        "User Intent Snapshot",
+        "Intent Coverage Matrix",
+        "First principles（域）",
+        "用户旅程 / 故事",
+        "Domain Model",
+        "Domain FSM（E2 落地）",
+        "Illegal transitions",
+        "FSM 五元组",
+        "Alignment Surface",
+        "Deferral Ledger",
+        "Acceptance Criteria",
+        "Non-goals",
+        "Freeze readiness"
+      ]
+    },
+    "validation": {
+      "schema_version": "1.0",
+      "required": true,
+      "blocked": false,
+      "status": "pass",
+      "reason_code": "",
+      "findings": [],
+      "projection": {
+        "schema_version": "1.0",
+        "domain_fsm_schema": "domain-fsm.v1",
+        "entity_precedence_schema": "entity-precedence.v1",
+        "frontmatter": {
+          "slug": "prism-metrics-snapshot-v1",
+          "version": "v0.0.1",
+          "status": "draft",
+          "revision_id": "R1",
+          "language": "zh",
+          "domain_required": "true",
+          "ux_required": "false",
+          "parser_contract": "beacon-feature-package-v2",
+          "materials_status": "current",
+          "package_maturity": "filled",
+          "truth_source_model": "intent_first",
+          "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+          "canonical_refs": {
+            "prd": "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+            "user_story": "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+            "test_case": "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md"
+          },
+          "provenance": {
+            "- ac_id": "AC-MSNAP-002",
+            "source_type": "source_evidence",
+            "source_ref": "analyze-data 平台统计（views/interactions/followers）"
+          }
+        },
+        "frontmatter_errors": [],
+        "has_domain_model_section": true,
+        "has_domain_fsm_section": true,
+        "has_illegal_transition_section": true,
+        "entities": [
+          {
+            "entity": "MetricsSnapshot",
+            "key": "snapshot_id",
+            "precedence": "publication_ref + collected_at + 指标字段",
+            "requires": "publication_ref + collected_at + 指标字段"
+          },
+          {
+            "entity": "PublicationRef",
+            "key": "publication_id",
+            "precedence": "绑定 E1 发布事件",
+            "requires": "绑定 E1 发布事件"
+          },
+          {
+            "entity": "MetricField",
+            "key": "views/interactions/followers",
+            "precedence": "平台真实值或显式空",
+            "requires": "平台真实值或显式空"
+          }
+        ],
+        "entity_precedence": [
+          {
+            "entity": "MetricsSnapshot",
+            "key": "snapshot_id",
+            "precedence": "publication_ref + collected_at + 指标字段",
+            "requires": "publication_ref + collected_at + 指标字段"
+          },
+          {
+            "entity": "PublicationRef",
+            "key": "publication_id",
+            "precedence": "绑定 E1 发布事件",
+            "requires": "绑定 E1 发布事件"
+          },
+          {
+            "entity": "MetricField",
+            "key": "views/interactions/followers",
+            "precedence": "平台真实值或显式空",
+            "requires": "平台真实值或显式空"
+          }
+        ],
+        "aggregates": [
+          {
+            "name": "落地）",
+            "states": [
+              "contract_landed",
+              "human_accepted",
+              "indexed",
+              "msnap_planned",
+              "qa_pass",
+              "registry_landed",
+              "release_candidate",
+              "routing_landed"
+            ],
+            "transitions": [
+              {
+                "from": "msnap_planned",
+                "to": "contract_landed",
+                "guard": "metrics-snapshot.contract present"
+              },
+              {
+                "from": "contract_landed",
+                "to": "registry_landed",
+                "guard": "registry 含快照条目"
+              },
+              {
+                "from": "registry_landed",
+                "to": "routing_landed",
+                "guard": "creation-mode-map 快照引用"
+              },
+              {
+                "from": "routing_landed",
+                "to": "indexed",
+                "guard": "exec 脚本 + 无泄漏"
+              },
+              {
+                "from": "indexed",
+                "to": "qa_pass",
+                "guard": "all TC pass"
+              },
+              {
+                "from": "qa_pass",
+                "to": "release_candidate",
+                "guard": "evidence complete"
+              },
+              {
+                "from": "release_candidate",
+                "to": "human_accepted",
+                "guard": "human confirmed"
+              }
+            ]
+          }
+        ],
+        "illegal_transition_slots": [
+          {
+            "description": "msnap_planned → routing_landed（跳过契约/登记）",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "indexed → human_accepted（跳过 QA）",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "无 publication_ref 生成快照",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "编造指标/趋势",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "凭证入库",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "bridge 缺失仍“采集”",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "宣称海 closure",
+            "aggregate": "",
+            "source": "truth"
+          }
+        ],
+        "acceptance_criteria": [
+          {
+            "ac_id": "AC-MSNAP-001",
+            "description": "进入 `contract_landed`：`contracts/metrics-snapshot.contract.md` 定义 snapshot_id/publication_ref/指标字段/collected_at/来源证据 与 fail-closed"
+          },
+          {
+            "ac_id": "AC-MSNAP-002",
+            "description": "进入 `registry_landed`：`registry/metrics-adapters.yaml` 含 ≥2 个快照采集 bridge 条目"
+          },
+          {
+            "ac_id": "AC-MSNAP-003",
+            "description": "measured 守卫：无 publication_ref 不得生成快照（引用 E1 发布事件）"
+          },
+          {
+            "ac_id": "AC-MSNAP-004",
+            "description": "进入 `routing_landed`：creation-mode-map 快照/measured 引用 metrics-snapshot.contract"
+          },
+          {
+            "ac_id": "AC-MSNAP-005",
+            "description": "进入 `indexed`：`scripts/check_metrics_snapshot.sh` exec-layer 校验 PASS"
+          },
+          {
+            "ac_id": "AC-MSNAP-006",
+            "description": "空快照/不编造：缺数据用显式空快照，禁止猜测"
+          },
+          {
+            "ac_id": "AC-MSNAP-007",
+            "description": "凭证保护：平台凭证/密钥禁止入库"
+          },
+          {
+            "ac_id": "AC-MSNAP-008",
+            "description": "bridge fail-closed：统计工具缺失 → blocked + reason_code"
+          },
+          {
+            "ac_id": "AC-MSNAP-009",
+            "description": "证据要求：快照必须带 collected_at 与来源，缺证据不算采集"
+          },
+          {
+            "ac_id": "AC-MSNAP-010",
+            "description": "Non-goals：E3/E4、平台 API 全量显式排除；不得宣称海 closure"
+          }
+        ],
+        "bound_ac_ids": [
+          "AC-MSNAP-001",
+          "AC-MSNAP-002",
+          "AC-MSNAP-004",
+          "AC-MSNAP-005"
+        ],
+        "orphan_ac_ids": [
+          "AC-MSNAP-003",
+          "AC-MSNAP-007"
+        ],
+        "aggregates_missing_illegal_slots": [],
+        "raw_section_titles": [
+          "人话",
+          "User Intent",
+          "User Intent Snapshot",
+          "Intent Coverage Matrix",
+          "First principles（域）",
+          "用户旅程 / 故事",
+          "Domain Model",
+          "Domain FSM（E2 落地）",
+          "Illegal transitions",
+          "FSM 五元组",
+          "Alignment Surface",
+          "Deferral Ledger",
+          "Acceptance Criteria",
+          "Non-goals",
+          "Freeze readiness"
+        ]
+      },
+      "summary": {
+        "entity_count": 3,
+        "aggregate_count": 1,
+        "illegal_slot_count": 7,
+        "orphan_ac_count": 2,
+        "bound_ac_count": 4
+      }
+    },
+    "recommended_action": ""
+  },
+  "human_closure_contract": {
+    "required": false,
+    "research_path": "docs/beacon/v0.0.1/research/prism-metrics-snapshot-v1.md",
+    "research_exists": true,
+    "source_architecture_path": "docs/beacon/v0.0.1/source-architecture/index.md",
+    "source_architecture_exists": true,
+    "required_sections": [
+      "architecture",
+      "business_flow"
+    ],
+    "missing_sections": [
+      "architecture",
+      "business_flow"
+    ],
+    "diagram_types": [],
+    "complexity_signals": []
+  },
+  "requirement_closure_contract": {
+    "required": true,
+    "chain_order": [
+      "research",
+      "prd",
+      "user_story",
+      "test_case",
+      "requirement_clarity",
+      "freeze"
+    ],
+    "human_closure_required": false,
+    "paths": {
+      "research": "docs/beacon/v0.0.1/research/prism-metrics-snapshot-v1.md",
+      "prd": "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md"
+    },
+    "exists": {
+      "research": true,
+      "prd": true,
+      "user_story": true,
+      "test_case": true
+    },
+    "required_research_sections": [],
+    "missing_research_sections": [],
+    "ac_projection": {
+      "prd_ac_ids": [],
+      "user_story_ac_ids": [],
+      "test_case_ac_ids": [],
+      "upstream_ac_ids": [],
+      "missing_test_case_ac_ids": []
+    }
+  },
+  "version_projection_truth_contract": {
+    "required": false,
+    "supported": false,
+    "projection_types": [],
+    "research_path": "docs/beacon/v0.0.1/research/prism-metrics-snapshot-v1.md",
+    "research_exists": true,
+    "required_fields": [
+      "prd_refs",
+      "user_story_refs",
+      "test_case_refs",
+      "coverage_notes",
+      "out_of_scope_notes"
+    ],
+    "field_presence": {
+      "prd_refs": false,
+      "user_story_refs": false,
+      "test_case_refs": false,
+      "coverage_notes": false,
+      "out_of_scope_notes": false
+    },
+    "missing_fields": [],
+    "required_refs": {
+      "prd_refs": "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+      "user_story_refs": "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+      "test_case_refs": "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md"
+    },
+    "missing_ref_targets": [],
+    "ready": false
+  },
+  "support_write_topology_contract": {
+    "schema_version": "1.0",
+    "supported": true,
+    "status": "pass",
+    "blocked": false,
+    "reason_code": "",
+    "diagnostics": []
+  },
+  "required_artifacts": [],
+  "scanned_files": [
+    "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+    "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tasks.md",
+    "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/evidence.md",
+    "docs/beacon/v0.0.1/research/prism-metrics-snapshot-v1.md"
+  ]
+}
