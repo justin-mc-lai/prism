@@ -1,0 +1,1 @@
+rg -n "metrics-publication.contract" skills/_internal/orchestration/creation-mode-map.md

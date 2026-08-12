@@ -1,0 +1,1 @@
+rg -n "Illegal|illegal|宣称海" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md

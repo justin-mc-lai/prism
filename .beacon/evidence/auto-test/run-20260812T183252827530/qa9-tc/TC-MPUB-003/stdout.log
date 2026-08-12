@@ -1,0 +1,4 @@
+3:> 回流基座契约。指标是投影（FP-PRISM-006）；无发布记录不得进入 measured。
+21:拒绝：缺任一字段 → blocked + reason_code=publication_record_missing；不猜数据
+29:## 5. gate（measured 守卫）
+31:- 无 publication 记录不得进入 measured（Lake A FSM illegal：published→measured 无记录）

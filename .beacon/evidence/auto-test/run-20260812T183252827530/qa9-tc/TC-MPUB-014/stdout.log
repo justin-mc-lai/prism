@@ -1,0 +1,4 @@
+88:US-MPUB-001：D6 发布桥创建草稿并获 draft_id → 人工二次批准后平台返回 URL/publication_id →
+89:prism-release 按 `metrics-publication.contract` 写入发布事件 → E2 才能采指标。
+142:1. 发布事件契约（AC-MPUB-001）
+167:| AC-MPUB-001 | 进入 `contract_landed`：`contracts/metrics-publication.contract.md` 定义发布事件字段（publication_id/platform/url/published_at/artifact_ref/evidence）与 fail-closed |

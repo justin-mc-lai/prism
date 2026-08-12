@@ -1,0 +1,15 @@
+151:10. Non-goals / deferral（AC-MPUB-010）
+176:| AC-MPUB-010 | Non-goals：E2–E4、平台 API 全量、vendor sync-ai 显式排除；不得宣称海 closure |
+178:## Non-goals
+37:- 不能做：指标快照采集（E2）、复盘/圣经更新（E3）、学习记忆（E4）；不编造指标；不吞平台 API 凭证。
+52:delivery: sub-lakes E1..E4
+73:| INT-MP11 | sea | should | E2–E4 回流面 | deferred |
+89:prism-release 按 `metrics-publication.contract` 写入发布事件 → E2 才能采指标。
+157:| DL-MP01 | 指标快照采集 | accepted | E2 |
+158:| DL-MP02 | 战役复盘/圣经更新 | accepted | E3 |
+159:| DL-MP03 | 学习记忆 | accepted | E4 |
+176:| AC-MPUB-010 | Non-goals：E2–E4、平台 API 全量、vendor sync-ai 显式排除；不得宣称海 closure |
+180:- 不做指标快照采集（E2）、复盘/圣经更新（E3）、学习记忆（E4）
+126:- 宣称海 closure
+161:| DL-MP05 | 本子湖宣称海 closure | rejected | FP-PRISM-013 |
+176:| AC-MPUB-010 | Non-goals：E2–E4、平台 API 全量、vendor sync-ai 显式排除；不得宣称海 closure |

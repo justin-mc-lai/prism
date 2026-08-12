@@ -1,0 +1,4 @@
+21:拒绝：缺任一字段 → blocked + reason_code=publication_record_missing；不猜数据
+33:- 缺数据用显式空快照；不编造指标/趋势（禁止猜测）
+34:- 凭证保护：平台凭证/密钥/.env/secrets 禁止入库，走受管 secrets
+44:- 禁止自证通过: true

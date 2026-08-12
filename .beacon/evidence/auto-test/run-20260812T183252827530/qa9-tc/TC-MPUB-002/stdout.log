@@ -1,0 +1,2 @@
+9:  - name: analyze-data
+12:    bridge_command: "skill:analyze-data（源仓 skills/analyze-data）"

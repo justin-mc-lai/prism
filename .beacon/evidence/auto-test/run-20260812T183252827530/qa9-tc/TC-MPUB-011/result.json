@@ -1,0 +1,30 @@
+{
+  "layer": "contract",
+  "command": "rg -n \"publication_id|url|时间|缺证据\" contracts/metrics-publication.contract.md",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 2,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "1bc0d6072fc2b9208f03861618dcb6187a137408f3d2e73c772d708754119504",
+  "started_at": "2026-08-12T18:32:54.407742",
+  "ended_at": "2026-08-12T18:32:54.421019",
+  "junit_path": ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-011/junit.xml",
+  "junit_valid": true,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-011/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-011/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-011/stderr.log",
+    ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-011/junit.xml"
+  ],
+  "tc_id": "TC-MPUB-011",
+  "ac_id": "AC-MPUB-009"
+}

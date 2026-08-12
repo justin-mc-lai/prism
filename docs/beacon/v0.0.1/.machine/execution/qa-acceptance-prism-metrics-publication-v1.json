@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "artifact": "qa_acceptance_envelope",
+  "version": "v0.0.1",
+  "feature": "prism-metrics-publication-v1",
+  "feature_slug": "prism-metrics-publication-v1",
+  "revision_id": "R1",
+  "verdict": "passed",
+  "accepted_at": "2026-08-12T10:32:55.001959+00:00",
+  "accepted_by": "qa",
+  "run_id": "run-20260812T183252827530",
+  "transaction_id": "tx-qa-acceptance-prism-metrics-publication-v1-85946c79e777",
+  "source_hash": "sha256:85946c79e7771cab32274c779e2d2628de74bfedf2e453ebe7b462fd781b569d",
+  "projection_seq": 1,
+  "source_command": "beacon qa run \"prism-metrics-publication-v1\" --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-publication-v1 --version v0.0.1",
+  "requirement_refs": [
+    "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tests.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-metrics-publication-v1.revision.json"
+  ],
+  "test_case_refs": [],
+  "evidence_refs": [
+    ".beacon/auto-test-status.json",
+    ".beacon/qa/status.json",
+    "docs/beacon/v0.0.1/.machine/qa/prism-metrics-publication-v1.ac-test-matrix.json",
+    ".beacon/coverage-summary.json",
+    ".beacon/release-gate-report.json"
+  ],
+  "story_status": "implemented",
+  "revision_delivery_status": "implemented",
+  "required_ac_count": 0,
+  "required_test_count": 0,
+  "canonical_envelope_ref": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-metrics-publication-v1.json",
+  "markdown_ref": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-metrics-publication-v1.md",
+  "transaction_lineage": {
+    "current_transaction_id": "tx-qa-acceptance-prism-metrics-publication-v1-85946c79e777",
+    "projection_seq": 1,
+    "source_hash": "sha256:85946c79e7771cab32274c779e2d2628de74bfedf2e453ebe7b462fd781b569d",
+    "workflow_memory_ref": ".beacon/memory/workflow-lifecycle.json",
+    "memory_event_id": "",
+    "memory_entry_id": "44d8e6a9-2e44-4240-b025-b00485dbb7c3"
+  },
+  "sink_checksums": {
+    "machine": "sha256:4379514902b4398206f5f584388a520091314067a59df9816974ea8ae3eef232",
+    "human": "sha256:627447ce8f40a2c3fa3d6fccd34080b06c5d205cd478f2fc52e11ff8b0ba8eb2",
+    "runtime": "sha256:4351dfa5e7acdb6e269731c40bd8bd84f3b21c04731b468e1d0f58c3ca294b92"
+  },
+  "runtime_projection_ref": ".beacon/transactions/qa-acceptance-prism-metrics-publication-v1.json",
+  "transaction_status": "applied",
+  "failed_sinks": []
+}

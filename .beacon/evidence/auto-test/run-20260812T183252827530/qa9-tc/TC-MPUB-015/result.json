@@ -1,0 +1,30 @@
+{
+  "layer": "contract",
+  "command": "rg -n \"US-MPUB-002|publication_record_missing\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 1,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "938d2023a5f6a7b2ba464d68d8c02235d63081fb2935e4ba4fb7b6b5e259c0b9",
+  "started_at": "2026-08-12T18:32:54.813346",
+  "ended_at": "2026-08-12T18:32:54.826866",
+  "junit_path": ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-015/junit.xml",
+  "junit_valid": true,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-015/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-015/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-015/stderr.log",
+    ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-015/junit.xml"
+  ],
+  "tc_id": "TC-MPUB-015",
+  "ac_id": "AC-MPUB-003"
+}

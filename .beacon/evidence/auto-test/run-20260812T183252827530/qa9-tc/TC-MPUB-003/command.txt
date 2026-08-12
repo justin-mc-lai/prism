@@ -1,0 +1,1 @@
+rg -n "measured|publication_record|无 publication" contracts/metrics-publication.contract.md

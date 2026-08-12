@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "migration_transaction_id": "tx-memory-legacy-projection-7dd8d581351a",
+  "transaction_id": "tx-memory-legacy-projection-7dd8d581351a",
+  "compat_id": "memory-legacy-projection",
+  "source_files": [],
+  "imported_count": 0,
+  "skipped_count": 0,
+  "current_projection": "memory-v1",
+  "legacy_projection_written": false,
+  "compat_mode": false,
+  "created_at": "2026-08-12T10:32:55.003437+00:00"
+}

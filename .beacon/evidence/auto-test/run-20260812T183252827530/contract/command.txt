@@ -1,0 +1,1 @@
+test -f contracts/metrics-publication.contract.md && rg -n "publication_id|platform|url|published_at|artifact_ref" contracts/metrics-publication.contract.md

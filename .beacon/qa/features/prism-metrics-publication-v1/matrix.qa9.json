@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-metrics-publication-v1",
+  "feature_slug": "prism-metrics-publication-v1",
+  "version": "v0.0.1",
+  "generated_at": "2026-08-12T10:32:52.435032+00:00",
+  "execution_mode": "feature-aware",
+  "source_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-metrics-publication-v1.ac-test-matrix.json",
+  "story_scenario_map_path": ".beacon/qa/features/prism-metrics-publication-v1/story-scenario-map.json",
+  "reason_codes": [
+    "no_prior_feature_qa"
+  ],
+  "qa_types": [
+    "contract"
+  ],
+  "entries": [
+    {
+      "ac_id": "AC-MPUB-001",
+      "tc_id": "TC-MPUB-001",
+      "layer": "contract",
+      "command": "test -f contracts/metrics-publication.contract.md && rg -n \"publication_id|platform|url|published_at|artifact_ref\" contracts/metrics-publication.contract.md",
+      "assertion": "发布事件契约含核心字段",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-001/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-publication-v1/docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MPUB-002",
+      "tc_id": "TC-MPUB-002",
+      "layer": "contract",
+      "command": "test -f registry/metrics-adapters.yaml && rg -n \"analyze-data\" registry/metrics-adapters.yaml",
+      "assertion": "统计 bridge 登记存在",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-002/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-publication-v1/docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MPUB-003",
+      "tc_id": "TC-MPUB-003",
+      "layer": "contract",
+      "command": "rg -n \"measured|publication_record|无 publication\" contracts/metrics-publication.contract.md",
+      "assertion": "measured 守卫声明",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-003/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-publication-v1/docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MPUB-004",
+      "tc_id": "TC-MPUB-004",
+      "layer": "contract",
+      "command": "rg -n \"metrics-publication.contract\" skills/_internal/orchestration/creation-mode-map.md",
+      "assertion": "路由回流引用",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-004/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-publication-v1/docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MPUB-005",
+      "tc_id": "TC-MPUB-005",
+      "layer": "contract",
+      "command": "test -x scripts/check_metrics_publication.sh",
+      "assertion": "exec 脚本存在且可执行",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-005/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-publication-v1/docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MPUB-005",
+      "tc_id": "TC-MPUB-006",
+      "layer": "contract",
+      "command": "bash scripts/check_metrics_publication.sh",
+      "assertion": "exec-layer 校验脚本 PASS（合法路径）",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-006/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-publication-v1/docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MPUB-002",
+      "tc_id": "TC-MPUB-007",
+      "layer": "contract",
+      "command": "python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/metrics-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=3 else 1)\"",
+      "assertion": "≥3 个 bridge 条目",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-007/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-publication-v1/docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MPUB-006",
+      "tc_id": "TC-MPUB-008",
+      "layer": "contract",
+      "command": "rg -n \"空快照|禁止|不编造|猜\" contracts/metrics-publication.contract.md",
+      "assertion": "不编造指标声明",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-008/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-publication-v1/docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MPUB-007",
+      "tc_id": "TC-MPUB-009",
+      "layer": "contract",
+      "command": "rg -n \"凭证|密钥|secrets|禁止入库\" contracts/metrics-publication.contract.md",
+      "assertion": "凭证保护",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-009/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-publication-v1/docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MPUB-008",
+      "tc_id": "TC-MPUB-010",
+      "layer": "contract",
+      "command": "rg -n \"fail-closed|blocked|reason_code\" contracts/metrics-publication.contract.md",
+      "assertion": "bridge fail-closed",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-010/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-publication-v1/docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MPUB-009",
+      "tc_id": "TC-MPUB-011",
+      "layer": "contract",
+      "command": "rg -n \"publication_id|url|时间|缺证据\" contracts/metrics-publication.contract.md",
+      "assertion": "证据要求",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-011/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-publication-v1/docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MPUB-010",
+      "tc_id": "TC-MPUB-012",
+      "layer": "contract",
+      "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md && rg -n \"E2|E3|E4\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md",
+      "assertion": "分湖边界存在",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-012/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-publication-v1/docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MPUB-010",
+      "tc_id": "TC-MPUB-013",
+      "layer": "contract",
+      "command": "rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md",
+      "assertion": "illegal 转移覆盖（非法拒绝路径）",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-013/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-publication-v1/docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MPUB-001",
+      "tc_id": "TC-MPUB-014",
+      "layer": "contract",
+      "command": "rg -n \"US-MPUB-001|发布事件\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md",
+      "assertion": "回流旅程可追溯",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-014/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-publication-v1/docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MPUB-003",
+      "tc_id": "TC-MPUB-015",
+      "layer": "contract",
+      "command": "rg -n \"US-MPUB-002|publication_record_missing\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md",
+      "assertion": "无记录拒绝路径可追溯",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-015/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-publication-v1/docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    }
+  ]
+}

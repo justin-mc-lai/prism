@@ -1,0 +1,1 @@
+rg -n "publication_id|url|时间|缺证据" contracts/metrics-publication.contract.md
