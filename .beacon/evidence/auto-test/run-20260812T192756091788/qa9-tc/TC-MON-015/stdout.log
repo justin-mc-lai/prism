@@ -1,0 +1,8 @@
+33:风险内容变现前必须过合规门；不编造收入/合作；收款与合同敏感信息受管不入库。
+81:| FP-MON-003 | 广告/赞助必须披露标注（内容合规） |
+82:| FP-MON-004 | health/legal/finance 风险内容：变现前必须过合规门 |
+91:US-MON-002：风险内容变现被拒。health/legal/finance 未过合规门 → blocked，不承诺。
+100:| ComplianceGate | gate | 风险内容变现合规门 |
+123:- 风险内容未过合规门仍变现
+148:8. 风险合规门（AC-MON-008）
+171:| AC-MON-008 | 风险合规门：health/legal/finance 未过合规不得变现 |

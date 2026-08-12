@@ -1,0 +1,30 @@
+{
+  "layer": "contract",
+  "command": "rg -n \"health|legal|finance|合规\" contracts/monetization.contract.md",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 5,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "7d9d534c08f30694442c4add3d0806c97fdda7aa88e04f66e89238696c4c80ab",
+  "started_at": "2026-08-12T19:27:57.451973",
+  "ended_at": "2026-08-12T19:27:57.465952",
+  "junit_path": ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-010/junit.xml",
+  "junit_valid": true,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-010/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-010/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-010/stderr.log",
+    ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-010/junit.xml"
+  ],
+  "tc_id": "TC-MON-010",
+  "ac_id": "AC-MON-008"
+}

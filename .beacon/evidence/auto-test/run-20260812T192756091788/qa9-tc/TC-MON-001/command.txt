@@ -1,0 +1,1 @@
+test -f contracts/monetization.contract.md && rg -n "deal_id|type|terms|disclosure|evidence" contracts/monetization.contract.md

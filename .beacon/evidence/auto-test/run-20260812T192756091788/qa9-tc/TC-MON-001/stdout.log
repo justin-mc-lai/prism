@@ -1,0 +1,5 @@
+18:- deal_id + type（brand/ad/paid/goods）+ terms + disclosure + evidence
+20:拒绝：缺 evidence → blocked + reason_code=deal_evidence_missing；不编造收入/合作
+24:- 记录: `content/deals/{deal_id}.yaml`（批准后）
+25:- 证据: `.beacon/evidence/implement/prism-monetization-contracts-v1/AC-MON-001.json`
+30:- 披露义务：广告/赞助内容必须标注（disclosure note）

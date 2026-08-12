@@ -1,0 +1,8 @@
+9:  - name: deal-record
+12:    bridge_command: "tool:deal-record（content/deals/{deal_id}.yaml）"
+14:  - name: compliance-check
+17:    bridge_command: "tool:compliance-check（health/legal/finance 门）"
+19:  - name: disclosure-template
+22:    bridge_command: "tool:disclosure-template（标注生成）"
+27:  disclosure_mandatory: true
+28:  risk_content_compliance_gate: true

@@ -1,0 +1,1 @@
+rg -n "US-MON-002|合规" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md

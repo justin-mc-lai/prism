@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "artifact": "qa_acceptance_runtime_projection",
+  "version": "v0.0.1",
+  "feature": "prism-monetization-contracts-v1",
+  "feature_slug": "prism-monetization-contracts-v1",
+  "revision_id": "R1",
+  "verdict": "passed",
+  "transaction_id": "tx-qa-acceptance-prism-monetization-contracts-v1-636c0862209e",
+  "source_hash": "sha256:636c0862209eefdf7dbb87d8e467fbcf982273b53177736907f24f0977a4cc22",
+  "projection_seq": 1,
+  "committed_at": "2026-08-12T11:27:58.267219+00:00",
+  "write_status": "applied",
+  "failed_sinks": [],
+  "machine_ref": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-monetization-contracts-v1.json",
+  "markdown_ref": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-monetization-contracts-v1.md",
+  "runtime_projection_ref": ".beacon/transactions/qa-acceptance-prism-monetization-contracts-v1.json",
+  "sink_checksums": {
+    "machine": "sha256:007ce91db4ebec93567351003923287c7fc3df4e95428a9520f838a7469dc454",
+    "human": "sha256:e8dbf4240823e5cb9fe80dec004b97c561488e22071850ba5aa915b2f6ba3230",
+    "runtime": "sha256:5a6cb5f4272937a68fd0b35c64404af39169208ccb97381a20feef502a0c465f"
+  }
+}

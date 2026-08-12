@@ -1,0 +1,1 @@
+rg -n "不编造|缺证据|blocked" contracts/monetization.contract.md

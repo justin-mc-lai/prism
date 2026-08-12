@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-monetization-contracts-v1",
+  "feature_slug": "prism-monetization-contracts-v1",
+  "version": "v0.0.1",
+  "generated_at": "2026-08-12T11:27:55.615096+00:00",
+  "execution_mode": "feature-aware",
+  "source_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-monetization-contracts-v1.ac-test-matrix.json",
+  "story_scenario_map_path": ".beacon/qa/features/prism-monetization-contracts-v1/story-scenario-map.json",
+  "reason_codes": [
+    "no_prior_feature_qa"
+  ],
+  "qa_types": [
+    "contract"
+  ],
+  "entries": [
+    {
+      "ac_id": "AC-MON-001",
+      "tc_id": "TC-MON-001",
+      "layer": "contract",
+      "command": "test -f contracts/monetization.contract.md && rg -n \"deal_id|type|terms|disclosure|evidence\" contracts/monetization.contract.md",
+      "assertion": "变现契约含核心字段",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-001/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-monetization-contracts-v1/docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MON-002",
+      "tc_id": "TC-MON-002",
+      "layer": "contract",
+      "command": "test -f registry/monetization-adapters.yaml && rg -n \"deal-record|compliance|disclosure\" registry/monetization-adapters.yaml",
+      "assertion": "变现 bridge 登记",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-002/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-monetization-contracts-v1/docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MON-003",
+      "tc_id": "TC-MON-003",
+      "layer": "contract",
+      "command": "rg -n \"人工|批准|approval\" contracts/monetization.contract.md",
+      "assertion": "人工批准",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-003/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-monetization-contracts-v1/docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MON-004",
+      "tc_id": "TC-MON-004",
+      "layer": "contract",
+      "command": "rg -n \"monetization.contract\" skills/_internal/orchestration/creation-mode-map.md",
+      "assertion": "路由变现引用",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-004/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-monetization-contracts-v1/docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MON-005",
+      "tc_id": "TC-MON-005",
+      "layer": "contract",
+      "command": "test -x scripts/check_monetization.sh",
+      "assertion": "exec 脚本存在且可执行",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-005/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-monetization-contracts-v1/docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MON-005",
+      "tc_id": "TC-MON-006",
+      "layer": "contract",
+      "command": "bash scripts/check_monetization.sh",
+      "assertion": "exec-layer 校验脚本 PASS（合法路径）",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-006/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-monetization-contracts-v1/docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MON-002",
+      "tc_id": "TC-MON-007",
+      "layer": "contract",
+      "command": "python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/monetization-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=3 else 1)\"",
+      "assertion": "≥3 个变现 bridge",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-007/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-monetization-contracts-v1/docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MON-006",
+      "tc_id": "TC-MON-008",
+      "layer": "contract",
+      "command": "rg -n \"不编造|缺证据|blocked\" contracts/monetization.contract.md",
+      "assertion": "不编造收入",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-008/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-monetization-contracts-v1/docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MON-007",
+      "tc_id": "TC-MON-009",
+      "layer": "contract",
+      "command": "rg -n \"披露|广告|赞助|标注\" contracts/monetization.contract.md",
+      "assertion": "披露义务",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-009/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-monetization-contracts-v1/docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MON-008",
+      "tc_id": "TC-MON-010",
+      "layer": "contract",
+      "command": "rg -n \"health|legal|finance|合规\" contracts/monetization.contract.md",
+      "assertion": "风险合规门",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-010/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-monetization-contracts-v1/docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MON-009",
+      "tc_id": "TC-MON-011",
+      "layer": "contract",
+      "command": "rg -n \"收款|敏感|secrets|禁止入库\" contracts/monetization.contract.md",
+      "assertion": "敏感信息保护",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-011/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-monetization-contracts-v1/docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MON-010",
+      "tc_id": "TC-MON-012",
+      "layer": "contract",
+      "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md && rg -n \"F2\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md",
+      "assertion": "分湖边界存在",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-012/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-monetization-contracts-v1/docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MON-010",
+      "tc_id": "TC-MON-013",
+      "layer": "contract",
+      "command": "rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md",
+      "assertion": "illegal 转移覆盖（非法拒绝路径）",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-013/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-monetization-contracts-v1/docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MON-001",
+      "tc_id": "TC-MON-014",
+      "layer": "contract",
+      "command": "rg -n \"US-MON-001|变现\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md",
+      "assertion": "变现旅程可追溯",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-014/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-monetization-contracts-v1/docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MON-008",
+      "tc_id": "TC-MON-015",
+      "layer": "contract",
+      "command": "rg -n \"US-MON-002|合规\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md",
+      "assertion": "合规拒绝路径可追溯",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-015/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-monetization-contracts-v1/docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    }
+  ]
+}

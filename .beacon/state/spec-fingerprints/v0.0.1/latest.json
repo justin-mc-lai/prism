@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "run_id": "run-20260812T184654601157",
+  "run_id": "run-20260812T192756091788",
   "version": "v0.0.1",
-  "generated_at": "2026-08-12T10:46:56.635009+00:00",
+  "generated_at": "2026-08-12T11:27:58.241977+00:00",
   "layers": {
     "user_story": {
-      "hash": "a3909f26910e6b6db3e759a37880741d89a325655c32259f99ea0294dec1ddb9",
-      "count": 12,
+      "hash": "f58942771e20b420f6c140e5f61d885ac20b67d474e99d93b0bf4cfba0015e08",
+      "count": 13,
       "files": [
         {
           "path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
@@ -47,6 +47,10 @@
         {
           "path": "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
           "sha256": "613078e5a6c6e5372c1d07d782203cc421be026508db5025ff67649792a36eb8"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md",
+          "sha256": "7915bb9d008296d10b62b4fa283194dcadd72db07fb457bc6cbf0a9638fc89a2"
         },
         {
           "path": "docs/beacon/v0.0.1/features/prism-publish-bridge-v1/truth.md",
@@ -59,8 +63,8 @@
       ]
     },
     "prd": {
-      "hash": "a3909f26910e6b6db3e759a37880741d89a325655c32259f99ea0294dec1ddb9",
-      "count": 12,
+      "hash": "f58942771e20b420f6c140e5f61d885ac20b67d474e99d93b0bf4cfba0015e08",
+      "count": 13,
       "files": [
         {
           "path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
@@ -103,6 +107,10 @@
           "sha256": "613078e5a6c6e5372c1d07d782203cc421be026508db5025ff67649792a36eb8"
         },
         {
+          "path": "docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md",
+          "sha256": "7915bb9d008296d10b62b4fa283194dcadd72db07fb457bc6cbf0a9638fc89a2"
+        },
+        {
           "path": "docs/beacon/v0.0.1/features/prism-publish-bridge-v1/truth.md",
           "sha256": "5935c073f14bded15224a8eae64f1545fe8cc7e03c4097295f84f8ab71bda480"
         },
@@ -113,8 +121,8 @@
       ]
     },
     "test_case": {
-      "hash": "6bed1ed44a0b92e8e377c3330433b05d0d4d2d243916e598fdbfb4b14cecb269",
-      "count": 24,
+      "hash": "229fa615c6a109b3bb0befbb4db982de343ad12dc1ea21172afc639363df7faa",
+      "count": 26,
       "files": [
         {
           "path": "docs/beacon/v0.0.1/.machine/qa/prism-campaign-schema-v1.ac-test-matrix.json",
@@ -155,6 +163,10 @@
         {
           "path": "docs/beacon/v0.0.1/.machine/qa/prism-metrics-snapshot-v1.ac-test-matrix.json",
           "sha256": "919777d05ff2f45225fcb254ef70a9fce2205efbd5de30baa416d568a6dc8e6e"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/.machine/qa/prism-monetization-contracts-v1.ac-test-matrix.json",
+          "sha256": "e749afc6d8984e42d1c8c9fafcd5850a46e1c1d231fdae583a1b0573ee2c49e6"
         },
         {
           "path": "docs/beacon/v0.0.1/.machine/qa/prism-publish-bridge-v1.ac-test-matrix.json",
@@ -205,6 +217,10 @@
           "sha256": "c2257c22c1c67494d7753e135944be4ca15352a4e9f65b0835a0a970963bf89c"
         },
         {
+          "path": "docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/tests.md",
+          "sha256": "203e7e8fe5fef1faf6e03f4b1d93a230c7ea3d1098aa76f7e73d417d50d4be09"
+        },
+        {
           "path": "docs/beacon/v0.0.1/features/prism-publish-bridge-v1/tests.md",
           "sha256": "dae945dc70db82922403787fe68fcff3190737f1a0a6b5e856e88222ccfdbf6c"
         },
@@ -215,5 +231,5 @@
       ]
     }
   },
-  "fingerprint_hash": "3eff6438c67b348d8c1704570b82bb83d5040daa6bbc113e0dd2a0ae545baa4c"
+  "fingerprint_hash": "7e759e4d2b0e80bf569a72a594af01f87e66fbaf74c526911c782101decc3a58"
 }

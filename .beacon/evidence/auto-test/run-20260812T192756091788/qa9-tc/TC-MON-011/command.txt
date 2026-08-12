@@ -1,0 +1,1 @@
+rg -n "收款|敏感|secrets|禁止入库" contracts/monetization.contract.md

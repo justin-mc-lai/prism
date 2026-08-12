@@ -1,0 +1,12 @@
+150:10. Non-goals / deferral（AC-MON-010）
+173:| AC-MON-010 | Non-goals：改编契约、平台支付 API 显式排除；不得宣称海 closure |
+175:## Non-goals
+37:- 不能做：改编契约（F2）；平台支付 API；自动承诺合作；自动公开。
+52:delivery: sub-lakes F1..F2
+73:| INT-MO11 | sea | optional | F2 改编契约 | deferred |
+156:| DL-MO01 | 改编契约 | accepted | F2 |
+177:- 不做改编契约（F2）
+180:- 不把 F1 宣称为变现闭环完成（F2 未做）
+125:- 宣称海 closure
+158:| DL-MO03 | 本子湖宣称海 closure | rejected | FP-PRISM-013 |
+173:| AC-MON-010 | Non-goals：改编契约、平台支付 API 显式排除；不得宣称海 closure |

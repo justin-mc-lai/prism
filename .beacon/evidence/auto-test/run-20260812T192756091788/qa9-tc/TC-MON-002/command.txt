@@ -1,0 +1,1 @@
+test -f registry/monetization-adapters.yaml && rg -n "deal-record|compliance|disclosure" registry/monetization-adapters.yaml
