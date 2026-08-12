@@ -10,11 +10,11 @@
 | 创作类型 | plan | truth | design | implement | qa | release |
 | --- | --- | --- | --- | --- | --- | --- |
 | blog 深度长文 | intel-radar / 角度 | MASTER + 来源核对 | selfmedia-director treatment | form-blog.contract（writing.contract 四段式）+ bridge humanizer 族 | anti-slop-gate + 事实核对 | 人工批准 → 文章草稿 |
-| 贴图包 article-paper | 选题/节点 | MASTER + 核对 | director + shot list（visual_carrier） | writing.contract + render_wechat_article_pages | anti-slop-gate + OCR + contract-check | publish-sync-ai --media image |
-| 贴图包 短卡 | 热点雷达 | 快照 | director（可选） | writing.contract（倒金字塔）+ render_wechat_html_cards / image_cards | anti-slop-gate + OCR + 合同 | publish-sync-ai |
+| 贴图包 article-paper | 选题/节点 | MASTER + 核对 | director + shot list（visual_carrier） | form-image-post.contract + render_wechat_article_pages | anti-slop-gate + OCR + contract-check | publish-sync-ai --media image |
+| 贴图包 短卡 | 热点雷达 | 快照 | director（可选） | form-image-post.contract（倒金字塔）+ render_wechat_html_cards / image_cards | anti-slop-gate + OCR + 合同 | publish-sync-ai |
 | vlog 口播 | 话题/受众 | 脚本事实清单 | ra-video-production-director | writing.contract 口播稿 + TTS/分镜/剪辑 | anti-slop-gate + 视频 QA | 视频草稿 |
 | X thread | 选题 | 事实 | director（可选） | form-thread.contract（writing.contract 倒金字塔）+ bridge writing-agent | anti-slop-gate | sidepilot |
-| 小红书图文 | 选题 | 事实 | director + 版式 | writing.contract emotional-essay + xhs-article-to-images | anti-slop-gate + OCR | xhs-content-ops |
+| 小红书图文 | 选题 | 事实 | director + 版式 | form-xhs.contract（writing.contract emotional-essay）+ bridge xhs-article-to-images | anti-slop-gate + OCR | xhs-content-ops |
 | 节气养生长跑题材（jieqi-yangsheng） | 节气排期表 + 俗语/食材/引文库 | MASTER + 古籍原文逐字核对 + lunar-python 日历核算 | selfmedia-director 节气模板（8 卡）+ shot list | writing.contract + 文生图古典底图 + render_wechat_html_cards | anti-slop-gate + 受众复读 + 古籍/日历核对 + OCR + 合同 | 公众号贴图草稿；后续按平台矩阵派生文章/短视频 |
 
 ## mode 契约模板（每个产物头部）
