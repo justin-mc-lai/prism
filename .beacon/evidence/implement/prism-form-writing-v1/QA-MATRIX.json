@@ -1,0 +1,16 @@
+{"feature": "prism-form-writing-v1", "scenarios_total": 15, "scenarios_pass": 15, "ac_total": 10, "ac_pass": 10, "run_id": "run-20260812T004500Z", "surfaces_gate": "pass", "matrix": [
+{"tc": "TC-WRITE-001", "ac": "AC-WRITE-001", "result": "pass"},
+{"tc": "TC-WRITE-002", "ac": "AC-WRITE-002", "result": "pass"},
+{"tc": "TC-WRITE-003", "ac": "AC-WRITE-003", "result": "pass"},
+{"tc": "TC-WRITE-004", "ac": "AC-WRITE-004", "result": "pass"},
+{"tc": "TC-WRITE-005", "ac": "AC-WRITE-005", "result": "pass"},
+{"tc": "TC-WRITE-006", "ac": "AC-WRITE-005", "result": "pass"},
+{"tc": "TC-WRITE-007", "ac": "AC-WRITE-003", "result": "pass"},
+{"tc": "TC-WRITE-008", "ac": "AC-WRITE-006", "result": "pass"},
+{"tc": "TC-WRITE-009", "ac": "AC-WRITE-007", "result": "pass"},
+{"tc": "TC-WRITE-010", "ac": "AC-WRITE-008", "result": "pass"},
+{"tc": "TC-WRITE-011", "ac": "AC-WRITE-009", "result": "pass"},
+{"tc": "TC-WRITE-012", "ac": "AC-WRITE-010", "result": "pass"},
+{"tc": "TC-WRITE-013", "ac": "AC-WRITE-010", "result": "pass"},
+{"tc": "TC-WRITE-014", "ac": "AC-WRITE-001", "result": "pass"},
+{"tc": "TC-WRITE-015", "ac": "AC-WRITE-002", "result": "pass"}]}
