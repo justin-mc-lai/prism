@@ -1,0 +1,1 @@
+test -f contracts/form-blog.contract.md && rg -n "四段式|母稿|director|humanized.md" contracts/form-blog.contract.md && rg -n "证据|evidence" contracts/form-blog.contract.md

@@ -1,0 +1,1 @@
+test -f registry/form-registry.yaml && rg -n "blog" registry/form-registry.yaml && rg -n "thread" registry/form-registry.yaml && rg -n "form-blog.contract|form-thread.contract" registry/form-registry.yaml

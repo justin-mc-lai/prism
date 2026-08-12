@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite name="contract" tests="7" failures="0" errors="0" skipped="0">
+  <properties><property name="command" value="rg -n "canon|fast_lane_skip" contracts/form-thread.contract.md &amp;&amp; rg -n "illegal|禁止" contracts/form-thread.contract.md" /></properties>
+    <testcase classname="contract" name="structured_cli_assertions-001" />
+    <testcase classname="contract" name="structured_cli_assertions-002" />
+    <testcase classname="contract" name="structured_cli_assertions-003" />
+    <testcase classname="contract" name="structured_cli_assertions-004" />
+    <testcase classname="contract" name="structured_cli_assertions-005" />
+    <testcase classname="contract" name="structured_cli_assertions-006" />
+    <testcase classname="contract" name="structured_cli_assertions-007" />
+</testsuite>

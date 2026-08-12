@@ -1,0 +1,34 @@
+2:slug: prism-form-blog-thread-v1
+15:  prd: docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md
+16:  user_story: docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md
+17:  test_case: docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/tests.md
+24:    source_ref: "selfmedia-writing 四段式 / US-PRISM-001 / US-PRISM-005"
+27:# Requirement Truth: prism-form-blog-thread-v1（v0.0.1 · Lake D2）
+32:blog 深度长文（四段式）和 X thread（倒金字塔 + 快道）。每个形态登记进 form registry，
+36:- 能做：`registry/form-registry.yaml`（blog/thread 注册）；`contracts/form-blog.contract.md`；
+37:  `contracts/form-thread.contract.md`；creation-mode-map 路由引用；exec 校验脚本。
+44:继续 Lake D：先落 blog + thread 两个最轻文本形态，验证“form 注册 + 生产者契约 + bridge”的闭环。
+50:this_lake: Lake D2（blog/thread forms）
+56:feature: prism-form-blog-thread-v1
+83:| FP-FORM-003 | 无冻结母稿（或快道事实快照）不得产出 |
+84:| FP-FORM-004 | lane=canon 禁用 fast_lane_skip；快道必须显式标注 |
+94:US-FORM-002（= US-PRISM-005）：快道 thread。用户只调 prism-goal；lane=fast；
+95:intel/master/director 以 `fast_lane_skip` 标注跳过 → produce 按 `form-thread.contract`
+106:| ThreadFormContract | form-thread | 倒金字塔；快道/标准道 |
+107:| RouteEntry | form | creation-mode-map 中 blog/thread 行 |
+111:状态：blog_thread_planned → forms_registered → blog_contract_landed → thread_contract_landed → routing_landed → indexed → qa_pass → release_candidate → human_accepted
+115:| forms_registered | blog_thread_planned | `registry/form-registry.yaml` 含 blog+thread |
+117:| thread_contract_landed | blog_contract_landed | `contracts/form-thread.contract.md` present |
+118:| routing_landed | thread_contract_landed | creation-mode-map 引用 form contracts |
+126:- blog_thread_planned → routing_landed（跳过注册与契约）
+137:| blog_thread_planned | register_forms | blog+thread in registry | forms_registered | write form-registry.yaml |
+139:| blog_contract_landed | land_thread_contract | thread contract present | thread_contract_landed | write form-thread.contract |
+140:| thread_contract_landed | wire_routing | route refs present | routing_landed | update creation-mode-map |
+148:1. form registry 注册 blog/thread（AC-FORM-001）
+150:3. thread producer 契约（AC-FORM-003）
+154:7. 快道/canon 门禁（AC-FORM-007）
+175:| AC-FORM-001 | 进入 `forms_registered`：`registry/form-registry.yaml` 登记 blog 与 thread，各含 contract 引用、lane 与生产链 |
+177:| AC-FORM-003 | 进入 `thread_contract_landed`：`contracts/form-thread.contract.md` 定义倒金字塔结构、fast_lane_skip 标注、canon 禁用快道、bridge writing-agent |
+178:| AC-FORM-004 | 进入 `routing_landed`：creation-mode-map 的 blog/thread 行引用 form-blog.contract / form-thread.contract |
+179:| AC-FORM-005 | 进入 `indexed`：`scripts/check_blog_thread_forms.sh` exec-layer 校验 PASS |
+181:| AC-FORM-007 | 快道门禁：thread 契约声明 lane=canon 禁用 fast_lane_skip；快道必须显式标注 |

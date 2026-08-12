@@ -1,0 +1,8 @@
+14:- 能决定：结构选型（四段式）、文笔执行、bridge 选择
+15:- 不能决定：母稿事实、QA 判定、公开发布
+19:- 冻结母稿引用（MASTER + meta.yaml）
+20:- director treatment（presentation map / 角度）
+23:拒绝：无母稿 / 无 treatment / bridge 缺失 → blocked + reason_code
+27:- 成稿: `content/presentations/{vertical}/{slug}/blog-{angle}/humanized.md`
+31:## 5. gate（四段式结构清单）
+28:- 证据: `.beacon/evidence/implement/prism-form-blog-thread-v1/AC-FORM-002.json`

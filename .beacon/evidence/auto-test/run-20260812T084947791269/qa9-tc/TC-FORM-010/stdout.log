@@ -1,0 +1,4 @@
+contracts/form-thread.contract.md:10:- bridge: writing-agent（缺失 → blocked）
+contracts/form-thread.contract.md:22:拒绝：无事实快照/母稿；lane=canon 却要求 fast_lane_skip → blocked（illegal）
+contracts/form-blog.contract.md:10:- bridge: selfmedia-writing / humanizer-zh / selfmedia-humanize（缺一即 blocked）
+contracts/form-blog.contract.md:23:拒绝：无母稿 / 无 treatment / bridge 缺失 → blocked + reason_code

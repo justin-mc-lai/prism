@@ -1,0 +1,1 @@
+rg -n "fail-closed|blocked|reason_code" contracts/form-blog.contract.md contracts/form-thread.contract.md

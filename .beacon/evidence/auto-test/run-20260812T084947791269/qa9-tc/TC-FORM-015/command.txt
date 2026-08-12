@@ -1,0 +1,1 @@
+rg -n "US-PRISM-005|thread|快道" docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md

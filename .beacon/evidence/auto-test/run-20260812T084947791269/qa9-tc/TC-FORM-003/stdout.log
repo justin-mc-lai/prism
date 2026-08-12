@@ -1,0 +1,7 @@
+9:- lane: fast|standard（fast 需显式 `fast_lane_skip` 标注；canon 禁用快道）
+10:- bridge: writing-agent（缺失 → blocked）
+14:- 能决定：倒金字塔结构、节奏、bridge 选择
+19:- 快道: 事实快照（选题 + 关键事实/引用）即可；intel/master/director 以 `fast_lane_skip` 标注跳过
+22:拒绝：无事实快照/母稿；lane=canon 却要求 fast_lane_skip → blocked（illegal）
+28:- 头部: form_id + lane + fast_lane_skip（若快道）
+30:## 5. gate（倒金字塔）

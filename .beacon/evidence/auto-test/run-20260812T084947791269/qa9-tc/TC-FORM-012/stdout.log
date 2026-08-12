@@ -1,0 +1,15 @@
+157:10. Non-goals / deferral（AC-FORM-010）
+184:| AC-FORM-010 | Non-goals：D3–D6 形态、vendor_pin、metrics、平台 API 显式排除；不得宣称海 closure |
+186:## Non-goals
+38:- 不能做：贴图/xhs（D3）、novel（D4）、comic/vlog/book_video（D5）、发布桥（D6）；
+54:delivery: sub-lakes D1..D6
+75:| INT-F11 | sea | must | D3–D6 其余形态 | deferred |
+163:| DL-F01 | 贴图/xhs 形态本体 | accepted | D3 |
+164:| DL-F02 | novel 形态本体 | accepted | D4 |
+165:| DL-F03 | comic/vlog/book_video 本体 | accepted | D5 |
+166:| DL-F04 | publish/schedule 桥 | accepted | D6 |
+184:| AC-FORM-010 | Non-goals：D3–D6 形态、vendor_pin、metrics、平台 API 显式排除；不得宣称海 closure |
+188:- 不实现贴图/xhs（D3）、novel（D4）、comic/vlog/book_video（D5）、发布桥（D6）
+86:| FP-FORM-006 | 继承 FP-PRISM-002/004/013：母稿权威；不自证；不得宣称海 closure |
+169:| DL-F07 | 本子湖宣称海 closure | rejected | FP-PRISM-013 |
+184:| AC-FORM-010 | Non-goals：D3–D6 形态、vendor_pin、metrics、平台 API 显式排除；不得宣称海 closure |

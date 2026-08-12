@@ -1,0 +1,29 @@
+{
+  "layer": "contract",
+  "command": "test -f skills/prism-qa/references/anti-slop-gate.md && rg -n \"证据|原文行\" skills/prism-qa/references/anti-slop-gate.md",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 0,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "0d7b2bcb085cc65a3840fa7e7076f8d1a38f86946f762708d7299a347d7fc243",
+  "started_at": "2026-08-12T08:49:49.155019",
+  "ended_at": "2026-08-12T08:49:49.169094",
+  "junit_path": "",
+  "junit_valid": false,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-011/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-011/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-011/stderr.log"
+  ],
+  "tc_id": "TC-FORM-011",
+  "ac_id": "AC-FORM-009"
+}

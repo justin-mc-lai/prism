@@ -1,0 +1,29 @@
+2:slug: prism-form-blog-thread-v1
+15:  prd: docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md
+16:  user_story: docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md
+17:  test_case: docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/tests.md
+24:    source_ref: "selfmedia-writing 四段式 / US-PRISM-001 / US-PRISM-005"
+27:# Requirement Truth: prism-form-blog-thread-v1（v0.0.1 · Lake D2）
+32:blog 深度长文（四段式）和 X thread（倒金字塔 + 快道）。每个形态登记进 form registry，
+36:- 能做：`registry/form-registry.yaml`（blog/thread 注册）；`contracts/form-blog.contract.md`；
+44:继续 Lake D：先落 blog + thread 两个最轻文本形态，验证“form 注册 + 生产者契约 + bridge”的闭环。
+50:this_lake: Lake D2（blog/thread forms）
+56:feature: prism-form-blog-thread-v1
+90:US-FORM-001（= US-PRISM-001）：用户要一篇 blog。intel 定角度 → master 冻结 FactMaster →
+91:director 出 treatment → prism-produce 按 `form-blog.contract`（四段式）成稿 →
+105:| BlogFormContract | form-blog | 四段式；标准道 |
+107:| RouteEntry | form | creation-mode-map 中 blog/thread 行 |
+111:状态：blog_thread_planned → forms_registered → blog_contract_landed → thread_contract_landed → routing_landed → indexed → qa_pass → release_candidate → human_accepted
+115:| forms_registered | blog_thread_planned | `registry/form-registry.yaml` 含 blog+thread |
+116:| blog_contract_landed | forms_registered | `contracts/form-blog.contract.md` present |
+117:| thread_contract_landed | blog_contract_landed | `contracts/form-thread.contract.md` present |
+126:- blog_thread_planned → routing_landed（跳过注册与契约）
+137:| blog_thread_planned | register_forms | blog+thread in registry | forms_registered | write form-registry.yaml |
+138:| forms_registered | land_blog_contract | blog contract present | blog_contract_landed | write form-blog.contract |
+139:| blog_contract_landed | land_thread_contract | thread contract present | thread_contract_landed | write form-thread.contract |
+148:1. form registry 注册 blog/thread（AC-FORM-001）
+149:2. blog producer 契约（AC-FORM-002）
+175:| AC-FORM-001 | 进入 `forms_registered`：`registry/form-registry.yaml` 登记 blog 与 thread，各含 contract 引用、lane 与生产链 |
+176:| AC-FORM-002 | 进入 `blog_contract_landed`：`contracts/form-blog.contract.md` 定义输入（冻结母稿 + director treatment）、四段式结构、输出路径（content/presentations/…/humanized.md）、证据与 fail-closed |
+178:| AC-FORM-004 | 进入 `routing_landed`：creation-mode-map 的 blog/thread 行引用 form-blog.contract / form-thread.contract |
+179:| AC-FORM-005 | 进入 `indexed`：`scripts/check_blog_thread_forms.sh` exec-layer 校验 PASS |

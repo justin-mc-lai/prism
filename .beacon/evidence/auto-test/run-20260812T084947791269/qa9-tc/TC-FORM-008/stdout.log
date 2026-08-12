@@ -1,0 +1,12 @@
+21:    source_ref: "Lake A FP-PRISM-007 新增形态只改 registry + form contract + 路由表"
+32:blog 深度长文（四段式）和 X thread（倒金字塔 + 快道）。每个形态登记进 form registry，
+36:- 能做：`registry/form-registry.yaml`（blog/thread 注册）；`contracts/form-blog.contract.md`；
+81:| FP-FORM-001 | 新增形态只改 registry + form contract + 路由表（FP-PRISM-007），不动主链与导演骨架 |
+98:US-FORM-003：维护者加新形态。只加 registry 条目 + form contract + 路由行；主链不动。
+115:| forms_registered | blog_thread_planned | `registry/form-registry.yaml` 含 blog+thread |
+118:| routing_landed | thread_contract_landed | creation-mode-map 引用 form contracts |
+137:| blog_thread_planned | register_forms | blog+thread in registry | forms_registered | write form-registry.yaml |
+148:1. form registry 注册 blog/thread（AC-FORM-001）
+153:6. 形态扩展只动 registry+contract+routing（AC-FORM-006）
+175:| AC-FORM-001 | 进入 `forms_registered`：`registry/form-registry.yaml` 登记 blog 与 thread，各含 contract 引用、lane 与生产链 |
+180:| AC-FORM-006 | 形态扩展规则声明：新增形态只改 registry + form contract + 路由表，不改主链 |

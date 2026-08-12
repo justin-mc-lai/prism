@@ -1,0 +1,1 @@
+test -f contracts/form-thread.contract.md && rg -n "倒金字塔|fast_lane_skip|canon|writing-agent" contracts/form-thread.contract.md

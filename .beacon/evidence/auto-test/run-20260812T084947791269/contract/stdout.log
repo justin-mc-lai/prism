@@ -1,0 +1,8 @@
+5:feature: prism-form-blog-thread-v1
+11:  - form: blog
+12:    contract: contracts/form-blog.contract.md
+5:feature: prism-form-blog-thread-v1
+17:  - form: thread
+18:    contract: contracts/form-thread.contract.md
+12:    contract: contracts/form-blog.contract.md
+18:    contract: contracts/form-thread.contract.md

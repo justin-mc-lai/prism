@@ -1,0 +1,1 @@
+rg -n "Non-goals" docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md && rg -n "D3|D4|D5|D6" docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md && rg -n "海 closure" docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md

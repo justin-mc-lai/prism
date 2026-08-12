@@ -1,0 +1,29 @@
+{
+  "layer": "contract",
+  "command": "test -f registry/form-registry.yaml && rg -n \"blog\" registry/form-registry.yaml && rg -n \"thread\" registry/form-registry.yaml && rg -n \"form-blog.contract|form-thread.contract\" registry/form-registry.yaml",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 0,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "3240e4f9e4ef418f30a1e6aaea019c5c8e62da17de64d4a27d03e9ec8c1972c0",
+  "started_at": "2026-08-12T08:49:47.976150",
+  "ended_at": "2026-08-12T08:49:48.001917",
+  "junit_path": "",
+  "junit_valid": false,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-001/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-001/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-001/stderr.log"
+  ],
+  "tc_id": "TC-FORM-001",
+  "ac_id": "AC-FORM-001"
+}

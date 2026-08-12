@@ -1,0 +1,1 @@
+rg -n "canon|fast_lane_skip" contracts/form-thread.contract.md && rg -n "illegal|禁止" contracts/form-thread.contract.md
