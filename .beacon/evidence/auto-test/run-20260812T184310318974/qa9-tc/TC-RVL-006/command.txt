@@ -1,0 +1,1 @@
+bash scripts/check_review_loop.sh

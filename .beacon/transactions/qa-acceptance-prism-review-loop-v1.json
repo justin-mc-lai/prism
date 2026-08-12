@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "artifact": "qa_acceptance_runtime_projection",
+  "version": "v0.0.1",
+  "feature": "prism-review-loop-v1",
+  "feature_slug": "prism-review-loop-v1",
+  "revision_id": "R1",
+  "verdict": "passed",
+  "transaction_id": "tx-qa-acceptance-prism-review-loop-v1-eaee9d82fb76",
+  "source_hash": "sha256:eaee9d82fb76f818bc2d0705204f2748d731a63dd089fd3d8a459d3dcfb82b98",
+  "projection_seq": 1,
+  "committed_at": "2026-08-12T10:43:12.265272+00:00",
+  "write_status": "applied",
+  "failed_sinks": [],
+  "machine_ref": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-review-loop-v1.json",
+  "markdown_ref": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-review-loop-v1.md",
+  "runtime_projection_ref": ".beacon/transactions/qa-acceptance-prism-review-loop-v1.json",
+  "sink_checksums": {
+    "machine": "sha256:9989c0a49fd53bbea95a74f2112e4fee54a0c8020e1eaafdc360837563ef67ff",
+    "human": "sha256:7c20b20cc462e7f7f967419d98812bca2385c4ba5a8b032d21f3963b45afd491",
+    "runtime": "sha256:278bb8f52e581e578641bff2f349dffc409e87c245cce0eef553f71d1e6ba9a7"
+  }
+}

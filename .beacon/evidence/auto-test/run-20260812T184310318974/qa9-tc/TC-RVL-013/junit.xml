@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite name="contract" tests="4" failures="0" errors="0" skipped="0">
+  <properties><property name="command" value="rg -n "Illegal|illegal|宣称海" docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md" /></properties>
+    <testcase classname="contract" name="structured_cli_assertions-001" />
+    <testcase classname="contract" name="structured_cli_assertions-002" />
+    <testcase classname="contract" name="structured_cli_assertions-003" />
+    <testcase classname="contract" name="structured_cli_assertions-004" />
+</testsuite>

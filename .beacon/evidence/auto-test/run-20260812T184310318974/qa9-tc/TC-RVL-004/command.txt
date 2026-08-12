@@ -1,0 +1,1 @@
+rg -n "review-loop.contract" skills/_internal/orchestration/creation-mode-map.md

@@ -1,0 +1,1 @@
+python3 -c "import yaml,sys; d=yaml.safe_load(open('registry/review-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=3 else 1)"

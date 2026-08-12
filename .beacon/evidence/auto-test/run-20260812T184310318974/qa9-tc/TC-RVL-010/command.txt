@@ -1,0 +1,1 @@
+rg -n "证据|evidence|maker|checker" contracts/review-loop.contract.md && test -f skills/prism-qa/references/anti-slop-gate.md

@@ -1,0 +1,1 @@
+test -f contracts/review-loop.contract.md && rg -n "review_id|campaign_id|period|metrics_refs|findings|actions" contracts/review-loop.contract.md

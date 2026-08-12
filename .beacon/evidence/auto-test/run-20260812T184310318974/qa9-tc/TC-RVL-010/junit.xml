@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite name="contract" tests="2" failures="0" errors="0" skipped="0">
+  <properties><property name="command" value="rg -n "证据|evidence|maker|checker" contracts/review-loop.contract.md &amp;&amp; test -f skills/prism-qa/references/anti-slop-gate.md" /></properties>
+    <testcase classname="contract" name="structured_cli_assertions-001" />
+    <testcase classname="contract" name="structured_cli_assertions-002" />
+</testsuite>

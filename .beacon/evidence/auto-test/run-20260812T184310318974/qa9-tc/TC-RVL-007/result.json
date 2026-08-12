@@ -1,0 +1,29 @@
+{
+  "layer": "contract",
+  "command": "python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/review-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=3 else 1)\"",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 0,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "eff1cb04f88d4d97e70dbe031399b65f48a1478916ccbe8c16608b4d500c934f",
+  "started_at": "2026-08-12T18:43:11.257008",
+  "ended_at": "2026-08-12T18:43:11.331804",
+  "junit_path": "",
+  "junit_valid": false,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T184310318974/qa9-tc/TC-RVL-007/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T184310318974/qa9-tc/TC-RVL-007/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T184310318974/qa9-tc/TC-RVL-007/stderr.log"
+  ],
+  "tc_id": "TC-RVL-007",
+  "ac_id": "AC-RVL-002"
+}

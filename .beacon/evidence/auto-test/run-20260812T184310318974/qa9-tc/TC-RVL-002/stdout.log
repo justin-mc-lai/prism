@@ -1,0 +1,7 @@
+9:  - name: bible-updater
+12:    bridge_command: "tool:bible-updater（人工批准后写入 content/series/{vertical}/bible.md）"
+14:  - name: retro-template
+17:    bridge_command: "tool:retro-template（发现/行动模板）"
+19:  - name: findings-store
+22:    bridge_command: "tool:findings-store（content/reviews/{campaign_id}/{period}.md）"
+27:  human_approval_before_bible_write: true

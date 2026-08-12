@@ -1,0 +1,27 @@
+{
+  "layer": "contract",
+  "command": "test -f contracts/review-loop.contract.md && rg -n \"review_id|campaign_id|period|metrics_refs|findings|actions\" contracts/review-loop.contract.md",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 0,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "c18250d233ed91cc051796df7e44cd31d56e941d0df26b3a2b68fc820c7f9f31",
+  "started_at": "2026-08-12T18:43:10.403564",
+  "ended_at": "2026-08-12T18:43:10.419485",
+  "junit_path": "",
+  "junit_valid": false,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T184310318974/contract/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T184310318974/contract/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T184310318974/contract/stderr.log"
+  ]
+}

@@ -1,0 +1,1 @@
+test -f registry/review-adapters.yaml && rg -n "bible|retro|findings" registry/review-adapters.yaml

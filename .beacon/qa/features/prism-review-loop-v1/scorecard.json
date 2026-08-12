@@ -1,0 +1,622 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-review-loop-v1",
+  "feature_slug": "prism-review-loop-v1",
+  "run_id": "run-20260812T184310318974",
+  "ac_total": 10,
+  "ac_accepted": 10,
+  "scenario_total": 15,
+  "scenario_passed": 15,
+  "release_confidence_min": 1.0,
+  "release_confidence_avg": 1.0,
+  "review_required_count": 0,
+  "needs_replay_count": 0,
+  "false_complete_risk": 0.0,
+  "unresolved_closure_outcomes": [],
+  "project_profile_gate_status": "not_configured",
+  "project_profile_id": "",
+  "coverage_current": {
+    "required_scenarios": 15,
+    "executed_scenarios": 15,
+    "coverage_rate": 1.0,
+    "required_scenario_families": [
+      "boundary",
+      "compatibility",
+      "happy",
+      "negative",
+      "recovery"
+    ],
+    "covered_scenario_families": [
+      "primary"
+    ],
+    "missing_scenario_families": [],
+    "missing_test_case_ids": []
+  },
+  "coverage_gap": {
+    "missing_axes": [],
+    "missing_replay_scenarios": [],
+    "missing_browser_evidence_scenarios": [],
+    "missing_scenario_families": [],
+    "missing_test_case_ids": [],
+    "open_closure_outcomes": []
+  },
+  "boundary_evidence": {
+    "boundary_principles": [],
+    "assumption_capture_required": true,
+    "goal_driven_verification_required": true,
+    "verification_item_count": 15,
+    "targeted_scope_only": true
+  },
+  "design_truth_verdict": {
+    "schema_version": "1.0",
+    "status": "not_applicable",
+    "blocked": false,
+    "reason_codes": [],
+    "source_surface": "implement-to-qa-handoff",
+    "verification_surface": "qa",
+    "docs_version": "v0.0.1",
+    "runtime_version": "v1.6.12",
+    "findings": []
+  },
+  "qa_outcome_taxonomy": {
+    "status": "not_applicable",
+    "failure_classes": [],
+    "primary_class": "",
+    "stable_taxonomy": [
+      "product_failed",
+      "test_failed",
+      "runner_admission_blocked",
+      "environment_blocked",
+      "auth_session_blocked",
+      "evidence_binding_missing",
+      "coverage_gap",
+      "truth_projection_gap"
+    ]
+  },
+  "qa_attribution": {
+    "schema_version": "1.0",
+    "status": "not_applicable",
+    "support_evidence_only": true,
+    "runtime_evidence_only": true,
+    "truth_authority": false,
+    "verdict_authority": false,
+    "release_pass_evidence": false,
+    "attribution_count": 0,
+    "accepted_count": 0,
+    "blocked_count": 0,
+    "release_blocking_count": 0,
+    "proposal_count": 0,
+    "family_counts": {
+      "implementation_gap": 0,
+      "truth_drift": 0,
+      "coverage_gap": 0,
+      "execution_lapse": 0,
+      "skill_defect": 0,
+      "runner_admission_blocker": 0,
+      "evidence_insufficient": 0
+    },
+    "route_counts": {},
+    "attributions": []
+  },
+  "qa_acceptance_capability": {
+    "schema_version": "1.0",
+    "status": "blocked",
+    "blocked": true,
+    "taxonomy": {
+      "schema_version": "1.0",
+      "status": "pass",
+      "blocked": false,
+      "full_layers": [
+        "unit",
+        "interface",
+        "contract",
+        "integration",
+        "smoke",
+        "functional",
+        "regression",
+        "exception",
+        "compatibility",
+        "browser_e2e"
+      ],
+      "non_browser_layers": [
+        "unit",
+        "interface",
+        "contract",
+        "integration",
+        "smoke",
+        "functional",
+        "regression",
+        "exception",
+        "compatibility"
+      ],
+      "browser_layer": "browser_e2e",
+      "qa9_layers": [
+        "unit",
+        "interface",
+        "contract",
+        "integration",
+        "smoke",
+        "functional",
+        "regression",
+        "exception",
+        "compatibility"
+      ],
+      "requested_layers": [
+        "contract"
+      ],
+      "unknown_layers": []
+    },
+    "profile_completeness": {
+      "schema_version": "1.0",
+      "profile": "feature-matrix",
+      "browser_required": false,
+      "required_layers": [
+        "contract"
+      ],
+      "executed_layers": [
+        "contract"
+      ],
+      "skipped_layers": [],
+      "blocked_layers": [],
+      "not_applicable_layers": [],
+      "not_applicable_reasons": {},
+      "missing_layers": [],
+      "confidence_chain": {
+        "schema_version": "1.0",
+        "layers": [
+          {
+            "layer": "unit",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit"
+            ]
+          },
+          {
+            "layer": "interface",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface"
+            ]
+          },
+          {
+            "layer": "contract",
+            "status": "executed",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit",
+              "interface"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface"
+            ]
+          },
+          {
+            "layer": "integration",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit",
+              "interface",
+              "contract"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface",
+              "integration"
+            ]
+          },
+          {
+            "layer": "smoke",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit",
+              "interface",
+              "contract",
+              "integration"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface",
+              "integration",
+              "smoke"
+            ]
+          },
+          {
+            "layer": "functional",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit",
+              "interface",
+              "contract",
+              "integration",
+              "smoke"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface",
+              "integration",
+              "smoke",
+              "functional"
+            ]
+          },
+          {
+            "layer": "regression",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit",
+              "interface",
+              "contract",
+              "integration",
+              "smoke",
+              "functional"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface",
+              "integration",
+              "smoke",
+              "functional",
+              "regression"
+            ]
+          },
+          {
+            "layer": "exception",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit",
+              "interface",
+              "contract",
+              "integration",
+              "smoke",
+              "functional",
+              "regression"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface",
+              "integration",
+              "smoke",
+              "functional",
+              "regression",
+              "exception"
+            ]
+          },
+          {
+            "layer": "compatibility",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit",
+              "interface",
+              "contract",
+              "integration",
+              "smoke",
+              "functional",
+              "regression",
+              "exception"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface",
+              "integration",
+              "smoke",
+              "functional",
+              "regression",
+              "exception",
+              "compatibility"
+            ]
+          },
+          {
+            "layer": "browser_e2e",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit",
+              "interface",
+              "contract",
+              "integration",
+              "smoke",
+              "functional",
+              "regression",
+              "exception",
+              "compatibility"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface",
+              "integration",
+              "smoke",
+              "functional",
+              "regression",
+              "exception",
+              "compatibility",
+              "browser_e2e"
+            ]
+          }
+        ],
+        "chain_direction": "unit_to_browser_e2e",
+        "terminal_layer": "browser_e2e",
+        "chain_broken": true,
+        "downstream_gap_layers": [
+          "browser_e2e",
+          "compatibility",
+          "exception",
+          "functional",
+          "integration",
+          "interface",
+          "regression",
+          "smoke",
+          "unit"
+        ]
+      },
+      "state_machine_coverage": {},
+      "is_complete": false,
+      "partial": true,
+      "status": "partial"
+    },
+    "browser_evidence_contract": {
+      "status": "not_required",
+      "blocked": false
+    },
+    "browser_runner_registry": [
+      "playwright",
+      "playwright-extension",
+      "playwright-cli",
+      "playwright-cdp",
+      "browser-use",
+      "agent-browser",
+      "attached-browser",
+      "web-access",
+      "obscura-cdp"
+    ],
+    "non_acceptance_evidence_kinds": [
+      "listing",
+      "placeholder",
+      "documentation_only",
+      "dry_run"
+    ],
+    "failure_attribution_routes": {
+      "product_bug": "beacon-implement",
+      "implementation_gap": "beacon-implement",
+      "test_script_bug": "beacon-test-case",
+      "environment_blocker": "beacon-qa",
+      "auth_session_blocker": "beacon-qa",
+      "runner_admission_blocker": "blocked",
+      "coverage_gap": "beacon-test-case",
+      "truth_drift": "beacon-change",
+      "evidence_insufficient": "beacon-qa"
+    },
+    "truth_authority": false,
+    "release_pass_evidence": false
+  },
+  "reconciliation": {
+    "required": false,
+    "reason_code": "",
+    "artifact_path": "",
+    "artifact": {}
+  },
+  "deep_absorption": {
+    "schema_version": "1.0",
+    "status": "not_applicable",
+    "eligible_for_release_supplement": false,
+    "findings": [],
+    "absorbed_count": 0,
+    "deferred_count": 0,
+    "blocked_count": 0,
+    "not_applicable_count": 0
+  },
+  "release_supplement_input": {
+    "deep_findings_absorbed": false,
+    "absorbed_finding_count": 0,
+    "advisory_or_blocked_finding_count": 0,
+    "policy": "absorbed_deep_findings_only"
+  },
+  "continue_decision": "stop_for_repair",
+  "stop_reasons": [
+    "assertion_count_zero_pass",
+    "junit_missing_or_invalid"
+  ],
+  "test_case_backfill_required": false,
+  "resume_command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-review-loop-v1 --version v0.0.1 --feature \"prism-review-loop-v1\"",
+  "repair_handoff": {
+    "action": "qa-repair",
+    "reason": "assertion_count_zero_pass, junit_missing_or_invalid",
+    "command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-review-loop-v1 --version v0.0.1 --feature \"prism-review-loop-v1\""
+  },
+  "release_ready": true,
+  "domain_fsm_coverage": {
+    "schema_version": "1.0",
+    "required": true,
+    "blocked": false,
+    "status": "pass",
+    "reason_code": "",
+    "findings": [],
+    "threshold": 1.0,
+    "coverage_ratio": 1.0,
+    "legal_walk": {
+      "required": 1,
+      "present": 1,
+      "covered": 1,
+      "rows": [
+        {
+          "ac_id": "TC-RVL-006",
+          "tc_id": "AC-RVL-005",
+          "path_type": "`bash scripts/check_review_loop.sh`",
+          "raw": "TC-RVL-006 | AC-RVL-005 | `bash scripts/check_review_loop.sh` | exec-layer 校验脚本 PASS（合法路径）"
+        }
+      ]
+    },
+    "illegal": {
+      "required": 2,
+      "present": 2,
+      "covered": 2,
+      "rows": [
+        {
+          "ac_id": "TC-RVL-013",
+          "tc_id": "AC-RVL-010",
+          "path_type": "`rg -n \"Illegal",
+          "raw": "TC-RVL-013 | AC-RVL-010 | `rg -n \"Illegal | illegal | 宣称海\" docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md` | illegal 转移覆盖（非法拒绝路径）"
+        },
+        {
+          "ac_id": "TC-RVL-015",
+          "tc_id": "AC-RVL-006",
+          "path_type": "`rg -n \"US-RVL-002",
+          "raw": "TC-RVL-015 | AC-RVL-006 | `rg -n \"US-RVL-002 | metrics_refs\" docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md` | 无数据拒绝路径可追溯"
+        }
+      ]
+    },
+    "matrix": {
+      "legal_walk_rows": [
+        {
+          "ac_id": "TC-RVL-006",
+          "tc_id": "AC-RVL-005",
+          "path_type": "`bash scripts/check_review_loop.sh`",
+          "raw": "TC-RVL-006 | AC-RVL-005 | `bash scripts/check_review_loop.sh` | exec-layer 校验脚本 PASS（合法路径）"
+        }
+      ],
+      "illegal_rows": [
+        {
+          "ac_id": "TC-RVL-013",
+          "tc_id": "AC-RVL-010",
+          "path_type": "`rg -n \"Illegal",
+          "raw": "TC-RVL-013 | AC-RVL-010 | `rg -n \"Illegal | illegal | 宣称海\" docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md` | illegal 转移覆盖（非法拒绝路径）"
+        },
+        {
+          "ac_id": "TC-RVL-015",
+          "tc_id": "AC-RVL-006",
+          "path_type": "`rg -n \"US-RVL-002",
+          "raw": "TC-RVL-015 | AC-RVL-006 | `rg -n \"US-RVL-002 | metrics_refs\" docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md` | 无数据拒绝路径可追溯"
+        }
+      ],
+      "other_rows": [
+        {
+          "ac_id": "TC-RVL-001",
+          "tc_id": "AC-RVL-001",
+          "path_type": "`test -f contracts/review-loop.contract.md && rg -n \"review_id",
+          "raw": "TC-RVL-001 | AC-RVL-001 | `test -f contracts/review-loop.contract.md && rg -n \"review_id | campaign_id | period | metrics_refs | findings | actions\" contracts/review-loop.contract.md` | 复盘契约含核心字段"
+        },
+        {
+          "ac_id": "TC-RVL-002",
+          "tc_id": "AC-RVL-002",
+          "path_type": "`test -f registry/review-adapters.yaml && rg -n \"bible",
+          "raw": "TC-RVL-002 | AC-RVL-002 | `test -f registry/review-adapters.yaml && rg -n \"bible | retro | findings\" registry/review-adapters.yaml` | 复盘 bridge 登记"
+        },
+        {
+          "ac_id": "TC-RVL-003",
+          "tc_id": "AC-RVL-003",
+          "path_type": "`rg -n \"人工",
+          "raw": "TC-RVL-003 | AC-RVL-003 | `rg -n \"人工 | 批准 | 确认\" contracts/review-loop.contract.md` | 人工批准入库"
+        },
+        {
+          "ac_id": "TC-RVL-004",
+          "tc_id": "AC-RVL-004",
+          "path_type": "`rg -n \"review-loop.contract\" skills/_internal/orchestration/creation-mode-map.md`",
+          "raw": "TC-RVL-004 | AC-RVL-004 | `rg -n \"review-loop.contract\" skills/_internal/orchestration/creation-mode-map.md` | 系列圣经路由引用"
+        },
+        {
+          "ac_id": "TC-RVL-005",
+          "tc_id": "AC-RVL-005",
+          "path_type": "`test -x scripts/check_review_loop.sh`",
+          "raw": "TC-RVL-005 | AC-RVL-005 | `test -x scripts/check_review_loop.sh` | exec 脚本存在且可执行"
+        },
+        {
+          "ac_id": "TC-RVL-007",
+          "tc_id": "AC-RVL-002",
+          "path_type": "`python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/review-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=3 else 1)\"`",
+          "raw": "TC-RVL-007 | AC-RVL-002 | `python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/review-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=3 else 1)\"` | ≥3 个复盘 bridge"
+        },
+        {
+          "ac_id": "TC-RVL-008",
+          "tc_id": "AC-RVL-006",
+          "path_type": "`rg -n \"metrics_refs",
+          "raw": "TC-RVL-008 | AC-RVL-006 | `rg -n \"metrics_refs | 不空谈 | blocked\" contracts/review-loop.contract.md` | 数据驱动声明"
+        },
+        {
+          "ac_id": "TC-RVL-009",
+          "tc_id": "AC-RVL-007",
+          "path_type": "`rg -n \"复盘段",
+          "raw": "TC-RVL-009 | AC-RVL-007 | `rg -n \"复盘段 | 母稿 | 正典 | 不改\" contracts/review-loop.contract.md` | 圣经更新边界"
+        },
+        {
+          "ac_id": "TC-RVL-010",
+          "tc_id": "AC-RVL-008",
+          "path_type": "`rg -n \"证据",
+          "raw": "TC-RVL-010 | AC-RVL-008 | `rg -n \"证据 | evidence | maker | checker\" contracts/review-loop.contract.md && test -f skills/prism-qa/references/anti-slop-gate.md` | maker≠checker 分离"
+        },
+        {
+          "ac_id": "TC-RVL-011",
+          "tc_id": "AC-RVL-009",
+          "path_type": "`rg -n \"fail-closed",
+          "raw": "TC-RVL-011 | AC-RVL-009 | `rg -n \"fail-closed | blocked | reason_code\" contracts/review-loop.contract.md` | bridge fail-closed"
+        },
+        {
+          "ac_id": "TC-RVL-012",
+          "tc_id": "AC-RVL-010",
+          "path_type": "`rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md && rg -n \"E4",
+          "raw": "TC-RVL-012 | AC-RVL-010 | `rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md && rg -n \"E4 | Lake F\" docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md` | 分湖边界存在"
+        },
+        {
+          "ac_id": "TC-RVL-014",
+          "tc_id": "AC-RVL-001",
+          "path_type": "`rg -n \"US-RVL-001",
+          "raw": "TC-RVL-014 | AC-RVL-001 | `rg -n \"US-RVL-001 | 复盘\" docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md` | 复盘旅程可追溯"
+        }
+      ],
+      "has_legal_walk": true,
+      "has_illegal": true
+    },
+    "aggregates": [
+      "落地）"
+    ],
+    "state_machine_coverage": {},
+    "deep_route_recommended": false
+  },
+  "domain_fsm_qa_blocked": false,
+  "domain_fsm_qa_reason_code": "",
+  "design_alignment": {},
+  "design_md_lint": {},
+  "ui_state_matrix": {},
+  "ui_design_ship_blocked": false
+}

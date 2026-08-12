@@ -1,0 +1,25 @@
+21:    source_ref: "Lake A US-PRISM-002 goal 复盘 / INT-P15 系列圣经更新"
+24:    source_ref: "creation-mode-map 系列圣经（bible 复盘段）"
+31:E1/E2 有了发布事件和指标快照。E3 定义**战役复盘闭环**：按周期把战役/连载的表现数据、发现、
+32:下一步行动整理成复盘记录，经人工批准后写回系列圣经（bible 复盘段）。复盘必须引用数据
+33:（不空谈），只更新 bible/复盘段，不改已冻结母稿事实。
+42:继续 Lake E：落战役复盘 + 系列圣经更新闭环。
+79:| FP-RVL-001 | 复盘必须引用发布事件/指标快照；不空谈 |
+80:| FP-RVL-002 | 复盘结论/圣经更新必须人工批准后才写入 |
+81:| FP-RVL-003 | 只更新 bible 复盘段；不改已冻结母稿事实/正典 |
+82:| FP-RVL-004 | maker≠checker：复盘记录与 QA 分离 |
+88:US-RVL-001（= US-PRISM-002 复盘段）：连载周期结束 → 收集 E1/E2 数据 → 按
+89:`review-loop.contract` 生成复盘（发现 + 行动）→ 人工批准 → 写回系列圣经复盘段 →
+90:goal 复盘 loop 关闭。
+92:US-RVL-002：无数据复盘被拒。缺 metrics_refs → blocked，不空谈。
+94:US-RVL-003：圣经更新边界。复盘只写 bible 复盘段；母稿事实/正典不动。
+101:| SeriesBible | bible | 复盘段写入目标（人工批准后） |
+122:- 无 metrics_refs 仍写复盘
+124:- 复盘改写母稿事实/正典
+141:1. 复盘契约（AC-RVL-001）
+165:| AC-RVL-002 | 进入 `registry_landed`：`registry/review-adapters.yaml` 登记 ≥3 个复盘工具 bridge（bible updater / retro template / findings store） |
+166:| AC-RVL-003 | 人工批准：复盘结论/圣经更新必须人工确认后才写入 |
+167:| AC-RVL-004 | 进入 `routing_landed`：creation-mode-map 系列圣经复盘段引用 review-loop.contract |
+169:| AC-RVL-006 | 数据驱动：无 metrics_refs 的复盘 blocked，不空谈 |
+170:| AC-RVL-007 | 圣经更新边界：只更新 bible 复盘段，不改已冻结母稿事实 |
+171:| AC-RVL-008 | maker≠checker：复盘记录与 QA 分离，证据引用 |

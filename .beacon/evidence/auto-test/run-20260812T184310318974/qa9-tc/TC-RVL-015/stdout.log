@@ -1,0 +1,5 @@
+92:US-RVL-002：无数据复盘被拒。缺 metrics_refs → blocked，不空谈。
+100:| ReviewRecord | review_id | campaign_id + period + metrics_refs + findings + actions |
+122:- 无 metrics_refs 仍写复盘
+164:| AC-RVL-001 | 进入 `contract_landed`：`contracts/review-loop.contract.md` 定义 review_id/campaign_id/period/metrics_refs/findings/actions/evidence 与 fail-closed |
+169:| AC-RVL-006 | 数据驱动：无 metrics_refs 的复盘 blocked，不空谈 |

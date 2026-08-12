@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-review-loop-v1",
+  "feature_slug": "prism-review-loop-v1",
+  "version": "v0.0.1",
+  "generated_at": "2026-08-12T10:43:09.932548+00:00",
+  "execution_mode": "feature-aware",
+  "source_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-review-loop-v1.ac-test-matrix.json",
+  "story_scenario_map_path": ".beacon/qa/features/prism-review-loop-v1/story-scenario-map.json",
+  "reason_codes": [
+    "no_prior_feature_qa"
+  ],
+  "qa_types": [
+    "contract"
+  ],
+  "entries": [
+    {
+      "ac_id": "AC-RVL-001",
+      "tc_id": "TC-RVL-001",
+      "layer": "contract",
+      "command": "test -f contracts/review-loop.contract.md && rg -n \"review_id|campaign_id|period|metrics_refs|findings|actions\" contracts/review-loop.contract.md",
+      "assertion": "复盘契约含核心字段",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-review-loop-v1/tc-rvl-001/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-review-loop-v1/docs/beacon/v0.0.1/features/prism-review-loop-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-RVL-002",
+      "tc_id": "TC-RVL-002",
+      "layer": "contract",
+      "command": "test -f registry/review-adapters.yaml && rg -n \"bible|retro|findings\" registry/review-adapters.yaml",
+      "assertion": "复盘 bridge 登记",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-review-loop-v1/tc-rvl-002/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-review-loop-v1/docs/beacon/v0.0.1/features/prism-review-loop-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-RVL-003",
+      "tc_id": "TC-RVL-003",
+      "layer": "contract",
+      "command": "rg -n \"人工|批准|确认\" contracts/review-loop.contract.md",
+      "assertion": "人工批准入库",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-review-loop-v1/tc-rvl-003/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-review-loop-v1/docs/beacon/v0.0.1/features/prism-review-loop-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-RVL-004",
+      "tc_id": "TC-RVL-004",
+      "layer": "contract",
+      "command": "rg -n \"review-loop.contract\" skills/_internal/orchestration/creation-mode-map.md",
+      "assertion": "系列圣经路由引用",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-review-loop-v1/tc-rvl-004/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-review-loop-v1/docs/beacon/v0.0.1/features/prism-review-loop-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-RVL-005",
+      "tc_id": "TC-RVL-005",
+      "layer": "contract",
+      "command": "test -x scripts/check_review_loop.sh",
+      "assertion": "exec 脚本存在且可执行",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-review-loop-v1/tc-rvl-005/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-review-loop-v1/docs/beacon/v0.0.1/features/prism-review-loop-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-RVL-005",
+      "tc_id": "TC-RVL-006",
+      "layer": "contract",
+      "command": "bash scripts/check_review_loop.sh",
+      "assertion": "exec-layer 校验脚本 PASS（合法路径）",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-review-loop-v1/tc-rvl-006/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-review-loop-v1/docs/beacon/v0.0.1/features/prism-review-loop-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-RVL-002",
+      "tc_id": "TC-RVL-007",
+      "layer": "contract",
+      "command": "python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/review-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=3 else 1)\"",
+      "assertion": "≥3 个复盘 bridge",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-review-loop-v1/tc-rvl-007/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-review-loop-v1/docs/beacon/v0.0.1/features/prism-review-loop-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-RVL-006",
+      "tc_id": "TC-RVL-008",
+      "layer": "contract",
+      "command": "rg -n \"metrics_refs|不空谈|blocked\" contracts/review-loop.contract.md",
+      "assertion": "数据驱动声明",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-review-loop-v1/tc-rvl-008/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-review-loop-v1/docs/beacon/v0.0.1/features/prism-review-loop-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-RVL-007",
+      "tc_id": "TC-RVL-009",
+      "layer": "contract",
+      "command": "rg -n \"复盘段|母稿|正典|不改\" contracts/review-loop.contract.md",
+      "assertion": "圣经更新边界",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-review-loop-v1/tc-rvl-009/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-review-loop-v1/docs/beacon/v0.0.1/features/prism-review-loop-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-RVL-008",
+      "tc_id": "TC-RVL-010",
+      "layer": "contract",
+      "command": "rg -n \"证据|evidence|maker|checker\" contracts/review-loop.contract.md && test -f skills/prism-qa/references/anti-slop-gate.md",
+      "assertion": "maker≠checker 分离",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-review-loop-v1/tc-rvl-010/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-review-loop-v1/docs/beacon/v0.0.1/features/prism-review-loop-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-RVL-009",
+      "tc_id": "TC-RVL-011",
+      "layer": "contract",
+      "command": "rg -n \"fail-closed|blocked|reason_code\" contracts/review-loop.contract.md",
+      "assertion": "bridge fail-closed",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-review-loop-v1/tc-rvl-011/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-review-loop-v1/docs/beacon/v0.0.1/features/prism-review-loop-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-RVL-010",
+      "tc_id": "TC-RVL-012",
+      "layer": "contract",
+      "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md && rg -n \"E4|Lake F\" docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md",
+      "assertion": "分湖边界存在",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-review-loop-v1/tc-rvl-012/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-review-loop-v1/docs/beacon/v0.0.1/features/prism-review-loop-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-RVL-010",
+      "tc_id": "TC-RVL-013",
+      "layer": "contract",
+      "command": "rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md",
+      "assertion": "illegal 转移覆盖（非法拒绝路径）",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-review-loop-v1/tc-rvl-013/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-review-loop-v1/docs/beacon/v0.0.1/features/prism-review-loop-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-RVL-001",
+      "tc_id": "TC-RVL-014",
+      "layer": "contract",
+      "command": "rg -n \"US-RVL-001|复盘\" docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md",
+      "assertion": "复盘旅程可追溯",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-review-loop-v1/tc-rvl-014/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-review-loop-v1/docs/beacon/v0.0.1/features/prism-review-loop-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-RVL-006",
+      "tc_id": "TC-RVL-015",
+      "layer": "contract",
+      "command": "rg -n \"US-RVL-002|metrics_refs\" docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md",
+      "assertion": "无数据拒绝路径可追溯",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-review-loop-v1/tc-rvl-015/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-review-loop-v1/docs/beacon/v0.0.1/features/prism-review-loop-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "layer": "contract",
+  "command": "rg -n \"review-loop.contract\" skills/_internal/orchestration/creation-mode-map.md",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 1,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "7c2927f2afb177bc5e8c5c28cda304a9bb1974c21bb46f12d87709b359d02b38",
+  "started_at": "2026-08-12T18:43:10.785442",
+  "ended_at": "2026-08-12T18:43:10.798455",
+  "junit_path": ".beacon/evidence/auto-test/run-20260812T184310318974/qa9-tc/TC-RVL-004/junit.xml",
+  "junit_valid": true,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T184310318974/qa9-tc/TC-RVL-004/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T184310318974/qa9-tc/TC-RVL-004/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T184310318974/qa9-tc/TC-RVL-004/stderr.log",
+    ".beacon/evidence/auto-test/run-20260812T184310318974/qa9-tc/TC-RVL-004/junit.xml"
+  ],
+  "tc_id": "TC-RVL-004",
+  "ac_id": "AC-RVL-004"
+}

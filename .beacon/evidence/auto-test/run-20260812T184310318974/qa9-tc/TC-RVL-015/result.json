@@ -1,0 +1,30 @@
+{
+  "layer": "contract",
+  "command": "rg -n \"US-RVL-002|metrics_refs\" docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 5,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "0e0e5f11978d729486fa1a53d103360392f8f75360e118bac92084a648b848c8",
+  "started_at": "2026-08-12T18:43:12.076941",
+  "ended_at": "2026-08-12T18:43:12.089456",
+  "junit_path": ".beacon/evidence/auto-test/run-20260812T184310318974/qa9-tc/TC-RVL-015/junit.xml",
+  "junit_valid": true,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T184310318974/qa9-tc/TC-RVL-015/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T184310318974/qa9-tc/TC-RVL-015/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T184310318974/qa9-tc/TC-RVL-015/stderr.log",
+    ".beacon/evidence/auto-test/run-20260812T184310318974/qa9-tc/TC-RVL-015/junit.xml"
+  ],
+  "tc_id": "TC-RVL-015",
+  "ac_id": "AC-RVL-006"
+}

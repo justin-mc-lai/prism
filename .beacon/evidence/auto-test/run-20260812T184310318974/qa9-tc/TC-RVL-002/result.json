@@ -1,0 +1,29 @@
+{
+  "layer": "contract",
+  "command": "test -f registry/review-adapters.yaml && rg -n \"bible|retro|findings\" registry/review-adapters.yaml",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 0,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "f38b44bd8a0808df6f7ee08d20a4b3704b55111407245d5c39925dfa5d411841",
+  "started_at": "2026-08-12T18:43:10.601700",
+  "ended_at": "2026-08-12T18:43:10.614227",
+  "junit_path": "",
+  "junit_valid": false,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T184310318974/qa9-tc/TC-RVL-002/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T184310318974/qa9-tc/TC-RVL-002/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T184310318974/qa9-tc/TC-RVL-002/stderr.log"
+  ],
+  "tc_id": "TC-RVL-002",
+  "ac_id": "AC-RVL-002"
+}

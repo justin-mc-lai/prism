@@ -1,0 +1,30 @@
+{
+  "layer": "contract",
+  "command": "rg -n \"人工|批准|确认\" contracts/review-loop.contract.md",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 6,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "e990ae0c57c74b95913bd607498480386a477e4004c20188a6c5a16d5d8b4685",
+  "started_at": "2026-08-12T18:43:10.694558",
+  "ended_at": "2026-08-12T18:43:10.706773",
+  "junit_path": ".beacon/evidence/auto-test/run-20260812T184310318974/qa9-tc/TC-RVL-003/junit.xml",
+  "junit_valid": true,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T184310318974/qa9-tc/TC-RVL-003/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T184310318974/qa9-tc/TC-RVL-003/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T184310318974/qa9-tc/TC-RVL-003/stderr.log",
+    ".beacon/evidence/auto-test/run-20260812T184310318974/qa9-tc/TC-RVL-003/junit.xml"
+  ],
+  "tc_id": "TC-RVL-003",
+  "ac_id": "AC-RVL-003"
+}

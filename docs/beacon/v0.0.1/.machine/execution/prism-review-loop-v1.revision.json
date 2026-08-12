@@ -7,11 +7,20 @@
   "source_revision_id": "",
   "reason": "freeze",
   "doc_status": "frozen",
-  "delivery_status": "idle",
-  "lifecycle_status": "idle",
+  "delivery_status": "accepted",
+  "lifecycle_status": "accepted",
   "baseline_hash": "sha256:509cf9cfd9584979ccaf3993d4e9785cef9f8bbb41986ef74d150c2bf2db0a23",
   "superseded_by": "",
   "created_at": "2026-08-12T10:41:00.963751+00:00",
   "frozen_at": "2026-08-12T10:41:00.964361+00:00",
-  "accepted_at": ""
+  "accepted_at": "2026-08-12T10:43:12.260958+00:00",
+  "last_verification_run_id": "run-20260812T184310318974",
+  "verification_evidence": [
+    ".beacon/auto-test-status.json",
+    ".beacon/qa/status.json",
+    "docs/beacon/v0.0.1/.machine/qa/prism-review-loop-v1.ac-test-matrix.json",
+    ".beacon/coverage-summary.json",
+    ".beacon/release-gate-report.json"
+  ],
+  "accepted_by": "qa"
 }
