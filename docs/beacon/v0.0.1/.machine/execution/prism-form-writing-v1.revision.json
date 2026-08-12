@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-form-writing-v1",
+  "feature_slug": "prism-form-writing-v1",
+  "version": "v0.0.1",
+  "revision_id": "R1",
+  "source_revision_id": "",
+  "reason": "freeze",
+  "doc_status": "frozen",
+  "delivery_status": "idle",
+  "lifecycle_status": "idle",
+  "baseline_hash": "sha256:c61787b5a893fa45323f92bfc064a4308168ce1c72704d7e2aa14d93a5a11c5f",
+  "superseded_by": "",
+  "created_at": "2026-08-12T00:38:00.714484+00:00",
+  "frozen_at": "2026-08-12T00:38:00.715238+00:00",
+  "accepted_at": ""
+}

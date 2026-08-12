@@ -4,7 +4,7 @@ version: v0.0.1
 plan_mode: interactive
 scope_mode: phased_lake
 lake_or_ocean: 湖
-this_lake: Lake C
+this_lake: Lake D
 sea_promise: full_selfmedia_creation_capability
 extract_to: independent_prism_repo
 beacon_alignment: design_philosophy_only
@@ -13,17 +13,18 @@ repos:
   - prism（本仓）
   - selfmedia-creator（源仓）
   - beacon（设计理念对照；advisory only）
-intent_one_liner: Lake C — campaign / storyworld / master content schema 落地
+intent_one_liner: Lake D — 八形态生产链（分 D1–D6 子湖逐个冻结实现）
 created_at: "2026-08-11"
-plan_revision: R1-rebuild
+plan_revision: D1-plan
 journey_freeze: US-SCHEMA-001..003
 prior_lake_feature: prism-extract-v1
-current_lake_feature: prism-campaign-schema-v1
+prior_lake_feature: prism-campaign-schema-v1
+current_lake_feature: prism-form-writing-v1
 source_freeze: selfmedia-creator prism-canon-v1@R3
-source_deferral: DL-002
+source_deferral: DL-003
 ---
 
-# Program Manifest — prism-canon（Prism 仓 · Lake C）
+# Program Manifest — prism-canon（Prism 仓 · Lake D）
 
 ## Intent
 
@@ -75,3 +76,9 @@ planner-review 发现 main 树四件套被占位草稿覆盖、machine 投影与
 - implement：15/15 TC pass（`scripts/check_content_schema.sh` exec-layer PASS）
 - QA：`run-20260811T232406916560` · 10/10 AC · 15/15 scenario · release_confidence 1.0 · `release_ready=true`
 - release：人工门待确认（不自动公开发布）
+
+## Lake D（2026-08-12 规划）
+
+pln-program 已完成八形态拆分：D1 writing 基础链 → D2 blog/thread → D3 贴图/xhs → D4 novel →
+D5 comic/vlog/book_video → D6 publish bridge。详见 `programs/prism-canon/lake-d-plan.md`。
+当前进入 D1（`prism-form-writing-v1`）truth → freeze → implement → QA。

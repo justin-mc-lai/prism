@@ -1,0 +1,645 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-form-writing-v1",
+  "feature_slug": "prism-form-writing-v1",
+  "version": "v0.0.1",
+  "runtime_version": "v1.6.12",
+  "runtime_capability_line": "v1.3.3",
+  "required": true,
+  "reason_code": "",
+  "blocked": false,
+  "status": "pass",
+  "findings": [],
+  "report_json_path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-form-writing-v1.json",
+  "report_markdown_path": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-form-writing-v1.md",
+  "state_path": ".beacon/state/requirement-clarity-prism-form-writing-v1.json",
+  "diagram_truth": {
+    "schema_version": "1.0",
+    "version": "v0.0.1",
+    "supported": false,
+    "required": false,
+    "ready": false,
+    "diagram_types": [],
+    "state_axes": [],
+    "missing_diagram_types": [],
+    "missing_state_axes": false,
+    "complexity_signals": [],
+    "review_gates": [],
+    "qa_coverage_hints": [],
+    "evidence_lines": {},
+    "generated_at": "2026-08-12T00:38:00.436250+00:00",
+    "feature": "prism-form-writing-v1",
+    "feature_slug": "prism-form-writing-v1",
+    "prd_ref": "docs/beacon/v0.0.1/prd/prism-form-writing-v1.md",
+    "user_story_ref": "docs/beacon/v0.0.1/user-story/prism-form-writing-v1.md"
+  },
+  "domain_fsm_gate": {
+    "schema_version": "1.0",
+    "feature": "prism-form-writing-v1",
+    "feature_slug": "prism-form-writing-v1",
+    "version": "v0.0.1",
+    "truth_path": "docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
+    "tests_path": "docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md",
+    "required": true,
+    "blocked": false,
+    "status": "pass",
+    "reason_code": "",
+    "findings": [],
+    "requirement": {
+      "required": true,
+      "reason": "explicit_domain_mark",
+      "explicit": true,
+      "partial": true,
+      "complexity": false,
+      "business_signal": false,
+      "version_supported": false
+    },
+    "projection": {
+      "schema_version": "1.0",
+      "domain_fsm_schema": "domain-fsm.v1",
+      "entity_precedence_schema": "entity-precedence.v1",
+      "frontmatter": {
+        "slug": "prism-form-writing-v1",
+        "version": "v0.0.1",
+        "status": "draft",
+        "revision_id": "R1",
+        "language": "zh",
+        "domain_required": "true",
+        "ux_required": "false",
+        "parser_contract": "beacon-feature-package-v2",
+        "materials_status": "current",
+        "package_maturity": "filled",
+        "truth_source_model": "intent_first",
+        "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+        "canonical_refs": {
+          "prd": "docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
+          "user_story": "docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
+          "test_case": "docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md"
+        },
+        "provenance": {
+          "- ac_id": "AC-WRITE-002",
+          "source_type": "source_evidence",
+          "source_ref": "selfmedia-creator skills/no-ai-slop + humanizer-zh + selfmedia-humanize"
+        }
+      },
+      "frontmatter_errors": [],
+      "has_domain_model_section": true,
+      "has_domain_fsm_section": true,
+      "has_illegal_transition_section": true,
+      "entities": [
+        {
+          "entity": "WritingContract",
+          "key": "contract_id",
+          "precedence": "produce 侧七段契约 + 蒸馏写作规则",
+          "requires": "produce 侧七段契约 + 蒸馏写作规则"
+        },
+        {
+          "entity": "AntiSlopGate",
+          "key": "gate_id",
+          "precedence": "qa 侧 slop 模式/人话判据/证据要求",
+          "requires": "qa 侧 slop 模式/人话判据/证据要求"
+        },
+        {
+          "entity": "WritingAdapterMap",
+          "key": "map_id",
+          "precedence": "源工具 → bridge 命令（MAP-005 深化）",
+          "requires": "源工具 → bridge 命令（MAP-005 深化）"
+        },
+        {
+          "entity": "RouteEntry",
+          "key": "form",
+          "precedence": "creation-mode-map 中的成稿路由",
+          "requires": "creation-mode-map 中的成稿路由"
+        }
+      ],
+      "entity_precedence": [
+        {
+          "entity": "WritingContract",
+          "key": "contract_id",
+          "precedence": "produce 侧七段契约 + 蒸馏写作规则",
+          "requires": "produce 侧七段契约 + 蒸馏写作规则"
+        },
+        {
+          "entity": "AntiSlopGate",
+          "key": "gate_id",
+          "precedence": "qa 侧 slop 模式/人话判据/证据要求",
+          "requires": "qa 侧 slop 模式/人话判据/证据要求"
+        },
+        {
+          "entity": "WritingAdapterMap",
+          "key": "map_id",
+          "precedence": "源工具 → bridge 命令（MAP-005 深化）",
+          "requires": "源工具 → bridge 命令（MAP-005 深化）"
+        },
+        {
+          "entity": "RouteEntry",
+          "key": "form",
+          "precedence": "creation-mode-map 中的成稿路由",
+          "requires": "creation-mode-map 中的成稿路由"
+        }
+      ],
+      "aggregates": [
+        {
+          "name": "落地）",
+          "states": [
+            "contract_landed",
+            "gate_landed",
+            "human_accepted",
+            "indexed",
+            "qa_pass",
+            "registry_landed",
+            "release_candidate",
+            "routing_landed",
+            "writing_planned"
+          ],
+          "transitions": [
+            {
+              "from": "writing_planned",
+              "to": "contract_landed",
+              "guard": "`contracts/writing.contract.md` present"
+            },
+            {
+              "from": "contract_landed",
+              "to": "gate_landed",
+              "guard": "`skills/prism-qa/references/anti-slop-gate.md` present"
+            },
+            {
+              "from": "gate_landed",
+              "to": "registry_landed",
+              "guard": "`registry/writing-adapters.yaml` ≥8 bridge"
+            },
+            {
+              "from": "registry_landed",
+              "to": "routing_landed",
+              "guard": "creation-mode-map 引用 contract+gate"
+            },
+            {
+              "from": "routing_landed",
+              "to": "indexed",
+              "guard": "exec 脚本 + internal 无 SKILL.md"
+            },
+            {
+              "from": "indexed",
+              "to": "qa_pass",
+              "guard": "all TC pass"
+            },
+            {
+              "from": "qa_pass",
+              "to": "release_candidate",
+              "guard": "evidence complete"
+            },
+            {
+              "from": "release_candidate",
+              "to": "human_accepted",
+              "guard": "human confirmed"
+            }
+          ]
+        }
+      ],
+      "illegal_transition_slots": [
+        {
+          "description": "writing_planned → routing_landed（跳过契约/门禁/登记）",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "indexed → human_accepted（跳过 QA）",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "bridge 缺失仍产出文件（假交付）",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "承诺必过机检 / 编造经历数据",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "宣称 Lake D 全部完成（D2–D6 未交付）",
+          "aggregate": "",
+          "source": "truth"
+        }
+      ],
+      "acceptance_criteria": [
+        {
+          "ac_id": "AC-WRITE-001",
+          "description": "进入 `contract_landed`：`contracts/writing.contract.md` 存在，含七段契约 + 蒸馏写作规则（四段式 / 日榜倒金字塔 / emotional-essay 选型 + 文笔五原则 + 禁翻译腔）"
+        },
+        {
+          "ac_id": "AC-WRITE-002",
+          "description": "进入 `gate_landed`：`skills/prism-qa/references/anti-slop-gate.md` 含 ≥10 条 slop 模式（含二元对比/清嗓开场/伪洞察/冒号揭晓/重要性吹捧/weasel 归因/假深刻结尾/总结复读等）、≥5 条人话判据、证据要求（引用原文行 + 修复建议）"
+        },
+        {
+          "ac_id": "AC-WRITE-003",
+          "description": "进入 `registry_landed`：`registry/writing-adapters.yaml` 登记 ≥8 个 bridge（humanizer-zh / selfmedia-humanize / qu-ai-wei / shuorenhua / no-ai-slop / stop-slop / humanizer-en / writing-agent），每项含 bridge 命令与 fail-closed 说明"
+        },
+        {
+          "ac_id": "AC-WRITE-004",
+          "description": "进入 `routing_landed`：`skills/_internal/orchestration/creation-mode-map.md` 的 blog / 贴图 / thread 行引用 MAP-005 策略与 writing.contract / anti-slop-gate"
+        },
+        {
+          "ac_id": "AC-WRITE-005",
+          "description": "进入 `indexed`：`scripts/check_writing_adapters.sh` exec-layer 校验 PASS（真实断言：文件存在、关键字段、≥8 bridge、路由引用、无顶层 SKILL.md）"
+        },
+        {
+          "ac_id": "AC-WRITE-006",
+          "description": "adapter 不可见：`skills/_internal/adapters/` 与 `skills/prism-qa/references/` 下无 SKILL.md"
+        },
+        {
+          "ac_id": "AC-WRITE-007",
+          "description": "bridge fail-closed 规则在 contract 中声明：缺工具 → blocked + reason_code，不产出假文件"
+        },
+        {
+          "ac_id": "AC-WRITE-008",
+          "description": "maker≠checker：writing.contract 与 anti-slop-gate 为独立文件，qa 侧含证据路径要求"
+        },
+        {
+          "ac_id": "AC-WRITE-009",
+          "description": "硬边界在 anti-slop-gate 声明：不承诺必过机检；不编造经历/数据/截图；无素材用占位"
+        },
+        {
+          "ac_id": "AC-WRITE-010",
+          "description": "Non-goals：D2–D6 形态本体、vendor_pin、metrics、平台 API 全部显式排除；不得宣称海 closure"
+        }
+      ],
+      "bound_ac_ids": [
+        "AC-WRITE-001",
+        "AC-WRITE-002",
+        "AC-WRITE-003",
+        "AC-WRITE-004",
+        "AC-WRITE-005"
+      ],
+      "orphan_ac_ids": [],
+      "aggregates_missing_illegal_slots": [],
+      "raw_section_titles": [
+        "人话",
+        "User Intent",
+        "User Intent Snapshot",
+        "Intent Coverage Matrix",
+        "First principles（域）",
+        "用户旅程 / 故事",
+        "Domain Model",
+        "Domain FSM（D1 落地）",
+        "Illegal transitions",
+        "FSM 五元组",
+        "Alignment Surface",
+        "Deferral Ledger",
+        "Acceptance Criteria",
+        "Non-goals",
+        "Freeze readiness"
+      ]
+    },
+    "validation": {
+      "schema_version": "1.0",
+      "required": true,
+      "blocked": false,
+      "status": "pass",
+      "reason_code": "",
+      "findings": [],
+      "projection": {
+        "schema_version": "1.0",
+        "domain_fsm_schema": "domain-fsm.v1",
+        "entity_precedence_schema": "entity-precedence.v1",
+        "frontmatter": {
+          "slug": "prism-form-writing-v1",
+          "version": "v0.0.1",
+          "status": "draft",
+          "revision_id": "R1",
+          "language": "zh",
+          "domain_required": "true",
+          "ux_required": "false",
+          "parser_contract": "beacon-feature-package-v2",
+          "materials_status": "current",
+          "package_maturity": "filled",
+          "truth_source_model": "intent_first",
+          "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+          "canonical_refs": {
+            "prd": "docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
+            "user_story": "docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
+            "test_case": "docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md"
+          },
+          "provenance": {
+            "- ac_id": "AC-WRITE-002",
+            "source_type": "source_evidence",
+            "source_ref": "selfmedia-creator skills/no-ai-slop + humanizer-zh + selfmedia-humanize"
+          }
+        },
+        "frontmatter_errors": [],
+        "has_domain_model_section": true,
+        "has_domain_fsm_section": true,
+        "has_illegal_transition_section": true,
+        "entities": [
+          {
+            "entity": "WritingContract",
+            "key": "contract_id",
+            "precedence": "produce 侧七段契约 + 蒸馏写作规则",
+            "requires": "produce 侧七段契约 + 蒸馏写作规则"
+          },
+          {
+            "entity": "AntiSlopGate",
+            "key": "gate_id",
+            "precedence": "qa 侧 slop 模式/人话判据/证据要求",
+            "requires": "qa 侧 slop 模式/人话判据/证据要求"
+          },
+          {
+            "entity": "WritingAdapterMap",
+            "key": "map_id",
+            "precedence": "源工具 → bridge 命令（MAP-005 深化）",
+            "requires": "源工具 → bridge 命令（MAP-005 深化）"
+          },
+          {
+            "entity": "RouteEntry",
+            "key": "form",
+            "precedence": "creation-mode-map 中的成稿路由",
+            "requires": "creation-mode-map 中的成稿路由"
+          }
+        ],
+        "entity_precedence": [
+          {
+            "entity": "WritingContract",
+            "key": "contract_id",
+            "precedence": "produce 侧七段契约 + 蒸馏写作规则",
+            "requires": "produce 侧七段契约 + 蒸馏写作规则"
+          },
+          {
+            "entity": "AntiSlopGate",
+            "key": "gate_id",
+            "precedence": "qa 侧 slop 模式/人话判据/证据要求",
+            "requires": "qa 侧 slop 模式/人话判据/证据要求"
+          },
+          {
+            "entity": "WritingAdapterMap",
+            "key": "map_id",
+            "precedence": "源工具 → bridge 命令（MAP-005 深化）",
+            "requires": "源工具 → bridge 命令（MAP-005 深化）"
+          },
+          {
+            "entity": "RouteEntry",
+            "key": "form",
+            "precedence": "creation-mode-map 中的成稿路由",
+            "requires": "creation-mode-map 中的成稿路由"
+          }
+        ],
+        "aggregates": [
+          {
+            "name": "落地）",
+            "states": [
+              "contract_landed",
+              "gate_landed",
+              "human_accepted",
+              "indexed",
+              "qa_pass",
+              "registry_landed",
+              "release_candidate",
+              "routing_landed",
+              "writing_planned"
+            ],
+            "transitions": [
+              {
+                "from": "writing_planned",
+                "to": "contract_landed",
+                "guard": "`contracts/writing.contract.md` present"
+              },
+              {
+                "from": "contract_landed",
+                "to": "gate_landed",
+                "guard": "`skills/prism-qa/references/anti-slop-gate.md` present"
+              },
+              {
+                "from": "gate_landed",
+                "to": "registry_landed",
+                "guard": "`registry/writing-adapters.yaml` ≥8 bridge"
+              },
+              {
+                "from": "registry_landed",
+                "to": "routing_landed",
+                "guard": "creation-mode-map 引用 contract+gate"
+              },
+              {
+                "from": "routing_landed",
+                "to": "indexed",
+                "guard": "exec 脚本 + internal 无 SKILL.md"
+              },
+              {
+                "from": "indexed",
+                "to": "qa_pass",
+                "guard": "all TC pass"
+              },
+              {
+                "from": "qa_pass",
+                "to": "release_candidate",
+                "guard": "evidence complete"
+              },
+              {
+                "from": "release_candidate",
+                "to": "human_accepted",
+                "guard": "human confirmed"
+              }
+            ]
+          }
+        ],
+        "illegal_transition_slots": [
+          {
+            "description": "writing_planned → routing_landed（跳过契约/门禁/登记）",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "indexed → human_accepted（跳过 QA）",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "bridge 缺失仍产出文件（假交付）",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "承诺必过机检 / 编造经历数据",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "宣称 Lake D 全部完成（D2–D6 未交付）",
+            "aggregate": "",
+            "source": "truth"
+          }
+        ],
+        "acceptance_criteria": [
+          {
+            "ac_id": "AC-WRITE-001",
+            "description": "进入 `contract_landed`：`contracts/writing.contract.md` 存在，含七段契约 + 蒸馏写作规则（四段式 / 日榜倒金字塔 / emotional-essay 选型 + 文笔五原则 + 禁翻译腔）"
+          },
+          {
+            "ac_id": "AC-WRITE-002",
+            "description": "进入 `gate_landed`：`skills/prism-qa/references/anti-slop-gate.md` 含 ≥10 条 slop 模式（含二元对比/清嗓开场/伪洞察/冒号揭晓/重要性吹捧/weasel 归因/假深刻结尾/总结复读等）、≥5 条人话判据、证据要求（引用原文行 + 修复建议）"
+          },
+          {
+            "ac_id": "AC-WRITE-003",
+            "description": "进入 `registry_landed`：`registry/writing-adapters.yaml` 登记 ≥8 个 bridge（humanizer-zh / selfmedia-humanize / qu-ai-wei / shuorenhua / no-ai-slop / stop-slop / humanizer-en / writing-agent），每项含 bridge 命令与 fail-closed 说明"
+          },
+          {
+            "ac_id": "AC-WRITE-004",
+            "description": "进入 `routing_landed`：`skills/_internal/orchestration/creation-mode-map.md` 的 blog / 贴图 / thread 行引用 MAP-005 策略与 writing.contract / anti-slop-gate"
+          },
+          {
+            "ac_id": "AC-WRITE-005",
+            "description": "进入 `indexed`：`scripts/check_writing_adapters.sh` exec-layer 校验 PASS（真实断言：文件存在、关键字段、≥8 bridge、路由引用、无顶层 SKILL.md）"
+          },
+          {
+            "ac_id": "AC-WRITE-006",
+            "description": "adapter 不可见：`skills/_internal/adapters/` 与 `skills/prism-qa/references/` 下无 SKILL.md"
+          },
+          {
+            "ac_id": "AC-WRITE-007",
+            "description": "bridge fail-closed 规则在 contract 中声明：缺工具 → blocked + reason_code，不产出假文件"
+          },
+          {
+            "ac_id": "AC-WRITE-008",
+            "description": "maker≠checker：writing.contract 与 anti-slop-gate 为独立文件，qa 侧含证据路径要求"
+          },
+          {
+            "ac_id": "AC-WRITE-009",
+            "description": "硬边界在 anti-slop-gate 声明：不承诺必过机检；不编造经历/数据/截图；无素材用占位"
+          },
+          {
+            "ac_id": "AC-WRITE-010",
+            "description": "Non-goals：D2–D6 形态本体、vendor_pin、metrics、平台 API 全部显式排除；不得宣称海 closure"
+          }
+        ],
+        "bound_ac_ids": [
+          "AC-WRITE-001",
+          "AC-WRITE-002",
+          "AC-WRITE-003",
+          "AC-WRITE-004",
+          "AC-WRITE-005"
+        ],
+        "orphan_ac_ids": [],
+        "aggregates_missing_illegal_slots": [],
+        "raw_section_titles": [
+          "人话",
+          "User Intent",
+          "User Intent Snapshot",
+          "Intent Coverage Matrix",
+          "First principles（域）",
+          "用户旅程 / 故事",
+          "Domain Model",
+          "Domain FSM（D1 落地）",
+          "Illegal transitions",
+          "FSM 五元组",
+          "Alignment Surface",
+          "Deferral Ledger",
+          "Acceptance Criteria",
+          "Non-goals",
+          "Freeze readiness"
+        ]
+      },
+      "summary": {
+        "entity_count": 4,
+        "aggregate_count": 1,
+        "illegal_slot_count": 5,
+        "orphan_ac_count": 0,
+        "bound_ac_count": 5
+      }
+    },
+    "recommended_action": ""
+  },
+  "human_closure_contract": {
+    "required": false,
+    "research_path": "docs/beacon/v0.0.1/research/prism-form-writing-v1.md",
+    "research_exists": true,
+    "source_architecture_path": "docs/beacon/v0.0.1/source-architecture/index.md",
+    "source_architecture_exists": true,
+    "required_sections": [
+      "architecture",
+      "business_flow"
+    ],
+    "missing_sections": [
+      "architecture",
+      "business_flow"
+    ],
+    "diagram_types": [],
+    "complexity_signals": []
+  },
+  "requirement_closure_contract": {
+    "required": true,
+    "chain_order": [
+      "research",
+      "prd",
+      "user_story",
+      "test_case",
+      "requirement_clarity",
+      "freeze"
+    ],
+    "human_closure_required": false,
+    "paths": {
+      "research": "docs/beacon/v0.0.1/research/prism-form-writing-v1.md",
+      "prd": "docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md"
+    },
+    "exists": {
+      "research": true,
+      "prd": true,
+      "user_story": true,
+      "test_case": true
+    },
+    "required_research_sections": [],
+    "missing_research_sections": [],
+    "ac_projection": {
+      "prd_ac_ids": [],
+      "user_story_ac_ids": [],
+      "test_case_ac_ids": [],
+      "upstream_ac_ids": [],
+      "missing_test_case_ac_ids": []
+    }
+  },
+  "version_projection_truth_contract": {
+    "required": false,
+    "supported": false,
+    "projection_types": [],
+    "research_path": "docs/beacon/v0.0.1/research/prism-form-writing-v1.md",
+    "research_exists": true,
+    "required_fields": [
+      "prd_refs",
+      "user_story_refs",
+      "test_case_refs",
+      "coverage_notes",
+      "out_of_scope_notes"
+    ],
+    "field_presence": {
+      "prd_refs": false,
+      "user_story_refs": false,
+      "test_case_refs": false,
+      "coverage_notes": false,
+      "out_of_scope_notes": false
+    },
+    "missing_fields": [],
+    "required_refs": {
+      "prd_refs": "docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
+      "user_story_refs": "docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
+      "test_case_refs": "docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md"
+    },
+    "missing_ref_targets": [],
+    "ready": false
+  },
+  "support_write_topology_contract": {
+    "schema_version": "1.0",
+    "supported": true,
+    "status": "pass",
+    "blocked": false,
+    "reason_code": "",
+    "diagnostics": []
+  },
+  "required_artifacts": [],
+  "scanned_files": [
+    "docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md",
+    "docs/beacon/v0.0.1/features/prism-form-writing-v1/tasks.md",
+    "docs/beacon/v0.0.1/features/prism-form-writing-v1/evidence.md",
+    "docs/beacon/v0.0.1/research/prism-form-writing-v1.md"
+  ]
+}
