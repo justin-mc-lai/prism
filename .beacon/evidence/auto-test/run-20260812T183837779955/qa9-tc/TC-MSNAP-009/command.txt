@@ -1,0 +1,1 @@
+rg -n "凭证|密钥|secrets|禁止入库" contracts/metrics-snapshot.contract.md

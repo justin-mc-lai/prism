@@ -1,0 +1,616 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-metrics-snapshot-v1",
+  "feature_slug": "prism-metrics-snapshot-v1",
+  "run_id": "run-20260812T183837779955",
+  "ac_total": 10,
+  "ac_accepted": 10,
+  "scenario_total": 15,
+  "scenario_passed": 15,
+  "release_confidence_min": 1.0,
+  "release_confidence_avg": 1.0,
+  "review_required_count": 0,
+  "needs_replay_count": 0,
+  "false_complete_risk": 0.0,
+  "unresolved_closure_outcomes": [],
+  "project_profile_gate_status": "not_configured",
+  "project_profile_id": "",
+  "coverage_current": {
+    "required_scenarios": 15,
+    "executed_scenarios": 15,
+    "coverage_rate": 1.0,
+    "required_scenario_families": [
+      "boundary",
+      "compatibility",
+      "happy",
+      "negative",
+      "recovery"
+    ],
+    "covered_scenario_families": [
+      "primary"
+    ],
+    "missing_scenario_families": [],
+    "missing_test_case_ids": []
+  },
+  "coverage_gap": {
+    "missing_axes": [],
+    "missing_replay_scenarios": [],
+    "missing_browser_evidence_scenarios": [],
+    "missing_scenario_families": [],
+    "missing_test_case_ids": [],
+    "open_closure_outcomes": []
+  },
+  "boundary_evidence": {
+    "boundary_principles": [],
+    "assumption_capture_required": true,
+    "goal_driven_verification_required": true,
+    "verification_item_count": 15,
+    "targeted_scope_only": true
+  },
+  "design_truth_verdict": {
+    "schema_version": "1.0",
+    "status": "not_applicable",
+    "blocked": false,
+    "reason_codes": [],
+    "source_surface": "implement-to-qa-handoff",
+    "verification_surface": "qa",
+    "docs_version": "v0.0.1",
+    "runtime_version": "v1.6.12",
+    "findings": []
+  },
+  "qa_outcome_taxonomy": {
+    "status": "not_applicable",
+    "failure_classes": [],
+    "primary_class": "",
+    "stable_taxonomy": [
+      "product_failed",
+      "test_failed",
+      "runner_admission_blocked",
+      "environment_blocked",
+      "auth_session_blocked",
+      "evidence_binding_missing",
+      "coverage_gap",
+      "truth_projection_gap"
+    ]
+  },
+  "qa_attribution": {
+    "schema_version": "1.0",
+    "status": "not_applicable",
+    "support_evidence_only": true,
+    "runtime_evidence_only": true,
+    "truth_authority": false,
+    "verdict_authority": false,
+    "release_pass_evidence": false,
+    "attribution_count": 0,
+    "accepted_count": 0,
+    "blocked_count": 0,
+    "release_blocking_count": 0,
+    "proposal_count": 0,
+    "family_counts": {
+      "implementation_gap": 0,
+      "truth_drift": 0,
+      "coverage_gap": 0,
+      "execution_lapse": 0,
+      "skill_defect": 0,
+      "runner_admission_blocker": 0,
+      "evidence_insufficient": 0
+    },
+    "route_counts": {},
+    "attributions": []
+  },
+  "qa_acceptance_capability": {
+    "schema_version": "1.0",
+    "status": "blocked",
+    "blocked": true,
+    "taxonomy": {
+      "schema_version": "1.0",
+      "status": "pass",
+      "blocked": false,
+      "full_layers": [
+        "unit",
+        "interface",
+        "contract",
+        "integration",
+        "smoke",
+        "functional",
+        "regression",
+        "exception",
+        "compatibility",
+        "browser_e2e"
+      ],
+      "non_browser_layers": [
+        "unit",
+        "interface",
+        "contract",
+        "integration",
+        "smoke",
+        "functional",
+        "regression",
+        "exception",
+        "compatibility"
+      ],
+      "browser_layer": "browser_e2e",
+      "qa9_layers": [
+        "unit",
+        "interface",
+        "contract",
+        "integration",
+        "smoke",
+        "functional",
+        "regression",
+        "exception",
+        "compatibility"
+      ],
+      "requested_layers": [
+        "contract"
+      ],
+      "unknown_layers": []
+    },
+    "profile_completeness": {
+      "schema_version": "1.0",
+      "profile": "feature-matrix",
+      "browser_required": false,
+      "required_layers": [
+        "contract"
+      ],
+      "executed_layers": [
+        "contract"
+      ],
+      "skipped_layers": [],
+      "blocked_layers": [],
+      "not_applicable_layers": [],
+      "not_applicable_reasons": {},
+      "missing_layers": [],
+      "confidence_chain": {
+        "schema_version": "1.0",
+        "layers": [
+          {
+            "layer": "unit",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit"
+            ]
+          },
+          {
+            "layer": "interface",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface"
+            ]
+          },
+          {
+            "layer": "contract",
+            "status": "executed",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit",
+              "interface"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface"
+            ]
+          },
+          {
+            "layer": "integration",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit",
+              "interface",
+              "contract"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface",
+              "integration"
+            ]
+          },
+          {
+            "layer": "smoke",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit",
+              "interface",
+              "contract",
+              "integration"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface",
+              "integration",
+              "smoke"
+            ]
+          },
+          {
+            "layer": "functional",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit",
+              "interface",
+              "contract",
+              "integration",
+              "smoke"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface",
+              "integration",
+              "smoke",
+              "functional"
+            ]
+          },
+          {
+            "layer": "regression",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit",
+              "interface",
+              "contract",
+              "integration",
+              "smoke",
+              "functional"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface",
+              "integration",
+              "smoke",
+              "functional",
+              "regression"
+            ]
+          },
+          {
+            "layer": "exception",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit",
+              "interface",
+              "contract",
+              "integration",
+              "smoke",
+              "functional",
+              "regression"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface",
+              "integration",
+              "smoke",
+              "functional",
+              "regression",
+              "exception"
+            ]
+          },
+          {
+            "layer": "compatibility",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit",
+              "interface",
+              "contract",
+              "integration",
+              "smoke",
+              "functional",
+              "regression",
+              "exception"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface",
+              "integration",
+              "smoke",
+              "functional",
+              "regression",
+              "exception",
+              "compatibility"
+            ]
+          },
+          {
+            "layer": "browser_e2e",
+            "status": "missing",
+            "confidence": 0.0,
+            "depends_on": [
+              "unit",
+              "interface",
+              "contract",
+              "integration",
+              "smoke",
+              "functional",
+              "regression",
+              "exception",
+              "compatibility"
+            ],
+            "gap_markers": [
+              "downstream_gap"
+            ],
+            "downstream_gap_sources": [
+              "unit",
+              "interface",
+              "integration",
+              "smoke",
+              "functional",
+              "regression",
+              "exception",
+              "compatibility",
+              "browser_e2e"
+            ]
+          }
+        ],
+        "chain_direction": "unit_to_browser_e2e",
+        "terminal_layer": "browser_e2e",
+        "chain_broken": true,
+        "downstream_gap_layers": [
+          "browser_e2e",
+          "compatibility",
+          "exception",
+          "functional",
+          "integration",
+          "interface",
+          "regression",
+          "smoke",
+          "unit"
+        ]
+      },
+      "state_machine_coverage": {},
+      "is_complete": false,
+      "partial": true,
+      "status": "partial"
+    },
+    "browser_evidence_contract": {
+      "status": "not_required",
+      "blocked": false
+    },
+    "browser_runner_registry": [
+      "playwright",
+      "playwright-extension",
+      "playwright-cli",
+      "playwright-cdp",
+      "browser-use",
+      "agent-browser",
+      "attached-browser",
+      "web-access",
+      "obscura-cdp"
+    ],
+    "non_acceptance_evidence_kinds": [
+      "listing",
+      "placeholder",
+      "documentation_only",
+      "dry_run"
+    ],
+    "failure_attribution_routes": {
+      "product_bug": "beacon-implement",
+      "implementation_gap": "beacon-implement",
+      "test_script_bug": "beacon-test-case",
+      "environment_blocker": "beacon-qa",
+      "auth_session_blocker": "beacon-qa",
+      "runner_admission_blocker": "blocked",
+      "coverage_gap": "beacon-test-case",
+      "truth_drift": "beacon-change",
+      "evidence_insufficient": "beacon-qa"
+    },
+    "truth_authority": false,
+    "release_pass_evidence": false
+  },
+  "reconciliation": {
+    "required": false,
+    "reason_code": "",
+    "artifact_path": "",
+    "artifact": {}
+  },
+  "deep_absorption": {
+    "schema_version": "1.0",
+    "status": "not_applicable",
+    "eligible_for_release_supplement": false,
+    "findings": [],
+    "absorbed_count": 0,
+    "deferred_count": 0,
+    "blocked_count": 0,
+    "not_applicable_count": 0
+  },
+  "release_supplement_input": {
+    "deep_findings_absorbed": false,
+    "absorbed_finding_count": 0,
+    "advisory_or_blocked_finding_count": 0,
+    "policy": "absorbed_deep_findings_only"
+  },
+  "continue_decision": "stop_for_repair",
+  "stop_reasons": [
+    "assertion_count_zero_pass",
+    "junit_missing_or_invalid"
+  ],
+  "test_case_backfill_required": false,
+  "resume_command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1 --version v0.0.1 --feature \"prism-metrics-snapshot-v1\"",
+  "repair_handoff": {
+    "action": "qa-repair",
+    "reason": "assertion_count_zero_pass, junit_missing_or_invalid",
+    "command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1 --version v0.0.1 --feature \"prism-metrics-snapshot-v1\""
+  },
+  "release_ready": true,
+  "domain_fsm_coverage": {
+    "schema_version": "1.0",
+    "required": true,
+    "blocked": false,
+    "status": "pass",
+    "reason_code": "",
+    "findings": [],
+    "threshold": 1.0,
+    "coverage_ratio": 1.0,
+    "legal_walk": {
+      "required": 1,
+      "present": 1,
+      "covered": 1,
+      "rows": [
+        {
+          "ac_id": "TC-MSNAP-006",
+          "tc_id": "AC-MSNAP-005",
+          "path_type": "`bash scripts/check_metrics_snapshot.sh`",
+          "raw": "TC-MSNAP-006 | AC-MSNAP-005 | `bash scripts/check_metrics_snapshot.sh` | exec-layer 校验脚本 PASS（合法路径）"
+        }
+      ]
+    },
+    "illegal": {
+      "required": 1,
+      "present": 1,
+      "covered": 1,
+      "rows": [
+        {
+          "ac_id": "TC-MSNAP-013",
+          "tc_id": "AC-MSNAP-010",
+          "path_type": "`rg -n \"Illegal",
+          "raw": "TC-MSNAP-013 | AC-MSNAP-010 | `rg -n \"Illegal | illegal | 宣称海\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md` | illegal 转移覆盖（非法拒绝路径）"
+        }
+      ]
+    },
+    "matrix": {
+      "legal_walk_rows": [
+        {
+          "ac_id": "TC-MSNAP-006",
+          "tc_id": "AC-MSNAP-005",
+          "path_type": "`bash scripts/check_metrics_snapshot.sh`",
+          "raw": "TC-MSNAP-006 | AC-MSNAP-005 | `bash scripts/check_metrics_snapshot.sh` | exec-layer 校验脚本 PASS（合法路径）"
+        }
+      ],
+      "illegal_rows": [
+        {
+          "ac_id": "TC-MSNAP-013",
+          "tc_id": "AC-MSNAP-010",
+          "path_type": "`rg -n \"Illegal",
+          "raw": "TC-MSNAP-013 | AC-MSNAP-010 | `rg -n \"Illegal | illegal | 宣称海\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md` | illegal 转移覆盖（非法拒绝路径）"
+        }
+      ],
+      "other_rows": [
+        {
+          "ac_id": "TC-MSNAP-001",
+          "tc_id": "AC-MSNAP-001",
+          "path_type": "`test -f contracts/metrics-snapshot.contract.md && rg -n \"snapshot_id",
+          "raw": "TC-MSNAP-001 | AC-MSNAP-001 | `test -f contracts/metrics-snapshot.contract.md && rg -n \"snapshot_id | publication_ref | collected_at | 来源\" contracts/metrics-snapshot.contract.md` | 快照契约含核心字段"
+        },
+        {
+          "ac_id": "TC-MSNAP-002",
+          "tc_id": "AC-MSNAP-002",
+          "path_type": "`test -f registry/metrics-adapters.yaml && rg -n \"snapshot\" registry/metrics-adapters.yaml`",
+          "raw": "TC-MSNAP-002 | AC-MSNAP-002 | `test -f registry/metrics-adapters.yaml && rg -n \"snapshot\" registry/metrics-adapters.yaml` | 快照 bridge 条目存在"
+        },
+        {
+          "ac_id": "TC-MSNAP-003",
+          "tc_id": "AC-MSNAP-003",
+          "path_type": "`rg -n \"publication_ref",
+          "raw": "TC-MSNAP-003 | AC-MSNAP-003 | `rg -n \"publication_ref | 无 publication | measured\" contracts/metrics-snapshot.contract.md` | measured 守卫"
+        },
+        {
+          "ac_id": "TC-MSNAP-004",
+          "tc_id": "AC-MSNAP-004",
+          "path_type": "`rg -n \"metrics-snapshot.contract\" skills/_internal/orchestration/creation-mode-map.md`",
+          "raw": "TC-MSNAP-004 | AC-MSNAP-004 | `rg -n \"metrics-snapshot.contract\" skills/_internal/orchestration/creation-mode-map.md` | 路由快照引用"
+        },
+        {
+          "ac_id": "TC-MSNAP-005",
+          "tc_id": "AC-MSNAP-005",
+          "path_type": "`test -x scripts/check_metrics_snapshot.sh`",
+          "raw": "TC-MSNAP-005 | AC-MSNAP-005 | `test -x scripts/check_metrics_snapshot.sh` | exec 脚本存在且可执行"
+        },
+        {
+          "ac_id": "TC-MSNAP-007",
+          "tc_id": "AC-MSNAP-002",
+          "path_type": "`python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/metrics-adapters.yaml')); rs=[a for a in d.get('adapters',[]) if 'snapshot' in a.get('name','')]; raise SystemExit(0 if len(rs)>=2 else 1)\"`",
+          "raw": "TC-MSNAP-007 | AC-MSNAP-002 | `python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/metrics-adapters.yaml')); rs=[a for a in d.get('adapters',[]) if 'snapshot' in a.get('name','')]; raise SystemExit(0 if len(rs)>=2 else 1)\"` | ≥2 个快照采集条目"
+        },
+        {
+          "ac_id": "TC-MSNAP-008",
+          "tc_id": "AC-MSNAP-006",
+          "path_type": "`rg -n \"空快照",
+          "raw": "TC-MSNAP-008 | AC-MSNAP-006 | `rg -n \"空快照 | 禁止 | 不编造 | 猜\" contracts/metrics-snapshot.contract.md` | 空快照/不编造声明"
+        },
+        {
+          "ac_id": "TC-MSNAP-009",
+          "tc_id": "AC-MSNAP-007",
+          "path_type": "`rg -n \"凭证",
+          "raw": "TC-MSNAP-009 | AC-MSNAP-007 | `rg -n \"凭证 | 密钥 | secrets | 禁止入库\" contracts/metrics-snapshot.contract.md` | 凭证保护"
+        },
+        {
+          "ac_id": "TC-MSNAP-010",
+          "tc_id": "AC-MSNAP-008",
+          "path_type": "`rg -n \"fail-closed",
+          "raw": "TC-MSNAP-010 | AC-MSNAP-008 | `rg -n \"fail-closed | blocked | reason_code\" contracts/metrics-snapshot.contract.md` | bridge fail-closed"
+        },
+        {
+          "ac_id": "TC-MSNAP-011",
+          "tc_id": "AC-MSNAP-009",
+          "path_type": "`rg -n \"collected_at",
+          "raw": "TC-MSNAP-011 | AC-MSNAP-009 | `rg -n \"collected_at | 来源 | 缺证据\" contracts/metrics-snapshot.contract.md` | 证据要求"
+        },
+        {
+          "ac_id": "TC-MSNAP-012",
+          "tc_id": "AC-MSNAP-010",
+          "path_type": "`rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md && rg -n \"E3",
+          "raw": "TC-MSNAP-012 | AC-MSNAP-010 | `rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md && rg -n \"E3 | E4\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md` | 分湖边界存在"
+        },
+        {
+          "ac_id": "TC-MSNAP-014",
+          "tc_id": "AC-MSNAP-001",
+          "path_type": "`rg -n \"US-MSNAP-001",
+          "raw": "TC-MSNAP-014 | AC-MSNAP-001 | `rg -n \"US-MSNAP-001 | 快照\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md` | 快照旅程可追溯"
+        },
+        {
+          "ac_id": "TC-MSNAP-015",
+          "tc_id": "AC-MSNAP-006",
+          "path_type": "`rg -n \"US-MSNAP-002",
+          "raw": "TC-MSNAP-015 | AC-MSNAP-006 | `rg -n \"US-MSNAP-002 | 空快照\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md` | 空快照路径可追溯"
+        }
+      ],
+      "has_legal_walk": true,
+      "has_illegal": true
+    },
+    "aggregates": [
+      "落地）"
+    ],
+    "state_machine_coverage": {},
+    "deep_route_recommended": false
+  },
+  "domain_fsm_qa_blocked": false,
+  "domain_fsm_qa_reason_code": "",
+  "design_alignment": {},
+  "design_md_lint": {},
+  "ui_state_matrix": {},
+  "ui_design_ship_blocked": false
+}

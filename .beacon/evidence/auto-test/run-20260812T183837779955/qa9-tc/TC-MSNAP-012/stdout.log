@@ -1,0 +1,14 @@
+150:10. Non-goals / deferral（AC-MSNAP-010）
+174:| AC-MSNAP-010 | Non-goals：E3/E4、平台 API 全量显式排除；不得宣称海 closure |
+176:## Non-goals
+37:- 不能做：复盘/圣经更新（E3）、学习记忆（E4）；不编造指标；不吞凭证。
+52:delivery: sub-lakes E1..E4
+73:| INT-MS11 | sea | should | E3/E4 回流面 | deferred |
+89:写入 `content/publications/.../metrics/` 快照 → E3 才能复盘。
+156:| DL-MS01 | 战役复盘/圣经更新 | accepted | E3 |
+157:| DL-MS02 | 学习记忆 | accepted | E4 |
+174:| AC-MSNAP-010 | Non-goals：E3/E4、平台 API 全量显式排除；不得宣称海 closure |
+178:- 不做战役复盘/圣经更新（E3）、学习记忆（E4）
+125:- 宣称海 closure
+159:| DL-MS04 | 本子湖宣称海 closure | rejected | FP-PRISM-013 |
+174:| AC-MSNAP-010 | Non-goals：E3/E4、平台 API 全量显式排除；不得宣称海 closure |

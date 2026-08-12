@@ -1,0 +1,1 @@
+rg -n "collected_at|来源|缺证据" contracts/metrics-snapshot.contract.md

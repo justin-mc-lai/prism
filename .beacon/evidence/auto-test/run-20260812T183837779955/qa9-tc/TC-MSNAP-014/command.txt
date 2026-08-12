@@ -1,0 +1,1 @@
+rg -n "US-MSNAP-001|快照" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md

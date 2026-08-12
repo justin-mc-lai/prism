@@ -1,0 +1,7 @@
+29:  - name: snapshot-wechat
+32:    bridge_command: "platform:getWechatGzhStats → snapshot（凭证走受管 secrets）"
+34:  - name: snapshot-xhs
+37:    bridge_command: "platform:getXiaohongshuStats → snapshot（凭证走受管 secrets）"
+39:  - name: snapshot-douyin
+42:    bridge_command: "platform:getDouyinStats → snapshot（凭证走受管 secrets）"
+49:  snapshot_requires_publication_ref: true

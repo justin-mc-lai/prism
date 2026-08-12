@@ -1,0 +1,1 @@
+python3 -c "import yaml,sys; d=yaml.safe_load(open('registry/metrics-adapters.yaml')); rs=[a for a in d.get('adapters',[]) if 'snapshot' in a.get('name','')]; raise SystemExit(0 if len(rs)>=2 else 1)"

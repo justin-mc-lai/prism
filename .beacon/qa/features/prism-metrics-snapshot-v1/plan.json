@@ -1,0 +1,3230 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-metrics-snapshot-v1",
+  "feature_slug": "prism-metrics-snapshot-v1",
+  "version": "v0.0.1",
+  "generated_at": "2026-08-12T10:38:37.409214+00:00",
+  "execution_mode": "feature-aware",
+  "status": "rerun_required",
+  "implementation_done": true,
+  "evidence_done": false,
+  "current_spec_fingerprint_hash": "ece9fd65d3d60eed913009d3ec4441e04f52df119dfa1cc8bc2eb42323da4301",
+  "current_baseline_hash": "sha256:6676d8b18822a321b85e9ab64352261c3c6fb62c7c5f6cec7092e5b113cc2b43",
+  "implementation_run_id": "run-20260812T043000Z",
+  "source_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-metrics-snapshot-v1.ac-test-matrix.json",
+  "source_matrix_hash": "da72c99869d97e198945e5a02943471bc291f2c6fdace5e76add84311e813abd",
+  "derived_matrix_path": ".beacon/qa/features/prism-metrics-snapshot-v1/matrix.qa9.json",
+  "story_scenario_map_path": ".beacon/qa/features/prism-metrics-snapshot-v1/story-scenario-map.json",
+  "docs_story_scenario_map_path": "docs/beacon/v0.0.1/.machine/qa/prism-metrics-snapshot-v1.story-scenario-map.json",
+  "technical_archive_path": "docs/beacon/v0.0.1/.machine/execution/technical-implementation-prism-metrics-snapshot-v1.json",
+  "feature_status_path": ".beacon/qa/features/prism-metrics-snapshot-v1/status.json",
+  "feature_evidence_contract_path": "",
+  "story_sequence": [
+    {
+      "ac_id": "AC-001",
+      "theme": "general",
+      "text": "Acceptance criteria TBD",
+      "tc_ids": [],
+      "qa_types": []
+    }
+  ],
+  "story_scenarios": {
+    "schema_version": "1.0",
+    "feature": "prism-metrics-snapshot-v1",
+    "feature_slug": "prism-metrics-snapshot-v1",
+    "version": "v0.0.1",
+    "generated_at": "2026-08-12T10:38:31.452200+00:00",
+    "expansion_profile": "pua-web",
+    "scenario_depth": "standard",
+    "families_required": [
+      "happy",
+      "negative",
+      "boundary",
+      "recovery",
+      "compatibility"
+    ],
+    "stories": [
+      {
+        "ac_id": "AC-001",
+        "theme": "general",
+        "text": "Acceptance criteria TBD",
+        "scenario_ids": [
+          "SC-001",
+          "SC-002",
+          "SC-003",
+          "SC-004",
+          "SC-005",
+          "SC-006",
+          "SC-007",
+          "SC-008",
+          "SC-009",
+          "SC-010",
+          "SC-011",
+          "SC-012",
+          "SC-013",
+          "SC-014",
+          "SC-015",
+          "SC-016",
+          "SC-017",
+          "SC-018",
+          "SC-019",
+          "SC-020",
+          "SC-021",
+          "SC-022",
+          "SC-023",
+          "SC-024",
+          "SC-025",
+          "SC-026",
+          "SC-027",
+          "SC-028",
+          "SC-029",
+          "SC-030",
+          "SC-031",
+          "SC-032",
+          "SC-033",
+          "SC-034",
+          "SC-035",
+          "SC-036",
+          "SC-037",
+          "SC-038",
+          "SC-039",
+          "SC-040",
+          "SC-041",
+          "SC-042",
+          "SC-043",
+          "SC-044",
+          "SC-045",
+          "SC-046",
+          "SC-047",
+          "SC-048",
+          "SC-049",
+          "SC-050"
+        ],
+        "scenario_families": [
+          "happy",
+          "negative",
+          "boundary",
+          "recovery",
+          "compatibility",
+          "happy",
+          "negative",
+          "boundary",
+          "recovery",
+          "compatibility",
+          "happy",
+          "negative",
+          "boundary",
+          "recovery",
+          "compatibility",
+          "happy",
+          "negative",
+          "boundary",
+          "recovery",
+          "compatibility",
+          "happy",
+          "negative",
+          "boundary",
+          "recovery",
+          "compatibility",
+          "happy",
+          "negative",
+          "boundary",
+          "recovery",
+          "compatibility",
+          "happy",
+          "negative",
+          "boundary",
+          "recovery",
+          "compatibility",
+          "happy",
+          "negative",
+          "boundary",
+          "recovery",
+          "compatibility",
+          "happy",
+          "negative",
+          "boundary",
+          "recovery",
+          "compatibility",
+          "happy",
+          "negative",
+          "boundary",
+          "recovery",
+          "compatibility"
+        ],
+        "required_families": [
+          "happy",
+          "negative",
+          "boundary",
+          "recovery",
+          "compatibility",
+          "happy",
+          "negative",
+          "boundary",
+          "recovery",
+          "compatibility",
+          "happy",
+          "negative",
+          "boundary",
+          "recovery",
+          "compatibility",
+          "happy",
+          "negative",
+          "boundary",
+          "recovery",
+          "compatibility",
+          "happy",
+          "negative",
+          "boundary",
+          "recovery",
+          "compatibility",
+          "happy",
+          "negative",
+          "boundary",
+          "recovery",
+          "compatibility",
+          "happy",
+          "negative",
+          "boundary",
+          "recovery",
+          "compatibility",
+          "happy",
+          "negative",
+          "boundary",
+          "recovery",
+          "compatibility",
+          "happy",
+          "negative",
+          "boundary",
+          "recovery",
+          "compatibility",
+          "happy",
+          "negative",
+          "boundary",
+          "recovery",
+          "compatibility"
+        ],
+        "scenarios": [
+          {
+            "scenario_id": "SC-001",
+            "source_tc_id": "TC-MSNAP-001",
+            "tc_id": "TC-MSNAP-001-HAPPY",
+            "scenario_family": "happy",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-002",
+            "source_tc_id": "TC-MSNAP-001",
+            "tc_id": "TC-MSNAP-001-NEGATIVE",
+            "scenario_family": "negative",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-003",
+            "source_tc_id": "TC-MSNAP-001",
+            "tc_id": "TC-MSNAP-001-BOUNDARY",
+            "scenario_family": "boundary",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": false
+          },
+          {
+            "scenario_id": "SC-004",
+            "source_tc_id": "TC-MSNAP-001",
+            "tc_id": "TC-MSNAP-001-RECOVERY",
+            "scenario_family": "recovery",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": false
+          },
+          {
+            "scenario_id": "SC-005",
+            "source_tc_id": "TC-MSNAP-001",
+            "tc_id": "TC-MSNAP-001-COMPATIBILITY",
+            "scenario_family": "compatibility",
+            "qa_type": "compatibility",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-006",
+            "source_tc_id": "TC-MSNAP-003",
+            "tc_id": "TC-MSNAP-003-HAPPY",
+            "scenario_family": "happy",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-007",
+            "source_tc_id": "TC-MSNAP-003",
+            "tc_id": "TC-MSNAP-003-NEGATIVE",
+            "scenario_family": "negative",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-008",
+            "source_tc_id": "TC-MSNAP-003",
+            "tc_id": "TC-MSNAP-003-BOUNDARY",
+            "scenario_family": "boundary",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": false
+          },
+          {
+            "scenario_id": "SC-009",
+            "source_tc_id": "TC-MSNAP-003",
+            "tc_id": "TC-MSNAP-003-RECOVERY",
+            "scenario_family": "recovery",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": false
+          },
+          {
+            "scenario_id": "SC-010",
+            "source_tc_id": "TC-MSNAP-003",
+            "tc_id": "TC-MSNAP-003-COMPATIBILITY",
+            "scenario_family": "compatibility",
+            "qa_type": "compatibility",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-011",
+            "source_tc_id": "TC-MSNAP-008",
+            "tc_id": "TC-MSNAP-008-HAPPY",
+            "scenario_family": "happy",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-012",
+            "source_tc_id": "TC-MSNAP-008",
+            "tc_id": "TC-MSNAP-008-NEGATIVE",
+            "scenario_family": "negative",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-013",
+            "source_tc_id": "TC-MSNAP-008",
+            "tc_id": "TC-MSNAP-008-BOUNDARY",
+            "scenario_family": "boundary",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": false
+          },
+          {
+            "scenario_id": "SC-014",
+            "source_tc_id": "TC-MSNAP-008",
+            "tc_id": "TC-MSNAP-008-RECOVERY",
+            "scenario_family": "recovery",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": false
+          },
+          {
+            "scenario_id": "SC-015",
+            "source_tc_id": "TC-MSNAP-008",
+            "tc_id": "TC-MSNAP-008-COMPATIBILITY",
+            "scenario_family": "compatibility",
+            "qa_type": "compatibility",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-016",
+            "source_tc_id": "TC-MSNAP-009",
+            "tc_id": "TC-MSNAP-009-HAPPY",
+            "scenario_family": "happy",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-017",
+            "source_tc_id": "TC-MSNAP-009",
+            "tc_id": "TC-MSNAP-009-NEGATIVE",
+            "scenario_family": "negative",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-018",
+            "source_tc_id": "TC-MSNAP-009",
+            "tc_id": "TC-MSNAP-009-BOUNDARY",
+            "scenario_family": "boundary",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": false
+          },
+          {
+            "scenario_id": "SC-019",
+            "source_tc_id": "TC-MSNAP-009",
+            "tc_id": "TC-MSNAP-009-RECOVERY",
+            "scenario_family": "recovery",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": false
+          },
+          {
+            "scenario_id": "SC-020",
+            "source_tc_id": "TC-MSNAP-009",
+            "tc_id": "TC-MSNAP-009-COMPATIBILITY",
+            "scenario_family": "compatibility",
+            "qa_type": "compatibility",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-021",
+            "source_tc_id": "TC-MSNAP-010",
+            "tc_id": "TC-MSNAP-010-HAPPY",
+            "scenario_family": "happy",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-022",
+            "source_tc_id": "TC-MSNAP-010",
+            "tc_id": "TC-MSNAP-010-NEGATIVE",
+            "scenario_family": "negative",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-023",
+            "source_tc_id": "TC-MSNAP-010",
+            "tc_id": "TC-MSNAP-010-BOUNDARY",
+            "scenario_family": "boundary",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": false
+          },
+          {
+            "scenario_id": "SC-024",
+            "source_tc_id": "TC-MSNAP-010",
+            "tc_id": "TC-MSNAP-010-RECOVERY",
+            "scenario_family": "recovery",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": false
+          },
+          {
+            "scenario_id": "SC-025",
+            "source_tc_id": "TC-MSNAP-010",
+            "tc_id": "TC-MSNAP-010-COMPATIBILITY",
+            "scenario_family": "compatibility",
+            "qa_type": "compatibility",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-026",
+            "source_tc_id": "TC-MSNAP-011",
+            "tc_id": "TC-MSNAP-011-HAPPY",
+            "scenario_family": "happy",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-027",
+            "source_tc_id": "TC-MSNAP-011",
+            "tc_id": "TC-MSNAP-011-NEGATIVE",
+            "scenario_family": "negative",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-028",
+            "source_tc_id": "TC-MSNAP-011",
+            "tc_id": "TC-MSNAP-011-BOUNDARY",
+            "scenario_family": "boundary",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": false
+          },
+          {
+            "scenario_id": "SC-029",
+            "source_tc_id": "TC-MSNAP-011",
+            "tc_id": "TC-MSNAP-011-RECOVERY",
+            "scenario_family": "recovery",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": false
+          },
+          {
+            "scenario_id": "SC-030",
+            "source_tc_id": "TC-MSNAP-011",
+            "tc_id": "TC-MSNAP-011-COMPATIBILITY",
+            "scenario_family": "compatibility",
+            "qa_type": "compatibility",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-031",
+            "source_tc_id": "TC-MSNAP-012",
+            "tc_id": "TC-MSNAP-012-HAPPY",
+            "scenario_family": "happy",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-032",
+            "source_tc_id": "TC-MSNAP-012",
+            "tc_id": "TC-MSNAP-012-NEGATIVE",
+            "scenario_family": "negative",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-033",
+            "source_tc_id": "TC-MSNAP-012",
+            "tc_id": "TC-MSNAP-012-BOUNDARY",
+            "scenario_family": "boundary",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": false
+          },
+          {
+            "scenario_id": "SC-034",
+            "source_tc_id": "TC-MSNAP-012",
+            "tc_id": "TC-MSNAP-012-RECOVERY",
+            "scenario_family": "recovery",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": false
+          },
+          {
+            "scenario_id": "SC-035",
+            "source_tc_id": "TC-MSNAP-012",
+            "tc_id": "TC-MSNAP-012-COMPATIBILITY",
+            "scenario_family": "compatibility",
+            "qa_type": "compatibility",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-036",
+            "source_tc_id": "TC-MSNAP-013",
+            "tc_id": "TC-MSNAP-013-HAPPY",
+            "scenario_family": "happy",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-037",
+            "source_tc_id": "TC-MSNAP-013",
+            "tc_id": "TC-MSNAP-013-NEGATIVE",
+            "scenario_family": "negative",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-038",
+            "source_tc_id": "TC-MSNAP-013",
+            "tc_id": "TC-MSNAP-013-BOUNDARY",
+            "scenario_family": "boundary",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": false
+          },
+          {
+            "scenario_id": "SC-039",
+            "source_tc_id": "TC-MSNAP-013",
+            "tc_id": "TC-MSNAP-013-RECOVERY",
+            "scenario_family": "recovery",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": false
+          },
+          {
+            "scenario_id": "SC-040",
+            "source_tc_id": "TC-MSNAP-013",
+            "tc_id": "TC-MSNAP-013-COMPATIBILITY",
+            "scenario_family": "compatibility",
+            "qa_type": "compatibility",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-041",
+            "source_tc_id": "TC-MSNAP-014",
+            "tc_id": "TC-MSNAP-014-HAPPY",
+            "scenario_family": "happy",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-042",
+            "source_tc_id": "TC-MSNAP-014",
+            "tc_id": "TC-MSNAP-014-NEGATIVE",
+            "scenario_family": "negative",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-043",
+            "source_tc_id": "TC-MSNAP-014",
+            "tc_id": "TC-MSNAP-014-BOUNDARY",
+            "scenario_family": "boundary",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": false
+          },
+          {
+            "scenario_id": "SC-044",
+            "source_tc_id": "TC-MSNAP-014",
+            "tc_id": "TC-MSNAP-014-RECOVERY",
+            "scenario_family": "recovery",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": false
+          },
+          {
+            "scenario_id": "SC-045",
+            "source_tc_id": "TC-MSNAP-014",
+            "tc_id": "TC-MSNAP-014-COMPATIBILITY",
+            "scenario_family": "compatibility",
+            "qa_type": "compatibility",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-046",
+            "source_tc_id": "TC-MSNAP-015",
+            "tc_id": "TC-MSNAP-015-HAPPY",
+            "scenario_family": "happy",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-047",
+            "source_tc_id": "TC-MSNAP-015",
+            "tc_id": "TC-MSNAP-015-NEGATIVE",
+            "scenario_family": "negative",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": true
+          },
+          {
+            "scenario_id": "SC-048",
+            "source_tc_id": "TC-MSNAP-015",
+            "tc_id": "TC-MSNAP-015-BOUNDARY",
+            "scenario_family": "boundary",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": false
+          },
+          {
+            "scenario_id": "SC-049",
+            "source_tc_id": "TC-MSNAP-015",
+            "tc_id": "TC-MSNAP-015-RECOVERY",
+            "scenario_family": "recovery",
+            "qa_type": "functional",
+            "browser_required": true,
+            "replay_required": false
+          },
+          {
+            "scenario_id": "SC-050",
+            "source_tc_id": "TC-MSNAP-015",
+            "tc_id": "TC-MSNAP-015-COMPATIBILITY",
+            "scenario_family": "compatibility",
+            "qa_type": "compatibility",
+            "browser_required": true,
+            "replay_required": true
+          }
+        ]
+      },
+      {
+        "ac_id": "AC-MSNAP-002",
+        "theme": "",
+        "text": "快照 bridge 条目存在",
+        "scenario_ids": [
+          "SC-AUTO-TC-MSNAP-002",
+          "SC-AUTO-TC-MSNAP-007"
+        ],
+        "scenario_families": [
+          "primary",
+          "primary"
+        ],
+        "required_families": [],
+        "scenarios": [
+          {
+            "scenario_id": "SC-AUTO-TC-MSNAP-002",
+            "source_tc_id": "TC-MSNAP-002",
+            "tc_id": "TC-MSNAP-002-PRIMARY",
+            "scenario_family": "primary",
+            "qa_type": "contract",
+            "browser_required": false,
+            "replay_required": false
+          },
+          {
+            "scenario_id": "SC-AUTO-TC-MSNAP-007",
+            "source_tc_id": "TC-MSNAP-007",
+            "tc_id": "TC-MSNAP-007-PRIMARY",
+            "scenario_family": "primary",
+            "qa_type": "contract",
+            "browser_required": false,
+            "replay_required": false
+          }
+        ]
+      },
+      {
+        "ac_id": "AC-MSNAP-004",
+        "theme": "",
+        "text": "路由快照引用",
+        "scenario_ids": [
+          "SC-AUTO-TC-MSNAP-004"
+        ],
+        "scenario_families": [
+          "primary"
+        ],
+        "required_families": [],
+        "scenarios": [
+          {
+            "scenario_id": "SC-AUTO-TC-MSNAP-004",
+            "source_tc_id": "TC-MSNAP-004",
+            "tc_id": "TC-MSNAP-004-PRIMARY",
+            "scenario_family": "primary",
+            "qa_type": "contract",
+            "browser_required": false,
+            "replay_required": false
+          }
+        ]
+      },
+      {
+        "ac_id": "AC-MSNAP-005",
+        "theme": "",
+        "text": "exec 脚本存在且可执行",
+        "scenario_ids": [
+          "SC-AUTO-TC-MSNAP-005",
+          "SC-AUTO-TC-MSNAP-006"
+        ],
+        "scenario_families": [
+          "primary",
+          "primary"
+        ],
+        "required_families": [],
+        "scenarios": [
+          {
+            "scenario_id": "SC-AUTO-TC-MSNAP-005",
+            "source_tc_id": "TC-MSNAP-005",
+            "tc_id": "TC-MSNAP-005-PRIMARY",
+            "scenario_family": "primary",
+            "qa_type": "contract",
+            "browser_required": false,
+            "replay_required": false
+          },
+          {
+            "scenario_id": "SC-AUTO-TC-MSNAP-006",
+            "source_tc_id": "TC-MSNAP-006",
+            "tc_id": "TC-MSNAP-006-PRIMARY",
+            "scenario_family": "primary",
+            "qa_type": "contract",
+            "browser_required": false,
+            "replay_required": false
+          }
+        ]
+      }
+    ],
+    "scenarios": [
+      {
+        "scenario_id": "SC-001",
+        "source_tc_id": "TC-MSNAP-001",
+        "tc_id": "TC-MSNAP-001-HAPPY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "happy",
+        "title": "AC-001 happy path :: collected_at",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "happy",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [],
+        "stop_on_fail": true,
+        "automation": "auto",
+        "command": "test -f contracts/metrics-snapshot.contract.md && rg -n \"snapshot_id|publication_ref|collected_at|来源\" contracts/metrics-snapshot.contract.md",
+        "assertion": "collected_at (happy path completes with expected evidence)",
+        "priority": "P0",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-001-HAPPY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-002",
+        "source_tc_id": "TC-MSNAP-001",
+        "tc_id": "TC-MSNAP-001-NEGATIVE",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "negative",
+        "title": "AC-001 negative path :: collected_at",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "negative",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-001"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "test -f contracts/metrics-snapshot.contract.md && rg -n \"snapshot_id|publication_ref|collected_at|来源\" contracts/metrics-snapshot.contract.md",
+        "assertion": "collected_at (negative path is rejected or handled with explicit evidence)",
+        "priority": "P0",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-001-NEGATIVE.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-003",
+        "source_tc_id": "TC-MSNAP-001",
+        "tc_id": "TC-MSNAP-001-BOUNDARY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "boundary",
+        "title": "AC-001 boundary path :: collected_at",
+        "browser_required": false,
+        "replay_required": false,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "boundary",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-001"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "test -f contracts/metrics-snapshot.contract.md && rg -n \"snapshot_id|publication_ref|collected_at|来源\" contracts/metrics-snapshot.contract.md",
+        "assertion": "collected_at (boundary path is validated with explicit evidence)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-001-BOUNDARY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-004",
+        "source_tc_id": "TC-MSNAP-001",
+        "tc_id": "TC-MSNAP-001-RECOVERY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "recovery",
+        "title": "AC-001 recovery path :: collected_at",
+        "browser_required": false,
+        "replay_required": false,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "recovery",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-001"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "test -f contracts/metrics-snapshot.contract.md && rg -n \"snapshot_id|publication_ref|collected_at|来源\" contracts/metrics-snapshot.contract.md",
+        "assertion": "collected_at (recovery path survives refresh/back/retry with evidence)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-001-RECOVERY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-005",
+        "source_tc_id": "TC-MSNAP-001",
+        "tc_id": "TC-MSNAP-001-COMPATIBILITY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "compatibility",
+        "title": "AC-001 compatibility path :: collected_at",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; npx playwright test --project=chromium --project=firefox --project=webkit",
+        "coverage_axes": [
+          "compatibility",
+          "compatibility",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-001"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "test -f contracts/metrics-snapshot.contract.md && rg -n \"snapshot_id|publication_ref|collected_at|来源\" contracts/metrics-snapshot.contract.md",
+        "assertion": "collected_at (compatibility path preserves behavior across browser/device pairs)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-001-COMPATIBILITY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-006",
+        "source_tc_id": "TC-MSNAP-003",
+        "tc_id": "TC-MSNAP-003-HAPPY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "happy",
+        "title": "AC-001 happy path :: measured\" contracts/metrics-snapshot.contract.md`",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "happy",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [],
+        "stop_on_fail": true,
+        "automation": "auto",
+        "command": "rg -n \"publication_ref|无 publication|measured\" contracts/metrics-snapshot.contract.md",
+        "assertion": "measured\" contracts/metrics-snapshot.contract.md` (happy path completes with expected evidence)",
+        "priority": "P0",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-003-HAPPY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-007",
+        "source_tc_id": "TC-MSNAP-003",
+        "tc_id": "TC-MSNAP-003-NEGATIVE",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "negative",
+        "title": "AC-001 negative path :: measured\" contracts/metrics-snapshot.contract.md`",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "negative",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-006"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"publication_ref|无 publication|measured\" contracts/metrics-snapshot.contract.md",
+        "assertion": "measured\" contracts/metrics-snapshot.contract.md` (negative path is rejected or handled with explicit evidence)",
+        "priority": "P0",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-003-NEGATIVE.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-008",
+        "source_tc_id": "TC-MSNAP-003",
+        "tc_id": "TC-MSNAP-003-BOUNDARY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "boundary",
+        "title": "AC-001 boundary path :: measured\" contracts/metrics-snapshot.contract.md`",
+        "browser_required": false,
+        "replay_required": false,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "boundary",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-006"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"publication_ref|无 publication|measured\" contracts/metrics-snapshot.contract.md",
+        "assertion": "measured\" contracts/metrics-snapshot.contract.md` (boundary path is validated with explicit evidence)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-003-BOUNDARY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-009",
+        "source_tc_id": "TC-MSNAP-003",
+        "tc_id": "TC-MSNAP-003-RECOVERY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "recovery",
+        "title": "AC-001 recovery path :: measured\" contracts/metrics-snapshot.contract.md`",
+        "browser_required": false,
+        "replay_required": false,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "recovery",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-006"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"publication_ref|无 publication|measured\" contracts/metrics-snapshot.contract.md",
+        "assertion": "measured\" contracts/metrics-snapshot.contract.md` (recovery path survives refresh/back/retry with evidence)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-003-RECOVERY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-010",
+        "source_tc_id": "TC-MSNAP-003",
+        "tc_id": "TC-MSNAP-003-COMPATIBILITY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "compatibility",
+        "title": "AC-001 compatibility path :: measured\" contracts/metrics-snapshot.contract.md`",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; npx playwright test --project=chromium --project=firefox --project=webkit",
+        "coverage_axes": [
+          "compatibility",
+          "compatibility",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-006"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"publication_ref|无 publication|measured\" contracts/metrics-snapshot.contract.md",
+        "assertion": "measured\" contracts/metrics-snapshot.contract.md` (compatibility path preserves behavior across browser/device pairs)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-003-COMPATIBILITY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-011",
+        "source_tc_id": "TC-MSNAP-008",
+        "tc_id": "TC-MSNAP-008-HAPPY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "happy",
+        "title": "AC-001 happy path :: 不编造",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "happy",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [],
+        "stop_on_fail": true,
+        "automation": "auto",
+        "command": "rg -n \"空快照|禁止|不编造|猜\" contracts/metrics-snapshot.contract.md",
+        "assertion": "不编造 (happy path completes with expected evidence)",
+        "priority": "P0",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-008-HAPPY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-012",
+        "source_tc_id": "TC-MSNAP-008",
+        "tc_id": "TC-MSNAP-008-NEGATIVE",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "negative",
+        "title": "AC-001 negative path :: 不编造",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "negative",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-011"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"空快照|禁止|不编造|猜\" contracts/metrics-snapshot.contract.md",
+        "assertion": "不编造 (negative path is rejected or handled with explicit evidence)",
+        "priority": "P0",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-008-NEGATIVE.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-013",
+        "source_tc_id": "TC-MSNAP-008",
+        "tc_id": "TC-MSNAP-008-BOUNDARY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "boundary",
+        "title": "AC-001 boundary path :: 不编造",
+        "browser_required": false,
+        "replay_required": false,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "boundary",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-011"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"空快照|禁止|不编造|猜\" contracts/metrics-snapshot.contract.md",
+        "assertion": "不编造 (boundary path is validated with explicit evidence)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-008-BOUNDARY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-014",
+        "source_tc_id": "TC-MSNAP-008",
+        "tc_id": "TC-MSNAP-008-RECOVERY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "recovery",
+        "title": "AC-001 recovery path :: 不编造",
+        "browser_required": false,
+        "replay_required": false,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "recovery",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-011"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"空快照|禁止|不编造|猜\" contracts/metrics-snapshot.contract.md",
+        "assertion": "不编造 (recovery path survives refresh/back/retry with evidence)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-008-RECOVERY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-015",
+        "source_tc_id": "TC-MSNAP-008",
+        "tc_id": "TC-MSNAP-008-COMPATIBILITY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "compatibility",
+        "title": "AC-001 compatibility path :: 不编造",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; npx playwright test --project=chromium --project=firefox --project=webkit",
+        "coverage_axes": [
+          "compatibility",
+          "compatibility",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-011"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"空快照|禁止|不编造|猜\" contracts/metrics-snapshot.contract.md",
+        "assertion": "不编造 (compatibility path preserves behavior across browser/device pairs)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-008-COMPATIBILITY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-016",
+        "source_tc_id": "TC-MSNAP-009",
+        "tc_id": "TC-MSNAP-009-HAPPY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "happy",
+        "title": "AC-001 happy path :: secrets",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "happy",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [],
+        "stop_on_fail": true,
+        "automation": "auto",
+        "command": "rg -n \"凭证|密钥|secrets|禁止入库\" contracts/metrics-snapshot.contract.md",
+        "assertion": "secrets (happy path completes with expected evidence)",
+        "priority": "P0",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-009-HAPPY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-017",
+        "source_tc_id": "TC-MSNAP-009",
+        "tc_id": "TC-MSNAP-009-NEGATIVE",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "negative",
+        "title": "AC-001 negative path :: secrets",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "negative",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-016"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"凭证|密钥|secrets|禁止入库\" contracts/metrics-snapshot.contract.md",
+        "assertion": "secrets (negative path is rejected or handled with explicit evidence)",
+        "priority": "P0",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-009-NEGATIVE.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-018",
+        "source_tc_id": "TC-MSNAP-009",
+        "tc_id": "TC-MSNAP-009-BOUNDARY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "boundary",
+        "title": "AC-001 boundary path :: secrets",
+        "browser_required": false,
+        "replay_required": false,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "boundary",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-016"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"凭证|密钥|secrets|禁止入库\" contracts/metrics-snapshot.contract.md",
+        "assertion": "secrets (boundary path is validated with explicit evidence)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-009-BOUNDARY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-019",
+        "source_tc_id": "TC-MSNAP-009",
+        "tc_id": "TC-MSNAP-009-RECOVERY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "recovery",
+        "title": "AC-001 recovery path :: secrets",
+        "browser_required": false,
+        "replay_required": false,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "recovery",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-016"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"凭证|密钥|secrets|禁止入库\" contracts/metrics-snapshot.contract.md",
+        "assertion": "secrets (recovery path survives refresh/back/retry with evidence)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-009-RECOVERY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-020",
+        "source_tc_id": "TC-MSNAP-009",
+        "tc_id": "TC-MSNAP-009-COMPATIBILITY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "compatibility",
+        "title": "AC-001 compatibility path :: secrets",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; npx playwright test --project=chromium --project=firefox --project=webkit",
+        "coverage_axes": [
+          "compatibility",
+          "compatibility",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-016"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"凭证|密钥|secrets|禁止入库\" contracts/metrics-snapshot.contract.md",
+        "assertion": "secrets (compatibility path preserves behavior across browser/device pairs)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-009-COMPATIBILITY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-021",
+        "source_tc_id": "TC-MSNAP-010",
+        "tc_id": "TC-MSNAP-010-HAPPY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "happy",
+        "title": "AC-001 happy path :: reason_code\" contracts/metrics-snapshot.contract.md`",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "happy",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [],
+        "stop_on_fail": true,
+        "automation": "auto",
+        "command": "rg -n \"fail-closed|blocked|reason_code\" contracts/metrics-snapshot.contract.md",
+        "assertion": "reason_code\" contracts/metrics-snapshot.contract.md` (happy path completes with expected evidence)",
+        "priority": "P0",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-010-HAPPY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-022",
+        "source_tc_id": "TC-MSNAP-010",
+        "tc_id": "TC-MSNAP-010-NEGATIVE",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "negative",
+        "title": "AC-001 negative path :: reason_code\" contracts/metrics-snapshot.contract.md`",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "negative",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-021"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"fail-closed|blocked|reason_code\" contracts/metrics-snapshot.contract.md",
+        "assertion": "reason_code\" contracts/metrics-snapshot.contract.md` (negative path is rejected or handled with explicit evidence)",
+        "priority": "P0",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-010-NEGATIVE.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-023",
+        "source_tc_id": "TC-MSNAP-010",
+        "tc_id": "TC-MSNAP-010-BOUNDARY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "boundary",
+        "title": "AC-001 boundary path :: reason_code\" contracts/metrics-snapshot.contract.md`",
+        "browser_required": false,
+        "replay_required": false,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "boundary",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-021"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"fail-closed|blocked|reason_code\" contracts/metrics-snapshot.contract.md",
+        "assertion": "reason_code\" contracts/metrics-snapshot.contract.md` (boundary path is validated with explicit evidence)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-010-BOUNDARY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-024",
+        "source_tc_id": "TC-MSNAP-010",
+        "tc_id": "TC-MSNAP-010-RECOVERY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "recovery",
+        "title": "AC-001 recovery path :: reason_code\" contracts/metrics-snapshot.contract.md`",
+        "browser_required": false,
+        "replay_required": false,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "recovery",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-021"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"fail-closed|blocked|reason_code\" contracts/metrics-snapshot.contract.md",
+        "assertion": "reason_code\" contracts/metrics-snapshot.contract.md` (recovery path survives refresh/back/retry with evidence)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-010-RECOVERY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-025",
+        "source_tc_id": "TC-MSNAP-010",
+        "tc_id": "TC-MSNAP-010-COMPATIBILITY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "compatibility",
+        "title": "AC-001 compatibility path :: reason_code\" contracts/metrics-snapshot.contract.md`",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; npx playwright test --project=chromium --project=firefox --project=webkit",
+        "coverage_axes": [
+          "compatibility",
+          "compatibility",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-021"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"fail-closed|blocked|reason_code\" contracts/metrics-snapshot.contract.md",
+        "assertion": "reason_code\" contracts/metrics-snapshot.contract.md` (compatibility path preserves behavior across browser/device pairs)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-010-COMPATIBILITY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-026",
+        "source_tc_id": "TC-MSNAP-011",
+        "tc_id": "TC-MSNAP-011-HAPPY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "happy",
+        "title": "AC-001 happy path :: 缺证据\" contracts/metrics-snapshot.contract.md`",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "happy",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [],
+        "stop_on_fail": true,
+        "automation": "auto",
+        "command": "rg -n \"collected_at|来源|缺证据\" contracts/metrics-snapshot.contract.md",
+        "assertion": "缺证据\" contracts/metrics-snapshot.contract.md` (happy path completes with expected evidence)",
+        "priority": "P0",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-011-HAPPY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-027",
+        "source_tc_id": "TC-MSNAP-011",
+        "tc_id": "TC-MSNAP-011-NEGATIVE",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "negative",
+        "title": "AC-001 negative path :: 缺证据\" contracts/metrics-snapshot.contract.md`",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "negative",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-026"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"collected_at|来源|缺证据\" contracts/metrics-snapshot.contract.md",
+        "assertion": "缺证据\" contracts/metrics-snapshot.contract.md` (negative path is rejected or handled with explicit evidence)",
+        "priority": "P0",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-011-NEGATIVE.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-028",
+        "source_tc_id": "TC-MSNAP-011",
+        "tc_id": "TC-MSNAP-011-BOUNDARY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "boundary",
+        "title": "AC-001 boundary path :: 缺证据\" contracts/metrics-snapshot.contract.md`",
+        "browser_required": false,
+        "replay_required": false,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "boundary",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-026"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"collected_at|来源|缺证据\" contracts/metrics-snapshot.contract.md",
+        "assertion": "缺证据\" contracts/metrics-snapshot.contract.md` (boundary path is validated with explicit evidence)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-011-BOUNDARY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-029",
+        "source_tc_id": "TC-MSNAP-011",
+        "tc_id": "TC-MSNAP-011-RECOVERY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "recovery",
+        "title": "AC-001 recovery path :: 缺证据\" contracts/metrics-snapshot.contract.md`",
+        "browser_required": false,
+        "replay_required": false,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "recovery",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-026"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"collected_at|来源|缺证据\" contracts/metrics-snapshot.contract.md",
+        "assertion": "缺证据\" contracts/metrics-snapshot.contract.md` (recovery path survives refresh/back/retry with evidence)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-011-RECOVERY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-030",
+        "source_tc_id": "TC-MSNAP-011",
+        "tc_id": "TC-MSNAP-011-COMPATIBILITY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "compatibility",
+        "title": "AC-001 compatibility path :: 缺证据\" contracts/metrics-snapshot.contract.md`",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; npx playwright test --project=chromium --project=firefox --project=webkit",
+        "coverage_axes": [
+          "compatibility",
+          "compatibility",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-026"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"collected_at|来源|缺证据\" contracts/metrics-snapshot.contract.md",
+        "assertion": "缺证据\" contracts/metrics-snapshot.contract.md` (compatibility path preserves behavior across browser/device pairs)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-011-COMPATIBILITY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-031",
+        "source_tc_id": "TC-MSNAP-012",
+        "tc_id": "TC-MSNAP-012-HAPPY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "happy",
+        "title": "AC-001 happy path :: 分湖边界存在",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "happy",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [],
+        "stop_on_fail": true,
+        "automation": "auto",
+        "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md && rg -n \"E3|E4\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+        "assertion": "分湖边界存在 (happy path completes with expected evidence)",
+        "priority": "P0",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-012-HAPPY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-032",
+        "source_tc_id": "TC-MSNAP-012",
+        "tc_id": "TC-MSNAP-012-NEGATIVE",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "negative",
+        "title": "AC-001 negative path :: 分湖边界存在",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "negative",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-031"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md && rg -n \"E3|E4\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+        "assertion": "分湖边界存在 (negative path is rejected or handled with explicit evidence)",
+        "priority": "P0",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-012-NEGATIVE.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-033",
+        "source_tc_id": "TC-MSNAP-012",
+        "tc_id": "TC-MSNAP-012-BOUNDARY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "boundary",
+        "title": "AC-001 boundary path :: 分湖边界存在",
+        "browser_required": false,
+        "replay_required": false,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "boundary",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-031"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md && rg -n \"E3|E4\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+        "assertion": "分湖边界存在 (boundary path is validated with explicit evidence)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-012-BOUNDARY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-034",
+        "source_tc_id": "TC-MSNAP-012",
+        "tc_id": "TC-MSNAP-012-RECOVERY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "recovery",
+        "title": "AC-001 recovery path :: 分湖边界存在",
+        "browser_required": false,
+        "replay_required": false,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "recovery",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-031"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md && rg -n \"E3|E4\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+        "assertion": "分湖边界存在 (recovery path survives refresh/back/retry with evidence)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-012-RECOVERY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-035",
+        "source_tc_id": "TC-MSNAP-012",
+        "tc_id": "TC-MSNAP-012-COMPATIBILITY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "compatibility",
+        "title": "AC-001 compatibility path :: 分湖边界存在",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; npx playwright test --project=chromium --project=firefox --project=webkit",
+        "coverage_axes": [
+          "compatibility",
+          "compatibility",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-031"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md && rg -n \"E3|E4\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+        "assertion": "分湖边界存在 (compatibility path preserves behavior across browser/device pairs)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-012-COMPATIBILITY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-036",
+        "source_tc_id": "TC-MSNAP-013",
+        "tc_id": "TC-MSNAP-013-HAPPY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "happy",
+        "title": "AC-001 happy path :: 宣称海\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md`",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "happy",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [],
+        "stop_on_fail": true,
+        "automation": "auto",
+        "command": "rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+        "assertion": "宣称海\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md` (happy path completes with expected evidence)",
+        "priority": "P0",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-013-HAPPY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-037",
+        "source_tc_id": "TC-MSNAP-013",
+        "tc_id": "TC-MSNAP-013-NEGATIVE",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "negative",
+        "title": "AC-001 negative path :: 宣称海\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md`",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "negative",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-036"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+        "assertion": "宣称海\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md` (negative path is rejected or handled with explicit evidence)",
+        "priority": "P0",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-013-NEGATIVE.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-038",
+        "source_tc_id": "TC-MSNAP-013",
+        "tc_id": "TC-MSNAP-013-BOUNDARY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "boundary",
+        "title": "AC-001 boundary path :: 宣称海\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md`",
+        "browser_required": false,
+        "replay_required": false,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "boundary",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-036"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+        "assertion": "宣称海\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md` (boundary path is validated with explicit evidence)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-013-BOUNDARY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-039",
+        "source_tc_id": "TC-MSNAP-013",
+        "tc_id": "TC-MSNAP-013-RECOVERY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "recovery",
+        "title": "AC-001 recovery path :: 宣称海\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md`",
+        "browser_required": false,
+        "replay_required": false,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "recovery",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-036"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+        "assertion": "宣称海\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md` (recovery path survives refresh/back/retry with evidence)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-013-RECOVERY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-040",
+        "source_tc_id": "TC-MSNAP-013",
+        "tc_id": "TC-MSNAP-013-COMPATIBILITY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "compatibility",
+        "title": "AC-001 compatibility path :: 宣称海\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md`",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; npx playwright test --project=chromium --project=firefox --project=webkit",
+        "coverage_axes": [
+          "compatibility",
+          "compatibility",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-036"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+        "assertion": "宣称海\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md` (compatibility path preserves behavior across browser/device pairs)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-013-COMPATIBILITY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-041",
+        "source_tc_id": "TC-MSNAP-014",
+        "tc_id": "TC-MSNAP-014-HAPPY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "happy",
+        "title": "AC-001 happy path :: 快照旅程可追溯",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "happy",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [],
+        "stop_on_fail": true,
+        "automation": "auto",
+        "command": "rg -n \"US-MSNAP-001|快照\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+        "assertion": "快照旅程可追溯 (happy path completes with expected evidence)",
+        "priority": "P0",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-014-HAPPY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-042",
+        "source_tc_id": "TC-MSNAP-014",
+        "tc_id": "TC-MSNAP-014-NEGATIVE",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "negative",
+        "title": "AC-001 negative path :: 快照旅程可追溯",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "negative",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-041"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"US-MSNAP-001|快照\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+        "assertion": "快照旅程可追溯 (negative path is rejected or handled with explicit evidence)",
+        "priority": "P0",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-014-NEGATIVE.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-043",
+        "source_tc_id": "TC-MSNAP-014",
+        "tc_id": "TC-MSNAP-014-BOUNDARY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "boundary",
+        "title": "AC-001 boundary path :: 快照旅程可追溯",
+        "browser_required": false,
+        "replay_required": false,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "boundary",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-041"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"US-MSNAP-001|快照\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+        "assertion": "快照旅程可追溯 (boundary path is validated with explicit evidence)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-014-BOUNDARY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-044",
+        "source_tc_id": "TC-MSNAP-014",
+        "tc_id": "TC-MSNAP-014-RECOVERY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "recovery",
+        "title": "AC-001 recovery path :: 快照旅程可追溯",
+        "browser_required": false,
+        "replay_required": false,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "recovery",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-041"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"US-MSNAP-001|快照\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+        "assertion": "快照旅程可追溯 (recovery path survives refresh/back/retry with evidence)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-014-RECOVERY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-045",
+        "source_tc_id": "TC-MSNAP-014",
+        "tc_id": "TC-MSNAP-014-COMPATIBILITY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "compatibility",
+        "title": "AC-001 compatibility path :: 快照旅程可追溯",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; npx playwright test --project=chromium --project=firefox --project=webkit",
+        "coverage_axes": [
+          "compatibility",
+          "compatibility",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-041"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"US-MSNAP-001|快照\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+        "assertion": "快照旅程可追溯 (compatibility path preserves behavior across browser/device pairs)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-014-COMPATIBILITY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-046",
+        "source_tc_id": "TC-MSNAP-015",
+        "tc_id": "TC-MSNAP-015-HAPPY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "happy",
+        "title": "AC-001 happy path :: 空快照路径可追溯",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "happy",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [],
+        "stop_on_fail": true,
+        "automation": "auto",
+        "command": "rg -n \"US-MSNAP-002|空快照\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+        "assertion": "空快照路径可追溯 (happy path completes with expected evidence)",
+        "priority": "P0",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-015-HAPPY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-047",
+        "source_tc_id": "TC-MSNAP-015",
+        "tc_id": "TC-MSNAP-015-NEGATIVE",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "negative",
+        "title": "AC-001 negative path :: 空快照路径可追溯",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "negative",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-046"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"US-MSNAP-002|空快照\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+        "assertion": "空快照路径可追溯 (negative path is rejected or handled with explicit evidence)",
+        "priority": "P0",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-015-NEGATIVE.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-048",
+        "source_tc_id": "TC-MSNAP-015",
+        "tc_id": "TC-MSNAP-015-BOUNDARY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "boundary",
+        "title": "AC-001 boundary path :: 空快照路径可追溯",
+        "browser_required": false,
+        "replay_required": false,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "boundary",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-046"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"US-MSNAP-002|空快照\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+        "assertion": "空快照路径可追溯 (boundary path is validated with explicit evidence)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-015-BOUNDARY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-049",
+        "source_tc_id": "TC-MSNAP-015",
+        "tc_id": "TC-MSNAP-015-RECOVERY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "recovery",
+        "title": "AC-001 recovery path :: 空快照路径可追溯",
+        "browser_required": false,
+        "replay_required": false,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+        "coverage_axes": [
+          "recovery",
+          "functional",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-046"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"US-MSNAP-002|空快照\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+        "assertion": "空快照路径可追溯 (recovery path survives refresh/back/retry with evidence)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-015-RECOVERY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-050",
+        "source_tc_id": "TC-MSNAP-015",
+        "tc_id": "TC-MSNAP-015-COMPATIBILITY",
+        "ac_id": "AC-001",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "compatibility",
+        "title": "AC-001 compatibility path :: 空快照路径可追溯",
+        "browser_required": false,
+        "replay_required": true,
+        "exploratory_runner": "browser-use",
+        "deterministic_runner": "playwright",
+        "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+        "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; npx playwright test --project=chromium --project=firefox --project=webkit",
+        "coverage_axes": [
+          "compatibility",
+          "compatibility",
+          "browser"
+        ],
+        "depends_on": [
+          "SC-046"
+        ],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"US-MSNAP-002|空快照\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+        "assertion": "空快照路径可追溯 (compatibility path preserves behavior across browser/device pairs)",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-015-COMPATIBILITY.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-AUTO-TC-MSNAP-002",
+        "source_tc_id": "TC-MSNAP-002",
+        "tc_id": "TC-MSNAP-002-PRIMARY",
+        "ac_id": "AC-MSNAP-002",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "primary",
+        "title": "快照 bridge 条目存在",
+        "browser_required": false,
+        "replay_required": false,
+        "exploratory_runner": "native",
+        "deterministic_runner": "native",
+        "explore_command": "",
+        "replay_command": "",
+        "coverage_axes": [
+          "primary",
+          "contract",
+          "non-browser"
+        ],
+        "depends_on": [],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "test -f registry/metrics-adapters.yaml && rg -n \"snapshot\" registry/metrics-adapters.yaml",
+        "assertion": "快照 bridge 条目存在",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-002/__RUN_ID__.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-AUTO-TC-MSNAP-004",
+        "source_tc_id": "TC-MSNAP-004",
+        "tc_id": "TC-MSNAP-004-PRIMARY",
+        "ac_id": "AC-MSNAP-004",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "primary",
+        "title": "路由快照引用",
+        "browser_required": false,
+        "replay_required": false,
+        "exploratory_runner": "native",
+        "deterministic_runner": "native",
+        "explore_command": "",
+        "replay_command": "",
+        "coverage_axes": [
+          "primary",
+          "contract",
+          "non-browser"
+        ],
+        "depends_on": [],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "rg -n \"metrics-snapshot.contract\" skills/_internal/orchestration/creation-mode-map.md",
+        "assertion": "路由快照引用",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-004/__RUN_ID__.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-AUTO-TC-MSNAP-005",
+        "source_tc_id": "TC-MSNAP-005",
+        "tc_id": "TC-MSNAP-005-PRIMARY",
+        "ac_id": "AC-MSNAP-005",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "primary",
+        "title": "exec 脚本存在且可执行",
+        "browser_required": false,
+        "replay_required": false,
+        "exploratory_runner": "native",
+        "deterministic_runner": "native",
+        "explore_command": "",
+        "replay_command": "",
+        "coverage_axes": [
+          "primary",
+          "contract",
+          "non-browser"
+        ],
+        "depends_on": [],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "test -x scripts/check_metrics_snapshot.sh",
+        "assertion": "exec 脚本存在且可执行",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-005/__RUN_ID__.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-AUTO-TC-MSNAP-006",
+        "source_tc_id": "TC-MSNAP-006",
+        "tc_id": "TC-MSNAP-006-PRIMARY",
+        "ac_id": "AC-MSNAP-005",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "primary",
+        "title": "exec-layer 校验脚本 PASS（合法路径）",
+        "browser_required": false,
+        "replay_required": false,
+        "exploratory_runner": "native",
+        "deterministic_runner": "native",
+        "explore_command": "",
+        "replay_command": "",
+        "coverage_axes": [
+          "primary",
+          "contract",
+          "non-browser"
+        ],
+        "depends_on": [],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "bash scripts/check_metrics_snapshot.sh",
+        "assertion": "exec-layer 校验脚本 PASS（合法路径）",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-006/__RUN_ID__.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      },
+      {
+        "scenario_id": "SC-AUTO-TC-MSNAP-007",
+        "source_tc_id": "TC-MSNAP-007",
+        "tc_id": "TC-MSNAP-007-PRIMARY",
+        "ac_id": "AC-MSNAP-002",
+        "qa_type": "contract",
+        "layer": "contract",
+        "scenario_family": "primary",
+        "title": "≥2 个快照采集条目",
+        "browser_required": false,
+        "replay_required": false,
+        "exploratory_runner": "native",
+        "deterministic_runner": "native",
+        "explore_command": "",
+        "replay_command": "",
+        "coverage_axes": [
+          "primary",
+          "contract",
+          "non-browser"
+        ],
+        "depends_on": [],
+        "stop_on_fail": false,
+        "automation": "auto",
+        "command": "python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/metrics-adapters.yaml')); rs=[a for a in d.get('adapters',[]) if 'snapshot' in a.get('name','')]; raise SystemExit(0 if len(rs)>=2 else 1)\"",
+        "assertion": "≥2 个快照采集条目",
+        "priority": "P1",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-007/__RUN_ID__.json",
+        "required_files": [
+          "command.txt",
+          "stdout.log",
+          "stderr.log",
+          "result.json",
+          "junit.xml"
+        ]
+      }
+    ],
+    "research_projection": {
+      "schema_version": "1.0",
+      "feature": "prism-metrics-snapshot-v1",
+      "version": "v0.0.1",
+      "source": "research:.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/research/prism-metrics-snapshot-v1.md",
+      "present": true,
+      "section_count": 0,
+      "sections": {},
+      "derived_items": []
+    },
+    "markdown_matrix_contract": {
+      "truth_mode": "generated",
+      "fail_closed": false,
+      "source": "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "row_count": 10,
+      "enrichment_disabled": false
+    }
+  },
+  "required_scenario_families": [
+    "happy",
+    "negative",
+    "boundary",
+    "recovery",
+    "compatibility"
+  ],
+  "reason_codes": [
+    "no_prior_feature_qa"
+  ],
+  "implementation_evidence_gate": {
+    "status": "not_applicable",
+    "blocked": false,
+    "reason_codes": []
+  },
+  "matrix_projection_gate": {
+    "status": "not_applicable",
+    "blocked": false,
+    "reason_codes": []
+  },
+  "qa_outcome_taxonomy": {
+    "category": "pending_or_ready",
+    "reason_codes": [
+      "no_prior_feature_qa"
+    ],
+    "stable_taxonomy": [
+      "product_failed",
+      "test_failed",
+      "runner_admission_blocked",
+      "environment_blocked",
+      "auth_session_blocked",
+      "evidence_binding_missing",
+      "coverage_gap",
+      "truth_projection_gap"
+    ]
+  },
+  "blocking_artifact_updates": [],
+  "all_entries": [
+    {
+      "ac_id": "AC-MSNAP-001",
+      "tc_id": "TC-MSNAP-001",
+      "layer": "contract",
+      "command": "test -f contracts/metrics-snapshot.contract.md && rg -n \"snapshot_id|publication_ref|collected_at|来源\" contracts/metrics-snapshot.contract.md",
+      "assertion": "快照契约含核心字段",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-001/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-002",
+      "tc_id": "TC-MSNAP-002",
+      "layer": "contract",
+      "command": "test -f registry/metrics-adapters.yaml && rg -n \"snapshot\" registry/metrics-adapters.yaml",
+      "assertion": "快照 bridge 条目存在",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-002/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-003",
+      "tc_id": "TC-MSNAP-003",
+      "layer": "contract",
+      "command": "rg -n \"publication_ref|无 publication|measured\" contracts/metrics-snapshot.contract.md",
+      "assertion": "measured 守卫",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-003/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-004",
+      "tc_id": "TC-MSNAP-004",
+      "layer": "contract",
+      "command": "rg -n \"metrics-snapshot.contract\" skills/_internal/orchestration/creation-mode-map.md",
+      "assertion": "路由快照引用",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-004/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-005",
+      "tc_id": "TC-MSNAP-005",
+      "layer": "contract",
+      "command": "test -x scripts/check_metrics_snapshot.sh",
+      "assertion": "exec 脚本存在且可执行",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-005/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-005",
+      "tc_id": "TC-MSNAP-006",
+      "layer": "contract",
+      "command": "bash scripts/check_metrics_snapshot.sh",
+      "assertion": "exec-layer 校验脚本 PASS（合法路径）",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-006/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-002",
+      "tc_id": "TC-MSNAP-007",
+      "layer": "contract",
+      "command": "python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/metrics-adapters.yaml')); rs=[a for a in d.get('adapters',[]) if 'snapshot' in a.get('name','')]; raise SystemExit(0 if len(rs)>=2 else 1)\"",
+      "assertion": "≥2 个快照采集条目",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-007/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-006",
+      "tc_id": "TC-MSNAP-008",
+      "layer": "contract",
+      "command": "rg -n \"空快照|禁止|不编造|猜\" contracts/metrics-snapshot.contract.md",
+      "assertion": "空快照/不编造声明",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-008/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-007",
+      "tc_id": "TC-MSNAP-009",
+      "layer": "contract",
+      "command": "rg -n \"凭证|密钥|secrets|禁止入库\" contracts/metrics-snapshot.contract.md",
+      "assertion": "凭证保护",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-009/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-008",
+      "tc_id": "TC-MSNAP-010",
+      "layer": "contract",
+      "command": "rg -n \"fail-closed|blocked|reason_code\" contracts/metrics-snapshot.contract.md",
+      "assertion": "bridge fail-closed",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-010/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-009",
+      "tc_id": "TC-MSNAP-011",
+      "layer": "contract",
+      "command": "rg -n \"collected_at|来源|缺证据\" contracts/metrics-snapshot.contract.md",
+      "assertion": "证据要求",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-011/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-010",
+      "tc_id": "TC-MSNAP-012",
+      "layer": "contract",
+      "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md && rg -n \"E3|E4\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+      "assertion": "分湖边界存在",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-012/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-010",
+      "tc_id": "TC-MSNAP-013",
+      "layer": "contract",
+      "command": "rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+      "assertion": "illegal 转移覆盖（非法拒绝路径）",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-013/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-001",
+      "tc_id": "TC-MSNAP-014",
+      "layer": "contract",
+      "command": "rg -n \"US-MSNAP-001|快照\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+      "assertion": "快照旅程可追溯",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-014/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-006",
+      "tc_id": "TC-MSNAP-015",
+      "layer": "contract",
+      "command": "rg -n \"US-MSNAP-002|空快照\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+      "assertion": "空快照路径可追溯",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-015/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    }
+  ],
+  "targeted_entries": [
+    {
+      "ac_id": "AC-MSNAP-001",
+      "tc_id": "TC-MSNAP-001",
+      "layer": "contract",
+      "command": "test -f contracts/metrics-snapshot.contract.md && rg -n \"snapshot_id|publication_ref|collected_at|来源\" contracts/metrics-snapshot.contract.md",
+      "assertion": "快照契约含核心字段",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-001/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-002",
+      "tc_id": "TC-MSNAP-002",
+      "layer": "contract",
+      "command": "test -f registry/metrics-adapters.yaml && rg -n \"snapshot\" registry/metrics-adapters.yaml",
+      "assertion": "快照 bridge 条目存在",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-002/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-003",
+      "tc_id": "TC-MSNAP-003",
+      "layer": "contract",
+      "command": "rg -n \"publication_ref|无 publication|measured\" contracts/metrics-snapshot.contract.md",
+      "assertion": "measured 守卫",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-003/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-004",
+      "tc_id": "TC-MSNAP-004",
+      "layer": "contract",
+      "command": "rg -n \"metrics-snapshot.contract\" skills/_internal/orchestration/creation-mode-map.md",
+      "assertion": "路由快照引用",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-004/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-005",
+      "tc_id": "TC-MSNAP-005",
+      "layer": "contract",
+      "command": "test -x scripts/check_metrics_snapshot.sh",
+      "assertion": "exec 脚本存在且可执行",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-005/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-005",
+      "tc_id": "TC-MSNAP-006",
+      "layer": "contract",
+      "command": "bash scripts/check_metrics_snapshot.sh",
+      "assertion": "exec-layer 校验脚本 PASS（合法路径）",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-006/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-002",
+      "tc_id": "TC-MSNAP-007",
+      "layer": "contract",
+      "command": "python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/metrics-adapters.yaml')); rs=[a for a in d.get('adapters',[]) if 'snapshot' in a.get('name','')]; raise SystemExit(0 if len(rs)>=2 else 1)\"",
+      "assertion": "≥2 个快照采集条目",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-007/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-006",
+      "tc_id": "TC-MSNAP-008",
+      "layer": "contract",
+      "command": "rg -n \"空快照|禁止|不编造|猜\" contracts/metrics-snapshot.contract.md",
+      "assertion": "空快照/不编造声明",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-008/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-007",
+      "tc_id": "TC-MSNAP-009",
+      "layer": "contract",
+      "command": "rg -n \"凭证|密钥|secrets|禁止入库\" contracts/metrics-snapshot.contract.md",
+      "assertion": "凭证保护",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-009/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-008",
+      "tc_id": "TC-MSNAP-010",
+      "layer": "contract",
+      "command": "rg -n \"fail-closed|blocked|reason_code\" contracts/metrics-snapshot.contract.md",
+      "assertion": "bridge fail-closed",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-010/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-009",
+      "tc_id": "TC-MSNAP-011",
+      "layer": "contract",
+      "command": "rg -n \"collected_at|来源|缺证据\" contracts/metrics-snapshot.contract.md",
+      "assertion": "证据要求",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-011/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-010",
+      "tc_id": "TC-MSNAP-012",
+      "layer": "contract",
+      "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md && rg -n \"E3|E4\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+      "assertion": "分湖边界存在",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-012/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-010",
+      "tc_id": "TC-MSNAP-013",
+      "layer": "contract",
+      "command": "rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+      "assertion": "illegal 转移覆盖（非法拒绝路径）",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-013/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-001",
+      "tc_id": "TC-MSNAP-014",
+      "layer": "contract",
+      "command": "rg -n \"US-MSNAP-001|快照\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+      "assertion": "快照旅程可追溯",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-014/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-MSNAP-006",
+      "tc_id": "TC-MSNAP-015",
+      "layer": "contract",
+      "command": "rg -n \"US-MSNAP-002|空快照\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+      "assertion": "空快照路径可追溯",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-015/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    }
+  ],
+  "targeted_layers": [
+    "contract"
+  ],
+  "targeted_ac_ids": [
+    "AC-MSNAP-001",
+    "AC-MSNAP-002",
+    "AC-MSNAP-003",
+    "AC-MSNAP-004",
+    "AC-MSNAP-005",
+    "AC-MSNAP-006",
+    "AC-MSNAP-007",
+    "AC-MSNAP-008",
+    "AC-MSNAP-009",
+    "AC-MSNAP-010"
+  ],
+  "targeted_tc_ids": [
+    "TC-MSNAP-001",
+    "TC-MSNAP-002",
+    "TC-MSNAP-003",
+    "TC-MSNAP-004",
+    "TC-MSNAP-005",
+    "TC-MSNAP-006",
+    "TC-MSNAP-007",
+    "TC-MSNAP-008",
+    "TC-MSNAP-009",
+    "TC-MSNAP-010",
+    "TC-MSNAP-011",
+    "TC-MSNAP-012",
+    "TC-MSNAP-013",
+    "TC-MSNAP-014",
+    "TC-MSNAP-015"
+  ],
+  "targeted_source_tc_ids": [
+    "TC-MSNAP-001",
+    "TC-MSNAP-002",
+    "TC-MSNAP-003",
+    "TC-MSNAP-004",
+    "TC-MSNAP-005",
+    "TC-MSNAP-006",
+    "TC-MSNAP-007",
+    "TC-MSNAP-008",
+    "TC-MSNAP-009",
+    "TC-MSNAP-010",
+    "TC-MSNAP-011",
+    "TC-MSNAP-012",
+    "TC-MSNAP-013",
+    "TC-MSNAP-014",
+    "TC-MSNAP-015"
+  ],
+  "targeted_scenario_ids": [],
+  "targeted_scenario_families": [],
+  "previous_run_id": ""
+}

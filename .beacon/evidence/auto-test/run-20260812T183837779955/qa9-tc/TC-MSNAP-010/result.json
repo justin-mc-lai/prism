@@ -1,0 +1,30 @@
+{
+  "layer": "contract",
+  "command": "rg -n \"fail-closed|blocked|reason_code\" contracts/metrics-snapshot.contract.md",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 1,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "30e1a0711d60f59751d8743c71193159846ffbffa41ff76dd9ee0bdb669a434b",
+  "started_at": "2026-08-12T18:38:38.995277",
+  "ended_at": "2026-08-12T18:38:39.007523",
+  "junit_path": ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-010/junit.xml",
+  "junit_valid": true,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-010/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-010/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-010/stderr.log",
+    ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-010/junit.xml"
+  ],
+  "tc_id": "TC-MSNAP-010",
+  "ac_id": "AC-MSNAP-008"
+}

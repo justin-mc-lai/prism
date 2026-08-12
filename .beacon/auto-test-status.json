@@ -1,27 +1,27 @@
 {
   "scope": "qa9",
-  "timestamp": "2026-08-12T18:32:52.828199",
-  "project": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-publication-v1",
+  "timestamp": "2026-08-12T18:38:37.780604",
+  "project": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1",
   "version": "v0.0.1",
-  "run_id": "run-20260812T183252827530",
-  "spec_fingerprint_hash": "ece9fd65d3d60eed913009d3ec4441e04f52df119dfa1cc8bc2eb42323da4301",
+  "run_id": "run-20260812T183837779955",
+  "spec_fingerprint_hash": "f20bfae04e2d250f0f6ad235df2eb35a06563913c16f49b7f0fb8fd4be6892b6",
   "status": "passed",
   "selected_layers": [
     "contract"
   ],
   "execution": {
-    "run_id": "run-20260812T183252827530",
+    "run_id": "run-20260812T183837779955",
     "version": "v0.0.1",
-    "evidence_dir": ".beacon/evidence/auto-test/run-20260812T183252827530",
+    "evidence_dir": ".beacon/evidence/auto-test/run-20260812T183837779955",
     "spec_fingerprint": {
-      "fingerprint_hash": "ece9fd65d3d60eed913009d3ec4441e04f52df119dfa1cc8bc2eb42323da4301",
+      "fingerprint_hash": "f20bfae04e2d250f0f6ad235df2eb35a06563913c16f49b7f0fb8fd4be6892b6",
       "version": "v0.0.1",
-      "generated_at": "2026-08-12T10:32:54.982000+00:00"
+      "generated_at": "2026-08-12T10:38:39.599577+00:00"
     },
     "layers": [
       {
         "layer": "contract",
-        "command": "test -f contracts/metrics-publication.contract.md && rg -n \"publication_id|platform|url|published_at|artifact_ref\" contracts/metrics-publication.contract.md",
+        "command": "test -f contracts/metrics-snapshot.contract.md && rg -n \"snapshot_id|publication_ref|collected_at|来源\" contracts/metrics-snapshot.contract.md",
         "exit_code": 0,
         "status": "passed",
         "reason_code": "",
@@ -35,31 +35,31 @@
             "exit_code": 0
           }
         ],
-        "execution_fingerprint": "574667d96ea886f4454ff31ee193e245b8b67e7120b452ad004110596ec08a2c",
-        "started_at": "2026-08-12T18:32:52.909573",
-        "ended_at": "2026-08-12T18:32:52.925492",
+        "execution_fingerprint": "30a7f8495fa28e80fc85512a40038aa5dc96c51a533bcba656510fdceba14417",
+        "started_at": "2026-08-12T18:38:37.856667",
+        "ended_at": "2026-08-12T18:38:37.872377",
         "junit_path": "",
         "junit_valid": false,
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T183252827530/contract/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/contract/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/contract/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/contract/result.json"
+          ".beacon/evidence/auto-test/run-20260812T183837779955/contract/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/contract/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/contract/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/contract/result.json"
         ]
       }
     ],
     "ui_action_evidence": {},
     "matrix_report": {
       "status": "ok",
-      "matrix_path": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-publication-v1/.beacon/qa/features/prism-metrics-publication-v1/matrix.qa9.json",
+      "matrix_path": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/.beacon/qa/features/prism-metrics-snapshot-v1/matrix.qa9.json",
       "evidence_generated": 15,
       "entry_count": 15,
       "freshness_violations": []
     },
     "artifacts": [
-      ".beacon/evidence/auto-test/run-20260812T183252827530/qa9/tc-execution-map.json",
-      ".beacon/evidence/auto-test/run-20260812T183252827530/qa9/tc-results.json",
-      ".beacon/evidence/auto-test/run-20260812T183252827530/summary.json",
+      ".beacon/evidence/auto-test/run-20260812T183837779955/qa9/tc-execution-map.json",
+      ".beacon/evidence/auto-test/run-20260812T183837779955/qa9/tc-results.json",
+      ".beacon/evidence/auto-test/run-20260812T183837779955/summary.json",
       ".beacon/flaky-history.json",
       ".beacon/evidence-signature-chain.json"
     ],
@@ -76,7 +76,7 @@
     "qa_types": [
       "contract"
     ],
-    "qa_matrix_path": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-publication-v1/.beacon/qa/features/prism-metrics-publication-v1/matrix.qa9.json",
+    "qa_matrix_path": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/.beacon/qa/features/prism-metrics-snapshot-v1/matrix.qa9.json",
     "ui_runner": "playwright",
     "quality_requirements": {
       "require_junit": true,
@@ -103,9 +103,9 @@
     },
     "tc_results": [
       {
-        "tc_id": "TC-MPUB-001",
-        "ac_id": "AC-MPUB-001",
-        "source_tc_id": "TC-MPUB-001",
+        "tc_id": "TC-MSNAP-001",
+        "ac_id": "AC-MSNAP-001",
+        "source_tc_id": "TC-MSNAP-001",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -115,18 +115,18 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 0,
-        "command": "test -f contracts/metrics-publication.contract.md && rg -n \"publication_id|platform|url|published_at|artifact_ref\" contracts/metrics-publication.contract.md",
-        "run_id": "run-20260812T183252827530",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-001/__RUN_ID__.json",
+        "command": "test -f contracts/metrics-snapshot.contract.md && rg -n \"snapshot_id|publication_ref|collected_at|来源\" contracts/metrics-snapshot.contract.md",
+        "run_id": "run-20260812T183837779955",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-001/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-001/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-001/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-001/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-001/result.json"
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-001/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-001/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-001/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-001/result.json"
         ],
-        "execution_fingerprint": "1a648891a2dbf0a489f99094971cf0cf6692fa617247480900eda4d161c988a2",
-        "started_at": "2026-08-12T18:32:53.024917",
-        "ended_at": "2026-08-12T18:32:53.042344",
+        "execution_fingerprint": "8c2c7f4345ebf0d0692977ed18a1e91ea76f97cae98c546e883e5a46f28bad8d",
+        "started_at": "2026-08-12T18:38:37.954293",
+        "ended_at": "2026-08-12T18:38:37.967155",
         "junit_path": "",
         "junit_valid": false,
         "browser_required": false,
@@ -140,9 +140,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MPUB-002",
-        "ac_id": "AC-MPUB-002",
-        "source_tc_id": "TC-MPUB-002",
+        "tc_id": "TC-MSNAP-002",
+        "ac_id": "AC-MSNAP-002",
+        "source_tc_id": "TC-MSNAP-002",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -152,18 +152,18 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 0,
-        "command": "test -f registry/metrics-adapters.yaml && rg -n \"analyze-data\" registry/metrics-adapters.yaml",
-        "run_id": "run-20260812T183252827530",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-002/__RUN_ID__.json",
+        "command": "test -f registry/metrics-adapters.yaml && rg -n \"snapshot\" registry/metrics-adapters.yaml",
+        "run_id": "run-20260812T183837779955",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-002/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-002/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-002/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-002/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-002/result.json"
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-002/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-002/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-002/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-002/result.json"
         ],
-        "execution_fingerprint": "be8f9fd31e5ae0be30ee62c0e850896aab10c937aed28e918661cbd0ea2a4ba7",
-        "started_at": "2026-08-12T18:32:53.134635",
-        "ended_at": "2026-08-12T18:32:53.148622",
+        "execution_fingerprint": "e4a993f864816a90010f7dac1b117b7c03243131979e3cabbc1bb55771f6a067",
+        "started_at": "2026-08-12T18:38:38.044520",
+        "ended_at": "2026-08-12T18:38:38.057695",
         "junit_path": "",
         "junit_valid": false,
         "browser_required": false,
@@ -177,9 +177,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MPUB-003",
-        "ac_id": "AC-MPUB-003",
-        "source_tc_id": "TC-MPUB-003",
+        "tc_id": "TC-MSNAP-003",
+        "ac_id": "AC-MSNAP-003",
+        "source_tc_id": "TC-MSNAP-003",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -188,21 +188,21 @@
         "status": "passed",
         "layer_status": "passed",
         "reason_code": "",
-        "assertion_count": 4,
-        "command": "rg -n \"measured|publication_record|无 publication\" contracts/metrics-publication.contract.md",
-        "run_id": "run-20260812T183252827530",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-003/__RUN_ID__.json",
+        "assertion_count": 5,
+        "command": "rg -n \"publication_ref|无 publication|measured\" contracts/metrics-snapshot.contract.md",
+        "run_id": "run-20260812T183837779955",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-003/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-003/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-003/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-003/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-003/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-003/result.json"
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-003/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-003/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-003/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-003/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-003/result.json"
         ],
-        "execution_fingerprint": "ef4b42d1fba7f1bc720750219ce98afccafda29b25d0ed8dff22f54939390939",
-        "started_at": "2026-08-12T18:32:53.261955",
-        "ended_at": "2026-08-12T18:32:53.313086",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-003/junit.xml",
+        "execution_fingerprint": "b06bce3f7c1e40e3e7a3a2f740405d17ae1eaecf4f1d905e9814aeffa136f501",
+        "started_at": "2026-08-12T18:38:38.132517",
+        "ended_at": "2026-08-12T18:38:38.144395",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-003/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -215,9 +215,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MPUB-004",
-        "ac_id": "AC-MPUB-004",
-        "source_tc_id": "TC-MPUB-004",
+        "tc_id": "TC-MSNAP-004",
+        "ac_id": "AC-MSNAP-004",
+        "source_tc_id": "TC-MSNAP-004",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -227,20 +227,20 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 1,
-        "command": "rg -n \"metrics-publication.contract\" skills/_internal/orchestration/creation-mode-map.md",
-        "run_id": "run-20260812T183252827530",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-004/__RUN_ID__.json",
+        "command": "rg -n \"metrics-snapshot.contract\" skills/_internal/orchestration/creation-mode-map.md",
+        "run_id": "run-20260812T183837779955",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-004/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-004/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-004/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-004/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-004/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-004/result.json"
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-004/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-004/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-004/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-004/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-004/result.json"
         ],
-        "execution_fingerprint": "0d68f790d5dbb75dd179b77d2b4b941d45a06ebbfe97c3dd78160141e4f175fe",
-        "started_at": "2026-08-12T18:32:53.433180",
-        "ended_at": "2026-08-12T18:32:53.449441",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-004/junit.xml",
+        "execution_fingerprint": "64d866b837ea134aba66191b55f50c9eeacefec15a8204ec522a55685efa7861",
+        "started_at": "2026-08-12T18:38:38.221008",
+        "ended_at": "2026-08-12T18:38:38.233864",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-004/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -253,9 +253,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MPUB-005",
-        "ac_id": "AC-MPUB-005",
-        "source_tc_id": "TC-MPUB-005",
+        "tc_id": "TC-MSNAP-005",
+        "ac_id": "AC-MSNAP-005",
+        "source_tc_id": "TC-MSNAP-005",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -265,18 +265,18 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 0,
-        "command": "test -x scripts/check_metrics_publication.sh",
-        "run_id": "run-20260812T183252827530",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-005/__RUN_ID__.json",
+        "command": "test -x scripts/check_metrics_snapshot.sh",
+        "run_id": "run-20260812T183837779955",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-005/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-005/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-005/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-005/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-005/result.json"
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-005/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-005/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-005/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-005/result.json"
         ],
-        "execution_fingerprint": "5c195ba2b79eea496aa5d53d9443195b9372767cb04b3c33f1d99cbdac1e386a",
-        "started_at": "2026-08-12T18:32:53.540215",
-        "ended_at": "2026-08-12T18:32:53.548877",
+        "execution_fingerprint": "9bf13e40ce8b89d9d7b6cd3a914859700d266ac1a8b022299c0c2be73368580c",
+        "started_at": "2026-08-12T18:38:38.310178",
+        "ended_at": "2026-08-12T18:38:38.318032",
         "junit_path": "",
         "junit_valid": false,
         "browser_required": false,
@@ -290,9 +290,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MPUB-006",
-        "ac_id": "AC-MPUB-005",
-        "source_tc_id": "TC-MPUB-006",
+        "tc_id": "TC-MSNAP-006",
+        "ac_id": "AC-MSNAP-005",
+        "source_tc_id": "TC-MSNAP-006",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -302,18 +302,18 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 0,
-        "command": "bash scripts/check_metrics_publication.sh",
-        "run_id": "run-20260812T183252827530",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-006/__RUN_ID__.json",
+        "command": "bash scripts/check_metrics_snapshot.sh",
+        "run_id": "run-20260812T183837779955",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-006/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-006/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-006/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-006/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-006/result.json"
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-006/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-006/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-006/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-006/result.json"
         ],
-        "execution_fingerprint": "94675f6b6611fc360464a2d4918db83c03c8816262cc086198bdaf9ae79a0382",
-        "started_at": "2026-08-12T18:32:53.633478",
-        "ended_at": "2026-08-12T18:32:53.890526",
+        "execution_fingerprint": "fef05441c7e73bc5402f99b3a0e3d2fd8e3984652acc201619bad3ba79235756",
+        "started_at": "2026-08-12T18:38:38.393955",
+        "ended_at": "2026-08-12T18:38:38.589302",
         "junit_path": "",
         "junit_valid": false,
         "browser_required": false,
@@ -327,9 +327,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MPUB-007",
-        "ac_id": "AC-MPUB-002",
-        "source_tc_id": "TC-MPUB-007",
+        "tc_id": "TC-MSNAP-007",
+        "ac_id": "AC-MSNAP-002",
+        "source_tc_id": "TC-MSNAP-007",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -339,18 +339,18 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 0,
-        "command": "python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/metrics-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=3 else 1)\"",
-        "run_id": "run-20260812T183252827530",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-007/__RUN_ID__.json",
+        "command": "python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/metrics-adapters.yaml')); rs=[a for a in d.get('adapters',[]) if 'snapshot' in a.get('name','')]; raise SystemExit(0 if len(rs)>=2 else 1)\"",
+        "run_id": "run-20260812T183837779955",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-007/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-007/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-007/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-007/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-007/result.json"
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-007/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-007/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-007/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-007/result.json"
         ],
-        "execution_fingerprint": "2416304127e2a6db311bd5ae34c7c2fc953286f4594851df9c22ce91a233c03e",
-        "started_at": "2026-08-12T18:32:53.969508",
-        "ended_at": "2026-08-12T18:32:54.047355",
+        "execution_fingerprint": "9c42198566112b597767af05445e42e3e1eeaeeef2452d45f1efced0f536fa6b",
+        "started_at": "2026-08-12T18:38:38.663946",
+        "ended_at": "2026-08-12T18:38:38.739111",
         "junit_path": "",
         "junit_valid": false,
         "browser_required": false,
@@ -364,9 +364,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MPUB-008",
-        "ac_id": "AC-MPUB-006",
-        "source_tc_id": "TC-MPUB-008",
+        "tc_id": "TC-MSNAP-008",
+        "ac_id": "AC-MSNAP-006",
+        "source_tc_id": "TC-MSNAP-008",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -376,20 +376,20 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 4,
-        "command": "rg -n \"空快照|禁止|不编造|猜\" contracts/metrics-publication.contract.md",
-        "run_id": "run-20260812T183252827530",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-008/__RUN_ID__.json",
+        "command": "rg -n \"空快照|禁止|不编造|猜\" contracts/metrics-snapshot.contract.md",
+        "run_id": "run-20260812T183837779955",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-008/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-008/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-008/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-008/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-008/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-008/result.json"
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-008/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-008/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-008/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-008/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-008/result.json"
         ],
-        "execution_fingerprint": "7751ada2117b39bfffc4c13bc7b4cf2c484eefa10d91b2745179f5a5a3b10411",
-        "started_at": "2026-08-12T18:32:54.129463",
-        "ended_at": "2026-08-12T18:32:54.142423",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-008/junit.xml",
+        "execution_fingerprint": "cc5e0715c3a9d6f8838212d991eeac991e443b996f22988146f86123191ebc0f",
+        "started_at": "2026-08-12T18:38:38.815495",
+        "ended_at": "2026-08-12T18:38:38.828045",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-008/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -402,9 +402,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MPUB-009",
-        "ac_id": "AC-MPUB-007",
-        "source_tc_id": "TC-MPUB-009",
+        "tc_id": "TC-MSNAP-009",
+        "ac_id": "AC-MSNAP-007",
+        "source_tc_id": "TC-MSNAP-009",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -414,20 +414,20 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 2,
-        "command": "rg -n \"凭证|密钥|secrets|禁止入库\" contracts/metrics-publication.contract.md",
-        "run_id": "run-20260812T183252827530",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-009/__RUN_ID__.json",
+        "command": "rg -n \"凭证|密钥|secrets|禁止入库\" contracts/metrics-snapshot.contract.md",
+        "run_id": "run-20260812T183837779955",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-009/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-009/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-009/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-009/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-009/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-009/result.json"
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-009/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-009/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-009/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-009/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-009/result.json"
         ],
-        "execution_fingerprint": "0e4cc0f1fffe1e914df2ad35c7e3814363ee305e3a0c7cc4c59b46da63b8a5e8",
-        "started_at": "2026-08-12T18:32:54.224345",
-        "ended_at": "2026-08-12T18:32:54.237581",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-009/junit.xml",
+        "execution_fingerprint": "5b8105970146671d8125017dc00441f88d6a568255540afc792771ccdc457d76",
+        "started_at": "2026-08-12T18:38:38.905579",
+        "ended_at": "2026-08-12T18:38:38.917932",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-009/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -440,9 +440,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MPUB-010",
-        "ac_id": "AC-MPUB-008",
-        "source_tc_id": "TC-MPUB-010",
+        "tc_id": "TC-MSNAP-010",
+        "ac_id": "AC-MSNAP-008",
+        "source_tc_id": "TC-MSNAP-010",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -452,20 +452,20 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 1,
-        "command": "rg -n \"fail-closed|blocked|reason_code\" contracts/metrics-publication.contract.md",
-        "run_id": "run-20260812T183252827530",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-010/__RUN_ID__.json",
+        "command": "rg -n \"fail-closed|blocked|reason_code\" contracts/metrics-snapshot.contract.md",
+        "run_id": "run-20260812T183837779955",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-010/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-010/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-010/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-010/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-010/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-010/result.json"
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-010/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-010/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-010/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-010/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-010/result.json"
         ],
-        "execution_fingerprint": "cc101ccd47637073bf34d4a85c35c35afb4fccb835cd38ffbfdfbc63f4fa250b",
-        "started_at": "2026-08-12T18:32:54.316369",
-        "ended_at": "2026-08-12T18:32:54.328624",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-010/junit.xml",
+        "execution_fingerprint": "30e1a0711d60f59751d8743c71193159846ffbffa41ff76dd9ee0bdb669a434b",
+        "started_at": "2026-08-12T18:38:38.995277",
+        "ended_at": "2026-08-12T18:38:39.007523",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-010/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -478,9 +478,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MPUB-011",
-        "ac_id": "AC-MPUB-009",
-        "source_tc_id": "TC-MPUB-011",
+        "tc_id": "TC-MSNAP-011",
+        "ac_id": "AC-MSNAP-009",
+        "source_tc_id": "TC-MSNAP-011",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -490,20 +490,20 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 2,
-        "command": "rg -n \"publication_id|url|时间|缺证据\" contracts/metrics-publication.contract.md",
-        "run_id": "run-20260812T183252827530",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-011/__RUN_ID__.json",
+        "command": "rg -n \"collected_at|来源|缺证据\" contracts/metrics-snapshot.contract.md",
+        "run_id": "run-20260812T183837779955",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-011/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-011/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-011/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-011/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-011/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-011/result.json"
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-011/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-011/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-011/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-011/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-011/result.json"
         ],
-        "execution_fingerprint": "1bc0d6072fc2b9208f03861618dcb6187a137408f3d2e73c772d708754119504",
-        "started_at": "2026-08-12T18:32:54.407742",
-        "ended_at": "2026-08-12T18:32:54.421019",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-011/junit.xml",
+        "execution_fingerprint": "4993c9aae04b89baee5275b700a996742f0294b83a6423160bf41b825efb3c19",
+        "started_at": "2026-08-12T18:38:39.083869",
+        "ended_at": "2026-08-12T18:38:39.097128",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-011/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -516,9 +516,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MPUB-012",
-        "ac_id": "AC-MPUB-010",
-        "source_tc_id": "TC-MPUB-012",
+        "tc_id": "TC-MSNAP-012",
+        "ac_id": "AC-MSNAP-010",
+        "source_tc_id": "TC-MSNAP-012",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -527,21 +527,21 @@
         "status": "passed",
         "layer_status": "passed",
         "reason_code": "",
-        "assertion_count": 15,
-        "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md && rg -n \"E2|E3|E4\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md",
-        "run_id": "run-20260812T183252827530",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-012/__RUN_ID__.json",
+        "assertion_count": 14,
+        "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md && rg -n \"E3|E4\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+        "run_id": "run-20260812T183837779955",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-012/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-012/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-012/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-012/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-012/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-012/result.json"
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-012/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-012/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-012/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-012/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-012/result.json"
         ],
-        "execution_fingerprint": "8185877d75590cc680d247c13e5150a3ece696d5876dcb2aef4c6f5234acf942",
-        "started_at": "2026-08-12T18:32:54.506530",
-        "ended_at": "2026-08-12T18:32:54.531503",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-012/junit.xml",
+        "execution_fingerprint": "800054a9232825778a13cc3e2332a6e5261174f222cb39b44e0a0a884bbae938",
+        "started_at": "2026-08-12T18:38:39.172732",
+        "ended_at": "2026-08-12T18:38:39.195985",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-012/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -554,47 +554,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MPUB-013",
-        "ac_id": "AC-MPUB-010",
-        "source_tc_id": "TC-MPUB-013",
-        "scenario_id": "",
-        "scenario_family": "",
-        "qa_type": "contract",
-        "layer": "contract",
-        "automation": "auto",
-        "status": "passed",
-        "layer_status": "passed",
-        "reason_code": "",
-        "assertion_count": 4,
-        "command": "rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md",
-        "run_id": "run-20260812T183252827530",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-013/__RUN_ID__.json",
-        "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-013/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-013/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-013/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-013/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-013/result.json"
-        ],
-        "execution_fingerprint": "f8612ee7543a5bb59e197eb2b0938eef1009277c11ea40b8c7371d509342976a",
-        "started_at": "2026-08-12T18:32:54.612175",
-        "ended_at": "2026-08-12T18:32:54.624996",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-013/junit.xml",
-        "junit_valid": true,
-        "browser_required": false,
-        "browser_evidence_pack_ref": "",
-        "browser_runner_learning_ref": "",
-        "replay_required": false,
-        "replay_ref": "",
-        "stop_on_fail": false,
-        "round_stop_trigger": false,
-        "round_stop_reasons": [],
-        "round_stop_anchor": ""
-      },
-      {
-        "tc_id": "TC-MPUB-014",
-        "ac_id": "AC-MPUB-001",
-        "source_tc_id": "TC-MPUB-014",
+        "tc_id": "TC-MSNAP-013",
+        "ac_id": "AC-MSNAP-010",
+        "source_tc_id": "TC-MSNAP-013",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -604,20 +566,20 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 4,
-        "command": "rg -n \"US-MPUB-001|发布事件\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md",
-        "run_id": "run-20260812T183252827530",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-014/__RUN_ID__.json",
+        "command": "rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+        "run_id": "run-20260812T183837779955",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-013/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-014/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-014/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-014/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-014/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-014/result.json"
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-013/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-013/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-013/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-013/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-013/result.json"
         ],
-        "execution_fingerprint": "0f19b4763c608049031ee9d7b474bc31ee74753a1693c7901fbf345f861d6219",
-        "started_at": "2026-08-12T18:32:54.715681",
-        "ended_at": "2026-08-12T18:32:54.729001",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-014/junit.xml",
+        "execution_fingerprint": "e69d942443ff010ecbccdd755fe015fe41eb9409dabd97d2a0597b2aaec32fe5",
+        "started_at": "2026-08-12T18:38:39.273452",
+        "ended_at": "2026-08-12T18:38:39.284951",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-013/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -630,9 +592,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MPUB-015",
-        "ac_id": "AC-MPUB-003",
-        "source_tc_id": "TC-MPUB-015",
+        "tc_id": "TC-MSNAP-014",
+        "ac_id": "AC-MSNAP-001",
+        "source_tc_id": "TC-MSNAP-014",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -641,21 +603,59 @@
         "status": "passed",
         "layer_status": "passed",
         "reason_code": "",
-        "assertion_count": 1,
-        "command": "rg -n \"US-MPUB-002|publication_record_missing\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md",
-        "run_id": "run-20260812T183252827530",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-publication-v1/tc-mpub-015/__RUN_ID__.json",
+        "assertion_count": 22,
+        "command": "rg -n \"US-MSNAP-001|快照\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+        "run_id": "run-20260812T183837779955",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-014/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-015/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-015/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-015/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-015/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-015/result.json"
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-014/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-014/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-014/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-014/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-014/result.json"
         ],
-        "execution_fingerprint": "938d2023a5f6a7b2ba464d68d8c02235d63081fb2935e4ba4fb7b6b5e259c0b9",
-        "started_at": "2026-08-12T18:32:54.813346",
-        "ended_at": "2026-08-12T18:32:54.826866",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-015/junit.xml",
+        "execution_fingerprint": "819ccde3a631a714138c28eea708e89f92322e6e4fae2f4c0b6b1026fe715431",
+        "started_at": "2026-08-12T18:38:39.359669",
+        "ended_at": "2026-08-12T18:38:39.372183",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-014/junit.xml",
+        "junit_valid": true,
+        "browser_required": false,
+        "browser_evidence_pack_ref": "",
+        "browser_runner_learning_ref": "",
+        "replay_required": false,
+        "replay_ref": "",
+        "stop_on_fail": false,
+        "round_stop_trigger": false,
+        "round_stop_reasons": [],
+        "round_stop_anchor": ""
+      },
+      {
+        "tc_id": "TC-MSNAP-015",
+        "ac_id": "AC-MSNAP-006",
+        "source_tc_id": "TC-MSNAP-015",
+        "scenario_id": "",
+        "scenario_family": "",
+        "qa_type": "contract",
+        "layer": "contract",
+        "automation": "auto",
+        "status": "passed",
+        "layer_status": "passed",
+        "reason_code": "",
+        "assertion_count": 5,
+        "command": "rg -n \"US-MSNAP-002|空快照\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+        "run_id": "run-20260812T183837779955",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-metrics-snapshot-v1/tc-msnap-015/__RUN_ID__.json",
+        "evidence_ref": [
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-015/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-015/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-015/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-015/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-015/result.json"
+        ],
+        "execution_fingerprint": "e3eca07a3e912727cdfcdcafb32611cc09ce85cfb6e9ecea0b686a4e5f0aaad2",
+        "started_at": "2026-08-12T18:38:39.447675",
+        "ended_at": "2026-08-12T18:38:39.460343",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-015/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -682,9 +682,9 @@
     }
   ],
   "schema_version": "1.0",
-  "updated_at": "2026-08-12T10:32:54.886855+00:00",
+  "updated_at": "2026-08-12T10:38:39.513483+00:00",
   "summary": {
-    "feature": "prism-metrics-publication-v1",
+    "feature": "prism-metrics-snapshot-v1",
     "version": "v0.0.1",
     "status": "passed",
     "release_ready": true,
@@ -698,15 +698,15 @@
     "reconciliation_artifact_path": "",
     "reconciliation_reprojection_targets": [],
     "repair_action": "qa-repair",
-    "repair_command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-publication-v1 --version v0.0.1 --feature \"prism-metrics-publication-v1\""
+    "repair_command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1 --version v0.0.1 --feature \"prism-metrics-snapshot-v1\""
   },
   "qa_status_source": "canonical",
   "governance_state_role": "generated_governance_state_not_truth",
   "truth_authority": false,
   "json_authority": false,
   "resolver_mode": "resolver_first",
-  "feature": "prism-metrics-publication-v1",
-  "feature_slug": "prism-metrics-publication-v1",
+  "feature": "prism-metrics-snapshot-v1",
+  "feature_slug": "prism-metrics-snapshot-v1",
   "implementation_done": true,
   "evidence_done": true,
   "story_sequence": [
@@ -727,33 +727,33 @@
       "contract"
     ],
     "targeted_ac_ids": [
-      "AC-MPUB-001",
-      "AC-MPUB-002",
-      "AC-MPUB-003",
-      "AC-MPUB-004",
-      "AC-MPUB-005",
-      "AC-MPUB-006",
-      "AC-MPUB-007",
-      "AC-MPUB-008",
-      "AC-MPUB-009",
-      "AC-MPUB-010"
+      "AC-MSNAP-001",
+      "AC-MSNAP-002",
+      "AC-MSNAP-003",
+      "AC-MSNAP-004",
+      "AC-MSNAP-005",
+      "AC-MSNAP-006",
+      "AC-MSNAP-007",
+      "AC-MSNAP-008",
+      "AC-MSNAP-009",
+      "AC-MSNAP-010"
     ],
     "targeted_tc_ids": [
-      "TC-MPUB-001",
-      "TC-MPUB-002",
-      "TC-MPUB-003",
-      "TC-MPUB-004",
-      "TC-MPUB-005",
-      "TC-MPUB-006",
-      "TC-MPUB-007",
-      "TC-MPUB-008",
-      "TC-MPUB-009",
-      "TC-MPUB-010",
-      "TC-MPUB-011",
-      "TC-MPUB-012",
-      "TC-MPUB-013",
-      "TC-MPUB-014",
-      "TC-MPUB-015"
+      "TC-MSNAP-001",
+      "TC-MSNAP-002",
+      "TC-MSNAP-003",
+      "TC-MSNAP-004",
+      "TC-MSNAP-005",
+      "TC-MSNAP-006",
+      "TC-MSNAP-007",
+      "TC-MSNAP-008",
+      "TC-MSNAP-009",
+      "TC-MSNAP-010",
+      "TC-MSNAP-011",
+      "TC-MSNAP-012",
+      "TC-MSNAP-013",
+      "TC-MSNAP-014",
+      "TC-MSNAP-015"
     ],
     "targeted_scenario_ids": [],
     "targeted_scenario_families": []
@@ -765,13 +765,13 @@
     "targeted_scope_only": true,
     "verification_item_count": 15
   },
-  "feature_matrix_path": ".beacon/qa/features/prism-metrics-publication-v1/matrix.qa9.json",
+  "feature_matrix_path": ".beacon/qa/features/prism-metrics-snapshot-v1/matrix.qa9.json",
   "blocking_artifact_updates": [],
   "per_item_results": [
     {
-      "ac_id": "AC-MPUB-001",
-      "tc_id": "TC-MPUB-001",
-      "source_tc_id": "TC-MPUB-001",
+      "ac_id": "AC-MSNAP-001",
+      "tc_id": "TC-MSNAP-001",
+      "source_tc_id": "TC-MSNAP-001",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-001",
@@ -784,16 +784,16 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-001/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-001/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-001/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-001/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-001/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-001/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-001/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-001/result.json"
       ]
     },
     {
-      "ac_id": "AC-MPUB-002",
-      "tc_id": "TC-MPUB-002",
-      "source_tc_id": "TC-MPUB-002",
+      "ac_id": "AC-MSNAP-002",
+      "tc_id": "TC-MSNAP-002",
+      "source_tc_id": "TC-MSNAP-002",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-002",
@@ -806,16 +806,16 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-002/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-002/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-002/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-002/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-002/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-002/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-002/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-002/result.json"
       ]
     },
     {
-      "ac_id": "AC-MPUB-003",
-      "tc_id": "TC-MPUB-003",
-      "source_tc_id": "TC-MPUB-003",
+      "ac_id": "AC-MSNAP-003",
+      "tc_id": "TC-MSNAP-003",
+      "source_tc_id": "TC-MSNAP-003",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-003",
@@ -828,17 +828,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-003/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-003/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-003/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-003/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-003/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-003/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-003/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-003/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-003/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-003/result.json"
       ]
     },
     {
-      "ac_id": "AC-MPUB-004",
-      "tc_id": "TC-MPUB-004",
-      "source_tc_id": "TC-MPUB-004",
+      "ac_id": "AC-MSNAP-004",
+      "tc_id": "TC-MSNAP-004",
+      "source_tc_id": "TC-MSNAP-004",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-004",
@@ -851,17 +851,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-004/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-004/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-004/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-004/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-004/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-004/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-004/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-004/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-004/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-004/result.json"
       ]
     },
     {
-      "ac_id": "AC-MPUB-005",
-      "tc_id": "TC-MPUB-005",
-      "source_tc_id": "TC-MPUB-005",
+      "ac_id": "AC-MSNAP-005",
+      "tc_id": "TC-MSNAP-005",
+      "source_tc_id": "TC-MSNAP-005",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-005",
@@ -874,16 +874,16 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-005/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-005/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-005/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-005/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-005/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-005/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-005/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-005/result.json"
       ]
     },
     {
-      "ac_id": "AC-MPUB-005",
-      "tc_id": "TC-MPUB-006",
-      "source_tc_id": "TC-MPUB-006",
+      "ac_id": "AC-MSNAP-005",
+      "tc_id": "TC-MSNAP-006",
+      "source_tc_id": "TC-MSNAP-006",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-006",
@@ -896,16 +896,16 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-006/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-006/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-006/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-006/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-006/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-006/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-006/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-006/result.json"
       ]
     },
     {
-      "ac_id": "AC-MPUB-002",
-      "tc_id": "TC-MPUB-007",
-      "source_tc_id": "TC-MPUB-007",
+      "ac_id": "AC-MSNAP-002",
+      "tc_id": "TC-MSNAP-007",
+      "source_tc_id": "TC-MSNAP-007",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-007",
@@ -918,16 +918,16 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-007/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-007/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-007/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-007/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-007/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-007/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-007/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-007/result.json"
       ]
     },
     {
-      "ac_id": "AC-MPUB-006",
-      "tc_id": "TC-MPUB-008",
-      "source_tc_id": "TC-MPUB-008",
+      "ac_id": "AC-MSNAP-006",
+      "tc_id": "TC-MSNAP-008",
+      "source_tc_id": "TC-MSNAP-008",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-008",
@@ -940,17 +940,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-008/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-008/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-008/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-008/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-008/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-008/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-008/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-008/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-008/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-008/result.json"
       ]
     },
     {
-      "ac_id": "AC-MPUB-007",
-      "tc_id": "TC-MPUB-009",
-      "source_tc_id": "TC-MPUB-009",
+      "ac_id": "AC-MSNAP-007",
+      "tc_id": "TC-MSNAP-009",
+      "source_tc_id": "TC-MSNAP-009",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-009",
@@ -963,17 +963,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-009/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-009/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-009/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-009/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-009/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-009/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-009/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-009/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-009/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-009/result.json"
       ]
     },
     {
-      "ac_id": "AC-MPUB-008",
-      "tc_id": "TC-MPUB-010",
-      "source_tc_id": "TC-MPUB-010",
+      "ac_id": "AC-MSNAP-008",
+      "tc_id": "TC-MSNAP-010",
+      "source_tc_id": "TC-MSNAP-010",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-010",
@@ -986,17 +986,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-010/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-010/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-010/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-010/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-010/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-010/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-010/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-010/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-010/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-010/result.json"
       ]
     },
     {
-      "ac_id": "AC-MPUB-009",
-      "tc_id": "TC-MPUB-011",
-      "source_tc_id": "TC-MPUB-011",
+      "ac_id": "AC-MSNAP-009",
+      "tc_id": "TC-MSNAP-011",
+      "source_tc_id": "TC-MSNAP-011",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-011",
@@ -1009,17 +1009,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-011/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-011/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-011/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-011/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-011/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-011/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-011/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-011/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-011/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-011/result.json"
       ]
     },
     {
-      "ac_id": "AC-MPUB-010",
-      "tc_id": "TC-MPUB-012",
-      "source_tc_id": "TC-MPUB-012",
+      "ac_id": "AC-MSNAP-010",
+      "tc_id": "TC-MSNAP-012",
+      "source_tc_id": "TC-MSNAP-012",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-012",
@@ -1032,17 +1032,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-012/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-012/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-012/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-012/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-012/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-012/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-012/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-012/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-012/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-012/result.json"
       ]
     },
     {
-      "ac_id": "AC-MPUB-010",
-      "tc_id": "TC-MPUB-013",
-      "source_tc_id": "TC-MPUB-013",
+      "ac_id": "AC-MSNAP-010",
+      "tc_id": "TC-MSNAP-013",
+      "source_tc_id": "TC-MSNAP-013",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-013",
@@ -1055,17 +1055,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-013/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-013/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-013/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-013/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-013/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-013/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-013/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-013/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-013/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-013/result.json"
       ]
     },
     {
-      "ac_id": "AC-MPUB-001",
-      "tc_id": "TC-MPUB-014",
-      "source_tc_id": "TC-MPUB-014",
+      "ac_id": "AC-MSNAP-001",
+      "tc_id": "TC-MSNAP-014",
+      "source_tc_id": "TC-MSNAP-014",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-014",
@@ -1078,17 +1078,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-014/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-014/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-014/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-014/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-014/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-014/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-014/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-014/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-014/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-014/result.json"
       ]
     },
     {
-      "ac_id": "AC-MPUB-003",
-      "tc_id": "TC-MPUB-015",
-      "source_tc_id": "TC-MPUB-015",
+      "ac_id": "AC-MSNAP-006",
+      "tc_id": "TC-MSNAP-015",
+      "source_tc_id": "TC-MSNAP-015",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-015",
@@ -1101,11 +1101,11 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-015/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-015/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-015/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-015/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-015/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-015/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-015/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-015/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-015/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-015/result.json"
       ]
     }
   ],
@@ -1139,19 +1139,19 @@
     "blocked": false,
     "reason_code": "",
     "target_stage": "qa",
-    "feature": "prism-metrics-publication-v1",
+    "feature": "prism-metrics-snapshot-v1",
     "version": "v0.0.1",
     "recommended_command": ""
   },
   "requirement_completeness_verdict": "pass",
   "requirement_completeness_ref": "",
-  "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-metrics-publication-v1.ac-test-matrix.json",
+  "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-metrics-snapshot-v1.ac-test-matrix.json",
   "exhaustiveness": {
     "schema_version": "1.0",
-    "feature": "prism-metrics-publication-v1",
-    "feature_slug": "prism-metrics-publication-v1",
-    "run_id": "run-20260812T183252827530",
-    "generated_at": "2026-08-12T10:32:54.935814+00:00",
+    "feature": "prism-metrics-snapshot-v1",
+    "feature_slug": "prism-metrics-snapshot-v1",
+    "run_id": "run-20260812T183837779955",
+    "generated_at": "2026-08-12T10:38:39.561482+00:00",
     "execution_mode": "feature-aware",
     "scenario_count": 15,
     "browser_scenario_count": 0,
@@ -1173,11 +1173,11 @@
   },
   "scenario_results_v2": [
     {
-      "scenario_id": "TC-MPUB-001",
-      "tc_id": "TC-MPUB-001",
-      "source_tc_id": "TC-MPUB-001",
-      "ac_id": "AC-MPUB-001",
-      "feature_slug": "prism-metrics-publication-v1",
+      "scenario_id": "TC-MSNAP-001",
+      "tc_id": "TC-MSNAP-001",
+      "source_tc_id": "TC-MSNAP-001",
+      "ac_id": "AC-MSNAP-001",
+      "feature_slug": "prism-metrics-snapshot-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1201,18 +1201,18 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-001/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-001/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-001/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-001/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-001/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-001/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-001/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-001/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MPUB-002",
-      "tc_id": "TC-MPUB-002",
-      "source_tc_id": "TC-MPUB-002",
-      "ac_id": "AC-MPUB-002",
-      "feature_slug": "prism-metrics-publication-v1",
+      "scenario_id": "TC-MSNAP-002",
+      "tc_id": "TC-MSNAP-002",
+      "source_tc_id": "TC-MSNAP-002",
+      "ac_id": "AC-MSNAP-002",
+      "feature_slug": "prism-metrics-snapshot-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1236,18 +1236,18 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-002/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-002/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-002/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-002/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-002/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-002/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-002/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-002/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MPUB-003",
-      "tc_id": "TC-MPUB-003",
-      "source_tc_id": "TC-MPUB-003",
-      "ac_id": "AC-MPUB-003",
-      "feature_slug": "prism-metrics-publication-v1",
+      "scenario_id": "TC-MSNAP-003",
+      "tc_id": "TC-MSNAP-003",
+      "source_tc_id": "TC-MSNAP-003",
+      "ac_id": "AC-MSNAP-003",
+      "feature_slug": "prism-metrics-snapshot-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1271,19 +1271,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-003/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-003/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-003/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-003/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-003/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-003/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-003/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-003/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-003/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-003/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MPUB-004",
-      "tc_id": "TC-MPUB-004",
-      "source_tc_id": "TC-MPUB-004",
-      "ac_id": "AC-MPUB-004",
-      "feature_slug": "prism-metrics-publication-v1",
+      "scenario_id": "TC-MSNAP-004",
+      "tc_id": "TC-MSNAP-004",
+      "source_tc_id": "TC-MSNAP-004",
+      "ac_id": "AC-MSNAP-004",
+      "feature_slug": "prism-metrics-snapshot-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1307,19 +1307,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-004/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-004/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-004/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-004/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-004/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-004/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-004/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-004/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-004/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-004/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MPUB-005",
-      "tc_id": "TC-MPUB-005",
-      "source_tc_id": "TC-MPUB-005",
-      "ac_id": "AC-MPUB-005",
-      "feature_slug": "prism-metrics-publication-v1",
+      "scenario_id": "TC-MSNAP-005",
+      "tc_id": "TC-MSNAP-005",
+      "source_tc_id": "TC-MSNAP-005",
+      "ac_id": "AC-MSNAP-005",
+      "feature_slug": "prism-metrics-snapshot-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1343,18 +1343,18 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-005/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-005/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-005/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-005/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-005/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-005/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-005/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-005/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MPUB-006",
-      "tc_id": "TC-MPUB-006",
-      "source_tc_id": "TC-MPUB-006",
-      "ac_id": "AC-MPUB-005",
-      "feature_slug": "prism-metrics-publication-v1",
+      "scenario_id": "TC-MSNAP-006",
+      "tc_id": "TC-MSNAP-006",
+      "source_tc_id": "TC-MSNAP-006",
+      "ac_id": "AC-MSNAP-005",
+      "feature_slug": "prism-metrics-snapshot-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1378,18 +1378,18 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-006/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-006/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-006/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-006/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-006/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-006/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-006/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-006/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MPUB-007",
-      "tc_id": "TC-MPUB-007",
-      "source_tc_id": "TC-MPUB-007",
-      "ac_id": "AC-MPUB-002",
-      "feature_slug": "prism-metrics-publication-v1",
+      "scenario_id": "TC-MSNAP-007",
+      "tc_id": "TC-MSNAP-007",
+      "source_tc_id": "TC-MSNAP-007",
+      "ac_id": "AC-MSNAP-002",
+      "feature_slug": "prism-metrics-snapshot-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1413,18 +1413,18 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-007/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-007/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-007/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-007/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-007/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-007/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-007/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-007/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MPUB-008",
-      "tc_id": "TC-MPUB-008",
-      "source_tc_id": "TC-MPUB-008",
-      "ac_id": "AC-MPUB-006",
-      "feature_slug": "prism-metrics-publication-v1",
+      "scenario_id": "TC-MSNAP-008",
+      "tc_id": "TC-MSNAP-008",
+      "source_tc_id": "TC-MSNAP-008",
+      "ac_id": "AC-MSNAP-006",
+      "feature_slug": "prism-metrics-snapshot-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1448,19 +1448,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-008/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-008/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-008/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-008/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-008/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-008/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-008/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-008/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-008/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-008/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MPUB-009",
-      "tc_id": "TC-MPUB-009",
-      "source_tc_id": "TC-MPUB-009",
-      "ac_id": "AC-MPUB-007",
-      "feature_slug": "prism-metrics-publication-v1",
+      "scenario_id": "TC-MSNAP-009",
+      "tc_id": "TC-MSNAP-009",
+      "source_tc_id": "TC-MSNAP-009",
+      "ac_id": "AC-MSNAP-007",
+      "feature_slug": "prism-metrics-snapshot-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1484,19 +1484,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-009/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-009/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-009/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-009/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-009/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-009/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-009/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-009/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-009/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-009/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MPUB-010",
-      "tc_id": "TC-MPUB-010",
-      "source_tc_id": "TC-MPUB-010",
-      "ac_id": "AC-MPUB-008",
-      "feature_slug": "prism-metrics-publication-v1",
+      "scenario_id": "TC-MSNAP-010",
+      "tc_id": "TC-MSNAP-010",
+      "source_tc_id": "TC-MSNAP-010",
+      "ac_id": "AC-MSNAP-008",
+      "feature_slug": "prism-metrics-snapshot-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1520,19 +1520,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-010/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-010/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-010/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-010/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-010/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-010/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-010/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-010/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-010/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-010/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MPUB-011",
-      "tc_id": "TC-MPUB-011",
-      "source_tc_id": "TC-MPUB-011",
-      "ac_id": "AC-MPUB-009",
-      "feature_slug": "prism-metrics-publication-v1",
+      "scenario_id": "TC-MSNAP-011",
+      "tc_id": "TC-MSNAP-011",
+      "source_tc_id": "TC-MSNAP-011",
+      "ac_id": "AC-MSNAP-009",
+      "feature_slug": "prism-metrics-snapshot-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1556,19 +1556,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-011/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-011/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-011/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-011/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-011/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-011/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-011/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-011/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-011/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-011/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MPUB-012",
-      "tc_id": "TC-MPUB-012",
-      "source_tc_id": "TC-MPUB-012",
-      "ac_id": "AC-MPUB-010",
-      "feature_slug": "prism-metrics-publication-v1",
+      "scenario_id": "TC-MSNAP-012",
+      "tc_id": "TC-MSNAP-012",
+      "source_tc_id": "TC-MSNAP-012",
+      "ac_id": "AC-MSNAP-010",
+      "feature_slug": "prism-metrics-snapshot-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1592,19 +1592,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-012/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-012/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-012/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-012/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-012/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-012/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-012/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-012/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-012/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-012/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MPUB-013",
-      "tc_id": "TC-MPUB-013",
-      "source_tc_id": "TC-MPUB-013",
-      "ac_id": "AC-MPUB-010",
-      "feature_slug": "prism-metrics-publication-v1",
+      "scenario_id": "TC-MSNAP-013",
+      "tc_id": "TC-MSNAP-013",
+      "source_tc_id": "TC-MSNAP-013",
+      "ac_id": "AC-MSNAP-010",
+      "feature_slug": "prism-metrics-snapshot-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1628,19 +1628,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-013/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-013/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-013/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-013/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-013/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-013/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-013/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-013/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-013/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-013/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MPUB-014",
-      "tc_id": "TC-MPUB-014",
-      "source_tc_id": "TC-MPUB-014",
-      "ac_id": "AC-MPUB-001",
-      "feature_slug": "prism-metrics-publication-v1",
+      "scenario_id": "TC-MSNAP-014",
+      "tc_id": "TC-MSNAP-014",
+      "source_tc_id": "TC-MSNAP-014",
+      "ac_id": "AC-MSNAP-001",
+      "feature_slug": "prism-metrics-snapshot-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1664,19 +1664,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-014/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-014/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-014/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-014/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-014/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-014/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-014/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-014/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-014/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-014/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MPUB-015",
-      "tc_id": "TC-MPUB-015",
-      "source_tc_id": "TC-MPUB-015",
-      "ac_id": "AC-MPUB-003",
-      "feature_slug": "prism-metrics-publication-v1",
+      "scenario_id": "TC-MSNAP-015",
+      "tc_id": "TC-MSNAP-015",
+      "source_tc_id": "TC-MSNAP-015",
+      "ac_id": "AC-MSNAP-006",
+      "feature_slug": "prism-metrics-snapshot-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1700,21 +1700,21 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-015/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-015/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-015/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-015/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T183252827530/qa9-tc/TC-MPUB-015/result.json"
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-015/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-015/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-015/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-015/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-015/result.json"
       ]
     }
   ],
-  "ac_closure_path": ".beacon/qa/features/prism-metrics-publication-v1/ac-closure.json",
-  "feature_scorecard_path": ".beacon/qa/features/prism-metrics-publication-v1/scorecard.json",
+  "ac_closure_path": ".beacon/qa/features/prism-metrics-snapshot-v1/ac-closure.json",
+  "feature_scorecard_path": ".beacon/qa/features/prism-metrics-snapshot-v1/scorecard.json",
   "feature_scorecard": {
     "schema_version": "1.0",
-    "feature": "prism-metrics-publication-v1",
-    "feature_slug": "prism-metrics-publication-v1",
-    "run_id": "run-20260812T183252827530",
+    "feature": "prism-metrics-snapshot-v1",
+    "feature_slug": "prism-metrics-snapshot-v1",
+    "run_id": "run-20260812T183837779955",
     "ac_total": 10,
     "ac_accepted": 10,
     "scenario_total": 15,
@@ -2171,11 +2171,11 @@
       "junit_missing_or_invalid"
     ],
     "test_case_backfill_required": false,
-    "resume_command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-publication-v1 --version v0.0.1 --feature \"prism-metrics-publication-v1\"",
+    "resume_command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1 --version v0.0.1 --feature \"prism-metrics-snapshot-v1\"",
     "repair_handoff": {
       "action": "qa-repair",
       "reason": "assertion_count_zero_pass, junit_missing_or_invalid",
-      "command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-publication-v1 --version v0.0.1 --feature \"prism-metrics-publication-v1\""
+      "command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1 --version v0.0.1 --feature \"prism-metrics-snapshot-v1\""
     },
     "release_ready": true,
     "domain_fsm_coverage": {
@@ -2193,127 +2193,121 @@
         "covered": 1,
         "rows": [
           {
-            "ac_id": "TC-MPUB-006",
-            "tc_id": "AC-MPUB-005",
-            "path_type": "`bash scripts/check_metrics_publication.sh`",
-            "raw": "TC-MPUB-006 | AC-MPUB-005 | `bash scripts/check_metrics_publication.sh` | exec-layer 校验脚本 PASS（合法路径）"
+            "ac_id": "TC-MSNAP-006",
+            "tc_id": "AC-MSNAP-005",
+            "path_type": "`bash scripts/check_metrics_snapshot.sh`",
+            "raw": "TC-MSNAP-006 | AC-MSNAP-005 | `bash scripts/check_metrics_snapshot.sh` | exec-layer 校验脚本 PASS（合法路径）"
           }
         ]
       },
       "illegal": {
-        "required": 2,
-        "present": 2,
-        "covered": 2,
+        "required": 1,
+        "present": 1,
+        "covered": 1,
         "rows": [
           {
-            "ac_id": "TC-MPUB-013",
-            "tc_id": "AC-MPUB-010",
+            "ac_id": "TC-MSNAP-013",
+            "tc_id": "AC-MSNAP-010",
             "path_type": "`rg -n \"Illegal",
-            "raw": "TC-MPUB-013 | AC-MPUB-010 | `rg -n \"Illegal | illegal | 宣称海\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md` | illegal 转移覆盖（非法拒绝路径）"
-          },
-          {
-            "ac_id": "TC-MPUB-015",
-            "tc_id": "AC-MPUB-003",
-            "path_type": "`rg -n \"US-MPUB-002",
-            "raw": "TC-MPUB-015 | AC-MPUB-003 | `rg -n \"US-MPUB-002 | publication_record_missing\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md` | 无记录拒绝路径可追溯"
+            "raw": "TC-MSNAP-013 | AC-MSNAP-010 | `rg -n \"Illegal | illegal | 宣称海\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md` | illegal 转移覆盖（非法拒绝路径）"
           }
         ]
       },
       "matrix": {
         "legal_walk_rows": [
           {
-            "ac_id": "TC-MPUB-006",
-            "tc_id": "AC-MPUB-005",
-            "path_type": "`bash scripts/check_metrics_publication.sh`",
-            "raw": "TC-MPUB-006 | AC-MPUB-005 | `bash scripts/check_metrics_publication.sh` | exec-layer 校验脚本 PASS（合法路径）"
+            "ac_id": "TC-MSNAP-006",
+            "tc_id": "AC-MSNAP-005",
+            "path_type": "`bash scripts/check_metrics_snapshot.sh`",
+            "raw": "TC-MSNAP-006 | AC-MSNAP-005 | `bash scripts/check_metrics_snapshot.sh` | exec-layer 校验脚本 PASS（合法路径）"
           }
         ],
         "illegal_rows": [
           {
-            "ac_id": "TC-MPUB-013",
-            "tc_id": "AC-MPUB-010",
+            "ac_id": "TC-MSNAP-013",
+            "tc_id": "AC-MSNAP-010",
             "path_type": "`rg -n \"Illegal",
-            "raw": "TC-MPUB-013 | AC-MPUB-010 | `rg -n \"Illegal | illegal | 宣称海\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md` | illegal 转移覆盖（非法拒绝路径）"
-          },
-          {
-            "ac_id": "TC-MPUB-015",
-            "tc_id": "AC-MPUB-003",
-            "path_type": "`rg -n \"US-MPUB-002",
-            "raw": "TC-MPUB-015 | AC-MPUB-003 | `rg -n \"US-MPUB-002 | publication_record_missing\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md` | 无记录拒绝路径可追溯"
+            "raw": "TC-MSNAP-013 | AC-MSNAP-010 | `rg -n \"Illegal | illegal | 宣称海\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md` | illegal 转移覆盖（非法拒绝路径）"
           }
         ],
         "other_rows": [
           {
-            "ac_id": "TC-MPUB-001",
-            "tc_id": "AC-MPUB-001",
-            "path_type": "`test -f contracts/metrics-publication.contract.md && rg -n \"publication_id",
-            "raw": "TC-MPUB-001 | AC-MPUB-001 | `test -f contracts/metrics-publication.contract.md && rg -n \"publication_id | platform | url | published_at | artifact_ref\" contracts/metrics-publication.contract.md` | 发布事件契约含核心字段"
+            "ac_id": "TC-MSNAP-001",
+            "tc_id": "AC-MSNAP-001",
+            "path_type": "`test -f contracts/metrics-snapshot.contract.md && rg -n \"snapshot_id",
+            "raw": "TC-MSNAP-001 | AC-MSNAP-001 | `test -f contracts/metrics-snapshot.contract.md && rg -n \"snapshot_id | publication_ref | collected_at | 来源\" contracts/metrics-snapshot.contract.md` | 快照契约含核心字段"
           },
           {
-            "ac_id": "TC-MPUB-002",
-            "tc_id": "AC-MPUB-002",
-            "path_type": "`test -f registry/metrics-adapters.yaml && rg -n \"analyze-data\" registry/metrics-adapters.yaml`",
-            "raw": "TC-MPUB-002 | AC-MPUB-002 | `test -f registry/metrics-adapters.yaml && rg -n \"analyze-data\" registry/metrics-adapters.yaml` | 统计 bridge 登记存在"
+            "ac_id": "TC-MSNAP-002",
+            "tc_id": "AC-MSNAP-002",
+            "path_type": "`test -f registry/metrics-adapters.yaml && rg -n \"snapshot\" registry/metrics-adapters.yaml`",
+            "raw": "TC-MSNAP-002 | AC-MSNAP-002 | `test -f registry/metrics-adapters.yaml && rg -n \"snapshot\" registry/metrics-adapters.yaml` | 快照 bridge 条目存在"
           },
           {
-            "ac_id": "TC-MPUB-003",
-            "tc_id": "AC-MPUB-003",
-            "path_type": "`rg -n \"measured",
-            "raw": "TC-MPUB-003 | AC-MPUB-003 | `rg -n \"measured | publication_record | 无 publication\" contracts/metrics-publication.contract.md` | measured 守卫声明"
+            "ac_id": "TC-MSNAP-003",
+            "tc_id": "AC-MSNAP-003",
+            "path_type": "`rg -n \"publication_ref",
+            "raw": "TC-MSNAP-003 | AC-MSNAP-003 | `rg -n \"publication_ref | 无 publication | measured\" contracts/metrics-snapshot.contract.md` | measured 守卫"
           },
           {
-            "ac_id": "TC-MPUB-004",
-            "tc_id": "AC-MPUB-004",
-            "path_type": "`rg -n \"metrics-publication.contract\" skills/_internal/orchestration/creation-mode-map.md`",
-            "raw": "TC-MPUB-004 | AC-MPUB-004 | `rg -n \"metrics-publication.contract\" skills/_internal/orchestration/creation-mode-map.md` | 路由回流引用"
+            "ac_id": "TC-MSNAP-004",
+            "tc_id": "AC-MSNAP-004",
+            "path_type": "`rg -n \"metrics-snapshot.contract\" skills/_internal/orchestration/creation-mode-map.md`",
+            "raw": "TC-MSNAP-004 | AC-MSNAP-004 | `rg -n \"metrics-snapshot.contract\" skills/_internal/orchestration/creation-mode-map.md` | 路由快照引用"
           },
           {
-            "ac_id": "TC-MPUB-005",
-            "tc_id": "AC-MPUB-005",
-            "path_type": "`test -x scripts/check_metrics_publication.sh`",
-            "raw": "TC-MPUB-005 | AC-MPUB-005 | `test -x scripts/check_metrics_publication.sh` | exec 脚本存在且可执行"
+            "ac_id": "TC-MSNAP-005",
+            "tc_id": "AC-MSNAP-005",
+            "path_type": "`test -x scripts/check_metrics_snapshot.sh`",
+            "raw": "TC-MSNAP-005 | AC-MSNAP-005 | `test -x scripts/check_metrics_snapshot.sh` | exec 脚本存在且可执行"
           },
           {
-            "ac_id": "TC-MPUB-007",
-            "tc_id": "AC-MPUB-002",
-            "path_type": "`python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/metrics-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=3 else 1)\"`",
-            "raw": "TC-MPUB-007 | AC-MPUB-002 | `python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/metrics-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=3 else 1)\"` | ≥3 个 bridge 条目"
+            "ac_id": "TC-MSNAP-007",
+            "tc_id": "AC-MSNAP-002",
+            "path_type": "`python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/metrics-adapters.yaml')); rs=[a for a in d.get('adapters',[]) if 'snapshot' in a.get('name','')]; raise SystemExit(0 if len(rs)>=2 else 1)\"`",
+            "raw": "TC-MSNAP-007 | AC-MSNAP-002 | `python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/metrics-adapters.yaml')); rs=[a for a in d.get('adapters',[]) if 'snapshot' in a.get('name','')]; raise SystemExit(0 if len(rs)>=2 else 1)\"` | ≥2 个快照采集条目"
           },
           {
-            "ac_id": "TC-MPUB-008",
-            "tc_id": "AC-MPUB-006",
+            "ac_id": "TC-MSNAP-008",
+            "tc_id": "AC-MSNAP-006",
             "path_type": "`rg -n \"空快照",
-            "raw": "TC-MPUB-008 | AC-MPUB-006 | `rg -n \"空快照 | 禁止 | 不编造 | 猜\" contracts/metrics-publication.contract.md` | 不编造指标声明"
+            "raw": "TC-MSNAP-008 | AC-MSNAP-006 | `rg -n \"空快照 | 禁止 | 不编造 | 猜\" contracts/metrics-snapshot.contract.md` | 空快照/不编造声明"
           },
           {
-            "ac_id": "TC-MPUB-009",
-            "tc_id": "AC-MPUB-007",
+            "ac_id": "TC-MSNAP-009",
+            "tc_id": "AC-MSNAP-007",
             "path_type": "`rg -n \"凭证",
-            "raw": "TC-MPUB-009 | AC-MPUB-007 | `rg -n \"凭证 | 密钥 | secrets | 禁止入库\" contracts/metrics-publication.contract.md` | 凭证保护"
+            "raw": "TC-MSNAP-009 | AC-MSNAP-007 | `rg -n \"凭证 | 密钥 | secrets | 禁止入库\" contracts/metrics-snapshot.contract.md` | 凭证保护"
           },
           {
-            "ac_id": "TC-MPUB-010",
-            "tc_id": "AC-MPUB-008",
+            "ac_id": "TC-MSNAP-010",
+            "tc_id": "AC-MSNAP-008",
             "path_type": "`rg -n \"fail-closed",
-            "raw": "TC-MPUB-010 | AC-MPUB-008 | `rg -n \"fail-closed | blocked | reason_code\" contracts/metrics-publication.contract.md` | bridge fail-closed"
+            "raw": "TC-MSNAP-010 | AC-MSNAP-008 | `rg -n \"fail-closed | blocked | reason_code\" contracts/metrics-snapshot.contract.md` | bridge fail-closed"
           },
           {
-            "ac_id": "TC-MPUB-011",
-            "tc_id": "AC-MPUB-009",
-            "path_type": "`rg -n \"publication_id",
-            "raw": "TC-MPUB-011 | AC-MPUB-009 | `rg -n \"publication_id | url | 时间 | 缺证据\" contracts/metrics-publication.contract.md` | 证据要求"
+            "ac_id": "TC-MSNAP-011",
+            "tc_id": "AC-MSNAP-009",
+            "path_type": "`rg -n \"collected_at",
+            "raw": "TC-MSNAP-011 | AC-MSNAP-009 | `rg -n \"collected_at | 来源 | 缺证据\" contracts/metrics-snapshot.contract.md` | 证据要求"
           },
           {
-            "ac_id": "TC-MPUB-012",
-            "tc_id": "AC-MPUB-010",
-            "path_type": "`rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md && rg -n \"E2",
-            "raw": "TC-MPUB-012 | AC-MPUB-010 | `rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md && rg -n \"E2 | E3 | E4\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md` | 分湖边界存在"
+            "ac_id": "TC-MSNAP-012",
+            "tc_id": "AC-MSNAP-010",
+            "path_type": "`rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md && rg -n \"E3",
+            "raw": "TC-MSNAP-012 | AC-MSNAP-010 | `rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md && rg -n \"E3 | E4\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md` | 分湖边界存在"
           },
           {
-            "ac_id": "TC-MPUB-014",
-            "tc_id": "AC-MPUB-001",
-            "path_type": "`rg -n \"US-MPUB-001",
-            "raw": "TC-MPUB-014 | AC-MPUB-001 | `rg -n \"US-MPUB-001 | 发布事件\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md` | 回流旅程可追溯"
+            "ac_id": "TC-MSNAP-014",
+            "tc_id": "AC-MSNAP-001",
+            "path_type": "`rg -n \"US-MSNAP-001",
+            "raw": "TC-MSNAP-014 | AC-MSNAP-001 | `rg -n \"US-MSNAP-001 | 快照\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md` | 快照旅程可追溯"
+          },
+          {
+            "ac_id": "TC-MSNAP-015",
+            "tc_id": "AC-MSNAP-006",
+            "path_type": "`rg -n \"US-MSNAP-002",
+            "raw": "TC-MSNAP-015 | AC-MSNAP-006 | `rg -n \"US-MSNAP-002 | 空快照\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md` | 空快照路径可追溯"
           }
         ],
         "has_legal_walk": true,
@@ -2335,7 +2329,7 @@
   "release_ready": true,
   "delivery_contract": {
     "schema_version": "1.0",
-    "feature": "prism-metrics-publication-v1",
+    "feature": "prism-metrics-snapshot-v1",
     "version": "v0.0.1",
     "requested_mode": "feature-aware",
     "effective_mode": "feature-aware",
@@ -2356,14 +2350,14 @@
     "subagent_prechecks": {},
     "requirement_binding": {
       "source_of_truth_root": "docs/beacon/v0.0.1",
-      "feature_matrix_path": ".beacon/qa/features/prism-metrics-publication-v1/matrix.qa9.json",
-      "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-metrics-publication-v1.ac-test-matrix.json"
+      "feature_matrix_path": ".beacon/qa/features/prism-metrics-snapshot-v1/matrix.qa9.json",
+      "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-metrics-snapshot-v1.ac-test-matrix.json"
     },
     "traceability_refs": [
-      ".beacon/qa/features/prism-metrics-publication-v1/matrix.qa9.json",
-      "docs/beacon/v0.0.1/.machine/qa/prism-metrics-publication-v1.ac-test-matrix.json",
-      ".beacon/qa/features/prism-metrics-publication-v1/ac-closure.json",
-      ".beacon/qa/features/prism-metrics-publication-v1/scorecard.json",
+      ".beacon/qa/features/prism-metrics-snapshot-v1/matrix.qa9.json",
+      "docs/beacon/v0.0.1/.machine/qa/prism-metrics-snapshot-v1.ac-test-matrix.json",
+      ".beacon/qa/features/prism-metrics-snapshot-v1/ac-closure.json",
+      ".beacon/qa/features/prism-metrics-snapshot-v1/scorecard.json",
       ".beacon/release-gate-report.json"
     ],
     "runner": "",
@@ -2377,7 +2371,7 @@
   },
   "host_native_delivery": {
     "schema_version": "1.0",
-    "feature": "prism-metrics-publication-v1",
+    "feature": "prism-metrics-snapshot-v1",
     "version": "v0.0.1",
     "requested_mode": "feature-aware",
     "effective_mode": "feature-aware",
@@ -2398,14 +2392,14 @@
     "subagent_prechecks": {},
     "requirement_binding": {
       "source_of_truth_root": "docs/beacon/v0.0.1",
-      "feature_matrix_path": ".beacon/qa/features/prism-metrics-publication-v1/matrix.qa9.json",
-      "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-metrics-publication-v1.ac-test-matrix.json"
+      "feature_matrix_path": ".beacon/qa/features/prism-metrics-snapshot-v1/matrix.qa9.json",
+      "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-metrics-snapshot-v1.ac-test-matrix.json"
     },
     "traceability_refs": [
-      ".beacon/qa/features/prism-metrics-publication-v1/matrix.qa9.json",
-      "docs/beacon/v0.0.1/.machine/qa/prism-metrics-publication-v1.ac-test-matrix.json",
-      ".beacon/qa/features/prism-metrics-publication-v1/ac-closure.json",
-      ".beacon/qa/features/prism-metrics-publication-v1/scorecard.json",
+      ".beacon/qa/features/prism-metrics-snapshot-v1/matrix.qa9.json",
+      "docs/beacon/v0.0.1/.machine/qa/prism-metrics-snapshot-v1.ac-test-matrix.json",
+      ".beacon/qa/features/prism-metrics-snapshot-v1/ac-closure.json",
+      ".beacon/qa/features/prism-metrics-snapshot-v1/scorecard.json",
       ".beacon/release-gate-report.json"
     ],
     "runner": "",
@@ -2417,5 +2411,5 @@
     "release_ready": true,
     "risk_flags": []
   },
-  "current_spec_fingerprint_hash": "ece9fd65d3d60eed913009d3ec4441e04f52df119dfa1cc8bc2eb42323da4301"
+  "current_spec_fingerprint_hash": "f20bfae04e2d250f0f6ad235df2eb35a06563913c16f49b7f0fb8fd4be6892b6"
 }

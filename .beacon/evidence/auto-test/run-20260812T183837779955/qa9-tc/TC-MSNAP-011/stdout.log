@@ -1,0 +1,2 @@
+26:- 字段: snapshot_id / publication_ref / views / interactions / followers / collected_at / source（来源）
+33:- 缺证据（collected_at/来源）不算采集

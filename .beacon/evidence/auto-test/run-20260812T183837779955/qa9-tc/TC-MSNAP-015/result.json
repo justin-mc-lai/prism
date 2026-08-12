@@ -1,0 +1,30 @@
+{
+  "layer": "contract",
+  "command": "rg -n \"US-MSNAP-002|空快照\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 5,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "e3eca07a3e912727cdfcdcafb32611cc09ce85cfb6e9ecea0b686a4e5f0aaad2",
+  "started_at": "2026-08-12T18:38:39.447675",
+  "ended_at": "2026-08-12T18:38:39.460343",
+  "junit_path": ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-015/junit.xml",
+  "junit_valid": true,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-015/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-015/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-015/stderr.log",
+    ".beacon/evidence/auto-test/run-20260812T183837779955/qa9-tc/TC-MSNAP-015/junit.xml"
+  ],
+  "tc_id": "TC-MSNAP-015",
+  "ac_id": "AC-MSNAP-006"
+}

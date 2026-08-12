@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "items": [
+    {
+      "run_id": "run-20260812T183837779955",
+      "stage": "qa",
+      "action": "memory_writeback",
+      "feature": "prism-metrics-snapshot-v1",
+      "version": "",
+      "evidence_ref": [
+        ".beacon/auto-test-status.json",
+        ".beacon/coverage-summary.json",
+        ".beacon/qa/status.json",
+        ".beacon/release-gate-report.json",
+        "docs/beacon/v0.0.1/.machine/qa/prism-metrics-snapshot-v1.ac-test-matrix.json"
+      ],
+      "requirement_refs": [],
+      "decision_trace": [],
+      "blockers": [],
+      "attempt_seq": 1,
+      "previous_transaction_id": "",
+      "lineage_ids": [],
+      "transaction_id": "tx-wf-run-20260812T183837779955-qa-memory_writeback-8db8b5d8be1c",
+      "source_hash": "8db8b5d8be1c5018ed708a40aa3f9292b448da747211b0709c8869657934a762",
+      "projection_seq": "wf-8db8b5d8be1c5018",
+      "occurred_at": "2026-08-12T10:38:39.619507+00:00",
+      "status": "applied",
+      "committed_at": "2026-08-12T10:38:39.620222+00:00",
+      "memory_id": "829e142d-7341-4e9d-b144-4dd17f997938",
+      "event_id": "48845f80-3a9c-43a8-9a52-33caae48f593",
+      "sink_paths": {
+        "memory_v1": ".beacon/memory/memory-v1.json",
+        "legacy_projection": ".beacon/memory/decisions.json",
+        "workflow_lifecycle": ".beacon/memory/workflow-lifecycle.json"
+      },
+      "sink_checksums": {
+        "memory_v1": "9cf53cd87d33d3db119b66fe3b5917bb94c325ba7188e3a9c051b8173cfda7fa",
+        "legacy_projection": "missing",
+        "workflow_lifecycle": "1c9f1c8572a8768b20da929c4ea31cd18ae1f28ad1e456da90f29f95764539d9"
+      }
+    }
+  ],
+  "updated_at": "2026-08-12T10:38:39.620409+00:00"
+}

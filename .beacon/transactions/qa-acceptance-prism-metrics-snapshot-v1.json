@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "artifact": "qa_acceptance_runtime_projection",
+  "version": "v0.0.1",
+  "feature": "prism-metrics-snapshot-v1",
+  "feature_slug": "prism-metrics-snapshot-v1",
+  "revision_id": "R1",
+  "verdict": "passed",
+  "transaction_id": "tx-qa-acceptance-prism-metrics-snapshot-v1-b06135588314",
+  "source_hash": "sha256:b061355883149f0b06b11955621ab282186d5118c59106d80cd943fb118852b1",
+  "projection_seq": 1,
+  "committed_at": "2026-08-12T10:38:39.621551+00:00",
+  "write_status": "applied",
+  "failed_sinks": [],
+  "machine_ref": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-metrics-snapshot-v1.json",
+  "markdown_ref": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-metrics-snapshot-v1.md",
+  "runtime_projection_ref": ".beacon/transactions/qa-acceptance-prism-metrics-snapshot-v1.json",
+  "sink_checksums": {
+    "machine": "sha256:cf328a69be762a008480c4748f06542228bab7435432052c0bbc07a34389dab7",
+    "human": "sha256:5b7529cc3493bc531814c287744783730a8faf0499b52d2f517c5222100a0d7a",
+    "runtime": "sha256:f7411a35066e4dee4a34918fd10643d933d242799cedd09b758c22a5092cb310"
+  }
+}

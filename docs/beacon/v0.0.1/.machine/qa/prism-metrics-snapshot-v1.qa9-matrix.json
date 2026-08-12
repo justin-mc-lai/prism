@@ -1,0 +1,497 @@
+{
+  "schema_version": "1.0.2",
+  "feature": "prism-metrics-snapshot-v1",
+  "feature_slug": "prism-metrics-snapshot-v1",
+  "version": "v0.0.1",
+  "compiler": {
+    "requested_mode": "auto",
+    "effective_mode": "host",
+    "generator_mode": "host",
+    "fallback_reason": "",
+    "capability_snapshot": {
+      "schema_version": "1.0",
+      "command_name": "test-case",
+      "host_runtime": "codex",
+      "host_runtime_supported": true,
+      "host_bridge_declared": true,
+      "host_bridge_command_available": true,
+      "host_bridge_command_source": "env_cmd",
+      "host_bridge_command_env": "BEACON_HOST_TEST_CASE_BRIDGE_CMD",
+      "host_response_available": false,
+      "host_response_source": "none",
+      "host_response_path": "",
+      "host_transport": "command-bridge",
+      "host_semantic_ready": true,
+      "response_used": false,
+      "host_mode_options": [
+        "host-response",
+        "host",
+        "host-provider",
+        "llm",
+        "rule"
+      ],
+      "provider_available": false,
+      "provider_key_present": false,
+      "llm_disabled": false,
+      "disable_env": "BEACON_TEST_CASE_DISABLE_LLM"
+    },
+    "model": "beacon-test-case-compiler"
+  },
+  "qa_profile": "web-full",
+  "qa_types": [
+    "contract"
+  ],
+  "llm_plan": {
+    "mode": "disabled",
+    "model": "none",
+    "project_scan": {
+      "language": "unknown",
+      "framework": "unknown",
+      "frontend": "unknown",
+      "api_spec_refs": [],
+      "risk_points": [
+        "authz/authn boundary",
+        "cross-browser ui behavior",
+        "api contract drift",
+        "exception handling and replay safety"
+      ]
+    },
+    "project_type": "ai-agent-skill",
+    "generated_at": "2026-08-12T18:38:31.450369",
+    "prompt_ref": "beacon.qa9.llm.plan.v1.0.2",
+    "skip_reason": "llm_auto_disabled",
+    "qa_types": [
+      "contract"
+    ]
+  },
+  "qa_strategy": {
+    "schema_version": "1.0.2",
+    "generated_at": "2026-08-12T18:38:31.449415",
+    "project_type": "ai-agent-skill",
+    "project_scan": {
+      "language": "unknown",
+      "framework": "unknown",
+      "frontend": "unknown",
+      "api_spec_refs": [],
+      "risk_points": [
+        "authz/authn boundary",
+        "cross-browser ui behavior",
+        "api contract drift",
+        "exception handling and replay safety"
+      ]
+    },
+    "qa_applicability": {
+      "unit": "required",
+      "interface": "required",
+      "contract": "required",
+      "integration": "required",
+      "smoke": "required",
+      "functional": "conditional",
+      "regression": "required",
+      "exception": "required",
+      "compatibility": "conditional"
+    },
+    "qa_required_types": [
+      "contract"
+    ],
+    "runner_policy": {
+      "functional": {
+        "primary": "browser-use",
+        "fallback": [
+          "playwright",
+          "cypress",
+          "agent-browser"
+        ]
+      },
+      "compatibility": {
+        "primary": "playwright",
+        "fallback": [
+          "cypress"
+        ]
+      },
+      "api_layers": {
+        "interface": "schemathesis/newman/pytest",
+        "contract": "schemathesis/pact",
+        "integration": "pytest+testcontainers"
+      }
+    },
+    "command_baseline": {
+      "unit": "python3 -m pytest -q -k unit --junitxml \"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\"",
+      "interface": "python3 -m pytest -q -k interface --junitxml \"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\"",
+      "contract": "python3 -m pytest -q -k contract --junitxml \"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\"",
+      "integration": "python3 -m pytest -q -k integration --junitxml \"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\"",
+      "smoke": "python3 -m pytest -q -m smoke --junitxml \"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\"",
+      "functional": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "regression": "python3 -m pytest -q -k regression --junitxml \"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\"",
+      "exception": "python3 -m pytest -q -k exception --junitxml \"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\"",
+      "compatibility": "python3 -m beacon.adapters.browser_use_runner --mode compatibility --deterministic-command \"python3 -m pytest -q -k compatibility --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\""
+    },
+    "ui_runner": "browser-use"
+  },
+  "qa_requirements": [
+    {
+      "qa_type": "unit",
+      "required": false,
+      "automation_required": false,
+      "min_cases": 0,
+      "applicability": "required",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    },
+    {
+      "qa_type": "interface",
+      "required": false,
+      "automation_required": false,
+      "min_cases": 0,
+      "applicability": "required",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    },
+    {
+      "qa_type": "contract",
+      "required": true,
+      "automation_required": true,
+      "min_cases": 1,
+      "applicability": "required",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    },
+    {
+      "qa_type": "integration",
+      "required": false,
+      "automation_required": false,
+      "min_cases": 0,
+      "applicability": "required",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    },
+    {
+      "qa_type": "smoke",
+      "required": false,
+      "automation_required": false,
+      "min_cases": 0,
+      "applicability": "required",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    },
+    {
+      "qa_type": "functional",
+      "required": false,
+      "automation_required": false,
+      "min_cases": 0,
+      "applicability": "conditional",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    },
+    {
+      "qa_type": "regression",
+      "required": false,
+      "automation_required": false,
+      "min_cases": 0,
+      "applicability": "required",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    },
+    {
+      "qa_type": "exception",
+      "required": false,
+      "automation_required": false,
+      "min_cases": 0,
+      "applicability": "required",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    },
+    {
+      "qa_type": "compatibility",
+      "required": false,
+      "automation_required": false,
+      "min_cases": 0,
+      "applicability": "conditional",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    }
+  ],
+  "automation_target_rate": 0.85,
+  "entries": [
+    {
+      "tc_id": "TC-MSNAP-001",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-metrics-snapshot-v1 AC-001 :: `test -f contracts/metrics-snapshot.contract.md && rg -n \"snapshot_id",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "collected_at",
+      "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-001.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-MSNAP-003",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-metrics-snapshot-v1 AC-001 :: `rg -n \"publication_ref",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "measured\" contracts/metrics-snapshot.contract.md`",
+      "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-003.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-MSNAP-008",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-metrics-snapshot-v1 AC-001 :: `rg -n \"空快照",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "不编造",
+      "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-008.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-MSNAP-009",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-metrics-snapshot-v1 AC-001 :: `rg -n \"凭证",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "secrets",
+      "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-009.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-MSNAP-010",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-metrics-snapshot-v1 AC-001 :: `rg -n \"fail-closed",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "reason_code\" contracts/metrics-snapshot.contract.md`",
+      "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-010.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-MSNAP-011",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-metrics-snapshot-v1 AC-001 :: `rg -n \"collected_at",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "缺证据\" contracts/metrics-snapshot.contract.md`",
+      "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-011.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-MSNAP-012",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-metrics-snapshot-v1 AC-001 :: `rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.m",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "分湖边界存在",
+      "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-012.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-MSNAP-013",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-metrics-snapshot-v1 AC-001 :: `rg -n \"Illegal",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "宣称海\" docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md`",
+      "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-013.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-MSNAP-014",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-metrics-snapshot-v1 AC-001 :: `rg -n \"US-MSNAP-001",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "快照旅程可追溯",
+      "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-014.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-MSNAP-015",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-metrics-snapshot-v1 AC-001 :: `rg -n \"US-MSNAP-002",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "空快照路径可追溯",
+      "evidence_path": ".beacon/evidence/test-results/prism-metrics-snapshot-v1/{run_id}/TC-MSNAP-015.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md"
+    }
+  ],
+  "markdown_matrix_contract": {
+    "truth_mode": "generated",
+    "fail_closed": false,
+    "source": "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+    "row_count": 10,
+    "enrichment_disabled": false
+  },
+  "compatibility_matrix": {
+    "browsers": [
+      "chromium",
+      "firefox",
+      "webkit"
+    ],
+    "devices": [
+      "desktop",
+      "iphone14"
+    ],
+    "required_pairs": [
+      {
+        "browser": "chromium",
+        "device": "desktop"
+      },
+      {
+        "browser": "firefox",
+        "device": "desktop"
+      },
+      {
+        "browser": "webkit",
+        "device": "desktop"
+      }
+    ]
+  },
+  "generated_at": "2026-08-12T18:38:31.450416",
+  "research_projection": {
+    "schema_version": "1.0",
+    "feature": "prism-metrics-snapshot-v1",
+    "version": "v0.0.1",
+    "source": "research:.beacon/worktrees/v0.0.1/prism-metrics-snapshot-v1/docs/beacon/v0.0.1/research/prism-metrics-snapshot-v1.md",
+    "present": true,
+    "section_count": 0,
+    "sections": {},
+    "derived_items": []
+  }
+}

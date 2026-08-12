@@ -1,0 +1,22 @@
+31:E1 把发布证据回流成基座。E2 在其上定义**指标快照**（MetricsSnapshot）：某篇发布内容在某个时间点的
+32:平台指标（阅读/互动/粉丝等），必须带 publication_ref、采集时间和来源证据。没有发布记录就没有快照
+33:（FSM `published → measured` 守卫）；缺数据用显式空快照，不编造。
+35:- 能做：`contracts/metrics-snapshot.contract.md`；`registry/metrics-adapters.yaml` 快照条目；
+36:  creation-mode-map 快照引用；exec 校验脚本。
+42:继续 Lake E：落 MetricsSnapshot 指标快照契约与采集门。
+79:| FP-MSNAP-001 | 快照必须绑定 publication_ref；无发布记录不得 measured |
+80:| FP-MSNAP-002 | 指标是投影；快照带 collected_at 与来源证据 |
+81:| FP-MSNAP-003 | 缺数据用显式空快照；不编造指标/趋势 |
+88:US-MSNAP-001：E1 发布事件存在 → 按 `metrics-snapshot.contract` 采集某时间点指标 →
+89:写入 `content/publications/.../metrics/` 快照 → E3 才能复盘。
+91:US-MSNAP-002：无发布记录或平台无数据。返回显式空快照或 blocked，不猜。
+110:| registry_landed | contract_landed | registry 含快照条目 |
+111:| routing_landed | registry_landed | creation-mode-map 快照引用 |
+121:- 无 publication_ref 生成快照
+141:1. 快照契约（AC-MSNAP-001）
+146:6. 空快照/不编造（AC-MSNAP-006）
+166:| AC-MSNAP-002 | 进入 `registry_landed`：`registry/metrics-adapters.yaml` 含 ≥2 个快照采集 bridge 条目 |
+167:| AC-MSNAP-003 | measured 守卫：无 publication_ref 不得生成快照（引用 E1 发布事件） |
+168:| AC-MSNAP-004 | 进入 `routing_landed`：creation-mode-map 快照/measured 引用 metrics-snapshot.contract |
+170:| AC-MSNAP-006 | 空快照/不编造：缺数据用显式空快照，禁止猜测 |
+173:| AC-MSNAP-009 | 证据要求：快照必须带 collected_at 与来源，缺证据不算采集 |

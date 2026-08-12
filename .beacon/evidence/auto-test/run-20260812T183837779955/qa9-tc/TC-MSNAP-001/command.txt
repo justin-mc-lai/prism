@@ -1,0 +1,1 @@
+test -f contracts/metrics-snapshot.contract.md && rg -n "snapshot_id|publication_ref|collected_at|来源" contracts/metrics-snapshot.contract.md

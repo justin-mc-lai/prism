@@ -1,0 +1,6 @@
+19:- publication_ref（E1 发布事件 ID）+ 平台 + 采集时间
+21:拒绝：无 publication_ref → blocked + reason_code=publication_record_missing；不猜数据
+25:- 快照: `content/publications/{platform}/{account}/{slug}/metrics/{snapshot_id}.yaml`
+26:- 字段: snapshot_id / publication_ref / views / interactions / followers / collected_at / source（来源）
+31:- 无 publication_ref 不得生成快照（FSM measured 守卫）
+33:- 缺证据（collected_at/来源）不算采集

@@ -1,0 +1,27 @@
+{
+  "layer": "contract",
+  "command": "test -f contracts/metrics-snapshot.contract.md && rg -n \"snapshot_id|publication_ref|collected_at|来源\" contracts/metrics-snapshot.contract.md",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 0,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "30a7f8495fa28e80fc85512a40038aa5dc96c51a533bcba656510fdceba14417",
+  "started_at": "2026-08-12T18:38:37.856667",
+  "ended_at": "2026-08-12T18:38:37.872377",
+  "junit_path": "",
+  "junit_valid": false,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T183837779955/contract/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T183837779955/contract/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T183837779955/contract/stderr.log"
+  ]
+}

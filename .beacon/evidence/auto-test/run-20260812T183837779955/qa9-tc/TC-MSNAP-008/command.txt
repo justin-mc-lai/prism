@@ -1,0 +1,1 @@
+rg -n "空快照|禁止|不编造|猜" contracts/metrics-snapshot.contract.md

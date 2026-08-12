@@ -1,0 +1,1 @@
+rg -n "metrics-snapshot.contract" skills/_internal/orchestration/creation-mode-map.md
