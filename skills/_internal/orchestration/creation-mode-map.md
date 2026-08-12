@@ -47,6 +47,8 @@ recommended_next_harness: implement
 > （advisory only、可回放、可裁剪），工具 bridge 见 `registry/learning-adapters.yaml`。
 > Lake F1（monetization）：变现走 `contracts/monetization.contract.md`
 > （人工批准 + 披露 + 风险合规门 + 敏感信息保护），工具 bridge 见 `registry/monetization-adapters.yaml`。
+> Lake F2（adaptation）：改编授权走 `contracts/adaptation.contract.md`
+> （默认只登记不授权 + 正典保护 + license 边界），工具 bridge 见 `registry/adaptation-adapters.yaml`。
 
 - plan：定角度、受众、风险、爆款公式；**不**冻结事实、**不**写稿。
 - truth：冻结 MASTER 事实与来源；**不**代生成方决定呈现。

@@ -1,0 +1,30 @@
+# Prism adaptation bridge registry（Lake F2）
+
+schema_version: "1"
+feature: prism-adaptation-contracts-v1
+lake: F2
+strategy: bridge_adaptation_tools
+
+adapters:
+  - name: rights-record
+    role: 改编权登记
+    strategy: bridge
+    bridge_command: "tool:rights-record（content/adaptations/{adaptation_id}.yaml）"
+    fail_closed: true
+  - name: royalty-calc
+    role: 分成/版权计算
+    strategy: bridge
+    bridge_command: "tool:royalty-calc（条款 → 分成模型）"
+    fail_closed: true
+  - name: license-check
+    role: 第三方 IP/license 边界检查
+    strategy: bridge
+    bridge_command: "tool:license-check（未获权不自动授权）"
+    fail_closed: true
+
+guards:
+  human_approval_required: true
+  register_only_by_default: true
+  canon_protected: true
+  license_boundary_enforced: true
+  sensitive_info_never_in_repo: true

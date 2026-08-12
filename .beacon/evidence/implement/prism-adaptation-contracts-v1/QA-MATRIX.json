@@ -1,0 +1,16 @@
+{"feature": "prism-adaptation-contracts-v1", "scenarios_total": 15, "scenarios_pass": 15, "ac_total": 10, "ac_pass": 10, "run_id": "run-20260812T063000Z", "surfaces_gate": "pass", "matrix": [
+{"tc": "TC-ADP-001", "ac": "AC-ADP-001", "result": "pass"},
+{"tc": "TC-ADP-002", "ac": "AC-ADP-002", "result": "pass"},
+{"tc": "TC-ADP-003", "ac": "AC-ADP-003", "result": "pass"},
+{"tc": "TC-ADP-004", "ac": "AC-ADP-004", "result": "pass"},
+{"tc": "TC-ADP-005", "ac": "AC-ADP-005", "result": "pass"},
+{"tc": "TC-ADP-006", "ac": "AC-ADP-005", "result": "pass"},
+{"tc": "TC-ADP-007", "ac": "AC-ADP-002", "result": "pass"},
+{"tc": "TC-ADP-008", "ac": "AC-ADP-006", "result": "pass"},
+{"tc": "TC-ADP-009", "ac": "AC-ADP-007", "result": "pass"},
+{"tc": "TC-ADP-010", "ac": "AC-ADP-008", "result": "pass"},
+{"tc": "TC-ADP-011", "ac": "AC-ADP-009", "result": "pass"},
+{"tc": "TC-ADP-012", "ac": "AC-ADP-010", "result": "pass"},
+{"tc": "TC-ADP-013", "ac": "AC-ADP-010", "result": "pass"},
+{"tc": "TC-ADP-014", "ac": "AC-ADP-001", "result": "pass"},
+{"tc": "TC-ADP-015", "ac": "AC-ADP-003", "result": "pass"}]}
