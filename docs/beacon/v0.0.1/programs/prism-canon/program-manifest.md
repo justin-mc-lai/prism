@@ -142,3 +142,9 @@ D5 comic/vlog/book_video → D6 publish bridge。详见 `programs/prism-canon/la
 
 pln-program 拆分完成：E1 发布证据回流 → E2 MetricsSnapshot 指标快照 → E3 战役复盘/圣经更新 →
 E4 可回放学习记忆。详见 `programs/prism-canon/lake-e-plan.md`。当前进入 E1（`prism-metrics-publication-v1`）。
+
+## Lake E1 交付状态（2026-08-12）
+
+- truth：R1 frozen · implement：15/15 TC pass（`scripts/check_metrics_publication.sh` exec PASS）
+- QA：`run-20260812T183252827530` · 10/10 AC · 15/15 scenario · release_confidence 1.0 · `release_ready=true`
+- 下一子湖：E2（`prism-metrics-snapshot-v1`）待启动

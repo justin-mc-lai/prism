@@ -11,5 +11,6 @@
   - prism-form-novel-v1（Lake D4：novel 连载 + canon 门 · release_candidate）
   - prism-form-av-v1（Lake D5：comic/vlog/book_video bridge 路由 · release_candidate）
   - prism-publish-bridge-v1（Lake D6：发布/排期桥 · release_candidate）
+  - prism-metrics-publication-v1（Lake E1：发布证据回流 · release_candidate）
 - programs:
   - prism-canon
