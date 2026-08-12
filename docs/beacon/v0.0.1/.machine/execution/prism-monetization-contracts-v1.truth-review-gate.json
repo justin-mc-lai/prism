@@ -1,0 +1,217 @@
+{
+  "schema": "truth-review-gate.v1",
+  "schema_version": "1.0",
+  "feature": "prism-monetization-contracts-v1",
+  "version": "v0.0.1",
+  "pass": true,
+  "blocked": false,
+  "review_gate_pass": true,
+  "abc_pass": true,
+  "reason_code": "",
+  "domain_required": true,
+  "checks": {
+    "A_intent_coverage": {
+      "pass": true,
+      "check": "A",
+      "name": "intent_coverage",
+      "required": true,
+      "matrix_rows": 11,
+      "missing_must": [],
+      "reason": "",
+      "findings": [],
+      "matrix": [
+        {
+          "intent_id": "INT-MO01",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-MON-001",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-MO02",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-MON-002",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-MO03",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-MON-003",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-MO04",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-MON-004",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-MO05",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-MON-005",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-MO06",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-MON-006",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-MO07",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-MON-007",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-MO08",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-MON-008",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-MO09",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-MON-009",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-MO10",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-MON-010",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-MO11",
+          "source": "sea",
+          "strength": "optional",
+          "landing": "F2 改编契约",
+          "status": "deferred"
+        }
+      ]
+    },
+    "B_fsm_audit": {
+      "pass": true,
+      "check": "B",
+      "name": "fsm_audit",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "fsm": {
+        "transition_count": 7,
+        "from_states": [
+          "contract_landed",
+          "indexed",
+          "mon_planned",
+          "qa_pass",
+          "registry_landed",
+          "release_candidate",
+          "routing_landed"
+        ],
+        "hanging_states": [],
+        "terminals": [
+          "human_accepted"
+        ],
+        "illegal_present": true,
+        "five_tuple_present": true
+      }
+    },
+    "C_testability": {
+      "pass": true,
+      "check": "C",
+      "name": "testability",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "ac_count": 10,
+      "tc_count": 15,
+      "missing_ac": [],
+      "covered": {
+        "AC-MON-001": [
+          "TC-MON-001",
+          "TC-MON-014"
+        ],
+        "AC-MON-002": [
+          "TC-MON-002",
+          "TC-MON-007"
+        ],
+        "AC-MON-003": [
+          "TC-MON-003"
+        ],
+        "AC-MON-004": [
+          "TC-MON-004"
+        ],
+        "AC-MON-005": [
+          "TC-MON-005",
+          "TC-MON-006"
+        ],
+        "AC-MON-006": [
+          "TC-MON-008"
+        ],
+        "AC-MON-007": [
+          "TC-MON-009"
+        ],
+        "AC-MON-008": [
+          "TC-MON-010",
+          "TC-MON-015"
+        ],
+        "AC-MON-009": [
+          "TC-MON-011"
+        ],
+        "AC-MON-010": [
+          "TC-MON-012",
+          "TC-MON-013"
+        ]
+      }
+    },
+    "C_domain_exec_layer": {
+      "pass": true,
+      "check": "C_exec",
+      "name": "domain_exec_layer",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "exec_tc_count": 3,
+      "exec_tc_ids": [
+        "TC-MON-005",
+        "TC-MON-006",
+        "TC-MON-007"
+      ],
+      "domain_kind": "business"
+    },
+    "D_fill_depth": {
+      "pass": true,
+      "check": "D",
+      "name": "fill_depth",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "package_maturity": "filled",
+      "domain_kind": "business",
+      "business_domain": true
+    }
+  },
+  "findings": [],
+  "humanizer": {
+    "rule": "humanizer_only_after_abc_pass_before_freeze",
+    "abc_pass": true,
+    "allowed_now": true,
+    "fill_depth_pass": true,
+    "note": "Polish L0/narrative only after A/B/C; preserve_machine_fields=true; freeze needs D+exec too"
+  },
+  "evaluated_at": "2026-08-12T11:26:50.203236+00:00",
+  "paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/tests.md",
+    "report": "docs/beacon/v0.0.1/.machine/execution/prism-monetization-contracts-v1.truth-review-gate.json"
+  }
+}

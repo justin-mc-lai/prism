@@ -1,0 +1,355 @@
+{
+  "schema_version": "1.0",
+  "truth_map_contract": "beacon-truth-map-v1",
+  "truth_source_model": "feature_package_authoritative",
+  "truth_package_contract": "beacon-feature-package-v2",
+  "machine_json_role": "generated_state_not_truth",
+  "generated_by": "beacon.truth_map.resolver",
+  "generated_at": "2026-08-12T11:26:50.357291+00:00",
+  "feature": "prism-monetization-contracts-v1",
+  "feature_slug": "prism-monetization-contracts-v1",
+  "version": "v0.0.1",
+  "truth_authority": false,
+  "json_authority": false,
+  "source_paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/tests.md",
+    "tasks": "docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/tasks.md",
+    "evidence": "docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/evidence.md"
+  },
+  "source_hashes": {
+    "truth": "7915bb9d008296d10b62b4fa283194dcadd72db07fb457bc6cbf0a9638fc89a2",
+    "tests": "203e7e8fe5fef1faf6e03f4b1d93a230c7ea3d1098aa76f7e73d417d50d4be09",
+    "tasks": "6230a1d219037c15dc4aa683e2a070bdb5693bf246bca6ad3eaec1706cbcccda",
+    "evidence": "a3b41c784ee16620cd8a3f3b19d9dfd9f6d871ea308a43341490f1eec5445db0"
+  },
+  "truth_frontmatter": {
+    "slug": "prism-monetization-contracts-v1",
+    "version": "v0.0.1",
+    "status": "frozen",
+    "revision_id": "R1",
+    "language": "zh",
+    "domain_required": "true",
+    "ux_required": "false",
+    "parser_contract": "beacon-feature-package-v2",
+    "materials_status": "current",
+    "package_maturity": "filled",
+    "truth_source_model": "intent_first",
+    "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+    "canonical_refs": {
+      "prd": "docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/tests.md"
+    },
+    "provenance": {
+      "- ac_id": "AC-MON-002",
+      "source_type": "user_intent",
+      "source_ref": "utterance 2026-08-12：开始 Lake F 并跑完可交付"
+    }
+  },
+  "frontmatter_errors": [],
+  "acceptance_criteria": [
+    {
+      "ac_id": "AC-MON-001",
+      "theme": "进入 `contract_landed`：`contracts/monetization.contract.md` 定义 deal_id/type/terms/disclosure/evidence 与 fail-closed",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-MON-002",
+      "theme": "进入 `registry_landed`：`registry/monetization-adapters.yaml` 登记 ≥3 个变现工具 bridge（deal-record / compliance-check / disclosure-template）",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-MON-003",
+      "theme": "人工批准：变现承诺必须 human approval + evidence 才生效",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-MON-004",
+      "theme": "进入 `routing_landed`：creation-mode-map 变现引用 monetization.contract",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-MON-005",
+      "theme": "进入 `indexed`：`scripts/check_monetization.sh` exec-layer 校验 PASS",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-MON-006",
+      "theme": "不编造收入/合作：缺证据 blocked",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-MON-007",
+      "theme": "披露义务：广告/赞助必须标注",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-MON-008",
+      "theme": "风险合规门：health/legal/finance 未过合规不得变现",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-MON-009",
+      "theme": "敏感信息保护：收款/合同信息受管，禁止入库",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-MON-010",
+      "theme": "Non-goals：改编契约、平台支付 API 显式排除；不得宣称海 closure",
+      "description": ""
+    }
+  ],
+  "test_rows": [
+    {
+      "ac_id": "AC-MON-001",
+      "tc_id": "TC-MON-001",
+      "layer": "",
+      "command": "`test -f contracts/monetization.contract.md && rg -n \"deal_id|type|terms|disclosure|evidence\" contracts/monetization.contract.md`",
+      "assertion": "变现契约含核心字段",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MON-002",
+      "tc_id": "TC-MON-002",
+      "layer": "",
+      "command": "`test -f registry/monetization-adapters.yaml && rg -n \"deal-record|compliance|disclosure\" registry/monetization-adapters.yaml`",
+      "assertion": "变现 bridge 登记",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MON-003",
+      "tc_id": "TC-MON-003",
+      "layer": "",
+      "command": "`rg -n \"人工|批准|approval\" contracts/monetization.contract.md`",
+      "assertion": "人工批准",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MON-004",
+      "tc_id": "TC-MON-004",
+      "layer": "",
+      "command": "`rg -n \"monetization.contract\" skills/_internal/orchestration/creation-mode-map.md`",
+      "assertion": "路由变现引用",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MON-005",
+      "tc_id": "TC-MON-005",
+      "layer": "",
+      "command": "`test -x scripts/check_monetization.sh`",
+      "assertion": "exec 脚本存在且可执行",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MON-005",
+      "tc_id": "TC-MON-006",
+      "layer": "",
+      "command": "`bash scripts/check_monetization.sh`",
+      "assertion": "exec-layer 校验脚本 PASS（合法路径）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MON-002",
+      "tc_id": "TC-MON-007",
+      "layer": "",
+      "command": "`python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/monetization-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=3 else 1)\"`",
+      "assertion": "≥3 个变现 bridge",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MON-006",
+      "tc_id": "TC-MON-008",
+      "layer": "",
+      "command": "`rg -n \"不编造|缺证据|blocked\" contracts/monetization.contract.md`",
+      "assertion": "不编造收入",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MON-007",
+      "tc_id": "TC-MON-009",
+      "layer": "",
+      "command": "`rg -n \"披露|广告|赞助|标注\" contracts/monetization.contract.md`",
+      "assertion": "披露义务",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MON-008",
+      "tc_id": "TC-MON-010",
+      "layer": "",
+      "command": "`rg -n \"health|legal|finance|合规\" contracts/monetization.contract.md`",
+      "assertion": "风险合规门",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MON-009",
+      "tc_id": "TC-MON-011",
+      "layer": "",
+      "command": "`rg -n \"收款|敏感|secrets|禁止入库\" contracts/monetization.contract.md`",
+      "assertion": "敏感信息保护",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MON-010",
+      "tc_id": "TC-MON-012",
+      "layer": "",
+      "command": "`rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md && rg -n \"F2\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md`",
+      "assertion": "分湖边界存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MON-010",
+      "tc_id": "TC-MON-013",
+      "layer": "",
+      "command": "`rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md`",
+      "assertion": "illegal 转移覆盖（非法拒绝路径）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MON-001",
+      "tc_id": "TC-MON-014",
+      "layer": "",
+      "command": "`rg -n \"US-MON-001|变现\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md`",
+      "assertion": "变现旅程可追溯",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MON-008",
+      "tc_id": "TC-MON-015",
+      "layer": "",
+      "command": "`rg -n \"US-MON-002|合规\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md`",
+      "assertion": "合规拒绝路径可追溯",
+      "evidence_path": "",
+      "source": ""
+    }
+  ],
+  "task_rows": [
+    {
+      "id": "TASK-001",
+      "title": "Implement AC-MON-001: 进入 `contract_landed`：`contracts/monetization.contract.md` 定义 deal_id/... · ac=AC-MON-001 · evidence=`.beacon/evidence/implement/prism-monetization-contracts-v1/AC-MON-001.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-002",
+      "title": "Implement AC-MON-002: 进入 `registry_landed`：`registry/monetization-adapters.yaml` 登记 ≥3 个变现工... · ac=AC-MON-002 · evidence=`.beacon/evidence/implement/prism-monetization-contracts-v1/AC-MON-002.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-003",
+      "title": "Implement AC-MON-003: 人工批准：变现承诺必须 human approval + evidence 才生效 · ac=AC-MON-003 · evidence=`.beacon/evidence/implement/prism-monetization-contracts-v1/AC-MON-003.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-004",
+      "title": "Implement AC-MON-004: 进入 `routing_landed`：creation-mode-map 变现引用 monetization.contract · ac=AC-MON-004 · evidence=`.beacon/evidence/implement/prism-monetization-contracts-v1/AC-MON-004.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-005",
+      "title": "Implement AC-MON-005: 进入 `indexed`：`scripts/check_monetization.sh` exec-layer 校验 PASS · ac=AC-MON-005 · evidence=`.beacon/evidence/implement/prism-monetization-contracts-v1/AC-MON-005.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-006",
+      "title": "Implement AC-MON-006: 不编造收入/合作：缺证据 blocked · ac=AC-MON-006 · evidence=`.beacon/evidence/implement/prism-monetization-contracts-v1/AC-MON-006.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-007",
+      "title": "Implement AC-MON-007: 披露义务：广告/赞助必须标注 · ac=AC-MON-007 · evidence=`.beacon/evidence/implement/prism-monetization-contracts-v1/AC-MON-007.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-008",
+      "title": "Implement AC-MON-008: 风险合规门：health/legal/finance 未过合规不得变现 · ac=AC-MON-008 · evidence=`.beacon/evidence/implement/prism-monetization-contracts-v1/AC-MON-008.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-009",
+      "title": "Implement AC-MON-009: 敏感信息保护：收款/合同信息受管，禁止入库 · ac=AC-MON-009 · evidence=`.beacon/evidence/implement/prism-monetization-contracts-v1/AC-MON-009.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-010",
+      "title": "Implement AC-MON-010: Non-goals：改编契约、平台支付 API 显式排除；不得宣称海 closure · ac=AC-MON-010 · evidence=`.beacon/evidence/implement/prism-monetization-contracts-v1/AC-MON-010.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-011",
+      "title": "Validate package gates (truth review + freeze ack) · ac=GATES · evidence=`.beacon/evidence/implement/prism-monetization-contracts-v1/GATES.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-012",
+      "title": "Run QA against AC↔TC matrix + exec-layer evidence · ac=QA · evidence=`.beacon/evidence/implement/prism-monetization-contracts-v1/QA-MATRIX.json`",
+      "status": "unchecked"
+    }
+  ],
+  "checkbox_errors": [],
+  "evidence_rows": [
+    {
+      "surface": "package",
+      "authority": "requirement_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md"
+    },
+    {
+      "surface": "tests",
+      "authority": "test_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/tests.md"
+    },
+    {
+      "surface": "tasks",
+      "authority": "acceptance_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/tasks.md"
+    },
+    {
+      "surface": "program",
+      "authority": "support_advisory",
+      "path": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md"
+    },
+    {
+      "surface": "lake_f_plan",
+      "authority": "support_advisory",
+      "path": "docs/beacon/v0.0.1/programs/prism-canon/lake-f-plan.md"
+    },
+    {
+      "surface": "monetization_contract",
+      "authority": "support_advisory",
+      "path": "contracts/monetization.contract.md"
+    },
+    {
+      "surface": "monetization_adapters",
+      "authority": "support_advisory",
+      "path": "registry/monetization-adapters.yaml"
+    },
+    {
+      "surface": "creation_mode_map",
+      "authority": "support_advisory",
+      "path": "skills/_internal/orchestration/creation-mode-map.md"
+    },
+    {
+      "surface": "check_script",
+      "authority": "support_advisory",
+      "path": "scripts/check_monetization.sh"
+    },
+    {
+      "surface": "lake_a_snapshot",
+      "authority": "support_advisory",
+      "path": "docs/beacon/v0.0.1/constitution/lake-a-prism-canon-v1-r3.truth.md"
+    }
+  ]
+}

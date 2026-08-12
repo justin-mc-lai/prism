@@ -4,7 +4,7 @@ version: v0.0.1
 plan_mode: interactive
 scope_mode: phased_lake
 lake_or_ocean: 湖
-this_lake: Lake E
+this_lake: Lake F
 sea_promise: full_selfmedia_creation_capability
 extract_to: independent_prism_repo
 beacon_alignment: design_philosophy_only
@@ -13,9 +13,9 @@ repos:
   - prism（本仓）
   - selfmedia-creator（源仓）
   - beacon（设计理念对照；advisory only）
-intent_one_liner: Lake E — 指标/学习回流（E1 发布证据 → E2 指标快照 → E3 复盘 → E4 学习记忆）
+intent_one_liner: Lake F — 变现/改编契约（F1 变现 → F2 改编；海承诺最后一湖）
 created_at: "2026-08-11"
-plan_revision: E1-plan
+plan_revision: F1-plan
 journey_freeze: US-SCHEMA-001..003
 prior_lake_features:
   - prism-extract-v1
@@ -26,9 +26,13 @@ prior_lake_features:
   - prism-form-novel-v1
   - prism-form-av-v1
   - prism-publish-bridge-v1
-current_lake_feature: prism-metrics-publication-v1
+  - prism-metrics-publication-v1
+  - prism-metrics-snapshot-v1
+  - prism-review-loop-v1
+  - prism-learning-memory-v1
+current_lake_feature: prism-monetization-contracts-v1
 source_freeze: selfmedia-creator prism-canon-v1@R3
-source_deferral: DL-004
+source_deferral: DL-005
 ---
 
 # Program Manifest — prism-canon（Prism 仓 · Lake D）
