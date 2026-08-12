@@ -2,8 +2,9 @@
   "schema_version": "1.0",
   "artifact": "implementation_delivery_host",
   "version": "v0.0.1",
-  "feature_count": 13,
+  "feature_count": 14,
   "feature_slugs": [
+    "prism-adaptation-contracts-v1",
     "prism-campaign-schema-v1",
     "prism-extract-v1",
     "prism-form-av-v1",
@@ -19,6 +20,29 @@
     "prism-review-loop-v1"
   ],
   "features": [
+    {
+      "feature": "prism-adaptation-contracts-v1",
+      "feature_slug": "prism-adaptation-contracts-v1",
+      "revision_id": "R1",
+      "baseline_id": "impl-delivery-baseline-v0.0.1-prism-adaptation-contracts-v1-R1",
+      "transaction_id": "tx-104130fbf6ad993ad",
+      "source_hash": "sha256:84961fbf44be0e39ff191312e3bace1531d3745a96f2f6be58fb23913316da02",
+      "baseline_ref": "docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-adaptation-contracts-v1.json",
+      "default_target_branch": "beacon/v0.0.1/prism-adaptation-contracts-v1",
+      "worktree_root": "/Users/apple/Developer/Personal/products/prism",
+      "workspace_root": "/Users/apple/Developer/Personal/products/prism",
+      "direct_delivery_services": [
+        "."
+      ],
+      "writable_services": [
+        "."
+      ],
+      "reference_only_services": [
+        "docs"
+      ],
+      "depends_on_features": [],
+      "updated_at": "2026-08-12T11:31:42.745781+00:00"
+    },
     {
       "feature": "prism-campaign-schema-v1",
       "feature_slug": "prism-campaign-schema-v1",
@@ -321,6 +345,7 @@
   ],
   "services_map": {
     ".": [
+      "prism-adaptation-contracts-v1",
       "prism-campaign-schema-v1",
       "prism-extract-v1",
       "prism-form-av-v1",
@@ -336,7 +361,7 @@
       "prism-review-loop-v1"
     ]
   },
-  "source_hash": "sha256:61c264673f350c371fd41a5b48c8cf8347720b2e587a8bc4a2c6c28fc3630542",
-  "transaction_id": "tx-c27272f9931319299",
-  "generated_at": "2026-08-12T11:28:10.478460+00:00"
+  "source_hash": "sha256:18f6ca84ef64fee842990240ce95c6b4ac9224f5ef96daf3a0fe5f26298e5c43",
+  "transaction_id": "tx-b60b1472367c84715",
+  "generated_at": "2026-08-12T11:31:42.752915+00:00"
 }

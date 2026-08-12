@@ -88,3 +88,8 @@ Lake E（E1–E4）全部 release-ready；海级完整创作能力仅剩 Lake F�
 
 Prism Lake F1（prism-monetization-contracts-v1）：QA `run-20260812T192756091788` passed
 （10/10 AC · 15/15 TC · release_confidence 1.0）；release 待人工确认，不自动公开发布。
+
+Prism Lake F2（prism-adaptation-contracts-v1）：QA `run-20260812T193122703453` passed
+（10/10 AC · 15/15 TC · release_confidence 1.0）；release 待人工确认，不自动公开发布。
+
+Lake F（F1–F2）全部 release-ready —— A–F 全湖已交付（各 release 人工门与平台发布仍待确认）。

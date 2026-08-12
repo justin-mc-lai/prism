@@ -837,30 +837,6 @@
 - gates must block if projection metadata or service/branch/worktree fields drift.
 <!-- BEACON:IMPLEMENTATION-DELIVERY-BASELINE:prism-learning-memory-v1:END -->
 
-<!-- BEACON:IMPLEMENTATION-DELIVERY-HOST:START -->
-## Implementation Delivery Host
-
-- version: `v0.0.1`
-- feature_count: `13`
-- transaction_id: `tx-c27272f9931319299`
-- source_hash: `sha256:61c264673f350c371fd41a5b48c8cf8347720b2e587a8bc4a2c6c28fc3630542`
-
-### Registered Feature Baselines
-- `prism-campaign-schema-v1` | revision=`R5` | branch=`beacon/v0.0.1/prism-campaign-schema-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-campaign-schema-v1.json`
-- `prism-extract-v1` | revision=`R1` | branch=`beacon/v0.0.1/prism-extract-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-extract-v1.json`
-- `prism-form-av-v1` | revision=`R1` | branch=`beacon/v0.0.1/prism-form-av-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-form-av-v1.json`
-- `prism-form-blog-thread-v1` | revision=`R1` | branch=`beacon/v0.0.1/prism-form-blog-thread-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-form-blog-thread-v1.json`
-- `prism-form-image-post-v1` | revision=`R1` | branch=`beacon/v0.0.1/prism-form-image-post-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-form-image-post-v1.json`
-- `prism-form-novel-v1` | revision=`R1` | branch=`beacon/v0.0.1/prism-form-novel-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-form-novel-v1.json`
-- `prism-form-writing-v1` | revision=`R1` | branch=`beacon/v0.0.1/prism-form-writing-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-form-writing-v1.json`
-- `prism-learning-memory-v1` | revision=`R1` | branch=`beacon/v0.0.1/prism-learning-memory-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-learning-memory-v1.json`
-- `prism-metrics-publication-v1` | revision=`R1` | branch=`beacon/v0.0.1/prism-metrics-publication-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-metrics-publication-v1.json`
-- `prism-metrics-snapshot-v1` | revision=`R1` | branch=`beacon/v0.0.1/prism-metrics-snapshot-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-metrics-snapshot-v1.json`
-- `prism-monetization-contracts-v1` | revision=`R1` | branch=`beacon/v0.0.1/prism-monetization-contracts-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-monetization-contracts-v1.json`
-- `prism-publish-bridge-v1` | revision=`R1` | branch=`beacon/v0.0.1/prism-publish-bridge-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-publish-bridge-v1.json`
-- `prism-review-loop-v1` | revision=`R1` | branch=`beacon/v0.0.1/prism-review-loop-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-review-loop-v1.json`
-<!-- BEACON:IMPLEMENTATION-DELIVERY-HOST:END -->
-
 <!-- BEACON:TECHNICAL-DELTA-BLUEPRINT:prism-monetization-contracts-v1:START -->
 ## Technical Delta Blueprint
 
@@ -929,3 +905,97 @@
 - deterministic implementation contract, git workflow contract, and implementation plan are projections.
 - gates must block if projection metadata or service/branch/worktree fields drift.
 <!-- BEACON:IMPLEMENTATION-DELIVERY-BASELINE:prism-monetization-contracts-v1:END -->
+
+<!-- BEACON:IMPLEMENTATION-DELIVERY-HOST:START -->
+## Implementation Delivery Host
+
+- version: `v0.0.1`
+- feature_count: `14`
+- transaction_id: `tx-b60b1472367c84715`
+- source_hash: `sha256:18f6ca84ef64fee842990240ce95c6b4ac9224f5ef96daf3a0fe5f26298e5c43`
+
+### Registered Feature Baselines
+- `prism-adaptation-contracts-v1` | revision=`R1` | branch=`beacon/v0.0.1/prism-adaptation-contracts-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-adaptation-contracts-v1.json`
+- `prism-campaign-schema-v1` | revision=`R5` | branch=`beacon/v0.0.1/prism-campaign-schema-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-campaign-schema-v1.json`
+- `prism-extract-v1` | revision=`R1` | branch=`beacon/v0.0.1/prism-extract-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-extract-v1.json`
+- `prism-form-av-v1` | revision=`R1` | branch=`beacon/v0.0.1/prism-form-av-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-form-av-v1.json`
+- `prism-form-blog-thread-v1` | revision=`R1` | branch=`beacon/v0.0.1/prism-form-blog-thread-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-form-blog-thread-v1.json`
+- `prism-form-image-post-v1` | revision=`R1` | branch=`beacon/v0.0.1/prism-form-image-post-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-form-image-post-v1.json`
+- `prism-form-novel-v1` | revision=`R1` | branch=`beacon/v0.0.1/prism-form-novel-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-form-novel-v1.json`
+- `prism-form-writing-v1` | revision=`R1` | branch=`beacon/v0.0.1/prism-form-writing-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-form-writing-v1.json`
+- `prism-learning-memory-v1` | revision=`R1` | branch=`beacon/v0.0.1/prism-learning-memory-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-learning-memory-v1.json`
+- `prism-metrics-publication-v1` | revision=`R1` | branch=`beacon/v0.0.1/prism-metrics-publication-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-metrics-publication-v1.json`
+- `prism-metrics-snapshot-v1` | revision=`R1` | branch=`beacon/v0.0.1/prism-metrics-snapshot-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-metrics-snapshot-v1.json`
+- `prism-monetization-contracts-v1` | revision=`R1` | branch=`beacon/v0.0.1/prism-monetization-contracts-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-monetization-contracts-v1.json`
+- `prism-publish-bridge-v1` | revision=`R1` | branch=`beacon/v0.0.1/prism-publish-bridge-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-publish-bridge-v1.json`
+- `prism-review-loop-v1` | revision=`R1` | branch=`beacon/v0.0.1/prism-review-loop-v1` | writable_services=. | depends_on=- | baseline_ref=`docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-review-loop-v1.json`
+<!-- BEACON:IMPLEMENTATION-DELIVERY-HOST:END -->
+
+<!-- BEACON:TECHNICAL-DELTA-BLUEPRINT:prism-adaptation-contracts-v1:START -->
+## Technical Delta Blueprint
+
+- project_mode: `greenfield`
+- feature: `prism-adaptation-contracts-v1`
+- version: `v0.0.1`
+
+### Source Refs
+- prd: `docs/beacon/v0.0.1/prd/prism-adaptation-contracts-v1.md`
+- user_story: `docs/beacon/v0.0.1/user-story/prism-adaptation-contracts-v1.md`
+- test_case: `docs/beacon/v0.0.1/qa/test-cases/prism-adaptation-contracts-v1.md`
+
+### Delivery Change Surface
+- none
+### Available Entry Surfaces
+- none
+### Current Service Facts
+- none
+
+### Must Change
+- none
+
+### Can Reuse
+- none
+
+### No-Expand Guardrails
+- none
+
+### Compatibility Rules
+- none
+
+### Delivery Constraints
+- none
+
+### Implement Handoff
+- none
+<!-- BEACON:TECHNICAL-DELTA-BLUEPRINT:prism-adaptation-contracts-v1:END -->
+
+<!-- BEACON:IMPLEMENTATION-DELIVERY-BASELINE:prism-adaptation-contracts-v1:START -->
+## Implementation Delivery Baseline
+
+- baseline_id: `impl-delivery-baseline-v0.0.1-prism-adaptation-contracts-v1-R1`
+- transaction_id: `tx-104130fbf6ad993ad`
+- source_hash: `sha256:84961fbf44be0e39ff191312e3bace1531d3745a96f2f6be58fb23913316da02`
+- projection_seq: `1`
+- version: `v0.0.1`
+- feature: `prism-adaptation-contracts-v1`
+- lifecycle_role: `pre-implement delivery blueprint projection`
+- projection_refresh_trigger: `implement plan against the active frozen revision`
+- branch_strategy: `single-branch`
+- base_branch: `main`
+- default_target_branch: `beacon/v0.0.1/prism-adaptation-contracts-v1`
+- branch_prefix: `beacon/`
+- use_git_worktree: `False`
+- worktree_root: `/Users/apple/Developer/Personal/products/prism`
+- workspace_root: `/Users/apple/Developer/Personal/products/prism`
+
+### Delivery Service Scope
+- direct_delivery_services: .
+- writable_services: .
+- reference_only_services: docs
+- depends_on_features: -
+
+### Plan-Time Gate Contract
+- canonical envelope is the only delivery baseline source.
+- deterministic implementation contract, git workflow contract, and implementation plan are projections.
+- gates must block if projection metadata or service/branch/worktree fields drift.
+<!-- BEACON:IMPLEMENTATION-DELIVERY-BASELINE:prism-adaptation-contracts-v1:END -->
