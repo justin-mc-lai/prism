@@ -1,0 +1,30 @@
+{
+  "layer": "contract",
+  "command": "rg -n \"MAP-005\" skills/_internal/orchestration/creation-mode-map.md && rg -n \"writing.contract|anti-slop-gate\" skills/_internal/orchestration/creation-mode-map.md",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 11,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "70ab090457baee12297d188a58ea32850d33944be7bad2680b67835dae197f7b",
+  "started_at": "2026-08-12T08:42:28.584455",
+  "ended_at": "2026-08-12T08:42:28.605661",
+  "junit_path": ".beacon/evidence/auto-test/run-20260812T084228065759/qa9-tc/TC-WRITE-004/junit.xml",
+  "junit_valid": true,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T084228065759/qa9-tc/TC-WRITE-004/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T084228065759/qa9-tc/TC-WRITE-004/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T084228065759/qa9-tc/TC-WRITE-004/stderr.log",
+    ".beacon/evidence/auto-test/run-20260812T084228065759/qa9-tc/TC-WRITE-004/junit.xml"
+  ],
+  "tc_id": "TC-WRITE-004",
+  "ac_id": "AC-WRITE-004"
+}

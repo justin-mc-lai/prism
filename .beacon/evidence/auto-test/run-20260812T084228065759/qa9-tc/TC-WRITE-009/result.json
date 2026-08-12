@@ -1,0 +1,30 @@
+{
+  "layer": "contract",
+  "command": "rg -n \"fail-closed|blocked|reason_code\" contracts/writing.contract.md",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 3,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "748180ff819f3dccbcbcc2ea5780e6d5854449f4de98778883999d8b779324f5",
+  "started_at": "2026-08-12T08:42:29.305062",
+  "ended_at": "2026-08-12T08:42:29.317682",
+  "junit_path": ".beacon/evidence/auto-test/run-20260812T084228065759/qa9-tc/TC-WRITE-009/junit.xml",
+  "junit_valid": true,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T084228065759/qa9-tc/TC-WRITE-009/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T084228065759/qa9-tc/TC-WRITE-009/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T084228065759/qa9-tc/TC-WRITE-009/stderr.log",
+    ".beacon/evidence/auto-test/run-20260812T084228065759/qa9-tc/TC-WRITE-009/junit.xml"
+  ],
+  "tc_id": "TC-WRITE-009",
+  "ac_id": "AC-WRITE-007"
+}

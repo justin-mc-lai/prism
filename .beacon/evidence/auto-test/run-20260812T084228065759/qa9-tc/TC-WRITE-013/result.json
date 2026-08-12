@@ -1,0 +1,30 @@
+{
+  "layer": "contract",
+  "command": "rg -n \"Illegal|illegal|宣称 Lake D\" docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 2,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "1dd40e16b8bc1abc5550a78bc84eb16ded78c4910df487f538ea6a5bed7f0d82",
+  "started_at": "2026-08-12T08:42:29.702401",
+  "ended_at": "2026-08-12T08:42:29.719102",
+  "junit_path": ".beacon/evidence/auto-test/run-20260812T084228065759/qa9-tc/TC-WRITE-013/junit.xml",
+  "junit_valid": true,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T084228065759/qa9-tc/TC-WRITE-013/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T084228065759/qa9-tc/TC-WRITE-013/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T084228065759/qa9-tc/TC-WRITE-013/stderr.log",
+    ".beacon/evidence/auto-test/run-20260812T084228065759/qa9-tc/TC-WRITE-013/junit.xml"
+  ],
+  "tc_id": "TC-WRITE-013",
+  "ac_id": "AC-WRITE-010"
+}

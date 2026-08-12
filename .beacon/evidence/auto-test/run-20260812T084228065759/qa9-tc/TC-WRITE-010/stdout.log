@@ -1,0 +1,4 @@
+12:- 写证据路径（`.beacon/evidence/qa-feature/prism-form-writing-v1/...`）
+14:缺原文行或证据路径的 finding 不算数；缺证据默认不过。
+57:- 所有命中模式都有 原文行 + 修复建议 + 证据路径
+59:- maker 不自证：produce 侧 evidence 与 qa 侧 finding 分离

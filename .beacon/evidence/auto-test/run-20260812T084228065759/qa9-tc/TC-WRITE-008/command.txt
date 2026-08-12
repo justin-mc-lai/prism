@@ -1,0 +1,1 @@
+test ! -f skills/_internal/adapters/SKILL.md && test ! -f skills/prism-qa/references/SKILL.md && test ! -f skills/prism-produce/references/SKILL.md

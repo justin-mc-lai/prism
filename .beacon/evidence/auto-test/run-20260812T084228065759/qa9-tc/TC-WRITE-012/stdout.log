@@ -1,0 +1,19 @@
+156:10. Non-goals / deferral（AC-WRITE-010）
+184:| AC-WRITE-010 | Non-goals：D2–D6 形态本体、vendor_pin、metrics、平台 API 全部显式排除；不得宣称海 closure |
+186:## Non-goals
+33:（blog/thread/贴图等本体在 D2–D6），只把“成稿层”的规则、门禁和路由煮干，让后面每个形态都有同一套
+38:- 不能做：不写 blog/thread/贴图/novel/comic/vlog/book_video 的具体生产者（D2–D6）；
+54:delivery: sub-lakes D1..D6
+74:| INT-W11 | sea | must | D2 blog/thread 形态本体 | deferred |
+75:| INT-W12 | sea | must | D3–D6 其余形态与发布桥 | deferred |
+130:- 宣称 Lake D 全部完成（D2–D6 未交付）
+162:| DL-D01 | blog/thread 形态本体 | accepted | D2 |
+163:| DL-D02 | 贴图/xhs 形态本体 | accepted | D3 |
+164:| DL-D03 | novel 形态本体 | accepted | D4 |
+165:| DL-D04 | comic/vlog/book_video 本体 | accepted | D5 |
+166:| DL-D05 | publish/schedule 桥 | accepted | D6 |
+184:| AC-WRITE-010 | Non-goals：D2–D6 形态本体、vendor_pin、metrics、平台 API 全部显式排除；不得宣称海 closure |
+188:- 不实现 blog/thread/贴图/xhs/novel/comic/vlog/book_video 的具体生产者（D2–D6）
+86:| FP-WRITE-006 | 继承 FP-PRISM-002/004/013：母稿权威；不自证 QA；不得宣称海 closure |
+169:| DL-D08 | 本子湖宣称海 closure | rejected | FP-PRISM-013 |
+184:| AC-WRITE-010 | Non-goals：D2–D6 形态本体、vendor_pin、metrics、平台 API 全部显式排除；不得宣称海 closure |

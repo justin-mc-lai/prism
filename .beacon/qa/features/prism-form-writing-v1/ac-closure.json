@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-form-writing-v1",
+  "feature_slug": "prism-form-writing-v1",
+  "run_id": "run-20260812T084228065759",
+  "generated_at": "2026-08-12T00:42:30.045813+00:00",
+  "reports": [
+    {
+      "ac_id": "AC-WRITE-001",
+      "feature_slug": "prism-form-writing-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-WRITE-001",
+        "TC-WRITE-014"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-WRITE-002",
+      "feature_slug": "prism-form-writing-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [
+        "primary"
+      ],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-WRITE-002",
+        "TC-WRITE-015"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-WRITE-003",
+      "feature_slug": "prism-form-writing-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [
+        "primary"
+      ],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-WRITE-003",
+        "TC-WRITE-007"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-WRITE-004",
+      "feature_slug": "prism-form-writing-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-WRITE-004"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-WRITE-005",
+      "feature_slug": "prism-form-writing-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [
+        "primary"
+      ],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-WRITE-005",
+        "TC-WRITE-006"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-WRITE-006",
+      "feature_slug": "prism-form-writing-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [
+        "primary"
+      ],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-WRITE-008"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-WRITE-007",
+      "feature_slug": "prism-form-writing-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-WRITE-009"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-WRITE-008",
+      "feature_slug": "prism-form-writing-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-WRITE-010"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-WRITE-009",
+      "feature_slug": "prism-form-writing-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-WRITE-011"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-WRITE-010",
+      "feature_slug": "prism-form-writing-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-WRITE-012",
+        "TC-WRITE-013"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    }
+  ]
+}

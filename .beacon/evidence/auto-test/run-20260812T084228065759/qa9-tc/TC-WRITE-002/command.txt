@@ -1,0 +1,1 @@
+test -f skills/prism-qa/references/anti-slop-gate.md && rg -n "二元对比|清嗓|weasel|假深刻|总结复读" skills/prism-qa/references/anti-slop-gate.md && rg -n "证据|原文行" skills/prism-qa/references/anti-slop-gate.md

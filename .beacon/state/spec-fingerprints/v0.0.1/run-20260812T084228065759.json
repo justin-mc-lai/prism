@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "run_id": "run-20260812T084228065759",
+  "version": "v0.0.1",
+  "generated_at": "2026-08-12T00:42:30.066418+00:00",
+  "layers": {
+    "user_story": {
+      "hash": "4995b493c25a2a01d655f663cb12517eacf89c3c286a570aeac9723b7065b253",
+      "count": 3,
+      "files": [
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+          "sha256": "b8700830f8ca2da1453272d38721e31fa532e239a778400570aab6cd32f7ca2d"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+          "sha256": "c2c5d4dfdee3c44759efbbf01c8a5e52c8e6029ce7943476559e1e5c7b2bae82"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
+          "sha256": "8c3bb9466469141c43194d4b15aaed8a84676a476c2b98ee4b3d1b74e8ac1cb9"
+        }
+      ]
+    },
+    "prd": {
+      "hash": "4995b493c25a2a01d655f663cb12517eacf89c3c286a570aeac9723b7065b253",
+      "count": 3,
+      "files": [
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+          "sha256": "b8700830f8ca2da1453272d38721e31fa532e239a778400570aab6cd32f7ca2d"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+          "sha256": "c2c5d4dfdee3c44759efbbf01c8a5e52c8e6029ce7943476559e1e5c7b2bae82"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
+          "sha256": "8c3bb9466469141c43194d4b15aaed8a84676a476c2b98ee4b3d1b74e8ac1cb9"
+        }
+      ]
+    },
+    "test_case": {
+      "hash": "392f99c559c0220511fdaf61bcb1227ac6a0b803ae0c8b087941f62c431caccc",
+      "count": 6,
+      "files": [
+        {
+          "path": "docs/beacon/v0.0.1/.machine/qa/prism-campaign-schema-v1.ac-test-matrix.json",
+          "sha256": "42182676687618efe53f3594498ad62e88850e9fc80cd34fd7031db9f68ac1d3"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json",
+          "sha256": "d0fae487d89534a4c8f6d83323ae85d69984501cbd4541becbc771488ae00e2e"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/.machine/qa/prism-form-writing-v1.ac-test-matrix.json",
+          "sha256": "aad39e8139becacb0695b57ff9f2f7793961630d321dab3eab137740b145d338"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+          "sha256": "6070ec3897c91c2cfff571206bb19eda8adf87d4a6ac1852ad1184c9e7e430b9"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-extract-v1/tests.md",
+          "sha256": "6f5567b63c2b771a6b71efc593a408d23ae77e972614cc42f6a914c82bbe4aa2"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md",
+          "sha256": "73e5ae1a2e67ee0878ac2e2fc9f01a89e5ce1be108b8415f3fe4edbd6394a667"
+        }
+      ]
+    }
+  },
+  "fingerprint_hash": "a7776a180223f084327907ec2dec152911b2548325881f239255fa0eb360a014"
+}

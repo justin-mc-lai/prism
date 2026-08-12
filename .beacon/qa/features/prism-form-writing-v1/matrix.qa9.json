@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-form-writing-v1",
+  "feature_slug": "prism-form-writing-v1",
+  "version": "v0.0.1",
+  "generated_at": "2026-08-12T00:42:27.574049+00:00",
+  "execution_mode": "feature-aware",
+  "source_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-form-writing-v1.ac-test-matrix.json",
+  "story_scenario_map_path": ".beacon/qa/features/prism-form-writing-v1/story-scenario-map.json",
+  "reason_codes": [
+    "no_prior_feature_qa"
+  ],
+  "qa_types": [
+    "contract"
+  ],
+  "entries": [
+    {
+      "ac_id": "AC-WRITE-001",
+      "tc_id": "TC-WRITE-001",
+      "layer": "contract",
+      "command": "test -f contracts/writing.contract.md && rg -n \"identity|决策边界|失败处理\" contracts/writing.contract.md && rg -n \"四段式|倒金字塔|emotional\" contracts/writing.contract.md",
+      "assertion": "写作契约存在且含七段与蒸馏规则",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-writing-v1/tc-write-001/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-WRITE-002",
+      "tc_id": "TC-WRITE-002",
+      "layer": "contract",
+      "command": "test -f skills/prism-qa/references/anti-slop-gate.md && rg -n \"二元对比|清嗓|weasel|假深刻|总结复读\" skills/prism-qa/references/anti-slop-gate.md && rg -n \"证据|原文行\" skills/prism-qa/references/anti-slop-gate.md",
+      "assertion": "反 slop 门存在且覆盖模式与证据要求",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-writing-v1/tc-write-002/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-WRITE-003",
+      "tc_id": "TC-WRITE-003",
+      "layer": "contract",
+      "command": "test -f registry/writing-adapters.yaml && rg -n \"humanizer-zh\" registry/writing-adapters.yaml && rg -n \"selfmedia-humanize\" registry/writing-adapters.yaml && rg -n \"fail-closed|blocked\" registry/writing-adapters.yaml",
+      "assertion": "bridge 登记表存在",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-writing-v1/tc-write-003/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-WRITE-004",
+      "tc_id": "TC-WRITE-004",
+      "layer": "contract",
+      "command": "rg -n \"MAP-005\" skills/_internal/orchestration/creation-mode-map.md && rg -n \"writing.contract|anti-slop-gate\" skills/_internal/orchestration/creation-mode-map.md",
+      "assertion": "路由引用契约与门禁",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-writing-v1/tc-write-004/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-WRITE-005",
+      "tc_id": "TC-WRITE-005",
+      "layer": "contract",
+      "command": "test -x scripts/check_writing_adapters.sh",
+      "assertion": "exec 校验脚本存在且可执行",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-writing-v1/tc-write-005/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-WRITE-005",
+      "tc_id": "TC-WRITE-006",
+      "layer": "contract",
+      "command": "bash scripts/check_writing_adapters.sh",
+      "assertion": "exec-layer 校验脚本 PASS（合法路径）",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-writing-v1/tc-write-006/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-WRITE-003",
+      "tc_id": "TC-WRITE-007",
+      "layer": "contract",
+      "command": "python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/writing-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=8 else 1)\"",
+      "assertion": "≥8 个 bridge 条目",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-writing-v1/tc-write-007/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-WRITE-006",
+      "tc_id": "TC-WRITE-008",
+      "layer": "contract",
+      "command": "test ! -f skills/_internal/adapters/SKILL.md && test ! -f skills/prism-qa/references/SKILL.md && test ! -f skills/prism-produce/references/SKILL.md",
+      "assertion": "无顶层 SKILL.md 泄漏",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-writing-v1/tc-write-008/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-WRITE-007",
+      "tc_id": "TC-WRITE-009",
+      "layer": "contract",
+      "command": "rg -n \"fail-closed|blocked|reason_code\" contracts/writing.contract.md",
+      "assertion": "bridge fail-closed 规则声明",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-writing-v1/tc-write-009/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-WRITE-008",
+      "tc_id": "TC-WRITE-010",
+      "layer": "contract",
+      "command": "test -f contracts/writing.contract.md && test -f skills/prism-qa/references/anti-slop-gate.md && rg -n \"evidence|证据\" skills/prism-qa/references/anti-slop-gate.md",
+      "assertion": "maker≠checker 分离且 qa 含证据",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-writing-v1/tc-write-010/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-WRITE-009",
+      "tc_id": "TC-WRITE-011",
+      "layer": "contract",
+      "command": "rg -n \"不承诺|必过|占位\" skills/prism-qa/references/anti-slop-gate.md",
+      "assertion": "硬边界声明",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-writing-v1/tc-write-011/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-WRITE-010",
+      "tc_id": "TC-WRITE-012",
+      "layer": "contract",
+      "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md && rg -n \"D2|D3|D4|D5|D6\" docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
+      "assertion": "分湖边界存在",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-writing-v1/tc-write-012/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-WRITE-010",
+      "tc_id": "TC-WRITE-013",
+      "layer": "contract",
+      "command": "rg -n \"Illegal|illegal|宣称 Lake D\" docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
+      "assertion": "illegal 转移覆盖（非法拒绝路径）",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-writing-v1/tc-write-013/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-WRITE-001",
+      "tc_id": "TC-WRITE-014",
+      "layer": "contract",
+      "command": "rg -n \"US-PRISM-001|成稿\" docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md && rg -n \"writing.contract\" contracts/writing.contract.md",
+      "assertion": "US-PRISM-001 成稿链可追溯",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-writing-v1/tc-write-014/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-WRITE-002",
+      "tc_id": "TC-WRITE-015",
+      "layer": "contract",
+      "command": "python3 -c \"import re; t=open('skills/prism-qa/references/anti-slop-gate.md').read(); pats=re.findall(r'^[-*] ', t, re.M); raise SystemExit(0 if len(pats)>=15 else 1)\"",
+      "assertion": "模式与判据合计 ≥15 条",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-writing-v1/tc-write-015/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    }
+  ]
+}

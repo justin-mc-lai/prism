@@ -1,0 +1,1 @@
+test -f registry/writing-adapters.yaml && rg -n "humanizer-zh" registry/writing-adapters.yaml && rg -n "selfmedia-humanize" registry/writing-adapters.yaml && rg -n "fail-closed|blocked" registry/writing-adapters.yaml

@@ -1,0 +1,5 @@
+10:  - name: humanizer-zh
+13:    bridge_command: "skill:humanizer-zh（源仓 skills/humanizer-zh）"
+16:  - name: selfmedia-humanize
+19:    bridge_command: "skill:selfmedia-humanize（源仓 skills/selfmedia-humanize）"
+2:# bridge = 按名调用已安装 skill/脚本；缺失必须 fail-closed，不假装产出。

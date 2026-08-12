@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "artifact": "qa_acceptance_envelope",
+  "version": "v0.0.1",
+  "feature": "prism-form-writing-v1",
+  "feature_slug": "prism-form-writing-v1",
+  "revision_id": "R1",
+  "verdict": "passed",
+  "accepted_at": "2026-08-12T00:42:30.082334+00:00",
+  "accepted_by": "qa",
+  "run_id": "run-20260812T084228065759",
+  "transaction_id": "tx-qa-acceptance-prism-form-writing-v1-35bcb67d0b20",
+  "source_hash": "sha256:35bcb67d0b206f54245681495747651788a25d2334f155db649cf925584dbc59",
+  "projection_seq": 1,
+  "source_command": "beacon qa run \"prism-form-writing-v1\" --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-writing-v1 --version v0.0.1",
+  "requirement_refs": [
+    "docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-form-writing-v1.revision.json"
+  ],
+  "test_case_refs": [],
+  "evidence_refs": [
+    ".beacon/auto-test-status.json",
+    ".beacon/qa/status.json",
+    "docs/beacon/v0.0.1/.machine/qa/prism-form-writing-v1.ac-test-matrix.json",
+    ".beacon/coverage-summary.json",
+    ".beacon/release-gate-report.json"
+  ],
+  "story_status": "implemented",
+  "revision_delivery_status": "implemented",
+  "required_ac_count": 0,
+  "required_test_count": 0,
+  "canonical_envelope_ref": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-form-writing-v1.json",
+  "markdown_ref": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-form-writing-v1.md",
+  "transaction_lineage": {
+    "current_transaction_id": "tx-qa-acceptance-prism-form-writing-v1-35bcb67d0b20",
+    "projection_seq": 1,
+    "source_hash": "sha256:35bcb67d0b206f54245681495747651788a25d2334f155db649cf925584dbc59",
+    "workflow_memory_ref": ".beacon/memory/workflow-lifecycle.json",
+    "memory_event_id": "",
+    "memory_entry_id": "b5a6b85d-a905-4910-b46c-ce4bc85fde09"
+  },
+  "sink_checksums": {
+    "machine": "sha256:f3b61d158d5882baa7d5ed2450da35c71a641b700bdc71082b5f16dec902bc74",
+    "human": "sha256:4934e6366ac0f9897decebdb1e9824295c0c6b6fe037d23af9df7b50ad105064",
+    "runtime": "sha256:a0f9a8fc65b782d04c101a75a57f3d9c1d85168c690ae982dadd934ccabd7428"
+  },
+  "runtime_projection_ref": ".beacon/transactions/qa-acceptance-prism-form-writing-v1.json",
+  "transaction_status": "applied",
+  "failed_sinks": []
+}

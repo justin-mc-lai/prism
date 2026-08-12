@@ -1,0 +1,3 @@
+56:### fail-closed（bridge）
+58:- bridge 工具缺失 → `blocked` + `reason_code=bridge_tool_missing`，**不产出假文件**
+59:- 缺冻结母稿 → `blocked` + `reason_code=frozen_master_missing`

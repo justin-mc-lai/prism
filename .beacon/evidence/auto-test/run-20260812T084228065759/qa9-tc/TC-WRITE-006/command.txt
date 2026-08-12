@@ -1,0 +1,1 @@
+bash scripts/check_writing_adapters.sh

@@ -1,0 +1,1 @@
+rg -n "不承诺|必过|占位" skills/prism-qa/references/anti-slop-gate.md

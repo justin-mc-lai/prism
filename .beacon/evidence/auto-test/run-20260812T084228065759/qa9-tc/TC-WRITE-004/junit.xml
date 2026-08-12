@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite name="contract" tests="11" failures="0" errors="0" skipped="0">
+  <properties><property name="command" value="rg -n "MAP-005" skills/_internal/orchestration/creation-mode-map.md &amp;&amp; rg -n "writing.contract|anti-slop-gate" skills/_internal/orchestration/creation-mode-map.md" /></properties>
+    <testcase classname="contract" name="structured_cli_assertions-001" />
+    <testcase classname="contract" name="structured_cli_assertions-002" />
+    <testcase classname="contract" name="structured_cli_assertions-003" />
+    <testcase classname="contract" name="structured_cli_assertions-004" />
+    <testcase classname="contract" name="structured_cli_assertions-005" />
+    <testcase classname="contract" name="structured_cli_assertions-006" />
+    <testcase classname="contract" name="structured_cli_assertions-007" />
+    <testcase classname="contract" name="structured_cli_assertions-008" />
+    <testcase classname="contract" name="structured_cli_assertions-009" />
+    <testcase classname="contract" name="structured_cli_assertions-010" />
+    <testcase classname="contract" name="structured_cli_assertions-011" />
+</testsuite>

@@ -1,0 +1,11 @@
+8:> fail-closed bridge），QA 列统一引用 `skills/prism-qa/references/anti-slop-gate.md`（MAP-005 distill+bridge）。
+12:| blog 深度长文 | intel-radar / 角度 | MASTER + 来源核对 | selfmedia-director treatment | writing.contract 四段式 + bridge humanizer 族（MAP-005） | anti-slop-gate + 事实核对 | 人工批准 → 文章草稿 |
+7:> Lake D1（writing base）：成稿实现列统一引用 `contracts/writing.contract.md`（体裁选型 + 文笔五原则 +
+8:> fail-closed bridge），QA 列统一引用 `skills/prism-qa/references/anti-slop-gate.md`（MAP-005 distill+bridge）。
+12:| blog 深度长文 | intel-radar / 角度 | MASTER + 来源核对 | selfmedia-director treatment | writing.contract 四段式 + bridge humanizer 族（MAP-005） | anti-slop-gate + 事实核对 | 人工批准 → 文章草稿 |
+13:| 贴图包 article-paper | 选题/节点 | MASTER + 核对 | director + shot list（visual_carrier） | writing.contract + render_wechat_article_pages | anti-slop-gate + OCR + contract-check | publish-sync-ai --media image |
+14:| 贴图包 短卡 | 热点雷达 | 快照 | director（可选） | writing.contract（倒金字塔）+ render_wechat_html_cards / image_cards | anti-slop-gate + OCR + 合同 | publish-sync-ai |
+15:| vlog 口播 | 话题/受众 | 脚本事实清单 | ra-video-production-director | writing.contract 口播稿 + TTS/分镜/剪辑 | anti-slop-gate + 视频 QA | 视频草稿 |
+16:| X thread | 选题 | 事实 | director（可选） | writing.contract 倒金字塔 + bridge writing-agent | anti-slop-gate | sidepilot |
+17:| 小红书图文 | 选题 | 事实 | director + 版式 | writing.contract emotional-essay + xhs-article-to-images | anti-slop-gate + OCR | xhs-content-ops |
+18:| 节气养生长跑题材（jieqi-yangsheng） | 节气排期表 + 俗语/食材/引文库 | MASTER + 古籍原文逐字核对 + lunar-python 日历核算 | selfmedia-director 节气模板（8 卡）+ shot list | writing.contract + 文生图古典底图 + render_wechat_html_cards | anti-slop-gate + 受众复读 + 古籍/日历核对 + OCR + 合同 | 公众号贴图草稿；后续按平台矩阵派生文章/短视频 |

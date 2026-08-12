@@ -1,0 +1,30 @@
+{
+  "layer": "contract",
+  "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md && rg -n \"D2|D3|D4|D5|D6\" docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 19,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "d24f6ca4f3772de95c08f8263b503f942033fae883046c2ce2bbac2c6cf5907c",
+  "started_at": "2026-08-12T08:42:29.593166",
+  "ended_at": "2026-08-12T08:42:29.617976",
+  "junit_path": ".beacon/evidence/auto-test/run-20260812T084228065759/qa9-tc/TC-WRITE-012/junit.xml",
+  "junit_valid": true,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T084228065759/qa9-tc/TC-WRITE-012/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T084228065759/qa9-tc/TC-WRITE-012/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T084228065759/qa9-tc/TC-WRITE-012/stderr.log",
+    ".beacon/evidence/auto-test/run-20260812T084228065759/qa9-tc/TC-WRITE-012/junit.xml"
+  ],
+  "tc_id": "TC-WRITE-012",
+  "ac_id": "AC-WRITE-010"
+}

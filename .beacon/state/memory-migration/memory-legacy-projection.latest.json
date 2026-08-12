@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "migration_transaction_id": "tx-memory-legacy-projection-689f17b3dca7",
-  "transaction_id": "tx-memory-legacy-projection-689f17b3dca7",
+  "migration_transaction_id": "tx-memory-legacy-projection-2c2051626f2d",
+  "transaction_id": "tx-memory-legacy-projection-2c2051626f2d",
   "compat_id": "memory-legacy-projection",
   "source_files": [],
   "imported_count": 0,
@@ -9,5 +9,5 @@
   "current_projection": "memory-v1",
   "legacy_projection_written": false,
   "compat_mode": false,
-  "created_at": "2026-08-11T15:24:08.952731+00:00"
+  "created_at": "2026-08-12T00:42:30.083378+00:00"
 }

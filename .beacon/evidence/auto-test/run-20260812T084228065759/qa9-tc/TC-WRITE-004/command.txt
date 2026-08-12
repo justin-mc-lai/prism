@@ -1,0 +1,1 @@
+rg -n "MAP-005" skills/_internal/orchestration/creation-mode-map.md && rg -n "writing.contract|anti-slop-gate" skills/_internal/orchestration/creation-mode-map.md

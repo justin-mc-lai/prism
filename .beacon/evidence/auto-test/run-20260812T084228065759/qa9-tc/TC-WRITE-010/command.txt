@@ -1,0 +1,1 @@
+test -f contracts/writing.contract.md && test -f skills/prism-qa/references/anti-slop-gate.md && rg -n "evidence|证据" skills/prism-qa/references/anti-slop-gate.md

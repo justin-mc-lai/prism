@@ -1,0 +1,1 @@
+python3 -c "import re; t=open('skills/prism-qa/references/anti-slop-gate.md').read(); pats=re.findall(r'^[-*] ', t, re.M); raise SystemExit(0 if len(pats)>=15 else 1)"

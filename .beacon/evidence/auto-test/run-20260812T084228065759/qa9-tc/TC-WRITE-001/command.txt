@@ -1,0 +1,1 @@
+test -f contracts/writing.contract.md && rg -n "identity|决策边界|失败处理" contracts/writing.contract.md && rg -n "四段式|倒金字塔|emotional" contracts/writing.contract.md

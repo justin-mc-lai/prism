@@ -1,0 +1,1 @@
+rg -n "US-PRISM-001|成稿" docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md && rg -n "writing.contract" contracts/writing.contract.md

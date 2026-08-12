@@ -1,0 +1,497 @@
+{
+  "schema_version": "1.0.2",
+  "feature": "prism-form-writing-v1",
+  "feature_slug": "prism-form-writing-v1",
+  "version": "v0.0.1",
+  "compiler": {
+    "requested_mode": "auto",
+    "effective_mode": "host",
+    "generator_mode": "host",
+    "fallback_reason": "",
+    "capability_snapshot": {
+      "schema_version": "1.0",
+      "command_name": "test-case",
+      "host_runtime": "codex",
+      "host_runtime_supported": true,
+      "host_bridge_declared": true,
+      "host_bridge_command_available": true,
+      "host_bridge_command_source": "env_cmd",
+      "host_bridge_command_env": "BEACON_HOST_TEST_CASE_BRIDGE_CMD",
+      "host_response_available": false,
+      "host_response_source": "none",
+      "host_response_path": "",
+      "host_transport": "command-bridge",
+      "host_semantic_ready": true,
+      "response_used": false,
+      "host_mode_options": [
+        "host-response",
+        "host",
+        "host-provider",
+        "llm",
+        "rule"
+      ],
+      "provider_available": false,
+      "provider_key_present": false,
+      "llm_disabled": false,
+      "disable_env": "BEACON_TEST_CASE_DISABLE_LLM"
+    },
+    "model": "beacon-test-case-compiler"
+  },
+  "qa_profile": "web-full",
+  "qa_types": [
+    "contract"
+  ],
+  "llm_plan": {
+    "mode": "disabled",
+    "model": "none",
+    "project_scan": {
+      "language": "unknown",
+      "framework": "unknown",
+      "frontend": "unknown",
+      "api_spec_refs": [],
+      "risk_points": [
+        "authz/authn boundary",
+        "cross-browser ui behavior",
+        "api contract drift",
+        "exception handling and replay safety"
+      ]
+    },
+    "project_type": "ai-agent-skill",
+    "generated_at": "2026-08-12T08:41:19.692040",
+    "prompt_ref": "beacon.qa9.llm.plan.v1.0.2",
+    "skip_reason": "llm_auto_disabled",
+    "qa_types": [
+      "contract"
+    ]
+  },
+  "qa_strategy": {
+    "schema_version": "1.0.2",
+    "generated_at": "2026-08-12T08:41:19.691124",
+    "project_type": "ai-agent-skill",
+    "project_scan": {
+      "language": "unknown",
+      "framework": "unknown",
+      "frontend": "unknown",
+      "api_spec_refs": [],
+      "risk_points": [
+        "authz/authn boundary",
+        "cross-browser ui behavior",
+        "api contract drift",
+        "exception handling and replay safety"
+      ]
+    },
+    "qa_applicability": {
+      "unit": "required",
+      "interface": "required",
+      "contract": "required",
+      "integration": "required",
+      "smoke": "required",
+      "functional": "conditional",
+      "regression": "required",
+      "exception": "required",
+      "compatibility": "conditional"
+    },
+    "qa_required_types": [
+      "contract"
+    ],
+    "runner_policy": {
+      "functional": {
+        "primary": "browser-use",
+        "fallback": [
+          "playwright",
+          "cypress",
+          "agent-browser"
+        ]
+      },
+      "compatibility": {
+        "primary": "playwright",
+        "fallback": [
+          "cypress"
+        ]
+      },
+      "api_layers": {
+        "interface": "schemathesis/newman/pytest",
+        "contract": "schemathesis/pact",
+        "integration": "pytest+testcontainers"
+      }
+    },
+    "command_baseline": {
+      "unit": "python3 -m pytest -q -k unit --junitxml \"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\"",
+      "interface": "python3 -m pytest -q -k interface --junitxml \"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\"",
+      "contract": "python3 -m pytest -q -k contract --junitxml \"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\"",
+      "integration": "python3 -m pytest -q -k integration --junitxml \"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\"",
+      "smoke": "python3 -m pytest -q -m smoke --junitxml \"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\"",
+      "functional": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "regression": "python3 -m pytest -q -k regression --junitxml \"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\"",
+      "exception": "python3 -m pytest -q -k exception --junitxml \"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\"",
+      "compatibility": "python3 -m beacon.adapters.browser_use_runner --mode compatibility --deterministic-command \"python3 -m pytest -q -k compatibility --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\""
+    },
+    "ui_runner": "browser-use"
+  },
+  "qa_requirements": [
+    {
+      "qa_type": "unit",
+      "required": false,
+      "automation_required": false,
+      "min_cases": 0,
+      "applicability": "required",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    },
+    {
+      "qa_type": "interface",
+      "required": false,
+      "automation_required": false,
+      "min_cases": 0,
+      "applicability": "required",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    },
+    {
+      "qa_type": "contract",
+      "required": true,
+      "automation_required": true,
+      "min_cases": 1,
+      "applicability": "required",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    },
+    {
+      "qa_type": "integration",
+      "required": false,
+      "automation_required": false,
+      "min_cases": 0,
+      "applicability": "required",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    },
+    {
+      "qa_type": "smoke",
+      "required": false,
+      "automation_required": false,
+      "min_cases": 0,
+      "applicability": "required",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    },
+    {
+      "qa_type": "functional",
+      "required": false,
+      "automation_required": false,
+      "min_cases": 0,
+      "applicability": "conditional",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    },
+    {
+      "qa_type": "regression",
+      "required": false,
+      "automation_required": false,
+      "min_cases": 0,
+      "applicability": "required",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    },
+    {
+      "qa_type": "exception",
+      "required": false,
+      "automation_required": false,
+      "min_cases": 0,
+      "applicability": "required",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    },
+    {
+      "qa_type": "compatibility",
+      "required": false,
+      "automation_required": false,
+      "min_cases": 0,
+      "applicability": "conditional",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    }
+  ],
+  "automation_target_rate": 0.85,
+  "entries": [
+    {
+      "tc_id": "TC-WRITE-001",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-form-writing-v1 AC-001 :: `test -f contracts/writing.contract.md && rg -n \"identity",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "失败处理\" contracts/writing.contract.md && rg -n \"四段式",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-writing-v1/{run_id}/TC-WRITE-001.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-WRITE-002",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-form-writing-v1 AC-001 :: `test -f skills/prism-qa/references/anti-slop-gate.md && rg -n \"二元对比",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "weasel",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-writing-v1/{run_id}/TC-WRITE-002.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-WRITE-003",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-form-writing-v1 AC-001 :: `test -f registry/writing-adapters.yaml && rg -n \"humanizer-zh\" registry/writing",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "bridge 登记表存在",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-writing-v1/{run_id}/TC-WRITE-003.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-WRITE-004",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-form-writing-v1 AC-001 :: `rg -n \"MAP-005\" skills/_internal/orchestration/creation-mode-map.md && rg -n \"w",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "路由引用契约与门禁",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-writing-v1/{run_id}/TC-WRITE-004.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-WRITE-009",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-form-writing-v1 AC-001 :: `rg -n \"fail-closed",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "reason_code\" contracts/writing.contract.md`",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-writing-v1/{run_id}/TC-WRITE-009.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-WRITE-010",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-form-writing-v1 AC-001 :: `test -f contracts/writing.contract.md && test -f skills/prism-qa/references/ant",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "maker≠checker 分离且 qa 含证据",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-writing-v1/{run_id}/TC-WRITE-010.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-WRITE-011",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-form-writing-v1 AC-001 :: `rg -n \"不承诺",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "占位\" skills/prism-qa/references/anti-slop-gate.md`",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-writing-v1/{run_id}/TC-WRITE-011.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-WRITE-012",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-form-writing-v1 AC-001 :: `rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md &&",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "D4",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-writing-v1/{run_id}/TC-WRITE-012.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-WRITE-013",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-form-writing-v1 AC-001 :: `rg -n \"Illegal",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "宣称 Lake D\" docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md`",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-writing-v1/{run_id}/TC-WRITE-013.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-WRITE-014",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-form-writing-v1 AC-001 :: `rg -n \"US-PRISM-001",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "US-PRISM-001 成稿链可追溯",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-writing-v1/{run_id}/TC-WRITE-014.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md"
+    }
+  ],
+  "markdown_matrix_contract": {
+    "truth_mode": "generated",
+    "fail_closed": false,
+    "source": "docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md",
+    "row_count": 10,
+    "enrichment_disabled": false
+  },
+  "compatibility_matrix": {
+    "browsers": [
+      "chromium",
+      "firefox",
+      "webkit"
+    ],
+    "devices": [
+      "desktop",
+      "iphone14"
+    ],
+    "required_pairs": [
+      {
+        "browser": "chromium",
+        "device": "desktop"
+      },
+      {
+        "browser": "firefox",
+        "device": "desktop"
+      },
+      {
+        "browser": "webkit",
+        "device": "desktop"
+      }
+    ]
+  },
+  "generated_at": "2026-08-12T08:41:19.692094",
+  "research_projection": {
+    "schema_version": "1.0",
+    "feature": "prism-form-writing-v1",
+    "version": "v0.0.1",
+    "source": "research:.beacon/worktrees/v0.0.1/prism-form-writing-v1/docs/beacon/v0.0.1/research/prism-form-writing-v1.md",
+    "present": true,
+    "section_count": 0,
+    "sections": {},
+    "derived_items": []
+  }
+}
