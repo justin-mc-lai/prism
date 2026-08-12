@@ -1,0 +1,217 @@
+{
+  "schema": "truth-review-gate.v1",
+  "schema_version": "1.0",
+  "feature": "prism-review-loop-v1",
+  "version": "v0.0.1",
+  "pass": true,
+  "blocked": false,
+  "review_gate_pass": true,
+  "abc_pass": true,
+  "reason_code": "",
+  "domain_required": true,
+  "checks": {
+    "A_intent_coverage": {
+      "pass": true,
+      "check": "A",
+      "name": "intent_coverage",
+      "required": true,
+      "matrix_rows": 11,
+      "missing_must": [],
+      "reason": "",
+      "findings": [],
+      "matrix": [
+        {
+          "intent_id": "INT-RV01",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-RVL-001",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-RV02",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-RVL-002",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-RV03",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-RVL-003",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-RV04",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-RVL-004",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-RV05",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-RVL-005",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-RV06",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-RVL-006",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-RV07",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-RVL-007",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-RV08",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-RVL-008",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-RV09",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-RVL-009",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-RV10",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-RVL-010",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-RV11",
+          "source": "sea",
+          "strength": "should",
+          "landing": "E4 学习记忆",
+          "status": "deferred"
+        }
+      ]
+    },
+    "B_fsm_audit": {
+      "pass": true,
+      "check": "B",
+      "name": "fsm_audit",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "fsm": {
+        "transition_count": 7,
+        "from_states": [
+          "contract_landed",
+          "indexed",
+          "qa_pass",
+          "registry_landed",
+          "release_candidate",
+          "routing_landed",
+          "rvl_planned"
+        ],
+        "hanging_states": [],
+        "terminals": [
+          "human_accepted"
+        ],
+        "illegal_present": true,
+        "five_tuple_present": true
+      }
+    },
+    "C_testability": {
+      "pass": true,
+      "check": "C",
+      "name": "testability",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "ac_count": 10,
+      "tc_count": 15,
+      "missing_ac": [],
+      "covered": {
+        "AC-RVL-001": [
+          "TC-RVL-001",
+          "TC-RVL-014"
+        ],
+        "AC-RVL-002": [
+          "TC-RVL-002",
+          "TC-RVL-007"
+        ],
+        "AC-RVL-003": [
+          "TC-RVL-003"
+        ],
+        "AC-RVL-004": [
+          "TC-RVL-004"
+        ],
+        "AC-RVL-005": [
+          "TC-RVL-005",
+          "TC-RVL-006"
+        ],
+        "AC-RVL-006": [
+          "TC-RVL-008",
+          "TC-RVL-015"
+        ],
+        "AC-RVL-007": [
+          "TC-RVL-009"
+        ],
+        "AC-RVL-008": [
+          "TC-RVL-010"
+        ],
+        "AC-RVL-009": [
+          "TC-RVL-011"
+        ],
+        "AC-RVL-010": [
+          "TC-RVL-012",
+          "TC-RVL-013"
+        ]
+      }
+    },
+    "C_domain_exec_layer": {
+      "pass": true,
+      "check": "C_exec",
+      "name": "domain_exec_layer",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "exec_tc_count": 3,
+      "exec_tc_ids": [
+        "TC-RVL-005",
+        "TC-RVL-006",
+        "TC-RVL-007"
+      ],
+      "domain_kind": "business"
+    },
+    "D_fill_depth": {
+      "pass": true,
+      "check": "D",
+      "name": "fill_depth",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "package_maturity": "filled",
+      "domain_kind": "business",
+      "business_domain": true
+    }
+  },
+  "findings": [],
+  "humanizer": {
+    "rule": "humanizer_only_after_abc_pass_before_freeze",
+    "abc_pass": true,
+    "allowed_now": true,
+    "fill_depth_pass": true,
+    "note": "Polish L0/narrative only after A/B/C; preserve_machine_fields=true; freeze needs D+exec too"
+  },
+  "evaluated_at": "2026-08-12T10:41:00.962936+00:00",
+  "paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-review-loop-v1/tests.md",
+    "report": "docs/beacon/v0.0.1/.machine/execution/prism-review-loop-v1.truth-review-gate.json"
+  }
+}

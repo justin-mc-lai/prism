@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-review-loop-v1",
+  "feature_slug": "prism-review-loop-v1",
+  "version": "v0.0.1",
+  "revision_id": "R1",
+  "source_revision_id": "",
+  "reason": "freeze",
+  "doc_status": "frozen",
+  "delivery_status": "idle",
+  "lifecycle_status": "idle",
+  "baseline_hash": "sha256:509cf9cfd9584979ccaf3993d4e9785cef9f8bbb41986ef74d150c2bf2db0a23",
+  "superseded_by": "",
+  "created_at": "2026-08-12T10:41:00.963751+00:00",
+  "frozen_at": "2026-08-12T10:41:00.964361+00:00",
+  "accepted_at": ""
+}

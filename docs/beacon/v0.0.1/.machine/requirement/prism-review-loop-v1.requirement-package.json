@@ -1,0 +1,355 @@
+{
+  "schema_version": "1.0",
+  "truth_map_contract": "beacon-truth-map-v1",
+  "truth_source_model": "feature_package_authoritative",
+  "truth_package_contract": "beacon-feature-package-v2",
+  "machine_json_role": "generated_state_not_truth",
+  "generated_by": "beacon.truth_map.resolver",
+  "generated_at": "2026-08-12T10:41:01.112104+00:00",
+  "feature": "prism-review-loop-v1",
+  "feature_slug": "prism-review-loop-v1",
+  "version": "v0.0.1",
+  "truth_authority": false,
+  "json_authority": false,
+  "source_paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-review-loop-v1/tests.md",
+    "tasks": "docs/beacon/v0.0.1/features/prism-review-loop-v1/tasks.md",
+    "evidence": "docs/beacon/v0.0.1/features/prism-review-loop-v1/evidence.md"
+  },
+  "source_hashes": {
+    "truth": "7953399db218e058607d4f2059e5cf77d7aa041c0c54d025051b234a86b4fb1c",
+    "tests": "8c588e7b69e296142a94145a75c4ec506e617d01141140e932552ec3e33d5da1",
+    "tasks": "f18c7a3246d274d4b5c4972acb54d524556555bfce25d1a7a59ea015ccb04f64",
+    "evidence": "6192eefb33be01a17b88192d250c2f2aa90ce1a4b124b18e594a6f0c99547007"
+  },
+  "truth_frontmatter": {
+    "slug": "prism-review-loop-v1",
+    "version": "v0.0.1",
+    "status": "frozen",
+    "revision_id": "R1",
+    "language": "zh",
+    "domain_required": "true",
+    "ux_required": "false",
+    "parser_contract": "beacon-feature-package-v2",
+    "materials_status": "current",
+    "package_maturity": "filled",
+    "truth_source_model": "intent_first",
+    "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+    "canonical_refs": {
+      "prd": "docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-review-loop-v1/tests.md"
+    },
+    "provenance": {
+      "- ac_id": "AC-RVL-002",
+      "source_type": "source_evidence",
+      "source_ref": "creation-mode-map 系列圣经（bible 复盘段）"
+    }
+  },
+  "frontmatter_errors": [],
+  "acceptance_criteria": [
+    {
+      "ac_id": "AC-RVL-001",
+      "theme": "进入 `contract_landed`：`contracts/review-loop.contract.md` 定义 review_id/campaign_id/period/metrics_refs/findings/actions/evidence 与 fail-closed",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-RVL-002",
+      "theme": "进入 `registry_landed`：`registry/review-adapters.yaml` 登记 ≥3 个复盘工具 bridge（bible updater / retro template / findings store）",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-RVL-003",
+      "theme": "人工批准：复盘结论/圣经更新必须人工确认后才写入",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-RVL-004",
+      "theme": "进入 `routing_landed`：creation-mode-map 系列圣经复盘段引用 review-loop.contract",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-RVL-005",
+      "theme": "进入 `indexed`：`scripts/check_review_loop.sh` exec-layer 校验 PASS",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-RVL-006",
+      "theme": "数据驱动：无 metrics_refs 的复盘 blocked，不空谈",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-RVL-007",
+      "theme": "圣经更新边界：只更新 bible 复盘段，不改已冻结母稿事实",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-RVL-008",
+      "theme": "maker≠checker：复盘记录与 QA 分离，证据引用",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-RVL-009",
+      "theme": "bridge fail-closed：工具缺失 → blocked + reason_code",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-RVL-010",
+      "theme": "Non-goals：E4、monetization 显式排除；不得宣称海 closure",
+      "description": ""
+    }
+  ],
+  "test_rows": [
+    {
+      "ac_id": "AC-RVL-001",
+      "tc_id": "TC-RVL-001",
+      "layer": "",
+      "command": "`test -f contracts/review-loop.contract.md && rg -n \"review_id|campaign_id|period|metrics_refs|findings|actions\" contracts/review-loop.contract.md`",
+      "assertion": "复盘契约含核心字段",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-RVL-002",
+      "tc_id": "TC-RVL-002",
+      "layer": "",
+      "command": "`test -f registry/review-adapters.yaml && rg -n \"bible|retro|findings\" registry/review-adapters.yaml`",
+      "assertion": "复盘 bridge 登记",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-RVL-003",
+      "tc_id": "TC-RVL-003",
+      "layer": "",
+      "command": "`rg -n \"人工|批准|确认\" contracts/review-loop.contract.md`",
+      "assertion": "人工批准入库",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-RVL-004",
+      "tc_id": "TC-RVL-004",
+      "layer": "",
+      "command": "`rg -n \"review-loop.contract\" skills/_internal/orchestration/creation-mode-map.md`",
+      "assertion": "系列圣经路由引用",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-RVL-005",
+      "tc_id": "TC-RVL-005",
+      "layer": "",
+      "command": "`test -x scripts/check_review_loop.sh`",
+      "assertion": "exec 脚本存在且可执行",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-RVL-005",
+      "tc_id": "TC-RVL-006",
+      "layer": "",
+      "command": "`bash scripts/check_review_loop.sh`",
+      "assertion": "exec-layer 校验脚本 PASS（合法路径）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-RVL-002",
+      "tc_id": "TC-RVL-007",
+      "layer": "",
+      "command": "`python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/review-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=3 else 1)\"`",
+      "assertion": "≥3 个复盘 bridge",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-RVL-006",
+      "tc_id": "TC-RVL-008",
+      "layer": "",
+      "command": "`rg -n \"metrics_refs|不空谈|blocked\" contracts/review-loop.contract.md`",
+      "assertion": "数据驱动声明",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-RVL-007",
+      "tc_id": "TC-RVL-009",
+      "layer": "",
+      "command": "`rg -n \"复盘段|母稿|正典|不改\" contracts/review-loop.contract.md`",
+      "assertion": "圣经更新边界",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-RVL-008",
+      "tc_id": "TC-RVL-010",
+      "layer": "",
+      "command": "`rg -n \"证据|evidence|maker|checker\" contracts/review-loop.contract.md && test -f skills/prism-qa/references/anti-slop-gate.md`",
+      "assertion": "maker≠checker 分离",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-RVL-009",
+      "tc_id": "TC-RVL-011",
+      "layer": "",
+      "command": "`rg -n \"fail-closed|blocked|reason_code\" contracts/review-loop.contract.md`",
+      "assertion": "bridge fail-closed",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-RVL-010",
+      "tc_id": "TC-RVL-012",
+      "layer": "",
+      "command": "`rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md && rg -n \"E4|Lake F\" docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md`",
+      "assertion": "分湖边界存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-RVL-010",
+      "tc_id": "TC-RVL-013",
+      "layer": "",
+      "command": "`rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md`",
+      "assertion": "illegal 转移覆盖（非法拒绝路径）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-RVL-001",
+      "tc_id": "TC-RVL-014",
+      "layer": "",
+      "command": "`rg -n \"US-RVL-001|复盘\" docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md`",
+      "assertion": "复盘旅程可追溯",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-RVL-006",
+      "tc_id": "TC-RVL-015",
+      "layer": "",
+      "command": "`rg -n \"US-RVL-002|metrics_refs\" docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md`",
+      "assertion": "无数据拒绝路径可追溯",
+      "evidence_path": "",
+      "source": ""
+    }
+  ],
+  "task_rows": [
+    {
+      "id": "TASK-001",
+      "title": "Implement AC-RVL-001: 进入 `contract_landed`：`contracts/review-loop.contract.md` 定义 review_id... · ac=AC-RVL-001 · evidence=`.beacon/evidence/implement/prism-review-loop-v1/AC-RVL-001.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-002",
+      "title": "Implement AC-RVL-002: 进入 `registry_landed`：`registry/review-adapters.yaml` 登记 ≥3 个复盘工具 brid... · ac=AC-RVL-002 · evidence=`.beacon/evidence/implement/prism-review-loop-v1/AC-RVL-002.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-003",
+      "title": "Implement AC-RVL-003: 人工批准：复盘结论/圣经更新必须人工确认后才写入 · ac=AC-RVL-003 · evidence=`.beacon/evidence/implement/prism-review-loop-v1/AC-RVL-003.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-004",
+      "title": "Implement AC-RVL-004: 进入 `routing_landed`：creation-mode-map 系列圣经复盘段引用 review-loop.contract · ac=AC-RVL-004 · evidence=`.beacon/evidence/implement/prism-review-loop-v1/AC-RVL-004.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-005",
+      "title": "Implement AC-RVL-005: 进入 `indexed`：`scripts/check_review_loop.sh` exec-layer 校验 PASS · ac=AC-RVL-005 · evidence=`.beacon/evidence/implement/prism-review-loop-v1/AC-RVL-005.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-006",
+      "title": "Implement AC-RVL-006: 数据驱动：无 metrics_refs 的复盘 blocked，不空谈 · ac=AC-RVL-006 · evidence=`.beacon/evidence/implement/prism-review-loop-v1/AC-RVL-006.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-007",
+      "title": "Implement AC-RVL-007: 圣经更新边界：只更新 bible 复盘段，不改已冻结母稿事实 · ac=AC-RVL-007 · evidence=`.beacon/evidence/implement/prism-review-loop-v1/AC-RVL-007.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-008",
+      "title": "Implement AC-RVL-008: maker≠checker：复盘记录与 QA 分离，证据引用 · ac=AC-RVL-008 · evidence=`.beacon/evidence/implement/prism-review-loop-v1/AC-RVL-008.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-009",
+      "title": "Implement AC-RVL-009: bridge fail-closed：工具缺失 → blocked + reason_code · ac=AC-RVL-009 · evidence=`.beacon/evidence/implement/prism-review-loop-v1/AC-RVL-009.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-010",
+      "title": "Implement AC-RVL-010: Non-goals：E4、monetization 显式排除；不得宣称海 closure · ac=AC-RVL-010 · evidence=`.beacon/evidence/implement/prism-review-loop-v1/AC-RVL-010.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-011",
+      "title": "Validate package gates (truth review + freeze ack) · ac=GATES · evidence=`.beacon/evidence/implement/prism-review-loop-v1/GATES.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-012",
+      "title": "Run QA against AC↔TC matrix + exec-layer evidence · ac=QA · evidence=`.beacon/evidence/implement/prism-review-loop-v1/QA-MATRIX.json`",
+      "status": "unchecked"
+    }
+  ],
+  "checkbox_errors": [],
+  "evidence_rows": [
+    {
+      "surface": "package",
+      "authority": "requirement_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md"
+    },
+    {
+      "surface": "tests",
+      "authority": "test_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-review-loop-v1/tests.md"
+    },
+    {
+      "surface": "tasks",
+      "authority": "acceptance_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-review-loop-v1/tasks.md"
+    },
+    {
+      "surface": "program",
+      "authority": "support_advisory",
+      "path": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md"
+    },
+    {
+      "surface": "lake_e_plan",
+      "authority": "support_advisory",
+      "path": "docs/beacon/v0.0.1/programs/prism-canon/lake-e-plan.md"
+    },
+    {
+      "surface": "review_contract",
+      "authority": "support_advisory",
+      "path": "contracts/review-loop.contract.md"
+    },
+    {
+      "surface": "review_adapters",
+      "authority": "support_advisory",
+      "path": "registry/review-adapters.yaml"
+    },
+    {
+      "surface": "creation_mode_map",
+      "authority": "support_advisory",
+      "path": "skills/_internal/orchestration/creation-mode-map.md"
+    },
+    {
+      "surface": "check_script",
+      "authority": "support_advisory",
+      "path": "scripts/check_review_loop.sh"
+    },
+    {
+      "surface": "e2_snapshot_contract",
+      "authority": "support_advisory",
+      "path": "contracts/metrics-snapshot.contract.md"
+    }
+  ]
+}
