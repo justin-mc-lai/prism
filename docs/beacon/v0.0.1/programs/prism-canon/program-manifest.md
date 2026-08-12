@@ -112,3 +112,15 @@ D5 comic/vlog/book_video → D6 publish bridge。详见 `programs/prism-canon/la
 - truth：R1 frozen · implement：15/15 TC pass（`scripts/check_av_forms.sh` exec PASS）
 - QA：`run-20260812T090408217552` · 10/10 AC · 15/15 scenario · release_confidence 1.0 · `release_ready=true`
 - 下一子湖：D6（`prism-publish-bridge-v1`）待启动
+
+## Lake D6 交付状态（2026-08-12）
+
+- truth：R1 frozen · implement：15/15 TC pass（`scripts/check_publish_bridge.sh` exec PASS）
+- QA：`run-20260812T090820139073` · 10/10 AC · 15/15 scenario · release_confidence 1.0 · `release_ready=true`
+
+## Lake D 总状态（2026-08-12）
+
+- D1–D6 全部 truth→freeze→implement→QA 完成，`release_ready=true`（各 release 人工门待确认）
+- 八形态生产链契约已注册：blog / thread / image-post / xhs / novel / comic / vlog / book_video + publish bridge
+- 仍未做：Lake E metrics 回流、Lake F monetization、vendor sync-ai、公开发布人工确认
+- 不得宣称海 closure

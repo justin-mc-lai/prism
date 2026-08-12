@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "artifact": "implementation_delivery_baseline_envelope",
+  "baseline_id": "impl-delivery-baseline-v0.0.1-prism-publish-bridge-v1-R1",
+  "transaction_id": "tx-5c862308674dcb88c",
+  "source_hash": "sha256:3dd866ac339f164965a884c376d45503794dbc641eecac3f03236c13ea6afdb2",
+  "projection_seq": 1,
+  "version": "v0.0.1",
+  "feature": "prism-publish-bridge-v1",
+  "feature_slug": "prism-publish-bridge-v1",
+  "workspace_root": "/Users/apple/Developer/Personal/products/prism",
+  "branch_strategy": "single-branch",
+  "base_branch": "main",
+  "branch_prefix": "beacon/",
+  "default_target_branch": "beacon/v0.0.1/prism-publish-bridge-v1",
+  "use_git_worktree": false,
+  "worktree_root": "/Users/apple/Developer/Personal/products/prism",
+  "direct_delivery_services": [
+    "."
+  ],
+  "writable_services": [
+    "."
+  ],
+  "reference_only_services": [
+    "docs"
+  ],
+  "depends_on_features": [],
+  "service_branch_map": {
+    ".": "beacon/v0.0.1/prism-publish-bridge-v1"
+  },
+  "service_worktree_map": {
+    ".": "/Users/apple/Developer/Personal/products/prism"
+  },
+  "feature_overlays": {
+    "prism-publish-bridge-v1": {
+      "feature": "prism-publish-bridge-v1",
+      "feature_slug": "prism-publish-bridge-v1",
+      "revision_id": "R1",
+      "direct_delivery_services": [
+        "."
+      ],
+      "writable_services": [
+        "."
+      ],
+      "reference_only_services": [
+        "docs"
+      ],
+      "depends_on_features": [],
+      "service_branch_map": {
+        ".": "beacon/v0.0.1/prism-publish-bridge-v1"
+      },
+      "service_worktree_map": {
+        ".": "/Users/apple/Developer/Personal/products/prism"
+      }
+    }
+  },
+  "technical_delta": {
+    "project_mode": "greenfield",
+    "source_refs": {
+      "prd": "docs/beacon/v0.0.1/prd/prism-publish-bridge-v1.md",
+      "user_story": "docs/beacon/v0.0.1/user-story/prism-publish-bridge-v1.md",
+      "test_case": "docs/beacon/v0.0.1/qa/test-cases/prism-publish-bridge-v1.md"
+    },
+    "current_state": {},
+    "refactor_boundaries": {},
+    "feature_sections": [],
+    "change_surface": []
+  },
+  "source_payload": {
+    "version": "v0.0.1",
+    "feature": "prism-publish-bridge-v1",
+    "revision_id": "R1",
+    "branch_strategy": "single-branch",
+    "base_branch": "main",
+    "default_target_branch": "beacon/v0.0.1/prism-publish-bridge-v1",
+    "branch_prefix": "beacon/",
+    "use_git_worktree": false,
+    "worktree_root": "/Users/apple/Developer/Personal/products/prism",
+    "workspace_root": "/Users/apple/Developer/Personal/products/prism",
+    "direct_delivery_services": [
+      "."
+    ],
+    "writable_services": [
+      "."
+    ],
+    "reference_only_services": [
+      "docs"
+    ],
+    "depends_on_features": [],
+    "service_branch_map": {
+      ".": "beacon/v0.0.1/prism-publish-bridge-v1"
+    },
+    "service_worktree_map": {
+      ".": "/Users/apple/Developer/Personal/products/prism"
+    },
+    "feature_overlays": {
+      "prism-publish-bridge-v1": {
+        "feature": "prism-publish-bridge-v1",
+        "feature_slug": "prism-publish-bridge-v1",
+        "revision_id": "R1",
+        "direct_delivery_services": [
+          "."
+        ],
+        "writable_services": [
+          "."
+        ],
+        "reference_only_services": [
+          "docs"
+        ],
+        "depends_on_features": [],
+        "service_branch_map": {
+          ".": "beacon/v0.0.1/prism-publish-bridge-v1"
+        },
+        "service_worktree_map": {
+          ".": "/Users/apple/Developer/Personal/products/prism"
+        }
+      }
+    },
+    "technical_delta": {
+      "project_mode": "greenfield",
+      "source_refs": {
+        "prd": "docs/beacon/v0.0.1/prd/prism-publish-bridge-v1.md",
+        "user_story": "docs/beacon/v0.0.1/user-story/prism-publish-bridge-v1.md",
+        "test_case": "docs/beacon/v0.0.1/qa/test-cases/prism-publish-bridge-v1.md"
+      },
+      "current_state": {},
+      "refactor_boundaries": {},
+      "feature_sections": [],
+      "change_surface": []
+    }
+  },
+  "generated_at": "2026-08-12T01:08:37.836885+00:00"
+}

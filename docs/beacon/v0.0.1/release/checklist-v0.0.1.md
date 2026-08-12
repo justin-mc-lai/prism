@@ -64,3 +64,8 @@ Prism Lake D4（prism-form-novel-v1）：QA `run-20260812T085911329188` passed
 
 Prism Lake D5（prism-form-av-v1）：QA `run-20260812T090408217552` passed
 （10/10 AC · 15/15 TC · release_confidence 1.0）；release 待人工确认，不自动公开发布。
+
+Prism Lake D6（prism-publish-bridge-v1）：QA `run-20260812T090820139073` passed
+（10/10 AC · 15/15 TC · release_confidence 1.0）；release 待人工确认，不自动公开发布。
+
+Lake D（D1–D6）全部 release-ready；海级完整创作能力仍需 Lake E/F 与各 release 人工确认，不得宣称海 closure。
