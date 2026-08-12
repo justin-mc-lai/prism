@@ -1,0 +1,16 @@
+{"feature": "prism-metrics-snapshot-v1", "scenarios_total": 15, "scenarios_pass": 15, "ac_total": 10, "ac_pass": 10, "run_id": "run-20260812T043000Z", "surfaces_gate": "pass", "matrix": [
+{"tc": "TC-MSNAP-001", "ac": "AC-MSNAP-001", "result": "pass"},
+{"tc": "TC-MSNAP-002", "ac": "AC-MSNAP-002", "result": "pass"},
+{"tc": "TC-MSNAP-003", "ac": "AC-MSNAP-003", "result": "pass"},
+{"tc": "TC-MSNAP-004", "ac": "AC-MSNAP-004", "result": "pass"},
+{"tc": "TC-MSNAP-005", "ac": "AC-MSNAP-005", "result": "pass"},
+{"tc": "TC-MSNAP-006", "ac": "AC-MSNAP-005", "result": "pass"},
+{"tc": "TC-MSNAP-007", "ac": "AC-MSNAP-002", "result": "pass"},
+{"tc": "TC-MSNAP-008", "ac": "AC-MSNAP-006", "result": "pass"},
+{"tc": "TC-MSNAP-009", "ac": "AC-MSNAP-007", "result": "pass"},
+{"tc": "TC-MSNAP-010", "ac": "AC-MSNAP-008", "result": "pass"},
+{"tc": "TC-MSNAP-011", "ac": "AC-MSNAP-009", "result": "pass"},
+{"tc": "TC-MSNAP-012", "ac": "AC-MSNAP-010", "result": "pass"},
+{"tc": "TC-MSNAP-013", "ac": "AC-MSNAP-010", "result": "pass"},
+{"tc": "TC-MSNAP-014", "ac": "AC-MSNAP-001", "result": "pass"},
+{"tc": "TC-MSNAP-015", "ac": "AC-MSNAP-006", "result": "pass"}]}

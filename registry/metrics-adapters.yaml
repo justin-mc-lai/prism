@@ -26,8 +26,24 @@ adapters:
     strategy: bridge
     bridge_command: "tool:report-builder（本地报表工具）"
     fail_closed: true
+  - name: snapshot-wechat
+    role: 公众号指标快照采集
+    strategy: bridge
+    bridge_command: "platform:getWechatGzhStats → snapshot（凭证走受管 secrets）"
+    fail_closed: true
+  - name: snapshot-xhs
+    role: 小红书指标快照采集
+    strategy: bridge
+    bridge_command: "platform:getXiaohongshuStats → snapshot（凭证走受管 secrets）"
+    fail_closed: true
+  - name: snapshot-douyin
+    role: 抖音指标快照采集
+    strategy: bridge
+    bridge_command: "platform:getDouyinStats → snapshot（凭证走受管 secrets）"
+    fail_closed: true
 
 guards:
   credentials_never_in_repo: true
   no_fabricated_metrics: true
   missing_tool_blocks_feedback: true
+  snapshot_requires_publication_ref: true

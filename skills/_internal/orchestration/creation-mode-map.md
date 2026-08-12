@@ -41,6 +41,8 @@ recommended_next_harness: implement
 
 > Lake E1（metrics-publication）：发布后的回流统一走 `contracts/metrics-publication.contract.md`
 > （发布事件 + measured 守卫 + 不编造指标），统计工具 bridge 见 `registry/metrics-adapters.yaml`。
+> Lake E2（metrics-snapshot）：指标快照走 `contracts/metrics-snapshot.contract.md`
+> （snapshot_id + publication_ref + collected_at + 空快照），供 E3 复盘。
 
 - plan：定角度、受众、风险、爆款公式；**不**冻结事实、**不**写稿。
 - truth：冻结 MASTER 事实与来源；**不**代生成方决定呈现。
