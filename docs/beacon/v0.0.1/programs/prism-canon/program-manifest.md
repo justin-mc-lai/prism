@@ -175,3 +175,9 @@ E4 可回放学习记忆。详见 `programs/prism-canon/lake-e-plan.md`。当前
 - E1–E4 全部 truth→freeze→implement→QA 完成，`release_ready=true`（各 release 人工门待确认）
 - 回流闭环已文件化：发布事件 → 指标快照 → 复盘/圣经 → 学习记忆（advisory only）
 - 仍未做：Lake F（monetization，可选）、公开发布人工确认；不得宣称海 closure
+
+## Lake F1 交付状态（2026-08-12）
+
+- truth：R1 frozen · implement：15/15 TC pass（`scripts/check_monetization.sh` exec PASS）
+- QA：`run-20260812T192756091788` · 10/10 AC · 15/15 scenario · release_confidence 1.0 · `release_ready=true`
+- 下一子湖：F2（`prism-adaptation-contracts-v1`）待启动

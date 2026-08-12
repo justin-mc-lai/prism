@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "artifact": "implementation_delivery_host",
   "version": "v0.0.1",
-  "feature_count": 12,
+  "feature_count": 13,
   "feature_slugs": [
     "prism-campaign-schema-v1",
     "prism-extract-v1",
@@ -14,6 +14,7 @@
     "prism-learning-memory-v1",
     "prism-metrics-publication-v1",
     "prism-metrics-snapshot-v1",
+    "prism-monetization-contracts-v1",
     "prism-publish-bridge-v1",
     "prism-review-loop-v1"
   ],
@@ -249,6 +250,29 @@
       "updated_at": "2026-08-12T10:39:00.102171+00:00"
     },
     {
+      "feature": "prism-monetization-contracts-v1",
+      "feature_slug": "prism-monetization-contracts-v1",
+      "revision_id": "R1",
+      "baseline_id": "impl-delivery-baseline-v0.0.1-prism-monetization-contracts-v1-R1",
+      "transaction_id": "tx-0385ce3a217197589",
+      "source_hash": "sha256:445eabfd8c080e584bb00a23ba0410a0e86cd5e749e7376187f1824207d2766e",
+      "baseline_ref": "docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-monetization-contracts-v1.json",
+      "default_target_branch": "beacon/v0.0.1/prism-monetization-contracts-v1",
+      "worktree_root": "/Users/apple/Developer/Personal/products/prism",
+      "workspace_root": "/Users/apple/Developer/Personal/products/prism",
+      "direct_delivery_services": [
+        "."
+      ],
+      "writable_services": [
+        "."
+      ],
+      "reference_only_services": [
+        "docs"
+      ],
+      "depends_on_features": [],
+      "updated_at": "2026-08-12T11:28:10.469650+00:00"
+    },
+    {
       "feature": "prism-publish-bridge-v1",
       "feature_slug": "prism-publish-bridge-v1",
       "revision_id": "R1",
@@ -307,11 +331,12 @@
       "prism-learning-memory-v1",
       "prism-metrics-publication-v1",
       "prism-metrics-snapshot-v1",
+      "prism-monetization-contracts-v1",
       "prism-publish-bridge-v1",
       "prism-review-loop-v1"
     ]
   },
-  "source_hash": "sha256:94c527d8a44d6a8baa502909f8d7c9fc93ab249eacc39a430f0ac651b58c1b39",
-  "transaction_id": "tx-9c4627186e2a56059",
-  "generated_at": "2026-08-12T10:47:26.785249+00:00"
+  "source_hash": "sha256:61c264673f350c371fd41a5b48c8cf8347720b2e587a8bc4a2c6c28fc3630542",
+  "transaction_id": "tx-c27272f9931319299",
+  "generated_at": "2026-08-12T11:28:10.478460+00:00"
 }
