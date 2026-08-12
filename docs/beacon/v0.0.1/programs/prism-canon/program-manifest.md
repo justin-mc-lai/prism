@@ -138,9 +138,9 @@ D5 comic/vlog/book_video → D6 publish bridge。详见 `programs/prism-canon/la
 
 ## 版本级 Release（2026-08-12 人工确认）
 
-- `release_accepted`：12 features（B/C/D1–D6/E1–E4）全部 QA 通过并合入 main
+- `release_accepted`：14 features（A–F 全湖：B/C/D1–D6/E1–E4/F1–F2）全部 QA 通过并合入 main
 - 证据：`docs/beacon/v0.0.1/release/v0.0.1-release-confirmation.md` + `beacon release scorecard v0.0.1`（release_ready=true）
-- 平台公开发布仍逐内容人工门；Lake F（可选）未做，不得宣称海 closure
+- 海级能力技术面全部交付；平台公开发布/变现/改编承诺仍逐项人工批准
 
 ## Lake E（2026-08-12 规划）
 

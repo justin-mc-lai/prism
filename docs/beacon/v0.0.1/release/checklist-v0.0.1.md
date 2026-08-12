@@ -40,6 +40,7 @@
 - [ ] Release reviewer confirmed included feature packages match intended scope
 - [x] 2026-08-12 版本级人工确认：8 features 全部 QA 通过并合入 main（见 v0.0.1-release-confirmation.md）
 - [x] 2026-08-12 E1–E4 收口追加确认：12 features（B/C/D/E）全部 QA 通过并合入 main（见 v0.0.1-release-confirmation.md）
+- [x] 2026-08-12 F1–F2 收口最终确认：14 features（A–F 全湖）全部 QA 通过并合入 main（见 v0.0.1-release-confirmation.md）
 
 ---
 
