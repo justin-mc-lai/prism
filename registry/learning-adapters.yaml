@@ -1,0 +1,29 @@
+# Prism learning-memory bridge registry（Lake E4）
+
+schema_version: "1"
+feature: prism-learning-memory-v1
+lake: E4
+strategy: bridge_learning_tools
+
+adapters:
+  - name: memory-store
+    role: 学习记忆写入
+    strategy: bridge
+    bridge_command: "tool:memory-store（.beacon/memory/prism-learning/）"
+    fail_closed: true
+  - name: recall
+    role: 学习记忆回放
+    strategy: bridge
+    bridge_command: "tool:recall（按 applicability/confidence 召回，advisory only）"
+    fail_closed: true
+  - name: prune
+    role: 记忆裁剪
+    strategy: bridge
+    bridge_command: "tool:prune（冲突/过时标记 + 审计痕迹）"
+    fail_closed: true
+
+guards:
+  advisory_only: true
+  never_writes_requirement_truth: true
+  replayable_and_auditable: true
+  conflicts_marked_not_merged: true
