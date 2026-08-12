@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "artifact": "implementation_delivery_baseline_envelope",
+  "baseline_id": "impl-delivery-baseline-v0.0.1-prism-form-av-v1-R1",
+  "transaction_id": "tx-dea9d73f96e62fc7e",
+  "source_hash": "sha256:28b6ed225ca87a8c39a811e08d82706e070167c5dbb8a52ee65885dbc30bec44",
+  "projection_seq": 1,
+  "version": "v0.0.1",
+  "feature": "prism-form-av-v1",
+  "feature_slug": "prism-form-av-v1",
+  "workspace_root": "/Users/apple/Developer/Personal/products/prism",
+  "branch_strategy": "single-branch",
+  "base_branch": "main",
+  "branch_prefix": "beacon/",
+  "default_target_branch": "beacon/v0.0.1/prism-form-av-v1",
+  "use_git_worktree": false,
+  "worktree_root": "/Users/apple/Developer/Personal/products/prism",
+  "direct_delivery_services": [
+    "."
+  ],
+  "writable_services": [
+    "."
+  ],
+  "reference_only_services": [
+    "docs"
+  ],
+  "depends_on_features": [],
+  "service_branch_map": {
+    ".": "beacon/v0.0.1/prism-form-av-v1"
+  },
+  "service_worktree_map": {
+    ".": "/Users/apple/Developer/Personal/products/prism"
+  },
+  "feature_overlays": {
+    "prism-form-av-v1": {
+      "feature": "prism-form-av-v1",
+      "feature_slug": "prism-form-av-v1",
+      "revision_id": "R1",
+      "direct_delivery_services": [
+        "."
+      ],
+      "writable_services": [
+        "."
+      ],
+      "reference_only_services": [
+        "docs"
+      ],
+      "depends_on_features": [],
+      "service_branch_map": {
+        ".": "beacon/v0.0.1/prism-form-av-v1"
+      },
+      "service_worktree_map": {
+        ".": "/Users/apple/Developer/Personal/products/prism"
+      }
+    }
+  },
+  "technical_delta": {
+    "project_mode": "greenfield",
+    "source_refs": {
+      "prd": "docs/beacon/v0.0.1/prd/prism-form-av-v1.md",
+      "user_story": "docs/beacon/v0.0.1/user-story/prism-form-av-v1.md",
+      "test_case": "docs/beacon/v0.0.1/qa/test-cases/prism-form-av-v1.md"
+    },
+    "current_state": {},
+    "refactor_boundaries": {},
+    "feature_sections": [],
+    "change_surface": []
+  },
+  "source_payload": {
+    "version": "v0.0.1",
+    "feature": "prism-form-av-v1",
+    "revision_id": "R1",
+    "branch_strategy": "single-branch",
+    "base_branch": "main",
+    "default_target_branch": "beacon/v0.0.1/prism-form-av-v1",
+    "branch_prefix": "beacon/",
+    "use_git_worktree": false,
+    "worktree_root": "/Users/apple/Developer/Personal/products/prism",
+    "workspace_root": "/Users/apple/Developer/Personal/products/prism",
+    "direct_delivery_services": [
+      "."
+    ],
+    "writable_services": [
+      "."
+    ],
+    "reference_only_services": [
+      "docs"
+    ],
+    "depends_on_features": [],
+    "service_branch_map": {
+      ".": "beacon/v0.0.1/prism-form-av-v1"
+    },
+    "service_worktree_map": {
+      ".": "/Users/apple/Developer/Personal/products/prism"
+    },
+    "feature_overlays": {
+      "prism-form-av-v1": {
+        "feature": "prism-form-av-v1",
+        "feature_slug": "prism-form-av-v1",
+        "revision_id": "R1",
+        "direct_delivery_services": [
+          "."
+        ],
+        "writable_services": [
+          "."
+        ],
+        "reference_only_services": [
+          "docs"
+        ],
+        "depends_on_features": [],
+        "service_branch_map": {
+          ".": "beacon/v0.0.1/prism-form-av-v1"
+        },
+        "service_worktree_map": {
+          ".": "/Users/apple/Developer/Personal/products/prism"
+        }
+      }
+    },
+    "technical_delta": {
+      "project_mode": "greenfield",
+      "source_refs": {
+        "prd": "docs/beacon/v0.0.1/prd/prism-form-av-v1.md",
+        "user_story": "docs/beacon/v0.0.1/user-story/prism-form-av-v1.md",
+        "test_case": "docs/beacon/v0.0.1/qa/test-cases/prism-form-av-v1.md"
+      },
+      "current_state": {},
+      "refactor_boundaries": {},
+      "feature_sections": [],
+      "change_surface": []
+    }
+  },
+  "generated_at": "2026-08-12T01:04:33.002069+00:00"
+}

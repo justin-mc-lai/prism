@@ -2,10 +2,11 @@
   "schema_version": "1.0",
   "artifact": "implementation_delivery_host",
   "version": "v0.0.1",
-  "feature_count": 6,
+  "feature_count": 7,
   "feature_slugs": [
     "prism-campaign-schema-v1",
     "prism-extract-v1",
+    "prism-form-av-v1",
     "prism-form-blog-thread-v1",
     "prism-form-image-post-v1",
     "prism-form-novel-v1",
@@ -57,6 +58,29 @@
       ],
       "depends_on_features": [],
       "updated_at": "2026-08-11T04:16:47.417891+00:00"
+    },
+    {
+      "feature": "prism-form-av-v1",
+      "feature_slug": "prism-form-av-v1",
+      "revision_id": "R1",
+      "baseline_id": "impl-delivery-baseline-v0.0.1-prism-form-av-v1-R1",
+      "transaction_id": "tx-dea9d73f96e62fc7e",
+      "source_hash": "sha256:28b6ed225ca87a8c39a811e08d82706e070167c5dbb8a52ee65885dbc30bec44",
+      "baseline_ref": "docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-form-av-v1.json",
+      "default_target_branch": "beacon/v0.0.1/prism-form-av-v1",
+      "worktree_root": "/Users/apple/Developer/Personal/products/prism",
+      "workspace_root": "/Users/apple/Developer/Personal/products/prism",
+      "direct_delivery_services": [
+        "."
+      ],
+      "writable_services": [
+        "."
+      ],
+      "reference_only_services": [
+        "docs"
+      ],
+      "depends_on_features": [],
+      "updated_at": "2026-08-12T01:04:33.002069+00:00"
     },
     {
       "feature": "prism-form-blog-thread-v1",
@@ -155,13 +179,14 @@
     ".": [
       "prism-campaign-schema-v1",
       "prism-extract-v1",
+      "prism-form-av-v1",
       "prism-form-blog-thread-v1",
       "prism-form-image-post-v1",
       "prism-form-novel-v1",
       "prism-form-writing-v1"
     ]
   },
-  "source_hash": "sha256:a63e5b46b7e968c70593278c0954b39275dabd813b6e9949af38dd9940090c06",
-  "transaction_id": "tx-a07b416ba82472d14",
-  "generated_at": "2026-08-12T00:59:25.881891+00:00"
+  "source_hash": "sha256:853d8e58d5bbd9553da9dd974001d580615f5dada6dd5a5db9fcc4acffd10d8c",
+  "transaction_id": "tx-b0546fa32524e67dd",
+  "generated_at": "2026-08-12T01:04:33.005054+00:00"
 }

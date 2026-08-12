@@ -8,5 +8,6 @@
   - prism-form-blog-thread-v1（Lake D2：blog/thread 形态契约 · release_candidate）
   - prism-form-image-post-v1（Lake D3：贴图包/xhs 形态契约 · release_candidate）
   - prism-form-novel-v1（Lake D4：novel 连载 + canon 门 · release_candidate）
+  - prism-form-av-v1（Lake D5：comic/vlog/book_video bridge 路由 · release_candidate）
 - programs:
   - prism-canon
