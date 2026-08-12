@@ -1,0 +1,15 @@
+campaign_id: anydoc-blog-trial-001
+title: anydoc 首次真实内容试跑
+lane: standard
+objective: 跑通 Prism 全流程第一条真实内容（热点选题 → 母稿 → 成稿 → QA → 草稿）
+master_refs:
+  - content/masters/oss-picks/anydoc/MASTER.md
+presentations:
+  - content/presentations/oss-picks/anydoc/blog-beginner/humanized.md
+schedule_intent:
+  status: draft_only
+  publish_mode: draft
+  human_approval: pending
+evidence:
+  - content/presentations/oss-picks/anydoc/blog-beginner/qa-evidence.json
+created_at: "2026-08-12"

@@ -1,0 +1,10 @@
+vertical: oss-picks
+slug: anydoc
+title: anydoc — 任意文档转干净 Markdown
+kind: fact
+pipeline: oss-pick-standard
+reader_tier: beginner
+humanize_gate: required
+source_repo: https://github.com/firecrawl/anydoc
+retrieved_at: "2026-08-12"
+status: frozen

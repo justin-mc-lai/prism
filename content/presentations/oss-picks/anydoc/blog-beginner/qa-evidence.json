@@ -1,0 +1,20 @@
+{
+  "mode_id": "gate-qa",
+  "feature": "content-run-anydoc-blog-beginner",
+  "checked_at": "2026-08-12",
+  "gates": {
+    "anti_slop": "pass",
+    "fact_alignment": "pass",
+    "evidence_paths": [
+      "content/masters/oss-picks/anydoc/MASTER.md",
+      "content/briefings/anydoc-hotspot.md"
+    ]
+  },
+  "scan_evidence": {
+    "binary_contrast": 0,
+    "throat_clearing": 0,
+    "summary_recap": 0,
+    "buzzwords": 0
+  },
+  "verdict": "release_candidate_draft_only"
+}

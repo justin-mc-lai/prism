@@ -1,0 +1,15 @@
+presentation_id: anydoc-blog-beginner
+form: blog
+master_ref: content/masters/oss-picks/anydoc/MASTER.md
+lane: standard
+angle: 小白三分钟上手
+title: "把 Word/PDF/PPT 一键变成干净 Markdown：anydoc 三分钟上手"
+outline:
+  - 场景开场（痛点）
+  - 小白 MVP（npx 一行命令）
+  - 由简入深（CLI / Node·Python / WASM·Agent Skill）
+  - 本质一句话
+  - 架构与主流程
+  - 两个亮点 + 三个坑
+  - 接下来你可以
+hard_gate: "只出方案，不写正文、不渲染、不发布"
