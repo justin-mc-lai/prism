@@ -40,6 +40,24 @@ forms:
     fast_lane_skip_allowed: false
     canon_fast_skip_forbidden: true
     status: registered
+  - form: comic
+    contract: contracts/form-av.contract.md
+    lane: standard
+    producer_chain: director storyboard → bridge comic-storyboard（3:4 竖版）→ QA
+    fast_lane_skip_allowed: false
+    status: registered
+  - form: vlog
+    contract: contracts/form-av.contract.md
+    lane: standard
+    producer_chain: director 口播脚本/分镜 → bridge openmontage → 成片 QA
+    fast_lane_skip_allowed: false
+    status: registered
+  - form: book_video
+    contract: contracts/form-av.contract.md
+    lane: standard
+    producer_chain: director 书籍分镜 → bridge book-video / rnskill → QA
+    fast_lane_skip_allowed: false
+    status: registered
 
 guards:
   new_form_only_registry_contract_routing: true

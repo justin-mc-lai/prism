@@ -1,0 +1,16 @@
+{"feature": "prism-form-av-v1", "scenarios_total": 15, "scenarios_pass": 15, "ac_total": 10, "ac_pass": 10, "run_id": "run-20260812T023000Z", "surfaces_gate": "pass", "matrix": [
+{"tc": "TC-AV-001", "ac": "AC-AV-001", "result": "pass"},
+{"tc": "TC-AV-002", "ac": "AC-AV-002", "result": "pass"},
+{"tc": "TC-AV-003", "ac": "AC-AV-003", "result": "pass"},
+{"tc": "TC-AV-004", "ac": "AC-AV-004", "result": "pass"},
+{"tc": "TC-AV-005", "ac": "AC-AV-005", "result": "pass"},
+{"tc": "TC-AV-006", "ac": "AC-AV-005", "result": "pass"},
+{"tc": "TC-AV-007", "ac": "AC-AV-001", "result": "pass"},
+{"tc": "TC-AV-008", "ac": "AC-AV-006", "result": "pass"},
+{"tc": "TC-AV-009", "ac": "AC-AV-007", "result": "pass"},
+{"tc": "TC-AV-010", "ac": "AC-AV-008", "result": "pass"},
+{"tc": "TC-AV-011", "ac": "AC-AV-009", "result": "pass"},
+{"tc": "TC-AV-012", "ac": "AC-AV-010", "result": "pass"},
+{"tc": "TC-AV-013", "ac": "AC-AV-010", "result": "pass"},
+{"tc": "TC-AV-014", "ac": "AC-AV-002", "result": "pass"},
+{"tc": "TC-AV-015", "ac": "AC-AV-002", "result": "pass"}]}

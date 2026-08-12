@@ -12,11 +12,13 @@
 | blog 深度长文 | intel-radar / 角度 | MASTER + 来源核对 | selfmedia-director treatment | form-blog.contract（writing.contract 四段式）+ bridge humanizer 族 | anti-slop-gate + 事实核对 | 人工批准 → 文章草稿 |
 | 贴图包 article-paper | 选题/节点 | MASTER + 核对 | director + shot list（visual_carrier） | form-image-post.contract + render_wechat_article_pages | anti-slop-gate + OCR + contract-check | publish-sync-ai --media image |
 | 贴图包 短卡 | 热点雷达 | 快照 | director（可选） | form-image-post.contract（倒金字塔）+ render_wechat_html_cards / image_cards | anti-slop-gate + OCR + 合同 | publish-sync-ai |
-| vlog 口播 | 话题/受众 | 脚本事实清单 | ra-video-production-director | writing.contract 口播稿 + TTS/分镜/剪辑 | anti-slop-gate + 视频 QA | 视频草稿 |
+| vlog 口播 | 话题/受众 | 脚本事实清单 | ra-video-production-director | form-av.contract（口播稿 + bridge openmontage） | anti-slop-gate + 视频 QA | 视频草稿 |
 | X thread | 选题 | 事实 | director（可选） | form-thread.contract（writing.contract 倒金字塔）+ bridge writing-agent | anti-slop-gate | sidepilot |
 | 小红书图文 | 选题 | 事实 | director + 版式 | form-xhs.contract（writing.contract emotional-essay）+ bridge xhs-article-to-images | anti-slop-gate + OCR | xhs-content-ops |
 | 节气养生长跑题材（jieqi-yangsheng） | 节气排期表 + 俗语/食材/引文库 | MASTER + 古籍原文逐字核对 + lunar-python 日历核算 | selfmedia-director 节气模板（8 卡）+ shot list | writing.contract + 文生图古典底图 + render_wechat_html_cards | anti-slop-gate + 受众复读 + 古籍/日历核对 + OCR + 合同 | 公众号贴图草稿；后续按平台矩阵派生文章/短视频 |
 | novel 连载 | campaign/连载计划 | StoryMaster + canon ledger 冻结 | director episode outline | form-novel.contract（episode 结构）+ bridge kushi-narrative-zh | 正典/连续性门（canon_gate_status=passed）+ anti-slop-gate | 人工批准 → 章节发布 |
+| comic 漫画 | 选题/创意 | 分镜设定 + 版权安全检查 | director 分镜 + 角色/场景设定 | form-av.contract（comic 路由）+ bridge comic-storyboard | 乱码/分页/文字可读 + anti-slop-gate | 人工批准 → 漫画草稿 |
+| book_video 书籍视频 | 书籍/剧集选题 | 母稿 + 分镜 | director 书籍分镜 | form-av.contract（book_video 路由）+ bridge book-video | 乱码/版权/分镜一致 + anti-slop-gate | 人工批准 → 视频草稿 |
 
 ## mode 契约模板（每个产物头部）
 
