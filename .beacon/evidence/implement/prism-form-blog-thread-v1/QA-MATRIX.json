@@ -1,0 +1,16 @@
+{"feature": "prism-form-blog-thread-v1", "scenarios_total": 15, "scenarios_pass": 15, "ac_total": 10, "ac_pass": 10, "run_id": "run-20260812T010000Z", "surfaces_gate": "pass", "matrix": [
+{"tc": "TC-FORM-001", "ac": "AC-FORM-001", "result": "pass"},
+{"tc": "TC-FORM-002", "ac": "AC-FORM-002", "result": "pass"},
+{"tc": "TC-FORM-003", "ac": "AC-FORM-003", "result": "pass"},
+{"tc": "TC-FORM-004", "ac": "AC-FORM-004", "result": "pass"},
+{"tc": "TC-FORM-005", "ac": "AC-FORM-005", "result": "pass"},
+{"tc": "TC-FORM-006", "ac": "AC-FORM-005", "result": "pass"},
+{"tc": "TC-FORM-007", "ac": "AC-FORM-001", "result": "pass"},
+{"tc": "TC-FORM-008", "ac": "AC-FORM-006", "result": "pass"},
+{"tc": "TC-FORM-009", "ac": "AC-FORM-007", "result": "pass"},
+{"tc": "TC-FORM-010", "ac": "AC-FORM-008", "result": "pass"},
+{"tc": "TC-FORM-011", "ac": "AC-FORM-009", "result": "pass"},
+{"tc": "TC-FORM-012", "ac": "AC-FORM-010", "result": "pass"},
+{"tc": "TC-FORM-013", "ac": "AC-FORM-010", "result": "pass"},
+{"tc": "TC-FORM-014", "ac": "AC-FORM-002", "result": "pass"},
+{"tc": "TC-FORM-015", "ac": "AC-FORM-003", "result": "pass"}]}
