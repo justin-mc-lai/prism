@@ -1,0 +1,218 @@
+{
+  "schema": "truth-review-gate.v1",
+  "schema_version": "1.0",
+  "feature": "prism-form-blog-thread-v1",
+  "version": "v0.0.1",
+  "pass": true,
+  "blocked": false,
+  "review_gate_pass": true,
+  "abc_pass": true,
+  "reason_code": "",
+  "domain_required": true,
+  "checks": {
+    "A_intent_coverage": {
+      "pass": true,
+      "check": "A",
+      "name": "intent_coverage",
+      "required": true,
+      "matrix_rows": 11,
+      "missing_must": [],
+      "reason": "",
+      "findings": [],
+      "matrix": [
+        {
+          "intent_id": "INT-F01",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-FORM-001",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-F02",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-FORM-002",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-F03",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-FORM-003",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-F04",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-FORM-004",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-F05",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-FORM-005",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-F06",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-FORM-006",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-F07",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-FORM-007",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-F08",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-FORM-008",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-F09",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-FORM-009",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-F10",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-FORM-010",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-F11",
+          "source": "sea",
+          "strength": "must",
+          "landing": "D3–D6 其余形态",
+          "status": "deferred"
+        }
+      ]
+    },
+    "B_fsm_audit": {
+      "pass": true,
+      "check": "B",
+      "name": "fsm_audit",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "fsm": {
+        "transition_count": 8,
+        "from_states": [
+          "blog_contract_landed",
+          "blog_thread_planned",
+          "forms_registered",
+          "indexed",
+          "qa_pass",
+          "release_candidate",
+          "routing_landed",
+          "thread_contract_landed"
+        ],
+        "hanging_states": [],
+        "terminals": [
+          "human_accepted"
+        ],
+        "illegal_present": true,
+        "five_tuple_present": true
+      }
+    },
+    "C_testability": {
+      "pass": true,
+      "check": "C",
+      "name": "testability",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "ac_count": 10,
+      "tc_count": 15,
+      "missing_ac": [],
+      "covered": {
+        "AC-FORM-001": [
+          "TC-FORM-001",
+          "TC-FORM-007"
+        ],
+        "AC-FORM-002": [
+          "TC-FORM-002",
+          "TC-FORM-014"
+        ],
+        "AC-FORM-003": [
+          "TC-FORM-003",
+          "TC-FORM-015"
+        ],
+        "AC-FORM-004": [
+          "TC-FORM-004"
+        ],
+        "AC-FORM-005": [
+          "TC-FORM-005",
+          "TC-FORM-006"
+        ],
+        "AC-FORM-006": [
+          "TC-FORM-008"
+        ],
+        "AC-FORM-007": [
+          "TC-FORM-009"
+        ],
+        "AC-FORM-008": [
+          "TC-FORM-010"
+        ],
+        "AC-FORM-009": [
+          "TC-FORM-011"
+        ],
+        "AC-FORM-010": [
+          "TC-FORM-012",
+          "TC-FORM-013"
+        ]
+      }
+    },
+    "C_domain_exec_layer": {
+      "pass": true,
+      "check": "C_exec",
+      "name": "domain_exec_layer",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "exec_tc_count": 3,
+      "exec_tc_ids": [
+        "TC-FORM-005",
+        "TC-FORM-006",
+        "TC-FORM-007"
+      ],
+      "domain_kind": "business"
+    },
+    "D_fill_depth": {
+      "pass": true,
+      "check": "D",
+      "name": "fill_depth",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "package_maturity": "filled",
+      "domain_kind": "business",
+      "business_domain": true
+    }
+  },
+  "findings": [],
+  "humanizer": {
+    "rule": "humanizer_only_after_abc_pass_before_freeze",
+    "abc_pass": true,
+    "allowed_now": true,
+    "fill_depth_pass": true,
+    "note": "Polish L0/narrative only after A/B/C; preserve_machine_fields=true; freeze needs D+exec too"
+  },
+  "evaluated_at": "2026-08-12T00:47:48.269134+00:00",
+  "paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/tests.md",
+    "report": "docs/beacon/v0.0.1/.machine/execution/prism-form-blog-thread-v1.truth-review-gate.json"
+  }
+}

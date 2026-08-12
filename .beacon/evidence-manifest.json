@@ -4,365 +4,365 @@
     {
       "path": ".beacon/auto-test-status.json",
       "sha256": "8c50bb2a12db6e72538353fe985be56fd4ddeb48e839d7193a8ef6cd58f7270c",
-      "updated_at": "2026-08-12T00:42:30.442516+00:00"
+      "updated_at": "2026-08-12T00:47:48.275156+00:00"
     },
     {
       "path": ".beacon/coverage-summary.json",
       "sha256": "36ea783284ff66aa362078009ce145704770752a78aeeaa40510cbb56d774556",
-      "updated_at": "2026-08-12T00:42:30.442765+00:00"
+      "updated_at": "2026-08-12T00:47:48.275213+00:00"
     },
     {
       "path": ".beacon/evidence-signature-chain.json",
       "sha256": "d9fb2103724be1316490ecf7b277703f974a1426295996ae7dc9fc3bee70ec7c",
-      "updated_at": "2026-08-12T00:42:30.435932+00:00"
+      "updated_at": "2026-08-12T00:47:48.275264+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T113106143903/contract/command.txt",
       "sha256": "c6ab71d3fdcc5bde3b266aa5aab90d05f395ae9ca54fe801b7c4f0422394be87",
-      "updated_at": "2026-08-12T00:42:30.435992+00:00"
+      "updated_at": "2026-08-12T00:47:48.275323+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T113106143903/contract/result.json",
       "sha256": "9465cc475af7aead371fe19a007189bd2dcfb029f3e1466b86c661510c3c053f",
-      "updated_at": "2026-08-12T00:42:30.436050+00:00"
+      "updated_at": "2026-08-12T00:47:48.275374+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T113106143903/contract/stderr.log",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "updated_at": "2026-08-12T00:42:30.436120+00:00"
+      "updated_at": "2026-08-12T00:47:48.275424+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T113106143903/contract/stdout.log",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "updated_at": "2026-08-12T00:42:30.436191+00:00"
+      "updated_at": "2026-08-12T00:47:48.275473+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T113106143903/qa9/tc-execution-map.json",
       "sha256": "f2e99c289ccae2268b9560620e1131634d1be10ac7f8ec711e52ccd93329850b",
-      "updated_at": "2026-08-12T00:42:30.436272+00:00"
+      "updated_at": "2026-08-12T00:47:48.275545+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T113106143903/qa9/tc-results.json",
       "sha256": "c0b4ba20b70b7b698347ef1bec7da8a63ab2421eb6a376d79d7267731c087300",
-      "updated_at": "2026-08-12T00:42:30.436351+00:00"
+      "updated_at": "2026-08-12T00:47:48.275613+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T113106143903/summary.json",
       "sha256": "b970c0ba75e3d4181646fe869cff043ca01eb2a7c0e89c7b1d5889c772549e41",
-      "updated_at": "2026-08-12T00:42:30.436424+00:00"
+      "updated_at": "2026-08-12T00:47:48.275684+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T121330776605/contract/command.txt",
       "sha256": "c6ab71d3fdcc5bde3b266aa5aab90d05f395ae9ca54fe801b7c4f0422394be87",
-      "updated_at": "2026-08-12T00:42:30.436481+00:00"
+      "updated_at": "2026-08-12T00:47:48.275736+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T121330776605/contract/result.json",
       "sha256": "6a14498fb054490ec4e28e62dd256ba1d021cab453bb17d89ce27b2921708db9",
-      "updated_at": "2026-08-12T00:42:30.436556+00:00"
+      "updated_at": "2026-08-12T00:47:48.275786+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T121330776605/contract/stderr.log",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "updated_at": "2026-08-12T00:42:30.436623+00:00"
+      "updated_at": "2026-08-12T00:47:48.275832+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T121330776605/contract/stdout.log",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "updated_at": "2026-08-12T00:42:30.436675+00:00"
+      "updated_at": "2026-08-12T00:47:48.275881+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T121330776605/qa9/tc-execution-map.json",
       "sha256": "69fb694dfa874f79c9ea260f5a17fa14e46a2026eaedc28d905aeeb837a3cef5",
-      "updated_at": "2026-08-12T00:42:30.436745+00:00"
+      "updated_at": "2026-08-12T00:47:48.275944+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T121330776605/qa9/tc-results.json",
       "sha256": "f59cd6c489e4f1835e84f8af9296dd7f473e27ec3bb9700e7bbdb9b7693f9b4c",
-      "updated_at": "2026-08-12T00:42:30.436926+00:00"
+      "updated_at": "2026-08-12T00:47:48.276005+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T121330776605/summary.json",
       "sha256": "f5a20b333ccdb297d54cc687a6588be055c902b56272a87edb83d6bc52afc794",
-      "updated_at": "2026-08-12T00:42:30.437040+00:00"
+      "updated_at": "2026-08-12T00:47:48.276080+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T232406916560/contract/command.txt",
       "sha256": "1b60f1512ae3816cd904053e09ac872b819a95ab1481fccb43503ed8a62a32d5",
-      "updated_at": "2026-08-12T00:42:30.437123+00:00"
+      "updated_at": "2026-08-12T00:47:48.276147+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T232406916560/contract/result.json",
       "sha256": "87c7487430da833d0f75efe8fb428b8d059ae4cdf4c7c24ce692519495405cd5",
-      "updated_at": "2026-08-12T00:42:30.437208+00:00"
+      "updated_at": "2026-08-12T00:47:48.276202+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T232406916560/contract/stderr.log",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "updated_at": "2026-08-12T00:42:30.437278+00:00"
+      "updated_at": "2026-08-12T00:47:48.276248+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T232406916560/contract/stdout.log",
       "sha256": "c99927e61f1ead9a32bc911825077e1b281080bd46fc37053d98212f62ba146a",
-      "updated_at": "2026-08-12T00:42:30.437344+00:00"
+      "updated_at": "2026-08-12T00:47:48.276309+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T232406916560/qa9/tc-execution-map.json",
       "sha256": "a55cfba1e4503885a4371c18442765a2012d45deda0be62590a1e801eedd10e8",
-      "updated_at": "2026-08-12T00:42:30.437430+00:00"
+      "updated_at": "2026-08-12T00:47:48.276397+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T232406916560/qa9/tc-results.json",
       "sha256": "9ee02470adab60ab7e07d4d7e386eaf285bc9ddcd607d493d2209bd8eb698712",
-      "updated_at": "2026-08-12T00:42:30.437530+00:00"
+      "updated_at": "2026-08-12T00:47:48.276464+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260811T232406916560/summary.json",
       "sha256": "2fc4db5fd25d66de3feaa47161d222b2fa6087e5d6f532ecf0bd096e9570c854",
-      "updated_at": "2026-08-12T00:42:30.437623+00:00"
+      "updated_at": "2026-08-12T00:47:48.276549+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T084228065759/contract/command.txt",
       "sha256": "7702080793dbae563fbe7d8302f27a0092caa723f15b928f5275970ee578a069",
-      "updated_at": "2026-08-12T00:42:30.437712+00:00"
+      "updated_at": "2026-08-12T00:47:48.276611+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T084228065759/contract/result.json",
       "sha256": "e15104b880b2b840414d3666892183798a166205b0c41cf81e10f98ea35035cc",
-      "updated_at": "2026-08-12T00:42:30.437777+00:00"
+      "updated_at": "2026-08-12T00:47:48.276673+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T084228065759/contract/stderr.log",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "updated_at": "2026-08-12T00:42:30.437841+00:00"
+      "updated_at": "2026-08-12T00:47:48.276740+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T084228065759/contract/stdout.log",
       "sha256": "50998b61c8b2568a3a9ed42d2c78e4755a4e03e35c53185281a94176f9e93f4f",
-      "updated_at": "2026-08-12T00:42:30.437928+00:00"
+      "updated_at": "2026-08-12T00:47:48.276811+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T084228065759/qa9/tc-execution-map.json",
       "sha256": "eeadc599f84b1e1bc3ae5c35769eca71f5d24927bf5886171620a44175c21e4f",
-      "updated_at": "2026-08-12T00:42:30.438007+00:00"
+      "updated_at": "2026-08-12T00:47:48.276885+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T084228065759/qa9/tc-results.json",
       "sha256": "046fc897a0c50b8814adb66fe1a3b510504c37f49880dae292d86fefb0599d94",
-      "updated_at": "2026-08-12T00:42:30.438082+00:00"
+      "updated_at": "2026-08-12T00:47:48.276963+00:00"
     },
     {
       "path": ".beacon/evidence/auto-test/run-20260812T084228065759/summary.json",
       "sha256": "6643951eff5e5f5b2419577cf77fb2b5778de5813d95467ea534d4a4d1065715",
-      "updated_at": "2026-08-12T00:42:30.438172+00:00"
+      "updated_at": "2026-08-12T00:47:48.277040+00:00"
     },
     {
       "path": ".beacon/evidence/implement/prism-extract-v1/GATES.json",
       "sha256": "82e16706d89a6b69b686cb0da4d9628775c220814780a7ad64042afd1e9ace75",
-      "updated_at": "2026-08-12T00:42:30.438239+00:00"
+      "updated_at": "2026-08-12T00:47:48.277089+00:00"
     },
     {
       "path": ".beacon/evidence/implement/prism-extract-v1/QA-MATRIX.json",
       "sha256": "117d989f76d289d43543ac501604d574bc5d0edcea0b21a92fe3f894fa22bf6d",
-      "updated_at": "2026-08-12T00:42:30.438309+00:00"
+      "updated_at": "2026-08-12T00:47:48.277139+00:00"
     },
     {
       "path": ".beacon/evidence/implement/prism-extract-v1/manifest.json",
       "sha256": "7119b26d3e69b9f25d6c435cffd43a2a975d9a9858d67859b9eb8dd686825260",
-      "updated_at": "2026-08-12T00:42:30.438377+00:00"
+      "updated_at": "2026-08-12T00:47:48.277190+00:00"
     },
     {
       "path": ".beacon/flaky-history.json",
       "sha256": "5bb7ebe9d5861408cd58455ce237e23527e7414defb822c53ba039e362273649",
-      "updated_at": "2026-08-12T00:42:30.438438+00:00"
+      "updated_at": "2026-08-12T00:47:48.277236+00:00"
     },
     {
       "path": ".beacon/gate-report.json",
       "sha256": "f6a839c1849c4ebd9f837a2e41a73de229a70a77ef628297f4822b123284f7f3",
-      "updated_at": "2026-08-12T00:42:30.438499+00:00"
+      "updated_at": "2026-08-12T00:47:48.277280+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-campaign-schema-v1/ac-closure.json",
       "sha256": "66d9ee9a0deaa945e7717d50f87df5c0ba52f5ebf436992616a7f1665b7add27",
-      "updated_at": "2026-08-12T00:42:30.438575+00:00"
+      "updated_at": "2026-08-12T00:47:48.277336+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-campaign-schema-v1/exhaustiveness-report.json",
       "sha256": "afb782c3e5cb2a035e17d6e49b21af8d63abb7188c915feff8e2a8eb8403dc5c",
-      "updated_at": "2026-08-12T00:42:30.438640+00:00"
+      "updated_at": "2026-08-12T00:47:48.277383+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-campaign-schema-v1/matrix.qa9.json",
       "sha256": "a99259a68f1a03185f2f4485405e95dc7bd2e5efb14dac850882d47f04cb5abe",
-      "updated_at": "2026-08-12T00:42:30.438720+00:00"
+      "updated_at": "2026-08-12T00:47:48.277437+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-campaign-schema-v1/plan.json",
       "sha256": "d0920d7e2f191e082ddf6d0c9fe6a0e4e052900638549b67a9cebb09f19254dd",
-      "updated_at": "2026-08-12T00:42:30.438859+00:00"
+      "updated_at": "2026-08-12T00:47:48.277552+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-campaign-schema-v1/scorecard.json",
       "sha256": "3d2a846d43443374476564bb7e550b27d6800b482508fd65dd0a9e755845225a",
-      "updated_at": "2026-08-12T00:42:30.438934+00:00"
+      "updated_at": "2026-08-12T00:47:48.277614+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-campaign-schema-v1/status.json",
       "sha256": "a5e580a41781b37847d9fe85020e45af74b64b94d073e70b5ab488a8139a09f1",
-      "updated_at": "2026-08-12T00:42:30.439201+00:00"
+      "updated_at": "2026-08-12T00:47:48.277841+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-extract-v1/ac-closure.json",
       "sha256": "2ef0a21a51a6b302b935adb38f4c8ea1ad414fd693bc118246359d373e41475f",
-      "updated_at": "2026-08-12T00:42:30.439272+00:00"
+      "updated_at": "2026-08-12T00:47:48.277894+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-extract-v1/exhaustiveness-report.json",
       "sha256": "5cc517c7fa93a394705f61003e59b95383e32455a7019a093a8e34e93c858e25",
-      "updated_at": "2026-08-12T00:42:30.439327+00:00"
+      "updated_at": "2026-08-12T00:47:48.277941+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-extract-v1/matrix.qa9.json",
       "sha256": "5cb81d41728f78154b8efa9d65249a83ce733e066e6a5a020862cdaf0d542ca1",
-      "updated_at": "2026-08-12T00:42:30.439384+00:00"
+      "updated_at": "2026-08-12T00:47:48.277993+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-extract-v1/plan.json",
       "sha256": "ef63221b147c9cd96703969205a05b466883a18a95bf670b2be7497b20284025",
-      "updated_at": "2026-08-12T00:42:30.439484+00:00"
+      "updated_at": "2026-08-12T00:47:48.278084+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-extract-v1/scorecard.json",
       "sha256": "62d60415926f82b83ed91f7bba7ab1aa83b17472946e0820d540ee2338c32d6a",
-      "updated_at": "2026-08-12T00:42:30.439563+00:00"
+      "updated_at": "2026-08-12T00:47:48.278145+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-extract-v1/status.json",
       "sha256": "dba27a758d8e0a90e9b74ac4179531597000ee83baa5281659f5b3503d541012",
-      "updated_at": "2026-08-12T00:42:30.439895+00:00"
+      "updated_at": "2026-08-12T00:47:48.278492+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-writing-v1/ac-closure.json",
       "sha256": "7e7c49ac74ba163cfdc52e0b519c36c64b86d11ddc739cac11ebcaf280a95892",
-      "updated_at": "2026-08-12T00:42:30.442824+00:00"
+      "updated_at": "2026-08-12T00:47:48.278595+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-writing-v1/exhaustiveness-report.json",
       "sha256": "75445f07faade9961db55cbeb6e9e5bf93d49b3b739010c4a09afbb175be032e",
-      "updated_at": "2026-08-12T00:42:30.443710+00:00"
+      "updated_at": "2026-08-12T00:47:48.278653+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-writing-v1/matrix.qa9.json",
       "sha256": "18d0179fb539e6caa33b60534ffa6ecc6c47e3405948e728fcafd6abe4005ad5",
-      "updated_at": "2026-08-12T00:42:30.443649+00:00"
+      "updated_at": "2026-08-12T00:47:48.278714+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-writing-v1/plan.json",
       "sha256": "3cb352a9acd63a4db2467d15cc5586b14a83426b9a810318d4c947f439ac1a24",
-      "updated_at": "2026-08-12T00:42:30.443578+00:00"
+      "updated_at": "2026-08-12T00:47:48.278887+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-writing-v1/scorecard.json",
       "sha256": "eee3e8be8b619b13e8eb094e1eb1af2072d44699f8b26c14104a583e8d2b9195",
-      "updated_at": "2026-08-12T00:42:30.442899+00:00"
+      "updated_at": "2026-08-12T00:47:48.278950+00:00"
     },
     {
       "path": ".beacon/qa/features/prism-form-writing-v1/status.json",
       "sha256": "f1fad4fc25f66a026055bd1627d652a1c2fe7497ead313d1ad9c7c9eca0f786e",
-      "updated_at": "2026-08-12T00:42:30.443393+00:00"
+      "updated_at": "2026-08-12T00:47:48.279236+00:00"
     },
     {
       "path": ".beacon/qa/status.json",
       "sha256": "8c50bb2a12db6e72538353fe985be56fd4ddeb48e839d7193a8ef6cd58f7270c",
-      "updated_at": "2026-08-12T00:42:30.442624+00:00"
+      "updated_at": "2026-08-12T00:47:48.279341+00:00"
     },
     {
       "path": ".beacon/release-gate-report.json",
       "sha256": "a168fef90b3c906f3f71b9af453854040e0ec23904856018b1d44a615967e7c4",
-      "updated_at": "2026-08-12T00:42:30.442949+00:00"
+      "updated_at": "2026-08-12T00:47:48.279392+00:00"
     },
     {
       "path": ".beacon/state/implementation-prism-extract-v1.json",
       "sha256": "9ae7566ffe931ea8e8e8a9898efbf4791d80c986475d2db447d5b00e26c2b882",
-      "updated_at": "2026-08-12T00:42:30.441454+00:00"
+      "updated_at": "2026-08-12T00:47:48.279445+00:00"
     },
     {
       "path": ".beacon/transactions/qa-acceptance-prism-campaign-schema-v1.json",
       "sha256": "b08391887151318b46564f98793c08caa01b6490a9533b4f9f9cc9eca5fc8d23",
-      "updated_at": "2026-08-12T00:42:30.441511+00:00"
+      "updated_at": "2026-08-12T00:47:48.279499+00:00"
     },
     {
       "path": ".beacon/transactions/qa-acceptance-prism-extract-v1.json",
       "sha256": "d1f09e846524b8c678bc655f64612945f1ca4d584cef3bbd7fa81ae3a63bb0ba",
-      "updated_at": "2026-08-12T00:42:30.441569+00:00"
+      "updated_at": "2026-08-12T00:47:48.279549+00:00"
     },
     {
       "path": ".beacon/transactions/qa-acceptance-prism-form-writing-v1.json",
       "sha256": "e189d53a967db4e3659dc63525f6192b14720821a1314406b22eb3a161e38b9f",
-      "updated_at": "2026-08-12T00:42:30.443114+00:00"
+      "updated_at": "2026-08-12T00:47:48.279597+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/.machine/execution/init-report.json",
       "sha256": "bf7ee04fb8e0d4710c11ea8c5c43f4c115b66300413863e9cf61998f59249807",
-      "updated_at": "2026-08-12T00:42:30.441710+00:00"
+      "updated_at": "2026-08-12T00:47:48.279660+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-campaign-schema-v1.json",
       "sha256": "0e9fcf8fd0322822ecc889d94b8a41a98cdea6a394d8fb8dae32b59ae2d7460e",
-      "updated_at": "2026-08-12T00:42:30.441768+00:00"
+      "updated_at": "2026-08-12T00:47:48.279713+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-extract-v1.json",
       "sha256": "7918ee80fd340b443551a3450b161c11ae678dab97d596c0004af25b0b506ea5",
-      "updated_at": "2026-08-12T00:42:30.441828+00:00"
+      "updated_at": "2026-08-12T00:47:48.279765+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-form-writing-v1.json",
       "sha256": "119238c0e381ac755dab25e5bdc18b18a5d9e2fd4c3975076538186ab5765d41",
-      "updated_at": "2026-08-12T00:42:30.443015+00:00"
+      "updated_at": "2026-08-12T00:47:48.279814+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/.machine/qa/prism-campaign-schema-v1.ac-test-matrix.json",
       "sha256": "42182676687618efe53f3594498ad62e88850e9fc80cd34fd7031db9f68ac1d3",
-      "updated_at": "2026-08-12T00:42:30.441966+00:00"
+      "updated_at": "2026-08-12T00:47:48.279866+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json",
       "sha256": "d0fae487d89534a4c8f6d83323ae85d69984501cbd4541becbc771488ae00e2e",
-      "updated_at": "2026-08-12T00:42:30.442044+00:00"
+      "updated_at": "2026-08-12T00:47:48.279923+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/.machine/qa/prism-form-writing-v1.ac-test-matrix.json",
       "sha256": "aad39e8139becacb0695b57ff9f2f7793961630d321dab3eab137740b145d338",
-      "updated_at": "2026-08-12T00:42:30.442690+00:00"
+      "updated_at": "2026-08-12T00:47:48.279977+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/.machine/requirement/feature-package-validation.json",
-      "sha256": "05718cfc48d41bc0ed0d057faf862b08abca41bd86d72b8ace5910048a39cf85",
-      "updated_at": "2026-08-12T00:42:30.442167+00:00"
+      "sha256": "2df78dc216bcc2d458f77bbcd4869c300e31f24e694ccf8ce137cd8618816580",
+      "updated_at": "2026-08-12T00:47:48.280283+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/execution/init-report.md",
       "sha256": "8552a209a67ce3818b81b5fc7f9892a6d1f3e8d7b9be851c3b6638baace0a467",
-      "updated_at": "2026-08-12T00:42:30.442225+00:00"
+      "updated_at": "2026-08-12T00:47:48.280086+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-campaign-schema-v1.md",
       "sha256": "6e62525998d17c88f556abae5b51f5ba599f212f8e74a3919fe1fbaa8149d765",
-      "updated_at": "2026-08-12T00:42:30.442277+00:00"
+      "updated_at": "2026-08-12T00:47:48.280136+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-extract-v1.md",
       "sha256": "1c8d32dec73cbe41d4d00b782abed2f4cfef1cbfd48defe83caa328cacc4e2ae",
-      "updated_at": "2026-08-12T00:42:30.442332+00:00"
+      "updated_at": "2026-08-12T00:47:48.280187+00:00"
     },
     {
       "path": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-form-writing-v1.md",
       "sha256": "f48ad0b3befb06dd7b3876cb04e6d2eb8946d7f55f7ac1ce690311983877fc5a",
-      "updated_at": "2026-08-12T00:42:30.443065+00:00"
+      "updated_at": "2026-08-12T00:47:48.280236+00:00"
     }
   ],
-  "updated_at": "2026-08-12T00:42:30.443725+00:00",
+  "updated_at": "2026-08-12T00:47:48.280294+00:00",
   "version": "v0.0.1",
   "run_id": "run-20260812T084228065759"
 }

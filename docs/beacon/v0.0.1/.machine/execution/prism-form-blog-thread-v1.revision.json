@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-form-blog-thread-v1",
+  "feature_slug": "prism-form-blog-thread-v1",
+  "version": "v0.0.1",
+  "revision_id": "R1",
+  "source_revision_id": "",
+  "reason": "freeze",
+  "doc_status": "frozen",
+  "delivery_status": "idle",
+  "lifecycle_status": "idle",
+  "baseline_hash": "sha256:e9e9b20db84f30b1e26ae55af1f7b3b964588efc74a251bd8882ba7fc9edcdd6",
+  "superseded_by": "",
+  "created_at": "2026-08-12T00:47:48.270179+00:00",
+  "frozen_at": "2026-08-12T00:47:48.270853+00:00",
+  "accepted_at": ""
+}
