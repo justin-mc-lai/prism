@@ -1,0 +1,360 @@
+{
+  "schema_version": "1.0",
+  "truth_map_contract": "beacon-truth-map-v1",
+  "truth_source_model": "feature_package_authoritative",
+  "truth_package_contract": "beacon-feature-package-v2",
+  "machine_json_role": "generated_state_not_truth",
+  "generated_by": "beacon.truth_map.resolver",
+  "generated_at": "2026-08-12T01:06:53.188996+00:00",
+  "feature": "prism-publish-bridge-v1",
+  "feature_slug": "prism-publish-bridge-v1",
+  "version": "v0.0.1",
+  "truth_authority": false,
+  "json_authority": false,
+  "source_paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-publish-bridge-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-publish-bridge-v1/tests.md",
+    "tasks": "docs/beacon/v0.0.1/features/prism-publish-bridge-v1/tasks.md",
+    "evidence": "docs/beacon/v0.0.1/features/prism-publish-bridge-v1/evidence.md"
+  },
+  "source_hashes": {
+    "truth": "5935c073f14bded15224a8eae64f1545fe8cc7e03c4097295f84f8ab71bda480",
+    "tests": "dae945dc70db82922403787fe68fcff3190737f1a0a6b5e856e88222ccfdbf6c",
+    "tasks": "c60fe79857ebfca2b753b10cb08e7b7511f01624aaddacd81e65e523ec43dafe",
+    "evidence": "6a385b62529342fcefd8434854a162c0762227626ba326084badb84bde5502aa"
+  },
+  "truth_frontmatter": {
+    "slug": "prism-publish-bridge-v1",
+    "version": "v0.0.1",
+    "status": "frozen",
+    "revision_id": "R1",
+    "language": "zh",
+    "domain_required": "true",
+    "ux_required": "false",
+    "parser_contract": "beacon-feature-package-v2",
+    "materials_status": "current",
+    "package_maturity": "filled",
+    "truth_source_model": "intent_first",
+    "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+    "canonical_refs": {
+      "prd": "docs/beacon/v0.0.1/features/prism-publish-bridge-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-publish-bridge-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-publish-bridge-v1/tests.md"
+    },
+    "provenance": {
+      "- ac_id": "AC-PUB-002",
+      "source_type": "user_intent",
+      "source_ref": "utterance 2026-08-12：Lake D6 publish bridge；公开发布人工门"
+    }
+  },
+  "frontmatter_errors": [],
+  "acceptance_criteria": [
+    {
+      "ac_id": "AC-PUB-001",
+      "theme": "进入 `contract_landed`：`contracts/publish-bridge.contract.md` 定义 bridge 路由、草稿-only 边界、人工二次批准、证据记录",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-PUB-002",
+      "theme": "进入 `registry_landed`：`registry/publish-adapters.yaml` 登记 ≥4 个 bridge（publish-content / schedule-post / x-publish / manage-media）",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-PUB-003",
+      "theme": "草稿-only：契约声明只创建草稿/排期意图；公开必须人工二次批准",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-PUB-004",
+      "theme": "误路由守卫：误传目标 → superseded-misrouted + do_not_publish",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-PUB-005",
+      "theme": "进入 `indexed`：`scripts/check_publish_bridge.sh` exec-layer 校验 PASS",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-PUB-006",
+      "theme": "进入 `routing_landed`：creation-mode-map 引用 publish-bridge.contract",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-PUB-007",
+      "theme": "bridge fail-closed：工具缺失 → blocked + reason_code，不假装发布",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-PUB-008",
+      "theme": "凭证保护：契约声明平台凭证/密钥禁止入库（protected path）",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-PUB-009",
+      "theme": "发布证据：draft_id/URL 必须记录；无证据不算已发布",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-PUB-010",
+      "theme": "Non-goals：metrics、monetization、vendor sync-ai 显式排除；不得宣称海 closure",
+      "description": ""
+    }
+  ],
+  "test_rows": [
+    {
+      "ac_id": "AC-PUB-001",
+      "tc_id": "TC-PUB-001",
+      "layer": "",
+      "command": "`test -f contracts/publish-bridge.contract.md && rg -n \"publish-content|schedule-post|x-publish|manage-media\" contracts/publish-bridge.contract.md`",
+      "assertion": "发布桥契约含路由",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PUB-002",
+      "tc_id": "TC-PUB-002",
+      "layer": "",
+      "command": "`test -f registry/publish-adapters.yaml && rg -n \"publish-content\" registry/publish-adapters.yaml && rg -n \"schedule-post\" registry/publish-adapters.yaml`",
+      "assertion": "adapter 登记存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PUB-003",
+      "tc_id": "TC-PUB-003",
+      "layer": "",
+      "command": "`rg -n \"草稿|人工|二次批准|公开\" contracts/publish-bridge.contract.md`",
+      "assertion": "草稿-only + 人工门",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PUB-004",
+      "tc_id": "TC-PUB-004",
+      "layer": "",
+      "command": "`rg -n \"superseded-misrouted|do_not_publish|误\" contracts/publish-bridge.contract.md`",
+      "assertion": "误路由守卫",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PUB-005",
+      "tc_id": "TC-PUB-005",
+      "layer": "",
+      "command": "`test -x scripts/check_publish_bridge.sh`",
+      "assertion": "exec 脚本存在且可执行",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PUB-005",
+      "tc_id": "TC-PUB-006",
+      "layer": "",
+      "command": "`bash scripts/check_publish_bridge.sh`",
+      "assertion": "exec-layer 校验脚本 PASS（合法路径）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PUB-002",
+      "tc_id": "TC-PUB-007",
+      "layer": "",
+      "command": "`python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/publish-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=4 else 1)\"`",
+      "assertion": "≥4 个 bridge 条目",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PUB-006",
+      "tc_id": "TC-PUB-008",
+      "layer": "",
+      "command": "`rg -n \"publish-bridge.contract\" skills/_internal/orchestration/creation-mode-map.md`",
+      "assertion": "路由引用发布桥",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PUB-007",
+      "tc_id": "TC-PUB-009",
+      "layer": "",
+      "command": "`rg -n \"fail-closed|blocked|reason_code\" contracts/publish-bridge.contract.md`",
+      "assertion": "bridge fail-closed",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PUB-008",
+      "tc_id": "TC-PUB-010",
+      "layer": "",
+      "command": "`rg -n \"凭证|密钥|secrets|\\.env|禁止入库\" contracts/publish-bridge.contract.md`",
+      "assertion": "凭证保护声明",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PUB-009",
+      "tc_id": "TC-PUB-011",
+      "layer": "",
+      "command": "`rg -n \"draft_id|URL|证据|evidence|已发布\" contracts/publish-bridge.contract.md`",
+      "assertion": "发布证据要求",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PUB-010",
+      "tc_id": "TC-PUB-012",
+      "layer": "",
+      "command": "`rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-publish-bridge-v1/truth.md && rg -n \"Lake E|Lake F|sync-ai\" docs/beacon/v0.0.1/features/prism-publish-bridge-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-publish-bridge-v1/truth.md`",
+      "assertion": "分湖边界存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PUB-010",
+      "tc_id": "TC-PUB-013",
+      "layer": "",
+      "command": "`rg -n \"Illegal|illegal|无人工|宣称海\" docs/beacon/v0.0.1/features/prism-publish-bridge-v1/truth.md`",
+      "assertion": "illegal 转移覆盖（非法拒绝路径）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PUB-003",
+      "tc_id": "TC-PUB-014",
+      "layer": "",
+      "command": "`rg -n \"US-PUB-001|草稿\" docs/beacon/v0.0.1/features/prism-publish-bridge-v1/truth.md`",
+      "assertion": "草稿旅程可追溯",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PUB-004",
+      "tc_id": "TC-PUB-015",
+      "layer": "",
+      "command": "`rg -n \"US-PUB-002|误传|do_not_publish\" docs/beacon/v0.0.1/features/prism-publish-bridge-v1/truth.md`",
+      "assertion": "误路由旅程可追溯",
+      "evidence_path": "",
+      "source": ""
+    }
+  ],
+  "task_rows": [
+    {
+      "id": "TASK-001",
+      "title": "Implement AC-PUB-001: 进入 `contract_landed`：`contracts/publish-bridge.contract.md` 定义 bridge... · ac=AC-PUB-001 · evidence=`.beacon/evidence/implement/prism-publish-bridge-v1/AC-PUB-001.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-002",
+      "title": "Implement AC-PUB-002: 进入 `registry_landed`：`registry/publish-adapters.yaml` 登记 ≥4 个 bridge（... · ac=AC-PUB-002 · evidence=`.beacon/evidence/implement/prism-publish-bridge-v1/AC-PUB-002.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-003",
+      "title": "Implement AC-PUB-003: 草稿-only：契约声明只创建草稿/排期意图；公开必须人工二次批准 · ac=AC-PUB-003 · evidence=`.beacon/evidence/implement/prism-publish-bridge-v1/AC-PUB-003.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-004",
+      "title": "Implement AC-PUB-004: 误路由守卫：误传目标 → superseded-misrouted + do_not_publish · ac=AC-PUB-004 · evidence=`.beacon/evidence/implement/prism-publish-bridge-v1/AC-PUB-004.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-005",
+      "title": "Implement AC-PUB-005: 进入 `indexed`：`scripts/check_publish_bridge.sh` exec-layer 校验 PASS · ac=AC-PUB-005 · evidence=`.beacon/evidence/implement/prism-publish-bridge-v1/AC-PUB-005.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-006",
+      "title": "Implement AC-PUB-006: 进入 `routing_landed`：creation-mode-map 引用 publish-bridge.contract · ac=AC-PUB-006 · evidence=`.beacon/evidence/implement/prism-publish-bridge-v1/AC-PUB-006.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-007",
+      "title": "Implement AC-PUB-007: bridge fail-closed：工具缺失 → blocked + reason_code，不假装发布 · ac=AC-PUB-007 · evidence=`.beacon/evidence/implement/prism-publish-bridge-v1/AC-PUB-007.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-008",
+      "title": "Implement AC-PUB-008: 凭证保护：契约声明平台凭证/密钥禁止入库（protected path） · ac=AC-PUB-008 · evidence=`.beacon/evidence/implement/prism-publish-bridge-v1/AC-PUB-008.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-009",
+      "title": "Implement AC-PUB-009: 发布证据：draft_id/URL 必须记录；无证据不算已发布 · ac=AC-PUB-009 · evidence=`.beacon/evidence/implement/prism-publish-bridge-v1/AC-PUB-009.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-010",
+      "title": "Implement AC-PUB-010: Non-goals：metrics、monetization、vendor sync-ai 显式排除；不得宣称海 closure · ac=AC-PUB-010 · evidence=`.beacon/evidence/implement/prism-publish-bridge-v1/AC-PUB-010.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-011",
+      "title": "Validate package gates (truth review + freeze ack) · ac=GATES · evidence=`.beacon/evidence/implement/prism-publish-bridge-v1/GATES.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-012",
+      "title": "Run QA against AC↔TC matrix + exec-layer evidence · ac=QA · evidence=`.beacon/evidence/implement/prism-publish-bridge-v1/QA-MATRIX.json`",
+      "status": "unchecked"
+    }
+  ],
+  "checkbox_errors": [],
+  "evidence_rows": [
+    {
+      "surface": "package",
+      "authority": "requirement_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-publish-bridge-v1/truth.md"
+    },
+    {
+      "surface": "tests",
+      "authority": "test_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-publish-bridge-v1/tests.md"
+    },
+    {
+      "surface": "tasks",
+      "authority": "acceptance_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-publish-bridge-v1/tasks.md"
+    },
+    {
+      "surface": "program",
+      "authority": "support_advisory",
+      "path": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md"
+    },
+    {
+      "surface": "lake_d_plan",
+      "authority": "support_advisory",
+      "path": "docs/beacon/v0.0.1/programs/prism-canon/lake-d-plan.md"
+    },
+    {
+      "surface": "publish_contract",
+      "authority": "support_advisory",
+      "path": "contracts/publish-bridge.contract.md"
+    },
+    {
+      "surface": "publish_adapters",
+      "authority": "support_advisory",
+      "path": "registry/publish-adapters.yaml"
+    },
+    {
+      "surface": "creation_mode_map",
+      "authority": "support_advisory",
+      "path": "skills/_internal/orchestration/creation-mode-map.md"
+    },
+    {
+      "surface": "check_script",
+      "authority": "support_advisory",
+      "path": "scripts/check_publish_bridge.sh"
+    },
+    {
+      "surface": "source_publish",
+      "authority": "support_advisory",
+      "path": "/Users/apple/Developer/Personal/products/selfmedia-creator/skills/publish-content"
+    },
+    {
+      "surface": "source_schedule",
+      "authority": "support_advisory",
+      "path": "/Users/apple/Developer/Personal/products/selfmedia-creator/skills/schedule-post"
+    }
+  ]
+}
