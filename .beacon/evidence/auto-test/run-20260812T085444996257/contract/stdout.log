@@ -1,0 +1,6 @@
+24:  - form: image-post
+25:    contract: contracts/form-image-post.contract.md
+27:    producer_chain: director shot list → form-image-post.contract（四分离）→ render bridge → OCR/QA 门
+30:  - form: xhs
+31:    contract: contracts/form-xhs.contract.md
+33:    producer_chain: writing.contract → bridge xhs-article-to-images → OCR 门

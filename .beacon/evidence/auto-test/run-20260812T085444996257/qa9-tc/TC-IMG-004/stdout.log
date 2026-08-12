@@ -1,0 +1,3 @@
+13:| 贴图包 article-paper | 选题/节点 | MASTER + 核对 | director + shot list（visual_carrier） | form-image-post.contract + render_wechat_article_pages | anti-slop-gate + OCR + contract-check | publish-sync-ai --media image |
+14:| 贴图包 短卡 | 热点雷达 | 快照 | director（可选） | form-image-post.contract（倒金字塔）+ render_wechat_html_cards / image_cards | anti-slop-gate + OCR + 合同 | publish-sync-ai |
+17:| 小红书图文 | 选题 | 事实 | director + 版式 | form-xhs.contract（writing.contract emotional-essay）+ bridge xhs-article-to-images | anti-slop-gate + OCR | xhs-content-ops |

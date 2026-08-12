@@ -1,0 +1,1 @@
+bash scripts/check_image_post_forms.sh

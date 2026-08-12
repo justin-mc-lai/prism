@@ -1,0 +1,1 @@
+test -f skills/prism-qa/references/anti-slop-gate.md && test ! -f contracts/form-image-post.contract.md.qa

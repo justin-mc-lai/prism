@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-form-image-post-v1",
+  "feature_slug": "prism-form-image-post-v1",
+  "version": "v0.0.1",
+  "generated_at": "2026-08-12T00:54:44.581324+00:00",
+  "execution_mode": "feature-aware",
+  "source_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-form-image-post-v1.ac-test-matrix.json",
+  "story_scenario_map_path": ".beacon/qa/features/prism-form-image-post-v1/story-scenario-map.json",
+  "reason_codes": [
+    "no_prior_feature_qa"
+  ],
+  "qa_types": [
+    "contract"
+  ],
+  "entries": [
+    {
+      "ac_id": "AC-IMG-001",
+      "tc_id": "TC-IMG-001",
+      "layer": "contract",
+      "command": "test -f registry/form-registry.yaml && rg -n \"image-post\" registry/form-registry.yaml && rg -n \"xhs\" registry/form-registry.yaml",
+      "assertion": "form registry 注册 image-post/xhs",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-001/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1/docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-IMG-002",
+      "tc_id": "TC-IMG-002",
+      "layer": "contract",
+      "command": "test -f contracts/form-image-post.contract.md && rg -n \"20 字|20字|caption|1-9|9 张|封面|乱码|图序|尺寸\" contracts/form-image-post.contract.md",
+      "assertion": "贴图契约含核心规则",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-002/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1/docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-IMG-003",
+      "tc_id": "TC-IMG-003",
+      "layer": "contract",
+      "command": "test -f contracts/form-xhs.contract.md && rg -n \"xhs-article-to-images|OCR|fail-closed|blocked\" contracts/form-xhs.contract.md",
+      "assertion": "xhs 契约含 bridge 与 OCR 门",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-003/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1/docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-IMG-004",
+      "tc_id": "TC-IMG-004",
+      "layer": "contract",
+      "command": "rg -n \"form-image-post.contract|form-xhs.contract\" skills/_internal/orchestration/creation-mode-map.md",
+      "assertion": "路由引用 form 契约",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-004/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1/docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-IMG-005",
+      "tc_id": "TC-IMG-005",
+      "layer": "contract",
+      "command": "test -x scripts/check_image_post_forms.sh",
+      "assertion": "exec 脚本存在且可执行",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-005/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1/docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-IMG-005",
+      "tc_id": "TC-IMG-006",
+      "layer": "contract",
+      "command": "bash scripts/check_image_post_forms.sh",
+      "assertion": "exec-layer 校验脚本 PASS（合法路径）",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-006/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1/docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-IMG-001",
+      "tc_id": "TC-IMG-007",
+      "layer": "contract",
+      "command": "python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/form-registry.yaml')); fs={f['form'] for f in d['forms']}; raise SystemExit(0 if {'image-post','xhs'}<=fs else 1)\"",
+      "assertion": "registry 含 image-post+xhs",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-007/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1/docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-IMG-006",
+      "tc_id": "TC-IMG-008",
+      "layer": "contract",
+      "command": "rg -n \"配置|配置化|禁止.*硬编码|kushi\" contracts/form-image-post.contract.md && rg -n \"account|账号\" contracts/form-image-post.contract.md",
+      "assertion": "账号配置化声明",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-008/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1/docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-IMG-007",
+      "tc_id": "TC-IMG-009",
+      "layer": "contract",
+      "command": "rg -n \"fail-closed|blocked|reason_code\" contracts/form-image-post.contract.md contracts/form-xhs.contract.md",
+      "assertion": "bridge fail-closed",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-009/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1/docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-IMG-008",
+      "tc_id": "TC-IMG-010",
+      "layer": "contract",
+      "command": "rg -n \"乱码|随机文字|图序|尺寸|分离|价值\" contracts/form-image-post.contract.md && rg -n \"证据|evidence\" contracts/form-image-post.contract.md",
+      "assertion": "OCR/QA 门与证据",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-010/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1/docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-IMG-009",
+      "tc_id": "TC-IMG-011",
+      "layer": "contract",
+      "command": "test -f skills/prism-qa/references/anti-slop-gate.md && test ! -f contracts/form-image-post.contract.md.qa",
+      "assertion": "maker≠checker 分离",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-011/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1/docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-IMG-010",
+      "tc_id": "TC-IMG-012",
+      "layer": "contract",
+      "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md && rg -n \"D4|D5|D6\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+      "assertion": "分湖边界存在",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-012/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1/docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-IMG-010",
+      "tc_id": "TC-IMG-013",
+      "layer": "contract",
+      "command": "rg -n \"Illegal|illegal|宣称 Lake D\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+      "assertion": "illegal 转移覆盖",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-013/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1/docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-IMG-002",
+      "tc_id": "TC-IMG-014",
+      "layer": "contract",
+      "command": "rg -n \"US-IMG-001|贴图包\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+      "assertion": "贴图包旅程可追溯",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-014/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1/docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-IMG-003",
+      "tc_id": "TC-IMG-015",
+      "layer": "contract",
+      "command": "rg -n \"US-IMG-002|小红书\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+      "assertion": "xhs 旅程可追溯",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-015/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1/docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    }
+  ]
+}

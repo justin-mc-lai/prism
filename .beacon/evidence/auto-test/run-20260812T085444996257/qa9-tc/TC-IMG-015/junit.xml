@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite name="contract" tests="4" failures="0" errors="0" skipped="0">
+  <properties><property name="command" value="rg -n "US-IMG-002|小红书" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md" /></properties>
+    <testcase classname="contract" name="structured_cli_assertions-001" />
+    <testcase classname="contract" name="structured_cli_assertions-002" />
+    <testcase classname="contract" name="structured_cli_assertions-003" />
+    <testcase classname="contract" name="structured_cli_assertions-004" />
+</testsuite>

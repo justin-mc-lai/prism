@@ -1,0 +1,5 @@
+20:- 账号 profile（走配置，禁止硬编码 kushi-gzh 等账号名）
+29:- 封面：无文字底图（生成模型只做底图）+ 本地标题排版（如 kushi_cover_text_overlay.py），
+3:> 形态契约。源规则蒸馏自 `selfmedia-account-pipeline`（MAP-006）。
+20:- 账号 profile（走配置，禁止硬编码 kushi-gzh 等账号名）
+26:- `title`：≤20 字短题，不带账号前缀

@@ -1,0 +1,1 @@
+rg -n "配置|配置化|禁止.*硬编码|kushi" contracts/form-image-post.contract.md && rg -n "account|账号" contracts/form-image-post.contract.md

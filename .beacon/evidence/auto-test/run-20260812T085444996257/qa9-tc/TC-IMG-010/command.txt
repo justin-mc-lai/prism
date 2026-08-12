@@ -1,0 +1,1 @@
+rg -n "乱码|随机文字|图序|尺寸|分离|价值" contracts/form-image-post.contract.md && rg -n "证据|evidence" contracts/form-image-post.contract.md

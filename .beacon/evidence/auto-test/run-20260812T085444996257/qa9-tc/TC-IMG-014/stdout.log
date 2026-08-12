@@ -1,0 +1,6 @@
+31:D3 落地两个**图像形态**的生产者契约：公众号贴图包（image-post）和小红书图文（xhs）。
+32:贴图包规则从源仓 `selfmedia-account-pipeline` 蒸馏：标题 ≤20 字且不带账号前缀、caption 独立、
+43:继续 Lake D：落贴图包 + 小红书图文形态，验证“图像形态契约 + bridge 渲染 + OCR 门”闭环。
+90:US-IMG-001：战役负责人要贴图包。director 出 shot list（visual_carrier）→ produce 按
+103:| ImagePostFormContract | form-image-post | 贴图包：title/caption/图/封面四分离 |
+177:| AC-IMG-004 | 进入 `routing_landed`：creation-mode-map 贴图包/xhs 行引用 form contracts |

@@ -1,0 +1,12 @@
+14:- 能决定：图序、caption 文案、封面排版、桥接选择
+24:## 4. output（四分离）
+28:- 图片：1-9 张（1–9），超 9 拆条；图序明确（第 1 张可声明为 cover_card）
+30:  封面不混入正文图；尺寸默认 1080x1440
+35:- 无乱码、无随机文字、无「小黑」类误写
+36:- 图序正确、尺寸合规、图片数 1–9
+37:- title/caption/图片/封面分离成立
+38:- 价值门通过；contract-check 通过
+43:- 下一公开面: prism-qa（OCR/图序/尺寸/分离）→ prism-release（只建草稿）
+49:- 可重试: 渲染、caption、图序、换 bridge
+31:- 证据：`.beacon/evidence/implement/prism-form-image-post-v1/AC-IMG-002.json`
+39:- 每项结论带证据引用

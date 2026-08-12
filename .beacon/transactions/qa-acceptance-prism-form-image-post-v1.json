@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "artifact": "qa_acceptance_runtime_projection",
+  "version": "v0.0.1",
+  "feature": "prism-form-image-post-v1",
+  "feature_slug": "prism-form-image-post-v1",
+  "revision_id": "R1",
+  "verdict": "passed",
+  "transaction_id": "tx-qa-acceptance-prism-form-image-post-v1-cd700060d025",
+  "source_hash": "sha256:cd700060d02568f20584c5afbe320a32721b18baeb8f247f6d49fe39b9850d62",
+  "projection_seq": 1,
+  "committed_at": "2026-08-12T00:54:46.855917+00:00",
+  "write_status": "applied",
+  "failed_sinks": [],
+  "machine_ref": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-form-image-post-v1.json",
+  "markdown_ref": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-form-image-post-v1.md",
+  "runtime_projection_ref": ".beacon/transactions/qa-acceptance-prism-form-image-post-v1.json",
+  "sink_checksums": {
+    "machine": "sha256:64fd6a384b92f954b3267acaa11dada96cb0a5701a9a7f883a06be58943a2c3e",
+    "human": "sha256:a5ec7c05bd629c7570db76ba2421d872877387db4710d64f2d0c68e08c2396e7",
+    "runtime": "sha256:9e6b01a8925ab3298409c556ddbeed67a804140747faac7da0f6d049f87b63b8"
+  }
+}

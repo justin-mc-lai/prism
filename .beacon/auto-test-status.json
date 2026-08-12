@@ -1,27 +1,27 @@
 {
   "scope": "qa9",
-  "timestamp": "2026-08-12T08:49:47.791902",
-  "project": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-blog-thread-v1",
+  "timestamp": "2026-08-12T08:54:44.996922",
+  "project": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1",
   "version": "v0.0.1",
-  "run_id": "run-20260812T084947791269",
-  "spec_fingerprint_hash": "5345a6a7453444ff427d7d6dc416571ba96eb1ac84b733c7a8bd2febc983f1ad",
+  "run_id": "run-20260812T085444996257",
+  "spec_fingerprint_hash": "7be8541b296e2c2a1b3877434dac10a73c11cc35853ab4671b6e0e60037ae6b6",
   "status": "passed",
   "selected_layers": [
     "contract"
   ],
   "execution": {
-    "run_id": "run-20260812T084947791269",
+    "run_id": "run-20260812T085444996257",
     "version": "v0.0.1",
-    "evidence_dir": ".beacon/evidence/auto-test/run-20260812T084947791269",
+    "evidence_dir": ".beacon/evidence/auto-test/run-20260812T085444996257",
     "spec_fingerprint": {
-      "fingerprint_hash": "5345a6a7453444ff427d7d6dc416571ba96eb1ac84b733c7a8bd2febc983f1ad",
+      "fingerprint_hash": "7be8541b296e2c2a1b3877434dac10a73c11cc35853ab4671b6e0e60037ae6b6",
       "version": "v0.0.1",
-      "generated_at": "2026-08-12T00:49:49.655591+00:00"
+      "generated_at": "2026-08-12T00:54:46.836899+00:00"
     },
     "layers": [
       {
         "layer": "contract",
-        "command": "test -f registry/form-registry.yaml && rg -n \"blog\" registry/form-registry.yaml && rg -n \"thread\" registry/form-registry.yaml && rg -n \"form-blog.contract|form-thread.contract\" registry/form-registry.yaml",
+        "command": "test -f registry/form-registry.yaml && rg -n \"image-post\" registry/form-registry.yaml && rg -n \"xhs\" registry/form-registry.yaml",
         "exit_code": 0,
         "status": "passed",
         "reason_code": "",
@@ -35,31 +35,31 @@
             "exit_code": 0
           }
         ],
-        "execution_fingerprint": "b3b54fd8afbc93c7c8e7beadaf807dd6136ffddc5f9e9cc9eb5366f403256a0e",
-        "started_at": "2026-08-12T08:49:47.867235",
-        "ended_at": "2026-08-12T08:49:47.895592",
+        "execution_fingerprint": "eca4568cb36988642ce3e2bf1b666ef54f2abfb388e903e5e42726b0ad76c063",
+        "started_at": "2026-08-12T08:54:45.075357",
+        "ended_at": "2026-08-12T08:54:45.113299",
         "junit_path": "",
         "junit_valid": false,
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T084947791269/contract/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/contract/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/contract/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/contract/result.json"
+          ".beacon/evidence/auto-test/run-20260812T085444996257/contract/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/contract/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/contract/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/contract/result.json"
         ]
       }
     ],
     "ui_action_evidence": {},
     "matrix_report": {
       "status": "ok",
-      "matrix_path": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-blog-thread-v1/.beacon/qa/features/prism-form-blog-thread-v1/matrix.qa9.json",
+      "matrix_path": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1/.beacon/qa/features/prism-form-image-post-v1/matrix.qa9.json",
       "evidence_generated": 15,
       "entry_count": 15,
       "freshness_violations": []
     },
     "artifacts": [
-      ".beacon/evidence/auto-test/run-20260812T084947791269/qa9/tc-execution-map.json",
-      ".beacon/evidence/auto-test/run-20260812T084947791269/qa9/tc-results.json",
-      ".beacon/evidence/auto-test/run-20260812T084947791269/summary.json",
+      ".beacon/evidence/auto-test/run-20260812T085444996257/qa9/tc-execution-map.json",
+      ".beacon/evidence/auto-test/run-20260812T085444996257/qa9/tc-results.json",
+      ".beacon/evidence/auto-test/run-20260812T085444996257/summary.json",
       ".beacon/flaky-history.json",
       ".beacon/evidence-signature-chain.json"
     ],
@@ -76,7 +76,7 @@
     "qa_types": [
       "contract"
     ],
-    "qa_matrix_path": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-blog-thread-v1/.beacon/qa/features/prism-form-blog-thread-v1/matrix.qa9.json",
+    "qa_matrix_path": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1/.beacon/qa/features/prism-form-image-post-v1/matrix.qa9.json",
     "ui_runner": "playwright",
     "quality_requirements": {
       "require_junit": true,
@@ -103,9 +103,9 @@
     },
     "tc_results": [
       {
-        "tc_id": "TC-FORM-001",
-        "ac_id": "AC-FORM-001",
-        "source_tc_id": "TC-FORM-001",
+        "tc_id": "TC-IMG-001",
+        "ac_id": "AC-IMG-001",
+        "source_tc_id": "TC-IMG-001",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -115,18 +115,18 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 0,
-        "command": "test -f registry/form-registry.yaml && rg -n \"blog\" registry/form-registry.yaml && rg -n \"thread\" registry/form-registry.yaml && rg -n \"form-blog.contract|form-thread.contract\" registry/form-registry.yaml",
-        "run_id": "run-20260812T084947791269",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-blog-thread-v1/tc-form-001/__RUN_ID__.json",
+        "command": "test -f registry/form-registry.yaml && rg -n \"image-post\" registry/form-registry.yaml && rg -n \"xhs\" registry/form-registry.yaml",
+        "run_id": "run-20260812T085444996257",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-001/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-001/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-001/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-001/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-001/result.json"
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-001/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-001/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-001/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-001/result.json"
         ],
-        "execution_fingerprint": "3240e4f9e4ef418f30a1e6aaea019c5c8e62da17de64d4a27d03e9ec8c1972c0",
-        "started_at": "2026-08-12T08:49:47.976150",
-        "ended_at": "2026-08-12T08:49:48.001917",
+        "execution_fingerprint": "9fbae9ce6e5d11d34931b267ef1d4239e5dfb57d6b6bda8c793702d62b95275f",
+        "started_at": "2026-08-12T08:54:45.201010",
+        "ended_at": "2026-08-12T08:54:45.219706",
         "junit_path": "",
         "junit_valid": false,
         "browser_required": false,
@@ -140,9 +140,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-FORM-002",
-        "ac_id": "AC-FORM-002",
-        "source_tc_id": "TC-FORM-002",
+        "tc_id": "TC-IMG-002",
+        "ac_id": "AC-IMG-002",
+        "source_tc_id": "TC-IMG-002",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -152,18 +152,18 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 0,
-        "command": "test -f contracts/form-blog.contract.md && rg -n \"四段式|母稿|director|humanized.md\" contracts/form-blog.contract.md && rg -n \"证据|evidence\" contracts/form-blog.contract.md",
-        "run_id": "run-20260812T084947791269",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-blog-thread-v1/tc-form-002/__RUN_ID__.json",
+        "command": "test -f contracts/form-image-post.contract.md && rg -n \"20 字|20字|caption|1-9|9 张|封面|乱码|图序|尺寸\" contracts/form-image-post.contract.md",
+        "run_id": "run-20260812T085444996257",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-002/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-002/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-002/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-002/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-002/result.json"
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-002/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-002/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-002/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-002/result.json"
         ],
-        "execution_fingerprint": "ffea0ac9d55cdc276533dd890164795150b78d542ee3dae4e70b7ce79d0e545c",
-        "started_at": "2026-08-12T08:49:48.080066",
-        "ended_at": "2026-08-12T08:49:48.100708",
+        "execution_fingerprint": "90905a52bcfe1928f02f993348f219638be940b5f7b7e5809057b9cf519e4111",
+        "started_at": "2026-08-12T08:54:45.296182",
+        "ended_at": "2026-08-12T08:54:45.310404",
         "junit_path": "",
         "junit_valid": false,
         "browser_required": false,
@@ -177,9 +177,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-FORM-003",
-        "ac_id": "AC-FORM-003",
-        "source_tc_id": "TC-FORM-003",
+        "tc_id": "TC-IMG-003",
+        "ac_id": "AC-IMG-003",
+        "source_tc_id": "TC-IMG-003",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -189,18 +189,18 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 0,
-        "command": "test -f contracts/form-thread.contract.md && rg -n \"倒金字塔|fast_lane_skip|canon|writing-agent\" contracts/form-thread.contract.md",
-        "run_id": "run-20260812T084947791269",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-blog-thread-v1/tc-form-003/__RUN_ID__.json",
+        "command": "test -f contracts/form-xhs.contract.md && rg -n \"xhs-article-to-images|OCR|fail-closed|blocked\" contracts/form-xhs.contract.md",
+        "run_id": "run-20260812T085444996257",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-003/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-003/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-003/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-003/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-003/result.json"
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-003/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-003/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-003/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-003/result.json"
         ],
-        "execution_fingerprint": "80cc8e668b28344136cab674c579f33e425322b4e52d1d9f18c210891d6252de",
-        "started_at": "2026-08-12T08:49:48.180424",
-        "ended_at": "2026-08-12T08:49:48.193599",
+        "execution_fingerprint": "197da2acccb21efa0964b873a76608d4d842ff1fc3f5b18d7d5b045558fa58ff",
+        "started_at": "2026-08-12T08:54:45.385978",
+        "ended_at": "2026-08-12T08:54:45.399335",
         "junit_path": "",
         "junit_valid": false,
         "browser_required": false,
@@ -214,9 +214,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-FORM-004",
-        "ac_id": "AC-FORM-004",
-        "source_tc_id": "TC-FORM-004",
+        "tc_id": "TC-IMG-004",
+        "ac_id": "AC-IMG-004",
+        "source_tc_id": "TC-IMG-004",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -225,21 +225,21 @@
         "status": "passed",
         "layer_status": "passed",
         "reason_code": "",
-        "assertion_count": 2,
-        "command": "rg -n \"form-blog.contract|form-thread.contract\" skills/_internal/orchestration/creation-mode-map.md",
-        "run_id": "run-20260812T084947791269",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-blog-thread-v1/tc-form-004/__RUN_ID__.json",
+        "assertion_count": 3,
+        "command": "rg -n \"form-image-post.contract|form-xhs.contract\" skills/_internal/orchestration/creation-mode-map.md",
+        "run_id": "run-20260812T085444996257",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-004/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-004/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-004/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-004/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-004/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-004/result.json"
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/result.json"
         ],
-        "execution_fingerprint": "76c478b815ebe441ad0de6c09c07b1667b82959d4419b16c36db82461b9b2140",
-        "started_at": "2026-08-12T08:49:48.276440",
-        "ended_at": "2026-08-12T08:49:48.289460",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-004/junit.xml",
+        "execution_fingerprint": "825f71429066e9956245051baa50674b62298cde82cb4d121e63b13935812968",
+        "started_at": "2026-08-12T08:54:45.474442",
+        "ended_at": "2026-08-12T08:54:45.488138",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -252,9 +252,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-FORM-005",
-        "ac_id": "AC-FORM-005",
-        "source_tc_id": "TC-FORM-005",
+        "tc_id": "TC-IMG-005",
+        "ac_id": "AC-IMG-005",
+        "source_tc_id": "TC-IMG-005",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -264,18 +264,18 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 0,
-        "command": "test -x scripts/check_blog_thread_forms.sh",
-        "run_id": "run-20260812T084947791269",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-blog-thread-v1/tc-form-005/__RUN_ID__.json",
+        "command": "test -x scripts/check_image_post_forms.sh",
+        "run_id": "run-20260812T085444996257",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-005/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-005/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-005/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-005/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-005/result.json"
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-005/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-005/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-005/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-005/result.json"
         ],
-        "execution_fingerprint": "2cb7bdcb214fbcb2ccd033626f409e66d962cac2ea667bd15153533929c19f74",
-        "started_at": "2026-08-12T08:49:48.364621",
-        "ended_at": "2026-08-12T08:49:48.372799",
+        "execution_fingerprint": "83254aa097b5fe01f2e7bc9243fd371a420ec1c32af9a06e824809f175938437",
+        "started_at": "2026-08-12T08:54:45.564363",
+        "ended_at": "2026-08-12T08:54:45.572291",
         "junit_path": "",
         "junit_valid": false,
         "browser_required": false,
@@ -289,9 +289,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-FORM-006",
-        "ac_id": "AC-FORM-005",
-        "source_tc_id": "TC-FORM-006",
+        "tc_id": "TC-IMG-006",
+        "ac_id": "AC-IMG-005",
+        "source_tc_id": "TC-IMG-006",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -301,18 +301,18 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 0,
-        "command": "bash scripts/check_blog_thread_forms.sh",
-        "run_id": "run-20260812T084947791269",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-blog-thread-v1/tc-form-006/__RUN_ID__.json",
+        "command": "bash scripts/check_image_post_forms.sh",
+        "run_id": "run-20260812T085444996257",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-006/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-006/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-006/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-006/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-006/result.json"
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-006/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-006/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-006/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-006/result.json"
         ],
-        "execution_fingerprint": "4140da0700e3d8b5c321f84d7803d4599ebfa4f91c20a56f79258e246b84e851",
-        "started_at": "2026-08-12T08:49:48.453779",
-        "ended_at": "2026-08-12T08:49:48.631714",
+        "execution_fingerprint": "a8e555e5a4f34d2ca68b9beafa2bcb5392225c9c4f3e0b774ff356cf7ff31aa1",
+        "started_at": "2026-08-12T08:54:45.654639",
+        "ended_at": "2026-08-12T08:54:45.859519",
         "junit_path": "",
         "junit_valid": false,
         "browser_required": false,
@@ -326,9 +326,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-FORM-007",
-        "ac_id": "AC-FORM-001",
-        "source_tc_id": "TC-FORM-007",
+        "tc_id": "TC-IMG-007",
+        "ac_id": "AC-IMG-001",
+        "source_tc_id": "TC-IMG-007",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -338,18 +338,18 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 0,
-        "command": "python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/form-registry.yaml')); fs={f['form'] for f in d['forms']}; raise SystemExit(0 if {'blog','thread'}<=fs else 1)\"",
-        "run_id": "run-20260812T084947791269",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-blog-thread-v1/tc-form-007/__RUN_ID__.json",
+        "command": "python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/form-registry.yaml')); fs={f['form'] for f in d['forms']}; raise SystemExit(0 if {'image-post','xhs'}<=fs else 1)\"",
+        "run_id": "run-20260812T085444996257",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-007/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-007/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-007/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-007/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-007/result.json"
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/result.json"
         ],
-        "execution_fingerprint": "d38aefaedf3548b49268e30efe1b49c94f1527c84e9e1a900c0cc0aac8583834",
-        "started_at": "2026-08-12T08:49:48.711488",
-        "ended_at": "2026-08-12T08:49:48.789804",
+        "execution_fingerprint": "92bc07571ac96531a29ed3aeb15d6c28a1f7a896038279b8800a3f4595c650f2",
+        "started_at": "2026-08-12T08:54:45.937801",
+        "ended_at": "2026-08-12T08:54:46.014760",
         "junit_path": "",
         "junit_valid": false,
         "browser_required": false,
@@ -363,9 +363,85 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-FORM-008",
-        "ac_id": "AC-FORM-006",
-        "source_tc_id": "TC-FORM-008",
+        "tc_id": "TC-IMG-008",
+        "ac_id": "AC-IMG-006",
+        "source_tc_id": "TC-IMG-008",
+        "scenario_id": "",
+        "scenario_family": "",
+        "qa_type": "contract",
+        "layer": "contract",
+        "automation": "auto",
+        "status": "passed",
+        "layer_status": "passed",
+        "reason_code": "",
+        "assertion_count": 5,
+        "command": "rg -n \"配置|配置化|禁止.*硬编码|kushi\" contracts/form-image-post.contract.md && rg -n \"account|账号\" contracts/form-image-post.contract.md",
+        "run_id": "run-20260812T085444996257",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-008/__RUN_ID__.json",
+        "evidence_ref": [
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/result.json"
+        ],
+        "execution_fingerprint": "c034e243aee72028c7bd5bbe61b155cac92c474a95756c209faff105b97e5265",
+        "started_at": "2026-08-12T08:54:46.094309",
+        "ended_at": "2026-08-12T08:54:46.115105",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/junit.xml",
+        "junit_valid": true,
+        "browser_required": false,
+        "browser_evidence_pack_ref": "",
+        "browser_runner_learning_ref": "",
+        "replay_required": false,
+        "replay_ref": "",
+        "stop_on_fail": false,
+        "round_stop_trigger": false,
+        "round_stop_reasons": [],
+        "round_stop_anchor": ""
+      },
+      {
+        "tc_id": "TC-IMG-009",
+        "ac_id": "AC-IMG-007",
+        "source_tc_id": "TC-IMG-009",
+        "scenario_id": "",
+        "scenario_family": "",
+        "qa_type": "contract",
+        "layer": "contract",
+        "automation": "auto",
+        "status": "passed",
+        "layer_status": "passed",
+        "reason_code": "",
+        "assertion_count": 3,
+        "command": "rg -n \"fail-closed|blocked|reason_code\" contracts/form-image-post.contract.md contracts/form-xhs.contract.md",
+        "run_id": "run-20260812T085444996257",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-009/__RUN_ID__.json",
+        "evidence_ref": [
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/result.json"
+        ],
+        "execution_fingerprint": "67c67d2ae8a5ffea91cf0572282bec3e7af31f5bd1d175e6721a21dcd51193b2",
+        "started_at": "2026-08-12T08:54:46.190191",
+        "ended_at": "2026-08-12T08:54:46.206555",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/junit.xml",
+        "junit_valid": true,
+        "browser_required": false,
+        "browser_evidence_pack_ref": "",
+        "browser_runner_learning_ref": "",
+        "replay_required": false,
+        "replay_ref": "",
+        "stop_on_fail": false,
+        "round_stop_trigger": false,
+        "round_stop_reasons": [],
+        "round_stop_anchor": ""
+      },
+      {
+        "tc_id": "TC-IMG-010",
+        "ac_id": "AC-IMG-008",
+        "source_tc_id": "TC-IMG-010",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -375,20 +451,20 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 12,
-        "command": "rg -n \"registry|form contract|路由表|主链\" docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md && test ! -f skills/_internal/adapters/SKILL.md",
-        "run_id": "run-20260812T084947791269",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-blog-thread-v1/tc-form-008/__RUN_ID__.json",
+        "command": "rg -n \"乱码|随机文字|图序|尺寸|分离|价值\" contracts/form-image-post.contract.md && rg -n \"证据|evidence\" contracts/form-image-post.contract.md",
+        "run_id": "run-20260812T085444996257",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-010/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-008/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-008/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-008/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-008/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-008/result.json"
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/result.json"
         ],
-        "execution_fingerprint": "1e7e2a98350b4d11e81654b5073596a51f399a088d22e18002f6a1fb7154908b",
-        "started_at": "2026-08-12T08:49:48.866877",
-        "ended_at": "2026-08-12T08:49:48.881147",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-008/junit.xml",
+        "execution_fingerprint": "6196194874846baf07a4a80fdc0b2296d3a4bb520ef5695da40ab818635cd625",
+        "started_at": "2026-08-12T08:54:46.281151",
+        "ended_at": "2026-08-12T08:54:46.298107",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -401,85 +477,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-FORM-009",
-        "ac_id": "AC-FORM-007",
-        "source_tc_id": "TC-FORM-009",
-        "scenario_id": "",
-        "scenario_family": "",
-        "qa_type": "contract",
-        "layer": "contract",
-        "automation": "auto",
-        "status": "passed",
-        "layer_status": "passed",
-        "reason_code": "",
-        "assertion_count": 7,
-        "command": "rg -n \"canon|fast_lane_skip\" contracts/form-thread.contract.md && rg -n \"illegal|禁止\" contracts/form-thread.contract.md",
-        "run_id": "run-20260812T084947791269",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-blog-thread-v1/tc-form-009/__RUN_ID__.json",
-        "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-009/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-009/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-009/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-009/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-009/result.json"
-        ],
-        "execution_fingerprint": "5fb9fb9060dbad0d38990be2ec98e512fa502e1638b70122f84f5fb13f1f1339",
-        "started_at": "2026-08-12T08:49:48.960095",
-        "ended_at": "2026-08-12T08:49:48.980120",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-009/junit.xml",
-        "junit_valid": true,
-        "browser_required": false,
-        "browser_evidence_pack_ref": "",
-        "browser_runner_learning_ref": "",
-        "replay_required": false,
-        "replay_ref": "",
-        "stop_on_fail": false,
-        "round_stop_trigger": false,
-        "round_stop_reasons": [],
-        "round_stop_anchor": ""
-      },
-      {
-        "tc_id": "TC-FORM-010",
-        "ac_id": "AC-FORM-008",
-        "source_tc_id": "TC-FORM-010",
-        "scenario_id": "",
-        "scenario_family": "",
-        "qa_type": "contract",
-        "layer": "contract",
-        "automation": "auto",
-        "status": "passed",
-        "layer_status": "passed",
-        "reason_code": "",
-        "assertion_count": 4,
-        "command": "rg -n \"fail-closed|blocked|reason_code\" contracts/form-blog.contract.md contracts/form-thread.contract.md",
-        "run_id": "run-20260812T084947791269",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-blog-thread-v1/tc-form-010/__RUN_ID__.json",
-        "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-010/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-010/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-010/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-010/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-010/result.json"
-        ],
-        "execution_fingerprint": "638d572f6619c2020275bf769061c088d3cb6884f2c44d0398f829b9cc60102b",
-        "started_at": "2026-08-12T08:49:49.055788",
-        "ended_at": "2026-08-12T08:49:49.072210",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-010/junit.xml",
-        "junit_valid": true,
-        "browser_required": false,
-        "browser_evidence_pack_ref": "",
-        "browser_runner_learning_ref": "",
-        "replay_required": false,
-        "replay_ref": "",
-        "stop_on_fail": false,
-        "round_stop_trigger": false,
-        "round_stop_reasons": [],
-        "round_stop_anchor": ""
-      },
-      {
-        "tc_id": "TC-FORM-011",
-        "ac_id": "AC-FORM-009",
-        "source_tc_id": "TC-FORM-011",
+        "tc_id": "TC-IMG-011",
+        "ac_id": "AC-IMG-009",
+        "source_tc_id": "TC-IMG-011",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -489,18 +489,18 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 0,
-        "command": "test -f skills/prism-qa/references/anti-slop-gate.md && rg -n \"证据|原文行\" skills/prism-qa/references/anti-slop-gate.md",
-        "run_id": "run-20260812T084947791269",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-blog-thread-v1/tc-form-011/__RUN_ID__.json",
+        "command": "test -f skills/prism-qa/references/anti-slop-gate.md && test ! -f contracts/form-image-post.contract.md.qa",
+        "run_id": "run-20260812T085444996257",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-011/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-011/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-011/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-011/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-011/result.json"
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-011/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-011/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-011/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-011/result.json"
         ],
-        "execution_fingerprint": "0d7b2bcb085cc65a3840fa7e7076f8d1a38f86946f762708d7299a347d7fc243",
-        "started_at": "2026-08-12T08:49:49.155019",
-        "ended_at": "2026-08-12T08:49:49.169094",
+        "execution_fingerprint": "10a95e254d426848cc61a4c16147c60b692e88730b4c79b2d56080c1168f7ad8",
+        "started_at": "2026-08-12T08:54:46.373385",
+        "ended_at": "2026-08-12T08:54:46.381188",
         "junit_path": "",
         "junit_valid": false,
         "browser_required": false,
@@ -514,9 +514,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-FORM-012",
-        "ac_id": "AC-FORM-010",
-        "source_tc_id": "TC-FORM-012",
+        "tc_id": "TC-IMG-012",
+        "ac_id": "AC-IMG-010",
+        "source_tc_id": "TC-IMG-012",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -525,21 +525,21 @@
         "status": "passed",
         "layer_status": "passed",
         "reason_code": "",
-        "assertion_count": 15,
-        "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md && rg -n \"D3|D4|D5|D6\" docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md",
-        "run_id": "run-20260812T084947791269",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-blog-thread-v1/tc-form-012/__RUN_ID__.json",
+        "assertion_count": 13,
+        "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md && rg -n \"D4|D5|D6\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+        "run_id": "run-20260812T085444996257",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-012/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-012/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-012/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-012/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-012/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-012/result.json"
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/result.json"
         ],
-        "execution_fingerprint": "6fba0fc003e745c95d4df3881df7e34e3bc0f89e5cde2d79ea8ab482f43ae7ab",
-        "started_at": "2026-08-12T08:49:49.250397",
-        "ended_at": "2026-08-12T08:49:49.278942",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-012/junit.xml",
+        "execution_fingerprint": "6c77d50ba37ab5a861cd4b6039d3611eb307176256821e2816afa96d56022181",
+        "started_at": "2026-08-12T08:54:46.454767",
+        "ended_at": "2026-08-12T08:54:46.478328",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -552,9 +552,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-FORM-013",
-        "ac_id": "AC-FORM-010",
-        "source_tc_id": "TC-FORM-013",
+        "tc_id": "TC-IMG-013",
+        "ac_id": "AC-IMG-010",
+        "source_tc_id": "TC-IMG-013",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -564,20 +564,20 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 2,
-        "command": "rg -n \"Illegal|illegal|宣称 Lake D\" docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md",
-        "run_id": "run-20260812T084947791269",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-blog-thread-v1/tc-form-013/__RUN_ID__.json",
+        "command": "rg -n \"Illegal|illegal|宣称 Lake D\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+        "run_id": "run-20260812T085444996257",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-013/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-013/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-013/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-013/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-013/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-013/result.json"
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/result.json"
         ],
-        "execution_fingerprint": "6450df953a48e924dffa9802f4625bc30ca861613c35782abda2071bcdf6efd7",
-        "started_at": "2026-08-12T08:49:49.360057",
-        "ended_at": "2026-08-12T08:49:49.373403",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-013/junit.xml",
+        "execution_fingerprint": "754c47a45992b634d47d4554c6490762efa176a13517d7a006a4e993b1538be8",
+        "started_at": "2026-08-12T08:54:46.554068",
+        "ended_at": "2026-08-12T08:54:46.566001",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -590,9 +590,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-FORM-014",
-        "ac_id": "AC-FORM-002",
-        "source_tc_id": "TC-FORM-014",
+        "tc_id": "TC-IMG-014",
+        "ac_id": "AC-IMG-002",
+        "source_tc_id": "TC-IMG-014",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -601,21 +601,21 @@
         "status": "passed",
         "layer_status": "passed",
         "reason_code": "",
-        "assertion_count": 29,
-        "command": "rg -n \"US-PRISM-001|blog\" docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md",
-        "run_id": "run-20260812T084947791269",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-blog-thread-v1/tc-form-014/__RUN_ID__.json",
+        "assertion_count": 6,
+        "command": "rg -n \"US-IMG-001|贴图包\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+        "run_id": "run-20260812T085444996257",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-014/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-014/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-014/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-014/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-014/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-014/result.json"
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/result.json"
         ],
-        "execution_fingerprint": "3e7c6a32e0fcc2a3d8cedf109e97226c81f3d089e1d844dd7e83b95403a539c3",
-        "started_at": "2026-08-12T08:49:49.452872",
-        "ended_at": "2026-08-12T08:49:49.466633",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-014/junit.xml",
+        "execution_fingerprint": "45f6d217d34bc529c61f4c71da8f4ccc05cf1c9eeccd1bd0ce0809983d4a1417",
+        "started_at": "2026-08-12T08:54:46.641340",
+        "ended_at": "2026-08-12T08:54:46.655448",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -628,9 +628,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-FORM-015",
-        "ac_id": "AC-FORM-003",
-        "source_tc_id": "TC-FORM-015",
+        "tc_id": "TC-IMG-015",
+        "ac_id": "AC-IMG-003",
+        "source_tc_id": "TC-IMG-015",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -639,21 +639,21 @@
         "status": "passed",
         "layer_status": "passed",
         "reason_code": "",
-        "assertion_count": 34,
-        "command": "rg -n \"US-PRISM-005|thread|快道\" docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md",
-        "run_id": "run-20260812T084947791269",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-blog-thread-v1/tc-form-015/__RUN_ID__.json",
+        "assertion_count": 4,
+        "command": "rg -n \"US-IMG-002|小红书\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+        "run_id": "run-20260812T085444996257",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-015/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-015/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-015/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-015/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-015/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-015/result.json"
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/result.json"
         ],
-        "execution_fingerprint": "a12f3a57bc1c456bd2d977e24bf70a743d9f5c7b868f5487d0332c2253bba863",
-        "started_at": "2026-08-12T08:49:49.546668",
-        "ended_at": "2026-08-12T08:49:49.559571",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-015/junit.xml",
+        "execution_fingerprint": "94128c23dce066e8e240f0d294d9a5b33dcc84812c4c5ac5958102ac7e84ed08",
+        "started_at": "2026-08-12T08:54:46.730613",
+        "ended_at": "2026-08-12T08:54:46.742440",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -680,9 +680,9 @@
     }
   ],
   "schema_version": "1.0",
-  "updated_at": "2026-08-12T00:49:49.589234+00:00",
+  "updated_at": "2026-08-12T00:54:46.772648+00:00",
   "summary": {
-    "feature": "prism-form-blog-thread-v1",
+    "feature": "prism-form-image-post-v1",
     "version": "v0.0.1",
     "status": "passed",
     "release_ready": true,
@@ -696,15 +696,15 @@
     "reconciliation_artifact_path": "",
     "reconciliation_reprojection_targets": [],
     "repair_action": "qa-repair",
-    "repair_command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-blog-thread-v1 --version v0.0.1 --feature \"prism-form-blog-thread-v1\""
+    "repair_command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1 --version v0.0.1 --feature \"prism-form-image-post-v1\""
   },
   "qa_status_source": "canonical",
   "governance_state_role": "generated_governance_state_not_truth",
   "truth_authority": false,
   "json_authority": false,
   "resolver_mode": "resolver_first",
-  "feature": "prism-form-blog-thread-v1",
-  "feature_slug": "prism-form-blog-thread-v1",
+  "feature": "prism-form-image-post-v1",
+  "feature_slug": "prism-form-image-post-v1",
   "implementation_done": true,
   "evidence_done": true,
   "story_sequence": [
@@ -725,33 +725,33 @@
       "contract"
     ],
     "targeted_ac_ids": [
-      "AC-FORM-001",
-      "AC-FORM-002",
-      "AC-FORM-003",
-      "AC-FORM-004",
-      "AC-FORM-005",
-      "AC-FORM-006",
-      "AC-FORM-007",
-      "AC-FORM-008",
-      "AC-FORM-009",
-      "AC-FORM-010"
+      "AC-IMG-001",
+      "AC-IMG-002",
+      "AC-IMG-003",
+      "AC-IMG-004",
+      "AC-IMG-005",
+      "AC-IMG-006",
+      "AC-IMG-007",
+      "AC-IMG-008",
+      "AC-IMG-009",
+      "AC-IMG-010"
     ],
     "targeted_tc_ids": [
-      "TC-FORM-001",
-      "TC-FORM-002",
-      "TC-FORM-003",
-      "TC-FORM-004",
-      "TC-FORM-005",
-      "TC-FORM-006",
-      "TC-FORM-007",
-      "TC-FORM-008",
-      "TC-FORM-009",
-      "TC-FORM-010",
-      "TC-FORM-011",
-      "TC-FORM-012",
-      "TC-FORM-013",
-      "TC-FORM-014",
-      "TC-FORM-015"
+      "TC-IMG-001",
+      "TC-IMG-002",
+      "TC-IMG-003",
+      "TC-IMG-004",
+      "TC-IMG-005",
+      "TC-IMG-006",
+      "TC-IMG-007",
+      "TC-IMG-008",
+      "TC-IMG-009",
+      "TC-IMG-010",
+      "TC-IMG-011",
+      "TC-IMG-012",
+      "TC-IMG-013",
+      "TC-IMG-014",
+      "TC-IMG-015"
     ],
     "targeted_scenario_ids": [],
     "targeted_scenario_families": []
@@ -763,13 +763,13 @@
     "targeted_scope_only": true,
     "verification_item_count": 15
   },
-  "feature_matrix_path": ".beacon/qa/features/prism-form-blog-thread-v1/matrix.qa9.json",
+  "feature_matrix_path": ".beacon/qa/features/prism-form-image-post-v1/matrix.qa9.json",
   "blocking_artifact_updates": [],
   "per_item_results": [
     {
-      "ac_id": "AC-FORM-001",
-      "tc_id": "TC-FORM-001",
-      "source_tc_id": "TC-FORM-001",
+      "ac_id": "AC-IMG-001",
+      "tc_id": "TC-IMG-001",
+      "source_tc_id": "TC-IMG-001",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-001",
@@ -782,16 +782,16 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-001/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-001/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-001/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-001/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-001/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-001/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-001/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-001/result.json"
       ]
     },
     {
-      "ac_id": "AC-FORM-002",
-      "tc_id": "TC-FORM-002",
-      "source_tc_id": "TC-FORM-002",
+      "ac_id": "AC-IMG-002",
+      "tc_id": "TC-IMG-002",
+      "source_tc_id": "TC-IMG-002",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-002",
@@ -804,16 +804,16 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-002/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-002/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-002/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-002/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-002/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-002/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-002/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-002/result.json"
       ]
     },
     {
-      "ac_id": "AC-FORM-003",
-      "tc_id": "TC-FORM-003",
-      "source_tc_id": "TC-FORM-003",
+      "ac_id": "AC-IMG-003",
+      "tc_id": "TC-IMG-003",
+      "source_tc_id": "TC-IMG-003",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-003",
@@ -826,16 +826,16 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-003/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-003/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-003/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-003/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-003/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-003/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-003/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-003/result.json"
       ]
     },
     {
-      "ac_id": "AC-FORM-004",
-      "tc_id": "TC-FORM-004",
-      "source_tc_id": "TC-FORM-004",
+      "ac_id": "AC-IMG-004",
+      "tc_id": "TC-IMG-004",
+      "source_tc_id": "TC-IMG-004",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-004",
@@ -848,17 +848,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-004/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-004/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-004/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-004/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-004/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/result.json"
       ]
     },
     {
-      "ac_id": "AC-FORM-005",
-      "tc_id": "TC-FORM-005",
-      "source_tc_id": "TC-FORM-005",
+      "ac_id": "AC-IMG-005",
+      "tc_id": "TC-IMG-005",
+      "source_tc_id": "TC-IMG-005",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-005",
@@ -871,16 +871,16 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-005/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-005/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-005/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-005/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-005/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-005/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-005/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-005/result.json"
       ]
     },
     {
-      "ac_id": "AC-FORM-005",
-      "tc_id": "TC-FORM-006",
-      "source_tc_id": "TC-FORM-006",
+      "ac_id": "AC-IMG-005",
+      "tc_id": "TC-IMG-006",
+      "source_tc_id": "TC-IMG-006",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-006",
@@ -893,16 +893,16 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-006/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-006/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-006/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-006/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-006/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-006/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-006/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-006/result.json"
       ]
     },
     {
-      "ac_id": "AC-FORM-001",
-      "tc_id": "TC-FORM-007",
-      "source_tc_id": "TC-FORM-007",
+      "ac_id": "AC-IMG-001",
+      "tc_id": "TC-IMG-007",
+      "source_tc_id": "TC-IMG-007",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-007",
@@ -915,16 +915,16 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-007/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-007/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-007/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-007/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/result.json"
       ]
     },
     {
-      "ac_id": "AC-FORM-006",
-      "tc_id": "TC-FORM-008",
-      "source_tc_id": "TC-FORM-008",
+      "ac_id": "AC-IMG-006",
+      "tc_id": "TC-IMG-008",
+      "source_tc_id": "TC-IMG-008",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-008",
@@ -937,17 +937,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-008/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-008/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-008/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-008/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-008/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/result.json"
       ]
     },
     {
-      "ac_id": "AC-FORM-007",
-      "tc_id": "TC-FORM-009",
-      "source_tc_id": "TC-FORM-009",
+      "ac_id": "AC-IMG-007",
+      "tc_id": "TC-IMG-009",
+      "source_tc_id": "TC-IMG-009",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-009",
@@ -960,17 +960,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-009/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-009/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-009/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-009/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-009/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/result.json"
       ]
     },
     {
-      "ac_id": "AC-FORM-008",
-      "tc_id": "TC-FORM-010",
-      "source_tc_id": "TC-FORM-010",
+      "ac_id": "AC-IMG-008",
+      "tc_id": "TC-IMG-010",
+      "source_tc_id": "TC-IMG-010",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-010",
@@ -983,17 +983,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-010/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-010/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-010/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-010/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-010/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/result.json"
       ]
     },
     {
-      "ac_id": "AC-FORM-009",
-      "tc_id": "TC-FORM-011",
-      "source_tc_id": "TC-FORM-011",
+      "ac_id": "AC-IMG-009",
+      "tc_id": "TC-IMG-011",
+      "source_tc_id": "TC-IMG-011",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-011",
@@ -1006,16 +1006,16 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-011/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-011/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-011/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-011/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-011/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-011/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-011/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-011/result.json"
       ]
     },
     {
-      "ac_id": "AC-FORM-010",
-      "tc_id": "TC-FORM-012",
-      "source_tc_id": "TC-FORM-012",
+      "ac_id": "AC-IMG-010",
+      "tc_id": "TC-IMG-012",
+      "source_tc_id": "TC-IMG-012",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-012",
@@ -1028,17 +1028,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-012/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-012/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-012/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-012/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-012/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/result.json"
       ]
     },
     {
-      "ac_id": "AC-FORM-010",
-      "tc_id": "TC-FORM-013",
-      "source_tc_id": "TC-FORM-013",
+      "ac_id": "AC-IMG-010",
+      "tc_id": "TC-IMG-013",
+      "source_tc_id": "TC-IMG-013",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-013",
@@ -1051,17 +1051,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-013/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-013/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-013/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-013/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-013/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/result.json"
       ]
     },
     {
-      "ac_id": "AC-FORM-002",
-      "tc_id": "TC-FORM-014",
-      "source_tc_id": "TC-FORM-014",
+      "ac_id": "AC-IMG-002",
+      "tc_id": "TC-IMG-014",
+      "source_tc_id": "TC-IMG-014",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-014",
@@ -1074,17 +1074,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-014/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-014/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-014/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-014/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-014/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/result.json"
       ]
     },
     {
-      "ac_id": "AC-FORM-003",
-      "tc_id": "TC-FORM-015",
-      "source_tc_id": "TC-FORM-015",
+      "ac_id": "AC-IMG-003",
+      "tc_id": "TC-IMG-015",
+      "source_tc_id": "TC-IMG-015",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-015",
@@ -1097,11 +1097,11 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-015/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-015/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-015/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-015/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-015/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/result.json"
       ]
     }
   ],
@@ -1135,19 +1135,19 @@
     "blocked": false,
     "reason_code": "",
     "target_stage": "qa",
-    "feature": "prism-form-blog-thread-v1",
+    "feature": "prism-form-image-post-v1",
     "version": "v0.0.1",
     "recommended_command": ""
   },
   "requirement_completeness_verdict": "pass",
   "requirement_completeness_ref": "",
-  "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-form-blog-thread-v1.ac-test-matrix.json",
+  "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-form-image-post-v1.ac-test-matrix.json",
   "exhaustiveness": {
     "schema_version": "1.0",
-    "feature": "prism-form-blog-thread-v1",
-    "feature_slug": "prism-form-blog-thread-v1",
-    "run_id": "run-20260812T084947791269",
-    "generated_at": "2026-08-12T00:49:49.632081+00:00",
+    "feature": "prism-form-image-post-v1",
+    "feature_slug": "prism-form-image-post-v1",
+    "run_id": "run-20260812T085444996257",
+    "generated_at": "2026-08-12T00:54:46.812330+00:00",
     "execution_mode": "feature-aware",
     "scenario_count": 15,
     "browser_scenario_count": 0,
@@ -1169,11 +1169,11 @@
   },
   "scenario_results_v2": [
     {
-      "scenario_id": "TC-FORM-001",
-      "tc_id": "TC-FORM-001",
-      "source_tc_id": "TC-FORM-001",
-      "ac_id": "AC-FORM-001",
-      "feature_slug": "prism-form-blog-thread-v1",
+      "scenario_id": "TC-IMG-001",
+      "tc_id": "TC-IMG-001",
+      "source_tc_id": "TC-IMG-001",
+      "ac_id": "AC-IMG-001",
+      "feature_slug": "prism-form-image-post-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1197,18 +1197,18 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-001/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-001/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-001/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-001/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-001/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-001/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-001/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-001/result.json"
       ]
     },
     {
-      "scenario_id": "TC-FORM-002",
-      "tc_id": "TC-FORM-002",
-      "source_tc_id": "TC-FORM-002",
-      "ac_id": "AC-FORM-002",
-      "feature_slug": "prism-form-blog-thread-v1",
+      "scenario_id": "TC-IMG-002",
+      "tc_id": "TC-IMG-002",
+      "source_tc_id": "TC-IMG-002",
+      "ac_id": "AC-IMG-002",
+      "feature_slug": "prism-form-image-post-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1232,18 +1232,18 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-002/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-002/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-002/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-002/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-002/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-002/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-002/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-002/result.json"
       ]
     },
     {
-      "scenario_id": "TC-FORM-003",
-      "tc_id": "TC-FORM-003",
-      "source_tc_id": "TC-FORM-003",
-      "ac_id": "AC-FORM-003",
-      "feature_slug": "prism-form-blog-thread-v1",
+      "scenario_id": "TC-IMG-003",
+      "tc_id": "TC-IMG-003",
+      "source_tc_id": "TC-IMG-003",
+      "ac_id": "AC-IMG-003",
+      "feature_slug": "prism-form-image-post-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1267,18 +1267,18 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-003/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-003/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-003/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-003/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-003/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-003/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-003/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-003/result.json"
       ]
     },
     {
-      "scenario_id": "TC-FORM-004",
-      "tc_id": "TC-FORM-004",
-      "source_tc_id": "TC-FORM-004",
-      "ac_id": "AC-FORM-004",
-      "feature_slug": "prism-form-blog-thread-v1",
+      "scenario_id": "TC-IMG-004",
+      "tc_id": "TC-IMG-004",
+      "source_tc_id": "TC-IMG-004",
+      "ac_id": "AC-IMG-004",
+      "feature_slug": "prism-form-image-post-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1302,19 +1302,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-004/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-004/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-004/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-004/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-004/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/result.json"
       ]
     },
     {
-      "scenario_id": "TC-FORM-005",
-      "tc_id": "TC-FORM-005",
-      "source_tc_id": "TC-FORM-005",
-      "ac_id": "AC-FORM-005",
-      "feature_slug": "prism-form-blog-thread-v1",
+      "scenario_id": "TC-IMG-005",
+      "tc_id": "TC-IMG-005",
+      "source_tc_id": "TC-IMG-005",
+      "ac_id": "AC-IMG-005",
+      "feature_slug": "prism-form-image-post-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1338,18 +1338,18 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-005/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-005/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-005/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-005/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-005/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-005/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-005/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-005/result.json"
       ]
     },
     {
-      "scenario_id": "TC-FORM-006",
-      "tc_id": "TC-FORM-006",
-      "source_tc_id": "TC-FORM-006",
-      "ac_id": "AC-FORM-005",
-      "feature_slug": "prism-form-blog-thread-v1",
+      "scenario_id": "TC-IMG-006",
+      "tc_id": "TC-IMG-006",
+      "source_tc_id": "TC-IMG-006",
+      "ac_id": "AC-IMG-005",
+      "feature_slug": "prism-form-image-post-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1373,18 +1373,18 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-006/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-006/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-006/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-006/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-006/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-006/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-006/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-006/result.json"
       ]
     },
     {
-      "scenario_id": "TC-FORM-007",
-      "tc_id": "TC-FORM-007",
-      "source_tc_id": "TC-FORM-007",
-      "ac_id": "AC-FORM-001",
-      "feature_slug": "prism-form-blog-thread-v1",
+      "scenario_id": "TC-IMG-007",
+      "tc_id": "TC-IMG-007",
+      "source_tc_id": "TC-IMG-007",
+      "ac_id": "AC-IMG-001",
+      "feature_slug": "prism-form-image-post-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1408,18 +1408,18 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-007/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-007/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-007/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-007/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/result.json"
       ]
     },
     {
-      "scenario_id": "TC-FORM-008",
-      "tc_id": "TC-FORM-008",
-      "source_tc_id": "TC-FORM-008",
-      "ac_id": "AC-FORM-006",
-      "feature_slug": "prism-form-blog-thread-v1",
+      "scenario_id": "TC-IMG-008",
+      "tc_id": "TC-IMG-008",
+      "source_tc_id": "TC-IMG-008",
+      "ac_id": "AC-IMG-006",
+      "feature_slug": "prism-form-image-post-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1443,19 +1443,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-008/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-008/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-008/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-008/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-008/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/result.json"
       ]
     },
     {
-      "scenario_id": "TC-FORM-009",
-      "tc_id": "TC-FORM-009",
-      "source_tc_id": "TC-FORM-009",
-      "ac_id": "AC-FORM-007",
-      "feature_slug": "prism-form-blog-thread-v1",
+      "scenario_id": "TC-IMG-009",
+      "tc_id": "TC-IMG-009",
+      "source_tc_id": "TC-IMG-009",
+      "ac_id": "AC-IMG-007",
+      "feature_slug": "prism-form-image-post-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1479,19 +1479,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-009/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-009/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-009/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-009/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-009/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/result.json"
       ]
     },
     {
-      "scenario_id": "TC-FORM-010",
-      "tc_id": "TC-FORM-010",
-      "source_tc_id": "TC-FORM-010",
-      "ac_id": "AC-FORM-008",
-      "feature_slug": "prism-form-blog-thread-v1",
+      "scenario_id": "TC-IMG-010",
+      "tc_id": "TC-IMG-010",
+      "source_tc_id": "TC-IMG-010",
+      "ac_id": "AC-IMG-008",
+      "feature_slug": "prism-form-image-post-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1515,19 +1515,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-010/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-010/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-010/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-010/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-010/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/result.json"
       ]
     },
     {
-      "scenario_id": "TC-FORM-011",
-      "tc_id": "TC-FORM-011",
-      "source_tc_id": "TC-FORM-011",
-      "ac_id": "AC-FORM-009",
-      "feature_slug": "prism-form-blog-thread-v1",
+      "scenario_id": "TC-IMG-011",
+      "tc_id": "TC-IMG-011",
+      "source_tc_id": "TC-IMG-011",
+      "ac_id": "AC-IMG-009",
+      "feature_slug": "prism-form-image-post-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1551,18 +1551,18 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-011/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-011/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-011/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-011/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-011/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-011/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-011/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-011/result.json"
       ]
     },
     {
-      "scenario_id": "TC-FORM-012",
-      "tc_id": "TC-FORM-012",
-      "source_tc_id": "TC-FORM-012",
-      "ac_id": "AC-FORM-010",
-      "feature_slug": "prism-form-blog-thread-v1",
+      "scenario_id": "TC-IMG-012",
+      "tc_id": "TC-IMG-012",
+      "source_tc_id": "TC-IMG-012",
+      "ac_id": "AC-IMG-010",
+      "feature_slug": "prism-form-image-post-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1586,19 +1586,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-012/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-012/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-012/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-012/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-012/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/result.json"
       ]
     },
     {
-      "scenario_id": "TC-FORM-013",
-      "tc_id": "TC-FORM-013",
-      "source_tc_id": "TC-FORM-013",
-      "ac_id": "AC-FORM-010",
-      "feature_slug": "prism-form-blog-thread-v1",
+      "scenario_id": "TC-IMG-013",
+      "tc_id": "TC-IMG-013",
+      "source_tc_id": "TC-IMG-013",
+      "ac_id": "AC-IMG-010",
+      "feature_slug": "prism-form-image-post-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1622,19 +1622,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-013/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-013/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-013/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-013/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-013/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/result.json"
       ]
     },
     {
-      "scenario_id": "TC-FORM-014",
-      "tc_id": "TC-FORM-014",
-      "source_tc_id": "TC-FORM-014",
-      "ac_id": "AC-FORM-002",
-      "feature_slug": "prism-form-blog-thread-v1",
+      "scenario_id": "TC-IMG-014",
+      "tc_id": "TC-IMG-014",
+      "source_tc_id": "TC-IMG-014",
+      "ac_id": "AC-IMG-002",
+      "feature_slug": "prism-form-image-post-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1658,19 +1658,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-014/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-014/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-014/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-014/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-014/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/result.json"
       ]
     },
     {
-      "scenario_id": "TC-FORM-015",
-      "tc_id": "TC-FORM-015",
-      "source_tc_id": "TC-FORM-015",
-      "ac_id": "AC-FORM-003",
-      "feature_slug": "prism-form-blog-thread-v1",
+      "scenario_id": "TC-IMG-015",
+      "tc_id": "TC-IMG-015",
+      "source_tc_id": "TC-IMG-015",
+      "ac_id": "AC-IMG-003",
+      "feature_slug": "prism-form-image-post-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1694,21 +1694,21 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-015/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-015/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-015/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-015/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T084947791269/qa9-tc/TC-FORM-015/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/result.json"
       ]
     }
   ],
-  "ac_closure_path": ".beacon/qa/features/prism-form-blog-thread-v1/ac-closure.json",
-  "feature_scorecard_path": ".beacon/qa/features/prism-form-blog-thread-v1/scorecard.json",
+  "ac_closure_path": ".beacon/qa/features/prism-form-image-post-v1/ac-closure.json",
+  "feature_scorecard_path": ".beacon/qa/features/prism-form-image-post-v1/scorecard.json",
   "feature_scorecard": {
     "schema_version": "1.0",
-    "feature": "prism-form-blog-thread-v1",
-    "feature_slug": "prism-form-blog-thread-v1",
-    "run_id": "run-20260812T084947791269",
+    "feature": "prism-form-image-post-v1",
+    "feature_slug": "prism-form-image-post-v1",
+    "run_id": "run-20260812T085444996257",
     "ac_total": 10,
     "ac_accepted": 10,
     "scenario_total": 15,
@@ -2165,11 +2165,11 @@
       "junit_missing_or_invalid"
     ],
     "test_case_backfill_required": false,
-    "resume_command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-blog-thread-v1 --version v0.0.1 --feature \"prism-form-blog-thread-v1\"",
+    "resume_command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1 --version v0.0.1 --feature \"prism-form-image-post-v1\"",
     "repair_handoff": {
       "action": "qa-repair",
       "reason": "assertion_count_zero_pass, junit_missing_or_invalid",
-      "command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-blog-thread-v1 --version v0.0.1 --feature \"prism-form-blog-thread-v1\""
+      "command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1 --version v0.0.1 --feature \"prism-form-image-post-v1\""
     },
     "release_ready": true,
     "domain_fsm_coverage": {
@@ -2182,138 +2182,126 @@
       "threshold": 1.0,
       "coverage_ratio": 1.0,
       "legal_walk": {
-        "required": 2,
-        "present": 2,
-        "covered": 2,
+        "required": 1,
+        "present": 1,
+        "covered": 1,
         "rows": [
           {
-            "ac_id": "TC-FORM-006",
-            "tc_id": "AC-FORM-005",
-            "path_type": "`bash scripts/check_blog_thread_forms.sh`",
-            "raw": "TC-FORM-006 | AC-FORM-005 | `bash scripts/check_blog_thread_forms.sh` | exec-layer 校验脚本 PASS（合法路径）"
-          },
-          {
-            "ac_id": "TC-FORM-007",
-            "tc_id": "AC-FORM-001",
-            "path_type": "`python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/form-registry.yaml')); fs={f['form'] for f in d['forms']}; raise SystemExit(0 if {'blog','thread'}<=fs else 1)\"`",
-            "raw": "TC-FORM-007 | AC-FORM-001 | `python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/form-registry.yaml')); fs={f['form'] for f in d['forms']}; raise SystemExit(0 if {'blog','thread'}<=fs else 1)\"` | registry 含 blog+thread 且字段合法"
+            "ac_id": "TC-IMG-006",
+            "tc_id": "AC-IMG-005",
+            "path_type": "`bash scripts/check_image_post_forms.sh`",
+            "raw": "TC-IMG-006 | AC-IMG-005 | `bash scripts/check_image_post_forms.sh` | exec-layer 校验脚本 PASS（合法路径）"
           }
         ]
       },
       "illegal": {
-        "required": 2,
-        "present": 2,
-        "covered": 2,
+        "required": 1,
+        "present": 1,
+        "covered": 1,
         "rows": [
           {
-            "ac_id": "TC-FORM-009",
-            "tc_id": "AC-FORM-007",
-            "path_type": "`rg -n \"canon",
-            "raw": "TC-FORM-009 | AC-FORM-007 | `rg -n \"canon | fast_lane_skip\" contracts/form-thread.contract.md && rg -n \"illegal | 禁止\" contracts/form-thread.contract.md` | 快道/canon 门禁"
-          },
-          {
-            "ac_id": "TC-FORM-013",
-            "tc_id": "AC-FORM-010",
+            "ac_id": "TC-IMG-013",
+            "tc_id": "AC-IMG-010",
             "path_type": "`rg -n \"Illegal",
-            "raw": "TC-FORM-013 | AC-FORM-010 | `rg -n \"Illegal | illegal | 宣称 Lake D\" docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md` | illegal 转移覆盖"
+            "raw": "TC-IMG-013 | AC-IMG-010 | `rg -n \"Illegal | illegal | 宣称 Lake D\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md` | illegal 转移覆盖"
           }
         ]
       },
       "matrix": {
         "legal_walk_rows": [
           {
-            "ac_id": "TC-FORM-006",
-            "tc_id": "AC-FORM-005",
-            "path_type": "`bash scripts/check_blog_thread_forms.sh`",
-            "raw": "TC-FORM-006 | AC-FORM-005 | `bash scripts/check_blog_thread_forms.sh` | exec-layer 校验脚本 PASS（合法路径）"
-          },
-          {
-            "ac_id": "TC-FORM-007",
-            "tc_id": "AC-FORM-001",
-            "path_type": "`python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/form-registry.yaml')); fs={f['form'] for f in d['forms']}; raise SystemExit(0 if {'blog','thread'}<=fs else 1)\"`",
-            "raw": "TC-FORM-007 | AC-FORM-001 | `python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/form-registry.yaml')); fs={f['form'] for f in d['forms']}; raise SystemExit(0 if {'blog','thread'}<=fs else 1)\"` | registry 含 blog+thread 且字段合法"
+            "ac_id": "TC-IMG-006",
+            "tc_id": "AC-IMG-005",
+            "path_type": "`bash scripts/check_image_post_forms.sh`",
+            "raw": "TC-IMG-006 | AC-IMG-005 | `bash scripts/check_image_post_forms.sh` | exec-layer 校验脚本 PASS（合法路径）"
           }
         ],
         "illegal_rows": [
           {
-            "ac_id": "TC-FORM-009",
-            "tc_id": "AC-FORM-007",
-            "path_type": "`rg -n \"canon",
-            "raw": "TC-FORM-009 | AC-FORM-007 | `rg -n \"canon | fast_lane_skip\" contracts/form-thread.contract.md && rg -n \"illegal | 禁止\" contracts/form-thread.contract.md` | 快道/canon 门禁"
-          },
-          {
-            "ac_id": "TC-FORM-013",
-            "tc_id": "AC-FORM-010",
+            "ac_id": "TC-IMG-013",
+            "tc_id": "AC-IMG-010",
             "path_type": "`rg -n \"Illegal",
-            "raw": "TC-FORM-013 | AC-FORM-010 | `rg -n \"Illegal | illegal | 宣称 Lake D\" docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md` | illegal 转移覆盖"
+            "raw": "TC-IMG-013 | AC-IMG-010 | `rg -n \"Illegal | illegal | 宣称 Lake D\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md` | illegal 转移覆盖"
           }
         ],
         "other_rows": [
           {
-            "ac_id": "TC-FORM-001",
-            "tc_id": "AC-FORM-001",
-            "path_type": "`test -f registry/form-registry.yaml && rg -n \"blog\" registry/form-registry.yaml && rg -n \"thread\" registry/form-registry.yaml && rg -n \"form-blog.contract",
-            "raw": "TC-FORM-001 | AC-FORM-001 | `test -f registry/form-registry.yaml && rg -n \"blog\" registry/form-registry.yaml && rg -n \"thread\" registry/form-registry.yaml && rg -n \"form-blog.contract | form-thread.contract\" registry/form-registry.yaml` | form registry 注册 blog/thread"
+            "ac_id": "TC-IMG-001",
+            "tc_id": "AC-IMG-001",
+            "path_type": "`test -f registry/form-registry.yaml && rg -n \"image-post\" registry/form-registry.yaml && rg -n \"xhs\" registry/form-registry.yaml`",
+            "raw": "TC-IMG-001 | AC-IMG-001 | `test -f registry/form-registry.yaml && rg -n \"image-post\" registry/form-registry.yaml && rg -n \"xhs\" registry/form-registry.yaml` | form registry 注册 image-post/xhs"
           },
           {
-            "ac_id": "TC-FORM-002",
-            "tc_id": "AC-FORM-002",
-            "path_type": "`test -f contracts/form-blog.contract.md && rg -n \"四段式",
-            "raw": "TC-FORM-002 | AC-FORM-002 | `test -f contracts/form-blog.contract.md && rg -n \"四段式 | 母稿 | director | humanized.md\" contracts/form-blog.contract.md && rg -n \"证据 | evidence\" contracts/form-blog.contract.md` | blog 契约含输入/结构/输出/证据"
+            "ac_id": "TC-IMG-002",
+            "tc_id": "AC-IMG-002",
+            "path_type": "`test -f contracts/form-image-post.contract.md && rg -n \"20 字",
+            "raw": "TC-IMG-002 | AC-IMG-002 | `test -f contracts/form-image-post.contract.md && rg -n \"20 字 | 20字 | caption | 1-9 | 9 张 | 封面 | 乱码 | 图序 | 尺寸\" contracts/form-image-post.contract.md` | 贴图契约含核心规则"
           },
           {
-            "ac_id": "TC-FORM-003",
-            "tc_id": "AC-FORM-003",
-            "path_type": "`test -f contracts/form-thread.contract.md && rg -n \"倒金字塔",
-            "raw": "TC-FORM-003 | AC-FORM-003 | `test -f contracts/form-thread.contract.md && rg -n \"倒金字塔 | fast_lane_skip | canon | writing-agent\" contracts/form-thread.contract.md` | thread 契约含快道与 canon 门禁"
+            "ac_id": "TC-IMG-003",
+            "tc_id": "AC-IMG-003",
+            "path_type": "`test -f contracts/form-xhs.contract.md && rg -n \"xhs-article-to-images",
+            "raw": "TC-IMG-003 | AC-IMG-003 | `test -f contracts/form-xhs.contract.md && rg -n \"xhs-article-to-images | OCR | fail-closed | blocked\" contracts/form-xhs.contract.md` | xhs 契约含 bridge 与 OCR 门"
           },
           {
-            "ac_id": "TC-FORM-004",
-            "tc_id": "AC-FORM-004",
-            "path_type": "`rg -n \"form-blog.contract",
-            "raw": "TC-FORM-004 | AC-FORM-004 | `rg -n \"form-blog.contract | form-thread.contract\" skills/_internal/orchestration/creation-mode-map.md` | 路由引用 form 契约"
+            "ac_id": "TC-IMG-004",
+            "tc_id": "AC-IMG-004",
+            "path_type": "`rg -n \"form-image-post.contract",
+            "raw": "TC-IMG-004 | AC-IMG-004 | `rg -n \"form-image-post.contract | form-xhs.contract\" skills/_internal/orchestration/creation-mode-map.md` | 路由引用 form 契约"
           },
           {
-            "ac_id": "TC-FORM-005",
-            "tc_id": "AC-FORM-005",
-            "path_type": "`test -x scripts/check_blog_thread_forms.sh`",
-            "raw": "TC-FORM-005 | AC-FORM-005 | `test -x scripts/check_blog_thread_forms.sh` | exec 脚本存在且可执行"
+            "ac_id": "TC-IMG-005",
+            "tc_id": "AC-IMG-005",
+            "path_type": "`test -x scripts/check_image_post_forms.sh`",
+            "raw": "TC-IMG-005 | AC-IMG-005 | `test -x scripts/check_image_post_forms.sh` | exec 脚本存在且可执行"
           },
           {
-            "ac_id": "TC-FORM-008",
-            "tc_id": "AC-FORM-006",
-            "path_type": "`rg -n \"registry",
-            "raw": "TC-FORM-008 | AC-FORM-006 | `rg -n \"registry | form contract | 路由表 | 主链\" docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md && test ! -f skills/_internal/adapters/SKILL.md` | 扩展规则声明 + 无 SKILL.md 泄漏"
+            "ac_id": "TC-IMG-007",
+            "tc_id": "AC-IMG-001",
+            "path_type": "`python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/form-registry.yaml')); fs={f['form'] for f in d['forms']}; raise SystemExit(0 if {'image-post','xhs'}<=fs else 1)\"`",
+            "raw": "TC-IMG-007 | AC-IMG-001 | `python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/form-registry.yaml')); fs={f['form'] for f in d['forms']}; raise SystemExit(0 if {'image-post','xhs'}<=fs else 1)\"` | registry 含 image-post+xhs"
           },
           {
-            "ac_id": "TC-FORM-010",
-            "tc_id": "AC-FORM-008",
+            "ac_id": "TC-IMG-008",
+            "tc_id": "AC-IMG-006",
+            "path_type": "`rg -n \"配置",
+            "raw": "TC-IMG-008 | AC-IMG-006 | `rg -n \"配置 | 配置化 | 禁止.*硬编码 | kushi\" contracts/form-image-post.contract.md && rg -n \"account | 账号\" contracts/form-image-post.contract.md` | 账号配置化声明"
+          },
+          {
+            "ac_id": "TC-IMG-009",
+            "tc_id": "AC-IMG-007",
             "path_type": "`rg -n \"fail-closed",
-            "raw": "TC-FORM-010 | AC-FORM-008 | `rg -n \"fail-closed | blocked | reason_code\" contracts/form-blog.contract.md contracts/form-thread.contract.md` | bridge fail-closed 声明"
+            "raw": "TC-IMG-009 | AC-IMG-007 | `rg -n \"fail-closed | blocked | reason_code\" contracts/form-image-post.contract.md contracts/form-xhs.contract.md` | bridge fail-closed"
           },
           {
-            "ac_id": "TC-FORM-011",
-            "tc_id": "AC-FORM-009",
-            "path_type": "`test -f skills/prism-qa/references/anti-slop-gate.md && rg -n \"证据",
-            "raw": "TC-FORM-011 | AC-FORM-009 | `test -f skills/prism-qa/references/anti-slop-gate.md && rg -n \"证据 | 原文行\" skills/prism-qa/references/anti-slop-gate.md` | maker≠checker 证据要求"
+            "ac_id": "TC-IMG-010",
+            "tc_id": "AC-IMG-008",
+            "path_type": "`rg -n \"乱码",
+            "raw": "TC-IMG-010 | AC-IMG-008 | `rg -n \"乱码 | 随机文字 | 图序 | 尺寸 | 分离 | 价值\" contracts/form-image-post.contract.md && rg -n \"证据 | evidence\" contracts/form-image-post.contract.md` | OCR/QA 门与证据"
           },
           {
-            "ac_id": "TC-FORM-012",
-            "tc_id": "AC-FORM-010",
-            "path_type": "`rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md && rg -n \"D3",
-            "raw": "TC-FORM-012 | AC-FORM-010 | `rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md && rg -n \"D3 | D4 | D5 | D6\" docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md` | 分湖边界存在"
+            "ac_id": "TC-IMG-011",
+            "tc_id": "AC-IMG-009",
+            "path_type": "`test -f skills/prism-qa/references/anti-slop-gate.md && test ! -f contracts/form-image-post.contract.md.qa`",
+            "raw": "TC-IMG-011 | AC-IMG-009 | `test -f skills/prism-qa/references/anti-slop-gate.md && test ! -f contracts/form-image-post.contract.md.qa` | maker≠checker 分离"
           },
           {
-            "ac_id": "TC-FORM-014",
-            "tc_id": "AC-FORM-002",
-            "path_type": "`rg -n \"US-PRISM-001",
-            "raw": "TC-FORM-014 | AC-FORM-002 | `rg -n \"US-PRISM-001 | blog\" docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md` | US-PRISM-001 blog 链可追溯"
+            "ac_id": "TC-IMG-012",
+            "tc_id": "AC-IMG-010",
+            "path_type": "`rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md && rg -n \"D4",
+            "raw": "TC-IMG-012 | AC-IMG-010 | `rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md && rg -n \"D4 | D5 | D6\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md` | 分湖边界存在"
           },
           {
-            "ac_id": "TC-FORM-015",
-            "tc_id": "AC-FORM-003",
-            "path_type": "`rg -n \"US-PRISM-005",
-            "raw": "TC-FORM-015 | AC-FORM-003 | `rg -n \"US-PRISM-005 | thread | 快道\" docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md` | US-PRISM-005 thread 快道可追溯"
+            "ac_id": "TC-IMG-014",
+            "tc_id": "AC-IMG-002",
+            "path_type": "`rg -n \"US-IMG-001",
+            "raw": "TC-IMG-014 | AC-IMG-002 | `rg -n \"US-IMG-001 | 贴图包\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md` | 贴图包旅程可追溯"
+          },
+          {
+            "ac_id": "TC-IMG-015",
+            "tc_id": "AC-IMG-003",
+            "path_type": "`rg -n \"US-IMG-002",
+            "raw": "TC-IMG-015 | AC-IMG-003 | `rg -n \"US-IMG-002 | 小红书\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md` | xhs 旅程可追溯"
           }
         ],
         "has_legal_walk": true,
@@ -2335,7 +2323,7 @@
   "release_ready": true,
   "delivery_contract": {
     "schema_version": "1.0",
-    "feature": "prism-form-blog-thread-v1",
+    "feature": "prism-form-image-post-v1",
     "version": "v0.0.1",
     "requested_mode": "feature-aware",
     "effective_mode": "feature-aware",
@@ -2356,14 +2344,14 @@
     "subagent_prechecks": {},
     "requirement_binding": {
       "source_of_truth_root": "docs/beacon/v0.0.1",
-      "feature_matrix_path": ".beacon/qa/features/prism-form-blog-thread-v1/matrix.qa9.json",
-      "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-form-blog-thread-v1.ac-test-matrix.json"
+      "feature_matrix_path": ".beacon/qa/features/prism-form-image-post-v1/matrix.qa9.json",
+      "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-form-image-post-v1.ac-test-matrix.json"
     },
     "traceability_refs": [
-      ".beacon/qa/features/prism-form-blog-thread-v1/matrix.qa9.json",
-      "docs/beacon/v0.0.1/.machine/qa/prism-form-blog-thread-v1.ac-test-matrix.json",
-      ".beacon/qa/features/prism-form-blog-thread-v1/ac-closure.json",
-      ".beacon/qa/features/prism-form-blog-thread-v1/scorecard.json",
+      ".beacon/qa/features/prism-form-image-post-v1/matrix.qa9.json",
+      "docs/beacon/v0.0.1/.machine/qa/prism-form-image-post-v1.ac-test-matrix.json",
+      ".beacon/qa/features/prism-form-image-post-v1/ac-closure.json",
+      ".beacon/qa/features/prism-form-image-post-v1/scorecard.json",
       ".beacon/release-gate-report.json"
     ],
     "runner": "",
@@ -2377,7 +2365,7 @@
   },
   "host_native_delivery": {
     "schema_version": "1.0",
-    "feature": "prism-form-blog-thread-v1",
+    "feature": "prism-form-image-post-v1",
     "version": "v0.0.1",
     "requested_mode": "feature-aware",
     "effective_mode": "feature-aware",
@@ -2398,14 +2386,14 @@
     "subagent_prechecks": {},
     "requirement_binding": {
       "source_of_truth_root": "docs/beacon/v0.0.1",
-      "feature_matrix_path": ".beacon/qa/features/prism-form-blog-thread-v1/matrix.qa9.json",
-      "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-form-blog-thread-v1.ac-test-matrix.json"
+      "feature_matrix_path": ".beacon/qa/features/prism-form-image-post-v1/matrix.qa9.json",
+      "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-form-image-post-v1.ac-test-matrix.json"
     },
     "traceability_refs": [
-      ".beacon/qa/features/prism-form-blog-thread-v1/matrix.qa9.json",
-      "docs/beacon/v0.0.1/.machine/qa/prism-form-blog-thread-v1.ac-test-matrix.json",
-      ".beacon/qa/features/prism-form-blog-thread-v1/ac-closure.json",
-      ".beacon/qa/features/prism-form-blog-thread-v1/scorecard.json",
+      ".beacon/qa/features/prism-form-image-post-v1/matrix.qa9.json",
+      "docs/beacon/v0.0.1/.machine/qa/prism-form-image-post-v1.ac-test-matrix.json",
+      ".beacon/qa/features/prism-form-image-post-v1/ac-closure.json",
+      ".beacon/qa/features/prism-form-image-post-v1/scorecard.json",
       ".beacon/release-gate-report.json"
     ],
     "runner": "",
@@ -2417,5 +2405,5 @@
     "release_ready": true,
     "risk_flags": []
   },
-  "current_spec_fingerprint_hash": "5345a6a7453444ff427d7d6dc416571ba96eb1ac84b733c7a8bd2febc983f1ad"
+  "current_spec_fingerprint_hash": "7be8541b296e2c2a1b3877434dac10a73c11cc35853ab4671b6e0e60037ae6b6"
 }

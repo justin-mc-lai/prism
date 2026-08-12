@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-form-image-post-v1",
+  "feature_slug": "prism-form-image-post-v1",
+  "run_id": "run-20260812T085444996257",
+  "generated_at": "2026-08-12T00:54:46.813186+00:00",
+  "reports": [
+    {
+      "ac_id": "AC-IMG-001",
+      "feature_slug": "prism-form-image-post-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [
+        "primary"
+      ],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-IMG-001",
+        "TC-IMG-007"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-IMG-002",
+      "feature_slug": "prism-form-image-post-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-IMG-002",
+        "TC-IMG-014"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-IMG-003",
+      "feature_slug": "prism-form-image-post-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-IMG-003",
+        "TC-IMG-015"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-IMG-004",
+      "feature_slug": "prism-form-image-post-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-IMG-004"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-IMG-005",
+      "feature_slug": "prism-form-image-post-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [
+        "primary"
+      ],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-IMG-005",
+        "TC-IMG-006"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-IMG-006",
+      "feature_slug": "prism-form-image-post-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-IMG-008"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-IMG-007",
+      "feature_slug": "prism-form-image-post-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-IMG-009"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-IMG-008",
+      "feature_slug": "prism-form-image-post-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-IMG-010"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-IMG-009",
+      "feature_slug": "prism-form-image-post-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [
+        "primary"
+      ],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-IMG-011"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-IMG-010",
+      "feature_slug": "prism-form-image-post-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-IMG-012",
+        "TC-IMG-013"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    }
+  ]
+}

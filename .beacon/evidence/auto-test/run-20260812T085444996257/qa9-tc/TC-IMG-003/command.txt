@@ -1,0 +1,1 @@
+test -f contracts/form-xhs.contract.md && rg -n "xhs-article-to-images|OCR|fail-closed|blocked" contracts/form-xhs.contract.md

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite name="contract" tests="12" failures="0" errors="0" skipped="0">
+  <properties><property name="command" value="rg -n "乱码|随机文字|图序|尺寸|分离|价值" contracts/form-image-post.contract.md &amp;&amp; rg -n "证据|evidence" contracts/form-image-post.contract.md" /></properties>
+    <testcase classname="contract" name="structured_cli_assertions-001" />
+    <testcase classname="contract" name="structured_cli_assertions-002" />
+    <testcase classname="contract" name="structured_cli_assertions-003" />
+    <testcase classname="contract" name="structured_cli_assertions-004" />
+    <testcase classname="contract" name="structured_cli_assertions-005" />
+    <testcase classname="contract" name="structured_cli_assertions-006" />
+    <testcase classname="contract" name="structured_cli_assertions-007" />
+    <testcase classname="contract" name="structured_cli_assertions-008" />
+    <testcase classname="contract" name="structured_cli_assertions-009" />
+    <testcase classname="contract" name="structured_cli_assertions-010" />
+    <testcase classname="contract" name="structured_cli_assertions-011" />
+    <testcase classname="contract" name="structured_cli_assertions-012" />
+</testsuite>

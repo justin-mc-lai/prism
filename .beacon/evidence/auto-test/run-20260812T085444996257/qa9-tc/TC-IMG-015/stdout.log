@@ -1,0 +1,4 @@
+31:D3 落地两个**图像形态**的生产者契约：公众号贴图包（image-post）和小红书图文（xhs）。
+43:继续 Lake D：落贴图包 + 小红书图文形态，验证“图像形态契约 + bridge 渲染 + OCR 门”闭环。
+94:US-IMG-002：用户要小红书图文。produce 按 `form-xhs.contract` bridge xhs-article-to-images →
+104:| XhsFormContract | form-xhs | 小红书图文 bridge |

@@ -1,0 +1,13 @@
+157:10. Non-goals / deferral（AC-IMG-010）
+183:| AC-IMG-010 | Non-goals：D4–D6、vendor_pin、metrics、平台 API 显式排除；不得宣称海 closure |
+185:## Non-goals
+38:- 不能做：novel（D4）、comic/vlog/book_video（D5）、发布桥（D6）；不 vendor_pin；不做 metrics。
+53:delivery: sub-lakes D1..D6
+74:| INT-I11 | sea | must | D4–D6 其余形态 | deferred |
+163:| DL-I01 | novel 形态本体 | accepted | D4 |
+164:| DL-I02 | comic/vlog/book_video 本体 | accepted | D5 |
+165:| DL-I03 | publish/schedule 桥 | accepted | D6 |
+183:| AC-IMG-010 | Non-goals：D4–D6、vendor_pin、metrics、平台 API 显式排除；不得宣称海 closure |
+187:- 不实现 novel（D4）、comic/vlog/book_video（D5）、发布桥（D6）
+168:| DL-I06 | 本子湖宣称海 closure | rejected | FP-PRISM-013 |
+183:| AC-IMG-010 | Non-goals：D4–D6、vendor_pin、metrics、平台 API 显式排除；不得宣称海 closure |

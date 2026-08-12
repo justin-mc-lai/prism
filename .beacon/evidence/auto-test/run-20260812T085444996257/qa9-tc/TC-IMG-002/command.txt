@@ -1,0 +1,1 @@
+test -f contracts/form-image-post.contract.md && rg -n "20 字|20字|caption|1-9|9 张|封面|乱码|图序|尺寸" contracts/form-image-post.contract.md

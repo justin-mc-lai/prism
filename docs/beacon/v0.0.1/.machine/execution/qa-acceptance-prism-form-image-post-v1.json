@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "artifact": "qa_acceptance_envelope",
+  "version": "v0.0.1",
+  "feature": "prism-form-image-post-v1",
+  "feature_slug": "prism-form-image-post-v1",
+  "revision_id": "R1",
+  "verdict": "passed",
+  "accepted_at": "2026-08-12T00:54:46.851601+00:00",
+  "accepted_by": "qa",
+  "run_id": "run-20260812T085444996257",
+  "transaction_id": "tx-qa-acceptance-prism-form-image-post-v1-cd700060d025",
+  "source_hash": "sha256:cd700060d02568f20584c5afbe320a32721b18baeb8f247f6d49fe39b9850d62",
+  "projection_seq": 1,
+  "source_command": "beacon qa run \"prism-form-image-post-v1\" --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1 --version v0.0.1",
+  "requirement_refs": [
+    "docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-form-image-post-v1.revision.json"
+  ],
+  "test_case_refs": [],
+  "evidence_refs": [
+    ".beacon/auto-test-status.json",
+    ".beacon/qa/status.json",
+    "docs/beacon/v0.0.1/.machine/qa/prism-form-image-post-v1.ac-test-matrix.json",
+    ".beacon/coverage-summary.json",
+    ".beacon/release-gate-report.json"
+  ],
+  "story_status": "implemented",
+  "revision_delivery_status": "implemented",
+  "required_ac_count": 0,
+  "required_test_count": 0,
+  "canonical_envelope_ref": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-form-image-post-v1.json",
+  "markdown_ref": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-form-image-post-v1.md",
+  "transaction_lineage": {
+    "current_transaction_id": "tx-qa-acceptance-prism-form-image-post-v1-cd700060d025",
+    "projection_seq": 1,
+    "source_hash": "sha256:cd700060d02568f20584c5afbe320a32721b18baeb8f247f6d49fe39b9850d62",
+    "workflow_memory_ref": ".beacon/memory/workflow-lifecycle.json",
+    "memory_event_id": "",
+    "memory_entry_id": "24768810-8955-421c-be61-32c680898d85"
+  },
+  "sink_checksums": {
+    "machine": "sha256:64fd6a384b92f954b3267acaa11dada96cb0a5701a9a7f883a06be58943a2c3e",
+    "human": "sha256:a5ec7c05bd629c7570db76ba2421d872877387db4710d64f2d0c68e08c2396e7",
+    "runtime": "sha256:9e6b01a8925ab3298409c556ddbeed67a804140747faac7da0f6d049f87b63b8"
+  },
+  "runtime_projection_ref": ".beacon/transactions/qa-acceptance-prism-form-image-post-v1.json",
+  "transaction_status": "applied",
+  "failed_sinks": []
+}

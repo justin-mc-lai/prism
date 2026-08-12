@@ -1,0 +1,29 @@
+{
+  "layer": "contract",
+  "command": "python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/form-registry.yaml')); fs={f['form'] for f in d['forms']}; raise SystemExit(0 if {'image-post','xhs'}<=fs else 1)\"",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 0,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "92bc07571ac96531a29ed3aeb15d6c28a1f7a896038279b8800a3f4595c650f2",
+  "started_at": "2026-08-12T08:54:45.937801",
+  "ended_at": "2026-08-12T08:54:46.014760",
+  "junit_path": "",
+  "junit_valid": false,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/stderr.log"
+  ],
+  "tc_id": "TC-IMG-007",
+  "ac_id": "AC-IMG-001"
+}

@@ -1,0 +1,5 @@
+3:> 形态契约。bridge 优先；工具缺失 fail-closed。
+10:- bridge: xhs-article-to-images（本地已安装时按名调用）
+21:拒绝：无母稿 / xhs-article-to-images 缺失 → blocked + reason_code=bridge_tool_missing
+28:## 5. gate（OCR 门）
+30:- 图片文字 OCR 核验：无乱码、无随机文字、文字可读、版权安全

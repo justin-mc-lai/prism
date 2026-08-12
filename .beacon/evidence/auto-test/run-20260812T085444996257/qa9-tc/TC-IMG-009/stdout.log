@@ -1,0 +1,3 @@
+contracts/form-xhs.contract.md:3:> 形态契约。bridge 优先；工具缺失 fail-closed。
+contracts/form-xhs.contract.md:21:拒绝：无母稿 / xhs-article-to-images 缺失 → blocked + reason_code=bridge_tool_missing
+contracts/form-image-post.contract.md:22:拒绝：无 shot list / 无母稿 / bridge 缺失 → blocked + reason_code

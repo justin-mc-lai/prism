@@ -1,0 +1,1 @@
+test -f registry/form-registry.yaml && rg -n "image-post" registry/form-registry.yaml && rg -n "xhs" registry/form-registry.yaml
