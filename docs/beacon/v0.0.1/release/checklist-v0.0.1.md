@@ -73,3 +73,6 @@ Lake D（D1–D6）全部 release-ready；海级完整创作能力仍需 Lake E/
 
 Prism Lake E1（prism-metrics-publication-v1）：QA `run-20260812T183252827530` passed
 （10/10 AC · 15/15 TC · release_confidence 1.0）；release 待人工确认，不自动公开发布。
+
+Prism Lake E2（prism-metrics-snapshot-v1）：QA `run-20260812T183837779955` passed
+（10/10 AC · 15/15 TC · release_confidence 1.0）；release 待人工确认，不自动公开发布。

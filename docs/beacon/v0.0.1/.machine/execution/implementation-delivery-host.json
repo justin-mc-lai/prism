@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "artifact": "implementation_delivery_host",
   "version": "v0.0.1",
-  "feature_count": 9,
+  "feature_count": 10,
   "feature_slugs": [
     "prism-campaign-schema-v1",
     "prism-extract-v1",
@@ -12,6 +12,7 @@
     "prism-form-novel-v1",
     "prism-form-writing-v1",
     "prism-metrics-publication-v1",
+    "prism-metrics-snapshot-v1",
     "prism-publish-bridge-v1"
   ],
   "features": [
@@ -200,6 +201,29 @@
       "updated_at": "2026-08-12T10:33:17.629991+00:00"
     },
     {
+      "feature": "prism-metrics-snapshot-v1",
+      "feature_slug": "prism-metrics-snapshot-v1",
+      "revision_id": "R1",
+      "baseline_id": "impl-delivery-baseline-v0.0.1-prism-metrics-snapshot-v1-R1",
+      "transaction_id": "tx-40c38e3bdc9cb1d3a",
+      "source_hash": "sha256:540216ee4e6a3c6f5a025d9b3f9d776da11be8ac39a7ec33d0da3a8b1543b506",
+      "baseline_ref": "docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-metrics-snapshot-v1.json",
+      "default_target_branch": "beacon/v0.0.1/prism-metrics-snapshot-v1",
+      "worktree_root": "/Users/apple/Developer/Personal/products/prism",
+      "workspace_root": "/Users/apple/Developer/Personal/products/prism",
+      "direct_delivery_services": [
+        "."
+      ],
+      "writable_services": [
+        "."
+      ],
+      "reference_only_services": [
+        "docs"
+      ],
+      "depends_on_features": [],
+      "updated_at": "2026-08-12T10:39:00.102171+00:00"
+    },
+    {
       "feature": "prism-publish-bridge-v1",
       "feature_slug": "prism-publish-bridge-v1",
       "revision_id": "R1",
@@ -233,10 +257,11 @@
       "prism-form-novel-v1",
       "prism-form-writing-v1",
       "prism-metrics-publication-v1",
+      "prism-metrics-snapshot-v1",
       "prism-publish-bridge-v1"
     ]
   },
-  "source_hash": "sha256:43f2c16fc80062d8627aef44aa9e7d6cc2dfce9c45890f9628fe0c2b2613e0a2",
-  "transaction_id": "tx-023bab1daa3528cf6",
-  "generated_at": "2026-08-12T10:33:17.632700+00:00"
+  "source_hash": "sha256:151175616b999d19dfb32b312aca77ac8555289bede9de3f609b305b53defde7",
+  "transaction_id": "tx-54d051985cc60316a",
+  "generated_at": "2026-08-12T10:39:00.107087+00:00"
 }
