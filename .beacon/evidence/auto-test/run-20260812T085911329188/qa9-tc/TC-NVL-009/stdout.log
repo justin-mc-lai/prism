@@ -1,0 +1,3 @@
+19:- StoryMaster（world bible + canon ledger，`content/storyworlds/{world_slug}/`）
+26:- 章节: `content/storyworlds/{world_slug}/episodes/{episode_id}.yaml` + 正文草稿
+35:- bible/canon ledger 高于展示变体；变体不得新增正典

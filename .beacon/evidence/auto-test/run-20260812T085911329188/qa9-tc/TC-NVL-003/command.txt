@@ -1,0 +1,1 @@
+rg -n "canon_gate_status|review_required|failed|generated|fast_lane_skip" contracts/form-novel.contract.md

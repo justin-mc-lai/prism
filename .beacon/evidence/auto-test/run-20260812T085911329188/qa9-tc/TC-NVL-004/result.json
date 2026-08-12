@@ -1,0 +1,30 @@
+{
+  "layer": "contract",
+  "command": "rg -n \"novel|form-novel.contract\" skills/_internal/orchestration/creation-mode-map.md",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 1,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "0d2b86e4d6c3117c29ad516029266970ec338212552898f37a822fde41eeae3a",
+  "started_at": "2026-08-12T08:59:11.775430",
+  "ended_at": "2026-08-12T08:59:11.788105",
+  "junit_path": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-004/junit.xml",
+  "junit_valid": true,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-004/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-004/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-004/stderr.log",
+    ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-004/junit.xml"
+  ],
+  "tc_id": "TC-NVL-004",
+  "ac_id": "AC-NVL-004"
+}

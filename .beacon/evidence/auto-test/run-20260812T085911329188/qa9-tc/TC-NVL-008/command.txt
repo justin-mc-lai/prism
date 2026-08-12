@@ -1,0 +1,1 @@
+rg -n "kushi-narrative-zh|fail-closed|blocked|reason_code" contracts/form-novel.contract.md

@@ -1,27 +1,27 @@
 {
   "scope": "qa9",
-  "timestamp": "2026-08-12T08:54:44.996922",
-  "project": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1",
+  "timestamp": "2026-08-12T08:59:11.329847",
+  "project": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-novel-v1",
   "version": "v0.0.1",
-  "run_id": "run-20260812T085444996257",
-  "spec_fingerprint_hash": "7be8541b296e2c2a1b3877434dac10a73c11cc35853ab4671b6e0e60037ae6b6",
+  "run_id": "run-20260812T085911329188",
+  "spec_fingerprint_hash": "c9c442ff4943dd179127ef49d61a6310310db89bab9f7da4f8ed4d0234c15c09",
   "status": "passed",
   "selected_layers": [
     "contract"
   ],
   "execution": {
-    "run_id": "run-20260812T085444996257",
+    "run_id": "run-20260812T085911329188",
     "version": "v0.0.1",
-    "evidence_dir": ".beacon/evidence/auto-test/run-20260812T085444996257",
+    "evidence_dir": ".beacon/evidence/auto-test/run-20260812T085911329188",
     "spec_fingerprint": {
-      "fingerprint_hash": "7be8541b296e2c2a1b3877434dac10a73c11cc35853ab4671b6e0e60037ae6b6",
+      "fingerprint_hash": "c9c442ff4943dd179127ef49d61a6310310db89bab9f7da4f8ed4d0234c15c09",
       "version": "v0.0.1",
-      "generated_at": "2026-08-12T00:54:46.836899+00:00"
+      "generated_at": "2026-08-12T00:59:13.088727+00:00"
     },
     "layers": [
       {
         "layer": "contract",
-        "command": "test -f registry/form-registry.yaml && rg -n \"image-post\" registry/form-registry.yaml && rg -n \"xhs\" registry/form-registry.yaml",
+        "command": "test -f registry/form-registry.yaml && rg -n \"novel\" registry/form-registry.yaml && rg -n \"form-novel.contract\" registry/form-registry.yaml",
         "exit_code": 0,
         "status": "passed",
         "reason_code": "",
@@ -35,31 +35,31 @@
             "exit_code": 0
           }
         ],
-        "execution_fingerprint": "eca4568cb36988642ce3e2bf1b666ef54f2abfb388e903e5e42726b0ad76c063",
-        "started_at": "2026-08-12T08:54:45.075357",
-        "ended_at": "2026-08-12T08:54:45.113299",
+        "execution_fingerprint": "8a83b7fd189aaef00150a6fb7feafcfc91c79c84ed2b56097672835cbf1560f1",
+        "started_at": "2026-08-12T08:59:11.406555",
+        "ended_at": "2026-08-12T08:59:11.427388",
         "junit_path": "",
         "junit_valid": false,
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T085444996257/contract/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/contract/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/contract/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/contract/result.json"
+          ".beacon/evidence/auto-test/run-20260812T085911329188/contract/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/contract/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/contract/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/contract/result.json"
         ]
       }
     ],
     "ui_action_evidence": {},
     "matrix_report": {
       "status": "ok",
-      "matrix_path": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1/.beacon/qa/features/prism-form-image-post-v1/matrix.qa9.json",
+      "matrix_path": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-novel-v1/.beacon/qa/features/prism-form-novel-v1/matrix.qa9.json",
       "evidence_generated": 15,
       "entry_count": 15,
       "freshness_violations": []
     },
     "artifacts": [
-      ".beacon/evidence/auto-test/run-20260812T085444996257/qa9/tc-execution-map.json",
-      ".beacon/evidence/auto-test/run-20260812T085444996257/qa9/tc-results.json",
-      ".beacon/evidence/auto-test/run-20260812T085444996257/summary.json",
+      ".beacon/evidence/auto-test/run-20260812T085911329188/qa9/tc-execution-map.json",
+      ".beacon/evidence/auto-test/run-20260812T085911329188/qa9/tc-results.json",
+      ".beacon/evidence/auto-test/run-20260812T085911329188/summary.json",
       ".beacon/flaky-history.json",
       ".beacon/evidence-signature-chain.json"
     ],
@@ -76,7 +76,7 @@
     "qa_types": [
       "contract"
     ],
-    "qa_matrix_path": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1/.beacon/qa/features/prism-form-image-post-v1/matrix.qa9.json",
+    "qa_matrix_path": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-novel-v1/.beacon/qa/features/prism-form-novel-v1/matrix.qa9.json",
     "ui_runner": "playwright",
     "quality_requirements": {
       "require_junit": true,
@@ -103,9 +103,9 @@
     },
     "tc_results": [
       {
-        "tc_id": "TC-IMG-001",
-        "ac_id": "AC-IMG-001",
-        "source_tc_id": "TC-IMG-001",
+        "tc_id": "TC-NVL-001",
+        "ac_id": "AC-NVL-001",
+        "source_tc_id": "TC-NVL-001",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -115,18 +115,18 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 0,
-        "command": "test -f registry/form-registry.yaml && rg -n \"image-post\" registry/form-registry.yaml && rg -n \"xhs\" registry/form-registry.yaml",
-        "run_id": "run-20260812T085444996257",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-001/__RUN_ID__.json",
+        "command": "test -f registry/form-registry.yaml && rg -n \"novel\" registry/form-registry.yaml && rg -n \"form-novel.contract\" registry/form-registry.yaml",
+        "run_id": "run-20260812T085911329188",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-novel-v1/tc-nvl-001/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-001/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-001/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-001/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-001/result.json"
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-001/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-001/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-001/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-001/result.json"
         ],
-        "execution_fingerprint": "9fbae9ce6e5d11d34931b267ef1d4239e5dfb57d6b6bda8c793702d62b95275f",
-        "started_at": "2026-08-12T08:54:45.201010",
-        "ended_at": "2026-08-12T08:54:45.219706",
+        "execution_fingerprint": "8f48d5ec87122995cfc1816ac11712da2bae299d71006fa790291d0944171011",
+        "started_at": "2026-08-12T08:59:11.507806",
+        "ended_at": "2026-08-12T08:59:11.525735",
         "junit_path": "",
         "junit_valid": false,
         "browser_required": false,
@@ -140,9 +140,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-IMG-002",
-        "ac_id": "AC-IMG-002",
-        "source_tc_id": "TC-IMG-002",
+        "tc_id": "TC-NVL-002",
+        "ac_id": "AC-NVL-002",
+        "source_tc_id": "TC-NVL-002",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -152,18 +152,18 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 0,
-        "command": "test -f contracts/form-image-post.contract.md && rg -n \"20 字|20字|caption|1-9|9 张|封面|乱码|图序|尺寸\" contracts/form-image-post.contract.md",
-        "run_id": "run-20260812T085444996257",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-002/__RUN_ID__.json",
+        "command": "test -f contracts/form-novel.contract.md && rg -n \"StoryMaster|episode|content/storyworlds|证据|evidence\" contracts/form-novel.contract.md",
+        "run_id": "run-20260812T085911329188",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-novel-v1/tc-nvl-002/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-002/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-002/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-002/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-002/result.json"
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-002/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-002/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-002/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-002/result.json"
         ],
-        "execution_fingerprint": "90905a52bcfe1928f02f993348f219638be940b5f7b7e5809057b9cf519e4111",
-        "started_at": "2026-08-12T08:54:45.296182",
-        "ended_at": "2026-08-12T08:54:45.310404",
+        "execution_fingerprint": "af6d1c20bbc66f63e0e43fd2198a0cedac6daf6a7c75fdcfc5a4627bca9c7cca",
+        "started_at": "2026-08-12T08:59:11.599994",
+        "ended_at": "2026-08-12T08:59:11.612502",
         "junit_path": "",
         "junit_valid": false,
         "browser_required": false,
@@ -177,195 +177,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-IMG-003",
-        "ac_id": "AC-IMG-003",
-        "source_tc_id": "TC-IMG-003",
-        "scenario_id": "",
-        "scenario_family": "",
-        "qa_type": "contract",
-        "layer": "contract",
-        "automation": "auto",
-        "status": "passed",
-        "layer_status": "passed",
-        "reason_code": "",
-        "assertion_count": 0,
-        "command": "test -f contracts/form-xhs.contract.md && rg -n \"xhs-article-to-images|OCR|fail-closed|blocked\" contracts/form-xhs.contract.md",
-        "run_id": "run-20260812T085444996257",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-003/__RUN_ID__.json",
-        "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-003/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-003/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-003/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-003/result.json"
-        ],
-        "execution_fingerprint": "197da2acccb21efa0964b873a76608d4d842ff1fc3f5b18d7d5b045558fa58ff",
-        "started_at": "2026-08-12T08:54:45.385978",
-        "ended_at": "2026-08-12T08:54:45.399335",
-        "junit_path": "",
-        "junit_valid": false,
-        "browser_required": false,
-        "browser_evidence_pack_ref": "",
-        "browser_runner_learning_ref": "",
-        "replay_required": false,
-        "replay_ref": "",
-        "stop_on_fail": false,
-        "round_stop_trigger": false,
-        "round_stop_reasons": [],
-        "round_stop_anchor": ""
-      },
-      {
-        "tc_id": "TC-IMG-004",
-        "ac_id": "AC-IMG-004",
-        "source_tc_id": "TC-IMG-004",
-        "scenario_id": "",
-        "scenario_family": "",
-        "qa_type": "contract",
-        "layer": "contract",
-        "automation": "auto",
-        "status": "passed",
-        "layer_status": "passed",
-        "reason_code": "",
-        "assertion_count": 3,
-        "command": "rg -n \"form-image-post.contract|form-xhs.contract\" skills/_internal/orchestration/creation-mode-map.md",
-        "run_id": "run-20260812T085444996257",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-004/__RUN_ID__.json",
-        "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/result.json"
-        ],
-        "execution_fingerprint": "825f71429066e9956245051baa50674b62298cde82cb4d121e63b13935812968",
-        "started_at": "2026-08-12T08:54:45.474442",
-        "ended_at": "2026-08-12T08:54:45.488138",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/junit.xml",
-        "junit_valid": true,
-        "browser_required": false,
-        "browser_evidence_pack_ref": "",
-        "browser_runner_learning_ref": "",
-        "replay_required": false,
-        "replay_ref": "",
-        "stop_on_fail": false,
-        "round_stop_trigger": false,
-        "round_stop_reasons": [],
-        "round_stop_anchor": ""
-      },
-      {
-        "tc_id": "TC-IMG-005",
-        "ac_id": "AC-IMG-005",
-        "source_tc_id": "TC-IMG-005",
-        "scenario_id": "",
-        "scenario_family": "",
-        "qa_type": "contract",
-        "layer": "contract",
-        "automation": "auto",
-        "status": "passed",
-        "layer_status": "passed",
-        "reason_code": "",
-        "assertion_count": 0,
-        "command": "test -x scripts/check_image_post_forms.sh",
-        "run_id": "run-20260812T085444996257",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-005/__RUN_ID__.json",
-        "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-005/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-005/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-005/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-005/result.json"
-        ],
-        "execution_fingerprint": "83254aa097b5fe01f2e7bc9243fd371a420ec1c32af9a06e824809f175938437",
-        "started_at": "2026-08-12T08:54:45.564363",
-        "ended_at": "2026-08-12T08:54:45.572291",
-        "junit_path": "",
-        "junit_valid": false,
-        "browser_required": false,
-        "browser_evidence_pack_ref": "",
-        "browser_runner_learning_ref": "",
-        "replay_required": false,
-        "replay_ref": "",
-        "stop_on_fail": false,
-        "round_stop_trigger": false,
-        "round_stop_reasons": [],
-        "round_stop_anchor": ""
-      },
-      {
-        "tc_id": "TC-IMG-006",
-        "ac_id": "AC-IMG-005",
-        "source_tc_id": "TC-IMG-006",
-        "scenario_id": "",
-        "scenario_family": "",
-        "qa_type": "contract",
-        "layer": "contract",
-        "automation": "auto",
-        "status": "passed",
-        "layer_status": "passed",
-        "reason_code": "",
-        "assertion_count": 0,
-        "command": "bash scripts/check_image_post_forms.sh",
-        "run_id": "run-20260812T085444996257",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-006/__RUN_ID__.json",
-        "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-006/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-006/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-006/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-006/result.json"
-        ],
-        "execution_fingerprint": "a8e555e5a4f34d2ca68b9beafa2bcb5392225c9c4f3e0b774ff356cf7ff31aa1",
-        "started_at": "2026-08-12T08:54:45.654639",
-        "ended_at": "2026-08-12T08:54:45.859519",
-        "junit_path": "",
-        "junit_valid": false,
-        "browser_required": false,
-        "browser_evidence_pack_ref": "",
-        "browser_runner_learning_ref": "",
-        "replay_required": false,
-        "replay_ref": "",
-        "stop_on_fail": false,
-        "round_stop_trigger": false,
-        "round_stop_reasons": [],
-        "round_stop_anchor": ""
-      },
-      {
-        "tc_id": "TC-IMG-007",
-        "ac_id": "AC-IMG-001",
-        "source_tc_id": "TC-IMG-007",
-        "scenario_id": "",
-        "scenario_family": "",
-        "qa_type": "contract",
-        "layer": "contract",
-        "automation": "auto",
-        "status": "passed",
-        "layer_status": "passed",
-        "reason_code": "",
-        "assertion_count": 0,
-        "command": "python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/form-registry.yaml')); fs={f['form'] for f in d['forms']}; raise SystemExit(0 if {'image-post','xhs'}<=fs else 1)\"",
-        "run_id": "run-20260812T085444996257",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-007/__RUN_ID__.json",
-        "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/result.json"
-        ],
-        "execution_fingerprint": "92bc07571ac96531a29ed3aeb15d6c28a1f7a896038279b8800a3f4595c650f2",
-        "started_at": "2026-08-12T08:54:45.937801",
-        "ended_at": "2026-08-12T08:54:46.014760",
-        "junit_path": "",
-        "junit_valid": false,
-        "browser_required": false,
-        "browser_evidence_pack_ref": "",
-        "browser_runner_learning_ref": "",
-        "replay_required": false,
-        "replay_ref": "",
-        "stop_on_fail": false,
-        "round_stop_trigger": false,
-        "round_stop_reasons": [],
-        "round_stop_anchor": ""
-      },
-      {
-        "tc_id": "TC-IMG-008",
-        "ac_id": "AC-IMG-006",
-        "source_tc_id": "TC-IMG-008",
+        "tc_id": "TC-NVL-003",
+        "ac_id": "AC-NVL-003",
+        "source_tc_id": "TC-NVL-003",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -375,20 +189,20 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 5,
-        "command": "rg -n \"配置|配置化|禁止.*硬编码|kushi\" contracts/form-image-post.contract.md && rg -n \"account|账号\" contracts/form-image-post.contract.md",
-        "run_id": "run-20260812T085444996257",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-008/__RUN_ID__.json",
+        "command": "rg -n \"canon_gate_status|review_required|failed|generated|fast_lane_skip\" contracts/form-novel.contract.md",
+        "run_id": "run-20260812T085911329188",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-novel-v1/tc-nvl-003/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/result.json"
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-003/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-003/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-003/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-003/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-003/result.json"
         ],
-        "execution_fingerprint": "c034e243aee72028c7bd5bbe61b155cac92c474a95756c209faff105b97e5265",
-        "started_at": "2026-08-12T08:54:46.094309",
-        "ended_at": "2026-08-12T08:54:46.115105",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/junit.xml",
+        "execution_fingerprint": "081fee8bfa43b8fa2cb074b3b6bfac422f0f289693e783820677fec99d2cb610",
+        "started_at": "2026-08-12T08:59:11.687394",
+        "ended_at": "2026-08-12T08:59:11.699918",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-003/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -401,9 +215,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-IMG-009",
-        "ac_id": "AC-IMG-007",
-        "source_tc_id": "TC-IMG-009",
+        "tc_id": "TC-NVL-004",
+        "ac_id": "AC-NVL-004",
+        "source_tc_id": "TC-NVL-004",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -412,21 +226,21 @@
         "status": "passed",
         "layer_status": "passed",
         "reason_code": "",
-        "assertion_count": 3,
-        "command": "rg -n \"fail-closed|blocked|reason_code\" contracts/form-image-post.contract.md contracts/form-xhs.contract.md",
-        "run_id": "run-20260812T085444996257",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-009/__RUN_ID__.json",
+        "assertion_count": 1,
+        "command": "rg -n \"novel|form-novel.contract\" skills/_internal/orchestration/creation-mode-map.md",
+        "run_id": "run-20260812T085911329188",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-novel-v1/tc-nvl-004/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/result.json"
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-004/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-004/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-004/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-004/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-004/result.json"
         ],
-        "execution_fingerprint": "67c67d2ae8a5ffea91cf0572282bec3e7af31f5bd1d175e6721a21dcd51193b2",
-        "started_at": "2026-08-12T08:54:46.190191",
-        "ended_at": "2026-08-12T08:54:46.206555",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/junit.xml",
+        "execution_fingerprint": "0d2b86e4d6c3117c29ad516029266970ec338212552898f37a822fde41eeae3a",
+        "started_at": "2026-08-12T08:59:11.775430",
+        "ended_at": "2026-08-12T08:59:11.788105",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-004/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -439,47 +253,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-IMG-010",
-        "ac_id": "AC-IMG-008",
-        "source_tc_id": "TC-IMG-010",
-        "scenario_id": "",
-        "scenario_family": "",
-        "qa_type": "contract",
-        "layer": "contract",
-        "automation": "auto",
-        "status": "passed",
-        "layer_status": "passed",
-        "reason_code": "",
-        "assertion_count": 12,
-        "command": "rg -n \"乱码|随机文字|图序|尺寸|分离|价值\" contracts/form-image-post.contract.md && rg -n \"证据|evidence\" contracts/form-image-post.contract.md",
-        "run_id": "run-20260812T085444996257",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-010/__RUN_ID__.json",
-        "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/result.json"
-        ],
-        "execution_fingerprint": "6196194874846baf07a4a80fdc0b2296d3a4bb520ef5695da40ab818635cd625",
-        "started_at": "2026-08-12T08:54:46.281151",
-        "ended_at": "2026-08-12T08:54:46.298107",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/junit.xml",
-        "junit_valid": true,
-        "browser_required": false,
-        "browser_evidence_pack_ref": "",
-        "browser_runner_learning_ref": "",
-        "replay_required": false,
-        "replay_ref": "",
-        "stop_on_fail": false,
-        "round_stop_trigger": false,
-        "round_stop_reasons": [],
-        "round_stop_anchor": ""
-      },
-      {
-        "tc_id": "TC-IMG-011",
-        "ac_id": "AC-IMG-009",
-        "source_tc_id": "TC-IMG-011",
+        "tc_id": "TC-NVL-005",
+        "ac_id": "AC-NVL-005",
+        "source_tc_id": "TC-NVL-005",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -489,18 +265,18 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 0,
-        "command": "test -f skills/prism-qa/references/anti-slop-gate.md && test ! -f contracts/form-image-post.contract.md.qa",
-        "run_id": "run-20260812T085444996257",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-011/__RUN_ID__.json",
+        "command": "test -x scripts/check_novel_form.sh",
+        "run_id": "run-20260812T085911329188",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-novel-v1/tc-nvl-005/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-011/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-011/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-011/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-011/result.json"
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-005/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-005/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-005/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-005/result.json"
         ],
-        "execution_fingerprint": "10a95e254d426848cc61a4c16147c60b692e88730b4c79b2d56080c1168f7ad8",
-        "started_at": "2026-08-12T08:54:46.373385",
-        "ended_at": "2026-08-12T08:54:46.381188",
+        "execution_fingerprint": "ae13dd760da587cffeb83038d47cebe22aa7983478ca6e7032b917d74de98bac",
+        "started_at": "2026-08-12T08:59:11.863123",
+        "ended_at": "2026-08-12T08:59:11.870223",
         "junit_path": "",
         "junit_valid": false,
         "browser_required": false,
@@ -514,9 +290,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-IMG-012",
-        "ac_id": "AC-IMG-010",
-        "source_tc_id": "TC-IMG-012",
+        "tc_id": "TC-NVL-006",
+        "ac_id": "AC-NVL-005",
+        "source_tc_id": "TC-NVL-006",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -525,21 +301,95 @@
         "status": "passed",
         "layer_status": "passed",
         "reason_code": "",
-        "assertion_count": 13,
-        "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md && rg -n \"D4|D5|D6\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
-        "run_id": "run-20260812T085444996257",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-012/__RUN_ID__.json",
+        "assertion_count": 0,
+        "command": "bash scripts/check_novel_form.sh",
+        "run_id": "run-20260812T085911329188",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-novel-v1/tc-nvl-006/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/result.json"
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-006/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-006/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-006/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-006/result.json"
         ],
-        "execution_fingerprint": "6c77d50ba37ab5a861cd4b6039d3611eb307176256821e2816afa96d56022181",
-        "started_at": "2026-08-12T08:54:46.454767",
-        "ended_at": "2026-08-12T08:54:46.478328",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/junit.xml",
+        "execution_fingerprint": "d8623c20b218a8e422ee1d72d7a67d111de35813cdf2a655519f2006498f0640",
+        "started_at": "2026-08-12T08:59:11.945387",
+        "ended_at": "2026-08-12T08:59:12.110164",
+        "junit_path": "",
+        "junit_valid": false,
+        "browser_required": false,
+        "browser_evidence_pack_ref": "",
+        "browser_runner_learning_ref": "",
+        "replay_required": false,
+        "replay_ref": "",
+        "stop_on_fail": false,
+        "round_stop_trigger": false,
+        "round_stop_reasons": [],
+        "round_stop_anchor": ""
+      },
+      {
+        "tc_id": "TC-NVL-007",
+        "ac_id": "AC-NVL-001",
+        "source_tc_id": "TC-NVL-007",
+        "scenario_id": "",
+        "scenario_family": "",
+        "qa_type": "contract",
+        "layer": "contract",
+        "automation": "auto",
+        "status": "passed",
+        "layer_status": "passed",
+        "reason_code": "",
+        "assertion_count": 0,
+        "command": "python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/form-registry.yaml')); fs={f['form'] for f in d['forms']}; raise SystemExit(0 if 'novel' in fs else 1)\"",
+        "run_id": "run-20260812T085911329188",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-novel-v1/tc-nvl-007/__RUN_ID__.json",
+        "evidence_ref": [
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-007/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-007/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-007/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-007/result.json"
+        ],
+        "execution_fingerprint": "585cb3562df865fe6a5298a069a2014784949567e9b927d5b351f6b3f33d5724",
+        "started_at": "2026-08-12T08:59:12.185376",
+        "ended_at": "2026-08-12T08:59:12.264030",
+        "junit_path": "",
+        "junit_valid": false,
+        "browser_required": false,
+        "browser_evidence_pack_ref": "",
+        "browser_runner_learning_ref": "",
+        "replay_required": false,
+        "replay_ref": "",
+        "stop_on_fail": false,
+        "round_stop_trigger": false,
+        "round_stop_reasons": [],
+        "round_stop_anchor": ""
+      },
+      {
+        "tc_id": "TC-NVL-008",
+        "ac_id": "AC-NVL-006",
+        "source_tc_id": "TC-NVL-008",
+        "scenario_id": "",
+        "scenario_family": "",
+        "qa_type": "contract",
+        "layer": "contract",
+        "automation": "auto",
+        "status": "passed",
+        "layer_status": "passed",
+        "reason_code": "",
+        "assertion_count": 3,
+        "command": "rg -n \"kushi-narrative-zh|fail-closed|blocked|reason_code\" contracts/form-novel.contract.md",
+        "run_id": "run-20260812T085911329188",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-novel-v1/tc-nvl-008/__RUN_ID__.json",
+        "evidence_ref": [
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-008/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-008/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-008/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-008/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-008/result.json"
+        ],
+        "execution_fingerprint": "d1db53b8c52a5552ac32489c6425921465f89948ef9b131a6f12e62f61d47048",
+        "started_at": "2026-08-12T08:59:12.339477",
+        "ended_at": "2026-08-12T08:59:12.352076",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-008/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -552,9 +402,160 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-IMG-013",
-        "ac_id": "AC-IMG-010",
-        "source_tc_id": "TC-IMG-013",
+        "tc_id": "TC-NVL-009",
+        "ac_id": "AC-NVL-007",
+        "source_tc_id": "TC-NVL-009",
+        "scenario_id": "",
+        "scenario_family": "",
+        "qa_type": "contract",
+        "layer": "contract",
+        "automation": "auto",
+        "status": "passed",
+        "layer_status": "passed",
+        "reason_code": "",
+        "assertion_count": 3,
+        "command": "rg -n \"content/storyworlds|bible|canon-ledger\" contracts/form-novel.contract.md",
+        "run_id": "run-20260812T085911329188",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-novel-v1/tc-nvl-009/__RUN_ID__.json",
+        "evidence_ref": [
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-009/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-009/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-009/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-009/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-009/result.json"
+        ],
+        "execution_fingerprint": "1003d3b7796b22d6682e8c1ea2f8b6fc6c39b42dfe04357b85852ffddf6e8148",
+        "started_at": "2026-08-12T08:59:12.428168",
+        "ended_at": "2026-08-12T08:59:12.440433",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-009/junit.xml",
+        "junit_valid": true,
+        "browser_required": false,
+        "browser_evidence_pack_ref": "",
+        "browser_runner_learning_ref": "",
+        "replay_required": false,
+        "replay_ref": "",
+        "stop_on_fail": false,
+        "round_stop_trigger": false,
+        "round_stop_reasons": [],
+        "round_stop_anchor": ""
+      },
+      {
+        "tc_id": "TC-NVL-010",
+        "ac_id": "AC-NVL-008",
+        "source_tc_id": "TC-NVL-010",
+        "scenario_id": "",
+        "scenario_family": "",
+        "qa_type": "contract",
+        "layer": "contract",
+        "automation": "auto",
+        "status": "passed",
+        "layer_status": "passed",
+        "reason_code": "",
+        "assertion_count": 0,
+        "command": "test -f skills/prism-qa/references/anti-slop-gate.md && rg -n \"证据|原文行\" skills/prism-qa/references/anti-slop-gate.md",
+        "run_id": "run-20260812T085911329188",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-novel-v1/tc-nvl-010/__RUN_ID__.json",
+        "evidence_ref": [
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-010/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-010/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-010/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-010/result.json"
+        ],
+        "execution_fingerprint": "ebc4ebb74d0f230b9e200f99cc83a5d9b4b6cbdc18996b27cf6567f3fe9d8082",
+        "started_at": "2026-08-12T08:59:12.517515",
+        "ended_at": "2026-08-12T08:59:12.531113",
+        "junit_path": "",
+        "junit_valid": false,
+        "browser_required": false,
+        "browser_evidence_pack_ref": "",
+        "browser_runner_learning_ref": "",
+        "replay_required": false,
+        "replay_ref": "",
+        "stop_on_fail": false,
+        "round_stop_trigger": false,
+        "round_stop_reasons": [],
+        "round_stop_anchor": ""
+      },
+      {
+        "tc_id": "TC-NVL-011",
+        "ac_id": "AC-NVL-009",
+        "source_tc_id": "TC-NVL-011",
+        "scenario_id": "",
+        "scenario_family": "",
+        "qa_type": "contract",
+        "layer": "contract",
+        "automation": "auto",
+        "status": "passed",
+        "layer_status": "passed",
+        "reason_code": "",
+        "assertion_count": 1,
+        "command": "rg -n \"OOC|设定漂移|fail-closed|事实错误\" contracts/form-novel.contract.md",
+        "run_id": "run-20260812T085911329188",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-novel-v1/tc-nvl-011/__RUN_ID__.json",
+        "evidence_ref": [
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-011/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-011/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-011/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-011/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-011/result.json"
+        ],
+        "execution_fingerprint": "1b2f948f8da17542cf628e093efab58b55726666751bfa6ad44136b72fba48c7",
+        "started_at": "2026-08-12T08:59:12.607722",
+        "ended_at": "2026-08-12T08:59:12.621306",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-011/junit.xml",
+        "junit_valid": true,
+        "browser_required": false,
+        "browser_evidence_pack_ref": "",
+        "browser_runner_learning_ref": "",
+        "replay_required": false,
+        "replay_ref": "",
+        "stop_on_fail": false,
+        "round_stop_trigger": false,
+        "round_stop_reasons": [],
+        "round_stop_anchor": ""
+      },
+      {
+        "tc_id": "TC-NVL-012",
+        "ac_id": "AC-NVL-010",
+        "source_tc_id": "TC-NVL-012",
+        "scenario_id": "",
+        "scenario_family": "",
+        "qa_type": "contract",
+        "layer": "contract",
+        "automation": "auto",
+        "status": "passed",
+        "layer_status": "passed",
+        "reason_code": "",
+        "assertion_count": 12,
+        "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md && rg -n \"D5|D6\" docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md",
+        "run_id": "run-20260812T085911329188",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-novel-v1/tc-nvl-012/__RUN_ID__.json",
+        "evidence_ref": [
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-012/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-012/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-012/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-012/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-012/result.json"
+        ],
+        "execution_fingerprint": "b7090ae4fc0b1605e7fcf14961771fbc209ce80dc02837fa31a18961c2791909",
+        "started_at": "2026-08-12T08:59:12.695961",
+        "ended_at": "2026-08-12T08:59:12.720181",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-012/junit.xml",
+        "junit_valid": true,
+        "browser_required": false,
+        "browser_evidence_pack_ref": "",
+        "browser_runner_learning_ref": "",
+        "replay_required": false,
+        "replay_ref": "",
+        "stop_on_fail": false,
+        "round_stop_trigger": false,
+        "round_stop_reasons": [],
+        "round_stop_anchor": ""
+      },
+      {
+        "tc_id": "TC-NVL-013",
+        "ac_id": "AC-NVL-010",
+        "source_tc_id": "TC-NVL-013",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -564,20 +565,20 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 2,
-        "command": "rg -n \"Illegal|illegal|宣称 Lake D\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
-        "run_id": "run-20260812T085444996257",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-013/__RUN_ID__.json",
+        "command": "rg -n \"Illegal|illegal|宣称 Lake D\" docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md",
+        "run_id": "run-20260812T085911329188",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-novel-v1/tc-nvl-013/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/result.json"
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-013/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-013/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-013/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-013/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-013/result.json"
         ],
-        "execution_fingerprint": "754c47a45992b634d47d4554c6490762efa176a13517d7a006a4e993b1538be8",
-        "started_at": "2026-08-12T08:54:46.554068",
-        "ended_at": "2026-08-12T08:54:46.566001",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/junit.xml",
+        "execution_fingerprint": "7518136c18b3d2e9dac2ce1889fd3db4e71615ff328df68ffa92a0f9d2029fc8",
+        "started_at": "2026-08-12T08:59:12.799235",
+        "ended_at": "2026-08-12T08:59:12.812076",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-013/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -590,47 +591,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-IMG-014",
-        "ac_id": "AC-IMG-002",
-        "source_tc_id": "TC-IMG-014",
-        "scenario_id": "",
-        "scenario_family": "",
-        "qa_type": "contract",
-        "layer": "contract",
-        "automation": "auto",
-        "status": "passed",
-        "layer_status": "passed",
-        "reason_code": "",
-        "assertion_count": 6,
-        "command": "rg -n \"US-IMG-001|贴图包\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
-        "run_id": "run-20260812T085444996257",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-014/__RUN_ID__.json",
-        "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/result.json"
-        ],
-        "execution_fingerprint": "45f6d217d34bc529c61f4c71da8f4ccc05cf1c9eeccd1bd0ce0809983d4a1417",
-        "started_at": "2026-08-12T08:54:46.641340",
-        "ended_at": "2026-08-12T08:54:46.655448",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/junit.xml",
-        "junit_valid": true,
-        "browser_required": false,
-        "browser_evidence_pack_ref": "",
-        "browser_runner_learning_ref": "",
-        "replay_required": false,
-        "replay_ref": "",
-        "stop_on_fail": false,
-        "round_stop_trigger": false,
-        "round_stop_reasons": [],
-        "round_stop_anchor": ""
-      },
-      {
-        "tc_id": "TC-IMG-015",
-        "ac_id": "AC-IMG-003",
-        "source_tc_id": "TC-IMG-015",
+        "tc_id": "TC-NVL-014",
+        "ac_id": "AC-NVL-002",
+        "source_tc_id": "TC-NVL-014",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -640,20 +603,58 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 4,
-        "command": "rg -n \"US-IMG-002|小红书\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
-        "run_id": "run-20260812T085444996257",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-form-image-post-v1/tc-img-015/__RUN_ID__.json",
+        "command": "rg -n \"US-PRISM-002|连载\" docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md",
+        "run_id": "run-20260812T085911329188",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-novel-v1/tc-nvl-014/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/result.json"
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-014/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-014/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-014/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-014/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-014/result.json"
         ],
-        "execution_fingerprint": "94128c23dce066e8e240f0d294d9a5b33dcc84812c4c5ac5958102ac7e84ed08",
-        "started_at": "2026-08-12T08:54:46.730613",
-        "ended_at": "2026-08-12T08:54:46.742440",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/junit.xml",
+        "execution_fingerprint": "2e406d4f9e79f566813b4c1894b224ddebe0dca549c9a57a2f3075f5311e698a",
+        "started_at": "2026-08-12T08:59:12.890688",
+        "ended_at": "2026-08-12T08:59:12.902829",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-014/junit.xml",
+        "junit_valid": true,
+        "browser_required": false,
+        "browser_evidence_pack_ref": "",
+        "browser_runner_learning_ref": "",
+        "replay_required": false,
+        "replay_ref": "",
+        "stop_on_fail": false,
+        "round_stop_trigger": false,
+        "round_stop_reasons": [],
+        "round_stop_anchor": ""
+      },
+      {
+        "tc_id": "TC-NVL-015",
+        "ac_id": "AC-NVL-003",
+        "source_tc_id": "TC-NVL-015",
+        "scenario_id": "",
+        "scenario_family": "",
+        "qa_type": "contract",
+        "layer": "contract",
+        "automation": "auto",
+        "status": "passed",
+        "layer_status": "passed",
+        "reason_code": "",
+        "assertion_count": 6,
+        "command": "rg -n \"US-NVL-002|canon_gate_status\" docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md",
+        "run_id": "run-20260812T085911329188",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-form-novel-v1/tc-nvl-015/__RUN_ID__.json",
+        "evidence_ref": [
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-015/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-015/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-015/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-015/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-015/result.json"
+        ],
+        "execution_fingerprint": "29d59dd585829ceb24a3e38a2785c22fcd6443c3d24e7cdd9cfc137ed051a5ba",
+        "started_at": "2026-08-12T08:59:12.978461",
+        "ended_at": "2026-08-12T08:59:12.990442",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-015/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -680,9 +681,9 @@
     }
   ],
   "schema_version": "1.0",
-  "updated_at": "2026-08-12T00:54:46.772648+00:00",
+  "updated_at": "2026-08-12T00:59:13.022470+00:00",
   "summary": {
-    "feature": "prism-form-image-post-v1",
+    "feature": "prism-form-novel-v1",
     "version": "v0.0.1",
     "status": "passed",
     "release_ready": true,
@@ -696,15 +697,15 @@
     "reconciliation_artifact_path": "",
     "reconciliation_reprojection_targets": [],
     "repair_action": "qa-repair",
-    "repair_command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1 --version v0.0.1 --feature \"prism-form-image-post-v1\""
+    "repair_command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-novel-v1 --version v0.0.1 --feature \"prism-form-novel-v1\""
   },
   "qa_status_source": "canonical",
   "governance_state_role": "generated_governance_state_not_truth",
   "truth_authority": false,
   "json_authority": false,
   "resolver_mode": "resolver_first",
-  "feature": "prism-form-image-post-v1",
-  "feature_slug": "prism-form-image-post-v1",
+  "feature": "prism-form-novel-v1",
+  "feature_slug": "prism-form-novel-v1",
   "implementation_done": true,
   "evidence_done": true,
   "story_sequence": [
@@ -725,33 +726,33 @@
       "contract"
     ],
     "targeted_ac_ids": [
-      "AC-IMG-001",
-      "AC-IMG-002",
-      "AC-IMG-003",
-      "AC-IMG-004",
-      "AC-IMG-005",
-      "AC-IMG-006",
-      "AC-IMG-007",
-      "AC-IMG-008",
-      "AC-IMG-009",
-      "AC-IMG-010"
+      "AC-NVL-001",
+      "AC-NVL-002",
+      "AC-NVL-003",
+      "AC-NVL-004",
+      "AC-NVL-005",
+      "AC-NVL-006",
+      "AC-NVL-007",
+      "AC-NVL-008",
+      "AC-NVL-009",
+      "AC-NVL-010"
     ],
     "targeted_tc_ids": [
-      "TC-IMG-001",
-      "TC-IMG-002",
-      "TC-IMG-003",
-      "TC-IMG-004",
-      "TC-IMG-005",
-      "TC-IMG-006",
-      "TC-IMG-007",
-      "TC-IMG-008",
-      "TC-IMG-009",
-      "TC-IMG-010",
-      "TC-IMG-011",
-      "TC-IMG-012",
-      "TC-IMG-013",
-      "TC-IMG-014",
-      "TC-IMG-015"
+      "TC-NVL-001",
+      "TC-NVL-002",
+      "TC-NVL-003",
+      "TC-NVL-004",
+      "TC-NVL-005",
+      "TC-NVL-006",
+      "TC-NVL-007",
+      "TC-NVL-008",
+      "TC-NVL-009",
+      "TC-NVL-010",
+      "TC-NVL-011",
+      "TC-NVL-012",
+      "TC-NVL-013",
+      "TC-NVL-014",
+      "TC-NVL-015"
     ],
     "targeted_scenario_ids": [],
     "targeted_scenario_families": []
@@ -763,13 +764,13 @@
     "targeted_scope_only": true,
     "verification_item_count": 15
   },
-  "feature_matrix_path": ".beacon/qa/features/prism-form-image-post-v1/matrix.qa9.json",
+  "feature_matrix_path": ".beacon/qa/features/prism-form-novel-v1/matrix.qa9.json",
   "blocking_artifact_updates": [],
   "per_item_results": [
     {
-      "ac_id": "AC-IMG-001",
-      "tc_id": "TC-IMG-001",
-      "source_tc_id": "TC-IMG-001",
+      "ac_id": "AC-NVL-001",
+      "tc_id": "TC-NVL-001",
+      "source_tc_id": "TC-NVL-001",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-001",
@@ -782,16 +783,16 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-001/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-001/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-001/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-001/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-001/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-001/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-001/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-001/result.json"
       ]
     },
     {
-      "ac_id": "AC-IMG-002",
-      "tc_id": "TC-IMG-002",
-      "source_tc_id": "TC-IMG-002",
+      "ac_id": "AC-NVL-002",
+      "tc_id": "TC-NVL-002",
+      "source_tc_id": "TC-NVL-002",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-002",
@@ -804,16 +805,16 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-002/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-002/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-002/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-002/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-002/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-002/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-002/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-002/result.json"
       ]
     },
     {
-      "ac_id": "AC-IMG-003",
-      "tc_id": "TC-IMG-003",
-      "source_tc_id": "TC-IMG-003",
+      "ac_id": "AC-NVL-003",
+      "tc_id": "TC-NVL-003",
+      "source_tc_id": "TC-NVL-003",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-003",
@@ -826,16 +827,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-003/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-003/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-003/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-003/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-003/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-003/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-003/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-003/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-003/result.json"
       ]
     },
     {
-      "ac_id": "AC-IMG-004",
-      "tc_id": "TC-IMG-004",
-      "source_tc_id": "TC-IMG-004",
+      "ac_id": "AC-NVL-004",
+      "tc_id": "TC-NVL-004",
+      "source_tc_id": "TC-NVL-004",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-004",
@@ -848,17 +850,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-004/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-004/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-004/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-004/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-004/result.json"
       ]
     },
     {
-      "ac_id": "AC-IMG-005",
-      "tc_id": "TC-IMG-005",
-      "source_tc_id": "TC-IMG-005",
+      "ac_id": "AC-NVL-005",
+      "tc_id": "TC-NVL-005",
+      "source_tc_id": "TC-NVL-005",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-005",
@@ -871,16 +873,16 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-005/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-005/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-005/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-005/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-005/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-005/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-005/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-005/result.json"
       ]
     },
     {
-      "ac_id": "AC-IMG-005",
-      "tc_id": "TC-IMG-006",
-      "source_tc_id": "TC-IMG-006",
+      "ac_id": "AC-NVL-005",
+      "tc_id": "TC-NVL-006",
+      "source_tc_id": "TC-NVL-006",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-006",
@@ -893,16 +895,16 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-006/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-006/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-006/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-006/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-006/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-006/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-006/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-006/result.json"
       ]
     },
     {
-      "ac_id": "AC-IMG-001",
-      "tc_id": "TC-IMG-007",
-      "source_tc_id": "TC-IMG-007",
+      "ac_id": "AC-NVL-001",
+      "tc_id": "TC-NVL-007",
+      "source_tc_id": "TC-NVL-007",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-007",
@@ -915,16 +917,16 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-007/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-007/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-007/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-007/result.json"
       ]
     },
     {
-      "ac_id": "AC-IMG-006",
-      "tc_id": "TC-IMG-008",
-      "source_tc_id": "TC-IMG-008",
+      "ac_id": "AC-NVL-006",
+      "tc_id": "TC-NVL-008",
+      "source_tc_id": "TC-NVL-008",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-008",
@@ -937,17 +939,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-008/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-008/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-008/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-008/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-008/result.json"
       ]
     },
     {
-      "ac_id": "AC-IMG-007",
-      "tc_id": "TC-IMG-009",
-      "source_tc_id": "TC-IMG-009",
+      "ac_id": "AC-NVL-007",
+      "tc_id": "TC-NVL-009",
+      "source_tc_id": "TC-NVL-009",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-009",
@@ -960,17 +962,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-009/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-009/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-009/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-009/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-009/result.json"
       ]
     },
     {
-      "ac_id": "AC-IMG-008",
-      "tc_id": "TC-IMG-010",
-      "source_tc_id": "TC-IMG-010",
+      "ac_id": "AC-NVL-008",
+      "tc_id": "TC-NVL-010",
+      "source_tc_id": "TC-NVL-010",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-010",
@@ -983,17 +985,16 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-010/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-010/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-010/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-010/result.json"
       ]
     },
     {
-      "ac_id": "AC-IMG-009",
-      "tc_id": "TC-IMG-011",
-      "source_tc_id": "TC-IMG-011",
+      "ac_id": "AC-NVL-009",
+      "tc_id": "TC-NVL-011",
+      "source_tc_id": "TC-NVL-011",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-011",
@@ -1006,16 +1007,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-011/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-011/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-011/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-011/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-011/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-011/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-011/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-011/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-011/result.json"
       ]
     },
     {
-      "ac_id": "AC-IMG-010",
-      "tc_id": "TC-IMG-012",
-      "source_tc_id": "TC-IMG-012",
+      "ac_id": "AC-NVL-010",
+      "tc_id": "TC-NVL-012",
+      "source_tc_id": "TC-NVL-012",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-012",
@@ -1028,17 +1030,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-012/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-012/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-012/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-012/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-012/result.json"
       ]
     },
     {
-      "ac_id": "AC-IMG-010",
-      "tc_id": "TC-IMG-013",
-      "source_tc_id": "TC-IMG-013",
+      "ac_id": "AC-NVL-010",
+      "tc_id": "TC-NVL-013",
+      "source_tc_id": "TC-NVL-013",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-013",
@@ -1051,17 +1053,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-013/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-013/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-013/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-013/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-013/result.json"
       ]
     },
     {
-      "ac_id": "AC-IMG-002",
-      "tc_id": "TC-IMG-014",
-      "source_tc_id": "TC-IMG-014",
+      "ac_id": "AC-NVL-002",
+      "tc_id": "TC-NVL-014",
+      "source_tc_id": "TC-NVL-014",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-014",
@@ -1074,17 +1076,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-014/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-014/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-014/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-014/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-014/result.json"
       ]
     },
     {
-      "ac_id": "AC-IMG-003",
-      "tc_id": "TC-IMG-015",
-      "source_tc_id": "TC-IMG-015",
+      "ac_id": "AC-NVL-003",
+      "tc_id": "TC-NVL-015",
+      "source_tc_id": "TC-NVL-015",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-015",
@@ -1097,11 +1099,11 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-015/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-015/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-015/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-015/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-015/result.json"
       ]
     }
   ],
@@ -1135,19 +1137,19 @@
     "blocked": false,
     "reason_code": "",
     "target_stage": "qa",
-    "feature": "prism-form-image-post-v1",
+    "feature": "prism-form-novel-v1",
     "version": "v0.0.1",
     "recommended_command": ""
   },
   "requirement_completeness_verdict": "pass",
   "requirement_completeness_ref": "",
-  "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-form-image-post-v1.ac-test-matrix.json",
+  "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-form-novel-v1.ac-test-matrix.json",
   "exhaustiveness": {
     "schema_version": "1.0",
-    "feature": "prism-form-image-post-v1",
-    "feature_slug": "prism-form-image-post-v1",
-    "run_id": "run-20260812T085444996257",
-    "generated_at": "2026-08-12T00:54:46.812330+00:00",
+    "feature": "prism-form-novel-v1",
+    "feature_slug": "prism-form-novel-v1",
+    "run_id": "run-20260812T085911329188",
+    "generated_at": "2026-08-12T00:59:13.062455+00:00",
     "execution_mode": "feature-aware",
     "scenario_count": 15,
     "browser_scenario_count": 0,
@@ -1169,11 +1171,11 @@
   },
   "scenario_results_v2": [
     {
-      "scenario_id": "TC-IMG-001",
-      "tc_id": "TC-IMG-001",
-      "source_tc_id": "TC-IMG-001",
-      "ac_id": "AC-IMG-001",
-      "feature_slug": "prism-form-image-post-v1",
+      "scenario_id": "TC-NVL-001",
+      "tc_id": "TC-NVL-001",
+      "source_tc_id": "TC-NVL-001",
+      "ac_id": "AC-NVL-001",
+      "feature_slug": "prism-form-novel-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1197,18 +1199,18 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-001/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-001/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-001/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-001/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-001/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-001/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-001/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-001/result.json"
       ]
     },
     {
-      "scenario_id": "TC-IMG-002",
-      "tc_id": "TC-IMG-002",
-      "source_tc_id": "TC-IMG-002",
-      "ac_id": "AC-IMG-002",
-      "feature_slug": "prism-form-image-post-v1",
+      "scenario_id": "TC-NVL-002",
+      "tc_id": "TC-NVL-002",
+      "source_tc_id": "TC-NVL-002",
+      "ac_id": "AC-NVL-002",
+      "feature_slug": "prism-form-novel-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1232,18 +1234,18 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-002/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-002/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-002/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-002/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-002/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-002/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-002/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-002/result.json"
       ]
     },
     {
-      "scenario_id": "TC-IMG-003",
-      "tc_id": "TC-IMG-003",
-      "source_tc_id": "TC-IMG-003",
-      "ac_id": "AC-IMG-003",
-      "feature_slug": "prism-form-image-post-v1",
+      "scenario_id": "TC-NVL-003",
+      "tc_id": "TC-NVL-003",
+      "source_tc_id": "TC-NVL-003",
+      "ac_id": "AC-NVL-003",
+      "feature_slug": "prism-form-novel-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1267,18 +1269,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-003/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-003/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-003/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-003/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-003/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-003/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-003/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-003/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-003/result.json"
       ]
     },
     {
-      "scenario_id": "TC-IMG-004",
-      "tc_id": "TC-IMG-004",
-      "source_tc_id": "TC-IMG-004",
-      "ac_id": "AC-IMG-004",
-      "feature_slug": "prism-form-image-post-v1",
+      "scenario_id": "TC-NVL-004",
+      "tc_id": "TC-NVL-004",
+      "source_tc_id": "TC-NVL-004",
+      "ac_id": "AC-NVL-004",
+      "feature_slug": "prism-form-novel-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1302,19 +1305,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-004/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-004/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-004/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-004/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-004/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-004/result.json"
       ]
     },
     {
-      "scenario_id": "TC-IMG-005",
-      "tc_id": "TC-IMG-005",
-      "source_tc_id": "TC-IMG-005",
-      "ac_id": "AC-IMG-005",
-      "feature_slug": "prism-form-image-post-v1",
+      "scenario_id": "TC-NVL-005",
+      "tc_id": "TC-NVL-005",
+      "source_tc_id": "TC-NVL-005",
+      "ac_id": "AC-NVL-005",
+      "feature_slug": "prism-form-novel-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1338,18 +1341,18 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-005/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-005/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-005/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-005/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-005/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-005/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-005/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-005/result.json"
       ]
     },
     {
-      "scenario_id": "TC-IMG-006",
-      "tc_id": "TC-IMG-006",
-      "source_tc_id": "TC-IMG-006",
-      "ac_id": "AC-IMG-005",
-      "feature_slug": "prism-form-image-post-v1",
+      "scenario_id": "TC-NVL-006",
+      "tc_id": "TC-NVL-006",
+      "source_tc_id": "TC-NVL-006",
+      "ac_id": "AC-NVL-005",
+      "feature_slug": "prism-form-novel-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1373,18 +1376,18 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-006/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-006/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-006/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-006/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-006/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-006/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-006/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-006/result.json"
       ]
     },
     {
-      "scenario_id": "TC-IMG-007",
-      "tc_id": "TC-IMG-007",
-      "source_tc_id": "TC-IMG-007",
-      "ac_id": "AC-IMG-001",
-      "feature_slug": "prism-form-image-post-v1",
+      "scenario_id": "TC-NVL-007",
+      "tc_id": "TC-NVL-007",
+      "source_tc_id": "TC-NVL-007",
+      "ac_id": "AC-NVL-001",
+      "feature_slug": "prism-form-novel-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1408,18 +1411,18 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-007/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-007/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-007/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-007/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-007/result.json"
       ]
     },
     {
-      "scenario_id": "TC-IMG-008",
-      "tc_id": "TC-IMG-008",
-      "source_tc_id": "TC-IMG-008",
-      "ac_id": "AC-IMG-006",
-      "feature_slug": "prism-form-image-post-v1",
+      "scenario_id": "TC-NVL-008",
+      "tc_id": "TC-NVL-008",
+      "source_tc_id": "TC-NVL-008",
+      "ac_id": "AC-NVL-006",
+      "feature_slug": "prism-form-novel-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1443,19 +1446,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-008/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-008/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-008/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-008/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-008/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-008/result.json"
       ]
     },
     {
-      "scenario_id": "TC-IMG-009",
-      "tc_id": "TC-IMG-009",
-      "source_tc_id": "TC-IMG-009",
-      "ac_id": "AC-IMG-007",
-      "feature_slug": "prism-form-image-post-v1",
+      "scenario_id": "TC-NVL-009",
+      "tc_id": "TC-NVL-009",
+      "source_tc_id": "TC-NVL-009",
+      "ac_id": "AC-NVL-007",
+      "feature_slug": "prism-form-novel-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1479,19 +1482,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-009/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-009/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-009/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-009/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-009/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-009/result.json"
       ]
     },
     {
-      "scenario_id": "TC-IMG-010",
-      "tc_id": "TC-IMG-010",
-      "source_tc_id": "TC-IMG-010",
-      "ac_id": "AC-IMG-008",
-      "feature_slug": "prism-form-image-post-v1",
+      "scenario_id": "TC-NVL-010",
+      "tc_id": "TC-NVL-010",
+      "source_tc_id": "TC-NVL-010",
+      "ac_id": "AC-NVL-008",
+      "feature_slug": "prism-form-novel-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1515,19 +1518,18 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-010/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-010/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-010/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-010/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-010/result.json"
       ]
     },
     {
-      "scenario_id": "TC-IMG-011",
-      "tc_id": "TC-IMG-011",
-      "source_tc_id": "TC-IMG-011",
-      "ac_id": "AC-IMG-009",
-      "feature_slug": "prism-form-image-post-v1",
+      "scenario_id": "TC-NVL-011",
+      "tc_id": "TC-NVL-011",
+      "source_tc_id": "TC-NVL-011",
+      "ac_id": "AC-NVL-009",
+      "feature_slug": "prism-form-novel-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1551,18 +1553,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-011/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-011/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-011/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-011/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-011/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-011/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-011/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-011/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-011/result.json"
       ]
     },
     {
-      "scenario_id": "TC-IMG-012",
-      "tc_id": "TC-IMG-012",
-      "source_tc_id": "TC-IMG-012",
-      "ac_id": "AC-IMG-010",
-      "feature_slug": "prism-form-image-post-v1",
+      "scenario_id": "TC-NVL-012",
+      "tc_id": "TC-NVL-012",
+      "source_tc_id": "TC-NVL-012",
+      "ac_id": "AC-NVL-010",
+      "feature_slug": "prism-form-novel-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1586,19 +1589,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-012/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-012/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-012/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-012/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-012/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-012/result.json"
       ]
     },
     {
-      "scenario_id": "TC-IMG-013",
-      "tc_id": "TC-IMG-013",
-      "source_tc_id": "TC-IMG-013",
-      "ac_id": "AC-IMG-010",
-      "feature_slug": "prism-form-image-post-v1",
+      "scenario_id": "TC-NVL-013",
+      "tc_id": "TC-NVL-013",
+      "source_tc_id": "TC-NVL-013",
+      "ac_id": "AC-NVL-010",
+      "feature_slug": "prism-form-novel-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1622,19 +1625,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-013/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-013/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-013/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-013/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-013/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-013/result.json"
       ]
     },
     {
-      "scenario_id": "TC-IMG-014",
-      "tc_id": "TC-IMG-014",
-      "source_tc_id": "TC-IMG-014",
-      "ac_id": "AC-IMG-002",
-      "feature_slug": "prism-form-image-post-v1",
+      "scenario_id": "TC-NVL-014",
+      "tc_id": "TC-NVL-014",
+      "source_tc_id": "TC-NVL-014",
+      "ac_id": "AC-NVL-002",
+      "feature_slug": "prism-form-novel-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1658,19 +1661,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-014/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-014/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-014/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-014/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-014/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-014/result.json"
       ]
     },
     {
-      "scenario_id": "TC-IMG-015",
-      "tc_id": "TC-IMG-015",
-      "source_tc_id": "TC-IMG-015",
-      "ac_id": "AC-IMG-003",
-      "feature_slug": "prism-form-image-post-v1",
+      "scenario_id": "TC-NVL-015",
+      "tc_id": "TC-NVL-015",
+      "source_tc_id": "TC-NVL-015",
+      "ac_id": "AC-NVL-003",
+      "feature_slug": "prism-form-novel-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1694,21 +1697,21 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T085444996257/qa9-tc/TC-IMG-015/result.json"
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-015/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-015/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-015/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-015/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-015/result.json"
       ]
     }
   ],
-  "ac_closure_path": ".beacon/qa/features/prism-form-image-post-v1/ac-closure.json",
-  "feature_scorecard_path": ".beacon/qa/features/prism-form-image-post-v1/scorecard.json",
+  "ac_closure_path": ".beacon/qa/features/prism-form-novel-v1/ac-closure.json",
+  "feature_scorecard_path": ".beacon/qa/features/prism-form-novel-v1/scorecard.json",
   "feature_scorecard": {
     "schema_version": "1.0",
-    "feature": "prism-form-image-post-v1",
-    "feature_slug": "prism-form-image-post-v1",
-    "run_id": "run-20260812T085444996257",
+    "feature": "prism-form-novel-v1",
+    "feature_slug": "prism-form-novel-v1",
+    "run_id": "run-20260812T085911329188",
     "ac_total": 10,
     "ac_accepted": 10,
     "scenario_total": 15,
@@ -2165,11 +2168,11 @@
       "junit_missing_or_invalid"
     ],
     "test_case_backfill_required": false,
-    "resume_command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1 --version v0.0.1 --feature \"prism-form-image-post-v1\"",
+    "resume_command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-novel-v1 --version v0.0.1 --feature \"prism-form-novel-v1\"",
     "repair_handoff": {
       "action": "qa-repair",
       "reason": "assertion_count_zero_pass, junit_missing_or_invalid",
-      "command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-image-post-v1 --version v0.0.1 --feature \"prism-form-image-post-v1\""
+      "command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-novel-v1 --version v0.0.1 --feature \"prism-form-novel-v1\""
     },
     "release_ready": true,
     "domain_fsm_coverage": {
@@ -2187,121 +2190,127 @@
         "covered": 1,
         "rows": [
           {
-            "ac_id": "TC-IMG-006",
-            "tc_id": "AC-IMG-005",
-            "path_type": "`bash scripts/check_image_post_forms.sh`",
-            "raw": "TC-IMG-006 | AC-IMG-005 | `bash scripts/check_image_post_forms.sh` | exec-layer 校验脚本 PASS（合法路径）"
+            "ac_id": "TC-NVL-006",
+            "tc_id": "AC-NVL-005",
+            "path_type": "`bash scripts/check_novel_form.sh`",
+            "raw": "TC-NVL-006 | AC-NVL-005 | `bash scripts/check_novel_form.sh` | exec-layer 校验脚本 PASS（合法路径）"
           }
         ]
       },
       "illegal": {
-        "required": 1,
-        "present": 1,
-        "covered": 1,
+        "required": 2,
+        "present": 2,
+        "covered": 2,
         "rows": [
           {
-            "ac_id": "TC-IMG-013",
-            "tc_id": "AC-IMG-010",
+            "ac_id": "TC-NVL-013",
+            "tc_id": "AC-NVL-010",
             "path_type": "`rg -n \"Illegal",
-            "raw": "TC-IMG-013 | AC-IMG-010 | `rg -n \"Illegal | illegal | 宣称 Lake D\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md` | illegal 转移覆盖"
+            "raw": "TC-NVL-013 | AC-NVL-010 | `rg -n \"Illegal | illegal | 宣称 Lake D\" docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md` | illegal 转移覆盖（非法拒绝路径）"
+          },
+          {
+            "ac_id": "TC-NVL-015",
+            "tc_id": "AC-NVL-003",
+            "path_type": "`rg -n \"US-NVL-002",
+            "raw": "TC-NVL-015 | AC-NVL-003 | `rg -n \"US-NVL-002 | canon_gate_status\" docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md` | canon 拒绝路径可追溯"
           }
         ]
       },
       "matrix": {
         "legal_walk_rows": [
           {
-            "ac_id": "TC-IMG-006",
-            "tc_id": "AC-IMG-005",
-            "path_type": "`bash scripts/check_image_post_forms.sh`",
-            "raw": "TC-IMG-006 | AC-IMG-005 | `bash scripts/check_image_post_forms.sh` | exec-layer 校验脚本 PASS（合法路径）"
+            "ac_id": "TC-NVL-006",
+            "tc_id": "AC-NVL-005",
+            "path_type": "`bash scripts/check_novel_form.sh`",
+            "raw": "TC-NVL-006 | AC-NVL-005 | `bash scripts/check_novel_form.sh` | exec-layer 校验脚本 PASS（合法路径）"
           }
         ],
         "illegal_rows": [
           {
-            "ac_id": "TC-IMG-013",
-            "tc_id": "AC-IMG-010",
+            "ac_id": "TC-NVL-013",
+            "tc_id": "AC-NVL-010",
             "path_type": "`rg -n \"Illegal",
-            "raw": "TC-IMG-013 | AC-IMG-010 | `rg -n \"Illegal | illegal | 宣称 Lake D\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md` | illegal 转移覆盖"
+            "raw": "TC-NVL-013 | AC-NVL-010 | `rg -n \"Illegal | illegal | 宣称 Lake D\" docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md` | illegal 转移覆盖（非法拒绝路径）"
+          },
+          {
+            "ac_id": "TC-NVL-015",
+            "tc_id": "AC-NVL-003",
+            "path_type": "`rg -n \"US-NVL-002",
+            "raw": "TC-NVL-015 | AC-NVL-003 | `rg -n \"US-NVL-002 | canon_gate_status\" docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md` | canon 拒绝路径可追溯"
           }
         ],
         "other_rows": [
           {
-            "ac_id": "TC-IMG-001",
-            "tc_id": "AC-IMG-001",
-            "path_type": "`test -f registry/form-registry.yaml && rg -n \"image-post\" registry/form-registry.yaml && rg -n \"xhs\" registry/form-registry.yaml`",
-            "raw": "TC-IMG-001 | AC-IMG-001 | `test -f registry/form-registry.yaml && rg -n \"image-post\" registry/form-registry.yaml && rg -n \"xhs\" registry/form-registry.yaml` | form registry 注册 image-post/xhs"
+            "ac_id": "TC-NVL-001",
+            "tc_id": "AC-NVL-001",
+            "path_type": "`test -f registry/form-registry.yaml && rg -n \"novel\" registry/form-registry.yaml && rg -n \"form-novel.contract\" registry/form-registry.yaml`",
+            "raw": "TC-NVL-001 | AC-NVL-001 | `test -f registry/form-registry.yaml && rg -n \"novel\" registry/form-registry.yaml && rg -n \"form-novel.contract\" registry/form-registry.yaml` | form registry 注册 novel"
           },
           {
-            "ac_id": "TC-IMG-002",
-            "tc_id": "AC-IMG-002",
-            "path_type": "`test -f contracts/form-image-post.contract.md && rg -n \"20 字",
-            "raw": "TC-IMG-002 | AC-IMG-002 | `test -f contracts/form-image-post.contract.md && rg -n \"20 字 | 20字 | caption | 1-9 | 9 张 | 封面 | 乱码 | 图序 | 尺寸\" contracts/form-image-post.contract.md` | 贴图契约含核心规则"
+            "ac_id": "TC-NVL-002",
+            "tc_id": "AC-NVL-002",
+            "path_type": "`test -f contracts/form-novel.contract.md && rg -n \"StoryMaster",
+            "raw": "TC-NVL-002 | AC-NVL-002 | `test -f contracts/form-novel.contract.md && rg -n \"StoryMaster | episode | content/storyworlds | 证据 | evidence\" contracts/form-novel.contract.md` | novel 契约含输入/结构/输出/证据"
           },
           {
-            "ac_id": "TC-IMG-003",
-            "tc_id": "AC-IMG-003",
-            "path_type": "`test -f contracts/form-xhs.contract.md && rg -n \"xhs-article-to-images",
-            "raw": "TC-IMG-003 | AC-IMG-003 | `test -f contracts/form-xhs.contract.md && rg -n \"xhs-article-to-images | OCR | fail-closed | blocked\" contracts/form-xhs.contract.md` | xhs 契约含 bridge 与 OCR 门"
+            "ac_id": "TC-NVL-003",
+            "tc_id": "AC-NVL-003",
+            "path_type": "`rg -n \"canon_gate_status",
+            "raw": "TC-NVL-003 | AC-NVL-003 | `rg -n \"canon_gate_status | review_required | failed | generated | fast_lane_skip\" contracts/form-novel.contract.md` | canon 钩子声明"
           },
           {
-            "ac_id": "TC-IMG-004",
-            "tc_id": "AC-IMG-004",
-            "path_type": "`rg -n \"form-image-post.contract",
-            "raw": "TC-IMG-004 | AC-IMG-004 | `rg -n \"form-image-post.contract | form-xhs.contract\" skills/_internal/orchestration/creation-mode-map.md` | 路由引用 form 契约"
+            "ac_id": "TC-NVL-004",
+            "tc_id": "AC-NVL-004",
+            "path_type": "`rg -n \"novel",
+            "raw": "TC-NVL-004 | AC-NVL-004 | `rg -n \"novel | form-novel.contract\" skills/_internal/orchestration/creation-mode-map.md` | 路由含 novel 行"
           },
           {
-            "ac_id": "TC-IMG-005",
-            "tc_id": "AC-IMG-005",
-            "path_type": "`test -x scripts/check_image_post_forms.sh`",
-            "raw": "TC-IMG-005 | AC-IMG-005 | `test -x scripts/check_image_post_forms.sh` | exec 脚本存在且可执行"
+            "ac_id": "TC-NVL-005",
+            "tc_id": "AC-NVL-005",
+            "path_type": "`test -x scripts/check_novel_form.sh`",
+            "raw": "TC-NVL-005 | AC-NVL-005 | `test -x scripts/check_novel_form.sh` | exec 脚本存在且可执行"
           },
           {
-            "ac_id": "TC-IMG-007",
-            "tc_id": "AC-IMG-001",
-            "path_type": "`python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/form-registry.yaml')); fs={f['form'] for f in d['forms']}; raise SystemExit(0 if {'image-post','xhs'}<=fs else 1)\"`",
-            "raw": "TC-IMG-007 | AC-IMG-001 | `python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/form-registry.yaml')); fs={f['form'] for f in d['forms']}; raise SystemExit(0 if {'image-post','xhs'}<=fs else 1)\"` | registry 含 image-post+xhs"
+            "ac_id": "TC-NVL-007",
+            "tc_id": "AC-NVL-001",
+            "path_type": "`python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/form-registry.yaml')); fs={f['form'] for f in d['forms']}; raise SystemExit(0 if 'novel' in fs else 1)\"`",
+            "raw": "TC-NVL-007 | AC-NVL-001 | `python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/form-registry.yaml')); fs={f['form'] for f in d['forms']}; raise SystemExit(0 if 'novel' in fs else 1)\"` | registry 含 novel"
           },
           {
-            "ac_id": "TC-IMG-008",
-            "tc_id": "AC-IMG-006",
-            "path_type": "`rg -n \"配置",
-            "raw": "TC-IMG-008 | AC-IMG-006 | `rg -n \"配置 | 配置化 | 禁止.*硬编码 | kushi\" contracts/form-image-post.contract.md && rg -n \"account | 账号\" contracts/form-image-post.contract.md` | 账号配置化声明"
+            "ac_id": "TC-NVL-008",
+            "tc_id": "AC-NVL-006",
+            "path_type": "`rg -n \"kushi-narrative-zh",
+            "raw": "TC-NVL-008 | AC-NVL-006 | `rg -n \"kushi-narrative-zh | fail-closed | blocked | reason_code\" contracts/form-novel.contract.md` | bridge fail-closed"
           },
           {
-            "ac_id": "TC-IMG-009",
-            "tc_id": "AC-IMG-007",
-            "path_type": "`rg -n \"fail-closed",
-            "raw": "TC-IMG-009 | AC-IMG-007 | `rg -n \"fail-closed | blocked | reason_code\" contracts/form-image-post.contract.md contracts/form-xhs.contract.md` | bridge fail-closed"
+            "ac_id": "TC-NVL-009",
+            "tc_id": "AC-NVL-007",
+            "path_type": "`rg -n \"content/storyworlds",
+            "raw": "TC-NVL-009 | AC-NVL-007 | `rg -n \"content/storyworlds | bible | canon-ledger\" contracts/form-novel.contract.md` | StoryWorld 路径引用"
           },
           {
-            "ac_id": "TC-IMG-010",
-            "tc_id": "AC-IMG-008",
-            "path_type": "`rg -n \"乱码",
-            "raw": "TC-IMG-010 | AC-IMG-008 | `rg -n \"乱码 | 随机文字 | 图序 | 尺寸 | 分离 | 价值\" contracts/form-image-post.contract.md && rg -n \"证据 | evidence\" contracts/form-image-post.contract.md` | OCR/QA 门与证据"
+            "ac_id": "TC-NVL-010",
+            "tc_id": "AC-NVL-008",
+            "path_type": "`test -f skills/prism-qa/references/anti-slop-gate.md && rg -n \"证据",
+            "raw": "TC-NVL-010 | AC-NVL-008 | `test -f skills/prism-qa/references/anti-slop-gate.md && rg -n \"证据 | 原文行\" skills/prism-qa/references/anti-slop-gate.md` | maker≠checker 证据"
           },
           {
-            "ac_id": "TC-IMG-011",
-            "tc_id": "AC-IMG-009",
-            "path_type": "`test -f skills/prism-qa/references/anti-slop-gate.md && test ! -f contracts/form-image-post.contract.md.qa`",
-            "raw": "TC-IMG-011 | AC-IMG-009 | `test -f skills/prism-qa/references/anti-slop-gate.md && test ! -f contracts/form-image-post.contract.md.qa` | maker≠checker 分离"
+            "ac_id": "TC-NVL-011",
+            "tc_id": "AC-NVL-009",
+            "path_type": "`rg -n \"OOC",
+            "raw": "TC-NVL-011 | AC-NVL-009 | `rg -n \"OOC | 设定漂移 | fail-closed | 事实错误\" contracts/form-novel.contract.md` | OOC/连续性门"
           },
           {
-            "ac_id": "TC-IMG-012",
-            "tc_id": "AC-IMG-010",
-            "path_type": "`rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md && rg -n \"D4",
-            "raw": "TC-IMG-012 | AC-IMG-010 | `rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md && rg -n \"D4 | D5 | D6\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md` | 分湖边界存在"
+            "ac_id": "TC-NVL-012",
+            "tc_id": "AC-NVL-010",
+            "path_type": "`rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md && rg -n \"D5",
+            "raw": "TC-NVL-012 | AC-NVL-010 | `rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md && rg -n \"D5 | D6\" docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md` | 分湖边界存在"
           },
           {
-            "ac_id": "TC-IMG-014",
-            "tc_id": "AC-IMG-002",
-            "path_type": "`rg -n \"US-IMG-001",
-            "raw": "TC-IMG-014 | AC-IMG-002 | `rg -n \"US-IMG-001 | 贴图包\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md` | 贴图包旅程可追溯"
-          },
-          {
-            "ac_id": "TC-IMG-015",
-            "tc_id": "AC-IMG-003",
-            "path_type": "`rg -n \"US-IMG-002",
-            "raw": "TC-IMG-015 | AC-IMG-003 | `rg -n \"US-IMG-002 | 小红书\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md` | xhs 旅程可追溯"
+            "ac_id": "TC-NVL-014",
+            "tc_id": "AC-NVL-002",
+            "path_type": "`rg -n \"US-PRISM-002",
+            "raw": "TC-NVL-014 | AC-NVL-002 | `rg -n \"US-PRISM-002 | 连载\" docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md` | 连载旅程可追溯"
           }
         ],
         "has_legal_walk": true,
@@ -2323,7 +2332,7 @@
   "release_ready": true,
   "delivery_contract": {
     "schema_version": "1.0",
-    "feature": "prism-form-image-post-v1",
+    "feature": "prism-form-novel-v1",
     "version": "v0.0.1",
     "requested_mode": "feature-aware",
     "effective_mode": "feature-aware",
@@ -2344,14 +2353,14 @@
     "subagent_prechecks": {},
     "requirement_binding": {
       "source_of_truth_root": "docs/beacon/v0.0.1",
-      "feature_matrix_path": ".beacon/qa/features/prism-form-image-post-v1/matrix.qa9.json",
-      "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-form-image-post-v1.ac-test-matrix.json"
+      "feature_matrix_path": ".beacon/qa/features/prism-form-novel-v1/matrix.qa9.json",
+      "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-form-novel-v1.ac-test-matrix.json"
     },
     "traceability_refs": [
-      ".beacon/qa/features/prism-form-image-post-v1/matrix.qa9.json",
-      "docs/beacon/v0.0.1/.machine/qa/prism-form-image-post-v1.ac-test-matrix.json",
-      ".beacon/qa/features/prism-form-image-post-v1/ac-closure.json",
-      ".beacon/qa/features/prism-form-image-post-v1/scorecard.json",
+      ".beacon/qa/features/prism-form-novel-v1/matrix.qa9.json",
+      "docs/beacon/v0.0.1/.machine/qa/prism-form-novel-v1.ac-test-matrix.json",
+      ".beacon/qa/features/prism-form-novel-v1/ac-closure.json",
+      ".beacon/qa/features/prism-form-novel-v1/scorecard.json",
       ".beacon/release-gate-report.json"
     ],
     "runner": "",
@@ -2365,7 +2374,7 @@
   },
   "host_native_delivery": {
     "schema_version": "1.0",
-    "feature": "prism-form-image-post-v1",
+    "feature": "prism-form-novel-v1",
     "version": "v0.0.1",
     "requested_mode": "feature-aware",
     "effective_mode": "feature-aware",
@@ -2386,14 +2395,14 @@
     "subagent_prechecks": {},
     "requirement_binding": {
       "source_of_truth_root": "docs/beacon/v0.0.1",
-      "feature_matrix_path": ".beacon/qa/features/prism-form-image-post-v1/matrix.qa9.json",
-      "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-form-image-post-v1.ac-test-matrix.json"
+      "feature_matrix_path": ".beacon/qa/features/prism-form-novel-v1/matrix.qa9.json",
+      "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-form-novel-v1.ac-test-matrix.json"
     },
     "traceability_refs": [
-      ".beacon/qa/features/prism-form-image-post-v1/matrix.qa9.json",
-      "docs/beacon/v0.0.1/.machine/qa/prism-form-image-post-v1.ac-test-matrix.json",
-      ".beacon/qa/features/prism-form-image-post-v1/ac-closure.json",
-      ".beacon/qa/features/prism-form-image-post-v1/scorecard.json",
+      ".beacon/qa/features/prism-form-novel-v1/matrix.qa9.json",
+      "docs/beacon/v0.0.1/.machine/qa/prism-form-novel-v1.ac-test-matrix.json",
+      ".beacon/qa/features/prism-form-novel-v1/ac-closure.json",
+      ".beacon/qa/features/prism-form-novel-v1/scorecard.json",
       ".beacon/release-gate-report.json"
     ],
     "runner": "",
@@ -2405,5 +2414,5 @@
     "release_ready": true,
     "risk_flags": []
   },
-  "current_spec_fingerprint_hash": "7be8541b296e2c2a1b3877434dac10a73c11cc35853ab4671b6e0e60037ae6b6"
+  "current_spec_fingerprint_hash": "c9c442ff4943dd179127ef49d61a6310310db89bab9f7da4f8ed4d0234c15c09"
 }

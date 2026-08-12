@@ -1,0 +1,1 @@
+test -f registry/form-registry.yaml && rg -n "novel" registry/form-registry.yaml && rg -n "form-novel.contract" registry/form-registry.yaml

@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "artifact": "qa_acceptance_envelope",
+  "version": "v0.0.1",
+  "feature": "prism-form-novel-v1",
+  "feature_slug": "prism-form-novel-v1",
+  "revision_id": "R1",
+  "verdict": "passed",
+  "accepted_at": "2026-08-12T00:59:13.104206+00:00",
+  "accepted_by": "qa",
+  "run_id": "run-20260812T085911329188",
+  "transaction_id": "tx-qa-acceptance-prism-form-novel-v1-ad8ddeeebe99",
+  "source_hash": "sha256:ad8ddeeebe99b9c7e67c603a8a6f5c5d5a3051462cbb5e043052c2b9c5e90e50",
+  "projection_seq": 1,
+  "source_command": "beacon qa run \"prism-form-novel-v1\" --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-novel-v1 --version v0.0.1",
+  "requirement_refs": [
+    "docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-form-novel-v1/tests.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-form-novel-v1.revision.json"
+  ],
+  "test_case_refs": [],
+  "evidence_refs": [
+    ".beacon/auto-test-status.json",
+    ".beacon/qa/status.json",
+    "docs/beacon/v0.0.1/.machine/qa/prism-form-novel-v1.ac-test-matrix.json",
+    ".beacon/coverage-summary.json",
+    ".beacon/release-gate-report.json"
+  ],
+  "story_status": "implemented",
+  "revision_delivery_status": "implemented",
+  "required_ac_count": 0,
+  "required_test_count": 0,
+  "canonical_envelope_ref": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-form-novel-v1.json",
+  "markdown_ref": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-form-novel-v1.md",
+  "transaction_lineage": {
+    "current_transaction_id": "tx-qa-acceptance-prism-form-novel-v1-ad8ddeeebe99",
+    "projection_seq": 1,
+    "source_hash": "sha256:ad8ddeeebe99b9c7e67c603a8a6f5c5d5a3051462cbb5e043052c2b9c5e90e50",
+    "workflow_memory_ref": ".beacon/memory/workflow-lifecycle.json",
+    "memory_event_id": "",
+    "memory_entry_id": "44631183-04a0-44f3-b7fb-95e28c9067bf"
+  },
+  "sink_checksums": {
+    "machine": "sha256:139cdfe92a0cb01429c5a62c9ed24c757d15114b5afadb0b01df9ab17644a2c7",
+    "human": "sha256:b0aaf318cf190ec96b96c2afff637240f2eeae3ab3c8f1a22bb212b6caee2b22",
+    "runtime": "sha256:421f0056f8b5963edd6ac9ce7c17656c2156dc040828e119a6f3a18ef9365db7"
+  },
+  "runtime_projection_ref": ".beacon/transactions/qa-acceptance-prism-form-novel-v1.json",
+  "transaction_status": "applied",
+  "failed_sinks": []
+}

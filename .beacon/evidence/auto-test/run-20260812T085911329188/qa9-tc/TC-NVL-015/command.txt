@@ -1,0 +1,1 @@
+rg -n "US-NVL-002|canon_gate_status" docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md

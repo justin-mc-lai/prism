@@ -1,0 +1,1 @@
+test -f contracts/form-novel.contract.md && rg -n "StoryMaster|episode|content/storyworlds|证据|evidence" contracts/form-novel.contract.md

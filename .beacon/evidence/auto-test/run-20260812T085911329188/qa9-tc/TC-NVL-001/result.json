@@ -1,0 +1,29 @@
+{
+  "layer": "contract",
+  "command": "test -f registry/form-registry.yaml && rg -n \"novel\" registry/form-registry.yaml && rg -n \"form-novel.contract\" registry/form-registry.yaml",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 0,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "8f48d5ec87122995cfc1816ac11712da2bae299d71006fa790291d0944171011",
+  "started_at": "2026-08-12T08:59:11.507806",
+  "ended_at": "2026-08-12T08:59:11.525735",
+  "junit_path": "",
+  "junit_valid": false,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-001/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-001/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-001/stderr.log"
+  ],
+  "tc_id": "TC-NVL-001",
+  "ac_id": "AC-NVL-001"
+}

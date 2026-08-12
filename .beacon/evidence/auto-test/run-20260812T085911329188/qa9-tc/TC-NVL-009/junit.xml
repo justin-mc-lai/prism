@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite name="contract" tests="3" failures="0" errors="0" skipped="0">
+  <properties><property name="command" value="rg -n "content/storyworlds|bible|canon-ledger" contracts/form-novel.contract.md" /></properties>
+    <testcase classname="contract" name="structured_cli_assertions-001" />
+    <testcase classname="contract" name="structured_cli_assertions-002" />
+    <testcase classname="contract" name="structured_cli_assertions-003" />
+</testsuite>

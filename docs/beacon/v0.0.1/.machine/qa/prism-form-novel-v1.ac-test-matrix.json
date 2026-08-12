@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-form-novel-v1",
+  "feature_slug": "prism-form-novel-v1",
+  "version": "v0.0.1",
+  "generated_at": "2026-08-12T08:59:04.618133",
+  "compiler": {
+    "requested_mode": "auto",
+    "effective_mode": "host",
+    "generator_mode": "host",
+    "fallback_reason": "",
+    "capability_snapshot": {
+      "schema_version": "1.0",
+      "command_name": "test-case",
+      "host_runtime": "codex",
+      "host_runtime_supported": true,
+      "host_bridge_declared": true,
+      "host_bridge_command_available": true,
+      "host_bridge_command_source": "env_cmd",
+      "host_bridge_command_env": "BEACON_HOST_TEST_CASE_BRIDGE_CMD",
+      "host_response_available": false,
+      "host_response_source": "none",
+      "host_response_path": "",
+      "host_transport": "command-bridge",
+      "host_semantic_ready": true,
+      "response_used": false,
+      "host_mode_options": [
+        "host-response",
+        "host",
+        "host-provider",
+        "llm",
+        "rule"
+      ],
+      "provider_available": false,
+      "provider_key_present": false,
+      "llm_disabled": false,
+      "disable_env": "BEACON_TEST_CASE_DISABLE_LLM"
+    },
+    "model": "beacon-test-case-compiler"
+  },
+  "entries": [
+    {
+      "tc_id": "TC-NVL-002",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "content/storyworlds",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-novel-v1/{run_id}/TC-NVL-002.json",
+      "status": "passed",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-form-novel-v1/docs/beacon/v0.0.1/features/prism-form-novel-v1/tests.md",
+      "last_run_id": "run-20260812T085911329188",
+      "last_evidence_ref": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-002/command.txt"
+    },
+    {
+      "tc_id": "TC-NVL-003",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "failed",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-novel-v1/{run_id}/TC-NVL-003.json",
+      "status": "passed",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-form-novel-v1/docs/beacon/v0.0.1/features/prism-form-novel-v1/tests.md",
+      "last_run_id": "run-20260812T085911329188",
+      "last_evidence_ref": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-003/command.txt"
+    },
+    {
+      "tc_id": "TC-NVL-004",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "路由含 novel 行",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-novel-v1/{run_id}/TC-NVL-004.json",
+      "status": "passed",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-form-novel-v1/docs/beacon/v0.0.1/features/prism-form-novel-v1/tests.md",
+      "last_run_id": "run-20260812T085911329188",
+      "last_evidence_ref": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-004/command.txt"
+    },
+    {
+      "tc_id": "TC-NVL-008",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "blocked",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-novel-v1/{run_id}/TC-NVL-008.json",
+      "status": "passed",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-form-novel-v1/docs/beacon/v0.0.1/features/prism-form-novel-v1/tests.md",
+      "last_run_id": "run-20260812T085911329188",
+      "last_evidence_ref": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-008/command.txt"
+    },
+    {
+      "tc_id": "TC-NVL-009",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "canon-ledger\" contracts/form-novel.contract.md`",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-novel-v1/{run_id}/TC-NVL-009.json",
+      "status": "passed",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-form-novel-v1/docs/beacon/v0.0.1/features/prism-form-novel-v1/tests.md",
+      "last_run_id": "run-20260812T085911329188",
+      "last_evidence_ref": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-009/command.txt"
+    },
+    {
+      "tc_id": "TC-NVL-010",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "maker≠checker 证据",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-novel-v1/{run_id}/TC-NVL-010.json",
+      "status": "passed",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-form-novel-v1/docs/beacon/v0.0.1/features/prism-form-novel-v1/tests.md",
+      "last_run_id": "run-20260812T085911329188",
+      "last_evidence_ref": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-010/command.txt"
+    },
+    {
+      "tc_id": "TC-NVL-011",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "fail-closed",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-novel-v1/{run_id}/TC-NVL-011.json",
+      "status": "passed",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-form-novel-v1/docs/beacon/v0.0.1/features/prism-form-novel-v1/tests.md",
+      "last_run_id": "run-20260812T085911329188",
+      "last_evidence_ref": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-011/command.txt"
+    },
+    {
+      "tc_id": "TC-NVL-012",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "分湖边界存在",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-novel-v1/{run_id}/TC-NVL-012.json",
+      "status": "passed",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-form-novel-v1/docs/beacon/v0.0.1/features/prism-form-novel-v1/tests.md",
+      "last_run_id": "run-20260812T085911329188",
+      "last_evidence_ref": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-012/command.txt"
+    },
+    {
+      "tc_id": "TC-NVL-013",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "宣称 Lake D\" docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md`",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-novel-v1/{run_id}/TC-NVL-013.json",
+      "status": "passed",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-form-novel-v1/docs/beacon/v0.0.1/features/prism-form-novel-v1/tests.md",
+      "last_run_id": "run-20260812T085911329188",
+      "last_evidence_ref": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-013/command.txt"
+    },
+    {
+      "tc_id": "TC-NVL-014",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "连载旅程可追溯",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-novel-v1/{run_id}/TC-NVL-014.json",
+      "status": "passed",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-form-novel-v1/docs/beacon/v0.0.1/features/prism-form-novel-v1/tests.md",
+      "last_run_id": "run-20260812T085911329188",
+      "last_evidence_ref": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-014/command.txt"
+    },
+    {
+      "tc_id": "TC-NVL-015",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "canon 拒绝路径可追溯",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-novel-v1/{run_id}/TC-NVL-015.json",
+      "status": "passed",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-form-novel-v1/docs/beacon/v0.0.1/features/prism-form-novel-v1/tests.md",
+      "last_run_id": "run-20260812T085911329188",
+      "last_evidence_ref": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-015/command.txt"
+    }
+  ],
+  "research_projection": {
+    "schema_version": "1.0",
+    "feature": "prism-form-novel-v1",
+    "version": "v0.0.1",
+    "source": "research:.beacon/worktrees/v0.0.1/prism-form-novel-v1/docs/beacon/v0.0.1/research/prism-form-novel-v1.md",
+    "present": true,
+    "section_count": 0,
+    "sections": {},
+    "derived_items": []
+  },
+  "markdown_matrix_contract": {
+    "truth_mode": "generated",
+    "fail_closed": false,
+    "source": "docs/beacon/v0.0.1/features/prism-form-novel-v1/tests.md",
+    "row_count": 11,
+    "enrichment_disabled": false
+  }
+}

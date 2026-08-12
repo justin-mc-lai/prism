@@ -1,0 +1,1 @@
+python3 -c "import yaml,sys; d=yaml.safe_load(open('registry/form-registry.yaml')); fs={f['form'] for f in d['forms']}; raise SystemExit(0 if 'novel' in fs else 1)"

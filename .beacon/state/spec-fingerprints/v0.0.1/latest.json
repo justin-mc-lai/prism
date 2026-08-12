@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "run_id": "run-20260812T085444996257",
+  "run_id": "run-20260812T085911329188",
   "version": "v0.0.1",
-  "generated_at": "2026-08-12T00:54:46.836899+00:00",
+  "generated_at": "2026-08-12T00:59:13.088727+00:00",
   "layers": {
     "user_story": {
-      "hash": "8be70cc9586d7b5e115f1113e98528d4e352e7b2c529bceec0ff7e302e131ac4",
-      "count": 5,
+      "hash": "94169506e13e143fd3af212f4291130b8fe547484e1ddf5113ec963a1004797b",
+      "count": 6,
       "files": [
         {
           "path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
@@ -23,6 +23,10 @@
         {
           "path": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
           "sha256": "9977d99673b82b45af61d8b675d0e2a21d65c769151dc0b697e1fe54439be1ae"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md",
+          "sha256": "7ae1f5e1dd123c0d6d9650abc7eeb9244c82d99b3a36ded727ea4f28edd3e02a"
         },
         {
           "path": "docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
@@ -31,8 +35,8 @@
       ]
     },
     "prd": {
-      "hash": "8be70cc9586d7b5e115f1113e98528d4e352e7b2c529bceec0ff7e302e131ac4",
-      "count": 5,
+      "hash": "94169506e13e143fd3af212f4291130b8fe547484e1ddf5113ec963a1004797b",
+      "count": 6,
       "files": [
         {
           "path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
@@ -51,14 +55,18 @@
           "sha256": "9977d99673b82b45af61d8b675d0e2a21d65c769151dc0b697e1fe54439be1ae"
         },
         {
+          "path": "docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md",
+          "sha256": "7ae1f5e1dd123c0d6d9650abc7eeb9244c82d99b3a36ded727ea4f28edd3e02a"
+        },
+        {
           "path": "docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
           "sha256": "8c3bb9466469141c43194d4b15aaed8a84676a476c2b98ee4b3d1b74e8ac1cb9"
         }
       ]
     },
     "test_case": {
-      "hash": "f81acfaa0a44656b4289a9ad545ea18b6644d58288c05e534bd6835796bf467d",
-      "count": 10,
+      "hash": "9faad19da85f503de4ac0e5f870324cc9bfa37c7703477a207c373af2cf09c8d",
+      "count": 12,
       "files": [
         {
           "path": "docs/beacon/v0.0.1/.machine/qa/prism-campaign-schema-v1.ac-test-matrix.json",
@@ -75,6 +83,10 @@
         {
           "path": "docs/beacon/v0.0.1/.machine/qa/prism-form-image-post-v1.ac-test-matrix.json",
           "sha256": "f3413efc95d8d7f0367111464fa213c25bfbee767994b3f50372752aea27d7fb"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/.machine/qa/prism-form-novel-v1.ac-test-matrix.json",
+          "sha256": "6883926bc1693fea87003b5a04d2e21ead8f3311ad7f7c0531538b210d1feac3"
         },
         {
           "path": "docs/beacon/v0.0.1/.machine/qa/prism-form-writing-v1.ac-test-matrix.json",
@@ -97,11 +109,15 @@
           "sha256": "9d63b3b846f8cf04276d3dd0049686ccd226d94f1705e4b121b58fa286718833"
         },
         {
+          "path": "docs/beacon/v0.0.1/features/prism-form-novel-v1/tests.md",
+          "sha256": "dcbe54207ee4195d28c3b4f15310446b9a72ec054f0c9c22255a04c4e7630055"
+        },
+        {
           "path": "docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md",
           "sha256": "73e5ae1a2e67ee0878ac2e2fc9f01a89e5ce1be108b8415f3fe4edbd6394a667"
         }
       ]
     }
   },
-  "fingerprint_hash": "7be8541b296e2c2a1b3877434dac10a73c11cc35853ab4671b6e0e60037ae6b6"
+  "fingerprint_hash": "c9c442ff4943dd179127ef49d61a6310310db89bab9f7da4f8ed4d0234c15c09"
 }

@@ -1,0 +1,1 @@
+rg -n "OOC|设定漂移|fail-closed|事实错误" contracts/form-novel.contract.md

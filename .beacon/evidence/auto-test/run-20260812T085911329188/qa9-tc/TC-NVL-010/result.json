@@ -1,0 +1,29 @@
+{
+  "layer": "contract",
+  "command": "test -f skills/prism-qa/references/anti-slop-gate.md && rg -n \"证据|原文行\" skills/prism-qa/references/anti-slop-gate.md",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 0,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "ebc4ebb74d0f230b9e200f99cc83a5d9b4b6cbdc18996b27cf6567f3fe9d8082",
+  "started_at": "2026-08-12T08:59:12.517515",
+  "ended_at": "2026-08-12T08:59:12.531113",
+  "junit_path": "",
+  "junit_valid": false,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-010/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-010/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-010/stderr.log"
+  ],
+  "tc_id": "TC-NVL-010",
+  "ac_id": "AC-NVL-008"
+}

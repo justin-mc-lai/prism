@@ -1,0 +1,5 @@
+36:  - form: novel
+37:    contract: contracts/form-novel.contract.md
+39:    producer_chain: StoryMaster → director episode outline → form-novel.contract → canon_gate_status=passed → QA → release
+37:    contract: contracts/form-novel.contract.md
+39:    producer_chain: StoryMaster → director episode outline → form-novel.contract → canon_gate_status=passed → QA → release

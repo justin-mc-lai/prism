@@ -1,0 +1,30 @@
+{
+  "layer": "contract",
+  "command": "rg -n \"kushi-narrative-zh|fail-closed|blocked|reason_code\" contracts/form-novel.contract.md",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 3,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "d1db53b8c52a5552ac32489c6425921465f89948ef9b131a6f12e62f61d47048",
+  "started_at": "2026-08-12T08:59:12.339477",
+  "ended_at": "2026-08-12T08:59:12.352076",
+  "junit_path": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-008/junit.xml",
+  "junit_valid": true,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-008/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-008/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-008/stderr.log",
+    ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-008/junit.xml"
+  ],
+  "tc_id": "TC-NVL-008",
+  "ac_id": "AC-NVL-006"
+}

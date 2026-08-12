@@ -1,0 +1,30 @@
+{
+  "layer": "contract",
+  "command": "rg -n \"US-PRISM-002|连载\" docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 4,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "2e406d4f9e79f566813b4c1894b224ddebe0dca549c9a57a2f3075f5311e698a",
+  "started_at": "2026-08-12T08:59:12.890688",
+  "ended_at": "2026-08-12T08:59:12.902829",
+  "junit_path": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-014/junit.xml",
+  "junit_valid": true,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-014/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-014/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-014/stderr.log",
+    ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-014/junit.xml"
+  ],
+  "tc_id": "TC-NVL-014",
+  "ac_id": "AC-NVL-002"
+}

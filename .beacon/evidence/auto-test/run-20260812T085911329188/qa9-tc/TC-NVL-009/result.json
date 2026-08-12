@@ -1,0 +1,30 @@
+{
+  "layer": "contract",
+  "command": "rg -n \"content/storyworlds|bible|canon-ledger\" contracts/form-novel.contract.md",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 3,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "1003d3b7796b22d6682e8c1ea2f8b6fc6c39b42dfe04357b85852ffddf6e8148",
+  "started_at": "2026-08-12T08:59:12.428168",
+  "ended_at": "2026-08-12T08:59:12.440433",
+  "junit_path": ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-009/junit.xml",
+  "junit_valid": true,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-009/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-009/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-009/stderr.log",
+    ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-009/junit.xml"
+  ],
+  "tc_id": "TC-NVL-009",
+  "ac_id": "AC-NVL-007"
+}

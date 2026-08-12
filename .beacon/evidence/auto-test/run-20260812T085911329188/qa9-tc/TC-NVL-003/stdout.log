@@ -1,0 +1,5 @@
+9:- lane: canon|standard（canon 禁用 fast_lane_skip）
+28:- 头部: episode_id + world_slug + master_id + sequence + canon_gate_status
+32:- `canon_gate_status` 三态：review_required / passed / failed
+33:- `review_required` 或 `failed` → **不得进入 generated**（illegal）
+45:- 必须停: 正典未过（canon_gate_status≠passed）、事实无源、发布批准

@@ -1,0 +1,29 @@
+{
+  "layer": "contract",
+  "command": "bash scripts/check_novel_form.sh",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 0,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "d8623c20b218a8e422ee1d72d7a67d111de35813cdf2a655519f2006498f0640",
+  "started_at": "2026-08-12T08:59:11.945387",
+  "ended_at": "2026-08-12T08:59:12.110164",
+  "junit_path": "",
+  "junit_valid": false,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-006/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-006/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T085911329188/qa9-tc/TC-NVL-006/stderr.log"
+  ],
+  "tc_id": "TC-NVL-006",
+  "ac_id": "AC-NVL-005"
+}

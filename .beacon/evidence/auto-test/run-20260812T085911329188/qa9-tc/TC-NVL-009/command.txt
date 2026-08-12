@@ -1,0 +1,1 @@
+rg -n "content/storyworlds|bible|canon-ledger" contracts/form-novel.contract.md

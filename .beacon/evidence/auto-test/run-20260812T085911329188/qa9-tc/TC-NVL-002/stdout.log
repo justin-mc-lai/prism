@@ -1,0 +1,12 @@
+3:> 形态契约。正典规则继承 Lake A FP-PRISM-003 / Lake C narrative-episode schema。
+8:- 定位: 连载小说/漫画脚本（episode 制）
+14:- 能决定：episode 结构、叙事执行、bridge 选择
+19:- StoryMaster（world bible + canon ledger，`content/storyworlds/{world_slug}/`）
+20:- director episode outline（sequence + 冲突 + 节奏）
+22:拒绝：无 StoryMaster / 无 outline / kushi-narrative-zh 缺失 → blocked + reason_code
+26:- 章节: `content/storyworlds/{world_slug}/episodes/{episode_id}.yaml` + 正文草稿
+27:- 证据: `.beacon/evidence/implement/prism-form-novel-v1/AC-NVL-002.json`
+28:- 头部: episode_id + world_slug + master_id + sequence + canon_gate_status
+34:- OOC / 设定漂移 → 按事实错误 fail-closed（引用 canon ledger 证据）
+36:- QA 每项结论引用原文行 + 证据路径
+44:- 可重试: 叙事稿、episode 结构、换 bridge

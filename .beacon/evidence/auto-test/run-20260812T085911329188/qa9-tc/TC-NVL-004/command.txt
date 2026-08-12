@@ -1,0 +1,1 @@
+rg -n "novel|form-novel.contract" skills/_internal/orchestration/creation-mode-map.md
