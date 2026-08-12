@@ -1,0 +1,5 @@
+15:| vlog 口播 | 话题/受众 | 脚本事实清单 | ra-video-production-director | form-av.contract（口播稿 + bridge openmontage） | anti-slop-gate + 视频 QA | 视频草稿 |
+20:| comic 漫画 | 选题/创意 | 分镜设定 + 版权安全检查 | director 分镜 + 角色/场景设定 | form-av.contract（comic 路由）+ bridge comic-storyboard | 乱码/分页/文字可读 + anti-slop-gate | 人工批准 → 漫画草稿 |
+21:| book_video 书籍视频 | 书籍/剧集选题 | 母稿 + 分镜 | director 书籍分镜 | form-av.contract（book_video 路由）+ bridge book-video | 乱码/版权/分镜一致 + anti-slop-gate | 人工批准 → 视频草稿 |
+20:| comic 漫画 | 选题/创意 | 分镜设定 + 版权安全检查 | director 分镜 + 角色/场景设定 | form-av.contract（comic 路由）+ bridge comic-storyboard | 乱码/分页/文字可读 + anti-slop-gate | 人工批准 → 漫画草稿 |
+21:| book_video 书籍视频 | 书籍/剧集选题 | 母稿 + 分镜 | director 书籍分镜 | form-av.contract（book_video 路由）+ bridge book-video | 乱码/版权/分镜一致 + anti-slop-gate | 人工批准 → 视频草稿 |

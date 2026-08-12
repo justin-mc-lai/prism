@@ -1,0 +1,11 @@
+151:10. Non-goals / deferral（AC-AV-010）
+175:| AC-AV-010 | Non-goals：D6、vendor_pin 全量、metrics、平台 API 显式排除；不得宣称海 closure |
+177:## Non-goals
+38:- 不能做：发布桥（D6）；vendor_pin 全量；metrics；平台 API。
+53:delivery: sub-lakes D1..D6
+74:| INT-A11 | sea | must | D6 publish 桥 | deferred |
+157:| DL-A01 | publish/schedule 桥 | accepted | D6 |
+175:| AC-AV-010 | Non-goals：D6、vendor_pin 全量、metrics、平台 API 显式排除；不得宣称海 closure |
+179:- 不实现发布桥（D6）
+160:| DL-A04 | 本子湖宣称海 closure | rejected | FP-PRISM-013 |
+175:| AC-AV-010 | Non-goals：D6、vendor_pin 全量、metrics、平台 API 显式排除；不得宣称海 closure |

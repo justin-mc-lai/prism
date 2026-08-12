@@ -1,0 +1,27 @@
+{
+  "layer": "contract",
+  "command": "test -f registry/form-registry.yaml && rg -n \"comic\" registry/form-registry.yaml && rg -n \"vlog\" registry/form-registry.yaml && rg -n \"book_video\" registry/form-registry.yaml",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 0,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "5cb783a170902d12d7d4687f2e90f33125dbe9f4a64678df65798e7589750265",
+  "started_at": "2026-08-12T09:04:08.299285",
+  "ended_at": "2026-08-12T09:04:08.327597",
+  "junit_path": "",
+  "junit_valid": false,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T090408217552/contract/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T090408217552/contract/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T090408217552/contract/stderr.log"
+  ]
+}

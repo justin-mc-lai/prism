@@ -1,0 +1,7 @@
+1:# Form contract: av（Lake D5 · comic / vlog / book_video）
+7:- form_id: av（comic / vlog / book_video 三路由）
+10:  - comic → comic-storyboard（3:4 竖版；文字 ≥48px/可读；ChatGPT 网页流程）
+11:  - vlog → openmontage（Remotion/FFmpeg；AGPL-3.0，默认 bridge 不 pin）
+12:  - book_video → book-video / rnskill 视频族
+31:- book_video: `content/presentations/{vertical}/{slug}/book-video-{angle}/`
+44:- 其他大栈（rnskill/book-video 等）同规则；未过 license 门一律不 pin

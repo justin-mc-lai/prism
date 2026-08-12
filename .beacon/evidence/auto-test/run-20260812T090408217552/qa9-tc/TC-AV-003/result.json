@@ -1,0 +1,30 @@
+{
+  "layer": "contract",
+  "command": "rg -n \"treatment|presentation map|shot list|storyboard\" contracts/form-av.contract.md",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 4,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "05638e0a0ae905edd6f058c1d07761ce51137a409d8bbdebff5a9a7596e0096a",
+  "started_at": "2026-08-12T09:04:08.618324",
+  "ended_at": "2026-08-12T09:04:08.630511",
+  "junit_path": ".beacon/evidence/auto-test/run-20260812T090408217552/qa9-tc/TC-AV-003/junit.xml",
+  "junit_valid": true,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T090408217552/qa9-tc/TC-AV-003/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T090408217552/qa9-tc/TC-AV-003/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T090408217552/qa9-tc/TC-AV-003/stderr.log",
+    ".beacon/evidence/auto-test/run-20260812T090408217552/qa9-tc/TC-AV-003/junit.xml"
+  ],
+  "tc_id": "TC-AV-003",
+  "ac_id": "AC-AV-003"
+}

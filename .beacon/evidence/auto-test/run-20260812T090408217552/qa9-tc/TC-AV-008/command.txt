@@ -1,0 +1,1 @@
+rg -n "AGPL|license|ATTRIBUTION|vendor_pin|批准" contracts/form-av.contract.md

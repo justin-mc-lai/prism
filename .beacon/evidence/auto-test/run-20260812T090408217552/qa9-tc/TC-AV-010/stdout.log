@@ -1,0 +1,8 @@
+23:- shot list 或 storyboard（分镜/分页）
+36:- 字幕/画面文字无乱码、无随机文字
+37:- 版权安全（角色/风格改写为描述性特征；受版权保护角色拒绝）
+38:- 分镜/图序/分页一致；漫画 3:4 竖版、文字可读
+39:- 文案过 anti-slop-gate；每项结论引用原文/素材行 + 证据路径
+49:- 可重试: 渲染、分镜、换 bridge
+32:- 证据: `.beacon/evidence/implement/prism-form-av-v1/AC-AV-002.json`
+39:- 文案过 anti-slop-gate；每项结论引用原文/素材行 + 证据路径

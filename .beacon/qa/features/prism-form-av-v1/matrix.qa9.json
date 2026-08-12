@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-form-av-v1",
+  "feature_slug": "prism-form-av-v1",
+  "version": "v0.0.1",
+  "generated_at": "2026-08-12T01:04:07.831199+00:00",
+  "execution_mode": "feature-aware",
+  "source_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-form-av-v1.ac-test-matrix.json",
+  "story_scenario_map_path": ".beacon/qa/features/prism-form-av-v1/story-scenario-map.json",
+  "reason_codes": [
+    "no_prior_feature_qa"
+  ],
+  "qa_types": [
+    "contract"
+  ],
+  "entries": [
+    {
+      "ac_id": "AC-AV-001",
+      "tc_id": "TC-AV-001",
+      "layer": "contract",
+      "command": "test -f registry/form-registry.yaml && rg -n \"comic\" registry/form-registry.yaml && rg -n \"vlog\" registry/form-registry.yaml && rg -n \"book_video\" registry/form-registry.yaml",
+      "assertion": "form registry 注册 AV 三形态",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-av-v1/tc-av-001/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-av-v1/docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-AV-002",
+      "tc_id": "TC-AV-002",
+      "layer": "contract",
+      "command": "test -f contracts/form-av.contract.md && rg -n \"comic-storyboard|openmontage|book_video|rnskill\" contracts/form-av.contract.md",
+      "assertion": "AV 契约含三形态 bridge 路由",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-av-v1/tc-av-002/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-av-v1/docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-AV-003",
+      "tc_id": "TC-AV-003",
+      "layer": "contract",
+      "command": "rg -n \"treatment|presentation map|shot list|storyboard\" contracts/form-av.contract.md",
+      "assertion": "director handoff 字段",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-av-v1/tc-av-003/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-av-v1/docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-AV-004",
+      "tc_id": "TC-AV-004",
+      "layer": "contract",
+      "command": "rg -n \"form-av.contract\" skills/_internal/orchestration/creation-mode-map.md && rg -n \"comic|book_video\" skills/_internal/orchestration/creation-mode-map.md",
+      "assertion": "路由引用 AV 契约",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-av-v1/tc-av-004/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-av-v1/docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-AV-005",
+      "tc_id": "TC-AV-005",
+      "layer": "contract",
+      "command": "test -x scripts/check_av_forms.sh",
+      "assertion": "exec 脚本存在且可执行",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-av-v1/tc-av-005/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-av-v1/docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-AV-005",
+      "tc_id": "TC-AV-006",
+      "layer": "contract",
+      "command": "bash scripts/check_av_forms.sh",
+      "assertion": "exec-layer 校验脚本 PASS（合法路径）",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-av-v1/tc-av-006/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-av-v1/docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-AV-001",
+      "tc_id": "TC-AV-007",
+      "layer": "contract",
+      "command": "python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/form-registry.yaml')); fs={f['form'] for f in d['forms']}; raise SystemExit(0 if {'comic','vlog','book_video'}<=fs else 1)\"",
+      "assertion": "registry 含 AV 三形态",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-av-v1/tc-av-007/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-av-v1/docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-AV-006",
+      "tc_id": "TC-AV-008",
+      "layer": "contract",
+      "command": "rg -n \"AGPL|license|ATTRIBUTION|vendor_pin|批准\" contracts/form-av.contract.md",
+      "assertion": "license 注记",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-av-v1/tc-av-008/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-av-v1/docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-AV-007",
+      "tc_id": "TC-AV-009",
+      "layer": "contract",
+      "command": "rg -n \"fail-closed|blocked|reason_code\" contracts/form-av.contract.md",
+      "assertion": "bridge fail-closed",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-av-v1/tc-av-009/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-av-v1/docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-AV-008",
+      "tc_id": "TC-AV-010",
+      "layer": "contract",
+      "command": "rg -n \"乱码|版权|分镜|图序|anti-slop\" contracts/form-av.contract.md && rg -n \"证据|evidence\" contracts/form-av.contract.md",
+      "assertion": "QA 门与证据",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-av-v1/tc-av-010/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-av-v1/docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-AV-009",
+      "tc_id": "TC-AV-011",
+      "layer": "contract",
+      "command": "test -f skills/prism-qa/references/anti-slop-gate.md && test ! -f contracts/form-av.contract.md.qa",
+      "assertion": "maker≠checker 分离",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-av-v1/tc-av-011/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-av-v1/docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-AV-010",
+      "tc_id": "TC-AV-012",
+      "layer": "contract",
+      "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md && rg -n \"D6\" docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md",
+      "assertion": "分湖边界存在",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-av-v1/tc-av-012/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-av-v1/docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-AV-010",
+      "tc_id": "TC-AV-013",
+      "layer": "contract",
+      "command": "rg -n \"Illegal|illegal|宣称 Lake D\" docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md",
+      "assertion": "illegal 转移覆盖（非法拒绝路径）",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-av-v1/tc-av-013/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-av-v1/docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-AV-002",
+      "tc_id": "TC-AV-014",
+      "layer": "contract",
+      "command": "rg -n \"US-AV-001|漫画\" docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md",
+      "assertion": "漫画旅程可追溯",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-av-v1/tc-av-014/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-av-v1/docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-AV-002",
+      "tc_id": "TC-AV-015",
+      "layer": "contract",
+      "command": "rg -n \"US-AV-002|vlog|US-AV-003|book_video\" docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md",
+      "assertion": "vlog/book_video 旅程可追溯",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-form-av-v1/tc-av-015/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-av-v1/docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    }
+  ]
+}

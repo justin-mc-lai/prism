@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-form-av-v1",
+  "feature_slug": "prism-form-av-v1",
+  "run_id": "run-20260812T090408217552",
+  "generated_at": "2026-08-12T01:04:10.116090+00:00",
+  "reports": [
+    {
+      "ac_id": "AC-AV-001",
+      "feature_slug": "prism-form-av-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [
+        "primary"
+      ],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-AV-001",
+        "TC-AV-007"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-AV-002",
+      "feature_slug": "prism-form-av-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-AV-002",
+        "TC-AV-014",
+        "TC-AV-015"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-AV-003",
+      "feature_slug": "prism-form-av-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-AV-003"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-AV-004",
+      "feature_slug": "prism-form-av-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-AV-004"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-AV-005",
+      "feature_slug": "prism-form-av-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [
+        "primary"
+      ],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-AV-005",
+        "TC-AV-006"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-AV-006",
+      "feature_slug": "prism-form-av-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-AV-008"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-AV-007",
+      "feature_slug": "prism-form-av-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-AV-009"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-AV-008",
+      "feature_slug": "prism-form-av-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-AV-010"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-AV-009",
+      "feature_slug": "prism-form-av-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [
+        "primary"
+      ],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-AV-011"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-AV-010",
+      "feature_slug": "prism-form-av-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [
+        "primary"
+      ],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-AV-012",
+        "TC-AV-013"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    }
+  ]
+}

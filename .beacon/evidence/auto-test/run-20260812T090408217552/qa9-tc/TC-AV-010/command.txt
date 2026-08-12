@@ -1,0 +1,1 @@
+rg -n "乱码|版权|分镜|图序|anti-slop" contracts/form-av.contract.md && rg -n "证据|evidence" contracts/form-av.contract.md

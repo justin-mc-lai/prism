@@ -1,0 +1,12 @@
+31:D5 落地三个**视听形态**的生产者路由：comic（漫画）、vlog（口播视频）、book_video（书籍/剧集向视频）。
+32:策略是 **bridge 优先**：直接调用已安装的外部工具（openmontage / comic-storyboard / book_video /
+36:- 能做：form-registry 注册 comic/vlog/book_video；`contracts/form-av.contract.md`；
+49:this_lake: Lake D5（comic/vlog/book_video）
+92:US-AV-002：用户要 vlog。director 出口播脚本/分镜 → bridge openmontage → 成片 QA → release。
+94:US-AV-003：用户要 book_video。bridge book-video 管线；license 未过时不 vendor_pin，只 bridge。
+100:| AvFormContract | form-av | comic/vlog/book_video 路由 + 交接字段 |
+111:| forms_registered | av_planned | form-registry 含 comic/vlog/book_video |
+132:| av_planned | register_forms | comic/vlog/book_video in registry | forms_registered | update form-registry |
+166:| AC-AV-001 | 进入 `forms_registered`：form-registry 登记 comic、vlog、book_video |
+167:| AC-AV-002 | 进入 `av_contract_landed`：`contracts/form-av.contract.md` 定义三形态 bridge 路由（comic-storyboard / openmontage / book_video / rnskill）与 fail-closed |
+169:| AC-AV-004 | 进入 `routing_landed`：creation-mode-map 的 vlog 行引用 form-av.contract，并新增 comic / book_video 行 |

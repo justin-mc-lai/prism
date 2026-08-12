@@ -1,0 +1,8 @@
+3:> 形态契约。AV 大栈 bridge 优先；license 敏感，vendor_pin 需人工批准 + ATTRIBUTION。
+11:  - vlog → openmontage（Remotion/FFmpeg；AGPL-3.0，默认 bridge 不 pin）
+17:- 不能决定：母稿事实、QA 判定、公开发布、vendor_pin（需人工）
+41:## 6. license 注记
+43:- OpenMontage: AGPL-3.0 → 默认 bridge；vendor_pin 需 license review + ATTRIBUTION + 人工批准
+44:- 其他大栈（rnskill/book-video 等）同规则；未过 license 门一律不 pin
+48:- 下一公开面: prism-qa → prism-release（草稿；公开需人工二次批准）
+50:- 必须停: bridge 缺失（av_bridge_missing）、license 未过、事实/正典、发布

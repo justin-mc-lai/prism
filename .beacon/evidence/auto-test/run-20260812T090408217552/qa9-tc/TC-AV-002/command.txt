@@ -1,0 +1,1 @@
+test -f contracts/form-av.contract.md && rg -n "comic-storyboard|openmontage|book_video|rnskill" contracts/form-av.contract.md

@@ -1,0 +1,29 @@
+{
+  "layer": "contract",
+  "command": "test -f registry/form-registry.yaml && rg -n \"comic\" registry/form-registry.yaml && rg -n \"vlog\" registry/form-registry.yaml && rg -n \"book_video\" registry/form-registry.yaml",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 0,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "e498a8e9077ad73fd2d757ecf9bae0f20006410ddda5bd3adca088c8ac58e12b",
+  "started_at": "2026-08-12T09:04:08.412701",
+  "ended_at": "2026-08-12T09:04:08.436709",
+  "junit_path": "",
+  "junit_valid": false,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T090408217552/qa9-tc/TC-AV-001/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T090408217552/qa9-tc/TC-AV-001/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T090408217552/qa9-tc/TC-AV-001/stderr.log"
+  ],
+  "tc_id": "TC-AV-001",
+  "ac_id": "AC-AV-001"
+}
