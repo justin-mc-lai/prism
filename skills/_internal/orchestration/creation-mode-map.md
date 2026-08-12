@@ -22,6 +22,10 @@
 
 ## mode 契约模板（每个产物头部）
 
+> Lake D6（publish bridge）：所有 release 列执行统一走 `contracts/publish-bridge.contract.md`
+> （草稿-only + 人工二次批准 + 误路由守卫 + 凭证保护），bridge 登记见
+> `registry/publish-adapters.yaml`。
+
 ```yaml
 mode_id: design-carousel
 creation_type: image-post

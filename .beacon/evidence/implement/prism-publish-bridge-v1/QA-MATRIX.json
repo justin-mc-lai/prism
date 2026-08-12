@@ -1,0 +1,16 @@
+{"feature": "prism-publish-bridge-v1", "scenarios_total": 15, "scenarios_pass": 15, "ac_total": 10, "ac_pass": 10, "run_id": "run-20260812T030000Z", "surfaces_gate": "pass", "matrix": [
+{"tc": "TC-PUB-001", "ac": "AC-PUB-001", "result": "pass"},
+{"tc": "TC-PUB-002", "ac": "AC-PUB-002", "result": "pass"},
+{"tc": "TC-PUB-003", "ac": "AC-PUB-003", "result": "pass"},
+{"tc": "TC-PUB-004", "ac": "AC-PUB-004", "result": "pass"},
+{"tc": "TC-PUB-005", "ac": "AC-PUB-005", "result": "pass"},
+{"tc": "TC-PUB-006", "ac": "AC-PUB-005", "result": "pass"},
+{"tc": "TC-PUB-007", "ac": "AC-PUB-002", "result": "pass"},
+{"tc": "TC-PUB-008", "ac": "AC-PUB-006", "result": "pass"},
+{"tc": "TC-PUB-009", "ac": "AC-PUB-007", "result": "pass"},
+{"tc": "TC-PUB-010", "ac": "AC-PUB-008", "result": "pass"},
+{"tc": "TC-PUB-011", "ac": "AC-PUB-009", "result": "pass"},
+{"tc": "TC-PUB-012", "ac": "AC-PUB-010", "result": "pass"},
+{"tc": "TC-PUB-013", "ac": "AC-PUB-010", "result": "pass"},
+{"tc": "TC-PUB-014", "ac": "AC-PUB-003", "result": "pass"},
+{"tc": "TC-PUB-015", "ac": "AC-PUB-004", "result": "pass"}]}

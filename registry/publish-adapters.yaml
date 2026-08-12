@@ -1,0 +1,35 @@
+# Prism publish/schedule bridge registry（Lake D6 · MAP-008）
+
+schema_version: "1"
+feature: prism-publish-bridge-v1
+lake: D6
+strategy: bridge_draft_tools_only
+
+adapters:
+  - name: publish-content
+    role: 多平台草稿发布路由
+    strategy: bridge
+    bridge_command: "skill:publish-content（源仓 skills/publish-content）"
+    fail_closed: true
+  - name: schedule-post
+    role: 日历/批量排期
+    strategy: bridge
+    bridge_command: "skill:schedule-post（源仓 skills/schedule-post）"
+    fail_closed: true
+  - name: x-publish
+    role: X/Twitter 发布
+    strategy: bridge
+    bridge_command: "skill:x-publish（源仓 skills/x-publish）"
+    fail_closed: true
+  - name: manage-media
+    role: 媒体管理
+    strategy: bridge
+    bridge_command: "skill:manage-media（源仓 skills/manage-media）"
+    fail_closed: true
+
+guards:
+  draft_only: true
+  human_second_approval_required: true
+  credentials_never_in_repo: true
+  misroute_marks_do_not_publish: true
+  vendor_sync_ai_deferred: true
