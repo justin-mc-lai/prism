@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "version": "v0.0.1",
+  "feature": "prism-form-writing-v1",
+  "feature_slug": "prism-form-writing-v1",
+  "summary": "Maintains release-facing version aggregate projection guards so QA accepted features are included in version change scope before release check.",
+  "status": "generated",
+  "accepted_at": "",
+  "revision_id": "R1",
+  "projection_role": {
+    "artifact_role": "version_aggregate_projection",
+    "truth_source": false,
+    "gate_source": false,
+    "lifecycle_stage": false,
+    "release_publish_action": false
+  },
+  "truth_authority": false,
+  "lifecycle_stage": false,
+  "added": [
+    "Lake D1 writing/humanize/anti-slop base (MAP-005 distill+bridge)",
+    "Feature-level release projection input for QA accepted current feature"
+  ],
+  "removed": [],
+  "fixed": [],
+  "traceability_refs": [
+    "docs/beacon/v0.0.1/change/prism-form-writing-v1.md",
+    "docs/beacon/v0.0.1/prd/prism-form-writing-v1.md",
+    "docs/beacon/v0.0.1/user-story/prism-form-writing-v1.md",
+    "docs/beacon/v0.0.1/qa/test-cases/prism-form-writing-v1.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-form-writing-v1.revision.json"
+  ],
+  "generated_at": "2026-08-12T00:55:00.000000+00:00"
+}
