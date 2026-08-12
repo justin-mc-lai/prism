@@ -14,5 +14,6 @@
   - prism-metrics-publication-v1（Lake E1：发布证据回流 · release_candidate）
   - prism-metrics-snapshot-v1（Lake E2：MetricsSnapshot 指标快照 · release_candidate）
   - prism-review-loop-v1（Lake E3：战役复盘/圣经更新 · release_candidate）
+  - prism-learning-memory-v1（Lake E4：可回放学习记忆 · release_candidate）
 - programs:
   - prism-canon

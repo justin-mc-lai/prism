@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "artifact": "implementation_delivery_host",
   "version": "v0.0.1",
-  "feature_count": 11,
+  "feature_count": 12,
   "feature_slugs": [
     "prism-campaign-schema-v1",
     "prism-extract-v1",
@@ -11,6 +11,7 @@
     "prism-form-image-post-v1",
     "prism-form-novel-v1",
     "prism-form-writing-v1",
+    "prism-learning-memory-v1",
     "prism-metrics-publication-v1",
     "prism-metrics-snapshot-v1",
     "prism-publish-bridge-v1",
@@ -179,6 +180,29 @@
       "updated_at": "2026-08-12T00:43:07.054044+00:00"
     },
     {
+      "feature": "prism-learning-memory-v1",
+      "feature_slug": "prism-learning-memory-v1",
+      "revision_id": "R1",
+      "baseline_id": "impl-delivery-baseline-v0.0.1-prism-learning-memory-v1-R1",
+      "transaction_id": "tx-04d924b364156d40a",
+      "source_hash": "sha256:2c35d5108434090bc42c5d60bbc115d694234741f69e71200e7e240bd4b14943",
+      "baseline_ref": "docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-learning-memory-v1.json",
+      "default_target_branch": "beacon/v0.0.1/prism-learning-memory-v1",
+      "worktree_root": "/Users/apple/Developer/Personal/products/prism",
+      "workspace_root": "/Users/apple/Developer/Personal/products/prism",
+      "direct_delivery_services": [
+        "."
+      ],
+      "writable_services": [
+        "."
+      ],
+      "reference_only_services": [
+        "docs"
+      ],
+      "depends_on_features": [],
+      "updated_at": "2026-08-12T10:47:26.780812+00:00"
+    },
+    {
       "feature": "prism-metrics-publication-v1",
       "feature_slug": "prism-metrics-publication-v1",
       "revision_id": "R1",
@@ -280,13 +304,14 @@
       "prism-form-image-post-v1",
       "prism-form-novel-v1",
       "prism-form-writing-v1",
+      "prism-learning-memory-v1",
       "prism-metrics-publication-v1",
       "prism-metrics-snapshot-v1",
       "prism-publish-bridge-v1",
       "prism-review-loop-v1"
     ]
   },
-  "source_hash": "sha256:963424a1490becf0ec4503d88254b99660689397bc4e42922b57fc8546c0e772",
-  "transaction_id": "tx-7a901223aef3bbb7a",
-  "generated_at": "2026-08-12T10:43:35.145828+00:00"
+  "source_hash": "sha256:94c527d8a44d6a8baa502909f8d7c9fc93ab249eacc39a430f0ac651b58c1b39",
+  "transaction_id": "tx-9c4627186e2a56059",
+  "generated_at": "2026-08-12T10:47:26.785249+00:00"
 }
