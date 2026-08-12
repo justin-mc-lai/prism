@@ -1,0 +1,219 @@
+{
+  "schema_version": "1.0",
+  "run_id": "run-20260812T184654601157",
+  "version": "v0.0.1",
+  "generated_at": "2026-08-12T10:46:56.635009+00:00",
+  "layers": {
+    "user_story": {
+      "hash": "a3909f26910e6b6db3e759a37880741d89a325655c32259f99ea0294dec1ddb9",
+      "count": 12,
+      "files": [
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+          "sha256": "b8700830f8ca2da1453272d38721e31fa532e239a778400570aab6cd32f7ca2d"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+          "sha256": "c2c5d4dfdee3c44759efbbf01c8a5e52c8e6029ce7943476559e1e5c7b2bae82"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md",
+          "sha256": "c29c7a13a5f021fb2fe9e753eb3c0c83a212579bbdaf0848479544bf5cd130b1"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md",
+          "sha256": "66874c8c20399df450ee36315070fb8f6b13056d5526d47ef76e7bd2ac2897a5"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+          "sha256": "9977d99673b82b45af61d8b675d0e2a21d65c769151dc0b697e1fe54439be1ae"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md",
+          "sha256": "7ae1f5e1dd123c0d6d9650abc7eeb9244c82d99b3a36ded727ea4f28edd3e02a"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
+          "sha256": "8c3bb9466469141c43194d4b15aaed8a84676a476c2b98ee4b3d1b74e8ac1cb9"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md",
+          "sha256": "242fe91ed8b8945663975b538a6c8c0fcb99254c188038235d6c191d85e5fda4"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md",
+          "sha256": "b9c4b068dde84a4d948a097d22826a2796929fb3add455646dab9580da677465"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+          "sha256": "613078e5a6c6e5372c1d07d782203cc421be026508db5025ff67649792a36eb8"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-publish-bridge-v1/truth.md",
+          "sha256": "5935c073f14bded15224a8eae64f1545fe8cc7e03c4097295f84f8ab71bda480"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md",
+          "sha256": "7953399db218e058607d4f2059e5cf77d7aa041c0c54d025051b234a86b4fb1c"
+        }
+      ]
+    },
+    "prd": {
+      "hash": "a3909f26910e6b6db3e759a37880741d89a325655c32259f99ea0294dec1ddb9",
+      "count": 12,
+      "files": [
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
+          "sha256": "b8700830f8ca2da1453272d38721e31fa532e239a778400570aab6cd32f7ca2d"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",
+          "sha256": "c2c5d4dfdee3c44759efbbf01c8a5e52c8e6029ce7943476559e1e5c7b2bae82"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md",
+          "sha256": "c29c7a13a5f021fb2fe9e753eb3c0c83a212579bbdaf0848479544bf5cd130b1"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md",
+          "sha256": "66874c8c20399df450ee36315070fb8f6b13056d5526d47ef76e7bd2ac2897a5"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+          "sha256": "9977d99673b82b45af61d8b675d0e2a21d65c769151dc0b697e1fe54439be1ae"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md",
+          "sha256": "7ae1f5e1dd123c0d6d9650abc7eeb9244c82d99b3a36ded727ea4f28edd3e02a"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
+          "sha256": "8c3bb9466469141c43194d4b15aaed8a84676a476c2b98ee4b3d1b74e8ac1cb9"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md",
+          "sha256": "242fe91ed8b8945663975b538a6c8c0fcb99254c188038235d6c191d85e5fda4"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md",
+          "sha256": "b9c4b068dde84a4d948a097d22826a2796929fb3add455646dab9580da677465"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/truth.md",
+          "sha256": "613078e5a6c6e5372c1d07d782203cc421be026508db5025ff67649792a36eb8"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-publish-bridge-v1/truth.md",
+          "sha256": "5935c073f14bded15224a8eae64f1545fe8cc7e03c4097295f84f8ab71bda480"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md",
+          "sha256": "7953399db218e058607d4f2059e5cf77d7aa041c0c54d025051b234a86b4fb1c"
+        }
+      ]
+    },
+    "test_case": {
+      "hash": "6bed1ed44a0b92e8e377c3330433b05d0d4d2d243916e598fdbfb4b14cecb269",
+      "count": 24,
+      "files": [
+        {
+          "path": "docs/beacon/v0.0.1/.machine/qa/prism-campaign-schema-v1.ac-test-matrix.json",
+          "sha256": "42182676687618efe53f3594498ad62e88850e9fc80cd34fd7031db9f68ac1d3"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.ac-test-matrix.json",
+          "sha256": "d0fae487d89534a4c8f6d83323ae85d69984501cbd4541becbc771488ae00e2e"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/.machine/qa/prism-form-av-v1.ac-test-matrix.json",
+          "sha256": "0ae8fa92b34434d4dc364d5f60b83d69a23a4b3deaae1596bddf8f528cceaff4"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/.machine/qa/prism-form-blog-thread-v1.ac-test-matrix.json",
+          "sha256": "23fee5c03c6ca04ef8924b2f7a7184935df0269854ffeafbf2345b071c37589b"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/.machine/qa/prism-form-image-post-v1.ac-test-matrix.json",
+          "sha256": "f3413efc95d8d7f0367111464fa213c25bfbee767994b3f50372752aea27d7fb"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/.machine/qa/prism-form-novel-v1.ac-test-matrix.json",
+          "sha256": "6883926bc1693fea87003b5a04d2e21ead8f3311ad7f7c0531538b210d1feac3"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/.machine/qa/prism-form-writing-v1.ac-test-matrix.json",
+          "sha256": "aad39e8139becacb0695b57ff9f2f7793961630d321dab3eab137740b145d338"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/.machine/qa/prism-learning-memory-v1.ac-test-matrix.json",
+          "sha256": "f8774e501005be28fc5799ed5f1970e53cc3363a97c88da854b56331e76b5061"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/.machine/qa/prism-metrics-publication-v1.ac-test-matrix.json",
+          "sha256": "66a677b1e9ca1132ef307291456a5a897a1e1e7c1581c180f092a7eb501d0db5"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/.machine/qa/prism-metrics-snapshot-v1.ac-test-matrix.json",
+          "sha256": "919777d05ff2f45225fcb254ef70a9fce2205efbd5de30baa416d568a6dc8e6e"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/.machine/qa/prism-publish-bridge-v1.ac-test-matrix.json",
+          "sha256": "4284b1565513b7edf65e55ddad9b09600e7e1f6e9133bb229d31f94c2386bb9c"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/.machine/qa/prism-review-loop-v1.ac-test-matrix.json",
+          "sha256": "d5e5e7d2a70c3f1c2d6e8625eaf66ad43214cd20f24096ecf492001bff00df4c"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
+          "sha256": "6070ec3897c91c2cfff571206bb19eda8adf87d4a6ac1852ad1184c9e7e430b9"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-extract-v1/tests.md",
+          "sha256": "6f5567b63c2b771a6b71efc593a408d23ae77e972614cc42f6a914c82bbe4aa2"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md",
+          "sha256": "39eb8d2dd2112cd2d001c4144094677e2664202c97da4510687afabe9c7e81f2"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/tests.md",
+          "sha256": "7a91941e867b38457da876bf73e9355ec50b8c50adfed6d347b518743335fb85"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md",
+          "sha256": "9d63b3b846f8cf04276d3dd0049686ccd226d94f1705e4b121b58fa286718833"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-form-novel-v1/tests.md",
+          "sha256": "dcbe54207ee4195d28c3b4f15310446b9a72ec054f0c9c22255a04c4e7630055"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md",
+          "sha256": "73e5ae1a2e67ee0878ac2e2fc9f01a89e5ce1be108b8415f3fe4edbd6394a667"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-learning-memory-v1/tests.md",
+          "sha256": "11b18d8b67e860c6db3c99197fbac0f5d882b884cafb3841e2dcfd4857597486"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tests.md",
+          "sha256": "94e56285ca98171882f787e692a2bea44f2727471f534fc73db3ae52dd47b727"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-metrics-snapshot-v1/tests.md",
+          "sha256": "c2257c22c1c67494d7753e135944be4ca15352a4e9f65b0835a0a970963bf89c"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-publish-bridge-v1/tests.md",
+          "sha256": "dae945dc70db82922403787fe68fcff3190737f1a0a6b5e856e88222ccfdbf6c"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-review-loop-v1/tests.md",
+          "sha256": "8c588e7b69e296142a94145a75c4ec506e617d01141140e932552ec3e33d5da1"
+        }
+      ]
+    }
+  },
+  "fingerprint_hash": "3eff6438c67b348d8c1704570b82bb83d5040daa6bbc113e0dd2a0ae545baa4c"
+}

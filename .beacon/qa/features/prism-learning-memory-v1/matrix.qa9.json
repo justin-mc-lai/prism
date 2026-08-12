@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-learning-memory-v1",
+  "feature_slug": "prism-learning-memory-v1",
+  "version": "v0.0.1",
+  "generated_at": "2026-08-12T10:46:54.181144+00:00",
+  "execution_mode": "feature-aware",
+  "source_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-learning-memory-v1.ac-test-matrix.json",
+  "story_scenario_map_path": ".beacon/qa/features/prism-learning-memory-v1/story-scenario-map.json",
+  "reason_codes": [
+    "no_prior_feature_qa"
+  ],
+  "qa_types": [
+    "contract"
+  ],
+  "entries": [
+    {
+      "ac_id": "AC-LMEM-001",
+      "tc_id": "TC-LMEM-001",
+      "layer": "contract",
+      "command": "test -f contracts/learning-memory.contract.md && rg -n \"memory_id|source_ref|claim|confidence|applicability\" contracts/learning-memory.contract.md",
+      "assertion": "学习契约含核心字段",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-learning-memory-v1/tc-lmem-001/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-learning-memory-v1/docs/beacon/v0.0.1/features/prism-learning-memory-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-LMEM-002",
+      "tc_id": "TC-LMEM-002",
+      "layer": "contract",
+      "command": "test -f registry/learning-adapters.yaml && rg -n \"memory-store|recall|prune\" registry/learning-adapters.yaml",
+      "assertion": "学习 bridge 登记",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-learning-memory-v1/tc-lmem-002/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-learning-memory-v1/docs/beacon/v0.0.1/features/prism-learning-memory-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-LMEM-003",
+      "tc_id": "TC-LMEM-003",
+      "layer": "contract",
+      "command": "rg -n \"不定义 truth|不通 gate|verdict|advisory\" contracts/learning-memory.contract.md",
+      "assertion": "advisory-only 边界",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-learning-memory-v1/tc-lmem-003/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-learning-memory-v1/docs/beacon/v0.0.1/features/prism-learning-memory-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-LMEM-004",
+      "tc_id": "TC-LMEM-004",
+      "layer": "contract",
+      "command": "rg -n \"learning-memory.contract\" skills/_internal/orchestration/creation-mode-map.md",
+      "assertion": "路由学习引用",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-learning-memory-v1/tc-lmem-004/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-learning-memory-v1/docs/beacon/v0.0.1/features/prism-learning-memory-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-LMEM-005",
+      "tc_id": "TC-LMEM-005",
+      "layer": "contract",
+      "command": "test -x scripts/check_learning_memory.sh",
+      "assertion": "exec 脚本存在且可执行",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-learning-memory-v1/tc-lmem-005/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-learning-memory-v1/docs/beacon/v0.0.1/features/prism-learning-memory-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-LMEM-005",
+      "tc_id": "TC-LMEM-006",
+      "layer": "contract",
+      "command": "bash scripts/check_learning_memory.sh",
+      "assertion": "exec-layer 校验脚本 PASS（合法路径）",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-learning-memory-v1/tc-lmem-006/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-learning-memory-v1/docs/beacon/v0.0.1/features/prism-learning-memory-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-LMEM-002",
+      "tc_id": "TC-LMEM-007",
+      "layer": "contract",
+      "command": "python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/learning-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=3 else 1)\"",
+      "assertion": "≥3 个学习 bridge",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-learning-memory-v1/tc-lmem-007/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-learning-memory-v1/docs/beacon/v0.0.1/features/prism-learning-memory-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-LMEM-006",
+      "tc_id": "TC-LMEM-008",
+      "layer": "contract",
+      "command": "rg -n \"source_ref|时间|回放\" contracts/learning-memory.contract.md",
+      "assertion": "可回放/可审计",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-learning-memory-v1/tc-lmem-008/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-learning-memory-v1/docs/beacon/v0.0.1/features/prism-learning-memory-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-LMEM-007",
+      "tc_id": "TC-LMEM-009",
+      "layer": "contract",
+      "command": "rg -n \"冲突|conflict|prune|裁剪\" contracts/learning-memory.contract.md",
+      "assertion": "可裁剪/冲突标记",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-learning-memory-v1/tc-lmem-009/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-learning-memory-v1/docs/beacon/v0.0.1/features/prism-learning-memory-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-LMEM-008",
+      "tc_id": "TC-LMEM-010",
+      "layer": "contract",
+      "command": "rg -n \"不替代|QA|release\" contracts/learning-memory.contract.md",
+      "assertion": "边界声明",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-learning-memory-v1/tc-lmem-010/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-learning-memory-v1/docs/beacon/v0.0.1/features/prism-learning-memory-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-LMEM-009",
+      "tc_id": "TC-LMEM-011",
+      "layer": "contract",
+      "command": "rg -n \"fail-closed|blocked|reason_code\" contracts/learning-memory.contract.md",
+      "assertion": "bridge fail-closed",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-learning-memory-v1/tc-lmem-011/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-learning-memory-v1/docs/beacon/v0.0.1/features/prism-learning-memory-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-LMEM-010",
+      "tc_id": "TC-LMEM-012",
+      "layer": "contract",
+      "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md && rg -n \"Lake F\" docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md",
+      "assertion": "分湖边界存在",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-learning-memory-v1/tc-lmem-012/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-learning-memory-v1/docs/beacon/v0.0.1/features/prism-learning-memory-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-LMEM-010",
+      "tc_id": "TC-LMEM-013",
+      "layer": "contract",
+      "command": "rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md",
+      "assertion": "illegal 转移覆盖（非法拒绝路径）",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-learning-memory-v1/tc-lmem-013/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-learning-memory-v1/docs/beacon/v0.0.1/features/prism-learning-memory-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-LMEM-001",
+      "tc_id": "TC-LMEM-014",
+      "layer": "contract",
+      "command": "rg -n \"US-LMEM-001|学习记忆\" docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md",
+      "assertion": "学习旅程可追溯",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-learning-memory-v1/tc-lmem-014/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-learning-memory-v1/docs/beacon/v0.0.1/features/prism-learning-memory-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-LMEM-007",
+      "tc_id": "TC-LMEM-015",
+      "layer": "contract",
+      "command": "rg -n \"US-LMEM-002|冲突\" docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md",
+      "assertion": "冲突路径可追溯",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-learning-memory-v1/tc-lmem-015/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-learning-memory-v1/docs/beacon/v0.0.1/features/prism-learning-memory-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    }
+  ]
+}

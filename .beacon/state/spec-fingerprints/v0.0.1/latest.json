@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "run_id": "run-20260812T184310318974",
+  "run_id": "run-20260812T184654601157",
   "version": "v0.0.1",
-  "generated_at": "2026-08-12T10:43:12.243029+00:00",
+  "generated_at": "2026-08-12T10:46:56.635009+00:00",
   "layers": {
     "user_story": {
-      "hash": "c200b8a87f0e4ac555387fa2d73b2ca2041903fd43cd1fef8497df3a14c13f3b",
-      "count": 11,
+      "hash": "a3909f26910e6b6db3e759a37880741d89a325655c32259f99ea0294dec1ddb9",
+      "count": 12,
       "files": [
         {
           "path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
@@ -35,6 +35,10 @@
         {
           "path": "docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
           "sha256": "8c3bb9466469141c43194d4b15aaed8a84676a476c2b98ee4b3d1b74e8ac1cb9"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md",
+          "sha256": "242fe91ed8b8945663975b538a6c8c0fcb99254c188038235d6c191d85e5fda4"
         },
         {
           "path": "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md",
@@ -55,8 +59,8 @@
       ]
     },
     "prd": {
-      "hash": "c200b8a87f0e4ac555387fa2d73b2ca2041903fd43cd1fef8497df3a14c13f3b",
-      "count": 11,
+      "hash": "a3909f26910e6b6db3e759a37880741d89a325655c32259f99ea0294dec1ddb9",
+      "count": 12,
       "files": [
         {
           "path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
@@ -87,6 +91,10 @@
           "sha256": "8c3bb9466469141c43194d4b15aaed8a84676a476c2b98ee4b3d1b74e8ac1cb9"
         },
         {
+          "path": "docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md",
+          "sha256": "242fe91ed8b8945663975b538a6c8c0fcb99254c188038235d6c191d85e5fda4"
+        },
+        {
           "path": "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md",
           "sha256": "b9c4b068dde84a4d948a097d22826a2796929fb3add455646dab9580da677465"
         },
@@ -105,8 +113,8 @@
       ]
     },
     "test_case": {
-      "hash": "c4883eaeea7120ce454d39df35f833badf9b7e5a255b0ea63a4a435505604fd5",
-      "count": 22,
+      "hash": "6bed1ed44a0b92e8e377c3330433b05d0d4d2d243916e598fdbfb4b14cecb269",
+      "count": 24,
       "files": [
         {
           "path": "docs/beacon/v0.0.1/.machine/qa/prism-campaign-schema-v1.ac-test-matrix.json",
@@ -135,6 +143,10 @@
         {
           "path": "docs/beacon/v0.0.1/.machine/qa/prism-form-writing-v1.ac-test-matrix.json",
           "sha256": "aad39e8139becacb0695b57ff9f2f7793961630d321dab3eab137740b145d338"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/.machine/qa/prism-learning-memory-v1.ac-test-matrix.json",
+          "sha256": "f8774e501005be28fc5799ed5f1970e53cc3363a97c88da854b56331e76b5061"
         },
         {
           "path": "docs/beacon/v0.0.1/.machine/qa/prism-metrics-publication-v1.ac-test-matrix.json",
@@ -181,6 +193,10 @@
           "sha256": "73e5ae1a2e67ee0878ac2e2fc9f01a89e5ce1be108b8415f3fe4edbd6394a667"
         },
         {
+          "path": "docs/beacon/v0.0.1/features/prism-learning-memory-v1/tests.md",
+          "sha256": "11b18d8b67e860c6db3c99197fbac0f5d882b884cafb3841e2dcfd4857597486"
+        },
+        {
           "path": "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tests.md",
           "sha256": "94e56285ca98171882f787e692a2bea44f2727471f534fc73db3ae52dd47b727"
         },
@@ -199,5 +215,5 @@
       ]
     }
   },
-  "fingerprint_hash": "7f5ab363d57499d84936e83ce347da87dcc4c9a6d151e7a09fcc5ff236877ccf"
+  "fingerprint_hash": "3eff6438c67b348d8c1704570b82bb83d5040daa6bbc113e0dd2a0ae545baa4c"
 }

@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-learning-memory-v1",
+  "feature_slug": "prism-learning-memory-v1",
+  "run_id": "run-20260812T184654601157",
+  "generated_at": "2026-08-12T10:46:56.594137+00:00",
+  "reports": [
+    {
+      "ac_id": "AC-LMEM-001",
+      "feature_slug": "prism-learning-memory-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-LMEM-001",
+        "TC-LMEM-014"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-LMEM-002",
+      "feature_slug": "prism-learning-memory-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [
+        "primary"
+      ],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-LMEM-002",
+        "TC-LMEM-007"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-LMEM-003",
+      "feature_slug": "prism-learning-memory-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-LMEM-003"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-LMEM-004",
+      "feature_slug": "prism-learning-memory-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [
+        "primary"
+      ],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-LMEM-004"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-LMEM-005",
+      "feature_slug": "prism-learning-memory-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [
+        "primary"
+      ],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-LMEM-005",
+        "TC-LMEM-006"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-LMEM-006",
+      "feature_slug": "prism-learning-memory-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-LMEM-008"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-LMEM-007",
+      "feature_slug": "prism-learning-memory-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-LMEM-009",
+        "TC-LMEM-015"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-LMEM-008",
+      "feature_slug": "prism-learning-memory-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-LMEM-010"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-LMEM-009",
+      "feature_slug": "prism-learning-memory-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-LMEM-011"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    },
+    {
+      "ac_id": "AC-LMEM-010",
+      "feature_slug": "prism-learning-memory-v1",
+      "required_scenario_families": [],
+      "passed_scenario_families": [
+        "primary"
+      ],
+      "required_replay_scenarios": [],
+      "missing_replay_scenarios": [],
+      "scenario_ids": [
+        "TC-LMEM-012",
+        "TC-LMEM-013"
+      ],
+      "closure_status": "accepted",
+      "confidence_min": 1.0,
+      "confidence_avg": 1.0,
+      "open_outcomes": [],
+      "blocking_reasons": []
+    }
+  ]
+}

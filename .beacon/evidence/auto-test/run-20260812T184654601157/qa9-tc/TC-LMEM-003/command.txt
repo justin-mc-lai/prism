@@ -1,0 +1,1 @@
+rg -n "不定义 truth|不通 gate|verdict|advisory" contracts/learning-memory.contract.md

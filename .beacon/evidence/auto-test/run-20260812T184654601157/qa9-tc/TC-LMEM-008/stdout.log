@@ -1,0 +1,7 @@
+1:# Adapter contract: learning-memory（Lake E4 · 可回放学习记忆）
+9:- one_liner: 把复盘发现沉淀为可回放、可审计、可裁剪的记忆
+19:- source_ref（E3 复盘/数据来源）+ claim + confidence + applicability + 时间
+21:拒绝：无 source_ref/时间 → blocked + reason_code=learning_source_missing
+26:- 字段: memory_id / source_ref / claim / confidence / applicability / created_at / evidence
+32:- 可回放：每条记忆带 source_ref + 时间 + 回放路径（evidence）
+38:- 下一面: intel/plan 可回放引用（advisory），不替代任何 gate

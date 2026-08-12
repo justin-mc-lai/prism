@@ -1,0 +1,6 @@
+9:  - name: memory-store
+12:    bridge_command: "tool:memory-store（.beacon/memory/prism-learning/）"
+14:  - name: recall
+17:    bridge_command: "tool:recall（按 applicability/confidence 召回，advisory only）"
+19:  - name: prune
+22:    bridge_command: "tool:prune（冲突/过时标记 + 审计痕迹）"

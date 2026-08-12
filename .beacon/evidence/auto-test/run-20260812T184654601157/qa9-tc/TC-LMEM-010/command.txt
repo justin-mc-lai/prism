@@ -1,0 +1,1 @@
+rg -n "不替代|QA|release" contracts/learning-memory.contract.md

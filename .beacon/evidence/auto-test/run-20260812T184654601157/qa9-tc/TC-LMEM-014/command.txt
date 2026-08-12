@@ -1,0 +1,1 @@
+rg -n "US-LMEM-001|学习记忆" docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md

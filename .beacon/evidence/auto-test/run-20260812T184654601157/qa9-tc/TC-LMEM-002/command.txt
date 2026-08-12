@@ -1,0 +1,1 @@
+test -f registry/learning-adapters.yaml && rg -n "memory-store|recall|prune" registry/learning-adapters.yaml

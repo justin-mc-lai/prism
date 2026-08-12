@@ -1,0 +1,30 @@
+{
+  "layer": "contract",
+  "command": "rg -n \"冲突|conflict|prune|裁剪\" contracts/learning-memory.contract.md",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 5,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "1d2baa0bc95b1676debe6f37c663e806aeaba0efb7245e3d846a662f07fb1494",
+  "started_at": "2026-08-12T18:46:55.875549",
+  "ended_at": "2026-08-12T18:46:55.887933",
+  "junit_path": ".beacon/evidence/auto-test/run-20260812T184654601157/qa9-tc/TC-LMEM-009/junit.xml",
+  "junit_valid": true,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T184654601157/qa9-tc/TC-LMEM-009/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T184654601157/qa9-tc/TC-LMEM-009/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T184654601157/qa9-tc/TC-LMEM-009/stderr.log",
+    ".beacon/evidence/auto-test/run-20260812T184654601157/qa9-tc/TC-LMEM-009/junit.xml"
+  ],
+  "tc_id": "TC-LMEM-009",
+  "ac_id": "AC-LMEM-007"
+}

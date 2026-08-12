@@ -1,0 +1,5 @@
+19:- source_ref（E3 复盘/数据来源）+ claim + confidence + applicability + 时间
+21:拒绝：无 source_ref/时间 → blocked + reason_code=learning_source_missing
+25:- 记忆: `.beacon/memory/prism-learning/{memory_id}.yaml`（或受管 memory 存储）
+26:- 字段: memory_id / source_ref / claim / confidence / applicability / created_at / evidence
+32:- 可回放：每条记忆带 source_ref + 时间 + 回放路径（evidence）

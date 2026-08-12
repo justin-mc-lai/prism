@@ -1,0 +1,1 @@
+rg -n "learning-memory.contract" skills/_internal/orchestration/creation-mode-map.md

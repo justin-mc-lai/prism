@@ -1,0 +1,4 @@
+3:> 学习契约。advisory only：不定义 truth、不通 gate、不给 QA/release verdict。
+15:- 不能决定：requirement truth、gate 判定、QA/release verdict
+31:- advisory only：learning 不定义 truth、不通 gate、不给 QA/release verdict
+38:- 下一面: intel/plan 可回放引用（advisory），不替代任何 gate

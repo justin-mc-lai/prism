@@ -1,0 +1,29 @@
+{
+  "layer": "contract",
+  "command": "python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/learning-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=3 else 1)\"",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 0,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "9609215ef6a218672aa66a1a994de10011be3e8d4b177d63d19103da66a0ea3d",
+  "started_at": "2026-08-12T18:46:55.585878",
+  "ended_at": "2026-08-12T18:46:55.665514",
+  "junit_path": "",
+  "junit_valid": false,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T184654601157/qa9-tc/TC-LMEM-007/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T184654601157/qa9-tc/TC-LMEM-007/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T184654601157/qa9-tc/TC-LMEM-007/stderr.log"
+  ],
+  "tc_id": "TC-LMEM-007",
+  "ac_id": "AC-LMEM-002"
+}

@@ -1,0 +1,1 @@
+test -f contracts/learning-memory.contract.md && rg -n "memory_id|source_ref|claim|confidence|applicability" contracts/learning-memory.contract.md
