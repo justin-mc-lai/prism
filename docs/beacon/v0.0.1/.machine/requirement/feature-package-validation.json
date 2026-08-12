@@ -1,15 +1,15 @@
 {
   "schema_version": "1.0",
-  "feature": "prism-form-blog-thread-v1",
-  "feature_slug": "prism-form-blog-thread-v1",
+  "feature": "prism-form-image-post-v1",
+  "feature_slug": "prism-form-image-post-v1",
   "version": "v0.0.1",
   "status": "pass",
   "blocked": false,
   "reason_code": "",
-  "generated_at": "2026-08-12T00:47:48.274367+00:00",
-  "package_dir": "docs/beacon/v0.0.1/features/prism-form-blog-thread-v1",
+  "generated_at": "2026-08-12T00:52:43.903464+00:00",
+  "package_dir": "docs/beacon/v0.0.1/features/prism-form-image-post-v1",
   "truth_frontmatter": {
-    "slug": "prism-form-blog-thread-v1",
+    "slug": "prism-form-image-post-v1",
     "version": "v0.0.1",
     "status": "frozen",
     "revision_id": "R1",
@@ -22,20 +22,20 @@
     "truth_source_model": "intent_first",
     "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
     "canonical_refs": {
-      "prd": "docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md",
-      "user_story": "docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/truth.md",
-      "test_case": "docs/beacon/v0.0.1/features/prism-form-blog-thread-v1/tests.md"
+      "prd": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md"
     },
     "provenance": {
-      "- ac_id": "AC-FORM-002",
+      "- ac_id": "AC-IMG-002",
       "source_type": "source_evidence",
-      "source_ref": "selfmedia-writing 四段式 / US-PRISM-001 / US-PRISM-005"
+      "source_ref": "selfmedia-account-pipeline title/caption/1-9/cover rules"
     }
   },
   "ac_count": 10,
   "test_count": 15,
   "checkbox_count": 12,
-  "evidence_row_count": 13,
+  "evidence_row_count": 11,
   "gate_authority": "canonical_surfaces_preserved",
   "checkbox_gate_bypass": false,
   "task_evidence_gate": {

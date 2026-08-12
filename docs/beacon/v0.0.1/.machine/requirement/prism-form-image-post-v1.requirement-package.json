@@ -1,0 +1,360 @@
+{
+  "schema_version": "1.0",
+  "truth_map_contract": "beacon-truth-map-v1",
+  "truth_source_model": "feature_package_authoritative",
+  "truth_package_contract": "beacon-feature-package-v2",
+  "machine_json_role": "generated_state_not_truth",
+  "generated_by": "beacon.truth_map.resolver",
+  "generated_at": "2026-08-12T00:52:44.036499+00:00",
+  "feature": "prism-form-image-post-v1",
+  "feature_slug": "prism-form-image-post-v1",
+  "version": "v0.0.1",
+  "truth_authority": false,
+  "json_authority": false,
+  "source_paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md",
+    "tasks": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/tasks.md",
+    "evidence": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/evidence.md"
+  },
+  "source_hashes": {
+    "truth": "9977d99673b82b45af61d8b675d0e2a21d65c769151dc0b697e1fe54439be1ae",
+    "tests": "9d63b3b846f8cf04276d3dd0049686ccd226d94f1705e4b121b58fa286718833",
+    "tasks": "e4d68d7347e630cb6eab771c248013c7a64b32d6ba8646f0539c0f6f9f915eb1",
+    "evidence": "5c8c8dfe93da970d59c354c52d1a97bf8b66ab504ca3c0cf4deb60fcbaa90678"
+  },
+  "truth_frontmatter": {
+    "slug": "prism-form-image-post-v1",
+    "version": "v0.0.1",
+    "status": "frozen",
+    "revision_id": "R1",
+    "language": "zh",
+    "domain_required": "true",
+    "ux_required": "false",
+    "parser_contract": "beacon-feature-package-v2",
+    "materials_status": "current",
+    "package_maturity": "filled",
+    "truth_source_model": "intent_first",
+    "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+    "canonical_refs": {
+      "prd": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md"
+    },
+    "provenance": {
+      "- ac_id": "AC-IMG-002",
+      "source_type": "source_evidence",
+      "source_ref": "selfmedia-account-pipeline title/caption/1-9/cover rules"
+    }
+  },
+  "frontmatter_errors": [],
+  "acceptance_criteria": [
+    {
+      "ac_id": "AC-IMG-001",
+      "theme": "进入 `forms_registered`：form-registry 登记 image-post 与 xhs，各含 contract 引用与生产链",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-IMG-002",
+      "theme": "进入 `image_contract_landed`：`contracts/form-image-post.contract.md` 声明 title≤20 无前缀、caption 独立、1–9 张/超9拆条、封面本地排版、QA 清单（乱码/图序/尺寸/分离）与 fail-closed",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-IMG-003",
+      "theme": "进入 `xhs_contract_landed`：`contracts/form-xhs.contract.md` 声明 bridge xhs-article-to-images、OCR 门、fail-closed",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-IMG-004",
+      "theme": "进入 `routing_landed`：creation-mode-map 贴图包/xhs 行引用 form contracts",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-IMG-005",
+      "theme": "进入 `indexed`：`scripts/check_image_post_forms.sh` exec-layer 校验 PASS",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-IMG-006",
+      "theme": "账号硬编码清洗：契约声明账号/平台走配置，禁止 kushi-gzh 等硬编码进正文",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-IMG-007",
+      "theme": "render bridge fail-closed：渲染脚本/xhs 工具缺失 → blocked + reason_code",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-IMG-008",
+      "theme": "OCR/QA 门：QA 检查无乱码/随机文字、图序、尺寸、caption/title 分离、价值门，证据可引用",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-IMG-009",
+      "theme": "maker≠checker：form 契约与 anti-slop-gate/OCR 检查分离",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-IMG-010",
+      "theme": "Non-goals：D4–D6、vendor_pin、metrics、平台 API 显式排除；不得宣称海 closure",
+      "description": ""
+    }
+  ],
+  "test_rows": [
+    {
+      "ac_id": "AC-IMG-001",
+      "tc_id": "TC-IMG-001",
+      "layer": "",
+      "command": "`test -f registry/form-registry.yaml && rg -n \"image-post\" registry/form-registry.yaml && rg -n \"xhs\" registry/form-registry.yaml`",
+      "assertion": "form registry 注册 image-post/xhs",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IMG-002",
+      "tc_id": "TC-IMG-002",
+      "layer": "",
+      "command": "`test -f contracts/form-image-post.contract.md && rg -n \"20 字|20字|caption|1-9|9 张|封面|乱码|图序|尺寸\" contracts/form-image-post.contract.md`",
+      "assertion": "贴图契约含核心规则",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IMG-003",
+      "tc_id": "TC-IMG-003",
+      "layer": "",
+      "command": "`test -f contracts/form-xhs.contract.md && rg -n \"xhs-article-to-images|OCR|fail-closed|blocked\" contracts/form-xhs.contract.md`",
+      "assertion": "xhs 契约含 bridge 与 OCR 门",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IMG-004",
+      "tc_id": "TC-IMG-004",
+      "layer": "",
+      "command": "`rg -n \"form-image-post.contract|form-xhs.contract\" skills/_internal/orchestration/creation-mode-map.md`",
+      "assertion": "路由引用 form 契约",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IMG-005",
+      "tc_id": "TC-IMG-005",
+      "layer": "",
+      "command": "`test -x scripts/check_image_post_forms.sh`",
+      "assertion": "exec 脚本存在且可执行",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IMG-005",
+      "tc_id": "TC-IMG-006",
+      "layer": "",
+      "command": "`bash scripts/check_image_post_forms.sh`",
+      "assertion": "exec-layer 校验脚本 PASS（合法路径）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IMG-001",
+      "tc_id": "TC-IMG-007",
+      "layer": "",
+      "command": "`python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/form-registry.yaml')); fs={f['form'] for f in d['forms']}; raise SystemExit(0 if {'image-post','xhs'}<=fs else 1)\"`",
+      "assertion": "registry 含 image-post+xhs",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IMG-006",
+      "tc_id": "TC-IMG-008",
+      "layer": "",
+      "command": "`rg -n \"配置|配置化|禁止.*硬编码|kushi\" contracts/form-image-post.contract.md && rg -n \"account|账号\" contracts/form-image-post.contract.md`",
+      "assertion": "账号配置化声明",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IMG-007",
+      "tc_id": "TC-IMG-009",
+      "layer": "",
+      "command": "`rg -n \"fail-closed|blocked|reason_code\" contracts/form-image-post.contract.md contracts/form-xhs.contract.md`",
+      "assertion": "bridge fail-closed",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IMG-008",
+      "tc_id": "TC-IMG-010",
+      "layer": "",
+      "command": "`rg -n \"乱码|随机文字|图序|尺寸|分离|价值\" contracts/form-image-post.contract.md && rg -n \"证据|evidence\" contracts/form-image-post.contract.md`",
+      "assertion": "OCR/QA 门与证据",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IMG-009",
+      "tc_id": "TC-IMG-011",
+      "layer": "",
+      "command": "`test -f skills/prism-qa/references/anti-slop-gate.md && test ! -f contracts/form-image-post.contract.md.qa`",
+      "assertion": "maker≠checker 分离",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IMG-010",
+      "tc_id": "TC-IMG-012",
+      "layer": "",
+      "command": "`rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md && rg -n \"D4|D5|D6\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md`",
+      "assertion": "分湖边界存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IMG-010",
+      "tc_id": "TC-IMG-013",
+      "layer": "",
+      "command": "`rg -n \"Illegal|illegal|宣称 Lake D\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md`",
+      "assertion": "illegal 转移覆盖",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IMG-002",
+      "tc_id": "TC-IMG-014",
+      "layer": "",
+      "command": "`rg -n \"US-IMG-001|贴图包\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md`",
+      "assertion": "贴图包旅程可追溯",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IMG-003",
+      "tc_id": "TC-IMG-015",
+      "layer": "",
+      "command": "`rg -n \"US-IMG-002|小红书\" docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md`",
+      "assertion": "xhs 旅程可追溯",
+      "evidence_path": "",
+      "source": ""
+    }
+  ],
+  "task_rows": [
+    {
+      "id": "TASK-001",
+      "title": "Implement AC-IMG-001: 进入 `forms_registered`：form-registry 登记 image-post 与 xhs，各含 contract 引... · ac=AC-IMG-001 · evidence=`.beacon/evidence/implement/prism-form-image-post-v1/AC-IMG-001.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-002",
+      "title": "Implement AC-IMG-002: 进入 `image_contract_landed`：`contracts/form-image-post.contract.md` 声明... · ac=AC-IMG-002 · evidence=`.beacon/evidence/implement/prism-form-image-post-v1/AC-IMG-002.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-003",
+      "title": "Implement AC-IMG-003: 进入 `xhs_contract_landed`：`contracts/form-xhs.contract.md` 声明 bridge x... · ac=AC-IMG-003 · evidence=`.beacon/evidence/implement/prism-form-image-post-v1/AC-IMG-003.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-004",
+      "title": "Implement AC-IMG-004: 进入 `routing_landed`：creation-mode-map 贴图包/xhs 行引用 form contracts · ac=AC-IMG-004 · evidence=`.beacon/evidence/implement/prism-form-image-post-v1/AC-IMG-004.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-005",
+      "title": "Implement AC-IMG-005: 进入 `indexed`：`scripts/check_image_post_forms.sh` exec-layer 校验 PASS · ac=AC-IMG-005 · evidence=`.beacon/evidence/implement/prism-form-image-post-v1/AC-IMG-005.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-006",
+      "title": "Implement AC-IMG-006: 账号硬编码清洗：契约声明账号/平台走配置，禁止 kushi-gzh 等硬编码进正文 · ac=AC-IMG-006 · evidence=`.beacon/evidence/implement/prism-form-image-post-v1/AC-IMG-006.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-007",
+      "title": "Implement AC-IMG-007: render bridge fail-closed：渲染脚本/xhs 工具缺失 → blocked + reason_code · ac=AC-IMG-007 · evidence=`.beacon/evidence/implement/prism-form-image-post-v1/AC-IMG-007.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-008",
+      "title": "Implement AC-IMG-008: OCR/QA 门：QA 检查无乱码/随机文字、图序、尺寸、caption/title 分离、价值门，证据可引用 · ac=AC-IMG-008 · evidence=`.beacon/evidence/implement/prism-form-image-post-v1/AC-IMG-008.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-009",
+      "title": "Implement AC-IMG-009: maker≠checker：form 契约与 anti-slop-gate/OCR 检查分离 · ac=AC-IMG-009 · evidence=`.beacon/evidence/implement/prism-form-image-post-v1/AC-IMG-009.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-010",
+      "title": "Implement AC-IMG-010: Non-goals：D4–D6、vendor_pin、metrics、平台 API 显式排除；不得宣称海 closure · ac=AC-IMG-010 · evidence=`.beacon/evidence/implement/prism-form-image-post-v1/AC-IMG-010.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-011",
+      "title": "Validate package gates (truth review + freeze ack) · ac=GATES · evidence=`.beacon/evidence/implement/prism-form-image-post-v1/GATES.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-012",
+      "title": "Run QA against AC↔TC matrix + exec-layer evidence · ac=QA · evidence=`.beacon/evidence/implement/prism-form-image-post-v1/QA-MATRIX.json`",
+      "status": "unchecked"
+    }
+  ],
+  "checkbox_errors": [],
+  "evidence_rows": [
+    {
+      "surface": "package",
+      "authority": "requirement_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md"
+    },
+    {
+      "surface": "tests",
+      "authority": "test_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md"
+    },
+    {
+      "surface": "tasks",
+      "authority": "acceptance_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/tasks.md"
+    },
+    {
+      "surface": "program",
+      "authority": "support_advisory",
+      "path": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md"
+    },
+    {
+      "surface": "lake_d_plan",
+      "authority": "support_advisory",
+      "path": "docs/beacon/v0.0.1/programs/prism-canon/lake-d-plan.md"
+    },
+    {
+      "surface": "form_registry",
+      "authority": "support_advisory",
+      "path": "registry/form-registry.yaml"
+    },
+    {
+      "surface": "image_post_contract",
+      "authority": "support_advisory",
+      "path": "contracts/form-image-post.contract.md"
+    },
+    {
+      "surface": "xhs_contract",
+      "authority": "support_advisory",
+      "path": "contracts/form-xhs.contract.md"
+    },
+    {
+      "surface": "creation_mode_map",
+      "authority": "support_advisory",
+      "path": "skills/_internal/orchestration/creation-mode-map.md"
+    },
+    {
+      "surface": "check_script",
+      "authority": "support_advisory",
+      "path": "scripts/check_image_post_forms.sh"
+    },
+    {
+      "surface": "source_account_pipeline",
+      "authority": "support_advisory",
+      "path": "/Users/apple/Developer/Personal/products/selfmedia-creator/skills/selfmedia-account-pipeline"
+    }
+  ]
+}

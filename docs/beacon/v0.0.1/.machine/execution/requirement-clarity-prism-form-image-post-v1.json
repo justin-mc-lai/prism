@@ -1,0 +1,665 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-form-image-post-v1",
+  "feature_slug": "prism-form-image-post-v1",
+  "version": "v0.0.1",
+  "runtime_version": "v1.6.12",
+  "runtime_capability_line": "v1.3.3",
+  "required": true,
+  "reason_code": "",
+  "blocked": false,
+  "status": "pass",
+  "findings": [],
+  "report_json_path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-form-image-post-v1.json",
+  "report_markdown_path": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-form-image-post-v1.md",
+  "state_path": ".beacon/state/requirement-clarity-prism-form-image-post-v1.json",
+  "diagram_truth": {
+    "schema_version": "1.0",
+    "version": "v0.0.1",
+    "supported": false,
+    "required": false,
+    "ready": false,
+    "diagram_types": [],
+    "state_axes": [],
+    "missing_diagram_types": [],
+    "missing_state_axes": false,
+    "complexity_signals": [],
+    "review_gates": [],
+    "qa_coverage_hints": [],
+    "evidence_lines": {},
+    "generated_at": "2026-08-12T00:52:43.563333+00:00",
+    "feature": "prism-form-image-post-v1",
+    "feature_slug": "prism-form-image-post-v1",
+    "prd_ref": "docs/beacon/v0.0.1/prd/prism-form-image-post-v1.md",
+    "user_story_ref": "docs/beacon/v0.0.1/user-story/prism-form-image-post-v1.md"
+  },
+  "domain_fsm_gate": {
+    "schema_version": "1.0",
+    "feature": "prism-form-image-post-v1",
+    "feature_slug": "prism-form-image-post-v1",
+    "version": "v0.0.1",
+    "truth_path": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+    "tests_path": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md",
+    "required": true,
+    "blocked": false,
+    "status": "pass",
+    "reason_code": "",
+    "findings": [],
+    "requirement": {
+      "required": true,
+      "reason": "explicit_domain_mark",
+      "explicit": true,
+      "partial": true,
+      "complexity": false,
+      "business_signal": false,
+      "version_supported": false
+    },
+    "projection": {
+      "schema_version": "1.0",
+      "domain_fsm_schema": "domain-fsm.v1",
+      "entity_precedence_schema": "entity-precedence.v1",
+      "frontmatter": {
+        "slug": "prism-form-image-post-v1",
+        "version": "v0.0.1",
+        "status": "draft",
+        "revision_id": "R1",
+        "language": "zh",
+        "domain_required": "true",
+        "ux_required": "false",
+        "parser_contract": "beacon-feature-package-v2",
+        "materials_status": "current",
+        "package_maturity": "filled",
+        "truth_source_model": "intent_first",
+        "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+        "canonical_refs": {
+          "prd": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+          "user_story": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+          "test_case": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md"
+        },
+        "provenance": {
+          "- ac_id": "AC-IMG-002",
+          "source_type": "source_evidence",
+          "source_ref": "selfmedia-account-pipeline title/caption/1-9/cover rules"
+        }
+      },
+      "frontmatter_errors": [],
+      "has_domain_model_section": true,
+      "has_domain_fsm_section": true,
+      "has_illegal_transition_section": true,
+      "entities": [
+        {
+          "entity": "ImagePostFormContract",
+          "key": "form-image-post",
+          "precedence": "贴图包：title/caption/图/封面四分离",
+          "requires": "贴图包：title/caption/图/封面四分离"
+        },
+        {
+          "entity": "XhsFormContract",
+          "key": "form-xhs",
+          "precedence": "小红书图文 bridge",
+          "requires": "小红书图文 bridge"
+        },
+        {
+          "entity": "ShotList",
+          "key": "shot list",
+          "precedence": "director → produce 的视觉载体",
+          "requires": "director → produce 的视觉载体"
+        },
+        {
+          "entity": "AssetBundle",
+          "key": "images/caption/cover",
+          "precedence": "1–9 张 + 独立 caption + 本地排版封面",
+          "requires": "1–9 张 + 独立 caption + 本地排版封面"
+        }
+      ],
+      "entity_precedence": [
+        {
+          "entity": "ImagePostFormContract",
+          "key": "form-image-post",
+          "precedence": "贴图包：title/caption/图/封面四分离",
+          "requires": "贴图包：title/caption/图/封面四分离"
+        },
+        {
+          "entity": "XhsFormContract",
+          "key": "form-xhs",
+          "precedence": "小红书图文 bridge",
+          "requires": "小红书图文 bridge"
+        },
+        {
+          "entity": "ShotList",
+          "key": "shot list",
+          "precedence": "director → produce 的视觉载体",
+          "requires": "director → produce 的视觉载体"
+        },
+        {
+          "entity": "AssetBundle",
+          "key": "images/caption/cover",
+          "precedence": "1–9 张 + 独立 caption + 本地排版封面",
+          "requires": "1–9 张 + 独立 caption + 本地排版封面"
+        }
+      ],
+      "aggregates": [
+        {
+          "name": "落地）",
+          "states": [
+            "forms_registered",
+            "human_accepted",
+            "image_contract_landed",
+            "image_planned",
+            "indexed",
+            "qa_pass",
+            "release_candidate",
+            "routing_landed",
+            "xhs_contract_landed"
+          ],
+          "transitions": [
+            {
+              "from": "image_planned",
+              "to": "forms_registered",
+              "guard": "form-registry 含 image-post+xhs"
+            },
+            {
+              "from": "forms_registered",
+              "to": "image_contract_landed",
+              "guard": "form-image-post.contract present"
+            },
+            {
+              "from": "image_contract_landed",
+              "to": "xhs_contract_landed",
+              "guard": "form-xhs.contract present"
+            },
+            {
+              "from": "xhs_contract_landed",
+              "to": "routing_landed",
+              "guard": "creation-mode-map 引用 form contracts"
+            },
+            {
+              "from": "routing_landed",
+              "to": "indexed",
+              "guard": "exec 脚本 + 无泄漏"
+            },
+            {
+              "from": "indexed",
+              "to": "qa_pass",
+              "guard": "all TC pass"
+            },
+            {
+              "from": "qa_pass",
+              "to": "release_candidate",
+              "guard": "evidence complete"
+            },
+            {
+              "from": "release_candidate",
+              "to": "human_accepted",
+              "guard": "human confirmed"
+            }
+          ]
+        }
+      ],
+      "illegal_transition_slots": [
+        {
+          "description": "image_planned → routing_landed（跳过注册/契约）",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "indexed → human_accepted（跳过 QA）",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "模型生成带文字图片充当封面/正文",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "图片 >9 张仍单包",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "bridge 缺失仍产出",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "未人工批准进入发布",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "宣称 Lake D 全部完成",
+          "aggregate": "",
+          "source": "truth"
+        }
+      ],
+      "acceptance_criteria": [
+        {
+          "ac_id": "AC-IMG-001",
+          "description": "进入 `forms_registered`：form-registry 登记 image-post 与 xhs，各含 contract 引用与生产链"
+        },
+        {
+          "ac_id": "AC-IMG-002",
+          "description": "进入 `image_contract_landed`：`contracts/form-image-post.contract.md` 声明 title≤20 无前缀、caption 独立、1–9 张/超9拆条、封面本地排版、QA 清单（乱码/图序/尺寸/分离）与 fail-closed"
+        },
+        {
+          "ac_id": "AC-IMG-003",
+          "description": "进入 `xhs_contract_landed`：`contracts/form-xhs.contract.md` 声明 bridge xhs-article-to-images、OCR 门、fail-closed"
+        },
+        {
+          "ac_id": "AC-IMG-004",
+          "description": "进入 `routing_landed`：creation-mode-map 贴图包/xhs 行引用 form contracts"
+        },
+        {
+          "ac_id": "AC-IMG-005",
+          "description": "进入 `indexed`：`scripts/check_image_post_forms.sh` exec-layer 校验 PASS"
+        },
+        {
+          "ac_id": "AC-IMG-006",
+          "description": "账号硬编码清洗：契约声明账号/平台走配置，禁止 kushi-gzh 等硬编码进正文"
+        },
+        {
+          "ac_id": "AC-IMG-007",
+          "description": "render bridge fail-closed：渲染脚本/xhs 工具缺失 → blocked + reason_code"
+        },
+        {
+          "ac_id": "AC-IMG-008",
+          "description": "OCR/QA 门：QA 检查无乱码/随机文字、图序、尺寸、caption/title 分离、价值门，证据可引用"
+        },
+        {
+          "ac_id": "AC-IMG-009",
+          "description": "maker≠checker：form 契约与 anti-slop-gate/OCR 检查分离"
+        },
+        {
+          "ac_id": "AC-IMG-010",
+          "description": "Non-goals：D4–D6、vendor_pin、metrics、平台 API 显式排除；不得宣称海 closure"
+        }
+      ],
+      "bound_ac_ids": [
+        "AC-IMG-001",
+        "AC-IMG-002",
+        "AC-IMG-003",
+        "AC-IMG-004",
+        "AC-IMG-005"
+      ],
+      "orphan_ac_ids": [],
+      "aggregates_missing_illegal_slots": [],
+      "raw_section_titles": [
+        "人话",
+        "User Intent",
+        "User Intent Snapshot",
+        "Intent Coverage Matrix",
+        "First principles（域）",
+        "用户旅程 / 故事",
+        "Domain Model",
+        "Domain FSM（D3 落地）",
+        "Illegal transitions",
+        "FSM 五元组",
+        "Alignment Surface",
+        "Deferral Ledger",
+        "Acceptance Criteria",
+        "Non-goals",
+        "Freeze readiness"
+      ]
+    },
+    "validation": {
+      "schema_version": "1.0",
+      "required": true,
+      "blocked": false,
+      "status": "pass",
+      "reason_code": "",
+      "findings": [],
+      "projection": {
+        "schema_version": "1.0",
+        "domain_fsm_schema": "domain-fsm.v1",
+        "entity_precedence_schema": "entity-precedence.v1",
+        "frontmatter": {
+          "slug": "prism-form-image-post-v1",
+          "version": "v0.0.1",
+          "status": "draft",
+          "revision_id": "R1",
+          "language": "zh",
+          "domain_required": "true",
+          "ux_required": "false",
+          "parser_contract": "beacon-feature-package-v2",
+          "materials_status": "current",
+          "package_maturity": "filled",
+          "truth_source_model": "intent_first",
+          "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+          "canonical_refs": {
+            "prd": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+            "user_story": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+            "test_case": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md"
+          },
+          "provenance": {
+            "- ac_id": "AC-IMG-002",
+            "source_type": "source_evidence",
+            "source_ref": "selfmedia-account-pipeline title/caption/1-9/cover rules"
+          }
+        },
+        "frontmatter_errors": [],
+        "has_domain_model_section": true,
+        "has_domain_fsm_section": true,
+        "has_illegal_transition_section": true,
+        "entities": [
+          {
+            "entity": "ImagePostFormContract",
+            "key": "form-image-post",
+            "precedence": "贴图包：title/caption/图/封面四分离",
+            "requires": "贴图包：title/caption/图/封面四分离"
+          },
+          {
+            "entity": "XhsFormContract",
+            "key": "form-xhs",
+            "precedence": "小红书图文 bridge",
+            "requires": "小红书图文 bridge"
+          },
+          {
+            "entity": "ShotList",
+            "key": "shot list",
+            "precedence": "director → produce 的视觉载体",
+            "requires": "director → produce 的视觉载体"
+          },
+          {
+            "entity": "AssetBundle",
+            "key": "images/caption/cover",
+            "precedence": "1–9 张 + 独立 caption + 本地排版封面",
+            "requires": "1–9 张 + 独立 caption + 本地排版封面"
+          }
+        ],
+        "entity_precedence": [
+          {
+            "entity": "ImagePostFormContract",
+            "key": "form-image-post",
+            "precedence": "贴图包：title/caption/图/封面四分离",
+            "requires": "贴图包：title/caption/图/封面四分离"
+          },
+          {
+            "entity": "XhsFormContract",
+            "key": "form-xhs",
+            "precedence": "小红书图文 bridge",
+            "requires": "小红书图文 bridge"
+          },
+          {
+            "entity": "ShotList",
+            "key": "shot list",
+            "precedence": "director → produce 的视觉载体",
+            "requires": "director → produce 的视觉载体"
+          },
+          {
+            "entity": "AssetBundle",
+            "key": "images/caption/cover",
+            "precedence": "1–9 张 + 独立 caption + 本地排版封面",
+            "requires": "1–9 张 + 独立 caption + 本地排版封面"
+          }
+        ],
+        "aggregates": [
+          {
+            "name": "落地）",
+            "states": [
+              "forms_registered",
+              "human_accepted",
+              "image_contract_landed",
+              "image_planned",
+              "indexed",
+              "qa_pass",
+              "release_candidate",
+              "routing_landed",
+              "xhs_contract_landed"
+            ],
+            "transitions": [
+              {
+                "from": "image_planned",
+                "to": "forms_registered",
+                "guard": "form-registry 含 image-post+xhs"
+              },
+              {
+                "from": "forms_registered",
+                "to": "image_contract_landed",
+                "guard": "form-image-post.contract present"
+              },
+              {
+                "from": "image_contract_landed",
+                "to": "xhs_contract_landed",
+                "guard": "form-xhs.contract present"
+              },
+              {
+                "from": "xhs_contract_landed",
+                "to": "routing_landed",
+                "guard": "creation-mode-map 引用 form contracts"
+              },
+              {
+                "from": "routing_landed",
+                "to": "indexed",
+                "guard": "exec 脚本 + 无泄漏"
+              },
+              {
+                "from": "indexed",
+                "to": "qa_pass",
+                "guard": "all TC pass"
+              },
+              {
+                "from": "qa_pass",
+                "to": "release_candidate",
+                "guard": "evidence complete"
+              },
+              {
+                "from": "release_candidate",
+                "to": "human_accepted",
+                "guard": "human confirmed"
+              }
+            ]
+          }
+        ],
+        "illegal_transition_slots": [
+          {
+            "description": "image_planned → routing_landed（跳过注册/契约）",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "indexed → human_accepted（跳过 QA）",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "模型生成带文字图片充当封面/正文",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "图片 >9 张仍单包",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "bridge 缺失仍产出",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "未人工批准进入发布",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "宣称 Lake D 全部完成",
+            "aggregate": "",
+            "source": "truth"
+          }
+        ],
+        "acceptance_criteria": [
+          {
+            "ac_id": "AC-IMG-001",
+            "description": "进入 `forms_registered`：form-registry 登记 image-post 与 xhs，各含 contract 引用与生产链"
+          },
+          {
+            "ac_id": "AC-IMG-002",
+            "description": "进入 `image_contract_landed`：`contracts/form-image-post.contract.md` 声明 title≤20 无前缀、caption 独立、1–9 张/超9拆条、封面本地排版、QA 清单（乱码/图序/尺寸/分离）与 fail-closed"
+          },
+          {
+            "ac_id": "AC-IMG-003",
+            "description": "进入 `xhs_contract_landed`：`contracts/form-xhs.contract.md` 声明 bridge xhs-article-to-images、OCR 门、fail-closed"
+          },
+          {
+            "ac_id": "AC-IMG-004",
+            "description": "进入 `routing_landed`：creation-mode-map 贴图包/xhs 行引用 form contracts"
+          },
+          {
+            "ac_id": "AC-IMG-005",
+            "description": "进入 `indexed`：`scripts/check_image_post_forms.sh` exec-layer 校验 PASS"
+          },
+          {
+            "ac_id": "AC-IMG-006",
+            "description": "账号硬编码清洗：契约声明账号/平台走配置，禁止 kushi-gzh 等硬编码进正文"
+          },
+          {
+            "ac_id": "AC-IMG-007",
+            "description": "render bridge fail-closed：渲染脚本/xhs 工具缺失 → blocked + reason_code"
+          },
+          {
+            "ac_id": "AC-IMG-008",
+            "description": "OCR/QA 门：QA 检查无乱码/随机文字、图序、尺寸、caption/title 分离、价值门，证据可引用"
+          },
+          {
+            "ac_id": "AC-IMG-009",
+            "description": "maker≠checker：form 契约与 anti-slop-gate/OCR 检查分离"
+          },
+          {
+            "ac_id": "AC-IMG-010",
+            "description": "Non-goals：D4–D6、vendor_pin、metrics、平台 API 显式排除；不得宣称海 closure"
+          }
+        ],
+        "bound_ac_ids": [
+          "AC-IMG-001",
+          "AC-IMG-002",
+          "AC-IMG-003",
+          "AC-IMG-004",
+          "AC-IMG-005"
+        ],
+        "orphan_ac_ids": [],
+        "aggregates_missing_illegal_slots": [],
+        "raw_section_titles": [
+          "人话",
+          "User Intent",
+          "User Intent Snapshot",
+          "Intent Coverage Matrix",
+          "First principles（域）",
+          "用户旅程 / 故事",
+          "Domain Model",
+          "Domain FSM（D3 落地）",
+          "Illegal transitions",
+          "FSM 五元组",
+          "Alignment Surface",
+          "Deferral Ledger",
+          "Acceptance Criteria",
+          "Non-goals",
+          "Freeze readiness"
+        ]
+      },
+      "summary": {
+        "entity_count": 4,
+        "aggregate_count": 1,
+        "illegal_slot_count": 7,
+        "orphan_ac_count": 0,
+        "bound_ac_count": 5
+      }
+    },
+    "recommended_action": ""
+  },
+  "human_closure_contract": {
+    "required": false,
+    "research_path": "docs/beacon/v0.0.1/research/prism-form-image-post-v1.md",
+    "research_exists": true,
+    "source_architecture_path": "docs/beacon/v0.0.1/source-architecture/index.md",
+    "source_architecture_exists": true,
+    "required_sections": [
+      "architecture",
+      "business_flow"
+    ],
+    "missing_sections": [
+      "architecture",
+      "business_flow"
+    ],
+    "diagram_types": [],
+    "complexity_signals": []
+  },
+  "requirement_closure_contract": {
+    "required": true,
+    "chain_order": [
+      "research",
+      "prd",
+      "user_story",
+      "test_case",
+      "requirement_clarity",
+      "freeze"
+    ],
+    "human_closure_required": false,
+    "paths": {
+      "research": "docs/beacon/v0.0.1/research/prism-form-image-post-v1.md",
+      "prd": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md"
+    },
+    "exists": {
+      "research": true,
+      "prd": true,
+      "user_story": true,
+      "test_case": true
+    },
+    "required_research_sections": [],
+    "missing_research_sections": [],
+    "ac_projection": {
+      "prd_ac_ids": [],
+      "user_story_ac_ids": [],
+      "test_case_ac_ids": [],
+      "upstream_ac_ids": [],
+      "missing_test_case_ac_ids": []
+    }
+  },
+  "version_projection_truth_contract": {
+    "required": false,
+    "supported": false,
+    "projection_types": [],
+    "research_path": "docs/beacon/v0.0.1/research/prism-form-image-post-v1.md",
+    "research_exists": true,
+    "required_fields": [
+      "prd_refs",
+      "user_story_refs",
+      "test_case_refs",
+      "coverage_notes",
+      "out_of_scope_notes"
+    ],
+    "field_presence": {
+      "prd_refs": false,
+      "user_story_refs": false,
+      "test_case_refs": false,
+      "coverage_notes": false,
+      "out_of_scope_notes": false
+    },
+    "missing_fields": [],
+    "required_refs": {
+      "prd_refs": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+      "user_story_refs": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+      "test_case_refs": "docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md"
+    },
+    "missing_ref_targets": [],
+    "ready": false
+  },
+  "support_write_topology_contract": {
+    "schema_version": "1.0",
+    "supported": true,
+    "status": "pass",
+    "blocked": false,
+    "reason_code": "",
+    "diagnostics": []
+  },
+  "required_artifacts": [],
+  "scanned_files": [
+    "docs/beacon/v0.0.1/features/prism-form-image-post-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-form-image-post-v1/tests.md",
+    "docs/beacon/v0.0.1/features/prism-form-image-post-v1/tasks.md",
+    "docs/beacon/v0.0.1/features/prism-form-image-post-v1/evidence.md",
+    "docs/beacon/v0.0.1/research/prism-form-image-post-v1.md"
+  ]
+}
