@@ -1,0 +1,217 @@
+{
+  "schema": "truth-review-gate.v1",
+  "schema_version": "1.0",
+  "feature": "prism-form-novel-v1",
+  "version": "v0.0.1",
+  "pass": true,
+  "blocked": false,
+  "review_gate_pass": true,
+  "abc_pass": true,
+  "reason_code": "",
+  "domain_required": true,
+  "checks": {
+    "A_intent_coverage": {
+      "pass": true,
+      "check": "A",
+      "name": "intent_coverage",
+      "required": true,
+      "matrix_rows": 11,
+      "missing_must": [],
+      "reason": "",
+      "findings": [],
+      "matrix": [
+        {
+          "intent_id": "INT-N01",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-NVL-001",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-N02",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-NVL-002",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-N03",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-NVL-003",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-N04",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-NVL-004",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-N05",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-NVL-005",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-N06",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-NVL-006",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-N07",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-NVL-007",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-N08",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-NVL-008",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-N09",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-NVL-009",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-N10",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-NVL-010",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-N11",
+          "source": "sea",
+          "strength": "must",
+          "landing": "D5/D6 其余形态",
+          "status": "deferred"
+        }
+      ]
+    },
+    "B_fsm_audit": {
+      "pass": true,
+      "check": "B",
+      "name": "fsm_audit",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "fsm": {
+        "transition_count": 7,
+        "from_states": [
+          "forms_registered",
+          "indexed",
+          "novel_contract_landed",
+          "novel_planned",
+          "qa_pass",
+          "release_candidate",
+          "routing_landed"
+        ],
+        "hanging_states": [],
+        "terminals": [
+          "human_accepted"
+        ],
+        "illegal_present": true,
+        "five_tuple_present": true
+      }
+    },
+    "C_testability": {
+      "pass": true,
+      "check": "C",
+      "name": "testability",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "ac_count": 10,
+      "tc_count": 15,
+      "missing_ac": [],
+      "covered": {
+        "AC-NVL-001": [
+          "TC-NVL-001",
+          "TC-NVL-007"
+        ],
+        "AC-NVL-002": [
+          "TC-NVL-002",
+          "TC-NVL-014"
+        ],
+        "AC-NVL-003": [
+          "TC-NVL-003",
+          "TC-NVL-015"
+        ],
+        "AC-NVL-004": [
+          "TC-NVL-004"
+        ],
+        "AC-NVL-005": [
+          "TC-NVL-005",
+          "TC-NVL-006"
+        ],
+        "AC-NVL-006": [
+          "TC-NVL-008"
+        ],
+        "AC-NVL-007": [
+          "TC-NVL-009"
+        ],
+        "AC-NVL-008": [
+          "TC-NVL-010"
+        ],
+        "AC-NVL-009": [
+          "TC-NVL-011"
+        ],
+        "AC-NVL-010": [
+          "TC-NVL-012",
+          "TC-NVL-013"
+        ]
+      }
+    },
+    "C_domain_exec_layer": {
+      "pass": true,
+      "check": "C_exec",
+      "name": "domain_exec_layer",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "exec_tc_count": 3,
+      "exec_tc_ids": [
+        "TC-NVL-005",
+        "TC-NVL-006",
+        "TC-NVL-007"
+      ],
+      "domain_kind": "business"
+    },
+    "D_fill_depth": {
+      "pass": true,
+      "check": "D",
+      "name": "fill_depth",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "package_maturity": "filled",
+      "domain_kind": "business",
+      "business_domain": true
+    }
+  },
+  "findings": [],
+  "humanizer": {
+    "rule": "humanizer_only_after_abc_pass_before_freeze",
+    "abc_pass": true,
+    "allowed_now": true,
+    "fill_depth_pass": true,
+    "note": "Polish L0/narrative only after A/B/C; preserve_machine_fields=true; freeze needs D+exec too"
+  },
+  "evaluated_at": "2026-08-12T00:57:30.556925+00:00",
+  "paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-form-novel-v1/tests.md",
+    "report": "docs/beacon/v0.0.1/.machine/execution/prism-form-novel-v1.truth-review-gate.json"
+  }
+}
