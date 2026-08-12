@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-adaptation-contracts-v1",
+  "feature_slug": "prism-adaptation-contracts-v1",
+  "version": "v0.0.1",
+  "generated_at": "2026-08-12T11:31:22.328142+00:00",
+  "execution_mode": "feature-aware",
+  "source_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-adaptation-contracts-v1.ac-test-matrix.json",
+  "story_scenario_map_path": ".beacon/qa/features/prism-adaptation-contracts-v1/story-scenario-map.json",
+  "reason_codes": [
+    "no_prior_feature_qa"
+  ],
+  "qa_types": [
+    "contract"
+  ],
+  "entries": [
+    {
+      "ac_id": "AC-ADP-001",
+      "tc_id": "TC-ADP-001",
+      "layer": "contract",
+      "command": "test -f contracts/adaptation.contract.md && rg -n \"adaptation_id|asset_ref|type|rights|royalty|approval\" contracts/adaptation.contract.md",
+      "assertion": "改编契约含核心字段",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-001/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-ADP-002",
+      "tc_id": "TC-ADP-002",
+      "layer": "contract",
+      "command": "test -f registry/adaptation-adapters.yaml && rg -n \"rights-record|royalty|license\" registry/adaptation-adapters.yaml",
+      "assertion": "改编 bridge 登记",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-002/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-ADP-003",
+      "tc_id": "TC-ADP-003",
+      "layer": "contract",
+      "command": "rg -n \"人工|批准|不授权|默认\" contracts/adaptation.contract.md",
+      "assertion": "人工批准/默认不授权",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-003/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-ADP-004",
+      "tc_id": "TC-ADP-004",
+      "layer": "contract",
+      "command": "rg -n \"adaptation.contract\" skills/_internal/orchestration/creation-mode-map.md",
+      "assertion": "路由改编引用",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-004/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-ADP-005",
+      "tc_id": "TC-ADP-005",
+      "layer": "contract",
+      "command": "test -x scripts/check_adaptation.sh",
+      "assertion": "exec 脚本存在且可执行",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-005/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-ADP-005",
+      "tc_id": "TC-ADP-006",
+      "layer": "contract",
+      "command": "bash scripts/check_adaptation.sh",
+      "assertion": "exec-layer 校验脚本 PASS（合法路径）",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-006/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-ADP-002",
+      "tc_id": "TC-ADP-007",
+      "layer": "contract",
+      "command": "python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/adaptation-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=3 else 1)\"",
+      "assertion": "≥3 个改编 bridge",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-007/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-ADP-006",
+      "tc_id": "TC-ADP-008",
+      "layer": "contract",
+      "command": "rg -n \"不编造|缺证据|blocked\" contracts/adaptation.contract.md",
+      "assertion": "不编造授权/分成",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-008/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-ADP-007",
+      "tc_id": "TC-ADP-009",
+      "layer": "contract",
+      "command": "rg -n \"正典|canon|母稿\" contracts/adaptation.contract.md",
+      "assertion": "正典保护",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-009/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-ADP-008",
+      "tc_id": "TC-ADP-010",
+      "layer": "contract",
+      "command": "rg -n \"license|第三方|未获权|不自动授权\" contracts/adaptation.contract.md",
+      "assertion": "license 边界",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-010/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-ADP-009",
+      "tc_id": "TC-ADP-011",
+      "layer": "contract",
+      "command": "rg -n \"合同|敏感|secrets|禁止入库\" contracts/adaptation.contract.md",
+      "assertion": "敏感信息保护",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-011/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-ADP-010",
+      "tc_id": "TC-ADP-012",
+      "layer": "contract",
+      "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md && rg -n \"授权 API\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "assertion": "分湖边界存在",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-012/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-ADP-010",
+      "tc_id": "TC-ADP-013",
+      "layer": "contract",
+      "command": "rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "assertion": "illegal 转移覆盖（非法拒绝路径）",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-013/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-ADP-001",
+      "tc_id": "TC-ADP-014",
+      "layer": "contract",
+      "command": "rg -n \"US-ADP-001|改编\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "assertion": "改编旅程可追溯",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-014/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    },
+    {
+      "ac_id": "AC-ADP-003",
+      "tc_id": "TC-ADP-015",
+      "layer": "contract",
+      "command": "rg -n \"US-ADP-002|不自动授权\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "assertion": "未授权拒绝路径可追溯",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-015/__RUN_ID__.json",
+      "status": "planned",
+      "source": "feature-package:/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+      "qa_type": "contract",
+      "automation": "auto"
+    }
+  ]
+}

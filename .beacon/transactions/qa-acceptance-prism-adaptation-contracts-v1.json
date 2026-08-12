@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "artifact": "qa_acceptance_runtime_projection",
+  "version": "v0.0.1",
+  "feature": "prism-adaptation-contracts-v1",
+  "feature_slug": "prism-adaptation-contracts-v1",
+  "revision_id": "R1",
+  "verdict": "passed",
+  "transaction_id": "tx-qa-acceptance-prism-adaptation-contracts-v1-ede91f353d34",
+  "source_hash": "sha256:ede91f353d343b919ebe89e6632e23c688835839cc9e3d9d91372c760c745645",
+  "projection_seq": 1,
+  "committed_at": "2026-08-12T11:31:24.800288+00:00",
+  "write_status": "applied",
+  "failed_sinks": [],
+  "machine_ref": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-adaptation-contracts-v1.json",
+  "markdown_ref": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-adaptation-contracts-v1.md",
+  "runtime_projection_ref": ".beacon/transactions/qa-acceptance-prism-adaptation-contracts-v1.json",
+  "sink_checksums": {
+    "machine": "sha256:b425863f0bcd88e3f28b15929c2c947374f25ddce0ddff6da56b28f5093bfa13",
+    "human": "sha256:7e2bfacac66554871d6b9c8d42455c00cf55b17b2dfb0bfce85ea10aebeb790e",
+    "runtime": "sha256:711bc4dc73881200ce65f7930b646a9d0631e2a3c9bbe57e9d3738602f328c83"
+  }
+}

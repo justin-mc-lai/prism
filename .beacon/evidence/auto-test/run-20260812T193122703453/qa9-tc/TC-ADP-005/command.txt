@@ -1,0 +1,1 @@
+test -x scripts/check_adaptation.sh

@@ -1,13 +1,17 @@
 {
   "schema_version": "1.0",
-  "run_id": "run-20260812T192756091788",
+  "run_id": "run-20260812T193122703453",
   "version": "v0.0.1",
-  "generated_at": "2026-08-12T11:27:58.241977+00:00",
+  "generated_at": "2026-08-12T11:31:24.775930+00:00",
   "layers": {
     "user_story": {
-      "hash": "f58942771e20b420f6c140e5f61d885ac20b67d474e99d93b0bf4cfba0015e08",
-      "count": 13,
+      "hash": "dac629c2438897d86adc8f0e874b0d14572a4fc9e7dd14ca1b7d74ff36d5711d",
+      "count": 14,
       "files": [
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+          "sha256": "9f3e1e25383a3bdf514e8b745a15fed1121e2c59e84fe5a1124d2aafcf55e787"
+        },
         {
           "path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
           "sha256": "b8700830f8ca2da1453272d38721e31fa532e239a778400570aab6cd32f7ca2d"
@@ -63,9 +67,13 @@
       ]
     },
     "prd": {
-      "hash": "f58942771e20b420f6c140e5f61d885ac20b67d474e99d93b0bf4cfba0015e08",
-      "count": 13,
+      "hash": "dac629c2438897d86adc8f0e874b0d14572a4fc9e7dd14ca1b7d74ff36d5711d",
+      "count": 14,
       "files": [
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+          "sha256": "9f3e1e25383a3bdf514e8b745a15fed1121e2c59e84fe5a1124d2aafcf55e787"
+        },
         {
           "path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
           "sha256": "b8700830f8ca2da1453272d38721e31fa532e239a778400570aab6cd32f7ca2d"
@@ -121,9 +129,13 @@
       ]
     },
     "test_case": {
-      "hash": "229fa615c6a109b3bb0befbb4db982de343ad12dc1ea21172afc639363df7faa",
-      "count": 26,
+      "hash": "f9472ccc25ac3cd4c84e72d4792c5359da8e1626cb7d1351707174a48a2d594b",
+      "count": 28,
       "files": [
+        {
+          "path": "docs/beacon/v0.0.1/.machine/qa/prism-adaptation-contracts-v1.ac-test-matrix.json",
+          "sha256": "c29a9efb3578fe45ddd0570269dd96d3471a43bb8a229f7280195c952a7f6e0f"
+        },
         {
           "path": "docs/beacon/v0.0.1/.machine/qa/prism-campaign-schema-v1.ac-test-matrix.json",
           "sha256": "42182676687618efe53f3594498ad62e88850e9fc80cd34fd7031db9f68ac1d3"
@@ -175,6 +187,10 @@
         {
           "path": "docs/beacon/v0.0.1/.machine/qa/prism-review-loop-v1.ac-test-matrix.json",
           "sha256": "d5e5e7d2a70c3f1c2d6e8625eaf66ad43214cd20f24096ecf492001bff00df4c"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+          "sha256": "6c9098cbbd1e0c391e6a3748efa1f58668d35fd031634894c25aa59c54d6f129"
         },
         {
           "path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
@@ -231,5 +247,5 @@
       ]
     }
   },
-  "fingerprint_hash": "7e759e4d2b0e80bf569a72a594af01f87e66fbaf74c526911c782101decc3a58"
+  "fingerprint_hash": "d4496576e07125bcd90bd7fbbe4b59f6a157fe4fd0038edff132f22cfcd38997"
 }

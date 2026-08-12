@@ -1,0 +1,15 @@
+21:    source_ref: "Lake A INT-P16 / DL-005 改编合同"
+31:Lake F 收口：**改编契约层**。把小说/漫画/视频等资产的改编授权（漫画、视频、游戏、书籍改编权）
+36:  creation-mode-map 改编引用；exec 校验脚本。
+42:完成 Lake F：落改编契约，完成 A–F 全湖可交付。
+78:| FP-ADP-001 | 改编授权必须人工批准 + evidence；默认只登记不授权 |
+79:| FP-ADP-002 | 改编不得破坏母稿正典；授权范围/条款必须明确 |
+87:US-ADP-001：小说/漫画资产收到改编意向 → 按 `adaptation.contract` 登记授权（范围/条款/分成）→
+88:人工批准 → 才可谈改编。
+110:| routing_landed | registry_landed | creation-mode-map 改编引用 |
+122:- 改编破坏母稿正典
+140:1. 改编契约（AC-ADP-001）
+163:| AC-ADP-002 | 进入 `registry_landed`：`registry/adaptation-adapters.yaml` 登记 ≥3 个改编工具 bridge（rights-record / royalty-calc / license-check） |
+164:| AC-ADP-003 | 人工批准：改编授权必须 approval + evidence；默认只登记不授权 |
+165:| AC-ADP-004 | 进入 `routing_landed`：creation-mode-map 改编引用 adaptation.contract |
+168:| AC-ADP-007 | 正典保护：改编不得破坏母稿正典（引用 canon ledger） |

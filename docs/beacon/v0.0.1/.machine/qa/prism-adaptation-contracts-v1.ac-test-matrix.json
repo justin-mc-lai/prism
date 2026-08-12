@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-adaptation-contracts-v1",
+  "feature_slug": "prism-adaptation-contracts-v1",
+  "version": "v0.0.1",
+  "generated_at": "2026-08-12T19:31:16.156033",
+  "compiler": {
+    "requested_mode": "auto",
+    "effective_mode": "host",
+    "generator_mode": "host",
+    "fallback_reason": "",
+    "capability_snapshot": {
+      "schema_version": "1.0",
+      "command_name": "test-case",
+      "host_runtime": "codex",
+      "host_runtime_supported": true,
+      "host_bridge_declared": true,
+      "host_bridge_command_available": true,
+      "host_bridge_command_source": "env_cmd",
+      "host_bridge_command_env": "BEACON_HOST_TEST_CASE_BRIDGE_CMD",
+      "host_response_available": false,
+      "host_response_source": "none",
+      "host_response_path": "",
+      "host_transport": "command-bridge",
+      "host_semantic_ready": true,
+      "response_used": false,
+      "host_mode_options": [
+        "host-response",
+        "host",
+        "host-provider",
+        "llm",
+        "rule"
+      ],
+      "provider_available": false,
+      "provider_key_present": false,
+      "llm_disabled": false,
+      "disable_env": "BEACON_TEST_CASE_DISABLE_LLM"
+    },
+    "model": "beacon-test-case-compiler"
+  },
+  "entries": [
+    {
+      "tc_id": "TC-ADP-001",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "type",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-001.json",
+      "status": "passed",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+      "last_run_id": "run-20260812T193122703453",
+      "last_evidence_ref": ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-001/command.txt"
+    },
+    {
+      "tc_id": "TC-ADP-002",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "license\" registry/adaptation-adapters.yaml`",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-002.json",
+      "status": "passed",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+      "last_run_id": "run-20260812T193122703453",
+      "last_evidence_ref": ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-002/command.txt"
+    },
+    {
+      "tc_id": "TC-ADP-003",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "不授权",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-003.json",
+      "status": "passed",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+      "last_run_id": "run-20260812T193122703453",
+      "last_evidence_ref": ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-003/command.txt"
+    },
+    {
+      "tc_id": "TC-ADP-008",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "blocked\" contracts/adaptation.contract.md`",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-008.json",
+      "status": "passed",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+      "last_run_id": "run-20260812T193122703453",
+      "last_evidence_ref": ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-008/command.txt"
+    },
+    {
+      "tc_id": "TC-ADP-009",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "母稿\" contracts/adaptation.contract.md`",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-009.json",
+      "status": "passed",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+      "last_run_id": "run-20260812T193122703453",
+      "last_evidence_ref": ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-009/command.txt"
+    },
+    {
+      "tc_id": "TC-ADP-010",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "未获权",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-010.json",
+      "status": "passed",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+      "last_run_id": "run-20260812T193122703453",
+      "last_evidence_ref": ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-010/command.txt"
+    },
+    {
+      "tc_id": "TC-ADP-011",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "secrets",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-011.json",
+      "status": "passed",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+      "last_run_id": "run-20260812T193122703453",
+      "last_evidence_ref": ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-011/command.txt"
+    },
+    {
+      "tc_id": "TC-ADP-013",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "宣称海\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md`",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-013.json",
+      "status": "passed",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+      "last_run_id": "run-20260812T193122703453",
+      "last_evidence_ref": ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-013/command.txt"
+    },
+    {
+      "tc_id": "TC-ADP-014",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "改编旅程可追溯",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-014.json",
+      "status": "passed",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+      "last_run_id": "run-20260812T193122703453",
+      "last_evidence_ref": ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-014/command.txt"
+    },
+    {
+      "tc_id": "TC-ADP-015",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "未授权拒绝路径可追溯",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-015.json",
+      "status": "passed",
+      "source": "qa:test-cases:.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+      "last_run_id": "run-20260812T193122703453",
+      "last_evidence_ref": ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-015/command.txt"
+    }
+  ],
+  "research_projection": {
+    "schema_version": "1.0",
+    "feature": "prism-adaptation-contracts-v1",
+    "version": "v0.0.1",
+    "source": "research:.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/research/prism-adaptation-contracts-v1.md",
+    "present": true,
+    "section_count": 0,
+    "sections": {},
+    "derived_items": []
+  },
+  "markdown_matrix_contract": {
+    "truth_mode": "generated",
+    "fail_closed": false,
+    "source": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+    "row_count": 10,
+    "enrichment_disabled": false
+  }
+}

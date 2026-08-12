@@ -1,0 +1,5 @@
+19:- adaptation_id + asset_ref（母稿/正典引用）+ type（comic/video/game/book）+ rights + royalty
+21:拒绝：缺 asset_ref / approval / evidence → blocked + reason_code=adaptation_evidence_missing
+25:- 记录: `content/adaptations/{adaptation_id}.yaml`（批准后）
+30:- 默认只登记不授权：必须 approval_recorded 才可谈改编
+42:- 可重试: 条款补全、royalty 校准、license 补检

@@ -1,0 +1,1 @@
+test -f contracts/adaptation.contract.md && rg -n "adaptation_id|asset_ref|type|rights|royalty|approval" contracts/adaptation.contract.md

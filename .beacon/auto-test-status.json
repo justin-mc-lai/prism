@@ -1,27 +1,27 @@
 {
   "scope": "qa9",
-  "timestamp": "2026-08-12T19:27:56.092628",
-  "project": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-monetization-contracts-v1",
+  "timestamp": "2026-08-12T19:31:22.704116",
+  "project": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1",
   "version": "v0.0.1",
-  "run_id": "run-20260812T192756091788",
-  "spec_fingerprint_hash": "7e759e4d2b0e80bf569a72a594af01f87e66fbaf74c526911c782101decc3a58",
+  "run_id": "run-20260812T193122703453",
+  "spec_fingerprint_hash": "d4496576e07125bcd90bd7fbbe4b59f6a157fe4fd0038edff132f22cfcd38997",
   "status": "passed",
   "selected_layers": [
     "contract"
   ],
   "execution": {
-    "run_id": "run-20260812T192756091788",
+    "run_id": "run-20260812T193122703453",
     "version": "v0.0.1",
-    "evidence_dir": ".beacon/evidence/auto-test/run-20260812T192756091788",
+    "evidence_dir": ".beacon/evidence/auto-test/run-20260812T193122703453",
     "spec_fingerprint": {
-      "fingerprint_hash": "7e759e4d2b0e80bf569a72a594af01f87e66fbaf74c526911c782101decc3a58",
+      "fingerprint_hash": "d4496576e07125bcd90bd7fbbe4b59f6a157fe4fd0038edff132f22cfcd38997",
       "version": "v0.0.1",
-      "generated_at": "2026-08-12T11:27:58.241977+00:00"
+      "generated_at": "2026-08-12T11:31:24.775930+00:00"
     },
     "layers": [
       {
         "layer": "contract",
-        "command": "test -f contracts/monetization.contract.md && rg -n \"deal_id|type|terms|disclosure|evidence\" contracts/monetization.contract.md",
+        "command": "test -f contracts/adaptation.contract.md && rg -n \"adaptation_id|asset_ref|type|rights|royalty|approval\" contracts/adaptation.contract.md",
         "exit_code": 0,
         "status": "passed",
         "reason_code": "",
@@ -35,31 +35,31 @@
             "exit_code": 0
           }
         ],
-        "execution_fingerprint": "e12ab425bbd062ef4bed5d01049ee2b3bf6f65156c49225ff20910051837baf3",
-        "started_at": "2026-08-12T19:27:56.174346",
-        "ended_at": "2026-08-12T19:27:56.192377",
+        "execution_fingerprint": "13b600c4e2fbf1ac7a6b21dacf19819e64201e23aae36270512bc4fcb74f1623",
+        "started_at": "2026-08-12T19:31:22.782964",
+        "ended_at": "2026-08-12T19:31:22.799485",
         "junit_path": "",
         "junit_valid": false,
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T192756091788/contract/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/contract/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/contract/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/contract/result.json"
+          ".beacon/evidence/auto-test/run-20260812T193122703453/contract/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/contract/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/contract/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/contract/result.json"
         ]
       }
     ],
     "ui_action_evidence": {},
     "matrix_report": {
       "status": "ok",
-      "matrix_path": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-monetization-contracts-v1/.beacon/qa/features/prism-monetization-contracts-v1/matrix.qa9.json",
+      "matrix_path": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/.beacon/qa/features/prism-adaptation-contracts-v1/matrix.qa9.json",
       "evidence_generated": 15,
       "entry_count": 15,
       "freshness_violations": []
     },
     "artifacts": [
-      ".beacon/evidence/auto-test/run-20260812T192756091788/qa9/tc-execution-map.json",
-      ".beacon/evidence/auto-test/run-20260812T192756091788/qa9/tc-results.json",
-      ".beacon/evidence/auto-test/run-20260812T192756091788/summary.json",
+      ".beacon/evidence/auto-test/run-20260812T193122703453/qa9/tc-execution-map.json",
+      ".beacon/evidence/auto-test/run-20260812T193122703453/qa9/tc-results.json",
+      ".beacon/evidence/auto-test/run-20260812T193122703453/summary.json",
       ".beacon/flaky-history.json",
       ".beacon/evidence-signature-chain.json"
     ],
@@ -76,7 +76,7 @@
     "qa_types": [
       "contract"
     ],
-    "qa_matrix_path": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-monetization-contracts-v1/.beacon/qa/features/prism-monetization-contracts-v1/matrix.qa9.json",
+    "qa_matrix_path": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/.beacon/qa/features/prism-adaptation-contracts-v1/matrix.qa9.json",
     "ui_runner": "playwright",
     "quality_requirements": {
       "require_junit": true,
@@ -103,9 +103,9 @@
     },
     "tc_results": [
       {
-        "tc_id": "TC-MON-001",
-        "ac_id": "AC-MON-001",
-        "source_tc_id": "TC-MON-001",
+        "tc_id": "TC-ADP-001",
+        "ac_id": "AC-ADP-001",
+        "source_tc_id": "TC-ADP-001",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -115,18 +115,18 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 0,
-        "command": "test -f contracts/monetization.contract.md && rg -n \"deal_id|type|terms|disclosure|evidence\" contracts/monetization.contract.md",
-        "run_id": "run-20260812T192756091788",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-001/__RUN_ID__.json",
+        "command": "test -f contracts/adaptation.contract.md && rg -n \"adaptation_id|asset_ref|type|rights|royalty|approval\" contracts/adaptation.contract.md",
+        "run_id": "run-20260812T193122703453",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-001/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-001/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-001/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-001/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-001/result.json"
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-001/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-001/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-001/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-001/result.json"
         ],
-        "execution_fingerprint": "9aabed428559492133e55fd19ec4978cd1f28240e647e1cd4b7986e8af5bf38f",
-        "started_at": "2026-08-12T19:27:56.277818",
-        "ended_at": "2026-08-12T19:27:56.297147",
+        "execution_fingerprint": "353a365f75ccc4fa9adb7f61757736e70905922fc3248a2b1a2c8ed0e9f5ca1c",
+        "started_at": "2026-08-12T19:31:22.885062",
+        "ended_at": "2026-08-12T19:31:22.899915",
         "junit_path": "",
         "junit_valid": false,
         "browser_required": false,
@@ -140,9 +140,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MON-002",
-        "ac_id": "AC-MON-002",
-        "source_tc_id": "TC-MON-002",
+        "tc_id": "TC-ADP-002",
+        "ac_id": "AC-ADP-002",
+        "source_tc_id": "TC-ADP-002",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -152,18 +152,18 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 0,
-        "command": "test -f registry/monetization-adapters.yaml && rg -n \"deal-record|compliance|disclosure\" registry/monetization-adapters.yaml",
-        "run_id": "run-20260812T192756091788",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-002/__RUN_ID__.json",
+        "command": "test -f registry/adaptation-adapters.yaml && rg -n \"rights-record|royalty|license\" registry/adaptation-adapters.yaml",
+        "run_id": "run-20260812T193122703453",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-002/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-002/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-002/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-002/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-002/result.json"
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-002/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-002/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-002/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-002/result.json"
         ],
-        "execution_fingerprint": "ba2d40e69584838024bc925b0fe37421129be26767b27c98b300d6a8b306ac3f",
-        "started_at": "2026-08-12T19:27:56.395626",
-        "ended_at": "2026-08-12T19:27:56.411646",
+        "execution_fingerprint": "ddd38ce1b912c58c939ff06256860f60e75f9304af1c80dd5da6f266d1f8449e",
+        "started_at": "2026-08-12T19:31:22.986425",
+        "ended_at": "2026-08-12T19:31:23.001093",
         "junit_path": "",
         "junit_valid": false,
         "browser_required": false,
@@ -177,9 +177,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MON-003",
-        "ac_id": "AC-MON-003",
-        "source_tc_id": "TC-MON-003",
+        "tc_id": "TC-ADP-003",
+        "ac_id": "AC-ADP-003",
+        "source_tc_id": "TC-ADP-003",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -188,21 +188,21 @@
         "status": "passed",
         "layer_status": "passed",
         "reason_code": "",
-        "assertion_count": 5,
-        "command": "rg -n \"人工|批准|approval\" contracts/monetization.contract.md",
-        "run_id": "run-20260812T192756091788",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-003/__RUN_ID__.json",
+        "assertion_count": 7,
+        "command": "rg -n \"人工|批准|不授权|默认\" contracts/adaptation.contract.md",
+        "run_id": "run-20260812T193122703453",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-003/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-003/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-003/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-003/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-003/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-003/result.json"
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-003/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-003/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-003/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-003/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-003/result.json"
         ],
-        "execution_fingerprint": "a134bcc4d4118c7a3132b0682f4cf2b8cd33366149a36d15da7be1ea2aaebfa2",
-        "started_at": "2026-08-12T19:27:56.496011",
-        "ended_at": "2026-08-12T19:27:56.509836",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-003/junit.xml",
+        "execution_fingerprint": "e5be3c8589c4e0a6b568bee8bb8964e03fa4b558150c84f887defee7f48bca8c",
+        "started_at": "2026-08-12T19:31:23.087416",
+        "ended_at": "2026-08-12T19:31:23.101692",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-003/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -215,9 +215,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MON-004",
-        "ac_id": "AC-MON-004",
-        "source_tc_id": "TC-MON-004",
+        "tc_id": "TC-ADP-004",
+        "ac_id": "AC-ADP-004",
+        "source_tc_id": "TC-ADP-004",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -227,20 +227,20 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 1,
-        "command": "rg -n \"monetization.contract\" skills/_internal/orchestration/creation-mode-map.md",
-        "run_id": "run-20260812T192756091788",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-004/__RUN_ID__.json",
+        "command": "rg -n \"adaptation.contract\" skills/_internal/orchestration/creation-mode-map.md",
+        "run_id": "run-20260812T193122703453",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-004/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-004/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-004/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-004/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-004/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-004/result.json"
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-004/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-004/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-004/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-004/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-004/result.json"
         ],
-        "execution_fingerprint": "f2437635b94a34bc2131f0b4ddeea641fe781ccd52d4e53c1e7d5866009c4d6e",
-        "started_at": "2026-08-12T19:27:56.590913",
-        "ended_at": "2026-08-12T19:27:56.605951",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-004/junit.xml",
+        "execution_fingerprint": "bdab5e46060b30085753af68ca869bdde81dd7b15056bcb453cf74c09b7c4105",
+        "started_at": "2026-08-12T19:31:23.182740",
+        "ended_at": "2026-08-12T19:31:23.199055",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-004/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -253,9 +253,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MON-005",
-        "ac_id": "AC-MON-005",
-        "source_tc_id": "TC-MON-005",
+        "tc_id": "TC-ADP-005",
+        "ac_id": "AC-ADP-005",
+        "source_tc_id": "TC-ADP-005",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -265,18 +265,18 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 0,
-        "command": "test -x scripts/check_monetization.sh",
-        "run_id": "run-20260812T192756091788",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-005/__RUN_ID__.json",
+        "command": "test -x scripts/check_adaptation.sh",
+        "run_id": "run-20260812T193122703453",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-005/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-005/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-005/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-005/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-005/result.json"
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-005/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-005/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-005/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-005/result.json"
         ],
-        "execution_fingerprint": "a55ecd3f7be3a42a11d86aad724965d85690b0f97a5fdbb8426a294e3e14152f",
-        "started_at": "2026-08-12T19:27:56.685562",
-        "ended_at": "2026-08-12T19:27:56.693475",
+        "execution_fingerprint": "d54f855464a1d86a2cfef842d96f66cb7f62fd7cf79ed413546b16a97ad34e39",
+        "started_at": "2026-08-12T19:31:23.279468",
+        "ended_at": "2026-08-12T19:31:23.288234",
         "junit_path": "",
         "junit_valid": false,
         "browser_required": false,
@@ -290,9 +290,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MON-006",
-        "ac_id": "AC-MON-005",
-        "source_tc_id": "TC-MON-006",
+        "tc_id": "TC-ADP-006",
+        "ac_id": "AC-ADP-005",
+        "source_tc_id": "TC-ADP-006",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -302,18 +302,18 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 0,
-        "command": "bash scripts/check_monetization.sh",
-        "run_id": "run-20260812T192756091788",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-006/__RUN_ID__.json",
+        "command": "bash scripts/check_adaptation.sh",
+        "run_id": "run-20260812T193122703453",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-006/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-006/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-006/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-006/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-006/result.json"
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-006/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-006/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-006/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-006/result.json"
         ],
-        "execution_fingerprint": "3aa59851dd777471183f0e788fb4308ebdf6bd5a1d5ad66a8f1b26aec3d94698",
-        "started_at": "2026-08-12T19:27:56.773669",
-        "ended_at": "2026-08-12T19:27:57.018703",
+        "execution_fingerprint": "3cc9fe0c2e3e3e724f0de1672749acf030fe64339aaeef772c7a204ee6a53211",
+        "started_at": "2026-08-12T19:31:23.370132",
+        "ended_at": "2026-08-12T19:31:23.605850",
         "junit_path": "",
         "junit_valid": false,
         "browser_required": false,
@@ -327,9 +327,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MON-007",
-        "ac_id": "AC-MON-002",
-        "source_tc_id": "TC-MON-007",
+        "tc_id": "TC-ADP-007",
+        "ac_id": "AC-ADP-002",
+        "source_tc_id": "TC-ADP-007",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -339,18 +339,18 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 0,
-        "command": "python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/monetization-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=3 else 1)\"",
-        "run_id": "run-20260812T192756091788",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-007/__RUN_ID__.json",
+        "command": "python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/adaptation-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=3 else 1)\"",
+        "run_id": "run-20260812T193122703453",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-007/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-007/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-007/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-007/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-007/result.json"
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-007/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-007/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-007/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-007/result.json"
         ],
-        "execution_fingerprint": "dac9ed3c84271c8afc61fd9d70af1fdabc4f39337a625b46ab56112bbc2046f9",
-        "started_at": "2026-08-12T19:27:57.096626",
-        "ended_at": "2026-08-12T19:27:57.180343",
+        "execution_fingerprint": "f274945e37629863eb69c19ec90257ab99092e561de6d3498eb0165d082cefa1",
+        "started_at": "2026-08-12T19:31:23.691670",
+        "ended_at": "2026-08-12T19:31:23.775983",
         "junit_path": "",
         "junit_valid": false,
         "browser_required": false,
@@ -364,9 +364,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MON-008",
-        "ac_id": "AC-MON-006",
-        "source_tc_id": "TC-MON-008",
+        "tc_id": "TC-ADP-008",
+        "ac_id": "AC-ADP-006",
+        "source_tc_id": "TC-ADP-008",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -376,20 +376,20 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 3,
-        "command": "rg -n \"不编造|缺证据|blocked\" contracts/monetization.contract.md",
-        "run_id": "run-20260812T192756091788",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-008/__RUN_ID__.json",
+        "command": "rg -n \"不编造|缺证据|blocked\" contracts/adaptation.contract.md",
+        "run_id": "run-20260812T193122703453",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-008/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-008/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-008/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-008/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-008/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-008/result.json"
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-008/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-008/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-008/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-008/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-008/result.json"
         ],
-        "execution_fingerprint": "db4e093f6eaa79c0d3cd1e5bb2943f038e93bd6f875fd64112a675508ce7c2fd",
-        "started_at": "2026-08-12T19:27:57.262768",
-        "ended_at": "2026-08-12T19:27:57.277323",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-008/junit.xml",
+        "execution_fingerprint": "21283f7c056c76d14a10d035bc4cad63047dec83b6522b38a35958055dc7e557",
+        "started_at": "2026-08-12T19:31:23.856886",
+        "ended_at": "2026-08-12T19:31:23.869326",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-008/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -402,9 +402,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MON-009",
-        "ac_id": "AC-MON-007",
-        "source_tc_id": "TC-MON-009",
+        "tc_id": "TC-ADP-009",
+        "ac_id": "AC-ADP-007",
+        "source_tc_id": "TC-ADP-009",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -414,20 +414,20 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 5,
-        "command": "rg -n \"披露|广告|赞助|标注\" contracts/monetization.contract.md",
-        "run_id": "run-20260812T192756091788",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-009/__RUN_ID__.json",
+        "command": "rg -n \"正典|canon|母稿\" contracts/adaptation.contract.md",
+        "run_id": "run-20260812T193122703453",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-009/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-009/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-009/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-009/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-009/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-009/result.json"
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-009/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-009/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-009/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-009/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-009/result.json"
         ],
-        "execution_fingerprint": "31b04bd433f2909be811783fee0e1621192fa8d9aee7e32e64a8e41515738178",
-        "started_at": "2026-08-12T19:27:57.357169",
-        "ended_at": "2026-08-12T19:27:57.370791",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-009/junit.xml",
+        "execution_fingerprint": "90409cbb4e6cef214e9fdafc13b58d746e75571f05979dd678e954d3024468ce",
+        "started_at": "2026-08-12T19:31:23.951829",
+        "ended_at": "2026-08-12T19:31:23.966150",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-009/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -440,9 +440,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MON-010",
-        "ac_id": "AC-MON-008",
-        "source_tc_id": "TC-MON-010",
+        "tc_id": "TC-ADP-010",
+        "ac_id": "AC-ADP-008",
+        "source_tc_id": "TC-ADP-010",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -451,21 +451,21 @@
         "status": "passed",
         "layer_status": "passed",
         "reason_code": "",
-        "assertion_count": 5,
-        "command": "rg -n \"health|legal|finance|合规\" contracts/monetization.contract.md",
-        "run_id": "run-20260812T192756091788",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-010/__RUN_ID__.json",
+        "assertion_count": 3,
+        "command": "rg -n \"license|第三方|未获权|不自动授权\" contracts/adaptation.contract.md",
+        "run_id": "run-20260812T193122703453",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-010/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-010/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-010/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-010/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-010/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-010/result.json"
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-010/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-010/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-010/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-010/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-010/result.json"
         ],
-        "execution_fingerprint": "7d9d534c08f30694442c4add3d0806c97fdda7aa88e04f66e89238696c4c80ab",
-        "started_at": "2026-08-12T19:27:57.451973",
-        "ended_at": "2026-08-12T19:27:57.465952",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-010/junit.xml",
+        "execution_fingerprint": "ca07e0e6d782a7f7f85a12c1fdc0401764d34820334c44ca4ec9868308e0f1fb",
+        "started_at": "2026-08-12T19:31:24.046394",
+        "ended_at": "2026-08-12T19:31:24.059475",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-010/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -478,9 +478,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MON-011",
-        "ac_id": "AC-MON-009",
-        "source_tc_id": "TC-MON-011",
+        "tc_id": "TC-ADP-011",
+        "ac_id": "AC-ADP-009",
+        "source_tc_id": "TC-ADP-011",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -490,20 +490,20 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 2,
-        "command": "rg -n \"收款|敏感|secrets|禁止入库\" contracts/monetization.contract.md",
-        "run_id": "run-20260812T192756091788",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-011/__RUN_ID__.json",
+        "command": "rg -n \"合同|敏感|secrets|禁止入库\" contracts/adaptation.contract.md",
+        "run_id": "run-20260812T193122703453",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-011/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-011/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-011/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-011/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-011/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-011/result.json"
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-011/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-011/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-011/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-011/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-011/result.json"
         ],
-        "execution_fingerprint": "869083680cee46bdf924d0889dc25efcd19595a093f28a105858c7d0e34cf501",
-        "started_at": "2026-08-12T19:27:57.550311",
-        "ended_at": "2026-08-12T19:27:57.563306",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-011/junit.xml",
+        "execution_fingerprint": "9a969e8f2cba6254283ccdfbcaa2dce958186763393bf06c3b71d3c0ce3bd17b",
+        "started_at": "2026-08-12T19:31:24.142562",
+        "ended_at": "2026-08-12T19:31:24.155557",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-011/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -516,9 +516,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MON-012",
-        "ac_id": "AC-MON-010",
-        "source_tc_id": "TC-MON-012",
+        "tc_id": "TC-ADP-012",
+        "ac_id": "AC-ADP-010",
+        "source_tc_id": "TC-ADP-012",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -527,21 +527,21 @@
         "status": "passed",
         "layer_status": "passed",
         "reason_code": "",
-        "assertion_count": 12,
-        "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md && rg -n \"F2\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md",
-        "run_id": "run-20260812T192756091788",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-012/__RUN_ID__.json",
+        "assertion_count": 11,
+        "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md && rg -n \"授权 API\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+        "run_id": "run-20260812T193122703453",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-012/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-012/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-012/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-012/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-012/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-012/result.json"
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-012/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-012/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-012/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-012/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-012/result.json"
         ],
-        "execution_fingerprint": "2d9a9de4f2df46ea77d825cd287f7e3698905ebec82854607eef277bb58247a8",
-        "started_at": "2026-08-12T19:27:57.655000",
-        "ended_at": "2026-08-12T19:27:57.682242",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-012/junit.xml",
+        "execution_fingerprint": "3da1d6da3fe72cab7a97524a491662347fc69b6dd6cca5c13fc98cb19dc8590b",
+        "started_at": "2026-08-12T19:31:24.245586",
+        "ended_at": "2026-08-12T19:31:24.277628",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-012/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -554,9 +554,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MON-013",
-        "ac_id": "AC-MON-010",
-        "source_tc_id": "TC-MON-013",
+        "tc_id": "TC-ADP-013",
+        "ac_id": "AC-ADP-010",
+        "source_tc_id": "TC-ADP-013",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -566,20 +566,20 @@
         "layer_status": "passed",
         "reason_code": "",
         "assertion_count": 4,
-        "command": "rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md",
-        "run_id": "run-20260812T192756091788",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-013/__RUN_ID__.json",
+        "command": "rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+        "run_id": "run-20260812T193122703453",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-013/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-013/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-013/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-013/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-013/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-013/result.json"
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-013/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-013/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-013/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-013/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-013/result.json"
         ],
-        "execution_fingerprint": "003ae35258f48c7b1349216c4aa09b8b34fed7778df713c40ce3ccb2b0fd5054",
-        "started_at": "2026-08-12T19:27:57.767606",
-        "ended_at": "2026-08-12T19:27:57.780400",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-013/junit.xml",
+        "execution_fingerprint": "5d59792dfaa05569ab8a5cdb416efa137719b5d3b61998982aaa44cdcdad9dc7",
+        "started_at": "2026-08-12T19:31:24.357340",
+        "ended_at": "2026-08-12T19:31:24.375230",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-013/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -592,9 +592,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MON-014",
-        "ac_id": "AC-MON-001",
-        "source_tc_id": "TC-MON-014",
+        "tc_id": "TC-ADP-014",
+        "ac_id": "AC-ADP-001",
+        "source_tc_id": "TC-ADP-014",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -603,21 +603,21 @@
         "status": "passed",
         "layer_status": "passed",
         "reason_code": "",
-        "assertion_count": 20,
-        "command": "rg -n \"US-MON-001|变现\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md",
-        "run_id": "run-20260812T192756091788",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-014/__RUN_ID__.json",
+        "assertion_count": 15,
+        "command": "rg -n \"US-ADP-001|改编\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+        "run_id": "run-20260812T193122703453",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-014/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-014/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-014/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-014/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-014/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-014/result.json"
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-014/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-014/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-014/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-014/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-014/result.json"
         ],
-        "execution_fingerprint": "f7517b64eed2b3fe88a3e7f79ae295538dd040bc2416a660c380544bfc925923",
-        "started_at": "2026-08-12T19:27:57.889768",
-        "ended_at": "2026-08-12T19:27:57.917056",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-014/junit.xml",
+        "execution_fingerprint": "0a3f8d530fd5fa4aadba257a024c5adba21bc550d9e5bd9f9bbcfc8a1852a936",
+        "started_at": "2026-08-12T19:31:24.453591",
+        "ended_at": "2026-08-12T19:31:24.469945",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-014/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -630,9 +630,9 @@
         "round_stop_anchor": ""
       },
       {
-        "tc_id": "TC-MON-015",
-        "ac_id": "AC-MON-008",
-        "source_tc_id": "TC-MON-015",
+        "tc_id": "TC-ADP-015",
+        "ac_id": "AC-ADP-003",
+        "source_tc_id": "TC-ADP-015",
         "scenario_id": "",
         "scenario_family": "",
         "qa_type": "contract",
@@ -641,21 +641,21 @@
         "status": "passed",
         "layer_status": "passed",
         "reason_code": "",
-        "assertion_count": 8,
-        "command": "rg -n \"US-MON-002|合规\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md",
-        "run_id": "run-20260812T192756091788",
-        "evidence_path": ".beacon/evidence/qa-feature/prism-monetization-contracts-v1/tc-mon-015/__RUN_ID__.json",
+        "assertion_count": 5,
+        "command": "rg -n \"US-ADP-002|不自动授权\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+        "run_id": "run-20260812T193122703453",
+        "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-015/__RUN_ID__.json",
         "evidence_ref": [
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-015/command.txt",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-015/stdout.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-015/stderr.log",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-015/junit.xml",
-          ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-015/result.json"
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-015/command.txt",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-015/stdout.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-015/stderr.log",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-015/junit.xml",
+          ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-015/result.json"
         ],
-        "execution_fingerprint": "e00a5a9bbff038e3e995fb4052ecd64ad1a2bcaac73323375884df1f1da00ac1",
-        "started_at": "2026-08-12T19:27:58.043249",
-        "ended_at": "2026-08-12T19:27:58.059069",
-        "junit_path": ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-015/junit.xml",
+        "execution_fingerprint": "89575ef388a95a01fce0206aa912e8a9122e358f45022d85f6c203588f8fddc3",
+        "started_at": "2026-08-12T19:31:24.558314",
+        "ended_at": "2026-08-12T19:31:24.575685",
+        "junit_path": ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-015/junit.xml",
         "junit_valid": true,
         "browser_required": false,
         "browser_evidence_pack_ref": "",
@@ -682,9 +682,9 @@
     }
   ],
   "schema_version": "1.0",
-  "updated_at": "2026-08-12T11:27:58.135215+00:00",
+  "updated_at": "2026-08-12T11:31:24.669616+00:00",
   "summary": {
-    "feature": "prism-monetization-contracts-v1",
+    "feature": "prism-adaptation-contracts-v1",
     "version": "v0.0.1",
     "status": "passed",
     "release_ready": true,
@@ -698,15 +698,15 @@
     "reconciliation_artifact_path": "",
     "reconciliation_reprojection_targets": [],
     "repair_action": "qa-repair",
-    "repair_command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-monetization-contracts-v1 --version v0.0.1 --feature \"prism-monetization-contracts-v1\""
+    "repair_command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1 --version v0.0.1 --feature \"prism-adaptation-contracts-v1\""
   },
   "qa_status_source": "canonical",
   "governance_state_role": "generated_governance_state_not_truth",
   "truth_authority": false,
   "json_authority": false,
   "resolver_mode": "resolver_first",
-  "feature": "prism-monetization-contracts-v1",
-  "feature_slug": "prism-monetization-contracts-v1",
+  "feature": "prism-adaptation-contracts-v1",
+  "feature_slug": "prism-adaptation-contracts-v1",
   "implementation_done": true,
   "evidence_done": true,
   "story_sequence": [
@@ -727,33 +727,33 @@
       "contract"
     ],
     "targeted_ac_ids": [
-      "AC-MON-001",
-      "AC-MON-002",
-      "AC-MON-003",
-      "AC-MON-004",
-      "AC-MON-005",
-      "AC-MON-006",
-      "AC-MON-007",
-      "AC-MON-008",
-      "AC-MON-009",
-      "AC-MON-010"
+      "AC-ADP-001",
+      "AC-ADP-002",
+      "AC-ADP-003",
+      "AC-ADP-004",
+      "AC-ADP-005",
+      "AC-ADP-006",
+      "AC-ADP-007",
+      "AC-ADP-008",
+      "AC-ADP-009",
+      "AC-ADP-010"
     ],
     "targeted_tc_ids": [
-      "TC-MON-001",
-      "TC-MON-002",
-      "TC-MON-003",
-      "TC-MON-004",
-      "TC-MON-005",
-      "TC-MON-006",
-      "TC-MON-007",
-      "TC-MON-008",
-      "TC-MON-009",
-      "TC-MON-010",
-      "TC-MON-011",
-      "TC-MON-012",
-      "TC-MON-013",
-      "TC-MON-014",
-      "TC-MON-015"
+      "TC-ADP-001",
+      "TC-ADP-002",
+      "TC-ADP-003",
+      "TC-ADP-004",
+      "TC-ADP-005",
+      "TC-ADP-006",
+      "TC-ADP-007",
+      "TC-ADP-008",
+      "TC-ADP-009",
+      "TC-ADP-010",
+      "TC-ADP-011",
+      "TC-ADP-012",
+      "TC-ADP-013",
+      "TC-ADP-014",
+      "TC-ADP-015"
     ],
     "targeted_scenario_ids": [],
     "targeted_scenario_families": []
@@ -765,13 +765,13 @@
     "targeted_scope_only": true,
     "verification_item_count": 15
   },
-  "feature_matrix_path": ".beacon/qa/features/prism-monetization-contracts-v1/matrix.qa9.json",
+  "feature_matrix_path": ".beacon/qa/features/prism-adaptation-contracts-v1/matrix.qa9.json",
   "blocking_artifact_updates": [],
   "per_item_results": [
     {
-      "ac_id": "AC-MON-001",
-      "tc_id": "TC-MON-001",
-      "source_tc_id": "TC-MON-001",
+      "ac_id": "AC-ADP-001",
+      "tc_id": "TC-ADP-001",
+      "source_tc_id": "TC-ADP-001",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-001",
@@ -784,16 +784,16 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-001/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-001/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-001/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-001/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-001/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-001/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-001/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-001/result.json"
       ]
     },
     {
-      "ac_id": "AC-MON-002",
-      "tc_id": "TC-MON-002",
-      "source_tc_id": "TC-MON-002",
+      "ac_id": "AC-ADP-002",
+      "tc_id": "TC-ADP-002",
+      "source_tc_id": "TC-ADP-002",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-002",
@@ -806,16 +806,16 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-002/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-002/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-002/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-002/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-002/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-002/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-002/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-002/result.json"
       ]
     },
     {
-      "ac_id": "AC-MON-003",
-      "tc_id": "TC-MON-003",
-      "source_tc_id": "TC-MON-003",
+      "ac_id": "AC-ADP-003",
+      "tc_id": "TC-ADP-003",
+      "source_tc_id": "TC-ADP-003",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-003",
@@ -828,17 +828,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-003/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-003/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-003/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-003/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-003/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-003/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-003/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-003/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-003/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-003/result.json"
       ]
     },
     {
-      "ac_id": "AC-MON-004",
-      "tc_id": "TC-MON-004",
-      "source_tc_id": "TC-MON-004",
+      "ac_id": "AC-ADP-004",
+      "tc_id": "TC-ADP-004",
+      "source_tc_id": "TC-ADP-004",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-004",
@@ -851,17 +851,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-004/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-004/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-004/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-004/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-004/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-004/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-004/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-004/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-004/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-004/result.json"
       ]
     },
     {
-      "ac_id": "AC-MON-005",
-      "tc_id": "TC-MON-005",
-      "source_tc_id": "TC-MON-005",
+      "ac_id": "AC-ADP-005",
+      "tc_id": "TC-ADP-005",
+      "source_tc_id": "TC-ADP-005",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-005",
@@ -874,16 +874,16 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-005/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-005/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-005/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-005/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-005/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-005/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-005/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-005/result.json"
       ]
     },
     {
-      "ac_id": "AC-MON-005",
-      "tc_id": "TC-MON-006",
-      "source_tc_id": "TC-MON-006",
+      "ac_id": "AC-ADP-005",
+      "tc_id": "TC-ADP-006",
+      "source_tc_id": "TC-ADP-006",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-006",
@@ -896,16 +896,16 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-006/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-006/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-006/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-006/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-006/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-006/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-006/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-006/result.json"
       ]
     },
     {
-      "ac_id": "AC-MON-002",
-      "tc_id": "TC-MON-007",
-      "source_tc_id": "TC-MON-007",
+      "ac_id": "AC-ADP-002",
+      "tc_id": "TC-ADP-007",
+      "source_tc_id": "TC-ADP-007",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-007",
@@ -918,16 +918,16 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-007/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-007/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-007/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-007/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-007/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-007/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-007/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-007/result.json"
       ]
     },
     {
-      "ac_id": "AC-MON-006",
-      "tc_id": "TC-MON-008",
-      "source_tc_id": "TC-MON-008",
+      "ac_id": "AC-ADP-006",
+      "tc_id": "TC-ADP-008",
+      "source_tc_id": "TC-ADP-008",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-008",
@@ -940,17 +940,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-008/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-008/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-008/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-008/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-008/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-008/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-008/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-008/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-008/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-008/result.json"
       ]
     },
     {
-      "ac_id": "AC-MON-007",
-      "tc_id": "TC-MON-009",
-      "source_tc_id": "TC-MON-009",
+      "ac_id": "AC-ADP-007",
+      "tc_id": "TC-ADP-009",
+      "source_tc_id": "TC-ADP-009",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-009",
@@ -963,17 +963,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-009/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-009/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-009/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-009/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-009/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-009/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-009/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-009/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-009/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-009/result.json"
       ]
     },
     {
-      "ac_id": "AC-MON-008",
-      "tc_id": "TC-MON-010",
-      "source_tc_id": "TC-MON-010",
+      "ac_id": "AC-ADP-008",
+      "tc_id": "TC-ADP-010",
+      "source_tc_id": "TC-ADP-010",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-010",
@@ -986,17 +986,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-010/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-010/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-010/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-010/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-010/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-010/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-010/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-010/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-010/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-010/result.json"
       ]
     },
     {
-      "ac_id": "AC-MON-009",
-      "tc_id": "TC-MON-011",
-      "source_tc_id": "TC-MON-011",
+      "ac_id": "AC-ADP-009",
+      "tc_id": "TC-ADP-011",
+      "source_tc_id": "TC-ADP-011",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-011",
@@ -1009,17 +1009,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-011/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-011/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-011/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-011/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-011/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-011/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-011/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-011/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-011/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-011/result.json"
       ]
     },
     {
-      "ac_id": "AC-MON-010",
-      "tc_id": "TC-MON-012",
-      "source_tc_id": "TC-MON-012",
+      "ac_id": "AC-ADP-010",
+      "tc_id": "TC-ADP-012",
+      "source_tc_id": "TC-ADP-012",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-012",
@@ -1032,17 +1032,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-012/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-012/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-012/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-012/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-012/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-012/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-012/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-012/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-012/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-012/result.json"
       ]
     },
     {
-      "ac_id": "AC-MON-010",
-      "tc_id": "TC-MON-013",
-      "source_tc_id": "TC-MON-013",
+      "ac_id": "AC-ADP-010",
+      "tc_id": "TC-ADP-013",
+      "source_tc_id": "TC-ADP-013",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-013",
@@ -1055,17 +1055,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-013/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-013/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-013/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-013/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-013/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-013/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-013/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-013/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-013/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-013/result.json"
       ]
     },
     {
-      "ac_id": "AC-MON-001",
-      "tc_id": "TC-MON-014",
-      "source_tc_id": "TC-MON-014",
+      "ac_id": "AC-ADP-001",
+      "tc_id": "TC-ADP-014",
+      "source_tc_id": "TC-ADP-014",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-014",
@@ -1078,17 +1078,17 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-014/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-014/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-014/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-014/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-014/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-014/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-014/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-014/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-014/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-014/result.json"
       ]
     },
     {
-      "ac_id": "AC-MON-008",
-      "tc_id": "TC-MON-015",
-      "source_tc_id": "TC-MON-015",
+      "ac_id": "AC-ADP-003",
+      "tc_id": "TC-ADP-015",
+      "source_tc_id": "TC-ADP-015",
       "scenario_id": "",
       "scenario_family": "",
       "test_item_id": "TEST-015",
@@ -1101,11 +1101,11 @@
       "browser_evidence_authenticity_status": "",
       "replay_ref": "",
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-015/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-015/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-015/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-015/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-015/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-015/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-015/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-015/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-015/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-015/result.json"
       ]
     }
   ],
@@ -1139,19 +1139,19 @@
     "blocked": false,
     "reason_code": "",
     "target_stage": "qa",
-    "feature": "prism-monetization-contracts-v1",
+    "feature": "prism-adaptation-contracts-v1",
     "version": "v0.0.1",
     "recommended_command": ""
   },
   "requirement_completeness_verdict": "pass",
   "requirement_completeness_ref": "",
-  "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-monetization-contracts-v1.ac-test-matrix.json",
+  "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-adaptation-contracts-v1.ac-test-matrix.json",
   "exhaustiveness": {
     "schema_version": "1.0",
-    "feature": "prism-monetization-contracts-v1",
-    "feature_slug": "prism-monetization-contracts-v1",
-    "run_id": "run-20260812T192756091788",
-    "generated_at": "2026-08-12T11:27:58.198421+00:00",
+    "feature": "prism-adaptation-contracts-v1",
+    "feature_slug": "prism-adaptation-contracts-v1",
+    "run_id": "run-20260812T193122703453",
+    "generated_at": "2026-08-12T11:31:24.725177+00:00",
     "execution_mode": "feature-aware",
     "scenario_count": 15,
     "browser_scenario_count": 0,
@@ -1173,11 +1173,11 @@
   },
   "scenario_results_v2": [
     {
-      "scenario_id": "TC-MON-001",
-      "tc_id": "TC-MON-001",
-      "source_tc_id": "TC-MON-001",
-      "ac_id": "AC-MON-001",
-      "feature_slug": "prism-monetization-contracts-v1",
+      "scenario_id": "TC-ADP-001",
+      "tc_id": "TC-ADP-001",
+      "source_tc_id": "TC-ADP-001",
+      "ac_id": "AC-ADP-001",
+      "feature_slug": "prism-adaptation-contracts-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1201,18 +1201,18 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-001/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-001/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-001/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-001/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-001/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-001/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-001/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-001/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MON-002",
-      "tc_id": "TC-MON-002",
-      "source_tc_id": "TC-MON-002",
-      "ac_id": "AC-MON-002",
-      "feature_slug": "prism-monetization-contracts-v1",
+      "scenario_id": "TC-ADP-002",
+      "tc_id": "TC-ADP-002",
+      "source_tc_id": "TC-ADP-002",
+      "ac_id": "AC-ADP-002",
+      "feature_slug": "prism-adaptation-contracts-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1236,18 +1236,18 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-002/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-002/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-002/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-002/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-002/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-002/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-002/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-002/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MON-003",
-      "tc_id": "TC-MON-003",
-      "source_tc_id": "TC-MON-003",
-      "ac_id": "AC-MON-003",
-      "feature_slug": "prism-monetization-contracts-v1",
+      "scenario_id": "TC-ADP-003",
+      "tc_id": "TC-ADP-003",
+      "source_tc_id": "TC-ADP-003",
+      "ac_id": "AC-ADP-003",
+      "feature_slug": "prism-adaptation-contracts-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1271,19 +1271,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-003/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-003/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-003/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-003/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-003/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-003/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-003/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-003/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-003/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-003/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MON-004",
-      "tc_id": "TC-MON-004",
-      "source_tc_id": "TC-MON-004",
-      "ac_id": "AC-MON-004",
-      "feature_slug": "prism-monetization-contracts-v1",
+      "scenario_id": "TC-ADP-004",
+      "tc_id": "TC-ADP-004",
+      "source_tc_id": "TC-ADP-004",
+      "ac_id": "AC-ADP-004",
+      "feature_slug": "prism-adaptation-contracts-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1307,19 +1307,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-004/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-004/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-004/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-004/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-004/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-004/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-004/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-004/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-004/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-004/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MON-005",
-      "tc_id": "TC-MON-005",
-      "source_tc_id": "TC-MON-005",
-      "ac_id": "AC-MON-005",
-      "feature_slug": "prism-monetization-contracts-v1",
+      "scenario_id": "TC-ADP-005",
+      "tc_id": "TC-ADP-005",
+      "source_tc_id": "TC-ADP-005",
+      "ac_id": "AC-ADP-005",
+      "feature_slug": "prism-adaptation-contracts-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1343,18 +1343,18 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-005/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-005/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-005/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-005/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-005/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-005/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-005/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-005/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MON-006",
-      "tc_id": "TC-MON-006",
-      "source_tc_id": "TC-MON-006",
-      "ac_id": "AC-MON-005",
-      "feature_slug": "prism-monetization-contracts-v1",
+      "scenario_id": "TC-ADP-006",
+      "tc_id": "TC-ADP-006",
+      "source_tc_id": "TC-ADP-006",
+      "ac_id": "AC-ADP-005",
+      "feature_slug": "prism-adaptation-contracts-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1378,18 +1378,18 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-006/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-006/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-006/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-006/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-006/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-006/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-006/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-006/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MON-007",
-      "tc_id": "TC-MON-007",
-      "source_tc_id": "TC-MON-007",
-      "ac_id": "AC-MON-002",
-      "feature_slug": "prism-monetization-contracts-v1",
+      "scenario_id": "TC-ADP-007",
+      "tc_id": "TC-ADP-007",
+      "source_tc_id": "TC-ADP-007",
+      "ac_id": "AC-ADP-002",
+      "feature_slug": "prism-adaptation-contracts-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1413,18 +1413,18 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-007/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-007/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-007/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-007/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-007/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-007/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-007/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-007/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MON-008",
-      "tc_id": "TC-MON-008",
-      "source_tc_id": "TC-MON-008",
-      "ac_id": "AC-MON-006",
-      "feature_slug": "prism-monetization-contracts-v1",
+      "scenario_id": "TC-ADP-008",
+      "tc_id": "TC-ADP-008",
+      "source_tc_id": "TC-ADP-008",
+      "ac_id": "AC-ADP-006",
+      "feature_slug": "prism-adaptation-contracts-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1448,19 +1448,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-008/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-008/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-008/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-008/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-008/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-008/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-008/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-008/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-008/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-008/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MON-009",
-      "tc_id": "TC-MON-009",
-      "source_tc_id": "TC-MON-009",
-      "ac_id": "AC-MON-007",
-      "feature_slug": "prism-monetization-contracts-v1",
+      "scenario_id": "TC-ADP-009",
+      "tc_id": "TC-ADP-009",
+      "source_tc_id": "TC-ADP-009",
+      "ac_id": "AC-ADP-007",
+      "feature_slug": "prism-adaptation-contracts-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1484,19 +1484,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-009/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-009/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-009/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-009/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-009/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-009/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-009/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-009/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-009/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-009/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MON-010",
-      "tc_id": "TC-MON-010",
-      "source_tc_id": "TC-MON-010",
-      "ac_id": "AC-MON-008",
-      "feature_slug": "prism-monetization-contracts-v1",
+      "scenario_id": "TC-ADP-010",
+      "tc_id": "TC-ADP-010",
+      "source_tc_id": "TC-ADP-010",
+      "ac_id": "AC-ADP-008",
+      "feature_slug": "prism-adaptation-contracts-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1520,19 +1520,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-010/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-010/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-010/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-010/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-010/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-010/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-010/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-010/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-010/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-010/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MON-011",
-      "tc_id": "TC-MON-011",
-      "source_tc_id": "TC-MON-011",
-      "ac_id": "AC-MON-009",
-      "feature_slug": "prism-monetization-contracts-v1",
+      "scenario_id": "TC-ADP-011",
+      "tc_id": "TC-ADP-011",
+      "source_tc_id": "TC-ADP-011",
+      "ac_id": "AC-ADP-009",
+      "feature_slug": "prism-adaptation-contracts-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1556,19 +1556,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-011/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-011/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-011/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-011/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-011/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-011/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-011/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-011/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-011/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-011/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MON-012",
-      "tc_id": "TC-MON-012",
-      "source_tc_id": "TC-MON-012",
-      "ac_id": "AC-MON-010",
-      "feature_slug": "prism-monetization-contracts-v1",
+      "scenario_id": "TC-ADP-012",
+      "tc_id": "TC-ADP-012",
+      "source_tc_id": "TC-ADP-012",
+      "ac_id": "AC-ADP-010",
+      "feature_slug": "prism-adaptation-contracts-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1592,19 +1592,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-012/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-012/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-012/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-012/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-012/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-012/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-012/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-012/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-012/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-012/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MON-013",
-      "tc_id": "TC-MON-013",
-      "source_tc_id": "TC-MON-013",
-      "ac_id": "AC-MON-010",
-      "feature_slug": "prism-monetization-contracts-v1",
+      "scenario_id": "TC-ADP-013",
+      "tc_id": "TC-ADP-013",
+      "source_tc_id": "TC-ADP-013",
+      "ac_id": "AC-ADP-010",
+      "feature_slug": "prism-adaptation-contracts-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1628,19 +1628,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-013/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-013/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-013/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-013/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-013/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-013/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-013/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-013/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-013/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-013/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MON-014",
-      "tc_id": "TC-MON-014",
-      "source_tc_id": "TC-MON-014",
-      "ac_id": "AC-MON-001",
-      "feature_slug": "prism-monetization-contracts-v1",
+      "scenario_id": "TC-ADP-014",
+      "tc_id": "TC-ADP-014",
+      "source_tc_id": "TC-ADP-014",
+      "ac_id": "AC-ADP-001",
+      "feature_slug": "prism-adaptation-contracts-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1664,19 +1664,19 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-014/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-014/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-014/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-014/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-014/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-014/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-014/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-014/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-014/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-014/result.json"
       ]
     },
     {
-      "scenario_id": "TC-MON-015",
-      "tc_id": "TC-MON-015",
-      "source_tc_id": "TC-MON-015",
-      "ac_id": "AC-MON-008",
-      "feature_slug": "prism-monetization-contracts-v1",
+      "scenario_id": "TC-ADP-015",
+      "tc_id": "TC-ADP-015",
+      "source_tc_id": "TC-ADP-015",
+      "ac_id": "AC-ADP-003",
+      "feature_slug": "prism-adaptation-contracts-v1",
       "scenario_family": "",
       "status": "passed",
       "closure_outcome": "accepted",
@@ -1700,21 +1700,21 @@
         "flake_penalty": 0.0
       },
       "evidence_ref": [
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-015/command.txt",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-015/stdout.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-015/stderr.log",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-015/junit.xml",
-        ".beacon/evidence/auto-test/run-20260812T192756091788/qa9-tc/TC-MON-015/result.json"
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-015/command.txt",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-015/stdout.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-015/stderr.log",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-015/junit.xml",
+        ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-015/result.json"
       ]
     }
   ],
-  "ac_closure_path": ".beacon/qa/features/prism-monetization-contracts-v1/ac-closure.json",
-  "feature_scorecard_path": ".beacon/qa/features/prism-monetization-contracts-v1/scorecard.json",
+  "ac_closure_path": ".beacon/qa/features/prism-adaptation-contracts-v1/ac-closure.json",
+  "feature_scorecard_path": ".beacon/qa/features/prism-adaptation-contracts-v1/scorecard.json",
   "feature_scorecard": {
     "schema_version": "1.0",
-    "feature": "prism-monetization-contracts-v1",
-    "feature_slug": "prism-monetization-contracts-v1",
-    "run_id": "run-20260812T192756091788",
+    "feature": "prism-adaptation-contracts-v1",
+    "feature_slug": "prism-adaptation-contracts-v1",
+    "run_id": "run-20260812T193122703453",
     "ac_total": 10,
     "ac_accepted": 10,
     "scenario_total": 15,
@@ -2171,11 +2171,11 @@
       "junit_missing_or_invalid"
     ],
     "test_case_backfill_required": false,
-    "resume_command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-monetization-contracts-v1 --version v0.0.1 --feature \"prism-monetization-contracts-v1\"",
+    "resume_command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1 --version v0.0.1 --feature \"prism-adaptation-contracts-v1\"",
     "repair_handoff": {
       "action": "qa-repair",
       "reason": "assertion_count_zero_pass, junit_missing_or_invalid",
-      "command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-monetization-contracts-v1 --version v0.0.1 --feature \"prism-monetization-contracts-v1\""
+      "command": "beacon help --project-root /Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1 --version v0.0.1 --feature \"prism-adaptation-contracts-v1\""
     },
     "release_ready": true,
     "domain_fsm_coverage": {
@@ -2188,21 +2188,15 @@
       "threshold": 1.0,
       "coverage_ratio": 1.0,
       "legal_walk": {
-        "required": 2,
-        "present": 2,
-        "covered": 2,
+        "required": 1,
+        "present": 1,
+        "covered": 1,
         "rows": [
           {
-            "ac_id": "TC-MON-006",
-            "tc_id": "AC-MON-005",
-            "path_type": "`bash scripts/check_monetization.sh`",
-            "raw": "TC-MON-006 | AC-MON-005 | `bash scripts/check_monetization.sh` | exec-layer 校验脚本 PASS（合法路径）"
-          },
-          {
-            "ac_id": "TC-MON-010",
-            "tc_id": "AC-MON-008",
-            "path_type": "`rg -n \"health",
-            "raw": "TC-MON-010 | AC-MON-008 | `rg -n \"health | legal | finance | 合规\" contracts/monetization.contract.md` | 风险合规门"
+            "ac_id": "TC-ADP-006",
+            "tc_id": "AC-ADP-005",
+            "path_type": "`bash scripts/check_adaptation.sh`",
+            "raw": "TC-ADP-006 | AC-ADP-005 | `bash scripts/check_adaptation.sh` | exec-layer 校验脚本 PASS（合法路径）"
           }
         ]
       },
@@ -2212,114 +2206,114 @@
         "covered": 2,
         "rows": [
           {
-            "ac_id": "TC-MON-013",
-            "tc_id": "AC-MON-010",
+            "ac_id": "TC-ADP-013",
+            "tc_id": "AC-ADP-010",
             "path_type": "`rg -n \"Illegal",
-            "raw": "TC-MON-013 | AC-MON-010 | `rg -n \"Illegal | illegal | 宣称海\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md` | illegal 转移覆盖（非法拒绝路径）"
+            "raw": "TC-ADP-013 | AC-ADP-010 | `rg -n \"Illegal | illegal | 宣称海\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md` | illegal 转移覆盖（非法拒绝路径）"
           },
           {
-            "ac_id": "TC-MON-015",
-            "tc_id": "AC-MON-008",
-            "path_type": "`rg -n \"US-MON-002",
-            "raw": "TC-MON-015 | AC-MON-008 | `rg -n \"US-MON-002 | 合规\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md` | 合规拒绝路径可追溯"
+            "ac_id": "TC-ADP-015",
+            "tc_id": "AC-ADP-003",
+            "path_type": "`rg -n \"US-ADP-002",
+            "raw": "TC-ADP-015 | AC-ADP-003 | `rg -n \"US-ADP-002 | 不自动授权\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md` | 未授权拒绝路径可追溯"
           }
         ]
       },
       "matrix": {
         "legal_walk_rows": [
           {
-            "ac_id": "TC-MON-006",
-            "tc_id": "AC-MON-005",
-            "path_type": "`bash scripts/check_monetization.sh`",
-            "raw": "TC-MON-006 | AC-MON-005 | `bash scripts/check_monetization.sh` | exec-layer 校验脚本 PASS（合法路径）"
-          },
-          {
-            "ac_id": "TC-MON-010",
-            "tc_id": "AC-MON-008",
-            "path_type": "`rg -n \"health",
-            "raw": "TC-MON-010 | AC-MON-008 | `rg -n \"health | legal | finance | 合规\" contracts/monetization.contract.md` | 风险合规门"
+            "ac_id": "TC-ADP-006",
+            "tc_id": "AC-ADP-005",
+            "path_type": "`bash scripts/check_adaptation.sh`",
+            "raw": "TC-ADP-006 | AC-ADP-005 | `bash scripts/check_adaptation.sh` | exec-layer 校验脚本 PASS（合法路径）"
           }
         ],
         "illegal_rows": [
           {
-            "ac_id": "TC-MON-013",
-            "tc_id": "AC-MON-010",
+            "ac_id": "TC-ADP-013",
+            "tc_id": "AC-ADP-010",
             "path_type": "`rg -n \"Illegal",
-            "raw": "TC-MON-013 | AC-MON-010 | `rg -n \"Illegal | illegal | 宣称海\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md` | illegal 转移覆盖（非法拒绝路径）"
+            "raw": "TC-ADP-013 | AC-ADP-010 | `rg -n \"Illegal | illegal | 宣称海\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md` | illegal 转移覆盖（非法拒绝路径）"
           },
           {
-            "ac_id": "TC-MON-015",
-            "tc_id": "AC-MON-008",
-            "path_type": "`rg -n \"US-MON-002",
-            "raw": "TC-MON-015 | AC-MON-008 | `rg -n \"US-MON-002 | 合规\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md` | 合规拒绝路径可追溯"
+            "ac_id": "TC-ADP-015",
+            "tc_id": "AC-ADP-003",
+            "path_type": "`rg -n \"US-ADP-002",
+            "raw": "TC-ADP-015 | AC-ADP-003 | `rg -n \"US-ADP-002 | 不自动授权\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md` | 未授权拒绝路径可追溯"
           }
         ],
         "other_rows": [
           {
-            "ac_id": "TC-MON-001",
-            "tc_id": "AC-MON-001",
-            "path_type": "`test -f contracts/monetization.contract.md && rg -n \"deal_id",
-            "raw": "TC-MON-001 | AC-MON-001 | `test -f contracts/monetization.contract.md && rg -n \"deal_id | type | terms | disclosure | evidence\" contracts/monetization.contract.md` | 变现契约含核心字段"
+            "ac_id": "TC-ADP-001",
+            "tc_id": "AC-ADP-001",
+            "path_type": "`test -f contracts/adaptation.contract.md && rg -n \"adaptation_id",
+            "raw": "TC-ADP-001 | AC-ADP-001 | `test -f contracts/adaptation.contract.md && rg -n \"adaptation_id | asset_ref | type | rights | royalty | approval\" contracts/adaptation.contract.md` | 改编契约含核心字段"
           },
           {
-            "ac_id": "TC-MON-002",
-            "tc_id": "AC-MON-002",
-            "path_type": "`test -f registry/monetization-adapters.yaml && rg -n \"deal-record",
-            "raw": "TC-MON-002 | AC-MON-002 | `test -f registry/monetization-adapters.yaml && rg -n \"deal-record | compliance | disclosure\" registry/monetization-adapters.yaml` | 变现 bridge 登记"
+            "ac_id": "TC-ADP-002",
+            "tc_id": "AC-ADP-002",
+            "path_type": "`test -f registry/adaptation-adapters.yaml && rg -n \"rights-record",
+            "raw": "TC-ADP-002 | AC-ADP-002 | `test -f registry/adaptation-adapters.yaml && rg -n \"rights-record | royalty | license\" registry/adaptation-adapters.yaml` | 改编 bridge 登记"
           },
           {
-            "ac_id": "TC-MON-003",
-            "tc_id": "AC-MON-003",
+            "ac_id": "TC-ADP-003",
+            "tc_id": "AC-ADP-003",
             "path_type": "`rg -n \"人工",
-            "raw": "TC-MON-003 | AC-MON-003 | `rg -n \"人工 | 批准 | approval\" contracts/monetization.contract.md` | 人工批准"
+            "raw": "TC-ADP-003 | AC-ADP-003 | `rg -n \"人工 | 批准 | 不授权 | 默认\" contracts/adaptation.contract.md` | 人工批准/默认不授权"
           },
           {
-            "ac_id": "TC-MON-004",
-            "tc_id": "AC-MON-004",
-            "path_type": "`rg -n \"monetization.contract\" skills/_internal/orchestration/creation-mode-map.md`",
-            "raw": "TC-MON-004 | AC-MON-004 | `rg -n \"monetization.contract\" skills/_internal/orchestration/creation-mode-map.md` | 路由变现引用"
+            "ac_id": "TC-ADP-004",
+            "tc_id": "AC-ADP-004",
+            "path_type": "`rg -n \"adaptation.contract\" skills/_internal/orchestration/creation-mode-map.md`",
+            "raw": "TC-ADP-004 | AC-ADP-004 | `rg -n \"adaptation.contract\" skills/_internal/orchestration/creation-mode-map.md` | 路由改编引用"
           },
           {
-            "ac_id": "TC-MON-005",
-            "tc_id": "AC-MON-005",
-            "path_type": "`test -x scripts/check_monetization.sh`",
-            "raw": "TC-MON-005 | AC-MON-005 | `test -x scripts/check_monetization.sh` | exec 脚本存在且可执行"
+            "ac_id": "TC-ADP-005",
+            "tc_id": "AC-ADP-005",
+            "path_type": "`test -x scripts/check_adaptation.sh`",
+            "raw": "TC-ADP-005 | AC-ADP-005 | `test -x scripts/check_adaptation.sh` | exec 脚本存在且可执行"
           },
           {
-            "ac_id": "TC-MON-007",
-            "tc_id": "AC-MON-002",
-            "path_type": "`python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/monetization-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=3 else 1)\"`",
-            "raw": "TC-MON-007 | AC-MON-002 | `python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/monetization-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=3 else 1)\"` | ≥3 个变现 bridge"
+            "ac_id": "TC-ADP-007",
+            "tc_id": "AC-ADP-002",
+            "path_type": "`python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/adaptation-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=3 else 1)\"`",
+            "raw": "TC-ADP-007 | AC-ADP-002 | `python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/adaptation-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=3 else 1)\"` | ≥3 个改编 bridge"
           },
           {
-            "ac_id": "TC-MON-008",
-            "tc_id": "AC-MON-006",
+            "ac_id": "TC-ADP-008",
+            "tc_id": "AC-ADP-006",
             "path_type": "`rg -n \"不编造",
-            "raw": "TC-MON-008 | AC-MON-006 | `rg -n \"不编造 | 缺证据 | blocked\" contracts/monetization.contract.md` | 不编造收入"
+            "raw": "TC-ADP-008 | AC-ADP-006 | `rg -n \"不编造 | 缺证据 | blocked\" contracts/adaptation.contract.md` | 不编造授权/分成"
           },
           {
-            "ac_id": "TC-MON-009",
-            "tc_id": "AC-MON-007",
-            "path_type": "`rg -n \"披露",
-            "raw": "TC-MON-009 | AC-MON-007 | `rg -n \"披露 | 广告 | 赞助 | 标注\" contracts/monetization.contract.md` | 披露义务"
+            "ac_id": "TC-ADP-009",
+            "tc_id": "AC-ADP-007",
+            "path_type": "`rg -n \"正典",
+            "raw": "TC-ADP-009 | AC-ADP-007 | `rg -n \"正典 | canon | 母稿\" contracts/adaptation.contract.md` | 正典保护"
           },
           {
-            "ac_id": "TC-MON-011",
-            "tc_id": "AC-MON-009",
-            "path_type": "`rg -n \"收款",
-            "raw": "TC-MON-011 | AC-MON-009 | `rg -n \"收款 | 敏感 | secrets | 禁止入库\" contracts/monetization.contract.md` | 敏感信息保护"
+            "ac_id": "TC-ADP-010",
+            "tc_id": "AC-ADP-008",
+            "path_type": "`rg -n \"license",
+            "raw": "TC-ADP-010 | AC-ADP-008 | `rg -n \"license | 第三方 | 未获权 | 不自动授权\" contracts/adaptation.contract.md` | license 边界"
           },
           {
-            "ac_id": "TC-MON-012",
-            "tc_id": "AC-MON-010",
-            "path_type": "`rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md && rg -n \"F2\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md`",
-            "raw": "TC-MON-012 | AC-MON-010 | `rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md && rg -n \"F2\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md` | 分湖边界存在"
+            "ac_id": "TC-ADP-011",
+            "tc_id": "AC-ADP-009",
+            "path_type": "`rg -n \"合同",
+            "raw": "TC-ADP-011 | AC-ADP-009 | `rg -n \"合同 | 敏感 | secrets | 禁止入库\" contracts/adaptation.contract.md` | 敏感信息保护"
           },
           {
-            "ac_id": "TC-MON-014",
-            "tc_id": "AC-MON-001",
-            "path_type": "`rg -n \"US-MON-001",
-            "raw": "TC-MON-014 | AC-MON-001 | `rg -n \"US-MON-001 | 变现\" docs/beacon/v0.0.1/features/prism-monetization-contracts-v1/truth.md` | 变现旅程可追溯"
+            "ac_id": "TC-ADP-012",
+            "tc_id": "AC-ADP-010",
+            "path_type": "`rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md && rg -n \"授权 API\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md`",
+            "raw": "TC-ADP-012 | AC-ADP-010 | `rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md && rg -n \"授权 API\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md` | 分湖边界存在"
+          },
+          {
+            "ac_id": "TC-ADP-014",
+            "tc_id": "AC-ADP-001",
+            "path_type": "`rg -n \"US-ADP-001",
+            "raw": "TC-ADP-014 | AC-ADP-001 | `rg -n \"US-ADP-001 | 改编\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md` | 改编旅程可追溯"
           }
         ],
         "has_legal_walk": true,
@@ -2341,7 +2335,7 @@
   "release_ready": true,
   "delivery_contract": {
     "schema_version": "1.0",
-    "feature": "prism-monetization-contracts-v1",
+    "feature": "prism-adaptation-contracts-v1",
     "version": "v0.0.1",
     "requested_mode": "feature-aware",
     "effective_mode": "feature-aware",
@@ -2362,14 +2356,14 @@
     "subagent_prechecks": {},
     "requirement_binding": {
       "source_of_truth_root": "docs/beacon/v0.0.1",
-      "feature_matrix_path": ".beacon/qa/features/prism-monetization-contracts-v1/matrix.qa9.json",
-      "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-monetization-contracts-v1.ac-test-matrix.json"
+      "feature_matrix_path": ".beacon/qa/features/prism-adaptation-contracts-v1/matrix.qa9.json",
+      "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-adaptation-contracts-v1.ac-test-matrix.json"
     },
     "traceability_refs": [
-      ".beacon/qa/features/prism-monetization-contracts-v1/matrix.qa9.json",
-      "docs/beacon/v0.0.1/.machine/qa/prism-monetization-contracts-v1.ac-test-matrix.json",
-      ".beacon/qa/features/prism-monetization-contracts-v1/ac-closure.json",
-      ".beacon/qa/features/prism-monetization-contracts-v1/scorecard.json",
+      ".beacon/qa/features/prism-adaptation-contracts-v1/matrix.qa9.json",
+      "docs/beacon/v0.0.1/.machine/qa/prism-adaptation-contracts-v1.ac-test-matrix.json",
+      ".beacon/qa/features/prism-adaptation-contracts-v1/ac-closure.json",
+      ".beacon/qa/features/prism-adaptation-contracts-v1/scorecard.json",
       ".beacon/release-gate-report.json"
     ],
     "runner": "",
@@ -2383,7 +2377,7 @@
   },
   "host_native_delivery": {
     "schema_version": "1.0",
-    "feature": "prism-monetization-contracts-v1",
+    "feature": "prism-adaptation-contracts-v1",
     "version": "v0.0.1",
     "requested_mode": "feature-aware",
     "effective_mode": "feature-aware",
@@ -2404,14 +2398,14 @@
     "subagent_prechecks": {},
     "requirement_binding": {
       "source_of_truth_root": "docs/beacon/v0.0.1",
-      "feature_matrix_path": ".beacon/qa/features/prism-monetization-contracts-v1/matrix.qa9.json",
-      "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-monetization-contracts-v1.ac-test-matrix.json"
+      "feature_matrix_path": ".beacon/qa/features/prism-adaptation-contracts-v1/matrix.qa9.json",
+      "canonical_matrix_path": "docs/beacon/v0.0.1/.machine/qa/prism-adaptation-contracts-v1.ac-test-matrix.json"
     },
     "traceability_refs": [
-      ".beacon/qa/features/prism-monetization-contracts-v1/matrix.qa9.json",
-      "docs/beacon/v0.0.1/.machine/qa/prism-monetization-contracts-v1.ac-test-matrix.json",
-      ".beacon/qa/features/prism-monetization-contracts-v1/ac-closure.json",
-      ".beacon/qa/features/prism-monetization-contracts-v1/scorecard.json",
+      ".beacon/qa/features/prism-adaptation-contracts-v1/matrix.qa9.json",
+      "docs/beacon/v0.0.1/.machine/qa/prism-adaptation-contracts-v1.ac-test-matrix.json",
+      ".beacon/qa/features/prism-adaptation-contracts-v1/ac-closure.json",
+      ".beacon/qa/features/prism-adaptation-contracts-v1/scorecard.json",
       ".beacon/release-gate-report.json"
     ],
     "runner": "",
@@ -2423,5 +2417,5 @@
     "release_ready": true,
     "risk_flags": []
   },
-  "current_spec_fingerprint_hash": "7e759e4d2b0e80bf569a72a594af01f87e66fbaf74c526911c782101decc3a58"
+  "current_spec_fingerprint_hash": "d4496576e07125bcd90bd7fbbe4b59f6a157fe4fd0038edff132f22cfcd38997"
 }

@@ -1,0 +1,29 @@
+{
+  "layer": "contract",
+  "command": "test -f registry/adaptation-adapters.yaml && rg -n \"rights-record|royalty|license\" registry/adaptation-adapters.yaml",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 0,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "ddd38ce1b912c58c939ff06256860f60e75f9304af1c80dd5da6f266d1f8449e",
+  "started_at": "2026-08-12T19:31:22.986425",
+  "ended_at": "2026-08-12T19:31:23.001093",
+  "junit_path": "",
+  "junit_valid": false,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-002/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-002/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-002/stderr.log"
+  ],
+  "tc_id": "TC-ADP-002",
+  "ac_id": "AC-ADP-002"
+}

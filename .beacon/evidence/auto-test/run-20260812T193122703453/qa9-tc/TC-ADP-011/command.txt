@@ -1,0 +1,1 @@
+rg -n "合同|敏感|secrets|禁止入库" contracts/adaptation.contract.md

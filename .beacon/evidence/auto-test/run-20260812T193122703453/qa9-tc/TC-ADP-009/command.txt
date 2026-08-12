@@ -1,0 +1,1 @@
+rg -n "正典|canon|母稿" contracts/adaptation.contract.md

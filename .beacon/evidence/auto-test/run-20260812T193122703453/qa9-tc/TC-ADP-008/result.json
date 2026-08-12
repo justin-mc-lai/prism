@@ -1,0 +1,30 @@
+{
+  "layer": "contract",
+  "command": "rg -n \"不编造|缺证据|blocked\" contracts/adaptation.contract.md",
+  "exit_code": 0,
+  "status": "passed",
+  "reason_code": "",
+  "timeout_seconds": 300,
+  "assertion_count": 3,
+  "was_flaky": false,
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0
+    }
+  ],
+  "execution_fingerprint": "21283f7c056c76d14a10d035bc4cad63047dec83b6522b38a35958055dc7e557",
+  "started_at": "2026-08-12T19:31:23.856886",
+  "ended_at": "2026-08-12T19:31:23.869326",
+  "junit_path": ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-008/junit.xml",
+  "junit_valid": true,
+  "evidence_ref": [
+    ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-008/command.txt",
+    ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-008/stdout.log",
+    ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-008/stderr.log",
+    ".beacon/evidence/auto-test/run-20260812T193122703453/qa9-tc/TC-ADP-008/junit.xml"
+  ],
+  "tc_id": "TC-ADP-008",
+  "ac_id": "AC-ADP-006"
+}

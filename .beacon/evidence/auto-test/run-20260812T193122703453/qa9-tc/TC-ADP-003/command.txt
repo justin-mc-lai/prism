@@ -1,0 +1,1 @@
+rg -n "人工|批准|不授权|默认" contracts/adaptation.contract.md

@@ -1,0 +1,1 @@
+rg -n "US-ADP-001|改编" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md

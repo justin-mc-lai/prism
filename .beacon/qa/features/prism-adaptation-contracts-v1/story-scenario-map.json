@@ -1,0 +1,2758 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-adaptation-contracts-v1",
+  "feature_slug": "prism-adaptation-contracts-v1",
+  "version": "v0.0.1",
+  "generated_at": "2026-08-12T11:31:16.221389+00:00",
+  "expansion_profile": "pua-web",
+  "scenario_depth": "standard",
+  "families_required": [
+    "happy",
+    "negative",
+    "boundary",
+    "recovery",
+    "compatibility"
+  ],
+  "stories": [
+    {
+      "ac_id": "AC-001",
+      "theme": "general",
+      "text": "Acceptance criteria TBD",
+      "scenario_ids": [
+        "SC-001",
+        "SC-002",
+        "SC-003",
+        "SC-004",
+        "SC-005",
+        "SC-006",
+        "SC-007",
+        "SC-008",
+        "SC-009",
+        "SC-010",
+        "SC-011",
+        "SC-012",
+        "SC-013",
+        "SC-014",
+        "SC-015",
+        "SC-016",
+        "SC-017",
+        "SC-018",
+        "SC-019",
+        "SC-020",
+        "SC-021",
+        "SC-022",
+        "SC-023",
+        "SC-024",
+        "SC-025",
+        "SC-026",
+        "SC-027",
+        "SC-028",
+        "SC-029",
+        "SC-030",
+        "SC-031",
+        "SC-032",
+        "SC-033",
+        "SC-034",
+        "SC-035",
+        "SC-036",
+        "SC-037",
+        "SC-038",
+        "SC-039",
+        "SC-040",
+        "SC-041",
+        "SC-042",
+        "SC-043",
+        "SC-044",
+        "SC-045",
+        "SC-046",
+        "SC-047",
+        "SC-048",
+        "SC-049",
+        "SC-050"
+      ],
+      "scenario_families": [
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility",
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility",
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility",
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility",
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility",
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility",
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility",
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility",
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility",
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility"
+      ],
+      "required_families": [
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility",
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility",
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility",
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility",
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility",
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility",
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility",
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility",
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility",
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility"
+      ],
+      "scenarios": [
+        {
+          "scenario_id": "SC-001",
+          "source_tc_id": "TC-ADP-001",
+          "tc_id": "TC-ADP-001-HAPPY",
+          "scenario_family": "happy",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-002",
+          "source_tc_id": "TC-ADP-001",
+          "tc_id": "TC-ADP-001-NEGATIVE",
+          "scenario_family": "negative",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-003",
+          "source_tc_id": "TC-ADP-001",
+          "tc_id": "TC-ADP-001-BOUNDARY",
+          "scenario_family": "boundary",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-004",
+          "source_tc_id": "TC-ADP-001",
+          "tc_id": "TC-ADP-001-RECOVERY",
+          "scenario_family": "recovery",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-005",
+          "source_tc_id": "TC-ADP-001",
+          "tc_id": "TC-ADP-001-COMPATIBILITY",
+          "scenario_family": "compatibility",
+          "qa_type": "compatibility",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-006",
+          "source_tc_id": "TC-ADP-002",
+          "tc_id": "TC-ADP-002-HAPPY",
+          "scenario_family": "happy",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-007",
+          "source_tc_id": "TC-ADP-002",
+          "tc_id": "TC-ADP-002-NEGATIVE",
+          "scenario_family": "negative",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-008",
+          "source_tc_id": "TC-ADP-002",
+          "tc_id": "TC-ADP-002-BOUNDARY",
+          "scenario_family": "boundary",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-009",
+          "source_tc_id": "TC-ADP-002",
+          "tc_id": "TC-ADP-002-RECOVERY",
+          "scenario_family": "recovery",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-010",
+          "source_tc_id": "TC-ADP-002",
+          "tc_id": "TC-ADP-002-COMPATIBILITY",
+          "scenario_family": "compatibility",
+          "qa_type": "compatibility",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-011",
+          "source_tc_id": "TC-ADP-003",
+          "tc_id": "TC-ADP-003-HAPPY",
+          "scenario_family": "happy",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-012",
+          "source_tc_id": "TC-ADP-003",
+          "tc_id": "TC-ADP-003-NEGATIVE",
+          "scenario_family": "negative",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-013",
+          "source_tc_id": "TC-ADP-003",
+          "tc_id": "TC-ADP-003-BOUNDARY",
+          "scenario_family": "boundary",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-014",
+          "source_tc_id": "TC-ADP-003",
+          "tc_id": "TC-ADP-003-RECOVERY",
+          "scenario_family": "recovery",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-015",
+          "source_tc_id": "TC-ADP-003",
+          "tc_id": "TC-ADP-003-COMPATIBILITY",
+          "scenario_family": "compatibility",
+          "qa_type": "compatibility",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-016",
+          "source_tc_id": "TC-ADP-008",
+          "tc_id": "TC-ADP-008-HAPPY",
+          "scenario_family": "happy",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-017",
+          "source_tc_id": "TC-ADP-008",
+          "tc_id": "TC-ADP-008-NEGATIVE",
+          "scenario_family": "negative",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-018",
+          "source_tc_id": "TC-ADP-008",
+          "tc_id": "TC-ADP-008-BOUNDARY",
+          "scenario_family": "boundary",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-019",
+          "source_tc_id": "TC-ADP-008",
+          "tc_id": "TC-ADP-008-RECOVERY",
+          "scenario_family": "recovery",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-020",
+          "source_tc_id": "TC-ADP-008",
+          "tc_id": "TC-ADP-008-COMPATIBILITY",
+          "scenario_family": "compatibility",
+          "qa_type": "compatibility",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-021",
+          "source_tc_id": "TC-ADP-009",
+          "tc_id": "TC-ADP-009-HAPPY",
+          "scenario_family": "happy",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-022",
+          "source_tc_id": "TC-ADP-009",
+          "tc_id": "TC-ADP-009-NEGATIVE",
+          "scenario_family": "negative",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-023",
+          "source_tc_id": "TC-ADP-009",
+          "tc_id": "TC-ADP-009-BOUNDARY",
+          "scenario_family": "boundary",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-024",
+          "source_tc_id": "TC-ADP-009",
+          "tc_id": "TC-ADP-009-RECOVERY",
+          "scenario_family": "recovery",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-025",
+          "source_tc_id": "TC-ADP-009",
+          "tc_id": "TC-ADP-009-COMPATIBILITY",
+          "scenario_family": "compatibility",
+          "qa_type": "compatibility",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-026",
+          "source_tc_id": "TC-ADP-010",
+          "tc_id": "TC-ADP-010-HAPPY",
+          "scenario_family": "happy",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-027",
+          "source_tc_id": "TC-ADP-010",
+          "tc_id": "TC-ADP-010-NEGATIVE",
+          "scenario_family": "negative",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-028",
+          "source_tc_id": "TC-ADP-010",
+          "tc_id": "TC-ADP-010-BOUNDARY",
+          "scenario_family": "boundary",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-029",
+          "source_tc_id": "TC-ADP-010",
+          "tc_id": "TC-ADP-010-RECOVERY",
+          "scenario_family": "recovery",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-030",
+          "source_tc_id": "TC-ADP-010",
+          "tc_id": "TC-ADP-010-COMPATIBILITY",
+          "scenario_family": "compatibility",
+          "qa_type": "compatibility",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-031",
+          "source_tc_id": "TC-ADP-011",
+          "tc_id": "TC-ADP-011-HAPPY",
+          "scenario_family": "happy",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-032",
+          "source_tc_id": "TC-ADP-011",
+          "tc_id": "TC-ADP-011-NEGATIVE",
+          "scenario_family": "negative",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-033",
+          "source_tc_id": "TC-ADP-011",
+          "tc_id": "TC-ADP-011-BOUNDARY",
+          "scenario_family": "boundary",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-034",
+          "source_tc_id": "TC-ADP-011",
+          "tc_id": "TC-ADP-011-RECOVERY",
+          "scenario_family": "recovery",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-035",
+          "source_tc_id": "TC-ADP-011",
+          "tc_id": "TC-ADP-011-COMPATIBILITY",
+          "scenario_family": "compatibility",
+          "qa_type": "compatibility",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-036",
+          "source_tc_id": "TC-ADP-013",
+          "tc_id": "TC-ADP-013-HAPPY",
+          "scenario_family": "happy",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-037",
+          "source_tc_id": "TC-ADP-013",
+          "tc_id": "TC-ADP-013-NEGATIVE",
+          "scenario_family": "negative",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-038",
+          "source_tc_id": "TC-ADP-013",
+          "tc_id": "TC-ADP-013-BOUNDARY",
+          "scenario_family": "boundary",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-039",
+          "source_tc_id": "TC-ADP-013",
+          "tc_id": "TC-ADP-013-RECOVERY",
+          "scenario_family": "recovery",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-040",
+          "source_tc_id": "TC-ADP-013",
+          "tc_id": "TC-ADP-013-COMPATIBILITY",
+          "scenario_family": "compatibility",
+          "qa_type": "compatibility",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-041",
+          "source_tc_id": "TC-ADP-014",
+          "tc_id": "TC-ADP-014-HAPPY",
+          "scenario_family": "happy",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-042",
+          "source_tc_id": "TC-ADP-014",
+          "tc_id": "TC-ADP-014-NEGATIVE",
+          "scenario_family": "negative",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-043",
+          "source_tc_id": "TC-ADP-014",
+          "tc_id": "TC-ADP-014-BOUNDARY",
+          "scenario_family": "boundary",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-044",
+          "source_tc_id": "TC-ADP-014",
+          "tc_id": "TC-ADP-014-RECOVERY",
+          "scenario_family": "recovery",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-045",
+          "source_tc_id": "TC-ADP-014",
+          "tc_id": "TC-ADP-014-COMPATIBILITY",
+          "scenario_family": "compatibility",
+          "qa_type": "compatibility",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-046",
+          "source_tc_id": "TC-ADP-015",
+          "tc_id": "TC-ADP-015-HAPPY",
+          "scenario_family": "happy",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-047",
+          "source_tc_id": "TC-ADP-015",
+          "tc_id": "TC-ADP-015-NEGATIVE",
+          "scenario_family": "negative",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-048",
+          "source_tc_id": "TC-ADP-015",
+          "tc_id": "TC-ADP-015-BOUNDARY",
+          "scenario_family": "boundary",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-049",
+          "source_tc_id": "TC-ADP-015",
+          "tc_id": "TC-ADP-015-RECOVERY",
+          "scenario_family": "recovery",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-050",
+          "source_tc_id": "TC-ADP-015",
+          "tc_id": "TC-ADP-015-COMPATIBILITY",
+          "scenario_family": "compatibility",
+          "qa_type": "compatibility",
+          "browser_required": true,
+          "replay_required": true
+        }
+      ]
+    },
+    {
+      "ac_id": "AC-ADP-004",
+      "theme": "",
+      "text": "路由改编引用",
+      "scenario_ids": [
+        "SC-AUTO-TC-ADP-004"
+      ],
+      "scenario_families": [
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-ADP-004",
+          "source_tc_id": "TC-ADP-004",
+          "tc_id": "TC-ADP-004-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    },
+    {
+      "ac_id": "AC-ADP-005",
+      "theme": "",
+      "text": "exec 脚本存在且可执行",
+      "scenario_ids": [
+        "SC-AUTO-TC-ADP-005",
+        "SC-AUTO-TC-ADP-006"
+      ],
+      "scenario_families": [
+        "primary",
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-ADP-005",
+          "source_tc_id": "TC-ADP-005",
+          "tc_id": "TC-ADP-005-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-ADP-006",
+          "source_tc_id": "TC-ADP-006",
+          "tc_id": "TC-ADP-006-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    },
+    {
+      "ac_id": "AC-ADP-002",
+      "theme": "",
+      "text": "≥3 个改编 bridge",
+      "scenario_ids": [
+        "SC-AUTO-TC-ADP-007"
+      ],
+      "scenario_families": [
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-ADP-007",
+          "source_tc_id": "TC-ADP-007",
+          "tc_id": "TC-ADP-007-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    },
+    {
+      "ac_id": "AC-ADP-010",
+      "theme": "",
+      "text": "分湖边界存在",
+      "scenario_ids": [
+        "SC-AUTO-TC-ADP-012"
+      ],
+      "scenario_families": [
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-ADP-012",
+          "source_tc_id": "TC-ADP-012",
+          "tc_id": "TC-ADP-012-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario_id": "SC-001",
+      "source_tc_id": "TC-ADP-001",
+      "tc_id": "TC-ADP-001-HAPPY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "happy",
+      "title": "AC-001 happy path :: type",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "happy",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": true,
+      "automation": "auto",
+      "command": "test -f contracts/adaptation.contract.md && rg -n \"adaptation_id|asset_ref|type|rights|royalty|approval\" contracts/adaptation.contract.md",
+      "assertion": "type (happy path completes with expected evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-001-HAPPY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-002",
+      "source_tc_id": "TC-ADP-001",
+      "tc_id": "TC-ADP-001-NEGATIVE",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "negative",
+      "title": "AC-001 negative path :: type",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "negative",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-001"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "test -f contracts/adaptation.contract.md && rg -n \"adaptation_id|asset_ref|type|rights|royalty|approval\" contracts/adaptation.contract.md",
+      "assertion": "type (negative path is rejected or handled with explicit evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-001-NEGATIVE.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-003",
+      "source_tc_id": "TC-ADP-001",
+      "tc_id": "TC-ADP-001-BOUNDARY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "boundary",
+      "title": "AC-001 boundary path :: type",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "boundary",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-001"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "test -f contracts/adaptation.contract.md && rg -n \"adaptation_id|asset_ref|type|rights|royalty|approval\" contracts/adaptation.contract.md",
+      "assertion": "type (boundary path is validated with explicit evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-001-BOUNDARY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-004",
+      "source_tc_id": "TC-ADP-001",
+      "tc_id": "TC-ADP-001-RECOVERY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "recovery",
+      "title": "AC-001 recovery path :: type",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "recovery",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-001"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "test -f contracts/adaptation.contract.md && rg -n \"adaptation_id|asset_ref|type|rights|royalty|approval\" contracts/adaptation.contract.md",
+      "assertion": "type (recovery path survives refresh/back/retry with evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-001-RECOVERY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-005",
+      "source_tc_id": "TC-ADP-001",
+      "tc_id": "TC-ADP-001-COMPATIBILITY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "compatibility",
+      "title": "AC-001 compatibility path :: type",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; npx playwright test --project=chromium --project=firefox --project=webkit",
+      "coverage_axes": [
+        "compatibility",
+        "compatibility",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-001"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "test -f contracts/adaptation.contract.md && rg -n \"adaptation_id|asset_ref|type|rights|royalty|approval\" contracts/adaptation.contract.md",
+      "assertion": "type (compatibility path preserves behavior across browser/device pairs)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-001-COMPATIBILITY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-006",
+      "source_tc_id": "TC-ADP-002",
+      "tc_id": "TC-ADP-002-HAPPY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "happy",
+      "title": "AC-001 happy path :: license\" registry/adaptation-adapters.yaml`",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "happy",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": true,
+      "automation": "auto",
+      "command": "test -f registry/adaptation-adapters.yaml && rg -n \"rights-record|royalty|license\" registry/adaptation-adapters.yaml",
+      "assertion": "license\" registry/adaptation-adapters.yaml` (happy path completes with expected evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-002-HAPPY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-007",
+      "source_tc_id": "TC-ADP-002",
+      "tc_id": "TC-ADP-002-NEGATIVE",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "negative",
+      "title": "AC-001 negative path :: license\" registry/adaptation-adapters.yaml`",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "negative",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-006"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "test -f registry/adaptation-adapters.yaml && rg -n \"rights-record|royalty|license\" registry/adaptation-adapters.yaml",
+      "assertion": "license\" registry/adaptation-adapters.yaml` (negative path is rejected or handled with explicit evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-002-NEGATIVE.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-008",
+      "source_tc_id": "TC-ADP-002",
+      "tc_id": "TC-ADP-002-BOUNDARY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "boundary",
+      "title": "AC-001 boundary path :: license\" registry/adaptation-adapters.yaml`",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "boundary",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-006"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "test -f registry/adaptation-adapters.yaml && rg -n \"rights-record|royalty|license\" registry/adaptation-adapters.yaml",
+      "assertion": "license\" registry/adaptation-adapters.yaml` (boundary path is validated with explicit evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-002-BOUNDARY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-009",
+      "source_tc_id": "TC-ADP-002",
+      "tc_id": "TC-ADP-002-RECOVERY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "recovery",
+      "title": "AC-001 recovery path :: license\" registry/adaptation-adapters.yaml`",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "recovery",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-006"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "test -f registry/adaptation-adapters.yaml && rg -n \"rights-record|royalty|license\" registry/adaptation-adapters.yaml",
+      "assertion": "license\" registry/adaptation-adapters.yaml` (recovery path survives refresh/back/retry with evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-002-RECOVERY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-010",
+      "source_tc_id": "TC-ADP-002",
+      "tc_id": "TC-ADP-002-COMPATIBILITY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "compatibility",
+      "title": "AC-001 compatibility path :: license\" registry/adaptation-adapters.yaml`",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; npx playwright test --project=chromium --project=firefox --project=webkit",
+      "coverage_axes": [
+        "compatibility",
+        "compatibility",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-006"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "test -f registry/adaptation-adapters.yaml && rg -n \"rights-record|royalty|license\" registry/adaptation-adapters.yaml",
+      "assertion": "license\" registry/adaptation-adapters.yaml` (compatibility path preserves behavior across browser/device pairs)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-002-COMPATIBILITY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-011",
+      "source_tc_id": "TC-ADP-003",
+      "tc_id": "TC-ADP-003-HAPPY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "happy",
+      "title": "AC-001 happy path :: 不授权",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "happy",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": true,
+      "automation": "auto",
+      "command": "rg -n \"人工|批准|不授权|默认\" contracts/adaptation.contract.md",
+      "assertion": "不授权 (happy path completes with expected evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-003-HAPPY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-012",
+      "source_tc_id": "TC-ADP-003",
+      "tc_id": "TC-ADP-003-NEGATIVE",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "negative",
+      "title": "AC-001 negative path :: 不授权",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "negative",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-011"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"人工|批准|不授权|默认\" contracts/adaptation.contract.md",
+      "assertion": "不授权 (negative path is rejected or handled with explicit evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-003-NEGATIVE.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-013",
+      "source_tc_id": "TC-ADP-003",
+      "tc_id": "TC-ADP-003-BOUNDARY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "boundary",
+      "title": "AC-001 boundary path :: 不授权",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "boundary",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-011"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"人工|批准|不授权|默认\" contracts/adaptation.contract.md",
+      "assertion": "不授权 (boundary path is validated with explicit evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-003-BOUNDARY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-014",
+      "source_tc_id": "TC-ADP-003",
+      "tc_id": "TC-ADP-003-RECOVERY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "recovery",
+      "title": "AC-001 recovery path :: 不授权",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "recovery",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-011"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"人工|批准|不授权|默认\" contracts/adaptation.contract.md",
+      "assertion": "不授权 (recovery path survives refresh/back/retry with evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-003-RECOVERY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-015",
+      "source_tc_id": "TC-ADP-003",
+      "tc_id": "TC-ADP-003-COMPATIBILITY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "compatibility",
+      "title": "AC-001 compatibility path :: 不授权",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; npx playwright test --project=chromium --project=firefox --project=webkit",
+      "coverage_axes": [
+        "compatibility",
+        "compatibility",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-011"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"人工|批准|不授权|默认\" contracts/adaptation.contract.md",
+      "assertion": "不授权 (compatibility path preserves behavior across browser/device pairs)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-003-COMPATIBILITY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-016",
+      "source_tc_id": "TC-ADP-008",
+      "tc_id": "TC-ADP-008-HAPPY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "happy",
+      "title": "AC-001 happy path :: blocked\" contracts/adaptation.contract.md`",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "happy",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": true,
+      "automation": "auto",
+      "command": "rg -n \"不编造|缺证据|blocked\" contracts/adaptation.contract.md",
+      "assertion": "blocked\" contracts/adaptation.contract.md` (happy path completes with expected evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-008-HAPPY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-017",
+      "source_tc_id": "TC-ADP-008",
+      "tc_id": "TC-ADP-008-NEGATIVE",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "negative",
+      "title": "AC-001 negative path :: blocked\" contracts/adaptation.contract.md`",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "negative",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-016"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"不编造|缺证据|blocked\" contracts/adaptation.contract.md",
+      "assertion": "blocked\" contracts/adaptation.contract.md` (negative path is rejected or handled with explicit evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-008-NEGATIVE.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-018",
+      "source_tc_id": "TC-ADP-008",
+      "tc_id": "TC-ADP-008-BOUNDARY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "boundary",
+      "title": "AC-001 boundary path :: blocked\" contracts/adaptation.contract.md`",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "boundary",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-016"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"不编造|缺证据|blocked\" contracts/adaptation.contract.md",
+      "assertion": "blocked\" contracts/adaptation.contract.md` (boundary path is validated with explicit evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-008-BOUNDARY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-019",
+      "source_tc_id": "TC-ADP-008",
+      "tc_id": "TC-ADP-008-RECOVERY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "recovery",
+      "title": "AC-001 recovery path :: blocked\" contracts/adaptation.contract.md`",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "recovery",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-016"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"不编造|缺证据|blocked\" contracts/adaptation.contract.md",
+      "assertion": "blocked\" contracts/adaptation.contract.md` (recovery path survives refresh/back/retry with evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-008-RECOVERY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-020",
+      "source_tc_id": "TC-ADP-008",
+      "tc_id": "TC-ADP-008-COMPATIBILITY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "compatibility",
+      "title": "AC-001 compatibility path :: blocked\" contracts/adaptation.contract.md`",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; npx playwright test --project=chromium --project=firefox --project=webkit",
+      "coverage_axes": [
+        "compatibility",
+        "compatibility",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-016"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"不编造|缺证据|blocked\" contracts/adaptation.contract.md",
+      "assertion": "blocked\" contracts/adaptation.contract.md` (compatibility path preserves behavior across browser/device pairs)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-008-COMPATIBILITY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-021",
+      "source_tc_id": "TC-ADP-009",
+      "tc_id": "TC-ADP-009-HAPPY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "happy",
+      "title": "AC-001 happy path :: 母稿\" contracts/adaptation.contract.md`",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "happy",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": true,
+      "automation": "auto",
+      "command": "rg -n \"正典|canon|母稿\" contracts/adaptation.contract.md",
+      "assertion": "母稿\" contracts/adaptation.contract.md` (happy path completes with expected evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-009-HAPPY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-022",
+      "source_tc_id": "TC-ADP-009",
+      "tc_id": "TC-ADP-009-NEGATIVE",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "negative",
+      "title": "AC-001 negative path :: 母稿\" contracts/adaptation.contract.md`",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "negative",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-021"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"正典|canon|母稿\" contracts/adaptation.contract.md",
+      "assertion": "母稿\" contracts/adaptation.contract.md` (negative path is rejected or handled with explicit evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-009-NEGATIVE.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-023",
+      "source_tc_id": "TC-ADP-009",
+      "tc_id": "TC-ADP-009-BOUNDARY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "boundary",
+      "title": "AC-001 boundary path :: 母稿\" contracts/adaptation.contract.md`",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "boundary",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-021"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"正典|canon|母稿\" contracts/adaptation.contract.md",
+      "assertion": "母稿\" contracts/adaptation.contract.md` (boundary path is validated with explicit evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-009-BOUNDARY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-024",
+      "source_tc_id": "TC-ADP-009",
+      "tc_id": "TC-ADP-009-RECOVERY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "recovery",
+      "title": "AC-001 recovery path :: 母稿\" contracts/adaptation.contract.md`",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "recovery",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-021"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"正典|canon|母稿\" contracts/adaptation.contract.md",
+      "assertion": "母稿\" contracts/adaptation.contract.md` (recovery path survives refresh/back/retry with evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-009-RECOVERY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-025",
+      "source_tc_id": "TC-ADP-009",
+      "tc_id": "TC-ADP-009-COMPATIBILITY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "compatibility",
+      "title": "AC-001 compatibility path :: 母稿\" contracts/adaptation.contract.md`",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; npx playwright test --project=chromium --project=firefox --project=webkit",
+      "coverage_axes": [
+        "compatibility",
+        "compatibility",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-021"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"正典|canon|母稿\" contracts/adaptation.contract.md",
+      "assertion": "母稿\" contracts/adaptation.contract.md` (compatibility path preserves behavior across browser/device pairs)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-009-COMPATIBILITY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-026",
+      "source_tc_id": "TC-ADP-010",
+      "tc_id": "TC-ADP-010-HAPPY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "happy",
+      "title": "AC-001 happy path :: 未获权",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "happy",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": true,
+      "automation": "auto",
+      "command": "rg -n \"license|第三方|未获权|不自动授权\" contracts/adaptation.contract.md",
+      "assertion": "未获权 (happy path completes with expected evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-010-HAPPY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-027",
+      "source_tc_id": "TC-ADP-010",
+      "tc_id": "TC-ADP-010-NEGATIVE",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "negative",
+      "title": "AC-001 negative path :: 未获权",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "negative",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-026"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"license|第三方|未获权|不自动授权\" contracts/adaptation.contract.md",
+      "assertion": "未获权 (negative path is rejected or handled with explicit evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-010-NEGATIVE.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-028",
+      "source_tc_id": "TC-ADP-010",
+      "tc_id": "TC-ADP-010-BOUNDARY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "boundary",
+      "title": "AC-001 boundary path :: 未获权",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "boundary",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-026"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"license|第三方|未获权|不自动授权\" contracts/adaptation.contract.md",
+      "assertion": "未获权 (boundary path is validated with explicit evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-010-BOUNDARY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-029",
+      "source_tc_id": "TC-ADP-010",
+      "tc_id": "TC-ADP-010-RECOVERY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "recovery",
+      "title": "AC-001 recovery path :: 未获权",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "recovery",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-026"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"license|第三方|未获权|不自动授权\" contracts/adaptation.contract.md",
+      "assertion": "未获权 (recovery path survives refresh/back/retry with evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-010-RECOVERY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-030",
+      "source_tc_id": "TC-ADP-010",
+      "tc_id": "TC-ADP-010-COMPATIBILITY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "compatibility",
+      "title": "AC-001 compatibility path :: 未获权",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; npx playwright test --project=chromium --project=firefox --project=webkit",
+      "coverage_axes": [
+        "compatibility",
+        "compatibility",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-026"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"license|第三方|未获权|不自动授权\" contracts/adaptation.contract.md",
+      "assertion": "未获权 (compatibility path preserves behavior across browser/device pairs)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-010-COMPATIBILITY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-031",
+      "source_tc_id": "TC-ADP-011",
+      "tc_id": "TC-ADP-011-HAPPY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "happy",
+      "title": "AC-001 happy path :: secrets",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "happy",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": true,
+      "automation": "auto",
+      "command": "rg -n \"合同|敏感|secrets|禁止入库\" contracts/adaptation.contract.md",
+      "assertion": "secrets (happy path completes with expected evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-011-HAPPY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-032",
+      "source_tc_id": "TC-ADP-011",
+      "tc_id": "TC-ADP-011-NEGATIVE",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "negative",
+      "title": "AC-001 negative path :: secrets",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "negative",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-031"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"合同|敏感|secrets|禁止入库\" contracts/adaptation.contract.md",
+      "assertion": "secrets (negative path is rejected or handled with explicit evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-011-NEGATIVE.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-033",
+      "source_tc_id": "TC-ADP-011",
+      "tc_id": "TC-ADP-011-BOUNDARY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "boundary",
+      "title": "AC-001 boundary path :: secrets",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "boundary",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-031"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"合同|敏感|secrets|禁止入库\" contracts/adaptation.contract.md",
+      "assertion": "secrets (boundary path is validated with explicit evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-011-BOUNDARY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-034",
+      "source_tc_id": "TC-ADP-011",
+      "tc_id": "TC-ADP-011-RECOVERY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "recovery",
+      "title": "AC-001 recovery path :: secrets",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "recovery",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-031"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"合同|敏感|secrets|禁止入库\" contracts/adaptation.contract.md",
+      "assertion": "secrets (recovery path survives refresh/back/retry with evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-011-RECOVERY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-035",
+      "source_tc_id": "TC-ADP-011",
+      "tc_id": "TC-ADP-011-COMPATIBILITY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "compatibility",
+      "title": "AC-001 compatibility path :: secrets",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; npx playwright test --project=chromium --project=firefox --project=webkit",
+      "coverage_axes": [
+        "compatibility",
+        "compatibility",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-031"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"合同|敏感|secrets|禁止入库\" contracts/adaptation.contract.md",
+      "assertion": "secrets (compatibility path preserves behavior across browser/device pairs)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-011-COMPATIBILITY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-036",
+      "source_tc_id": "TC-ADP-013",
+      "tc_id": "TC-ADP-013-HAPPY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "happy",
+      "title": "AC-001 happy path :: 宣称海\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md`",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "happy",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": true,
+      "automation": "auto",
+      "command": "rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "assertion": "宣称海\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md` (happy path completes with expected evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-013-HAPPY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-037",
+      "source_tc_id": "TC-ADP-013",
+      "tc_id": "TC-ADP-013-NEGATIVE",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "negative",
+      "title": "AC-001 negative path :: 宣称海\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md`",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "negative",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-036"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "assertion": "宣称海\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md` (negative path is rejected or handled with explicit evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-013-NEGATIVE.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-038",
+      "source_tc_id": "TC-ADP-013",
+      "tc_id": "TC-ADP-013-BOUNDARY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "boundary",
+      "title": "AC-001 boundary path :: 宣称海\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md`",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "boundary",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-036"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "assertion": "宣称海\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md` (boundary path is validated with explicit evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-013-BOUNDARY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-039",
+      "source_tc_id": "TC-ADP-013",
+      "tc_id": "TC-ADP-013-RECOVERY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "recovery",
+      "title": "AC-001 recovery path :: 宣称海\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md`",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "recovery",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-036"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "assertion": "宣称海\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md` (recovery path survives refresh/back/retry with evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-013-RECOVERY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-040",
+      "source_tc_id": "TC-ADP-013",
+      "tc_id": "TC-ADP-013-COMPATIBILITY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "compatibility",
+      "title": "AC-001 compatibility path :: 宣称海\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md`",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; npx playwright test --project=chromium --project=firefox --project=webkit",
+      "coverage_axes": [
+        "compatibility",
+        "compatibility",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-036"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "assertion": "宣称海\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md` (compatibility path preserves behavior across browser/device pairs)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-013-COMPATIBILITY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-041",
+      "source_tc_id": "TC-ADP-014",
+      "tc_id": "TC-ADP-014-HAPPY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "happy",
+      "title": "AC-001 happy path :: 改编旅程可追溯",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "happy",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": true,
+      "automation": "auto",
+      "command": "rg -n \"US-ADP-001|改编\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "assertion": "改编旅程可追溯 (happy path completes with expected evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-014-HAPPY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-042",
+      "source_tc_id": "TC-ADP-014",
+      "tc_id": "TC-ADP-014-NEGATIVE",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "negative",
+      "title": "AC-001 negative path :: 改编旅程可追溯",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "negative",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-041"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"US-ADP-001|改编\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "assertion": "改编旅程可追溯 (negative path is rejected or handled with explicit evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-014-NEGATIVE.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-043",
+      "source_tc_id": "TC-ADP-014",
+      "tc_id": "TC-ADP-014-BOUNDARY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "boundary",
+      "title": "AC-001 boundary path :: 改编旅程可追溯",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "boundary",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-041"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"US-ADP-001|改编\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "assertion": "改编旅程可追溯 (boundary path is validated with explicit evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-014-BOUNDARY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-044",
+      "source_tc_id": "TC-ADP-014",
+      "tc_id": "TC-ADP-014-RECOVERY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "recovery",
+      "title": "AC-001 recovery path :: 改编旅程可追溯",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "recovery",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-041"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"US-ADP-001|改编\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "assertion": "改编旅程可追溯 (recovery path survives refresh/back/retry with evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-014-RECOVERY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-045",
+      "source_tc_id": "TC-ADP-014",
+      "tc_id": "TC-ADP-014-COMPATIBILITY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "compatibility",
+      "title": "AC-001 compatibility path :: 改编旅程可追溯",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; npx playwright test --project=chromium --project=firefox --project=webkit",
+      "coverage_axes": [
+        "compatibility",
+        "compatibility",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-041"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"US-ADP-001|改编\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "assertion": "改编旅程可追溯 (compatibility path preserves behavior across browser/device pairs)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-014-COMPATIBILITY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-046",
+      "source_tc_id": "TC-ADP-015",
+      "tc_id": "TC-ADP-015-HAPPY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "happy",
+      "title": "AC-001 happy path :: 未授权拒绝路径可追溯",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "happy",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": true,
+      "automation": "auto",
+      "command": "rg -n \"US-ADP-002|不自动授权\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "assertion": "未授权拒绝路径可追溯 (happy path completes with expected evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-015-HAPPY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-047",
+      "source_tc_id": "TC-ADP-015",
+      "tc_id": "TC-ADP-015-NEGATIVE",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "negative",
+      "title": "AC-001 negative path :: 未授权拒绝路径可追溯",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "negative",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-046"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"US-ADP-002|不自动授权\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "assertion": "未授权拒绝路径可追溯 (negative path is rejected or handled with explicit evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-015-NEGATIVE.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-048",
+      "source_tc_id": "TC-ADP-015",
+      "tc_id": "TC-ADP-015-BOUNDARY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "boundary",
+      "title": "AC-001 boundary path :: 未授权拒绝路径可追溯",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "boundary",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-046"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"US-ADP-002|不自动授权\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "assertion": "未授权拒绝路径可追溯 (boundary path is validated with explicit evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-015-BOUNDARY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-049",
+      "source_tc_id": "TC-ADP-015",
+      "tc_id": "TC-ADP-015-RECOVERY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "recovery",
+      "title": "AC-001 recovery path :: 未授权拒绝路径可追溯",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "recovery",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-046"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"US-ADP-002|不自动授权\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "assertion": "未授权拒绝路径可追溯 (recovery path survives refresh/back/retry with evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-015-RECOVERY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-050",
+      "source_tc_id": "TC-ADP-015",
+      "tc_id": "TC-ADP-015-COMPATIBILITY",
+      "ac_id": "AC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "compatibility",
+      "title": "AC-001 compatibility path :: 未授权拒绝路径可追溯",
+      "browser_required": false,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; npx playwright test --project=chromium --project=firefox --project=webkit",
+      "coverage_axes": [
+        "compatibility",
+        "compatibility",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-046"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"US-ADP-002|不自动授权\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "assertion": "未授权拒绝路径可追溯 (compatibility path preserves behavior across browser/device pairs)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-adaptation-contracts-v1/{run_id}/TC-ADP-015-COMPATIBILITY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-ADP-004",
+      "source_tc_id": "TC-ADP-004",
+      "tc_id": "TC-ADP-004-PRIMARY",
+      "ac_id": "AC-ADP-004",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "路由改编引用",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"adaptation.contract\" skills/_internal/orchestration/creation-mode-map.md",
+      "assertion": "路由改编引用",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-004/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-ADP-005",
+      "source_tc_id": "TC-ADP-005",
+      "tc_id": "TC-ADP-005-PRIMARY",
+      "ac_id": "AC-ADP-005",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "exec 脚本存在且可执行",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "test -x scripts/check_adaptation.sh",
+      "assertion": "exec 脚本存在且可执行",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-005/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-ADP-006",
+      "source_tc_id": "TC-ADP-006",
+      "tc_id": "TC-ADP-006-PRIMARY",
+      "ac_id": "AC-ADP-005",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "exec-layer 校验脚本 PASS（合法路径）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "bash scripts/check_adaptation.sh",
+      "assertion": "exec-layer 校验脚本 PASS（合法路径）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-006/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-ADP-007",
+      "source_tc_id": "TC-ADP-007",
+      "tc_id": "TC-ADP-007-PRIMARY",
+      "ac_id": "AC-ADP-002",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "≥3 个改编 bridge",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/adaptation-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=3 else 1)\"",
+      "assertion": "≥3 个改编 bridge",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-007/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-ADP-012",
+      "source_tc_id": "TC-ADP-012",
+      "tc_id": "TC-ADP-012-PRIMARY",
+      "ac_id": "AC-ADP-010",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "分湖边界存在",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md && rg -n \"授权 API\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "assertion": "分湖边界存在",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-adaptation-contracts-v1/tc-adp-012/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    }
+  ],
+  "research_projection": {
+    "schema_version": "1.0",
+    "feature": "prism-adaptation-contracts-v1",
+    "version": "v0.0.1",
+    "source": "research:.beacon/worktrees/v0.0.1/prism-adaptation-contracts-v1/docs/beacon/v0.0.1/research/prism-adaptation-contracts-v1.md",
+    "present": true,
+    "section_count": 0,
+    "sections": {},
+    "derived_items": []
+  },
+  "markdown_matrix_contract": {
+    "truth_mode": "generated",
+    "fail_closed": false,
+    "source": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+    "row_count": 10,
+    "enrichment_disabled": false
+  }
+}

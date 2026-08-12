@@ -1,0 +1,8 @@
+9:  - name: rights-record
+12:    bridge_command: "tool:rights-record（content/adaptations/{adaptation_id}.yaml）"
+14:  - name: royalty-calc
+17:    bridge_command: "tool:royalty-calc（条款 → 分成模型）"
+19:  - name: license-check
+20:    role: 第三方 IP/license 边界检查
+22:    bridge_command: "tool:license-check（未获权不自动授权）"
+29:  license_boundary_enforced: true

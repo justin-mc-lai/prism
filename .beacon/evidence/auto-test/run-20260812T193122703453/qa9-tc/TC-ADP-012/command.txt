@@ -1,0 +1,1 @@
+rg -n "Non-goals" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md && rg -n "授权 API" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md && rg -n "海 closure" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md
