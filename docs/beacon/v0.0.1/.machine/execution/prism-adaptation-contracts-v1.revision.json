@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-adaptation-contracts-v1",
+  "feature_slug": "prism-adaptation-contracts-v1",
+  "version": "v0.0.1",
+  "revision_id": "R1",
+  "source_revision_id": "",
+  "reason": "freeze",
+  "doc_status": "frozen",
+  "delivery_status": "idle",
+  "lifecycle_status": "idle",
+  "baseline_hash": "sha256:495e3dc6aec3835f2b55136e2fc69219c0ec7740bd97c7ec93b9400bdeb1862d",
+  "superseded_by": "",
+  "created_at": "2026-08-12T11:29:50.737203+00:00",
+  "frozen_at": "2026-08-12T11:29:50.737851+00:00",
+  "accepted_at": ""
+}

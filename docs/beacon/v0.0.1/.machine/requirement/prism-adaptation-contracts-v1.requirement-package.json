@@ -1,0 +1,360 @@
+{
+  "schema_version": "1.0",
+  "truth_map_contract": "beacon-truth-map-v1",
+  "truth_source_model": "feature_package_authoritative",
+  "truth_package_contract": "beacon-feature-package-v2",
+  "machine_json_role": "generated_state_not_truth",
+  "generated_by": "beacon.truth_map.resolver",
+  "generated_at": "2026-08-12T11:29:50.895689+00:00",
+  "feature": "prism-adaptation-contracts-v1",
+  "feature_slug": "prism-adaptation-contracts-v1",
+  "version": "v0.0.1",
+  "truth_authority": false,
+  "json_authority": false,
+  "source_paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+    "tasks": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tasks.md",
+    "evidence": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/evidence.md"
+  },
+  "source_hashes": {
+    "truth": "9f3e1e25383a3bdf514e8b745a15fed1121e2c59e84fe5a1124d2aafcf55e787",
+    "tests": "6c9098cbbd1e0c391e6a3748efa1f58668d35fd031634894c25aa59c54d6f129",
+    "tasks": "d75b7c95da69f806b6353a369b5ac82f38a65523be2cd2c76fecd9ff0e4e1f11",
+    "evidence": "a3d2fdfea766889d57253e1fef5bfe8833fc89740a282d35f845bbed15c829c1"
+  },
+  "truth_frontmatter": {
+    "slug": "prism-adaptation-contracts-v1",
+    "version": "v0.0.1",
+    "status": "frozen",
+    "revision_id": "R1",
+    "language": "zh",
+    "domain_required": "true",
+    "ux_required": "false",
+    "parser_contract": "beacon-feature-package-v2",
+    "materials_status": "current",
+    "package_maturity": "filled",
+    "truth_source_model": "intent_first",
+    "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+    "canonical_refs": {
+      "prd": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md"
+    },
+    "provenance": {
+      "- ac_id": "AC-ADP-002",
+      "source_type": "user_intent",
+      "source_ref": "utterance 2026-08-12：开始 Lake F 并跑完可交付"
+    }
+  },
+  "frontmatter_errors": [],
+  "acceptance_criteria": [
+    {
+      "ac_id": "AC-ADP-001",
+      "theme": "进入 `contract_landed`：`contracts/adaptation.contract.md` 定义 adaptation_id/asset_ref/type/rights/royalty/approval/evidence 与 fail-closed",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-ADP-002",
+      "theme": "进入 `registry_landed`：`registry/adaptation-adapters.yaml` 登记 ≥3 个改编工具 bridge（rights-record / royalty-calc / license-check）",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-ADP-003",
+      "theme": "人工批准：改编授权必须 approval + evidence；默认只登记不授权",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-ADP-004",
+      "theme": "进入 `routing_landed`：creation-mode-map 改编引用 adaptation.contract",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-ADP-005",
+      "theme": "进入 `indexed`：`scripts/check_adaptation.sh` exec-layer 校验 PASS",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-ADP-006",
+      "theme": "不编造授权/分成：缺证据 blocked",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-ADP-007",
+      "theme": "正典保护：改编不得破坏母稿正典（引用 canon ledger）",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-ADP-008",
+      "theme": "license 边界：第三方 IP 未获权不自动授权",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-ADP-009",
+      "theme": "敏感信息保护：合同信息受管，禁止入库",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-ADP-010",
+      "theme": "Non-goals：平台授权 API 显式排除；不得宣称海 closure",
+      "description": ""
+    }
+  ],
+  "test_rows": [
+    {
+      "ac_id": "AC-ADP-001",
+      "tc_id": "TC-ADP-001",
+      "layer": "",
+      "command": "`test -f contracts/adaptation.contract.md && rg -n \"adaptation_id|asset_ref|type|rights|royalty|approval\" contracts/adaptation.contract.md`",
+      "assertion": "改编契约含核心字段",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ADP-002",
+      "tc_id": "TC-ADP-002",
+      "layer": "",
+      "command": "`test -f registry/adaptation-adapters.yaml && rg -n \"rights-record|royalty|license\" registry/adaptation-adapters.yaml`",
+      "assertion": "改编 bridge 登记",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ADP-003",
+      "tc_id": "TC-ADP-003",
+      "layer": "",
+      "command": "`rg -n \"人工|批准|不授权|默认\" contracts/adaptation.contract.md`",
+      "assertion": "人工批准/默认不授权",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ADP-004",
+      "tc_id": "TC-ADP-004",
+      "layer": "",
+      "command": "`rg -n \"adaptation.contract\" skills/_internal/orchestration/creation-mode-map.md`",
+      "assertion": "路由改编引用",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ADP-005",
+      "tc_id": "TC-ADP-005",
+      "layer": "",
+      "command": "`test -x scripts/check_adaptation.sh`",
+      "assertion": "exec 脚本存在且可执行",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ADP-005",
+      "tc_id": "TC-ADP-006",
+      "layer": "",
+      "command": "`bash scripts/check_adaptation.sh`",
+      "assertion": "exec-layer 校验脚本 PASS（合法路径）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ADP-002",
+      "tc_id": "TC-ADP-007",
+      "layer": "",
+      "command": "`python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/adaptation-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=3 else 1)\"`",
+      "assertion": "≥3 个改编 bridge",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ADP-006",
+      "tc_id": "TC-ADP-008",
+      "layer": "",
+      "command": "`rg -n \"不编造|缺证据|blocked\" contracts/adaptation.contract.md`",
+      "assertion": "不编造授权/分成",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ADP-007",
+      "tc_id": "TC-ADP-009",
+      "layer": "",
+      "command": "`rg -n \"正典|canon|母稿\" contracts/adaptation.contract.md`",
+      "assertion": "正典保护",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ADP-008",
+      "tc_id": "TC-ADP-010",
+      "layer": "",
+      "command": "`rg -n \"license|第三方|未获权|不自动授权\" contracts/adaptation.contract.md`",
+      "assertion": "license 边界",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ADP-009",
+      "tc_id": "TC-ADP-011",
+      "layer": "",
+      "command": "`rg -n \"合同|敏感|secrets|禁止入库\" contracts/adaptation.contract.md`",
+      "assertion": "敏感信息保护",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ADP-010",
+      "tc_id": "TC-ADP-012",
+      "layer": "",
+      "command": "`rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md && rg -n \"授权 API\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md`",
+      "assertion": "分湖边界存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ADP-010",
+      "tc_id": "TC-ADP-013",
+      "layer": "",
+      "command": "`rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md`",
+      "assertion": "illegal 转移覆盖（非法拒绝路径）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ADP-001",
+      "tc_id": "TC-ADP-014",
+      "layer": "",
+      "command": "`rg -n \"US-ADP-001|改编\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md`",
+      "assertion": "改编旅程可追溯",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ADP-003",
+      "tc_id": "TC-ADP-015",
+      "layer": "",
+      "command": "`rg -n \"US-ADP-002|不自动授权\" docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md`",
+      "assertion": "未授权拒绝路径可追溯",
+      "evidence_path": "",
+      "source": ""
+    }
+  ],
+  "task_rows": [
+    {
+      "id": "TASK-001",
+      "title": "Implement AC-ADP-001: 进入 `contract_landed`：`contracts/adaptation.contract.md` 定义 adaptation... · ac=AC-ADP-001 · evidence=`.beacon/evidence/implement/prism-adaptation-contracts-v1/AC-ADP-001.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-002",
+      "title": "Implement AC-ADP-002: 进入 `registry_landed`：`registry/adaptation-adapters.yaml` 登记 ≥3 个改编工具 ... · ac=AC-ADP-002 · evidence=`.beacon/evidence/implement/prism-adaptation-contracts-v1/AC-ADP-002.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-003",
+      "title": "Implement AC-ADP-003: 人工批准：改编授权必须 approval + evidence；默认只登记不授权 · ac=AC-ADP-003 · evidence=`.beacon/evidence/implement/prism-adaptation-contracts-v1/AC-ADP-003.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-004",
+      "title": "Implement AC-ADP-004: 进入 `routing_landed`：creation-mode-map 改编引用 adaptation.contract · ac=AC-ADP-004 · evidence=`.beacon/evidence/implement/prism-adaptation-contracts-v1/AC-ADP-004.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-005",
+      "title": "Implement AC-ADP-005: 进入 `indexed`：`scripts/check_adaptation.sh` exec-layer 校验 PASS · ac=AC-ADP-005 · evidence=`.beacon/evidence/implement/prism-adaptation-contracts-v1/AC-ADP-005.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-006",
+      "title": "Implement AC-ADP-006: 不编造授权/分成：缺证据 blocked · ac=AC-ADP-006 · evidence=`.beacon/evidence/implement/prism-adaptation-contracts-v1/AC-ADP-006.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-007",
+      "title": "Implement AC-ADP-007: 正典保护：改编不得破坏母稿正典（引用 canon ledger） · ac=AC-ADP-007 · evidence=`.beacon/evidence/implement/prism-adaptation-contracts-v1/AC-ADP-007.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-008",
+      "title": "Implement AC-ADP-008: license 边界：第三方 IP 未获权不自动授权 · ac=AC-ADP-008 · evidence=`.beacon/evidence/implement/prism-adaptation-contracts-v1/AC-ADP-008.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-009",
+      "title": "Implement AC-ADP-009: 敏感信息保护：合同信息受管，禁止入库 · ac=AC-ADP-009 · evidence=`.beacon/evidence/implement/prism-adaptation-contracts-v1/AC-ADP-009.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-010",
+      "title": "Implement AC-ADP-010: Non-goals：平台授权 API 显式排除；不得宣称海 closure · ac=AC-ADP-010 · evidence=`.beacon/evidence/implement/prism-adaptation-contracts-v1/AC-ADP-010.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-011",
+      "title": "Validate package gates (truth review + freeze ack) · ac=GATES · evidence=`.beacon/evidence/implement/prism-adaptation-contracts-v1/GATES.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-012",
+      "title": "Run QA against AC↔TC matrix + exec-layer evidence · ac=QA · evidence=`.beacon/evidence/implement/prism-adaptation-contracts-v1/QA-MATRIX.json`",
+      "status": "unchecked"
+    }
+  ],
+  "checkbox_errors": [],
+  "evidence_rows": [
+    {
+      "surface": "package",
+      "authority": "requirement_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md"
+    },
+    {
+      "surface": "tests",
+      "authority": "test_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md"
+    },
+    {
+      "surface": "tasks",
+      "authority": "acceptance_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tasks.md"
+    },
+    {
+      "surface": "program",
+      "authority": "support_advisory",
+      "path": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md"
+    },
+    {
+      "surface": "lake_f_plan",
+      "authority": "support_advisory",
+      "path": "docs/beacon/v0.0.1/programs/prism-canon/lake-f-plan.md"
+    },
+    {
+      "surface": "adaptation_contract",
+      "authority": "support_advisory",
+      "path": "contracts/adaptation.contract.md"
+    },
+    {
+      "surface": "adaptation_adapters",
+      "authority": "support_advisory",
+      "path": "registry/adaptation-adapters.yaml"
+    },
+    {
+      "surface": "creation_mode_map",
+      "authority": "support_advisory",
+      "path": "skills/_internal/orchestration/creation-mode-map.md"
+    },
+    {
+      "surface": "check_script",
+      "authority": "support_advisory",
+      "path": "scripts/check_adaptation.sh"
+    },
+    {
+      "surface": "f1_monetization_contract",
+      "authority": "support_advisory",
+      "path": "contracts/monetization.contract.md"
+    },
+    {
+      "surface": "canon_ledger",
+      "authority": "support_advisory",
+      "path": "content/storyworlds/_examples/demo-world/canon-ledger.yaml"
+    }
+  ]
+}

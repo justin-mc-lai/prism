@@ -1,0 +1,631 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-adaptation-contracts-v1",
+  "feature_slug": "prism-adaptation-contracts-v1",
+  "version": "v0.0.1",
+  "runtime_version": "v1.6.12",
+  "runtime_capability_line": "v1.3.3",
+  "required": true,
+  "reason_code": "",
+  "blocked": false,
+  "status": "pass",
+  "findings": [],
+  "report_json_path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-adaptation-contracts-v1.json",
+  "report_markdown_path": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-adaptation-contracts-v1.md",
+  "state_path": ".beacon/state/requirement-clarity-prism-adaptation-contracts-v1.json",
+  "diagram_truth": {
+    "schema_version": "1.0",
+    "version": "v0.0.1",
+    "supported": false,
+    "required": false,
+    "ready": false,
+    "diagram_types": [],
+    "state_axes": [],
+    "missing_diagram_types": [],
+    "missing_state_axes": false,
+    "complexity_signals": [],
+    "review_gates": [],
+    "qa_coverage_hints": [],
+    "evidence_lines": {},
+    "generated_at": "2026-08-12T11:29:50.395307+00:00",
+    "feature": "prism-adaptation-contracts-v1",
+    "feature_slug": "prism-adaptation-contracts-v1",
+    "prd_ref": "docs/beacon/v0.0.1/prd/prism-adaptation-contracts-v1.md",
+    "user_story_ref": "docs/beacon/v0.0.1/user-story/prism-adaptation-contracts-v1.md"
+  },
+  "domain_fsm_gate": {
+    "schema_version": "1.0",
+    "feature": "prism-adaptation-contracts-v1",
+    "feature_slug": "prism-adaptation-contracts-v1",
+    "version": "v0.0.1",
+    "truth_path": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+    "tests_path": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+    "required": true,
+    "blocked": false,
+    "status": "pass",
+    "reason_code": "",
+    "findings": [],
+    "requirement": {
+      "required": true,
+      "reason": "explicit_domain_mark",
+      "explicit": true,
+      "partial": true,
+      "complexity": false,
+      "business_signal": false,
+      "version_supported": false
+    },
+    "projection": {
+      "schema_version": "1.0",
+      "domain_fsm_schema": "domain-fsm.v1",
+      "entity_precedence_schema": "entity-precedence.v1",
+      "frontmatter": {
+        "slug": "prism-adaptation-contracts-v1",
+        "version": "v0.0.1",
+        "status": "draft",
+        "revision_id": "R1",
+        "language": "zh",
+        "domain_required": "true",
+        "ux_required": "false",
+        "parser_contract": "beacon-feature-package-v2",
+        "materials_status": "current",
+        "package_maturity": "filled",
+        "truth_source_model": "intent_first",
+        "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+        "canonical_refs": {
+          "prd": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+          "user_story": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+          "test_case": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md"
+        },
+        "provenance": {
+          "- ac_id": "AC-ADP-002",
+          "source_type": "user_intent",
+          "source_ref": "utterance 2026-08-12：开始 Lake F 并跑完可交付"
+        }
+      },
+      "frontmatter_errors": [],
+      "has_domain_model_section": true,
+      "has_domain_fsm_section": true,
+      "has_illegal_transition_section": true,
+      "entities": [
+        {
+          "entity": "AdaptationDeal",
+          "key": "adaptation_id",
+          "precedence": "asset_ref + type + rights + royalty + approval",
+          "requires": "asset_ref + type + rights + royalty + approval"
+        },
+        {
+          "entity": "LicenseBoundary",
+          "key": "license",
+          "precedence": "第三方 IP 边界",
+          "requires": "第三方 IP 边界"
+        },
+        {
+          "entity": "RoyaltyTerm",
+          "key": "royalty",
+          "precedence": "分成/版权条款",
+          "requires": "分成/版权条款"
+        }
+      ],
+      "entity_precedence": [
+        {
+          "entity": "AdaptationDeal",
+          "key": "adaptation_id",
+          "precedence": "asset_ref + type + rights + royalty + approval",
+          "requires": "asset_ref + type + rights + royalty + approval"
+        },
+        {
+          "entity": "LicenseBoundary",
+          "key": "license",
+          "precedence": "第三方 IP 边界",
+          "requires": "第三方 IP 边界"
+        },
+        {
+          "entity": "RoyaltyTerm",
+          "key": "royalty",
+          "precedence": "分成/版权条款",
+          "requires": "分成/版权条款"
+        }
+      ],
+      "aggregates": [
+        {
+          "name": "落地）",
+          "states": [
+            "adp_planned",
+            "contract_landed",
+            "human_accepted",
+            "indexed",
+            "qa_pass",
+            "registry_landed",
+            "release_candidate",
+            "routing_landed"
+          ],
+          "transitions": [
+            {
+              "from": "adp_planned",
+              "to": "contract_landed",
+              "guard": "adaptation.contract present"
+            },
+            {
+              "from": "contract_landed",
+              "to": "registry_landed",
+              "guard": "adaptation-adapters.yaml ≥3"
+            },
+            {
+              "from": "registry_landed",
+              "to": "routing_landed",
+              "guard": "creation-mode-map 改编引用"
+            },
+            {
+              "from": "routing_landed",
+              "to": "indexed",
+              "guard": "exec 脚本 + 无泄漏"
+            },
+            {
+              "from": "indexed",
+              "to": "qa_pass",
+              "guard": "all TC pass"
+            },
+            {
+              "from": "qa_pass",
+              "to": "release_candidate",
+              "guard": "evidence complete"
+            },
+            {
+              "from": "release_candidate",
+              "to": "human_accepted",
+              "guard": "human confirmed"
+            }
+          ]
+        }
+      ],
+      "illegal_transition_slots": [
+        {
+          "description": "adp_planned → routing_landed（跳过契约/登记）",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "indexed → human_accepted（跳过 QA）",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "未人工批准自动授权",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "编造授权/分成",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "改编破坏母稿正典",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "合同信息入库",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "宣称海 closure",
+          "aggregate": "",
+          "source": "truth"
+        }
+      ],
+      "acceptance_criteria": [
+        {
+          "ac_id": "AC-ADP-001",
+          "description": "进入 `contract_landed`：`contracts/adaptation.contract.md` 定义 adaptation_id/asset_ref/type/rights/royalty/approval/evidence 与 fail-closed"
+        },
+        {
+          "ac_id": "AC-ADP-002",
+          "description": "进入 `registry_landed`：`registry/adaptation-adapters.yaml` 登记 ≥3 个改编工具 bridge（rights-record / royalty-calc / license-check）"
+        },
+        {
+          "ac_id": "AC-ADP-003",
+          "description": "人工批准：改编授权必须 approval + evidence；默认只登记不授权"
+        },
+        {
+          "ac_id": "AC-ADP-004",
+          "description": "进入 `routing_landed`：creation-mode-map 改编引用 adaptation.contract"
+        },
+        {
+          "ac_id": "AC-ADP-005",
+          "description": "进入 `indexed`：`scripts/check_adaptation.sh` exec-layer 校验 PASS"
+        },
+        {
+          "ac_id": "AC-ADP-006",
+          "description": "不编造授权/分成：缺证据 blocked"
+        },
+        {
+          "ac_id": "AC-ADP-007",
+          "description": "正典保护：改编不得破坏母稿正典（引用 canon ledger）"
+        },
+        {
+          "ac_id": "AC-ADP-008",
+          "description": "license 边界：第三方 IP 未获权不自动授权"
+        },
+        {
+          "ac_id": "AC-ADP-009",
+          "description": "敏感信息保护：合同信息受管，禁止入库"
+        },
+        {
+          "ac_id": "AC-ADP-010",
+          "description": "Non-goals：平台授权 API 显式排除；不得宣称海 closure"
+        }
+      ],
+      "bound_ac_ids": [
+        "AC-ADP-001",
+        "AC-ADP-002",
+        "AC-ADP-004",
+        "AC-ADP-005"
+      ],
+      "orphan_ac_ids": [
+        "AC-ADP-009"
+      ],
+      "aggregates_missing_illegal_slots": [],
+      "raw_section_titles": [
+        "人话",
+        "User Intent",
+        "User Intent Snapshot",
+        "Intent Coverage Matrix",
+        "First principles（域）",
+        "用户旅程 / 故事",
+        "Domain Model",
+        "Domain FSM（F2 落地）",
+        "Illegal transitions",
+        "FSM 五元组",
+        "Alignment Surface",
+        "Deferral Ledger",
+        "Acceptance Criteria",
+        "Non-goals",
+        "Freeze readiness"
+      ]
+    },
+    "validation": {
+      "schema_version": "1.0",
+      "required": true,
+      "blocked": false,
+      "status": "pass",
+      "reason_code": "",
+      "findings": [],
+      "projection": {
+        "schema_version": "1.0",
+        "domain_fsm_schema": "domain-fsm.v1",
+        "entity_precedence_schema": "entity-precedence.v1",
+        "frontmatter": {
+          "slug": "prism-adaptation-contracts-v1",
+          "version": "v0.0.1",
+          "status": "draft",
+          "revision_id": "R1",
+          "language": "zh",
+          "domain_required": "true",
+          "ux_required": "false",
+          "parser_contract": "beacon-feature-package-v2",
+          "materials_status": "current",
+          "package_maturity": "filled",
+          "truth_source_model": "intent_first",
+          "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+          "canonical_refs": {
+            "prd": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+            "user_story": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+            "test_case": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md"
+          },
+          "provenance": {
+            "- ac_id": "AC-ADP-002",
+            "source_type": "user_intent",
+            "source_ref": "utterance 2026-08-12：开始 Lake F 并跑完可交付"
+          }
+        },
+        "frontmatter_errors": [],
+        "has_domain_model_section": true,
+        "has_domain_fsm_section": true,
+        "has_illegal_transition_section": true,
+        "entities": [
+          {
+            "entity": "AdaptationDeal",
+            "key": "adaptation_id",
+            "precedence": "asset_ref + type + rights + royalty + approval",
+            "requires": "asset_ref + type + rights + royalty + approval"
+          },
+          {
+            "entity": "LicenseBoundary",
+            "key": "license",
+            "precedence": "第三方 IP 边界",
+            "requires": "第三方 IP 边界"
+          },
+          {
+            "entity": "RoyaltyTerm",
+            "key": "royalty",
+            "precedence": "分成/版权条款",
+            "requires": "分成/版权条款"
+          }
+        ],
+        "entity_precedence": [
+          {
+            "entity": "AdaptationDeal",
+            "key": "adaptation_id",
+            "precedence": "asset_ref + type + rights + royalty + approval",
+            "requires": "asset_ref + type + rights + royalty + approval"
+          },
+          {
+            "entity": "LicenseBoundary",
+            "key": "license",
+            "precedence": "第三方 IP 边界",
+            "requires": "第三方 IP 边界"
+          },
+          {
+            "entity": "RoyaltyTerm",
+            "key": "royalty",
+            "precedence": "分成/版权条款",
+            "requires": "分成/版权条款"
+          }
+        ],
+        "aggregates": [
+          {
+            "name": "落地）",
+            "states": [
+              "adp_planned",
+              "contract_landed",
+              "human_accepted",
+              "indexed",
+              "qa_pass",
+              "registry_landed",
+              "release_candidate",
+              "routing_landed"
+            ],
+            "transitions": [
+              {
+                "from": "adp_planned",
+                "to": "contract_landed",
+                "guard": "adaptation.contract present"
+              },
+              {
+                "from": "contract_landed",
+                "to": "registry_landed",
+                "guard": "adaptation-adapters.yaml ≥3"
+              },
+              {
+                "from": "registry_landed",
+                "to": "routing_landed",
+                "guard": "creation-mode-map 改编引用"
+              },
+              {
+                "from": "routing_landed",
+                "to": "indexed",
+                "guard": "exec 脚本 + 无泄漏"
+              },
+              {
+                "from": "indexed",
+                "to": "qa_pass",
+                "guard": "all TC pass"
+              },
+              {
+                "from": "qa_pass",
+                "to": "release_candidate",
+                "guard": "evidence complete"
+              },
+              {
+                "from": "release_candidate",
+                "to": "human_accepted",
+                "guard": "human confirmed"
+              }
+            ]
+          }
+        ],
+        "illegal_transition_slots": [
+          {
+            "description": "adp_planned → routing_landed（跳过契约/登记）",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "indexed → human_accepted（跳过 QA）",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "未人工批准自动授权",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "编造授权/分成",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "改编破坏母稿正典",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "合同信息入库",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "宣称海 closure",
+            "aggregate": "",
+            "source": "truth"
+          }
+        ],
+        "acceptance_criteria": [
+          {
+            "ac_id": "AC-ADP-001",
+            "description": "进入 `contract_landed`：`contracts/adaptation.contract.md` 定义 adaptation_id/asset_ref/type/rights/royalty/approval/evidence 与 fail-closed"
+          },
+          {
+            "ac_id": "AC-ADP-002",
+            "description": "进入 `registry_landed`：`registry/adaptation-adapters.yaml` 登记 ≥3 个改编工具 bridge（rights-record / royalty-calc / license-check）"
+          },
+          {
+            "ac_id": "AC-ADP-003",
+            "description": "人工批准：改编授权必须 approval + evidence；默认只登记不授权"
+          },
+          {
+            "ac_id": "AC-ADP-004",
+            "description": "进入 `routing_landed`：creation-mode-map 改编引用 adaptation.contract"
+          },
+          {
+            "ac_id": "AC-ADP-005",
+            "description": "进入 `indexed`：`scripts/check_adaptation.sh` exec-layer 校验 PASS"
+          },
+          {
+            "ac_id": "AC-ADP-006",
+            "description": "不编造授权/分成：缺证据 blocked"
+          },
+          {
+            "ac_id": "AC-ADP-007",
+            "description": "正典保护：改编不得破坏母稿正典（引用 canon ledger）"
+          },
+          {
+            "ac_id": "AC-ADP-008",
+            "description": "license 边界：第三方 IP 未获权不自动授权"
+          },
+          {
+            "ac_id": "AC-ADP-009",
+            "description": "敏感信息保护：合同信息受管，禁止入库"
+          },
+          {
+            "ac_id": "AC-ADP-010",
+            "description": "Non-goals：平台授权 API 显式排除；不得宣称海 closure"
+          }
+        ],
+        "bound_ac_ids": [
+          "AC-ADP-001",
+          "AC-ADP-002",
+          "AC-ADP-004",
+          "AC-ADP-005"
+        ],
+        "orphan_ac_ids": [
+          "AC-ADP-009"
+        ],
+        "aggregates_missing_illegal_slots": [],
+        "raw_section_titles": [
+          "人话",
+          "User Intent",
+          "User Intent Snapshot",
+          "Intent Coverage Matrix",
+          "First principles（域）",
+          "用户旅程 / 故事",
+          "Domain Model",
+          "Domain FSM（F2 落地）",
+          "Illegal transitions",
+          "FSM 五元组",
+          "Alignment Surface",
+          "Deferral Ledger",
+          "Acceptance Criteria",
+          "Non-goals",
+          "Freeze readiness"
+        ]
+      },
+      "summary": {
+        "entity_count": 3,
+        "aggregate_count": 1,
+        "illegal_slot_count": 7,
+        "orphan_ac_count": 1,
+        "bound_ac_count": 4
+      }
+    },
+    "recommended_action": ""
+  },
+  "human_closure_contract": {
+    "required": false,
+    "research_path": "docs/beacon/v0.0.1/research/prism-adaptation-contracts-v1.md",
+    "research_exists": true,
+    "source_architecture_path": "docs/beacon/v0.0.1/source-architecture/index.md",
+    "source_architecture_exists": true,
+    "required_sections": [
+      "architecture",
+      "business_flow"
+    ],
+    "missing_sections": [
+      "architecture",
+      "business_flow"
+    ],
+    "diagram_types": [],
+    "complexity_signals": []
+  },
+  "requirement_closure_contract": {
+    "required": true,
+    "chain_order": [
+      "research",
+      "prd",
+      "user_story",
+      "test_case",
+      "requirement_clarity",
+      "freeze"
+    ],
+    "human_closure_required": false,
+    "paths": {
+      "research": "docs/beacon/v0.0.1/research/prism-adaptation-contracts-v1.md",
+      "prd": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md"
+    },
+    "exists": {
+      "research": true,
+      "prd": true,
+      "user_story": true,
+      "test_case": true
+    },
+    "required_research_sections": [],
+    "missing_research_sections": [],
+    "ac_projection": {
+      "prd_ac_ids": [],
+      "user_story_ac_ids": [],
+      "test_case_ac_ids": [],
+      "upstream_ac_ids": [],
+      "missing_test_case_ac_ids": []
+    }
+  },
+  "version_projection_truth_contract": {
+    "required": false,
+    "supported": false,
+    "projection_types": [],
+    "research_path": "docs/beacon/v0.0.1/research/prism-adaptation-contracts-v1.md",
+    "research_exists": true,
+    "required_fields": [
+      "prd_refs",
+      "user_story_refs",
+      "test_case_refs",
+      "coverage_notes",
+      "out_of_scope_notes"
+    ],
+    "field_presence": {
+      "prd_refs": false,
+      "user_story_refs": false,
+      "test_case_refs": false,
+      "coverage_notes": false,
+      "out_of_scope_notes": false
+    },
+    "missing_fields": [],
+    "required_refs": {
+      "prd_refs": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "user_story_refs": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+      "test_case_refs": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md"
+    },
+    "missing_ref_targets": [],
+    "ready": false
+  },
+  "support_write_topology_contract": {
+    "schema_version": "1.0",
+    "supported": true,
+    "status": "pass",
+    "blocked": false,
+    "reason_code": "",
+    "diagnostics": []
+  },
+  "required_artifacts": [],
+  "scanned_files": [
+    "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tests.md",
+    "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/tasks.md",
+    "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/evidence.md",
+    "docs/beacon/v0.0.1/research/prism-adaptation-contracts-v1.md"
+  ]
+}
