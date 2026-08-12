@@ -1,0 +1,355 @@
+{
+  "schema_version": "1.0",
+  "truth_map_contract": "beacon-truth-map-v1",
+  "truth_source_model": "feature_package_authoritative",
+  "truth_package_contract": "beacon-feature-package-v2",
+  "machine_json_role": "generated_state_not_truth",
+  "generated_by": "beacon.truth_map.resolver",
+  "generated_at": "2026-08-12T10:45:29.770343+00:00",
+  "feature": "prism-learning-memory-v1",
+  "feature_slug": "prism-learning-memory-v1",
+  "version": "v0.0.1",
+  "truth_authority": false,
+  "json_authority": false,
+  "source_paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-learning-memory-v1/tests.md",
+    "tasks": "docs/beacon/v0.0.1/features/prism-learning-memory-v1/tasks.md",
+    "evidence": "docs/beacon/v0.0.1/features/prism-learning-memory-v1/evidence.md"
+  },
+  "source_hashes": {
+    "truth": "242fe91ed8b8945663975b538a6c8c0fcb99254c188038235d6c191d85e5fda4",
+    "tests": "11b18d8b67e860c6db3c99197fbac0f5d882b884cafb3841e2dcfd4857597486",
+    "tasks": "85bebe0cd6045dc3d6af7f631157914c6682bcbf5193a254f37159ed5f9be781",
+    "evidence": "cb7430f606eca5e2f3486f03fcf9b3da1f24a233af69a369e5ddc9e6dd41e68f"
+  },
+  "truth_frontmatter": {
+    "slug": "prism-learning-memory-v1",
+    "version": "v0.0.1",
+    "status": "frozen",
+    "revision_id": "R1",
+    "language": "zh",
+    "domain_required": "true",
+    "ux_required": "false",
+    "parser_contract": "beacon-feature-package-v2",
+    "materials_status": "current",
+    "package_maturity": "filled",
+    "truth_source_model": "intent_first",
+    "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+    "canonical_refs": {
+      "prd": "docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-learning-memory-v1/tests.md"
+    },
+    "provenance": {
+      "- ac_id": "AC-LMEM-002",
+      "source_type": "user_intent",
+      "source_ref": "utterance 2026-08-12：开始 Lake E；E4 学习记忆"
+    }
+  },
+  "frontmatter_errors": [],
+  "acceptance_criteria": [
+    {
+      "ac_id": "AC-LMEM-001",
+      "theme": "进入 `contract_landed`：`contracts/learning-memory.contract.md` 定义 memory_id/source_ref/claim/confidence/applicability/evidence",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-LMEM-002",
+      "theme": "进入 `registry_landed`：`registry/learning-adapters.yaml` 登记 ≥3 个学习工具 bridge（memory-store / recall / prune）",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-LMEM-003",
+      "theme": "advisory-only：契约声明 learning 不定义 truth、不通 gate、不给 QA/release verdict",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-LMEM-004",
+      "theme": "进入 `routing_landed`：creation-mode-map 学习引用 learning-memory.contract",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-LMEM-005",
+      "theme": "进入 `indexed`：`scripts/check_learning_memory.sh` exec-layer 校验 PASS",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-LMEM-006",
+      "theme": "可回放/可审计：每条记忆带 source_ref + 时间 + 回放路径",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-LMEM-007",
+      "theme": "可裁剪：冲突/过时记忆显式标记，prune 保留审计痕迹",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-LMEM-008",
+      "theme": "边界：learning 不替代 QA/release 判定",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-LMEM-009",
+      "theme": "bridge fail-closed：工具缺失 → blocked + reason_code",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-LMEM-010",
+      "theme": "Non-goals：Lake F、平台 API 显式排除；不得宣称海 closure",
+      "description": ""
+    }
+  ],
+  "test_rows": [
+    {
+      "ac_id": "AC-LMEM-001",
+      "tc_id": "TC-LMEM-001",
+      "layer": "",
+      "command": "`test -f contracts/learning-memory.contract.md && rg -n \"memory_id|source_ref|claim|confidence|applicability\" contracts/learning-memory.contract.md`",
+      "assertion": "学习契约含核心字段",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-LMEM-002",
+      "tc_id": "TC-LMEM-002",
+      "layer": "",
+      "command": "`test -f registry/learning-adapters.yaml && rg -n \"memory-store|recall|prune\" registry/learning-adapters.yaml`",
+      "assertion": "学习 bridge 登记",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-LMEM-003",
+      "tc_id": "TC-LMEM-003",
+      "layer": "",
+      "command": "`rg -n \"不定义 truth|不通 gate|verdict|advisory\" contracts/learning-memory.contract.md`",
+      "assertion": "advisory-only 边界",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-LMEM-004",
+      "tc_id": "TC-LMEM-004",
+      "layer": "",
+      "command": "`rg -n \"learning-memory.contract\" skills/_internal/orchestration/creation-mode-map.md`",
+      "assertion": "路由学习引用",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-LMEM-005",
+      "tc_id": "TC-LMEM-005",
+      "layer": "",
+      "command": "`test -x scripts/check_learning_memory.sh`",
+      "assertion": "exec 脚本存在且可执行",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-LMEM-005",
+      "tc_id": "TC-LMEM-006",
+      "layer": "",
+      "command": "`bash scripts/check_learning_memory.sh`",
+      "assertion": "exec-layer 校验脚本 PASS（合法路径）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-LMEM-002",
+      "tc_id": "TC-LMEM-007",
+      "layer": "",
+      "command": "`python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/learning-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=3 else 1)\"`",
+      "assertion": "≥3 个学习 bridge",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-LMEM-006",
+      "tc_id": "TC-LMEM-008",
+      "layer": "",
+      "command": "`rg -n \"source_ref|时间|回放\" contracts/learning-memory.contract.md`",
+      "assertion": "可回放/可审计",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-LMEM-007",
+      "tc_id": "TC-LMEM-009",
+      "layer": "",
+      "command": "`rg -n \"冲突|conflict|prune|裁剪\" contracts/learning-memory.contract.md`",
+      "assertion": "可裁剪/冲突标记",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-LMEM-008",
+      "tc_id": "TC-LMEM-010",
+      "layer": "",
+      "command": "`rg -n \"不替代|QA|release\" contracts/learning-memory.contract.md`",
+      "assertion": "边界声明",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-LMEM-009",
+      "tc_id": "TC-LMEM-011",
+      "layer": "",
+      "command": "`rg -n \"fail-closed|blocked|reason_code\" contracts/learning-memory.contract.md`",
+      "assertion": "bridge fail-closed",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-LMEM-010",
+      "tc_id": "TC-LMEM-012",
+      "layer": "",
+      "command": "`rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md && rg -n \"Lake F\" docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md`",
+      "assertion": "分湖边界存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-LMEM-010",
+      "tc_id": "TC-LMEM-013",
+      "layer": "",
+      "command": "`rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md`",
+      "assertion": "illegal 转移覆盖（非法拒绝路径）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-LMEM-001",
+      "tc_id": "TC-LMEM-014",
+      "layer": "",
+      "command": "`rg -n \"US-LMEM-001|学习记忆\" docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md`",
+      "assertion": "学习旅程可追溯",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-LMEM-007",
+      "tc_id": "TC-LMEM-015",
+      "layer": "",
+      "command": "`rg -n \"US-LMEM-002|冲突\" docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md`",
+      "assertion": "冲突路径可追溯",
+      "evidence_path": "",
+      "source": ""
+    }
+  ],
+  "task_rows": [
+    {
+      "id": "TASK-001",
+      "title": "Implement AC-LMEM-001: 进入 `contract_landed`：`contracts/learning-memory.contract.md` 定义 memor... · ac=AC-LMEM-001 · evidence=`.beacon/evidence/implement/prism-learning-memory-v1/AC-LMEM-001.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-002",
+      "title": "Implement AC-LMEM-002: 进入 `registry_landed`：`registry/learning-adapters.yaml` 登记 ≥3 个学习工具 br... · ac=AC-LMEM-002 · evidence=`.beacon/evidence/implement/prism-learning-memory-v1/AC-LMEM-002.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-003",
+      "title": "Implement AC-LMEM-003: advisory-only：契约声明 learning 不定义 truth、不通 gate、不给 QA/release verdict · ac=AC-LMEM-003 · evidence=`.beacon/evidence/implement/prism-learning-memory-v1/AC-LMEM-003.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-004",
+      "title": "Implement AC-LMEM-004: 进入 `routing_landed`：creation-mode-map 学习引用 learning-memory.contract · ac=AC-LMEM-004 · evidence=`.beacon/evidence/implement/prism-learning-memory-v1/AC-LMEM-004.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-005",
+      "title": "Implement AC-LMEM-005: 进入 `indexed`：`scripts/check_learning_memory.sh` exec-layer 校验 PASS · ac=AC-LMEM-005 · evidence=`.beacon/evidence/implement/prism-learning-memory-v1/AC-LMEM-005.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-006",
+      "title": "Implement AC-LMEM-006: 可回放/可审计：每条记忆带 source_ref + 时间 + 回放路径 · ac=AC-LMEM-006 · evidence=`.beacon/evidence/implement/prism-learning-memory-v1/AC-LMEM-006.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-007",
+      "title": "Implement AC-LMEM-007: 可裁剪：冲突/过时记忆显式标记，prune 保留审计痕迹 · ac=AC-LMEM-007 · evidence=`.beacon/evidence/implement/prism-learning-memory-v1/AC-LMEM-007.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-008",
+      "title": "Implement AC-LMEM-008: 边界：learning 不替代 QA/release 判定 · ac=AC-LMEM-008 · evidence=`.beacon/evidence/implement/prism-learning-memory-v1/AC-LMEM-008.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-009",
+      "title": "Implement AC-LMEM-009: bridge fail-closed：工具缺失 → blocked + reason_code · ac=AC-LMEM-009 · evidence=`.beacon/evidence/implement/prism-learning-memory-v1/AC-LMEM-009.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-010",
+      "title": "Implement AC-LMEM-010: Non-goals：Lake F、平台 API 显式排除；不得宣称海 closure · ac=AC-LMEM-010 · evidence=`.beacon/evidence/implement/prism-learning-memory-v1/AC-LMEM-010.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-011",
+      "title": "Validate package gates (truth review + freeze ack) · ac=GATES · evidence=`.beacon/evidence/implement/prism-learning-memory-v1/GATES.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-012",
+      "title": "Run QA against AC↔TC matrix + exec-layer evidence · ac=QA · evidence=`.beacon/evidence/implement/prism-learning-memory-v1/QA-MATRIX.json`",
+      "status": "unchecked"
+    }
+  ],
+  "checkbox_errors": [],
+  "evidence_rows": [
+    {
+      "surface": "package",
+      "authority": "requirement_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md"
+    },
+    {
+      "surface": "tests",
+      "authority": "test_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-learning-memory-v1/tests.md"
+    },
+    {
+      "surface": "tasks",
+      "authority": "acceptance_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-learning-memory-v1/tasks.md"
+    },
+    {
+      "surface": "program",
+      "authority": "support_advisory",
+      "path": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md"
+    },
+    {
+      "surface": "lake_e_plan",
+      "authority": "support_advisory",
+      "path": "docs/beacon/v0.0.1/programs/prism-canon/lake-e-plan.md"
+    },
+    {
+      "surface": "learning_contract",
+      "authority": "support_advisory",
+      "path": "contracts/learning-memory.contract.md"
+    },
+    {
+      "surface": "learning_adapters",
+      "authority": "support_advisory",
+      "path": "registry/learning-adapters.yaml"
+    },
+    {
+      "surface": "creation_mode_map",
+      "authority": "support_advisory",
+      "path": "skills/_internal/orchestration/creation-mode-map.md"
+    },
+    {
+      "surface": "check_script",
+      "authority": "support_advisory",
+      "path": "scripts/check_learning_memory.sh"
+    },
+    {
+      "surface": "e3_review_contract",
+      "authority": "support_advisory",
+      "path": "contracts/review-loop.contract.md"
+    }
+  ]
+}

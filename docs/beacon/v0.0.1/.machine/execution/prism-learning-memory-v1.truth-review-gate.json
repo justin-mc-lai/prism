@@ -1,0 +1,217 @@
+{
+  "schema": "truth-review-gate.v1",
+  "schema_version": "1.0",
+  "feature": "prism-learning-memory-v1",
+  "version": "v0.0.1",
+  "pass": true,
+  "blocked": false,
+  "review_gate_pass": true,
+  "abc_pass": true,
+  "reason_code": "",
+  "domain_required": true,
+  "checks": {
+    "A_intent_coverage": {
+      "pass": true,
+      "check": "A",
+      "name": "intent_coverage",
+      "required": true,
+      "matrix_rows": 11,
+      "missing_must": [],
+      "reason": "",
+      "findings": [],
+      "matrix": [
+        {
+          "intent_id": "INT-LM01",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-LMEM-001",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-LM02",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-LMEM-002",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-LM03",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-LMEM-003",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-LM04",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-LMEM-004",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-LM05",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-LMEM-005",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-LM06",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-LMEM-006",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-LM07",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-LMEM-007",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-LM08",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-LMEM-008",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-LM09",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-LMEM-009",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-LM10",
+          "source": "migrated",
+          "strength": "must",
+          "landing": "AC-LMEM-010",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-LM11",
+          "source": "sea",
+          "strength": "optional",
+          "landing": "Lake F monetization",
+          "status": "deferred"
+        }
+      ]
+    },
+    "B_fsm_audit": {
+      "pass": true,
+      "check": "B",
+      "name": "fsm_audit",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "fsm": {
+        "transition_count": 7,
+        "from_states": [
+          "contract_landed",
+          "indexed",
+          "lmem_planned",
+          "qa_pass",
+          "registry_landed",
+          "release_candidate",
+          "routing_landed"
+        ],
+        "hanging_states": [],
+        "terminals": [
+          "human_accepted"
+        ],
+        "illegal_present": true,
+        "five_tuple_present": true
+      }
+    },
+    "C_testability": {
+      "pass": true,
+      "check": "C",
+      "name": "testability",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "ac_count": 10,
+      "tc_count": 15,
+      "missing_ac": [],
+      "covered": {
+        "AC-LMEM-001": [
+          "TC-LMEM-001",
+          "TC-LMEM-014"
+        ],
+        "AC-LMEM-002": [
+          "TC-LMEM-002",
+          "TC-LMEM-007"
+        ],
+        "AC-LMEM-003": [
+          "TC-LMEM-003"
+        ],
+        "AC-LMEM-004": [
+          "TC-LMEM-004"
+        ],
+        "AC-LMEM-005": [
+          "TC-LMEM-005",
+          "TC-LMEM-006"
+        ],
+        "AC-LMEM-006": [
+          "TC-LMEM-008"
+        ],
+        "AC-LMEM-007": [
+          "TC-LMEM-009",
+          "TC-LMEM-015"
+        ],
+        "AC-LMEM-008": [
+          "TC-LMEM-010"
+        ],
+        "AC-LMEM-009": [
+          "TC-LMEM-011"
+        ],
+        "AC-LMEM-010": [
+          "TC-LMEM-012",
+          "TC-LMEM-013"
+        ]
+      }
+    },
+    "C_domain_exec_layer": {
+      "pass": true,
+      "check": "C_exec",
+      "name": "domain_exec_layer",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "exec_tc_count": 3,
+      "exec_tc_ids": [
+        "TC-LMEM-005",
+        "TC-LMEM-006",
+        "TC-LMEM-007"
+      ],
+      "domain_kind": "business"
+    },
+    "D_fill_depth": {
+      "pass": true,
+      "check": "D",
+      "name": "fill_depth",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "package_maturity": "filled",
+      "domain_kind": "business",
+      "business_domain": true
+    }
+  },
+  "findings": [],
+  "humanizer": {
+    "rule": "humanizer_only_after_abc_pass_before_freeze",
+    "abc_pass": true,
+    "allowed_now": true,
+    "fill_depth_pass": true,
+    "note": "Polish L0/narrative only after A/B/C; preserve_machine_fields=true; freeze needs D+exec too"
+  },
+  "evaluated_at": "2026-08-12T10:45:29.616604+00:00",
+  "paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-learning-memory-v1/tests.md",
+    "report": "docs/beacon/v0.0.1/.machine/execution/prism-learning-memory-v1.truth-review-gate.json"
+  }
+}
