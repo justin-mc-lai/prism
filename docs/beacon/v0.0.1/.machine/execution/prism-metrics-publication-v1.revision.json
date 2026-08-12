@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-metrics-publication-v1",
+  "feature_slug": "prism-metrics-publication-v1",
+  "version": "v0.0.1",
+  "revision_id": "R1",
+  "source_revision_id": "",
+  "reason": "freeze",
+  "doc_status": "frozen",
+  "delivery_status": "idle",
+  "lifecycle_status": "idle",
+  "baseline_hash": "sha256:c06029a44391c5ebd30d5391f910b5977a0fddfb552e94a1559017fa768cb3fa",
+  "superseded_by": "",
+  "created_at": "2026-08-12T10:28:42.352981+00:00",
+  "frozen_at": "2026-08-12T10:28:42.353800+00:00",
+  "accepted_at": ""
+}

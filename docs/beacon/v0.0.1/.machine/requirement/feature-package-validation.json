@@ -1,15 +1,15 @@
 {
   "schema_version": "1.0",
-  "feature": "prism-publish-bridge-v1",
-  "feature_slug": "prism-publish-bridge-v1",
+  "feature": "prism-metrics-publication-v1",
+  "feature_slug": "prism-metrics-publication-v1",
   "version": "v0.0.1",
   "status": "pass",
   "blocked": false,
   "reason_code": "",
-  "generated_at": "2026-08-12T01:06:53.038704+00:00",
-  "package_dir": "docs/beacon/v0.0.1/features/prism-publish-bridge-v1",
+  "generated_at": "2026-08-12T10:28:42.357858+00:00",
+  "package_dir": "docs/beacon/v0.0.1/features/prism-metrics-publication-v1",
   "truth_frontmatter": {
-    "slug": "prism-publish-bridge-v1",
+    "slug": "prism-metrics-publication-v1",
     "version": "v0.0.1",
     "status": "frozen",
     "revision_id": "R1",
@@ -22,14 +22,14 @@
     "truth_source_model": "intent_first",
     "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
     "canonical_refs": {
-      "prd": "docs/beacon/v0.0.1/features/prism-publish-bridge-v1/truth.md",
-      "user_story": "docs/beacon/v0.0.1/features/prism-publish-bridge-v1/truth.md",
-      "test_case": "docs/beacon/v0.0.1/features/prism-publish-bridge-v1/tests.md"
+      "prd": "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tests.md"
     },
     "provenance": {
-      "- ac_id": "AC-PUB-002",
+      "- ac_id": "AC-MPUB-002",
       "source_type": "user_intent",
-      "source_ref": "utterance 2026-08-12：Lake D6 publish bridge；公开发布人工门"
+      "source_ref": "utterance 2026-08-12：开始 Lake E（指标/学习回流）"
     }
   },
   "ac_count": 10,

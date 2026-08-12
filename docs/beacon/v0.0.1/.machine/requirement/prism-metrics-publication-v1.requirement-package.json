@@ -1,0 +1,360 @@
+{
+  "schema_version": "1.0",
+  "truth_map_contract": "beacon-truth-map-v1",
+  "truth_source_model": "feature_package_authoritative",
+  "truth_package_contract": "beacon-feature-package-v2",
+  "machine_json_role": "generated_state_not_truth",
+  "generated_by": "beacon.truth_map.resolver",
+  "generated_at": "2026-08-12T10:28:42.503568+00:00",
+  "feature": "prism-metrics-publication-v1",
+  "feature_slug": "prism-metrics-publication-v1",
+  "version": "v0.0.1",
+  "truth_authority": false,
+  "json_authority": false,
+  "source_paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tests.md",
+    "tasks": "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tasks.md",
+    "evidence": "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/evidence.md"
+  },
+  "source_hashes": {
+    "truth": "b9c4b068dde84a4d948a097d22826a2796929fb3add455646dab9580da677465",
+    "tests": "94e56285ca98171882f787e692a2bea44f2727471f534fc73db3ae52dd47b727",
+    "tasks": "a520a1078164f39b5562a172f9f80f904f3a31e8d2140fa7d4d195cbf57df7a3",
+    "evidence": "da76b0cd081c9b4c9fcddd02792403e3e9a520834a2b0e50aae5c1138f870f15"
+  },
+  "truth_frontmatter": {
+    "slug": "prism-metrics-publication-v1",
+    "version": "v0.0.1",
+    "status": "frozen",
+    "revision_id": "R1",
+    "language": "zh",
+    "domain_required": "true",
+    "ux_required": "false",
+    "parser_contract": "beacon-feature-package-v2",
+    "materials_status": "current",
+    "package_maturity": "filled",
+    "truth_source_model": "intent_first",
+    "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+    "canonical_refs": {
+      "prd": "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tests.md"
+    },
+    "provenance": {
+      "- ac_id": "AC-MPUB-002",
+      "source_type": "user_intent",
+      "source_ref": "utterance 2026-08-12：开始 Lake E（指标/学习回流）"
+    }
+  },
+  "frontmatter_errors": [],
+  "acceptance_criteria": [
+    {
+      "ac_id": "AC-MPUB-001",
+      "theme": "进入 `contract_landed`：`contracts/metrics-publication.contract.md` 定义发布事件字段（publication_id/platform/url/published_at/artifact_ref/evidence）与 fail-closed",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-MPUB-002",
+      "theme": "进入 `registry_landed`：`registry/metrics-adapters.yaml` 登记 ≥3 个统计 bridge（analyze-data / 平台 stats / 报表工具）",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-MPUB-003",
+      "theme": "measured 守卫：契约声明无 publication 记录不得进入 measured（引用 Lake A FSM）",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-MPUB-004",
+      "theme": "进入 `routing_landed`：creation-mode-map 发布/回流引用 metrics-publication.contract",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-MPUB-005",
+      "theme": "进入 `indexed`：`scripts/check_metrics_publication.sh` exec-layer 校验 PASS",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-MPUB-006",
+      "theme": "不编造指标：契约声明缺数据用显式空快照，禁止猜测趋势",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-MPUB-007",
+      "theme": "凭证保护：平台凭证/密钥禁止入库",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-MPUB-008",
+      "theme": "bridge fail-closed：统计工具缺失 → blocked + reason_code",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-MPUB-009",
+      "theme": "证据要求：事件必须带 publication_id/url/时间，缺证据不算回流",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-MPUB-010",
+      "theme": "Non-goals：E2–E4、平台 API 全量、vendor sync-ai 显式排除；不得宣称海 closure",
+      "description": ""
+    }
+  ],
+  "test_rows": [
+    {
+      "ac_id": "AC-MPUB-001",
+      "tc_id": "TC-MPUB-001",
+      "layer": "",
+      "command": "`test -f contracts/metrics-publication.contract.md && rg -n \"publication_id|platform|url|published_at|artifact_ref\" contracts/metrics-publication.contract.md`",
+      "assertion": "发布事件契约含核心字段",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MPUB-002",
+      "tc_id": "TC-MPUB-002",
+      "layer": "",
+      "command": "`test -f registry/metrics-adapters.yaml && rg -n \"analyze-data\" registry/metrics-adapters.yaml`",
+      "assertion": "统计 bridge 登记存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MPUB-003",
+      "tc_id": "TC-MPUB-003",
+      "layer": "",
+      "command": "`rg -n \"measured|publication_record|无 publication\" contracts/metrics-publication.contract.md`",
+      "assertion": "measured 守卫声明",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MPUB-004",
+      "tc_id": "TC-MPUB-004",
+      "layer": "",
+      "command": "`rg -n \"metrics-publication.contract\" skills/_internal/orchestration/creation-mode-map.md`",
+      "assertion": "路由回流引用",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MPUB-005",
+      "tc_id": "TC-MPUB-005",
+      "layer": "",
+      "command": "`test -x scripts/check_metrics_publication.sh`",
+      "assertion": "exec 脚本存在且可执行",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MPUB-005",
+      "tc_id": "TC-MPUB-006",
+      "layer": "",
+      "command": "`bash scripts/check_metrics_publication.sh`",
+      "assertion": "exec-layer 校验脚本 PASS（合法路径）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MPUB-002",
+      "tc_id": "TC-MPUB-007",
+      "layer": "",
+      "command": "`python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/metrics-adapters.yaml')); raise SystemExit(0 if len(d.get('adapters',[]))>=3 else 1)\"`",
+      "assertion": "≥3 个 bridge 条目",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MPUB-006",
+      "tc_id": "TC-MPUB-008",
+      "layer": "",
+      "command": "`rg -n \"空快照|禁止|不编造|猜\" contracts/metrics-publication.contract.md`",
+      "assertion": "不编造指标声明",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MPUB-007",
+      "tc_id": "TC-MPUB-009",
+      "layer": "",
+      "command": "`rg -n \"凭证|密钥|secrets|禁止入库\" contracts/metrics-publication.contract.md`",
+      "assertion": "凭证保护",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MPUB-008",
+      "tc_id": "TC-MPUB-010",
+      "layer": "",
+      "command": "`rg -n \"fail-closed|blocked|reason_code\" contracts/metrics-publication.contract.md`",
+      "assertion": "bridge fail-closed",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MPUB-009",
+      "tc_id": "TC-MPUB-011",
+      "layer": "",
+      "command": "`rg -n \"publication_id|url|时间|缺证据\" contracts/metrics-publication.contract.md`",
+      "assertion": "证据要求",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MPUB-010",
+      "tc_id": "TC-MPUB-012",
+      "layer": "",
+      "command": "`rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md && rg -n \"E2|E3|E4\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md`",
+      "assertion": "分湖边界存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MPUB-010",
+      "tc_id": "TC-MPUB-013",
+      "layer": "",
+      "command": "`rg -n \"Illegal|illegal|宣称海\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md`",
+      "assertion": "illegal 转移覆盖（非法拒绝路径）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MPUB-001",
+      "tc_id": "TC-MPUB-014",
+      "layer": "",
+      "command": "`rg -n \"US-MPUB-001|发布事件\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md`",
+      "assertion": "回流旅程可追溯",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MPUB-003",
+      "tc_id": "TC-MPUB-015",
+      "layer": "",
+      "command": "`rg -n \"US-MPUB-002|publication_record_missing\" docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md`",
+      "assertion": "无记录拒绝路径可追溯",
+      "evidence_path": "",
+      "source": ""
+    }
+  ],
+  "task_rows": [
+    {
+      "id": "TASK-001",
+      "title": "Implement AC-MPUB-001: 进入 `contract_landed`：`contracts/metrics-publication.contract.md` 定义发布... · ac=AC-MPUB-001 · evidence=`.beacon/evidence/implement/prism-metrics-publication-v1/AC-MPUB-001.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-002",
+      "title": "Implement AC-MPUB-002: 进入 `registry_landed`：`registry/metrics-adapters.yaml` 登记 ≥3 个统计 bridg... · ac=AC-MPUB-002 · evidence=`.beacon/evidence/implement/prism-metrics-publication-v1/AC-MPUB-002.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-003",
+      "title": "Implement AC-MPUB-003: measured 守卫：契约声明无 publication 记录不得进入 measured（引用 Lake A FSM） · ac=AC-MPUB-003 · evidence=`.beacon/evidence/implement/prism-metrics-publication-v1/AC-MPUB-003.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-004",
+      "title": "Implement AC-MPUB-004: 进入 `routing_landed`：creation-mode-map 发布/回流引用 metrics-publication.con... · ac=AC-MPUB-004 · evidence=`.beacon/evidence/implement/prism-metrics-publication-v1/AC-MPUB-004.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-005",
+      "title": "Implement AC-MPUB-005: 进入 `indexed`：`scripts/check_metrics_publication.sh` exec-layer 校验 PASS · ac=AC-MPUB-005 · evidence=`.beacon/evidence/implement/prism-metrics-publication-v1/AC-MPUB-005.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-006",
+      "title": "Implement AC-MPUB-006: 不编造指标：契约声明缺数据用显式空快照，禁止猜测趋势 · ac=AC-MPUB-006 · evidence=`.beacon/evidence/implement/prism-metrics-publication-v1/AC-MPUB-006.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-007",
+      "title": "Implement AC-MPUB-007: 凭证保护：平台凭证/密钥禁止入库 · ac=AC-MPUB-007 · evidence=`.beacon/evidence/implement/prism-metrics-publication-v1/AC-MPUB-007.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-008",
+      "title": "Implement AC-MPUB-008: bridge fail-closed：统计工具缺失 → blocked + reason_code · ac=AC-MPUB-008 · evidence=`.beacon/evidence/implement/prism-metrics-publication-v1/AC-MPUB-008.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-009",
+      "title": "Implement AC-MPUB-009: 证据要求：事件必须带 publication_id/url/时间，缺证据不算回流 · ac=AC-MPUB-009 · evidence=`.beacon/evidence/implement/prism-metrics-publication-v1/AC-MPUB-009.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-010",
+      "title": "Implement AC-MPUB-010: Non-goals：E2–E4、平台 API 全量、vendor sync-ai 显式排除；不得宣称海 closure · ac=AC-MPUB-010 · evidence=`.beacon/evidence/implement/prism-metrics-publication-v1/AC-MPUB-010.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-011",
+      "title": "Validate package gates (truth review + freeze ack) · ac=GATES · evidence=`.beacon/evidence/implement/prism-metrics-publication-v1/GATES.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-012",
+      "title": "Run QA against AC↔TC matrix + exec-layer evidence · ac=QA · evidence=`.beacon/evidence/implement/prism-metrics-publication-v1/QA-MATRIX.json`",
+      "status": "unchecked"
+    }
+  ],
+  "checkbox_errors": [],
+  "evidence_rows": [
+    {
+      "surface": "package",
+      "authority": "requirement_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md"
+    },
+    {
+      "surface": "tests",
+      "authority": "test_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tests.md"
+    },
+    {
+      "surface": "tasks",
+      "authority": "acceptance_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tasks.md"
+    },
+    {
+      "surface": "program",
+      "authority": "support_advisory",
+      "path": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md"
+    },
+    {
+      "surface": "lake_e_plan",
+      "authority": "support_advisory",
+      "path": "docs/beacon/v0.0.1/programs/prism-canon/lake-e-plan.md"
+    },
+    {
+      "surface": "metrics_contract",
+      "authority": "support_advisory",
+      "path": "contracts/metrics-publication.contract.md"
+    },
+    {
+      "surface": "metrics_adapters",
+      "authority": "support_advisory",
+      "path": "registry/metrics-adapters.yaml"
+    },
+    {
+      "surface": "creation_mode_map",
+      "authority": "support_advisory",
+      "path": "skills/_internal/orchestration/creation-mode-map.md"
+    },
+    {
+      "surface": "check_script",
+      "authority": "support_advisory",
+      "path": "scripts/check_metrics_publication.sh"
+    },
+    {
+      "surface": "publish_bridge",
+      "authority": "support_advisory",
+      "path": "contracts/publish-bridge.contract.md"
+    },
+    {
+      "surface": "source_analyze",
+      "authority": "support_advisory",
+      "path": "/Users/apple/Developer/Personal/products/selfmedia-creator/skills/analyze-data"
+    }
+  ]
+}

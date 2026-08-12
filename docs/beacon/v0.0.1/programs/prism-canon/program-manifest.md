@@ -4,7 +4,7 @@ version: v0.0.1
 plan_mode: interactive
 scope_mode: phased_lake
 lake_or_ocean: 湖
-this_lake: Lake D
+this_lake: Lake E
 sea_promise: full_selfmedia_creation_capability
 extract_to: independent_prism_repo
 beacon_alignment: design_philosophy_only
@@ -13,15 +13,22 @@ repos:
   - prism（本仓）
   - selfmedia-creator（源仓）
   - beacon（设计理念对照；advisory only）
-intent_one_liner: Lake D — 八形态生产链（分 D1–D6 子湖逐个冻结实现）
+intent_one_liner: Lake E — 指标/学习回流（E1 发布证据 → E2 指标快照 → E3 复盘 → E4 学习记忆）
 created_at: "2026-08-11"
-plan_revision: D1-plan
+plan_revision: E1-plan
 journey_freeze: US-SCHEMA-001..003
-prior_lake_feature: prism-extract-v1
-prior_lake_feature: prism-campaign-schema-v1
-current_lake_feature: prism-form-writing-v1
+prior_lake_features:
+  - prism-extract-v1
+  - prism-campaign-schema-v1
+  - prism-form-writing-v1
+  - prism-form-blog-thread-v1
+  - prism-form-image-post-v1
+  - prism-form-novel-v1
+  - prism-form-av-v1
+  - prism-publish-bridge-v1
+current_lake_feature: prism-metrics-publication-v1
 source_freeze: selfmedia-creator prism-canon-v1@R3
-source_deferral: DL-003
+source_deferral: DL-004
 ---
 
 # Program Manifest — prism-canon（Prism 仓 · Lake D）
@@ -130,3 +137,8 @@ D5 comic/vlog/book_video → D6 publish bridge。详见 `programs/prism-canon/la
 - `release_accepted`：8 features（B/C/D1–D6）全部 QA 通过并合入 main
 - 证据：`docs/beacon/v0.0.1/release/v0.0.1-release-confirmation.md` + `beacon release scorecard v0.0.1`（release_ready=true）
 - 平台公开发布仍逐内容人工门；Lake E 规划待启动
+
+## Lake E（2026-08-12 规划）
+
+pln-program 拆分完成：E1 发布证据回流 → E2 MetricsSnapshot 指标快照 → E3 战役复盘/圣经更新 →
+E4 可回放学习记忆。详见 `programs/prism-canon/lake-e-plan.md`。当前进入 E1（`prism-metrics-publication-v1`）。
