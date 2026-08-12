@@ -82,3 +82,9 @@ planner-review 发现 main 树四件套被占位草稿覆盖、machine 投影与
 pln-program 已完成八形态拆分：D1 writing 基础链 → D2 blog/thread → D3 贴图/xhs → D4 novel →
 D5 comic/vlog/book_video → D6 publish bridge。详见 `programs/prism-canon/lake-d-plan.md`。
 当前进入 D1（`prism-form-writing-v1`）truth → freeze → implement → QA。
+
+## Lake D1 交付状态（2026-08-12）
+
+- truth：R1 frozen · implement：15/15 TC pass（`scripts/check_writing_adapters.sh` exec PASS）
+- QA：`run-20260812T084228065759` · 10/10 AC · 15/15 scenario · release_confidence 1.0 · `release_ready=true`
+- 下一子湖：D2（`prism-form-blog-thread-v1`）待启动；release 人工门待确认

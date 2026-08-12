@@ -13,12 +13,18 @@
   "truth_authority": false,
   "lifecycle_stage": false,
   "release_publish_action": false,
-  "feature_count": 2,
+  "feature_count": 3,
   "features": [
     {
       "feature": "prism-campaign-schema-v1",
       "feature_slug": "prism-campaign-schema-v1",
       "summary": "Maintains release-facing version aggregate projection guards so QA accepted features are included in version change scope before release check.",
+      "status": "generated"
+    },
+    {
+      "feature": "prism-form-writing-v1",
+      "feature_slug": "prism-form-writing-v1",
+      "summary": "Lake D1 writing/humanize/anti-slop base（MAP-005 distill+bridge）.",
       "status": "generated"
     },
     {
@@ -30,10 +36,11 @@
   ],
   "implementation_order": {
     "status": "analyzed",
-    "feature_count": 2,
+    "feature_count": 3,
     "ordered_feature_slugs": [
       "prism-extract-v1",
-      "prism-campaign-schema-v1"
+      "prism-campaign-schema-v1",
+      "prism-form-writing-v1"
     ],
     "waves": [
       {
@@ -53,15 +60,28 @@
             "parallelizable": true,
             "reason_code": "parallel_no_conflict"
           },
-          {
-            "feature": "prism-campaign-schema-v1",
-            "feature_slug": "prism-campaign-schema-v1",
-            "depends_on_features": [],
-            "direct_delivery_services": [],
-            "writable_services": [],
-            "parallelizable": true,
-            "reason_code": "parallel_no_conflict"
-          }
+      {
+        "feature": "prism-campaign-schema-v1",
+        "feature_slug": "prism-campaign-schema-v1",
+        "depends_on_features": [],
+        "direct_delivery_services": [],
+        "writable_services": [],
+        "parallelizable": true,
+        "reason_code": "parallel_no_conflict"
+      },
+      {
+        "feature": "prism-form-writing-v1",
+        "feature_slug": "prism-form-writing-v1",
+        "depends_on_features": [],
+        "direct_delivery_services": [
+          "."
+        ],
+        "writable_services": [
+          "."
+        ],
+        "parallelizable": true,
+        "reason_code": "parallel_no_conflict"
+      }
         ]
       }
     ]
