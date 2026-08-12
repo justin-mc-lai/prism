@@ -1,0 +1,643 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-form-av-v1",
+  "feature_slug": "prism-form-av-v1",
+  "version": "v0.0.1",
+  "runtime_version": "v1.6.12",
+  "runtime_capability_line": "v1.3.3",
+  "required": true,
+  "reason_code": "",
+  "blocked": false,
+  "status": "pass",
+  "findings": [],
+  "report_json_path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-form-av-v1.json",
+  "report_markdown_path": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-form-av-v1.md",
+  "state_path": ".beacon/state/requirement-clarity-prism-form-av-v1.json",
+  "diagram_truth": {
+    "schema_version": "1.0",
+    "version": "v0.0.1",
+    "supported": false,
+    "required": false,
+    "ready": false,
+    "diagram_types": [],
+    "state_axes": [],
+    "missing_diagram_types": [],
+    "missing_state_axes": false,
+    "complexity_signals": [],
+    "review_gates": [],
+    "qa_coverage_hints": [],
+    "evidence_lines": {},
+    "generated_at": "2026-08-12T01:02:04.649966+00:00",
+    "feature": "prism-form-av-v1",
+    "feature_slug": "prism-form-av-v1",
+    "prd_ref": "docs/beacon/v0.0.1/prd/prism-form-av-v1.md",
+    "user_story_ref": "docs/beacon/v0.0.1/user-story/prism-form-av-v1.md"
+  },
+  "domain_fsm_gate": {
+    "schema_version": "1.0",
+    "feature": "prism-form-av-v1",
+    "feature_slug": "prism-form-av-v1",
+    "version": "v0.0.1",
+    "truth_path": "docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md",
+    "tests_path": "docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md",
+    "required": true,
+    "blocked": false,
+    "status": "pass",
+    "reason_code": "",
+    "findings": [],
+    "requirement": {
+      "required": true,
+      "reason": "explicit_domain_mark",
+      "explicit": true,
+      "partial": true,
+      "complexity": false,
+      "business_signal": false,
+      "version_supported": false
+    },
+    "projection": {
+      "schema_version": "1.0",
+      "domain_fsm_schema": "domain-fsm.v1",
+      "entity_precedence_schema": "entity-precedence.v1",
+      "frontmatter": {
+        "slug": "prism-form-av-v1",
+        "version": "v0.0.1",
+        "status": "draft",
+        "revision_id": "R1",
+        "language": "zh",
+        "domain_required": "true",
+        "ux_required": "false",
+        "parser_contract": "beacon-feature-package-v2",
+        "materials_status": "current",
+        "package_maturity": "filled",
+        "truth_source_model": "intent_first",
+        "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+        "canonical_refs": {
+          "prd": "docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md",
+          "user_story": "docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md",
+          "test_case": "docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md"
+        },
+        "provenance": {
+          "- ac_id": "AC-AV-002",
+          "source_type": "source_evidence",
+          "source_ref": "openmontage AGPL-3.0 / comic-storyboard 3:4 竖版规则"
+        }
+      },
+      "frontmatter_errors": [],
+      "has_domain_model_section": true,
+      "has_domain_fsm_section": true,
+      "has_illegal_transition_section": true,
+      "entities": [
+        {
+          "entity": "AvFormContract",
+          "key": "form-av",
+          "precedence": "comic/vlog/book_video 路由 + 交接字段",
+          "requires": "comic/vlog/book_video 路由 + 交接字段"
+        },
+        {
+          "entity": "DirectorHandoff",
+          "key": "treatment/map/shotlist",
+          "precedence": "必填输入",
+          "requires": "必填输入"
+        },
+        {
+          "entity": "BridgeRoute",
+          "key": "form",
+          "precedence": "工具名 + 调用方式 + fail-closed",
+          "requires": "工具名 + 调用方式 + fail-closed"
+        },
+        {
+          "entity": "LicenseNote",
+          "key": "license",
+          "precedence": "AGPL 等；pin 需批准",
+          "requires": "AGPL 等；pin 需批准"
+        }
+      ],
+      "entity_precedence": [
+        {
+          "entity": "AvFormContract",
+          "key": "form-av",
+          "precedence": "comic/vlog/book_video 路由 + 交接字段",
+          "requires": "comic/vlog/book_video 路由 + 交接字段"
+        },
+        {
+          "entity": "DirectorHandoff",
+          "key": "treatment/map/shotlist",
+          "precedence": "必填输入",
+          "requires": "必填输入"
+        },
+        {
+          "entity": "BridgeRoute",
+          "key": "form",
+          "precedence": "工具名 + 调用方式 + fail-closed",
+          "requires": "工具名 + 调用方式 + fail-closed"
+        },
+        {
+          "entity": "LicenseNote",
+          "key": "license",
+          "precedence": "AGPL 等；pin 需批准",
+          "requires": "AGPL 等；pin 需批准"
+        }
+      ],
+      "aggregates": [
+        {
+          "name": "落地）",
+          "states": [
+            "av_contract_landed",
+            "av_planned",
+            "forms_registered",
+            "human_accepted",
+            "indexed",
+            "qa_pass",
+            "release_candidate",
+            "routing_landed"
+          ],
+          "transitions": [
+            {
+              "from": "av_planned",
+              "to": "forms_registered",
+              "guard": "form-registry 含 comic/vlog/book_video"
+            },
+            {
+              "from": "forms_registered",
+              "to": "av_contract_landed",
+              "guard": "form-av.contract present"
+            },
+            {
+              "from": "av_contract_landed",
+              "to": "routing_landed",
+              "guard": "creation-mode-map 引用 form-av.contract"
+            },
+            {
+              "from": "routing_landed",
+              "to": "indexed",
+              "guard": "exec 脚本 + 无泄漏"
+            },
+            {
+              "from": "indexed",
+              "to": "qa_pass",
+              "guard": "all TC pass"
+            },
+            {
+              "from": "qa_pass",
+              "to": "release_candidate",
+              "guard": "evidence complete"
+            },
+            {
+              "from": "release_candidate",
+              "to": "human_accepted",
+              "guard": "human confirmed"
+            }
+          ]
+        }
+      ],
+      "illegal_transition_slots": [
+        {
+          "description": "av_planned → routing_landed（跳过注册/契约）",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "indexed → human_accepted（跳过 QA）",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "无 director handoff 仍产出",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "bridge 缺失仍产出",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "未过 license 门仍 vendor_pin",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "宣称 Lake D 全部完成",
+          "aggregate": "",
+          "source": "truth"
+        }
+      ],
+      "acceptance_criteria": [
+        {
+          "ac_id": "AC-AV-001",
+          "description": "进入 `forms_registered`：form-registry 登记 comic、vlog、book_video"
+        },
+        {
+          "ac_id": "AC-AV-002",
+          "description": "进入 `av_contract_landed`：`contracts/form-av.contract.md` 定义三形态 bridge 路由（comic-storyboard / openmontage / book_video / rnskill）与 fail-closed"
+        },
+        {
+          "ac_id": "AC-AV-003",
+          "description": "director handoff：契约要求 treatment / presentation map / shot list / storyboard 作为必填输入"
+        },
+        {
+          "ac_id": "AC-AV-004",
+          "description": "进入 `routing_landed`：creation-mode-map 的 vlog 行引用 form-av.contract，并新增 comic / book_video 行"
+        },
+        {
+          "ac_id": "AC-AV-005",
+          "description": "进入 `indexed`：`scripts/check_av_forms.sh` exec-layer 校验 PASS"
+        },
+        {
+          "ac_id": "AC-AV-006",
+          "description": "license 注记：契约声明 AGPL-3.0 等 license 边界；默认 bridge；pin 需人工批准 + ATTRIBUTION"
+        },
+        {
+          "ac_id": "AC-AV-007",
+          "description": "bridge fail-closed：工具缺失 → blocked + reason_code"
+        },
+        {
+          "ac_id": "AC-AV-008",
+          "description": "QA 门：字幕/文字无乱码、版权安全、分镜/图序一致、anti-slop-gate 文案证据"
+        },
+        {
+          "ac_id": "AC-AV-009",
+          "description": "maker≠checker：form-av 契约与 QA 门分离"
+        },
+        {
+          "ac_id": "AC-AV-010",
+          "description": "Non-goals：D6、vendor_pin 全量、metrics、平台 API 显式排除；不得宣称海 closure"
+        }
+      ],
+      "bound_ac_ids": [
+        "AC-AV-001",
+        "AC-AV-002",
+        "AC-AV-003",
+        "AC-AV-004",
+        "AC-AV-005"
+      ],
+      "orphan_ac_ids": [],
+      "aggregates_missing_illegal_slots": [],
+      "raw_section_titles": [
+        "人话",
+        "User Intent",
+        "User Intent Snapshot",
+        "Intent Coverage Matrix",
+        "First principles（域）",
+        "用户旅程 / 故事",
+        "Domain Model",
+        "Domain FSM（D5 落地）",
+        "Illegal transitions",
+        "FSM 五元组",
+        "Alignment Surface",
+        "Deferral Ledger",
+        "Acceptance Criteria",
+        "Non-goals",
+        "Freeze readiness"
+      ]
+    },
+    "validation": {
+      "schema_version": "1.0",
+      "required": true,
+      "blocked": false,
+      "status": "pass",
+      "reason_code": "",
+      "findings": [],
+      "projection": {
+        "schema_version": "1.0",
+        "domain_fsm_schema": "domain-fsm.v1",
+        "entity_precedence_schema": "entity-precedence.v1",
+        "frontmatter": {
+          "slug": "prism-form-av-v1",
+          "version": "v0.0.1",
+          "status": "draft",
+          "revision_id": "R1",
+          "language": "zh",
+          "domain_required": "true",
+          "ux_required": "false",
+          "parser_contract": "beacon-feature-package-v2",
+          "materials_status": "current",
+          "package_maturity": "filled",
+          "truth_source_model": "intent_first",
+          "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+          "canonical_refs": {
+            "prd": "docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md",
+            "user_story": "docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md",
+            "test_case": "docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md"
+          },
+          "provenance": {
+            "- ac_id": "AC-AV-002",
+            "source_type": "source_evidence",
+            "source_ref": "openmontage AGPL-3.0 / comic-storyboard 3:4 竖版规则"
+          }
+        },
+        "frontmatter_errors": [],
+        "has_domain_model_section": true,
+        "has_domain_fsm_section": true,
+        "has_illegal_transition_section": true,
+        "entities": [
+          {
+            "entity": "AvFormContract",
+            "key": "form-av",
+            "precedence": "comic/vlog/book_video 路由 + 交接字段",
+            "requires": "comic/vlog/book_video 路由 + 交接字段"
+          },
+          {
+            "entity": "DirectorHandoff",
+            "key": "treatment/map/shotlist",
+            "precedence": "必填输入",
+            "requires": "必填输入"
+          },
+          {
+            "entity": "BridgeRoute",
+            "key": "form",
+            "precedence": "工具名 + 调用方式 + fail-closed",
+            "requires": "工具名 + 调用方式 + fail-closed"
+          },
+          {
+            "entity": "LicenseNote",
+            "key": "license",
+            "precedence": "AGPL 等；pin 需批准",
+            "requires": "AGPL 等；pin 需批准"
+          }
+        ],
+        "entity_precedence": [
+          {
+            "entity": "AvFormContract",
+            "key": "form-av",
+            "precedence": "comic/vlog/book_video 路由 + 交接字段",
+            "requires": "comic/vlog/book_video 路由 + 交接字段"
+          },
+          {
+            "entity": "DirectorHandoff",
+            "key": "treatment/map/shotlist",
+            "precedence": "必填输入",
+            "requires": "必填输入"
+          },
+          {
+            "entity": "BridgeRoute",
+            "key": "form",
+            "precedence": "工具名 + 调用方式 + fail-closed",
+            "requires": "工具名 + 调用方式 + fail-closed"
+          },
+          {
+            "entity": "LicenseNote",
+            "key": "license",
+            "precedence": "AGPL 等；pin 需批准",
+            "requires": "AGPL 等；pin 需批准"
+          }
+        ],
+        "aggregates": [
+          {
+            "name": "落地）",
+            "states": [
+              "av_contract_landed",
+              "av_planned",
+              "forms_registered",
+              "human_accepted",
+              "indexed",
+              "qa_pass",
+              "release_candidate",
+              "routing_landed"
+            ],
+            "transitions": [
+              {
+                "from": "av_planned",
+                "to": "forms_registered",
+                "guard": "form-registry 含 comic/vlog/book_video"
+              },
+              {
+                "from": "forms_registered",
+                "to": "av_contract_landed",
+                "guard": "form-av.contract present"
+              },
+              {
+                "from": "av_contract_landed",
+                "to": "routing_landed",
+                "guard": "creation-mode-map 引用 form-av.contract"
+              },
+              {
+                "from": "routing_landed",
+                "to": "indexed",
+                "guard": "exec 脚本 + 无泄漏"
+              },
+              {
+                "from": "indexed",
+                "to": "qa_pass",
+                "guard": "all TC pass"
+              },
+              {
+                "from": "qa_pass",
+                "to": "release_candidate",
+                "guard": "evidence complete"
+              },
+              {
+                "from": "release_candidate",
+                "to": "human_accepted",
+                "guard": "human confirmed"
+              }
+            ]
+          }
+        ],
+        "illegal_transition_slots": [
+          {
+            "description": "av_planned → routing_landed（跳过注册/契约）",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "indexed → human_accepted（跳过 QA）",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "无 director handoff 仍产出",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "bridge 缺失仍产出",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "未过 license 门仍 vendor_pin",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "宣称 Lake D 全部完成",
+            "aggregate": "",
+            "source": "truth"
+          }
+        ],
+        "acceptance_criteria": [
+          {
+            "ac_id": "AC-AV-001",
+            "description": "进入 `forms_registered`：form-registry 登记 comic、vlog、book_video"
+          },
+          {
+            "ac_id": "AC-AV-002",
+            "description": "进入 `av_contract_landed`：`contracts/form-av.contract.md` 定义三形态 bridge 路由（comic-storyboard / openmontage / book_video / rnskill）与 fail-closed"
+          },
+          {
+            "ac_id": "AC-AV-003",
+            "description": "director handoff：契约要求 treatment / presentation map / shot list / storyboard 作为必填输入"
+          },
+          {
+            "ac_id": "AC-AV-004",
+            "description": "进入 `routing_landed`：creation-mode-map 的 vlog 行引用 form-av.contract，并新增 comic / book_video 行"
+          },
+          {
+            "ac_id": "AC-AV-005",
+            "description": "进入 `indexed`：`scripts/check_av_forms.sh` exec-layer 校验 PASS"
+          },
+          {
+            "ac_id": "AC-AV-006",
+            "description": "license 注记：契约声明 AGPL-3.0 等 license 边界；默认 bridge；pin 需人工批准 + ATTRIBUTION"
+          },
+          {
+            "ac_id": "AC-AV-007",
+            "description": "bridge fail-closed：工具缺失 → blocked + reason_code"
+          },
+          {
+            "ac_id": "AC-AV-008",
+            "description": "QA 门：字幕/文字无乱码、版权安全、分镜/图序一致、anti-slop-gate 文案证据"
+          },
+          {
+            "ac_id": "AC-AV-009",
+            "description": "maker≠checker：form-av 契约与 QA 门分离"
+          },
+          {
+            "ac_id": "AC-AV-010",
+            "description": "Non-goals：D6、vendor_pin 全量、metrics、平台 API 显式排除；不得宣称海 closure"
+          }
+        ],
+        "bound_ac_ids": [
+          "AC-AV-001",
+          "AC-AV-002",
+          "AC-AV-003",
+          "AC-AV-004",
+          "AC-AV-005"
+        ],
+        "orphan_ac_ids": [],
+        "aggregates_missing_illegal_slots": [],
+        "raw_section_titles": [
+          "人话",
+          "User Intent",
+          "User Intent Snapshot",
+          "Intent Coverage Matrix",
+          "First principles（域）",
+          "用户旅程 / 故事",
+          "Domain Model",
+          "Domain FSM（D5 落地）",
+          "Illegal transitions",
+          "FSM 五元组",
+          "Alignment Surface",
+          "Deferral Ledger",
+          "Acceptance Criteria",
+          "Non-goals",
+          "Freeze readiness"
+        ]
+      },
+      "summary": {
+        "entity_count": 4,
+        "aggregate_count": 1,
+        "illegal_slot_count": 6,
+        "orphan_ac_count": 0,
+        "bound_ac_count": 5
+      }
+    },
+    "recommended_action": ""
+  },
+  "human_closure_contract": {
+    "required": false,
+    "research_path": "docs/beacon/v0.0.1/research/prism-form-av-v1.md",
+    "research_exists": true,
+    "source_architecture_path": "docs/beacon/v0.0.1/source-architecture/index.md",
+    "source_architecture_exists": true,
+    "required_sections": [
+      "architecture",
+      "business_flow"
+    ],
+    "missing_sections": [
+      "architecture",
+      "business_flow"
+    ],
+    "diagram_types": [],
+    "complexity_signals": []
+  },
+  "requirement_closure_contract": {
+    "required": true,
+    "chain_order": [
+      "research",
+      "prd",
+      "user_story",
+      "test_case",
+      "requirement_clarity",
+      "freeze"
+    ],
+    "human_closure_required": false,
+    "paths": {
+      "research": "docs/beacon/v0.0.1/research/prism-form-av-v1.md",
+      "prd": "docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md"
+    },
+    "exists": {
+      "research": true,
+      "prd": true,
+      "user_story": true,
+      "test_case": true
+    },
+    "required_research_sections": [],
+    "missing_research_sections": [],
+    "ac_projection": {
+      "prd_ac_ids": [],
+      "user_story_ac_ids": [],
+      "test_case_ac_ids": [],
+      "upstream_ac_ids": [],
+      "missing_test_case_ac_ids": []
+    }
+  },
+  "version_projection_truth_contract": {
+    "required": false,
+    "supported": false,
+    "projection_types": [],
+    "research_path": "docs/beacon/v0.0.1/research/prism-form-av-v1.md",
+    "research_exists": true,
+    "required_fields": [
+      "prd_refs",
+      "user_story_refs",
+      "test_case_refs",
+      "coverage_notes",
+      "out_of_scope_notes"
+    ],
+    "field_presence": {
+      "prd_refs": false,
+      "user_story_refs": false,
+      "test_case_refs": false,
+      "coverage_notes": false,
+      "out_of_scope_notes": false
+    },
+    "missing_fields": [],
+    "required_refs": {
+      "prd_refs": "docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md",
+      "user_story_refs": "docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md",
+      "test_case_refs": "docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md"
+    },
+    "missing_ref_targets": [],
+    "ready": false
+  },
+  "support_write_topology_contract": {
+    "schema_version": "1.0",
+    "supported": true,
+    "status": "pass",
+    "blocked": false,
+    "reason_code": "",
+    "diagnostics": []
+  },
+  "required_artifacts": [],
+  "scanned_files": [
+    "docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md",
+    "docs/beacon/v0.0.1/features/prism-form-av-v1/tasks.md",
+    "docs/beacon/v0.0.1/features/prism-form-av-v1/evidence.md",
+    "docs/beacon/v0.0.1/research/prism-form-av-v1.md"
+  ]
+}

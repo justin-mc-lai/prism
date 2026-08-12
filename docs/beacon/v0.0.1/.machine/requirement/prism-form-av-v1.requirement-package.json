@@ -1,0 +1,365 @@
+{
+  "schema_version": "1.0",
+  "truth_map_contract": "beacon-truth-map-v1",
+  "truth_source_model": "feature_package_authoritative",
+  "truth_package_contract": "beacon-feature-package-v2",
+  "machine_json_role": "generated_state_not_truth",
+  "generated_by": "beacon.truth_map.resolver",
+  "generated_at": "2026-08-12T01:02:05.121970+00:00",
+  "feature": "prism-form-av-v1",
+  "feature_slug": "prism-form-av-v1",
+  "version": "v0.0.1",
+  "truth_authority": false,
+  "json_authority": false,
+  "source_paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md",
+    "tasks": "docs/beacon/v0.0.1/features/prism-form-av-v1/tasks.md",
+    "evidence": "docs/beacon/v0.0.1/features/prism-form-av-v1/evidence.md"
+  },
+  "source_hashes": {
+    "truth": "c29c7a13a5f021fb2fe9e753eb3c0c83a212579bbdaf0848479544bf5cd130b1",
+    "tests": "39eb8d2dd2112cd2d001c4144094677e2664202c97da4510687afabe9c7e81f2",
+    "tasks": "2179cbd0b4fd075255b3d84bdd8cd80749383dbabf87f169d40eb99b670e6187",
+    "evidence": "f58fb8080632d7a03682832230479ae18a379af0ba86d7072b97e3ddf23a752a"
+  },
+  "truth_frontmatter": {
+    "slug": "prism-form-av-v1",
+    "version": "v0.0.1",
+    "status": "frozen",
+    "revision_id": "R1",
+    "language": "zh",
+    "domain_required": "true",
+    "ux_required": "false",
+    "parser_contract": "beacon-feature-package-v2",
+    "materials_status": "current",
+    "package_maturity": "filled",
+    "truth_source_model": "intent_first",
+    "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+    "canonical_refs": {
+      "prd": "docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md"
+    },
+    "provenance": {
+      "- ac_id": "AC-AV-002",
+      "source_type": "source_evidence",
+      "source_ref": "openmontage AGPL-3.0 / comic-storyboard 3:4 竖版规则"
+    }
+  },
+  "frontmatter_errors": [],
+  "acceptance_criteria": [
+    {
+      "ac_id": "AC-AV-001",
+      "theme": "进入 `forms_registered`：form-registry 登记 comic、vlog、book_video",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-AV-002",
+      "theme": "进入 `av_contract_landed`：`contracts/form-av.contract.md` 定义三形态 bridge 路由（comic-storyboard / openmontage / book_video / rnskill）与 fail-closed",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-AV-003",
+      "theme": "director handoff：契约要求 treatment / presentation map / shot list / storyboard 作为必填输入",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-AV-004",
+      "theme": "进入 `routing_landed`：creation-mode-map 的 vlog 行引用 form-av.contract，并新增 comic / book_video 行",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-AV-005",
+      "theme": "进入 `indexed`：`scripts/check_av_forms.sh` exec-layer 校验 PASS",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-AV-006",
+      "theme": "license 注记：契约声明 AGPL-3.0 等 license 边界；默认 bridge；pin 需人工批准 + ATTRIBUTION",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-AV-007",
+      "theme": "bridge fail-closed：工具缺失 → blocked + reason_code",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-AV-008",
+      "theme": "QA 门：字幕/文字无乱码、版权安全、分镜/图序一致、anti-slop-gate 文案证据",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-AV-009",
+      "theme": "maker≠checker：form-av 契约与 QA 门分离",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-AV-010",
+      "theme": "Non-goals：D6、vendor_pin 全量、metrics、平台 API 显式排除；不得宣称海 closure",
+      "description": ""
+    }
+  ],
+  "test_rows": [
+    {
+      "ac_id": "AC-AV-001",
+      "tc_id": "TC-AV-001",
+      "layer": "",
+      "command": "`test -f registry/form-registry.yaml && rg -n \"comic\" registry/form-registry.yaml && rg -n \"vlog\" registry/form-registry.yaml && rg -n \"book_video\" registry/form-registry.yaml`",
+      "assertion": "form registry 注册 AV 三形态",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-AV-002",
+      "tc_id": "TC-AV-002",
+      "layer": "",
+      "command": "`test -f contracts/form-av.contract.md && rg -n \"comic-storyboard|openmontage|book_video|rnskill\" contracts/form-av.contract.md`",
+      "assertion": "AV 契约含三形态 bridge 路由",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-AV-003",
+      "tc_id": "TC-AV-003",
+      "layer": "",
+      "command": "`rg -n \"treatment|presentation map|shot list|storyboard\" contracts/form-av.contract.md`",
+      "assertion": "director handoff 字段",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-AV-004",
+      "tc_id": "TC-AV-004",
+      "layer": "",
+      "command": "`rg -n \"form-av.contract\" skills/_internal/orchestration/creation-mode-map.md && rg -n \"comic|book_video\" skills/_internal/orchestration/creation-mode-map.md`",
+      "assertion": "路由引用 AV 契约",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-AV-005",
+      "tc_id": "TC-AV-005",
+      "layer": "",
+      "command": "`test -x scripts/check_av_forms.sh`",
+      "assertion": "exec 脚本存在且可执行",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-AV-005",
+      "tc_id": "TC-AV-006",
+      "layer": "",
+      "command": "`bash scripts/check_av_forms.sh`",
+      "assertion": "exec-layer 校验脚本 PASS（合法路径）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-AV-001",
+      "tc_id": "TC-AV-007",
+      "layer": "",
+      "command": "`python3 -c \"import yaml,sys; d=yaml.safe_load(open('registry/form-registry.yaml')); fs={f['form'] for f in d['forms']}; raise SystemExit(0 if {'comic','vlog','book_video'}<=fs else 1)\"`",
+      "assertion": "registry 含 AV 三形态",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-AV-006",
+      "tc_id": "TC-AV-008",
+      "layer": "",
+      "command": "`rg -n \"AGPL|license|ATTRIBUTION|vendor_pin|批准\" contracts/form-av.contract.md`",
+      "assertion": "license 注记",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-AV-007",
+      "tc_id": "TC-AV-009",
+      "layer": "",
+      "command": "`rg -n \"fail-closed|blocked|reason_code\" contracts/form-av.contract.md`",
+      "assertion": "bridge fail-closed",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-AV-008",
+      "tc_id": "TC-AV-010",
+      "layer": "",
+      "command": "`rg -n \"乱码|版权|分镜|图序|anti-slop\" contracts/form-av.contract.md && rg -n \"证据|evidence\" contracts/form-av.contract.md`",
+      "assertion": "QA 门与证据",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-AV-009",
+      "tc_id": "TC-AV-011",
+      "layer": "",
+      "command": "`test -f skills/prism-qa/references/anti-slop-gate.md && test ! -f contracts/form-av.contract.md.qa`",
+      "assertion": "maker≠checker 分离",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-AV-010",
+      "tc_id": "TC-AV-012",
+      "layer": "",
+      "command": "`rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md && rg -n \"D6\" docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md && rg -n \"海 closure\" docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md`",
+      "assertion": "分湖边界存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-AV-010",
+      "tc_id": "TC-AV-013",
+      "layer": "",
+      "command": "`rg -n \"Illegal|illegal|宣称 Lake D\" docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md`",
+      "assertion": "illegal 转移覆盖（非法拒绝路径）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-AV-002",
+      "tc_id": "TC-AV-014",
+      "layer": "",
+      "command": "`rg -n \"US-AV-001|漫画\" docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md`",
+      "assertion": "漫画旅程可追溯",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-AV-002",
+      "tc_id": "TC-AV-015",
+      "layer": "",
+      "command": "`rg -n \"US-AV-002|vlog|US-AV-003|book_video\" docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md`",
+      "assertion": "vlog/book_video 旅程可追溯",
+      "evidence_path": "",
+      "source": ""
+    }
+  ],
+  "task_rows": [
+    {
+      "id": "TASK-001",
+      "title": "Implement AC-AV-001: 进入 `forms_registered`：form-registry 登记 comic、vlog、book_video · ac=AC-AV-001 · evidence=`.beacon/evidence/implement/prism-form-av-v1/AC-AV-001.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-002",
+      "title": "Implement AC-AV-002: 进入 `av_contract_landed`：`contracts/form-av.contract.md` 定义三形态 bridge ... · ac=AC-AV-002 · evidence=`.beacon/evidence/implement/prism-form-av-v1/AC-AV-002.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-003",
+      "title": "Implement AC-AV-003: director handoff：契约要求 treatment / presentation map / shot list / stor... · ac=AC-AV-003 · evidence=`.beacon/evidence/implement/prism-form-av-v1/AC-AV-003.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-004",
+      "title": "Implement AC-AV-004: 进入 `routing_landed`：creation-mode-map 的 vlog 行引用 form-av.contract，并新增... · ac=AC-AV-004 · evidence=`.beacon/evidence/implement/prism-form-av-v1/AC-AV-004.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-005",
+      "title": "Implement AC-AV-005: 进入 `indexed`：`scripts/check_av_forms.sh` exec-layer 校验 PASS · ac=AC-AV-005 · evidence=`.beacon/evidence/implement/prism-form-av-v1/AC-AV-005.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-006",
+      "title": "Implement AC-AV-006: license 注记：契约声明 AGPL-3.0 等 license 边界；默认 bridge；pin 需人工批准 + ATTRIBUTION · ac=AC-AV-006 · evidence=`.beacon/evidence/implement/prism-form-av-v1/AC-AV-006.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-007",
+      "title": "Implement AC-AV-007: bridge fail-closed：工具缺失 → blocked + reason_code · ac=AC-AV-007 · evidence=`.beacon/evidence/implement/prism-form-av-v1/AC-AV-007.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-008",
+      "title": "Implement AC-AV-008: QA 门：字幕/文字无乱码、版权安全、分镜/图序一致、anti-slop-gate 文案证据 · ac=AC-AV-008 · evidence=`.beacon/evidence/implement/prism-form-av-v1/AC-AV-008.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-009",
+      "title": "Implement AC-AV-009: maker≠checker：form-av 契约与 QA 门分离 · ac=AC-AV-009 · evidence=`.beacon/evidence/implement/prism-form-av-v1/AC-AV-009.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-010",
+      "title": "Implement AC-AV-010: Non-goals：D6、vendor_pin 全量、metrics、平台 API 显式排除；不得宣称海 closure · ac=AC-AV-010 · evidence=`.beacon/evidence/implement/prism-form-av-v1/AC-AV-010.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-011",
+      "title": "Validate package gates (truth review + freeze ack) · ac=GATES · evidence=`.beacon/evidence/implement/prism-form-av-v1/GATES.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-012",
+      "title": "Run QA against AC↔TC matrix + exec-layer evidence · ac=QA · evidence=`.beacon/evidence/implement/prism-form-av-v1/QA-MATRIX.json`",
+      "status": "unchecked"
+    }
+  ],
+  "checkbox_errors": [],
+  "evidence_rows": [
+    {
+      "surface": "package",
+      "authority": "requirement_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md"
+    },
+    {
+      "surface": "tests",
+      "authority": "test_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md"
+    },
+    {
+      "surface": "tasks",
+      "authority": "acceptance_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-form-av-v1/tasks.md"
+    },
+    {
+      "surface": "program",
+      "authority": "support_advisory",
+      "path": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md"
+    },
+    {
+      "surface": "lake_d_plan",
+      "authority": "support_advisory",
+      "path": "docs/beacon/v0.0.1/programs/prism-canon/lake-d-plan.md"
+    },
+    {
+      "surface": "form_registry",
+      "authority": "support_advisory",
+      "path": "registry/form-registry.yaml"
+    },
+    {
+      "surface": "av_contract",
+      "authority": "support_advisory",
+      "path": "contracts/form-av.contract.md"
+    },
+    {
+      "surface": "creation_mode_map",
+      "authority": "support_advisory",
+      "path": "skills/_internal/orchestration/creation-mode-map.md"
+    },
+    {
+      "surface": "check_script",
+      "authority": "support_advisory",
+      "path": "scripts/check_av_forms.sh"
+    },
+    {
+      "surface": "source_openmontage",
+      "authority": "support_advisory",
+      "path": "/Users/apple/Developer/Personal/products/selfmedia-creator/skills/openmontage"
+    },
+    {
+      "surface": "source_comic",
+      "authority": "support_advisory",
+      "path": "/Users/apple/Developer/Personal/products/selfmedia-creator/skills/comic-storyboard"
+    },
+    {
+      "surface": "source_rnskill",
+      "authority": "support_advisory",
+      "path": "/Users/apple/Developer/Personal/products/selfmedia-creator/skills/rnskill"
+    }
+  ]
+}

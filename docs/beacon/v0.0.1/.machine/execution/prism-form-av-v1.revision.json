@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-form-av-v1",
+  "feature_slug": "prism-form-av-v1",
+  "version": "v0.0.1",
+  "revision_id": "R1",
+  "source_revision_id": "",
+  "reason": "freeze",
+  "doc_status": "frozen",
+  "delivery_status": "idle",
+  "lifecycle_status": "idle",
+  "baseline_hash": "sha256:e3f28210fd7559df9857857d62c2e1ce2bd40d6371004c3ce42d195848484e78",
+  "superseded_by": "",
+  "created_at": "2026-08-12T01:02:04.977849+00:00",
+  "frozen_at": "2026-08-12T01:02:04.978541+00:00",
+  "accepted_at": ""
+}

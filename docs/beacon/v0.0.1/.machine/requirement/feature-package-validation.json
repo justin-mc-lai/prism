@@ -1,15 +1,15 @@
 {
   "schema_version": "1.0",
-  "feature": "prism-form-novel-v1",
-  "feature_slug": "prism-form-novel-v1",
+  "feature": "prism-form-av-v1",
+  "feature_slug": "prism-form-av-v1",
   "version": "v0.0.1",
   "status": "pass",
   "blocked": false,
   "reason_code": "",
-  "generated_at": "2026-08-12T00:57:30.561449+00:00",
-  "package_dir": "docs/beacon/v0.0.1/features/prism-form-novel-v1",
+  "generated_at": "2026-08-12T01:02:04.982546+00:00",
+  "package_dir": "docs/beacon/v0.0.1/features/prism-form-av-v1",
   "truth_frontmatter": {
-    "slug": "prism-form-novel-v1",
+    "slug": "prism-form-av-v1",
     "version": "v0.0.1",
     "status": "frozen",
     "revision_id": "R1",
@@ -22,20 +22,20 @@
     "truth_source_model": "intent_first",
     "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
     "canonical_refs": {
-      "prd": "docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md",
-      "user_story": "docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md",
-      "test_case": "docs/beacon/v0.0.1/features/prism-form-novel-v1/tests.md"
+      "prd": "docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md"
     },
     "provenance": {
-      "- ac_id": "AC-NVL-002",
+      "- ac_id": "AC-AV-002",
       "source_type": "source_evidence",
-      "source_ref": "kushi-narrative-zh / US-PRISM-002 连载旅程"
+      "source_ref": "openmontage AGPL-3.0 / comic-storyboard 3:4 竖版规则"
     }
   },
   "ac_count": 10,
   "test_count": 15,
   "checkbox_count": 12,
-  "evidence_row_count": 11,
+  "evidence_row_count": 12,
   "gate_authority": "canonical_surfaces_preserved",
   "checkbox_gate_bypass": false,
   "task_evidence_gate": {

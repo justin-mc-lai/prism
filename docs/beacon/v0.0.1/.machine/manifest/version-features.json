@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "version": "v0.0.1",
-  "generated_at": "2026-08-12T00:59:26.286529Z",
+  "generated_at": "2026-08-12T01:02:06.019813Z",
   "features": [
     {
       "slug": "prism-campaign-schema-v1",
@@ -29,6 +29,20 @@
       "evidence_paths": {
         "qa_matrix": "docs/beacon/v0.0.1/.machine/qa/prism-extract-v1.evidence-contract.json",
         "freeze_state": "docs/beacon/v0.0.1/.machine/requirement/prism-extract-v1.freeze-state.json"
+      }
+    },
+    {
+      "slug": "prism-form-av-v1",
+      "status": "frozen",
+      "language": "en",
+      "truth_paths": {
+        "prd": "docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md",
+        "user_story": "docs/beacon/v0.0.1/features/prism-form-av-v1/truth.md",
+        "test_case": "docs/beacon/v0.0.1/features/prism-form-av-v1/tests.md"
+      },
+      "evidence_paths": {
+        "qa_matrix": "docs/beacon/v0.0.1/.machine/qa/prism-form-av-v1.evidence-contract.json",
+        "freeze_state": "docs/beacon/v0.0.1/.machine/requirement/prism-form-av-v1.freeze-state.json"
       }
     },
     {
