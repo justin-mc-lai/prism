@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "run_id": "run-20260812T050000Z",
+  "import_id": "run-20260812T050000Z",
+  "feature": "prism-review-loop-v1",
+  "feature_slug": "prism-review-loop-v1",
+  "version": "v0.0.1",
+  "runner": "import-evidence",
+  "skill": "beacon-implement",
+  "status": "completed",
+  "imported": true,
+  "source_refs": ["contracts/review-loop.contract.md", "registry/review-adapters.yaml", "skills/_internal/orchestration/creation-mode-map.md", "scripts/check_review_loop.sh"],
+  "changed_files": ["contracts/review-loop.contract.md", "registry/review-adapters.yaml", "skills/_internal/orchestration/creation-mode-map.md", "scripts/check_review_loop.sh"],
+  "service_dirs": ["."],
+  "summary_ref": "docs/beacon/v0.0.1/features/prism-review-loop-v1/evidence.md",
+  "approved_by": "agent-codex",
+  "prompt_boundary": {"schema_version": "1.0", "feature": "prism-review-loop-v1", "feature_slug": "prism-review-loop-v1", "version": "v0.0.1", "required": false, "prompt": "Implement Lake E3 review loop + bible update contract.", "classification": "", "blocked": false, "status": "not_required", "reason_code": "", "next_action": "", "recommended_command": "", "matched_signals": [], "frozen_refs": ["docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md", "docs/beacon/v0.0.1/features/prism-review-loop-v1/tests.md", "docs/beacon/v0.0.1/features/prism-review-loop-v1/tasks.md", "docs/beacon/v0.0.1/features/prism-review-loop-v1/evidence.md"], "surface": "import-evidence"},
+  "created_at": "2026-08-12T05:00:00.000000+00:00",
+  "generated_at": "2026-08-12T05:00:00.000000+00:00"
+}

@@ -1,0 +1,16 @@
+{"feature": "prism-review-loop-v1", "scenarios_total": 15, "scenarios_pass": 15, "ac_total": 10, "ac_pass": 10, "run_id": "run-20260812T050000Z", "surfaces_gate": "pass", "matrix": [
+{"tc": "TC-RVL-001", "ac": "AC-RVL-001", "result": "pass"},
+{"tc": "TC-RVL-002", "ac": "AC-RVL-002", "result": "pass"},
+{"tc": "TC-RVL-003", "ac": "AC-RVL-003", "result": "pass"},
+{"tc": "TC-RVL-004", "ac": "AC-RVL-004", "result": "pass"},
+{"tc": "TC-RVL-005", "ac": "AC-RVL-005", "result": "pass"},
+{"tc": "TC-RVL-006", "ac": "AC-RVL-005", "result": "pass"},
+{"tc": "TC-RVL-007", "ac": "AC-RVL-002", "result": "pass"},
+{"tc": "TC-RVL-008", "ac": "AC-RVL-006", "result": "pass"},
+{"tc": "TC-RVL-009", "ac": "AC-RVL-007", "result": "pass"},
+{"tc": "TC-RVL-010", "ac": "AC-RVL-008", "result": "pass"},
+{"tc": "TC-RVL-011", "ac": "AC-RVL-009", "result": "pass"},
+{"tc": "TC-RVL-012", "ac": "AC-RVL-010", "result": "pass"},
+{"tc": "TC-RVL-013", "ac": "AC-RVL-010", "result": "pass"},
+{"tc": "TC-RVL-014", "ac": "AC-RVL-001", "result": "pass"},
+{"tc": "TC-RVL-015", "ac": "AC-RVL-006", "result": "pass"}]}

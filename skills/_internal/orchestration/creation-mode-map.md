@@ -66,4 +66,7 @@ recommended_next_harness: implement
 3. **资产连续性**：同一题材的视觉 DNA、字体、背景池、角色/意象跨期复用，禁止每篇重新发明风格。
 4. **多平台派生**：公众号贴图为默认首发；文章/短视频/小红书变体在 release 前按矩阵派生，凭证未配置的平台不强行发布。
 
+> Lake E3（review-loop）：系列圣经复盘段走 `contracts/review-loop.contract.md`
+> （metrics_refs 必填 + 人工批准后写入；不改母稿事实），工具 bridge 见 `registry/review-adapters.yaml`。
+
 节气养生模板：`skills/selfmedia-director/references/jieqi-yangsheng-treatment-template.md`；圣经：`content/series/jieqi-yangsheng/bible.md`。

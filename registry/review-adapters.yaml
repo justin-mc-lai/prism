@@ -1,0 +1,28 @@
+# Prism review-loop bridge registry（Lake E3）
+
+schema_version: "1"
+feature: prism-review-loop-v1
+lake: E3
+strategy: bridge_review_tools
+
+adapters:
+  - name: bible-updater
+    role: 系列圣经复盘段更新
+    strategy: bridge
+    bridge_command: "tool:bible-updater（人工批准后写入 content/series/{vertical}/bible.md）"
+    fail_closed: true
+  - name: retro-template
+    role: 复盘模板生成
+    strategy: bridge
+    bridge_command: "tool:retro-template（发现/行动模板）"
+    fail_closed: true
+  - name: findings-store
+    role: 复盘记录存储
+    strategy: bridge
+    bridge_command: "tool:findings-store（content/reviews/{campaign_id}/{period}.md）"
+    fail_closed: true
+
+guards:
+  metrics_refs_required: true
+  human_approval_before_bible_write: true
+  master_facts_immutable: true
