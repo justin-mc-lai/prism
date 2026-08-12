@@ -16,6 +16,7 @@
 | X thread | 选题 | 事实 | director（可选） | form-thread.contract（writing.contract 倒金字塔）+ bridge writing-agent | anti-slop-gate | sidepilot |
 | 小红书图文 | 选题 | 事实 | director + 版式 | form-xhs.contract（writing.contract emotional-essay）+ bridge xhs-article-to-images | anti-slop-gate + OCR | xhs-content-ops |
 | 节气养生长跑题材（jieqi-yangsheng） | 节气排期表 + 俗语/食材/引文库 | MASTER + 古籍原文逐字核对 + lunar-python 日历核算 | selfmedia-director 节气模板（8 卡）+ shot list | writing.contract + 文生图古典底图 + render_wechat_html_cards | anti-slop-gate + 受众复读 + 古籍/日历核对 + OCR + 合同 | 公众号贴图草稿；后续按平台矩阵派生文章/短视频 |
+| novel 连载 | campaign/连载计划 | StoryMaster + canon ledger 冻结 | director episode outline | form-novel.contract（episode 结构）+ bridge kushi-narrative-zh | 正典/连续性门（canon_gate_status=passed）+ anti-slop-gate | 人工批准 → 章节发布 |
 
 ## mode 契约模板（每个产物头部）
 

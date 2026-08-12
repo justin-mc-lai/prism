@@ -1,0 +1,16 @@
+{"feature": "prism-form-novel-v1", "scenarios_total": 15, "scenarios_pass": 15, "ac_total": 10, "ac_pass": 10, "run_id": "run-20260812T020000Z", "surfaces_gate": "pass", "matrix": [
+{"tc": "TC-NVL-001", "ac": "AC-NVL-001", "result": "pass"},
+{"tc": "TC-NVL-002", "ac": "AC-NVL-002", "result": "pass"},
+{"tc": "TC-NVL-003", "ac": "AC-NVL-003", "result": "pass"},
+{"tc": "TC-NVL-004", "ac": "AC-NVL-004", "result": "pass"},
+{"tc": "TC-NVL-005", "ac": "AC-NVL-005", "result": "pass"},
+{"tc": "TC-NVL-006", "ac": "AC-NVL-005", "result": "pass"},
+{"tc": "TC-NVL-007", "ac": "AC-NVL-001", "result": "pass"},
+{"tc": "TC-NVL-008", "ac": "AC-NVL-006", "result": "pass"},
+{"tc": "TC-NVL-009", "ac": "AC-NVL-007", "result": "pass"},
+{"tc": "TC-NVL-010", "ac": "AC-NVL-008", "result": "pass"},
+{"tc": "TC-NVL-011", "ac": "AC-NVL-009", "result": "pass"},
+{"tc": "TC-NVL-012", "ac": "AC-NVL-010", "result": "pass"},
+{"tc": "TC-NVL-013", "ac": "AC-NVL-010", "result": "pass"},
+{"tc": "TC-NVL-014", "ac": "AC-NVL-002", "result": "pass"},
+{"tc": "TC-NVL-015", "ac": "AC-NVL-003", "result": "pass"}]}

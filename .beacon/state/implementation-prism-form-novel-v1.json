@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "run_id": "run-20260812T020000Z",
+  "import_id": "run-20260812T020000Z",
+  "feature": "prism-form-novel-v1",
+  "feature_slug": "prism-form-novel-v1",
+  "version": "v0.0.1",
+  "runner": "import-evidence",
+  "skill": "beacon-implement",
+  "status": "completed",
+  "imported": true,
+  "source_refs": ["registry/form-registry.yaml", "contracts/form-novel.contract.md", "skills/_internal/orchestration/creation-mode-map.md", "scripts/check_novel_form.sh"],
+  "changed_files": ["registry/form-registry.yaml", "contracts/form-novel.contract.md", "skills/_internal/orchestration/creation-mode-map.md", "scripts/check_novel_form.sh"],
+  "service_dirs": ["."],
+  "summary_ref": "docs/beacon/v0.0.1/features/prism-form-novel-v1/evidence.md",
+  "approved_by": "agent-codex",
+  "prompt_boundary": {"schema_version": "1.0", "feature": "prism-form-novel-v1", "feature_slug": "prism-form-novel-v1", "version": "v0.0.1", "required": false, "prompt": "Implement Lake D4 novel form contract with canon gate hook.", "classification": "", "blocked": false, "status": "not_required", "reason_code": "", "next_action": "", "recommended_command": "", "matched_signals": [], "frozen_refs": ["docs/beacon/v0.0.1/features/prism-form-novel-v1/truth.md", "docs/beacon/v0.0.1/features/prism-form-novel-v1/tests.md", "docs/beacon/v0.0.1/features/prism-form-novel-v1/tasks.md", "docs/beacon/v0.0.1/features/prism-form-novel-v1/evidence.md"], "surface": "import-evidence"},
+  "created_at": "2026-08-12T02:00:00.000000+00:00",
+  "generated_at": "2026-08-12T02:00:00.000000+00:00"
+}
