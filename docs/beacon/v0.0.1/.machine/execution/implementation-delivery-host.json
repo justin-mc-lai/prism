@@ -2,11 +2,12 @@
   "schema_version": "1.0",
   "artifact": "implementation_delivery_host",
   "version": "v0.0.1",
-  "feature_count": 4,
+  "feature_count": 5,
   "feature_slugs": [
     "prism-campaign-schema-v1",
     "prism-extract-v1",
     "prism-form-blog-thread-v1",
+    "prism-form-image-post-v1",
     "prism-form-writing-v1"
   ],
   "features": [
@@ -80,6 +81,29 @@
       "updated_at": "2026-08-12T00:50:15.154416+00:00"
     },
     {
+      "feature": "prism-form-image-post-v1",
+      "feature_slug": "prism-form-image-post-v1",
+      "revision_id": "R1",
+      "baseline_id": "impl-delivery-baseline-v0.0.1-prism-form-image-post-v1-R1",
+      "transaction_id": "tx-f09224d6f75ae0f86",
+      "source_hash": "sha256:4982c780f8d64288f91badf8873a92b1abf21dda9470db46062caf1b9ca1128e",
+      "baseline_ref": "docs/beacon/v0.0.1/.machine/execution/implementation-delivery-baseline-prism-form-image-post-v1.json",
+      "default_target_branch": "beacon/v0.0.1/prism-form-image-post-v1",
+      "worktree_root": "/Users/apple/Developer/Personal/products/prism",
+      "workspace_root": "/Users/apple/Developer/Personal/products/prism",
+      "direct_delivery_services": [
+        "."
+      ],
+      "writable_services": [
+        "."
+      ],
+      "reference_only_services": [
+        "docs"
+      ],
+      "depends_on_features": [],
+      "updated_at": "2026-08-12T00:55:01.084854+00:00"
+    },
+    {
       "feature": "prism-form-writing-v1",
       "feature_slug": "prism-form-writing-v1",
       "revision_id": "R1",
@@ -108,10 +132,11 @@
       "prism-campaign-schema-v1",
       "prism-extract-v1",
       "prism-form-blog-thread-v1",
+      "prism-form-image-post-v1",
       "prism-form-writing-v1"
     ]
   },
-  "source_hash": "sha256:a77f27511ab5973af5b2b35410584f19f04fdee118fe453703eb78a98f07e1ff",
-  "transaction_id": "tx-922b88e31487f1a39",
-  "generated_at": "2026-08-12T00:50:15.156763+00:00"
+  "source_hash": "sha256:e8d039c5eb678f53a3a57eb6d172a3cde44e850afca935eef7a30db9970f8fd5",
+  "transaction_id": "tx-97301aef0152a848f",
+  "generated_at": "2026-08-12T00:55:01.087272+00:00"
 }

@@ -13,7 +13,7 @@
   "truth_authority": false,
   "lifecycle_stage": false,
   "release_publish_action": false,
-  "feature_count": 4,
+  "feature_count": 5,
   "features": [
     {
       "feature": "prism-campaign-schema-v1",
@@ -34,6 +34,12 @@
       "status": "generated"
     },
     {
+      "feature": "prism-form-image-post-v1",
+      "feature_slug": "prism-form-image-post-v1",
+      "summary": "Lake D3 image-post/xhs form contracts.",
+      "status": "generated"
+    },
+    {
       "feature": "prism-extract-v1",
       "feature_slug": "prism-extract-v1",
       "summary": "Maintains release-facing version aggregate projection guards so QA accepted features are included in version change scope before release check.",
@@ -42,12 +48,13 @@
   ],
   "implementation_order": {
     "status": "analyzed",
-    "feature_count": 4,
+    "feature_count": 5,
     "ordered_feature_slugs": [
       "prism-extract-v1",
       "prism-campaign-schema-v1",
       "prism-form-writing-v1",
-      "prism-form-blog-thread-v1"
+      "prism-form-blog-thread-v1",
+      "prism-form-image-post-v1"
     ],
     "waves": [
       {
@@ -93,6 +100,19 @@
         "feature": "prism-form-blog-thread-v1",
         "feature_slug": "prism-form-blog-thread-v1",
         "depends_on_features": ["prism-form-writing-v1"],
+        "direct_delivery_services": [
+          "."
+        ],
+        "writable_services": [
+          "."
+        ],
+        "parallelizable": true,
+        "reason_code": "parallel_no_conflict"
+      },
+      {
+        "feature": "prism-form-image-post-v1",
+        "feature_slug": "prism-form-image-post-v1",
+        "depends_on_features": ["prism-form-writing-v1", "prism-form-blog-thread-v1"],
         "direct_delivery_services": [
           "."
         ],
