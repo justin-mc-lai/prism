@@ -52,3 +52,6 @@ Prism Lake C（prism-campaign-schema-v1）：QA `run-20260811T232406916560` pass
 
 Prism Lake D1（prism-form-writing-v1）：QA `run-20260812T084228065759` passed
 （10/10 AC · 15/15 TC · release_confidence 1.0）；release 待人工确认，不自动公开发布。
+
+Prism Lake D2（prism-form-blog-thread-v1）：QA `run-20260812T084947791269` passed
+（10/10 AC · 15/15 TC · release_confidence 1.0）；release 待人工确认，不自动公开发布。
