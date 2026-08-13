@@ -1,0 +1,12 @@
+campaign_id: fen-yuan-ren
+title: 美利坚：焚怨人
+lane: canon
+objective: >
+  同题材原创诡异连载：焚尸人江烬在平行世界美利坚的联邦焚尸场觉醒系统，
+  以焚烧尸体提炼怨念、获得词条能力，借“怨案回廊”超度现实惨案化成的诡异，
+  主线追问自己的生前档案与系统来历。参考《美利坚：烧尸人》的烧尸得词条骨架，
+  但不复制其文本与专有名称；案件改编自公开报道并做虚构化处理。
+master_refs:
+  - content/masters/story/fen-yuan-ren/
+schedule_intent: 周更 1 章，每章 3500–5000 字，先冻结母稿再连载
+world_slug: fen-yuan-ren
