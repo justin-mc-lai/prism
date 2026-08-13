@@ -1,0 +1,11 @@
+episode_id: episode-101
+world_slug: fires-of-fate
+master_id: fires-of-fate-storymaster-v2
+sequence: 101
+title: 长夜第一夜
+canon_gate_status: passed
+continuity_refs:
+  - content/storyworlds/fires-of-fate/bible.md
+  - content/storyworlds/fires-of-fate/canon-ledger.yaml
+summary: 长夜降临的第一夜，费城地铁 14 号线带回一列 1937 年的旧车厢；守夜人、幸存者与引导者第一次在灯下相遇。
+content_file: content/storyworlds/fires-of-fate/episodes/episode-101.md

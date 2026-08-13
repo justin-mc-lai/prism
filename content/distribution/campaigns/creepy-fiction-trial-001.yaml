@@ -1,15 +1,17 @@
 campaign_id: creepy-fiction-trial-001
-title: 烧尸人：焚命录（诡异小说试产）
+title: 长夜之焚（美剧式诡异小说 · S1）
 lane: canon
 objective: 验证“案件档案化+怨念体系+节拍模板”稳定产出配方（第 1 集）
 master_refs:
   - content/storyworlds/fires-of-fate/bible.md
 episodes:
   - content/storyworlds/fires-of-fate/episodes/episode-001.yaml
+  - content/storyworlds/fires-of-fate/episodes/episode-101.yaml
 schedule_intent:
   status: draft_only
   publish_mode: draft
   human_approval: pending
 evidence:
   - content/storyworlds/fires-of-fate/episodes/episode-001-qa-evidence.json
+  - content/storyworlds/fires-of-fate/episodes/episode-101-qa-evidence.json
 created_at: "2026-08-13"
