@@ -14,3 +14,16 @@
 - 需求包：`docs/beacon/v0.0.1/features/prism-extract-v1/`
 
 源冻结：`selfmedia-creator` · `prism-canon-v1` R3。形态生产链在 Lake D，不在本湖。
+
+## 安装到 agent
+
+把 7 个公开面软链到 Codex / Claude / agents / Cursor 的 skill 目录
+（`skills/_internal/**` 永不暴露）：
+
+```bash
+bash scripts/install_public_surfaces.sh            # 安装（幂等）
+bash scripts/install_public_surfaces.sh --dry-run  # 预演
+bash scripts/install_public_surfaces.sh --uninstall # 卸载
+```
+
+新链接在 agent 下次会话 / reload 后生效。
