@@ -16,7 +16,7 @@
     "summary_recap": 0,
     "buzzwords": 0
   },
-  "verdict": "needs_fix",
+  "verdict": "release_candidate_draft_only",
   "audit_ref": "content/presentations/oss-picks/anydoc/blog-beginner/qa-audit-third-party-norms.md",
-  "reason": "third-party norms audit found 7 gaps + 1 hard-gate violation (humanize bridge not run); fail-closed until fixed"
+  "reason": "third-party norms gaps fixed on 2026-08-13; humanize pass executed with evidence; screenshots enrich deferred (explicit placeholders); publish still requires human approval"
 }

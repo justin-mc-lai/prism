@@ -5,6 +5,7 @@ kind: fact
 pipeline: oss-pick-standard
 reader_tier: beginner
 humanize_gate: required
+content_spec: r11
 source_repo: https://github.com/firecrawl/anydoc
 retrieved_at: "2026-08-12"
 status: frozen

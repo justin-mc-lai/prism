@@ -41,5 +41,27 @@
 
 - anti-slop：pass（无命中模式）
 - 事实对齐：pass（全部声明可回源 FactMaster）
-- 证据路径：`content/masters/oss-picks/anydoc/MASTER.md` + GitHub API 快照
+- 证据路径：`content/masters/oss-picks/anydoc/MASTER.md` + `repo-digest.md` + GitHub API 快照
+
+## 4. 修复记录（2026-08-13，第三方规范审计后）
+
+| 原缺口 | 修复 | 验证 |
+|--------|------|------|
+| repo-digest 缺失 | 新增 `repo-digest.md` | ✅ 存在 |
+| 由简入深表格/引导句 | 改为 3 行表格 + “先跑 MVP，再回来看 🗺️” | ✅ |
+| 截图 0 张 | 新增“先带你看一眼”2 处显式占位 | ✅ 占位（enrich 待补） |
+| 进阶模块表 | 🗺️ 新增 5 模块表（CLI/Node/Python/WASM/Agent Skill） | ✅ |
+| 不适合列表 | ⚠️ 新增“真正不适合它的场景”3 条 | ✅ |
+| 术语解释 | “绑定（bindings）”“Agent Skill”inline 解释 | ✅ |
+| 口语转折密度 | 增至 7 处 / 约 2364 字 | ✅ |
+| 朗读自检 | 执行并记录于 `humanize-pass-evidence.md` | ✅ |
+| 人味层硬门 | 实际改写一轮，证据可回放 | ✅ |
+| meta R11 | `content_spec: r11` 已加 | ✅ |
+
+## 5. 最终门禁结论
+
+- anti-slop：pass
+- 事实对齐：pass
+- 人味层：pass（实际执行 + 证据）
 - 放行至 release（草稿阶段）；**公开发布需人工二次批准**
+- 显式 deferral：真实截图 enrich（当前为占位）、独立性能基准（保持“官方声明”标注）

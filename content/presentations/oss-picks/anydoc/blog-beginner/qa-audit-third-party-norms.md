@@ -51,3 +51,20 @@
 5. 补术语解释（绑定、Agent Skill）；坑点补“不适合”列表；🗺️ 补进阶模块表
 6. 配图：加 0–2 张截图占位或 enrich（说明来源）
 7. meta.yaml 加 `content_spec: r11`
+
+## 修复记录（2026-08-13）
+
+全部执行完成：
+
+- ✅ repo-digest.md 已生成（oss-repo-read 规范）
+- ✅ 人味层实际执行一轮（selfmedia-humanize 五手法 + humanizer-zh 五原则），证据见 `humanize-pass-evidence.md`
+- ✅ 口语转折 7 处 / 约 2364 字；朗读自检已记录
+- ✅ 由简入深改表格（3/10/进阶 + 引导句）
+- ✅ 术语解释（绑定 / Agent Skill）；⚠️ 补“不适合”列表；🗺️ 补进阶模块表
+- ✅ 配图：2 处显式占位（真实截图 enrich 延后，已标注来源）
+- ✅ meta.yaml 加 `content_spec: r11`
+
+剩余显式 deferral（不阻塞草稿，但需用户知悉）：
+
+- 真实截图 enrich（当前为占位）
+- 独立性能基准（保持“官方声明”标注，未夸大）
