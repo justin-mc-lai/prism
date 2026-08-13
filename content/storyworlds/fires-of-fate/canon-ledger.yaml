@@ -1,0 +1,17 @@
+world_slug: fires-of-fate
+entries:
+  - entry_id: CANON-001
+    claim: 怨念五阶为唯一等级刻度（余烬→焚线→火场→焚域→焚主）
+    status: frozen
+  - entry_id: CANON-002
+    claim: 烧尸人五级能力对应固定代价，不可无代价使用高阶能力
+    status: frozen
+  - entry_id: CANON-003
+    claim: 每次焚烧必须有“送别动作”
+    status: frozen
+  - entry_id: CANON-004
+    claim: 真实案件素材一律脱敏；文末必须虚构声明
+    status: frozen
+  - entry_id: CANON-005
+    claim: 老白不记得自己 17 岁那年的案子（第一季主线埋点）
+    status: frozen
