@@ -1,0 +1,13 @@
+{
+  "ac_id": "GATES",
+  "assertion": "Truth Review Gate pass + freeze R1 + workspace admission pass",
+  "command": "beacon truth review prism-title-lab-v1 --project . --version v0.0.1 --json && beacon freeze prism-title-lab-v1 --project . --version v0.0.1 --json && beacon workspace admit --project-root . --version v0.0.1 --feature prism-title-lab-v1 --json",
+  "exit_code": 0,
+  "stdout_tail": "review_gate_pass=true; freeze status=frozen revision=R1; admit status=pass",
+  "collected_at": "2026-08-18T06:37:00+00:00",
+  "artifact_refs": [
+    "docs/beacon/v0.0.1/.machine/execution/prism-title-lab-v1.truth-review-gate.json",
+    "docs/beacon/v0.0.1/features/prism-title-lab-v1/truth.md",
+    ".beacon/state/workspace-admission/v0.0.1/prism-title-lab-v1.json"
+  ]
+}
