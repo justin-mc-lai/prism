@@ -29,6 +29,25 @@ map_ids_considered: ['MAP-003', 'MAP-010']
 5. **不编造门**：趋势与指标只来自检索结果；无来源的「趋势判断」必须显式标注为推测。
 6. **下一步**：`recommended_next_harness: master`（冻结事实）或直接给快照路径。
 
+## 选题角度 + 标题公式建议（衔接 title-lab）
+
+每个「选题角度」后附一行标题方向，帮助 plan 阶段兑现「定角度、受众、风险、爆款公式」：
+
+```yaml
+title_hint:
+  angle: <一句话角度>
+  audience: <身份词，如 独立开发者 / 上班族>
+  formula_candidates: [数字清单, 速成教程]   # 2 个以内，具体公式见 title-lab.md
+  produce_handoff: title-lab 出候选标题（路径 A/B）
+```
+
+规则：
+
+- intel 只给公式/方向建议，不产出最终标题；最终候选由 `prism-produce` 的
+  `skills/prism-produce/references/title-lab.md` 生成并过标题门。
+- 建议公式必须落在 title-lab 七型公式内；拿不准时省略，不硬凑。
+- 公式建议不豁免不编造门：标题要素（数字/社会证明）仍是后续检索事实，不是编造素材。
+
 ## 硬边界
 
 - 不编造趋势与指标（public-surface hard gate）。

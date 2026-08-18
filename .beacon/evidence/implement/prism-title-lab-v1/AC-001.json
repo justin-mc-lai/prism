@@ -1,0 +1,12 @@
+{
+  "ac_id": "AC-001",
+  "assertion": "title-lab.md 存在且含路径 A/B、硬规则、首选与兑现点",
+  "command": "test -f skills/prism-produce/references/title-lab.md && rg -q '路径 A|路径 B|同义改写|首选' skills/prism-produce/references/title-lab.md && python3 -c \"from pathlib import Path; t=Path('skills/prism-produce/references/title-lab.md').read_text(encoding='utf-8'); assert '首选' in t and '公式' in t and '兑现' in t; print('ok')\"",
+  "exit_code": 0,
+  "stdout_tail": "ok",
+  "collected_at": "2026-08-18T06:35:00+00:00",
+  "artifact_refs": [
+    "skills/prism-produce/references/title-lab.md",
+    "skills/prism-produce/references/title-corpus.md"
+  ]
+}

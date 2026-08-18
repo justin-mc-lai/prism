@@ -71,6 +71,7 @@ Block when:
 Pass when:
 
 - Title, subtitle, cover, excerpt, tags, image dimensions, video aspect ratio, and file format satisfy the target platform profile.
+- 标题门已过：候选标题经 prism-qa 标题门检查（公式覆盖 ≥6、禁空数字/震惊体/无法兑现/同义改写、18–32 字、工具名前 16 字、附赠物有正文兑现）。
 - For WeChat image_post, title is short and separate from caption; caption is not a title rewrite; uploaded image count matches the manifest/shot list.
 - Rendered markdown/html/mp4 exists at the expected path.
 - Platform-specific overrides do not alter facts.
@@ -79,6 +80,7 @@ Pass when:
 Block when:
 
 - Required cover, title, summary, media IDs, or render file is missing.
+- 候选标题未过标题门（公式重复、空数字、震惊体、承诺无法兑现、社会证明数字无可查来源）。
 - WeChat image_post title is empty, caption is a title rewrite, or uploaded image count does not match the manifest/shot list.
 - Render output has broken images, invalid relative paths, or mismatched assets.
 - Account/platform endpoint is ambiguous.
