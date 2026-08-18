@@ -1,0 +1,12 @@
+{
+  "ac_id": "AC-005",
+  "assertion": "metrics-publication 含 title_formula/is_preferred；review-loop 含 4 周基线对比与人工门",
+  "command": "rg -q 'title_formula|is_preferred' contracts/metrics-publication.contract.md && rg -q '4 周|基线' contracts/review-loop.contract.md && rg -q '人工' contracts/review-loop.contract.md",
+  "exit_code": 0,
+  "stdout_tail": "",
+  "collected_at": "2026-08-18T06:35:00+00:00",
+  "artifact_refs": [
+    "contracts/metrics-publication.contract.md",
+    "contracts/review-loop.contract.md"
+  ]
+}

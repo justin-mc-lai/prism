@@ -1,0 +1,13 @@
+{
+  "ac_id": "AC-004",
+  "assertion": "ATTRIBUTION-corpora + LICENSE + title-corpus 校准层存在且含来源/日期",
+  "command": "test -f docs/ATTRIBUTION-corpora.md && rg -q 'MIT|BigPengSays' docs/ATTRIBUTION-corpora.md && test -f skills/prism-produce/references/title-corpus.md && rg -q '来源|检索' skills/prism-produce/references/title-corpus.md && test -f skills/prism-produce/references/LICENSE-bigpeng-hot-gzh",
+  "exit_code": 0,
+  "stdout_tail": "",
+  "collected_at": "2026-08-18T06:35:00+00:00",
+  "artifact_refs": [
+    "docs/ATTRIBUTION-corpora.md",
+    "skills/prism-produce/references/LICENSE-bigpeng-hot-gzh",
+    "skills/prism-produce/references/title-corpus.md"
+  ]
+}
