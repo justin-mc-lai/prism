@@ -7,7 +7,7 @@
 - form_id: novel
 - 定位: 连载小说/漫画脚本（episode 制）
 - lane: canon|standard（canon 禁用 fast_lane_skip）
-- bridge: kushi-narrative-zh（缺失 → blocked）
+- bridge: `vendor/skills/kushi-narrative-zh`（A4 pin · 缺失 → blocked）
 
 ## 2. 决策边界
 
@@ -19,7 +19,7 @@
 - StoryMaster（world bible + canon ledger，`content/storyworlds/{world_slug}/`）
 - director episode outline（sequence + 冲突 + 节奏）
 
-拒绝：无 StoryMaster / 无 outline / kushi-narrative-zh 缺失 → blocked + reason_code
+拒绝：无 StoryMaster / 无 outline / `vendor/skills/kushi-narrative-zh` 缺失 → blocked + reason_code
 
 ## 4. output
 

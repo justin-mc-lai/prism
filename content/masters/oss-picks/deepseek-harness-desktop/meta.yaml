@@ -1,0 +1,12 @@
+slug: deepseek-harness-desktop
+vertical: oss-picks
+pipeline: oss-pick-standard
+retrieved_at: "2026-08-16"
+source_repo: https://github.com/anywhere-labs/deepseek-harness-desktop
+repo_url: https://github.com/anywhere-labs/deepseek-harness-desktop
+kind: fact
+title: 不想装 Node.js，DSH 桌面版值得装吗？
+reader_tier: beginner
+humanize_gate: required
+content_spec: r11
+status: draft

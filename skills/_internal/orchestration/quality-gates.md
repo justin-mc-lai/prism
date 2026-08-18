@@ -52,17 +52,17 @@ Block when:
 Pass when:
 
 - Aspect ratio and canvas match the platform.
-- Visual IP is stable: for 小黑, black body, white-dot eyes, thin legs, blank serious expression, and not a cute mascot.
+- Visual IP is stable: account character IP comes from configuration（角色设定卡走 registry/account profile），跨期不漂移、不是吉祥物化。
 - The character participates in the core action, not as decoration.
 - Any visible Chinese text is short, readable, and semantically correct.
-- OCR/manual inspection finds no乱码, duplicate labels, accidental “小黑” label, random English, misspellings, or unrelated text.
+- OCR/manual inspection finds no乱码, duplicate labels, accidental character-name label, random English, misspellings, or unrelated text.
 - Arrows, labels, and state boxes match the shot list.
 - The image is not a PPT slide, dense flowchart, copied old composition, screenshot-looking UI, or overfilled canvas.
 
 Block when:
 
 - Text is unreadable or wrong in a way readers will notice.
-- The generated image contains unintended labels like “小黑”.
+- The generated image contains unintended character-name/account labels.
 - The character scale/style changes enough to look like a different IP.
 - The image contradicts the article.
 

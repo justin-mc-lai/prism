@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=1080"/>
+<title>不想装 Node.js，DSH 桌面版值得装吗？</title>
+<style>/* 库拾微信公众号 · 整文贴图 1080×1440 暖纸底 */
+:root {
+  --paper: #f9f8f4;
+  --ink: #1a1a1a;
+  --muted: #5c5c5c;
+  --line: #2a2a2a;
+  --accent: #e08a3c;
+  --accent-soft: #f3c27a;
+  --danger: #c45c4a;
+  --w: 1080px;
+  --page-h: 1440px;
+  --pad-x: 72px;
+  --pad-top: 64px;
+  --pad-bottom: 96px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background: var(--paper);
+  color: var(--ink);
+  width: var(--w);
+  font-family: "Songti SC", "STSong", "SimSun", "Noto Serif SC",
+    "Source Han Serif SC", serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.article {
+  width: var(--w);
+  padding: var(--pad-top) var(--pad-x) var(--pad-bottom);
+  background: var(--paper);
+}
+
+.article-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "PingFang SC", "Hiragino Sans GB", sans-serif;
+  font-size: 22px;
+  color: var(--muted);
+  margin-bottom: 36px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.article h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  margin-bottom: 40px;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Songti SC", sans-serif;
+}
+
+.article p {
+  font-size: 30px;
+  line-height: 1.85;
+  margin-bottom: 28px;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+.article p.lead {
+  font-size: 31px;
+}
+
+.article code,
+.article .mono {
+  font-family: "Menlo", "SF Mono", "PingFang SC", monospace;
+  font-size: 0.92em;
+  background: rgba(0, 0, 0, 0.04);
+  padding: 0 6px;
+  border-radius: 4px;
+}
+
+.article .code-block {
+  margin: 32px 0 38px;
+  padding: 22px 26px 24px;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  background: #f1efe8;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.article .code-label {
+  font-family: "PingFang SC", "Hiragino Sans GB", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  margin-bottom: 14px;
+}
+
+.article .code-block pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.article .code-block code {
+  font-family: "Menlo", "SF Mono", "PingFang SC", monospace;
+  font-size: 25px;
+  line-height: 1.75;
+  color: var(--ink);
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* callout：边界/警告/判断 */
+.article .callout {
+  margin: 30px 0 34px;
+  padding: 22px 26px 24px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  background: rgba(224, 138, 60, 0.08);
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.article .callout-note {
+  border-left-color: #8a8f98;
+  background: rgba(0, 0, 0, 0.025);
+}
+
+.article .callout-warning {
+  border-left-color: var(--accent);
+  background: rgba(224, 138, 60, 0.08);
+}
+
+.article .callout-danger {
+  border-left-color: var(--danger);
+  background: rgba(196, 92, 74, 0.07);
+}
+
+.article .callout-ok {
+  border-left-color: #4d8a6a;
+  background: rgba(77, 138, 106, 0.07);
+}
+
+.article .callout-tip {
+  border-left-color: #4a6fa5;
+  background: rgba(74, 111, 165, 0.06);
+}
+
+.article .callout-title {
+  font-family: "PingFang SC", "Hiragino Sans GB", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.article .callout p {
+  font-size: 27px;
+  line-height: 1.75;
+  margin-bottom: 0;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+/* stat：关键数字锚点 */
+.article .stat-block {
+  margin: 32px 0 38px;
+  padding: 28px 32px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  border-top: 4px solid var(--accent);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.35);
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.article .stat-number {
+  font-family: "Menlo", "SF Mono", monospace;
+  font-size: 84px;
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--ink);
+}
+
+.article .stat-label {
+  font-family: "PingFang SC", "Hiragino Sans GB", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+.article .stat-note {
+  font-size: 24px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 14px 0 0;
+  text-align: center;
+}
+
+/* compare：两列对照 */
+.article .compare-block {
+  margin: 30px 0 34px;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  overflow: hidden;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.article .compare-block table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.article .compare-block th,
+.article .compare-block td {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 18px 20px;
+  font-size: 26px;
+  line-height: 1.55;
+  text-align: left;
+  vertical-align: top;
+}
+
+.article .compare-block th {
+  font-family: "PingFang SC", "Hiragino Sans GB", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  background: rgba(224, 138, 60, 0.12);
+  border-bottom: 2px solid var(--accent);
+}
+
+.article .compare-block td:first-child {
+  font-family: "PingFang SC", "Hiragino Sans GB", sans-serif;
+  font-weight: 600;
+  width: 34%;
+}
+
+.article a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.diagram {
+  margin: 36px 0 44px;
+  padding: 28px 20px 24px;
+  border: 1.5px solid rgba(0, 0, 0, 0.18);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.35);
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.diagram-title {
+  font-family: "PingFang SC", "Hiragino Sans GB", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 18px;
+  letter-spacing: 0.04em;
+}
+
+.diagram svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.article .closing {
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.article .source-line {
+  font-family: "Menlo", "SF Mono", monospace;
+  font-size: 24px;
+  color: var(--muted);
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+
+/* 截图叠脚：由脚本在每页 canvas 上画，文档内预留不必重复 */
+.page-spacer {
+  height: 0;
+}
+</style>
+</head>
+<body>
+<article class="article" id="article">
+  <div class="article-meta">
+    <span>库拾 · 开源核对</span>
+    <span>github.com/anywhere-labs/deepseek-harness-desktop</span>
+  </div>
+  <h2 style="font-size:34px;margin:28px 0 16px;font-family:PingFang SC,sans-serif">先说你可能遇到过的事</h2>
+<p class="lead" data-block="1">8 月 13 日建仓，8 月 15 日发布 v2.0.0，三天涨到 6,593 星。一个把 DeepSeek Harness 变成桌面 App 的社区项目，正在 GitHub 上被越来越多的人收藏。</p>
+<figure class="stat-block" data-block="1"><div class="stat-number">6,593</div><div class="stat-label">3 天 star</div><p class="stat-note">8 月 13 日建仓，8 月 15 日发布 v2.0.0，检索时刻 6,593 stars / 289 forks。</p></figure>
+<p class="" data-block="1">它解决的问题很具体。官方 Harness 很强，但第一次跑要装 Node.js，要配 profile，要盯端口和进程，这一串准备动作把只想用的人挡在门外。DSH Desktop 把官方运行时装进应用，下载安装、双击打开，剩下的事交给它。</p>
+<h2 style="font-size:34px;margin:28px 0 16px;font-family:PingFang SC,sans-serif">🚀 小白 MVP 30 秒结论</h2>
+<p class="" data-block="1">30 秒结论，值得试，但别当主力。做法是去官网下载安装包（README 主入口 deepseekdesktop.com，更新服务走 dshdesktop.cn），双击安装，打开就是官方 DSH 界面。</p>
+<p class="" data-block="1">跑通检查清单</p>
+<p class="" data-block="1">- 窗口里出现官方 DeepSeek Harness 界面- 系统托盘出现 DSH Desktop 图标- 关闭窗口后，从托盘能重新打开- 托盘选退出，应用和后台服务才结束</p>
+<p class="" data-block="1">想装插件，从托盘打开 DSH 终端，跑 dsh plugin add。</p>
+<figure class="callout callout-tip" data-block="1"><div class="callout-title">安装提示</div><p>普通用户不需要执行命令。想装插件时，从托盘打开 DSH 终端，再跑 dsh plugin add。</p></figure>
+<h2 style="font-size:34px;margin:28px 0 16px;font-family:PingFang SC,sans-serif">📖 这篇怎么读（由简入深）</h2>
+<figure class="compare-block" data-block="1"><table><thead><tr><th>时间</th><th>读哪几节</th><th>得到什么</th></tr></thead><tbody><tr><td>3 分钟</td><td>30 秒结论 + 一句话看透本质</td><td>知道值不值得试</td></tr><tr><td>10 分钟</td><td>核心架构 + 坑点 + 决策表</td><td>知道什么时候别用</td></tr><tr><td>进阶</td><td>亮点 + 官方仓库</td><td>知道边界和后续往哪走</td></tr></tbody></table></figure>
+<h2 style="font-size:34px;margin:28px 0 16px;font-family:PingFang SC,sans-serif">🎯 一句话看透本质</h2>
+<p class="" data-block="1">这篇文章围绕一个问题写。我能不能不装 Node.js 就用上 DSH。能。应用把官方 Harness 运行时装进 Electron 壳，窗口、托盘、服务启停由它负责，agent、模型、工具、会话这些核心语义仍是上游的。</p>
+<h2 style="font-size:34px;margin:28px 0 16px;font-family:PingFang SC,sans-serif">🗺️ 核心架构与主流程</h2>
+<p class="" data-block="1">先懂白话版</p>
+<p class="" data-block="1">1. 你打开应用，Electron 拿单实例锁，读取当前 profile。2. Launcher 启动官方 DSH Host，Host 在 127.0.0.1 提供 HTTP 和 WebSocket。3. 窗口加载同源页面，你看到的就是官方 Web UI。关窗只隐藏，托盘退出才停掉 Host。</p>
+<figure class="compare-block" data-block="1"><table><thead><tr><th>模块</th><th>职责</th></tr></thead><tbody><tr><td>Electron 宿主</td><td>窗口、托盘、单实例、退出</td></tr><tr><td>Launcher / profile</td><td>准备和切换 profile，切换走有序重启</td></tr><tr><td>官方 DSH Host</td><td>agent、模型、工具、会话、Web 服务</td></tr><tr><td>desktopProfiles</td><td>公开接口，查看和切换 profile</td></tr><tr><td>desktopPnpm</td><td>公开接口，安装、更新、移除插件</td></tr></tbody></table></figure>
+<h2 style="font-size:34px;margin:28px 0 16px;font-family:PingFang SC,sans-serif">💎 绝妙的设计亮点</h2>
+<p class="" data-block="1">第一点是边界干净。公开 contract 只有 desktopProfiles 和 desktopPnpm，第三方插件碰不到窗口、托盘和 Electron IPC。看不懂可先跳过，意思是插件作者只依赖自己需要的接口，升级和排错都更稳。</p>
+<p class="" data-block="1">第二点是切换不怕切坏。profile 切换先记 pending，Host 和窗口都成功启动后才记为最近可用；失败自动回滚到上一次可用配置。</p>
+<p class="" data-block="1">第三点是私有 PATH。应用在 user-data 目录生成 dsh、pnpm、node 的私有 shim，只对 Desktop 终端生效，不改系统 PATH。</p>
+<h2 style="font-size:34px;margin:28px 0 16px;font-family:PingFang SC,sans-serif">⚠️ 潜在坑点与局限性</h2>
+<p class="" data-block="1">先说三个坑</p>
+<p class="" data-block="1">- Linux 只有兼容模式，高级模式不提供- 插件市场、手机远程、Channels 是路线图，安装包里还没有- 插件装完要重启，切换模式也重启，不会在运行界面里热替换</p>
+<figure class="compare-block" data-block="1"><table><thead><tr><th>场景</th><th>选谁</th><th>为什么</th></tr></thead><tbody><tr><td>想快速体验 DSH</td><td>桌面版</td><td>不用 Node.js，双击即用</td></tr><tr><td>想写插件、深度定制</td><td>官方 CLI</td><td>公开接口只有 desktopProfiles / desktopPnpm</td></tr><tr><td>生产环境、重要工作</td><td>先别依赖社区版</td><td>更新快、边界未定、非官方</td></tr></tbody></table></figure>
+<figure class="callout callout-warning" data-block="1"><div class="callout-title">社区版边界</div><p>它是社区桌面版，不是 DeepSeek 官方产品。插件市场、手机远程、Channels 仍是路线图，安装包里还没有这些入口。</p></figure>
+<h2 style="font-size:34px;margin:28px 0 16px;font-family:PingFang SC,sans-serif">接下来你可以</h2>
+<p class="" data-block="1">我的判断是，桌面版是目前体验 DSH 的最低门槛，但它不该成为你的主力工具。它把门槛解决了，Agent 能力还留在上游。</p>
+<p class="" data-block="1">先下载装一遍，跑完 MVP，再从托盘装一个插件试试。你会在意这个门槛吗？评论区聊聊，或者告诉我下一篇想看哪个工具。</p>
+<h2 style="font-size:34px;margin:28px 0 16px;font-family:PingFang SC,sans-serif">原文</h2>
+<p class="source-line" data-block="1"><a href="https://github.com/anywhere-labs/deepseek-harness-desktop">https://github.com/anywhere-labs/deepseek-harness-desktop</a></p>
+</article>
+</body>
+</html>

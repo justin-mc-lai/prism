@@ -1,0 +1,28 @@
+schema_version: "1"
+slug: deepseek-harness-desktop
+vertical: oss-picks
+assets:
+  - id: github-repo-header
+    file: github-repo-header.png
+    kind: screenshot
+    source: https://github.com/anywhere-labs/deepseek-harness-desktop
+    captured_at: "2026-08-16"
+    alt: GitHub 仓库顶栏，star 数与项目简介
+  - id: github-readme-intro
+    file: github-readme-intro.png
+    kind: screenshot
+    source: https://github.com/anywhere-labs/deepseek-harness-desktop
+    captured_at: "2026-08-16"
+    alt: README 首屏，桌面应用 hero 图与主要功能
+  - id: docs-home
+    file: docs-home.png
+    kind: screenshot
+    source: https://dshdesktop.cn
+    captured_at: "2026-08-16"
+    alt: DSH Desktop 官网首页
+  - id: desktop-preview
+    file: desktop-preview.png
+    kind: official-artwork
+    source: https://github.com/anywhere-labs/deepseek-harness-desktop/blob/master/assets/desktop-preview.png
+    captured_at: "2026-08-16"
+    alt: 官方桌面界面预览图

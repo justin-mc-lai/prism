@@ -1,14 +1,14 @@
 # 把 Word/PDF/PPT 一键变成干净 Markdown：anydoc 三分钟上手
 
-> 库拾一句话：一个 3 周涨到约 1.5 万星的 Rust 小工具，把办公文档变成 AI 和编辑器都能读懂的 Markdown。
+> 库拾一句话：一个九天涨到约 1.5 万星的 Rust 小工具（2026-08-03 创建，08-12 检索），把办公文档变成 AI 和编辑器都能读懂的 Markdown。
 
 信息更新于 2026-08-12（star 数为检索时刻快照）。项目地址：github.com/firecrawl/anydoc · 协议 MIT · 核心 Rust。
 
 ## 先说你可能遇到过的事
 
-你可能经历过：同事发来一个 Word 文档，你把内容复制进笔记或编辑器，标题变乱码、表格散架、图片失踪，排版像被洗衣机搅过。更难受的是，你想把文档喂给 AI 让它总结，AI 也读不懂一堆碎片格式。
+同事发来一个 Word 文档，你把内容复制进笔记或编辑器，标题变乱码、表格散架、图片失踪，排版像被洗衣机搅过。更难受的是，你想把文档喂给 AI 让它总结，AI 也读不懂一堆碎片格式。
 
-大部分人的解法是手动整理，一份文档花二十分钟。GitHub 上一个叫 **anydoc** 的新项目想把这件破事变成一条命令。说白了，它就是个“文档翻译器”：办公格式进，干净 Markdown 出。问题是，光靠复制粘贴，格式永远救不回来。
+大部分人的解法是手动整理，一份文档花二十分钟。GitHub 上一个叫 **anydoc** 的新项目想把这件破事变成一条命令。它就是个“文档翻译器”，办公格式进，干净 Markdown 出。问题是，光靠复制粘贴，格式永远救不回来。
 
 ## 🚀 小白 MVP：先跑通再说
 
@@ -52,17 +52,17 @@ npx @firecrawl/anydoc slides.pptx -o slides.md
 
 ## 先带你看一眼
 
-【截图占位 1：README 顶部 —— 支持格式列表与 badges（来源：firecrawl/anydoc README）】
+【截图占位 1：README 顶部，支持格式列表与 badges（来源：firecrawl/anydoc README）】
 
-【截图占位 2：浏览器 demo 页 —— WebAssembly 本地转换（来源：firecrawl.github.io/anydoc）】
+【截图占位 2：浏览器 demo 页，WebAssembly 本地转换（来源：firecrawl.github.io/anydoc）】
 
 图说：上面是仓库门面，下面是浏览器本地 demo；两张图都指向“文档进、Markdown 出”这条主线。（真实截图待 enrich 步骤补齐，当前为显式占位。）
 
 ## 🎯 一句话看透本质
 
-anydoc 是一个格式无关的“文档 → Markdown”转换层：无论进来的是 Word、PPT、Excel 还是 PDF、EPUB、CSV，出去的都是同一种干净、统一的 Markdown。
+anydoc 是一个格式无关的“文档 → Markdown”转换层，无论进来的是 Word、PPT、Excel 还是 PDF、EPUB、CSV，出去的都是同一种干净、统一的 Markdown。
 
-这也是它对 AI 有用的原因：大模型不擅长读二进制办公格式，但非常擅长读 Markdown。其实它背后就三步：读文件、转格式、输出文本。
+它对 AI 有用，是因为大模型不擅长读二进制办公格式，但非常擅长读 Markdown。其实它背后就三步，读文件、转格式、输出文本。
 
 ## 🗺️ 核心架构与主流程
 
@@ -90,7 +90,7 @@ anydoc 是一个格式无关的“文档 → Markdown”转换层：无论进来
 2. 浏览器本地转换：WASM 版在本地跑，敏感文件不用上传。
 3. Agent Skill 一条命令装好：`npx skills add firecrawl/anydoc`，AI 助手立刻会读文档。
 
-Agent Skill 说白了就是一个“教 AI 助手用工具的安装包”；装上之后，你让它总结一份 PDF，它知道先转成 Markdown 再读。
+Agent Skill 就是一个“教 AI 助手用工具的安装包”；装上之后，你让它总结一份 PDF，它知道先转成 Markdown 再读。
 
 ## ⚠️ 潜在坑点与局限性
 

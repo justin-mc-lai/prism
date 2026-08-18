@@ -9,22 +9,22 @@ adapters:
   - name: publish-content
     role: 多平台草稿发布路由
     strategy: bridge
-    bridge_command: "skill:publish-content（源仓 skills/publish-content）"
+    bridge_command: "vendor/skills/publish-content（A4 MIT pin）"
     fail_closed: true
   - name: schedule-post
     role: 日历/批量排期
     strategy: bridge
-    bridge_command: "skill:schedule-post（源仓 skills/schedule-post）"
+    bridge_command: "vendor/skills/schedule-post（A4 MIT pin）"
     fail_closed: true
   - name: x-publish
     role: X/Twitter 发布
     strategy: bridge
-    bridge_command: "skill:x-publish（源仓 skills/x-publish）"
+    bridge_command: "vendor/skills/x-publish（A4 MIT pin）"
     fail_closed: true
   - name: manage-media
     role: 媒体管理
     strategy: bridge
-    bridge_command: "skill:manage-media（源仓 skills/manage-media）"
+    bridge_command: "vendor/skills/manage-media（A4 MIT pin）"
     fail_closed: true
 
 guards:
@@ -33,3 +33,8 @@ guards:
   credentials_never_in_repo: true
   misroute_marks_do_not_publish: true
   vendor_sync_ai_deferred: true
+
+install:
+  script: scripts/install_bridges.sh --category publish
+  source: selfmedia-creator/skills（SELFMEDIA_SOURCE 可覆盖）
+  platform_credential_bridges: 不在此安装（需受管 secrets，缺失 fail-closed）

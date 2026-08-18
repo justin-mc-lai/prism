@@ -9,7 +9,7 @@ adapters:
   - name: analyze-data
     role: 多平台数据聚合分析
     strategy: bridge
-    bridge_command: "skill:analyze-data（源仓 skills/analyze-data）"
+    bridge_command: "vendor/skills/analyze-data（A4 MIT pin）"
     fail_closed: true
   - name: platform-stats-wechat
     role: 公众号数据统计
@@ -47,3 +47,8 @@ guards:
   no_fabricated_metrics: true
   missing_tool_blocks_feedback: true
   snapshot_requires_publication_ref: true
+
+install:
+  script: scripts/install_bridges.sh --category intel
+  source: selfmedia-creator/skills（SELFMEDIA_SOURCE 可覆盖）
+  platform_credential_bridges: 不在此安装（platform:getWechatGzhStats 等需受管 secrets，缺失 fail-closed）

@@ -7,7 +7,9 @@
 - form_id: image-post
 - 定位: 公众号「贴图」Tab 图像产出包（非长文草稿）
 - lane: standard
-- bridge: render 脚本（render_wechat_article_pages / html_cards / image_cards）+ 封面排版脚本
+- render: 本地 pin（A1 · MIT）：`scripts/render_wechat_article_pages.py` /
+  `render_wechat_html_cards.py` / `render_wechat_image_cards.py` + `scripts/kushi_cover_text_overlay.py` +
+  `templates/`；ATTRIBUTION 见 `docs/ATTRIBUTION-render-chain.md`
 
 ## 2. 决策边界
 
@@ -26,13 +28,13 @@
 - `title`：≤20 字短题，不带账号前缀
 - `caption`：独立短说明（caption-short.md / manifest 字段），不退化为标题或正文
 - 图片：1-9 张（1–9），超 9 拆条；图序明确（第 1 张可声明为 cover_card）
-- 封面：无文字底图（生成模型只做底图）+ 本地标题排版（如 kushi_cover_text_overlay.py），
+- 封面：无文字底图（生成模型只做底图）+ 本地标题排版（`scripts/kushi_cover_text_overlay.py`），
   封面不混入正文图；尺寸默认 1080x1440
 - 证据：`.beacon/evidence/implement/prism-form-image-post-v1/AC-IMG-002.json`
 
 ## 5. gate（QA 清单）
 
-- 无乱码、无随机文字、无「小黑」类误写
+- 无乱码、无随机文字、无账号角色名/标签误写
 - 图序正确、尺寸合规、图片数 1–9
 - title/caption/图片/封面分离成立
 - 价值门通过；contract-check 通过
