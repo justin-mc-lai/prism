@@ -1,0 +1,4 @@
+interface:
+  display_name: "Selfmedia Writing"
+  short_description: "Beginner-friendly OSS article writing for 库拾"
+  default_prompt: "Use $selfmedia-writing to turn MASTER.md into humanized.md for a depth OSS pick."

@@ -1,0 +1,288 @@
+/* 库拾微信公众号 · 整文贴图 1080×1440 暖纸底 */
+:root {
+  --paper: #f9f8f4;
+  --ink: #1a1a1a;
+  --muted: #5c5c5c;
+  --line: #2a2a2a;
+  --accent: #e08a3c;
+  --accent-soft: #f3c27a;
+  --danger: #c45c4a;
+  --w: 1080px;
+  --page-h: 1440px;
+  --pad-x: 72px;
+  --pad-top: 64px;
+  --pad-bottom: 96px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background: var(--paper);
+  color: var(--ink);
+  width: var(--w);
+  font-family: "Songti SC", "STSong", "SimSun", "Noto Serif SC",
+    "Source Han Serif SC", serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.article {
+  width: var(--w);
+  padding: var(--pad-top) var(--pad-x) var(--pad-bottom);
+  background: var(--paper);
+}
+
+.article-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "PingFang SC", "Hiragino Sans GB", sans-serif;
+  font-size: 22px;
+  color: var(--muted);
+  margin-bottom: 36px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.article h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  margin-bottom: 40px;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Songti SC", sans-serif;
+}
+
+.article p {
+  font-size: 30px;
+  line-height: 1.85;
+  margin-bottom: 28px;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+.article p.lead {
+  font-size: 31px;
+}
+
+.article code,
+.article .mono {
+  font-family: "Menlo", "SF Mono", "PingFang SC", monospace;
+  font-size: 0.92em;
+  background: rgba(0, 0, 0, 0.04);
+  padding: 0 6px;
+  border-radius: 4px;
+}
+
+.article .code-block {
+  margin: 32px 0 38px;
+  padding: 22px 26px 24px;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  background: #f1efe8;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.article .code-label {
+  font-family: "PingFang SC", "Hiragino Sans GB", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  margin-bottom: 14px;
+}
+
+.article .code-block pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.article .code-block code {
+  font-family: "Menlo", "SF Mono", "PingFang SC", monospace;
+  font-size: 25px;
+  line-height: 1.75;
+  color: var(--ink);
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* callout：边界/警告/判断 */
+.article .callout {
+  margin: 30px 0 34px;
+  padding: 22px 26px 24px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  background: rgba(224, 138, 60, 0.08);
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.article .callout-note {
+  border-left-color: #8a8f98;
+  background: rgba(0, 0, 0, 0.025);
+}
+
+.article .callout-warning {
+  border-left-color: var(--accent);
+  background: rgba(224, 138, 60, 0.08);
+}
+
+.article .callout-danger {
+  border-left-color: var(--danger);
+  background: rgba(196, 92, 74, 0.07);
+}
+
+.article .callout-ok {
+  border-left-color: #4d8a6a;
+  background: rgba(77, 138, 106, 0.07);
+}
+
+.article .callout-tip {
+  border-left-color: #4a6fa5;
+  background: rgba(74, 111, 165, 0.06);
+}
+
+.article .callout-title {
+  font-family: "PingFang SC", "Hiragino Sans GB", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.article .callout p {
+  font-size: 27px;
+  line-height: 1.75;
+  margin-bottom: 0;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+/* stat：关键数字锚点 */
+.article .stat-block {
+  margin: 32px 0 38px;
+  padding: 28px 32px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  border-top: 4px solid var(--accent);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.35);
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.article .stat-number {
+  font-family: "Menlo", "SF Mono", monospace;
+  font-size: 84px;
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--ink);
+}
+
+.article .stat-label {
+  font-family: "PingFang SC", "Hiragino Sans GB", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+.article .stat-note {
+  font-size: 24px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 14px 0 0;
+  text-align: center;
+}
+
+/* compare：两列对照 */
+.article .compare-block {
+  margin: 30px 0 34px;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  overflow: hidden;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.article .compare-block table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.article .compare-block th,
+.article .compare-block td {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 18px 20px;
+  font-size: 26px;
+  line-height: 1.55;
+  text-align: left;
+  vertical-align: top;
+}
+
+.article .compare-block th {
+  font-family: "PingFang SC", "Hiragino Sans GB", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  background: rgba(224, 138, 60, 0.12);
+  border-bottom: 2px solid var(--accent);
+}
+
+.article .compare-block td:first-child {
+  font-family: "PingFang SC", "Hiragino Sans GB", sans-serif;
+  font-weight: 600;
+  width: 34%;
+}
+
+.article a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.diagram {
+  margin: 36px 0 44px;
+  padding: 28px 20px 24px;
+  border: 1.5px solid rgba(0, 0, 0, 0.18);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.35);
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.diagram-title {
+  font-family: "PingFang SC", "Hiragino Sans GB", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 18px;
+  letter-spacing: 0.04em;
+}
+
+.diagram svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.article .closing {
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.article .source-line {
+  font-family: "Menlo", "SF Mono", monospace;
+  font-size: 24px;
+  color: var(--muted);
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+
+/* 截图叠脚：由脚本在每页 canvas 上画，文档内预留不必重复 */
+.page-spacer {
+  height: 0;
+}

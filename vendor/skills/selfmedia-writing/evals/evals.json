@@ -1,0 +1,31 @@
+{
+  "skill": "selfmedia-writing",
+  "evals": [
+    {
+      "id": "depth-openspec-pipeline",
+      "prompt": "Use selfmedia-writing for openspec depth. Must include MVP, progressive reading guide, and four emoji sections.",
+      "files": [
+        "content/masters/oss-picks/openspec/MASTER.md",
+        "content/sources/oss-picks/openspec/repo-digest.md"
+      ],
+      "expect": [
+        "section: 小白 MVP",
+        "section: 由简入深",
+        "heading: 🎯 一句话看透本质",
+        "heading: 🗺️ 核心架构与主流程",
+        "heading: 💎 绝妙的设计亮点",
+        "heading: ⚠️ 潜在坑点与局限性",
+        "lint: readability-lint.py --depth"
+      ]
+    },
+    {
+      "id": "daily-no-depth-template",
+      "prompt": "Daily pick must NOT use depth MVP or four-section emoji headings.",
+      "files": ["content/masters/oss-picks/daily-2026-06-22/humanized.md"],
+      "expect": [
+        "missing: 小白 MVP",
+        "missing_heading: 🎯 一句话看透本质"
+      ]
+    }
+  ]
+}
