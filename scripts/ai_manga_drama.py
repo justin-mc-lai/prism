@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# ATTRIBUTION (A4 MIT): pinned from selfmedia-creator@07aed5f scripts/ai_manga_drama.py
+# ATTRIBUTION (A4 MIT): pinned from selfmedia-creator scripts/ai_manga_drama.py
 # Owner license decision A1/A4: MIT, see docs/owner-license-decision.md + docs/ATTRIBUTION-render-chain.md
 """ai-manga-drama pipeline CLI (v0.0.5 R1)."""
 from __future__ import annotations
@@ -20,6 +20,36 @@ MASTERS_DIR = ROOT / "content" / "masters" / "ai-manga-drama"
 RENDERS_DIR = ROOT / "content" / "renders" / "ai-manga-drama" / "draft"
 QA_EVIDENCE_DIR = ROOT / ".beacon" / "evidence" / "qa" / "ai-manga-drama"
 VIDEO_PROVIDER_ENVS = ["FAL_KEY", "REPLICATE_API_TOKEN", "SILICONFLOW_API_KEY"]
+AI_LABEL_TEXT = "本内容由人工智能生成"
+
+
+def ai_label_font() -> str:
+    """Resolve a CJK font for the mandatory AI-content label (总局令第16号)."""
+    candidates = [os.environ.get("AI_LABEL_FONT")]
+    candidates += [
+        "/System/Library/Fonts/Hiragino Sans GB.ttc",
+        "/System/Library/Fonts/STHeiti Medium.ttc",
+        "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+    ]
+    for p in candidates:
+        if p and Path(p).is_file():
+            return p
+    fail("no CJK font found for AI label; set AI_LABEL_FONT")
+
+
+def make_ai_label_png(path: Path) -> None:
+    """Render the mandatory AI-content label as a transparent PNG (drawtext-free)."""
+    from PIL import Image, ImageDraw, ImageFont
+
+    font = ImageFont.truetype(ai_label_font(), 26)
+    probe = ImageDraw.Draw(Image.new("RGB", (8, 8)))
+    box = probe.textbbox((0, 0), AI_LABEL_TEXT, font=font)
+    pad = 12
+    img = Image.new("RGBA", (box[2] - box[0] + pad * 2, box[3] - box[1] + pad * 2), (0, 0, 0, 130))
+    ImageDraw.Draw(img).text(
+        (pad - box[0], pad - box[1]), AI_LABEL_TEXT, font=font, fill=(255, 255, 255, 255)
+    )
+    img.save(path)
 
 
 def fail(msg: str, code: int = 1) -> None:
@@ -228,14 +258,30 @@ def cmd_assemble(args: argparse.Namespace) -> None:
         concat_list.write_text(
             "\n".join(f"file '{seg.resolve()}'" for seg in segments) + "\n", encoding="utf-8"
         )
+        concatenated = tmpdir / "concat.mp4"
         subprocess.run(
             [
                 "ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat_list),
-                "-c", "copy", "-movflags", "+faststart", str(out),
+                "-c", "copy", str(concatenated),
             ],
             check=True,
             capture_output=True,
         )
+        # Mandatory AI-content label (总局令第16号): burn in once over the full cut.
+        label_png = tmpdir / "ai-label.png"
+        make_ai_label_png(label_png)
+        labeled = tmpdir / "labeled.mp4"
+        subprocess.run(
+            [
+                "ffmpeg", "-y", "-i", str(concatenated), "-i", str(label_png),
+                "-filter_complex", "overlay=(W-w)/2:24",
+                "-c:v", "libx264", "-preset", "veryfast", "-crf", "28",
+                "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(labeled),
+            ],
+            check=True,
+            capture_output=True,
+        )
+        os.replace(labeled, out)
     finally:
         import shutil
 

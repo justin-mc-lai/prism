@@ -62,7 +62,8 @@ DraftReady→Storyboarded、Finalized→Rejected、Rejected→Finalized。
 ## 6. license / 凭证注记
 
 - Seedance 2.5 凭证不入仓（`credentials_never_in_repo`）；无凭证自动降级，不阻断流程但必须留痕
-- 本形态不接任何平台发布通道；`release_gate: pending_human` 为终态，仓库内无自动发布命令
+- **AI 提示标识由 CLI 强制烧录**（assemble 内置，缺中文字体即 fail-closed）；本形态不接任何平台
+  发布通道；`release_gate: pending_human` 为终态，仓库内无自动发布命令
 
 ## 7. handoff / 失败处理
 
