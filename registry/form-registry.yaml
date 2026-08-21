@@ -69,7 +69,7 @@ forms:
     lane: standard
     producer_chain: StoryMaster/剧集 bible → director 分集剧本+分镜 → 人工实拍素材 ingest → openmontage 剪辑 → 合规门（三类自审/AI 标识/授权）→ release 停人工
     fast_lane_skip_allowed: false
-    status: draft   # 立项草案：briefing 见 content/briefings/live-drama-hotspot.md，待用户冻结决策
+    status: registered   # 2026-08-21 human 冻结转正（truth R1）；持《广播电视节目制作经营许可证》已确认
 
 guards:
   new_form_only_registry_contract_routing: true
