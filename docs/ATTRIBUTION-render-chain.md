@@ -18,6 +18,8 @@
 | `scripts/render-channel.sh` | `scripts/render-channel.sh` |
 | `scripts/lib/kit_render.py` | `scripts/lib/kit_render.py` |
 | `scripts/lib/rewrite-render-asset-refs.py` | `scripts/lib/rewrite-render-asset-refs.py` |
+| `scripts/ai_manga_drama.py`（A4 MIT，@07aed5f） | `scripts/ai_manga_drama.py` |
+| `content/pipelines/ai-manga-drama/`（schema + checklist + README） | `content/pipelines/ai-manga-drama/` |
 
 ## Pinned templates（源仓 → Prism）
 

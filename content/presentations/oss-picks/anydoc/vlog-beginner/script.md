@@ -1,6 +1,6 @@
 # 口播稿（60s · vlog 路由）
 
-> form_id: av（vlog）· lane: standard · master_ref: content/masters/oss-picks/anydoc/MASTER.md
+> 形态 av（vlog）· 标准 lane · 母稿见 content/masters/oss-picks/anydoc/MASTER.md
 > 字数约 260 · 按气口断句 · 素材为显式占位
 
 【0~3s · S1 乱码文档特写】
