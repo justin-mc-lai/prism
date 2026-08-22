@@ -42,9 +42,9 @@ research 输入，由本仓重新冻结后转正。
 - [x] `contracts/form-manga-drama.contract.md`（registered，2026-08-21 human 指令转正）
 - [x] `registry/form-registry.yaml` `manga_drama` entry（status: registered）
 - [x] 源仓漫剧 worktree 已合入 main@07aed5f；CLI + pipeline 目录已 A4 pin 进 Prism 并 validate 通过
-- [ ] 改 `selfmedia-creator/ARCHIVED.md` 为「部分解档：L4 运营层恢复写入」并指向本文件
-- [ ] 两仓 AGENTS.md 各加一行 SoT 指针（指向本文件）
-- [ ] 互斥校验脚本：同名 master slug 双仓可写检测（fail-closed）
+- [x] 改 `selfmedia-creator/ARCHIVED.md` 为「部分解档：L4 运营层恢复写入」并指向本文件
+- [x] 两仓 AGENTS.md 各加一行 SoT 指针（指向本文件）
+- [x] 互斥校验脚本：同名 master slug 双仓可写检测（fail-closed）——`workspace/check_content_mutex.py` + `check_pin_drift.py`，入口 `make -C workspace check`
 
 ## 信号与转向
 

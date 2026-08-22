@@ -38,3 +38,5 @@ This file is Beacon-managed agent operation guidance.
 - 公开面只有 `prism-goal` + 六个能力面；`skills/_internal/**` 不对人发现。
 - 源仓提取自 `/Users/apple/Developer/Personal/products/selfmedia-creator`；完整生产链属后续湖。
 - 公开发布必须人工批准。
+- 双仓分层 SoT 唯一裁决：`docs/sot-layering-decision.md`——本仓拥有 L1–L3 写入口，
+  源仓仅 L4 运营层；跨仓改动后跑 `make -C workspace check`。
