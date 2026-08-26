@@ -1,0 +1,4 @@
+{
+ "command": "bash -c rg -q 电商商品 skills/_internal/orchestration/creation-mode-map.md",
+ "exit": 0
+}

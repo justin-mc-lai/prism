@@ -64,15 +64,22 @@ for tpl in [
     PINS.append((f"template/{Path(tpl).name}", tpl, tpl, "report"))
 
 
+# 外部 GitHub pin（上游非 selfmedia-creator；凭据 = 随附 LICENSE + ATTRIBUTION 登记，
+# 不做回源比对，避免误报悬空 pin）
+EXTERNAL_VENDOR_PINS: dict[str, str] = {
+    "drama-skills": "zenstory-ai/drama-skills",
+}
+
+
 def _vendor_skill_pins(prism_root: Path) -> list[tuple[str, str, str, str]]:
-    """vendor/skills/* 全量按 report 模式对照源仓 skills/*。"""
+    """vendor/skills/* 全量按 report 模式对照源仓 skills/*（外部 pin 除外）。"""
     vendor = prism_root / "vendor" / "skills"
     if not vendor.is_dir():
         return []
     return [
         (f"skill/{d.name}", f"vendor/skills/{d.name}", f"skills/{d.name}", "report")
         for d in sorted(vendor.iterdir())
-        if d.is_dir()
+        if d.is_dir() and d.name not in EXTERNAL_VENDOR_PINS
     ]
 
 
@@ -121,6 +128,13 @@ def main() -> int:
     pins = PINS + _vendor_skill_pins(args.prism_root)
     failed = 0
     warned = 0
+    for name, upstream in sorted(EXTERNAL_VENDOR_PINS.items()):
+        ext = args.prism_root / "vendor" / "skills" / name
+        if not (ext / "LICENSE").is_file():
+            print(f"FAIL [skill/{name}] external pin 缺 LICENSE（上游 {upstream}）")
+            failed += 1
+        else:
+            print(f"ok   [skill/{name}] external pin（上游 {upstream}，LICENSE+ATTRIBUTION 已登记）")
     for entry in pins:
         name, prism_rel, creator_rel, mode = entry[:4]
         p_skip = entry[4] if len(entry) > 4 else 0

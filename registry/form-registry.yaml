@@ -70,6 +70,12 @@ forms:
     producer_chain: StoryMaster/剧集 bible → director 分集剧本+分镜 → 人工实拍素材 ingest → openmontage 剪辑 → 合规门（三类自审/AI 标识/授权）→ release 停人工
     fast_lane_skip_allowed: false
     status: registered   # 2026-08-21 human 冻结转正（truth R1）；持《广播电视节目制作经营许可证》已确认
+  - form: product
+    contract: contracts/form-product.contract.md
+    lane: standard
+    producer_chain: master 商品事实核对（规格/价格有源）→ director 卖点排序+shot list → form-product.contract（卖点结构）→ bridge 渲染/rnskill → 极限词门（广告法）+ OCR QA → release 停人工
+    fast_lane_skip_allowed: false
+    status: registered   # 2026-08-26 prism-form-product-v1；商品事实门+极限词门 fail-closed
 
 guards:
   new_form_only_registry_contract_routing: true

@@ -99,3 +99,17 @@
    b) ✅ AV 大栈维持 bridge（B1，OpenMontage AGPL 不 pin）；
    c) ✅ 蒸馏层无源仓可运行（standalone 门禁）；bridge 运行时以归档源仓为宿主（只读）。
    源仓归档标记：`selfmedia-creator/ARCHIVED.md`（2026-08-14）。
+
+## 外部参考库蒸馏批次（2026-08-26 · FP prism-form-product-v1）
+
+> 5 个开源热门自媒体/短剧创作仓库盘点。平台型运行时不整包复制；按 license 分级处理。
+
+| # | 仓库 | 上游 | License | 定位 | 策略 | Prism 落点 | 状态 |
+|---|------|------|---------|------|------|-----------|------|
+| 45 | lumenx | alibaba/lumenx | MIT | AI 原生漫剧/视频平台（剧本→分镜→资产→I2V→合成导出） | distill 阶段门/schema | `manga_drama` producer_chain 升级参考 | 已镜像 `oss-sync/automation/auto/lumenx`，未 pin 运行时 |
+| 46 | dramaclaw | dramaclaw/dramaclaw | Elastic-2.0（禁托管转售） | 小说→短剧工业管线（故事图/分集节拍/角色一致性）；覆盖电商商品视频 | distill only（受限 license 不整包复制） | novel↔短剧链判断框架 + product form 参考 | 未 pin；如引用需 NOTICE |
+| 47 | drama-skills | zenstory-ai/drama-skills | MIT | 10 个 agent skills 全链（novel-analyze/develop/write/assets/prompts/storyboard/produce/review），五 Markdown 契约/集，确认后生产 | vendor_pin + distill 双轨 | `vendor/skills/drama-skills/` 整包；逐 skill 对照蒸馏 master/director/produce/qa | ✅ pinned（2026-08-26） |
+| 48 | MoneyPrinterTurbo | harry0703/MoneyPrinterTurbo | MIT | 一键口播短视频（文案→素材→TTS→字幕→BGM→成片） | distill 管线清单 | `vlog`/`book_video` fast lane 成片链参考 | defer-pin（需要时按 A4 pin） |
+| 49 | openstory | openstory-so/openstory | MIT | script→AI 视频序列 + 跨镜风格一致性（角色/场景/色调） | distill | `prism-director` 一致性 QC 规范 + storyboard schema 参考 | defer-pin |
+
+策略口径沿用上文：distill / bridge / vendor_pin / defer。

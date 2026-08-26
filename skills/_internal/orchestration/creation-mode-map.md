@@ -19,6 +19,10 @@
 | novel 连载 | campaign/连载计划 | StoryMaster + canon ledger 冻结 | director episode outline | form-novel.contract（episode 结构）+ bridge `vendor/skills/kushi-narrative-zh`（A4 pin） | 正典/连续性门（canon_gate_status=passed）+ anti-slop-gate | 人工批准 → 章节发布 |
 | comic 漫画 | 选题/创意 | 分镜设定 + 版权安全检查 | director 分镜 + 角色/场景设定 | form-av.contract（comic 路由）+ bridge `vendor/skills/comic-storyboard`（A4 pin） | 乱码/分页/文字可读 + anti-slop-gate | 人工批准 → 漫画草稿 |
 | book_video 书籍视频 | 书籍/剧集选题 | 母稿 + 分镜 | director 书籍分镜 | form-av.contract（book_video 路由）+ bridge book-video | 乱码/版权/分镜一致 + anti-slop-gate | 人工批准 → 视频草稿 |
+| 电商商品 product | 商品资料/竞品调研 | MASTER + 商品事实核对（规格/价格有源） | director 卖点排序 + shot list | form-product.contract（卖点结构）+ bridge 渲染/rnskill | anti-slop-gate + 极限词门（广告法）+ OCR | 人工批准 → 商品内容草稿 |
+
+> 形态自动识别：入口先跑 `form-autodetect.md` 的 classify_form（关键词→form 映射，
+> 多命中/零命中 fail-closed 交人），再按本表路由。
 
 ## mode 契约模板（每个产物头部）
 

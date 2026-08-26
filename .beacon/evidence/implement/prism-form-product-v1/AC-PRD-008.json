@@ -1,0 +1,4 @@
+{
+ "command": "bash -c rg -q lumenx registry/source-capability-inventory.md && rg -q MoneyPrinterTurbo registry/source-capability-inventory.md",
+ "exit": 0
+}

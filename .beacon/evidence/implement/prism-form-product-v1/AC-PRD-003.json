@@ -1,0 +1,4 @@
+{
+ "command": "bash -c rg -q product_fact_missing contracts/form-product.contract.md && rg -q 极限词 contracts/form-product.contract.md",
+ "exit": 0
+}

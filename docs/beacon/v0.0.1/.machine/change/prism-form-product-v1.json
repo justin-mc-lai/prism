@@ -1,0 +1,39 @@
+{
+ "schema_version": "1.0",
+ "version": "v0.0.1",
+ "feature": "prism-form-product-v1",
+ "feature_slug": "prism-form-product-v1",
+ "summary": "Lake D2 extension: product form contract + classify_form autodetect wiring + external reference inventory batch (5 repos) + drama-skills MIT vendor pin.",
+ "status": "generated",
+ "accepted_at": "",
+ "revision_id": "R1",
+ "projection_role": {
+  "artifact_role": "version_aggregate_projection",
+  "truth_source": false,
+  "gate_source": false,
+  "lifecycle_stage": false,
+  "release_publish_action": false
+ },
+ "truth_authority": false,
+ "lifecycle_stage": false,
+ "added": [
+  "contracts/form-product.contract.md",
+  "skills/_internal/orchestration/form-autodetect.md",
+  "scripts/check_product_form.sh",
+  "registry/form-registry.yaml product entry",
+  "creation-mode-map product row",
+  "loop-campaign classify_form wiring",
+  "source-capability-inventory external reference batch",
+  "vendor/skills/drama-skills/ (MIT pin)",
+  "docs/ATTRIBUTION-bridges.md drama-skills row"
+ ],
+ "removed": [],
+ "fixed": [],
+ "traceability_refs": [
+  "docs/beacon/v0.0.1/change/prism-form-product-v1.md",
+  "docs/beacon/v0.0.1/prd/prism-form-product-v1.md",
+  "docs/beacon/v0.0.1/user-story/prism-form-product-v1.md",
+  "docs/beacon/v0.0.1/qa/test-cases/prism-form-product-v1.md"
+ ],
+ "generated_at": "2026-08-26T00:00:00.000000+00:00"
+}

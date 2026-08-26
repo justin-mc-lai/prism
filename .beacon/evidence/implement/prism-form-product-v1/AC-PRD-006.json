@@ -1,0 +1,4 @@
+{
+ "command": "bash scripts/check_product_form.sh",
+ "exit": 0
+}

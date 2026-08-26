@@ -1,0 +1,4 @@
+{
+ "command": "bash -c test -f contracts/form-product.contract.md && rg -q intake contracts/form-product.contract.md && rg -q handoff contracts/form-product.contract.md",
+ "exit": 0
+}

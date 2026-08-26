@@ -1,0 +1,4 @@
+{
+ "command": "bash -c test -f skills/_internal/orchestration/form-autodetect.md && rg -q classify_form skills/prism-goal/references/modes/loop-campaign.md",
+ "exit": 0
+}

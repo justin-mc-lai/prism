@@ -1,0 +1,38 @@
+{
+ "ac_tc_matrix": "TC-PRD-001..010",
+ "exec_result": {
+  "AC-PRD-001": {
+   "command": "bash -c rg -q product registry/form-registry.yaml && rg -q form-product.contract registry/form-registry.yaml",
+   "exit": 0
+  },
+  "AC-PRD-002": {
+   "command": "bash -c test -f contracts/form-product.contract.md && rg -q intake contracts/form-product.contract.md && rg -q handoff contracts/form-product.contract.md",
+   "exit": 0
+  },
+  "AC-PRD-003": {
+   "command": "bash -c rg -q product_fact_missing contracts/form-product.contract.md && rg -q 极限词 contracts/form-product.contract.md",
+   "exit": 0
+  },
+  "AC-PRD-004": {
+   "command": "bash -c test -f skills/_internal/orchestration/form-autodetect.md && rg -q classify_form skills/prism-goal/references/modes/loop-campaign.md",
+   "exit": 0
+  },
+  "AC-PRD-005": {
+   "command": "bash -c rg -q 电商商品 skills/_internal/orchestration/creation-mode-map.md",
+   "exit": 0
+  },
+  "AC-PRD-006": {
+   "command": "bash scripts/check_product_form.sh",
+   "exit": 0
+  },
+  "AC-PRD-007": {
+   "command": "bash -c test -d vendor/skills/drama-skills/skills && test -f vendor/skills/drama-skills/LICENSE",
+   "exit": 0
+  },
+  "AC-PRD-008": {
+   "command": "bash -c rg -q lumenx registry/source-capability-inventory.md && rg -q MoneyPrinterTurbo registry/source-capability-inventory.md",
+   "exit": 0
+  }
+ },
+ "all_pass": true
+}

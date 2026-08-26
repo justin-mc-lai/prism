@@ -16,6 +16,7 @@
 | writing-agent | dongbeixiaohuo/writing-agent | Dante.sun | 292K |
 | comic-storyboard | Comic Workflow Codex Skill contributors | 同上 | 1.4M |
 | character-illustrations | moxordo（Andy Kim） | 同上 | 672K |
+| drama-skills | zenstory-ai/drama-skills | zenstory-ai（LICENSE 随附） | 7.5M |
 
 ## 自研（所有者 A4-1 MIT 授权）
 

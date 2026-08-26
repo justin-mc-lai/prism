@@ -35,6 +35,7 @@ Read kernel when sequence is ambiguous:
 ```text
 idle
   → classify_lane
+  → classify_form            # form-autodetect.md：关键词映射；多命中/零命中 fail-closed 交人
   → route_next_public_surface
   → await_surface_evidence
   → (repeat) | human_decision_required | release_gate
@@ -47,9 +48,10 @@ Goal never executes maker/checker/release verdicts. It only routes and records.
 
 1. Restate campaign intent in one sentence; confirm lake scope (B/B′ vs deferred C–F).
 2. Select lane; if `fast`, require skip annotation in machine face.
-3. Name **one** `recommended_next_harness` from public registry ids.
-4. List required evidence for that handoff (paths or missing).
-5. Emit human card + machine face; stop.
+3. Run `classify_form`（`skills/_internal/orchestration/form-autodetect.md`）；显式指定优先，多命中/零命中 fail-closed 交人；结果记 machine face `form_detected`。
+4. Name **one** `recommended_next_harness` from public registry ids.
+5. List required evidence for that handoff (paths or missing).
+6. Emit human card + machine face; stop.
 
 For Lake C+ campaign work, prefer these dossier anchors when present:
 

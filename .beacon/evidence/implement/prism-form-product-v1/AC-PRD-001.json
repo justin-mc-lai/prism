@@ -1,0 +1,4 @@
+{
+ "command": "bash -c rg -q product registry/form-registry.yaml && rg -q form-product.contract registry/form-registry.yaml",
+ "exit": 0
+}
