@@ -36,3 +36,6 @@ transaction_ref:
 
 - 人类面不出现内部 adapter / 子 skill 名（anti-leak）
 - 机器面可引用 adapter map_id，不对人展示
+- **大白话规则**：「这次做了什么」必须让不懂本仓的人能看懂——说人话、少术语、
+  必要术语一句话解释；复杂批次可按 `vendor/skills/eli5`（Apache-2.0 pin）的
+  「大图少字」思路给一段极简图解式说明

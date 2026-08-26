@@ -119,3 +119,4 @@
 MoneyPrinterTurbo / openstory 均 MIT，A4 允许 pin；**现维持 defer-pin**——出现具体落点需求
 （vlog fast lane 成片链 / director 一致性 schema 强化）时按 A4 单独决策逐次 pin，届时补
 ATTRIBUTION 行与 external pin 守卫登记。lumenx 运行时同理不 pin（已本地镜像可查）。
+| 50 | eli5 | anthropics/claude-plugins-community | Apache-2.0 | 大白话解释器（大图少字，让人能看懂） | vendor_pin + distill（human-card 大白话规则引用） | `vendor/skills/eli5/` + `contracts/human-card.md` 规则行 | ✅ pinned（2026-08-26） |

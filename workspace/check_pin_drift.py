@@ -68,6 +68,7 @@ for tpl in [
 # 不做回源比对，避免误报悬空 pin）
 EXTERNAL_VENDOR_PINS: dict[str, str] = {
     "drama-skills": "zenstory-ai/drama-skills",
+    "eli5": "anthropics/claude-plugins-community",
 }
 
 
