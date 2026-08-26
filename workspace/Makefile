@@ -1,9 +1,9 @@
 # Prism × selfmedia-creator × selfmedia-sync-ai 逻辑单仓入口（方案甲）
 # 用法：make -C workspace <target>   或   cd prism/workspace && make <target>
 
-CREATOR_ROOT ?= ../..
-MUTEX        := python3 check_content_mutex.py --creator-root $(CREATOR_ROOT)
-PINS         := python3 check_pin_drift.py --creator-root $(CREATOR_ROOT)
+CREATOR_ROOT := $(shell python3 -c "from pathlib import Path; p=Path('..').resolve().parent; print(p/'selfmedia-creator' if (p/'selfmedia-creator/projects/migration-manifest.yaml').is_file() else p)")
+MUTEX        := python3 check_content_mutex.py 
+PINS         := python3 check_pin_drift.py 
 GATES        := python3 ../scripts/check_human_voice.py
 READABILITY  := python3 ../scripts/check_readability.py
 
@@ -26,8 +26,8 @@ check-pins:
 	$(PINS)
 
 manga-validate:
-	python3 ../scripts/ai_manga_drama.py validate \
-		--storyboard $(CREATOR_ROOT)/content/masters/ai-manga-drama/ep-001-escape/storyboard.json
+	python3 $(CREATOR_ROOT)/scripts/ai_manga_drama.py validate \
+		--storyboard $(CREATOR_ROOT)/projects/ai-manga-drama/masters/ai-manga-drama/ep-001-escape/storyboard.json
 
 gates:
 	@test -n "$(F)" || { echo "用法: make gates F=content/masters/.../humanized.md"; exit 2; }

@@ -1,5 +1,0 @@
-binding_id: serial-demo-wechat
-campaign_id: serial-demo
-presentation_id: examples/story-sample:wechat_article:serial:v1
-endpoint_ref: wechat-gzh/demo
-publish_mode: draft

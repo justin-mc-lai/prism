@@ -14,11 +14,17 @@
 
 ### D2 · 分层唯一写入口（SoT 归属表）
 
+> **2026-08-26 修订（decided_by: human）**：职责再调整——Prism 只负责自媒体创作
+> **工作流**（L1 规范 / L2 形态注册表与合同 / skills / QA 门禁）；**L3 创作实例**
+> （briefings / masters / presentations / renders / storyworlds / writing-style）
+> 全部移入 `selfmedia-creator/projects/` 项目单元，Prism 仓内 `content/` 已删除。
+> 多平台浏览器发布归 sidepilot。下表 L3 行按本修订执行。
+
 | 层 | 对象 | 唯一写入口 |
 |---|---|---|
 | L1 规范 | 宪法、7 公开面、QA 门禁 | **Prism** |
 | L2 形态 | `registry/form-registry.yaml`、`contracts/form-*.contract.md`、路由 | **Prism**（FP-PRISM-007） |
-| L3 创作实例 | briefings / masters / presentations / renders / storyworlds / writing-style | **Prism**（门禁脚本在此侧） |
+| L3 创作实例 | briefings / masters / presentations / renders / storyworlds / writing-style | **selfmedia-creator**（`projects/<id>/`，2026-08-26 修订） |
 | L4 运营 | accounts 矩阵、account-contract、环境合同（浏览器/IP）、publish-api / sync-ai / douyin 传输、publications 证据 | **selfmedia-creator** |
 | L5 反馈 | metrics / review-loop / learning-memory 的契约 | **Prism**；数据采集在源仓执行 |
 

@@ -15,8 +15,19 @@ import argparse
 import sys
 from pathlib import Path
 
-DEFAULT_CREATOR = Path(__file__).resolve().parents[2]  # prism 已并入 monorepo，上两级即 creator 根
 PRISM_ROOT = Path(__file__).resolve().parents[1]
+
+def _resolve_creator_root() -> Path:
+    """定位 creator 根：优先兄弟仓 selfmedia-creator（含 projects/migration-manifest.yaml），
+    否则回退旧 monorepo 布局（prism 的上两级）。软链进入时 getcwd 会解析真实路径，
+    相对 ../.. 不可靠，故按标记文件探测。"""
+    sibling = PRISM_ROOT.parent / "selfmedia-creator"
+    if (sibling / "projects" / "migration-manifest.yaml").is_file():
+        return sibling
+    return PRISM_ROOT.parents[1]
+
+
+DEFAULT_CREATOR = None  # main() 内经 _resolve_creator_root() 探测
 
 # (name, prism 相对路径, creator 相对路径, mode[, prism 跳过头行数, creator 跳过头行数])
 # 带 ATTRIBUTION 头的文件型 pin 用跳行数排除头部后再比正文。
@@ -103,7 +114,7 @@ def diff_summary(a: dict[str, bytes], b: dict[str, bytes]) -> list[str]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--prism-root", type=Path, default=PRISM_ROOT)
-    parser.add_argument("--creator-root", type=Path, default=DEFAULT_CREATOR)
+    parser.add_argument("--creator-root", type=Path, default=_resolve_creator_root())
     parser.add_argument("--strict", action="store_true", help="report 级漂移也算失败")
     args = parser.parse_args()
 
