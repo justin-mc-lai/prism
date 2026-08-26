@@ -113,3 +113,9 @@
 | 49 | openstory | openstory-so/openstory | MIT | script→AI 视频序列 + 跨镜风格一致性（角色/场景/色调） | distill | `prism-director` 一致性 QC 规范 + storyboard schema 参考 | defer-pin |
 
 策略口径沿用上文：distill / bridge / vendor_pin / defer。
+
+### A4 常设决策（2026-08-26 · FP prism-manga-asset-gate-v1）
+
+MoneyPrinterTurbo / openstory 均 MIT，A4 允许 pin；**现维持 defer-pin**——出现具体落点需求
+（vlog fast lane 成片链 / director 一致性 schema 强化）时按 A4 单独决策逐次 pin，届时补
+ATTRIBUTION 行与 external pin 守卫登记。lumenx 运行时同理不 pin（已本地镜像可查）。

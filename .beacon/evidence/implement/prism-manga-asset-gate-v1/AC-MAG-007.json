@@ -1,0 +1,4 @@
+{
+ "command": "bash -c rg -q 'defer-pin' registry/source-capability-inventory.md && rg -q 'A4 常设决策' registry/source-capability-inventory.md",
+ "exit": 0
+}

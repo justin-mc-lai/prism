@@ -1,0 +1,34 @@
+{
+ "ac_tc_matrix": "TC-MAG-001..007",
+ "exec_result": {
+  "AC-MAG-001": {
+   "command": "bash -c test -f skills/prism-director/references/asset-consistency-gate.md && rg -q 'CON-01' skills/prism-director/references/asset-consistency-gate.md && rg -q 'AST-05' skills/prism-director/references/asset-consistency-gate.md",
+   "exit": 0
+  },
+  "AC-MAG-002": {
+   "command": "bash -c test -f contracts/asset-consistency.contract.md && rg -q asset_identity_missing contracts/asset-consistency.contract.md",
+   "exit": 0
+  },
+  "AC-MAG-003": {
+   "command": "bash -c rg -q 'asset-consistency.contract' contracts/form-manga-drama.contract.md && rg -q 识别锚点 contracts/form-manga-drama.contract.md",
+   "exit": 0
+  },
+  "AC-MAG-004": {
+   "command": "bash -c python3 -c \"import yaml; d=yaml.safe_load(open('registry/form-registry.yaml')); m=[f for f in d['forms'] if f['form']=='manga_drama'][0]; assert 'asset-consistency' in m['producer_chain']\"",
+   "exit": 0
+  },
+  "AC-MAG-005": {
+   "command": "bash scripts/check_asset_consistency.sh",
+   "exit": 0
+  },
+  "AC-MAG-006": {
+   "command": "bash -c test ! -d vendor/skills/lumenx && test ! -d vendor/skills/dramaclaw",
+   "exit": 0
+  },
+  "AC-MAG-007": {
+   "command": "bash -c rg -q 'defer-pin' registry/source-capability-inventory.md && rg -q 'A4 常设决策' registry/source-capability-inventory.md",
+   "exit": 0
+  }
+ },
+ "all_pass": true
+}

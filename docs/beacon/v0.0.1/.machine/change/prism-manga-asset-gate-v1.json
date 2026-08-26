@@ -1,0 +1,37 @@
+{
+ "schema_version": "1.0",
+ "version": "v0.0.1",
+ "feature": "prism-manga-asset-gate-v1",
+ "feature_slug": "prism-manga-asset-gate-v1",
+ "summary": "Lake D asset-consistency gate for manga_drama distilled from drama-skills (MIT) + lumenx (MIT): identity/variant/transient taxonomy, recognition anchors, CON-01 boundary matching, CON-04 change records, AST-05 binding, style uniformity. MPT/openstory A4 defer-pin standing decision.",
+ "status": "generated",
+ "accepted_at": "",
+ "revision_id": "R1",
+ "projection_role": {
+  "artifact_role": "version_aggregate_projection",
+  "truth_source": false,
+  "gate_source": false,
+  "lifecycle_stage": false,
+  "release_publish_action": false
+ },
+ "truth_authority": false,
+ "lifecycle_stage": false,
+ "added": [
+  "skills/prism-director/references/asset-consistency-gate.md",
+  "contracts/asset-consistency.contract.md",
+  "scripts/check_asset_consistency.sh",
+  "source-capability-inventory A4 standing decision"
+ ],
+ "removed": [],
+ "fixed": [
+  "form-manga-drama contract intake anchor requirement + gate#2 upgrade",
+  "registry manga_drama producer_chain gate step"
+ ],
+ "traceability_refs": [
+  "docs/beacon/v0.0.1/change/prism-manga-asset-gate-v1.md",
+  "docs/beacon/v0.0.1/prd/prism-manga-asset-gate-v1.md",
+  "docs/beacon/v0.0.1/user-story/prism-manga-asset-gate-v1.md",
+  "docs/beacon/v0.0.1/qa/test-cases/prism-manga-asset-gate-v1.md"
+ ],
+ "generated_at": "2026-08-26T00:00:00.000000+00:00"
+}

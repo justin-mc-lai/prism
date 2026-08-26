@@ -29,7 +29,8 @@
 
 - story：故事文档已落盘（`story_documented`）
 - storyboard.json：8–12 镜头、9:16、目标 60–90 秒、台词文本先行、含角色卡（character sheet）
-  与 asset_ref，通过 `storyboard-schema.json` 校验（`schema_valid`）
+  与 asset_ref，通过 `storyboard-schema.json` 校验（`schema_valid`）；asset_ref 须解析到
+  assets/ 身份条目并带识别锚点（未决项不得流入分镜）
 - cost-ledger.json 已初始化（每次生成尝试必记 provider/status/retries/cost 或 n/a，禁止空壳兜底）
 
 拒绝：缺任一交接字段 → blocked + reason_code（`manga_story_missing` / `manga_storyboard_invalid` /
@@ -49,7 +50,10 @@ DraftReady→Storyboarded、Finalized→Rejected、Rejected→Finalized。
 ## 5. gate（五类判据，任一失败 exit 非 0）
 
 1. schema：storyboard.json 过 JSON Schema 校验
-2. 资产引用：全部 asset_ref 存在（`asset_refs_exist`）
+2. 资产引用：全部 asset_ref 存在（`asset_refs_exist`），并过**资产一致性门**
+   `contracts/asset-consistency.contract.md`（三分法归类 / binding 解析 AST-05 /
+   边界匹配 CON-01 / 变化记录 CON-04 / 画风统一；蒸馏依据
+   `skills/prism-director/references/asset-consistency-gate.md` MAP-017）
 3. 成片存在且非空
 4. 时长/分辨率：ffprobe 实测 60–90s、480x854
 5. 台账完整：cost-ledger 覆盖全部尝试（含降级路径）

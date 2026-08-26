@@ -1,0 +1,4 @@
+{
+ "command": "bash -c test ! -d vendor/skills/lumenx && test ! -d vendor/skills/dramaclaw",
+ "exit": 0
+}

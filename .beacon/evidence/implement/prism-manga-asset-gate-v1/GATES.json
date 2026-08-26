@@ -1,0 +1,6 @@
+{
+ "workspace_check": "pass",
+ "surfaces_gates": "pass",
+ "quick_validate": "pending-run",
+ "known_preexisting_failure": "check_form_samples thread humanized.md missing (source-archive legacy)"
+}

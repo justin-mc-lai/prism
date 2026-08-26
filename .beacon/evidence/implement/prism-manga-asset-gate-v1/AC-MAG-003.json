@@ -1,0 +1,4 @@
+{
+ "command": "bash -c rg -q 'asset-consistency.contract' contracts/form-manga-drama.contract.md && rg -q 识别锚点 contracts/form-manga-drama.contract.md",
+ "exit": 0
+}
