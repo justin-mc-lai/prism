@@ -1,0 +1,135 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1786954920278,
+  "projectRoot": "/Users/apple/Developer/Personal/products/prism",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "docs",
+      "scripts"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "content": {
+      "path": "content",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1786954920178,
+      "keyFiles": []
+    },
+    "contracts": {
+      "path": "contracts",
+      "purpose": null,
+      "fileCount": 22,
+      "lastAccessed": 1786954920213,
+      "keyFiles": [
+        "adaptation.contract.md",
+        "campaign.schema.yaml",
+        "distribution-binding.schema.yaml",
+        "form-av.contract.md",
+        "form-blog.contract.md"
+      ]
+    },
+    "docs": {
+      "path": "docs",
+      "purpose": "Documentation",
+      "fileCount": 4,
+      "lastAccessed": 1786954920258,
+      "keyFiles": [
+        "ATTRIBUTION-bridges.md",
+        "ATTRIBUTION-render-chain.md",
+        "owner-license-decision.md",
+        "retirement-execution-checklist.md"
+      ]
+    },
+    "prism-extract-v1": {
+      "path": "prism-extract-v1",
+      "purpose": null,
+      "fileCount": 5,
+      "lastAccessed": 1786954920260,
+      "keyFiles": [
+        "AGENTS.md",
+        "CLAUDE.md",
+        "README.md"
+      ]
+    },
+    "registry": {
+      "path": "registry",
+      "purpose": null,
+      "fileCount": 13,
+      "lastAccessed": 1786954920261,
+      "keyFiles": [
+        "adaptation-adapters.yaml",
+        "adapter-index.yaml",
+        "adapter-migration-matrix.md",
+        "content-schema.yaml",
+        "form-registry.yaml"
+      ]
+    },
+    "scripts": {
+      "path": "scripts",
+      "purpose": "Build/utility scripts",
+      "fileCount": 34,
+      "lastAccessed": 1786954920261,
+      "keyFiles": [
+        "check_adaptation.sh",
+        "check_all_public_surfaces.sh",
+        "check_av_forms.sh",
+        "check_blog_thread_forms.sh",
+        "check_bridges_installed.sh"
+      ]
+    },
+    "skills": {
+      "path": "skills",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1786954920262,
+      "keyFiles": []
+    },
+    "templates": {
+      "path": "templates",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1786954920263,
+      "keyFiles": []
+    },
+    "vendor": {
+      "path": "vendor",
+      "purpose": "Third-party code",
+      "fileCount": 0,
+      "lastAccessed": 1786954920263,
+      "keyFiles": []
+    },
+    "prism-extract-v1/docs": {
+      "path": "prism-extract-v1/docs",
+      "purpose": "Documentation",
+      "fileCount": 0,
+      "lastAccessed": 1786954920266,
+      "keyFiles": []
+    }
+  },
+  "hotPaths": [],
+  "userDirectives": []
+}

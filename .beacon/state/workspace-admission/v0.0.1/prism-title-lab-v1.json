@@ -1,0 +1,12 @@
+{
+  "schema_version": "workspace-admission-v1",
+  "version": "v0.0.1",
+  "feature_slug": "prism-title-lab-v1",
+  "project_root": "/Users/apple/Developer/Personal/products/prism",
+  "branch": "beacon/v0.0.1/prism-title-lab-v1",
+  "worktree_path": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-title-lab-v1",
+  "base_branch": "main",
+  "issued_at": "2026-08-18T13:21:53.614078+00:00",
+  "git_head": "91b12968e91f1654792572fbefd13ef2d9ace660",
+  "status": "pass"
+}

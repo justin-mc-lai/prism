@@ -1,8 +1,8 @@
 # Release Checklist: v0.0.1
 
 **Version**: v0.0.1
-**Created**: 2026-08-11 12:16
-**Status**: Confirmed（版本级 release 收口 · 2026-08-12）
+**Created**: 2026-08-18 21:26
+**Status**: Pending
 
 ---
 
@@ -38,9 +38,6 @@
 - [x] Version change document generated: `docs/beacon/v0.0.1/change/v0.0.1.md`
 - [x] Version change machine payload generated: `docs/beacon/v0.0.1/.machine/change/v0.0.1.json`
 - [ ] Release reviewer confirmed included feature packages match intended scope
-- [x] 2026-08-12 版本级人工确认：8 features 全部 QA 通过并合入 main（见 v0.0.1-release-confirmation.md）
-- [x] 2026-08-12 E1–E4 收口追加确认：12 features（B/C/D/E）全部 QA 通过并合入 main（见 v0.0.1-release-confirmation.md）
-- [x] 2026-08-12 F1–F2 收口最终确认：14 features（A–F 全湖）全部 QA 通过并合入 main（见 v0.0.1-release-confirmation.md）
 
 ---
 
@@ -49,48 +46,3 @@
 
 ## Notes
 
-
-Prism Lake C（prism-campaign-schema-v1）：QA `run-20260811T232406916560` passed
-（10/10 AC · 15/15 TC · release_confidence 1.0）；release 待人工确认，不自动公开发布。
-
-Prism Lake D1（prism-form-writing-v1）：QA `run-20260812T084228065759` passed
-（10/10 AC · 15/15 TC · release_confidence 1.0）；release 待人工确认，不自动公开发布。
-
-Prism Lake D2（prism-form-blog-thread-v1）：QA `run-20260812T084947791269` passed
-（10/10 AC · 15/15 TC · release_confidence 1.0）；release 待人工确认，不自动公开发布。
-
-Prism Lake D3（prism-form-image-post-v1）：QA `run-20260812T085444996257` passed
-（10/10 AC · 15/15 TC · release_confidence 1.0）；release 待人工确认，不自动公开发布。
-
-Prism Lake D4（prism-form-novel-v1）：QA `run-20260812T085911329188` passed
-（10/10 AC · 15/15 TC · release_confidence 1.0）；release 待人工确认，不自动公开发布。
-
-Prism Lake D5（prism-form-av-v1）：QA `run-20260812T090408217552` passed
-（10/10 AC · 15/15 TC · release_confidence 1.0）；release 待人工确认，不自动公开发布。
-
-Prism Lake D6（prism-publish-bridge-v1）：QA `run-20260812T090820139073` passed
-（10/10 AC · 15/15 TC · release_confidence 1.0）；release 待人工确认，不自动公开发布。
-
-Lake D（D1–D6）全部 release-ready；海级完整创作能力仍需 Lake E/F 与各 release 人工确认，不得宣称海 closure。
-
-Prism Lake E1（prism-metrics-publication-v1）：QA `run-20260812T183252827530` passed
-（10/10 AC · 15/15 TC · release_confidence 1.0）；release 待人工确认，不自动公开发布。
-
-Prism Lake E2（prism-metrics-snapshot-v1）：QA `run-20260812T183837779955` passed
-（10/10 AC · 15/15 TC · release_confidence 1.0）；release 待人工确认，不自动公开发布。
-
-Prism Lake E3（prism-review-loop-v1）：QA `run-20260812T184310318974` passed
-（10/10 AC · 15/15 TC · release_confidence 1.0）；release 待人工确认，不自动公开发布。
-
-Prism Lake E4（prism-learning-memory-v1）：QA `run-20260812T184654601157` passed
-（10/10 AC · 15/15 TC · release_confidence 1.0）；release 待人工确认，不自动公开发布。
-
-Lake E（E1–E4）全部 release-ready；海级完整创作能力仅剩 Lake F（monetization，可选）与各 release 人工确认，仍不得宣称海 closure。
-
-Prism Lake F1（prism-monetization-contracts-v1）：QA `run-20260812T192756091788` passed
-（10/10 AC · 15/15 TC · release_confidence 1.0）；release 待人工确认，不自动公开发布。
-
-Prism Lake F2（prism-adaptation-contracts-v1）：QA `run-20260812T193122703453` passed
-（10/10 AC · 15/15 TC · release_confidence 1.0）；release 待人工确认，不自动公开发布。
-
-Lake F（F1–F2）全部 release-ready —— A–F 全湖已交付（各 release 人工门与平台发布仍待确认）。

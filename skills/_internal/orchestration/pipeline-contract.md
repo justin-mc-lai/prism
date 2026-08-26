@@ -60,7 +60,7 @@ content/storyworlds/{world_slug}/
 content/publications/{platform}/{account}/{slug}/{publication_id}.yaml
 ```
 
-Only create files that match the requested output forms. For a WeChat 贴图 Tab package with 小黑 images, `shot-list.md`, `assets/`, `visual-qa.md`, `supervisor-review.md`, and `release-approval.md` are more important than video files. Keep `body.md` only if there is a companion article or source text. For a vlog, `script.md`, `storyboard.md`, `edit-plan.md`, subtitles, and render evidence are required.
+Only create files that match the requested output forms. For a WeChat 贴图 Tab package（账号角色 IP 走配置，如 shot-list 角色卡）, `shot-list.md`, `assets/`, `visual-qa.md`, `supervisor-review.md`, and `release-approval.md` are more important than video files. Keep `body.md` only if there is a companion article or source text. For a vlog, `script.md`, `storyboard.md`, `edit-plan.md`, subtitles, and render evidence are required.
 
 ## State Machine
 

@@ -1,0 +1,14 @@
+episode_id: episode-001
+world_slug: fen-yuan-ren
+master_id: story/fen-yuan-ren
+sequence: 1
+canon_gate_status: review_required
+title: 第 1 章 · 第 7 区的第一炉火
+summary: >
+  江烬夜班焚化老刑警科尔曼，首次获得词条【蛛丝马迹】；
+  费岭镇新婚夫妻的尸身与“消失的夫妻”怨案一同运抵第 7 区，
+  系统发布首个怨案任务，煞级黑怨孕育至 100%，四首煞诞生。
+continuity_refs:
+  - world_slug: fen-yuan-ren
+  - canon_ledger: fyr-rule-001..005
+  - master: content/masters/story/fen-yuan-ren/MASTER.md

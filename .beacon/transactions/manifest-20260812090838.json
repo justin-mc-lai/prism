@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "transaction_id": "manifest-20260812090838",
+  "operation": "manifest_save",
+  "version": "v0.0.1",
+  "feature_count": 8,
+  "generated_at": "2026-08-12T01:08:38.224915Z"
+}

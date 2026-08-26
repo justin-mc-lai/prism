@@ -58,6 +58,18 @@ forms:
     producer_chain: director 书籍分镜 → bridge book-video / rnskill → QA
     fast_lane_skip_allowed: false
     status: registered
+  - form: manga_drama
+    contract: contracts/form-manga-drama.contract.md
+    lane: standard
+    producer_chain: StoryMaster → director 分镜 JSON（storyboard-schema 校验）→ Seedance 参考链 / FFmpeg kenburns 降级 → 五类 QA 门 → release 停 pending_human
+    fast_lane_skip_allowed: false
+    status: registered   # 2026-08-21 human 指令转正；源 truth R1 已冻结+QA pass，CLI 已 A4 pin（sot-layering-decision D4）
+  - form: live_drama
+    contract: contracts/form-live-drama.contract.md
+    lane: standard
+    producer_chain: StoryMaster/剧集 bible → director 分集剧本+分镜 → 人工实拍素材 ingest → openmontage 剪辑 → 合规门（三类自审/AI 标识/授权）→ release 停人工
+    fast_lane_skip_allowed: false
+    status: registered   # 2026-08-21 human 冻结转正（truth R1）；持《广播电视节目制作经营许可证》已确认
 
 guards:
   new_form_only_registry_contract_routing: true

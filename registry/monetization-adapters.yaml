@@ -27,3 +27,7 @@ guards:
   disclosure_mandatory: true
   risk_content_compliance_gate: true
   sensitive_info_never_in_repo: true
+
+install:
+  note: 本地 tool bridge（deal-record/compliance-check/disclosure-template）为 Prism 自管工具，
+  无源仓依赖；敏感信息永不入仓，缺失 fail-closed

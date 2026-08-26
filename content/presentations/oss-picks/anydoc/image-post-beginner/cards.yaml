@@ -1,0 +1,143 @@
+metadata:
+  slug: anydoc
+  title: 把 Word/PDF 变成干净 Markdown
+  media_type: image
+  kind: image_post
+  source_url: https://github.com/firecrawl/anydoc
+  source_label: github.com/firecrawl/anydoc
+  master_ref: content/masters/oss-picks/anydoc/MASTER.md
+  dimensions:
+    width: 1080
+    height: 1440
+cards:
+  - seq: 1
+    file: 01-cover.png
+    role: cover_card
+    layout: cover
+    color: blue
+    kicker: 开源项目
+    title: 把 Word/PDF 变成干净 Markdown
+    subtitle: 9 天涨到约 1.5 万星的开源小工具（检索时刻 2026-08-12）。
+    hero:
+      kind: counts
+      label: anydoc
+      stats:
+        - number: "14,888"
+          label: stars 快照
+          color: blue
+        - number: "792"
+          label: forks 快照
+          color: orange
+        - number: "8"
+          label: 输入格式
+          color: green
+    takeaway: 办公格式进，干净 Markdown 出。
+
+  - seq: 2
+    file: 02-problem.png
+    role: problem_card
+    layout: sections
+    color: orange
+    kicker: 痛点
+    title: 复制粘贴毁格式，手动整理一份二十分钟
+    subtitle: 想把文档喂给 AI 总结，AI 也读不懂一堆碎片。
+    sections:
+      - title: 你经历过
+        color: red
+        bullets:
+          - 标题变乱码、表格散架、图片失踪
+          - 排版像被洗衣机搅过
+      - title: 更难受的是
+        color: orange
+        bullets:
+          - 文档喂给 AI，AI 也读不懂碎片格式
+          - 手动整理一份，二十分钟没了
+
+  - seq: 3
+    file: 03-principle.png
+    role: principle_card
+    layout: sections
+    color: blue
+    kicker: 它做什么
+    title: 一件事，办公格式进，干净 Markdown 出
+    subtitle: anydoc 是一个格式无关的文档转 Markdown 转换层，核心 Rust 实现，MIT 协议。
+    sections:
+      - title: 支持 8 种格式
+        color: green
+        bullets:
+          - Word / PowerPoint / Excel
+          - OpenDocument / RTF / EPUB
+          - CSV / PDF
+      - title: 输出统一
+        color: blue
+        bullets:
+          - 干净的 GitHub 风格 Markdown
+          - 下游不用为每种格式写适配
+    takeaway: 官方宣称单数字毫秒级，未做独立测试。
+
+  - seq: 4
+    file: 04-entries.png
+    role: evidence_card
+    layout: compare
+    color: blue
+    kicker: 三个入口
+    title: CLI、脚本、浏览器，怎么选
+    subtitle: 同一 Rust 核心，三条绑定。
+    compare:
+      left:
+        title: 手动 / 批量
+        color: blue
+        bullets:
+          - CLI：npx @firecrawl/anydoc 文件.docx
+          - Node：toMarkdown / toMarkdownBytes / toDocument
+          - Python：anydoc.to_markdown 系列
+      right:
+        title: 隐私优先
+        color: green
+        bullets:
+          - 浏览器 WASM 版本地转换
+          - 文件不上传
+          - Agent Skill：npx skills add firecrawl/anydoc
+    takeaway: 想批量处理看脚本绑定，敏感文件优先浏览器版。
+
+  - seq: 5
+    file: 05-boundary.png
+    role: boundary_card
+    layout: sections
+    color: red
+    kicker: 诚实边界
+    title: 扫描版 PDF 它转不了
+    subtitle: anydoc 本体不做 OCR。
+    sections:
+      - title: 谁负责 OCR
+        color: orange
+        bullets:
+          - 扫描页要走官方托管 API（Firecrawl Parse）
+          - 手写稿、拍照页不归它管
+      - title: 提醒
+        color: red
+        bullets:
+          - star 数是 08-12 的快照，会变
+          - 速度声明是官方口径，未独立实测
+    takeaway: 边界清楚，才敢放心用。
+
+  - seq: 6
+    file: 06-action.png
+    role: takeaway_card
+    layout: takeaway
+    color: green
+    kicker: 下一步
+    title: 拿一份手边文档试一次
+    subtitle: 三分钟知道值不值。
+    sections:
+      - title: 现在就能做
+        color: blue
+        bullets:
+          - npx @firecrawl/anydoc 你的文档.docx
+          - 敏感文件用浏览器 WASM 版
+      - title: 数据来源
+        color: orange
+        bullets:
+          - GitHub 元数据与 README（检索时刻 2026-08-12）
+          - 未做独立性能基准
+    takeaway: 收藏不如跑一次。

@@ -27,3 +27,7 @@ guards:
   never_writes_requirement_truth: true
   replayable_and_auditable: true
   conflicts_marked_not_merged: true
+
+install:
+  note: 本地 tool bridge（memory-store/recall/prune）为 Prism 自管工具，无源仓依赖；
+  平台/凭证类能力缺失时 fail-closed，不假装产出

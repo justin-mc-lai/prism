@@ -10,57 +10,57 @@ adapters:
   - name: humanizer-zh
     role: 中文终检去痕
     strategy: bridge
-    bridge_command: "skill:humanizer-zh（源仓 skills/humanizer-zh）"
+    bridge_command: "vendor/skills/humanizer-zh（A4 MIT pin）"
     fail_closed: true
     notes: 终检层；在成稿人味层之后
   - name: selfmedia-humanize
     role: 自媒体口语/人味策略
     strategy: bridge
-    bridge_command: "skill:selfmedia-humanize（源仓 skills/selfmedia-humanize）"
+    bridge_command: "vendor/skills/selfmedia-humanize（A4 MIT pin）"
     fail_closed: true
     notes: 句式交错与口语策略
   - name: qu-ai-wei
     role: 中文去 AI 味改稿
     strategy: bridge
-    bridge_command: "skill:qu-ai-wei（源仓 skills/qu-ai-wei）"
+    bridge_command: "vendor/skills/qu-ai-wei（A4 MIT pin）"
     fail_closed: true
   - name: shuorenhua
     role: 说人话去模板感
     strategy: bridge
-    bridge_command: "skill:shuorenhua（源仓 skills/shuorenhua）"
+    bridge_command: "vendor/skills/shuorenhua（A4 MIT pin）"
     fail_closed: true
   - name: no-ai-slop
     role: 英文最小改写/检测
     strategy: bridge
-    bridge_command: "skill:no-ai-slop（源仓 skills/no-ai-slop）"
+    bridge_command: "vendor/skills/no-ai-slop（A4 MIT pin）"
     fail_closed: true
     notes: detect 模式引用命名模式为证据
   - name: stop-slop
     role: 英文成稿去 slop
     strategy: bridge
-    bridge_command: "skill:stop-slop（源仓 skills/stop-slop）"
+    bridge_command: "vendor/skills/stop-slop（A4 MIT pin）"
     fail_closed: true
   - name: humanizer-en
     role: 英文基础去味
     strategy: bridge
-    bridge_command: "skill:humanizer-en（源仓 skills/humanizer-en）"
+    bridge_command: "vendor/skills/humanizer-en（A4 MIT pin）"
     fail_closed: true
   - name: writing-agent
     role: 长流程选题→证据→审稿→导出
     strategy: bridge
-    bridge_command: "skill:writing-agent（源仓 skills/writing-agent + vendor）"
+    bridge_command: "vendor/skills/writing-agent（A4 MIT pin）"
     fail_closed: true
     notes: 大运行时，默认 bridge 不复制
   - name: selfmedia-writing
     role: 库拾成稿主入口（结构参考）
     strategy: bridge
-    bridge_command: "skill:selfmedia-writing（源仓 skills/selfmedia-writing）"
+    bridge_command: "vendor/skills/selfmedia-writing（A4 MIT pin）"
     fail_closed: true
     notes: 结构规则已 distill 进 contracts/writing.contract.md
   - name: kushi-narrative-zh
     role: MASTER → humanized 叙事
     strategy: bridge
-    bridge_command: "skill:kushi-narrative-zh（源仓 skills/kushi-narrative-zh）"
+    bridge_command: "vendor/skills/kushi-narrative-zh（A4 MIT pin）"
     fail_closed: true
     notes: novel 子湖（D4）主桥
 
@@ -68,3 +68,15 @@ guards:
   missing_tool_blocks_production: true
   no_wholesale_vendor_copy: true
   account_hardcodes_forbidden: true
+
+install:
+  note: >-
+    10 个写作 bridge 已全部 pin 进 vendor/skills/（A4 · 2026-08-15），无需安装；
+    install_writing_bridges.sh 保留为 archive-only 兼容入口
+
+distilled_in_repo:
+  prose_core: skills/prism-produce/references/prose-core.md
+  human_voice_prose: skills/prism-produce/references/human-voice-prose.md
+  humanize_techniques: skills/prism-produce/references/humanize-techniques.md
+  anti_slop_gate: skills/prism-qa/references/anti-slop-gate.md
+  deterministic_check: scripts/check_human_voice.py

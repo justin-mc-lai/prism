@@ -1,0 +1,12 @@
+{
+  "schema_version": "workspace-admission-v1",
+  "version": "v0.0.1",
+  "feature_slug": "prism-publish-bridge-v1",
+  "project_root": "/Users/apple/Developer/Personal/products/prism",
+  "branch": "beacon/v0.0.1/prism-publish-bridge-v1",
+  "worktree_path": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-publish-bridge-v1",
+  "base_branch": "main",
+  "issued_at": "2026-08-12T01:08:12.813839+00:00",
+  "git_head": "5dd1c8dd66964be2410de1897deb45318ed8f919",
+  "status": "pass"
+}

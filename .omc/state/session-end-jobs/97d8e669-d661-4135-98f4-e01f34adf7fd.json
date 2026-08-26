@@ -1,0 +1,343 @@
+{
+  "version": 1,
+  "jobId": "9a76bcbe-f994-41e8-acf6-4aeff73ce0db",
+  "sessionId": "97d8e669-d661-4135-98f4-e01f34adf7fd",
+  "scopeKey": "b2f95e9ecb62af67dc16bb06e2c7c9a29563251f6cc0ea90392593fc5874ecd0",
+  "revision": 41,
+  "createdAt": "2026-08-17T08:31:26.471Z",
+  "updatedAt": "2026-08-17T08:31:28.246Z",
+  "producerGraceExpiresAt": "2026-08-17T08:31:56.472Z",
+  "bestEffortDeadlineAt": "2026-08-17T08:32:47.472Z",
+  "producers": {
+    "core": {
+      "state": "sealed",
+      "intentKey": "ce98e60f54edb6fd718cbf8fd3e7a6389de6be854abfdc28864fc508cb349fb4",
+      "payloadDigest": "ce98e60f54edb6fd718cbf8fd3e7a6389de6be854abfdc28864fc508cb349fb4",
+      "sealedAt": "2026-08-17T08:31:26.514Z",
+      "sealedBy": "foreground"
+    },
+    "wiki": {
+      "state": "no-op",
+      "sealedAt": "2026-08-17T08:31:26.493Z",
+      "sealedBy": "wiki-producer"
+    }
+  },
+  "actions": {
+    "foreground-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 0,
+      "idempotencyKey": "d4a86383e02752221d0e169c72fbdc4b672af0982f470529c3377cd2ebc5b582",
+      "payload": {
+        "transcriptPath": "/Users/apple/.claude/projects/-Users-apple-Developer-Personal-products-prism/97d8e669-d661-4135-98f4-e01f34adf7fd.jsonl",
+        "cwd": "/Users/apple/Developer/Personal/products/prism",
+        "reason": "other",
+        "input": {
+          "session_id": "97d8e669-d661-4135-98f4-e01f34adf7fd",
+          "transcript_path": "/Users/apple/.claude/projects/-Users-apple-Developer-Personal-products-prism/97d8e669-d661-4135-98f4-e01f34adf7fd.jsonl",
+          "cwd": "/Users/apple/Developer/Personal/products/prism",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "97d8e669-d661-4135-98f4-e01f34adf7fd",
+          "ended_at": "2026-08-17T08:31:26.468Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {},
+        "foregroundResult": {
+          "removedTransientFiles": 0,
+          "completedAt": "2026-08-17T08:31:26.504Z"
+        }
+      },
+      "budgetMs": 9000,
+      "completedAt": "2026-08-17T08:31:26.514Z",
+      "lastOutcomeCode": "completed"
+    },
+    "wiki-capture": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 0,
+      "idempotencyKey": "4aa51b4424b97e13f933f6ffe35ebf1377415dc7c9514c09e761839c9c19f0e6",
+      "payload": {
+        "transcriptPath": "/Users/apple/.claude/projects/-Users-apple-Developer-Personal-products-prism/97d8e669-d661-4135-98f4-e01f34adf7fd.jsonl",
+        "cwd": "/Users/apple/Developer/Personal/products/prism",
+        "reason": "other",
+        "input": {
+          "session_id": "97d8e669-d661-4135-98f4-e01f34adf7fd",
+          "transcript_path": "/Users/apple/.claude/projects/-Users-apple-Developer-Personal-products-prism/97d8e669-d661-4135-98f4-e01f34adf7fd.jsonl",
+          "cwd": "/Users/apple/Developer/Personal/products/prism",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "97d8e669-d661-4135-98f4-e01f34adf7fd",
+          "ended_at": "2026-08-17T08:31:26.468Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 9000,
+      "completedAt": "2026-08-17T08:31:26.493Z"
+    },
+    "team-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "e9a02a3c280079b6467bed55176a10b98778d402cd2ff3edb2711b8ec035166b",
+      "payload": {
+        "transcriptPath": "/Users/apple/.claude/projects/-Users-apple-Developer-Personal-products-prism/97d8e669-d661-4135-98f4-e01f34adf7fd.jsonl",
+        "cwd": "/Users/apple/Developer/Personal/products/prism",
+        "reason": "other",
+        "input": {
+          "session_id": "97d8e669-d661-4135-98f4-e01f34adf7fd",
+          "transcript_path": "/Users/apple/.claude/projects/-Users-apple-Developer-Personal-products-prism/97d8e669-d661-4135-98f4-e01f34adf7fd.jsonl",
+          "cwd": "/Users/apple/Developer/Personal/products/prism",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "97d8e669-d661-4135-98f4-e01f34adf7fd",
+          "ended_at": "2026-08-17T08:31:26.468Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 9000,
+      "claimedAt": "2026-08-17T08:31:26.673Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "1546362e-3d6f-4816-8b06-2d2502fe2eae",
+        "phase": "terminal",
+        "deadlineAt": "2026-08-17T08:31:36.623Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-08-17T08:31:26.920Z"
+    },
+    "python-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "85956d8dbf6c2dd1c7bec64114aefb5f82c0b22e2c38e51b0990f3e3062e7de6",
+      "payload": {
+        "transcriptPath": "/Users/apple/.claude/projects/-Users-apple-Developer-Personal-products-prism/97d8e669-d661-4135-98f4-e01f34adf7fd.jsonl",
+        "cwd": "/Users/apple/Developer/Personal/products/prism",
+        "reason": "other",
+        "input": {
+          "session_id": "97d8e669-d661-4135-98f4-e01f34adf7fd",
+          "transcript_path": "/Users/apple/.claude/projects/-Users-apple-Developer-Personal-products-prism/97d8e669-d661-4135-98f4-e01f34adf7fd.jsonl",
+          "cwd": "/Users/apple/Developer/Personal/products/prism",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "97d8e669-d661-4135-98f4-e01f34adf7fd",
+          "ended_at": "2026-08-17T08:31:26.468Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 9000,
+      "claimedAt": "2026-08-17T08:31:26.943Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "ec007619-9444-47e0-aa2b-61c0687c8ffe",
+        "phase": "terminal",
+        "deadlineAt": "2026-08-17T08:31:36.623Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-08-17T08:31:27.181Z"
+    },
+    "reply-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "e6f81f00a7047a259e61973dfa3be688abaadb1b88f545999dc62ef9b21f29db",
+      "payload": {
+        "transcriptPath": "/Users/apple/.claude/projects/-Users-apple-Developer-Personal-products-prism/97d8e669-d661-4135-98f4-e01f34adf7fd.jsonl",
+        "cwd": "/Users/apple/Developer/Personal/products/prism",
+        "reason": "other",
+        "input": {
+          "session_id": "97d8e669-d661-4135-98f4-e01f34adf7fd",
+          "transcript_path": "/Users/apple/.claude/projects/-Users-apple-Developer-Personal-products-prism/97d8e669-d661-4135-98f4-e01f34adf7fd.jsonl",
+          "cwd": "/Users/apple/Developer/Personal/products/prism",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "97d8e669-d661-4135-98f4-e01f34adf7fd",
+          "ended_at": "2026-08-17T08:31:26.468Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 9000,
+      "claimedAt": "2026-08-17T08:31:27.206Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "b88595f2-61b6-44d5-942d-78b5e0b1f51f",
+        "phase": "terminal",
+        "deadlineAt": "2026-08-17T08:31:36.623Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-08-17T08:31:27.469Z"
+    },
+    "callback": {
+      "class": "best-effort",
+      "phase": "deferred-best-effort",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "01b18f5ae22a7799023caf98f8c04150baa6dc73009280606f0079d6a4177c60",
+      "payload": {
+        "transcriptPath": "/Users/apple/.claude/projects/-Users-apple-Developer-Personal-products-prism/97d8e669-d661-4135-98f4-e01f34adf7fd.jsonl",
+        "cwd": "/Users/apple/Developer/Personal/products/prism",
+        "reason": "other",
+        "input": {
+          "session_id": "97d8e669-d661-4135-98f4-e01f34adf7fd",
+          "transcript_path": "/Users/apple/.claude/projects/-Users-apple-Developer-Personal-products-prism/97d8e669-d661-4135-98f4-e01f34adf7fd.jsonl",
+          "cwd": "/Users/apple/Developer/Personal/products/prism",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "97d8e669-d661-4135-98f4-e01f34adf7fd",
+          "ended_at": "2026-08-17T08:31:26.468Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 2000,
+      "claimedAt": "2026-08-17T08:31:27.492Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "1d9f42f1-1c5b-4038-af6a-0c998cf62eb0",
+        "phase": "terminal",
+        "deadlineAt": "2026-08-17T08:31:36.623Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-08-17T08:31:27.711Z"
+    },
+    "notification": {
+      "class": "best-effort",
+      "phase": "deferred-best-effort",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "958645fdd7e3ecef17bd35ae6485cf4159a2659d219da68b70e4f35d04371b4e",
+      "payload": {
+        "transcriptPath": "/Users/apple/.claude/projects/-Users-apple-Developer-Personal-products-prism/97d8e669-d661-4135-98f4-e01f34adf7fd.jsonl",
+        "cwd": "/Users/apple/Developer/Personal/products/prism",
+        "reason": "other",
+        "input": {
+          "session_id": "97d8e669-d661-4135-98f4-e01f34adf7fd",
+          "transcript_path": "/Users/apple/.claude/projects/-Users-apple-Developer-Personal-products-prism/97d8e669-d661-4135-98f4-e01f34adf7fd.jsonl",
+          "cwd": "/Users/apple/Developer/Personal/products/prism",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "97d8e669-d661-4135-98f4-e01f34adf7fd",
+          "ended_at": "2026-08-17T08:31:26.468Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 2000,
+      "claimedAt": "2026-08-17T08:31:27.735Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "9bf69a60-e32a-431d-a4d5-6e387863ffea",
+        "phase": "terminal",
+        "deadlineAt": "2026-08-17T08:31:36.623Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-08-17T08:31:27.952Z"
+    },
+    "openclaw": {
+      "class": "best-effort",
+      "phase": "deferred-best-effort",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "d960eda08bb9c6559dd72af9b0d7de6742b5c9277d91b8b938108d9d22ebb8bb",
+      "payload": {
+        "transcriptPath": "/Users/apple/.claude/projects/-Users-apple-Developer-Personal-products-prism/97d8e669-d661-4135-98f4-e01f34adf7fd.jsonl",
+        "cwd": "/Users/apple/Developer/Personal/products/prism",
+        "reason": "other",
+        "input": {
+          "session_id": "97d8e669-d661-4135-98f4-e01f34adf7fd",
+          "transcript_path": "/Users/apple/.claude/projects/-Users-apple-Developer-Personal-products-prism/97d8e669-d661-4135-98f4-e01f34adf7fd.jsonl",
+          "cwd": "/Users/apple/Developer/Personal/products/prism",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "97d8e669-d661-4135-98f4-e01f34adf7fd",
+          "ended_at": "2026-08-17T08:31:26.468Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 2000,
+      "claimedAt": "2026-08-17T08:31:27.980Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "84b60cba-0613-4072-96f5-8e23d87a4eb3",
+        "phase": "terminal",
+        "deadlineAt": "2026-08-17T08:31:36.623Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-08-17T08:31:28.199Z"
+    }
+  },
+  "owner": null,
+  "phase": "complete",
+  "completion": {
+    "completedAt": "2026-08-17T08:31:28.223Z",
+    "terminalDigest": "1b70beb9baf337f460153b42747a6b35b5f00bccf982a54786e00c344280a3c2",
+    "terminalRevision": 40
+  }
+}

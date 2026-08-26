@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "run_id": "pgr-512074c3f689",
+  "driver_id": "drv-4c10c98c44",
+  "state": "arming",
+  "pid": 53797,
+  "turn_n": 0,
+  "max_agent_turns": 32,
+  "turn_timeout_sec": 3600,
+  "longrun": true,
+  "started_at": "2026-08-11T08:50:20.060414+00:00",
+  "updated_at": "2026-08-11T08:50:20.060452+00:00",
+  "last_exit_code": null,
+  "last_error": "",
+  "halt_reason": "",
+  "lock_held": true,
+  "history": [
+    {
+      "event": "start",
+      "at": "2026-08-11T08:50:20.060416+00:00"
+    }
+  ]
+}

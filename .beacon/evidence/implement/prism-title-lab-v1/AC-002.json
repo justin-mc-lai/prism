@@ -1,0 +1,11 @@
+{
+  "ac_id": "AC-002",
+  "assertion": "briefing-schema 含「选题角度 + 标题公式建议」小节与 title_hint 字段",
+  "command": "rg -q '选题角度.*标题公式建议|标题公式建议' skills/prism-intel/references/briefing-schema.md && rg -q 'title_hint|formula_candidates' skills/prism-intel/references/briefing-schema.md",
+  "exit_code": 0,
+  "stdout_tail": "",
+  "collected_at": "2026-08-18T06:35:00+00:00",
+  "artifact_refs": [
+    "skills/prism-intel/references/briefing-schema.md"
+  ]
+}

@@ -17,12 +17,14 @@
 ## 3. intake（必填）
 
 - publication_id（平台真实 ID）+ platform + url + published_at + artifact_ref
+- 标题跟踪（title-lab 产出时）：title_formula（最终标题所用公式 slug）+ is_preferred（是否首选/用户选定）
 
 拒绝：缺任一字段 → blocked + reason_code=publication_record_missing；不猜数据
 
 ## 4. output
 
 - 事件: `content/publications/{platform}/{account}/{slug}/`（publication.yaml）
+- 事件字段：平台指标按 E2 快照采集；标题字段 `title_formula` / `is_preferred` 随发布记录一并回流（无 title-lab 产出的历史发布显式 `null`，不补造）
 - 证据: `.beacon/evidence/implement/prism-metrics-publication-v1/AC-MPUB-001.json`
 - 时间: 发布事件时间（published_at）必须真实记录；缺证据（时间/URL）不算回流
 

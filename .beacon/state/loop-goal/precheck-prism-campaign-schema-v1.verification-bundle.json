@@ -1,0 +1,70 @@
+{
+  "schema_version": "standard-execution-precheck.v1",
+  "produced_by": "beacon.status.standard-execution-precheck",
+  "cli_owned": true,
+  "generated_at": "2026-08-11T07:56:08.609785+00:00",
+  "version": "v0.0.1",
+  "feature": "prism-campaign-schema-v1",
+  "feature_slug": "prism-campaign-schema-v1",
+  "run_id": "precheck-prism-campaign-schema-v1",
+  "verification_bundle_ref": ".beacon/state/loop-goal/precheck-prism-campaign-schema-v1.verification-bundle.json",
+  "workspace_admission_ref": "",
+  "topology_gate_ref": "",
+  "verification_bundle": {
+    "truth_map_verify": {
+      "status": "pass",
+      "details": {
+        "status": "pass",
+        "blocked": false
+      }
+    },
+    "verify_materials_strict": {
+      "status": "pass",
+      "details": {
+        "status": "pass",
+        "blocked": false,
+        "exit_code": 0
+      }
+    },
+    "git_diff_check": {
+      "status": "pass"
+    },
+    "branch_governance_verify": {
+      "status": "pass",
+      "details": {
+        "status": "pass"
+      }
+    },
+    "workspace_admission": {
+      "status": "fail",
+      "reason_code": "workspace_admission_missing",
+      "details": {
+        "valid": false,
+        "status": "blocked",
+        "reason_code": "workspace_admission_missing",
+        "reason_codes": [
+          "workspace_admission_missing"
+        ],
+        "artifact_path": ".beacon/state/workspace-admission/v0.0.1/prism-campaign-schema-v1.json"
+      }
+    },
+    "topology_gate": {
+      "status": "pass",
+      "details": {
+        "skipped": true
+      }
+    }
+  },
+  "truth_canonical": "main",
+  "truth_baseline_commit": "31bf31d77eea7cc9347a6fb62865426c7d218c20",
+  "canonical_refreeze_committed": true,
+  "truth_baseline_merged": true,
+  "feature_worktree_reconciled": true,
+  "stale_feature_refreeze_detected": false,
+  "stale_feature_refreeze_quarantine_ref": "",
+  "status": "blocked",
+  "reason_code": "verification_bundle_incomplete",
+  "failed_checks": [
+    "workspace_admission"
+  ]
+}

@@ -1,0 +1,706 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-title-lab-v1",
+  "feature_slug": "prism-title-lab-v1",
+  "version": "v0.0.1",
+  "runtime_version": "v1.6.12",
+  "runtime_capability_line": "v1.3.3",
+  "required": true,
+  "reason_code": "",
+  "blocked": false,
+  "status": "pass",
+  "findings": [],
+  "report_json_path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-title-lab-v1.json",
+  "report_markdown_path": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-title-lab-v1.md",
+  "state_path": ".beacon/state/requirement-clarity-prism-title-lab-v1.json",
+  "diagram_truth": {
+    "schema_version": "1.0",
+    "version": "v0.0.1",
+    "supported": false,
+    "required": false,
+    "ready": false,
+    "diagram_types": [],
+    "state_axes": [],
+    "missing_diagram_types": [],
+    "missing_state_axes": false,
+    "complexity_signals": [],
+    "review_gates": [],
+    "qa_coverage_hints": [],
+    "evidence_lines": {},
+    "generated_at": "2026-08-18T06:25:41.074001+00:00",
+    "feature": "prism-title-lab-v1",
+    "feature_slug": "prism-title-lab-v1",
+    "prd_ref": "docs/beacon/v0.0.1/prd/prism-title-lab-v1.md",
+    "user_story_ref": "docs/beacon/v0.0.1/user-story/prism-title-lab-v1.md"
+  },
+  "domain_fsm_gate": {
+    "schema_version": "1.0",
+    "feature": "prism-title-lab-v1",
+    "feature_slug": "prism-title-lab-v1",
+    "version": "v0.0.1",
+    "truth_path": "docs/beacon/v0.0.1/features/prism-title-lab-v1/truth.md",
+    "tests_path": "docs/beacon/v0.0.1/features/prism-title-lab-v1/tests.md",
+    "required": true,
+    "blocked": false,
+    "status": "pass",
+    "reason_code": "",
+    "findings": [],
+    "requirement": {
+      "required": true,
+      "reason": "explicit_domain_mark",
+      "explicit": true,
+      "partial": true,
+      "complexity": false,
+      "business_signal": false,
+      "version_supported": false
+    },
+    "projection": {
+      "schema_version": "1.0",
+      "domain_fsm_schema": "domain-fsm.v1",
+      "entity_precedence_schema": "entity-precedence.v1",
+      "frontmatter": {
+        "slug": "prism-title-lab-v1",
+        "version": "v0.0.1",
+        "status": "frozen",
+        "language": "zh",
+        "domain_required": "true",
+        "package_maturity": "filled",
+        "parser_contract": "beacon-feature-package-v2",
+        "materials_status": "current",
+        "truth_source_model": "intent_first",
+        "canonical_refs": {
+          "prd": "docs/beacon/v0.0.1/features/prism-title-lab-v1/truth.md",
+          "user_story": "docs/beacon/v0.0.1/features/prism-title-lab-v1/truth.md",
+          "test_case": "docs/beacon/v0.0.1/features/prism-title-lab-v1/tests.md"
+        },
+        "provenance": {
+          "- ac_id": "AC-005",
+          "source_type": "user_intent",
+          "source_ref": "utterance_sentence_5: metrics/review 命中率闭环，发布人工门"
+        }
+      },
+      "frontmatter_errors": [],
+      "has_domain_model_section": true,
+      "has_domain_fsm_section": true,
+      "has_illegal_transition_section": true,
+      "entities": [
+        {
+          "entity": "TitleLabel",
+          "key": "label_id",
+          "precedence": "标题实验室实体；引用选题角度/母稿；输出候选标题集",
+          "requires": "标题实验室实体；引用选题角度/母稿；输出候选标题集"
+        },
+        {
+          "entity": "TitleCandidate",
+          "key": "candidate_id",
+          "precedence": "属于 TitleLabel；携带公式 id、字数、兑现点、首选标记",
+          "requires": "属于 TitleLabel；携带公式 id、字数、兑现点、首选标记"
+        },
+        {
+          "entity": "TitleGateReport",
+          "key": "report_id",
+          "precedence": "引用候选集；banned 命中清单；gate verdict（pass/fix）",
+          "requires": "引用候选集；banned 命中清单；gate verdict（pass/fix）"
+        },
+        {
+          "entity": "PublicationMetric",
+          "key": "metric_id",
+          "precedence": "引用候选标的最终标题；title_formula / is_preferred / 平台指标",
+          "requires": "引用候选标的最终标题；title_formula / is_preferred / 平台指标"
+        },
+        {
+          "entity": "ReviewBaseline",
+          "key": "baseline_id",
+          "precedence": "4 周窗口的公式命中对照；只能由已发布指标聚合",
+          "requires": "4 周窗口的公式命中对照；只能由已发布指标聚合"
+        }
+      ],
+      "entity_precedence": [
+        {
+          "entity": "TitleLabel",
+          "key": "label_id",
+          "precedence": "标题实验室实体；引用选题角度/母稿；输出候选标题集",
+          "requires": "标题实验室实体；引用选题角度/母稿；输出候选标题集"
+        },
+        {
+          "entity": "TitleCandidate",
+          "key": "candidate_id",
+          "precedence": "属于 TitleLabel；携带公式 id、字数、兑现点、首选标记",
+          "requires": "属于 TitleLabel；携带公式 id、字数、兑现点、首选标记"
+        },
+        {
+          "entity": "TitleGateReport",
+          "key": "report_id",
+          "precedence": "引用候选集；banned 命中清单；gate verdict（pass/fix）",
+          "requires": "引用候选集；banned 命中清单；gate verdict（pass/fix）"
+        },
+        {
+          "entity": "PublicationMetric",
+          "key": "metric_id",
+          "precedence": "引用候选标的最终标题；title_formula / is_preferred / 平台指标",
+          "requires": "引用候选标的最终标题；title_formula / is_preferred / 平台指标"
+        },
+        {
+          "entity": "ReviewBaseline",
+          "key": "baseline_id",
+          "precedence": "4 周窗口的公式命中对照；只能由已发布指标聚合",
+          "requires": "4 周窗口的公式命中对照；只能由已发布指标聚合"
+        }
+      ],
+      "aggregates": [
+        {
+          "name": "FSM（标题生命周期）",
+          "states": [
+            "candidate_set",
+            "locked",
+            "published",
+            "qa_pending",
+            "selected_pending"
+          ],
+          "transitions": [
+            {
+              "from": "",
+              "to": "candidate_set",
+              "guard": "路径 A/B 产物齐全",
+              "initial": "true"
+            },
+            {
+              "from": "candidate_set",
+              "to": "qa_pending",
+              "guard": "候选标题集已生成"
+            },
+            {
+              "from": "qa_pending",
+              "to": "selected_pending",
+              "guard": "标题门 pass"
+            },
+            {
+              "from": "selected_pending",
+              "to": "locked",
+              "guard": "用户选定或首选明确"
+            },
+            {
+              "from": "locked",
+              "to": "published",
+              "guard": "人工批准 + 全 gate 过"
+            }
+          ]
+        },
+        {
+          "name": "五元组（标题生命周期业务状态机）",
+          "states": [
+            "B）",
+            "candidate_set",
+            "generate（路径 A",
+            "locked",
+            "publish_approved",
+            "qa_pending",
+            "run_title_gate",
+            "selected_pending",
+            "user_select"
+          ],
+          "transitions": [
+            {
+              "from": "generate（路径 A",
+              "to": "candidate_set",
+              "guard": "6 公式或 4 方向已生成"
+            },
+            {
+              "from": "B）",
+              "to": "candidate_set",
+              "guard": "6 公式或 4 方向已生成"
+            },
+            {
+              "from": "run_title_gate",
+              "to": "qa_pending",
+              "guard": "banned 模式 0；兑现点齐全"
+            },
+            {
+              "from": "run_title_gate",
+              "to": "qa_pending",
+              "guard": "任一 banned 命中"
+            },
+            {
+              "from": "user_select",
+              "to": "selected_pending",
+              "guard": "用户或首选明确"
+            },
+            {
+              "from": "publish_approved",
+              "to": "locked",
+              "guard": "人工批准 + gate 全过"
+            }
+          ]
+        }
+      ],
+      "illegal_transition_slots": [
+        {
+          "description": "candidate_set → locked（跳过标题门）",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "qa_pending → published（未人工批准）",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "locked → published（无 gate / 人工链记录）",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "标题门报告伪造 pass 或 maker 自证",
+          "aggregate": "",
+          "source": "truth"
+        },
+        {
+          "description": "宣称「必爆 / 必命中」为承诺",
+          "aggregate": "",
+          "source": "truth"
+        }
+      ],
+      "acceptance_criteria": [
+        {
+          "ac_id": "AC-001",
+          "description": "candidate_set → qa_pending"
+        },
+        {
+          "ac_id": "AC-002",
+          "description": "candidate_set → qa_pending"
+        },
+        {
+          "ac_id": "AC-003",
+          "description": "qa_pending → selected_pending；qa_pending → candidate_set（修）"
+        },
+        {
+          "ac_id": "AC-004",
+          "description": "candidate_set → qa_pending（语料完整性前置）"
+        },
+        {
+          "ac_id": "AC-005",
+          "description": "locked → published（人工批准）"
+        }
+      ],
+      "bound_ac_ids": [
+        "AC-001",
+        "AC-002",
+        "AC-003",
+        "AC-004",
+        "AC-005"
+      ],
+      "orphan_ac_ids": [],
+      "aggregates_missing_illegal_slots": [],
+      "raw_section_titles": [
+        "人话",
+        "User Intent",
+        "User Intent Snapshot",
+        "Domain Model",
+        "用户旅程",
+        "Alignment Surface（本 revision 必煮干）",
+        "Phased Backlog（明确不在本包 closure）",
+        "Intent Coverage Matrix",
+        "Acceptance Criteria",
+        "Domain FSM（标题生命周期）",
+        "Illegal transitions",
+        "FSM 五元组（标题生命周期业务状态机）",
+        "invalid / illegal（FSM 五元组）",
+        "Non-goals",
+        "Deferral Ledger",
+        "Provenance",
+        "Source Excerpt"
+      ]
+    },
+    "validation": {
+      "schema_version": "1.0",
+      "required": true,
+      "blocked": false,
+      "status": "pass",
+      "reason_code": "",
+      "findings": [],
+      "projection": {
+        "schema_version": "1.0",
+        "domain_fsm_schema": "domain-fsm.v1",
+        "entity_precedence_schema": "entity-precedence.v1",
+        "frontmatter": {
+          "slug": "prism-title-lab-v1",
+          "version": "v0.0.1",
+          "status": "frozen",
+          "language": "zh",
+          "domain_required": "true",
+          "package_maturity": "filled",
+          "parser_contract": "beacon-feature-package-v2",
+          "materials_status": "current",
+          "truth_source_model": "intent_first",
+          "canonical_refs": {
+            "prd": "docs/beacon/v0.0.1/features/prism-title-lab-v1/truth.md",
+            "user_story": "docs/beacon/v0.0.1/features/prism-title-lab-v1/truth.md",
+            "test_case": "docs/beacon/v0.0.1/features/prism-title-lab-v1/tests.md"
+          },
+          "provenance": {
+            "- ac_id": "AC-005",
+            "source_type": "user_intent",
+            "source_ref": "utterance_sentence_5: metrics/review 命中率闭环，发布人工门"
+          }
+        },
+        "frontmatter_errors": [],
+        "has_domain_model_section": true,
+        "has_domain_fsm_section": true,
+        "has_illegal_transition_section": true,
+        "entities": [
+          {
+            "entity": "TitleLabel",
+            "key": "label_id",
+            "precedence": "标题实验室实体；引用选题角度/母稿；输出候选标题集",
+            "requires": "标题实验室实体；引用选题角度/母稿；输出候选标题集"
+          },
+          {
+            "entity": "TitleCandidate",
+            "key": "candidate_id",
+            "precedence": "属于 TitleLabel；携带公式 id、字数、兑现点、首选标记",
+            "requires": "属于 TitleLabel；携带公式 id、字数、兑现点、首选标记"
+          },
+          {
+            "entity": "TitleGateReport",
+            "key": "report_id",
+            "precedence": "引用候选集；banned 命中清单；gate verdict（pass/fix）",
+            "requires": "引用候选集；banned 命中清单；gate verdict（pass/fix）"
+          },
+          {
+            "entity": "PublicationMetric",
+            "key": "metric_id",
+            "precedence": "引用候选标的最终标题；title_formula / is_preferred / 平台指标",
+            "requires": "引用候选标的最终标题；title_formula / is_preferred / 平台指标"
+          },
+          {
+            "entity": "ReviewBaseline",
+            "key": "baseline_id",
+            "precedence": "4 周窗口的公式命中对照；只能由已发布指标聚合",
+            "requires": "4 周窗口的公式命中对照；只能由已发布指标聚合"
+          }
+        ],
+        "entity_precedence": [
+          {
+            "entity": "TitleLabel",
+            "key": "label_id",
+            "precedence": "标题实验室实体；引用选题角度/母稿；输出候选标题集",
+            "requires": "标题实验室实体；引用选题角度/母稿；输出候选标题集"
+          },
+          {
+            "entity": "TitleCandidate",
+            "key": "candidate_id",
+            "precedence": "属于 TitleLabel；携带公式 id、字数、兑现点、首选标记",
+            "requires": "属于 TitleLabel；携带公式 id、字数、兑现点、首选标记"
+          },
+          {
+            "entity": "TitleGateReport",
+            "key": "report_id",
+            "precedence": "引用候选集；banned 命中清单；gate verdict（pass/fix）",
+            "requires": "引用候选集；banned 命中清单；gate verdict（pass/fix）"
+          },
+          {
+            "entity": "PublicationMetric",
+            "key": "metric_id",
+            "precedence": "引用候选标的最终标题；title_formula / is_preferred / 平台指标",
+            "requires": "引用候选标的最终标题；title_formula / is_preferred / 平台指标"
+          },
+          {
+            "entity": "ReviewBaseline",
+            "key": "baseline_id",
+            "precedence": "4 周窗口的公式命中对照；只能由已发布指标聚合",
+            "requires": "4 周窗口的公式命中对照；只能由已发布指标聚合"
+          }
+        ],
+        "aggregates": [
+          {
+            "name": "FSM（标题生命周期）",
+            "states": [
+              "candidate_set",
+              "locked",
+              "published",
+              "qa_pending",
+              "selected_pending"
+            ],
+            "transitions": [
+              {
+                "from": "",
+                "to": "candidate_set",
+                "guard": "路径 A/B 产物齐全",
+                "initial": "true"
+              },
+              {
+                "from": "candidate_set",
+                "to": "qa_pending",
+                "guard": "候选标题集已生成"
+              },
+              {
+                "from": "qa_pending",
+                "to": "selected_pending",
+                "guard": "标题门 pass"
+              },
+              {
+                "from": "selected_pending",
+                "to": "locked",
+                "guard": "用户选定或首选明确"
+              },
+              {
+                "from": "locked",
+                "to": "published",
+                "guard": "人工批准 + 全 gate 过"
+              }
+            ]
+          },
+          {
+            "name": "五元组（标题生命周期业务状态机）",
+            "states": [
+              "B）",
+              "candidate_set",
+              "generate（路径 A",
+              "locked",
+              "publish_approved",
+              "qa_pending",
+              "run_title_gate",
+              "selected_pending",
+              "user_select"
+            ],
+            "transitions": [
+              {
+                "from": "generate（路径 A",
+                "to": "candidate_set",
+                "guard": "6 公式或 4 方向已生成"
+              },
+              {
+                "from": "B）",
+                "to": "candidate_set",
+                "guard": "6 公式或 4 方向已生成"
+              },
+              {
+                "from": "run_title_gate",
+                "to": "qa_pending",
+                "guard": "banned 模式 0；兑现点齐全"
+              },
+              {
+                "from": "run_title_gate",
+                "to": "qa_pending",
+                "guard": "任一 banned 命中"
+              },
+              {
+                "from": "user_select",
+                "to": "selected_pending",
+                "guard": "用户或首选明确"
+              },
+              {
+                "from": "publish_approved",
+                "to": "locked",
+                "guard": "人工批准 + gate 全过"
+              }
+            ]
+          }
+        ],
+        "illegal_transition_slots": [
+          {
+            "description": "candidate_set → locked（跳过标题门）",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "qa_pending → published（未人工批准）",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "locked → published（无 gate / 人工链记录）",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "标题门报告伪造 pass 或 maker 自证",
+            "aggregate": "",
+            "source": "truth"
+          },
+          {
+            "description": "宣称「必爆 / 必命中」为承诺",
+            "aggregate": "",
+            "source": "truth"
+          }
+        ],
+        "acceptance_criteria": [
+          {
+            "ac_id": "AC-001",
+            "description": "candidate_set → qa_pending"
+          },
+          {
+            "ac_id": "AC-002",
+            "description": "candidate_set → qa_pending"
+          },
+          {
+            "ac_id": "AC-003",
+            "description": "qa_pending → selected_pending；qa_pending → candidate_set（修）"
+          },
+          {
+            "ac_id": "AC-004",
+            "description": "candidate_set → qa_pending（语料完整性前置）"
+          },
+          {
+            "ac_id": "AC-005",
+            "description": "locked → published（人工批准）"
+          }
+        ],
+        "bound_ac_ids": [
+          "AC-001",
+          "AC-002",
+          "AC-003",
+          "AC-004",
+          "AC-005"
+        ],
+        "orphan_ac_ids": [],
+        "aggregates_missing_illegal_slots": [],
+        "raw_section_titles": [
+          "人话",
+          "User Intent",
+          "User Intent Snapshot",
+          "Domain Model",
+          "用户旅程",
+          "Alignment Surface（本 revision 必煮干）",
+          "Phased Backlog（明确不在本包 closure）",
+          "Intent Coverage Matrix",
+          "Acceptance Criteria",
+          "Domain FSM（标题生命周期）",
+          "Illegal transitions",
+          "FSM 五元组（标题生命周期业务状态机）",
+          "invalid / illegal（FSM 五元组）",
+          "Non-goals",
+          "Deferral Ledger",
+          "Provenance",
+          "Source Excerpt"
+        ]
+      },
+      "summary": {
+        "entity_count": 5,
+        "aggregate_count": 2,
+        "illegal_slot_count": 5,
+        "orphan_ac_count": 0,
+        "bound_ac_count": 5
+      }
+    },
+    "recommended_action": ""
+  },
+  "human_closure_contract": {
+    "required": false,
+    "research_path": "docs/beacon/v0.0.1/research/prism-title-lab-v1.md",
+    "research_exists": false,
+    "source_architecture_path": "docs/beacon/v0.0.1/source-architecture/index.md",
+    "source_architecture_exists": true,
+    "required_sections": [
+      "architecture",
+      "business_flow"
+    ],
+    "missing_sections": [
+      "architecture",
+      "business_flow"
+    ],
+    "diagram_types": [],
+    "complexity_signals": []
+  },
+  "requirement_closure_contract": {
+    "required": true,
+    "chain_order": [
+      "research",
+      "prd",
+      "user_story",
+      "test_case",
+      "requirement_clarity",
+      "freeze"
+    ],
+    "human_closure_required": false,
+    "paths": {
+      "research": "docs/beacon/v0.0.1/research/prism-title-lab-v1.md",
+      "prd": "docs/beacon/v0.0.1/features/prism-title-lab-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-title-lab-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-title-lab-v1/tests.md"
+    },
+    "exists": {
+      "research": false,
+      "prd": true,
+      "user_story": true,
+      "test_case": true
+    },
+    "required_research_sections": [],
+    "missing_research_sections": [],
+    "ac_projection": {
+      "prd_ac_ids": [
+        "AC-001",
+        "AC-002",
+        "AC-003",
+        "AC-004",
+        "AC-005"
+      ],
+      "user_story_ac_ids": [
+        "AC-001",
+        "AC-002",
+        "AC-003",
+        "AC-004",
+        "AC-005"
+      ],
+      "test_case_ac_ids": [
+        "AC-001",
+        "AC-002",
+        "AC-003",
+        "AC-004",
+        "AC-005"
+      ],
+      "upstream_ac_ids": [
+        "AC-001",
+        "AC-002",
+        "AC-003",
+        "AC-004",
+        "AC-005"
+      ],
+      "missing_test_case_ac_ids": []
+    }
+  },
+  "version_projection_truth_contract": {
+    "required": false,
+    "supported": false,
+    "projection_types": [],
+    "research_path": "docs/beacon/v0.0.1/research/prism-title-lab-v1.md",
+    "research_exists": false,
+    "required_fields": [
+      "prd_refs",
+      "user_story_refs",
+      "test_case_refs",
+      "coverage_notes",
+      "out_of_scope_notes"
+    ],
+    "field_presence": {
+      "prd_refs": false,
+      "user_story_refs": false,
+      "test_case_refs": false,
+      "coverage_notes": false,
+      "out_of_scope_notes": false
+    },
+    "missing_fields": [],
+    "required_refs": {
+      "prd_refs": "docs/beacon/v0.0.1/features/prism-title-lab-v1/truth.md",
+      "user_story_refs": "docs/beacon/v0.0.1/features/prism-title-lab-v1/truth.md",
+      "test_case_refs": "docs/beacon/v0.0.1/features/prism-title-lab-v1/tests.md"
+    },
+    "missing_ref_targets": [],
+    "ready": false
+  },
+  "support_write_topology_contract": {
+    "schema_version": "1.0",
+    "supported": true,
+    "status": "pass",
+    "blocked": false,
+    "reason_code": "",
+    "diagnostics": []
+  },
+  "required_artifacts": [],
+  "scanned_files": [
+    "docs/beacon/v0.0.1/features/prism-title-lab-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-title-lab-v1/tests.md",
+    "docs/beacon/v0.0.1/features/prism-title-lab-v1/tasks.md",
+    "docs/beacon/v0.0.1/features/prism-title-lab-v1/evidence.md"
+  ]
+}

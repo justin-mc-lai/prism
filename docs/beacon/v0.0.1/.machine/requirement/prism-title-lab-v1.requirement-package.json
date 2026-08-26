@@ -1,0 +1,235 @@
+{
+  "schema_version": "1.0",
+  "truth_map_contract": "beacon-truth-map-v1",
+  "truth_source_model": "feature_package_authoritative",
+  "truth_package_contract": "beacon-feature-package-v2",
+  "machine_json_role": "generated_state_not_truth",
+  "generated_by": "beacon.truth_map.resolver",
+  "generated_at": "2026-08-18T06:25:41.468053+00:00",
+  "feature": "prism-title-lab-v1",
+  "feature_slug": "prism-title-lab-v1",
+  "version": "v0.0.1",
+  "truth_authority": false,
+  "json_authority": false,
+  "source_paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-title-lab-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-title-lab-v1/tests.md",
+    "tasks": "docs/beacon/v0.0.1/features/prism-title-lab-v1/tasks.md",
+    "evidence": "docs/beacon/v0.0.1/features/prism-title-lab-v1/evidence.md"
+  },
+  "source_hashes": {
+    "truth": "7173b87d58c589adf96c215bb791ac2c720b87a45503479c3d496076e90be883",
+    "tests": "ec9614acb979bea8f8a3c25ba7b1400518f14f1c8d7f43ab4008a4f9d229a466",
+    "tasks": "bf6a8f3b774ce236e3a0d6d29ab80b96752337badc4fba41b20861afdaafbc88",
+    "evidence": "b4804cdedd0db6e73e892f62e8615d1b3565c8e906466b91d3a04a11aa79dc86"
+  },
+  "truth_frontmatter": {
+    "slug": "prism-title-lab-v1",
+    "version": "v0.0.1",
+    "status": "frozen",
+    "language": "zh",
+    "domain_required": "true",
+    "package_maturity": "filled",
+    "parser_contract": "beacon-feature-package-v2",
+    "materials_status": "current",
+    "truth_source_model": "intent_first",
+    "canonical_refs": {
+      "prd": "docs/beacon/v0.0.1/features/prism-title-lab-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-title-lab-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-title-lab-v1/tests.md"
+    },
+    "provenance": {
+      "- ac_id": "AC-005",
+      "source_type": "user_intent",
+      "source_ref": "utterance_sentence_5: metrics/review 命中率闭环，发布人工门"
+    }
+  },
+  "frontmatter_errors": [],
+  "acceptance_criteria": [
+    {
+      "ac_id": "AC-001",
+      "theme": "`skills/prism-produce/references/title-lab.md` 存在；含路径 A（6 条候选标题，覆盖 ≥6 种公式 + 1 首选）与路径 B（4 个选题方向，模板不重复）；含硬规则（空数字 / 震惊体 / 编造社会证明 / 同义改写禁止）与「正文兑现点」约束；出声口径为 Prism 自己的规则，不含整段上游原文。",
+      "description": "candidate_set → qa_pending"
+    },
+    {
+      "ac_id": "AC-002",
+      "theme": "`skills/prism-intel/references/briefing-schema.md` 增补「选题角度 + 标题公式建议」小节：每个选题角度给出对应公式/模板候选，并注明由 produce 侧 title-lab 执行。",
+      "description": "candidate_set → qa_pending"
+    },
+    {
+      "ac_id": "AC-003",
+      "theme": "`skills/prism-qa/references/anti-slop-gate.md` 增「标题门」：检查空数字、震惊体、无法兑现、同义改写；`skills/_internal/orchestration/quality-gates.md` Gate 4 增「标题门 pass」条件：公式覆盖 ≥6、标题 18–32 字、工具名前 16 字、附赠物有正文兑现。",
+      "description": "qa_pending → selected_pending；qa_pending → candidate_set（修）"
+    },
+    {
+      "ac_id": "AC-004",
+      "theme": "`docs/ATTRIBUTION-corpora.md` 存在，含 MIT 许可声明、上游仓库地址与核实日期；标题语料样本以校准层落盘（`skills/prism-produce/references/title-corpus.md`），标注来源与检索日期；仓库 LICENSE 随附上游 MIT 文本。",
+      "description": "candidate_set → qa_pending（语料完整性前置）"
+    },
+    {
+      "ac_id": "AC-005",
+      "theme": "`contracts/metrics-publication.contract.md` 增 `title_formula` 与 `is_preferred` 跟踪字段；`contracts/review-loop.contract.md` 增「每 4 周对比标题公式命中的基线」条目；发布仍须人工批准（release 人工门不变）。",
+      "description": "locked → published（人工批准）"
+    }
+  ],
+  "test_rows": [
+    {
+      "ac_id": "AC-001",
+      "tc_id": "TC-001",
+      "layer": "",
+      "command": "`test -f skills/prism-produce/references/title-lab.md && rg -q '路径 A|路径 B|同义改写|首选' skills/prism-produce/references/title-lab.md`",
+      "assertion": "exit 0",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-002",
+      "tc_id": "TC-002",
+      "layer": "",
+      "command": "`rg -q '选题角度.*标题公式建议|标题公式建议' skills/prism-intel/references/briefing-schema.md`",
+      "assertion": "exit 0",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-003",
+      "tc_id": "TC-003",
+      "layer": "",
+      "command": "`rg -q '标题门' skills/prism-qa/references/anti-slop-gate.md && rg -q '标题门' skills/_internal/orchestration/quality-gates.md && rg -q '同义改写|18–32|前 16 字' skills/prism-qa/references/anti-slop-gate.md`",
+      "assertion": "exit 0",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-004",
+      "tc_id": "TC-004",
+      "layer": "",
+      "command": "`test -f docs/ATTRIBUTION-corpora.md && rg -q 'MIT|BigPengSays' docs/ATTRIBUTION-corpora.md && test -f skills/prism-produce/references/title-corpus.md && rg -q '来源|检索' skills/prism-produce/references/title-corpus.md`",
+      "assertion": "exit 0",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-005",
+      "tc_id": "TC-005",
+      "layer": "",
+      "command": "`rg -q 'title_formula|is_preferred' contracts/metrics-publication.contract.md && rg -q '4 周|基线' contracts/review-loop.contract.md && rg -q '人工' contracts/review-loop.contract.md`",
+      "assertion": "exit 0",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-003",
+      "tc_id": "TC-006",
+      "layer": "",
+      "command": "`rg -q 'Illegal transitions|illegal' docs/beacon/v0.0.1/features/prism-title-lab-v1/truth.md && rg -q '跳过标题门|未人工批准' docs/beacon/v0.0.1/features/prism-title-lab-v1/truth.md`",
+      "assertion": "exit 0（非法转移覆盖）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-001",
+      "tc_id": "TC-EXEC-001",
+      "layer": "",
+      "command": "`python3 -c \"from pathlib import Path; t=Path('skills/prism-produce/references/title-lab.md').read_text(encoding='utf-8'); assert '首选' in t and '公式' in t and '兑现' in t; print('ok')\"`",
+      "assertion": "exit 0 且 stdout 含 ok",
+      "evidence_path": "",
+      "source": ""
+    }
+  ],
+  "task_rows": [
+    {
+      "id": "TASK-001",
+      "title": "Implement AC-001: candidate_set → qa_pending · ac=AC-001 · evidence=`.beacon/evidence/implement/prism-title-lab-v1/AC-001.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-002",
+      "title": "Implement AC-002: candidate_set → qa_pending · ac=AC-002 · evidence=`.beacon/evidence/implement/prism-title-lab-v1/AC-002.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-003",
+      "title": "Implement AC-003: qa_pending → selected_pending；qa_pending → candidate_set（修） · ac=AC-003 · evidence=`.beacon/evidence/implement/prism-title-lab-v1/AC-003.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-004",
+      "title": "Implement AC-004: candidate_set → qa_pending（语料完整性前置） · ac=AC-004 · evidence=`.beacon/evidence/implement/prism-title-lab-v1/AC-004.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-005",
+      "title": "Implement AC-005: locked → published（人工批准） · ac=AC-005 · evidence=`.beacon/evidence/implement/prism-title-lab-v1/AC-005.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-006",
+      "title": "Validate package gates (truth review + freeze ack) · ac=GATES · evidence=`.beacon/evidence/implement/prism-title-lab-v1/GATES.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-007",
+      "title": "Run QA against AC↔TC matrix + exec-layer evidence · ac=QA · evidence=`.beacon/evidence/implement/prism-title-lab-v1/QA-MATRIX.json`",
+      "status": "unchecked"
+    }
+  ],
+  "checkbox_errors": [],
+  "evidence_rows": [
+    {
+      "surface": "package",
+      "authority": "requirement_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-title-lab-v1/truth.md"
+    },
+    {
+      "surface": "tests",
+      "authority": "test_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-title-lab-v1/tests.md"
+    },
+    {
+      "surface": "tasks",
+      "authority": "acceptance_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-title-lab-v1/tasks.md"
+    },
+    {
+      "surface": "source_corpus",
+      "authority": "support_advisory",
+      "path": "https://github.com/BigPengSays/bigpeng-hot-gzh (MIT, verified 2026-08-18)"
+    },
+    {
+      "surface": "title_lab",
+      "authority": "support_advisory",
+      "path": "skills/prism-produce/references/title-lab.md"
+    },
+    {
+      "surface": "title_corpus",
+      "authority": "support_advisory",
+      "path": "skills/prism-produce/references/title-corpus.md"
+    },
+    {
+      "surface": "briefing_schema",
+      "authority": "support_advisory",
+      "path": "skills/prism-intel/references/briefing-schema.md"
+    },
+    {
+      "surface": "title_gate",
+      "authority": "support_advisory",
+      "path": "skills/prism-qa/references/anti-slop-gate.md"
+    },
+    {
+      "surface": "orchestration_gates",
+      "authority": "support_advisory",
+      "path": "skills/_internal/orchestration/quality-gates.md"
+    },
+    {
+      "surface": "metrics_publication",
+      "authority": "support_advisory",
+      "path": "contracts/metrics-publication.contract.md"
+    },
+    {
+      "surface": "review_loop",
+      "authority": "support_advisory",
+      "path": "contracts/review-loop.contract.md"
+    }
+  ]
+}

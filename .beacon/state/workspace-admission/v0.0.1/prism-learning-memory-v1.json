@@ -1,0 +1,12 @@
+{
+  "schema_version": "workspace-admission-v1",
+  "version": "v0.0.1",
+  "feature_slug": "prism-learning-memory-v1",
+  "project_root": "/Users/apple/Developer/Personal/products/prism",
+  "branch": "beacon/v0.0.1/prism-learning-memory-v1",
+  "worktree_path": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-learning-memory-v1",
+  "base_branch": "main",
+  "issued_at": "2026-08-12T10:46:47.502192+00:00",
+  "git_head": "132eb1650476232c8cc469719ec08fa33a8bf4bc",
+  "status": "pass"
+}

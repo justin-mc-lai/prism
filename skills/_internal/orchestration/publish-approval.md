@@ -60,7 +60,7 @@ It must not:
 
 ### WeChat Official Account Image Post Boundary
 
-When the user says “微信公众号贴图”, “贴图内容”, “小黑贴图”, or “上传贴图”, treat the target as the WeChat draft box 「贴图」Tab:
+When the user says “微信公众号贴图”, “贴图内容”, “贴图包”, or “上传贴图”, treat the target as the WeChat draft box 「贴图」Tab:
 
 - use `media_type: image` / `kind: image_post`;
 - command path: `scripts/publish-sync-ai.sh --media image` or CLI `--kind image`;

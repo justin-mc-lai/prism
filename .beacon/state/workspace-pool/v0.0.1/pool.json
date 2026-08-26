@@ -1,0 +1,29 @@
+{
+  "schema_version": "workspace-pool-v2",
+  "entries": {
+    "prism-title-lab-v1": {
+      "state": "leased",
+      "feature_slug": "prism-title-lab-v1",
+      "branch": "",
+      "worktree_path": "",
+      "lease_holder": "apple",
+      "leased_at": "2026-08-18T13:21:54.153891+00:00",
+      "released_at": "",
+      "git_head": "",
+      "services": {
+        "prism": {
+          "service_key": "prism",
+          "repo_root": "/Users/apple/Developer/Personal/products/prism",
+          "branch": "beacon/v0.0.1/prism-title-lab-v1",
+          "base_branch": "main",
+          "worktree_path": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-title-lab-v1",
+          "state": "leased",
+          "lease_holder": "apple",
+          "leased_at": "2026-08-18T13:21:54.153932+00:00",
+          "released_at": "",
+          "git_head": "91b12968e91f1654792572fbefd13ef2d9ace660"
+        }
+      }
+    }
+  }
+}

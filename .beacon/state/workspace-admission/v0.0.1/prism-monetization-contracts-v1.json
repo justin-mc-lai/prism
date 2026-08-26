@@ -1,0 +1,12 @@
+{
+  "schema_version": "workspace-admission-v1",
+  "version": "v0.0.1",
+  "feature_slug": "prism-monetization-contracts-v1",
+  "project_root": "/Users/apple/Developer/Personal/products/prism",
+  "branch": "beacon/v0.0.1/prism-monetization-contracts-v1",
+  "worktree_path": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-monetization-contracts-v1",
+  "base_branch": "main",
+  "issued_at": "2026-08-12T11:27:48.468171+00:00",
+  "git_head": "a08bac427b2f88ca1b584d44dd330ce3ad2d388c",
+  "status": "pass"
+}

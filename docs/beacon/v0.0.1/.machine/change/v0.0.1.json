@@ -16,21 +16,33 @@
   "feature_count": 14,
   "features": [
     {
+      "feature": "prism-adaptation-contracts-v1",
+      "feature_slug": "prism-adaptation-contracts-v1",
+      "summary": "Lake F2 adaptation contracts.",
+      "status": "generated"
+    },
+    {
       "feature": "prism-campaign-schema-v1",
       "feature_slug": "prism-campaign-schema-v1",
       "summary": "Maintains release-facing version aggregate projection guards so QA accepted features are included in version change scope before release check.",
       "status": "generated"
     },
     {
-      "feature": "prism-form-writing-v1",
-      "feature_slug": "prism-form-writing-v1",
-      "summary": "Lake D1 writing/humanize/anti-slop base（MAP-005 distill+bridge）.",
+      "feature": "prism-extract-v1",
+      "feature_slug": "prism-extract-v1",
+      "summary": "Maintains release-facing version aggregate projection guards so QA accepted features are included in version change scope before release check.",
+      "status": "completed"
+    },
+    {
+      "feature": "prism-form-av-v1",
+      "feature_slug": "prism-form-av-v1",
+      "summary": "Lake D5 AV form bridge routing + license notes.",
       "status": "generated"
     },
     {
       "feature": "prism-form-blog-thread-v1",
       "feature_slug": "prism-form-blog-thread-v1",
-      "summary": "Lake D2 blog/thread form contracts (depends D1).",
+      "summary": "Lake D2 blog/thread form registry + producer contracts (depends D1 writing base).",
       "status": "generated"
     },
     {
@@ -46,15 +58,15 @@
       "status": "generated"
     },
     {
-      "feature": "prism-form-av-v1",
-      "feature_slug": "prism-form-av-v1",
-      "summary": "Lake D5 AV form bridge routing + license notes.",
+      "feature": "prism-form-writing-v1",
+      "feature_slug": "prism-form-writing-v1",
+      "summary": "Maintains release-facing version aggregate projection guards so QA accepted features are included in version change scope before release check.",
       "status": "generated"
     },
     {
-      "feature": "prism-publish-bridge-v1",
-      "feature_slug": "prism-publish-bridge-v1",
-      "summary": "Lake D6 publish/schedule bridge (draft-only + human gate).",
+      "feature": "prism-learning-memory-v1",
+      "feature_slug": "prism-learning-memory-v1",
+      "summary": "Lake E4 replayable learning memory.",
       "status": "generated"
     },
     {
@@ -70,34 +82,22 @@
       "status": "generated"
     },
     {
-      "feature": "prism-review-loop-v1",
-      "feature_slug": "prism-review-loop-v1",
-      "summary": "Lake E3 review loop + bible update.",
-      "status": "generated"
-    },
-    {
-      "feature": "prism-learning-memory-v1",
-      "feature_slug": "prism-learning-memory-v1",
-      "summary": "Lake E4 replayable learning memory.",
-      "status": "generated"
-    },
-    {
       "feature": "prism-monetization-contracts-v1",
       "feature_slug": "prism-monetization-contracts-v1",
       "summary": "Lake F1 monetization contracts.",
       "status": "generated"
     },
     {
-      "feature": "prism-adaptation-contracts-v1",
-      "feature_slug": "prism-adaptation-contracts-v1",
-      "summary": "Lake F2 adaptation contracts.",
+      "feature": "prism-publish-bridge-v1",
+      "feature_slug": "prism-publish-bridge-v1",
+      "summary": "Lake D6 publish/schedule bridge (draft-only + human gate).",
       "status": "generated"
     },
     {
-      "feature": "prism-extract-v1",
-      "feature_slug": "prism-extract-v1",
-      "summary": "Maintains release-facing version aggregate projection guards so QA accepted features are included in version change scope before release check.",
-      "status": "completed"
+      "feature": "prism-review-loop-v1",
+      "feature_slug": "prism-review-loop-v1",
+      "summary": "Lake E3 review loop + bible update.",
+      "status": "generated"
     }
   ],
   "implementation_order": {
@@ -122,7 +122,7 @@
     "waves": [
       {
         "wave": 1,
-        "parallelizable": true,
+        "parallelizable": false,
         "features": [
           {
             "feature": "prism-extract-v1",
@@ -136,183 +136,317 @@
             ],
             "parallelizable": true,
             "reason_code": "parallel_no_conflict"
-          },
-      {
-        "feature": "prism-campaign-schema-v1",
-        "feature_slug": "prism-campaign-schema-v1",
-        "depends_on_features": [],
-        "direct_delivery_services": [],
-        "writable_services": [],
-        "parallelizable": true,
-        "reason_code": "parallel_no_conflict"
+          }
+        ]
       },
       {
-        "feature": "prism-form-writing-v1",
-        "feature_slug": "prism-form-writing-v1",
-        "depends_on_features": [],
-        "direct_delivery_services": [
-          "."
-        ],
-        "writable_services": [
-          "."
-        ],
-        "parallelizable": true,
-        "reason_code": "parallel_no_conflict"
+        "wave": 2,
+        "parallelizable": false,
+        "features": [
+          {
+            "feature": "prism-campaign-schema-v1",
+            "feature_slug": "prism-campaign-schema-v1",
+            "depends_on_features": [
+              "prism-extract-v1"
+            ],
+            "direct_delivery_services": [
+              "."
+            ],
+            "writable_services": [
+              "."
+            ],
+            "parallelizable": false,
+            "reason_code": "shared_delivery_service_conflict"
+          }
+        ]
       },
       {
-        "feature": "prism-form-blog-thread-v1",
-        "feature_slug": "prism-form-blog-thread-v1",
-        "depends_on_features": ["prism-form-writing-v1"],
-        "direct_delivery_services": [
-          "."
-        ],
-        "writable_services": [
-          "."
-        ],
-        "parallelizable": true,
-        "reason_code": "parallel_no_conflict"
+        "wave": 3,
+        "parallelizable": false,
+        "features": [
+          {
+            "feature": "prism-form-writing-v1",
+            "feature_slug": "prism-form-writing-v1",
+            "depends_on_features": [
+              "prism-campaign-schema-v1"
+            ],
+            "direct_delivery_services": [
+              "."
+            ],
+            "writable_services": [
+              "."
+            ],
+            "parallelizable": false,
+            "reason_code": "shared_delivery_service_conflict"
+          }
+        ]
       },
       {
-        "feature": "prism-form-image-post-v1",
-        "feature_slug": "prism-form-image-post-v1",
-        "depends_on_features": ["prism-form-writing-v1", "prism-form-blog-thread-v1"],
-        "direct_delivery_services": [
-          "."
-        ],
-        "writable_services": [
-          "."
-        ],
-        "parallelizable": true,
-        "reason_code": "parallel_no_conflict"
+        "wave": 4,
+        "parallelizable": false,
+        "features": [
+          {
+            "feature": "prism-form-blog-thread-v1",
+            "feature_slug": "prism-form-blog-thread-v1",
+            "depends_on_features": [
+              "prism-form-writing-v1"
+            ],
+            "direct_delivery_services": [
+              "."
+            ],
+            "writable_services": [
+              "."
+            ],
+            "parallelizable": false,
+            "reason_code": "shared_delivery_service_conflict"
+          }
+        ]
       },
       {
-        "feature": "prism-form-novel-v1",
-        "feature_slug": "prism-form-novel-v1",
-        "depends_on_features": ["prism-form-writing-v1", "prism-campaign-schema-v1"],
-        "direct_delivery_services": [
-          "."
-        ],
-        "writable_services": [
-          "."
-        ],
-        "parallelizable": true,
-        "reason_code": "parallel_no_conflict"
+        "wave": 5,
+        "parallelizable": false,
+        "features": [
+          {
+            "feature": "prism-form-image-post-v1",
+            "feature_slug": "prism-form-image-post-v1",
+            "depends_on_features": [
+              "prism-form-blog-thread-v1"
+            ],
+            "direct_delivery_services": [
+              "."
+            ],
+            "writable_services": [
+              "."
+            ],
+            "parallelizable": false,
+            "reason_code": "shared_delivery_service_conflict"
+          }
+        ]
       },
       {
-        "feature": "prism-form-av-v1",
-        "feature_slug": "prism-form-av-v1",
-        "depends_on_features": ["prism-form-writing-v1"],
-        "direct_delivery_services": [
-          "."
-        ],
-        "writable_services": [
-          "."
-        ],
-        "parallelizable": true,
-        "reason_code": "parallel_no_conflict"
+        "wave": 6,
+        "parallelizable": false,
+        "features": [
+          {
+            "feature": "prism-form-novel-v1",
+            "feature_slug": "prism-form-novel-v1",
+            "depends_on_features": [
+              "prism-form-image-post-v1"
+            ],
+            "direct_delivery_services": [
+              "."
+            ],
+            "writable_services": [
+              "."
+            ],
+            "parallelizable": false,
+            "reason_code": "shared_delivery_service_conflict"
+          }
+        ]
       },
       {
-        "feature": "prism-publish-bridge-v1",
-        "feature_slug": "prism-publish-bridge-v1",
-        "depends_on_features": ["prism-form-writing-v1", "prism-form-blog-thread-v1", "prism-form-image-post-v1", "prism-form-novel-v1", "prism-form-av-v1"],
-        "direct_delivery_services": [
-          "."
-        ],
-        "writable_services": [
-          "."
-        ],
-        "parallelizable": true,
-        "reason_code": "parallel_no_conflict"
+        "wave": 7,
+        "parallelizable": false,
+        "features": [
+          {
+            "feature": "prism-form-av-v1",
+            "feature_slug": "prism-form-av-v1",
+            "depends_on_features": [
+              "prism-form-novel-v1"
+            ],
+            "direct_delivery_services": [
+              "."
+            ],
+            "writable_services": [
+              "."
+            ],
+            "parallelizable": false,
+            "reason_code": "shared_delivery_service_conflict"
+          }
+        ]
       },
       {
-        "feature": "prism-metrics-publication-v1",
-        "feature_slug": "prism-metrics-publication-v1",
-        "depends_on_features": ["prism-publish-bridge-v1"],
-        "direct_delivery_services": [
-          "."
-        ],
-        "writable_services": [
-          "."
-        ],
-        "parallelizable": true,
-        "reason_code": "parallel_no_conflict"
+        "wave": 8,
+        "parallelizable": false,
+        "features": [
+          {
+            "feature": "prism-publish-bridge-v1",
+            "feature_slug": "prism-publish-bridge-v1",
+            "depends_on_features": [
+              "prism-form-av-v1"
+            ],
+            "direct_delivery_services": [
+              "."
+            ],
+            "writable_services": [
+              "."
+            ],
+            "parallelizable": false,
+            "reason_code": "shared_delivery_service_conflict"
+          }
+        ]
       },
       {
-        "feature": "prism-metrics-snapshot-v1",
-        "feature_slug": "prism-metrics-snapshot-v1",
-        "depends_on_features": ["prism-metrics-publication-v1"],
-        "direct_delivery_services": [
-          "."
-        ],
-        "writable_services": [
-          "."
-        ],
-        "parallelizable": true,
-        "reason_code": "parallel_no_conflict"
+        "wave": 9,
+        "parallelizable": false,
+        "features": [
+          {
+            "feature": "prism-metrics-publication-v1",
+            "feature_slug": "prism-metrics-publication-v1",
+            "depends_on_features": [
+              "prism-publish-bridge-v1"
+            ],
+            "direct_delivery_services": [
+              "."
+            ],
+            "writable_services": [
+              "."
+            ],
+            "parallelizable": false,
+            "reason_code": "shared_delivery_service_conflict"
+          }
+        ]
       },
       {
-        "feature": "prism-review-loop-v1",
-        "feature_slug": "prism-review-loop-v1",
-        "depends_on_features": ["prism-metrics-snapshot-v1"],
-        "direct_delivery_services": [
-          "."
-        ],
-        "writable_services": [
-          "."
-        ],
-        "parallelizable": true,
-        "reason_code": "parallel_no_conflict"
+        "wave": 10,
+        "parallelizable": false,
+        "features": [
+          {
+            "feature": "prism-metrics-snapshot-v1",
+            "feature_slug": "prism-metrics-snapshot-v1",
+            "depends_on_features": [
+              "prism-metrics-publication-v1"
+            ],
+            "direct_delivery_services": [
+              "."
+            ],
+            "writable_services": [
+              "."
+            ],
+            "parallelizable": false,
+            "reason_code": "shared_delivery_service_conflict"
+          }
+        ]
       },
       {
-        "feature": "prism-learning-memory-v1",
-        "feature_slug": "prism-learning-memory-v1",
-        "depends_on_features": ["prism-review-loop-v1"],
-        "direct_delivery_services": [
-          "."
-        ],
-        "writable_services": [
-          "."
-        ],
-        "parallelizable": true,
-        "reason_code": "parallel_no_conflict"
+        "wave": 11,
+        "parallelizable": false,
+        "features": [
+          {
+            "feature": "prism-review-loop-v1",
+            "feature_slug": "prism-review-loop-v1",
+            "depends_on_features": [
+              "prism-metrics-snapshot-v1"
+            ],
+            "direct_delivery_services": [
+              "."
+            ],
+            "writable_services": [
+              "."
+            ],
+            "parallelizable": false,
+            "reason_code": "shared_delivery_service_conflict"
+          }
+        ]
       },
       {
-        "feature": "prism-monetization-contracts-v1",
-        "feature_slug": "prism-monetization-contracts-v1",
-        "depends_on_features": ["prism-publish-bridge-v1"],
-        "direct_delivery_services": [
-          "."
-        ],
-        "writable_services": [
-          "."
-        ],
-        "parallelizable": true,
-        "reason_code": "parallel_no_conflict"
+        "wave": 12,
+        "parallelizable": false,
+        "features": [
+          {
+            "feature": "prism-learning-memory-v1",
+            "feature_slug": "prism-learning-memory-v1",
+            "depends_on_features": [
+              "prism-review-loop-v1"
+            ],
+            "direct_delivery_services": [
+              "."
+            ],
+            "writable_services": [
+              "."
+            ],
+            "parallelizable": false,
+            "reason_code": "shared_delivery_service_conflict"
+          }
+        ]
       },
       {
-        "feature": "prism-adaptation-contracts-v1",
-        "feature_slug": "prism-adaptation-contracts-v1",
-        "depends_on_features": ["prism-monetization-contracts-v1", "prism-form-novel-v1"],
-        "direct_delivery_services": [
-          "."
-        ],
-        "writable_services": [
-          "."
-        ],
-        "parallelizable": true,
-        "reason_code": "parallel_no_conflict"
-      }
+        "wave": 13,
+        "parallelizable": false,
+        "features": [
+          {
+            "feature": "prism-monetization-contracts-v1",
+            "feature_slug": "prism-monetization-contracts-v1",
+            "depends_on_features": [
+              "prism-learning-memory-v1"
+            ],
+            "direct_delivery_services": [
+              "."
+            ],
+            "writable_services": [
+              "."
+            ],
+            "parallelizable": false,
+            "reason_code": "shared_delivery_service_conflict"
+          }
+        ]
+      },
+      {
+        "wave": 14,
+        "parallelizable": false,
+        "features": [
+          {
+            "feature": "prism-adaptation-contracts-v1",
+            "feature_slug": "prism-adaptation-contracts-v1",
+            "depends_on_features": [
+              "prism-monetization-contracts-v1"
+            ],
+            "direct_delivery_services": [
+              "."
+            ],
+            "writable_services": [
+              "."
+            ],
+            "parallelizable": false,
+            "reason_code": "shared_delivery_service_conflict"
+          }
         ]
       }
     ]
   },
   "added": [
+    "[prism-adaptation-contracts-v1] adaptation.contract.md",
+    "[prism-adaptation-contracts-v1] adaptation-adapters.yaml",
     "[prism-campaign-schema-v1] Feature-level release projection input for QA accepted current feature",
     "[prism-campaign-schema-v1] Version aggregate projection inclusion guard and repair metadata",
     "[prism-campaign-schema-v1] Repair-only projection rebuild path for release preflight artifacts",
     "[prism-extract-v1] Feature-level release projection input for QA accepted current feature",
     "[prism-extract-v1] Version aggregate projection inclusion guard and repair metadata",
-    "[prism-extract-v1] Repair-only projection rebuild path for release preflight artifacts"
+    "[prism-extract-v1] Repair-only projection rebuild path for release preflight artifacts",
+    "[prism-form-av-v1] form-av.contract.md",
+    "[prism-form-av-v1] comic/vlog/book_video registry entries",
+    "[prism-form-blog-thread-v1] form-registry.yaml with blog/thread",
+    "[prism-form-blog-thread-v1] form-blog.contract.md",
+    "[prism-form-blog-thread-v1] form-thread.contract.md",
+    "[prism-form-image-post-v1] form-image-post.contract.md",
+    "[prism-form-image-post-v1] form-xhs.contract.md",
+    "[prism-form-novel-v1] form-novel.contract.md",
+    "[prism-form-novel-v1] novel form registry entry",
+    "[prism-form-novel-v1] creation-mode-map novel row",
+    "[prism-form-writing-v1] Lake D1 writing/humanize/anti-slop base (MAP-005 distill+bridge)",
+    "[prism-form-writing-v1] Feature-level release projection input for QA accepted current feature",
+    "[prism-learning-memory-v1] learning-memory.contract.md",
+    "[prism-learning-memory-v1] learning-adapters.yaml",
+    "[prism-metrics-publication-v1] metrics-publication.contract.md",
+    "[prism-metrics-publication-v1] metrics-adapters.yaml",
+    "[prism-metrics-snapshot-v1] metrics-snapshot.contract.md",
+    "[prism-metrics-snapshot-v1] snapshot adapters",
+    "[prism-monetization-contracts-v1] monetization.contract.md",
+    "[prism-monetization-contracts-v1] monetization-adapters.yaml",
+    "[prism-publish-bridge-v1] publish-bridge.contract.md",
+    "[prism-publish-bridge-v1] publish-adapters.yaml",
+    "[prism-review-loop-v1] review-loop.contract.md",
+    "[prism-review-loop-v1] review-adapters.yaml"
   ],
   "removed": [
     "[prism-campaign-schema-v1] Manual-only version aggregate projection repair before release check",
@@ -325,6 +459,12 @@
     "[prism-extract-v1] Version aggregate projection remains a read model instead of requirement truth"
   ],
   "traceability_refs": [
+    "docs/beacon/v0.0.1/change/prism-adaptation-contracts-v1.md",
+    "docs/beacon/v0.0.1/prd/prism-adaptation-contracts-v1.md",
+    "docs/beacon/v0.0.1/user-story/prism-adaptation-contracts-v1.md",
+    "docs/beacon/v0.0.1/qa/test-cases/prism-adaptation-contracts-v1.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-adaptation-contracts-v1.revision.json",
+    "docs/beacon/v0.0.1/.machine/change/prism-adaptation-contracts-v1.json",
     "docs/beacon/v0.0.1/change/prism-campaign-schema-v1.md",
     "docs/beacon/v0.0.1/prd/prism-campaign-schema-v1.md",
     "docs/beacon/v0.0.1/user-story/prism-campaign-schema-v1.md",
@@ -337,7 +477,73 @@
     "docs/beacon/v0.0.1/qa/test-cases/prism-extract-v1.md",
     "docs/beacon/v0.0.1/.machine/execution/prism-extract-v1.revision.json",
     "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-extract-v1.json",
-    "docs/beacon/v0.0.1/.machine/change/prism-extract-v1.json"
+    "docs/beacon/v0.0.1/.machine/change/prism-extract-v1.json",
+    "docs/beacon/v0.0.1/change/prism-form-av-v1.md",
+    "docs/beacon/v0.0.1/prd/prism-form-av-v1.md",
+    "docs/beacon/v0.0.1/user-story/prism-form-av-v1.md",
+    "docs/beacon/v0.0.1/qa/test-cases/prism-form-av-v1.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-form-av-v1.revision.json",
+    "docs/beacon/v0.0.1/.machine/change/prism-form-av-v1.json",
+    "docs/beacon/v0.0.1/change/prism-form-blog-thread-v1.md",
+    "docs/beacon/v0.0.1/prd/prism-form-blog-thread-v1.md",
+    "docs/beacon/v0.0.1/user-story/prism-form-blog-thread-v1.md",
+    "docs/beacon/v0.0.1/qa/test-cases/prism-form-blog-thread-v1.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-form-blog-thread-v1.revision.json",
+    "docs/beacon/v0.0.1/.machine/change/prism-form-blog-thread-v1.json",
+    "docs/beacon/v0.0.1/change/prism-form-image-post-v1.md",
+    "docs/beacon/v0.0.1/prd/prism-form-image-post-v1.md",
+    "docs/beacon/v0.0.1/user-story/prism-form-image-post-v1.md",
+    "docs/beacon/v0.0.1/qa/test-cases/prism-form-image-post-v1.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-form-image-post-v1.revision.json",
+    "docs/beacon/v0.0.1/.machine/change/prism-form-image-post-v1.json",
+    "docs/beacon/v0.0.1/change/prism-form-novel-v1.md",
+    "docs/beacon/v0.0.1/prd/prism-form-novel-v1.md",
+    "docs/beacon/v0.0.1/user-story/prism-form-novel-v1.md",
+    "docs/beacon/v0.0.1/qa/test-cases/prism-form-novel-v1.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-form-novel-v1.revision.json",
+    "docs/beacon/v0.0.1/.machine/change/prism-form-novel-v1.json",
+    "docs/beacon/v0.0.1/change/prism-form-writing-v1.md",
+    "docs/beacon/v0.0.1/prd/prism-form-writing-v1.md",
+    "docs/beacon/v0.0.1/user-story/prism-form-writing-v1.md",
+    "docs/beacon/v0.0.1/qa/test-cases/prism-form-writing-v1.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-form-writing-v1.revision.json",
+    "docs/beacon/v0.0.1/.machine/change/prism-form-writing-v1.json",
+    "docs/beacon/v0.0.1/change/prism-learning-memory-v1.md",
+    "docs/beacon/v0.0.1/prd/prism-learning-memory-v1.md",
+    "docs/beacon/v0.0.1/user-story/prism-learning-memory-v1.md",
+    "docs/beacon/v0.0.1/qa/test-cases/prism-learning-memory-v1.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-learning-memory-v1.revision.json",
+    "docs/beacon/v0.0.1/.machine/change/prism-learning-memory-v1.json",
+    "docs/beacon/v0.0.1/change/prism-metrics-publication-v1.md",
+    "docs/beacon/v0.0.1/prd/prism-metrics-publication-v1.md",
+    "docs/beacon/v0.0.1/user-story/prism-metrics-publication-v1.md",
+    "docs/beacon/v0.0.1/qa/test-cases/prism-metrics-publication-v1.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-metrics-publication-v1.revision.json",
+    "docs/beacon/v0.0.1/.machine/change/prism-metrics-publication-v1.json",
+    "docs/beacon/v0.0.1/change/prism-metrics-snapshot-v1.md",
+    "docs/beacon/v0.0.1/prd/prism-metrics-snapshot-v1.md",
+    "docs/beacon/v0.0.1/user-story/prism-metrics-snapshot-v1.md",
+    "docs/beacon/v0.0.1/qa/test-cases/prism-metrics-snapshot-v1.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-metrics-snapshot-v1.revision.json",
+    "docs/beacon/v0.0.1/.machine/change/prism-metrics-snapshot-v1.json",
+    "docs/beacon/v0.0.1/change/prism-monetization-contracts-v1.md",
+    "docs/beacon/v0.0.1/prd/prism-monetization-contracts-v1.md",
+    "docs/beacon/v0.0.1/user-story/prism-monetization-contracts-v1.md",
+    "docs/beacon/v0.0.1/qa/test-cases/prism-monetization-contracts-v1.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-monetization-contracts-v1.revision.json",
+    "docs/beacon/v0.0.1/.machine/change/prism-monetization-contracts-v1.json",
+    "docs/beacon/v0.0.1/change/prism-publish-bridge-v1.md",
+    "docs/beacon/v0.0.1/prd/prism-publish-bridge-v1.md",
+    "docs/beacon/v0.0.1/user-story/prism-publish-bridge-v1.md",
+    "docs/beacon/v0.0.1/qa/test-cases/prism-publish-bridge-v1.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-publish-bridge-v1.revision.json",
+    "docs/beacon/v0.0.1/.machine/change/prism-publish-bridge-v1.json",
+    "docs/beacon/v0.0.1/change/prism-review-loop-v1.md",
+    "docs/beacon/v0.0.1/prd/prism-review-loop-v1.md",
+    "docs/beacon/v0.0.1/user-story/prism-review-loop-v1.md",
+    "docs/beacon/v0.0.1/qa/test-cases/prism-review-loop-v1.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-review-loop-v1.revision.json",
+    "docs/beacon/v0.0.1/.machine/change/prism-review-loop-v1.json"
   ],
-  "generated_at": "2026-08-11 23:15"
+  "generated_at": "2026-08-18 21:26"
 }

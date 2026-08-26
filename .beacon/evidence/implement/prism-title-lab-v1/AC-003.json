@@ -1,0 +1,12 @@
+{
+  "ac_id": "AC-003",
+  "assertion": "anti-slop-gate 与 quality-gates 含标题门检查项（公式覆盖/禁项/长度/兑现）",
+  "command": "rg -q '标题门' skills/prism-qa/references/anti-slop-gate.md && rg -q '标题门' skills/_internal/orchestration/quality-gates.md && rg -q '同义改写|18–32|前 16 字' skills/prism-qa/references/anti-slop-gate.md",
+  "exit_code": 0,
+  "stdout_tail": "",
+  "collected_at": "2026-08-18T06:35:00+00:00",
+  "artifact_refs": [
+    "skills/prism-qa/references/anti-slop-gate.md",
+    "skills/_internal/orchestration/quality-gates.md"
+  ]
+}

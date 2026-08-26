@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-campaign-schema-v1",
+  "feature_slug": "prism-campaign-schema-v1",
+  "version": "v0.0.1",
+  "status": "pass",
+  "blocked": false,
+  "reason_code": "",
+  "report_json_path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-campaign-schema-v1.json",
+  "report_markdown_path": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-campaign-schema-v1.md",
+  "finding_count": 0,
+  "run_id": "",
+  "source": "change.refreeze-chain",
+  "written_at": "2026-08-11T15:22:25.471703+00:00"
+}

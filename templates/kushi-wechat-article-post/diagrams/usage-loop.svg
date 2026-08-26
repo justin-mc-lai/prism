@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" fill="none">
+  <title>install to action loop</title>
+  <defs>
+    <marker id="arr2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#2a2a2a"/>
+    </marker>
+  </defs>
+  <g stroke="#2a2a2a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="40" y="56" width="170" height="78" rx="10" fill="#f9f8f4"/>
+    <rect x="270" y="56" width="170" height="78" rx="10" fill="#f9f8f4"/>
+    <rect x="500" y="56" width="170" height="78" rx="10" fill="#f9f8f4"/>
+    <rect x="730" y="56" width="150" height="78" rx="10" fill="#f9f8f4"/>
+    <path d="M210 95 H262" marker-end="url(#arr2)"/>
+    <path d="M440 95 H492" marker-end="url(#arr2)"/>
+    <path d="M670 95 H722" marker-end="url(#arr2)"/>
+    <rect x="270" y="210" width="400" height="70" rx="10" fill="#fff7ed" stroke="#e08a3c"/>
+    <path d="M355 134 V210" stroke="#e08a3c" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arr2)"/>
+    <rect x="270" y="340" width="400" height="78" rx="10" fill="#f9f8f4"/>
+    <path d="M585 134 V340" marker-end="url(#arr2)"/>
+    <path d="M470 280 V340" stroke="#c45c4a" stroke-width="2" marker-end="url(#arr2)"/>
+  </g>
+  <g fill="#1a1a1a" font-family="PingFang SC, Hiragino Sans GB, sans-serif" text-anchor="middle">
+    <text x="125" y="90" font-size="22" font-weight="600">装 marketplace</text>
+    <text x="125" y="116" font-size="15" fill="#5c5c5c">一行命令</text>
+    <text x="355" y="90" font-size="22" font-weight="600">核对命令文件</text>
+    <text x="355" y="116" font-size="15" fill="#5c5c5c">版本 / 目录对齐</text>
+    <text x="585" y="90" font-size="22" font-weight="600">/red-team-prd</text>
+    <text x="585" y="116" font-size="15" fill="#5c5c5c">拆致命假设</text>
+    <text x="805" y="90" font-size="22" font-weight="600">本周实验</text>
+    <text x="805" y="116" font-size="15" fill="#5c5c5c">最便宜验证</text>
+    <text x="470" y="242" font-size="20" font-weight="600" fill="#e08a3c">Codex 斜杠命令不生效</text>
+    <text x="470" y="266" font-size="15" fill="#5c5c5c">自然语言描述步骤，或把命令文件转成技能</text>
+    <text x="470" y="374" font-size="22" font-weight="600">判断仍由你做</text>
+    <text x="470" y="400" font-size="15" fill="#5c5c5c">访谈、实验、拍板都不外包给规则文件</text>
+  </g>
+</svg>

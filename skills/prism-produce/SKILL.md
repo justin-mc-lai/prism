@@ -102,6 +102,7 @@ See `references/skill-ir.md` failure table. Default: stop, emit human card with 
 - `references/skill-ir.md` — semantic contract
 - `references/modes/` — mode progressive disclosure
 - `references/human-card-handoff.md` — anti-leak card checklist
+- `references/personal-style-layer.md` — 个人文风层（WRITING.md + 修改学习 + 作者信息密度）
 - `references/adapter-migration-pointer.md` — MAP matrix pointer
 - `evals/evals.json` — smoke / trigger evals
 - `scripts/check_produce_shell.sh` — shell sanity

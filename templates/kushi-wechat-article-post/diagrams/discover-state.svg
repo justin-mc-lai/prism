@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" fill="none">
+  <title>/discover state machine</title>
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#2a2a2a"/>
+    </marker>
+  </defs>
+  <g stroke="#2a2a2a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="28" y="48" width="150" height="72" rx="10" fill="#f9f8f4"/>
+    <rect x="218" y="48" width="150" height="72" rx="10" fill="#f9f8f4"/>
+    <rect x="408" y="48" width="150" height="72" rx="10" fill="#f9f8f4"/>
+    <rect x="598" y="48" width="150" height="72" rx="10" fill="#f9f8f4"/>
+    <rect x="313" y="220" width="170" height="72" rx="10" fill="#f9f8f4"/>
+    <path d="M178 84 H210" marker-end="url(#arr)"/>
+    <path d="M368 84 H400" marker-end="url(#arr)"/>
+    <path d="M558 84 H590" marker-end="url(#arr)"/>
+    <path d="M673 120 V188 H398" marker-end="url(#arr)"/>
+    <path d="M313 256 H120 V84" stroke="#c45c4a" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arr)"/>
+  </g>
+  <g fill="#1a1a1a" font-family="PingFang SC, Hiragino Sans GB, sans-serif" text-anchor="middle">
+    <text x="103" y="80" font-size="22" font-weight="600">发散想法</text>
+    <text x="103" y="106" font-size="16" fill="#5c5c5c">先给 10 个</text>
+    <text x="293" y="80" font-size="22" font-weight="600">挑选想法</text>
+    <text x="293" y="106" font-size="16" fill="#5c5c5c">你选 3–5 个</text>
+    <text x="483" y="80" font-size="22" font-weight="600">拆出假设</text>
+    <text x="483" y="106" font-size="16" fill="#5c5c5c">检查点停一下</text>
+    <text x="673" y="80" font-size="22" font-weight="600">风险排序</text>
+    <text x="673" y="106" font-size="16" fill="#5c5c5c">影响 × 风险</text>
+    <text x="398" y="252" font-size="22" font-weight="600">设计实验</text>
+    <text x="398" y="278" font-size="16" fill="#5c5c5c">每假设 1–2 个实验</text>
+  </g>
+  <g fill="#c45c4a" font-family="PingFang SC, Hiragino Sans GB, sans-serif" font-size="16">
+    <text x="40" y="170">可改方向</text>
+  </g>
+  <circle cx="748" cy="256" r="7" fill="#e08a3c"/>
+  <text x="768" y="262" fill="#5c5c5c" font-size="16" font-family="PingFang SC, Hiragino Sans GB, sans-serif">约 15–30 分钟跑完</text>
+</svg>

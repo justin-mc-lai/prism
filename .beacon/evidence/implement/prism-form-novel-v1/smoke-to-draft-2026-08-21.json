@@ -1,0 +1,19 @@
+{
+  "evidence_type": "form_smoke_to_draft",
+  "form": "novel",
+  "date": "2026-08-21",
+  "world_slug": "fen-yuan-ren",
+  "episode_id": "episode-001",
+  "chain": [
+    { "stage": "master", "artifact": "content/masters/story/fen-yuan-ren/MASTER.md", "status": "frozen" },
+    { "stage": "storyworld", "artifact": "content/storyworlds/fen-yuan-ren/", "canon_policy": "fail_closed" },
+    { "stage": "bridge", "artifact": "vendor/skills/kushi-narrative-zh", "status": "pinned" },
+    { "stage": "draft", "artifact": "content/storyworlds/fen-yuan-ren/episodes/episode-001.md", "chars": 2070, "canon_gate_status": "review_required" }
+  ],
+  "gates": {
+    "check_human_voice.py": { "exit": 0, "note": "4 处翻案腔变形 + 2 处引语冒号属人工判断项；判定为小说文体保留（检查器标注『正常用法保留』，冒号均为直接引语）" },
+    "check_readability.py": { "exit": 0, "mode": "basic（--depth 为技术文结构检查，不适用于小说）" }
+  },
+  "stop_reason": "canon_gate_status=review_required，按 form-novel.contract §5 不得进入 generated；冒烟终点=草稿，符合预期",
+  "verdict": "pass_to_draft"
+}

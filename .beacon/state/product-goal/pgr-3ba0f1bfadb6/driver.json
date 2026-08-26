@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "run_id": "pgr-3ba0f1bfadb6",
+  "driver_id": "drv-c57a81e2b4",
+  "state": "halt_terminal",
+  "pid": 56442,
+  "turn_n": 0,
+  "max_agent_turns": 5,
+  "turn_timeout_sec": 3600,
+  "longrun": true,
+  "started_at": "2026-08-11T08:51:35.896733+00:00",
+  "updated_at": "2026-08-11T08:51:35.898785+00:00",
+  "last_exit_code": null,
+  "last_error": "",
+  "halt_reason": "goal_status_blocked",
+  "lock_held": false,
+  "history": [
+    {
+      "event": "start",
+      "at": "2026-08-11T08:50:36.909488+00:00"
+    },
+    {
+      "event": "start",
+      "at": "2026-08-11T08:51:35.896735+00:00"
+    }
+  ]
+}

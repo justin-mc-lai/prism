@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=1080" />
+<title>wechat-card-kit · 组件演示</title>
+<link rel="stylesheet" href="css/kit.css" />
+</head>
+<body class="kit-demo-stage">
+  <p class="kit-demo-note">wechat-card-kit 组件演示（内部 QA 页，非公开稿）· 1080×1440</p>
+
+  <!-- 卡 1：封面式白卡 · 大字标题/渐变/高亮/数字/标签 -->
+  <article class="kit-card kit-card--white">
+    <span class="kit-eyebrow" data-motion="reveal">GitHub 开源 · 库拾核对</span>
+    <h1 class="kit-title kit-title--lg" data-motion="reveal">
+      一条命令<br />
+      <span class="kit-gradient" data-motion="sweep">跑通四个平台</span>
+    </h1>
+    <p class="kit-subtitle" data-motion="reveal">
+      命令、坑、边界逐条核对，<mark class="kit-mark kit-mark--orange"
+      data-rough="highlight" data-rough-color="#f3c27a">不是 README 复述</mark>。
+    </p>
+
+    <div class="kit-stats" data-motion="stagger" style="display:flex;gap:64px;margin-top:8px;">
+      <div>
+        <b class="kit-num" data-motion="countup" data-count="59">0</b>
+        <span class="kit-num-label">条命令文件核对</span>
+      </div>
+      <div>
+        <b class="kit-num kit-num--green" data-motion="countup" data-count="10">0</b>
+        <span class="kit-num-label">个 host 可跑</span>
+      </div>
+      <div>
+        <b class="kit-num kit-num--orange" data-motion="countup" data-count="1">0</b>
+        <span class="kit-num-label">份实测记录</span>
+      </div>
+    </div>
+
+    <div class="kit-chips" data-motion="stagger">
+      <span class="kit-chip kit-chip--outline"># 实测</span>
+      <span class="kit-chip kit-chip--outline"># 命令核对</span>
+      <span class="kit-chip kit-chip--outline"># 边界</span>
+    </div>
+
+    <footer class="kit-footer">
+      <span>库拾 · 开源核对</span>
+      <span>01 / 03</span>
+    </footer>
+  </article>
+
+  <!-- 卡 2：暖纸底 · 时间线/步骤/清单/callout -->
+  <article class="kit-card kit-card--paper">
+    <span class="kit-eyebrow" data-motion="reveal">核对流程</span>
+    <h1 class="kit-title" data-motion="reveal">一篇稿子怎么过三关</h1>
+
+    <ol class="kit-timeline" data-motion="stagger">
+      <li>
+        <span class="kit-tl-time">09:30</span>
+        拉取仓库快照，记录 commit
+      </li>
+      <li>
+        <span class="kit-tl-time">10:00</span>
+        跑命令核对，留真实输出
+      </li>
+      <li>
+        <span class="kit-tl-time">10:40</span>
+        写实测边界与踩坑结论
+      </li>
+    </ol>
+
+    <ol class="kit-steps kit-steps--green" data-motion="stagger">
+      <li>拉源</li>
+      <li>跑测</li>
+      <li>归档</li>
+    </ol>
+
+    <ul class="kit-check" data-motion="stagger">
+      <li>命令可复现</li>
+      <li>数字可溯源</li>
+      <li>边界写清楚</li>
+    </ul>
+
+    <aside class="kit-callout kit-callout--orange" data-motion="reveal">
+      <div class="kit-callout-title">硬规则</div>
+      <p class="kit-callout-body">只复述 README 的卡片，删掉也不影响读者行动，一律不保留。</p>
+    </aside>
+
+    <footer class="kit-footer">
+      <span>库拾 · 开源核对</span>
+      <span>02 / 03</span>
+    </footer>
+  </article>
+
+  <!-- 卡 3：深色结尾卡 · 引语/结尾 CTA/下一步/免责 -->
+  <article class="kit-card kit-card--ink">
+    <span class="kit-eyebrow" data-motion="reveal">收束</span>
+    <h1 class="kit-title" data-motion="reveal">看完，<br />下一步做什么</h1>
+
+    <blockquote class="kit-quote" data-motion="reveal">
+      判断写下来，读者才敢照着做。
+      <span class="kit-quote-src">—— 库拾核对原则</span>
+    </blockquote>
+
+    <div class="kit-endcard kit-endcard--soft" data-motion="reveal">
+      <div class="kit-endcard-title">收藏这张卡，动手前照着核对</div>
+      <span class="kit-endcard-cta">去读 README <span data-motion="pulse">→</span></span>
+    </div>
+
+    <p class="kit-next" data-motion="reveal">打开项目 README，先跑第一条命令</p>
+
+    <p class="kit-disclaimer">演示页为内部 QA 素材，不进入公开产物；健康类贴图在此位置放强制免责声明。</p>
+
+    <footer class="kit-footer">
+      <span>库拾 · 开源核对</span>
+      <span>03 / 03</span>
+    </footer>
+  </article>
+
+  <script src="vendor/anime.min.js"></script>
+  <script src="vendor/rough-notation.iife.js"></script>
+  <script src="js/kit.js"></script>
+</body>
+</html>

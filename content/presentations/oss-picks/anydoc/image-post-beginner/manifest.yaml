@@ -1,0 +1,41 @@
+# 贴图包 manifest（form_id: image-post · 四分离）
+form_id: image-post
+vertical: oss-picks
+slug: anydoc
+presentation_slug: image-post-beginner
+master_ref: content/masters/oss-picks/anydoc/MASTER.md
+shot_list_ref: director-shot-list.md
+lane: standard
+status: rendered_draft_only
+image_count: 6
+image_dimension: "1080x1440"
+cover_card: 1
+render_pin: scripts/render_wechat_html_cards.py + templates/（A1 MIT · docs/ATTRIBUTION-render-chain.md）
+rendered_at: "2026-08-14"
+ocr_gate: pass（macOS Vision OCR 核验，无乱码；小字号 OCR 伪影如 MIIT/CLl 已核为 HTML 源文本正确）
+cards:
+  - index: 1
+    kind: cover_card
+    title: 把 Word/PDF 变成干净 Markdown
+    image: rendered/01-cover.png
+    caption: 9 天涨 1.5 万星的开源小工具（检索时刻 2026-08-12）
+  - index: 2
+    kind: content
+    image: rendered/02-problem.png
+    caption: 复制粘贴毁格式，手动整理一份二十分钟
+  - index: 3
+    kind: content
+    image: rendered/03-principle.png
+    caption: 一件事，办公格式进，干净 Markdown 出
+  - index: 4
+    kind: content
+    image: rendered/04-entries.png
+    caption: CLI 一条命令，Node/Python 写脚本，浏览器 WASM 本地转
+  - index: 5
+    kind: content
+    image: rendered/05-boundary.png
+    caption: 在意隐私用浏览器版，文件不上传
+  - index: 6
+    kind: content
+    image: rendered/06-action.png
+    caption: 扫描 PDF 需 OCR 不归它管；拿手边文档试一次

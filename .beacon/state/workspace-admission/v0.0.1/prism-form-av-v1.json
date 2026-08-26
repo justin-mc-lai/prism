@@ -1,0 +1,12 @@
+{
+  "schema_version": "workspace-admission-v1",
+  "version": "v0.0.1",
+  "feature_slug": "prism-form-av-v1",
+  "project_root": "/Users/apple/Developer/Personal/products/prism",
+  "branch": "beacon/v0.0.1/prism-form-av-v1",
+  "worktree_path": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-av-v1",
+  "base_branch": "main",
+  "issued_at": "2026-08-12T01:04:01.457520+00:00",
+  "git_head": "d17e231c4e2a3042096597a0ff784e0017152fa9",
+  "status": "pass"
+}

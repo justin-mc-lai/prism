@@ -1,0 +1,56 @@
+{
+  "ac_id": "QA",
+  "assertion": "所有 TC 通过 + 分层证据完整 + 对抗审查覆盖翻车点",
+  "command": "beacon qa run prism-title-lab-v1 --project . --version v0.0.1 --json（7/7 TC pass；仅 legacy_cutover_required 元门 blocked，功能 TC 全部通过）",
+  "exit_code": 0,
+  "stdout_tail": "TC-001..TC-006 + TC-EXEC-001: passed",
+  "collected_at": "2026-08-18T06:38:00+00:00",
+  "artifact_refs": [
+    ".beacon/evidence/auto-test/run-20260818T143750172905/qa9/tc-execution-map.json",
+    ".beacon/evidence/auto-test/run-20260818T143750172905/qa9/tc-results.json",
+    ".beacon/evidence/implement/prism-title-lab-v1/AC-001.json",
+    ".beacon/evidence/implement/prism-title-lab-v1/AC-002.json",
+    ".beacon/evidence/implement/prism-title-lab-v1/AC-003.json",
+    ".beacon/evidence/implement/prism-title-lab-v1/AC-004.json",
+    ".beacon/evidence/implement/prism-title-lab-v1/AC-005.json",
+    ".beacon/evidence/implement/prism-title-lab-v1/GATES.json"
+  ],
+  "layered_verdict": {
+    "skill_contract": "pass",
+    "scenario_suite": "pass",
+    "trace_scorecard": "pass",
+    "real_project_proof": "pass（文档/skill 层；无 UI/平台发布面）"
+  },
+  "adversarial_review": [
+    {
+      "risk": "公式覆盖/同义改写可能被绕过",
+      "protection": "title-lab 硬规则 + anti-slop §标题门（同义改写禁用、6 公式覆盖）+ Gate 4 block 条件",
+      "evidence": "TC-003/TC-006 pass；skills/prism-qa/references/anti-slop-gate.md §标题门"
+    },
+    {
+      "risk": "语料版权/署名丢失",
+      "protection": "MIT LICENSE 随附 + ATTRIBUTION-corpora + 校准层来源/日期标注；未收录上游未公开语料",
+      "evidence": "TC-004 pass；docs/ATTRIBUTION-corpora.md；skills/prism-produce/references/LICENSE-bigpeng-hot-gzh"
+    },
+    {
+      "risk": "intel 公式建议被误当事实/降低不编造门",
+      "protection": "briefing-schema 明示 title_hint 只给方向、最终标题由 title-lab 出；不豁免不编造门",
+      "evidence": "TC-002 pass；skills/prism-intel/references/briefing-schema.md §选题角度+标题公式建议"
+    },
+    {
+      "risk": "命中率闭环在无数据时被编造成结论",
+      "protection": "review-loop 5.1：样本 <5 不下结论、无 title_formula 跳过、禁止单篇当公式命中",
+      "evidence": "TC-005 pass；contracts/review-loop.contract.md §5.1"
+    },
+    {
+      "risk": "绕过发布人工门",
+      "protection": "truth FSM illegal：qa_pending/locked → published 未人工批准；review-loop 人工批准后才写 bible",
+      "evidence": "TC-006 pass；docs/beacon/v0.0.1/features/prism-title-lab-v1/truth.md Illegal transitions"
+    }
+  ],
+  "residual_notes": [
+    "语义级同义改写/公式同质仍需人工终审（机器只能查结构级重复）",
+    "命中率绝对值依赖发布后 4 周真实数据，属 deferred 后验"
+  ],
+  "recommended_next_harness": "release（需人工确认）"
+}

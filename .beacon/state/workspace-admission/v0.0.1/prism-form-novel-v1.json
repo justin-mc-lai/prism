@@ -1,0 +1,12 @@
+{
+  "schema_version": "workspace-admission-v1",
+  "version": "v0.0.1",
+  "feature_slug": "prism-form-novel-v1",
+  "project_root": "/Users/apple/Developer/Personal/products/prism",
+  "branch": "beacon/v0.0.1/prism-form-novel-v1",
+  "worktree_path": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-novel-v1",
+  "base_branch": "main",
+  "issued_at": "2026-08-12T00:59:03.808979+00:00",
+  "git_head": "b005c2fcbbc8ee58ba2d569cc3b2ce62405a813e",
+  "status": "pass"
+}

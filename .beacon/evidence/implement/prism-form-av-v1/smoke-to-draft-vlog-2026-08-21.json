@@ -1,0 +1,18 @@
+{
+  "evidence_type": "form_smoke_to_draft",
+  "form": "av/vlog",
+  "date": "2026-08-21",
+  "slug": "anydoc-vlog-beginner",
+  "chain": [
+    { "stage": "master", "artifact": "content/masters/oss-picks/anydoc/MASTER.md", "status": "frozen FactMaster" },
+    { "stage": "director", "artifact": "director-treatment.md（core intent + presentation map）", "status": "complete" },
+    { "stage": "produce", "artifact": "script.md + edit-list.md", "status": "draft complete" },
+    { "stage": "assemble", "status": "deferred by design", "reason": "openmontage AGPL bridge-only，素材显式占位；成片渲染不阻塞草稿验收" }
+  ],
+  "gates": {
+    "check_human_voice.py": { "exit": 0, "fix_applied": "script.md 头部元信息行冒号写法改写（3 处）" },
+    "check_readability.py": { "exit": 0 }
+  },
+  "stop_reason": "成片组装需 openmontage bridge + 素材生成凭证；按 form-av.contract fail-closed 记录 defer，不伪造素材",
+  "verdict": "pass_to_draft"
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "workspace-admission-v1",
+  "version": "v0.0.1",
+  "feature_slug": "prism-form-writing-v1",
+  "project_root": "/Users/apple/Developer/Personal/products/prism",
+  "branch": "beacon/v0.0.1/prism-form-writing-v1",
+  "worktree_path": "/Users/apple/Developer/Personal/products/prism/.beacon/worktrees/v0.0.1/prism-form-writing-v1",
+  "base_branch": "main",
+  "issued_at": "2026-08-12T00:42:04.523760+00:00",
+  "git_head": "0cfd6b4512df667947831f106bdc98e66ba2532d",
+  "status": "pass"
+}

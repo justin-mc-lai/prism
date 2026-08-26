@@ -52,17 +52,17 @@ Block when:
 Pass when:
 
 - Aspect ratio and canvas match the platform.
-- Visual IP is stable: for 小黑, black body, white-dot eyes, thin legs, blank serious expression, and not a cute mascot.
+- Visual IP is stable: account character IP comes from configuration（角色设定卡走 registry/account profile），跨期不漂移、不是吉祥物化。
 - The character participates in the core action, not as decoration.
 - Any visible Chinese text is short, readable, and semantically correct.
-- OCR/manual inspection finds no乱码, duplicate labels, accidental “小黑” label, random English, misspellings, or unrelated text.
+- OCR/manual inspection finds no乱码, duplicate labels, accidental character-name label, random English, misspellings, or unrelated text.
 - Arrows, labels, and state boxes match the shot list.
 - The image is not a PPT slide, dense flowchart, copied old composition, screenshot-looking UI, or overfilled canvas.
 
 Block when:
 
 - Text is unreadable or wrong in a way readers will notice.
-- The generated image contains unintended labels like “小黑”.
+- The generated image contains unintended character-name/account labels.
 - The character scale/style changes enough to look like a different IP.
 - The image contradicts the article.
 
@@ -71,6 +71,7 @@ Block when:
 Pass when:
 
 - Title, subtitle, cover, excerpt, tags, image dimensions, video aspect ratio, and file format satisfy the target platform profile.
+- 标题门已过：候选标题经 prism-qa 标题门检查（公式覆盖 ≥6、禁空数字/震惊体/无法兑现/同义改写、18–32 字、工具名前 16 字、附赠物有正文兑现）。
 - For WeChat image_post, title is short and separate from caption; caption is not a title rewrite; uploaded image count matches the manifest/shot list.
 - Rendered markdown/html/mp4 exists at the expected path.
 - Platform-specific overrides do not alter facts.
@@ -79,6 +80,7 @@ Pass when:
 Block when:
 
 - Required cover, title, summary, media IDs, or render file is missing.
+- 候选标题未过标题门（公式重复、空数字、震惊体、承诺无法兑现、社会证明数字无可查来源）。
 - WeChat image_post title is empty, caption is a title rewrite, or uploaded image count does not match the manifest/shot list.
 - Render output has broken images, invalid relative paths, or mismatched assets.
 - Account/platform endpoint is ambiguous.

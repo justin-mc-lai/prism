@@ -38,6 +38,7 @@ map_ids_considered: ['MAP-005']
 
 - `../human-card-handoff.md`
 - `../adapter-migration-pointer.md`
+- `../anti-slop-gate.md` — slop 模式清单 + 场景档位 + 仲裁顺序（qa 主清单）
 - Kernel under `skills/_internal/orchestration/` when routing conflicts
 
 ## Gate set (minimum)

@@ -28,3 +28,7 @@ guards:
   canon_protected: true
   license_boundary_enforced: true
   sensitive_info_never_in_repo: true
+
+install:
+  note: 本地 tool bridge（rights-record/royalty-calc/license-check）为 Prism 自管工具，
+  无源仓依赖；默认只登记不授权，缺失 fail-closed

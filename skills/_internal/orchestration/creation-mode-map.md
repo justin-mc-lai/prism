@@ -10,14 +10,14 @@
 | 创作类型 | plan | truth | design | implement | qa | release |
 | --- | --- | --- | --- | --- | --- | --- |
 | blog 深度长文 | intel-radar / 角度 | MASTER + 来源核对 | selfmedia-director treatment | form-blog.contract（writing.contract 四段式）+ bridge humanizer 族 | anti-slop-gate + 事实核对 | 人工批准 → 文章草稿 |
-| 贴图包 article-paper | 选题/节点 | MASTER + 核对 | director + shot list（visual_carrier） | form-image-post.contract + render_wechat_article_pages | anti-slop-gate + OCR + contract-check | publish-sync-ai --media image |
-| 贴图包 短卡 | 热点雷达 | 快照 | director（可选） | form-image-post.contract（倒金字塔）+ render_wechat_html_cards / image_cards | anti-slop-gate + OCR + 合同 | publish-sync-ai |
+| 贴图包 article-paper | 选题/节点 | MASTER + 核对 | director + shot list（visual_carrier） | form-image-post.contract + `scripts/render_wechat_article_pages.py`（本地 pin） | anti-slop-gate + OCR + contract-check | publish-sync-ai --media image |
+| 贴图包 短卡 | 热点雷达 | 快照 | director（可选） | form-image-post.contract（倒金字塔）+ `scripts/render_wechat_html_cards.py` / `render_wechat_image_cards.py`（本地 pin） | anti-slop-gate + OCR + 合同 | publish-sync-ai |
 | vlog 口播 | 话题/受众 | 脚本事实清单 | ra-video-production-director | form-av.contract（口播稿 + bridge openmontage） | anti-slop-gate + 视频 QA | 视频草稿 |
 | X thread | 选题 | 事实 | director（可选） | form-thread.contract（writing.contract 倒金字塔）+ bridge writing-agent | anti-slop-gate | sidepilot |
 | 小红书图文 | 选题 | 事实 | director + 版式 | form-xhs.contract（writing.contract emotional-essay）+ bridge xhs-article-to-images | anti-slop-gate + OCR | xhs-content-ops |
 | 节气养生长跑题材（jieqi-yangsheng） | 节气排期表 + 俗语/食材/引文库 | MASTER + 古籍原文逐字核对 + lunar-python 日历核算 | selfmedia-director 节气模板（8 卡）+ shot list | writing.contract + 文生图古典底图 + render_wechat_html_cards | anti-slop-gate + 受众复读 + 古籍/日历核对 + OCR + 合同 | 公众号贴图草稿；后续按平台矩阵派生文章/短视频 |
-| novel 连载 | campaign/连载计划 | StoryMaster + canon ledger 冻结 | director episode outline | form-novel.contract（episode 结构）+ bridge kushi-narrative-zh | 正典/连续性门（canon_gate_status=passed）+ anti-slop-gate | 人工批准 → 章节发布 |
-| comic 漫画 | 选题/创意 | 分镜设定 + 版权安全检查 | director 分镜 + 角色/场景设定 | form-av.contract（comic 路由）+ bridge comic-storyboard | 乱码/分页/文字可读 + anti-slop-gate | 人工批准 → 漫画草稿 |
+| novel 连载 | campaign/连载计划 | StoryMaster + canon ledger 冻结 | director episode outline | form-novel.contract（episode 结构）+ bridge `vendor/skills/kushi-narrative-zh`（A4 pin） | 正典/连续性门（canon_gate_status=passed）+ anti-slop-gate | 人工批准 → 章节发布 |
+| comic 漫画 | 选题/创意 | 分镜设定 + 版权安全检查 | director 分镜 + 角色/场景设定 | form-av.contract（comic 路由）+ bridge `vendor/skills/comic-storyboard`（A4 pin） | 乱码/分页/文字可读 + anti-slop-gate | 人工批准 → 漫画草稿 |
 | book_video 书籍视频 | 书籍/剧集选题 | 母稿 + 分镜 | director 书籍分镜 | form-av.contract（book_video 路由）+ bridge book-video | 乱码/版权/分镜一致 + anti-slop-gate | 人工批准 → 视频草稿 |
 
 ## mode 契约模板（每个产物头部）
@@ -59,7 +59,9 @@ recommended_next_harness: implement
 
 ## 健康/合规类内容额外门
 
-新号 `jieqi-yangsheng-gzh` 合同要求：免责声明、禁止疗效承诺、个体差异提示、知识库出处待核对。通用执行：风险类内容（health/legal/finance/current-news）在 truth 阶段必须过来源核对，否则 implement 不得开始。
+账号合同要求（走配置，如养生类账号：免责声明、禁止疗效承诺、个体差异提示、知识库出处核对）。
+通用执行：风险类内容（health/legal/finance/current-news）在 truth 阶段必须过来源核对，
+否则 implement 不得开始。
 
 ## 长跑题材（Series）编排
 
@@ -75,4 +77,5 @@ recommended_next_harness: implement
 > Lake E3（review-loop）：系列圣经复盘段走 `contracts/review-loop.contract.md`
 > （metrics_refs 必填 + 人工批准后写入；不改母稿事实），工具 bridge 见 `registry/review-adapters.yaml`。
 
-节气养生模板：`skills/selfmedia-director/references/jieqi-yangsheng-treatment-template.md`；圣经：`content/series/jieqi-yangsheng/bible.md`。
+节气养生模板（已蒸馏进仓）：`skills/prism-director/references/jieqi-yangsheng-treatment-template.md`；
+圣经：`content/series/jieqi-yangsheng/bible.md`（Prism 内待长跑题材启动时创建，当前为显式占位）。
