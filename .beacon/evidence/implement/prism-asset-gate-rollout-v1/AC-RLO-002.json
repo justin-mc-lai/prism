@@ -1,0 +1,4 @@
+{
+ "command": "bash -c rg -q asset-consistency.contract contracts/form-av.contract.md",
+ "exit": 0
+}

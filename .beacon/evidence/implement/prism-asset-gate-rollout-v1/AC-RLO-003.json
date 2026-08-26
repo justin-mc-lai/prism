@@ -1,0 +1,4 @@
+{
+ "command": "bash -c python3 -c \"import yaml; d=yaml.safe_load(open('registry/form-registry.yaml')); c={f['form']:f['producer_chain'] for f in d['forms']}; assert 'asset-consistency' in c['live_drama'] and 'asset-consistency' in c['comic']\"",
+ "exit": 0
+}

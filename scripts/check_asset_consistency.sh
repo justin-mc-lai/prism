@@ -34,6 +34,21 @@ rg -q "MoneyPrinterTurbo.*defer-pin|defer-pin.*MoneyPrinterTurbo" registry/sourc
 test ! -d vendor/skills/lumenx || fail "lumenx runtime must not be pinned"
 test ! -d vendor/skills/dramaclaw || fail "dramaclaw must not be pinned (Elastic-2.0)"
 
+# AC-RLO-001..003 rollout wiring (prism-asset-gate-rollout-v1)
+rg -q "资产一致性门" contracts/form-live-drama.contract.md || fail "live_drama contract lacks gate ref"
+rg -q "asset-consistency.contract" contracts/form-live-drama.contract.md || fail "live_drama contract lacks gate path"
+rg -q "资产一致性|asset-consistency" contracts/form-av.contract.md || fail "form-av comic lacks gate ref"
+python3 - << 'PYEOF' || fail "registry rollout chains invalid"
+import yaml
+d = yaml.safe_load(open("registry/form-registry.yaml"))
+c = {f["form"]: f["producer_chain"] for f in d["forms"]}
+assert "asset-consistency" in c["live_drama"], "live_drama chain"
+assert "asset-consistency" in c["comic"], "comic chain"
+# vlog / book_video must NOT be wired (Non-goal boundary)
+assert "asset-consistency" not in c["vlog"], "vlog must stay unwired"
+assert "asset-consistency" not in c["book_video"], "book_video must stay unwired"
+PYEOF
+
 # no leak
 test ! -f skills/_internal/adapters/SKILL.md || fail "adapter SKILL.md leak"
 

@@ -1,0 +1,4 @@
+{
+ "command": "bash -c rg -q 资产一致性门 contracts/form-live-drama.contract.md && rg -q asset-consistency.contract contracts/form-live-drama.contract.md",
+ "exit": 0
+}

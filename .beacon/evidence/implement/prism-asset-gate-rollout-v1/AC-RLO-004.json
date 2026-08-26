@@ -1,0 +1,4 @@
+{
+ "command": "bash scripts/check_asset_consistency.sh",
+ "exit": 0
+}

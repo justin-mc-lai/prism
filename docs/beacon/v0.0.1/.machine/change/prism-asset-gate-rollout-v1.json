@@ -1,0 +1,34 @@
+{
+ "schema_version": "1.0",
+ "version": "v0.0.1",
+ "feature": "prism-asset-gate-rollout-v1",
+ "feature_slug": "prism-asset-gate-rollout-v1",
+ "summary": "Asset-consistency gate rollout to live_drama (storyboard stage) and comic (multi-episode route): contract wiring + registry chains + exec assertions. Framework unchanged (MAP-017 reuse).",
+ "status": "generated",
+ "accepted_at": "",
+ "revision_id": "R1",
+ "projection_role": {
+  "artifact_role": "version_aggregate_projection",
+  "truth_source": false,
+  "gate_source": false,
+  "lifecycle_stage": false,
+  "release_publish_action": false
+ },
+ "truth_authority": false,
+ "lifecycle_stage": false,
+ "added": [],
+ "removed": [],
+ "fixed": [
+  "form-live-drama contract intake+gate#6",
+  "form-av comic intake+gate",
+  "registry live_drama/comic chains",
+  "check_asset_consistency.sh rollout assertions"
+ ],
+ "traceability_refs": [
+  "docs/beacon/v0.0.1/change/prism-asset-gate-rollout-v1.md",
+  "docs/beacon/v0.0.1/prd/prism-asset-gate-rollout-v1.md",
+  "docs/beacon/v0.0.1/user-story/prism-asset-gate-rollout-v1.md",
+  "docs/beacon/v0.0.1/qa/test-cases/prism-asset-gate-rollout-v1.md"
+ ],
+ "generated_at": "2026-08-26T00:00:00.000000+00:00"
+}

@@ -20,7 +20,9 @@
 
 - treatment（核心意图/情绪曲线）
 - presentation map（镜头/页面 × 受众效果）
-- shot list 或 storyboard（分镜/分页）
+- shot list 或 storyboard（分镜/分页）；comic 多集路由下引用须解析到资产身份条目，
+  过**资产一致性门** `contracts/asset-consistency.contract.md`
+  （三分法/边界匹配/画风统一；未决项不得流入分页）
 
 拒绝：缺任一交接字段 / bridge 缺失 → blocked + reason_code
 
@@ -36,6 +38,8 @@
 - 字幕/画面文字无乱码、无随机文字
 - 版权安全（角色/风格改写为描述性特征；受版权保护角色拒绝）
 - 分镜/图序/分页一致；漫画 3:4 竖版、文字可读
+- comic 多集路由：过资产一致性门（`contracts/asset-consistency.contract.md`）；
+  vlog / book_video 单集口播不接入
 - 文案过 anti-slop-gate；每项结论引用原文/素材行 + 证据路径
 
 ## 6. license 注记

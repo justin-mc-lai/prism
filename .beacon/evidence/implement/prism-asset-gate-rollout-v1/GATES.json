@@ -1,0 +1,4 @@
+{
+ "workspace_check": "pass(见 QA-MATRIX 后复跑)",
+ "known_preexisting_failure": "check_form_samples thread humanized.md missing (legacy)"
+}

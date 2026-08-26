@@ -23,6 +23,7 @@
 
 - StoryMaster / 剧集 bible（world_slug，canon ledger）
 - director 分集大纲（每集 hook / 冲突 / 翻转点）+ 单集成片剧本（场景表 + 台词）
+  ；分镜/剪辑清单中的场景与道具引用须解析到资产身份条目（未决项不得进入 shot-list/edit-list）
 - **拍摄素材 ingest（人工交付物）**：素材清单 manifest（文件名 × 场景 × 时长），缺清单 → blocked
 - 演员授权记录（肖像/表演权同意）；缺失 → blocked（`live_actor_consent_missing`）
 
@@ -43,6 +44,9 @@
 4. 演员授权齐备
 5. 题材红线：政治/军事/外交/国家安全等特殊题材 → 一类路径 → 走持证机构备案流程，
    本管线只产出送审材料包（样片/字幕表/备案表），不自动送审
+6. **资产一致性门**（分镜阶段）：shot-list/edit-list 引用解析到资产身份条目 +
+   相邻镜头边界匹配，按 `contracts/asset-consistency.contract.md` 执行
+   （框架：`skills/prism-director/references/asset-consistency-gate.md`）
 
 ## 6. license / 凭证注记
 

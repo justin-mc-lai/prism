@@ -43,7 +43,7 @@ forms:
   - form: comic
     contract: contracts/form-av.contract.md
     lane: standard
-    producer_chain: director storyboard → bridge comic-storyboard（3:4 竖版）→ QA
+    producer_chain: director storyboard → bridge comic-storyboard（3:4 竖版）+ 资产一致性门 asset-consistency.contract（多集：三分法/binding/边界匹配/画风统一）→ QA
     fast_lane_skip_allowed: false
     status: registered
   - form: vlog
@@ -67,7 +67,7 @@ forms:
   - form: live_drama
     contract: contracts/form-live-drama.contract.md
     lane: standard
-    producer_chain: StoryMaster/剧集 bible → director 分集剧本+分镜 → 人工实拍素材 ingest → openmontage 剪辑 → 合规门（三类自审/AI 标识/授权）→ release 停人工
+    producer_chain: StoryMaster/剧集 bible → director 分集剧本+分镜（+ 资产一致性门 asset-consistency.contract：binding 解析/边界匹配）→ 人工实拍素材 ingest → openmontage 剪辑 → 合规门（三类自审/AI 标识/授权）→ release 停人工
     fast_lane_skip_allowed: false
     status: registered   # 2026-08-21 human 冻结转正（truth R1）；持《广播电视节目制作经营许可证》已确认
   - form: product
