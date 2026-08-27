@@ -8,3 +8,4 @@
 .beacon/memory/
 *.pyc
 .DS_Store
+.omc/
