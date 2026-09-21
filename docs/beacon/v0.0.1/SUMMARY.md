@@ -21,7 +21,7 @@
   - prism-asset-gate-rollout-v1（Lake D：资产门多形态铺开 · release_candidate）
   - prism-form-product-v1（Lake D：电商商品形态契约 · release_candidate）
   - prism-title-lab-v1（Lake B′：标题实验室 · release_candidate）
-  - prism-prompt-compiler-v1（Lake B′：提示词编译器 + 渲染交接去兜底 provider-only · release_candidate）
+  - prism-prompt-compiler-v1（Lake B′：提示词编译器 + 渲染交接去兜底 provider-only · released）
 - programs:
   - prism-canon
   - prism-shot-prompt-compiler-storyboard-ref
