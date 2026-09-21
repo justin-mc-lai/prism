@@ -55,13 +55,35 @@ do_link() {
     fi
     return
   fi
-  if [ -e "$target" ] || [ -L "$target" ]; then
-    echo "  exists $target (skip)"
-  else
-    if [ "$DRY_RUN" = "0" ]; then mkdir -p "$(dirname "$target")"; fi
-    echo "  link $name -> $target ($src_path)"
-    if [ "$DRY_RUN" = "0" ]; then ln -s "$src_path" "$target"; fi
+  # 分类：悬空 symlink / 指向他处的陈旧 symlink / 已正确的 symlink / 非 symlink / 不存在
+  local action="link" actual=""
+  if [ -L "$target" ]; then
+    actual="$(readlink "$target")"
+    if [ ! -e "$target" ]; then
+      action="relink-dangling"
+    elif [ "$actual" != "$src_path" ]; then
+      action="relink-stale"
+    else
+      action="skip"
+    fi
+  elif [ -e "$target" ]; then
+    echo "  skip $target (not a symlink; not touching)"
+    return
   fi
+  case "$action" in
+    skip)
+      echo "  exists $target (skip)"
+      ;;
+    link)
+      if [ "$DRY_RUN" = "0" ]; then mkdir -p "$(dirname "$target")"; fi
+      echo "  link $name -> $target ($src_path)"
+      if [ "$DRY_RUN" = "0" ]; then ln -s "$src_path" "$target"; fi
+      ;;
+    *)
+      echo "  $action $target (was -> $actual)"
+      if [ "$DRY_RUN" = "0" ]; then rm "$target"; mkdir -p "$(dirname "$target")"; ln -s "$src_path" "$target"; fi
+      ;;
+  esac
 }
 
 for id in "${PUBLIC_IDS[@]}"; do
