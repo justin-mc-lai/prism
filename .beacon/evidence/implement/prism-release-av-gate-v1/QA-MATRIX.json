@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-release-av-gate-v1",
+  "ac_tc_matrix": {
+    "AC-RAV-001": "TC-RAV-001",
+    "AC-RAV-002": "TC-RAV-002",
+    "AC-RAV-003": "TC-RAV-003"
+  },
+  "verdict": "pass",
+  "at": "2026-09-21T19:35:15.057500"
+}

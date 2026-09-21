@@ -27,6 +27,9 @@ metadata:
 
 公开必须人工二次批准；草稿≠公开发布
 
+AV / manga 附加：成片终态 = `release_gate: pending_human`；成片必须带 **AI 提示标识**
+（总局令第 16 号）；仓库内**无自动公开发布路径**（见 `contracts/asset-render.contract.md` §6/§7）。
+
 Shared preamble:
 
 1. Lake vs sea — boil lakes; split/defer seas.
@@ -85,6 +88,8 @@ Skill IR: `references/skill-ir.md`
 - Do not vendor-copy third-party packs wholesale.
 - Do not leak `_internal` adapter skill names on the human face.
 - Do not approve public publish unless this is `release` **and** human confirmation is recorded.
+- **AV / manga**：不得放行无 AI 标识的成片；不得在 `release_gate != pending_human` 时公开；
+  **不得新增任何自动发布路径**（`publish` 一律人工二次批准并留痕）。
 
 ## Verification
 

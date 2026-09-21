@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-RAV-003",
+  "pass": true,
+  "command": "bash skills/prism-release/scripts/check_release_shell.sh && bash scripts/check_all_public_surfaces.sh",
+  "assertion": "surface exec 扩展 + 7 公开面零回归",
+  "last_line": "PASS: all 7 Prism public surfaces production-sample gates",
+  "at": "2026-09-21T19:35:15.057500"
+}

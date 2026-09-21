@@ -22,6 +22,8 @@
   - prism-form-product-v1（Lake D：电商商品形态契约 · release_candidate）
   - prism-title-lab-v1（Lake B′：标题实验室 · release_candidate）
   - prism-prompt-compiler-v1（Lake B′：提示词编译器 + 渲染交接去兜底 provider-only · released）
+  - prism-release-av-gate-v1（Lake B′：release 面 AV 交接门 —— pending_human + AI 标识 · released）
 - programs:
   - prism-canon
   - prism-shot-prompt-compiler-storyboard-ref
+  - prism-release-av-manga-release-gate

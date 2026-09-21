@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-RAV-001",
+  "pass": true,
+  "command": "rg -q \"pending_human\" skills/prism-release/references/modes/draft-release.md && rg -q \"AI 标识\" skills/prism-release/references/modes/draft-release.md && rg -q \"asset-render.contract\" skills/prism-release/references/modes/draft-release.md && rg -q \"render-adapters\" skills/prism-release/references/modes/draft-release.md && rg -q \"release_ai_label_missing\" skills/prism-release/references/modes/draft-release.md",
+  "assertion": "mode: AV 交接三判据 + nested refs",
+  "last_line": "",
+  "at": "2026-09-21T19:35:15.057500"
+}

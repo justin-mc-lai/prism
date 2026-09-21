@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-RAV-002",
+  "pass": true,
+  "command": "rg -q \"AI 提示标识\" skills/prism-release/SKILL.md && rg -q \"pending_human\" skills/prism-release/SKILL.md && rg -q \"自动发布路径\" skills/prism-release/SKILL.md",
+  "assertion": "SKILL 硬门/boundaries 含 AI 标识与 pending_human + 无自动发布",
+  "last_line": "",
+  "at": "2026-09-21T19:35:15.057500"
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-release-av-gate-v1",
+  "truth_integrity": "pass",
+  "truth_quality": "pass",
+  "materials_sync": "synced",
+  "all_exec_gates_pass": true,
+  "results": {
+    "AC-RAV-001": {
+      "pass": true,
+      "command": "rg -q \"pending_human\" skills/prism-release/references/modes/draft-release.md && rg -q \"AI 标识\" skills/prism-release/references/modes/draft-release.md && rg -q \"asset-render.contract\" skills/prism-release/references/modes/draft-release.md && rg -q \"render-adapters\" skills/prism-release/references/modes/draft-release.md && rg -q \"release_ai_label_missing\" skills/prism-release/references/modes/draft-release.md",
+      "note": "mode: AV 交接三判据 + nested refs",
+      "last_line": ""
+    },
+    "AC-RAV-002": {
+      "pass": true,
+      "command": "rg -q \"AI 提示标识\" skills/prism-release/SKILL.md && rg -q \"pending_human\" skills/prism-release/SKILL.md && rg -q \"自动发布路径\" skills/prism-release/SKILL.md",
+      "note": "SKILL 硬门/boundaries 含 AI 标识与 pending_human + 无自动发布",
+      "last_line": ""
+    },
+    "AC-RAV-003": {
+      "pass": true,
+      "command": "bash skills/prism-release/scripts/check_release_shell.sh && bash scripts/check_all_public_surfaces.sh",
+      "note": "surface exec 扩展 + 7 公开面零回归",
+      "last_line": "PASS: all 7 Prism public surfaces production-sample gates"
+    }
+  },
+  "at": "2026-09-21T19:35:15.057500"
+}
