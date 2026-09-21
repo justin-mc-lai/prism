@@ -187,8 +187,8 @@
     "truth_source_model": "feature_package_authoritative",
     "resolver_mode": "resolver_first",
     "version": "v0.0.1",
-    "status": "blocked",
-    "blocked": true,
+    "status": "pass",
+    "blocked": false,
     "authority_classification": {
       "feature_truth": "markdown_feature_package",
       "feature_truth_model": "feature_package_authoritative",
@@ -221,7 +221,7 @@
         "truth_authority": true,
         "json_authority": false,
         "generated_governance_state": false,
-        "source_hash": "56a88f49a16a0861644841bac98121e041d0e02c83006cf87cf49b2cbdb85036"
+        "source_hash": "e932cde25ddda4718d7c2aa099e2d6a8446d27b79621a49131bf67f75fd5593b"
       },
       "global_boundaries": {
         "schema_version": "1.0",
@@ -238,7 +238,7 @@
         "truth_authority": true,
         "json_authority": false,
         "generated_governance_state": false,
-        "source_hash": "1188242c4c6e79eb79c015b2c20f23bad0811497370ed8e6e047b7e6447fee5d"
+        "source_hash": "c191944f3c3bc2660e1ab3371330bcca664d374dbc5478505f73e9fee620b043"
       },
       "summary": {
         "schema_version": "1.0",
@@ -255,7 +255,7 @@
         "truth_authority": true,
         "json_authority": false,
         "generated_governance_state": false,
-        "source_hash": "3f337d830a33cd128178ea0d25085b6cd70ed22133176c50d7cb28753615c8b0"
+        "source_hash": "8d85ff94a17b5b43ae755011b945c2e201aab21d0f70bb65fe6f9ae3885b0cf3"
       },
       "execution_boundaries": {
         "schema_version": "1.0",
@@ -282,14 +282,14 @@
         "version": "v0.0.1",
         "surface": "project_skill_blueprint",
         "path": "docs/beacon/v0.0.1/execution/project-skill-qa-evolution-blueprint.md",
-        "exists": false,
+        "exists": true,
         "required": true,
         "role": "version_governance_truth",
         "authority": "version_governance_truth",
         "truth_authority": true,
         "json_authority": false,
         "generated_governance_state": false,
-        "source_hash": ""
+        "source_hash": "ff022b553148833d09112298f3cd167223bc4db6e7454eb7990426831bd713a5"
       },
       "source_architecture_index": {
         "schema_version": "1.0",
@@ -299,14 +299,14 @@
         "version": "v0.0.1",
         "surface": "source_architecture_index",
         "path": "docs/beacon/v0.0.1/source-architecture/index.md",
-        "exists": false,
+        "exists": true,
         "required": true,
         "role": "version_governance_truth",
         "authority": "version_governance_truth",
         "truth_authority": true,
         "json_authority": false,
         "generated_governance_state": false,
-        "source_hash": ""
+        "source_hash": "907a49cfe4cf5c5b9ccfddaf821b5ab03eca216da0586074b635cf8fa641ef70"
       },
       "release_notes": {
         "schema_version": "1.0",
@@ -335,14 +335,14 @@
         "version": "v0.0.1",
         "surface": "version_feature_manifest",
         "path": "docs/beacon/v0.0.1/.machine/manifest/version-features.json",
-        "exists": false,
+        "exists": true,
         "required": false,
         "role": "generated_governance_state_not_truth",
         "authority": "generated_governance_state_not_truth",
         "truth_authority": false,
         "json_authority": false,
         "generated_governance_state": true,
-        "source_hash": ""
+        "source_hash": "1dcb8dc82fcba9a67a567efbf86b7c641b7ec5bdf4fefa02e10010af2074c766"
       },
       "project_version_metadata": {
         "schema_version": "1.0",
@@ -376,7 +376,7 @@
         "truth_authority": false,
         "json_authority": false,
         "generated_governance_state": true,
-        "source_hash": "5c81eac4cace952734490a0a39fde6b89e298c6c349c6652af807d705f94c6c6"
+        "source_hash": "cc8438f86fd38a17a56c7e30deeccdb4ac1d3202d895ceffbb59c12bb4c136b4"
       },
       "evidence_manifest": {
         "schema_version": "1.0",
@@ -393,7 +393,7 @@
         "truth_authority": false,
         "json_authority": false,
         "generated_governance_state": true,
-        "source_hash": "59483111cb65467361fcf7b2c7e6b5afd58ca5fceb41fc6f789223dea1aca280"
+        "source_hash": "546d328fc90e24cf597c4f92a5de69efcfb88e5c20ead4aa9eca1c0960d5e444"
       },
       "qa_status": {
         "schema_version": "1.0",
@@ -410,7 +410,7 @@
         "truth_authority": false,
         "json_authority": false,
         "generated_governance_state": true,
-        "source_hash": "d1b418a0fdf845a5ccd4db069137be6005dc4f5367a71a6b8cb73ac41f9d51b1"
+        "source_hash": "a19a4c1773fa5dd668f5c2f679e4f89427d4ca4e895868d8f1f8a0c7a3764526"
       },
       "release_gate_report": {
         "schema_version": "1.0",
@@ -427,25 +427,12 @@
         "truth_authority": false,
         "json_authority": false,
         "generated_governance_state": true,
-        "source_hash": "78b57ffbf700dafe884d05fc1ced5c5b1e1988322e89423e9f79ea302a38746c"
+        "source_hash": "783a55700a20ce210fb26ced49b4473926deb2ae8fa55a9c65d0f4068a7ef681"
       }
     },
     "manifest_authority": false,
     "json_authority": false,
-    "diagnostics": [
-      {
-        "severity": "error",
-        "code": "version_governance_truth_missing",
-        "surface": "project_skill_blueprint",
-        "path": "docs/beacon/v0.0.1/execution/project-skill-qa-evolution-blueprint.md"
-      },
-      {
-        "severity": "error",
-        "code": "version_governance_truth_missing",
-        "surface": "source_architecture_index",
-        "path": "docs/beacon/v0.0.1/source-architecture/index.md"
-      }
-    ]
+    "diagnostics": []
   },
   "entrypoint_inventory": {
     "schema_version": "1.0",
@@ -693,7 +680,7 @@
     ]
   },
   "generated_by": "beacon.truth_map.resolver",
-  "generated_at": "2026-08-11T04:12:52.790238+00:00",
+  "generated_at": "2026-09-21T04:34:50.081556+00:00",
   "truth_authority": false,
   "source_paths": {
     "truth": "docs/beacon/v0.0.1/features/prism-extract-v1/truth.md",

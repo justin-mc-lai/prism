@@ -1,0 +1,5 @@
+# schema 样例：StoryWorld（仅用于 contracts/storyworld.schema.yaml 校验，不是可发布内容）
+world_slug: demo-world
+title: 样例世界
+canon_policy: fail_closed
+default_lane: canon

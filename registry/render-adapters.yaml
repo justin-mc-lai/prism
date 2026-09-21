@@ -1,0 +1,69 @@
+# Prism render adapter registry（provider-only 渲染交接）
+# 消费方：contracts/asset-render.contract.md
+# Prism 只产出提示词与请求包；本表登记下游 provider 槽位与凭证环境变量名。
+# 凭证永不入库（credentials_never_in_repo）；缺凭证 fail-closed，无兜底。
+
+schema_version: "1"
+feature: prism-prompt-compiler-v1
+
+compiler:
+  script: scripts/prompt_compiler.py
+  pipeline: scripts/ai_manga_drama.py
+  determinism: byte_identical_for_same_input
+  outputs:
+    - 资产提示词.md
+    - 图片提示词.md
+    - 视频提示词.md
+    - "{episode}.srt"
+
+adapters:
+  - stage: t2i
+    role: 文生图（资产 ref 图：人物/场景/道具/神兽/群像）
+    strategy: provider_only
+    credential_env: PRISM_T2I_KEY
+    input: 资产提示词.md
+    output: "assets/{entity}.png → 回填 characters[]/scenes[]/props[].ref_image"
+    fail_closed: true
+  - stage: i2v
+    role: 图生视频（分镜参考图 → 镜头片段）
+    strategy: provider_only
+    credential_env: PRISM_I2V_KEY
+    credential_env_aliases: [FAL_KEY, REPLICATE_API_TOKEN, SILICONFLOW_API_KEY]
+    input: "图片提示词.md + 视频提示词.md + references.images"
+    output: "clips/{shot_id}.mp4（480x854）"
+    fail_closed: true
+  - stage: t2v
+    role: 文生视频（i2v 的替代路径，无参考图直出片段）
+    strategy: provider_only
+    credential_env: PRISM_T2V_KEY
+    credential_env_aliases: [FAL_KEY, REPLICATE_API_TOKEN, SILICONFLOW_API_KEY]
+    input: 视频提示词.md
+    output: "clips/{shot_id}.mp4（480x854）"
+    fail_closed: true
+  - stage: tts
+    role: 语音合成（台词 → 音轨，交 provider；Prism 不再本地 TTS）
+    strategy: provider_only
+    credential_env: PRISM_TTS_KEY
+    input: "{episode}.srt / dialogue"
+    output: "provider 产出的音轨；由下游交付，Prism 不做本地合成"
+    fail_closed: true
+
+guards:
+  credentials_never_in_repo: true
+  no_local_fallback: true            # 禁 FFmpeg 缩放运镜合成、禁 edge-tts
+  missing_credential_terminates: true
+  missing_clip_terminates: true      # 缺片段不合成替代品
+  clip_spec_enforced: "480x854"      # 规格不符拒绝拼接，不缩放
+  provider_only_manifest: true       # video-manifest.mode 必须为 provider-only
+  release_gate: pending_human
+
+removed_2026_09_21:
+  - ffmpeg_kenburns_synthesis          # 本地缩放运镜兜底
+  - edge_tts_local_voice               # 本地 TTS
+  - audio_mux_and_allow_audio_overflow # 本地音轨拼接
+  - subtitle_burn_local_chain          # 本地字幕链（srt 保留为纯文本产物）
+
+install:
+  note: >-
+    本表只登记槽位与凭证变量名，不安装任何 provider SDK；Prism 不发起任何网络调用。
+    凭证由使用者在运行环境提供（环境变量）；缺失即 fail-closed。

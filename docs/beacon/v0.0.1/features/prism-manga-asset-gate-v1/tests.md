@@ -17,3 +17,4 @@ package_shape: v1.6.10
 | TC-MAG-005 | AC-MAG-005 | `bash scripts/check_asset_consistency.sh` | exec-layer 校验 PASS |
 | TC-MAG-006 | AC-MAG-006 | `test ! -d vendor/skills/lumenx && test ! -d vendor/skills/dramaclaw` | 上游运行时未 pin |
 | TC-MAG-007 | AC-MAG-007 | `rg -n "defer-pin\|A4" registry/source-capability-inventory.md` | A4 常设决策入册 |
+| TC-MAG-008 | AC-MAG-002 | `rg -n "Illegal transitions" docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/truth.md && rg -n "未决资产项流入图片提示词或分镜|无变化记录支撑仍通过|宣称本门可替代正典门" docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/truth.md` | illegal 转移覆盖（非法拒绝路径） |

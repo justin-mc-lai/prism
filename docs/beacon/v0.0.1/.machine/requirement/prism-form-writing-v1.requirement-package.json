@@ -5,7 +5,7 @@
   "truth_package_contract": "beacon-feature-package-v2",
   "machine_json_role": "generated_state_not_truth",
   "generated_by": "beacon.truth_map.resolver",
-  "generated_at": "2026-08-12T00:38:00.851089+00:00",
+  "generated_at": "2026-09-21T04:34:51.225609+00:00",
   "feature": "prism-form-writing-v1",
   "feature_slug": "prism-form-writing-v1",
   "version": "v0.0.1",

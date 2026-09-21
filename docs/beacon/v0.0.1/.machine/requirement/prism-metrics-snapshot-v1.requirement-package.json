@@ -5,7 +5,7 @@
   "truth_package_contract": "beacon-feature-package-v2",
   "machine_json_role": "generated_state_not_truth",
   "generated_by": "beacon.truth_map.resolver",
-  "generated_at": "2026-08-12T10:35:13.129220+00:00",
+  "generated_at": "2026-09-21T04:34:51.966364+00:00",
   "feature": "prism-metrics-snapshot-v1",
   "feature_slug": "prism-metrics-snapshot-v1",
   "version": "v0.0.1",

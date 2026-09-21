@@ -1,0 +1,209 @@
+{
+  "schema_version": "1.0",
+  "truth_map_contract": "beacon-truth-map-v1",
+  "truth_source_model": "feature_package_authoritative",
+  "truth_package_contract": "beacon-feature-package-v2",
+  "machine_json_role": "generated_state_not_truth",
+  "generated_by": "beacon.truth_map.resolver",
+  "generated_at": "2026-09-21T05:35:23.566566+00:00",
+  "feature": "prism-asset-gate-rollout-v1",
+  "feature_slug": "prism-asset-gate-rollout-v1",
+  "version": "v0.0.1",
+  "truth_authority": false,
+  "json_authority": false,
+  "source_paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-asset-gate-rollout-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-asset-gate-rollout-v1/tests.md",
+    "tasks": "docs/beacon/v0.0.1/features/prism-asset-gate-rollout-v1/tasks.md",
+    "evidence": "docs/beacon/v0.0.1/features/prism-asset-gate-rollout-v1/evidence.md"
+  },
+  "source_hashes": {
+    "truth": "86d62ded98df91b9dc05b9ff44912a6b0b078e6baeabd87cfdc6e9af5ce88c6b",
+    "tests": "8bbb117a2fae756cd698b18622d8b5dbe2bb61dd815e43b3a8c9cabb615bca5e",
+    "tasks": "1c8ad9d087169f04367ada59f7bf3c90c6f802d9aa1a25aaf618402e0a5472c8",
+    "evidence": "ebaabd2041c5a9231202ec34d2fa4b27c37fbd915cd0bef547bafd557572bd20"
+  },
+  "truth_frontmatter": {
+    "slug": "prism-asset-gate-rollout-v1",
+    "version": "v0.0.1",
+    "status": "frozen",
+    "revision_id": "R1",
+    "language": "zh",
+    "domain_required": "true",
+    "ux_required": "false",
+    "parser_contract": "beacon-feature-package-v2",
+    "materials_status": "current",
+    "package_maturity": "filled",
+    "truth_source_model": "intent_first",
+    "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+    "canonical_refs": {
+      "prd": "docs/beacon/v0.0.1/features/prism-asset-gate-rollout-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-asset-gate-rollout-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-asset-gate-rollout-v1/tests.md"
+    },
+    "provenance": {
+      "- ac_id": "AC-RLO-001",
+      "source_type": "migrated_truth",
+      "source_ref": "prism-manga-asset-gate-v1 R1 §1 适用面声明（live_drama 分镜阶段、comic 多集）；form-live-drama.contract.md / form-av.contract.md 现行结构"
+    }
+  },
+  "frontmatter_errors": [],
+  "acceptance_criteria": [
+    {
+      "ac_id": "AC-RLO-001",
+      "theme": "form-live-drama.contract.md intake 要求分镜交付含资产身份条目引用；gate 新增资产一致性判据（引用可解析 + 边界匹配），fail-closed",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-RLO-002",
+      "theme": "form-av.contract.md（comic 路由）intake 要求 storyboard/shot list 带 asset_ref 解析；gate 对多集路由新增资产一致性判据",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-RLO-003",
+      "theme": "live_drama 与 comic 的 producer_chain 各插入资产一致性门步骤；registry YAML 可解析",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-RLO-004",
+      "theme": "`scripts/check_asset_consistency.sh` 增加 rollout 断言且整体 PASS",
+      "description": ""
+    }
+  ],
+  "test_rows": [
+    {
+      "ac_id": "AC-RLO-001",
+      "tc_id": "TC-RLO-001",
+      "layer": "",
+      "command": "`rg -n \"资产一致性门\" contracts/form-live-drama.contract.md && rg -n \"asset-consistency.contract\" contracts/form-live-drama.contract.md`",
+      "assertion": "live_drama 契约接线",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-RLO-002",
+      "tc_id": "TC-RLO-002",
+      "layer": "",
+      "command": "`rg -n \"资产一致性\\|asset-consistency\" contracts/form-av.contract.md`",
+      "assertion": "comic 路由接线",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-RLO-003",
+      "tc_id": "TC-RLO-003",
+      "layer": "",
+      "command": "`python3 -c \"import yaml; d=yaml.safe_load(open('registry/form-registry.yaml')); c={f['form']:f['producer_chain'] for f in d['forms']}; assert 'asset-consistency' in c['live_drama'] and 'asset-consistency' in c['comic']\"`",
+      "assertion": "两链含门步骤",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-RLO-004",
+      "tc_id": "TC-RLO-004",
+      "layer": "",
+      "command": "`bash scripts/check_asset_consistency.sh`",
+      "assertion": "exec-layer 校验 PASS",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-RLO-001",
+      "tc_id": "TC-RLO-005",
+      "layer": "",
+      "command": "`rg -n \"Illegal transitions\" docs/beacon/v0.0.1/features/prism-asset-gate-rollout-v1/truth.md && rg -n \"无法解析到资产条目仍进入剪辑/生成|只扩适用面|给 vlog / book_video 接入本门\" docs/beacon/v0.0.1/features/prism-asset-gate-rollout-v1/truth.md`",
+      "assertion": "illegal 转移覆盖（非法拒绝路径）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-RLO-002",
+      "tc_id": "TC-RLO-006",
+      "layer": "",
+      "command": "`rg -n \"vlog must stay unwired\\|book_video must stay unwired\" scripts/check_asset_consistency.sh`",
+      "assertion": "vlog/book_video 不接入反断言",
+      "evidence_path": "",
+      "source": ""
+    }
+  ],
+  "task_rows": [
+    {
+      "id": "TASK-001",
+      "title": "Implement AC-RLO-001: live_drama 契约 intake+gate 接线 · ac=AC-RLO-001 · evidence=`.beacon/evidence/implement/prism-asset-gate-rollout-v1/AC-RLO-001.json`",
+      "status": "checked"
+    },
+    {
+      "id": "TASK-002",
+      "title": "Implement AC-RLO-002: form-av comic 路由接线 · ac=AC-RLO-002 · evidence=`.beacon/evidence/implement/prism-asset-gate-rollout-v1/AC-RLO-002.json`",
+      "status": "checked"
+    },
+    {
+      "id": "TASK-003",
+      "title": "Implement AC-RLO-003: registry 两链插入门步骤 · ac=AC-RLO-003 · evidence=`.beacon/evidence/implement/prism-asset-gate-rollout-v1/AC-RLO-003.json`",
+      "status": "checked"
+    },
+    {
+      "id": "TASK-004",
+      "title": "Implement AC-RLO-004: check_asset_consistency.sh 扩展 PASS · ac=AC-RLO-004 · evidence=`.beacon/evidence/implement/prism-asset-gate-rollout-v1/AC-RLO-004.json`",
+      "status": "checked"
+    },
+    {
+      "id": "TASK-005",
+      "title": "Validate package gates (truth review + freeze ack) · ac=GATES · evidence=`.beacon/evidence/implement/prism-asset-gate-rollout-v1/GATES.json`",
+      "status": "checked"
+    },
+    {
+      "id": "TASK-006",
+      "title": "Run QA against AC↔TC matrix + exec-layer evidence · ac=QA · evidence=`.beacon/evidence/implement/prism-asset-gate-rollout-v1/QA-MATRIX.json`",
+      "status": "checked"
+    }
+  ],
+  "checkbox_errors": [],
+  "evidence_rows": [
+    {
+      "surface": "package",
+      "authority": "requirement_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-asset-gate-rollout-v1/truth.md"
+    },
+    {
+      "surface": "tests",
+      "authority": "test_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-asset-gate-rollout-v1/tests.md"
+    },
+    {
+      "surface": "tasks",
+      "authority": "acceptance_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-asset-gate-rollout-v1/tasks.md"
+    },
+    {
+      "surface": "gate_contract（复用）",
+      "authority": "support_advisory",
+      "path": "contracts/asset-consistency.contract.md"
+    },
+    {
+      "surface": "distill_ref（复用）",
+      "authority": "support_advisory",
+      "path": "skills/prism-director/references/asset-consistency-gate.md"
+    },
+    {
+      "surface": "live_drama_wiring",
+      "authority": "support_advisory",
+      "path": "contracts/form-live-drama.contract.md"
+    },
+    {
+      "surface": "comic_wiring",
+      "authority": "support_advisory",
+      "path": "contracts/form-av.contract.md"
+    },
+    {
+      "surface": "registry_chains",
+      "authority": "support_advisory",
+      "path": "registry/form-registry.yaml"
+    },
+    {
+      "surface": "check_script",
+      "authority": "support_advisory",
+      "path": "scripts/check_asset_consistency.sh"
+    }
+  ]
+}

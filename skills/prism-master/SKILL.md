@@ -3,6 +3,7 @@ name: prism-master
 description: >
   Prism public master surface. Human verb: 定. Beacon design alias: truth.
   FactMaster/StoryMaster freeze authority for content truth. Triggers: 定, 母稿, 正典, FactMaster, StoryMaster, 冻结, prism-master.
+  资产提取支线：提取人物, 提取场景, 提取道具, 拆角色, 拆场景, 拆道具, 小说资产.
   Hard gate: 事实或正典未核完不冻结；展示变体不得新增事实/正典.
   Do not use for: 选题调研、导演分镜、形态生产、QA 自证、公开发布. Adapters stay internal-only. Lake B′ production sample.
 metadata:
@@ -57,6 +58,7 @@ Shared preamble:
 | mode_id | Load file | Purpose |
 |---------|-----------|---------|
 | `freeze-master` | `references/modes/freeze-master.md` | Freeze FactMaster and/or StoryMaster with evidence |
+| `extract-storyworld` | `references/modes/extract-storyworld.md` | Extract reusable asset roster (characters/scenes/props) from novel/script/outline |
 
 Index: `references/modes/INDEX.md`  
 Skill IR: `references/skill-ir.md`

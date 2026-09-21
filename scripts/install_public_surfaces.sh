@@ -29,7 +29,9 @@ ROOTS=(
   "$HOME/.claude/skills"
   "$HOME/.agents/skills"
   "$HOME/.cursor/skills"
+  "$HOME/.gemini/config/skills"
   "$ROOT/.agents/skills"
+  "$ROOT/../.agents/skills"
   "$ROOT/.cursor/skills"
 )
 
@@ -56,6 +58,7 @@ do_link() {
   if [ -e "$target" ] || [ -L "$target" ]; then
     echo "  exists $target (skip)"
   else
+    if [ "$DRY_RUN" = "0" ]; then mkdir -p "$(dirname "$target")"; fi
     echo "  link $name -> $target ($src_path)"
     if [ "$DRY_RUN" = "0" ]; then ln -s "$src_path" "$target"; fi
   fi

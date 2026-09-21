@@ -3,6 +3,7 @@
 | mode_id | File | When |
 |---------|------|------|
 | `loop-campaign` | `loop-campaign.md` | Default. Multi-surface campaign, series, or review loop. |
+| `marketing-engineer` | `marketing-engineer.md` | 已做好的东西要出圈 + 回环：release 之后的 measured→review→learn→下一轮。 |
 
 Rules:
 

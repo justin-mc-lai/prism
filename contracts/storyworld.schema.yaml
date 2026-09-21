@@ -2,7 +2,7 @@ schema_id: storyworld
 schema_version: "1"
 entity: StoryWorld
 path_pattern: content/storyworlds/{world_slug}/
-description: Canonical world bundle for bible, canon ledger, characters, and timeline.
+description: Canonical world bundle for bible, canon ledger, characters, scenes, props, and timeline.
 required_files:
   - world.yaml
   - bible.md
@@ -11,6 +11,8 @@ required_files:
   - timeline/
 optional_files:
   - episodes/
+  - scenes/
+  - props/
 required_fields:
   world.yaml:
     - world_slug

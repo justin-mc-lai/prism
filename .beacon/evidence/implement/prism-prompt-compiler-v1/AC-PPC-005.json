@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-PPC-005",
+  "pass": true,
+  "command": "bash scripts/check_render_handoff.sh",
+  "assertion": "无兜底 + 三条负例 exit≠0",
+  "last_line": "PASS: check_render_handoff: all provider-only / no-fallback gates PASS",
+  "at": "2026-09-21T12:35:50.960762"
+}

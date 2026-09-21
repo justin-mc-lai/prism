@@ -5,7 +5,7 @@
   "truth_package_contract": "beacon-feature-package-v2",
   "machine_json_role": "generated_state_not_truth",
   "generated_by": "beacon.truth_map.resolver",
-  "generated_at": "2026-08-12T11:26:50.357291+00:00",
+  "generated_at": "2026-09-21T04:34:52.145856+00:00",
   "feature": "prism-monetization-contracts-v1",
   "feature_slug": "prism-monetization-contracts-v1",
   "version": "v0.0.1",

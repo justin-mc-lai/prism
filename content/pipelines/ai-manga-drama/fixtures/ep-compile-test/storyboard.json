@@ -1,0 +1,112 @@
+{
+  "episode": "ep-compile-test",
+  "title": "Compiler Fixture",
+  "ratio": "9:16",
+  "duration_seconds": 64,
+  "mode": "production",
+  "characters": [
+    {
+      "id": "char-01-lin",
+      "name": "Lin",
+      "traits": "26yo female, slim build, waist-length black hair, signature red ribbon at neck, olive-green stand-collar service dress",
+      "voice_id": "zh-CN-YunxiNeural",
+      "ref_image": "assets/char-01-lin.png"
+    },
+    {
+      "id": "char-02-guard",
+      "name": "Guard",
+      "traits": "40yo male, heavy build, scar over right brow, dark navy uniform with brass buttons"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene-01-hall",
+      "name": "Station Hall",
+      "kind": "interior",
+      "traits": "old railway station hall, arched steel roof, wet tile floor, single hanging lamp",
+      "variant": "night, rain outside"
+    }
+  ],
+  "props": [
+    {
+      "id": "prop-01-compass",
+      "name": "Brass Compass",
+      "traits": "antique brass pocket compass, 5cm diameter, worn patina, faint blue glow on needle",
+      "holder": "char-01-lin"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "shot-01",
+      "description": "Wide establishing shot of the empty station hall at night, rain streaking the arched windows, camera slow push in.",
+      "dialogue": "",
+      "asset_ref": "assets/char-01-lin.png",
+      "duration_seconds": 8,
+      "scene_ref": "scene-01-hall",
+      "prop_refs": []
+    },
+    {
+      "shot_id": "shot-02",
+      "description": "Lin walks into frame from the left, coat dripping, medium shot, camera static at eye level.",
+      "dialogue": "这里还有人吗？",
+      "asset_ref": "assets/char-01-lin.png",
+      "duration_seconds": 8,
+      "scene_ref": "scene-01-hall",
+      "prop_refs": []
+    },
+    {
+      "shot_id": "shot-03",
+      "description": "Close-up of Lin's hand pulling the brass compass from her coat pocket, shallow depth of field.",
+      "dialogue": "",
+      "asset_ref": "assets/char-01-lin.png",
+      "duration_seconds": 8,
+      "scene_ref": "scene-01-hall",
+      "prop_refs": ["prop-01-compass"]
+    },
+    {
+      "shot_id": "shot-04",
+      "description": "Over-the-shoulder shot of the guard stepping out of the shadow, hand resting on his belt.",
+      "dialogue": "车站已经关门了。",
+      "asset_ref": "assets/char-01-lin.png",
+      "duration_seconds": 8,
+      "scene_ref": "scene-01-hall",
+      "prop_refs": []
+    },
+    {
+      "shot_id": "shot-05",
+      "description": "Extreme close-up of the compass needle swinging toward the east corridor, blue glow pulsing.",
+      "dialogue": "",
+      "asset_ref": "assets/char-01-lin.png",
+      "duration_seconds": 8,
+      "scene_ref": "scene-01-hall",
+      "prop_refs": ["prop-01-compass"]
+    },
+    {
+      "shot_id": "shot-06",
+      "description": "Two-shot of Lin and the guard facing each other, power imbalance shown by low angle on the guard.",
+      "dialogue": "我要找的人，还没走。",
+      "asset_ref": "assets/char-01-lin.png",
+      "duration_seconds": 8,
+      "scene_ref": "scene-01-hall",
+      "prop_refs": []
+    },
+    {
+      "shot_id": "shot-07",
+      "description": "Lin turns and walks toward the east corridor, back to camera, guard watches in the background.",
+      "dialogue": "",
+      "asset_ref": "assets/char-01-lin.png",
+      "duration_seconds": 8,
+      "scene_ref": "scene-01-hall",
+      "prop_refs": ["prop-01-compass"]
+    },
+    {
+      "shot_id": "shot-08",
+      "description": "Final close-up on the guard's face as the lamp flickers, cut to black on the last frame.",
+      "dialogue": "你回不来了。",
+      "asset_ref": "assets/char-01-lin.png",
+      "duration_seconds": 8,
+      "scene_ref": "scene-01-hall",
+      "prop_refs": []
+    }
+  ]
+}

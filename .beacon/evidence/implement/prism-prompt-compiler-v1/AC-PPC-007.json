@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-PPC-007",
+  "pass": true,
+  "command": "bash scripts/check_prompt_compiler.sh && bash scripts/check_render_handoff.sh && bash scripts/check_asset_consistency.sh && bash scripts/check_prompt_syntax.sh && bash scripts/check_style_presets.sh && bash scripts/check_asset_prompt_templates.sh && bash scripts/check_director_distill.sh",
+  "assertion": "新增门禁 + 零回归",
+  "last_line": "PASS: check_director_distill: all Lake B′ director distillation gates PASS",
+  "at": "2026-09-21T12:35:50.960762"
+}

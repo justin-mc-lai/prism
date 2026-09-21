@@ -5,7 +5,7 @@
   "truth_package_contract": "beacon-feature-package-v2",
   "machine_json_role": "generated_state_not_truth",
   "generated_by": "beacon.truth_map.resolver",
-  "generated_at": "2026-08-12T10:45:29.770343+00:00",
+  "generated_at": "2026-09-21T04:34:51.415386+00:00",
   "feature": "prism-learning-memory-v1",
   "feature_slug": "prism-learning-memory-v1",
   "version": "v0.0.1",

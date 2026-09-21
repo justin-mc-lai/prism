@@ -20,3 +20,5 @@ package_shape: v1.6.10
 | TC-PRD-008 | AC-PRD-007 | `test -d vendor/skills/drama-skills/skills && test -f vendor/skills/drama-skills/LICENSE && rg -n "drama-skills" docs/ATTRIBUTION-bridges.md` | drama-skills pin+ATTRIBUTION |
 | TC-PRD-009 | AC-PRD-008 | `rg -n "lumenx\|dramaclaw\|MoneyPrinterTurbo\|openstory\|drama-skills" registry/source-capability-inventory.md` | inventory 五库入册 |
 | TC-PRD-010 | AC-PRD-009 | `rg -n "Non-goals" docs/beacon/v0.0.1/features/prism-form-product-v1/truth.md && rg -n "Elastic-2.0\|海 closure" docs/beacon/v0.0.1/features/prism-form-product-v1/truth.md` | 分湖边界存在 |
+| TC-PRD-011 | AC-PRD-003 | `rg -n "Illegal transitions" docs/beacon/v0.0.1/features/prism-form-product-v1/truth.md && rg -n "商品事实无源仍产出成稿|极限词未消除即进入 QA|未跑 classify_form" docs/beacon/v0.0.1/features/prism-form-product-v1/truth.md` | illegal 转移覆盖（非法拒绝路径） |
+| TC-PRD-012 | AC-PRD-007 | `test ! -d vendor/skills/dramaclaw` | Elastic-2.0 仓库未整包 pin |

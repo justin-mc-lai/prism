@@ -1,0 +1,267 @@
+{
+  "schema_version": "1.0",
+  "truth_map_contract": "beacon-truth-map-v1",
+  "truth_source_model": "feature_package_authoritative",
+  "truth_package_contract": "beacon-feature-package-v2",
+  "machine_json_role": "generated_state_not_truth",
+  "generated_by": "beacon.truth_map.resolver",
+  "generated_at": "2026-09-21T05:35:24.867598+00:00",
+  "feature": "prism-manga-asset-gate-v1",
+  "feature_slug": "prism-manga-asset-gate-v1",
+  "version": "v0.0.1",
+  "truth_authority": false,
+  "json_authority": false,
+  "source_paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/tests.md",
+    "tasks": "docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/tasks.md",
+    "evidence": "docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/evidence.md"
+  },
+  "source_hashes": {
+    "truth": "dc51dcb9fe3a5ab9b924404b92579552549c754fe35b7fddbb278cc496b6918d",
+    "tests": "2f65aa8212f2c29a6b56cd1ae73a1b2d80e2e9d242aebbe93719584a03c5239c",
+    "tasks": "c31684af500cf006e892a01e2c5f7cde3a8c57d0412224f3ca7effd41ea34dc7",
+    "evidence": "8202e53ca92cf2d3a91df4ed4957f2f4bf808071f6844703446486279eb68b02"
+  },
+  "truth_frontmatter": {
+    "slug": "prism-manga-asset-gate-v1",
+    "version": "v0.0.1",
+    "status": "frozen",
+    "revision_id": "R1",
+    "language": "zh",
+    "domain_required": "true",
+    "ux_required": "false",
+    "parser_contract": "beacon-feature-package-v2",
+    "materials_status": "current",
+    "package_maturity": "filled",
+    "truth_source_model": "intent_first",
+    "program_ref": "docs/beacon/v0.0.1/programs/prism-canon/program-manifest.md",
+    "canonical_refs": {
+      "prd": "docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/tests.md"
+    },
+    "provenance": {
+      "- ac_id": "AC-MAG-004",
+      "source_type": "migrated_truth",
+      "source_ref": "registry/form-registry.yaml manga_drama producer_chain（FP-PRISM-007 / ai-manga-drama R1）"
+    }
+  },
+  "frontmatter_errors": [],
+  "acceptance_criteria": [
+    {
+      "ac_id": "AC-MAG-001",
+      "theme": "进入 `distill_landed`：`skills/prism-director/references/asset-consistency-gate.md` 含三分法、识别锚点、CON-01 边界匹配、CON-04 变化记录、AST-05 binding、画风统一、lumenx 三件套映射，标注双上游出处",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-MAG-002",
+      "theme": "进入 `contract_landed`：`contracts/asset-consistency.contract.md` 含 identity/决策边界/intake/output/gate/handoff/失败处理；fail-closed 码 `asset_identity_missing`；六判据叠加不替代既有门",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-MAG-003",
+      "theme": "进入 `manga_wired`：form-manga-drama.contract.md intake 要求识别锚点（未决项不得流入分镜），gate 第 2 条升级引用 asset-consistency 契约",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-MAG-004",
+      "theme": "进入 `registry_updated`：manga_drama producer_chain 在 storyboard 校验后插入资产一致性门步骤且 YAML 可解析",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-MAG-005",
+      "theme": "进入 `indexed`：`scripts/check_asset_consistency.sh` 可执行且 PASS",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-MAG-006",
+      "theme": "上游边界：vendor/skills 下不得出现 lumenx、dramaclaw 目录（distill only，不 pin 运行时）",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-MAG-007",
+      "theme": "source-capability-inventory 记录 defer-pin 维持 + 触发条件 + 届时按 A4 逐次 pin",
+      "description": ""
+    }
+  ],
+  "test_rows": [
+    {
+      "ac_id": "AC-MAG-001",
+      "tc_id": "TC-MAG-001",
+      "layer": "",
+      "command": "`test -f skills/prism-director/references/asset-consistency-gate.md && rg -n \"身份\\|变体\\|镜头瞬态\\|CON-01\\|CON-04\\|AST-05\" skills/prism-director/references/asset-consistency-gate.md`",
+      "assertion": "蒸馏参考含框架关键词",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MAG-002",
+      "tc_id": "TC-MAG-002",
+      "layer": "",
+      "command": "`test -f contracts/asset-consistency.contract.md && rg -c \"identity\\|决策边界\\|intake\\|output\\|gate\\|handoff\\|失败处理\" contracts/asset-consistency.contract.md && rg -n \"asset_identity_missing\" contracts/asset-consistency.contract.md`",
+      "assertion": "门契约七节+fail-closed 码",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MAG-003",
+      "tc_id": "TC-MAG-003",
+      "layer": "",
+      "command": "`rg -n \"asset-consistency.contract\" contracts/form-manga-drama.contract.md && rg -n \"识别锚点\" contracts/form-manga-drama.contract.md`",
+      "assertion": "manga 契约接线",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MAG-004",
+      "tc_id": "TC-MAG-004",
+      "layer": "",
+      "command": "`python3 -c \"import yaml; d=yaml.safe_load(open('registry/form-registry.yaml')); m=[f for f in d['forms'] if f['form']=='manga_drama'][0]; assert 'asset-consistency' in m['producer_chain']\"`",
+      "assertion": "registry 链含门步骤",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MAG-005",
+      "tc_id": "TC-MAG-005",
+      "layer": "",
+      "command": "`bash scripts/check_asset_consistency.sh`",
+      "assertion": "exec-layer 校验 PASS",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MAG-006",
+      "tc_id": "TC-MAG-006",
+      "layer": "",
+      "command": "`test ! -d vendor/skills/lumenx && test ! -d vendor/skills/dramaclaw`",
+      "assertion": "上游运行时未 pin",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MAG-007",
+      "tc_id": "TC-MAG-007",
+      "layer": "",
+      "command": "`rg -n \"defer-pin\\|A4\" registry/source-capability-inventory.md`",
+      "assertion": "A4 常设决策入册",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-MAG-002",
+      "tc_id": "TC-MAG-008",
+      "layer": "",
+      "command": "`rg -n \"Illegal transitions\" docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/truth.md && rg -n \"未决资产项流入图片提示词或分镜|无变化记录支撑仍通过|宣称本门可替代正典门\" docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/truth.md`",
+      "assertion": "illegal 转移覆盖（非法拒绝路径）",
+      "evidence_path": "",
+      "source": ""
+    }
+  ],
+  "task_rows": [
+    {
+      "id": "TASK-001",
+      "title": "Implement AC-MAG-001: 蒸馏参考落 director references（三分法/锚点/边界/画风） · ac=AC-MAG-001 · evidence=`.beacon/evidence/implement/prism-manga-asset-gate-v1/AC-MAG-001.json`",
+      "status": "checked"
+    },
+    {
+      "id": "TASK-002",
+      "title": "Implement AC-MAG-002: `contracts/asset-consistency.contract.md` 七节门契约 · ac=AC-MAG-002 · evidence=`.beacon/evidence/implement/prism-manga-asset-gate-v1/AC-MAG-002.json`",
+      "status": "checked"
+    },
+    {
+      "id": "TASK-003",
+      "title": "Implement AC-MAG-003: manga_drama 契约 intake 锚点要求 + gate#2 升级引用 · ac=AC-MAG-003 · evidence=`.beacon/evidence/implement/prism-manga-asset-gate-v1/AC-MAG-003.json`",
+      "status": "checked"
+    },
+    {
+      "id": "TASK-004",
+      "title": "Implement AC-MAG-004: registry producer_chain 插入资产一致性门 · ac=AC-MAG-004 · evidence=`.beacon/evidence/implement/prism-manga-asset-gate-v1/AC-MAG-004.json`",
+      "status": "checked"
+    },
+    {
+      "id": "TASK-005",
+      "title": "Implement AC-MAG-005: `scripts/check_asset_consistency.sh` exec PASS · ac=AC-MAG-005 · evidence=`.beacon/evidence/implement/prism-manga-asset-gate-v1/AC-MAG-005.json`",
+      "status": "checked"
+    },
+    {
+      "id": "TASK-006",
+      "title": "Implement AC-MAG-006: 上游运行时不 pin 反断言 · ac=AC-MAG-006 · evidence=`.beacon/evidence/implement/prism-manga-asset-gate-v1/AC-MAG-006.json`",
+      "status": "checked"
+    },
+    {
+      "id": "TASK-007",
+      "title": "Implement AC-MAG-007: MPT/openstory defer-pin A4 常设决策入册 · ac=AC-MAG-007 · evidence=`.beacon/evidence/implement/prism-manga-asset-gate-v1/AC-MAG-007.json`",
+      "status": "checked"
+    },
+    {
+      "id": "TASK-008",
+      "title": "Validate package gates (truth review + freeze ack) · ac=GATES · evidence=`.beacon/evidence/implement/prism-manga-asset-gate-v1/GATES.json`",
+      "status": "checked"
+    },
+    {
+      "id": "TASK-009",
+      "title": "Run QA against AC↔TC matrix + exec-layer evidence · ac=QA · evidence=`.beacon/evidence/implement/prism-manga-asset-gate-v1/QA-MATRIX.json`",
+      "status": "checked"
+    }
+  ],
+  "checkbox_errors": [],
+  "evidence_rows": [
+    {
+      "surface": "package",
+      "authority": "requirement_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/truth.md"
+    },
+    {
+      "surface": "tests",
+      "authority": "test_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/tests.md"
+    },
+    {
+      "surface": "tasks",
+      "authority": "acceptance_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/tasks.md"
+    },
+    {
+      "surface": "distill_ref",
+      "authority": "support_advisory",
+      "path": "skills/prism-director/references/asset-consistency-gate.md"
+    },
+    {
+      "surface": "gate_contract",
+      "authority": "support_advisory",
+      "path": "contracts/asset-consistency.contract.md"
+    },
+    {
+      "surface": "manga_contract_wiring",
+      "authority": "support_advisory",
+      "path": "contracts/form-manga-drama.contract.md"
+    },
+    {
+      "surface": "registry_chain",
+      "authority": "support_advisory",
+      "path": "registry/form-registry.yaml"
+    },
+    {
+      "surface": "check_script",
+      "authority": "support_advisory",
+      "path": "scripts/check_asset_consistency.sh"
+    },
+    {
+      "surface": "upstream_drama_skills",
+      "authority": "support_advisory",
+      "path": "vendor/skills/drama-skills/skills/short-drama-assets/（MIT pin）"
+    },
+    {
+      "surface": "upstream_lumenx",
+      "authority": "support_advisory",
+      "path": "/Users/apple/Developer/Personal/oss-sync/automation/auto/lumenx（MIT 镜像）"
+    },
+    {
+      "surface": "a4_standing_decision",
+      "authority": "support_advisory",
+      "path": "registry/source-capability-inventory.md §A4 常设决策"
+    }
+  ]
+}

@@ -18,6 +18,7 @@
 | 节气养生长跑题材（jieqi-yangsheng） | 节气排期表 + 俗语/食材/引文库 | MASTER + 古籍原文逐字核对 + lunar-python 日历核算 | selfmedia-director 节气模板（8 卡）+ shot list | writing.contract + 文生图古典底图 + render_wechat_html_cards | anti-slop-gate + 受众复读 + 古籍/日历核对 + OCR + 合同 | 公众号贴图草稿；后续按平台矩阵派生文章/短视频 |
 | novel 连载 | campaign/连载计划 | StoryMaster + canon ledger 冻结 | director episode outline | form-novel.contract（episode 结构）+ bridge `vendor/skills/kushi-narrative-zh`（A4 pin） | 正典/连续性门（canon_gate_status=passed）+ anti-slop-gate | 人工批准 → 章节发布 |
 | comic 漫画 | 选题/创意 | 分镜设定 + 版权安全检查 | director 分镜 + 角色/场景设定 | form-av.contract（comic 路由）+ bridge `vendor/skills/comic-storyboard`（A4 pin） | 乱码/分页/文字可读 + anti-slop-gate | 人工批准 → 漫画草稿 |
+| manga_drama 漫剧 | 选题/小说 | StoryMaster + canon ledger 冻结 | director 分镜（storyboard-schema + 资产一致性门 + 镜头语法门） | `prompt_compiler.py` 编译资产/图片/视频提示词 + srt（确定性）→ `asset-render.contract`（**provider-only**：T2I 建资产 / I2V\|T2V 出 clips；无凭证 fail-closed，**无本地兜底**）→ assemble 拼真实片段 + AI 标识 | anti-slop-gate + 七类 QA + 无兜底反断言 | 人工批准 → 漫剧草稿 |
 | book_video 书籍视频 | 书籍/剧集选题 | 母稿 + 分镜 | director 书籍分镜 | form-av.contract（book_video 路由）+ bridge book-video | 乱码/版权/分镜一致 + anti-slop-gate | 人工批准 → 视频草稿 |
 | 电商商品 product | 商品资料/竞品调研 | MASTER + 商品事实核对（规格/价格有源） | director 卖点排序 + shot list | form-product.contract（卖点结构）+ bridge 渲染/rnskill | anti-slop-gate + 极限词门（广告法）+ OCR | 人工批准 → 商品内容草稿 |
 

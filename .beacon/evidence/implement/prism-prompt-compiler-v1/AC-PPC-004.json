@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-PPC-004",
+  "pass": true,
+  "command": "test -f contracts/asset-render.contract.md && python3 -c \"import yaml; yaml.safe_load(open('registry/render-adapters.yaml'))\"",
+  "assertion": "契约七节 + 适配器 yaml",
+  "last_line": "",
+  "at": "2026-09-21T12:35:50.960762"
+}

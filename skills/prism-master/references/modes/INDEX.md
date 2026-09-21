@@ -2,7 +2,8 @@
 
 | mode_id | File | When |
 |---------|------|------|
-| `freeze-master` | `freeze-master.md` | Default for this public surface |
+| `freeze-master` | `freeze-master.md` | Freeze FactMaster and/or StoryMaster with evidence |
+| `extract-storyworld` | `extract-storyworld.md` | Extract reusable asset roster (characters/scenes/props) from novel/script/outline |
 
 Rules:
 

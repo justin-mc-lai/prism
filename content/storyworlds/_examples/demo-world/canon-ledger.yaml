@@ -1,0 +1,10 @@
+# schema 样例：canon ledger（仅用于校验，不是可发布内容）
+entries:
+  - id: canon-001
+    statement: 样例正典条目一：世界只用于 schema 校验
+    status: passed
+    source: bible.md
+  - id: canon-002
+    statement: 样例正典条目二：本条目不得流入任何发布内容
+    status: review_required
+    source: bible.md

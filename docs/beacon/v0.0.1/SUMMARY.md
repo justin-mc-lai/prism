@@ -1,6 +1,6 @@
 # Beacon Delivery Tree — v0.0.1
 
-- status: active（Lake C：campaign / storyworld schema）
+- status: active（Lake B′：提示词编译器 + 渲染交接去兜底）
 - version_release: **release_accepted（2026-08-12 人工确认 · 14 features：A–F 全湖）**
 - features:
   - prism-extract-v1（Lake B：repo + 1+6 shells + registries + orchestration kernel · release_accepted）
@@ -17,5 +17,11 @@
   - prism-learning-memory-v1（Lake E4：可回放学习记忆 · release_candidate）
   - prism-monetization-contracts-v1（Lake F1：变现契约 · release_candidate）
   - prism-adaptation-contracts-v1（Lake F2：改编契约 · release_candidate）
+  - prism-manga-asset-gate-v1（Lake D：漫剧资产一致性门 · release_candidate）
+  - prism-asset-gate-rollout-v1（Lake D：资产门多形态铺开 · release_candidate）
+  - prism-form-product-v1（Lake D：电商商品形态契约 · release_candidate）
+  - prism-title-lab-v1（Lake B′：标题实验室 · release_candidate）
+  - prism-prompt-compiler-v1（Lake B′：提示词编译器 + 渲染交接去兜底 provider-only · release_candidate）
 - programs:
   - prism-canon
+  - prism-shot-prompt-compiler-storyboard-ref

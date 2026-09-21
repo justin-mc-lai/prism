@@ -58,6 +58,7 @@ Shared preamble:
 | mode_id | Load file | Purpose |
 |---------|-----------|---------|
 | `loop-campaign` | `references/modes/loop-campaign.md` | Cross-surface campaign / series orchestration |
+| `marketing-engineer` | `references/modes/marketing-engineer.md` | Post-release loop: 出圈 + measured→review→learn→下一轮 |
 
 Index: `references/modes/INDEX.md`  
 Skill IR: `references/skill-ir.md`

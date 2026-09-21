@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-PPC-006",
+  "pass": true,
+  "command": "rg -q \"asset-render.contract\" contracts/form-manga-drama.contract.md && rg -q \"provider-only\" registry/form-registry.yaml",
+  "assertion": "契约 + registry 同步",
+  "last_line": "",
+  "at": "2026-09-21T12:35:50.960762"
+}

@@ -1,0 +1,310 @@
+{
+  "schema_version": "1.0",
+  "truth_map_contract": "beacon-truth-map-v1",
+  "truth_source_model": "feature_package_authoritative",
+  "truth_package_contract": "beacon-feature-package-v2",
+  "machine_json_role": "generated_state_not_truth",
+  "generated_by": "beacon.truth_map.resolver",
+  "generated_at": "2026-09-21T04:35:30.120489+00:00",
+  "feature": "prism-prompt-compiler-v1",
+  "feature_slug": "prism-prompt-compiler-v1",
+  "version": "v0.0.1",
+  "truth_authority": false,
+  "json_authority": false,
+  "source_paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-prompt-compiler-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-prompt-compiler-v1/tests.md",
+    "tasks": "docs/beacon/v0.0.1/features/prism-prompt-compiler-v1/tasks.md",
+    "evidence": "docs/beacon/v0.0.1/features/prism-prompt-compiler-v1/evidence.md"
+  },
+  "source_hashes": {
+    "truth": "92b111b9f57fce8f38bc89865e9952fdfbb05b798e98f5a80ad9667e728f6c5c",
+    "tests": "4e104fd0eefe7580f876a5d190384bea4add5df976e1de4ce2f1b95ec72153e1",
+    "tasks": "20262d9f02adf14d1effd3e7c51e4c69e8266b9fdf7a260b3ab58433e05a38c1",
+    "evidence": "6f57002fb2a797d455ba077a692b5ed23b9da170635308b236ceeb428548966e"
+  },
+  "truth_frontmatter": {
+    "slug": "prism-prompt-compiler-v1",
+    "version": "v0.0.1",
+    "status": "frozen",
+    "revision_id": "R1",
+    "language": "zh",
+    "domain_required": "true",
+    "ux_required": "false",
+    "parser_contract": "beacon-feature-package-v2",
+    "materials_status": "current",
+    "package_maturity": "filled",
+    "truth_source_model": "intent_first",
+    "program_ref": "docs/beacon/v0.0.1/programs/prism-shot-prompt-compiler-storyboard-ref/program-manifest.md",
+    "canonical_refs": {
+      "prd": "docs/beacon/v0.0.1/features/prism-prompt-compiler-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-prompt-compiler-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-prompt-compiler-v1/tests.md"
+    },
+    "provenance": {
+      "- ac_id": "AC-PPC-005",
+      "source_type": "user_decision",
+      "source_ref": "2026-09-21 用户决策：取消 FFmpeg kenburns 兜底；edge-tts 一并删除；无凭证直接终止；Prism 只产前置文本提示词"
+    }
+  },
+  "frontmatter_errors": [],
+  "acceptance_criteria": [
+    {
+      "ac_id": "AC-PPC-001",
+      "theme": "`script-templates.md` 含完整剧本 / 分集剧本 / 镜头清单三模板 + onlyshot 上游出处与授权",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-PPC-002",
+      "theme": "`scripts/prompt_compiler.py` 从 storyboard + 风格预设产出 `资产提示词.md`/`图片提示词.md`/`视频提示词.md`/`{ep}.srt`；同输入两次**逐字节一致**；未知风格 fail-closed",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-PPC-003",
+      "theme": "`storyboard-schema.json` 的 characters/scenes/props/shots 支持 `ref_image`；CLI 声明即须解析到真实文件（fail-closed）",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-PPC-004",
+      "theme": "`contracts/asset-render.contract.md` 七节 + fail-closed 码；`registry/render-adapters.yaml` 四阶段 provider 槽位 + 凭证守卫",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-PPC-005",
+      "theme": "CLI 删除 kenburns/edge-tts/音频链；`assemble` 只拼 `clips/` 真实片段 + 烧 AI 标识；无凭证/缺片段/规格不符 → exit≠0，不产替代成片",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-PPC-006",
+      "theme": "form-manga-drama 契约取消 kenburns 并指向 asset-render；form-registry 链含 compile + provider-only；README 与 creation-mode-map 同步",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-PPC-007",
+      "theme": "新增 `check_prompt_compiler.sh` / `check_render_handoff.sh` PASS；既有门禁零回归",
+      "description": ""
+    }
+  ],
+  "test_rows": [
+    {
+      "ac_id": "AC-PPC-001",
+      "tc_id": "TC-PPC-001",
+      "layer": "",
+      "command": "`test -f skills/prism-director/references/script-templates.md && rg -n \"完整剧本\\|分集剧本\\|镜头清单\\|onlyshot\" skills/prism-director/references/script-templates.md`",
+      "assertion": "三模板 + 上游出处在场",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PPC-002",
+      "tc_id": "TC-PPC-002",
+      "layer": "",
+      "command": "`bash scripts/check_prompt_compiler.sh`",
+      "assertion": "编译器确定性 + 四产物 + 未知风格 fail-closed",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PPC-003",
+      "tc_id": "TC-PPC-003",
+      "layer": "",
+      "command": "`python3 -c \"import json; s=json.load(open('content/pipelines/ai-manga-drama/storyboard-schema.json')); assert 'ref_image' in json.dumps(s)\" && rg -n \"ref_image\\|_check_ref_image\" scripts/ai_manga_drama.py`",
+      "assertion": "schema + CLI 双向接线",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PPC-004",
+      "tc_id": "TC-PPC-004",
+      "layer": "",
+      "command": "`test -f contracts/asset-render.contract.md && python3 -c \"import yaml; yaml.safe_load(open('registry/render-adapters.yaml'))\" && rg -n \"credentials_never_in_repo\\|fail-closed\" contracts/asset-render.contract.md`",
+      "assertion": "契约七节 + 适配器 yaml 可解析",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PPC-005",
+      "tc_id": "TC-PPC-005",
+      "layer": "",
+      "command": "`bash scripts/check_render_handoff.sh`",
+      "assertion": "无兜底反断言 + 三条负例 exit≠0",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PPC-006",
+      "tc_id": "TC-PPC-006",
+      "layer": "",
+      "command": "`rg -n \"asset-render.contract\" contracts/form-manga-drama.contract.md && python3 -c \"import yaml; d=yaml.safe_load(open('registry/form-registry.yaml')); m=[f for f in d['forms'] if f['form']=='manga_drama'][0]; assert 'prompt_compiler' in m['producer_chain'] and 'provider-only' in m['producer_chain']\"`",
+      "assertion": "契约 + registry 链同步",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PPC-007",
+      "tc_id": "TC-PPC-007",
+      "layer": "",
+      "command": "`bash scripts/check_prompt_compiler.sh && bash scripts/check_render_handoff.sh && bash scripts/check_asset_consistency.sh && bash scripts/check_prompt_syntax.sh && bash scripts/check_style_presets.sh && bash scripts/check_asset_prompt_templates.sh && bash scripts/check_director_distill.sh`",
+      "assertion": "新增门禁 PASS + 零回归",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PPC-005",
+      "tc_id": "TC-PPC-008",
+      "layer": "",
+      "command": "`rg -n \"Illegal transitions\" docs/beacon/v0.0.1/features/prism-prompt-compiler-v1/truth.md && rg -n \"无凭证时产出任何|未过 \\`prompt_compiler\\` 直接进|片段缺失/规格不符仍拼接\" docs/beacon/v0.0.1/features/prism-prompt-compiler-v1/truth.md`",
+      "assertion": "illegal 转移覆盖（非法拒绝路径）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PPC-005",
+      "tc_id": "TC-PPC-009",
+      "layer": "",
+      "command": "`rg -n \"missing_credential_terminates\\|missing_clip_terminates\\|no_local_fallback\" registry/render-adapters.yaml`",
+      "assertion": "三条终止守卫入册",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PPC-002",
+      "tc_id": "TC-PPC-010",
+      "layer": "",
+      "command": "`rg -n \"ref_image\" content/pipelines/ai-manga-drama/fixtures/ep-compile-test/storyboard.json`",
+      "assertion": "fixture 覆盖 ref_image 路径",
+      "evidence_path": "",
+      "source": ""
+    }
+  ],
+  "task_rows": [
+    {
+      "id": "TASK-001",
+      "title": "Implement AC-PPC-001: 蒸馏 `script-templates.md`（完整剧本 + 分镜表 + 镜头清单） · ac=AC-PPC-001 · evidence=`.beacon/evidence/implement/prism-prompt-compiler-v1/AC-PPC-001.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-002",
+      "title": "Implement AC-PPC-002: `scripts/prompt_compiler.py` 确定性编译器 · ac=AC-PPC-002 · evidence=`.beacon/evidence/implement/prism-prompt-compiler-v1/AC-PPC-002.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-003",
+      "title": "Implement AC-PPC-003: schema + CLI `ref_image` 字段与校验 · ac=AC-PPC-003 · evidence=`.beacon/evidence/implement/prism-prompt-compiler-v1/AC-PPC-003.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-004",
+      "title": "Implement AC-PPC-004: `contracts/asset-render.contract.md` + `registry/render-adapters.yaml` · ac=AC-PPC-004 · evidence=`.beacon/evidence/implement/prism-prompt-compiler-v1/AC-PPC-004.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-005",
+      "title": "Implement AC-PPC-005: CLI 去兜底（删 kenburns/edge-tts；assemble 只拼真实片段） · ac=AC-PPC-005 · evidence=`.beacon/evidence/implement/prism-prompt-compiler-v1/AC-PPC-005.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-006",
+      "title": "Implement AC-PPC-006: 契约与路由同步（manga 契约/registry/README/creation-mode-map） · ac=AC-PPC-006 · evidence=`.beacon/evidence/implement/prism-prompt-compiler-v1/AC-PPC-006.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-007",
+      "title": "Implement AC-PPC-007: 新增 exec 门禁 + 既有门禁零回归 · ac=AC-PPC-007 · evidence=`.beacon/evidence/implement/prism-prompt-compiler-v1/AC-PPC-007.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-008",
+      "title": "Validate package gates (truth review + freeze ack) · ac=GATES · evidence=`.beacon/evidence/implement/prism-prompt-compiler-v1/GATES.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-009",
+      "title": "Run QA against AC↔TC matrix + exec-layer evidence · ac=QA · evidence=`.beacon/evidence/implement/prism-prompt-compiler-v1/QA-MATRIX.json`",
+      "status": "unchecked"
+    }
+  ],
+  "checkbox_errors": [],
+  "evidence_rows": [
+    {
+      "surface": "package",
+      "authority": "requirement_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-prompt-compiler-v1/truth.md"
+    },
+    {
+      "surface": "tests",
+      "authority": "test_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-prompt-compiler-v1/tests.md"
+    },
+    {
+      "surface": "tasks",
+      "authority": "acceptance_truth",
+      "path": "docs/beacon/v0.0.1/features/prism-prompt-compiler-v1/tasks.md"
+    },
+    {
+      "surface": "change_record",
+      "authority": "requirement_truth",
+      "path": "docs/beacon/v0.0.1/change/prism-prompt-compiler-v1.md"
+    },
+    {
+      "surface": "script_templates",
+      "authority": "support_advisory",
+      "path": "skills/prism-director/references/script-templates.md"
+    },
+    {
+      "surface": "prompt_compiler",
+      "authority": "support_advisory",
+      "path": "scripts/prompt_compiler.py"
+    },
+    {
+      "surface": "storyboard_schema",
+      "authority": "support_advisory",
+      "path": "content/pipelines/ai-manga-drama/storyboard-schema.json"
+    },
+    {
+      "surface": "render_contract",
+      "authority": "support_advisory",
+      "path": "contracts/asset-render.contract.md"
+    },
+    {
+      "surface": "render_adapters",
+      "authority": "support_advisory",
+      "path": "registry/render-adapters.yaml"
+    },
+    {
+      "surface": "cli",
+      "authority": "support_advisory",
+      "path": "scripts/ai_manga_drama.py"
+    },
+    {
+      "surface": "manga_contract",
+      "authority": "support_advisory",
+      "path": "contracts/form-manga-drama.contract.md"
+    },
+    {
+      "surface": "form_registry",
+      "authority": "support_advisory",
+      "path": "registry/form-registry.yaml"
+    },
+    {
+      "surface": "check_prompt_compiler",
+      "authority": "support_advisory",
+      "path": "scripts/check_prompt_compiler.sh"
+    },
+    {
+      "surface": "check_render_handoff",
+      "authority": "support_advisory",
+      "path": "scripts/check_render_handoff.sh"
+    },
+    {
+      "surface": "upstream_onlyshot",
+      "authority": "support_advisory",
+      "path": "vendor/skills/onlyshot/assets/templates/（MIT pin）"
+    },
+    {
+      "surface": "upstream_style_base",
+      "authority": "support_advisory",
+      "path": "content/pipelines/ai-manga-drama/lumenx-style-presets.json（MIT 原样拷贝）"
+    }
+  ]
+}

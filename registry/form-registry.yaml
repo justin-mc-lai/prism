@@ -7,6 +7,25 @@ lake: D2
 extends: contracts/writing.contract.md
 qa_gate: skills/prism-qa/references/anti-slop-gate.md
 
+# 跨形态共享门（分镜阶段一律叠加，先归类资产再落提示词字段）
+shared_gates:
+  asset_consistency:
+    contract: contracts/asset-consistency.contract.md
+    reference: skills/prism-director/references/asset-consistency-gate.md
+    scope: [comic, manga_drama, live_drama]
+  prompt_syntax:
+    contract: contracts/prompt-syntax.contract.md
+    reference: skills/prism-director/references/prompt-syntax-table.md
+    attribution: docs/ATTRIBUTION-drama-prompt-repos.md
+    scope: [comic, manga_drama, live_drama, vlog, book_video]
+  asset_render:
+    contract: contracts/asset-render.contract.md
+    compiler: scripts/prompt_compiler.py
+    adapters: registry/render-adapters.yaml
+    reference: skills/prism-director/references/asset-prompt-templates.md
+    scope: [comic, manga_drama, live_drama, vlog, book_video]
+    guards: {provider_only: true, no_local_fallback: true}
+
 forms:
   - form: blog
     contract: contracts/form-blog.contract.md
@@ -43,31 +62,31 @@ forms:
   - form: comic
     contract: contracts/form-av.contract.md
     lane: standard
-    producer_chain: director storyboard → bridge comic-storyboard（3:4 竖版）+ 资产一致性门 asset-consistency.contract（多集：三分法/binding/边界匹配/画风统一）→ QA
+    producer_chain: director storyboard → bridge comic-storyboard（3:4 竖版）+ 资产一致性门 asset-consistency.contract（多集：三分法/binding/边界匹配/画风统一）+ 镜头提示词语法门 prompt-syntax.contract → QA
     fast_lane_skip_allowed: false
     status: registered
   - form: vlog
     contract: contracts/form-av.contract.md
     lane: standard
-    producer_chain: director 口播脚本/分镜 → bridge openmontage → 成片 QA
+    producer_chain: director 口播脚本/分镜 → bridge openmontage + 镜头提示词语法门 prompt-syntax.contract → 成片 QA
     fast_lane_skip_allowed: false
     status: registered
   - form: book_video
     contract: contracts/form-av.contract.md
     lane: standard
-    producer_chain: director 书籍分镜 → bridge book-video / rnskill → QA
+    producer_chain: director 书籍分镜 → bridge book-video / rnskill + 镜头提示词语法门 prompt-syntax.contract → QA
     fast_lane_skip_allowed: false
     status: registered
   - form: manga_drama
     contract: contracts/form-manga-drama.contract.md
     lane: standard
-    producer_chain: StoryMaster → director 分镜 JSON（storyboard-schema 校验 + 资产一致性门 asset-consistency.contract：三分法/AST-05 binding/CON-01 边界匹配/画风统一，蒸馏自 drama-skills+lumenx MAP-017）→ Seedance 参考链 / FFmpeg kenburns 降级 → 五类 QA 门 → release 停 pending_human
+    producer_chain: StoryMaster → director 分镜 JSON（storyboard-schema 校验 + 资产一致性门 asset-consistency.contract：三分法/AST-05 binding/CON-01 边界匹配/画风统一，蒸馏自 drama-skills+lumenx MAP-017 + 镜头提示词语法门 prompt-syntax.contract：字段定式/时长阈值/切镜依据/三层分离）→ prompt_compiler.py 编译资产/图片/视频提示词 + srt（确定性）→ 渲染交接门 asset-render.contract（provider-only：T2I 建资产 / I2V|T2V 出 clips；无凭证 fail-closed，无本地兜底）→ assemble 拼真实片段 + AI 标识 → 七类 QA 门 → release 停 pending_human
     fast_lane_skip_allowed: false
-    status: registered   # 2026-08-21 human 指令转正；源 truth R1 已冻结+QA pass，CLI 已 A4 pin（sot-layering-decision D4）
+    status: registered   # 2026-08-21 human 指令转正；源 truth R1 已冻结+QA pass，CLI 已 A4 pin（sot-layering-decision D4）；2026-09-21 prism-prompt-compiler-v1 refreeze 去兜底（provider-only）
   - form: live_drama
     contract: contracts/form-live-drama.contract.md
     lane: standard
-    producer_chain: StoryMaster/剧集 bible → director 分集剧本+分镜（+ 资产一致性门 asset-consistency.contract：binding 解析/边界匹配）→ 人工实拍素材 ingest → openmontage 剪辑 → 合规门（三类自审/AI 标识/授权）→ release 停人工
+    producer_chain: StoryMaster/剧集 bible → director 分集剧本+分镜（+ 资产一致性门 asset-consistency.contract：binding 解析/边界匹配 + 镜头提示词语法门 prompt-syntax.contract：对话权力博弈/动作三段式/时长公式）→ 人工实拍素材 ingest → openmontage 剪辑 → 合规门（三类自审/AI 标识/授权）→ release 停人工
     fast_lane_skip_allowed: false
     status: registered   # 2026-08-21 human 冻结转正（truth R1）；持《广播电视节目制作经营许可证》已确认
   - form: product

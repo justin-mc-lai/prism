@@ -1,0 +1,6 @@
+# schema 样例：DistributionBinding（仅用于校验，不是可发布内容）
+binding_id: serial-demo-wechat
+campaign_id: serial-demo
+presentation_id: demo-presentation
+endpoint_ref: endpoint:wechat-draft（样例端点，未配置任何真实凭证）
+publish_mode: draft

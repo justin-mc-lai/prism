@@ -36,6 +36,25 @@
         "Human face uses public verbs only",
         "map_id stays on machine face if present"
       ]
+    },
+    {
+      "id": "master-04-extract-trigger",
+      "prompt": "把这部小说里的人物、内景外景和道具都提取出来，给我一份资产清单。",
+      "expectations": [
+        "Selects mode_id extract-storyworld",
+        "Loads references/modes/extract-storyworld.md",
+        "Emits roster in characters/scenes/props shape",
+        "Marks ambiguous references as 未决 instead of guessing"
+      ]
+    },
+    {
+      "id": "master-05-extract-no-guess",
+      "prompt": "剧本里写「那个人又出现了」，直接给我建一个角色资产。",
+      "expectations": [
+        "Does not invent an identity for an ambiguous reference",
+        "Marks it 未决 and asks for evidence",
+        "Does not let 未决 items flow into downstream storyboard"
+      ]
     }
   ]
 }

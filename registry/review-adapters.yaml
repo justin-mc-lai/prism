@@ -28,5 +28,6 @@ guards:
   master_facts_immutable: true
 
 install:
-  note: 本地 tool bridge（bible-updater/retro-template/findings-store）为 Prism 自管工具，
-  无源仓依赖；写圣经前必须人工批准，缺失 fail-closed
+  note: >-
+    本地 tool bridge（bible-updater/retro-template/findings-store）为 Prism 自管工具，
+    无源仓依赖；写圣经前必须人工批准，缺失 fail-closed

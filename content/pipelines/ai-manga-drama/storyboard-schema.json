@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ai-manga-drama-storyboard",
+  "description": "Episode storyboard. 资产三层：characters(人物) / scenes(场景: interior|exterior) / props(道具)。scenes 与 props 为可选，兼容仅含 characters 的历史实例。",
+  "type": "object",
+  "required": ["episode", "title", "ratio", "duration_seconds", "mode", "characters", "shots"],
+  "properties": {
+    "episode": { "type": "string", "pattern": "^ep-[a-z0-9-]+$" },
+    "title": { "type": "string", "minLength": 1 },
+    "ratio": { "enum": ["9:16"] },
+    "duration_seconds": { "type": "integer", "minimum": 60, "maximum": 90 },
+    "mode": { "enum": ["production", "template"] },
+    "characters": {
+      "type": "array",
+      "minItems": 1,
+      "description": "人物。身份锚点写进 traits；voice_id 供 TTS 选用（缺省走 provider 默认音色）。",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "traits"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+          "name": { "type": "string" },
+          "traits": { "type": "string" },
+          "voice": { "type": "string" },
+          "voice_id": { "type": "string" },
+          "ref_image": {
+            "type": "string",
+            "description": "身份参考图路径（相对 episode 目录）。声明即须解析到真实文件；T2I 产物回填处，编译资产/图片提示词时作为视觉锚点。"
+          }
+        }
+      }
+    },
+    "scenes": {
+      "type": "array",
+      "description": "场景（内景/外景）。kind 区分 interior|exterior；时间/天气作为场景变体写在 variant。",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "kind", "traits"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+          "name": { "type": "string" },
+          "kind": { "enum": ["interior", "exterior"] },
+          "traits": { "type": "string" },
+          "variant": { "type": "string" },
+          "ref_image": { "type": "string", "description": "场景定调图路径（相对 episode 目录）；声明即须解析到真实文件。" }
+        }
+      }
+    },
+    "props": {
+      "type": "array",
+      "description": "道具。holder 填 characters[].id，标明当前持有者（换手即换 holder，不新建身份）。",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "traits"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+          "name": { "type": "string" },
+          "traits": { "type": "string" },
+          "holder": { "type": "string" },
+          "ref_image": { "type": "string", "description": "道具参考图路径（相对 episode 目录）；声明即须解析到真实文件。" }
+        }
+      }
+    },
+    "shots": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["shot_id", "description", "dialogue", "asset_ref", "duration_seconds"],
+        "properties": {
+          "shot_id": { "type": "string" },
+          "description": { "type": "string", "minLength": 10 },
+          "dialogue": { "type": "string" },
+          "asset_ref": { "type": "string" },
+          "duration_seconds": { "type": "number", "minimum": 1 },
+          "ref_image": {
+            "type": "string",
+            "description": "本镜参考图路径（相对 episode 目录）。缺省回落 asset_ref；声明即须解析到真实文件。"
+          },
+          "scene_ref": { "type": "string", "description": "必须解析到 scenes[].id" },
+          "prop_refs": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "必须逐个解析到 props[].id"
+          }
+        }
+      }
+    }
+  }
+}

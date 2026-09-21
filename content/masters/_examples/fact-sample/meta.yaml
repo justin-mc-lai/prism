@@ -1,0 +1,13 @@
+# schema 样例：事实型母稿（kind: fact）
+# 仅用于 contracts/master-content.schema.yaml 校验，不是可发布内容。
+vertical: oss-picks
+slug: fact-sample
+title: 事实型母稿样例
+kind: fact
+source_refs:
+  - https://example.invalid/repo-readme（示意来源，非真实引用）
+canonical_claims:
+  - claim: 样例主张一：该库用 MIT 许可证发布
+    source: 上游 LICENSE 文件
+  - claim: 样例主张二：默认分支为 main
+    source: 上游仓库元数据

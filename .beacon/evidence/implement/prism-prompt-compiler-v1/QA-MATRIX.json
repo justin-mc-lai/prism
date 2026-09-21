@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-prompt-compiler-v1",
+  "ac_tc_matrix": {
+    "AC-PPC-001": "TC-PPC-001",
+    "AC-PPC-002": "TC-PPC-002",
+    "AC-PPC-003": "TC-PPC-003",
+    "AC-PPC-004": "TC-PPC-004",
+    "AC-PPC-005": "TC-PPC-005",
+    "AC-PPC-006": "TC-PPC-006",
+    "AC-PPC-007": "TC-PPC-007"
+  },
+  "verdict": "pass",
+  "at": "2026-09-21T12:35:50.960762"
+}

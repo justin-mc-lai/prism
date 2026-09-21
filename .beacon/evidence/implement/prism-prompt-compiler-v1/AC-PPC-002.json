@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-PPC-002",
+  "pass": true,
+  "command": "bash scripts/check_prompt_compiler.sh",
+  "assertion": "确定性 + 四产物 + 未知风格 fail-closed",
+  "last_line": "PASS: check_prompt_compiler: all prism-prompt-compiler-v1 compiler gates PASS",
+  "at": "2026-09-21T12:35:50.960762"
+}

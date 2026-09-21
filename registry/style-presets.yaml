@@ -1,0 +1,215 @@
+# Prism 风格预设登记（overlay）
+# 消费方：skills/prism-director/references/asset-prompt-templates.md §1（风格正交）
+# 分层：base 原样拷贝 + 本 overlay 新增，合并后使用；id 不得冲突。
+# 新增风格只改本文件，不动 base、不动主链。
+
+schema_version: "1"
+feature: prism-style-presets-overlay-v1
+
+extends:
+  file: content/pipelines/ai-manga-drama/lumenx-style-presets.json
+  presets: 15
+  provenance:
+    upstream: https://github.com/alibaba/lumenx
+    license: MIT
+    note: base 15 预设原样拷贝，不改写；见 content/pipelines/ai-manga-drama/lumenx-distillation.md
+
+merge:
+  rule: base.presets + overlay.presets，按 id 合并；重复 id 即 fail-closed
+  consumer: skills/prism-director/references/asset-prompt-templates.md §1
+  # 四种必备导演视角 → 解析到的预设 id（真人/动画/水墨/国风）
+  required_views:
+    live_action: cinematic_realism      # base
+    animation: modern_cel_anime         # base
+    ink_wash: chinese_ink_fantasy       # base
+    guofeng: gongbi_heavy_color         # overlay（本文件新增）
+
+# 可选字段说明：thumbnail 为 base 前端资源路径，Prism 无 UI 故 overlay 省略；
+# object_position 同理可选。
+
+new_categories:
+  - { id: chinese_traditional, name: Chinese Traditional, name_zh: 国风, sort_order: 5 }
+  - { id: chinese_comic, name: Chinese & Korean Comic, name_zh: 国漫韩漫, sort_order: 6 }
+  - { id: light_style, name: Light & Cute, name_zh: 轻量可爱, sort_order: 7 }
+  - { id: genre_lab, name: Genre Lab, name_zh: 类型实验室, sort_order: 8 }
+
+presets:
+  # ── 国风族（chinese_traditional）───────────────────────────────
+  - id: gongbi_heavy_color
+    category: chinese_traditional
+    name: Gongbi Heavy Color
+    name_zh: 工笔重彩
+    subtitle_zh: 细笔勾勒 · 矿物重彩 · 绢本典雅
+    description: 中国工笔画，工整细线 + 矿物色重彩，绢本/宣纸质感，适配宫廷、古装、典雅人物
+    best_for: [古装, 宫廷, 工笔人物, 典雅, 仕女]
+    avoid_for: [写实真人, 现代都市, 赛博朋克, 高饱和]
+    positive_prompt: "Chinese gongbi fine-brush painting, meticulous even linework, mineral pigment heavy color, silk scroll texture, layered translucent washes, gold-outlined details, courtly elegance, traditional composition with generous negative space, refined figure rendering, delicate decorative pattern, museum-quality detail"
+    negative_prompt: "loose ink sketch, western oil painting, 3d render, photorealistic, anime cel, oversaturated neon, low detail, blurry, text, logo, watermark"
+    sample_prompt: "A young court lady stands beneath a blossoming plum branch, gongbi fine lines, mineral vermilion and malachite heavy color on silk, gold-outlined hairpin, generous negative space, quiet elegance"
+
+  - id: dunhuang_tang_dynasty
+    category: chinese_traditional
+    name: Dunhuang Tang Dynasty
+    name_zh: 敦煌盛唐
+    subtitle_zh: 壁画斑驳 · 飞天飘带 · 赭石青绿
+    description: 敦煌壁画与盛唐气象，矿物色赭石/青绿/朱砂，斑驳壁面、飞天飘带、莲花纹样
+    best_for: [仙侠, 神话, 敦煌, 盛唐, 壁画, 飞天]
+    avoid_for: [现代, 写实, 科幻, 数码光泽]
+    positive_prompt: "Dunhuang cave mural style, Tang dynasty aesthetic, flying apsaras with flowing ribbon drapery, mineral pigment palette of ochre turquoise and vermilion, weathered plaster wall texture, ornate lotus and cloud motifs, ancient fresco cracks, celestial music imagery, warm candlelit glow, ceremonial grandeur"
+    negative_prompt: "modern anime, glossy 3d render, clean digital gradient, cyberpunk neon, western photorealistic, flat lighting, low detail, text, logo, watermark"
+    sample_prompt: "A flying apsara descends among cloud scrolls, Dunhuang mural style, ochre turquoise and vermilion mineral pigments on cracked plaster, flowing silk ribbons, lotus motifs, ancient fresco texture"
+
+  - id: hanfu_realistic
+    category: chinese_traditional
+    name: Hanfu Realistic Costume Drama
+    name_zh: 汉服古风写实
+    subtitle_zh: 真人古装 · 真实织物 · 自然窗光
+    description: 真人古装剧质感，形制正确的汉服、真实织物与刺绣、自然光与实景，适配古装剧与古风写真
+    best_for: [古装剧, 汉服, 古风写真, 历史, 年代]
+    avoid_for: [二次元, 现代都市, 高饱和奇幻, 3D动画]
+    positive_prompt: "live-action Chinese costume drama still, authentic hanfu with correct layered collar and sash, realistic fabric weave and hand embroidery, natural window or lantern light, ancient courtyard or hall set, historically grounded makeup and hairpin, cinematic restraint, subtle film grain, shallow depth of field, grounded emotional performance"
+    negative_prompt: "fantasy armor, anime, cartoon, 3d render, plastic skin, modern clothing, wrong dynasty costume, oversaturated, glossy commercial render, text, logo, watermark"
+    sample_prompt: "A young scholar in layered hanfu stands in an old courtyard after rain, authentic fabric weave, lantern light on wet stone, historically grounded hairpin, quiet cinematic restraint"
+
+  - id: guochao_modern
+    category: chinese_traditional
+    name: Modern Guochao
+    name_zh: 国潮
+    subtitle_zh: 传统纹样 · 现代构成 · 青绿朱红
+    description: 国潮海报风，传统纹样叠现代平面构成，青绿与朱红，墨迹质感配扁平色块
+    best_for: [国潮海报, 现代国风, 品牌感, 都市奇幻, 封面]
+    avoid_for: [严肃历史, 写实剧, 复古胶片]
+    positive_prompt: "modern Chinese guochao style, contemporary graphic design meeting traditional motifs, celadon green and vermilion palette, ink-wash texture over flat vector shapes, auspicious cloud and wave patterns, bold composition space for typography, trendy streetwear energy, clean negative space, poster-like framing"
+    negative_prompt: "western fantasy, cyberpunk neon, photorealistic, muddy colors, cluttered composition, low detail, flat lighting, text, logo, watermark"
+    sample_prompt: "A contemporary figure in modern streetwear posed against a guochao poster backdrop, celadon and vermilion palette, ink-wash clouds over flat vector shapes, bold negative space"
+
+  # ── 国漫韩漫族（chinese_comic）─────────────────────────────────
+  - id: chinese_manhua
+    category: chinese_comic
+    name: Chinese Manhua Xianxia
+    name_zh: 国漫仙侠厚涂
+    subtitle_zh: 半写实厚涂 · 灵光流转 · 云海仙山
+    description: 国漫仙侠厚涂，半写实渲染、灵气光效、飘带发丝、云海仙山，适配玄幻大场面
+    best_for: [仙侠, 玄幻, 国漫, 大场面, 修真]
+    avoid_for: [日常写实, 低龄, 极简]
+    positive_prompt: "Chinese manhua style, semi-realistic painterly rendering, luminous qi energy effects, flowing silk and hair, ornate xianxia costume design, dramatic rim lighting, deep atmospheric perspective, misty mountains and floating islands, rich but controlled palette, high-detail fantasy key visual"
+    negative_prompt: "flat cel anime, western cartoon, photorealistic, 3d render, chibi, muddy colors, cluttered, low detail, text, logo, watermark"
+    sample_prompt: "A young cultivator stands on a floating rock above a sea of clouds, manhua semi-realistic rendering, luminous qi spiraling around the hand, flowing robes and hair, misty peaks behind"
+
+  - id: korean_webtoon
+    category: chinese_comic
+    name: Korean Webtoon
+    name_zh: 韩漫条漫
+    subtitle_zh: 清爽条漫 · 柔和渐变 · 都市言情
+    description: 韩式条漫，清爽竖屏构图、柔和渐变、细腻线稿，适配言情/都市/校园甜宠
+    best_for: [言情, 都市, 校园, 甜宠, 条漫]
+    avoid_for: [武侠, 恐怖, 硬科幻, 粗墨线]
+    positive_prompt: "Korean webtoon style, clean vertical-scroll composition, soft gradient shading, delicate linework, pastel and muted color harmony, expressive large eyes, modern fashion and hair, gentle ambient lighting, romance-drama mood, polished digital illustration, clear readable silhouette"
+    negative_prompt: "heavy ink, gritty texture, western comic, photorealistic, 3d render, oversaturated, cluttered background, low detail, text, logo, watermark"
+    sample_prompt: "A young office worker stands by a cafe window in soft afternoon light, Korean webtoon style, delicate linework, pastel gradient shading, gentle romance mood"
+
+  - id: bw_manga
+    category: chinese_comic
+    name: Black & White Manga
+    name_zh: 黑白漫画
+    subtitle_zh: 网点纸 · 墨线 · 高反差
+    description: 黑白漫画，墨线 + 网点纸半调、速度线、强反差，适配动作与悬疑分镜
+    best_for: [黑白漫, 日漫, 动作, 悬疑, 分镜]
+    avoid_for: [彩漫, 绘本, 高饱和, 水彩]
+    positive_prompt: "black and white manga panel, crisp ink linework, screentone halftone shading, dynamic speed lines, dramatic contrast, expressive hatching, sparse background detail, strong readable silhouette, printed paper texture, traditional pen and ink"
+    negative_prompt: "color, watercolor, 3d render, photorealistic, soft gradient, low contrast, speech bubbles, readable text, logo, watermark"
+    sample_prompt: "A lone swordsman turns mid-strike on a rain-dark street, black and white manga panel, crisp ink linework, screentone shading, speed lines, dramatic high contrast"
+
+  # ── 轻量可爱族（light_style）───────────────────────────────────
+  - id: chibi_cute
+    category: light_style
+    name: Chibi Cute
+    name_zh: Q版萌系
+    subtitle_zh: 三头身 · 大眼圆润 · 贴纸感
+    description: Q版萌系，三头身、大眼、圆润色块、粗描边，适配表情包/吉祥物/轻喜剧
+    best_for: [表情包, 吉祥物, 轻喜剧, 低龄, 贴纸]
+    avoid_for: [严肃剧情, 写实, 恐怖]
+    positive_prompt: "chibi cute style, three-head-tall proportions, oversized expressive eyes, rounded soft shapes, pastel palette, thick clean outlines, simple flat shading, playful sticker-like appeal, cheerful friendly mood, clean solid background"
+    negative_prompt: "realistic proportions, detailed anatomy, gritty texture, horror, photorealistic, 3d render, cluttered, text, logo, watermark"
+    sample_prompt: "A tiny chibi adventurer holds up a glowing compass with both hands, three-head-tall proportions, thick clean outlines, pastel palette, clean solid background, cheerful sticker appeal"
+
+  - id: children_picture_book
+    category: light_style
+    name: Children Picture Book
+    name_zh: 儿童绘本
+    subtitle_zh: 手绘水粉 · 圆润温暖 · 童话
+    description: 儿童绘本，手绘水粉质感、圆润造型、温暖土色与粉彩，适配童话与亲子
+    best_for: [童话, 亲子, 温情, 教育, 绘本]
+    avoid_for: [成人题材, 动作, 恐怖, 高反差]
+    positive_prompt: "children's picture book illustration, warm hand-painted gouache texture, soft rounded shapes, gentle earthy and pastel palette, simple clear composition, cozy storybook lighting, charming imperfect linework, innocent wonder mood, visible brush texture"
+    negative_prompt: "photorealistic, 3d render, anime, horror, harsh contrast, complex detail, cluttered, text, logo, watermark"
+    sample_prompt: "A small child and a friendly fox sit on a hill watching the sunset, children's picture book illustration, warm gouache texture, rounded shapes, cozy storybook light"
+
+  # ── 类型实验室（genre_lab）─────────────────────────────────────
+  - id: urban_romance_photoreal
+    category: genre_lab
+    name: Urban Romance Photoreal
+    name_zh: 都市言情写真
+    subtitle_zh: 自然窗光 · 现代时装 · 浅景深
+    description: 都市言情真人写真，自然窗光、暖肤调、现代时装、浅景深城市背景，适配甜宠都市
+    best_for: [甜宠, 都市, 言情, 生活, 职场]
+    avoid_for: [古装, 奇幻, 动作, 二次元]
+    positive_prompt: "modern urban romance live-action still, soft natural window light, warm skin tones, contemporary fashion styling, shallow depth of field, gentle bokeh city or cafe background, intimate framing, subtle film grain, commercial lifestyle photography polish, romantic restrained mood"
+    negative_prompt: "anime, cartoon, 3d render, fantasy costume, harsh studio flash, oversaturated, plastic skin, glossy render, text, logo, watermark"
+    sample_prompt: "A young woman waits by a rain-spotted cafe window in soft afternoon light, modern fashion styling, shallow depth of field, gentle bokeh city background, quiet romantic mood"
+
+  - id: period_drama_cn
+    category: genre_lab
+    name: Chinese Period Drama 80s-90s
+    name_zh: 年代剧
+    subtitle_zh: 怀旧褪色 · 胶片颗粒 · 现实主义
+    description: 八九十年代年代剧，怀旧褪色调、胶片颗粒、真实年代服装道具，适配家庭与现实题材
+    best_for: [年代, 怀旧, 家庭, 现实题材, 成长]
+    avoid_for: [科幻, 二次元, 古装, 赛博]
+    positive_prompt: "Chinese period drama still set in the 1980s to 1990s, nostalgic muted palette, aged film grain and slight color fade, realistic vintage clothing and props, tungsten and window light, lived-in interior detail, documentary-like naturalism, gentle contrast, quiet emotional framing"
+    negative_prompt: "modern clothing, smartphone, neon, glossy 3d render, anime, oversaturated, futuristic, clean studio lighting, text, logo, watermark"
+    sample_prompt: "A family sits around a wooden table under a bare tungsten bulb, 1980s Chinese interior, muted nostalgic palette, aged film grain, lived-in detail, quiet realism"
+
+  - id: documentary_natural
+    category: genre_lab
+    name: Documentary Natural
+    name_zh: 纪录片自然
+    subtitle_zh: 自然光 · 客观取景 · 真实质感
+    description: 纪录片摄影，自然可用光、客观取景、真实色彩与轻微颗粒，适配科普人文
+    best_for: [纪录片, 科普, 现实, 人文, 纪实]
+    avoid_for: [奇幻, 二次元, 广告感, 高饱和]
+    positive_prompt: "documentary photography style, natural available light, honest unposed composition, true-to-life color, mild grain, environmental context, handheld stillness, objective observational framing, subtle depth of field, realistic texture and imperfection"
+    negative_prompt: "stylized lighting, cinematic color grading, fantasy, anime, 3d render, oversaturated, plastic skin, text, logo, watermark"
+    sample_prompt: "An artisan works at a cluttered bench in natural window light, documentary photography style, honest unposed composition, true-to-life color, subtle grain, observational framing"
+
+  - id: cyberpunk
+    category: genre_lab
+    name: Cyberpunk Neon
+    name_zh: 赛博朋克
+    subtitle_zh: 霓虹雨夜 · 全息招牌 · 品青对撞
+    description: 赛博朋克都市，霓虹雨夜、全息招牌、品红与青蓝对撞、体积雾，适配科幻与都市奇幻
+    best_for: [科幻, 赛博, 都市奇幻, 悬疑, 夜景]
+    avoid_for: [古风, 田园, 温情, 日间自然光]
+    positive_prompt: "cyberpunk neon city, rain-slick streets reflecting holographic signage, magenta and cyan palette, dense vertical architecture, volumetric fog, chrome and glass materials, atmospheric haze, cinematic night composition, gritty futuristic detail, dystopian urban mood"
+    negative_prompt: "pastoral, daylight rural, medieval, anime cel, watercolor, flat lighting, low detail, muddy colors, text, logo, watermark"
+    sample_prompt: "A courier walks a rain-soaked neon alley at night, holographic signs mirrored in puddles, magenta and cyan palette, volumetric fog, dense vertical city, cinematic dystopian mood"
+
+  - id: post_apocalyptic
+    category: genre_lab
+    name: Post-Apocalyptic Wasteland
+    name_zh: 末世废土
+    subtitle_zh: 褪色荒原 · 锈蚀混凝土 · 硬核生存
+    description: 末世废土，褪色尘土调、锈蚀金属与崩塌混凝土、灰重天空，适配生存与硬核题材
+    best_for: [末世, 废土, 生存, 硬核, 科幻]
+    avoid_for: [甜宠, 日常, 古风, 明亮欢快]
+    positive_prompt: "post-apocalyptic wasteland, desaturated dusty palette, rusted metal and crumbling concrete, overcast harsh sky, sparse debris and abandoned structures, worn survival gear, volumetric dust, cinematic wide framing, grim endurance mood, realistic material decay"
+    negative_prompt: "lush greenery, clean modern city, cheerful bright, anime cute, glossy 3d render, oversaturated, low detail, text, logo, watermark"
+    sample_prompt: "A lone survivor stands before a collapsed overpass in drifting dust, desaturated wasteland palette, rusted rebar and crumbling concrete, overcast harsh sky, grim wide framing"
+
+# 自检（新增预设合并后必须满足）
+self_check:
+  - 每个 preset 必填: id, category, name, name_zh, description, best_for, avoid_for, positive_prompt, negative_prompt
+  - id 全局唯一（base + overlay 合并后）
+  - required_views 四个 id 均可解析
+  - 预设 positive_prompt 允许含戏剧光（它定义完整风格，供分镜/视频层用）；
+    **ref 阶段**由 asset-prompt-templates.md §1 剔除戏剧光关键词后再用（两层分离）

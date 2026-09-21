@@ -1,0 +1,9 @@
+# schema 样例：叙事型母稿（kind: story）
+# 仅用于 contracts/master-content.schema.yaml 校验，不是可发布内容。
+# story_kind_requires_world_or_canon_ref: 必须引用 StoryWorld 或 canon ledger。
+vertical: novel
+slug: story-sample
+title: 叙事型母稿样例
+kind: story
+world_ref: content/storyworlds/_examples/demo-world/world.yaml
+canon_ref: content/storyworlds/_examples/demo-world/canon-ledger.yaml

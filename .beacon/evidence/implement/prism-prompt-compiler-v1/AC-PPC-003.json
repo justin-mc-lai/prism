@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-PPC-003",
+  "pass": true,
+  "command": "rg -q \"ref_image\" content/pipelines/ai-manga-drama/storyboard-schema.json && rg -q \"_check_ref_image\" scripts/ai_manga_drama.py",
+  "assertion": "schema + CLI ref_image 双向",
+  "last_line": "",
+  "at": "2026-09-21T12:35:50.960762"
+}

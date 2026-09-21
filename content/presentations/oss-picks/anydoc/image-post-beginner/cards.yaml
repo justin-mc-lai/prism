@@ -1,0 +1,110 @@
+# 贴图包样例：anydoc · image-post-beginner
+# 用途：渲染链 smoke + form_samples 结构校验。内容为**样例**，不作为可发布稿。
+metadata:
+  dimensions: { width: 1080, height: 1440 }
+  source_label: 库拾 · anydoc（样例）
+  source_url: https://github.com/example-org/anydoc
+  visual_profile: kushi-oss-portrait-white-infographic
+  channel: 微信贴图
+  media_type: image
+  kind: image_post
+
+cards:
+  - role: cover
+    file: 01-cover.png
+    kicker: 开源项目
+    title: 一份文档，三种格式
+    subtitle: 样例：贴图包渲染链的结构验证
+    layout: cover
+    color: blue
+    hero:
+      kind: counts
+      label: 样例数据（非真实统计）
+      stats:
+        - { number: "3", label: 输出格式, color: blue }
+        - { number: "1", label: 输入源, color: green }
+        - { number: "0", label: 外部依赖, color: orange }
+    takeaway: 样例卡片，仅用于渲染链验证。
+
+  - role: pain
+    file: 02-pain.png
+    kicker: 痛点
+    title: 同一份内容，改三遍
+    layout: default
+    color: orange
+    callout: 样例：说明贴图包的第一张要抓痛点。
+    sections:
+      - title: 常见做法
+        color: orange
+        bullets:
+          - 先写文档，再手抄成卡片
+          - 格式一变，全部重排
+          - 改一处，三处不一致
+
+  - role: idea
+    file: 03-idea.png
+    kicker: 思路
+    title: 内容只写一遍
+    layout: default
+    color: blue
+    flow:
+      - 单一内容源
+      - 模板决定版式
+      - 渲染产出多格式
+    takeaway: 样例：内容与版式分离。
+
+  - role: how
+    file: 04-how.png
+    kicker: 怎么做
+    title: 三步跑通
+    layout: default
+    color: green
+    sections:
+      - title: 步骤
+        color: green
+        bullets:
+          - 写 cards.yaml
+          - 选模板 CSS
+          - 渲染出 PNG
+      - title: 产物
+        color: blue
+        bullets:
+          - 每张卡一个 PNG
+          - 一份 manifest
+          - 可 OCR 复核
+
+  - role: pitfall
+    file: 05-pitfall.png
+    kicker: 坑点
+    title: 三个容易翻车的地方
+    layout: compare
+    color: red
+    compare:
+      left:
+        title: 常见错误
+        color: red
+        bullets:
+          - 卡里塞满文字
+          - 版式每张都不一样
+          - 忘了 OCR 复核
+      right:
+        title: 更稳的做法
+        color: green
+        bullets:
+          - 一张卡一个意思
+          - 复用同一套模板
+          - 渲染后跑 OCR 门
+
+  - role: action
+    file: 06-action.png
+    kicker: 动手
+    title: 现在就试
+    layout: command
+    color: blue
+    commands:
+      - python3 scripts/render_wechat_html_cards.py --cards cards.yaml --output-dir out
+      - python3 scripts/render_wechat_html_cards.py --cards cards.yaml --output-dir out --manifest out/manifest.yaml
+      - python3 scripts/check_render_pin.sh
+    notes:
+      - 样例命令，路径按实际项目调整。
+      - 渲染后务必人工复核文字是否可读。

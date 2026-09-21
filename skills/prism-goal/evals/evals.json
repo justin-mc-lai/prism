@@ -57,6 +57,35 @@
         "Still keeps qa and human release gates",
         "Does not approve public publish"
       ]
+    },
+    {
+      "id": "goal-06-should-trigger-marketing-engineer",
+      "prompt": "我这个项目一直只在本地 vibe coding，从来没发出去见过世面，帮我走通一次出圈。",
+      "expectations": [
+        "Triggers prism-goal",
+        "Loads references/modes/marketing-engineer.md",
+        "Identifies the current 出圈阶梯 stage and advances only one",
+        "Emits human card sections",
+        "Does not claim measure/review/learn done without publication_ref"
+      ]
+    },
+    {
+      "id": "goal-07-marketing-engineer-measured-guard",
+      "prompt": "帮我看下上次发布的效果，直接给个数据复盘。",
+      "expectations": [
+        "Requires publication_ref before any measured/复盘 output",
+        "If missing, blocks with publication_record_missing instead of inventing metrics",
+        "Does not fabricate trends or numbers"
+      ]
+    },
+    {
+      "id": "goal-08-marketing-engineer-campaign-consistency",
+      "prompt": "这个战役的广告、落地页和邮件都分别过检查了，可以发了吧？",
+      "expectations": [
+        "Runs campaign-level consistency check across assets",
+        "Blocks public release if claims/offer/dates disagree across channels",
+        "Does not approve public publish (human gate remains)"
+      ]
     }
   ]
 }

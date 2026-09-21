@@ -1,0 +1,29 @@
+# 贴图包 manifest（样例 · image-post-beginner）
+form_id: image-post
+slug: image-post-beginner
+vertical: oss-picks
+presentation_id: anydoc-image-post-beginner
+source_label: 库拾 · anydoc（样例）
+source_url: https://github.com/example-org/anydoc
+visual_profile: kushi-oss-portrait-white-infographic
+renderer: scripts/render_wechat_html_cards.py
+template: templates/kushi-wechat-image-post
+image_count: 6
+dimensions: { width: 1080, height: 1440 }
+
+cover_card: 01-cover.png
+
+cards:
+  - { seq: 1, role: cover, path: rendered/01-cover.png }
+  - { seq: 2, role: pain, path: rendered/02-pain.png }
+  - { seq: 3, role: idea, path: rendered/03-idea.png }
+  - { seq: 4, role: how, path: rendered/04-how.png }
+  - { seq: 5, role: pitfall, path: rendered/05-pitfall.png }
+  - { seq: 6, role: action, path: rendered/06-action.png }
+
+# OCR 门：渲染后逐卡复核文字可读（样例已人工复核）
+ocr_gate: pass
+ocr_notes: 6/6 卡文字可读，无截断、无乱码、无遮挡。
+
+qa_gate: pass
+release_gate: pending_human

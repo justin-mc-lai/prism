@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-PPC-001",
+  "pass": true,
+  "command": "rg -q \"完整剧本\" skills/prism-director/references/script-templates.md && rg -q \"onlyshot\" skills/prism-director/references/script-templates.md && test -f skills/prism-director/references/script-templates.md",
+  "assertion": "三模板 + onlyshot 出处",
+  "last_line": "",
+  "at": "2026-09-21T12:35:50.960762"
+}

@@ -31,14 +31,22 @@ DEFAULT_CREATOR = None  # main() 内经 _resolve_creator_root() 探测
 
 # (name, prism 相对路径, creator 相对路径, mode[, prism 跳过头行数, creator 跳过头行数])
 # 带 ATTRIBUTION 头的文件型 pin 用跳行数排除头部后再比正文。
+#
+# 2026-09-21（prism-prompt-compiler-v1）降级说明：
+# `cli/ai_manga_drama` 与 `pipeline/ai-manga-drama` 原为 mode=identical（逐字节镜像）。
+# Prism 已按 sot-layering-decision.md（Prism 拥有 L1–L3 写入口）**有意接管**该 CLI 与管线：
+# 删除本地兜底（FFmpeg kenburns / edge-tts）、改为 provider-only。
+# 源仓已于 2026-08-14 归档为只读参考。故 mode 由 identical 降为 report：
+# 漂移仍以 WARN 呈现（`--strict` 可升级为 FAIL），但不再阻断。
+# 依据：docs/beacon/v0.0.1/change/prism-prompt-compiler-v1.md
 PINS: list[tuple] = [
     ("cli/ai_manga_drama", "scripts/ai_manga_drama.py", "scripts/ai_manga_drama.py",
-     "identical", 4, 3),
+     "report", 4, 3),
     (
         "pipeline/ai-manga-drama",
         "content/pipelines/ai-manga-drama",
         "content/pipelines/ai-manga-drama",
-        "identical",
+        "report",
     ),
 ]
 # A1 MIT 渲染链（ATTRIBUTION-render-chain.md 登记，快照允许本地演化 → report）
@@ -69,6 +77,10 @@ for tpl in [
 EXTERNAL_VENDOR_PINS: dict[str, str] = {
     "drama-skills": "zenstory-ai/drama-skills",
     "eli5": "anthropics/claude-plugins-community",
+    "short-drama-skills": "YvonneMovingon/short-drama-skills",
+    "onlyshot": "A-cat-with-carrots/OnlyShot",
+    "su-ai-short-drama": "doublesq97-ui/su-ai-short-drama",
+    "shuohao-skills": "eternityspring/shuohao-skills",
 }
 
 

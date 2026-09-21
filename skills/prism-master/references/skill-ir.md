@@ -5,10 +5,12 @@ Mode: `production` · Maturity: `production-sample` · Owner: Prism Lake B′
 ## Owned job
 
 Own content-truth freeze for FactMaster/StoryMaster; block freeze when facts/canon incomplete.
+Own asset extraction from novel/script/outline into the reusable roster (characters/scenes/props) that feeds StoryWorld and storyboard.
 
 ## Triggers
 
 - 定, 母稿, 正典, FactMaster, StoryMaster, 冻结, prism-master
+- 提取人物, 提取场景, 提取道具, 拆角色, 拆场景, 拆道具, 小说资产
 
 ## Should not trigger
 
@@ -37,7 +39,7 @@ Own content-truth freeze for FactMaster/StoryMaster; block freeze when facts/can
 ## Workflow (summary)
 
 1. Confirm this is the correct public surface.
-2. Load `freeze-master` mode file.
+2. Load `freeze-master` or `extract-storyworld` mode file.
 3. Apply MAP strategy: distill MASTER freeze rules; content data may bridge until Prism content/ exists
 4. Do only `master` work; emit card + next harness.
 

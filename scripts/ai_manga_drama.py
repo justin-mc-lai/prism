@@ -1,12 +1,16 @@
 #!/usr/bin/env python3
-# ATTRIBUTION (A4 MIT): pinned from selfmedia-creator scripts/ai_manga_drama.py
+# ATTRIBUTION (A4 MIT): originally pinned from selfmedia-creator scripts/ai_manga_drama.py
 # Owner license decision A1/A4: MIT, see docs/owner-license-decision.md + docs/ATTRIBUTION-render-chain.md
-"""ai-manga-drama pipeline CLI (v0.0.5 R1)."""
+# prism-prompt-compiler-v1 (2026-09-21) diverged from the pin: removed all local fallback
+# (FFmpeg kenburns synthesis, edge-tts voice, audio mux). assemble now stitches provider clips only.
+# See docs/beacon/v0.0.1/change/prism-prompt-compiler-v1.md
+"""ai-manga-drama pipeline CLI (v0.0.1 · provider-only, no fallback)."""
 from __future__ import annotations
 
 import argparse
 import json
 import os
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -19,8 +23,21 @@ SCHEMA_PATH = PIPELINE_DIR / "storyboard-schema.json"
 MASTERS_DIR = ROOT / "content" / "masters" / "ai-manga-drama"
 RENDERS_DIR = ROOT / "content" / "renders" / "ai-manga-drama" / "draft"
 QA_EVIDENCE_DIR = ROOT / ".beacon" / "evidence" / "qa" / "ai-manga-drama"
-VIDEO_PROVIDER_ENVS = ["FAL_KEY", "REPLICATE_API_TOKEN", "SILICONFLOW_API_KEY"]
 AI_LABEL_TEXT = "本内容由人工智能生成"
+TARGET_RESOLUTION = (480, 854)
+
+# 渲染阶段 → 凭证环境变量。凭证永不入库（credentials_never_in_repo）。
+RENDER_STAGE_ENVS = {
+    "t2i": "PRISM_T2I_KEY",
+    "i2v": "PRISM_I2V_KEY",
+    "t2v": "PRISM_T2V_KEY",
+    "tts": "PRISM_TTS_KEY",
+}
+# 图生/文生视频的既有 provider 凭证别名（兼容旧调用，语义等价）
+LEGACY_VIDEO_ENVS = ["FAL_KEY", "REPLICATE_API_TOKEN", "SILICONFLOW_API_KEY"]
+# manga_drama 默认链路必需阶段（t2v 为 i2v 的替代，二者满足其一）
+REQUIRED_STAGES = ("t2i",)
+REQUIRED_VIDEO_STAGES = ("i2v", "t2v")
 
 
 def ai_label_font() -> str:
@@ -69,9 +86,59 @@ def load_json(path: Path) -> dict:
     return data
 
 
+def _check_ref_image(item: dict, label: str, base_dir: Path, errors: list[str]) -> None:
+    """ref_image 声明即须解析到真实文件（fail-closed，AC-PPC-003）。"""
+    ref = item.get("ref_image")
+    if ref in (None, ""):
+        return
+    if not isinstance(ref, str):
+        errors.append(f"{label} ref_image must be a string")
+        return
+    if not (base_dir / ref).is_file():
+        errors.append(f"{label} ref_image not found: {ref}")
+
+
+def _validate_entities(
+    data: dict,
+    key: str,
+    errors: list[str],
+    *,
+    kind_enum: tuple[str, ...] = (),
+    base_dir: Path | None = None,
+) -> set[str]:
+    """Validate an optional asset array (characters/scenes/props); return declared ids."""
+    items = data.get(key)
+    if items is None:
+        return set()
+    if not isinstance(items, list):
+        errors.append(f"{key} must be a list")
+        return set()
+    ids: list[str] = []
+    for i, item in enumerate(items, 1):
+        if not isinstance(item, dict):
+            errors.append(f"{key}[{i}] must be object")
+            continue
+        for field in ("id", "name", "traits") + (("kind",) if kind_enum else ()):
+            if field not in item:
+                errors.append(f"{key}[{i}] missing {field}")
+        if kind_enum:
+            kind = item.get("kind")
+            if kind not in kind_enum:
+                errors.append(f"{key}[{i}] kind must be {'|'.join(kind_enum)}, got {kind!r}")
+        if base_dir is not None:
+            _check_ref_image(item, f"{key}[{i}]", base_dir, errors)
+        ids.append(str(item.get("id") or ""))
+    if any(not i for i in ids):
+        errors.append(f"{key}[].id must be non-empty")
+    if len(set(ids)) != len(ids):
+        errors.append(f"{key}[].id must be unique")
+    return {i for i in ids if i}
+
+
 def validate_storyboard(storyboard: Path, *, verbose: bool = False) -> dict:
     data = load_json(storyboard)
     schema = load_json(SCHEMA_PATH)
+    base_dir = storyboard.parent
     errors: list[str] = []
     required = schema.get("required", [])
     for key in required:
@@ -85,6 +152,15 @@ def validate_storyboard(storyboard: Path, *, verbose: bool = False) -> dict:
     mode = data.get("mode")
     if mode not in ("production", "template"):
         errors.append(f"mode must be production|template, got {mode!r}")
+    character_ids = _validate_entities(data, "characters", errors, base_dir=base_dir)
+    scene_ids = _validate_entities(data, "scenes", errors, kind_enum=("interior", "exterior"), base_dir=base_dir)
+    prop_ids = _validate_entities(data, "props", errors, base_dir=base_dir)
+    for i, prop in enumerate(data.get("props") or [], 1):
+        if not isinstance(prop, dict):
+            continue
+        holder = prop.get("holder")
+        if holder and holder not in character_ids:
+            errors.append(f"props[{i}] holder {holder!r} not in characters")
     shots = data.get("shots")
     if not isinstance(shots, list) or not shots:
         errors.append("shots must be a non-empty list")
@@ -102,27 +178,51 @@ def validate_storyboard(storyboard: Path, *, verbose: bool = False) -> dict:
             desc = str(shot.get("description") or "")
             if len(desc) < 10:
                 errors.append(f"shot {i} description too short (<10 chars)")
+            _check_ref_image(shot, f"shot {i}", base_dir, errors)
+            scene_ref = shot.get("scene_ref")
+            if scene_ref and scene_ref not in scene_ids:
+                errors.append(f"shot {i} scene_ref {scene_ref!r} not in scenes")
+            prop_refs = shot.get("prop_refs") or []
+            if not isinstance(prop_refs, list):
+                errors.append(f"shot {i} prop_refs must be a list")
+            else:
+                for ref in prop_refs:
+                    if ref not in prop_ids:
+                        errors.append(f"shot {i} prop_ref {ref!r} not in props")
             shot_ids.append(str(shot.get("shot_id") or ""))
         if len(set(shot_ids)) != len(shot_ids):
             errors.append("shot_id must be unique")
     if errors:
         return {"valid": False, "errors": errors}
     if verbose:
-        print(f"schema_ok shot_count={len(shots)} duration={duration} ratio={data.get('ratio')}")
-    return {"valid": True, "errors": [], "shot_count": len(shots), "duration_seconds": duration}
+        print(
+            f"schema_ok shot_count={len(shots)} duration={duration} ratio={data.get('ratio')} "
+            f"characters={len(character_ids)} scenes={len(scene_ids)} props={len(prop_ids)}"
+        )
+    return {
+        "valid": True,
+        "errors": [],
+        "shot_count": len(shots),
+        "duration_seconds": duration,
+        "character_count": len(character_ids),
+        "scene_count": len(scene_ids),
+        "prop_count": len(prop_ids),
+    }
 
 
 def cmd_init(args: argparse.Namespace) -> None:
     parent = Path(args.dir).expanduser().resolve()
     episode = parent / args.episode
     episode.mkdir(parents=True, exist_ok=True)
-    assets = episode / "assets"
-    assets.mkdir(exist_ok=True)
+    (episode / "assets").mkdir(exist_ok=True)
+    (episode / "clips").mkdir(exist_ok=True)
     readme = episode / "README.md"
     if not readme.exists():
         readme.write_text(
             f"# {args.episode}\n\nEpisode skeleton created by `ai_manga_drama.py init`.\n\n"
-            "Populate `storyboard.json`, `assets/`, `cost-ledger.json`, then run request/assemble/qa.\n",
+            "Flow: populate `storyboard.json` (+ `assets/` ref images) → "
+            "`prompt_compiler.py` → `request` → provider renders `clips/` → `assemble` → `qa`.\n\n"
+            "No local fallback: `assemble` stitches provider clips only; missing clip or credential fails closed.\n",
             encoding="utf-8",
         )
     storyboard = episode / "storyboard.json"
@@ -133,7 +233,15 @@ def cmd_init(args: argparse.Namespace) -> None:
             "ratio": "9:16",
             "duration_seconds": 60,
             "mode": "template",
-            "characters": [{"id": "hero", "name": "Hero", "traits": "placeholder character traits"}],
+            "characters": [
+                {"id": "hero", "name": "Hero", "traits": "placeholder character traits"}
+            ],
+            "scenes": [
+                {"id": "scene-01", "name": "Scene 1", "kind": "interior", "traits": "placeholder scene traits"}
+            ],
+            "props": [
+                {"id": "prop-01", "name": "Prop 1", "traits": "placeholder prop traits", "holder": "hero"}
+            ],
             "shots": [
                 {
                     "shot_id": "shot-01",
@@ -141,6 +249,8 @@ def cmd_init(args: argparse.Namespace) -> None:
                     "dialogue": "",
                     "asset_ref": "assets/panel-01.png",
                     "duration_seconds": 60,
+                    "scene_ref": "scene-01",
+                    "prop_refs": ["prop-01"],
                 }
             ],
         }
@@ -156,10 +266,15 @@ def cmd_validate(args: argparse.Namespace) -> None:
         fail("; ".join(result["errors"]))
 
 
-def find_video_provider() -> str | None:
-    for name in VIDEO_PROVIDER_ENVS:
-        if os.environ.get(name):
-            return name
+def resolve_stage_credential(stage: str) -> str | None:
+    """Return the env var name that carries this stage's credential, else None."""
+    primary = RENDER_STAGE_ENVS[stage]
+    if os.environ.get(primary):
+        return primary
+    if stage in ("i2v", "t2v"):
+        for legacy in LEGACY_VIDEO_ENVS:
+            if os.environ.get(legacy):
+                return legacy
     return None
 
 
@@ -169,7 +284,22 @@ def cmd_request(args: argparse.Namespace) -> None:
     validate_storyboard(storyboard_path)
     storyboard = load_json(storyboard_path)
     shots = storyboard.get("shots") or []
-    provider = find_video_provider()
+
+    stages = []
+    for stage in ("t2i", "i2v", "t2v", "tts"):
+        env = resolve_stage_credential(stage)
+        stages.append(
+            {
+                "stage": stage,
+                "credential_env": env or RENDER_STAGE_ENVS[stage],
+                "status": "READY" if env else "BLOCKED:missing_credential",
+            }
+        )
+    stage_status = {s["stage"]: s["status"] for s in stages}
+    missing = [s for s in REQUIRED_STAGES if stage_status[s] != "READY"]
+    if not any(stage_status[s] == "READY" for s in REQUIRED_VIDEO_STAGES):
+        missing.append("i2v|t2v")
+
     segment_cap = 30.0
     segments = []
     current = {"shots": [], "seconds": 0.0}
@@ -182,12 +312,13 @@ def cmd_request(args: argparse.Namespace) -> None:
         current["seconds"] += seconds
     if current["shots"]:
         segments.append(current)
+
     request_payload = {
-        "provider": "seedance-2.5" if provider else "seedance-2.5",
-        "mode": "reference-to-video" if provider else "unavailable",
         "episode": storyboard.get("episode"),
         "ratio": "9:16",
         "resolution": "480p",
+        "mode": "provider-only",
+        "stages": stages,
         "segments": [
             {
                 "segment_order": i + 1,
@@ -197,18 +328,24 @@ def cmd_request(args: argparse.Namespace) -> None:
             for i, seg in enumerate(segments)
         ],
         "references": {
-            "images": [shot["asset_ref"] for shot in shots],
+            "images": [shot.get("ref_image") or shot["asset_ref"] for shot in shots],
             "audio": [],
             "video": [],
         },
+        "prompt_artifacts": {
+            "assets": "资产提示词.md",
+            "image": "图片提示词.md",
+            "video": "视频提示词.md",
+        },
     }
-    out = Path(args.out).expanduser().resolve() if args.out else episode_dir / "video-request.json"
+    out = Path(args.out).expanduser().resolve() if args.out else episode_dir / "render-request.json"
     out.write_text(json.dumps(request_payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
     manifest = {
-        "provider": "seedance-2.5",
-        "status": "READY" if provider else "BLOCKED:missing_credential",
-        "provider_env": provider or "",
-        "fallback": "kenburns" if not provider else "",
+        "mode": "provider-only",
+        "status": "READY" if not missing else "BLOCKED:missing_credential",
+        "missing_stages": missing,
+        "stages": stages,
         "release_gate": "pending_human",
         "request_ref": str(out),
     }
@@ -216,91 +353,124 @@ def cmd_request(args: argparse.Namespace) -> None:
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     print(json.dumps(manifest, ensure_ascii=False))
-    if not provider:
-        fail("missing video provider credential; no fake video generated", code=2)
+    if missing:
+        fail(
+            "missing render provider credential(s): "
+            + ", ".join(missing)
+            + "; no fallback, no fake video generated",
+            code=2,
+        )
+
+
+def probe_duration(path: Path) -> float:
+    out = subprocess.run(
+        ["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(path)],
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout.strip()
+    return float(out)
+
+
+def _probe_resolution(path: Path) -> tuple[int, int]:
+    out = subprocess.run(
+        ["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height",
+         "-of", "csv=p=0", str(path)],
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout.strip()
+    parts = out.split(",")
+    return int(parts[0]), int(parts[1])
+
+
+def required_clip_paths(episode_dir: Path, shots: list[dict]) -> list[Path]:
+    return [episode_dir / "clips" / f"{shot.get('shot_id')}.mp4" for shot in shots]
 
 
 def cmd_assemble(args: argparse.Namespace) -> None:
-    if args.mode != "kenburns":
-        fail(f"unsupported assemble mode: {args.mode}")
+    """Stitch provider-rendered clips only. No synthesis, no fallback (AC-PPC-005)."""
     episode_dir = Path(args.episode).expanduser().resolve()
     storyboard_path = episode_dir / "storyboard.json"
     validate_storyboard(storyboard_path)
     storyboard = load_json(storyboard_path)
     shots = storyboard.get("shots") or []
+
+    # 1. 未过编译器不得进 assemble（illegal transition）
+    for artifact in ("资产提示词.md", "图片提示词.md", "视频提示词.md"):
+        if not (episode_dir / artifact).is_file():
+            fail(f"prompt compiler artifact missing: {artifact}; run prompt_compiler.py first", code=2)
+
+    # 2. provider 片段必须齐全（缺任一即 fail-closed，不合成替代品）
+    clips = required_clip_paths(episode_dir, shots)
+    missing_clips = [str(p) for p in clips if not p.is_file()]
+    if missing_clips:
+        fail(
+            "provider clips missing; no fallback synthesis: " + json.dumps(missing_clips, ensure_ascii=False),
+            code=2,
+        )
+
+    # 3. 片段规格必须达标（分辨率），否则拒绝拼接而不是偷偷缩放
+    bad_specs = []
+    for clip, shot in zip(clips, shots):
+        try:
+            w, h = _probe_resolution(clip)
+        except (subprocess.CalledProcessError, ValueError) as exc:
+            bad_specs.append({"clip": str(clip), "error": str(exc)})
+            continue
+        if (w, h) != TARGET_RESOLUTION:
+            bad_specs.append({"clip": str(clip), "resolution": f"{w}x{h}", "expected": "480x854"})
+    if bad_specs:
+        fail("provider clips do not match 480x854; re-render instead of rescaling: "
+             + json.dumps(bad_specs, ensure_ascii=False), code=2)
+
     out = (
         Path(args.out).expanduser().resolve()
         if args.out
         else RENDERS_DIR / f"{storyboard.get('episode')}-480p.mp4"
     )
     out.parent.mkdir(parents=True, exist_ok=True)
+
     tmpdir = Path(tempfile.mkdtemp(prefix="amd-assemble-"))
-    segments: list[Path] = []
     try:
-        for i, shot in enumerate(shots, 1):
-            asset = episode_dir / str(shot["asset_ref"])
-            if not asset.is_file():
-                fail(f"asset missing: {asset}")
-            seg = tmpdir / f"seg-{i:02d}.mp4"
-            duration = float(shot.get("duration_seconds") or 0)
-            vf = (
-                "scale=480:854:force_original_aspect_ratio=increase,crop=480:854,"
-                "zoompan=z='min(zoom+0.0012,1.15)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=480x854:fps=24"
-            )
-            cmd = [
-                "ffmpeg", "-y", "-loop", "1", "-t", f"{duration:.2f}", "-i", str(asset),
-                "-vf", vf, "-c:v", "libx264", "-preset", "veryfast", "-crf", "28",
-                "-pix_fmt", "yuv420p", "-r", "24", str(seg),
-            ]
-            subprocess.run(cmd, check=True, capture_output=True)
-            segments.append(seg)
         concat_list = tmpdir / "concat.txt"
-        concat_list.write_text(
-            "\n".join(f"file '{seg.resolve()}'" for seg in segments) + "\n", encoding="utf-8"
-        )
+        concat_list.write_text("\n".join(f"file '{c.resolve()}'" for c in clips) + "\n", encoding="utf-8")
         concatenated = tmpdir / "concat.mp4"
         subprocess.run(
-            [
-                "ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat_list),
-                "-c", "copy", str(concatenated),
-            ],
+            ["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat_list), "-c", "copy", str(concatenated)],
             check=True,
             capture_output=True,
         )
-        # Mandatory AI-content label (总局令第16号): burn in once over the full cut.
+
+        # Mandatory AI-content label (总局令第16号): burn once over the full cut.
         label_png = tmpdir / "ai-label.png"
         make_ai_label_png(label_png)
-        labeled = tmpdir / "labeled.mp4"
         subprocess.run(
             [
                 "ffmpeg", "-y", "-i", str(concatenated), "-i", str(label_png),
                 "-filter_complex", "overlay=(W-w)/2:24",
                 "-c:v", "libx264", "-preset", "veryfast", "-crf", "28",
-                "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(labeled),
+                "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(out),
             ],
             check=True,
             capture_output=True,
         )
-        os.replace(labeled, out)
     finally:
-        import shutil
-
         shutil.rmtree(tmpdir, ignore_errors=True)
+
     manifest_path = episode_dir / "video-manifest.json"
-    if manifest_path.exists():
-        manifest = load_json(manifest_path)
-    else:
-        manifest = {}
+    manifest = load_json(manifest_path) if manifest_path.exists() else {}
     manifest.update(
         {
-            "provider": "ffmpeg-kenburns",
-            "status": "DRAFT_KENBURNS",
+            "mode": "provider-only",
+            "status": "STITCHED_PROVIDER_CLIPS",
             "output": str(out),
             "release_gate": "pending_human",
+            "clips": [str(c) for c in clips],
         }
     )
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({"status": "DRAFT_KENBURNS", "output": str(out)}, ensure_ascii=False))
+    print(json.dumps({"status": "STITCHED_PROVIDER_CLIPS", "output": str(out), "clips": len(clips)}, ensure_ascii=False))
 
 
 def _ffprobe(path: Path) -> dict:
@@ -339,6 +509,12 @@ def cmd_qa(args: argparse.Namespace) -> None:
     results["asset_refs"] = {"pass": not missing_assets, "missing": missing_assets}
     ok = ok and not missing_assets
 
+    # 编译器产物必须在场（provider-only 链路的前置文本）
+    artifacts = ("资产提示词.md", "图片提示词.md", "视频提示词.md")
+    missing_artifacts = [a for a in artifacts if not (episode_dir / a).is_file()]
+    results["prompt_artifacts"] = {"pass": not missing_artifacts, "missing": missing_artifacts}
+    ok = ok and not missing_artifacts
+
     render = RENDERS_DIR / f"{storyboard.get('episode')}-480p.mp4"
     results["output_exists"] = {"pass": render.is_file() and render.stat().st_size > 0, "path": str(render)}
     ok = ok and render.is_file() and render.stat().st_size > 0
@@ -372,15 +548,24 @@ def cmd_qa(args: argparse.Namespace) -> None:
         ok = False
 
     manifest_path = episode_dir / "video-manifest.json"
+    manifest: dict = {}
     if manifest_path.is_file():
         manifest = load_json(manifest_path)
         gate_ok = str(manifest.get("release_gate")) == "pending_human"
-        status_ok = str(manifest.get("status")).startswith(("DRAFT_", "READY", "BLOCKED:"))
-        results["video_manifest"] = {"pass": gate_ok and status_ok, "manifest": manifest}
-        ok = ok and gate_ok and status_ok
+        status_ok = str(manifest.get("status")).startswith(("STITCHED_", "READY", "BLOCKED:"))
+        mode_ok = str(manifest.get("mode")) == "provider-only"
+        results["video_manifest"] = {"pass": gate_ok and status_ok and mode_ok, "manifest": manifest}
+        ok = ok and gate_ok and status_ok and mode_ok
     else:
         results["video_manifest"] = {"pass": False, "error": "video-manifest.json missing"}
         ok = False
+
+    # provider-only 反断言：manifest 不得声称任何本地兜底 provider
+    banned = ("ffmpeg-kenburns", "edge-tts", "kenburns")
+    declared_provider = str(manifest.get("provider") or "")
+    fallback_free = not any(b in declared_provider.lower() for b in banned)
+    results["no_local_fallback"] = {"pass": fallback_free, "provider": declared_provider}
+    ok = ok and fallback_free
 
     QA_EVIDENCE_DIR.mkdir(parents=True, exist_ok=True)
     scorecard = {
@@ -407,7 +592,7 @@ def cmd_manifest(args: argparse.Namespace) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="ai-manga-drama pipeline CLI")
+    parser = argparse.ArgumentParser(description="ai-manga-drama pipeline CLI (provider-only, no fallback)")
     sub = parser.add_subparsers(dest="command", required=True)
 
     p_init = sub.add_parser("init", help="create episode skeleton")
@@ -415,23 +600,22 @@ def main() -> None:
     p_init.add_argument("--dir", required=True)
     p_init.set_defaults(func=cmd_init)
 
-    p_val = sub.add_parser("validate", help="validate storyboard against schema")
+    p_val = sub.add_parser("validate", help="validate storyboard against schema (+ ref_image existence)")
     p_val.add_argument("--storyboard", required=True)
     p_val.add_argument("--json", action="store_true")
     p_val.set_defaults(func=cmd_validate)
 
-    p_req = sub.add_parser("request", help="build Seedance 2.5 request or fail closed")
+    p_req = sub.add_parser("request", help="build provider render request or fail closed")
     p_req.add_argument("--episode", required=True)
     p_req.add_argument("--out", default="")
     p_req.set_defaults(func=cmd_request)
 
-    p_asm = sub.add_parser("assemble", help="assemble draft video")
+    p_asm = sub.add_parser("assemble", help="stitch provider clips (no synthesis, no fallback)")
     p_asm.add_argument("--episode", required=True)
-    p_asm.add_argument("--mode", default="kenburns")
     p_asm.add_argument("--out", default="")
     p_asm.set_defaults(func=cmd_assemble)
 
-    p_qa = sub.add_parser("qa", help="run five-category QA")
+    p_qa = sub.add_parser("qa", help="run provider-only QA checks")
     p_qa.add_argument("--episode", required=True)
     p_qa.set_defaults(func=cmd_qa)
 

@@ -1,0 +1,14 @@
+# schema 样例：事实型母稿（watermarks-remover · 样例）
+vertical: oss-picks
+slug: watermarks-remover
+title: 水印去除工具（样例）
+kind: fact
+source_refs:
+  - content/briefings/watermarks-remover-hotspot.md
+canonical_claims:
+  - claim: 存在一类工具用于去除可见水印
+    source: content/briefings/watermarks-remover-hotspot.md
+  - claim: 去除他人版权标识属高风险用途
+    source: content/briefings/watermarks-remover-hotspot.md
+  - claim: 合规前提是只对自己拥有权利的素材使用
+    source: content/briefings/watermarks-remover-hotspot.md

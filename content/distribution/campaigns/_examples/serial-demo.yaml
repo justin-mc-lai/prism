@@ -1,0 +1,13 @@
+# schema 样例：Campaign（仅用于 contracts/campaign.schema.yaml 校验，不是可发布内容）
+campaign_id: serial-demo
+title: 连载样例战役
+lane: standard
+objective: 证明 Campaign 形状可解析（不承载任何真实排期）
+master_refs:
+  - content/masters/_examples/story-sample/meta.yaml
+schedule_intent: 样例意图：按周更新（非真实排期）
+world_slug: demo-world
+target_profiles:
+  - 样例受众（非真实画像）
+endpoint_refs:
+  - serial-demo-wechat

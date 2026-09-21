@@ -16,9 +16,13 @@ Director treatment / presentation map from frozen masters
 2. Read MAP MAP-002 strategy in `registry/adapter-migration-matrix.md`.
 3. Read `../director-philosophy.md`（意图第一性 + 叙事系统）before acting.
 4. Produce treatment per `../treatment-template.md`; score per `../qc-scorecard.md`.
-5. Execute only this surface; write/read evidence paths explicitly.
-6. Default `recommended_next_harness`: `produce` unless blocked.
-7. Emit human card + machine face; stop at harness boundary.
+5. 出 shot list / 分镜前，过 `../continuity-seven-laws.md`（七律 + 片段过渡四法 + 拆分粒度）；
+   冲突时按该文件 §3 择一侧（Toonflow 上限口径 / ai-comic-studio 下限口径）并在方案内声明。
+6. 落剧本/分镜文本按 `../script-templates.md`（完整剧本 / 分集剧本 / 镜头清单三模板）；
+   **不手写成品提示词**——提示词由 `scripts/prompt_compiler.py` 编译（`contracts/asset-render.contract.md`）。
+7. Execute only this surface; write/read evidence paths explicitly.
+8. Default `recommended_next_harness`: `produce` unless blocked.
+9. Emit human card + machine face; stop at harness boundary.
 
 ## Adapter policy
 
@@ -43,6 +47,10 @@ map_ids_considered: ['MAP-002']
 - `../director-philosophy.md` — 顶层公理/叙事系统/自媒体适配
 - `../treatment-template.md` — treatment 核心模板 + 验收清单
 - `../qc-scorecard.md` — 13 维评分卡 + 生产门 + 自动阻断
+- `../continuity-seven-laws.md` — 分镜连续性七律 + 片段过渡四法 + 拆分粒度（设计期规范，非 QA 门）
+- `../script-templates.md` — 完整剧本 / 分集剧本 / 镜头清单三模板 + storyboard 字段映射
+- `../asset-prompt-templates.md` — 资产 ref 提示词（7 段 identity block + 五类资产卡）
+- `../prompt-syntax-table.md` — 镜头提示词语法（8 段 / 7 字段 / 时长 / 切镜）
 - Kernel under `skills/_internal/orchestration/` when routing conflicts
 
 ## Director 侧硬门（Lake B′ 蒸馏后）
