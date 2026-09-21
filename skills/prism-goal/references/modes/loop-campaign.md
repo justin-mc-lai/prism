@@ -22,6 +22,10 @@ Cross-surface Prism campaign / series / review orchestration.
 | `fast` | goal → produce → qa → release | Requires explicit `fast_lane_skip` annotation + risk allows |
 | `canon` | goal → master → director → produce → qa → release → goal review | World/bible / positive canon at stake |
 
+**AV / manga 形态的 produce 内含编译步**：`prompt_compiler.py` 出资产/图片/视频提示词 + srt，
+再交下游 provider 渲染；无凭证 fail-closed，**无本地兜底**（`contracts/asset-render.contract.md`）。
+带向 produce 的 route 时，在 human card 写明「本轮含提示词编译」。渲染交 provider，不在 Prism 内完成。
+
 Read kernel when sequence is ambiguous:
 
 - `skills/_internal/orchestration/skill-routing.md`
@@ -81,4 +85,5 @@ deferred_lakes: [C, D, E, F]  # when relevant
 
 - `../human-card-handoff.md` — before emitting the card
 - `../adapter-migration-pointer.md` — when choosing bridge vs distill vs defer
+- `../../../../contracts/asset-render.contract.md` — AV/manga 渲染交接（provider-only，无兜底）
 - Kernel files under `skills/_internal/orchestration/` — when routing conflicts

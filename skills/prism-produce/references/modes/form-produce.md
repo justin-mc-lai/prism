@@ -14,9 +14,13 @@ Produce one presentation form from frozen master + director map
 
 1. Restate the `produce` job in one sentence; confirm lake scope (B/B′ vs deferred C–F).
 2. Read MAP MAP-005, MAP-006, MAP-007 strategy in `registry/adapter-migration-matrix.md`.
-3. Execute only this surface; write/read evidence paths explicitly.
-4. Default `recommended_next_harness`: `qa` unless blocked.
-5. Emit human card + machine face; stop at harness boundary.
+3. **AV / manga 形态先过提示词编译器**（图文/视频类必做，纯文本形态可跳）：
+   `python3 scripts/prompt_compiler.py --episode <episode> --style <preset_id>`
+   产出 `资产提示词.md` / `图片提示词.md` / `视频提示词.md` / `{ep}.srt`；
+   **不手写成品提示词**（手写会绕过资产门与语法门）。风格见 `registry/style-presets.yaml` ⊕ lumenx base。
+4. Execute only this surface; write/read evidence paths explicitly.
+5. Default `recommended_next_harness`: `qa` unless blocked.
+6. Emit human card + machine face; stop at harness boundary.
 
 ## Adapter policy
 
@@ -45,6 +49,14 @@ map_ids_considered: ['MAP-005', 'MAP-006', 'MAP-007']
 - `../emotional-essay-archetype.md` — 情绪观点长文体裁（7 拍 + 8 硬规则 + 判别开关）
 - `../oss-daily-archetype.md` — 日榜体裁（倒金字塔，禁四段式）
 - `../visual-enrich.md` — 深度稿截图充实（来源优先级 + 图说引导 + manifest）
+- **提示词与渲染交接（AV / manga 形态）**
+  - `../../../../contracts/asset-render.contract.md` — 渲染交接门（provider-only，六判据）
+  - `../../../../registry/render-adapters.yaml` — t2i/i2v/t2v/tts provider 槽位与凭证变量名
+  - `../../../../registry/style-presets.yaml` — 风格预设 SoT（⊕ lumenx base = 29 款）
+  - `../../../../scripts/prompt_compiler.py` — 确定性编译器（**唯一出提示词的入口**）
+  - `../../../prism-director/references/asset-prompt-templates.md` — 资产 ref 提示词模板（7 段 identity block）
+  - `../../../prism-director/references/script-templates.md` — 剧本/分镜/镜头清单模板
+  - `../../../prism-director/references/prompt-syntax-table.md` — 镜头提示词语法（8 段）
 - Kernel under `skills/_internal/orchestration/` when routing conflicts
 
 ## Produce 侧硬门（Lake B′ 深蒸馏后）
@@ -58,3 +70,5 @@ map_ids_considered: ['MAP-005', 'MAP-006', 'MAP-007']
 5. 有 `content/writing-style.md` 或单篇 style.md 时，成稿须过个人文风层
    （`../personal-style-layer.md`）；无 style 文件不阻断，但要在 human card 写明
    「个人文风层未启用」。
+6. **AV / manga 形态：未过 `prompt_compiler.py` 不得进 `assemble`**（fail-closed，
+   `contracts/asset-render.contract.md` §5）；提示词产物三件（资产/图片/视频）缺一即阻断。
