@@ -76,6 +76,7 @@ __pycache__/
 .beacon/raw-command-log.jsonl
 .beacon/freeze-attempt.err
 .beacon/memory/
+.beacon/worktrees/
 *.pyc
 .DS_Store
 .omc/

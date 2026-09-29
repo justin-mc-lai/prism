@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1786954920278,
-  "projectRoot": "/Users/apple/Developer/Personal/products/prism",
+  "lastScanned": 1790690106180,
+  "projectRoot": "/Users/apple/Developer/Personal/selfmedia/prism",
   "techStack": {
     "languages": [],
     "frameworks": [],
@@ -28,7 +28,10 @@
       "docs",
       "scripts"
     ],
-    "gitBranches": null
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
   },
   "customNotes": [],
   "directoryMap": {
@@ -36,39 +39,40 @@
       "path": "content",
       "purpose": null,
       "fileCount": 0,
-      "lastAccessed": 1786954920178,
+      "lastAccessed": 1790690106130,
       "keyFiles": []
     },
     "contracts": {
       "path": "contracts",
       "purpose": null,
-      "fileCount": 22,
-      "lastAccessed": 1786954920213,
+      "fileCount": 28,
+      "lastAccessed": 1790690106134,
       "keyFiles": [
         "adaptation.contract.md",
+        "asset-consistency.contract.md",
+        "asset-render.contract.md",
         "campaign.schema.yaml",
-        "distribution-binding.schema.yaml",
-        "form-av.contract.md",
-        "form-blog.contract.md"
+        "distribution-binding.schema.yaml"
       ]
     },
     "docs": {
       "path": "docs",
       "purpose": "Documentation",
-      "fileCount": 4,
-      "lastAccessed": 1786954920258,
+      "fileCount": 7,
+      "lastAccessed": 1790690106134,
       "keyFiles": [
         "ATTRIBUTION-bridges.md",
+        "ATTRIBUTION-corpora.md",
+        "ATTRIBUTION-drama-prompt-repos.md",
         "ATTRIBUTION-render-chain.md",
-        "owner-license-decision.md",
-        "retirement-execution-checklist.md"
+        "owner-license-decision.md"
       ]
     },
     "prism-extract-v1": {
       "path": "prism-extract-v1",
       "purpose": null,
-      "fileCount": 5,
-      "lastAccessed": 1786954920260,
+      "fileCount": 4,
+      "lastAccessed": 1790690106136,
       "keyFiles": [
         "AGENTS.md",
         "CLAUDE.md",
@@ -78,8 +82,8 @@
     "registry": {
       "path": "registry",
       "purpose": null,
-      "fileCount": 13,
-      "lastAccessed": 1786954920261,
+      "fileCount": 15,
+      "lastAccessed": 1790690106137,
       "keyFiles": [
         "adaptation-adapters.yaml",
         "adapter-index.yaml",
@@ -91,42 +95,60 @@
     "scripts": {
       "path": "scripts",
       "purpose": "Build/utility scripts",
-      "fileCount": 34,
-      "lastAccessed": 1786954920261,
+      "fileCount": 43,
+      "lastAccessed": 1790690106139,
       "keyFiles": [
+        "ai_manga_drama.py",
         "check_adaptation.sh",
         "check_all_public_surfaces.sh",
-        "check_av_forms.sh",
-        "check_blog_thread_forms.sh",
-        "check_bridges_installed.sh"
+        "check_asset_consistency.sh",
+        "check_asset_prompt_templates.sh"
       ]
     },
     "skills": {
       "path": "skills",
       "purpose": null,
       "fileCount": 0,
-      "lastAccessed": 1786954920262,
+      "lastAccessed": 1790690106141,
       "keyFiles": []
     },
     "templates": {
       "path": "templates",
       "purpose": null,
       "fileCount": 0,
-      "lastAccessed": 1786954920263,
+      "lastAccessed": 1790690106145,
+      "keyFiles": []
+    },
+    "twitter-downloads": {
+      "path": "twitter-downloads",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1790690106151,
       "keyFiles": []
     },
     "vendor": {
       "path": "vendor",
       "purpose": "Third-party code",
       "fileCount": 0,
-      "lastAccessed": 1786954920263,
+      "lastAccessed": 1790690106156,
       "keyFiles": []
+    },
+    "workspace": {
+      "path": "workspace",
+      "purpose": null,
+      "fileCount": 3,
+      "lastAccessed": 1790690106160,
+      "keyFiles": [
+        "Makefile",
+        "check_content_mutex.py",
+        "check_pin_drift.py"
+      ]
     },
     "prism-extract-v1/docs": {
       "path": "prism-extract-v1/docs",
       "purpose": "Documentation",
       "fileCount": 0,
-      "lastAccessed": 1786954920266,
+      "lastAccessed": 1790690106165,
       "keyFiles": []
     }
   },
