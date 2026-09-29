@@ -1,0 +1,275 @@
+{
+  "schema_version": "1.0",
+  "truth_map_contract": "beacon-truth-map-v1",
+  "truth_source_model": "feature_package_authoritative",
+  "truth_package_contract": "beacon-feature-package-v2",
+  "machine_json_role": "generated_state_not_truth",
+  "generated_by": "beacon.truth_map.resolver",
+  "generated_at": "2026-09-29T15:43:26.807400+00:00",
+  "feature": "prism-project-docs-v1",
+  "feature_slug": "prism-project-docs-v1",
+  "version": "v0.0.1",
+  "truth_authority": false,
+  "json_authority": false,
+  "source_paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md",
+    "tasks": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tasks.md",
+    "evidence": "docs/beacon/v0.0.1/features/prism-project-docs-v1/evidence.md"
+  },
+  "source_hashes": {
+    "truth": "0ce1b8efcb708207821a07169454ac77604860a29d827ed074cf48e468e0dbee",
+    "tests": "5d84642ba9c032bb0c6c5824b1581570cf483a80dab34cb22c08090d6a873e58",
+    "tasks": "b5490c7f11ab6c293f738e922f542d981bfe508ecf52e927589275dfc035833e",
+    "evidence": "c8585f4664a160fcbe0a23e5d1c3191d0ac4e0ba64591524696fe592e8119b30"
+  },
+  "truth_frontmatter": {
+    "slug": "prism-project-docs-v1",
+    "version": "v0.0.1",
+    "status": "draft",
+    "revision_id": "R1",
+    "language": "zh",
+    "domain_required": "false",
+    "ux_required": "false",
+    "parser_contract": "beacon-feature-package-v2",
+    "materials_status": "current",
+    "package_maturity": "filled",
+    "truth_source_model": "intent_first",
+    "research_ref": "docs/beacon/v0.0.1/research/prism-project-docs-v1.md",
+    "canonical_refs": {
+      "prd": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md"
+    },
+    "provenance": {
+      "- ac_id": "AC-PDO-005",
+      "source_type": "user_decision",
+      "source_ref": "2026-09-29 用户拍板 D3：manju 蒸馏另成 prism-drama-spec-v1，本 feature 只管布局/分发/路径"
+    }
+  },
+  "frontmatter_errors": [],
+  "acceptance_criteria": [
+    {
+      "ac_id": "AC-PDO-001",
+      "theme": "项目侧 `init --dir <p>/docs/prism` 落盘的目录树与 prism 仓 `content/` 同构（同名子目录 `briefings/storyworlds/masters/pipelines/produced/distribution`），且生成门面 `docs/prism/README.md`，README 内含大纲/母稿/分镜剧本三类索引条目",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-PDO-002",
+      "theme": "公开 skill 指令面写明 `PRISM_HOME` 约定：文档内命令全部以 `$PRISM_HOME/scripts/` 开头或声明等价约定；项目仓 `git ls-files` 中不存在 `prompt_compiler.py` / `ai_manga_drama.py` / `drama_spec.py` 的任何副本",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-PDO-003",
+      "theme": "`contracts/form-manga-drama.contract.md §4` 与 `content/pipelines/ai-manga-drama/README.md` 对 episode 产物路径只保留一条 canonical 表述，另一条显式标注 alias/deprecated；存在 `scripts/check_*` 断言两处 canonical 一致（含反向断言：alias 行存在且 canonical 行唯一）",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-PDO-004",
+      "theme": "`scripts/install_public_surfaces.sh` 的产物说明（或 README 安装段）明确写出\"只装指令面、能力面经 PRISM_HOME 获取\"，且 7 个公开 SKILL 中至少主入口含能力定位段；`check_*` 断言该段存在",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-PDO-005",
+      "theme": "`docs/prism/` 产物中不出现需求真相字段（`slug/status/revision_id/parser_contract` frontmatter），`docs/beacon/` 下不出现分镜/成片产物文件；交叉引用仅允许 `docs/prism/**` 引用 beacon feature slug 单向",
+      "description": ""
+    }
+  ],
+  "test_rows": [
+    {
+      "ac_id": "AC-PDO-001",
+      "tc_id": "TC-PDO-001",
+      "layer": "",
+      "command": "`rm -rf /tmp/prism-pdo-001 && python3 $PRISM_HOME/scripts/ai_manga_drama.py init --dir /tmp/prism-pdo-001/docs/prism --episode ep-t1 && diff <(ls /tmp/prism-pdo-001/docs/prism \\|grep -v README.md \\|sort) <(ls content \\|sort)`",
+      "assertion": "项目侧子目录与 content/ 同名同构（README.md 除外）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PDO-001",
+      "tc_id": "TC-PDO-002",
+      "layer": "",
+      "command": "`test -f /tmp/prism-pdo-001/docs/prism/README.md && rg -q '大纲' /tmp/prism-pdo-001/docs/prism/README.md && rg -q '母稿\\|masters' /tmp/prism-pdo-001/docs/prism/README.md && rg -q '分镜' /tmp/prism-pdo-001/docs/prism/README.md`",
+      "assertion": "门面 README 存在且含大纲/母稿/分镜三类索引",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PDO-001",
+      "tc_id": "TC-PDO-003",
+      "layer": "",
+      "command": "`bash scripts/check_prism_project_docs.sh --init-shape /tmp/prism-pdo-001/docs/prism`",
+      "assertion": "init 落盘形状检查脚本 exit 0",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PDO-002",
+      "tc_id": "TC-PDO-004",
+      "layer": "",
+      "command": "`rg -n 'PRISM_HOME' skills/prism-director/SKILL.md skills/prism-produce/SKILL.md skills/prism-qa/SKILL.md \\|wc -l \\|awk '{exit !($1>=3)}'`",
+      "assertion": "公开 skill 指令面写入 PRISM_HOME 约定（≥3 处）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PDO-002",
+      "tc_id": "TC-PDO-005",
+      "layer": "",
+      "command": "`rg -n '\\$PRISM_HOME/scripts/' skills/prism-director/SKILL.md skills/prism-produce/SKILL.md \\|wc -l \\|awk '{exit !($1>=2)}'`",
+      "assertion": "命令示例以 `$PRISM_HOME/scripts/` 开头（≥2 处）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PDO-002",
+      "tc_id": "TC-PDO-006",
+      "layer": "",
+      "command": "`! git ls-files \\|rg -q 'prompt_compiler\\.py\\|ai_manga_drama\\.py\\|drama_spec\\.py' \\|\\|(git ls-files \\|rg 'prompt_compiler\\.py\\|ai_manga_drama\\.py\\|drama_spec\\.py' \\|rg -q '^scripts/')`",
+      "assertion": "仓内三脚本只存在于 scripts/（唯一能力 SoT，无副本）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PDO-003",
+      "tc_id": "TC-PDO-007",
+      "layer": "",
+      "command": "`bash scripts/check_prism_project_docs.sh --canonical-path`",
+      "assertion": "契约 §4 与管线 README canonical 行唯一且一致（exit 0）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PDO-003",
+      "tc_id": "TC-PDO-008",
+      "layer": "",
+      "command": "`rg -n 'alias\\|deprecated' contracts/form-manga-drama.contract.md \\|rg -q 'content/presentations'`",
+      "assertion": "旧路径 content/presentations 已标 alias/deprecated",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PDO-003",
+      "tc_id": "TC-PDO-009",
+      "layer": "",
+      "command": "`bash scripts/check_prism_project_docs.sh --canonical-path --invert; test $? -eq 1`",
+      "assertion": "反向断言：破坏 canonical 一致性时检查脚本必须 fail（负向）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PDO-004",
+      "tc_id": "TC-PDO-010",
+      "layer": "",
+      "command": "`bash scripts/check_prism_project_docs.sh --install-notice`",
+      "assertion": "install 产物说明含\"只装指令面 + PRISM_HOME\"（exit 0）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PDO-004",
+      "tc_id": "TC-PDO-011",
+      "layer": "",
+      "command": "`rg -n '只软链\\|指令面' scripts/install_public_surfaces.sh \\|wc -l \\|awk '{exit !($1>=1)}'`",
+      "assertion": "install 脚本注释明示只装指令面",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PDO-005",
+      "tc_id": "TC-PDO-012",
+      "layer": "",
+      "command": "`! rg -n 'parser_contract\\|revision_id' docs/prism/ \\|\\|! rg -l 'parser_contract' docs/prism/ 2>/dev/null`",
+      "assertion": "docs/prism 无需求真相字段（负向）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PDO-005",
+      "tc_id": "TC-PDO-013",
+      "layer": "",
+      "command": "`! rg -n 'storyboard\\.json\\|分镜脚本\\.md' docs/beacon/ -l`",
+      "assertion": "docs/beacon 下无分镜产物（负向）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-PDO-005",
+      "tc_id": "TC-PDO-014",
+      "layer": "",
+      "command": "`bash scripts/check_prism_project_docs.sh --boundary`",
+      "assertion": "边界检查脚本 exit 0（单向引用 + 无真相字段）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "GATES",
+      "tc_id": "TC-PDO-015",
+      "layer": "",
+      "command": "`beacon truth review prism-project-docs-v1 --project . --version v0.0.1 --json`",
+      "assertion": "Truth Review Gate A/B/C + L0 pass，recommend_freeze=true",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "GATES",
+      "tc_id": "TC-PDO-016",
+      "layer": "",
+      "command": "`beacon doctor verify-truth-integrity prism-project-docs-v1 --project-root . --version v0.0.1 --mode block --json \\|python3 -c \"import json,sys; d=json.load(sys.stdin); exit(0 if d.get('result',{}).get('blocked') in (False,None) and d.get('result',{}).get('closure_contract',{}).get('closure_allowed') else 1\"`",
+      "assertion": "`closure_allowed=true` 且 finding_count=0（integrity 门真跑、非空报告）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "GATES",
+      "tc_id": "TC-PDO-017",
+      "layer": "",
+      "command": "`rg -n 'user_decision:\\s*pending' docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md; test $? -eq 1`",
+      "assertion": "Deferral Ledger 无 pending 项（rg 无命中则 exit 1 → 断言成立）",
+      "evidence_path": "",
+      "source": ""
+    }
+  ],
+  "task_rows": [
+    {
+      "id": "TASK-001",
+      "title": "Implement AC-001: 在任意使用 Prism 的项目里，项目 docs/ 下建一个类比 docs/beacon/ 的 docs/prism/ 目录，保存 Pri... · ac=AC-001 · evidence=`.beacon/evidence/implement/prism-project-docs-v1/AC-001.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-002",
+      "title": "Implement AC-002: 能力侧用 PRISM_HOME 指路（项目零 scripts 副本），目录与 prism 仓 content/ 同构，路径契约唯一化（旧路... · ac=AC-002 · evidence=`.beacon/evidence/implement/prism-project-docs-v1/AC-002.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-003",
+      "title": "Implement AC-003: 缺口：install 只软链 SKILL · ac=AC-003 · evidence=`.beacon/evidence/implement/prism-project-docs-v1/AC-003.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-004",
+      "title": "Implement AC-004: 契约 §4 与管线 README 路径打架 · ac=AC-004 · evidence=`.beacon/evidence/implement/prism-project-docs-v1/AC-004.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-005",
+      "title": "Validate package gates (truth review + freeze ack) · ac=GATES · evidence=`.beacon/evidence/implement/prism-project-docs-v1/GATES.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-006",
+      "title": "Run QA against AC↔TC matrix + exec-layer evidence · ac=QA · evidence=`.beacon/evidence/implement/prism-project-docs-v1/QA-MATRIX.json`",
+      "status": "unchecked"
+    }
+  ],
+  "checkbox_errors": [],
+  "evidence_rows": [
+    {
+      "surface": "qa",
+      "authority": "qa_verdict",
+      "canonical_artifact": "tests/",
+      "status": "linked",
+      "route": "qa"
+    }
+  ]
+}
