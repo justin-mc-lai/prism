@@ -27,7 +27,7 @@
     "review_gates": [],
     "qa_coverage_hints": [],
     "evidence_lines": {},
-    "generated_at": "2026-09-29T15:43:26.179814+00:00",
+    "generated_at": "2026-09-29T16:10:40.443193+00:00",
     "feature": "prism-project-docs-v1",
     "feature_slug": "prism-project-docs-v1",
     "prd_ref": "docs/beacon/v0.0.1/prd/prism-project-docs-v1.md",
@@ -97,7 +97,7 @@
         },
         {
           "ac_id": "AC-PDO-002",
-          "description": "公开 skill 指令面写明 `PRISM_HOME` 约定：文档内命令全部以 `$PRISM_HOME/scripts/` 开头或声明等价约定；项目仓 `git ls-files` 中不存在 `prompt_compiler.py` / `ai_manga_drama.py` / `drama_spec.py` 的任何副本"
+          "description": "公开 skill 指令面写明 `PRISM_HOME` 约定：`skills/prism-director/SKILL.md`、`skills/prism-produce/SKILL.md`、`skills/prism-qa/SKILL.md` 三个文件内命令一律写成 `$PRISM_HOME/scripts/...` 形式；项目仓 `git ls-files` 中 `prompt_compiler.py` / `ai_manga_drama.py` / `drama_spec.py` 的命中路径全部位于 `scripts/` 之下（唯一能力 SoT，无副本）"
         },
         {
           "ac_id": "AC-PDO-003",
@@ -105,7 +105,7 @@
         },
         {
           "ac_id": "AC-PDO-004",
-          "description": "`scripts/install_public_surfaces.sh` 的产物说明（或 README 安装段）明确写出\"只装指令面、能力面经 PRISM_HOME 获取\"，且 7 个公开 SKILL 中至少主入口含能力定位段；`check_*` 断言该段存在"
+          "description": "`scripts/install_public_surfaces.sh` 文件头注释明确写出\"只装指令面\"，并写明能力面经 `PRISM_HOME` 获取；`skills/prism-director/SKILL.md` 含能力定位段（声明 `PRISM_HOME` 与 `scripts/` 关系）；`scripts/check_prism_project_docs.sh --install-notice` 对以上两点 exit 0"
         },
         {
           "ac_id": "AC-PDO-005",
@@ -183,7 +183,7 @@
           },
           {
             "ac_id": "AC-PDO-002",
-            "description": "公开 skill 指令面写明 `PRISM_HOME` 约定：文档内命令全部以 `$PRISM_HOME/scripts/` 开头或声明等价约定；项目仓 `git ls-files` 中不存在 `prompt_compiler.py` / `ai_manga_drama.py` / `drama_spec.py` 的任何副本"
+            "description": "公开 skill 指令面写明 `PRISM_HOME` 约定：`skills/prism-director/SKILL.md`、`skills/prism-produce/SKILL.md`、`skills/prism-qa/SKILL.md` 三个文件内命令一律写成 `$PRISM_HOME/scripts/...` 形式；项目仓 `git ls-files` 中 `prompt_compiler.py` / `ai_manga_drama.py` / `drama_spec.py` 的命中路径全部位于 `scripts/` 之下（唯一能力 SoT，无副本）"
           },
           {
             "ac_id": "AC-PDO-003",
@@ -191,7 +191,7 @@
           },
           {
             "ac_id": "AC-PDO-004",
-            "description": "`scripts/install_public_surfaces.sh` 的产物说明（或 README 安装段）明确写出\"只装指令面、能力面经 PRISM_HOME 获取\"，且 7 个公开 SKILL 中至少主入口含能力定位段；`check_*` 断言该段存在"
+            "description": "`scripts/install_public_surfaces.sh` 文件头注释明确写出\"只装指令面\"，并写明能力面经 `PRISM_HOME` 获取；`skills/prism-director/SKILL.md` 含能力定位段（声明 `PRISM_HOME` 与 `scripts/` 关系）；`scripts/check_prism_project_docs.sh --install-notice` 对以上两点 exit 0"
           },
           {
             "ac_id": "AC-PDO-005",

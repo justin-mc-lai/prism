@@ -4,20 +4,20 @@
   "feature_slug": "prism-project-docs-v1",
   "version": "v0.0.1",
   "current_revision_id": "R1",
-  "lifecycle_status": "draft",
-  "updated_at": "2026-09-29T15:43:26.814930+00:00",
+  "lifecycle_status": "frozen",
+  "updated_at": "2026-09-29T16:10:40.860688+00:00",
   "revisions": [
     {
       "revision_id": "R1",
       "feature_slug": "prism-project-docs-v1",
       "source_revision_id": null,
       "reason": "draft",
-      "doc_status": "draft",
+      "doc_status": "frozen",
       "delivery_status": "idle",
-      "baseline_hash": null,
+      "baseline_hash": "sha256:5a9e952a826a03a0e977b59ede8e86a0b0e52b9be85945dd68e8d87faad7bdeb",
       "superseded_by": null,
       "created_at": "2026-09-29T15:42:59.509980+00:00",
-      "frozen_at": null,
+      "frozen_at": "2026-09-29T16:10:40.941659+00:00",
       "accepted_at": null,
       "accepted_by": null
     }
@@ -28,7 +28,7 @@
       "revision_id": "R1",
       "title": "prism-project-docs-v1",
       "priority": "medium",
-      "status": "draft",
+      "status": "frozen",
       "items": [
         {
           "id": "AC-001",

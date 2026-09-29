@@ -5,7 +5,7 @@
   "truth_package_contract": "beacon-feature-package-v2",
   "machine_json_role": "generated_state_not_truth",
   "generated_by": "beacon.truth_map.resolver",
-  "generated_at": "2026-09-29T15:43:26.807400+00:00",
+  "generated_at": "2026-09-29T16:10:41.266353+00:00",
   "feature": "prism-project-docs-v1",
   "feature_slug": "prism-project-docs-v1",
   "version": "v0.0.1",
@@ -18,15 +18,15 @@
     "evidence": "docs/beacon/v0.0.1/features/prism-project-docs-v1/evidence.md"
   },
   "source_hashes": {
-    "truth": "0ce1b8efcb708207821a07169454ac77604860a29d827ed074cf48e468e0dbee",
+    "truth": "bc6dd9ce5ddcdd050e54dac39dff14e3a39460bdffe09b4b710696b158ddc610",
     "tests": "5d84642ba9c032bb0c6c5824b1581570cf483a80dab34cb22c08090d6a873e58",
-    "tasks": "b5490c7f11ab6c293f738e922f542d981bfe508ecf52e927589275dfc035833e",
+    "tasks": "a4363056a1d5b7d68866dc75e56f3be8d9e883c0f3110eb5e30827665ffe32a0",
     "evidence": "c8585f4664a160fcbe0a23e5d1c3191d0ac4e0ba64591524696fe592e8119b30"
   },
   "truth_frontmatter": {
     "slug": "prism-project-docs-v1",
     "version": "v0.0.1",
-    "status": "draft",
+    "status": "frozen",
     "revision_id": "R1",
     "language": "zh",
     "domain_required": "false",
@@ -56,7 +56,7 @@
     },
     {
       "ac_id": "AC-PDO-002",
-      "theme": "公开 skill 指令面写明 `PRISM_HOME` 约定：文档内命令全部以 `$PRISM_HOME/scripts/` 开头或声明等价约定；项目仓 `git ls-files` 中不存在 `prompt_compiler.py` / `ai_manga_drama.py` / `drama_spec.py` 的任何副本",
+      "theme": "公开 skill 指令面写明 `PRISM_HOME` 约定：`skills/prism-director/SKILL.md`、`skills/prism-produce/SKILL.md`、`skills/prism-qa/SKILL.md` 三个文件内命令一律写成 `$PRISM_HOME/scripts/...` 形式；项目仓 `git ls-files` 中 `prompt_compiler.py` / `ai_manga_drama.py` / `drama_spec.py` 的命中路径全部位于 `scripts/` 之下（唯一能力 SoT，无副本）",
       "description": ""
     },
     {
@@ -66,7 +66,7 @@
     },
     {
       "ac_id": "AC-PDO-004",
-      "theme": "`scripts/install_public_surfaces.sh` 的产物说明（或 README 安装段）明确写出\"只装指令面、能力面经 PRISM_HOME 获取\"，且 7 个公开 SKILL 中至少主入口含能力定位段；`check_*` 断言该段存在",
+      "theme": "`scripts/install_public_surfaces.sh` 文件头注释明确写出\"只装指令面\"，并写明能力面经 `PRISM_HOME` 获取；`skills/prism-director/SKILL.md` 含能力定位段（声明 `PRISM_HOME` 与 `scripts/` 关系）；`scripts/check_prism_project_docs.sh --install-notice` 对以上两点 exit 0",
       "description": ""
     },
     {
@@ -233,31 +233,36 @@
   "task_rows": [
     {
       "id": "TASK-001",
-      "title": "Implement AC-001: 在任意使用 Prism 的项目里，项目 docs/ 下建一个类比 docs/beacon/ 的 docs/prism/ 目录，保存 Pri... · ac=AC-001 · evidence=`.beacon/evidence/implement/prism-project-docs-v1/AC-001.json`",
+      "title": "Implement AC-PDO-001: 项目侧 `init --dir <p>/docs/prism` 落盘的目录树与 prism 仓 `content/` 同构（同名子目录 `... · ac=AC-PDO-001 · evidence=`.beacon/evidence/implement/prism-project-docs-v1/AC-PDO-001.json`",
       "status": "unchecked"
     },
     {
       "id": "TASK-002",
-      "title": "Implement AC-002: 能力侧用 PRISM_HOME 指路（项目零 scripts 副本），目录与 prism 仓 content/ 同构，路径契约唯一化（旧路... · ac=AC-002 · evidence=`.beacon/evidence/implement/prism-project-docs-v1/AC-002.json`",
+      "title": "Implement AC-PDO-002: 公开 skill 指令面写明 `PRISM_HOME` 约定：`skills/prism-director/SKILL.md`、`skil... · ac=AC-PDO-002 · evidence=`.beacon/evidence/implement/prism-project-docs-v1/AC-PDO-002.json`",
       "status": "unchecked"
     },
     {
       "id": "TASK-003",
-      "title": "Implement AC-003: 缺口：install 只软链 SKILL · ac=AC-003 · evidence=`.beacon/evidence/implement/prism-project-docs-v1/AC-003.json`",
+      "title": "Implement AC-PDO-003: `contracts/form-manga-drama.contract.md §4` 与 `content/pipelines/ai-m... · ac=AC-PDO-003 · evidence=`.beacon/evidence/implement/prism-project-docs-v1/AC-PDO-003.json`",
       "status": "unchecked"
     },
     {
       "id": "TASK-004",
-      "title": "Implement AC-004: 契约 §4 与管线 README 路径打架 · ac=AC-004 · evidence=`.beacon/evidence/implement/prism-project-docs-v1/AC-004.json`",
+      "title": "Implement AC-PDO-004: `scripts/install_public_surfaces.sh` 文件头注释明确写出\"只装指令面\"，并写明能力面经 `PRISM_... · ac=AC-PDO-004 · evidence=`.beacon/evidence/implement/prism-project-docs-v1/AC-PDO-004.json`",
       "status": "unchecked"
     },
     {
       "id": "TASK-005",
-      "title": "Validate package gates (truth review + freeze ack) · ac=GATES · evidence=`.beacon/evidence/implement/prism-project-docs-v1/GATES.json`",
+      "title": "Implement AC-PDO-005: `docs/prism/` 产物中不出现需求真相字段（`slug/status/revision_id/parser_contract` ... · ac=AC-PDO-005 · evidence=`.beacon/evidence/implement/prism-project-docs-v1/AC-PDO-005.json`",
       "status": "unchecked"
     },
     {
       "id": "TASK-006",
+      "title": "Validate package gates (truth review + freeze ack) · ac=GATES · evidence=`.beacon/evidence/implement/prism-project-docs-v1/GATES.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-007",
       "title": "Run QA against AC↔TC matrix + exec-layer evidence · ac=QA · evidence=`.beacon/evidence/implement/prism-project-docs-v1/QA-MATRIX.json`",
       "status": "unchecked"
     }

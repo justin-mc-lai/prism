@@ -1,7 +1,7 @@
 ---
 slug: prism-project-docs-v1
 version: v0.0.1
-status: draft
+status: frozen
 revision_id: R1
 language: zh
 domain_required: false
@@ -187,3 +187,18 @@ US-003：读者查路径。打开契约与管线 README，看到同一条 canoni
 
 每条 AC 追溯到 frontmatter `provenance`（user_intent / user_decision / source_evidence）。
 上游研究：`docs/beacon/v0.0.1/research/prism-project-docs-v1.md`（Decisions D1/D2/D3）。
+
+## FSM mermaid（投影）
+
+```mermaid
+stateDiagram-v2
+    [*] --> scaffolded
+    scaffolded --> drafting : `init --dir <p>/docs/prism` (目录同构 + README 生成)
+    drafting --> validated : 写 storyboard.json (schema 校验通过)
+    validated --> compiled : 编译 (validate 通过)
+    compiled --> rendered : provider 渲染 (凭证存在（否则 exit 2 fail-closed）)
+    rendered --> assembled : 拼接 (片段齐全且规格相符)
+    assembled --> qa_passed : QA (证据齐全)
+    qa_passed --> released : release (**人工批准**)
+    released --> [*]
+```
