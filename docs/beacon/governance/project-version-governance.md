@@ -1,23 +1,23 @@
 ---
 schema_version: "1.0"
-project_root: "/Users/apple/Developer/Personal/products/prism"
+project_root: "/Users/apple/Developer/Personal/selfmedia/prism"
 topology_kind: "single_repo"
 default_execution_service: "prism"
-transaction_id: "tx-project-governance-18f7de4386d7d0ca"
-committed_at: "2026-09-29T16:10:41.340239+00:00"
-source_hash: "18f7de4386d7d0ca7fce279ab009690cb4afb23cf1b2603979f4308b2303e570"
+transaction_id: "tx-project-governance-28dbca0ace9f284f"
+committed_at: "2026-09-29T16:39:57.054792+00:00"
+source_hash: "28dbca0ace9f284f29249fb124278cd038b7231833464f1212e855aa54e20a67"
 event_type: "freeze-version-contract"
 parser_contract: "beacon-project-governance-v1"
 ---
 
 # Project Version Governance
 
-- project_root: `/Users/apple/Developer/Personal/products/prism`
+- project_root: `/Users/apple/Developer/Personal/selfmedia/prism`
 - topology_kind: `single_repo`
 - default_execution_service: `prism`
 
 ## Service Bindings
-- `prism` repo=`/Users/apple/Developer/Personal/products/prism` role=`primary` writable=`true` worktree_policy=`follow-repo-root`
+- `prism` repo=`/Users/apple/Developer/Personal/selfmedia/prism` role=`primary` writable=`true` worktree_policy=`follow-repo-root`
 
 ## Version Contracts
 

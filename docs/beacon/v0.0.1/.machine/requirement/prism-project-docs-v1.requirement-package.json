@@ -5,7 +5,7 @@
   "truth_package_contract": "beacon-feature-package-v2",
   "machine_json_role": "generated_state_not_truth",
   "generated_by": "beacon.truth_map.resolver",
-  "generated_at": "2026-09-29T16:10:41.266353+00:00",
+  "generated_at": "2026-09-29T16:39:57.007130+00:00",
   "feature": "prism-project-docs-v1",
   "feature_slug": "prism-project-docs-v1",
   "version": "v0.0.1",
@@ -18,8 +18,8 @@
     "evidence": "docs/beacon/v0.0.1/features/prism-project-docs-v1/evidence.md"
   },
   "source_hashes": {
-    "truth": "bc6dd9ce5ddcdd050e54dac39dff14e3a39460bdffe09b4b710696b158ddc610",
-    "tests": "5d84642ba9c032bb0c6c5824b1581570cf483a80dab34cb22c08090d6a873e58",
+    "truth": "37af69edc7250814125b02d97db366b3b127deaf9ad8539ca560a0dc0a4fbe41",
+    "tests": "c65bf72635c6147b5315f60b4e8bd1a44b59578a002b4fb384929f03c4b2282c",
     "tasks": "a4363056a1d5b7d68866dc75e56f3be8d9e883c0f3110eb5e30827665ffe32a0",
     "evidence": "c8585f4664a160fcbe0a23e5d1c3191d0ac4e0ba64591524696fe592e8119b30"
   },
@@ -27,7 +27,7 @@
     "slug": "prism-project-docs-v1",
     "version": "v0.0.1",
     "status": "frozen",
-    "revision_id": "R1",
+    "revision_id": "R2",
     "language": "zh",
     "domain_required": "false",
     "ux_required": "false",
@@ -226,6 +226,51 @@
       "layer": "",
       "command": "`rg -n 'user_decision:\\s*pending' docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md; test $? -eq 1`",
       "assertion": "Deferral Ledger 无 pending 项（rg 无命中则 exit 1 → 断言成立）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "FSM",
+      "tc_id": "TC-PDO-018",
+      "layer": "",
+      "command": "`rg -n 'scaffolded.*validated\\|validated.*compiled\\|compiled.*rendered\\|rendered.*assembled\\|assembled.*qa_passed\\|qa_passed.*released' docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md \\|wc -l \\|awk '{exit !($1>=6)}'`",
+      "assertion": "FSM 七态六跃迁在 truth 中成对出现（scaffolded→validated→compiled→rendered→assembled→qa_passed→released）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "FSM",
+      "tc_id": "TC-PDO-019",
+      "layer": "",
+      "command": "`rg -n 'illegal: scaffolded → compiled\\|illegal: compiled → rendered\\|illegal: assembled → released' docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md \\|wc -l \\|awk '{exit !($1>=3)}'`",
+      "assertion": "三条非法跃迁槽位（跳校验/无凭证渲染/无人工发布）全部在 truth",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "FSM",
+      "tc_id": "TC-PDO-020",
+      "layer": "",
+      "command": "`rm -rf /tmp/pdo-fsm && cp -r content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec /tmp/pdo-fsm && (unset PRISM_T2I_KEY PRISM_I2V_KEY PRISM_T2V_KEY PRISM_TTS_KEY; python3 scripts/ai_manga_drama.py request --episode /tmp/pdo-fsm >/dev/null 2>&1; echo $? )`",
+      "assertion": "illegal compiled→rendered：无凭证必须 fail-closed，输出 `2`（无兜底、无假成片）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "FSM",
+      "tc_id": "TC-PDO-021",
+      "layer": "",
+      "command": "`rg -o '\"release_gate\": \"pending_human\"' /tmp/pdo-fsm/video-manifest.json`",
+      "assertion": "illegal assembled→released：BLOCKED 时 release_gate 停在 `pending_human`（无人工批准不得发布）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "FSM",
+      "tc_id": "TC-PDO-022",
+      "layer": "",
+      "command": "`python3 scripts/ai_manga_drama.py validate --storyboard content/pipelines/ai-manga-drama/fixtures/ep-compile-test/storyboard.json >/dev/null 2>&1; test $? -eq 0`",
+      "assertion": "legal scaffolded→validated：合法跃迁可执行（validate exit 0）",
       "evidence_path": "",
       "source": ""
     }

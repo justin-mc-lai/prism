@@ -27,7 +27,7 @@
     "review_gates": [],
     "qa_coverage_hints": [],
     "evidence_lines": {},
-    "generated_at": "2026-09-29T16:10:40.443193+00:00",
+    "generated_at": "2026-09-29T16:39:56.095604+00:00",
     "feature": "prism-project-docs-v1",
     "feature_slug": "prism-project-docs-v1",
     "prd_ref": "docs/beacon/v0.0.1/prd/prism-project-docs-v1.md",
@@ -61,8 +61,8 @@
       "frontmatter": {
         "slug": "prism-project-docs-v1",
         "version": "v0.0.1",
-        "status": "draft",
-        "revision_id": "R1",
+        "status": "frozen",
+        "revision_id": "R2",
         "language": "zh",
         "domain_required": "false",
         "ux_required": "false",
@@ -130,7 +130,8 @@
         "关键对象",
         "用户旅程",
         "Source Excerpt",
-        "Provenance"
+        "Provenance",
+        "FSM mermaid（投影）"
       ]
     },
     "validation": {
@@ -147,8 +148,8 @@
         "frontmatter": {
           "slug": "prism-project-docs-v1",
           "version": "v0.0.1",
-          "status": "draft",
-          "revision_id": "R1",
+          "status": "frozen",
+          "revision_id": "R2",
           "language": "zh",
           "domain_required": "false",
           "ux_required": "false",
@@ -216,7 +217,8 @@
           "关键对象",
           "用户旅程",
           "Source Excerpt",
-          "Provenance"
+          "Provenance",
+          "FSM mermaid（投影）"
         ]
       }
     },

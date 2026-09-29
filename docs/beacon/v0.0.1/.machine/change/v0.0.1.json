@@ -13,12 +13,18 @@
   "truth_authority": false,
   "lifecycle_stage": false,
   "release_publish_action": false,
-  "feature_count": 14,
+  "feature_count": 18,
   "features": [
     {
       "feature": "prism-adaptation-contracts-v1",
       "feature_slug": "prism-adaptation-contracts-v1",
       "summary": "Lake F2 adaptation contracts.",
+      "status": "generated"
+    },
+    {
+      "feature": "prism-asset-gate-rollout-v1",
+      "feature_slug": "prism-asset-gate-rollout-v1",
+      "summary": "Asset-consistency gate rollout to live_drama (storyboard stage) and comic (multi-episode route): contract wiring + registry chains + exec assertions. Framework unchanged (MAP-017 reuse).",
       "status": "generated"
     },
     {
@@ -58,6 +64,12 @@
       "status": "generated"
     },
     {
+      "feature": "prism-form-product-v1",
+      "feature_slug": "prism-form-product-v1",
+      "summary": "Lake D2 extension: product form contract + classify_form autodetect wiring + external reference inventory batch (5 repos) + drama-skills MIT vendor pin.",
+      "status": "generated"
+    },
+    {
       "feature": "prism-form-writing-v1",
       "feature_slug": "prism-form-writing-v1",
       "summary": "Maintains release-facing version aggregate projection guards so QA accepted features are included in version change scope before release check.",
@@ -67,6 +79,12 @@
       "feature": "prism-learning-memory-v1",
       "feature_slug": "prism-learning-memory-v1",
       "summary": "Lake E4 replayable learning memory.",
+      "status": "generated"
+    },
+    {
+      "feature": "prism-manga-asset-gate-v1",
+      "feature_slug": "prism-manga-asset-gate-v1",
+      "summary": "Lake D asset-consistency gate for manga_drama distilled from drama-skills (MIT) + lumenx (MIT): identity/variant/transient taxonomy, recognition anchors, CON-01 boundary matching, CON-04 change records, AST-05 binding, style uniformity. MPT/openstory A4 defer-pin standing decision.",
       "status": "generated"
     },
     {
@@ -88,6 +106,12 @@
       "status": "generated"
     },
     {
+      "feature": "prism-project-docs-v1",
+      "feature_slug": "prism-project-docs-v1",
+      "summary": "Maintains release-facing version aggregate projection guards so QA accepted features are included in version change scope before release check.",
+      "status": "generated"
+    },
+    {
       "feature": "prism-publish-bridge-v1",
       "feature_slug": "prism-publish-bridge-v1",
       "summary": "Lake D6 publish/schedule bridge (draft-only + human gate).",
@@ -102,8 +126,11 @@
   ],
   "implementation_order": {
     "status": "analyzed",
-    "feature_count": 14,
+    "feature_count": 18,
     "ordered_feature_slugs": [
+      "prism-asset-gate-rollout-v1",
+      "prism-form-product-v1",
+      "prism-manga-asset-gate-v1",
       "prism-extract-v1",
       "prism-campaign-schema-v1",
       "prism-form-writing-v1",
@@ -117,13 +144,41 @@
       "prism-review-loop-v1",
       "prism-learning-memory-v1",
       "prism-monetization-contracts-v1",
-      "prism-adaptation-contracts-v1"
+      "prism-adaptation-contracts-v1",
+      "prism-project-docs-v1"
     ],
     "waves": [
       {
         "wave": 1,
-        "parallelizable": false,
+        "parallelizable": true,
         "features": [
+          {
+            "feature": "prism-asset-gate-rollout-v1",
+            "feature_slug": "prism-asset-gate-rollout-v1",
+            "depends_on_features": [],
+            "direct_delivery_services": [],
+            "writable_services": [],
+            "parallelizable": true,
+            "reason_code": "parallel_no_conflict"
+          },
+          {
+            "feature": "prism-form-product-v1",
+            "feature_slug": "prism-form-product-v1",
+            "depends_on_features": [],
+            "direct_delivery_services": [],
+            "writable_services": [],
+            "parallelizable": true,
+            "reason_code": "parallel_no_conflict"
+          },
+          {
+            "feature": "prism-manga-asset-gate-v1",
+            "feature_slug": "prism-manga-asset-gate-v1",
+            "depends_on_features": [],
+            "direct_delivery_services": [],
+            "writable_services": [],
+            "parallelizable": true,
+            "reason_code": "parallel_no_conflict"
+          },
           {
             "feature": "prism-extract-v1",
             "feature_slug": "prism-extract-v1",
@@ -134,6 +189,15 @@
             "writable_services": [
               "."
             ],
+            "parallelizable": true,
+            "reason_code": "parallel_no_conflict"
+          },
+          {
+            "feature": "prism-project-docs-v1",
+            "feature_slug": "prism-project-docs-v1",
+            "depends_on_features": [],
+            "direct_delivery_services": [],
+            "writable_services": [],
             "parallelizable": true,
             "reason_code": "parallel_no_conflict"
           }
@@ -433,16 +497,32 @@
     "[prism-form-novel-v1] form-novel.contract.md",
     "[prism-form-novel-v1] novel form registry entry",
     "[prism-form-novel-v1] creation-mode-map novel row",
+    "[prism-form-product-v1] contracts/form-product.contract.md",
+    "[prism-form-product-v1] skills/_internal/orchestration/form-autodetect.md",
+    "[prism-form-product-v1] scripts/check_product_form.sh",
+    "[prism-form-product-v1] registry/form-registry.yaml product entry",
+    "[prism-form-product-v1] creation-mode-map product row",
+    "[prism-form-product-v1] loop-campaign classify_form wiring",
+    "[prism-form-product-v1] source-capability-inventory external reference batch",
+    "[prism-form-product-v1] vendor/skills/drama-skills/ (MIT pin)",
+    "[prism-form-product-v1] docs/ATTRIBUTION-bridges.md drama-skills row",
     "[prism-form-writing-v1] Lake D1 writing/humanize/anti-slop base (MAP-005 distill+bridge)",
     "[prism-form-writing-v1] Feature-level release projection input for QA accepted current feature",
     "[prism-learning-memory-v1] learning-memory.contract.md",
     "[prism-learning-memory-v1] learning-adapters.yaml",
+    "[prism-manga-asset-gate-v1] skills/prism-director/references/asset-consistency-gate.md",
+    "[prism-manga-asset-gate-v1] contracts/asset-consistency.contract.md",
+    "[prism-manga-asset-gate-v1] scripts/check_asset_consistency.sh",
+    "[prism-manga-asset-gate-v1] source-capability-inventory A4 standing decision",
     "[prism-metrics-publication-v1] metrics-publication.contract.md",
     "[prism-metrics-publication-v1] metrics-adapters.yaml",
     "[prism-metrics-snapshot-v1] metrics-snapshot.contract.md",
     "[prism-metrics-snapshot-v1] snapshot adapters",
     "[prism-monetization-contracts-v1] monetization.contract.md",
     "[prism-monetization-contracts-v1] monetization-adapters.yaml",
+    "[prism-project-docs-v1] Feature-level release projection input for QA accepted current feature",
+    "[prism-project-docs-v1] Version aggregate projection inclusion guard and repair metadata",
+    "[prism-project-docs-v1] Repair-only projection rebuild path for release preflight artifacts",
     "[prism-publish-bridge-v1] publish-bridge.contract.md",
     "[prism-publish-bridge-v1] publish-adapters.yaml",
     "[prism-review-loop-v1] review-loop.contract.md",
@@ -450,13 +530,22 @@
   ],
   "removed": [
     "[prism-campaign-schema-v1] Manual-only version aggregate projection repair before release check",
-    "[prism-extract-v1] Manual-only version aggregate projection repair before release check"
+    "[prism-extract-v1] Manual-only version aggregate projection repair before release check",
+    "[prism-project-docs-v1] Manual-only version aggregate projection repair before release check"
   ],
   "fixed": [
+    "[prism-asset-gate-rollout-v1] form-live-drama contract intake+gate#6",
+    "[prism-asset-gate-rollout-v1] form-av comic intake+gate",
+    "[prism-asset-gate-rollout-v1] registry live_drama/comic chains",
+    "[prism-asset-gate-rollout-v1] check_asset_consistency.sh rollout assertions",
     "[prism-campaign-schema-v1] Release check can route missing current feature projection to an actionable repair path",
     "[prism-campaign-schema-v1] Version aggregate projection remains a read model instead of requirement truth",
     "[prism-extract-v1] Release check can route missing current feature projection to an actionable repair path",
-    "[prism-extract-v1] Version aggregate projection remains a read model instead of requirement truth"
+    "[prism-extract-v1] Version aggregate projection remains a read model instead of requirement truth",
+    "[prism-manga-asset-gate-v1] form-manga-drama contract intake anchor requirement + gate#2 upgrade",
+    "[prism-manga-asset-gate-v1] registry manga_drama producer_chain gate step",
+    "[prism-project-docs-v1] Release check can route missing current feature projection to an actionable repair path",
+    "[prism-project-docs-v1] Version aggregate projection remains a read model instead of requirement truth"
   ],
   "traceability_refs": [
     "docs/beacon/v0.0.1/change/prism-adaptation-contracts-v1.md",
@@ -465,6 +554,11 @@
     "docs/beacon/v0.0.1/qa/test-cases/prism-adaptation-contracts-v1.md",
     "docs/beacon/v0.0.1/.machine/execution/prism-adaptation-contracts-v1.revision.json",
     "docs/beacon/v0.0.1/.machine/change/prism-adaptation-contracts-v1.json",
+    "docs/beacon/v0.0.1/change/prism-asset-gate-rollout-v1.md",
+    "docs/beacon/v0.0.1/prd/prism-asset-gate-rollout-v1.md",
+    "docs/beacon/v0.0.1/user-story/prism-asset-gate-rollout-v1.md",
+    "docs/beacon/v0.0.1/qa/test-cases/prism-asset-gate-rollout-v1.md",
+    "docs/beacon/v0.0.1/.machine/change/prism-asset-gate-rollout-v1.json",
     "docs/beacon/v0.0.1/change/prism-campaign-schema-v1.md",
     "docs/beacon/v0.0.1/prd/prism-campaign-schema-v1.md",
     "docs/beacon/v0.0.1/user-story/prism-campaign-schema-v1.md",
@@ -502,6 +596,11 @@
     "docs/beacon/v0.0.1/qa/test-cases/prism-form-novel-v1.md",
     "docs/beacon/v0.0.1/.machine/execution/prism-form-novel-v1.revision.json",
     "docs/beacon/v0.0.1/.machine/change/prism-form-novel-v1.json",
+    "docs/beacon/v0.0.1/change/prism-form-product-v1.md",
+    "docs/beacon/v0.0.1/prd/prism-form-product-v1.md",
+    "docs/beacon/v0.0.1/user-story/prism-form-product-v1.md",
+    "docs/beacon/v0.0.1/qa/test-cases/prism-form-product-v1.md",
+    "docs/beacon/v0.0.1/.machine/change/prism-form-product-v1.json",
     "docs/beacon/v0.0.1/change/prism-form-writing-v1.md",
     "docs/beacon/v0.0.1/prd/prism-form-writing-v1.md",
     "docs/beacon/v0.0.1/user-story/prism-form-writing-v1.md",
@@ -514,6 +613,11 @@
     "docs/beacon/v0.0.1/qa/test-cases/prism-learning-memory-v1.md",
     "docs/beacon/v0.0.1/.machine/execution/prism-learning-memory-v1.revision.json",
     "docs/beacon/v0.0.1/.machine/change/prism-learning-memory-v1.json",
+    "docs/beacon/v0.0.1/change/prism-manga-asset-gate-v1.md",
+    "docs/beacon/v0.0.1/prd/prism-manga-asset-gate-v1.md",
+    "docs/beacon/v0.0.1/user-story/prism-manga-asset-gate-v1.md",
+    "docs/beacon/v0.0.1/qa/test-cases/prism-manga-asset-gate-v1.md",
+    "docs/beacon/v0.0.1/.machine/change/prism-manga-asset-gate-v1.json",
     "docs/beacon/v0.0.1/change/prism-metrics-publication-v1.md",
     "docs/beacon/v0.0.1/prd/prism-metrics-publication-v1.md",
     "docs/beacon/v0.0.1/user-story/prism-metrics-publication-v1.md",
@@ -532,6 +636,12 @@
     "docs/beacon/v0.0.1/qa/test-cases/prism-monetization-contracts-v1.md",
     "docs/beacon/v0.0.1/.machine/execution/prism-monetization-contracts-v1.revision.json",
     "docs/beacon/v0.0.1/.machine/change/prism-monetization-contracts-v1.json",
+    "docs/beacon/v0.0.1/change/prism-project-docs-v1.md",
+    "docs/beacon/v0.0.1/prd/prism-project-docs-v1.md",
+    "docs/beacon/v0.0.1/user-story/prism-project-docs-v1.md",
+    "docs/beacon/v0.0.1/qa/test-cases/prism-project-docs-v1.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-project-docs-v1.revision.json",
+    "docs/beacon/v0.0.1/.machine/change/prism-project-docs-v1.json",
     "docs/beacon/v0.0.1/change/prism-publish-bridge-v1.md",
     "docs/beacon/v0.0.1/prd/prism-publish-bridge-v1.md",
     "docs/beacon/v0.0.1/user-story/prism-publish-bridge-v1.md",
@@ -545,5 +655,5 @@
     "docs/beacon/v0.0.1/.machine/execution/prism-review-loop-v1.revision.json",
     "docs/beacon/v0.0.1/.machine/change/prism-review-loop-v1.json"
   ],
-  "generated_at": "2026-08-18 21:26"
+  "generated_at": "2026-09-30 00:30"
 }

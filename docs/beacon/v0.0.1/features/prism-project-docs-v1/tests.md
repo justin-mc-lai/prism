@@ -25,6 +25,11 @@ materials_status: current
 | TC-PDO-015 | GATES | `beacon truth review prism-project-docs-v1 --project . --version v0.0.1 --json` | Truth Review Gate A/B/C + L0 pass，recommend_freeze=true |
 | TC-PDO-016 | GATES | `beacon doctor verify-truth-integrity prism-project-docs-v1 --project-root . --version v0.0.1 --mode block --json \| python3 -c "import json,sys; d=json.load(sys.stdin); exit(0 if d.get('result',{}).get('blocked') in (False,None) and d.get('result',{}).get('closure_contract',{}).get('closure_allowed') else 1"` | `closure_allowed=true` 且 finding_count=0（integrity 门真跑、非空报告） |
 | TC-PDO-017 | GATES | `rg -n 'user_decision:\s*pending' docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md; test $? -eq 1` | Deferral Ledger 无 pending 项（rg 无命中则 exit 1 → 断言成立） |
+| TC-PDO-018 | FSM | `rg -n 'scaffolded.*validated\|validated.*compiled\|compiled.*rendered\|rendered.*assembled\|assembled.*qa_passed\|qa_passed.*released' docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md \| wc -l \| awk '{exit !($1>=6)}'` | FSM 七态六跃迁在 truth 中成对出现（scaffolded→validated→compiled→rendered→assembled→qa_passed→released） |
+| TC-PDO-019 | FSM | `rg -n 'illegal: scaffolded → compiled\|illegal: compiled → rendered\|illegal: assembled → released' docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md \| wc -l \| awk '{exit !($1>=3)}'` | 三条非法跃迁槽位（跳校验/无凭证渲染/无人工发布）全部在 truth |
+| TC-PDO-020 | FSM | `rm -rf /tmp/pdo-fsm && cp -r content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec /tmp/pdo-fsm && (unset PRISM_T2I_KEY PRISM_I2V_KEY PRISM_T2V_KEY PRISM_TTS_KEY; python3 scripts/ai_manga_drama.py request --episode /tmp/pdo-fsm >/dev/null 2>&1; echo $? )` | illegal compiled→rendered：无凭证必须 fail-closed，输出 `2`（无兜底、无假成片） |
+| TC-PDO-021 | FSM | `rg -o '"release_gate": "pending_human"' /tmp/pdo-fsm/video-manifest.json` | illegal assembled→released：BLOCKED 时 release_gate 停在 `pending_human`（无人工批准不得发布） |
+| TC-PDO-022 | FSM | `python3 scripts/ai_manga_drama.py validate --storyboard content/pipelines/ai-manga-drama/fixtures/ep-compile-test/storyboard.json >/dev/null 2>&1; test $? -eq 0` | legal scaffolded→validated：合法跃迁可执行（validate exit 0） |
 
 ## Coverage 说明
 

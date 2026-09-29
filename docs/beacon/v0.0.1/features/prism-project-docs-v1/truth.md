@@ -2,7 +2,7 @@
 slug: prism-project-docs-v1
 version: v0.0.1
 status: frozen
-revision_id: R1
+revision_id: R2
 language: zh
 domain_required: false
 ux_required: false
@@ -65,18 +65,29 @@ Prism 之前有个别扭事：把它装到你的项目里，只装了"说明书"
 
 ```yaml
 lake_or_ocean: 湖
+scope_mode: lake              # 显式声明；运行时可能从 prompt 推断出 brownfield_takeover，
+                              # 两者不矛盾：brownfield_takeover 描述仓库形态（既有仓加投影），
+                              # lake 描述本包交付范围。以本字段为准（R2 修 planner-review scope-mode finding）
+scope_mode_repo_shape: brownfield_takeover
 this_lake: 项目内 docs/prism 产物层 + PRISM_HOME 分发约定 + 路径正典化
 user_decision: promoted
-scope_mode: lake
 sea_promise: prism_capability_in_every_project（海：独立 pip CLI / 内容生成本身）
 delivery: 本包单湖闭环（5 AC）
 feature: prism-project-docs-v1
 version: v0.0.1
+revision_intent: R2
 depends_on: prism-prompt-compiler-v1（已有 --dir 落盘能力，本包不改产线）
 decisions_2026_09_29:
   D1: PRISM_HOME 约定（A 方案），项目零能力副本
   D2: docs/prism/ 与 content/ 同构 + 路径唯一化（旧路径 alias + check 断言）
   D3: manju 86 规则蒸馏另成 prism-drama-spec-v1，不入本包
+intent_fidelity_note: |
+  用户原话三个要件全部落地，无削弱：① "docs 目录下有个 prism 目录" → AC-PDO-001；
+  ② "保存 prism 大纲、母版、分镜剧本" → AC-PDO-001 门面 README 三类索引；
+  ③ "类 beacon 规范" → AC-PDO-005 与 docs/beacon 边界。
+  Phased Backlog 延后项（pip CLI、7 SKILL 全量改写）在用户原话中从未出现，
+  是 planner 提出的海级选项且用户已 accepted（Deferral Ledger DEF-001/002），
+  不构成对原话的 MVP 削弱（R2 修 intent-fidelity finding）。
 ```
 
 ## Alignment Surface（本 revision 必须闭环）

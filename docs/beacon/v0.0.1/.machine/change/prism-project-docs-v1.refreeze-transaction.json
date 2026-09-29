@@ -1,0 +1,1650 @@
+{
+  "schema_version": "1.0",
+  "transaction_id": "tx-change-refreeze-prism-project-docs-v1-20260929t163023z",
+  "feature": "prism-project-docs-v1",
+  "feature_slug": "prism-project-docs-v1",
+  "version": "v0.0.1",
+  "change_reason": "change-request",
+  "touched_surfaces": [
+    "change",
+    "truth",
+    "tests",
+    "tasks",
+    "evidence",
+    "requirement_clarity",
+    "freeze",
+    "feature_package_validation"
+  ],
+  "surface_statuses": {
+    "change": {
+      "path": "docs/beacon/v0.0.1/change/prism-project-docs-v1.md",
+      "exists": false,
+      "status": "package_change_optional",
+      "required": false,
+      "authority": "change_record_not_requirement_truth"
+    },
+    "truth": {
+      "path": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+      "exists": true,
+      "status": "present",
+      "required": true,
+      "authority": "markdown_feature_package"
+    },
+    "tests": {
+      "path": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md",
+      "exists": true,
+      "status": "present",
+      "required": true,
+      "authority": "markdown_feature_package"
+    },
+    "tasks": {
+      "path": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tasks.md",
+      "exists": true,
+      "status": "present",
+      "required": true,
+      "authority": "markdown_feature_package"
+    },
+    "evidence": {
+      "path": "docs/beacon/v0.0.1/features/prism-project-docs-v1/evidence.md",
+      "exists": true,
+      "status": "present",
+      "required": true,
+      "authority": "markdown_feature_package"
+    },
+    "requirement_clarity": {
+      "path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-project-docs-v1.json",
+      "exists": true,
+      "status": "passed",
+      "required": true
+    },
+    "freeze": {
+      "path": "docs/beacon/v0.0.1/.machine/change/prism-project-docs-v1.refreeze-transaction.json",
+      "exists": true,
+      "status": "complete",
+      "required": true
+    },
+    "feature_package_validation": {
+      "path": "docs/beacon/v0.0.1/.machine/requirement/feature-package-validation.json",
+      "exists": true,
+      "status": "passed",
+      "required": true,
+      "diagnostics": []
+    }
+  },
+  "truth_revision_before": {
+    "revision_id": "R2",
+    "doc_status": "draft",
+    "lifecycle_status": "idle",
+    "baseline_hash": ""
+  },
+  "truth_revision_after": {
+    "revision_id": "R2",
+    "doc_status": "frozen",
+    "lifecycle_status": "frozen",
+    "baseline_hash": "sha256:35cd94f11d35b4a145abff54195bd01e2e217bf3a0fd4cb175a83a7c69dcb77d"
+  },
+  "refreeze_status": "complete",
+  "next_route": {
+    "target_surface": "beacon-implement",
+    "command": "beacon implement \"prism-project-docs-v1\" --project /Users/apple/Developer/Personal/selfmedia/prism --version v0.0.1",
+    "why": "refreeze transaction completed; implementation may plan against the refreshed frozen truth"
+  },
+  "blocked_reason": "",
+  "delivery_execution": {
+    "implement_executed": false,
+    "qa_executed": false,
+    "release_executed": false
+  },
+  "created_at": "2026-09-29T16:30:23.995723+00:00",
+  "previous_revision": {
+    "revision_id": "R1",
+    "doc_status": "superseded",
+    "lifecycle_status": "superseded",
+    "baseline_hash": ""
+  },
+  "opened_revision": {
+    "revision_id": "R2",
+    "doc_status": "draft",
+    "lifecycle_status": "idle",
+    "baseline_hash": ""
+  },
+  "story_reopen": {
+    "current_revision_id": "R2",
+    "lifecycle_status": "draft"
+  },
+  "requirement_package": {
+    "schema_version": "1.0",
+    "project_root": "/Users/apple/Developer/Personal/selfmedia/prism",
+    "version": "v0.0.1",
+    "feature": "prism-project-docs-v1",
+    "status": "synced",
+    "authority_state": "feature_package_authoritative",
+    "truth_authority": "markdown_feature_package",
+    "requirement_refs": {
+      "source_of_truth_root": "docs/beacon/v0.0.1/features/prism-project-docs-v1",
+      "prd": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md",
+      "truth": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+      "tests": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md",
+      "tasks": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tasks.md",
+      "evidence": "docs/beacon/v0.0.1/features/prism-project-docs-v1/evidence.md"
+    },
+    "story_path": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+    "qa_matrix_path": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md",
+    "qa9_matrix_path": "",
+    "story_scenario_map_path": "",
+    "machine_rebuild": {
+      "schema_version": "1.0",
+      "truth_map_contract": "beacon-truth-map-v1",
+      "truth_source_model": "feature_package_authoritative",
+      "truth_package_contract": "beacon-feature-package-v2",
+      "machine_json_role": "generated_state_not_truth",
+      "generated_by": "beacon.truth_map.resolver",
+      "feature": "prism-project-docs-v1",
+      "feature_slug": "prism-project-docs-v1",
+      "version": "v0.0.1",
+      "status": "rebuilt",
+      "blocked": false,
+      "validation_status": "pass",
+      "source_paths": {
+        "truth": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+        "tests": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md",
+        "tasks": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tasks.md",
+        "evidence": "docs/beacon/v0.0.1/features/prism-project-docs-v1/evidence.md"
+      },
+      "source_hashes": {
+        "truth": "960ef367e491dbc4411efc7adcde310f2f6f9ea6906d4434af39c127fb54b2fe",
+        "tests": "48e591e562dd802a1d5b6e478927f1c1d0ec2499bd64c0af2ea8c96c88bed6e1",
+        "tasks": "90f8f16faf0443a8fc249cef30cb44147ec2570e03319b134f099d1271052f77",
+        "evidence": "c8585f4664a160fcbe0a23e5d1c3191d0ac4e0ba64591524696fe592e8119b30"
+      },
+      "plan": {
+        "schema_version": "1.0",
+        "truth_map_contract": "beacon-truth-map-v1",
+        "truth_source_model": "feature_package_authoritative",
+        "truth_package_contract": "beacon-feature-package-v2",
+        "machine_json_role": "generated_state_not_truth",
+        "generated_by": "beacon.truth_map.resolver",
+        "feature": "prism-project-docs-v1",
+        "feature_slug": "prism-project-docs-v1",
+        "version": "v0.0.1",
+        "source_paths": {
+          "truth": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+          "tests": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md",
+          "tasks": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tasks.md",
+          "evidence": "docs/beacon/v0.0.1/features/prism-project-docs-v1/evidence.md"
+        },
+        "outputs": {
+          "truth_map_projection": "docs/beacon/v0.0.1/.machine/requirement/prism-project-docs-v1.truth-map.json",
+          "requirement_package_state": "docs/beacon/v0.0.1/.machine/requirement/prism-project-docs-v1.requirement-package.json",
+          "feature_package_validation": "docs/beacon/v0.0.1/.machine/requirement/feature-package-validation.json"
+        },
+        "runtime_json_exemption": {
+          "role": "runtime_process_record_not_requirement_truth",
+          "applies_to": [
+            ".beacon/runs/**",
+            ".beacon/qa/**",
+            "runtime/process execution records"
+          ],
+          "requires_markdown_twin": false,
+          "requirement_authority": false
+        },
+        "routes": {
+          "doctor_rebuild": {
+            "status": "legacy_output_only",
+            "command": "beacon truth-map rebuild-machine prism-project-docs-v1 --version v0.0.1"
+          },
+          "change_absorb": {
+            "status": "package_truth_target_only",
+            "command": "beacon change prism-project-docs-v1 --version v0.0.1 --reason absorb-legacy-truth-into-feature-package"
+          }
+        }
+      },
+      "written": [
+        "docs/beacon/v0.0.1/.machine/requirement/prism-project-docs-v1.truth-map.json",
+        "docs/beacon/v0.0.1/.machine/requirement/prism-project-docs-v1.requirement-package.json",
+        "docs/beacon/v0.0.1/.machine/requirement/feature-package-validation.json"
+      ]
+    },
+    "story_sync": {
+      "path": "docs/beacon/v0.0.1/.machine/user-story/prism-project-docs-v1.json",
+      "feature": "prism-project-docs-v1",
+      "version": "v0.0.1",
+      "revision_id": "R2",
+      "ac_count": 1,
+      "test_count": 1,
+      "story_ids": [
+        ""
+      ]
+    }
+  },
+  "requirement_clarity": {
+    "gate": {
+      "schema_version": "1.0",
+      "feature": "prism-project-docs-v1",
+      "feature_slug": "prism-project-docs-v1",
+      "version": "v0.0.1",
+      "runtime_version": "v1.6.19",
+      "runtime_capability_line": "v1.3.3",
+      "required": true,
+      "reason_code": "",
+      "blocked": false,
+      "status": "pass",
+      "findings": [],
+      "report_json_path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-project-docs-v1.json",
+      "report_markdown_path": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-project-docs-v1.md",
+      "state_path": ".beacon/state/requirement-clarity-prism-project-docs-v1.json",
+      "diagram_truth": {
+        "schema_version": "1.0",
+        "version": "v0.0.1",
+        "supported": false,
+        "required": false,
+        "ready": false,
+        "diagram_types": [],
+        "state_axes": [],
+        "missing_diagram_types": [],
+        "missing_state_axes": false,
+        "complexity_signals": [],
+        "review_gates": [],
+        "qa_coverage_hints": [],
+        "evidence_lines": {},
+        "generated_at": "2026-09-29T16:30:24.747106+00:00",
+        "feature": "prism-project-docs-v1",
+        "feature_slug": "prism-project-docs-v1",
+        "prd_ref": "docs/beacon/v0.0.1/prd/prism-project-docs-v1.md",
+        "user_story_ref": "docs/beacon/v0.0.1/user-story/prism-project-docs-v1.md"
+      },
+      "domain_fsm_gate": {
+        "schema_version": "1.0",
+        "feature": "prism-project-docs-v1",
+        "feature_slug": "prism-project-docs-v1",
+        "version": "v0.0.1",
+        "truth_path": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+        "tests_path": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md",
+        "required": false,
+        "blocked": false,
+        "status": "not_required",
+        "reason_code": "",
+        "findings": [],
+        "requirement": {
+          "required": false,
+          "reason": "version_below_v1_6_7",
+          "explicit": false,
+          "partial": false,
+          "complexity": false,
+          "business_signal": false,
+          "version_supported": false
+        },
+        "projection": {
+          "schema_version": "1.0",
+          "domain_fsm_schema": "domain-fsm.v1",
+          "entity_precedence_schema": "entity-precedence.v1",
+          "frontmatter": {
+            "slug": "prism-project-docs-v1",
+            "version": "v0.0.1",
+            "status": "frozen",
+            "revision_id": "R1",
+            "language": "zh",
+            "domain_required": "false",
+            "ux_required": "false",
+            "parser_contract": "beacon-feature-package-v2",
+            "materials_status": "current",
+            "package_maturity": "filled",
+            "truth_source_model": "intent_first",
+            "research_ref": "docs/beacon/v0.0.1/research/prism-project-docs-v1.md",
+            "canonical_refs": {
+              "prd": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+              "user_story": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+              "test_case": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md"
+            },
+            "provenance": {
+              "- ac_id": "AC-PDO-005",
+              "source_type": "user_decision",
+              "source_ref": "2026-09-29 用户拍板 D3：manju 蒸馏另成 prism-drama-spec-v1，本 feature 只管布局/分发/路径"
+            }
+          },
+          "frontmatter_errors": [],
+          "has_domain_model_section": false,
+          "has_domain_fsm_section": false,
+          "has_illegal_transition_section": false,
+          "entities": [],
+          "entity_precedence": [],
+          "aggregates": [],
+          "illegal_transition_slots": [],
+          "acceptance_criteria": [
+            {
+              "ac_id": "AC-PDO-001",
+              "description": "项目侧 `init --dir <p>/docs/prism` 落盘的目录树与 prism 仓 `content/` 同构（同名子目录 `briefings/storyworlds/masters/pipelines/produced/distribution`），且生成门面 `docs/prism/README.md`，README 内含大纲/母稿/分镜剧本三类索引条目"
+            },
+            {
+              "ac_id": "AC-PDO-002",
+              "description": "公开 skill 指令面写明 `PRISM_HOME` 约定：`skills/prism-director/SKILL.md`、`skills/prism-produce/SKILL.md`、`skills/prism-qa/SKILL.md` 三个文件内命令一律写成 `$PRISM_HOME/scripts/...` 形式；项目仓 `git ls-files` 中 `prompt_compiler.py` / `ai_manga_drama.py` / `drama_spec.py` 的命中路径全部位于 `scripts/` 之下（唯一能力 SoT，无副本）"
+            },
+            {
+              "ac_id": "AC-PDO-003",
+              "description": "`contracts/form-manga-drama.contract.md §4` 与 `content/pipelines/ai-manga-drama/README.md` 对 episode 产物路径只保留一条 canonical 表述，另一条显式标注 alias/deprecated；存在 `scripts/check_*` 断言两处 canonical 一致（含反向断言：alias 行存在且 canonical 行唯一）"
+            },
+            {
+              "ac_id": "AC-PDO-004",
+              "description": "`scripts/install_public_surfaces.sh` 文件头注释明确写出\"只装指令面\"，并写明能力面经 `PRISM_HOME` 获取；`skills/prism-director/SKILL.md` 含能力定位段（声明 `PRISM_HOME` 与 `scripts/` 关系）；`scripts/check_prism_project_docs.sh --install-notice` 对以上两点 exit 0"
+            },
+            {
+              "ac_id": "AC-PDO-005",
+              "description": "`docs/prism/` 产物中不出现需求真相字段（`slug/status/revision_id/parser_contract` frontmatter），`docs/beacon/` 下不出现分镜/成片产物文件；交叉引用仅允许 `docs/prism/**` 引用 beacon feature slug 单向"
+            }
+          ],
+          "bound_ac_ids": [],
+          "orphan_ac_ids": [],
+          "aggregates_missing_illegal_slots": [],
+          "raw_section_titles": [
+            "人话",
+            "User Intent",
+            "User Intent Snapshot",
+            "Alignment Surface（本 revision 必须闭环）",
+            "Phased Backlog（显式不进本包 closure）",
+            "Intent Coverage Matrix",
+            "Acceptance Criteria",
+            "FSM 五元组（项目侧一次作品产线）",
+            "invalid / illegal",
+            "Non-goals",
+            "Deferral Ledger",
+            "关键对象",
+            "用户旅程",
+            "Source Excerpt",
+            "Provenance",
+            "FSM mermaid（投影）"
+          ]
+        },
+        "validation": {
+          "schema_version": "1.0",
+          "required": false,
+          "blocked": false,
+          "status": "not_required",
+          "reason_code": "",
+          "findings": [],
+          "projection": {
+            "schema_version": "1.0",
+            "domain_fsm_schema": "domain-fsm.v1",
+            "entity_precedence_schema": "entity-precedence.v1",
+            "frontmatter": {
+              "slug": "prism-project-docs-v1",
+              "version": "v0.0.1",
+              "status": "frozen",
+              "revision_id": "R1",
+              "language": "zh",
+              "domain_required": "false",
+              "ux_required": "false",
+              "parser_contract": "beacon-feature-package-v2",
+              "materials_status": "current",
+              "package_maturity": "filled",
+              "truth_source_model": "intent_first",
+              "research_ref": "docs/beacon/v0.0.1/research/prism-project-docs-v1.md",
+              "canonical_refs": {
+                "prd": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+                "user_story": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+                "test_case": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md"
+              },
+              "provenance": {
+                "- ac_id": "AC-PDO-005",
+                "source_type": "user_decision",
+                "source_ref": "2026-09-29 用户拍板 D3：manju 蒸馏另成 prism-drama-spec-v1，本 feature 只管布局/分发/路径"
+              }
+            },
+            "frontmatter_errors": [],
+            "has_domain_model_section": false,
+            "has_domain_fsm_section": false,
+            "has_illegal_transition_section": false,
+            "entities": [],
+            "entity_precedence": [],
+            "aggregates": [],
+            "illegal_transition_slots": [],
+            "acceptance_criteria": [
+              {
+                "ac_id": "AC-PDO-001",
+                "description": "项目侧 `init --dir <p>/docs/prism` 落盘的目录树与 prism 仓 `content/` 同构（同名子目录 `briefings/storyworlds/masters/pipelines/produced/distribution`），且生成门面 `docs/prism/README.md`，README 内含大纲/母稿/分镜剧本三类索引条目"
+              },
+              {
+                "ac_id": "AC-PDO-002",
+                "description": "公开 skill 指令面写明 `PRISM_HOME` 约定：`skills/prism-director/SKILL.md`、`skills/prism-produce/SKILL.md`、`skills/prism-qa/SKILL.md` 三个文件内命令一律写成 `$PRISM_HOME/scripts/...` 形式；项目仓 `git ls-files` 中 `prompt_compiler.py` / `ai_manga_drama.py` / `drama_spec.py` 的命中路径全部位于 `scripts/` 之下（唯一能力 SoT，无副本）"
+              },
+              {
+                "ac_id": "AC-PDO-003",
+                "description": "`contracts/form-manga-drama.contract.md §4` 与 `content/pipelines/ai-manga-drama/README.md` 对 episode 产物路径只保留一条 canonical 表述，另一条显式标注 alias/deprecated；存在 `scripts/check_*` 断言两处 canonical 一致（含反向断言：alias 行存在且 canonical 行唯一）"
+              },
+              {
+                "ac_id": "AC-PDO-004",
+                "description": "`scripts/install_public_surfaces.sh` 文件头注释明确写出\"只装指令面\"，并写明能力面经 `PRISM_HOME` 获取；`skills/prism-director/SKILL.md` 含能力定位段（声明 `PRISM_HOME` 与 `scripts/` 关系）；`scripts/check_prism_project_docs.sh --install-notice` 对以上两点 exit 0"
+              },
+              {
+                "ac_id": "AC-PDO-005",
+                "description": "`docs/prism/` 产物中不出现需求真相字段（`slug/status/revision_id/parser_contract` frontmatter），`docs/beacon/` 下不出现分镜/成片产物文件；交叉引用仅允许 `docs/prism/**` 引用 beacon feature slug 单向"
+              }
+            ],
+            "bound_ac_ids": [],
+            "orphan_ac_ids": [],
+            "aggregates_missing_illegal_slots": [],
+            "raw_section_titles": [
+              "人话",
+              "User Intent",
+              "User Intent Snapshot",
+              "Alignment Surface（本 revision 必须闭环）",
+              "Phased Backlog（显式不进本包 closure）",
+              "Intent Coverage Matrix",
+              "Acceptance Criteria",
+              "FSM 五元组（项目侧一次作品产线）",
+              "invalid / illegal",
+              "Non-goals",
+              "Deferral Ledger",
+              "关键对象",
+              "用户旅程",
+              "Source Excerpt",
+              "Provenance",
+              "FSM mermaid（投影）"
+            ]
+          }
+        },
+        "recommended_action": ""
+      },
+      "human_closure_contract": {
+        "required": false,
+        "research_path": "docs/beacon/v0.0.1/research/prism-project-docs-v1.md",
+        "research_exists": true,
+        "source_architecture_path": "docs/beacon/v0.0.1/source-architecture/prism-project-docs-v1.md",
+        "source_architecture_exists": true,
+        "required_sections": [
+          "architecture",
+          "business_flow"
+        ],
+        "missing_sections": [],
+        "diagram_types": [],
+        "complexity_signals": []
+      },
+      "requirement_closure_contract": {
+        "required": true,
+        "chain_order": [
+          "research",
+          "prd",
+          "user_story",
+          "test_case",
+          "requirement_clarity",
+          "freeze"
+        ],
+        "human_closure_required": false,
+        "paths": {
+          "research": "docs/beacon/v0.0.1/research/prism-project-docs-v1.md",
+          "prd": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+          "user_story": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+          "test_case": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md"
+        },
+        "exists": {
+          "research": true,
+          "prd": true,
+          "user_story": true,
+          "test_case": true
+        },
+        "required_research_sections": [],
+        "missing_research_sections": [],
+        "ac_projection": {
+          "prd_ac_ids": [],
+          "user_story_ac_ids": [],
+          "test_case_ac_ids": [],
+          "upstream_ac_ids": [],
+          "missing_test_case_ac_ids": []
+        }
+      },
+      "version_projection_truth_contract": {
+        "required": false,
+        "supported": false,
+        "projection_types": [
+          "business_flow",
+          "state_machine"
+        ],
+        "research_path": "docs/beacon/v0.0.1/research/prism-project-docs-v1.md",
+        "research_exists": true,
+        "required_fields": [
+          "prd_refs",
+          "user_story_refs",
+          "test_case_refs",
+          "coverage_notes",
+          "out_of_scope_notes"
+        ],
+        "field_presence": {
+          "prd_refs": false,
+          "user_story_refs": false,
+          "test_case_refs": false,
+          "coverage_notes": false,
+          "out_of_scope_notes": false
+        },
+        "missing_fields": [],
+        "required_refs": {
+          "prd_refs": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+          "user_story_refs": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+          "test_case_refs": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md"
+        },
+        "missing_ref_targets": [],
+        "ready": false
+      },
+      "support_write_topology_contract": {
+        "schema_version": "1.0",
+        "supported": true,
+        "status": "pass",
+        "blocked": false,
+        "reason_code": "",
+        "diagnostics": []
+      },
+      "required_artifacts": [],
+      "scanned_files": [
+        "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+        "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md",
+        "docs/beacon/v0.0.1/features/prism-project-docs-v1/tasks.md",
+        "docs/beacon/v0.0.1/features/prism-project-docs-v1/evidence.md",
+        "docs/beacon/v0.0.1/research/prism-project-docs-v1.md"
+      ]
+    },
+    "report": {
+      "json": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-project-docs-v1.json",
+      "markdown": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-project-docs-v1.md"
+    },
+    "writeback": {
+      "schema_version": "1.0",
+      "feature": "prism-project-docs-v1",
+      "feature_slug": "prism-project-docs-v1",
+      "version": "v0.0.1",
+      "status": "pass",
+      "blocked": false,
+      "reason_code": "",
+      "report_json_path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-project-docs-v1.json",
+      "report_markdown_path": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-project-docs-v1.md",
+      "finding_count": 0,
+      "run_id": "",
+      "source": "change.refreeze-chain",
+      "written_at": "2026-09-29T16:30:24.765474+00:00",
+      "state_path": ".beacon/state/requirement-clarity-prism-project-docs-v1.json"
+    }
+  },
+  "truth_integrity_gate": {
+    "schema_version": "1.0",
+    "feature": "prism-project-docs-v1",
+    "feature_slug": "prism-project-docs-v1",
+    "version": "v0.0.1",
+    "mode": "block",
+    "truth_status": "frozen",
+    "status": "pass",
+    "blocked": false,
+    "reason_code": "",
+    "findings": [],
+    "finding_count": 0,
+    "requirement_clarity": {
+      "schema_version": "1.0",
+      "feature": "prism-project-docs-v1",
+      "feature_slug": "prism-project-docs-v1",
+      "version": "v0.0.1",
+      "runtime_version": "v1.6.19",
+      "runtime_capability_line": "v1.3.3",
+      "required": true,
+      "reason_code": "",
+      "blocked": false,
+      "status": "pass",
+      "findings": [],
+      "report_json_path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-project-docs-v1.json",
+      "report_markdown_path": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-project-docs-v1.md",
+      "state_path": ".beacon/state/requirement-clarity-prism-project-docs-v1.json",
+      "diagram_truth": {
+        "schema_version": "1.0",
+        "version": "v0.0.1",
+        "supported": false,
+        "required": false,
+        "ready": false,
+        "diagram_types": [],
+        "state_axes": [],
+        "missing_diagram_types": [],
+        "missing_state_axes": false,
+        "complexity_signals": [],
+        "review_gates": [],
+        "qa_coverage_hints": [],
+        "evidence_lines": {},
+        "generated_at": "2026-09-29T16:30:24.772083+00:00",
+        "feature": "prism-project-docs-v1",
+        "feature_slug": "prism-project-docs-v1",
+        "prd_ref": "docs/beacon/v0.0.1/prd/prism-project-docs-v1.md",
+        "user_story_ref": "docs/beacon/v0.0.1/user-story/prism-project-docs-v1.md"
+      },
+      "domain_fsm_gate": {
+        "schema_version": "1.0",
+        "feature": "prism-project-docs-v1",
+        "feature_slug": "prism-project-docs-v1",
+        "version": "v0.0.1",
+        "truth_path": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+        "tests_path": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md",
+        "required": false,
+        "blocked": false,
+        "status": "not_required",
+        "reason_code": "",
+        "findings": [],
+        "requirement": {
+          "required": false,
+          "reason": "version_below_v1_6_7",
+          "explicit": false,
+          "partial": false,
+          "complexity": false,
+          "business_signal": false,
+          "version_supported": false
+        },
+        "projection": {
+          "schema_version": "1.0",
+          "domain_fsm_schema": "domain-fsm.v1",
+          "entity_precedence_schema": "entity-precedence.v1",
+          "frontmatter": {
+            "slug": "prism-project-docs-v1",
+            "version": "v0.0.1",
+            "status": "frozen",
+            "revision_id": "R1",
+            "language": "zh",
+            "domain_required": "false",
+            "ux_required": "false",
+            "parser_contract": "beacon-feature-package-v2",
+            "materials_status": "current",
+            "package_maturity": "filled",
+            "truth_source_model": "intent_first",
+            "research_ref": "docs/beacon/v0.0.1/research/prism-project-docs-v1.md",
+            "canonical_refs": {
+              "prd": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+              "user_story": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+              "test_case": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md"
+            },
+            "provenance": {
+              "- ac_id": "AC-PDO-005",
+              "source_type": "user_decision",
+              "source_ref": "2026-09-29 用户拍板 D3：manju 蒸馏另成 prism-drama-spec-v1，本 feature 只管布局/分发/路径"
+            }
+          },
+          "frontmatter_errors": [],
+          "has_domain_model_section": false,
+          "has_domain_fsm_section": false,
+          "has_illegal_transition_section": false,
+          "entities": [],
+          "entity_precedence": [],
+          "aggregates": [],
+          "illegal_transition_slots": [],
+          "acceptance_criteria": [
+            {
+              "ac_id": "AC-PDO-001",
+              "description": "项目侧 `init --dir <p>/docs/prism` 落盘的目录树与 prism 仓 `content/` 同构（同名子目录 `briefings/storyworlds/masters/pipelines/produced/distribution`），且生成门面 `docs/prism/README.md`，README 内含大纲/母稿/分镜剧本三类索引条目"
+            },
+            {
+              "ac_id": "AC-PDO-002",
+              "description": "公开 skill 指令面写明 `PRISM_HOME` 约定：`skills/prism-director/SKILL.md`、`skills/prism-produce/SKILL.md`、`skills/prism-qa/SKILL.md` 三个文件内命令一律写成 `$PRISM_HOME/scripts/...` 形式；项目仓 `git ls-files` 中 `prompt_compiler.py` / `ai_manga_drama.py` / `drama_spec.py` 的命中路径全部位于 `scripts/` 之下（唯一能力 SoT，无副本）"
+            },
+            {
+              "ac_id": "AC-PDO-003",
+              "description": "`contracts/form-manga-drama.contract.md §4` 与 `content/pipelines/ai-manga-drama/README.md` 对 episode 产物路径只保留一条 canonical 表述，另一条显式标注 alias/deprecated；存在 `scripts/check_*` 断言两处 canonical 一致（含反向断言：alias 行存在且 canonical 行唯一）"
+            },
+            {
+              "ac_id": "AC-PDO-004",
+              "description": "`scripts/install_public_surfaces.sh` 文件头注释明确写出\"只装指令面\"，并写明能力面经 `PRISM_HOME` 获取；`skills/prism-director/SKILL.md` 含能力定位段（声明 `PRISM_HOME` 与 `scripts/` 关系）；`scripts/check_prism_project_docs.sh --install-notice` 对以上两点 exit 0"
+            },
+            {
+              "ac_id": "AC-PDO-005",
+              "description": "`docs/prism/` 产物中不出现需求真相字段（`slug/status/revision_id/parser_contract` frontmatter），`docs/beacon/` 下不出现分镜/成片产物文件；交叉引用仅允许 `docs/prism/**` 引用 beacon feature slug 单向"
+            }
+          ],
+          "bound_ac_ids": [],
+          "orphan_ac_ids": [],
+          "aggregates_missing_illegal_slots": [],
+          "raw_section_titles": [
+            "人话",
+            "User Intent",
+            "User Intent Snapshot",
+            "Alignment Surface（本 revision 必须闭环）",
+            "Phased Backlog（显式不进本包 closure）",
+            "Intent Coverage Matrix",
+            "Acceptance Criteria",
+            "FSM 五元组（项目侧一次作品产线）",
+            "invalid / illegal",
+            "Non-goals",
+            "Deferral Ledger",
+            "关键对象",
+            "用户旅程",
+            "Source Excerpt",
+            "Provenance",
+            "FSM mermaid（投影）"
+          ]
+        },
+        "validation": {
+          "schema_version": "1.0",
+          "required": false,
+          "blocked": false,
+          "status": "not_required",
+          "reason_code": "",
+          "findings": [],
+          "projection": {
+            "schema_version": "1.0",
+            "domain_fsm_schema": "domain-fsm.v1",
+            "entity_precedence_schema": "entity-precedence.v1",
+            "frontmatter": {
+              "slug": "prism-project-docs-v1",
+              "version": "v0.0.1",
+              "status": "frozen",
+              "revision_id": "R1",
+              "language": "zh",
+              "domain_required": "false",
+              "ux_required": "false",
+              "parser_contract": "beacon-feature-package-v2",
+              "materials_status": "current",
+              "package_maturity": "filled",
+              "truth_source_model": "intent_first",
+              "research_ref": "docs/beacon/v0.0.1/research/prism-project-docs-v1.md",
+              "canonical_refs": {
+                "prd": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+                "user_story": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+                "test_case": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md"
+              },
+              "provenance": {
+                "- ac_id": "AC-PDO-005",
+                "source_type": "user_decision",
+                "source_ref": "2026-09-29 用户拍板 D3：manju 蒸馏另成 prism-drama-spec-v1，本 feature 只管布局/分发/路径"
+              }
+            },
+            "frontmatter_errors": [],
+            "has_domain_model_section": false,
+            "has_domain_fsm_section": false,
+            "has_illegal_transition_section": false,
+            "entities": [],
+            "entity_precedence": [],
+            "aggregates": [],
+            "illegal_transition_slots": [],
+            "acceptance_criteria": [
+              {
+                "ac_id": "AC-PDO-001",
+                "description": "项目侧 `init --dir <p>/docs/prism` 落盘的目录树与 prism 仓 `content/` 同构（同名子目录 `briefings/storyworlds/masters/pipelines/produced/distribution`），且生成门面 `docs/prism/README.md`，README 内含大纲/母稿/分镜剧本三类索引条目"
+              },
+              {
+                "ac_id": "AC-PDO-002",
+                "description": "公开 skill 指令面写明 `PRISM_HOME` 约定：`skills/prism-director/SKILL.md`、`skills/prism-produce/SKILL.md`、`skills/prism-qa/SKILL.md` 三个文件内命令一律写成 `$PRISM_HOME/scripts/...` 形式；项目仓 `git ls-files` 中 `prompt_compiler.py` / `ai_manga_drama.py` / `drama_spec.py` 的命中路径全部位于 `scripts/` 之下（唯一能力 SoT，无副本）"
+              },
+              {
+                "ac_id": "AC-PDO-003",
+                "description": "`contracts/form-manga-drama.contract.md §4` 与 `content/pipelines/ai-manga-drama/README.md` 对 episode 产物路径只保留一条 canonical 表述，另一条显式标注 alias/deprecated；存在 `scripts/check_*` 断言两处 canonical 一致（含反向断言：alias 行存在且 canonical 行唯一）"
+              },
+              {
+                "ac_id": "AC-PDO-004",
+                "description": "`scripts/install_public_surfaces.sh` 文件头注释明确写出\"只装指令面\"，并写明能力面经 `PRISM_HOME` 获取；`skills/prism-director/SKILL.md` 含能力定位段（声明 `PRISM_HOME` 与 `scripts/` 关系）；`scripts/check_prism_project_docs.sh --install-notice` 对以上两点 exit 0"
+              },
+              {
+                "ac_id": "AC-PDO-005",
+                "description": "`docs/prism/` 产物中不出现需求真相字段（`slug/status/revision_id/parser_contract` frontmatter），`docs/beacon/` 下不出现分镜/成片产物文件；交叉引用仅允许 `docs/prism/**` 引用 beacon feature slug 单向"
+              }
+            ],
+            "bound_ac_ids": [],
+            "orphan_ac_ids": [],
+            "aggregates_missing_illegal_slots": [],
+            "raw_section_titles": [
+              "人话",
+              "User Intent",
+              "User Intent Snapshot",
+              "Alignment Surface（本 revision 必须闭环）",
+              "Phased Backlog（显式不进本包 closure）",
+              "Intent Coverage Matrix",
+              "Acceptance Criteria",
+              "FSM 五元组（项目侧一次作品产线）",
+              "invalid / illegal",
+              "Non-goals",
+              "Deferral Ledger",
+              "关键对象",
+              "用户旅程",
+              "Source Excerpt",
+              "Provenance",
+              "FSM mermaid（投影）"
+            ]
+          }
+        },
+        "recommended_action": ""
+      },
+      "human_closure_contract": {
+        "required": false,
+        "research_path": "docs/beacon/v0.0.1/research/prism-project-docs-v1.md",
+        "research_exists": true,
+        "source_architecture_path": "docs/beacon/v0.0.1/source-architecture/prism-project-docs-v1.md",
+        "source_architecture_exists": true,
+        "required_sections": [
+          "architecture",
+          "business_flow"
+        ],
+        "missing_sections": [],
+        "diagram_types": [],
+        "complexity_signals": []
+      },
+      "requirement_closure_contract": {
+        "required": true,
+        "chain_order": [
+          "research",
+          "prd",
+          "user_story",
+          "test_case",
+          "requirement_clarity",
+          "freeze"
+        ],
+        "human_closure_required": false,
+        "paths": {
+          "research": "docs/beacon/v0.0.1/research/prism-project-docs-v1.md",
+          "prd": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+          "user_story": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+          "test_case": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md"
+        },
+        "exists": {
+          "research": true,
+          "prd": true,
+          "user_story": true,
+          "test_case": true
+        },
+        "required_research_sections": [],
+        "missing_research_sections": [],
+        "ac_projection": {
+          "prd_ac_ids": [],
+          "user_story_ac_ids": [],
+          "test_case_ac_ids": [],
+          "upstream_ac_ids": [],
+          "missing_test_case_ac_ids": []
+        }
+      },
+      "version_projection_truth_contract": {
+        "required": false,
+        "supported": false,
+        "projection_types": [
+          "business_flow",
+          "state_machine"
+        ],
+        "research_path": "docs/beacon/v0.0.1/research/prism-project-docs-v1.md",
+        "research_exists": true,
+        "required_fields": [
+          "prd_refs",
+          "user_story_refs",
+          "test_case_refs",
+          "coverage_notes",
+          "out_of_scope_notes"
+        ],
+        "field_presence": {
+          "prd_refs": false,
+          "user_story_refs": false,
+          "test_case_refs": false,
+          "coverage_notes": false,
+          "out_of_scope_notes": false
+        },
+        "missing_fields": [],
+        "required_refs": {
+          "prd_refs": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+          "user_story_refs": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+          "test_case_refs": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md"
+        },
+        "missing_ref_targets": [],
+        "ready": false
+      },
+      "support_write_topology_contract": {
+        "schema_version": "1.0",
+        "supported": true,
+        "status": "pass",
+        "blocked": false,
+        "reason_code": "",
+        "diagnostics": []
+      },
+      "required_artifacts": [],
+      "scanned_files": [
+        "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+        "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md",
+        "docs/beacon/v0.0.1/features/prism-project-docs-v1/tasks.md",
+        "docs/beacon/v0.0.1/features/prism-project-docs-v1/evidence.md",
+        "docs/beacon/v0.0.1/research/prism-project-docs-v1.md"
+      ]
+    },
+    "domain_fsm": {
+      "schema_version": "1.0",
+      "feature": "prism-project-docs-v1",
+      "feature_slug": "prism-project-docs-v1",
+      "version": "v0.0.1",
+      "truth_path": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+      "tests_path": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md",
+      "required": false,
+      "blocked": false,
+      "status": "not_required",
+      "reason_code": "",
+      "findings": [],
+      "requirement": {
+        "required": false,
+        "reason": "version_below_v1_6_7",
+        "explicit": false,
+        "partial": false,
+        "complexity": false,
+        "business_signal": false,
+        "version_supported": false
+      },
+      "projection": {
+        "schema_version": "1.0",
+        "domain_fsm_schema": "domain-fsm.v1",
+        "entity_precedence_schema": "entity-precedence.v1",
+        "frontmatter": {
+          "slug": "prism-project-docs-v1",
+          "version": "v0.0.1",
+          "status": "frozen",
+          "revision_id": "R1",
+          "language": "zh",
+          "domain_required": "false",
+          "ux_required": "false",
+          "parser_contract": "beacon-feature-package-v2",
+          "materials_status": "current",
+          "package_maturity": "filled",
+          "truth_source_model": "intent_first",
+          "research_ref": "docs/beacon/v0.0.1/research/prism-project-docs-v1.md",
+          "canonical_refs": {
+            "prd": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+            "user_story": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+            "test_case": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md"
+          },
+          "provenance": {
+            "- ac_id": "AC-PDO-005",
+            "source_type": "user_decision",
+            "source_ref": "2026-09-29 用户拍板 D3：manju 蒸馏另成 prism-drama-spec-v1，本 feature 只管布局/分发/路径"
+          }
+        },
+        "frontmatter_errors": [],
+        "has_domain_model_section": false,
+        "has_domain_fsm_section": false,
+        "has_illegal_transition_section": false,
+        "entities": [],
+        "entity_precedence": [],
+        "aggregates": [],
+        "illegal_transition_slots": [],
+        "acceptance_criteria": [
+          {
+            "ac_id": "AC-PDO-001",
+            "description": "项目侧 `init --dir <p>/docs/prism` 落盘的目录树与 prism 仓 `content/` 同构（同名子目录 `briefings/storyworlds/masters/pipelines/produced/distribution`），且生成门面 `docs/prism/README.md`，README 内含大纲/母稿/分镜剧本三类索引条目"
+          },
+          {
+            "ac_id": "AC-PDO-002",
+            "description": "公开 skill 指令面写明 `PRISM_HOME` 约定：`skills/prism-director/SKILL.md`、`skills/prism-produce/SKILL.md`、`skills/prism-qa/SKILL.md` 三个文件内命令一律写成 `$PRISM_HOME/scripts/...` 形式；项目仓 `git ls-files` 中 `prompt_compiler.py` / `ai_manga_drama.py` / `drama_spec.py` 的命中路径全部位于 `scripts/` 之下（唯一能力 SoT，无副本）"
+          },
+          {
+            "ac_id": "AC-PDO-003",
+            "description": "`contracts/form-manga-drama.contract.md §4` 与 `content/pipelines/ai-manga-drama/README.md` 对 episode 产物路径只保留一条 canonical 表述，另一条显式标注 alias/deprecated；存在 `scripts/check_*` 断言两处 canonical 一致（含反向断言：alias 行存在且 canonical 行唯一）"
+          },
+          {
+            "ac_id": "AC-PDO-004",
+            "description": "`scripts/install_public_surfaces.sh` 文件头注释明确写出\"只装指令面\"，并写明能力面经 `PRISM_HOME` 获取；`skills/prism-director/SKILL.md` 含能力定位段（声明 `PRISM_HOME` 与 `scripts/` 关系）；`scripts/check_prism_project_docs.sh --install-notice` 对以上两点 exit 0"
+          },
+          {
+            "ac_id": "AC-PDO-005",
+            "description": "`docs/prism/` 产物中不出现需求真相字段（`slug/status/revision_id/parser_contract` frontmatter），`docs/beacon/` 下不出现分镜/成片产物文件；交叉引用仅允许 `docs/prism/**` 引用 beacon feature slug 单向"
+          }
+        ],
+        "bound_ac_ids": [],
+        "orphan_ac_ids": [],
+        "aggregates_missing_illegal_slots": [],
+        "raw_section_titles": [
+          "人话",
+          "User Intent",
+          "User Intent Snapshot",
+          "Alignment Surface（本 revision 必须闭环）",
+          "Phased Backlog（显式不进本包 closure）",
+          "Intent Coverage Matrix",
+          "Acceptance Criteria",
+          "FSM 五元组（项目侧一次作品产线）",
+          "invalid / illegal",
+          "Non-goals",
+          "Deferral Ledger",
+          "关键对象",
+          "用户旅程",
+          "Source Excerpt",
+          "Provenance",
+          "FSM mermaid（投影）"
+        ]
+      },
+      "validation": {
+        "schema_version": "1.0",
+        "required": false,
+        "blocked": false,
+        "status": "not_required",
+        "reason_code": "",
+        "findings": [],
+        "projection": {
+          "schema_version": "1.0",
+          "domain_fsm_schema": "domain-fsm.v1",
+          "entity_precedence_schema": "entity-precedence.v1",
+          "frontmatter": {
+            "slug": "prism-project-docs-v1",
+            "version": "v0.0.1",
+            "status": "frozen",
+            "revision_id": "R1",
+            "language": "zh",
+            "domain_required": "false",
+            "ux_required": "false",
+            "parser_contract": "beacon-feature-package-v2",
+            "materials_status": "current",
+            "package_maturity": "filled",
+            "truth_source_model": "intent_first",
+            "research_ref": "docs/beacon/v0.0.1/research/prism-project-docs-v1.md",
+            "canonical_refs": {
+              "prd": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+              "user_story": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+              "test_case": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md"
+            },
+            "provenance": {
+              "- ac_id": "AC-PDO-005",
+              "source_type": "user_decision",
+              "source_ref": "2026-09-29 用户拍板 D3：manju 蒸馏另成 prism-drama-spec-v1，本 feature 只管布局/分发/路径"
+            }
+          },
+          "frontmatter_errors": [],
+          "has_domain_model_section": false,
+          "has_domain_fsm_section": false,
+          "has_illegal_transition_section": false,
+          "entities": [],
+          "entity_precedence": [],
+          "aggregates": [],
+          "illegal_transition_slots": [],
+          "acceptance_criteria": [
+            {
+              "ac_id": "AC-PDO-001",
+              "description": "项目侧 `init --dir <p>/docs/prism` 落盘的目录树与 prism 仓 `content/` 同构（同名子目录 `briefings/storyworlds/masters/pipelines/produced/distribution`），且生成门面 `docs/prism/README.md`，README 内含大纲/母稿/分镜剧本三类索引条目"
+            },
+            {
+              "ac_id": "AC-PDO-002",
+              "description": "公开 skill 指令面写明 `PRISM_HOME` 约定：`skills/prism-director/SKILL.md`、`skills/prism-produce/SKILL.md`、`skills/prism-qa/SKILL.md` 三个文件内命令一律写成 `$PRISM_HOME/scripts/...` 形式；项目仓 `git ls-files` 中 `prompt_compiler.py` / `ai_manga_drama.py` / `drama_spec.py` 的命中路径全部位于 `scripts/` 之下（唯一能力 SoT，无副本）"
+            },
+            {
+              "ac_id": "AC-PDO-003",
+              "description": "`contracts/form-manga-drama.contract.md §4` 与 `content/pipelines/ai-manga-drama/README.md` 对 episode 产物路径只保留一条 canonical 表述，另一条显式标注 alias/deprecated；存在 `scripts/check_*` 断言两处 canonical 一致（含反向断言：alias 行存在且 canonical 行唯一）"
+            },
+            {
+              "ac_id": "AC-PDO-004",
+              "description": "`scripts/install_public_surfaces.sh` 文件头注释明确写出\"只装指令面\"，并写明能力面经 `PRISM_HOME` 获取；`skills/prism-director/SKILL.md` 含能力定位段（声明 `PRISM_HOME` 与 `scripts/` 关系）；`scripts/check_prism_project_docs.sh --install-notice` 对以上两点 exit 0"
+            },
+            {
+              "ac_id": "AC-PDO-005",
+              "description": "`docs/prism/` 产物中不出现需求真相字段（`slug/status/revision_id/parser_contract` frontmatter），`docs/beacon/` 下不出现分镜/成片产物文件；交叉引用仅允许 `docs/prism/**` 引用 beacon feature slug 单向"
+            }
+          ],
+          "bound_ac_ids": [],
+          "orphan_ac_ids": [],
+          "aggregates_missing_illegal_slots": [],
+          "raw_section_titles": [
+            "人话",
+            "User Intent",
+            "User Intent Snapshot",
+            "Alignment Surface（本 revision 必须闭环）",
+            "Phased Backlog（显式不进本包 closure）",
+            "Intent Coverage Matrix",
+            "Acceptance Criteria",
+            "FSM 五元组（项目侧一次作品产线）",
+            "invalid / illegal",
+            "Non-goals",
+            "Deferral Ledger",
+            "关键对象",
+            "用户旅程",
+            "Source Excerpt",
+            "Provenance",
+            "FSM mermaid（投影）"
+          ]
+        }
+      },
+      "recommended_action": ""
+    },
+    "fake_delivery": {
+      "schema_version": "1.0",
+      "status": "pass",
+      "ok": true,
+      "closure_allowed": true,
+      "detected": [],
+      "policy_terms": [
+        "placeholder implementation",
+        "docs-only completion",
+        "fake runner evidence",
+        "zero assertions",
+        "placeholder evidence"
+      ],
+      "reason_code": ""
+    },
+    "feature_package_validation": {
+      "schema_version": "1.0",
+      "feature": "prism-project-docs-v1",
+      "feature_slug": "prism-project-docs-v1",
+      "version": "v0.0.1",
+      "status": "pass",
+      "blocked": false,
+      "reason_code": "",
+      "generated_at": "2026-09-29T16:30:24.802485+00:00",
+      "package_dir": "docs/beacon/v0.0.1/features/prism-project-docs-v1",
+      "truth_frontmatter": {
+        "slug": "prism-project-docs-v1",
+        "version": "v0.0.1",
+        "status": "frozen",
+        "revision_id": "R1",
+        "language": "zh",
+        "domain_required": "false",
+        "ux_required": "false",
+        "parser_contract": "beacon-feature-package-v2",
+        "materials_status": "current",
+        "package_maturity": "filled",
+        "truth_source_model": "intent_first",
+        "research_ref": "docs/beacon/v0.0.1/research/prism-project-docs-v1.md",
+        "canonical_refs": {
+          "prd": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+          "user_story": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+          "test_case": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md"
+        },
+        "provenance": {
+          "- ac_id": "AC-PDO-005",
+          "source_type": "user_decision",
+          "source_ref": "2026-09-29 用户拍板 D3：manju 蒸馏另成 prism-drama-spec-v1，本 feature 只管布局/分发/路径"
+        }
+      },
+      "ac_count": 5,
+      "test_count": 22,
+      "checkbox_count": 7,
+      "evidence_row_count": 1,
+      "gate_authority": "canonical_surfaces_preserved",
+      "checkbox_gate_bypass": false,
+      "task_evidence_gate": {
+        "pass": true,
+        "checked_ok": 0,
+        "checked_bad": 0,
+        "unbound": 0,
+        "findings": [],
+        "reason_code": ""
+      },
+      "evidence_gate_truth": false,
+      "diagnostics": [],
+      "report_path": "docs/beacon/v0.0.1/.machine/requirement/feature-package-validation.json"
+    },
+    "determinism_check": {
+      "placeholder_count": 0,
+      "hollow_template_count": 0
+    },
+    "closure_contract": {
+      "closure_allowed": true,
+      "detected": []
+    },
+    "recommended_action": ""
+  },
+  "truth_frontmatter_sync": {
+    "updated": false,
+    "status": "frozen",
+    "path": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md"
+  },
+  "revision_delta": {
+    "schema_version": "1.0",
+    "feature": "prism-project-docs-v1",
+    "feature_slug": "prism-project-docs-v1",
+    "version": "v0.0.1",
+    "revision_id": "R2",
+    "source_revision_id": "R1",
+    "status": "not_applicable",
+    "cleanup_required": false,
+    "removed_requirement_count": 0,
+    "added_requirement_count": 0,
+    "retained_requirement_count": 0,
+    "removed_requirement_surfaces": [],
+    "added_requirement_surfaces": [],
+    "retained_requirement_surfaces": [],
+    "current_baseline_hash": "sha256:35cd94f11d35b4a145abff54195bd01e2e217bf3a0fd4cb175a83a7c69dcb77d",
+    "source_baseline_hash": "",
+    "story_state_ref": "docs/beacon/v0.0.1/.machine/user-story/prism-project-docs-v1.json",
+    "generated_at": "2026-09-29T16:30:24.851131+00:00",
+    "json_ref": "docs/beacon/v0.0.1/.machine/execution/revision-delta-prism-project-docs-v1.json",
+    "markdown_ref": "docs/beacon/v0.0.1/execution/revision-delta-prism-project-docs-v1.md"
+  },
+  "release_projection_sync": {
+    "status": "pass",
+    "truth_authority": false,
+    "lifecycle_stage": false,
+    "release_publish_action": false,
+    "feature_projection": {
+      "schema_version": "1.0",
+      "status": "pass",
+      "feature": "prism-project-docs-v1",
+      "feature_slug": "prism-project-docs-v1",
+      "version": "v0.0.1",
+      "json_path": "docs/beacon/v0.0.1/.machine/change/prism-project-docs-v1.json",
+      "markdown_path": "docs/beacon/v0.0.1/change/prism-project-docs-v1.md",
+      "json_written": true,
+      "markdown_exists": true,
+      "projection_role": {
+        "artifact_role": "version_aggregate_projection",
+        "truth_source": false,
+        "gate_source": false,
+        "lifecycle_stage": false,
+        "release_publish_action": false
+      },
+      "payload": {
+        "schema_version": "1.0",
+        "version": "v0.0.1",
+        "feature": "prism-project-docs-v1",
+        "feature_slug": "prism-project-docs-v1",
+        "summary": "Maintains release-facing version aggregate projection guards so QA accepted features are included in version change scope before release check.",
+        "status": "generated",
+        "accepted_at": "",
+        "revision_id": "R2",
+        "projection_role": {
+          "artifact_role": "version_aggregate_projection",
+          "truth_source": false,
+          "gate_source": false,
+          "lifecycle_stage": false,
+          "release_publish_action": false
+        },
+        "truth_authority": false,
+        "lifecycle_stage": false,
+        "added": [
+          "Feature-level release projection input for QA accepted current feature",
+          "Version aggregate projection inclusion guard and repair metadata",
+          "Repair-only projection rebuild path for release preflight artifacts"
+        ],
+        "removed": [
+          "Manual-only version aggregate projection repair before release check"
+        ],
+        "fixed": [
+          "Release check can route missing current feature projection to an actionable repair path",
+          "Version aggregate projection remains a read model instead of requirement truth"
+        ],
+        "traceability_refs": [
+          "docs/beacon/v0.0.1/change/prism-project-docs-v1.md",
+          "docs/beacon/v0.0.1/prd/prism-project-docs-v1.md",
+          "docs/beacon/v0.0.1/user-story/prism-project-docs-v1.md",
+          "docs/beacon/v0.0.1/qa/test-cases/prism-project-docs-v1.md",
+          "docs/beacon/v0.0.1/.machine/execution/prism-project-docs-v1.revision.json"
+        ],
+        "generated_at": "2026-09-29T16:30:24.851719+00:00"
+      }
+    },
+    "version_aggregate_projection": {
+      "schema_version": "1.0",
+      "status": "pass",
+      "version": "v0.0.1",
+      "markdown_path": "docs/beacon/v0.0.1/change/v0.0.1.md",
+      "json_path": "docs/beacon/v0.0.1/.machine/change/v0.0.1.json",
+      "feature_count": 18,
+      "feature_slugs": [
+        "prism-adaptation-contracts-v1",
+        "prism-asset-gate-rollout-v1",
+        "prism-campaign-schema-v1",
+        "prism-extract-v1",
+        "prism-form-av-v1",
+        "prism-form-blog-thread-v1",
+        "prism-form-image-post-v1",
+        "prism-form-novel-v1",
+        "prism-form-product-v1",
+        "prism-form-writing-v1",
+        "prism-learning-memory-v1",
+        "prism-manga-asset-gate-v1",
+        "prism-metrics-publication-v1",
+        "prism-metrics-snapshot-v1",
+        "prism-monetization-contracts-v1",
+        "prism-project-docs-v1",
+        "prism-publish-bridge-v1",
+        "prism-review-loop-v1"
+      ],
+      "projection_role": {
+        "artifact_role": "version_aggregate_projection",
+        "truth_source": false,
+        "gate_source": false,
+        "lifecycle_stage": false,
+        "release_publish_action": false
+      },
+      "truth_authority": false,
+      "lifecycle_stage": false,
+      "release_publish_action": false,
+      "implementation_order": {
+        "status": "analyzed",
+        "feature_count": 18,
+        "ordered_feature_slugs": [
+          "prism-asset-gate-rollout-v1",
+          "prism-form-product-v1",
+          "prism-manga-asset-gate-v1",
+          "prism-extract-v1",
+          "prism-campaign-schema-v1",
+          "prism-form-writing-v1",
+          "prism-form-blog-thread-v1",
+          "prism-form-image-post-v1",
+          "prism-form-novel-v1",
+          "prism-form-av-v1",
+          "prism-publish-bridge-v1",
+          "prism-metrics-publication-v1",
+          "prism-metrics-snapshot-v1",
+          "prism-review-loop-v1",
+          "prism-learning-memory-v1",
+          "prism-monetization-contracts-v1",
+          "prism-adaptation-contracts-v1",
+          "prism-project-docs-v1"
+        ],
+        "waves": [
+          {
+            "wave": 1,
+            "parallelizable": true,
+            "features": [
+              {
+                "feature": "prism-asset-gate-rollout-v1",
+                "feature_slug": "prism-asset-gate-rollout-v1",
+                "depends_on_features": [],
+                "direct_delivery_services": [],
+                "writable_services": [],
+                "parallelizable": true,
+                "reason_code": "parallel_no_conflict"
+              },
+              {
+                "feature": "prism-form-product-v1",
+                "feature_slug": "prism-form-product-v1",
+                "depends_on_features": [],
+                "direct_delivery_services": [],
+                "writable_services": [],
+                "parallelizable": true,
+                "reason_code": "parallel_no_conflict"
+              },
+              {
+                "feature": "prism-manga-asset-gate-v1",
+                "feature_slug": "prism-manga-asset-gate-v1",
+                "depends_on_features": [],
+                "direct_delivery_services": [],
+                "writable_services": [],
+                "parallelizable": true,
+                "reason_code": "parallel_no_conflict"
+              },
+              {
+                "feature": "prism-extract-v1",
+                "feature_slug": "prism-extract-v1",
+                "depends_on_features": [],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": true,
+                "reason_code": "parallel_no_conflict"
+              },
+              {
+                "feature": "prism-project-docs-v1",
+                "feature_slug": "prism-project-docs-v1",
+                "depends_on_features": [],
+                "direct_delivery_services": [],
+                "writable_services": [],
+                "parallelizable": true,
+                "reason_code": "parallel_no_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 2,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-campaign-schema-v1",
+                "feature_slug": "prism-campaign-schema-v1",
+                "depends_on_features": [
+                  "prism-extract-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 3,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-form-writing-v1",
+                "feature_slug": "prism-form-writing-v1",
+                "depends_on_features": [
+                  "prism-campaign-schema-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 4,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-form-blog-thread-v1",
+                "feature_slug": "prism-form-blog-thread-v1",
+                "depends_on_features": [
+                  "prism-form-writing-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 5,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-form-image-post-v1",
+                "feature_slug": "prism-form-image-post-v1",
+                "depends_on_features": [
+                  "prism-form-blog-thread-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 6,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-form-novel-v1",
+                "feature_slug": "prism-form-novel-v1",
+                "depends_on_features": [
+                  "prism-form-image-post-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 7,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-form-av-v1",
+                "feature_slug": "prism-form-av-v1",
+                "depends_on_features": [
+                  "prism-form-novel-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 8,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-publish-bridge-v1",
+                "feature_slug": "prism-publish-bridge-v1",
+                "depends_on_features": [
+                  "prism-form-av-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 9,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-metrics-publication-v1",
+                "feature_slug": "prism-metrics-publication-v1",
+                "depends_on_features": [
+                  "prism-publish-bridge-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 10,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-metrics-snapshot-v1",
+                "feature_slug": "prism-metrics-snapshot-v1",
+                "depends_on_features": [
+                  "prism-metrics-publication-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 11,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-review-loop-v1",
+                "feature_slug": "prism-review-loop-v1",
+                "depends_on_features": [
+                  "prism-metrics-snapshot-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 12,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-learning-memory-v1",
+                "feature_slug": "prism-learning-memory-v1",
+                "depends_on_features": [
+                  "prism-review-loop-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 13,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-monetization-contracts-v1",
+                "feature_slug": "prism-monetization-contracts-v1",
+                "depends_on_features": [
+                  "prism-learning-memory-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 14,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-adaptation-contracts-v1",
+                "feature_slug": "prism-adaptation-contracts-v1",
+                "depends_on_features": [
+                  "prism-monetization-contracts-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
