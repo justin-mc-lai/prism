@@ -44,7 +44,8 @@ Shared preamble:
 | `gen-truth` | `references/modes/gen-truth.md` | authoritative truth package |
 | `gen-truth-init` | `references/modes/gen-truth-init.md` | init feature package |
 | `gen-change` | `references/modes/gen-change.md` | change log / delta |
-| `truth-review` | `references/modes/truth-review.md` | Plan→Truth Review Gate before freeze |
+| `eval-truth-review` | `references/modes/eval-truth-review.md` | Plan→Truth Review Gate before freeze |
+| `truth-review` | (legacy alias of eval-truth-review) | 兼容旧引用 |
 | `gen-refreeze` | `references/modes/gen-refreeze.md` | refreeze after change |
 
 Index: `references/modes/INDEX.md`
@@ -63,6 +64,7 @@ Index: `references/modes/INDEX.md`
 - `public_id`: `truth`
 - `evidence_refs` (paths/commands used)
 - `recommended_next_harness` one of: goal|plan|truth|design|implement|qa|release|stop
+- `plain_language_delivery_summary` (required): 用一句普通人能看懂的话说明「这次做了什么」（人话，复用 truth L0 规范，不改机器字段）
 - Mode-specific fields (plan_artifact, findings, truth package paths, QA scorecard, release brief, …) per mode file
 
 ## Evals

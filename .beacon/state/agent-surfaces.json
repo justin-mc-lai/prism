@@ -67,60 +67,62 @@
       "source_root": "/Users/apple/Developer/Personal/products/beacon/skills/beacon",
       "source_kind": "packaged_skill_directory",
       "taxonomy_version": "",
+      "resolution_mode": "project-copy",
+      "global_surface_root": "",
       "installed_skills": [
         {
           "id": "beacon-design",
           "path": ".agents/skills/beacon-design",
           "source_path": "beacon-design",
           "source_kind": "packaged_skill_directory",
-          "source_hash": "4a25ffaed3d4550f4f0200f61ae443f62839cc2ec0eedba4217cfc6308000396"
+          "source_hash": "c99d24ee5513af187a85e7a43dd8be4af6663977737367f4789221ab474822e4"
         },
         {
           "id": "beacon-goal",
           "path": ".agents/skills/beacon-goal",
           "source_path": "beacon-goal",
           "source_kind": "packaged_skill_directory",
-          "source_hash": "e96e0005b2503d5df835c6d3132838b386277845bac39a2e5d51420f4979f70a"
+          "source_hash": "900a002e8ec7ed49a860b8a33b1af0557e84c9ad8fded82a3cd1b3f7bf36d937"
         },
         {
           "id": "beacon-implement",
           "path": ".agents/skills/beacon-implement",
           "source_path": "beacon-implement",
           "source_kind": "packaged_skill_directory",
-          "source_hash": "9c45465eb3b227eaa7ab9b6bf3311c1ee2f51b863e7c3f4d914597ba53f82f83"
+          "source_hash": "8002ec990382645305d75aa76d87eb1e141ab4442ce4662a15830adce852e303"
         },
         {
           "id": "beacon-plan",
           "path": ".agents/skills/beacon-plan",
           "source_path": "beacon-plan",
           "source_kind": "packaged_skill_directory",
-          "source_hash": "3ac42f1d1264c8165dcacf5f39e184db42a72a76412c225a21d2f48666af2010"
+          "source_hash": "c81986be6ddcaff7aaf3466783c6afff8d52beed2429feb4621618ffde9b8426"
         },
         {
           "id": "beacon-qa",
           "path": ".agents/skills/beacon-qa",
           "source_path": "beacon-qa",
           "source_kind": "packaged_skill_directory",
-          "source_hash": "d9b02a512a757d48c5c66077a04fac8400cafb0f2d127275fd0fb71ba12eab28"
+          "source_hash": "4d78bc1c4fe25dca775b1ddce81d4677074205a17b39c3c547b4d5cd21748950"
         },
         {
           "id": "beacon-release",
           "path": ".agents/skills/beacon-release",
           "source_path": "beacon-release",
           "source_kind": "packaged_skill_directory",
-          "source_hash": "eab85d2c6c49b5ecef3de84fc2d4452a4fae0f97222801c75d4a9d8efb7bedfc"
+          "source_hash": "0c10d611a4cba66263b558b47f562df80885b6b281bf21ba6eca57caad179e09"
         },
         {
           "id": "beacon-truth",
           "path": ".agents/skills/beacon-truth",
           "source_path": "beacon-truth",
           "source_kind": "packaged_skill_directory",
-          "source_hash": "1b9800d58970c66eabd3a79aafbd840e24cbca7280534b3ad8a4e159fd61c5e0"
+          "source_hash": "e1577fed7d2d8a472f3723f78aff5b52b1771278b5e5efaca5fc775e43941025"
         }
       ]
     }
   },
-  "updated_at": "2026-08-11T03:09:04.125352+00:00",
-  "runtime_version": "v1.6.12",
+  "updated_at": "2026-09-29T16:29:45.857897+00:00",
+  "runtime_version": "v1.6.19",
   "docs_version": "v0.0.1"
 }
