@@ -16,6 +16,9 @@ import sys
 import tempfile
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from drama_spec import validate_drama_spec  # noqa: E402
+
 
 ROOT = Path(__file__).resolve().parents[1]
 PIPELINE_DIR = ROOT / "content" / "pipelines" / "ai-manga-drama"
@@ -152,6 +155,9 @@ def validate_storyboard(storyboard: Path, *, verbose: bool = False) -> dict:
     mode = data.get("mode")
     if mode not in ("production", "template"):
         errors.append(f"mode must be production|template, got {mode!r}")
+    spec = data.get("spec")
+    if spec is not None and spec != "manju-drama":
+        errors.append(f"spec must be manju-drama, got {spec!r}")
     character_ids = _validate_entities(data, "characters", errors, base_dir=base_dir)
     scene_ids = _validate_entities(data, "scenes", errors, kind_enum=("interior", "exterior"), base_dir=base_dir)
     prop_ids = _validate_entities(data, "props", errors, base_dir=base_dir)
@@ -165,8 +171,10 @@ def validate_storyboard(storyboard: Path, *, verbose: bool = False) -> dict:
     if not isinstance(shots, list) or not shots:
         errors.append("shots must be a non-empty list")
     else:
-        if mode == "production" and not (8 <= len(shots) <= 12):
-            errors.append(f"production storyboard requires 8-12 shots, got {len(shots)}")
+        if mode == "production":
+            lo, hi = (4, 12) if spec == "manju-drama" else (8, 12)
+            if not (lo <= len(shots) <= hi):
+                errors.append(f"production storyboard requires {lo}-{hi} shots, got {len(shots)}")
         shot_ids = []
         for i, shot in enumerate(shots, 1):
             if not isinstance(shot, dict):
@@ -189,21 +197,33 @@ def validate_storyboard(storyboard: Path, *, verbose: bool = False) -> dict:
                 for ref in prop_refs:
                     if ref not in prop_ids:
                         errors.append(f"shot {i} prop_ref {ref!r} not in props")
+            cast = shot.get("cast") or []
+            if not isinstance(cast, list):
+                errors.append(f"shot {i} cast must be a list")
+            else:
+                for ref in cast:
+                    if ref not in character_ids:
+                        errors.append(f"shot {i} cast {ref!r} not in characters")
             shot_ids.append(str(shot.get("shot_id") or ""))
         if len(set(shot_ids)) != len(shot_ids):
             errors.append("shot_id must be unique")
+    # drama-storyboard-spec gate（MJ-*）：spec=manju-drama 时强制，含 beats 结构/音效/站位/特写配比
+    drama = validate_drama_spec(data)
+    errors.extend(drama["errors"])
     if errors:
         return {"valid": False, "errors": errors}
     if verbose:
         print(
             f"schema_ok shot_count={len(shots)} duration={duration} ratio={data.get('ratio')} "
-            f"characters={len(character_ids)} scenes={len(scene_ids)} props={len(prop_ids)}"
+            f"spec={spec or '-'} characters={len(character_ids)} scenes={len(scene_ids)} props={len(prop_ids)}"
         )
     return {
         "valid": True,
         "errors": [],
         "shot_count": len(shots),
         "duration_seconds": duration,
+        "spec": spec,
+        "drama_spec": drama["stats"],
         "character_count": len(character_ids),
         "scene_count": len(scene_ids),
         "prop_count": len(prop_ids),

@@ -10,6 +10,11 @@
     "ratio": { "enum": ["9:16"] },
     "duration_seconds": { "type": "integer", "minimum": 60, "maximum": 90 },
     "mode": { "enum": ["production", "template"] },
+    "spec": {
+      "type": "string",
+      "enum": ["manju-drama"],
+      "description": "分镜填写规范标识。manju-drama = 神魔修仙漫剧规范（MJ-*）：shots[].beats[] 强制过 contracts/drama-storyboard-spec.contract.md，编译器额外产出 分镜脚本.md。"
+    },
     "characters": {
       "type": "array",
       "minItems": 1,
@@ -78,10 +83,38 @@
             "description": "本镜参考图路径（相对 episode 目录）。缺省回落 asset_ref；声明即须解析到真实文件。"
           },
           "scene_ref": { "type": "string", "description": "必须解析到 scenes[].id" },
+          "cast": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "本分镜实际出现的角色 id 列表（MJ-TPL-03 人物栏，仅写名称）。必须逐个解析到 characters[].id。"
+          },
           "prop_refs": {
             "type": "array",
             "items": { "type": "string" },
             "description": "必须逐个解析到 props[].id"
+          },
+          "beats": {
+            "type": "array",
+            "minItems": 1,
+            "description": "子镜（MJ-UNIT/字段定式）。spec=manju-drama 时必填 5-8 个，每个 2-5s，Σ = duration_seconds；规则见 contracts/drama-storyboard-spec.contract.md。",
+            "items": {
+              "type": "object",
+              "required": ["beat_id", "duration_seconds", "shot_size", "camera_move", "vfx", "sfx", "dialogue", "emotion", "speech_rate", "on_screen", "blocking", "description"],
+              "properties": {
+                "beat_id": { "type": "string" },
+                "duration_seconds": { "type": "number", "minimum": 1, "maximum": 6 },
+                "shot_size": { "enum": ["极远景", "远景", "全景", "中景", "近景", "特写", "大特写"] },
+                "camera_move": { "type": "string" },
+                "vfx": { "type": "string", "minLength": 1 },
+                "sfx": { "type": "string", "minLength": 1, "maxLength": 10, "description": "音效，≤10 字，禁写「无」" },
+                "dialogue": { "type": "string" },
+                "emotion": { "enum": ["愤怒", "冷漠", "平静", "蔑视", "威严", "恐惧", "内心独白", "坚定"] },
+                "speech_rate": { "enum": ["正常", "激动", "快", "低沉", "慢", "内心独白"] },
+                "on_screen": { "type": "integer", "minimum": 1, "description": "画面内人数（MJ-BLOCK-01）" },
+                "blocking": { "type": "string", "minLength": 1, "description": "站位/方位锁定语句（MJ-BLOCK-02..09）" },
+                "description": { "type": "string", "minLength": 1 }
+              }
+            }
           }
         }
       }

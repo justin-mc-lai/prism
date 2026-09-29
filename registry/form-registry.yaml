@@ -18,6 +18,13 @@ shared_gates:
     reference: skills/prism-director/references/prompt-syntax-table.md
     attribution: docs/ATTRIBUTION-drama-prompt-repos.md
     scope: [comic, manga_drama, live_drama, vlog, book_video]
+  drama_storyboard_spec:
+    contract: contracts/drama-storyboard-spec.contract.md
+    reference: skills/prism-director/references/drama-storyboard-spec.md
+    impl: scripts/drama_spec.py
+    attribution: docs/ATTRIBUTION-drama-prompt-repos.md
+    scope: [manga_drama]
+    trigger: "storyboard.spec == manju-drama"
   asset_render:
     contract: contracts/asset-render.contract.md
     compiler: scripts/prompt_compiler.py

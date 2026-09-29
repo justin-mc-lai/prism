@@ -26,6 +26,7 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from ai_manga_drama import load_json, validate_storyboard  # noqa: E402
+from drama_spec import AUDIO_REQUIRED_LINE, validate_drama_spec  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 OVERLAY = ROOT / "registry" / "style-presets.yaml"
@@ -75,6 +76,32 @@ CLASS_DESIGN_LABEL = {
     "prop": "fixed prop design",
 }
 
+# manju（神魔修仙漫剧规范）资产布局：16:9 资产图，规则见 references/drama-storyboard-spec.md MJ-CHAR/SCENE/WEAP
+MANJU_LAYOUT = {
+    "character": (
+        "人物四视图，16:9比例，正面全身、侧面全身、背面全身、面部特写，四格横向排列，背景纯白，"
+        "人物直立静止无动作，无特效，无兵器，均匀柔和打光，光线明亮通透，无明显阴影，整体清晰干净，"
+        "双手自然垂落无手持物品，NO text labels, NO watermarks"
+    ),
+    "creature": (
+        "神兽四视图，16:9比例，正面、侧面、背面、关键特征特写，四格横向排列，含人形剪影尺度参照，"
+        "均匀柔和打光，无明显阴影，无特效，NO text labels, NO watermarks"
+    ),
+    "crowd": (
+        "群像单图，16:9比例，前景密集背景稀疏，无主导英雄角色，NO text labels, NO watermarks"
+    ),
+    "scene": (
+        "场景环境图，16:9比例，无人，无动态特效，立体化、三维空间感、非扁平化，光影层次丰富，"
+        "景深明确，柔和自然光，环境漫反射，无强光束，无特效光，主体居中，NO text labels, NO watermarks"
+    ),
+    "prop": (
+        "兵器三视图，16:9比例，正面、侧面、细节特写，三格横向排列，背景纯黑，均匀柔和打光，"
+        "无明显阴影，无特效，NO text labels, NO watermarks"
+    ),
+}
+# MJ-CHAR-01/02：禁止戏剧光/精确角度光/瞳孔色细节
+MANJU_STYLE_SUFFIX = "中性平光，无戏剧光，无强光束，无丁达尔光，无瞳孔颜色细节，CG动漫风格，非真人"
+
 
 def ref_safe_style(positive: str) -> str:
     """Strip drama-light tokens from a style string (ref layer must stay neutral)."""
@@ -117,12 +144,14 @@ def asset_class(item: dict, default: str) -> str:
     return default
 
 
-def asset_prompt(item: dict, kind: str, preset: dict) -> str:
+def asset_prompt(item: dict, kind: str, preset: dict, manju: bool = False) -> str:
     cls = asset_class(item, kind)
-    layout = CLASS_LAYOUT[cls]
+    layout = MANJU_LAYOUT[cls] if manju else CLASS_LAYOUT[cls]
     design = CLASS_DESIGN_LABEL[cls]
     traits = str(item.get("traits") or "").replace("[creature]", "").replace("[crowd]", "").strip()
     style = ref_safe_style(str(preset.get("positive_prompt") or ""))
+    if manju:
+        style = f"{style}, {MANJU_STYLE_SUFFIX}" if style else MANJU_STYLE_SUFFIX
     negative = str(preset.get("negative_prompt") or "")
     aid = str(item.get("id"))
     lines = [
@@ -181,8 +210,26 @@ def video_prompt(shot: dict, preset: dict) -> str:
     lines = [
         f"[SHOT] {shot.get('shot_id')}, {shot.get('duration_seconds')}s",
         f"[ACTION] {shot.get('description')}",
+    ]
+    beats = shot.get("beats")
+    if beats:
+        lines.append(f"[BEATS] {len(beats)} 子镜按序生成，切点保留在运动轨迹中：")
+        cursor = 0.0
+        for beat in beats:
+            start = cursor
+            cursor += float(beat.get("duration_seconds") or 0)
+            dlg = str(beat.get("dialogue") or "").strip()
+            line = (
+                f"  {start:g}-{cursor:g}s {beat.get('shot_size')}/{beat.get('camera_move')} "
+                f"| 画面内 {beat.get('on_screen')} 人，{beat.get('blocking')} "
+                f"| {beat.get('description')} 特效：{beat.get('vfx')}"
+            )
+            if dlg:
+                line += f" | 台词（{beat.get('emotion')}/{beat.get('speech_rate')}）：{dlg}"
+            lines.append(line + f" | 音效：{beat.get('sfx')}")
+    lines += [
         f"[DIALOGUE] {dialogue or '无'}",
-        f"[AUDIO] <由下游 provider 依据 dialogue 合成；Prism 不本地生成音频>",
+        f"[AUDIO] 音效逐子镜在场（见 [BEATS]）；配音由下游 provider 依据 dialogue 合成，Prism 不本地生成音频",
         f"[STYLE] {style}",
         f"[NEGATIVE] {negative}",
     ]
@@ -209,6 +256,59 @@ def build_srt(shots: list[dict]) -> str:
     return "\n".join(blocks)
 
 
+def _scene_frame(scene: dict) -> str:
+    kind = "内景" if scene.get("kind") == "interior" else "外景"
+    name = str(scene.get("name") or "未指定")
+    variant = str(scene.get("variant") or "").strip()
+    return f"{variant}/{kind}/{name}" if variant else f"{kind}/{name}"
+
+
+def build_storyboard_script(storyboard: dict, by_id: dict[str, dict], style_name: str) -> str:
+    """分镜脚本（MJ-TPL 模板格式）。spec=manju-drama 时产出。"""
+    ep = storyboard.get("episode")
+    lines = [
+        f"# 分镜脚本 — {ep}",
+        "",
+        f"风格预设：{style_name}",
+        "",
+        "> 规范：`skills/prism-director/references/drama-storyboard-spec.md`（MJ-*）；",
+        "> 每分镜末行音频要求固定；子镜切点/音效/站位为必填。",
+        "",
+    ]
+    for idx, shot in enumerate(storyboard.get("shots") or [], 1):
+        sid = shot.get("shot_id")
+        scene = by_id.get(str(shot.get("scene_ref") or ""), {})
+        cast = shot.get("cast") or []
+        cast_names = "、".join(str(by_id.get(c, {}).get("name") or c) for c in cast) or "（未声明）"
+        props = [by_id.get(str(p), {}) for p in (shot.get("prop_refs") or [])]
+        prop_names = "、".join(str(p.get("name")) for p in props if p) or "（无）"
+        dur = shot.get("duration_seconds")
+        lines += [
+            f"## 分镜 {idx} · {sid}（{dur}s）",
+            "",
+            f"- 序号：{idx}-1",
+            f"- 场景画面：{_scene_frame(scene)}",
+            f"- 人物：{cast_names}",
+            f"- 兵器/法宝：{prop_names}",
+            "- 神兽/坐骑：（无）",
+            f"- 时长：{dur}秒",
+            "- 画面效果：",
+        ]
+        cursor = 0.0
+        for beat in shot.get("beats") or []:
+            start = cursor
+            cursor += float(beat.get("duration_seconds") or 0)
+            dlg = str(beat.get("dialogue") or "").strip()
+            dlg_part = f"（台词：{beat.get('emotion')}，语速{beat.get('speech_rate')}“{dlg}”）" if dlg else "（无台词）"
+            lines.append(
+                f"  - {start:g}-{cursor:g}秒：【人物：{cast_names}】【场景：{scene.get('name', '未指定')}】"
+                f"【兵器：{prop_names}】【法器：】{beat.get('shot_size')}，{beat.get('camera_move')}，"
+                f"{beat.get('description')}。特效：{beat.get('vfx')}。{dlg_part}音效：{beat.get('sfx')}。"
+            )
+        lines += [f"- {AUDIO_REQUIRED_LINE}", ""]
+    return "\n".join(lines).rstrip() + "\n"
+
+
 def compile_episode(episode_dir: Path, style_id: str) -> dict[str, Path]:
     storyboard_path = episode_dir / "storyboard.json"
     result = validate_storyboard(storyboard_path)
@@ -233,6 +333,7 @@ def compile_episode(episode_dir: Path, style_id: str) -> dict[str, Path]:
 
     ep = storyboard.get("episode")
     style_name = f"{preset.get('name_zh') or preset.get('name')} ({style_id})"
+    manju = storyboard.get("spec") == "manju-drama"
 
     asset_lines = [
         f"# 资产提示词 — {ep}",
@@ -251,7 +352,7 @@ def compile_episode(episode_dir: Path, style_id: str) -> dict[str, Path]:
                 f"- ref_image: `{item.get('ref_image') or '<待生成并回填>'}`",
                 "",
                 "```text",
-                asset_prompt(item, kind, preset),
+                asset_prompt(item, kind, preset, manju),
                 "```",
                 "",
             ]
@@ -284,10 +385,19 @@ def compile_episode(episode_dir: Path, style_id: str) -> dict[str, Path]:
         "video": episode_dir / "视频提示词.md",
         "srt": episode_dir / f"{ep}.srt",
     }
+    if manju:
+        outputs["script"] = episode_dir / "分镜脚本.md"
+        outputs["drama_spec_audit"] = episode_dir / "drama-spec.json"
     outputs["assets"].write_text("\n".join(asset_lines).rstrip() + "\n", encoding="utf-8")
     outputs["image"].write_text("\n".join(image_lines).rstrip() + "\n", encoding="utf-8")
     outputs["video"].write_text("\n".join(video_lines).rstrip() + "\n", encoding="utf-8")
     outputs["srt"].write_text(build_srt(storyboard.get("shots") or []), encoding="utf-8")
+    if manju:
+        outputs["script"].write_text(build_storyboard_script(storyboard, by_id, style_name), encoding="utf-8")
+        outputs["drama_spec_audit"].write_text(
+            json.dumps(validate_drama_spec(storyboard), ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
     return outputs
 
 

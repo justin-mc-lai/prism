@@ -1,0 +1,398 @@
+{
+  "episode": "ep-xianxia-spec",
+  "title": "神女证道 · 规范样本",
+  "ratio": "9:16",
+  "duration_seconds": 60,
+  "mode": "production",
+  "spec": "manju-drama",
+  "characters": [
+    {
+      "id": "char-01-shennu",
+      "name": "神女",
+      "traits": "青年女性，身形修长，体态挺拔如松，气质孤冷；头部：鹅蛋脸，长直黑发，双目深邃如渊，目光沉稳；上身：素白广袖长袍，垂坠感强，领口素净；下身：曳地长裙，白色布靴；双手自然垂落无手持物品",
+      "ref_image": "assets/char-01-shennu.png"
+    },
+    {
+      "id": "char-02-mozun",
+      "name": "魔尊重渊",
+      "traits": "中年男性，身形魁梧，气场威严；头部：方正脸型，束冠黑发夹银丝，双目深邃如渊；上身：玄黑重甲，肩甲厚重，暗金纹路；下身：黑金战裙，战靴；双手自然垂落无手持物品",
+      "ref_image": "assets/char-02-mozun.png"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene-01-tiandian",
+      "name": "虚空大殿",
+      "kind": "interior",
+      "traits": "悬浮虚空中的古殿，巨大石柱环绕，地面有星辉纹路，殿心为圆形法坛，远端隐约可见云海",
+      "variant": "夜，星辉微光",
+      "ref_image": "assets/scene-01-tiandian.png"
+    }
+  ],
+  "props": [
+    {
+      "id": "prop-01-yujian",
+      "name": "玉简",
+      "traits": "古玉质长简，半透明，简身有云纹与梵文，边缘微光",
+      "holder": "char-01-shennu",
+      "ref_image": "assets/prop-01-yujian.png"
+    },
+    {
+      "id": "prop-02-lingjian",
+      "name": "灵剑",
+      "traits": "素白长剑，剑身半透，剑脊有梵文，剑柄缠素白丝绦，出鞘时有星辉",
+      "holder": "char-01-shennu",
+      "ref_image": "assets/prop-02-lingjian.png"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "shot-01",
+      "description": "虚空大殿开场：神女立于殿心，魔尊自阴影中现身，二人首次对峙。",
+      "dialogue": "",
+      "asset_ref": "assets/char-01-shennu.png",
+      "duration_seconds": 15,
+      "scene_ref": "scene-01-tiandian",
+      "cast": [
+        "char-01-shennu",
+        "char-02-mozun"
+      ],
+      "prop_refs": [],
+      "beats": [
+        {
+          "beat_id": "shot-01-b1",
+          "duration_seconds": 3,
+          "shot_size": "极远景",
+          "camera_move": "推",
+          "vfx": "星辉自地面纹路缓缓亮起，尘埃悬浮",
+          "sfx": "殿门开合",
+          "dialogue": "",
+          "emotion": "冷漠",
+          "speech_rate": "正常",
+          "on_screen": 2,
+          "blocking": "画面内共计2人，神女居中立于法坛，魔尊位于左前方阴影处，其余空间无人",
+          "description": "虚空大殿全貌，神女立于殿心法坛，魔尊自左前阴影中缓步现身"
+        },
+        {
+          "beat_id": "shot-01-b2",
+          "duration_seconds": 3,
+          "shot_size": "全景",
+          "camera_move": "移",
+          "vfx": "魔尊身后虚无焰翻涌",
+          "sfx": "衣袂摩擦",
+          "dialogue": "三千年了，你终于肯踏入此殿",
+          "emotion": "冷漠",
+          "speech_rate": "正常",
+          "on_screen": 2,
+          "blocking": "严格2人，神女位于右后，魔尊位于左前，二人相距数丈，无第三人",
+          "description": "横向移动跟拍魔尊步伐，神女立于右后，二人距离逐渐拉近"
+        },
+        {
+          "beat_id": "shot-01-b3",
+          "duration_seconds": 3,
+          "shot_size": "中景",
+          "camera_move": "跟",
+          "vfx": "二人之间的空气泛起细微金光涟漪",
+          "sfx": "寂静压迫感",
+          "dialogue": "",
+          "emotion": "威严",
+          "speech_rate": "正常",
+          "on_screen": 2,
+          "blocking": "严格2人，神女在右，魔尊在左，其余人物位于画外空间不变",
+          "description": "中景双人对峙，魔尊停步，神女侧首回望，气场相撞"
+        },
+        {
+          "beat_id": "shot-01-b4",
+          "duration_seconds": 3,
+          "shot_size": "特写",
+          "camera_move": "推",
+          "vfx": "神女眼底一闪而过的星辉",
+          "sfx": "心跳沉重",
+          "dialogue": "",
+          "emotion": "平静",
+          "speech_rate": "正常",
+          "on_screen": 1,
+          "blocking": "画面内仅神女面部特写，魔尊位于画外左侧空间不变",
+          "description": "神女面部特写，神情沉稳，目光如炬，眼尾有极淡星辉"
+        },
+        {
+          "beat_id": "shot-01-b5",
+          "duration_seconds": 3,
+          "shot_size": "近景",
+          "camera_move": "摇",
+          "vfx": "玉简自袖中浮现的柔和白光",
+          "sfx": "衣料轻响",
+          "dialogue": "",
+          "emotion": "坚定",
+          "speech_rate": "正常",
+          "on_screen": 1,
+          "blocking": "画面内仅神女上半身，魔尊位于画外左侧空间不变",
+          "description": "近景扫过神女之手，自袖中取出一枚玉简，光晕柔白"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot-02",
+      "description": "魔尊逼问，神女沉默，玉简光晕渐亮。",
+      "dialogue": "",
+      "asset_ref": "assets/char-02-mozun.png",
+      "duration_seconds": 15,
+      "scene_ref": "scene-01-tiandian",
+      "cast": [
+        "char-01-shennu",
+        "char-02-mozun"
+      ],
+      "prop_refs": [
+        "prop-01-yujian"
+      ],
+      "beats": [
+        {
+          "beat_id": "shot-02-b1",
+          "duration_seconds": 3,
+          "shot_size": "中景",
+          "camera_move": "急推",
+          "vfx": "魔尊周身血光暗涌",
+          "sfx": "沉闷脚步",
+          "dialogue": "魔尊重渊，你本不该再醒来了",
+          "emotion": "威严",
+          "speech_rate": "正常",
+          "on_screen": 2,
+          "blocking": "严格2人，魔尊居中逼近，神女位于右后，无第三人在场",
+          "description": "急推魔尊中景，重甲踏地，血光自甲缝渗出，神女立于右后"
+        },
+        {
+          "beat_id": "shot-02-b2",
+          "duration_seconds": 3,
+          "shot_size": "近景",
+          "camera_move": "跟",
+          "vfx": "血光与星辉在二人间碰撞",
+          "sfx": "虚空震颤",
+          "dialogue": "",
+          "emotion": "冷漠",
+          "speech_rate": "正常",
+          "on_screen": 2,
+          "blocking": "严格2人，魔尊在左，神女在右，其余人物位于画外空间不变",
+          "description": "跟拍魔尊逼近的一步，神女不退，两种光芒在两人之间相撞"
+        },
+        {
+          "beat_id": "shot-02-b3",
+          "duration_seconds": 3,
+          "shot_size": "特写",
+          "camera_move": "推",
+          "vfx": "魔尊眼中血红一瞬亮起",
+          "sfx": "低吼回声",
+          "dialogue": "",
+          "emotion": "愤怒",
+          "speech_rate": "正常",
+          "on_screen": 1,
+          "blocking": "画面内仅魔尊面部特写，神女位于画外右侧空间不变",
+          "description": "魔尊面部特写，眉眼压低，血光在眼底一闪"
+        },
+        {
+          "beat_id": "shot-02-b4",
+          "duration_seconds": 3,
+          "shot_size": "中景",
+          "camera_move": "摇",
+          "vfx": "玉简白光扩散成环",
+          "sfx": "玉鸣清越",
+          "dialogue": "这剑上的血，至今还未干透",
+          "emotion": "坚定",
+          "speech_rate": "正常",
+          "on_screen": 2,
+          "blocking": "严格2人，神女居中持玉简于胸前，魔尊位于左后，无他人",
+          "description": "摇镜至神女，玉简悬于胸前，白光成环护体，直视魔尊"
+        },
+        {
+          "beat_id": "shot-02-b5",
+          "duration_seconds": 3,
+          "shot_size": "大特写",
+          "camera_move": "甩",
+          "vfx": "玉简云纹内流动的金光",
+          "sfx": "符文低震",
+          "dialogue": "",
+          "emotion": "冷漠",
+          "speech_rate": "正常",
+          "on_screen": 1,
+          "blocking": "画面内仅玉简特写，二人位于画外空间不变",
+          "description": "大特写玉简符文，金光自简身云纹中流动，微微发烫"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot-03",
+      "description": "神女拔剑，剑光破殿，魔尊退了半步。",
+      "dialogue": "",
+      "asset_ref": "assets/char-01-shennu.png",
+      "duration_seconds": 15,
+      "scene_ref": "scene-01-tiandian",
+      "cast": [
+        "char-01-shennu",
+        "char-02-mozun"
+      ],
+      "prop_refs": [
+        "prop-01-yujian",
+        "prop-02-lingjian"
+      ],
+      "beats": [
+        {
+          "beat_id": "shot-03-b1",
+          "duration_seconds": 3,
+          "shot_size": "全景",
+          "camera_move": "升降",
+          "vfx": "殿内星辉纹路整体亮起",
+          "sfx": "气浪翻卷",
+          "dialogue": "",
+          "emotion": "坚定",
+          "speech_rate": "正常",
+          "on_screen": 2,
+          "blocking": "严格2人，神女居中，魔尊位于左前，无第四人",
+          "description": "升镜俯瞰大殿，神女居中拔剑，剑身星辉与地面纹路共鸣"
+        },
+        {
+          "beat_id": "shot-03-b2",
+          "duration_seconds": 3,
+          "shot_size": "中景",
+          "camera_move": "推",
+          "vfx": "剑锋凝出白色剑芒",
+          "sfx": "剑鸣裂空",
+          "dialogue": "既已相见，何必再问其中缘由",
+          "emotion": "平静",
+          "speech_rate": "正常",
+          "on_screen": 2,
+          "blocking": "严格2人，神女在右举剑，魔尊在左，其余人物位于画外空间不变",
+          "description": "推镜神女中景，举剑齐眉，剑芒凝白，语气平静"
+        },
+        {
+          "beat_id": "shot-03-b3",
+          "duration_seconds": 3,
+          "shot_size": "特写",
+          "camera_move": "跟",
+          "vfx": "剑身浮现梵文金光",
+          "sfx": "梵唱低吟",
+          "dialogue": "",
+          "emotion": "威严",
+          "speech_rate": "正常",
+          "on_screen": 1,
+          "blocking": "画面内仅剑与神女手部特写，魔尊位于画外左侧空间不变",
+          "description": "特写剑身与握剑之手，梵文自剑脊浮现，金光流转"
+        },
+        {
+          "beat_id": "shot-03-b4",
+          "duration_seconds": 3,
+          "shot_size": "近景",
+          "camera_move": "甩",
+          "vfx": "剑光横扫留下的光痕",
+          "sfx": "爆音撕裂",
+          "dialogue": "",
+          "emotion": "愤怒",
+          "speech_rate": "正常",
+          "on_screen": 2,
+          "blocking": "严格2人，剑光自右向左，魔尊位于左后退步，无他人",
+          "description": "甩镜剑光横扫，魔尊侧身退步，甲面被光痕擦过"
+        },
+        {
+          "beat_id": "shot-03-b5",
+          "duration_seconds": 3,
+          "shot_size": "中景",
+          "camera_move": "震颤",
+          "vfx": "地面星辉纹路被剑光震裂",
+          "sfx": "石屑崩落",
+          "dialogue": "",
+          "emotion": "冷漠",
+          "speech_rate": "正常",
+          "on_screen": 2,
+          "blocking": "严格2人，神女在右持剑，魔尊在左半跪，其余人物位于画外空间不变",
+          "description": "镜头震颤，剑光过后地面纹路崩裂，魔尊单膝顿地"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot-04",
+      "description": "剑指咽喉，黑屏收束，留悬念。",
+      "dialogue": "",
+      "asset_ref": "assets/char-01-shennu.png",
+      "duration_seconds": 15,
+      "scene_ref": "scene-01-tiandian",
+      "cast": [
+        "char-01-shennu",
+        "char-02-mozun"
+      ],
+      "prop_refs": [
+        "prop-01-yujian",
+        "prop-02-lingjian"
+      ],
+      "beats": [
+        {
+          "beat_id": "shot-04-b1",
+          "duration_seconds": 3,
+          "shot_size": "中景",
+          "camera_move": "推",
+          "vfx": "剑尖凝出一线寒光",
+          "sfx": "衣帛破风",
+          "dialogue": "放我过去，否则此剑绝不留情",
+          "emotion": "冷漠",
+          "speech_rate": "正常",
+          "on_screen": 2,
+          "blocking": "严格2人，神女在右前举剑，魔尊在左后仰首，无他人",
+          "description": "推镜二人中景，剑尖直指魔尊咽喉，神女面容冷峻"
+        },
+        {
+          "beat_id": "shot-04-b2",
+          "duration_seconds": 3,
+          "shot_size": "特写",
+          "camera_move": "跟",
+          "vfx": "剑尖寒光与魔尊喉前血光相触",
+          "sfx": "呼吸凝滞",
+          "dialogue": "",
+          "emotion": "恐惧",
+          "speech_rate": "正常",
+          "on_screen": 1,
+          "blocking": "画面内仅剑尖与魔尊喉部特写，神女位于画外右侧空间不变",
+          "description": "特写剑尖抵喉，魔尊喉结微动，眼神一瞬失据"
+        },
+        {
+          "beat_id": "shot-04-b3",
+          "duration_seconds": 3,
+          "shot_size": "近景",
+          "camera_move": "摇",
+          "vfx": "魔尊身后虚无焰渐熄",
+          "sfx": "火焰余响",
+          "dialogue": "",
+          "emotion": "蔑视",
+          "speech_rate": "正常",
+          "on_screen": 1,
+          "blocking": "画面内仅魔尊上半身，神女位于画外右侧空间不变",
+          "description": "摇镜魔尊近景，他缓缓勾起嘴角，虚无焰在身后熄灭"
+        },
+        {
+          "beat_id": "shot-04-b4",
+          "duration_seconds": 3,
+          "shot_size": "中景",
+          "camera_move": "拉",
+          "vfx": "殿内星辉回缩成一点",
+          "sfx": "虚空低鸣",
+          "dialogue": "三界崩塌之日，我自会归来",
+          "emotion": "威严",
+          "speech_rate": "正常",
+          "on_screen": 2,
+          "blocking": "严格2人，神女在右持剑，魔尊在左立起，其余人物位于画外空间不变",
+          "description": "拉镜二人中景，魔尊起身，周身血光再度聚拢"
+        },
+        {
+          "beat_id": "shot-04-b5",
+          "duration_seconds": 3,
+          "shot_size": "特写",
+          "camera_move": "急拉",
+          "vfx": "黑屏前最后一缕星辉",
+          "sfx": "心跳骤停",
+          "dialogue": "",
+          "emotion": "内心独白",
+          "speech_rate": "内心独白",
+          "on_screen": 1,
+          "blocking": "画面内仅神女侧脸特写，魔尊位于画外左侧空间不变",
+          "description": "急拉特写神女侧脸，她抬眼望向虚空，画面急速收黑"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "valid": true,
+  "errors": [],
+  "stats": {
+    "applied": true,
+    "shots": [
+      {
+        "shot_id": "shot-01",
+        "beats": 5,
+        "seconds": 15.0,
+        "closeups": 1,
+        "closeup_ratio": 0.2
+      },
+      {
+        "shot_id": "shot-02",
+        "beats": 5,
+        "seconds": 15.0,
+        "closeups": 2,
+        "closeup_ratio": 0.4
+      },
+      {
+        "shot_id": "shot-03",
+        "beats": 5,
+        "seconds": 15.0,
+        "closeups": 1,
+        "closeup_ratio": 0.2
+      },
+      {
+        "shot_id": "shot-04",
+        "beats": 5,
+        "seconds": 15.0,
+        "closeups": 2,
+        "closeup_ratio": 0.4
+      }
+    ]
+  }
+}

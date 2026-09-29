@@ -23,6 +23,20 @@
 - 两版**节拍密度阈值方向相反**（Toonflow 上限 / ai-comic-studio 下限），各自对应不同失败模式，
   非可互换常数；引用须带来源与适用条件，换模型/形态须重测。
 
+## 补充来源 — 神魔修仙漫剧分镜填写规范（未 vendor，仅蒸馏）
+
+| 上游 | 形态 | 核实日期 | License |
+|---|---|---|---|
+| 社区传播的「神魔修仙漫剧分镜填写规范」（微信文档图片，2026-09-29 收；原始作者/发布方未知） | 即梦 Seedance 2.0 · 仙侠短剧分镜脚本范本 | 2026-09-29（收件） | **未知** |
+
+- 取用：`skills/prism-director/references/drama-storyboard-spec.md`（MJ-* 规则 86 条）+
+  `contracts/drama-storyboard-spec.contract.md` + `scripts/drama_spec.py`
+  （执行门 `scripts/check_drama_storyboard_spec.sh`）。
+- **未 vendor 原件**（来源作者/License 未知，不作商业再分发）；只蒸馏判断框架、字段定式与阈值，
+  不复制原文样例数据。因授权链不清，与 §5 `fenggeliaoai/AIPrompts` 同列：**仅作参考语料**。
+- 阈值为**单题材（神魔修仙）+ 单模型（即梦 Seedance 2.0）**条件化观测，非物理常数；
+  换题材/换模型须重测后引用（同 `contracts/drama-storyboard-spec.contract.md` §5）。
+
 ## 本仓使用了什么
 
 1. **蒸馏**（判断框架与阈值，不复制运行时）→
