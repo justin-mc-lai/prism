@@ -1,0 +1,12 @@
+{
+  "schema_version": "workspace-admission-v1",
+  "version": "v0.0.1",
+  "feature_slug": "prism-project-docs-v1",
+  "project_root": "/Users/apple/Developer/Personal/selfmedia/prism",
+  "branch": "beacon/v0.0.1/prism-project-docs-v1",
+  "worktree_path": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1",
+  "base_branch": "main",
+  "issued_at": "2026-09-30T00:19:05.385941+00:00",
+  "git_head": "e5c01a9bf61d2148d1790dea7f0c395da1797598",
+  "status": "pass"
+}

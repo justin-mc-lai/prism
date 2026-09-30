@@ -1,0 +1,1321 @@
+{
+  "schema_version": "1.0",
+  "run_id": "pgr-5fd49f2f4bc1",
+  "public_entry": "beacon-goal",
+  "status": "blocked",
+  "blocked": true,
+  "reason_code": "plan_journey_decomposition_incomplete",
+  "utterance": "实现已冻结的 prism-project-docs-v1（R2：docs/prism 同构落盘 + PRISM_HOME + 路径唯一化 + install 缺口 + beacon 边界；truth/integrity/clarity 全过，change 循环已完成）",
+  "goal_objective": "实现已冻结的 prism-project-docs-v1（R2：docs/prism 同构落盘 + PRISM_HOME + 路径唯一化 + install 缺口 + beacon 边界；truth/integrity/clarity 全过，change 循环已完成）",
+  "goal_status": "active",
+  "goal_budget": null,
+  "goal_fingerprint": "1ba0d5db9cd2",
+  "version": "v0.0.1",
+  "version_resolve": {
+    "version": "v0.0.1",
+    "source": "explicit",
+    "goal_mode": "normal",
+    "project_kind": "external_existing",
+    "runtime_version": "v1.6.19",
+    "project_docs_version": "v0.0.1",
+    "axis": {
+      "runtime_version": "v1.6.19",
+      "project_docs_version": "v0.0.1"
+    },
+    "requested": "v0.0.1"
+  },
+  "feature": "prism-project-docs-v1",
+  "lakes": [],
+  "done_when": [
+    "design_baseline",
+    "design_md_lint",
+    "domain_fsm",
+    "evidence_chain",
+    "continuous_qa"
+  ],
+  "ux_required": true,
+  "stages": [
+    {
+      "stage": "plan",
+      "skills": [
+        "beacon-plan",
+        "mode:pln-program",
+        "mode:pln-program-auto",
+        "mode:pln-program-interactive",
+        "mode:pln-review",
+        "mode:pln-friction",
+        "mode:pln-brainstorm",
+        "mode:pln-source"
+      ],
+      "status": "active",
+      "loaded": true,
+      "plan_subintent": {
+        "schema": "plan-subintent.v1",
+        "subintent": "default",
+        "primary": "beacon-pln-program",
+        "secondary": [],
+        "ordered_focus": [
+          "beacon-pln-program"
+        ],
+        "matched_tokens": [],
+        "confidence": 50,
+        "reason_code": "plan_subintent_default",
+        "writes_truth": false,
+        "may_implement": false,
+        "may_qa_verdict": false,
+        "artifact_kind": "plan_note",
+        "secondary_tracks": [],
+        "status": "ok",
+        "brand": "beacon",
+        "public_shell": "beacon-plan",
+        "progressive_loads": [
+          "beacon-plan",
+          "mode:pln-program",
+          "mode:pln-program-auto",
+          "mode:pln-program-interactive",
+          "mode:pln-review",
+          "mode:pln-friction",
+          "mode:pln-brainstorm",
+          "mode:pln-source"
+        ],
+        "primary_load": "mode:pln-program",
+        "primary_mode": "pln-program",
+        "primary_mode_path": "skills/beacon/beacon-plan/references/modes/pln-program.md",
+        "load_policy": "single_core_skill_progressive_modes",
+        "merged_1plus6": true,
+        "plan_artifact": {
+          "schema": "plan_artifact.v1",
+          "surface_ask": "实现已冻结的 prism-project-docs-v1（R2：docs/prism 同构落盘 + PRISM_HOME + 路径唯一化 + install 缺口 + beacon 边界；truth/integrity/clarity 全过，change 循环已完成）",
+          "persistent_goal": {
+            "objective": "实现已冻结的 prism-project-docs-v1（R2：docs/prism 同构落盘 + PRISM_HOME + 路径唯一化 + install 缺口 + beacon 边界；truth/integrity/clarity 全过，change 循环已完成）",
+            "status": "active",
+            "token_budget": null,
+            "objective_fingerprint": "1ba0d5db9cd2",
+            "source": "plan_artifact.v1"
+          },
+          "deep_want": "推进可验证交付；需补齐成功标准与失败边界。｜表层：实现已冻结的 prism-project-docs-v1（R2：docs/prism 同构落盘 + PRISM_HOME + 路径唯一化 + install 缺口 + beacon 边界；truth/integrity/clarity 全过，change 循环已完成）",
+          "non_goals": [
+            "不在 plan 阶段写入 frozen truth",
+            "不在 plan 阶段实现代码或宣称 QA/release 通过"
+          ],
+          "methodology_track": "default",
+          "primary_skill": "beacon-pln-program",
+          "options": [
+            {
+              "id": "A",
+              "title": "轻量 program/plan 后进入 truth",
+              "tradeoff": "默认路径"
+            },
+            {
+              "id": "B",
+              "title": "若风险高则先 review/source",
+              "tradeoff": "多一轮 plan"
+            }
+          ],
+          "recommended_next": {
+            "action": "proceed_truth",
+            "next_stage_hint": "truth",
+            "message": "plan 产出齐备后进入 truth(freeze) 链。"
+          },
+          "evidence_anchors": [],
+          "high_risk": false,
+          "intent_decomposition": {
+            "schema": "intent_decomposition.v1",
+            "generated_at": "2026-09-29T17:11:06.384184+00:00",
+            "surface_ask": "实现已冻结的 prism-project-docs-v1（R2：docs/prism 同构落盘 + PRISM_HOME + 路径唯一化 + install 缺口 + beacon 边界；truth/integrity/clarity 全过，change 循环已完成）",
+            "deep_want": "推进可验证交付；需补齐成功标准与失败边界。｜表层：实现已冻结的 prism-project-docs-v1（R2：docs/prism 同构落盘 + PRISM_HOME + 路径唯一化 + install 缺口 + beacon 边界；truth/integrity/clarity 全过，change 循环已完成）",
+            "intents": [
+              {
+                "id": "I01",
+                "text": "实现已冻结的 prism-project-docs-v1（R2：docs/prism 同构落盘 + PRISM_HOME + 路径唯一化 + install 缺口 + beacon 边界",
+                "kinds": [
+                  "delivery"
+                ],
+                "source_ref": "utterance_clause_1"
+              },
+              {
+                "id": "I02",
+                "text": "truth/integrity/clarity 全过，change 循环已完成）",
+                "kinds": [
+                  "delivery"
+                ],
+                "source_ref": "utterance_clause_2"
+              }
+            ],
+            "journeys": [],
+            "scope": {
+              "mode": "lake",
+              "lakes": [],
+              "ocean_tokens": []
+            },
+            "methodology": {
+              "declared_subintent": "default",
+              "secondary_tracks": []
+            },
+            "signals": {
+              "platform": [],
+              "capability": [],
+              "source": [],
+              "ocean": []
+            },
+            "high_risk_domains": [],
+            "truth_readiness": {
+              "ready": true,
+              "missing": [
+                "host_llm_full_package_fill_pending",
+                "host_agent_skill_authored_fill_pending"
+              ],
+              "blocks_auto_tick_past_plan": false,
+              "requires_journey_freeze": false,
+              "user_facing": "意图拆解可进入 truth 细化。",
+              "task_closure": true
+            },
+            "recommended_truth_artifacts": [
+              "docs/beacon/<ver>/user-story/*-journeys.md",
+              "docs/beacon/<ver>/features/<lake>/truth.md (per lake)",
+              "docs/beacon/<ver>/.machine/user-story/*.json",
+              "domain FSM notes for payment/auth if high_risk"
+            ],
+            "status": "ok",
+            "task_closure_intent": {
+              "schema": "task-closure-intent-advisory.v1",
+              "intent_dimensions": {
+                "status": "pass",
+                "blocked": false,
+                "pass": true,
+                "reason_code": "",
+                "generated_at": "2026-09-29T17:11:06.384237+00:00",
+                "dimensions": [
+                  "actor",
+                  "trigger",
+                  "outcome",
+                  "constraint",
+                  "failure",
+                  "evidence",
+                  "non_goal"
+                ]
+              },
+              "missing_must": {
+                "status": "pass",
+                "blocked": false,
+                "pass": true,
+                "reason_code": "",
+                "generated_at": "2026-09-29T17:11:06.384294+00:00"
+              },
+              "inherited_must_intents": {
+                "status": "pass",
+                "blocked": false,
+                "pass": true,
+                "reason_code": "",
+                "generated_at": "2026-09-29T17:11:06.384299+00:00",
+                "landings": {
+                  "goal_host_subagent": "AC-INH-01",
+                  "shared_worktree_admission": "AC-INH-02",
+                  "agent_trace_v1": "AC-INH-03",
+                  "no_old_shape_soft_compat": "AC-INH-04",
+                  "parent_only_goal_completion": "AC-INH-05"
+                }
+              },
+              "recommended_fill": [
+                "beacon truth init -f <lake> -v v1.6.11",
+                "beacon truth fill-request -f <lake> -v v1.6.11 -u <utterance> --json",
+                "beacon truth fill-apply -f <lake> -v v1.6.11 --request-json <req> --response-json <resp> --json"
+              ]
+            }
+          },
+          "journeys": [],
+          "truth_readiness": {
+            "ready": true,
+            "missing": [
+              "host_llm_full_package_fill_pending",
+              "host_agent_skill_authored_fill_pending"
+            ],
+            "blocks_auto_tick_past_plan": false,
+            "requires_journey_freeze": false,
+            "user_facing": "意图拆解可进入 truth 细化。",
+            "task_closure": true
+          },
+          "plan_subintent": {
+            "subintent": "default",
+            "reason_code": "plan_subintent_default",
+            "matched_tokens": [],
+            "confidence": 50
+          },
+          "completeness": {
+            "surface_ask": true,
+            "deep_want": true,
+            "options": true,
+            "recommended_next": true,
+            "evidence_anchors_ok": true
+          },
+          "structurally_complete": true,
+          "missing_fields": [],
+          "writes_truth": false,
+          "may_implement": false,
+          "generated_at": "2026-09-29T17:11:06.384337+00:00",
+          "status": "ok"
+        }
+      },
+      "plan_artifact": {
+        "schema": "plan_artifact.v1",
+        "surface_ask": "实现已冻结的 prism-project-docs-v1（R2：docs/prism 同构落盘 + PRISM_HOME + 路径唯一化 + install 缺口 + beacon 边界；truth/integrity/clarity 全过，change 循环已完成）",
+        "persistent_goal": {
+          "objective": "实现已冻结的 prism-project-docs-v1（R2：docs/prism 同构落盘 + PRISM_HOME + 路径唯一化 + install 缺口 + beacon 边界；truth/integrity/clarity 全过，change 循环已完成）",
+          "status": "active",
+          "token_budget": null,
+          "objective_fingerprint": "1ba0d5db9cd2",
+          "source": "plan_artifact.v1"
+        },
+        "deep_want": "推进可验证交付；需补齐成功标准与失败边界。｜表层：实现已冻结的 prism-project-docs-v1（R2：docs/prism 同构落盘 + PRISM_HOME + 路径唯一化 + install 缺口 + beacon 边界；truth/integrity/clarity 全过，change 循环已完成）",
+        "non_goals": [
+          "不在 plan 阶段写入 frozen truth",
+          "不在 plan 阶段实现代码或宣称 QA/release 通过"
+        ],
+        "methodology_track": "default",
+        "primary_skill": "beacon-pln-program",
+        "options": [
+          {
+            "id": "A",
+            "title": "轻量 program/plan 后进入 truth",
+            "tradeoff": "默认路径"
+          },
+          {
+            "id": "B",
+            "title": "若风险高则先 review/source",
+            "tradeoff": "多一轮 plan"
+          }
+        ],
+        "recommended_next": {
+          "action": "proceed_truth",
+          "next_stage_hint": "truth",
+          "message": "plan 产出齐备后进入 truth(freeze) 链。"
+        },
+        "evidence_anchors": [],
+        "high_risk": false,
+        "intent_decomposition": {
+          "schema": "intent_decomposition.v1",
+          "generated_at": "2026-09-29T17:11:06.384184+00:00",
+          "surface_ask": "实现已冻结的 prism-project-docs-v1（R2：docs/prism 同构落盘 + PRISM_HOME + 路径唯一化 + install 缺口 + beacon 边界；truth/integrity/clarity 全过，change 循环已完成）",
+          "deep_want": "推进可验证交付；需补齐成功标准与失败边界。｜表层：实现已冻结的 prism-project-docs-v1（R2：docs/prism 同构落盘 + PRISM_HOME + 路径唯一化 + install 缺口 + beacon 边界；truth/integrity/clarity 全过，change 循环已完成）",
+          "intents": [
+            {
+              "id": "I01",
+              "text": "实现已冻结的 prism-project-docs-v1（R2：docs/prism 同构落盘 + PRISM_HOME + 路径唯一化 + install 缺口 + beacon 边界",
+              "kinds": [
+                "delivery"
+              ],
+              "source_ref": "utterance_clause_1"
+            },
+            {
+              "id": "I02",
+              "text": "truth/integrity/clarity 全过，change 循环已完成）",
+              "kinds": [
+                "delivery"
+              ],
+              "source_ref": "utterance_clause_2"
+            }
+          ],
+          "journeys": [],
+          "scope": {
+            "mode": "lake",
+            "lakes": [],
+            "ocean_tokens": []
+          },
+          "methodology": {
+            "declared_subintent": "default",
+            "secondary_tracks": []
+          },
+          "signals": {
+            "platform": [],
+            "capability": [],
+            "source": [],
+            "ocean": []
+          },
+          "high_risk_domains": [],
+          "truth_readiness": {
+            "ready": true,
+            "missing": [
+              "host_llm_full_package_fill_pending",
+              "host_agent_skill_authored_fill_pending"
+            ],
+            "blocks_auto_tick_past_plan": false,
+            "requires_journey_freeze": false,
+            "user_facing": "意图拆解可进入 truth 细化。",
+            "task_closure": true
+          },
+          "recommended_truth_artifacts": [
+            "docs/beacon/<ver>/user-story/*-journeys.md",
+            "docs/beacon/<ver>/features/<lake>/truth.md (per lake)",
+            "docs/beacon/<ver>/.machine/user-story/*.json",
+            "domain FSM notes for payment/auth if high_risk"
+          ],
+          "status": "ok",
+          "task_closure_intent": {
+            "schema": "task-closure-intent-advisory.v1",
+            "intent_dimensions": {
+              "status": "pass",
+              "blocked": false,
+              "pass": true,
+              "reason_code": "",
+              "generated_at": "2026-09-29T17:11:06.384237+00:00",
+              "dimensions": [
+                "actor",
+                "trigger",
+                "outcome",
+                "constraint",
+                "failure",
+                "evidence",
+                "non_goal"
+              ]
+            },
+            "missing_must": {
+              "status": "pass",
+              "blocked": false,
+              "pass": true,
+              "reason_code": "",
+              "generated_at": "2026-09-29T17:11:06.384294+00:00"
+            },
+            "inherited_must_intents": {
+              "status": "pass",
+              "blocked": false,
+              "pass": true,
+              "reason_code": "",
+              "generated_at": "2026-09-29T17:11:06.384299+00:00",
+              "landings": {
+                "goal_host_subagent": "AC-INH-01",
+                "shared_worktree_admission": "AC-INH-02",
+                "agent_trace_v1": "AC-INH-03",
+                "no_old_shape_soft_compat": "AC-INH-04",
+                "parent_only_goal_completion": "AC-INH-05"
+              }
+            },
+            "recommended_fill": [
+              "beacon truth init -f <lake> -v v1.6.11",
+              "beacon truth fill-request -f <lake> -v v1.6.11 -u <utterance> --json",
+              "beacon truth fill-apply -f <lake> -v v1.6.11 --request-json <req> --response-json <resp> --json"
+            ]
+          }
+        },
+        "journeys": [],
+        "truth_readiness": {
+          "ready": true,
+          "missing": [
+            "host_llm_full_package_fill_pending",
+            "host_agent_skill_authored_fill_pending"
+          ],
+          "blocks_auto_tick_past_plan": false,
+          "requires_journey_freeze": false,
+          "user_facing": "意图拆解可进入 truth 细化。",
+          "task_closure": true
+        },
+        "plan_subintent": {
+          "subintent": "default",
+          "reason_code": "plan_subintent_default",
+          "matched_tokens": [],
+          "confidence": 50
+        },
+        "completeness": {
+          "surface_ask": true,
+          "deep_want": true,
+          "options": true,
+          "recommended_next": true,
+          "evidence_anchors_ok": true
+        },
+        "structurally_complete": true,
+        "missing_fields": [],
+        "writes_truth": false,
+        "may_implement": false,
+        "generated_at": "2026-09-29T17:11:06.384337+00:00",
+        "status": "ok"
+      },
+      "references": [
+        "skills/beacon/references/git-worktree-execution-flow.md"
+      ],
+      "worktree_flow": "git-worktree-execution-flow.v1",
+      "public_entry_skill": "beacon-goal",
+      "public_entry_worktree_refs": {
+        "schema": "git-worktree-execution-flow.v1",
+        "required": true,
+        "references": [
+          "skills/beacon/references/git-worktree-execution-flow.md"
+        ],
+        "examples": [
+          "skills/beacon/examples/git-worktree-process-correct-30s.md"
+        ],
+        "bulk_history_forbidden": true
+      }
+    },
+    {
+      "stage": "truth",
+      "skills": [
+        "beacon-truth",
+        "mode:gen-truth",
+        "mode:gen-truth-init",
+        "mode:gen-change",
+        "mode:truth-review",
+        "mode:gen-refreeze"
+      ],
+      "status": "planned",
+      "loaded": false,
+      "references": [
+        "skills/beacon/references/git-worktree-execution-flow.md",
+        "skills/beacon/references/domain-fsm-truth-checklist.md"
+      ],
+      "worktree_flow": "git-worktree-execution-flow.v1"
+    },
+    {
+      "stage": "design",
+      "skills": [
+        "beacon-design",
+        "mode:gen-design",
+        "mode:gen-design-init",
+        "mode:gen-design-system",
+        "mode:gen-design-explore",
+        "mode:gen-design-polish",
+        "mode:gen-prototype"
+      ],
+      "status": "planned",
+      "loaded": false,
+      "ux_gated": true,
+      "references": [
+        "skills/beacon/references/git-worktree-execution-flow.md",
+        "skills/beacon/references/design-philosophy-checklist.md"
+      ],
+      "worktree_flow": "git-worktree-execution-flow.v1"
+    },
+    {
+      "stage": "implement",
+      "skills": [
+        "beacon-implement",
+        "mode:gen-implement"
+      ],
+      "status": "planned",
+      "loaded": false,
+      "references": [
+        "skills/beacon/references/git-worktree-execution-flow.md"
+      ],
+      "examples": [
+        "skills/beacon/examples/git-worktree-process-correct-30s.md"
+      ],
+      "worktree_flow": "git-worktree-execution-flow.v1",
+      "implement_admission": {
+        "allow_implement": true,
+        "reason_code": "goal_implement_admission_ok",
+        "worktree_path": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1",
+        "branch": "beacon/v0.0.1/prism-project-docs-v1",
+        "service_worktree_map": {
+          "prism": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1"
+        }
+      },
+      "cwd": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1"
+    },
+    {
+      "stage": "qa",
+      "skills": [
+        "beacon-qa",
+        "mode:eval-qa",
+        "mode:eval-qa-deep",
+        "mode:eval-real-project",
+        "mode:eval-agent"
+      ],
+      "status": "planned",
+      "loaded": false,
+      "references": [
+        "skills/beacon/references/git-worktree-execution-flow.md"
+      ],
+      "worktree_flow": "git-worktree-execution-flow.v1"
+    },
+    {
+      "stage": "release",
+      "skills": [
+        "beacon-release",
+        "mode:eval-release"
+      ],
+      "status": "planned",
+      "loaded": false,
+      "references": [
+        "skills/beacon/references/git-worktree-execution-flow.md"
+      ],
+      "worktree_flow": "git-worktree-execution-flow.v1"
+    }
+  ],
+  "current_stage": "plan",
+  "progressive_loaded_skills": [
+    "beacon-plan",
+    "mode:pln-program",
+    "mode:pln-program-auto",
+    "mode:pln-program-interactive",
+    "mode:pln-review",
+    "mode:pln-friction",
+    "mode:pln-brainstorm",
+    "mode:pln-source"
+  ],
+  "self_heal": {
+    "pre": {
+      "schema": "goal-self-heal.v1",
+      "phase": "pre",
+      "user_language": "never_expose_gov_skill_names_as_required_user_knowledge",
+      "steps": [
+        {
+          "id": "verify-context",
+          "command": "beacon doctor verify-context -p . --strict --json",
+          "user_facing": "检查项目上下文是否就绪",
+          "auto": true
+        },
+        {
+          "id": "verify-version-surfaces",
+          "command": "beacon doctor verify-version-surfaces -p . --strict --json",
+          "user_facing": "检查版本表面是否一致",
+          "auto": true
+        }
+      ],
+      "note": "Framework rules run here automatically; users only confirm destructive steps."
+    },
+    "mid_on_block": {
+      "schema": "goal-self-heal.v1",
+      "phase": "mid_on_block",
+      "user_language": "never_expose_gov_skill_names_as_required_user_knowledge",
+      "steps": [
+        {
+          "id": "repair-evidence-manifest",
+          "command": "beacon doctor repair-evidence-manifest -p . --json",
+          "user_facing": "尝试修复证据清单",
+          "auto": true
+        },
+        {
+          "id": "workspace-admit",
+          "command": "beacon workspace admit -p . --json",
+          "user_facing": "检查工作区准入",
+          "auto": false
+        }
+      ],
+      "note": "Framework rules run here automatically; users only confirm destructive steps."
+    },
+    "post_release": {
+      "schema": "goal-self-heal.v1",
+      "phase": "post_release",
+      "user_language": "never_expose_gov_skill_names_as_required_user_knowledge",
+      "steps": [
+        {
+          "id": "post-release-local-install",
+          "command": "beacon hooks run beacon-post-release-local-install -p . --confirm",
+          "user_facing": "发布后安装/对齐本机环境（需确认）",
+          "auto": false
+        }
+      ],
+      "note": "Framework rules run here automatically; users only confirm destructive steps."
+    }
+  },
+  "public_surface": {
+    "scheme": "A",
+    "whitelist": [
+      "beacon-goal",
+      "beacon-plan",
+      "beacon-truth",
+      "beacon-design",
+      "beacon-implement",
+      "beacon-qa",
+      "beacon-release"
+    ],
+    "progressive_map": "skills/beacon/references/public-surface-progressive-map.v1.json"
+  },
+  "parallel_plan": {
+    "schema_version": "1.0",
+    "mode": "single_worktree",
+    "main_star": {
+      "role": "main_star",
+      "worktree": ".",
+      "merge_policy": "satellites_merge_to_star_only"
+    },
+    "satellites": [],
+    "one_lake_one_satellite": false
+  },
+  "blocked_streak": 0,
+  "heartbeat_interval_sec": 120,
+  "last_heartbeat_at": "",
+  "last_substep": "",
+  "stall_flag": false,
+  "supervisor": {
+    "attached": true,
+    "session_id": "sup-a4bd9fa4ca",
+    "state": "active",
+    "interval_sec": 120,
+    "attached_at": "2026-09-29T17:11:08.514966+00:00"
+  },
+  "implement_delegate": "",
+  "verifier": {
+    "required_for_complete": true,
+    "present": false,
+    "refs": [],
+    "source": ""
+  },
+  "release_human_gate": true,
+  "plan_artifact": {
+    "schema": "plan_artifact.v1",
+    "surface_ask": "实现已冻结的 prism-project-docs-v1（R2：docs/prism 同构落盘 + PRISM_HOME + 路径唯一化 + install 缺口 + beacon 边界；truth/integrity/clarity 全过，change 循环已完成）",
+    "persistent_goal": {
+      "objective": "实现已冻结的 prism-project-docs-v1（R2：docs/prism 同构落盘 + PRISM_HOME + 路径唯一化 + install 缺口 + beacon 边界；truth/integrity/clarity 全过，change 循环已完成）",
+      "status": "active",
+      "token_budget": null,
+      "objective_fingerprint": "1ba0d5db9cd2",
+      "source": "plan_artifact.v1"
+    },
+    "deep_want": "推进可验证交付；需补齐成功标准与失败边界。｜表层：实现已冻结的 prism-project-docs-v1（R2：docs/prism 同构落盘 + PRISM_HOME + 路径唯一化 + install 缺口 + beacon 边界；truth/integrity/clarity 全过，change 循环已完成）",
+    "non_goals": [
+      "不在 plan 阶段写入 frozen truth",
+      "不在 plan 阶段实现代码或宣称 QA/release 通过"
+    ],
+    "methodology_track": "default",
+    "primary_skill": "beacon-pln-program",
+    "options": [
+      {
+        "id": "A",
+        "title": "轻量 program/plan 后进入 truth",
+        "tradeoff": "默认路径"
+      },
+      {
+        "id": "B",
+        "title": "若风险高则先 review/source",
+        "tradeoff": "多一轮 plan"
+      }
+    ],
+    "recommended_next": {
+      "action": "proceed_truth",
+      "next_stage_hint": "truth",
+      "message": "plan 产出齐备后进入 truth(freeze) 链。"
+    },
+    "evidence_anchors": [],
+    "high_risk": false,
+    "intent_decomposition": {
+      "schema": "intent_decomposition.v1",
+      "generated_at": "2026-09-29T17:11:06.384184+00:00",
+      "surface_ask": "实现已冻结的 prism-project-docs-v1（R2：docs/prism 同构落盘 + PRISM_HOME + 路径唯一化 + install 缺口 + beacon 边界；truth/integrity/clarity 全过，change 循环已完成）",
+      "deep_want": "推进可验证交付；需补齐成功标准与失败边界。｜表层：实现已冻结的 prism-project-docs-v1（R2：docs/prism 同构落盘 + PRISM_HOME + 路径唯一化 + install 缺口 + beacon 边界；truth/integrity/clarity 全过，change 循环已完成）",
+      "intents": [
+        {
+          "id": "I01",
+          "text": "实现已冻结的 prism-project-docs-v1（R2：docs/prism 同构落盘 + PRISM_HOME + 路径唯一化 + install 缺口 + beacon 边界",
+          "kinds": [
+            "delivery"
+          ],
+          "source_ref": "utterance_clause_1"
+        },
+        {
+          "id": "I02",
+          "text": "truth/integrity/clarity 全过，change 循环已完成）",
+          "kinds": [
+            "delivery"
+          ],
+          "source_ref": "utterance_clause_2"
+        }
+      ],
+      "journeys": [],
+      "scope": {
+        "mode": "lake",
+        "lakes": [],
+        "ocean_tokens": []
+      },
+      "methodology": {
+        "declared_subintent": "default",
+        "secondary_tracks": []
+      },
+      "signals": {
+        "platform": [],
+        "capability": [],
+        "source": [],
+        "ocean": []
+      },
+      "high_risk_domains": [],
+      "truth_readiness": {
+        "ready": true,
+        "missing": [
+          "host_llm_full_package_fill_pending",
+          "host_agent_skill_authored_fill_pending"
+        ],
+        "blocks_auto_tick_past_plan": false,
+        "requires_journey_freeze": false,
+        "user_facing": "意图拆解可进入 truth 细化。",
+        "task_closure": true
+      },
+      "recommended_truth_artifacts": [
+        "docs/beacon/<ver>/user-story/*-journeys.md",
+        "docs/beacon/<ver>/features/<lake>/truth.md (per lake)",
+        "docs/beacon/<ver>/.machine/user-story/*.json",
+        "domain FSM notes for payment/auth if high_risk"
+      ],
+      "status": "ok",
+      "task_closure_intent": {
+        "schema": "task-closure-intent-advisory.v1",
+        "intent_dimensions": {
+          "status": "pass",
+          "blocked": false,
+          "pass": true,
+          "reason_code": "",
+          "generated_at": "2026-09-29T17:11:06.384237+00:00",
+          "dimensions": [
+            "actor",
+            "trigger",
+            "outcome",
+            "constraint",
+            "failure",
+            "evidence",
+            "non_goal"
+          ]
+        },
+        "missing_must": {
+          "status": "pass",
+          "blocked": false,
+          "pass": true,
+          "reason_code": "",
+          "generated_at": "2026-09-29T17:11:06.384294+00:00"
+        },
+        "inherited_must_intents": {
+          "status": "pass",
+          "blocked": false,
+          "pass": true,
+          "reason_code": "",
+          "generated_at": "2026-09-29T17:11:06.384299+00:00",
+          "landings": {
+            "goal_host_subagent": "AC-INH-01",
+            "shared_worktree_admission": "AC-INH-02",
+            "agent_trace_v1": "AC-INH-03",
+            "no_old_shape_soft_compat": "AC-INH-04",
+            "parent_only_goal_completion": "AC-INH-05"
+          }
+        },
+        "recommended_fill": [
+          "beacon truth init -f <lake> -v v1.6.11",
+          "beacon truth fill-request -f <lake> -v v1.6.11 -u <utterance> --json",
+          "beacon truth fill-apply -f <lake> -v v1.6.11 --request-json <req> --response-json <resp> --json"
+        ]
+      }
+    },
+    "journeys": [],
+    "truth_readiness": {
+      "ready": true,
+      "missing": [
+        "host_llm_full_package_fill_pending",
+        "host_agent_skill_authored_fill_pending"
+      ],
+      "blocks_auto_tick_past_plan": false,
+      "requires_journey_freeze": false,
+      "user_facing": "意图拆解可进入 truth 细化。",
+      "task_closure": true
+    },
+    "plan_subintent": {
+      "subintent": "default",
+      "reason_code": "plan_subintent_default",
+      "matched_tokens": [],
+      "confidence": 50
+    },
+    "completeness": {
+      "surface_ask": true,
+      "deep_want": true,
+      "options": true,
+      "recommended_next": true,
+      "evidence_anchors_ok": true
+    },
+    "structurally_complete": true,
+    "missing_fields": [],
+    "writes_truth": false,
+    "may_implement": false,
+    "generated_at": "2026-09-29T17:11:06.384337+00:00",
+    "status": "ok"
+  },
+  "intent_decomposition": {
+    "schema": "intent_decomposition.v1",
+    "generated_at": "2026-09-29T17:11:06.384184+00:00",
+    "surface_ask": "实现已冻结的 prism-project-docs-v1（R2：docs/prism 同构落盘 + PRISM_HOME + 路径唯一化 + install 缺口 + beacon 边界；truth/integrity/clarity 全过，change 循环已完成）",
+    "deep_want": "推进可验证交付；需补齐成功标准与失败边界。｜表层：实现已冻结的 prism-project-docs-v1（R2：docs/prism 同构落盘 + PRISM_HOME + 路径唯一化 + install 缺口 + beacon 边界；truth/integrity/clarity 全过，change 循环已完成）",
+    "intents": [
+      {
+        "id": "I01",
+        "text": "实现已冻结的 prism-project-docs-v1（R2：docs/prism 同构落盘 + PRISM_HOME + 路径唯一化 + install 缺口 + beacon 边界",
+        "kinds": [
+          "delivery"
+        ],
+        "source_ref": "utterance_clause_1"
+      },
+      {
+        "id": "I02",
+        "text": "truth/integrity/clarity 全过，change 循环已完成）",
+        "kinds": [
+          "delivery"
+        ],
+        "source_ref": "utterance_clause_2"
+      }
+    ],
+    "journeys": [],
+    "scope": {
+      "mode": "lake",
+      "lakes": [],
+      "ocean_tokens": []
+    },
+    "methodology": {
+      "declared_subintent": "default",
+      "secondary_tracks": []
+    },
+    "signals": {
+      "platform": [],
+      "capability": [],
+      "source": [],
+      "ocean": []
+    },
+    "high_risk_domains": [],
+    "truth_readiness": {
+      "ready": true,
+      "missing": [
+        "host_llm_full_package_fill_pending",
+        "host_agent_skill_authored_fill_pending"
+      ],
+      "blocks_auto_tick_past_plan": false,
+      "requires_journey_freeze": false,
+      "user_facing": "意图拆解可进入 truth 细化。",
+      "task_closure": true
+    },
+    "recommended_truth_artifacts": [
+      "docs/beacon/<ver>/user-story/*-journeys.md",
+      "docs/beacon/<ver>/features/<lake>/truth.md (per lake)",
+      "docs/beacon/<ver>/.machine/user-story/*.json",
+      "domain FSM notes for payment/auth if high_risk"
+    ],
+    "status": "ok",
+    "task_closure_intent": {
+      "schema": "task-closure-intent-advisory.v1",
+      "intent_dimensions": {
+        "status": "pass",
+        "blocked": false,
+        "pass": true,
+        "reason_code": "",
+        "generated_at": "2026-09-29T17:11:06.384237+00:00",
+        "dimensions": [
+          "actor",
+          "trigger",
+          "outcome",
+          "constraint",
+          "failure",
+          "evidence",
+          "non_goal"
+        ]
+      },
+      "missing_must": {
+        "status": "pass",
+        "blocked": false,
+        "pass": true,
+        "reason_code": "",
+        "generated_at": "2026-09-29T17:11:06.384294+00:00"
+      },
+      "inherited_must_intents": {
+        "status": "pass",
+        "blocked": false,
+        "pass": true,
+        "reason_code": "",
+        "generated_at": "2026-09-29T17:11:06.384299+00:00",
+        "landings": {
+          "goal_host_subagent": "AC-INH-01",
+          "shared_worktree_admission": "AC-INH-02",
+          "agent_trace_v1": "AC-INH-03",
+          "no_old_shape_soft_compat": "AC-INH-04",
+          "parent_only_goal_completion": "AC-INH-05"
+        }
+      },
+      "recommended_fill": [
+        "beacon truth init -f <lake> -v v1.6.11",
+        "beacon truth fill-request -f <lake> -v v1.6.11 -u <utterance> --json",
+        "beacon truth fill-apply -f <lake> -v v1.6.11 --request-json <req> --response-json <resp> --json"
+      ]
+    }
+  },
+  "journeys": [],
+  "host_subagent": {
+    "schema": "host-subagent-gate.v1",
+    "host_agents": false,
+    "spawn": false,
+    "single_thread": true,
+    "gate_on": false,
+    "reason_code": "subagent_default_off",
+    "matched_global_on": [],
+    "matched_global_off": [],
+    "packs": [],
+    "pack_tokens": {},
+    "roles": [],
+    "roles_catalog": [],
+    "spawn_count": 0,
+    "spawn_count_requested": 0,
+    "spawn_count_source": "off",
+    "spawn_count_default": 3,
+    "spawn_count_hard_max": 10,
+    "spawn_count_env_cap": null,
+    "spawn_count_catalog_size": 0,
+    "spawn_count_effective_cap": 0,
+    "cannot_complete_goal": true,
+    "cannot_auto_release": true,
+    "satellite_parallel_independent": true,
+    "status": "ok"
+  },
+  "stage_trace": {
+    "schema": "goal-stage-trace.v1",
+    "run_id": "pgr-5fd49f2f4bc1",
+    "log_relpath": ".beacon/state/product-goal/pgr-5fd49f2f4bc1/execution.jsonl",
+    "per_stage": {
+      "plan": {
+        "status": "active",
+        "trace_ref": ".beacon/state/product-goal/pgr-5fd49f2f4bc1/execution.jsonl",
+        "at": "2026-09-29T17:11:06.385943+00:00"
+      }
+    }
+  },
+  "plan_to_truth_hint": {
+    "status": "ok",
+    "blocked": false,
+    "reason_code": "plan_journey_decomposition_incomplete",
+    "user_facing": "意图拆解可进入 truth 细化。",
+    "recommended_action": "freeze_user_journeys_then_truth",
+    "blocks_auto_tick_past_plan": true,
+    "missing": [
+      "host_llm_full_package_fill_pending",
+      "host_agent_skill_authored_fill_pending"
+    ],
+    "journeys": []
+  },
+  "created_at": "2026-09-29T17:11:06.386041+00:00",
+  "updated_at": "2026-09-29T17:13:05.063378+00:00",
+  "history": [
+    {
+      "event": "created",
+      "at": "2026-09-29T17:11:06.386068+00:00"
+    },
+    {
+      "event": "implement_admission_preflight",
+      "allow_implement": true,
+      "reason_code": "goal_implement_admission_ok",
+      "worktree_path": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1",
+      "at": "2026-09-29T17:11:08.495919+00:00"
+    },
+    {
+      "event": "stage_skills_loaded",
+      "stage": "plan",
+      "skills": [
+        "beacon-plan",
+        "mode:pln-program",
+        "mode:pln-program-auto",
+        "mode:pln-program-interactive",
+        "mode:pln-review",
+        "mode:pln-friction",
+        "mode:pln-brainstorm",
+        "mode:pln-source"
+      ],
+      "at": "2026-09-29T17:11:08.504591+00:00"
+    },
+    {
+      "event": "supervise_attach",
+      "session_id": "sup-a4bd9fa4ca",
+      "interval_sec": 120,
+      "at": "2026-09-29T17:11:08.514984+00:00"
+    },
+    {
+      "event": "stage_exit_blocked",
+      "stage": "plan",
+      "reason_code": "plan_journey_decomposition_incomplete",
+      "fill_harness": "truth",
+      "resume_action": "load_next_skill"
+    },
+    {
+      "event": "stage_exit_blocked",
+      "stage": "plan",
+      "reason_code": "plan_journey_decomposition_incomplete",
+      "fill_harness": "truth",
+      "resume_action": "load_next_skill"
+    },
+    {
+      "event": "stage_exit_blocked",
+      "stage": "plan",
+      "reason_code": "plan_journey_decomposition_incomplete",
+      "fill_harness": "truth",
+      "resume_action": "load_next_skill"
+    }
+  ],
+  "completion_actor": "parent_goal",
+  "open_closure_layers": [],
+  "implement_intent": true,
+  "discipline": {
+    "must_tick_execute_for_ralph_dispatch": true,
+    "must_not_edit_main_business_paths": true,
+    "must_use_admitted_worktree_for_packages": true,
+    "message": "交付/实现类 goal：业务代码只允许在 admit worktree 写入；dispatch implement 须 `beacon goal tick --run-id <id> --execute`；禁止在 main 上直接改 packages/** 或 beacon/**。"
+  },
+  "implement_admission": {
+    "schema": "goal-implement-admission.v1",
+    "version": "v0.0.1",
+    "feature": "prism-project-docs-v1",
+    "feature_slug": "prism-project-docs-v1",
+    "execution_surface": "goal",
+    "allow_implement": true,
+    "status": "pass",
+    "blocked": false,
+    "reason_code": "goal_implement_admission_ok",
+    "reason_codes": [],
+    "admission": {
+      "schema_version": "1.0",
+      "status": "pass",
+      "version": "v0.0.1",
+      "feature": "prism-project-docs-v1",
+      "feature_slug": "prism-project-docs-v1",
+      "branch": "beacon/v0.0.1/prism-project-docs-v1",
+      "worktree_path": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1",
+      "cwd": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1",
+      "artifact_path": ".beacon/state/workspace-admission/v0.0.1/prism-project-docs-v1.json",
+      "base_branch": "main",
+      "reason_codes": [],
+      "admission_contract": {
+        "require_workspace_admission": true,
+        "admission_invalidation": "dirty_only",
+        "worktree_mode": "dedicated-worktree"
+      },
+      "branch_resolution": {
+        "branch_resolution_mode": "per-feature",
+        "feature_branch": "beacon/v0.0.1/prism-project-docs-v1",
+        "worktree_path": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1",
+        "program_slug": "",
+        "material_path": ""
+      },
+      "worktree_attempt": {
+        "status": "already",
+        "expected_branch": "beacon/v0.0.1/prism-project-docs-v1",
+        "worktree_path": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1",
+        "reason": "already_on_lane"
+      },
+      "merge_main": {
+        "status": "merged",
+        "base_branch": "main",
+        "stdout": "Updating 50b1d72..9808a07\nFast-forward\n .agents/skills/beacon-design/SKILL.md              |    1 +\n .../skills/beacon-design/references/modes/INDEX.md |    1 +\n .../references/modes/gen-design-explore.md         |   15 +-\n .../references/modes/gen-design-init.md            |   15 +-\n .../references/modes/gen-design-polish.md          |   15 +-\n .../references/modes/gen-design-system.md          |   15 +-\n .../beacon-design/references/modes/gen-design.md   |   15 +-\n .../references/modes/gen-prototype.md              |   17 +-\n .agents/skills/beacon-goal/SKILL.md                |    1 +\n .../skills/beacon-goal/references/modes/INDEX.md   |    1 +\n .../beacon-goal/references/modes/loop-goal.md      |   18 +-\n .agents/skills/beacon-implement/SKILL.md           |    1 +\n .../beacon-implement/references/modes/INDEX.md     |    1 +\n .../references/modes/gen-implement.md              |   17 +-\n .agents/skills/beacon-plan/SKILL.md                |    1 +\n .../skills/beacon-plan/references/modes/INDEX.md   |    1 +\n .../beacon-plan/references/modes/pln-brainstorm.md |   20 +-\n .../beacon-plan/references/modes/pln-friction.md   |   16 +-\n .../references/modes/pln-program-auto.md           |    9 +-\n .../references/modes/pln-program-interactive.md    |    9 +-\n .../beacon-plan/references/modes/pln-program.md    |    9 +-\n .../beacon-plan/references/modes/pln-review.md     |   16 +-\n .../beacon-plan/references/modes/pln-source.md     |   16 +-\n .agents/skills/beacon-qa/SKILL.md                  |    1 +\n .../beacon-qa/references/failure-mode-catalog.md   |  171 ++\n .agents/skills/beacon-qa/references/modes/INDEX.md |    1 +\n .../beacon-qa/references/modes/eval-agent.md       |   15 +-\n .../beacon-qa/references/modes/eval-qa-deep.md     |   22 +-\n .../skills/beacon-qa/references/modes/eval-qa.md   |   22 +-\n .../references/modes/eval-real-project.md          |   15 +-\n .agents/skills/beacon-release/SKILL.md             |    1 +\n .../beacon-release/references/modes/INDEX.md       |    1 +\n .../references/modes/eval-release.md               |   17 +-\n .agents/skills/beacon-truth/SKILL.md               |    4 +-\n .../skills/beacon-truth/references/modes/INDEX.md  |    4 +-\n .../references/modes/eval-truth-review.md          |   54 +\n .../beacon-truth/references/modes/gen-change.md    |   15 +-\n .../beacon-truth/references/modes/gen-refreeze.md  |   15 +-\n .../references/modes/gen-truth-init.md             |   15 +-\n .../beacon-truth/references/modes/gen-truth.md     |   17 +-\n .../beacon-truth/references/modes/truth-review.md  |    1 +\n .beacon/evidence-manifest.json                     |  522 +++----\n .beacon/state/agent-surfaces.json                  |   20 +-\n .../pln-review-20260929t161540z.json               | 1030 ++++++++++++\n .../pln-review-20260929t161555z.json               | 1030 ++++++++++++\n .../pln-review-20260929t161606z.json               | 1030 ++++++++++++\n .../pln-review-20260929t161628z.json               | 1030 ++++++++++++\n .gitignore                                         |    1 +\n .omc/project-memory.json                           |   74 +-\n .omc/state/session-end-jobs/discovery.json         |   20 +-\n content/pipelines/ai-manga-drama/README.md         |   29 +-\n ...242\\221\\346\\217\\220\\347\\244\\272\\350\\257\\215.md\" |   16 +-\n .../ep-xianxia-spec/assets/char-01-shennu.png      |  Bin 0 -> 70 bytes\n .../ep-xianxia-spec/assets/char-02-mozun.png       |  Bin 0 -> 70 bytes\n .../ep-xianxia-spec/assets/prop-01-yujian.png      |  Bin 0 -> 70 bytes\n .../ep-xianxia-spec/assets/prop-02-lingjian.png    |  Bin 0 -> 70 bytes\n .../ep-xianxia-spec/assets/scene-01-tiandian.png   |  Bin 0 -> 70 bytes\n .../fixtures/ep-xianxia-spec/drama-spec.json       |   37 +\n .../fixtures/ep-xianxia-spec/ep-xianxia-spec.srt   |    0\n .../fixtures/ep-xianxia-spec/storyboard.json       |  398 +++++\n ...210\\206\\351\\225\\234\\350\\204\\232\\346\\234\\254.md\" |   70 +\n ...211\\207\\346\\217\\220\\347\\244\\272\\350\\257\\215.md\" |   59 +\n ...242\\221\\346\\217\\220\\347\\244\\272\\350\\257\\215.md\" |   71 +\n ...272\\247\\346\\217\\220\\347\\244\\272\\350\\257\\215.md\" |   66 +\n .../ai-manga-drama/storyboard-schema.json          |   33 +\n contracts/drama-storyboard-spec.contract.md        |   90 ++\n docs/ATTRIBUTION-drama-prompt-repos.md             |   14 +\n .../governance/project-version-governance.md       |   12 +-\n .../.machine/change/prism-project-docs-v1.json     |   39 +\n ...prism-project-docs-v1.refreeze-transaction.json | 1650 ++++++++++++++++++++\n docs/beacon/v0.0.1/.machine/change/v0.0.1.json     |  126 +-\n .../execution/prism-project-docs-v1.revision.json  |   17 +\n .../prism-project-docs-v1.truth-review-gate.json   |  160 ++\n .../requirement-clarity-prism-project-docs-v1.json |  322 ++++\n .../requirement/feature-package-validation.json    |   35 +-\n .../prism-project-docs-v1.requirement-package.json |  325 ++++\n .../prism-project-docs-v1.truth-map.json           |  697 +++++++++\n .../.machine/user-story/prism-project-docs-v1.json |  291 ++++\n docs/beacon/v0.0.1/change/prism-project-docs-v1.md |   10 +\n .../prism-project-docs-v1.refreeze-summary.md      |   29 +\n docs/beacon/v0.0.1/change/v0.0.1.md                |   60 +-\n .../requirement-clarity-prism-project-docs-v1.md   |   48 +\n .../features/prism-project-docs-v1/evidence.md     |    6 +\n .../v0.0.1/features/prism-project-docs-v1/tasks.md |   22 +\n .../v0.0.1/features/prism-project-docs-v1/tests.md |   39 +\n .../v0.0.1/features/prism-project-docs-v1/truth.md |  215 +++\n .../program-manifest.md                            |   12 +\n .../program-run-state.json                         |   12 +\n .../v0.0.1/research/prism-project-docs-v1.md       |   94 ++\n .../source-architecture/prism-project-docs-v1.md   |   17 +\n registry/form-registry.yaml                        |    7 +\n scripts/ai_manga_drama.py                          |   26 +-\n scripts/check_drama_storyboard_spec.sh             |  128 ++\n scripts/drama_spec.py                              |  172 ++\n scripts/prompt_compiler.py                         |  118 +-\n .../references/drama-storyboard-spec.md            |  264 ++++\n .../references/modes/treatment-director.md         |   10 +-\n 97 files changed, 10537 insertions(+), 687 deletions(-)\n create mode 100644 .agents/skills/beacon-qa/references/failure-mode-catalog.md\n create mode 100644 .agents/skills/beacon-truth/references/modes/eval-truth-review.md\n create mode 100644 .beacon/state/planner-review/prism-project-docs-v1/pln-review-20260929t161540z.json\n create mode 100644 .beacon/state/planner-review/prism-project-docs-v1/pln-review-20260929t161555z.json\n create mode 100644 .beacon/state/planner-review/prism-project-docs-v1/pln-review-20260929t161606z.json\n create mode 100644 .beacon/state/planner-review/prism-project-docs-v1/pln-review-20260929t161628z.json\n create mode 100644 content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/assets/char-01-shennu.png\n create mode 100644 content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/assets/char-02-mozun.png\n create mode 100644 content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/assets/prop-01-yujian.png\n create mode 100644 content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/assets/prop-02-lingjian.png\n create mode 100644 content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/assets/scene-01-tiandian.png\n create mode 100644 content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/drama-spec.json\n create mode 100644 content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/ep-xianxia-spec.srt\n create mode 100644 content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/storyboard.json\n create mode 100644 \"content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/\\345\\210\\206\\351\\225\\234\\350\\204\\232\\346\\234\\254.md\"\n create mode 100644 \"content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/\\345\\233\\276\\347\\211\\207\\346\\217\\220\\347\\244\\272\\350\\257\\215.md\"\n create mode 100644 \"content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/\\350\\247\\206\\351\\242\\221\\346\\217\\220\\347\\244\\272\\350\\257\\215.md\"\n create mode 100644 \"content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/\\350\\265\\204\\344\\272\\247\\346\\217\\220\\347\\244\\272\\350\\257\\215.md\"\n create mode 100644 contracts/drama-storyboard-spec.contract.md\n create mode 100644 docs/beacon/v0.0.1/.machine/change/prism-project-docs-v1.json\n create mode 100644 docs/beacon/v0.0.1/.machine/change/prism-project-docs-v1.refreeze-transaction.json\n create mode 100644 docs/beacon/v0.0.1/.machine/execution/prism-project-docs-v1.revision.json\n create mode 100644 docs/beacon/v0.0.1/.machine/execution/prism-project-docs-v1.truth-review-gate.json\n create mode 100644 docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-project-docs-v1.json\n create mode 100644 docs/beacon/v0.0.1/.machine/requirement/prism-project-docs-v1.requirement-package.json\n create mode 100644 docs/beacon/v0.0.1/.machine/requirement/prism-project-docs-v1.truth-map.json\n create mode 100644 docs/beacon/v0.0.1/.machine/user-story/prism-project-docs-v1.json\n create mode 100644 docs/beacon/v0.0.1/change/prism-project-docs-v1.md\n create mode 100644 docs/beacon/v0.0.1/change/prism-project-docs-v1.refreeze-summary.md\n create mode 100644 docs/beacon/v0.0.1/execution/requirement-clarity-prism-project-docs-v1.md\n create mode 100644 docs/beacon/v0.0.1/features/prism-project-docs-v1/evidence.md\n create mode 100644 docs/beacon/v0.0.1/features/prism-project-docs-v1/tasks.md\n create mode 100644 docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md\n create mode 100644 docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md\n create mode 100644 docs/beacon/v0.0.1/programs/prism-project-docs-v1-docs-prism/program-manifest.md\n create mode 100644 docs/beacon/v0.0.1/programs/prism-project-docs-v1-docs-prism/program-run-state.json\n create mode 100644 docs/beacon/v0.0.1/research/prism-project-docs-v1.md\n create mode 100644 docs/beacon/v0.0.1/source-architecture/prism-project-docs-v1.md\n create mode 100755 scripts/check_drama_storyboard_spec.sh\n create mode 100755 scripts/drama_spec.py\n create mode 100644 skills/prism-director/references/drama-storyboard-spec.md",
+        "stderr": ""
+      },
+      "git_head": "9808a07abf36603ede99e75e533d371cc49a7687",
+      "artifact": {
+        "schema_version": "workspace-admission-v1",
+        "version": "v0.0.1",
+        "feature_slug": "prism-project-docs-v1",
+        "project_root": "/Users/apple/Developer/Personal/selfmedia/prism",
+        "branch": "beacon/v0.0.1/prism-project-docs-v1",
+        "worktree_path": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1",
+        "base_branch": "main",
+        "issued_at": "2026-09-29T17:11:07.349711+00:00",
+        "git_head": "9808a07abf36603ede99e75e533d371cc49a7687",
+        "status": "pass"
+      },
+      "summary": "workspace admission issued"
+    },
+    "service_worktree_map": {
+      "prism": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1"
+    },
+    "forced_worktree": false,
+    "generated_at": "2026-09-29T17:11:06.386417+00:00",
+    "service_worktrees": {
+      "status": "pass",
+      "blocked": false,
+      "reason_codes": [],
+      "reason_code": "",
+      "service_worktree_map": {
+        "prism": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1"
+      },
+      "service_reconcile": {
+        "prism": {
+          "status": "pass",
+          "branch": "beacon/v0.0.1/prism-project-docs-v1",
+          "worktree_path": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1",
+          "git_head": "9808a07abf36603ede99e75e533d371cc49a7687",
+          "shared_parent": true,
+          "base_branch": "main"
+        }
+      },
+      "topology_kind": "single_repo",
+      "writable_services": [
+        "prism"
+      ],
+      "pool_update": {
+        "status": "pass",
+        "blocked": false,
+        "version": "v0.0.1",
+        "feature_slug": "prism-project-docs-v1",
+        "pool_entry": {
+          "state": "leased",
+          "feature_slug": "prism-project-docs-v1",
+          "branch": "",
+          "worktree_path": "",
+          "lease_holder": "apple",
+          "leased_at": "2026-09-29T17:11:08.493140+00:00",
+          "released_at": "",
+          "git_head": "",
+          "services": {
+            "prism": {
+              "service_key": "prism",
+              "repo_root": "/Users/apple/Developer/Personal/selfmedia/prism",
+              "branch": "beacon/v0.0.1/prism-project-docs-v1",
+              "base_branch": "main",
+              "worktree_path": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1",
+              "state": "leased",
+              "lease_holder": "apple",
+              "leased_at": "2026-09-29T17:11:08.493188+00:00",
+              "released_at": "",
+              "git_head": "9808a07abf36603ede99e75e533d371cc49a7687"
+            }
+          }
+        },
+        "pool_state_path": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/state/workspace-pool/v0.0.1/pool.json"
+      }
+    },
+    "topology_kind": "single_repo",
+    "artifact": {
+      "schema_version": "workspace-admission-v1",
+      "version": "v0.0.1",
+      "feature_slug": "prism-project-docs-v1",
+      "project_root": "/Users/apple/Developer/Personal/selfmedia/prism",
+      "branch": "beacon/v0.0.1/prism-project-docs-v1",
+      "worktree_path": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1",
+      "base_branch": "main",
+      "issued_at": "2026-09-29T17:11:07.349711+00:00",
+      "git_head": "9808a07abf36603ede99e75e533d371cc49a7687",
+      "status": "pass",
+      "service_worktree_map": {
+        "prism": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1"
+      },
+      "service_reconcile": {
+        "prism": {
+          "status": "pass",
+          "branch": "beacon/v0.0.1/prism-project-docs-v1",
+          "worktree_path": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1",
+          "git_head": "9808a07abf36603ede99e75e533d371cc49a7687",
+          "shared_parent": true,
+          "base_branch": "main"
+        }
+      },
+      "parent_reconcile": {
+        "status": "merged",
+        "base_branch": "main",
+        "stdout": "Updating 50b1d72..9808a07\nFast-forward\n .agents/skills/beacon-design/SKILL.md              |    1 +\n .../skills/beacon-design/references/modes/INDEX.md |    1 +\n .../references/modes/gen-design-explore.md         |   15 +-\n .../references/modes/gen-design-init.md            |   15 +-\n .../references/modes/gen-design-polish.md          |   15 +-\n .../references/modes/gen-design-system.md          |   15 +-\n .../beacon-design/references/modes/gen-design.md   |   15 +-\n .../references/modes/gen-prototype.md              |   17 +-\n .agents/skills/beacon-goal/SKILL.md                |    1 +\n .../skills/beacon-goal/references/modes/INDEX.md   |    1 +\n .../beacon-goal/references/modes/loop-goal.md      |   18 +-\n .agents/skills/beacon-implement/SKILL.md           |    1 +\n .../beacon-implement/references/modes/INDEX.md     |    1 +\n .../references/modes/gen-implement.md              |   17 +-\n .agents/skills/beacon-plan/SKILL.md                |    1 +\n .../skills/beacon-plan/references/modes/INDEX.md   |    1 +\n .../beacon-plan/references/modes/pln-brainstorm.md |   20 +-\n .../beacon-plan/references/modes/pln-friction.md   |   16 +-\n .../references/modes/pln-program-auto.md           |    9 +-\n .../references/modes/pln-program-interactive.md    |    9 +-\n .../beacon-plan/references/modes/pln-program.md    |    9 +-\n .../beacon-plan/references/modes/pln-review.md     |   16 +-\n .../beacon-plan/references/modes/pln-source.md     |   16 +-\n .agents/skills/beacon-qa/SKILL.md                  |    1 +\n .../beacon-qa/references/failure-mode-catalog.md   |  171 ++\n .agents/skills/beacon-qa/references/modes/INDEX.md |    1 +\n .../beacon-qa/references/modes/eval-agent.md       |   15 +-\n .../beacon-qa/references/modes/eval-qa-deep.md     |   22 +-\n .../skills/beacon-qa/references/modes/eval-qa.md   |   22 +-\n .../references/modes/eval-real-project.md          |   15 +-\n .agents/skills/beacon-release/SKILL.md             |    1 +\n .../beacon-release/references/modes/INDEX.md       |    1 +\n .../references/modes/eval-release.md               |   17 +-\n .agents/skills/beacon-truth/SKILL.md               |    4 +-\n .../skills/beacon-truth/references/modes/INDEX.md  |    4 +-\n .../references/modes/eval-truth-review.md          |   54 +\n .../beacon-truth/references/modes/gen-change.md    |   15 +-\n .../beacon-truth/references/modes/gen-refreeze.md  |   15 +-\n .../references/modes/gen-truth-init.md             |   15 +-\n .../beacon-truth/references/modes/gen-truth.md     |   17 +-\n .../beacon-truth/references/modes/truth-review.md  |    1 +\n .beacon/evidence-manifest.json                     |  522 +++----\n .beacon/state/agent-surfaces.json                  |   20 +-\n .../pln-review-20260929t161540z.json               | 1030 ++++++++++++\n .../pln-review-20260929t161555z.json               | 1030 ++++++++++++\n .../pln-review-20260929t161606z.json               | 1030 ++++++++++++\n .../pln-review-20260929t161628z.json               | 1030 ++++++++++++\n .gitignore                                         |    1 +\n .omc/project-memory.json                           |   74 +-\n .omc/state/session-end-jobs/discovery.json         |   20 +-\n content/pipelines/ai-manga-drama/README.md         |   29 +-\n ...242\\221\\346\\217\\220\\347\\244\\272\\350\\257\\215.md\" |   16 +-\n .../ep-xianxia-spec/assets/char-01-shennu.png      |  Bin 0 -> 70 bytes\n .../ep-xianxia-spec/assets/char-02-mozun.png       |  Bin 0 -> 70 bytes\n .../ep-xianxia-spec/assets/prop-01-yujian.png      |  Bin 0 -> 70 bytes\n .../ep-xianxia-spec/assets/prop-02-lingjian.png    |  Bin 0 -> 70 bytes\n .../ep-xianxia-spec/assets/scene-01-tiandian.png   |  Bin 0 -> 70 bytes\n .../fixtures/ep-xianxia-spec/drama-spec.json       |   37 +\n .../fixtures/ep-xianxia-spec/ep-xianxia-spec.srt   |    0\n .../fixtures/ep-xianxia-spec/storyboard.json       |  398 +++++\n ...210\\206\\351\\225\\234\\350\\204\\232\\346\\234\\254.md\" |   70 +\n ...211\\207\\346\\217\\220\\347\\244\\272\\350\\257\\215.md\" |   59 +\n ...242\\221\\346\\217\\220\\347\\244\\272\\350\\257\\215.md\" |   71 +\n ...272\\247\\346\\217\\220\\347\\244\\272\\350\\257\\215.md\" |   66 +\n .../ai-manga-drama/storyboard-schema.json          |   33 +\n contracts/drama-storyboard-spec.contract.md        |   90 ++\n docs/ATTRIBUTION-drama-prompt-repos.md             |   14 +\n .../governance/project-version-governance.md       |   12 +-\n .../.machine/change/prism-project-docs-v1.json     |   39 +\n ...prism-project-docs-v1.refreeze-transaction.json | 1650 ++++++++++++++++++++\n docs/beacon/v0.0.1/.machine/change/v0.0.1.json     |  126 +-\n .../execution/prism-project-docs-v1.revision.json  |   17 +\n .../prism-project-docs-v1.truth-review-gate.json   |  160 ++\n .../requirement-clarity-prism-project-docs-v1.json |  322 ++++\n .../requirement/feature-package-validation.json    |   35 +-\n .../prism-project-docs-v1.requirement-package.json |  325 ++++\n .../prism-project-docs-v1.truth-map.json           |  697 +++++++++\n .../.machine/user-story/prism-project-docs-v1.json |  291 ++++\n docs/beacon/v0.0.1/change/prism-project-docs-v1.md |   10 +\n .../prism-project-docs-v1.refreeze-summary.md      |   29 +\n docs/beacon/v0.0.1/change/v0.0.1.md                |   60 +-\n .../requirement-clarity-prism-project-docs-v1.md   |   48 +\n .../features/prism-project-docs-v1/evidence.md     |    6 +\n .../v0.0.1/features/prism-project-docs-v1/tasks.md |   22 +\n .../v0.0.1/features/prism-project-docs-v1/tests.md |   39 +\n .../v0.0.1/features/prism-project-docs-v1/truth.md |  215 +++\n .../program-manifest.md                            |   12 +\n .../program-run-state.json                         |   12 +\n .../v0.0.1/research/prism-project-docs-v1.md       |   94 ++\n .../source-architecture/prism-project-docs-v1.md   |   17 +\n registry/form-registry.yaml                        |    7 +\n scripts/ai_manga_drama.py                          |   26 +-\n scripts/check_drama_storyboard_spec.sh             |  128 ++\n scripts/drama_spec.py                              |  172 ++\n scripts/prompt_compiler.py                         |  118 +-\n .../references/drama-storyboard-spec.md            |  264 ++++\n .../references/modes/treatment-director.md         |   10 +-\n 97 files changed, 10537 insertions(+), 687 deletions(-)\n create mode 100644 .agents/skills/beacon-qa/references/failure-mode-catalog.md\n create mode 100644 .agents/skills/beacon-truth/references/modes/eval-truth-review.md\n create mode 100644 .beacon/state/planner-review/prism-project-docs-v1/pln-review-20260929t161540z.json\n create mode 100644 .beacon/state/planner-review/prism-project-docs-v1/pln-review-20260929t161555z.json\n create mode 100644 .beacon/state/planner-review/prism-project-docs-v1/pln-review-20260929t161606z.json\n create mode 100644 .beacon/state/planner-review/prism-project-docs-v1/pln-review-20260929t161628z.json\n create mode 100644 content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/assets/char-01-shennu.png\n create mode 100644 content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/assets/char-02-mozun.png\n create mode 100644 content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/assets/prop-01-yujian.png\n create mode 100644 content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/assets/prop-02-lingjian.png\n create mode 100644 content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/assets/scene-01-tiandian.png\n create mode 100644 content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/drama-spec.json\n create mode 100644 content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/ep-xianxia-spec.srt\n create mode 100644 content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/storyboard.json\n create mode 100644 \"content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/\\345\\210\\206\\351\\225\\234\\350\\204\\232\\346\\234\\254.md\"\n create mode 100644 \"content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/\\345\\233\\276\\347\\211\\207\\346\\217\\220\\347\\244\\272\\350\\257\\215.md\"\n create mode 100644 \"content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/\\350\\247\\206\\351\\242\\221\\346\\217\\220\\347\\244\\272\\350\\257\\215.md\"\n create mode 100644 \"content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/\\350\\265\\204\\344\\272\\247\\346\\217\\220\\347\\244\\272\\350\\257\\215.md\"\n create mode 100644 contracts/drama-storyboard-spec.contract.md\n create mode 100644 docs/beacon/v0.0.1/.machine/change/prism-project-docs-v1.json\n create mode 100644 docs/beacon/v0.0.1/.machine/change/prism-project-docs-v1.refreeze-transaction.json\n create mode 100644 docs/beacon/v0.0.1/.machine/execution/prism-project-docs-v1.revision.json\n create mode 100644 docs/beacon/v0.0.1/.machine/execution/prism-project-docs-v1.truth-review-gate.json\n create mode 100644 docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-project-docs-v1.json\n create mode 100644 docs/beacon/v0.0.1/.machine/requirement/prism-project-docs-v1.requirement-package.json\n create mode 100644 docs/beacon/v0.0.1/.machine/requirement/prism-project-docs-v1.truth-map.json\n create mode 100644 docs/beacon/v0.0.1/.machine/user-story/prism-project-docs-v1.json\n create mode 100644 docs/beacon/v0.0.1/change/prism-project-docs-v1.md\n create mode 100644 docs/beacon/v0.0.1/change/prism-project-docs-v1.refreeze-summary.md\n create mode 100644 docs/beacon/v0.0.1/execution/requirement-clarity-prism-project-docs-v1.md\n create mode 100644 docs/beacon/v0.0.1/features/prism-project-docs-v1/evidence.md\n create mode 100644 docs/beacon/v0.0.1/features/prism-project-docs-v1/tasks.md\n create mode 100644 docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md\n create mode 100644 docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md\n create mode 100644 docs/beacon/v0.0.1/programs/prism-project-docs-v1-docs-prism/program-manifest.md\n create mode 100644 docs/beacon/v0.0.1/programs/prism-project-docs-v1-docs-prism/program-run-state.json\n create mode 100644 docs/beacon/v0.0.1/research/prism-project-docs-v1.md\n create mode 100644 docs/beacon/v0.0.1/source-architecture/prism-project-docs-v1.md\n create mode 100755 scripts/check_drama_storyboard_spec.sh\n create mode 100755 scripts/drama_spec.py\n create mode 100644 skills/prism-director/references/drama-storyboard-spec.md",
+        "stderr": ""
+      },
+      "execution_surface": "goal",
+      "forced_worktree": false,
+      "updated_at": "2026-09-29T17:11:08.494720+00:00"
+    },
+    "worktree_path": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1",
+    "branch": "beacon/v0.0.1/prism-project-docs-v1",
+    "cwd": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1",
+    "merge_main": {
+      "status": "merged",
+      "base_branch": "main",
+      "stdout": "Updating 50b1d72..9808a07\nFast-forward\n .agents/skills/beacon-design/SKILL.md              |    1 +\n .../skills/beacon-design/references/modes/INDEX.md |    1 +\n .../references/modes/gen-design-explore.md         |   15 +-\n .../references/modes/gen-design-init.md            |   15 +-\n .../references/modes/gen-design-polish.md          |   15 +-\n .../references/modes/gen-design-system.md          |   15 +-\n .../beacon-design/references/modes/gen-design.md   |   15 +-\n .../references/modes/gen-prototype.md              |   17 +-\n .agents/skills/beacon-goal/SKILL.md                |    1 +\n .../skills/beacon-goal/references/modes/INDEX.md   |    1 +\n .../beacon-goal/references/modes/loop-goal.md      |   18 +-\n .agents/skills/beacon-implement/SKILL.md           |    1 +\n .../beacon-implement/references/modes/INDEX.md     |    1 +\n .../references/modes/gen-implement.md              |   17 +-\n .agents/skills/beacon-plan/SKILL.md                |    1 +\n .../skills/beacon-plan/references/modes/INDEX.md   |    1 +\n .../beacon-plan/references/modes/pln-brainstorm.md |   20 +-\n .../beacon-plan/references/modes/pln-friction.md   |   16 +-\n .../references/modes/pln-program-auto.md           |    9 +-\n .../references/modes/pln-program-interactive.md    |    9 +-\n .../beacon-plan/references/modes/pln-program.md    |    9 +-\n .../beacon-plan/references/modes/pln-review.md     |   16 +-\n .../beacon-plan/references/modes/pln-source.md     |   16 +-\n .agents/skills/beacon-qa/SKILL.md                  |    1 +\n .../beacon-qa/references/failure-mode-catalog.md   |  171 ++\n .agents/skills/beacon-qa/references/modes/INDEX.md |    1 +\n .../beacon-qa/references/modes/eval-agent.md       |   15 +-\n .../beacon-qa/references/modes/eval-qa-deep.md     |   22 +-\n .../skills/beacon-qa/references/modes/eval-qa.md   |   22 +-\n .../references/modes/eval-real-project.md          |   15 +-\n .agents/skills/beacon-release/SKILL.md             |    1 +\n .../beacon-release/references/modes/INDEX.md       |    1 +\n .../references/modes/eval-release.md               |   17 +-\n .agents/skills/beacon-truth/SKILL.md               |    4 +-\n .../skills/beacon-truth/references/modes/INDEX.md  |    4 +-\n .../references/modes/eval-truth-review.md          |   54 +\n .../beacon-truth/references/modes/gen-change.md    |   15 +-\n .../beacon-truth/references/modes/gen-refreeze.md  |   15 +-\n .../references/modes/gen-truth-init.md             |   15 +-\n .../beacon-truth/references/modes/gen-truth.md     |   17 +-\n .../beacon-truth/references/modes/truth-review.md  |    1 +\n .beacon/evidence-manifest.json                     |  522 +++----\n .beacon/state/agent-surfaces.json                  |   20 +-\n .../pln-review-20260929t161540z.json               | 1030 ++++++++++++\n .../pln-review-20260929t161555z.json               | 1030 ++++++++++++\n .../pln-review-20260929t161606z.json               | 1030 ++++++++++++\n .../pln-review-20260929t161628z.json               | 1030 ++++++++++++\n .gitignore                                         |    1 +\n .omc/project-memory.json                           |   74 +-\n .omc/state/session-end-jobs/discovery.json         |   20 +-\n content/pipelines/ai-manga-drama/README.md         |   29 +-\n ...242\\221\\346\\217\\220\\347\\244\\272\\350\\257\\215.md\" |   16 +-\n .../ep-xianxia-spec/assets/char-01-shennu.png      |  Bin 0 -> 70 bytes\n .../ep-xianxia-spec/assets/char-02-mozun.png       |  Bin 0 -> 70 bytes\n .../ep-xianxia-spec/assets/prop-01-yujian.png      |  Bin 0 -> 70 bytes\n .../ep-xianxia-spec/assets/prop-02-lingjian.png    |  Bin 0 -> 70 bytes\n .../ep-xianxia-spec/assets/scene-01-tiandian.png   |  Bin 0 -> 70 bytes\n .../fixtures/ep-xianxia-spec/drama-spec.json       |   37 +\n .../fixtures/ep-xianxia-spec/ep-xianxia-spec.srt   |    0\n .../fixtures/ep-xianxia-spec/storyboard.json       |  398 +++++\n ...210\\206\\351\\225\\234\\350\\204\\232\\346\\234\\254.md\" |   70 +\n ...211\\207\\346\\217\\220\\347\\244\\272\\350\\257\\215.md\" |   59 +\n ...242\\221\\346\\217\\220\\347\\244\\272\\350\\257\\215.md\" |   71 +\n ...272\\247\\346\\217\\220\\347\\244\\272\\350\\257\\215.md\" |   66 +\n .../ai-manga-drama/storyboard-schema.json          |   33 +\n contracts/drama-storyboard-spec.contract.md        |   90 ++\n docs/ATTRIBUTION-drama-prompt-repos.md             |   14 +\n .../governance/project-version-governance.md       |   12 +-\n .../.machine/change/prism-project-docs-v1.json     |   39 +\n ...prism-project-docs-v1.refreeze-transaction.json | 1650 ++++++++++++++++++++\n docs/beacon/v0.0.1/.machine/change/v0.0.1.json     |  126 +-\n .../execution/prism-project-docs-v1.revision.json  |   17 +\n .../prism-project-docs-v1.truth-review-gate.json   |  160 ++\n .../requirement-clarity-prism-project-docs-v1.json |  322 ++++\n .../requirement/feature-package-validation.json    |   35 +-\n .../prism-project-docs-v1.requirement-package.json |  325 ++++\n .../prism-project-docs-v1.truth-map.json           |  697 +++++++++\n .../.machine/user-story/prism-project-docs-v1.json |  291 ++++\n docs/beacon/v0.0.1/change/prism-project-docs-v1.md |   10 +\n .../prism-project-docs-v1.refreeze-summary.md      |   29 +\n docs/beacon/v0.0.1/change/v0.0.1.md                |   60 +-\n .../requirement-clarity-prism-project-docs-v1.md   |   48 +\n .../features/prism-project-docs-v1/evidence.md     |    6 +\n .../v0.0.1/features/prism-project-docs-v1/tasks.md |   22 +\n .../v0.0.1/features/prism-project-docs-v1/tests.md |   39 +\n .../v0.0.1/features/prism-project-docs-v1/truth.md |  215 +++\n .../program-manifest.md                            |   12 +\n .../program-run-state.json                         |   12 +\n .../v0.0.1/research/prism-project-docs-v1.md       |   94 ++\n .../source-architecture/prism-project-docs-v1.md   |   17 +\n registry/form-registry.yaml                        |    7 +\n scripts/ai_manga_drama.py                          |   26 +-\n scripts/check_drama_storyboard_spec.sh             |  128 ++\n scripts/drama_spec.py                              |  172 ++\n scripts/prompt_compiler.py                         |  118 +-\n .../references/drama-storyboard-spec.md            |  264 ++++\n .../references/modes/treatment-director.md         |   10 +-\n 97 files changed, 10537 insertions(+), 687 deletions(-)\n create mode 100644 .agents/skills/beacon-qa/references/failure-mode-catalog.md\n create mode 100644 .agents/skills/beacon-truth/references/modes/eval-truth-review.md\n create mode 100644 .beacon/state/planner-review/prism-project-docs-v1/pln-review-20260929t161540z.json\n create mode 100644 .beacon/state/planner-review/prism-project-docs-v1/pln-review-20260929t161555z.json\n create mode 100644 .beacon/state/planner-review/prism-project-docs-v1/pln-review-20260929t161606z.json\n create mode 100644 .beacon/state/planner-review/prism-project-docs-v1/pln-review-20260929t161628z.json\n create mode 100644 content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/assets/char-01-shennu.png\n create mode 100644 content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/assets/char-02-mozun.png\n create mode 100644 content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/assets/prop-01-yujian.png\n create mode 100644 content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/assets/prop-02-lingjian.png\n create mode 100644 content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/assets/scene-01-tiandian.png\n create mode 100644 content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/drama-spec.json\n create mode 100644 content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/ep-xianxia-spec.srt\n create mode 100644 content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/storyboard.json\n create mode 100644 \"content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/\\345\\210\\206\\351\\225\\234\\350\\204\\232\\346\\234\\254.md\"\n create mode 100644 \"content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/\\345\\233\\276\\347\\211\\207\\346\\217\\220\\347\\244\\272\\350\\257\\215.md\"\n create mode 100644 \"content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/\\350\\247\\206\\351\\242\\221\\346\\217\\220\\347\\244\\272\\350\\257\\215.md\"\n create mode 100644 \"content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec/\\350\\265\\204\\344\\272\\247\\346\\217\\220\\347\\244\\272\\350\\257\\215.md\"\n create mode 100644 contracts/drama-storyboard-spec.contract.md\n create mode 100644 docs/beacon/v0.0.1/.machine/change/prism-project-docs-v1.json\n create mode 100644 docs/beacon/v0.0.1/.machine/change/prism-project-docs-v1.refreeze-transaction.json\n create mode 100644 docs/beacon/v0.0.1/.machine/execution/prism-project-docs-v1.revision.json\n create mode 100644 docs/beacon/v0.0.1/.machine/execution/prism-project-docs-v1.truth-review-gate.json\n create mode 100644 docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-project-docs-v1.json\n create mode 100644 docs/beacon/v0.0.1/.machine/requirement/prism-project-docs-v1.requirement-package.json\n create mode 100644 docs/beacon/v0.0.1/.machine/requirement/prism-project-docs-v1.truth-map.json\n create mode 100644 docs/beacon/v0.0.1/.machine/user-story/prism-project-docs-v1.json\n create mode 100644 docs/beacon/v0.0.1/change/prism-project-docs-v1.md\n create mode 100644 docs/beacon/v0.0.1/change/prism-project-docs-v1.refreeze-summary.md\n create mode 100644 docs/beacon/v0.0.1/execution/requirement-clarity-prism-project-docs-v1.md\n create mode 100644 docs/beacon/v0.0.1/features/prism-project-docs-v1/evidence.md\n create mode 100644 docs/beacon/v0.0.1/features/prism-project-docs-v1/tasks.md\n create mode 100644 docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md\n create mode 100644 docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md\n create mode 100644 docs/beacon/v0.0.1/programs/prism-project-docs-v1-docs-prism/program-manifest.md\n create mode 100644 docs/beacon/v0.0.1/programs/prism-project-docs-v1-docs-prism/program-run-state.json\n create mode 100644 docs/beacon/v0.0.1/research/prism-project-docs-v1.md\n create mode 100644 docs/beacon/v0.0.1/source-architecture/prism-project-docs-v1.md\n create mode 100755 scripts/check_drama_storyboard_spec.sh\n create mode 100755 scripts/drama_spec.py\n create mode 100644 skills/prism-director/references/drama-storyboard-spec.md",
+      "stderr": ""
+    },
+    "worktree_mode": "dedicated-worktree",
+    "worktree_attempt": {
+      "status": "already",
+      "expected_branch": "beacon/v0.0.1/prism-project-docs-v1",
+      "worktree_path": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1",
+      "reason": "already_on_lane"
+    },
+    "user_facing": "implement admission pass; write only under admitted worktree/service map",
+    "payload_ref": true,
+    "goal_forced_worktree": false
+  },
+  "implement_admission_preflight": {
+    "allow_implement": true,
+    "reason_code": "goal_implement_admission_ok",
+    "worktree_path": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1",
+    "branch": "beacon/v0.0.1/prism-project-docs-v1",
+    "goal_forced_worktree": false,
+    "at": "2026-09-29T17:11:08.495902+00:00"
+  },
+  "recommended_implement_cwd": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1",
+  "state_path": ".beacon/state/product-goal/pgr-5fd49f2f4bc1.json",
+  "driver": {
+    "driver_id": "drv-2b53712eee",
+    "state": "arming",
+    "longrun": true,
+    "max_agent_turns": 32
+  },
+  "program_binding": {
+    "status": "unbound",
+    "reason_code": "graph_invalid",
+    "feature": "prism-project-docs-v1",
+    "checked": [
+      {
+        "program": "prism-canon",
+        "graph_valid": false,
+        "errors": [
+          "file_missing"
+        ],
+        "feature_in_graph": false
+      },
+      {
+        "program": "prism-project-docs-v1-docs-prism",
+        "graph_valid": false,
+        "errors": [
+          "file_missing"
+        ],
+        "feature_in_graph": false
+      },
+      {
+        "program": "prism-release-av-manga-release-gate",
+        "graph_valid": false,
+        "errors": [
+          "file_missing"
+        ],
+        "feature_in_graph": false
+      },
+      {
+        "program": "prism-shot-prompt-compiler-storyboard-ref",
+        "graph_valid": false,
+        "errors": [
+          "file_missing"
+        ],
+        "feature_in_graph": false
+      }
+    ],
+    "hint": "fix feature-graph.json validation errors (see checked[].errors)"
+  },
+  "stage_exit_gate": {
+    "schema": "goal-stage-exit-gate.v1",
+    "stage": "plan",
+    "allow": false,
+    "blocked": true,
+    "reason_code": "plan_journey_decomposition_incomplete",
+    "fill_harness": "truth",
+    "fill_mode": "gen-truth",
+    "resume_action": "load_next_skill",
+    "features": [
+      "prism-project-docs-v1"
+    ],
+    "details": {
+      "plan_to_truth_gate": {
+        "status": "ok",
+        "blocked": false,
+        "reason_code": "plan_journey_decomposition_incomplete",
+        "user_facing": "意图拆解可进入 truth 细化。",
+        "recommended_action": "freeze_user_journeys_then_truth",
+        "blocks_auto_tick_past_plan": true,
+        "missing": [
+          "host_llm_full_package_fill_pending",
+          "host_agent_skill_authored_fill_pending"
+        ],
+        "journeys": []
+      },
+      "truth_readiness": {
+        "ready": true,
+        "missing": [
+          "host_llm_full_package_fill_pending",
+          "host_agent_skill_authored_fill_pending"
+        ],
+        "blocks_auto_tick_past_plan": false,
+        "requires_journey_freeze": false,
+        "user_facing": "意图拆解可进入 truth 细化。",
+        "task_closure": true
+      }
+    }
+  },
+  "fill_harness": "truth",
+  "fill_mode": "gen-truth",
+  "resume_action": "load_next_skill"
+}
