@@ -55,11 +55,11 @@
     "post_hoc_writeback_occurred": true,
     "preserve_drift_history": true,
     "current_revision_id": "R5",
-    "current_delivery_status": "implemented"
+    "current_delivery_status": "accepted"
   },
   "change_route": {
     "action": "beacon-change",
-    "command": "beacon change \"prism-project-docs-v1\" --project-root /Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1 --version v0.0.1 --reason \"implementation-first-reconciliation\""
+    "command": "beacon change \"prism-project-docs-v1\" --project-root /Users/apple/Developer/Personal/selfmedia/prism --version v0.0.1 --reason \"implementation-first-reconciliation\""
   },
   "completion_reason_code": "implementation_first_reconciliation_completed",
   "completed_at": "2026-09-30T03:59:13.531041+00:00",
