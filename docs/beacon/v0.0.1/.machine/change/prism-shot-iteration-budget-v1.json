@@ -4,9 +4,9 @@
   "feature": "prism-shot-iteration-budget-v1",
   "feature_slug": "prism-shot-iteration-budget-v1",
   "summary": "Maintains release-facing version aggregate projection guards so QA accepted features are included in version change scope before release check.",
-  "status": "generated",
-  "accepted_at": "",
-  "revision_id": "R2",
+  "status": "completed",
+  "accepted_at": "2026-09-30T07:25:50.528295+00:00",
+  "revision_id": "R3",
   "projection_role": {
     "artifact_role": "version_aggregate_projection",
     "truth_source": false,
@@ -33,7 +33,8 @@
     "docs/beacon/v0.0.1/prd/prism-shot-iteration-budget-v1.md",
     "docs/beacon/v0.0.1/user-story/prism-shot-iteration-budget-v1.md",
     "docs/beacon/v0.0.1/qa/test-cases/prism-shot-iteration-budget-v1.md",
-    "docs/beacon/v0.0.1/.machine/execution/prism-shot-iteration-budget-v1.revision.json"
+    "docs/beacon/v0.0.1/.machine/execution/prism-shot-iteration-budget-v1.revision.json",
+    "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-shot-iteration-budget-v1.json"
   ],
-  "generated_at": "2026-09-30T07:21:19.040784+00:00"
+  "generated_at": "2026-09-30T07:26:45.381481+00:00"
 }
