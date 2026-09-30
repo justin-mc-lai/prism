@@ -24,6 +24,30 @@
           "git_head": "91b12968e91f1654792572fbefd13ef2d9ace660"
         }
       }
+    },
+    "prism-project-docs-v1": {
+      "state": "leased",
+      "feature_slug": "prism-project-docs-v1",
+      "branch": "",
+      "worktree_path": "",
+      "lease_holder": "apple",
+      "leased_at": "2026-09-29T17:11:08.493140+00:00",
+      "released_at": "",
+      "git_head": "",
+      "services": {
+        "prism": {
+          "service_key": "prism",
+          "repo_root": "/Users/apple/Developer/Personal/selfmedia/prism",
+          "branch": "beacon/v0.0.1/prism-project-docs-v1",
+          "base_branch": "main",
+          "worktree_path": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1",
+          "state": "leased",
+          "lease_holder": "apple",
+          "leased_at": "2026-09-29T17:11:08.493188+00:00",
+          "released_at": "",
+          "git_head": "9808a07abf36603ede99e75e533d371cc49a7687"
+        }
+      }
     }
   }
 }
