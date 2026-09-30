@@ -1,0 +1,1022 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-manga-asset-gate-v1",
+  "feature_slug": "prism-manga-asset-gate-v1",
+  "version": "v0.0.1",
+  "generated_at": "2026-09-30T00:15:50.237509+00:00",
+  "expansion_profile": "pua-web",
+  "scenario_depth": "standard",
+  "families_required": [
+    "happy",
+    "negative",
+    "boundary",
+    "recovery",
+    "compatibility"
+  ],
+  "stories": [
+    {
+      "ac_id": "AC-001",
+      "theme": "general",
+      "text": "Acceptance criteria TBD",
+      "scenario_ids": [
+        "SC-001",
+        "SC-002",
+        "SC-003",
+        "SC-004",
+        "SC-005",
+        "SC-006",
+        "SC-007",
+        "SC-008",
+        "SC-009",
+        "SC-010",
+        "SC-011",
+        "SC-012",
+        "SC-013",
+        "SC-014",
+        "SC-015",
+        "SC-016",
+        "SC-017",
+        "SC-018",
+        "SC-019",
+        "SC-020"
+      ],
+      "scenario_families": [
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility",
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility",
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility",
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility"
+      ],
+      "required_families": [
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility",
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility",
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility",
+        "happy",
+        "negative",
+        "boundary",
+        "recovery",
+        "compatibility"
+      ],
+      "scenarios": [
+        {
+          "scenario_id": "SC-001",
+          "source_tc_id": "TC-MAG-001",
+          "tc_id": "TC-MAG-001-HAPPY",
+          "scenario_family": "happy",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-002",
+          "source_tc_id": "TC-MAG-001",
+          "tc_id": "TC-MAG-001-NEGATIVE",
+          "scenario_family": "negative",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-003",
+          "source_tc_id": "TC-MAG-001",
+          "tc_id": "TC-MAG-001-BOUNDARY",
+          "scenario_family": "boundary",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-004",
+          "source_tc_id": "TC-MAG-001",
+          "tc_id": "TC-MAG-001-RECOVERY",
+          "scenario_family": "recovery",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-005",
+          "source_tc_id": "TC-MAG-001",
+          "tc_id": "TC-MAG-001-COMPATIBILITY",
+          "scenario_family": "compatibility",
+          "qa_type": "compatibility",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-006",
+          "source_tc_id": "TC-MAG-002",
+          "tc_id": "TC-MAG-002-HAPPY",
+          "scenario_family": "happy",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-007",
+          "source_tc_id": "TC-MAG-002",
+          "tc_id": "TC-MAG-002-NEGATIVE",
+          "scenario_family": "negative",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-008",
+          "source_tc_id": "TC-MAG-002",
+          "tc_id": "TC-MAG-002-BOUNDARY",
+          "scenario_family": "boundary",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-009",
+          "source_tc_id": "TC-MAG-002",
+          "tc_id": "TC-MAG-002-RECOVERY",
+          "scenario_family": "recovery",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-010",
+          "source_tc_id": "TC-MAG-002",
+          "tc_id": "TC-MAG-002-COMPATIBILITY",
+          "scenario_family": "compatibility",
+          "qa_type": "compatibility",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-011",
+          "source_tc_id": "TC-MAG-007",
+          "tc_id": "TC-MAG-007-HAPPY",
+          "scenario_family": "happy",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-012",
+          "source_tc_id": "TC-MAG-007",
+          "tc_id": "TC-MAG-007-NEGATIVE",
+          "scenario_family": "negative",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-013",
+          "source_tc_id": "TC-MAG-007",
+          "tc_id": "TC-MAG-007-BOUNDARY",
+          "scenario_family": "boundary",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-014",
+          "source_tc_id": "TC-MAG-007",
+          "tc_id": "TC-MAG-007-RECOVERY",
+          "scenario_family": "recovery",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-015",
+          "source_tc_id": "TC-MAG-007",
+          "tc_id": "TC-MAG-007-COMPATIBILITY",
+          "scenario_family": "compatibility",
+          "qa_type": "compatibility",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-016",
+          "source_tc_id": "TC-MAG-008",
+          "tc_id": "TC-MAG-008-HAPPY",
+          "scenario_family": "happy",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-017",
+          "source_tc_id": "TC-MAG-008",
+          "tc_id": "TC-MAG-008-NEGATIVE",
+          "scenario_family": "negative",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": true
+        },
+        {
+          "scenario_id": "SC-018",
+          "source_tc_id": "TC-MAG-008",
+          "tc_id": "TC-MAG-008-BOUNDARY",
+          "scenario_family": "boundary",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-019",
+          "source_tc_id": "TC-MAG-008",
+          "tc_id": "TC-MAG-008-RECOVERY",
+          "scenario_family": "recovery",
+          "qa_type": "functional",
+          "browser_required": true,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-020",
+          "source_tc_id": "TC-MAG-008",
+          "tc_id": "TC-MAG-008-COMPATIBILITY",
+          "scenario_family": "compatibility",
+          "qa_type": "compatibility",
+          "browser_required": true,
+          "replay_required": true
+        }
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario_id": "SC-001",
+      "source_tc_id": "TC-MAG-001",
+      "tc_id": "TC-MAG-001-HAPPY",
+      "ac_id": "AC-001",
+      "qa_type": "functional",
+      "layer": "ui",
+      "scenario_family": "happy",
+      "title": "AC-001 happy path :: 镜头瞬态\\",
+      "browser_required": true,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "happy",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": true,
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "镜头瞬态\\ (happy path completes with expected evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-manga-asset-gate-v1/{run_id}/TC-MAG-001-HAPPY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-002",
+      "source_tc_id": "TC-MAG-001",
+      "tc_id": "TC-MAG-001-NEGATIVE",
+      "ac_id": "AC-001",
+      "qa_type": "functional",
+      "layer": "ui",
+      "scenario_family": "negative",
+      "title": "AC-001 negative path :: 镜头瞬态\\",
+      "browser_required": true,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "negative",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-001"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "镜头瞬态\\ (negative path is rejected or handled with explicit evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-manga-asset-gate-v1/{run_id}/TC-MAG-001-NEGATIVE.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-003",
+      "source_tc_id": "TC-MAG-001",
+      "tc_id": "TC-MAG-001-BOUNDARY",
+      "ac_id": "AC-001",
+      "qa_type": "functional",
+      "layer": "ui",
+      "scenario_family": "boundary",
+      "title": "AC-001 boundary path :: 镜头瞬态\\",
+      "browser_required": true,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "boundary",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-001"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "镜头瞬态\\ (boundary path is validated with explicit evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-manga-asset-gate-v1/{run_id}/TC-MAG-001-BOUNDARY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-004",
+      "source_tc_id": "TC-MAG-001",
+      "tc_id": "TC-MAG-001-RECOVERY",
+      "ac_id": "AC-001",
+      "qa_type": "functional",
+      "layer": "ui",
+      "scenario_family": "recovery",
+      "title": "AC-001 recovery path :: 镜头瞬态\\",
+      "browser_required": true,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "recovery",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-001"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "镜头瞬态\\ (recovery path survives refresh/back/retry with evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-manga-asset-gate-v1/{run_id}/TC-MAG-001-RECOVERY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-005",
+      "source_tc_id": "TC-MAG-001",
+      "tc_id": "TC-MAG-001-COMPATIBILITY",
+      "ac_id": "AC-001",
+      "qa_type": "compatibility",
+      "layer": "compatibility",
+      "scenario_family": "compatibility",
+      "title": "AC-001 compatibility path :: 镜头瞬态\\",
+      "browser_required": true,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; npx playwright test --project=chromium --project=firefox --project=webkit",
+      "coverage_axes": [
+        "compatibility",
+        "compatibility",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-001"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "镜头瞬态\\ (compatibility path preserves behavior across browser/device pairs)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-manga-asset-gate-v1/{run_id}/TC-MAG-001-COMPATIBILITY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-006",
+      "source_tc_id": "TC-MAG-002",
+      "tc_id": "TC-MAG-002-HAPPY",
+      "ac_id": "AC-001",
+      "qa_type": "functional",
+      "layer": "ui",
+      "scenario_family": "happy",
+      "title": "AC-001 happy path :: intake\\",
+      "browser_required": true,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "happy",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": true,
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "intake\\ (happy path completes with expected evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-manga-asset-gate-v1/{run_id}/TC-MAG-002-HAPPY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-007",
+      "source_tc_id": "TC-MAG-002",
+      "tc_id": "TC-MAG-002-NEGATIVE",
+      "ac_id": "AC-001",
+      "qa_type": "functional",
+      "layer": "ui",
+      "scenario_family": "negative",
+      "title": "AC-001 negative path :: intake\\",
+      "browser_required": true,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "negative",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-006"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "intake\\ (negative path is rejected or handled with explicit evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-manga-asset-gate-v1/{run_id}/TC-MAG-002-NEGATIVE.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-008",
+      "source_tc_id": "TC-MAG-002",
+      "tc_id": "TC-MAG-002-BOUNDARY",
+      "ac_id": "AC-001",
+      "qa_type": "functional",
+      "layer": "ui",
+      "scenario_family": "boundary",
+      "title": "AC-001 boundary path :: intake\\",
+      "browser_required": true,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "boundary",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-006"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "intake\\ (boundary path is validated with explicit evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-manga-asset-gate-v1/{run_id}/TC-MAG-002-BOUNDARY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-009",
+      "source_tc_id": "TC-MAG-002",
+      "tc_id": "TC-MAG-002-RECOVERY",
+      "ac_id": "AC-001",
+      "qa_type": "functional",
+      "layer": "ui",
+      "scenario_family": "recovery",
+      "title": "AC-001 recovery path :: intake\\",
+      "browser_required": true,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "recovery",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-006"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "intake\\ (recovery path survives refresh/back/retry with evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-manga-asset-gate-v1/{run_id}/TC-MAG-002-RECOVERY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-010",
+      "source_tc_id": "TC-MAG-002",
+      "tc_id": "TC-MAG-002-COMPATIBILITY",
+      "ac_id": "AC-001",
+      "qa_type": "compatibility",
+      "layer": "compatibility",
+      "scenario_family": "compatibility",
+      "title": "AC-001 compatibility path :: intake\\",
+      "browser_required": true,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; npx playwright test --project=chromium --project=firefox --project=webkit",
+      "coverage_axes": [
+        "compatibility",
+        "compatibility",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-006"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "intake\\ (compatibility path preserves behavior across browser/device pairs)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-manga-asset-gate-v1/{run_id}/TC-MAG-002-COMPATIBILITY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-011",
+      "source_tc_id": "TC-MAG-007",
+      "tc_id": "TC-MAG-007-HAPPY",
+      "ac_id": "AC-001",
+      "qa_type": "functional",
+      "layer": "ui",
+      "scenario_family": "happy",
+      "title": "AC-001 happy path :: A4 常设决策入册",
+      "browser_required": true,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "happy",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": true,
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "A4 常设决策入册 (happy path completes with expected evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-manga-asset-gate-v1/{run_id}/TC-MAG-007-HAPPY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-012",
+      "source_tc_id": "TC-MAG-007",
+      "tc_id": "TC-MAG-007-NEGATIVE",
+      "ac_id": "AC-001",
+      "qa_type": "functional",
+      "layer": "ui",
+      "scenario_family": "negative",
+      "title": "AC-001 negative path :: A4 常设决策入册",
+      "browser_required": true,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "negative",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-011"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "A4 常设决策入册 (negative path is rejected or handled with explicit evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-manga-asset-gate-v1/{run_id}/TC-MAG-007-NEGATIVE.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-013",
+      "source_tc_id": "TC-MAG-007",
+      "tc_id": "TC-MAG-007-BOUNDARY",
+      "ac_id": "AC-001",
+      "qa_type": "functional",
+      "layer": "ui",
+      "scenario_family": "boundary",
+      "title": "AC-001 boundary path :: A4 常设决策入册",
+      "browser_required": true,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "boundary",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-011"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "A4 常设决策入册 (boundary path is validated with explicit evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-manga-asset-gate-v1/{run_id}/TC-MAG-007-BOUNDARY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-014",
+      "source_tc_id": "TC-MAG-007",
+      "tc_id": "TC-MAG-007-RECOVERY",
+      "ac_id": "AC-001",
+      "qa_type": "functional",
+      "layer": "ui",
+      "scenario_family": "recovery",
+      "title": "AC-001 recovery path :: A4 常设决策入册",
+      "browser_required": true,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "recovery",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-011"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "A4 常设决策入册 (recovery path survives refresh/back/retry with evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-manga-asset-gate-v1/{run_id}/TC-MAG-007-RECOVERY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-015",
+      "source_tc_id": "TC-MAG-007",
+      "tc_id": "TC-MAG-007-COMPATIBILITY",
+      "ac_id": "AC-001",
+      "qa_type": "compatibility",
+      "layer": "compatibility",
+      "scenario_family": "compatibility",
+      "title": "AC-001 compatibility path :: A4 常设决策入册",
+      "browser_required": true,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; npx playwright test --project=chromium --project=firefox --project=webkit",
+      "coverage_axes": [
+        "compatibility",
+        "compatibility",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-011"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "A4 常设决策入册 (compatibility path preserves behavior across browser/device pairs)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-manga-asset-gate-v1/{run_id}/TC-MAG-007-COMPATIBILITY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-016",
+      "source_tc_id": "TC-MAG-008",
+      "tc_id": "TC-MAG-008-HAPPY",
+      "ac_id": "AC-001",
+      "qa_type": "functional",
+      "layer": "ui",
+      "scenario_family": "happy",
+      "title": "AC-001 happy path :: 宣称本门可替代正典门\" docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/truth.md`",
+      "browser_required": true,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "happy",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": true,
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "宣称本门可替代正典门\" docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/truth.md` (happy path completes with expected evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-manga-asset-gate-v1/{run_id}/TC-MAG-008-HAPPY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-017",
+      "source_tc_id": "TC-MAG-008",
+      "tc_id": "TC-MAG-008-NEGATIVE",
+      "ac_id": "AC-001",
+      "qa_type": "functional",
+      "layer": "ui",
+      "scenario_family": "negative",
+      "title": "AC-001 negative path :: 宣称本门可替代正典门\" docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/truth.md`",
+      "browser_required": true,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "negative",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-016"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "宣称本门可替代正典门\" docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/truth.md` (negative path is rejected or handled with explicit evidence)",
+      "priority": "P0",
+      "evidence_path": ".beacon/evidence/test-results/prism-manga-asset-gate-v1/{run_id}/TC-MAG-008-NEGATIVE.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-018",
+      "source_tc_id": "TC-MAG-008",
+      "tc_id": "TC-MAG-008-BOUNDARY",
+      "ac_id": "AC-001",
+      "qa_type": "functional",
+      "layer": "ui",
+      "scenario_family": "boundary",
+      "title": "AC-001 boundary path :: 宣称本门可替代正典门\" docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/truth.md`",
+      "browser_required": true,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "boundary",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-016"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "宣称本门可替代正典门\" docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/truth.md` (boundary path is validated with explicit evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-manga-asset-gate-v1/{run_id}/TC-MAG-008-BOUNDARY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-019",
+      "source_tc_id": "TC-MAG-008",
+      "tc_id": "TC-MAG-008-RECOVERY",
+      "ac_id": "AC-001",
+      "qa_type": "functional",
+      "layer": "ui",
+      "scenario_family": "recovery",
+      "title": "AC-001 recovery path :: 宣称本门可替代正典门\" docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/truth.md`",
+      "browser_required": true,
+      "replay_required": false,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test; exit $?; fi; npx playwright test",
+      "coverage_axes": [
+        "recovery",
+        "functional",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-016"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "宣称本门可替代正典门\" docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/truth.md` (recovery path survives refresh/back/retry with evidence)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-manga-asset-gate-v1/{run_id}/TC-MAG-008-RECOVERY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-020",
+      "source_tc_id": "TC-MAG-008",
+      "tc_id": "TC-MAG-008-COMPATIBILITY",
+      "ac_id": "AC-001",
+      "qa_type": "compatibility",
+      "layer": "compatibility",
+      "scenario_family": "compatibility",
+      "title": "AC-001 compatibility path :: 宣称本门可替代正典门\" docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/truth.md`",
+      "browser_required": true,
+      "replay_required": true,
+      "exploratory_runner": "browser-use",
+      "deterministic_runner": "playwright",
+      "explore_command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "replay_command": "if [ -f \"tools/beacon/functional-layer.sh\" ]; then bash tools/beacon/functional-layer.sh; exit $?; fi; if [ -f \"playwright.config.ts\" ] || [ -f \"playwright.config.js\" ]; then : && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"tournament_miniapp/playwright.config.ts\" ] || [ -f \"tournament_miniapp/playwright.config.js\" ]; then cd \"tournament_miniapp\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"frontend/playwright.config.ts\" ] || [ -f \"frontend/playwright.config.js\" ]; then cd \"frontend\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"web/playwright.config.ts\" ] || [ -f \"web/playwright.config.js\" ]; then cd \"web\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"app/playwright.config.ts\" ] || [ -f \"app/playwright.config.js\" ]; then cd \"app\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; if [ -f \"client/playwright.config.ts\" ] || [ -f \"client/playwright.config.js\" ]; then cd \"client\" && npx playwright test --project=chromium --project=firefox --project=webkit; exit $?; fi; npx playwright test --project=chromium --project=firefox --project=webkit",
+      "coverage_axes": [
+        "compatibility",
+        "compatibility",
+        "browser"
+      ],
+      "depends_on": [
+        "SC-016"
+      ],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "宣称本门可替代正典门\" docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/truth.md` (compatibility path preserves behavior across browser/device pairs)",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/test-results/prism-manga-asset-gate-v1/{run_id}/TC-MAG-008-COMPATIBILITY.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    }
+  ],
+  "research_projection": {
+    "schema_version": "1.0",
+    "feature": "prism-manga-asset-gate-v1",
+    "version": "v0.0.1",
+    "source": "research:missing",
+    "present": false,
+    "section_count": 0,
+    "sections": {},
+    "derived_items": []
+  },
+  "markdown_matrix_contract": {
+    "truth_mode": "generated",
+    "fail_closed": false,
+    "source": "docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/tests.md",
+    "row_count": 4,
+    "enrichment_disabled": false
+  }
+}

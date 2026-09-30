@@ -221,7 +221,7 @@
         "truth_authority": true,
         "json_authority": false,
         "generated_governance_state": false,
-        "source_hash": "e932cde25ddda4718d7c2aa099e2d6a8446d27b79621a49131bf67f75fd5593b"
+        "source_hash": "9cc4617c471371205a5df25deb9d7ff7dbb25b81f2ce75cedde6519e8807ed81"
       },
       "global_boundaries": {
         "schema_version": "1.0",
@@ -255,7 +255,7 @@
         "truth_authority": true,
         "json_authority": false,
         "generated_governance_state": false,
-        "source_hash": "8d85ff94a17b5b43ae755011b945c2e201aab21d0f70bb65fe6f9ae3885b0cf3"
+        "source_hash": "332a8059405d81aaf572ecc61db72005c178635d4223fbc8f0584162d9264050"
       },
       "execution_boundaries": {
         "schema_version": "1.0",
@@ -376,7 +376,7 @@
         "truth_authority": false,
         "json_authority": false,
         "generated_governance_state": true,
-        "source_hash": "fef84a88635d638f80c2a7bbe54f7881026709ecfd92dca9fee93ce1027abc56"
+        "source_hash": "449f30f2430d986851b74ca1be68bea3cd5c32e7b1d9d284b6d17f7b37ed9d29"
       },
       "evidence_manifest": {
         "schema_version": "1.0",
@@ -393,7 +393,7 @@
         "truth_authority": false,
         "json_authority": false,
         "generated_governance_state": true,
-        "source_hash": "e72a4d1274c1cac49af35773631a396dcc0b1954425baff516c6865f0c85688f"
+        "source_hash": "b064c94341e18ab95df09d554ba2de8c5f2179f5935c140cbed71bc230a17638"
       },
       "qa_status": {
         "schema_version": "1.0",
@@ -680,7 +680,7 @@
     ]
   },
   "generated_by": "beacon.truth_map.resolver",
-  "generated_at": "2026-09-21T05:35:23.565476+00:00",
+  "generated_at": "2026-09-30T00:12:55.238485+00:00",
   "truth_authority": false,
   "source_paths": {
     "truth": "docs/beacon/v0.0.1/features/prism-asset-gate-rollout-v1/truth.md",

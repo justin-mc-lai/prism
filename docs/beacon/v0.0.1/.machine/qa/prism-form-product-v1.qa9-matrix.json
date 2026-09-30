@@ -1,0 +1,458 @@
+{
+  "schema_version": "1.0.2",
+  "feature": "prism-form-product-v1",
+  "feature_slug": "prism-form-product-v1",
+  "version": "v0.0.1",
+  "compiler": {
+    "requested_mode": "auto",
+    "effective_mode": "host",
+    "generator_mode": "host",
+    "fallback_reason": "",
+    "capability_snapshot": {
+      "schema_version": "1.0",
+      "command_name": "test-case",
+      "host_runtime": "codex",
+      "host_runtime_supported": true,
+      "host_bridge_declared": true,
+      "host_bridge_command_available": true,
+      "host_bridge_command_source": "env_cmd",
+      "host_bridge_command_env": "BEACON_HOST_TEST_CASE_BRIDGE_CMD",
+      "host_response_available": false,
+      "host_response_source": "none",
+      "host_response_path": "",
+      "host_transport": "command-bridge",
+      "host_semantic_ready": true,
+      "response_used": false,
+      "host_mode_options": [
+        "host-response",
+        "host",
+        "host-provider",
+        "llm",
+        "rule"
+      ],
+      "provider_available": false,
+      "provider_key_present": false,
+      "llm_disabled": false,
+      "disable_env": "BEACON_TEST_CASE_DISABLE_LLM"
+    },
+    "model": "beacon-test-case-compiler"
+  },
+  "qa_profile": "web-full",
+  "qa_types": [
+    "unit",
+    "interface",
+    "contract",
+    "integration",
+    "smoke",
+    "functional",
+    "regression",
+    "exception",
+    "compatibility"
+  ],
+  "llm_plan": {
+    "mode": "rule",
+    "model": "beacon-rule-llm-v1",
+    "project_scan": {
+      "language": "unknown",
+      "framework": "unknown",
+      "frontend": "unknown",
+      "api_spec_refs": [],
+      "risk_points": [
+        "authz/authn boundary",
+        "cross-browser ui behavior",
+        "api contract drift",
+        "exception handling and replay safety"
+      ]
+    },
+    "project_type": "ai-agent-skill",
+    "generated_at": "2026-09-30T08:15:49.306541",
+    "prompt_ref": "beacon.qa9.llm.plan.v1.0.2",
+    "skip_reason": "",
+    "qa_types": [
+      "unit",
+      "interface",
+      "contract",
+      "integration",
+      "smoke",
+      "functional",
+      "regression",
+      "exception",
+      "compatibility"
+    ]
+  },
+  "qa_strategy": {
+    "schema_version": "1.0.2",
+    "generated_at": "2026-09-30T08:15:49.305151",
+    "project_type": "ai-agent-skill",
+    "project_scan": {
+      "language": "unknown",
+      "framework": "unknown",
+      "frontend": "unknown",
+      "api_spec_refs": [],
+      "risk_points": [
+        "authz/authn boundary",
+        "cross-browser ui behavior",
+        "api contract drift",
+        "exception handling and replay safety"
+      ]
+    },
+    "qa_applicability": {
+      "unit": "required",
+      "interface": "required",
+      "contract": "required",
+      "integration": "required",
+      "smoke": "required",
+      "functional": "conditional",
+      "regression": "required",
+      "exception": "required",
+      "compatibility": "conditional"
+    },
+    "qa_required_types": [
+      "unit",
+      "interface",
+      "contract",
+      "integration",
+      "smoke",
+      "functional",
+      "regression",
+      "exception",
+      "compatibility"
+    ],
+    "runner_policy": {
+      "functional": {
+        "primary": "browser-use",
+        "fallback": [
+          "playwright",
+          "cypress",
+          "agent-browser"
+        ]
+      },
+      "compatibility": {
+        "primary": "playwright",
+        "fallback": [
+          "cypress"
+        ]
+      },
+      "api_layers": {
+        "interface": "schemathesis/newman/pytest",
+        "contract": "schemathesis/pact",
+        "integration": "pytest+testcontainers"
+      }
+    },
+    "command_baseline": {
+      "unit": "python3 -m pytest -q -k unit --junitxml \"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\"",
+      "interface": "python3 -m pytest -q -k interface --junitxml \"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\"",
+      "contract": "python3 -m pytest -q -k contract --junitxml \"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\"",
+      "integration": "python3 -m pytest -q -k integration --junitxml \"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\"",
+      "smoke": "python3 -m pytest -q -m smoke --junitxml \"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\"",
+      "functional": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "regression": "python3 -m pytest -q -k regression --junitxml \"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\"",
+      "exception": "python3 -m pytest -q -k exception --junitxml \"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\"",
+      "compatibility": "python3 -m beacon.adapters.browser_use_runner --mode compatibility --deterministic-command \"python3 -m pytest -q -k compatibility --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\""
+    },
+    "ui_runner": "browser-use"
+  },
+  "qa_requirements": [
+    {
+      "qa_type": "unit",
+      "required": true,
+      "automation_required": true,
+      "min_cases": 1,
+      "applicability": "required",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    },
+    {
+      "qa_type": "interface",
+      "required": true,
+      "automation_required": true,
+      "min_cases": 1,
+      "applicability": "required",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    },
+    {
+      "qa_type": "contract",
+      "required": true,
+      "automation_required": true,
+      "min_cases": 1,
+      "applicability": "required",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    },
+    {
+      "qa_type": "integration",
+      "required": true,
+      "automation_required": true,
+      "min_cases": 1,
+      "applicability": "required",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    },
+    {
+      "qa_type": "smoke",
+      "required": true,
+      "automation_required": true,
+      "min_cases": 1,
+      "applicability": "required",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    },
+    {
+      "qa_type": "functional",
+      "required": false,
+      "automation_required": false,
+      "min_cases": 0,
+      "applicability": "conditional",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    },
+    {
+      "qa_type": "regression",
+      "required": true,
+      "automation_required": true,
+      "min_cases": 1,
+      "applicability": "required",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    },
+    {
+      "qa_type": "exception",
+      "required": true,
+      "automation_required": true,
+      "min_cases": 1,
+      "applicability": "required",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    },
+    {
+      "qa_type": "compatibility",
+      "required": false,
+      "automation_required": false,
+      "min_cases": 0,
+      "applicability": "conditional",
+      "waiver": {
+        "ticket": "",
+        "approved_by": "",
+        "expires_at": ""
+      }
+    }
+  ],
+  "automation_target_rate": 0.85,
+  "entries": [
+    {
+      "tc_id": "TC-PRD-002",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-form-product-v1 AC-001 :: `test -f contracts/form-product.contract.md && rg -c \"identity",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "intake",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-product-v1/{run_id}/TC-PRD-002.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:docs/beacon/v0.0.1/features/prism-form-product-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-PRD-003",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-form-product-v1 AC-001 :: `rg -n \"product_fact_missing",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "广告法\\",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-product-v1/{run_id}/TC-PRD-003.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:docs/beacon/v0.0.1/features/prism-form-product-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-PRD-004",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-form-product-v1 AC-001 :: `test -f skills/_internal/orchestration/form-autodetect.md && rg -n \"novel\\",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "manga_drama\\",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-product-v1/{run_id}/TC-PRD-004.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:docs/beacon/v0.0.1/features/prism-form-product-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-PRD-005",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-form-product-v1 AC-001 :: `rg -n \"电商商品\\",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "路由含电商行",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-product-v1/{run_id}/TC-PRD-005.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:docs/beacon/v0.0.1/features/prism-form-product-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-PRD-009",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-form-product-v1 AC-001 :: `rg -n \"lumenx\\",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "MoneyPrinterTurbo\\",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-product-v1/{run_id}/TC-PRD-009.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:docs/beacon/v0.0.1/features/prism-form-product-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-PRD-010",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-form-product-v1 AC-001 :: `rg -n \"Non-goals\" docs/beacon/v0.0.1/features/prism-form-product-v1/truth.md &&",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "分湖边界存在",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-product-v1/{run_id}/TC-PRD-010.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:docs/beacon/v0.0.1/features/prism-form-product-v1/tests.md"
+    },
+    {
+      "tc_id": "TC-PRD-011",
+      "ac_id": "AC-001",
+      "layer": "ui",
+      "qa_type": "functional",
+      "title": "prism-form-product-v1 AC-001 :: `rg -n \"Illegal transitions\" docs/beacon/v0.0.1/features/prism-form-product-v1/t",
+      "priority": "P0",
+      "automation": "auto",
+      "command": "python3 -m beacon.adapters.browser_use_runner --mode functional --deterministic-command \"python3 -m pytest -q -k functional --junitxml \\\"${BEACON_JUNIT_PATH:-.beacon/junit.xml}\\\"\"",
+      "assertion": "未跑 classify_form\" docs/beacon/v0.0.1/features/prism-form-product-v1/truth.md`",
+      "evidence_path": ".beacon/evidence/test-results/prism-form-product-v1/{run_id}/TC-PRD-011.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ],
+      "status": "pending",
+      "source": "qa:test-cases:docs/beacon/v0.0.1/features/prism-form-product-v1/tests.md"
+    }
+  ],
+  "markdown_matrix_contract": {
+    "truth_mode": "generated",
+    "fail_closed": false,
+    "source": "docs/beacon/v0.0.1/features/prism-form-product-v1/tests.md",
+    "row_count": 7,
+    "enrichment_disabled": false
+  },
+  "compatibility_matrix": {
+    "browsers": [
+      "chromium",
+      "firefox",
+      "webkit"
+    ],
+    "devices": [
+      "desktop",
+      "iphone14"
+    ],
+    "required_pairs": [
+      {
+        "browser": "chromium",
+        "device": "desktop"
+      },
+      {
+        "browser": "firefox",
+        "device": "desktop"
+      },
+      {
+        "browser": "webkit",
+        "device": "desktop"
+      }
+    ]
+  },
+  "generated_at": "2026-09-30T08:15:49.306592",
+  "research_projection": {
+    "schema_version": "1.0",
+    "feature": "prism-form-product-v1",
+    "version": "v0.0.1",
+    "source": "research:missing",
+    "present": false,
+    "section_count": 0,
+    "sections": {},
+    "derived_items": []
+  }
+}
