@@ -5,7 +5,7 @@
   "truth_package_contract": "beacon-feature-package-v2",
   "machine_json_role": "generated_state_not_truth",
   "generated_by": "beacon.truth_map.resolver",
-  "generated_at": "2026-09-30T06:54:31.766936+00:00",
+  "generated_at": "2026-09-30T07:21:17.390198+00:00",
   "feature": "prism-ip-schema-v1",
   "feature_slug": "prism-ip-schema-v1",
   "version": "v0.0.1",
@@ -18,7 +18,7 @@
     "evidence": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/evidence.md"
   },
   "source_hashes": {
-    "truth": "10b7a6f46d24efc89d9f620b38b0863ccafd9b8be8e0a85e2d4c206935718ae7",
+    "truth": "ccd93dcdd979f7017395616931470c874dd330cd1feece8b068730701fa0eba4",
     "tests": "149e7da645a782924238c846f88aecf64bce9947904898d2b71acbc6845676af",
     "tasks": "53113085fa9fb51d8dc7d364a7acddb82e3dfc85bdbfbfe85cb62ce4d5b5872a",
     "evidence": "395df4b1073aafed4143f741b33ddb1bba4ed15c0d377f300703d66507da6146"
@@ -29,6 +29,7 @@
     "status": "frozen",
     "language": "zh",
     "domain_required": "false",
+    "ux_required": "false",
     "parser_contract": "beacon-feature-package-v2",
     "materials_status": "current",
     "truth_source_model": "intent_first",
