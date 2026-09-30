@@ -49,6 +49,17 @@
 7. **提示词卫生**：字符数 <1500（换模型须重测并记录新阈值）；视觉指纹在开头；
    敏感词四类已过；单 ref 同框（多 ref 同框即阻断）
 8. **反向禁项**：§9 清单逐条排除（抽象质量词 / 字幕 / 空表情 / 拟物写人形动作）
+9. **画面肯定式（AC-ITB-004）**：画面元素描述禁用否定式（形如 `no <元素>`、`不要 <元素>` 描述画面内容）；
+   命中即阻断，`reason_code=image_negation_not_affirmative`。对字幕与音频的否定约束不在此列
+10. **能力域前置（AC-ITB-005）**：produce 前须声明 `provider` + `model`，分镜动作与对白须落在
+    `reachable` 白名单内；动作不可达 → `action_outside_model_domain`，对白不可达 → `dialogue_outside_model_domain`，
+    两类均在**设计期**退回（不进生成）
+11. **阈值来源（AC-ITB-007）**：`iteration_budget`、`max_downgrades`、`reachable` 白名单必须带
+    `threshold_source`（来源 + 测试条件：题材 + 模型）；缺失即 `threshold_source_missing`
+12. **生成预算（AC-ITB-001/002/003，见 `prism-shot-iteration-budget-v1`）**：每镜 `attempts` 不得超过
+    `iteration_budget`（否则 `iteration_budget_exceeded`）；超预算须有 `convergence` 降级记录
+    （`simplified` / `redesigned`）且 `downgrades` 不超过 `max_downgrades`（否则 `shot_aborted`）；
+    `dialogue_source=post_dub` 即 `post_dub_fallback_forbidden`（对白失败只能改镜头设计）
 
 阈值来源标注义务：onlyshot 的字符数与一致性百分比为单项目 N=36 实测，
 引用时须带来源与测试条件；换模型未重测即引用 → 视为无证据。

@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-ITB-006",
+  "pass": true,
+  "command": "bash scripts/check_shot_iteration_budget.sh --self-test && bash scripts/check_shot_iteration_budget.sh --storyboard content/pipelines/ai-manga-drama/fixtures/ep-compile-test/storyboard.json --expect pass",
+  "assertion": "门脚本自检 + fixture 通过",
+  "last_line": "check_shot_iteration_budget: self-test pass",
+  "at": "2026-09-30T07:14:51.395970"
+}

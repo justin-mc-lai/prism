@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-ITB-007",
+  "pass": true,
+  "command": "rg -q threshold_source_missing scripts/check_shot_iteration_budget.sh && rg -q threshold_source contracts/prompt-syntax.contract.md",
+  "assertion": "阈值来源义务",
+  "last_line": "",
+  "at": "2026-09-30T07:14:51.395970"
+}

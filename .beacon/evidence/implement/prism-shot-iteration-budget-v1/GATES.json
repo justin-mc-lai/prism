@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-shot-iteration-budget-v1",
+  "truth_integrity": "pass",
+  "truth_quality": "pass",
+  "materials_sync": "synced",
+  "all_exec_gates_pass": true,
+  "results": {
+    "AC-ITB-001": {
+      "pass": true,
+      "command": "rg -q iteration_budget content/pipelines/ai-manga-drama/storyboard-schema.json && rg -q attempts content/pipelines/ai-manga-drama/storyboard-schema.json && rg -q iteration_budget_exceeded scripts/check_shot_iteration_budget.sh",
+      "note": "分镜预算字段 + 超预算 reason_code",
+      "last_line": ""
+    },
+    "AC-ITB-002": {
+      "pass": true,
+      "command": "rg -q simplified scripts/check_shot_iteration_budget.sh && rg -q redesigned scripts/check_shot_iteration_budget.sh && rg -q max_downgrades scripts/check_shot_iteration_budget.sh && rg -q shot_aborted scripts/check_shot_iteration_budget.sh",
+      "note": "降级记录 + 降级上限 + 终止态",
+      "last_line": ""
+    },
+    "AC-ITB-003": {
+      "pass": true,
+      "command": "rg -q post_dub_fallback_forbidden scripts/check_shot_iteration_budget.sh && rg -q post_dub scripts/check_shot_iteration_budget.sh",
+      "note": "禁后期配音兜底",
+      "last_line": ""
+    },
+    "AC-ITB-004": {
+      "pass": true,
+      "command": "rg -q image_negation_not_affirmative scripts/check_shot_iteration_budget.sh && rg -q image_negation_not_affirmative contracts/prompt-syntax.contract.md",
+      "note": "画面否定→肯定式判据",
+      "last_line": ""
+    },
+    "AC-ITB-005": {
+      "pass": true,
+      "command": "rg -q action_outside_model_domain scripts/check_shot_iteration_budget.sh && rg -q dialogue_outside_model_domain scripts/check_shot_iteration_budget.sh && rg -q reachable contracts/prompt-syntax.contract.md",
+      "note": "能力域前置门",
+      "last_line": ""
+    },
+    "AC-ITB-006": {
+      "pass": true,
+      "command": "bash scripts/check_shot_iteration_budget.sh --self-test && bash scripts/check_shot_iteration_budget.sh --storyboard content/pipelines/ai-manga-drama/fixtures/ep-compile-test/storyboard.json --expect pass",
+      "note": "门脚本自检 + fixture 通过",
+      "last_line": "check_shot_iteration_budget: self-test pass"
+    },
+    "AC-ITB-007": {
+      "pass": true,
+      "command": "rg -q threshold_source_missing scripts/check_shot_iteration_budget.sh && rg -q threshold_source contracts/prompt-syntax.contract.md",
+      "note": "阈值来源义务",
+      "last_line": ""
+    }
+  },
+  "at": "2026-09-30T07:14:51.395970"
+}

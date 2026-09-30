@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-shot-iteration-budget-v1",
+  "ac_tc_matrix": {
+    "AC-ITB-001": "TC-ITB-001",
+    "AC-ITB-002": "TC-ITB-003",
+    "AC-ITB-003": "TC-ITB-005",
+    "AC-ITB-004": "TC-ITB-007",
+    "AC-ITB-005": "TC-ITB-008",
+    "AC-ITB-006": "TC-ITB-010",
+    "AC-ITB-007": "TC-ITB-013"
+  },
+  "verdict": "pass",
+  "at": "2026-09-30T07:14:51.395970"
+}

@@ -10,6 +10,25 @@
     "ratio": { "enum": ["9:16"] },
     "duration_seconds": { "type": "integer", "minimum": 60, "maximum": 90 },
     "mode": { "enum": ["production", "template"] },
+    "provider": { "type": "string", "description": "目标 provider（prism-shot-iteration-budget-v1 能力域门必填）。" },
+    "model": { "type": "string", "description": "目标模型；动作/对白须落在 reachable 白名单内。" },
+    "reachable": {
+      "type": "object",
+      "description": "能力域可达白名单（AC-ITB-005）。",
+      "properties": {
+        "actions": { "type": "array", "items": { "type": "string" } },
+        "dialogue": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "threshold_source": {
+      "type": "object",
+      "description": "阈值来源义务（AC-ITB-007）：预算/降级上限/可达白名单的来源与测试条件（题材 + 模型）。",
+      "properties": {
+        "iteration_budget": { "type": "string" },
+        "max_downgrades": { "type": "string" },
+        "reachable": { "type": "string" }
+      }
+    },
     "spec": {
       "type": "string",
       "enum": ["manju-drama"],
@@ -78,6 +97,12 @@
           "dialogue": { "type": "string" },
           "asset_ref": { "type": "string" },
           "duration_seconds": { "type": "number", "minimum": 1 },
+          "iteration_budget": { "type": "integer", "minimum": 1, "description": "本镜生成尝试上限（AC-ITB-001）。" },
+          "attempts": { "type": "integer", "minimum": 0, "description": "本镜实际生成尝试次数（AC-ITB-001）。" },
+          "convergence": { "enum": ["native", "simplified", "redesigned"], "description": "收敛方式；超预算时不得为 native（AC-ITB-002）。" },
+          "max_downgrades": { "type": "integer", "minimum": 0, "description": "降级次数上限，超过即 shot_aborted（AC-ITB-002）。" },
+          "downgrades": { "type": "integer", "minimum": 0, "description": "实际降级次数（AC-ITB-002）。" },
+          "dialogue_source": { "enum": ["native", "redesigned_none", "post_dub"], "description": "对白来源；post_dub 违规 fail-closed（AC-ITB-003）。" },
           "ref_image": {
             "type": "string",
             "description": "本镜参考图路径（相对 episode 目录）。缺省回落 asset_ref；声明即须解析到真实文件。"
