@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "run_id": "run-20260930T072539Z-effc",
+  "import_id": "run-20260930T072539Z-effc",
+  "feature": "prism-shot-iteration-budget-v1",
+  "feature_slug": "prism-shot-iteration-budget-v1",
+  "version": "v0.0.1",
+  "runner": "import-evidence",
+  "skill": "beacon-implement",
+  "status": "completed",
+  "imported": true,
+  "source_refs": [
+    ".beacon/evidence/implement/prism-shot-iteration-budget-v1/AC-ITB-001.json",
+    ".beacon/evidence/implement/prism-shot-iteration-budget-v1/AC-ITB-002.json",
+    ".beacon/evidence/implement/prism-shot-iteration-budget-v1/AC-ITB-003.json",
+    ".beacon/evidence/implement/prism-shot-iteration-budget-v1/AC-ITB-004.json",
+    ".beacon/evidence/implement/prism-shot-iteration-budget-v1/AC-ITB-005.json",
+    ".beacon/evidence/implement/prism-shot-iteration-budget-v1/AC-ITB-006.json",
+    ".beacon/evidence/implement/prism-shot-iteration-budget-v1/AC-ITB-007.json"
+  ],
+  "changed_files": [
+    "scripts/check_shot_iteration_budget.sh",
+    "content/pipelines/ai-manga-drama/storyboard-schema.json",
+    "contracts/prompt-syntax.contract.md"
+  ],
+  "service_dirs": [],
+  "summary_ref": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/evidence.md",
+  "approved_by": "agent-opencode",
+  "prompt_boundary": {
+    "schema_version": "1.0",
+    "feature": "prism-shot-iteration-budget-v1",
+    "feature_slug": "prism-shot-iteration-budget-v1",
+    "version": "v0.0.1",
+    "required": false,
+    "prompt": "Import externally produced implementation evidence for the scoped Beacon feature. Read Beacon source of truth and bind the imported evidence to the frozen feature package truth. Implement only against the frozen feature package truth above. Evidence refs: .beacon/evidence/implement/prism-shot-iteration-budget-v1/AC-ITB-001.json, .beacon/evidence/implement/prism-shot-iteration-budget-v1/AC-ITB-002.json, .beacon/evidence/implement/prism-shot-iteration-budget-v1/AC-ITB-003.json, .beacon/evidence/implement/prism-shot-iteration-budget-v1/AC-ITB-004.json, .beacon/evidence/implement/prism-shot-iteration-budget-v1/AC-ITB-005.json, .beacon/evidence/implement/prism-shot-iteration-budget-v1/AC-ITB-006.json, .beacon/evidence/implement/prism-shot-iteration-budget-v1/AC-ITB-007.json, docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/evidence.md. Changed files or service directories: scripts/check_shot_iteration_budget.sh, content/pipelines/ai-manga-drama/storyboard-schema.json, contracts/prompt-syntax.contract.md.",
+    "classification": "",
+    "blocked": false,
+    "status": "not_required",
+    "reason_code": "",
+    "next_action": "",
+    "recommended_command": "",
+    "matched_signals": [],
+    "frozen_refs": [
+      "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+      "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md",
+      "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tasks.md",
+      "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/evidence.md"
+    ],
+    "surface": "import-evidence"
+  },
+  "created_at": "2026-09-30T07:25:39.107026+00:00",
+  "generated_at": "2026-09-30T07:25:39.107032+00:00"
+}

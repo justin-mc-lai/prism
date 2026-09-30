@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-shot-iteration-budget-v1",
+  "feature_slug": "prism-shot-iteration-budget-v1",
+  "version": "v0.0.1",
+  "verdict": "passed",
+  "layers": {
+    "skill-contract": {
+      "status": "pass",
+      "source_truth_ref": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+      "evidence_ref": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-shot-iteration-budget-v1.json"
+    },
+    "scenario-suite": {
+      "status": "pass",
+      "source_truth_ref": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+      "evidence_ref": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-shot-iteration-budget-v1.md"
+    },
+    "trace-scorecard": {
+      "status": "pass",
+      "source_truth_ref": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md",
+      "evidence_ref": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md"
+    },
+    "real-project-proof": {
+      "status": "pass",
+      "source_truth_ref": ".beacon/transactions/qa-acceptance-prism-shot-iteration-budget-v1.json",
+      "evidence_ref": ".beacon/transactions/qa-acceptance-prism-shot-iteration-budget-v1.json"
+    }
+  },
+  "real_project_proof": {
+    "status": "pass",
+    "evidence_refs": [
+      ".beacon/transactions/qa-acceptance-prism-shot-iteration-budget-v1.json",
+      "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-shot-iteration-budget-v1.md",
+      "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-shot-iteration-budget-v1.json",
+      ".beacon/auto-test-status.json",
+      ".beacon/qa/status.json",
+      ".beacon/coverage-summary.json",
+      ".beacon/qa/features/prism-shot-iteration-budget-v1/ac-closure.json",
+      ".beacon/qa/features/prism-shot-iteration-budget-v1/scorecard.json",
+      ".beacon/release-gate-report.json"
+    ],
+    "source": "qa_acceptance_envelope"
+  },
+  "regression_pass": true
+}

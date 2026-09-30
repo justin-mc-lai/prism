@@ -134,5 +134,13 @@
     "summary_sha256": "3d001957e97cd637f5cd6465bf40b022acea218f4f70805be596308761b61468",
     "manifest_path": ".beacon/evidence-manifest.json",
     "manifest_sha256": "5f7cfa17ad7bd1dda453e3ea8b5c9bdfa963f9d7faffa9fcf3ca4ca8e689f327"
+  },
+  {
+    "run_id": "run-20260930T152543322207",
+    "generated_at": "2026-09-30T15:25:50.348674",
+    "summary_path": ".beacon/evidence/auto-test/run-20260930T152543322207/summary.json",
+    "summary_sha256": "72fc8dc297a5d8eefde629ed5d2b6a1b36213ba6a4eaa6e7487a2bedb2d04e4b",
+    "manifest_path": ".beacon/evidence-manifest.json",
+    "manifest_sha256": "4c2d9651508a500be342c21ce9077792ad39c70508e223de70af49956c0c40f6"
   }
 ]

@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "artifact": "qa_acceptance_envelope",
+  "version": "v0.0.1",
+  "feature": "prism-shot-iteration-budget-v1",
+  "feature_slug": "prism-shot-iteration-budget-v1",
+  "revision_id": "R2",
+  "verdict": "passed",
+  "accepted_at": "2026-09-30T07:25:50.528295+00:00",
+  "accepted_by": "qa",
+  "run_id": "run-20260930T152543322207",
+  "transaction_id": "tx-qa-acceptance-prism-shot-iteration-budget-v1-4830709fcb7d",
+  "source_hash": "sha256:4830709fcb7d0f55deff3b748325cc7d484f033c501715078ef43a3b7d429d0c",
+  "projection_seq": 1,
+  "source_command": "beacon qa run \"prism-shot-iteration-budget-v1\" --project-root /Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-shot-iteration-budget-v1 --version v0.0.1",
+  "requirement_refs": [
+    "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-shot-iteration-budget-v1.revision.json"
+  ],
+  "test_case_refs": [],
+  "evidence_refs": [
+    ".beacon/auto-test-status.json",
+    ".beacon/qa/status.json",
+    ".beacon/coverage-summary.json",
+    ".beacon/qa/features/prism-shot-iteration-budget-v1/ac-closure.json",
+    ".beacon/qa/features/prism-shot-iteration-budget-v1/scorecard.json",
+    ".beacon/release-gate-report.json"
+  ],
+  "story_status": "implemented",
+  "revision_delivery_status": "implemented",
+  "required_ac_count": 0,
+  "required_test_count": 0,
+  "canonical_envelope_ref": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-shot-iteration-budget-v1.json",
+  "markdown_ref": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-shot-iteration-budget-v1.md",
+  "transaction_lineage": {
+    "current_transaction_id": "tx-qa-acceptance-prism-shot-iteration-budget-v1-4830709fcb7d",
+    "projection_seq": 1,
+    "source_hash": "sha256:4830709fcb7d0f55deff3b748325cc7d484f033c501715078ef43a3b7d429d0c",
+    "workflow_memory_ref": ".beacon/memory/workflow-lifecycle.json",
+    "memory_event_id": "",
+    "memory_entry_id": "383f5370-9cdb-4175-9b46-c4e7c1ae8e80"
+  },
+  "sink_checksums": {
+    "machine": "sha256:73992b32f4e3f1c3003bfc67cc9b554aab824a6c37cad502b441ba07759be883",
+    "human": "sha256:200f7a279b5a233c4f77aa858c7fedf4140ced41a3216904f3b896d09d57717e",
+    "runtime": "sha256:f782daf4edf5e5d7a40ddbca9182262e39fdbb7cfae6cb743fb9de4b55b78271"
+  },
+  "runtime_projection_ref": ".beacon/transactions/qa-acceptance-prism-shot-iteration-budget-v1.json",
+  "transaction_status": "applied",
+  "failed_sinks": []
+}

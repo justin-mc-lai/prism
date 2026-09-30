@@ -1,9 +1,20 @@
 {
   "stage": "verify",
   "mode": "strict",
-  "status": "Pass",
-  "issues": [],
-  "run_id": "run-20260930T152305985033",
+  "status": "Blocked",
+  "issues": [
+    {
+      "reason_code": "assertion_count_zero_pass",
+      "message": "layer contract passed but assertion_count=0",
+      "blocked": true
+    },
+    {
+      "reason_code": "junit_missing_or_invalid",
+      "message": "layer contract missing junit.xml",
+      "blocked": true
+    }
+  ],
+  "run_id": "run-20260930T152543322207",
   "version": "v0.0.1",
-  "updated_at": "2026-09-30T07:23:12.133720+00:00"
+  "updated_at": "2026-09-30T07:25:50.313601+00:00"
 }
