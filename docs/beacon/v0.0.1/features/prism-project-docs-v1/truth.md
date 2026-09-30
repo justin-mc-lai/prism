@@ -2,7 +2,7 @@
 slug: prism-project-docs-v1
 version: v0.0.1
 status: frozen
-revision_id: R3
+revision_id: R4
 language: zh
 domain_required: false
 ux_required: false

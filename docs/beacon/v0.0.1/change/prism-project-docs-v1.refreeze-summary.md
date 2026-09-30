@@ -5,8 +5,8 @@
 - refreeze_status: `complete`
 - blocked_reason: ``
 - next_route: `beacon-implement`
-- revision_before: `R3`
-- revision_after: `R3`
+- revision_before: `R4`
+- revision_after: `R4`
 
 ## Surface Statuses
 - `change`: `present` (docs/beacon/v0.0.1/change/prism-project-docs-v1.md)

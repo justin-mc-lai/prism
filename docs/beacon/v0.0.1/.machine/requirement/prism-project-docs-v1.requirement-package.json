@@ -5,7 +5,7 @@
   "truth_package_contract": "beacon-feature-package-v2",
   "machine_json_role": "generated_state_not_truth",
   "generated_by": "beacon.truth_map.resolver",
-  "generated_at": "2026-09-30T00:33:57.578171+00:00",
+  "generated_at": "2026-09-30T01:34:23.726329+00:00",
   "feature": "prism-project-docs-v1",
   "feature_slug": "prism-project-docs-v1",
   "version": "v0.0.1",
@@ -18,8 +18,8 @@
     "evidence": "docs/beacon/v0.0.1/features/prism-project-docs-v1/evidence.md"
   },
   "source_hashes": {
-    "truth": "5bf77c07cf110f552bc85734ca0cd4aa56d02c9ef0bded18d6562669c5d0c8e9",
-    "tests": "7351402124eec7822e5c84ec2e8012196bc487034489637ae9ddf6713bb8d27f",
+    "truth": "bf927a0dcfa5ad289aafb423b737721d846963bd4bd11a051b4d61a39029f195",
+    "tests": "f20cf002df697354ea989aedbf6b7aa6f560c846045781b39554cdce4e1f3e84",
     "tasks": "a4363056a1d5b7d68866dc75e56f3be8d9e883c0f3110eb5e30827665ffe32a0",
     "evidence": "c8585f4664a160fcbe0a23e5d1c3191d0ac4e0ba64591524696fe592e8119b30"
   },
@@ -27,7 +27,7 @@
     "slug": "prism-project-docs-v1",
     "version": "v0.0.1",
     "status": "frozen",
-    "revision_id": "R3",
+    "revision_id": "R4",
     "language": "zh",
     "domain_required": "false",
     "ux_required": "false",
@@ -80,7 +80,7 @@
       "ac_id": "AC-PDO-001",
       "tc_id": "TC-PDO-001",
       "layer": "",
-      "command": "`rm -rf /tmp/prism-pdo-001 && python3 $PRISM_HOME/scripts/ai_manga_drama.py init --dir /tmp/prism-pdo-001/docs/prism --episode ep-t1 && diff <(ls /tmp/prism-pdo-001/docs/prism \\|grep -v README.md \\|sort) <(ls content \\|sort)`",
+      "command": "`rm -rf /tmp/prism-pdo-001 && python3 $PRISM_HOME/scripts/ai_manga_drama.py init --dir /tmp/prism-pdo-001/docs/prism --episode ep-t1 && diff <(ls /tmp/prism-pdo-001/docs/prism | grep -v README.md | sort) <(ls content | sort)`",
       "assertion": "项目侧子目录与 content/ 同名同构（README.md 除外）",
       "evidence_path": "",
       "source": ""
@@ -89,7 +89,7 @@
       "ac_id": "AC-PDO-001",
       "tc_id": "TC-PDO-002",
       "layer": "",
-      "command": "`test -f /tmp/prism-pdo-001/docs/prism/README.md && rg -q '大纲' /tmp/prism-pdo-001/docs/prism/README.md && rg -q '母稿\\|masters' /tmp/prism-pdo-001/docs/prism/README.md && rg -q '分镜' /tmp/prism-pdo-001/docs/prism/README.md`",
+      "command": "`test -f /tmp/prism-pdo-001/docs/prism/README.md && rg -q '大纲' /tmp/prism-pdo-001/docs/prism/README.md && rg -q '母稿|masters' /tmp/prism-pdo-001/docs/prism/README.md && rg -q '分镜' /tmp/prism-pdo-001/docs/prism/README.md`",
       "assertion": "门面 README 存在且含大纲/母稿/分镜三类索引",
       "evidence_path": "",
       "source": ""
@@ -107,7 +107,7 @@
       "ac_id": "AC-PDO-002",
       "tc_id": "TC-PDO-004",
       "layer": "",
-      "command": "`rg -n 'PRISM_HOME' skills/prism-director/SKILL.md skills/prism-produce/SKILL.md skills/prism-qa/SKILL.md \\|wc -l \\|awk '{exit !($1>=3)}'`",
+      "command": "`rg -n 'PRISM_HOME' skills/prism-director/SKILL.md skills/prism-produce/SKILL.md skills/prism-qa/SKILL.md | wc -l | awk '{exit !($1>=3)}'`",
       "assertion": "公开 skill 指令面写入 PRISM_HOME 约定（≥3 处）",
       "evidence_path": "",
       "source": ""
@@ -116,7 +116,7 @@
       "ac_id": "AC-PDO-002",
       "tc_id": "TC-PDO-005",
       "layer": "",
-      "command": "`rg -n '\\$PRISM_HOME/scripts/' skills/prism-director/SKILL.md skills/prism-produce/SKILL.md \\|wc -l \\|awk '{exit !($1>=2)}'`",
+      "command": "`rg -n '\\$PRISM_HOME/scripts/' skills/prism-director/SKILL.md skills/prism-produce/SKILL.md | wc -l | awk '{exit !($1>=2)}'`",
       "assertion": "命令示例以 `$PRISM_HOME/scripts/` 开头（≥2 处）",
       "evidence_path": "",
       "source": ""
@@ -125,7 +125,7 @@
       "ac_id": "AC-PDO-002",
       "tc_id": "TC-PDO-006",
       "layer": "",
-      "command": "`! git ls-files \\|rg -q 'prompt_compiler\\.py\\|ai_manga_drama\\.py\\|drama_spec\\.py' \\|\\|(git ls-files \\|rg 'prompt_compiler\\.py\\|ai_manga_drama\\.py\\|drama_spec\\.py' \\|rg -q '^scripts/')`",
+      "command": "`! git ls-files | rg -q 'prompt_compiler\\.py|ai_manga_drama\\.py|drama_spec\\.py' || (git ls-files | rg 'prompt_compiler\\.py|ai_manga_drama\\.py|drama_spec\\.py' | rg -q '^scripts/')`",
       "assertion": "仓内三脚本只存在于 scripts/（唯一能力 SoT，无副本）",
       "evidence_path": "",
       "source": ""
@@ -143,7 +143,7 @@
       "ac_id": "AC-PDO-003",
       "tc_id": "TC-PDO-008",
       "layer": "",
-      "command": "`rg -n 'alias\\|deprecated' contracts/form-manga-drama.contract.md \\|rg -q 'content/presentations'`",
+      "command": "`rg -n 'alias|deprecated' contracts/form-manga-drama.contract.md | rg -q 'content/presentations'`",
       "assertion": "旧路径 content/presentations 已标 alias/deprecated",
       "evidence_path": "",
       "source": ""
@@ -170,7 +170,7 @@
       "ac_id": "AC-PDO-004",
       "tc_id": "TC-PDO-011",
       "layer": "",
-      "command": "`rg -n '只软链\\|指令面' scripts/install_public_surfaces.sh \\|wc -l \\|awk '{exit !($1>=1)}'`",
+      "command": "`rg -n '只软链|指令面' scripts/install_public_surfaces.sh | wc -l | awk '{exit !($1>=1)}'`",
       "assertion": "install 脚本注释明示只装指令面",
       "evidence_path": "",
       "source": ""
@@ -179,7 +179,7 @@
       "ac_id": "AC-PDO-005",
       "tc_id": "TC-PDO-012",
       "layer": "",
-      "command": "`! rg -n 'parser_contract\\|revision_id' docs/prism/ \\|\\|! rg -l 'parser_contract' docs/prism/ 2>/dev/null`",
+      "command": "`! rg -n 'parser_contract|revision_id' docs/prism/ || ! rg -l 'parser_contract' docs/prism/ 2>/dev/null`",
       "assertion": "docs/prism 无需求真相字段（负向）",
       "evidence_path": "",
       "source": ""
@@ -188,7 +188,7 @@
       "ac_id": "AC-PDO-005",
       "tc_id": "TC-PDO-013",
       "layer": "",
-      "command": "`! rg --files docs/beacon \\|rg -q '(^|/)(storyboard\\.json\\|分镜脚本\\.md)$'`",
+      "command": "`! rg --files docs/beacon | rg -q '(^|/)(storyboard\\.json|分镜脚本\\.md)$'`",
       "assertion": "docs/beacon 下无分镜产物文件（负向；按产物名判定，非字面内容匹配）",
       "evidence_path": "",
       "source": ""
@@ -215,7 +215,7 @@
       "ac_id": "GATES",
       "tc_id": "TC-PDO-016",
       "layer": "",
-      "command": "`beacon doctor verify-truth-integrity prism-project-docs-v1 --project-root . --version v0.0.1 --mode block --json \\|python3 -c \"import json,sys; d=json.load(sys.stdin); exit(0 if d.get('result',{}).get('blocked') in (False,None) and d.get('result',{}).get('closure_contract',{}).get('closure_allowed') else 1\"`",
+      "command": "`beacon doctor verify-truth-integrity prism-project-docs-v1 --project-root . --version v0.0.1 --mode block --json | python3 -c \"import json,sys; d=json.load(sys.stdin); exit(0 if d.get('result',{}).get('blocked') in (False,None) and d.get('result',{}).get('closure_contract',{}).get('closure_allowed') else 1)\"`",
       "assertion": "`closure_allowed=true` 且 finding_count=0（integrity 门真跑、非空报告）",
       "evidence_path": "",
       "source": ""
@@ -233,7 +233,7 @@
       "ac_id": "FSM",
       "tc_id": "TC-PDO-018",
       "layer": "",
-      "command": "`rg -n 'scaffolded.*validated\\|validated.*compiled\\|compiled.*rendered\\|rendered.*assembled\\|assembled.*qa_passed\\|qa_passed.*released' docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md \\|wc -l \\|awk '{exit !($1>=6)}'`",
+      "command": "`rg -n 'scaffolded.*validated|validated.*compiled|compiled.*rendered|rendered.*assembled|assembled.*qa_passed|qa_passed.*released' docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md | wc -l | awk '{exit !($1>=6)}'`",
       "assertion": "FSM 七态六跃迁在 truth 中成对出现（scaffolded→validated→compiled→rendered→assembled→qa_passed→released）",
       "evidence_path": "",
       "source": ""
@@ -242,7 +242,7 @@
       "ac_id": "FSM",
       "tc_id": "TC-PDO-019",
       "layer": "",
-      "command": "`rg -n 'illegal: scaffolded → compiled\\|illegal: compiled → rendered\\|illegal: assembled → released' docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md \\|wc -l \\|awk '{exit !($1>=3)}'`",
+      "command": "`rg -n 'illegal: scaffolded → compiled|illegal: compiled → rendered|illegal: assembled → released' docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md | wc -l | awk '{exit !($1>=3)}'`",
       "assertion": "三条非法跃迁槽位（跳校验/无凭证渲染/无人工发布）全部在 truth",
       "evidence_path": "",
       "source": ""
