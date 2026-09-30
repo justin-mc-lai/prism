@@ -6,7 +6,7 @@
   "summary": "Maintains release-facing version aggregate projection guards so QA accepted features are included in version change scope before release check.",
   "status": "generated",
   "accepted_at": "",
-  "revision_id": "R4",
+  "revision_id": "R5",
   "projection_role": {
     "artifact_role": "version_aggregate_projection",
     "truth_source": false,
@@ -35,5 +35,5 @@
     "docs/beacon/v0.0.1/qa/test-cases/prism-project-docs-v1.md",
     "docs/beacon/v0.0.1/.machine/execution/prism-project-docs-v1.revision.json"
   ],
-  "generated_at": "2026-09-30T01:33:16.912935+00:00"
+  "generated_at": "2026-09-30T03:57:16.196514+00:00"
 }

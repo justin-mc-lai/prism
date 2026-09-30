@@ -1,12 +1,12 @@
 # Change Refreeze Summary: prism-project-docs-v1
 
 - version: `v0.0.1`
-- change_reason: `change-request`
+- change_reason: `implementation-first-reconciliation`
 - refreeze_status: `complete`
 - blocked_reason: ``
 - next_route: `beacon-implement`
 - revision_before: `R4`
-- revision_after: `R4`
+- revision_after: `R5`
 
 ## Surface Statuses
 - `change`: `present` (docs/beacon/v0.0.1/change/prism-project-docs-v1.md)
