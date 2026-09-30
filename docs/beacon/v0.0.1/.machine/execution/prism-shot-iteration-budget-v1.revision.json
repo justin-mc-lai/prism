@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-shot-iteration-budget-v1",
+  "feature_slug": "prism-shot-iteration-budget-v1",
+  "version": "v0.0.1",
+  "revision_id": "R1",
+  "source_revision_id": "",
+  "reason": "freeze",
+  "doc_status": "frozen",
+  "delivery_status": "idle",
+  "lifecycle_status": "idle",
+  "baseline_hash": "sha256:c20c5c3a3aff71dea493b604f96f7fff82242c53bd86a08afb9f21fab907a1f9",
+  "superseded_by": "",
+  "created_at": "2026-09-30T06:56:58.384879+00:00",
+  "frozen_at": "2026-09-30T06:56:58.385812+00:00",
+  "accepted_at": ""
+}

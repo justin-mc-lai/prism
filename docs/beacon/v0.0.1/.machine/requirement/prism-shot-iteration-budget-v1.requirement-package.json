@@ -1,0 +1,314 @@
+{
+  "schema_version": "1.0",
+  "truth_map_contract": "beacon-truth-map-v1",
+  "truth_source_model": "feature_package_authoritative",
+  "truth_package_contract": "beacon-feature-package-v2",
+  "machine_json_role": "generated_state_not_truth",
+  "generated_by": "beacon.truth_map.resolver",
+  "generated_at": "2026-09-30T06:56:58.639596+00:00",
+  "feature": "prism-shot-iteration-budget-v1",
+  "feature_slug": "prism-shot-iteration-budget-v1",
+  "version": "v0.0.1",
+  "truth_authority": false,
+  "json_authority": false,
+  "source_paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md",
+    "tasks": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tasks.md",
+    "evidence": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/evidence.md"
+  },
+  "source_hashes": {
+    "truth": "5c3951236c55ce9d227062217069badc936b1fb1f2604c431965764e8494a2c4",
+    "tests": "65324637a3f5590272070ce4ed45ceaf8470059396ba0f91bc4be7d6b8f92ac5",
+    "tasks": "239ab247e8ddd3b42573329c07df861578ac1b6b42478254c00ad837a0ef6c52",
+    "evidence": "a9b8ed6b291afad733ed74166b40d107e1629e31c6d19466392cafa9ddf0ca0e"
+  },
+  "truth_frontmatter": {
+    "slug": "prism-shot-iteration-budget-v1",
+    "version": "v0.0.1",
+    "status": "frozen",
+    "language": "zh",
+    "domain_required": "false",
+    "parser_contract": "beacon-feature-package-v2",
+    "materials_status": "current",
+    "truth_source_model": "intent_first",
+    "canonical_refs": {
+      "prd": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md"
+    },
+    "provenance": {
+      "- ac_id": "AC-ITB-007",
+      "source_type": "source_evidence",
+      "source_ref": "contracts/drama-storyboard-spec.contract.md §5 阈值来源标注义务"
+    }
+  },
+  "frontmatter_errors": [],
+  "acceptance_criteria": [
+    {
+      "ac_id": "AC-ITB-001",
+      "theme": "分镜/镜头 schema 含 `iteration_budget`（每镜生成上限，正整数）与 `attempts`（实际尝试次数）；当 `attempts` 大于 `iteration_budget` 且无合规降级记录时，判定为 blocked，reason_code 为 `iteration_budget_exceeded`",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-ITB-002",
+      "theme": "超预算的镜头必须附降级记录：`convergence` 取值限定在枚举 `simplified`（简化镜头）、`redesigned`（改镜头设计）内，并带具体降级动作；降级有次数上限（`max_downgrades`），超过即终止该镜（`shot_aborted`），防止无限降级循环",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-ITB-003",
+      "theme": "证据链中出现\"对白由后期合成（TTS / 配音）产生\"即 fail-closed，reason_code 为 `post_dub_fallback_forbidden`；provider 原生对白与改设计后无对白两种情形均为合规；与 `assemble` 的 no-fallback 总则一致",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-ITB-004",
+      "theme": "`prompt-syntax` 判定新增：画面元素描述若使用否定式（形如 `no <元素>` 、`不要 <元素>` 描述画面内容）即 blocked，reason_code 为 `image_negation_not_affirmative`；对字幕与音频的否定约束不在此列",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-ITB-005",
+      "theme": "能力域前置门：produce 前须声明目标 provider 与模型，并校验分镜动作与对白在该模型的 `reachable` 白名单内；动作不可达 → `action_outside_model_domain`，对白不可达 → `dialogue_outside_model_domain`；两类均在**设计期**退回（不进生成）",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-ITB-006",
+      "theme": "确定性校验脚本 `scripts/check_shot_iteration_budget.sh` 可对给定 storyboard 与证据判定两种合规情形：预算未超；预算已超但带合规降级记录。检出画面否定式即失败；检出后期配音兜底即失败；违规时非零退出并打印对应 reason_code",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-ITB-007",
+      "theme": "阈值来源义务：`iteration_budget`、`max_downgrades`、以及能力域 `reachable` 白名单必须标注来源与测试条件（题材 + 模型）；未标注来源的阈值，门报 `threshold_source_missing`",
+      "description": ""
+    }
+  ],
+  "test_rows": [
+    {
+      "ac_id": "AC-ITB-001",
+      "tc_id": "TC-ITB-001",
+      "layer": "",
+      "command": "`for f in iteration_budget attempts; do rg -q \"$f\" content/pipelines/ai-manga-drama/storyboard-schema.json||exit 1; done`",
+      "assertion": "分镜 schema 声明 iteration_budget 与 attempts",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ITB-001",
+      "tc_id": "TC-ITB-002",
+      "layer": "",
+      "command": "`rg -n 'iteration_budget_exceeded' scripts/check_shot_iteration_budget.sh`",
+      "assertion": "超预算 reason_code 在门脚本中声明",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ITB-002",
+      "tc_id": "TC-ITB-003",
+      "layer": "",
+      "command": "`rg -n 'simplified' scripts/check_shot_iteration_budget.sh && rg -n 'redesigned' scripts/check_shot_iteration_budget.sh`",
+      "assertion": "降级枚举 simplified 与 redesigned 均在门脚本中声明",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ITB-002",
+      "tc_id": "TC-ITB-004",
+      "layer": "",
+      "command": "`rg -n 'max_downgrades' scripts/check_shot_iteration_budget.sh && rg -n 'shot_aborted' scripts/check_shot_iteration_budget.sh`",
+      "assertion": "降级上限与终止态声明存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ITB-003",
+      "tc_id": "TC-ITB-005",
+      "layer": "",
+      "command": "`rg -n 'post_dub_fallback_forbidden' scripts/check_shot_iteration_budget.sh`",
+      "assertion": "禁后期配音兜底 reason_code 存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ITB-003",
+      "tc_id": "TC-ITB-006",
+      "layer": "",
+      "command": "`rg -n 'post_dub' scripts/check_shot_iteration_budget.sh | wc -l | awk '{exit !($1>=1)}'`",
+      "assertion": "后期配音检出逻辑存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ITB-004",
+      "tc_id": "TC-ITB-007",
+      "layer": "",
+      "command": "`rg -n 'image_negation_not_affirmative' scripts/check_shot_iteration_budget.sh contracts/prompt-syntax.contract.md`",
+      "assertion": "画面否定式判据契约与门脚本同时声明",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ITB-005",
+      "tc_id": "TC-ITB-008",
+      "layer": "",
+      "command": "`rg -n 'action_outside_model_domain' scripts/check_shot_iteration_budget.sh && rg -n 'dialogue_outside_model_domain' scripts/check_shot_iteration_budget.sh`",
+      "assertion": "能力域前置门两类 reason_code 存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ITB-005",
+      "tc_id": "TC-ITB-009",
+      "layer": "",
+      "command": "`rg -n 'reachable' contracts/prompt-syntax.contract.md scripts/check_shot_iteration_budget.sh`",
+      "assertion": "能力域可达白名单在契约与门脚本中声明",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ITB-006",
+      "tc_id": "TC-ITB-010",
+      "layer": "",
+      "command": "`bash scripts/check_shot_iteration_budget.sh --self-test 2>/dev/null; test $? -eq 0`",
+      "assertion": "门脚本自检通过（exit 0）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ITB-006",
+      "tc_id": "TC-ITB-011",
+      "layer": "",
+      "command": "`bash scripts/check_shot_iteration_budget.sh --storyboard content/pipelines/ai-manga-drama/fixtures/ep-compile-test/storyboard.json --expect pass; test $? -eq 0`",
+      "assertion": "对合规样例判定通过",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ITB-006",
+      "tc_id": "TC-ITB-012",
+      "layer": "",
+      "command": "`bash scripts/check_shot_iteration_budget.sh --storyboard content/pipelines/ai-manga-drama/fixtures/ep-compile-test/storyboard.json --invert --expect fail; test $? -eq 1`",
+      "assertion": "反向断言：破坏预算记录时门必须 fail（负向）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ITB-007",
+      "tc_id": "TC-ITB-013",
+      "layer": "",
+      "command": "`rg -n 'threshold_source_missing' scripts/check_shot_iteration_budget.sh`",
+      "assertion": "阈值来源义务 reason_code 存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-ITB-007",
+      "tc_id": "TC-ITB-014",
+      "layer": "",
+      "command": "`rg -n 'threshold_source' contracts/prompt-syntax.contract.md scripts/check_shot_iteration_budget.sh | wc -l | awk '{exit !($1>=1)}'`",
+      "assertion": "阈值来源标注在契约或门脚本中体现",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "GATES",
+      "tc_id": "TC-ITB-015",
+      "layer": "",
+      "command": "`beacon truth review prism-shot-iteration-budget-v1 --project . --version v0.0.1 --json`",
+      "assertion": "Truth Review Gate A/B/C + L0 pass，recommend_freeze=true",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "GATES",
+      "tc_id": "TC-ITB-016",
+      "layer": "",
+      "command": "`beacon doctor verify-truth-integrity prism-shot-iteration-budget-v1 --project-root . --version v0.0.1 --mode block --json | python3 -c \"import json,sys; d=json.load(sys.stdin); exit(0 if d.get('result',{}).get('blocked') in (False,None) and d.get('result',{}).get('closure_contract',{}).get('closure_allowed') else 1)\"`",
+      "assertion": "closure_allowed=true 且无 blocking finding（integrity 门真跑）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "FSM",
+      "tc_id": "TC-ITB-017",
+      "layer": "",
+      "command": "`rg -n 'attempting → converged while attempts 大于 iteration_budget 且无降级' docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md`",
+      "assertion": "非法跃迁槽位：超预算无降级不得收敛",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "FSM",
+      "tc_id": "TC-ITB-018",
+      "layer": "",
+      "command": "`rg -n 'post_dub 产物进入 assemble' docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md`",
+      "assertion": "非法跃迁槽位：后期配音产物不得进入拼接",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "FSM",
+      "tc_id": "TC-ITB-019",
+      "layer": "",
+      "command": "`rg -n 'action_outside_model_domain 直接进入 attempting' docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md`",
+      "assertion": "非法跃迁槽位：跳过能力域门直接生成被禁止",
+      "evidence_path": "",
+      "source": ""
+    }
+  ],
+  "task_rows": [
+    {
+      "id": "TASK-001",
+      "title": "Implement AC-ITB-001: 分镜/镜头 schema 含 `iteration_budget`（每镜生成上限，正整数）与 `attempts`（实际尝试次数）；当 `... · ac=AC-ITB-001 · evidence=`.beacon/evidence/implement/prism-shot-iteration-budget-v1/AC-ITB-001.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-002",
+      "title": "Implement AC-ITB-002: 超预算的镜头必须附降级记录：`convergence` 取值限定在枚举 `simplified`（简化镜头）、`redesigned`（改... · ac=AC-ITB-002 · evidence=`.beacon/evidence/implement/prism-shot-iteration-budget-v1/AC-ITB-002.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-003",
+      "title": "Implement AC-ITB-003: 证据链中出现\"对白由后期合成（TTS / 配音）产生\"即 fail-closed，reason_code 为 `post_dub_fall... · ac=AC-ITB-003 · evidence=`.beacon/evidence/implement/prism-shot-iteration-budget-v1/AC-ITB-003.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-004",
+      "title": "Implement AC-ITB-004: `prompt-syntax` 判定新增：画面元素描述若使用否定式（形如 `no <元素>` 、`不要 <元素>` 描述画面内容）即 bl... · ac=AC-ITB-004 · evidence=`.beacon/evidence/implement/prism-shot-iteration-budget-v1/AC-ITB-004.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-005",
+      "title": "Implement AC-ITB-005: 能力域前置门：produce 前须声明目标 provider 与模型，并校验分镜动作与对白在该模型的 `reachable` 白名单内；动... · ac=AC-ITB-005 · evidence=`.beacon/evidence/implement/prism-shot-iteration-budget-v1/AC-ITB-005.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-006",
+      "title": "Implement AC-ITB-006: 确定性校验脚本 `scripts/check_shot_iteration_budget.sh` 可对给定 storyboard 与证据判... · ac=AC-ITB-006 · evidence=`.beacon/evidence/implement/prism-shot-iteration-budget-v1/AC-ITB-006.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-007",
+      "title": "Implement AC-ITB-007: 阈值来源义务：`iteration_budget`、`max_downgrades`、以及能力域 `reachable` 白名单必须标注来... · ac=AC-ITB-007 · evidence=`.beacon/evidence/implement/prism-shot-iteration-budget-v1/AC-ITB-007.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-008",
+      "title": "Validate package gates (truth review + freeze ack) · ac=GATES · evidence=`.beacon/evidence/implement/prism-shot-iteration-budget-v1/GATES.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-009",
+      "title": "Run QA against AC↔TC matrix + exec-layer evidence · ac=QA · evidence=`.beacon/evidence/implement/prism-shot-iteration-budget-v1/QA-MATRIX.json`",
+      "status": "unchecked"
+    }
+  ],
+  "checkbox_errors": [],
+  "evidence_rows": [
+    {
+      "surface": "qa",
+      "authority": "qa_verdict",
+      "canonical_artifact": "tests/",
+      "status": "linked",
+      "route": "qa"
+    }
+  ]
+}

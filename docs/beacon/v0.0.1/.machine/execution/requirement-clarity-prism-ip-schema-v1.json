@@ -1,0 +1,327 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-ip-schema-v1",
+  "feature_slug": "prism-ip-schema-v1",
+  "version": "v0.0.1",
+  "runtime_version": "v1.6.19",
+  "runtime_capability_line": "v1.3.3",
+  "required": true,
+  "reason_code": "",
+  "blocked": false,
+  "status": "pass",
+  "findings": [],
+  "report_json_path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-ip-schema-v1.json",
+  "report_markdown_path": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-ip-schema-v1.md",
+  "state_path": ".beacon/state/requirement-clarity-prism-ip-schema-v1.json",
+  "diagram_truth": {
+    "schema_version": "1.0",
+    "version": "v0.0.1",
+    "supported": false,
+    "required": false,
+    "ready": false,
+    "diagram_types": [],
+    "state_axes": [],
+    "missing_diagram_types": [],
+    "missing_state_axes": false,
+    "complexity_signals": [],
+    "review_gates": [],
+    "qa_coverage_hints": [],
+    "evidence_lines": {},
+    "generated_at": "2026-09-30T06:54:30.825000+00:00",
+    "feature": "prism-ip-schema-v1",
+    "feature_slug": "prism-ip-schema-v1",
+    "prd_ref": "docs/beacon/v0.0.1/prd/prism-ip-schema-v1.md",
+    "user_story_ref": "docs/beacon/v0.0.1/user-story/prism-ip-schema-v1.md"
+  },
+  "domain_fsm_gate": {
+    "schema_version": "1.0",
+    "feature": "prism-ip-schema-v1",
+    "feature_slug": "prism-ip-schema-v1",
+    "version": "v0.0.1",
+    "truth_path": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/truth.md",
+    "tests_path": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/tests.md",
+    "required": false,
+    "blocked": false,
+    "status": "not_required",
+    "reason_code": "",
+    "findings": [],
+    "requirement": {
+      "required": false,
+      "reason": "version_below_v1_6_7",
+      "explicit": false,
+      "partial": false,
+      "complexity": false,
+      "business_signal": false,
+      "version_supported": false
+    },
+    "projection": {
+      "schema_version": "1.0",
+      "domain_fsm_schema": "domain-fsm.v1",
+      "entity_precedence_schema": "entity-precedence.v1",
+      "frontmatter": {
+        "slug": "prism-ip-schema-v1",
+        "version": "v0.0.1",
+        "status": "draft",
+        "language": "zh",
+        "domain_required": "false",
+        "parser_contract": "beacon-feature-package-v2",
+        "materials_status": "current",
+        "truth_source_model": "intent_first",
+        "canonical_refs": {
+          "prd": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/truth.md",
+          "user_story": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/truth.md",
+          "test_case": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/tests.md"
+        },
+        "provenance": {
+          "- ac_id": "AC-IPM-008",
+          "source_type": "user_decision",
+          "source_ref": "2026-09-30 用户拍板 D6：存量 storyworld/master 资产收敛进 IP"
+        }
+      },
+      "frontmatter_errors": [],
+      "has_domain_model_section": false,
+      "has_domain_fsm_section": false,
+      "has_illegal_transition_section": false,
+      "entities": [],
+      "entity_precedence": [],
+      "aggregates": [],
+      "illegal_transition_slots": [],
+      "acceptance_criteria": [
+        {
+          "ac_id": "AC-IPM-001",
+          "description": "注册 `ip` 内容对象：`registry/content-schema.yaml` 含 `schema_id: ip`，`root: content/ips/{ip_id}/`，`contract: contracts/ip.schema.yaml`；`ip.yaml` 必填字段为 `ip_id`、`title`、`kind`（`fact`、`story`、`brand`）、`status`（`draft`、`active`、`paused`、`archived`）、`canon_revision`、`publish_identity_ref`"
+        },
+        {
+          "ac_id": "AC-IPM-002",
+          "description": "IP 资产条目位于 `content/ips/{ip_id}/assets/{characters,scenes,props,styles}/<asset_id>/`，含稳定 `asset_id`、`canon_revision`、冻结 identity block（7 段）、引用图文件；`asset_id` 在同一 IP 内唯一；跨 IP 引用一律带 `from` 限定"
+        },
+        {
+          "ac_id": "AC-IPM-003",
+          "description": "作品侧契约（`master-content`、`storyworld`、`campaign`、`narrative-episode`）各含可选字段 `imports[]`，元素字段为 `from`、`asset`、`track`、`revision`；`track: latest` 为缺省语义；旧内容不强制回填该字段"
+        },
+        {
+          "ac_id": "AC-IPM-004",
+          "description": "import 解析逐字注入源 IP 冻结 identity block；`track: latest` 解析时将源 IP 当时的 `canon_revision` 落盘为 `resolved_revision`；源 IP 不存在、源 IP 未冻结、资产缺失、已钉 `revision` 与源不符，四类情形均 fail-closed 并给出对应 reason_code，禁止静默本地重描述"
+        },
+        {
+          "ac_id": "AC-IPM-005",
+          "description": "当一个作品的 `imports[]` 指向两个及以上 IP 时，要求全部被引用 IP 的 `status=active` 且正典已冻结；任一不满足则 blocked，reason_code 为 `crossover_canon_unmet`"
+        },
+        {
+          "ac_id": "AC-IPM-006",
+          "description": "校验脚本 `scripts/check_ip_model.sh` 可验证：IP 已注册；`ip.yaml` 必填字段齐全；`imports[]` 引用可解析到存在的 `ip_id` 与 `asset_id`；同一 IP 内 `asset_id` 唯一；违规时非零退出并打印 reason_code"
+        },
+        {
+          "ac_id": "AC-IPM-007",
+          "description": "`check_prism_project_docs.sh --init-shape` 对 `docs/prism` 的同构断言包含 `ips/`（`content/` 新增 `ips/` 后，项目侧 `docs/prism/ips/` 自动纳入同构比对）"
+        },
+        {
+          "ac_id": "AC-IPM-008",
+          "description": "scenes"
+        }
+      ],
+      "bound_ac_ids": [],
+      "orphan_ac_ids": [],
+      "aggregates_missing_illegal_slots": [],
+      "raw_section_titles": [
+        "人话",
+        "User Intent",
+        "User Intent Snapshot",
+        "Intent Coverage Matrix",
+        "Acceptance Criteria",
+        "关键对象清单",
+        "FSM 五元组",
+        "invalid / illegal",
+        "Non-goals",
+        "Provenance",
+        "Source Excerpt"
+      ]
+    },
+    "validation": {
+      "schema_version": "1.0",
+      "required": false,
+      "blocked": false,
+      "status": "not_required",
+      "reason_code": "",
+      "findings": [],
+      "projection": {
+        "schema_version": "1.0",
+        "domain_fsm_schema": "domain-fsm.v1",
+        "entity_precedence_schema": "entity-precedence.v1",
+        "frontmatter": {
+          "slug": "prism-ip-schema-v1",
+          "version": "v0.0.1",
+          "status": "draft",
+          "language": "zh",
+          "domain_required": "false",
+          "parser_contract": "beacon-feature-package-v2",
+          "materials_status": "current",
+          "truth_source_model": "intent_first",
+          "canonical_refs": {
+            "prd": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/truth.md",
+            "user_story": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/truth.md",
+            "test_case": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/tests.md"
+          },
+          "provenance": {
+            "- ac_id": "AC-IPM-008",
+            "source_type": "user_decision",
+            "source_ref": "2026-09-30 用户拍板 D6：存量 storyworld/master 资产收敛进 IP"
+          }
+        },
+        "frontmatter_errors": [],
+        "has_domain_model_section": false,
+        "has_domain_fsm_section": false,
+        "has_illegal_transition_section": false,
+        "entities": [],
+        "entity_precedence": [],
+        "aggregates": [],
+        "illegal_transition_slots": [],
+        "acceptance_criteria": [
+          {
+            "ac_id": "AC-IPM-001",
+            "description": "注册 `ip` 内容对象：`registry/content-schema.yaml` 含 `schema_id: ip`，`root: content/ips/{ip_id}/`，`contract: contracts/ip.schema.yaml`；`ip.yaml` 必填字段为 `ip_id`、`title`、`kind`（`fact`、`story`、`brand`）、`status`（`draft`、`active`、`paused`、`archived`）、`canon_revision`、`publish_identity_ref`"
+          },
+          {
+            "ac_id": "AC-IPM-002",
+            "description": "IP 资产条目位于 `content/ips/{ip_id}/assets/{characters,scenes,props,styles}/<asset_id>/`，含稳定 `asset_id`、`canon_revision`、冻结 identity block（7 段）、引用图文件；`asset_id` 在同一 IP 内唯一；跨 IP 引用一律带 `from` 限定"
+          },
+          {
+            "ac_id": "AC-IPM-003",
+            "description": "作品侧契约（`master-content`、`storyworld`、`campaign`、`narrative-episode`）各含可选字段 `imports[]`，元素字段为 `from`、`asset`、`track`、`revision`；`track: latest` 为缺省语义；旧内容不强制回填该字段"
+          },
+          {
+            "ac_id": "AC-IPM-004",
+            "description": "import 解析逐字注入源 IP 冻结 identity block；`track: latest` 解析时将源 IP 当时的 `canon_revision` 落盘为 `resolved_revision`；源 IP 不存在、源 IP 未冻结、资产缺失、已钉 `revision` 与源不符，四类情形均 fail-closed 并给出对应 reason_code，禁止静默本地重描述"
+          },
+          {
+            "ac_id": "AC-IPM-005",
+            "description": "当一个作品的 `imports[]` 指向两个及以上 IP 时，要求全部被引用 IP 的 `status=active` 且正典已冻结；任一不满足则 blocked，reason_code 为 `crossover_canon_unmet`"
+          },
+          {
+            "ac_id": "AC-IPM-006",
+            "description": "校验脚本 `scripts/check_ip_model.sh` 可验证：IP 已注册；`ip.yaml` 必填字段齐全；`imports[]` 引用可解析到存在的 `ip_id` 与 `asset_id`；同一 IP 内 `asset_id` 唯一；违规时非零退出并打印 reason_code"
+          },
+          {
+            "ac_id": "AC-IPM-007",
+            "description": "`check_prism_project_docs.sh --init-shape` 对 `docs/prism` 的同构断言包含 `ips/`（`content/` 新增 `ips/` 后，项目侧 `docs/prism/ips/` 自动纳入同构比对）"
+          },
+          {
+            "ac_id": "AC-IPM-008",
+            "description": "scenes"
+          }
+        ],
+        "bound_ac_ids": [],
+        "orphan_ac_ids": [],
+        "aggregates_missing_illegal_slots": [],
+        "raw_section_titles": [
+          "人话",
+          "User Intent",
+          "User Intent Snapshot",
+          "Intent Coverage Matrix",
+          "Acceptance Criteria",
+          "关键对象清单",
+          "FSM 五元组",
+          "invalid / illegal",
+          "Non-goals",
+          "Provenance",
+          "Source Excerpt"
+        ]
+      }
+    },
+    "recommended_action": ""
+  },
+  "human_closure_contract": {
+    "required": false,
+    "research_path": "docs/beacon/v0.0.1/research/prism-ip-schema-v1.md",
+    "research_exists": false,
+    "source_architecture_path": "docs/beacon/v0.0.1/source-architecture/index.md",
+    "source_architecture_exists": true,
+    "required_sections": [
+      "architecture",
+      "business_flow"
+    ],
+    "missing_sections": [
+      "architecture",
+      "business_flow"
+    ],
+    "diagram_types": [],
+    "complexity_signals": []
+  },
+  "requirement_closure_contract": {
+    "required": true,
+    "chain_order": [
+      "research",
+      "prd",
+      "user_story",
+      "test_case",
+      "requirement_clarity",
+      "freeze"
+    ],
+    "human_closure_required": false,
+    "paths": {
+      "research": "docs/beacon/v0.0.1/research/prism-ip-schema-v1.md",
+      "prd": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/tests.md"
+    },
+    "exists": {
+      "research": false,
+      "prd": true,
+      "user_story": true,
+      "test_case": true
+    },
+    "required_research_sections": [],
+    "missing_research_sections": [],
+    "ac_projection": {
+      "prd_ac_ids": [],
+      "user_story_ac_ids": [],
+      "test_case_ac_ids": [],
+      "upstream_ac_ids": [],
+      "missing_test_case_ac_ids": []
+    }
+  },
+  "version_projection_truth_contract": {
+    "required": false,
+    "supported": false,
+    "projection_types": [],
+    "research_path": "docs/beacon/v0.0.1/research/prism-ip-schema-v1.md",
+    "research_exists": false,
+    "required_fields": [
+      "prd_refs",
+      "user_story_refs",
+      "test_case_refs",
+      "coverage_notes",
+      "out_of_scope_notes"
+    ],
+    "field_presence": {
+      "prd_refs": false,
+      "user_story_refs": false,
+      "test_case_refs": false,
+      "coverage_notes": false,
+      "out_of_scope_notes": false
+    },
+    "missing_fields": [],
+    "required_refs": {
+      "prd_refs": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/truth.md",
+      "user_story_refs": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/truth.md",
+      "test_case_refs": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/tests.md"
+    },
+    "missing_ref_targets": [],
+    "ready": false
+  },
+  "support_write_topology_contract": {
+    "schema_version": "1.0",
+    "supported": true,
+    "status": "pass",
+    "blocked": false,
+    "reason_code": "",
+    "diagnostics": []
+  },
+  "required_artifacts": [],
+  "scanned_files": [
+    "docs/beacon/v0.0.1/features/prism-ip-schema-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-ip-schema-v1/tests.md",
+    "docs/beacon/v0.0.1/features/prism-ip-schema-v1/tasks.md",
+    "docs/beacon/v0.0.1/features/prism-ip-schema-v1/evidence.md"
+  ]
+}

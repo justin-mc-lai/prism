@@ -1,0 +1,171 @@
+{
+  "schema": "truth-review-gate.v1",
+  "schema_version": "1.0",
+  "feature": "prism-shot-iteration-budget-v1",
+  "version": "v0.0.1",
+  "pass": true,
+  "blocked": false,
+  "review_gate_pass": true,
+  "abc_pass": true,
+  "reason_code": "",
+  "domain_required": false,
+  "checks": {
+    "A_intent_coverage": {
+      "pass": true,
+      "check": "A",
+      "name": "intent_coverage",
+      "required": true,
+      "matrix_rows": 7,
+      "missing_must": [],
+      "reason": "",
+      "findings": [],
+      "matrix": [
+        {
+          "intent_id": "INT-001",
+          "source": "prompt",
+          "strength": "must",
+          "landing": "AC-ITB-001（每镜迭代预算）",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-002",
+          "source": "prompt",
+          "strength": "must",
+          "landing": "AC-ITB-002（超限降级门）",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-003",
+          "source": "prompt",
+          "strength": "must",
+          "landing": "AC-ITB-003（禁后期配音兜底）",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-004",
+          "source": "prompt",
+          "strength": "must",
+          "landing": "AC-ITB-004（画面否定→肯定式）",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-005",
+          "source": "prompt",
+          "strength": "must",
+          "landing": "AC-ITB-005（能力域前置门）",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-006",
+          "source": "source_evidence",
+          "strength": "should",
+          "landing": "AC-ITB-006（校验脚本）",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-007",
+          "source": "source_evidence",
+          "strength": "should",
+          "landing": "AC-ITB-007（阈值来源义务）",
+          "status": "covered"
+        }
+      ]
+    },
+    "B_fsm_audit": {
+      "pass": true,
+      "check": "B",
+      "name": "fsm_audit",
+      "required": false,
+      "skipped": true,
+      "reason": "",
+      "findings": []
+    },
+    "C_testability": {
+      "pass": true,
+      "check": "C",
+      "name": "testability",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "ac_count": 7,
+      "tc_count": 19,
+      "missing_ac": [],
+      "covered": {
+        "AC-ITB-001": [
+          "TC-ITB-001",
+          "TC-ITB-002"
+        ],
+        "AC-ITB-002": [
+          "TC-ITB-003",
+          "TC-ITB-004"
+        ],
+        "AC-ITB-003": [
+          "TC-ITB-005",
+          "TC-ITB-006"
+        ],
+        "AC-ITB-004": [
+          "TC-ITB-007"
+        ],
+        "AC-ITB-005": [
+          "TC-ITB-008",
+          "TC-ITB-009"
+        ],
+        "AC-ITB-006": [
+          "TC-ITB-010",
+          "TC-ITB-011",
+          "TC-ITB-012"
+        ],
+        "AC-ITB-007": [
+          "TC-ITB-013",
+          "TC-ITB-014"
+        ]
+      }
+    },
+    "C_domain_exec_layer": {
+      "pass": true,
+      "check": "C_exec",
+      "name": "domain_exec_layer",
+      "required": false,
+      "skipped": true,
+      "reason": "",
+      "findings": [],
+      "exec_tc_count": 0,
+      "domain_kind": "general"
+    },
+    "D_fill_depth": {
+      "pass": true,
+      "check": "D",
+      "name": "fill_depth",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "package_maturity": "unspecified",
+      "domain_kind": "general",
+      "business_domain": false
+    },
+    "E_vague_disjunction": {
+      "pass": true,
+      "check": "E",
+      "name": "vague_disjunction",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "ac_count": 7,
+      "vague_hits": 0
+    }
+  },
+  "findings": [],
+  "humanizer": {
+    "rule": "humanizer_only_after_abc_pass_before_freeze",
+    "abc_pass": true,
+    "allowed_now": true,
+    "fill_depth_pass": true,
+    "note": "Polish L0/narrative only after A/B/C; preserve_machine_fields=true; freeze needs D+exec too"
+  },
+  "evaluated_at": "2026-09-30T06:56:58.375798+00:00",
+  "paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md",
+    "report": "docs/beacon/v0.0.1/.machine/execution/prism-shot-iteration-budget-v1.truth-review-gate.json"
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "schema": "truth-review-gate.v1",
+  "schema_version": "1.0",
+  "feature": "prism-ip-schema-v1",
+  "version": "v0.0.1",
+  "pass": true,
+  "blocked": false,
+  "review_gate_pass": true,
+  "abc_pass": true,
+  "reason_code": "",
+  "domain_required": false,
+  "checks": {
+    "A_intent_coverage": {
+      "pass": true,
+      "check": "A",
+      "name": "intent_coverage",
+      "required": true,
+      "matrix_rows": 8,
+      "missing_must": [],
+      "reason": "",
+      "findings": [],
+      "matrix": [
+        {
+          "intent_id": "INT-001",
+          "source": "prompt",
+          "strength": "must",
+          "landing": "AC-IPM-001（IP 对象与资产库）",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-002",
+          "source": "prompt",
+          "strength": "must",
+          "landing": "AC-IPM-002（资产条目资产化）",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-003",
+          "source": "prompt",
+          "strength": "must",
+          "landing": "AC-IPM-003（imports 声明，默认跟最新）",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-004",
+          "source": "prompt",
+          "strength": "must",
+          "landing": "AC-IPM-004（逐字注入 + resolved_revision + fail-closed）",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-005",
+          "source": "prompt",
+          "strength": "must",
+          "landing": "AC-IPM-005（多源联名聚合正典门）",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-006",
+          "source": "decision",
+          "strength": "must",
+          "landing": "AC-IPM-008（存量资产收敛）",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-007",
+          "source": "prompt",
+          "strength": "should",
+          "landing": "AC-IPM-006（校验脚本）",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-008",
+          "source": "source_evidence",
+          "strength": "should",
+          "landing": "AC-IPM-007（docs/prism 同构含 ips/）",
+          "status": "covered"
+        }
+      ]
+    },
+    "B_fsm_audit": {
+      "pass": true,
+      "check": "B",
+      "name": "fsm_audit",
+      "required": false,
+      "skipped": true,
+      "reason": "",
+      "findings": []
+    },
+    "C_testability": {
+      "pass": true,
+      "check": "C",
+      "name": "testability",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "ac_count": 8,
+      "tc_count": 24,
+      "missing_ac": [],
+      "covered": {
+        "AC-IPM-001": [
+          "TC-IPM-001",
+          "TC-IPM-002",
+          "TC-IPM-003"
+        ],
+        "AC-IPM-002": [
+          "TC-IPM-004",
+          "TC-IPM-005"
+        ],
+        "AC-IPM-003": [
+          "TC-IPM-006",
+          "TC-IPM-007"
+        ],
+        "AC-IPM-004": [
+          "TC-IPM-008",
+          "TC-IPM-009",
+          "TC-IPM-010"
+        ],
+        "AC-IPM-005": [
+          "TC-IPM-011",
+          "TC-IPM-012"
+        ],
+        "AC-IPM-006": [
+          "TC-IPM-013",
+          "TC-IPM-014",
+          "TC-IPM-015"
+        ],
+        "AC-IPM-007": [
+          "TC-IPM-016"
+        ],
+        "AC-IPM-008": [
+          "TC-IPM-017",
+          "TC-IPM-018",
+          "TC-IPM-019"
+        ]
+      }
+    },
+    "C_domain_exec_layer": {
+      "pass": true,
+      "check": "C_exec",
+      "name": "domain_exec_layer",
+      "required": false,
+      "skipped": true,
+      "reason": "",
+      "findings": [],
+      "exec_tc_count": 0,
+      "domain_kind": "general"
+    },
+    "D_fill_depth": {
+      "pass": true,
+      "check": "D",
+      "name": "fill_depth",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "package_maturity": "unspecified",
+      "domain_kind": "general",
+      "business_domain": false
+    },
+    "E_vague_disjunction": {
+      "pass": true,
+      "check": "E",
+      "name": "vague_disjunction",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "ac_count": 8,
+      "vague_hits": 0
+    }
+  },
+  "findings": [],
+  "humanizer": {
+    "rule": "humanizer_only_after_abc_pass_before_freeze",
+    "abc_pass": true,
+    "allowed_now": true,
+    "fill_depth_pass": true,
+    "note": "Polish L0/narrative only after A/B/C; preserve_machine_fields=true; freeze needs D+exec too"
+  },
+  "evaluated_at": "2026-09-30T06:54:31.476256+00:00",
+  "paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/tests.md",
+    "report": "docs/beacon/v0.0.1/.machine/execution/prism-ip-schema-v1.truth-review-gate.json"
+  }
+}
