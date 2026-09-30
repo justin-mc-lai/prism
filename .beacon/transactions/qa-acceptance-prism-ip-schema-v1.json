@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "artifact": "qa_acceptance_runtime_projection",
+  "version": "v0.0.1",
+  "feature": "prism-ip-schema-v1",
+  "feature_slug": "prism-ip-schema-v1",
+  "revision_id": "R2",
+  "verdict": "passed",
+  "transaction_id": "tx-qa-acceptance-prism-ip-schema-v1-0c2c60c09163",
+  "source_hash": "sha256:0c2c60c09163d90b820361eb3f977c775348433222ba89db1ec4dacc973948f3",
+  "projection_seq": 2,
+  "committed_at": "2026-09-30T07:23:12.365204+00:00",
+  "write_status": "applied",
+  "failed_sinks": [],
+  "machine_ref": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-ip-schema-v1.json",
+  "markdown_ref": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-ip-schema-v1.md",
+  "runtime_projection_ref": ".beacon/transactions/qa-acceptance-prism-ip-schema-v1.json",
+  "sink_checksums": {
+    "machine": "sha256:d10cfe2e414508d80671179e91c8848a217e040eecdbb3a72dd3a6ee71b4c6cf",
+    "human": "sha256:508075137654bc62aa529b43b4ce45558416f3e1a0508294c956ad7d25039200",
+    "runtime": "sha256:a8f87731b5997ab6f4937f9ca59807e77683a0bb7f0973e2dcb6196434202b4a"
+  }
+}

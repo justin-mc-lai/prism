@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-ip-schema-v1",
+  "truth_integrity": "pass",
+  "truth_quality": "pass",
+  "materials_sync": "synced",
+  "all_exec_gates_pass": true,
+  "results": {
+    "AC-IPM-001": {
+      "pass": true,
+      "command": "rg -qF 'schema_id: ip' registry/content-schema.yaml && rg -qF 'root: content/ips/{ip_id}/' registry/content-schema.yaml && test -f contracts/ip.schema.yaml",
+      "note": "IP 对象注册 + 契约存在",
+      "last_line": ""
+    },
+    "AC-IPM-002": {
+      "pass": true,
+      "command": "for f in ip_id title kind status canon_revision publish_identity_ref; do rg -q \"$f\" contracts/ip.schema.yaml || exit 1; done && rg -q 'asset_id' contracts/ip.schema.yaml && rg -q 'identity block' contracts/ip.schema.yaml",
+      "note": "ip.yaml 必填字段 + 资产条目",
+      "last_line": ""
+    },
+    "AC-IPM-003": {
+      "pass": true,
+      "command": "for c in master-content storyworld campaign narrative-episode; do rg -q imports contracts/$c.schema.yaml || exit 1; done && rg -q 'default_track: latest' contracts/ip.schema.yaml",
+      "note": "四作品侧契约 imports + latest 缺省",
+      "last_line": ""
+    },
+    "AC-IPM-004": {
+      "pass": true,
+      "command": "rg -q resolved_revision contracts/ip.schema.yaml scripts/check_ip_model.sh && rg -q ip_not_found scripts/check_ip_model.sh && rg -q ip_unfrozen scripts/check_ip_model.sh && rg -q asset_missing scripts/check_ip_model.sh && rg -q revision_mismatch scripts/check_ip_model.sh",
+      "note": "逐字注入 + resolved_revision + 四类 fail-closed",
+      "last_line": ""
+    },
+    "AC-IPM-005": {
+      "pass": true,
+      "command": "rg -q crossover_canon_unmet scripts/check_ip_model.sh && rg -q crossover contracts/ip.schema.yaml",
+      "note": "联名聚合正典门",
+      "last_line": ""
+    },
+    "AC-IPM-006": {
+      "pass": true,
+      "command": "bash scripts/check_ip_model.sh --self-test && bash scripts/check_ip_model.sh --fixtures content/ips/_examples --expect pass",
+      "note": "校验脚本自检 + 样例通过",
+      "last_line": "check_ip_model: self-test pass"
+    },
+    "AC-IPM-007": {
+      "pass": true,
+      "command": "rg -q 'content/ips' scripts/check_prism_project_docs.sh",
+      "note": "docs/prism 同构纳入 ips",
+      "last_line": ""
+    },
+    "AC-IPM-008": {
+      "pass": true,
+      "command": "bash scripts/migrate_assets_to_ip.sh --self-test && bash scripts/migrate_assets_to_ip.sh --dry-run --expect no-loss",
+      "note": "迁移幂等 + 不丢资产",
+      "last_line": "{\"source_units\": 0, \"registered_units\": 0, \"alias_records\": 0}"
+    }
+  },
+  "at": "2026-09-30T07:09:48.244496"
+}

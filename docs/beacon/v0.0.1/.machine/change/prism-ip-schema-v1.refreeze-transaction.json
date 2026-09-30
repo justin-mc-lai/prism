@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "transaction_id": "tx-change-refreeze-prism-ip-schema-v1-20260930t072116z",
+  "transaction_id": "tx-change-refreeze-prism-ip-schema-v1-20260930t072426z",
   "feature": "prism-ip-schema-v1",
   "feature_slug": "prism-ip-schema-v1",
   "version": "v0.0.1",
-  "change_reason": "frontmatter: ux_required=false",
+  "change_reason": "implementation-first-reconciliation",
   "touched_surfaces": [
     "change",
     "truth",
@@ -18,8 +18,8 @@
   "surface_statuses": {
     "change": {
       "path": "docs/beacon/v0.0.1/change/prism-ip-schema-v1.md",
-      "exists": false,
-      "status": "package_change_optional",
+      "exists": true,
+      "status": "present",
       "required": false,
       "authority": "change_record_not_requirement_truth"
     },
@@ -72,13 +72,13 @@
     }
   },
   "truth_revision_before": {
-    "revision_id": "R1",
+    "revision_id": "R2",
     "doc_status": "frozen",
-    "lifecycle_status": "idle",
-    "baseline_hash": "sha256:9f2594dbe829733a0c3df17008b67fed3853d376f87dfd6d4fdc704706b653ad"
+    "lifecycle_status": "accepted",
+    "baseline_hash": "sha256:062dcba66a34a7914fa497588477cbc0d51fb8512a23b50c472875794046278a"
   },
   "truth_revision_after": {
-    "revision_id": "R2",
+    "revision_id": "R3",
     "doc_status": "frozen",
     "lifecycle_status": "frozen",
     "baseline_hash": "sha256:062dcba66a34a7914fa497588477cbc0d51fb8512a23b50c472875794046278a"
@@ -95,21 +95,21 @@
     "qa_executed": false,
     "release_executed": false
   },
-  "created_at": "2026-09-30T07:21:16.613977+00:00",
+  "created_at": "2026-09-30T07:24:26.688420+00:00",
   "previous_revision": {
-    "revision_id": "R1",
+    "revision_id": "R2",
     "doc_status": "superseded",
     "lifecycle_status": "superseded",
-    "baseline_hash": "sha256:9f2594dbe829733a0c3df17008b67fed3853d376f87dfd6d4fdc704706b653ad"
+    "baseline_hash": "sha256:062dcba66a34a7914fa497588477cbc0d51fb8512a23b50c472875794046278a"
   },
   "opened_revision": {
-    "revision_id": "R2",
+    "revision_id": "R3",
     "doc_status": "draft",
     "lifecycle_status": "draft",
     "baseline_hash": ""
   },
   "story_reopen": {
-    "current_revision_id": "R2",
+    "current_revision_id": "R3",
     "lifecycle_status": "draft"
   },
   "requirement_package": {
@@ -211,7 +211,7 @@
       "path": "docs/beacon/v0.0.1/.machine/user-story/prism-ip-schema-v1.json",
       "feature": "prism-ip-schema-v1",
       "version": "v0.0.1",
-      "revision_id": "R2",
+      "revision_id": "R3",
       "ac_count": 1,
       "test_count": 1,
       "story_ids": [
@@ -249,7 +249,7 @@
         "review_gates": [],
         "qa_coverage_hints": [],
         "evidence_lines": {},
-        "generated_at": "2026-09-30T07:21:17.402017+00:00",
+        "generated_at": "2026-09-30T07:24:27.440682+00:00",
         "feature": "prism-ip-schema-v1",
         "feature_slug": "prism-ip-schema-v1",
         "prd_ref": "docs/beacon/v0.0.1/prd/prism-ip-schema-v1.md",
@@ -568,7 +568,7 @@
       "finding_count": 0,
       "run_id": "",
       "source": "change.refreeze-chain",
-      "written_at": "2026-09-30T07:21:17.416470+00:00",
+      "written_at": "2026-09-30T07:24:27.453628+00:00",
       "state_path": ".beacon/state/requirement-clarity-prism-ip-schema-v1.json"
     }
   },
@@ -613,7 +613,7 @@
         "review_gates": [],
         "qa_coverage_hints": [],
         "evidence_lines": {},
-        "generated_at": "2026-09-30T07:21:17.421414+00:00",
+        "generated_at": "2026-09-30T07:24:27.457638+00:00",
         "feature": "prism-ip-schema-v1",
         "feature_slug": "prism-ip-schema-v1",
         "prd_ref": "docs/beacon/v0.0.1/prd/prism-ip-schema-v1.md",
@@ -1139,7 +1139,7 @@
       "status": "pass",
       "blocked": false,
       "reason_code": "",
-      "generated_at": "2026-09-30T07:21:17.486728+00:00",
+      "generated_at": "2026-09-30T07:24:27.486077+00:00",
       "package_dir": "docs/beacon/v0.0.1/features/prism-ip-schema-v1",
       "truth_frontmatter": {
         "slug": "prism-ip-schema-v1",
@@ -1200,8 +1200,8 @@
     "feature": "prism-ip-schema-v1",
     "feature_slug": "prism-ip-schema-v1",
     "version": "v0.0.1",
-    "revision_id": "R2",
-    "source_revision_id": "R1",
+    "revision_id": "R3",
+    "source_revision_id": "R2",
     "status": "not_applicable",
     "cleanup_required": false,
     "removed_requirement_count": 0,
@@ -1213,7 +1213,7 @@
     "current_baseline_hash": "sha256:062dcba66a34a7914fa497588477cbc0d51fb8512a23b50c472875794046278a",
     "source_baseline_hash": "",
     "story_state_ref": "docs/beacon/v0.0.1/.machine/user-story/prism-ip-schema-v1.json",
-    "generated_at": "2026-09-30T07:21:17.547368+00:00",
+    "generated_at": "2026-09-30T07:24:27.536365+00:00",
     "json_ref": "docs/beacon/v0.0.1/.machine/execution/revision-delta-prism-ip-schema-v1.json",
     "markdown_ref": "docs/beacon/v0.0.1/execution/revision-delta-prism-ip-schema-v1.md"
   },
@@ -1245,9 +1245,9 @@
         "feature": "prism-ip-schema-v1",
         "feature_slug": "prism-ip-schema-v1",
         "summary": "Maintains release-facing version aggregate projection guards so QA accepted features are included in version change scope before release check.",
-        "status": "generated",
-        "accepted_at": "",
-        "revision_id": "R2",
+        "status": "completed",
+        "accepted_at": "2026-09-30T07:23:12.359602+00:00",
+        "revision_id": "R3",
         "projection_role": {
           "artifact_role": "version_aggregate_projection",
           "truth_source": false,
@@ -1274,9 +1274,10 @@
           "docs/beacon/v0.0.1/prd/prism-ip-schema-v1.md",
           "docs/beacon/v0.0.1/user-story/prism-ip-schema-v1.md",
           "docs/beacon/v0.0.1/qa/test-cases/prism-ip-schema-v1.md",
-          "docs/beacon/v0.0.1/.machine/execution/prism-ip-schema-v1.revision.json"
+          "docs/beacon/v0.0.1/.machine/execution/prism-ip-schema-v1.revision.json",
+          "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-ip-schema-v1.json"
         ],
-        "generated_at": "2026-09-30T07:21:17.547862+00:00"
+        "generated_at": "2026-09-30T07:24:27.536946+00:00"
       }
     },
     "version_aggregate_projection": {
@@ -1285,7 +1286,7 @@
       "version": "v0.0.1",
       "markdown_path": "docs/beacon/v0.0.1/change/v0.0.1.md",
       "json_path": "docs/beacon/v0.0.1/.machine/change/v0.0.1.json",
-      "feature_count": 19,
+      "feature_count": 20,
       "feature_slugs": [
         "prism-adaptation-contracts-v1",
         "prism-asset-gate-rollout-v1",
@@ -1305,7 +1306,8 @@
         "prism-monetization-contracts-v1",
         "prism-project-docs-v1",
         "prism-publish-bridge-v1",
-        "prism-review-loop-v1"
+        "prism-review-loop-v1",
+        "prism-shot-iteration-budget-v1"
       ],
       "projection_role": {
         "artifact_role": "version_aggregate_projection",
@@ -1319,7 +1321,7 @@
       "release_publish_action": false,
       "implementation_order": {
         "status": "analyzed",
-        "feature_count": 19,
+        "feature_count": 20,
         "ordered_feature_slugs": [
           "prism-asset-gate-rollout-v1",
           "prism-form-product-v1",
@@ -1339,6 +1341,7 @@
           "prism-monetization-contracts-v1",
           "prism-adaptation-contracts-v1",
           "prism-project-docs-v1",
+          "prism-shot-iteration-budget-v1",
           "prism-ip-schema-v1"
         ],
         "waves": [
@@ -1389,6 +1392,15 @@
               {
                 "feature": "prism-project-docs-v1",
                 "feature_slug": "prism-project-docs-v1",
+                "depends_on_features": [],
+                "direct_delivery_services": [],
+                "writable_services": [],
+                "parallelizable": true,
+                "reason_code": "parallel_no_conflict"
+              },
+              {
+                "feature": "prism-shot-iteration-budget-v1",
+                "feature_slug": "prism-shot-iteration-budget-v1",
                 "depends_on_features": [],
                 "direct_delivery_services": [],
                 "writable_services": [],

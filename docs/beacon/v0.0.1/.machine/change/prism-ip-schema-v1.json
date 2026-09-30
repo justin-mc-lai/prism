@@ -4,9 +4,9 @@
   "feature": "prism-ip-schema-v1",
   "feature_slug": "prism-ip-schema-v1",
   "summary": "Maintains release-facing version aggregate projection guards so QA accepted features are included in version change scope before release check.",
-  "status": "generated",
-  "accepted_at": "",
-  "revision_id": "R2",
+  "status": "completed",
+  "accepted_at": "2026-09-30T07:23:12.359602+00:00",
+  "revision_id": "R3",
   "projection_role": {
     "artifact_role": "version_aggregate_projection",
     "truth_source": false,
@@ -33,7 +33,8 @@
     "docs/beacon/v0.0.1/prd/prism-ip-schema-v1.md",
     "docs/beacon/v0.0.1/user-story/prism-ip-schema-v1.md",
     "docs/beacon/v0.0.1/qa/test-cases/prism-ip-schema-v1.md",
-    "docs/beacon/v0.0.1/.machine/execution/prism-ip-schema-v1.revision.json"
+    "docs/beacon/v0.0.1/.machine/execution/prism-ip-schema-v1.revision.json",
+    "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-ip-schema-v1.json"
   ],
-  "generated_at": "2026-09-30T07:21:17.547862+00:00"
+  "generated_at": "2026-09-30T07:24:27.536946+00:00"
 }

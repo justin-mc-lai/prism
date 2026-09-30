@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "artifact": "implementation_writeback_ledger",
+  "feature": "prism-ip-schema-v1",
+  "feature_slug": "prism-ip-schema-v1",
+  "version": "v0.0.1",
+  "entries": [
+    {
+      "recorded_at": "2026-09-30T07:16:54.397002+00:00",
+      "revision_id": "R1",
+      "run_id": "run-20260930T071654Z-8f35",
+      "implemented_item_ids": [
+        "AC-001",
+        "TASK-001",
+        "TEST-001"
+      ],
+      "changed_files": [
+        "contracts/ip.schema.yaml",
+        "registry/content-schema.yaml",
+        "scripts/check_ip_model.sh",
+        "scripts/migrate_assets_to_ip.sh"
+      ]
+    }
+  ],
+  "last_recorded_at": "2026-09-30T07:16:54.397002+00:00"
+}

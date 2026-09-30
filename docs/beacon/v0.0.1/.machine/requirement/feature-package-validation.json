@@ -1,15 +1,15 @@
 {
   "schema_version": "1.0",
-  "feature": "prism-shot-iteration-budget-v1",
-  "feature_slug": "prism-shot-iteration-budget-v1",
+  "feature": "prism-ip-schema-v1",
+  "feature_slug": "prism-ip-schema-v1",
   "version": "v0.0.1",
   "status": "pass",
   "blocked": false,
   "reason_code": "",
-  "generated_at": "2026-09-30T07:21:18.996885+00:00",
-  "package_dir": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1",
+  "generated_at": "2026-09-30T07:24:27.486077+00:00",
+  "package_dir": "docs/beacon/v0.0.1/features/prism-ip-schema-v1",
   "truth_frontmatter": {
-    "slug": "prism-shot-iteration-budget-v1",
+    "slug": "prism-ip-schema-v1",
     "version": "v0.0.1",
     "status": "frozen",
     "language": "zh",
@@ -19,19 +19,19 @@
     "materials_status": "current",
     "truth_source_model": "intent_first",
     "canonical_refs": {
-      "prd": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
-      "user_story": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
-      "test_case": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md"
+      "prd": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/tests.md"
     },
     "provenance": {
-      "- ac_id": "AC-ITB-007",
-      "source_type": "source_evidence",
-      "source_ref": "contracts/drama-storyboard-spec.contract.md §5 阈值来源标注义务"
+      "- ac_id": "AC-IPM-008",
+      "source_type": "user_decision",
+      "source_ref": "2026-09-30 用户拍板 D6：存量 storyworld/master 资产收敛进 IP"
     }
   },
-  "ac_count": 7,
-  "test_count": 19,
-  "checkbox_count": 9,
+  "ac_count": 8,
+  "test_count": 24,
+  "checkbox_count": 10,
   "evidence_row_count": 1,
   "gate_authority": "canonical_surfaces_preserved",
   "checkbox_gate_bypass": false,

@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-IPM-008",
+  "pass": true,
+  "command": "bash scripts/migrate_assets_to_ip.sh --self-test && bash scripts/migrate_assets_to_ip.sh --dry-run --expect no-loss",
+  "assertion": "迁移幂等 + 不丢资产",
+  "last_line": "{\"source_units\": 0, \"registered_units\": 0, \"alias_records\": 0}",
+  "at": "2026-09-30T07:08:49.011838"
+}

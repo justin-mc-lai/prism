@@ -22,6 +22,12 @@ objects:
     contract: contracts/distribution-binding.schema.yaml
     root: content/distribution/bindings/{binding_id}.yaml
     authority: canonical
+  - schema_id: ip
+    contract: contracts/ip.schema.yaml
+    root: content/ips/{ip_id}/
+    authority: canonical
 guards:
   canon_lane_disables_fast_lane_skip: true
   episode_requires_canon_gate_before_generated: true
+  cross_ip_reference_requires_from: true
+  import_requires_source_frozen: true

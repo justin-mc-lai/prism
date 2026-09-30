@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "run_id": "run-20260930T115906965349",
+  "run_id": "run-20260930T152305985033",
   "version": "v0.0.1",
-  "generated_at": "2026-09-30T03:59:13.607304+00:00",
+  "generated_at": "2026-09-30T07:23:12.330265+00:00",
   "layers": {
     "user_story": {
-      "hash": "5b952c12635e4a6076fe9e355a754ca3ed3c040dbf7c1b09528d4bf099eaaec1",
-      "count": 21,
+      "hash": "945c57c375baeec12bb211f2a7d386d703a48f62d9e65f5887aac65a077a43b1",
+      "count": 23,
       "files": [
         {
           "path": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
@@ -49,6 +49,10 @@
           "sha256": "8c3bb9466469141c43194d4b15aaed8a84676a476c2b98ee4b3d1b74e8ac1cb9"
         },
         {
+          "path": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/truth.md",
+          "sha256": "ccd93dcdd979f7017395616931470c874dd330cd1feece8b068730701fa0eba4"
+        },
+        {
           "path": "docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md",
           "sha256": "242fe91ed8b8945663975b538a6c8c0fcb99254c188038235d6c191d85e5fda4"
         },
@@ -87,6 +91,10 @@
         {
           "path": "docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md",
           "sha256": "7953399db218e058607d4f2059e5cf77d7aa041c0c54d025051b234a86b4fb1c"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+          "sha256": "5e04b1b61765d25bc36b4e11bc8789daa977e6bbf618251116f3014484f2b84f"
         },
         {
           "path": "docs/beacon/v0.0.1/features/prism-title-lab-v1/truth.md",
@@ -95,8 +103,8 @@
       ]
     },
     "prd": {
-      "hash": "5b952c12635e4a6076fe9e355a754ca3ed3c040dbf7c1b09528d4bf099eaaec1",
-      "count": 21,
+      "hash": "945c57c375baeec12bb211f2a7d386d703a48f62d9e65f5887aac65a077a43b1",
+      "count": 23,
       "files": [
         {
           "path": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
@@ -139,6 +147,10 @@
           "sha256": "8c3bb9466469141c43194d4b15aaed8a84676a476c2b98ee4b3d1b74e8ac1cb9"
         },
         {
+          "path": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/truth.md",
+          "sha256": "ccd93dcdd979f7017395616931470c874dd330cd1feece8b068730701fa0eba4"
+        },
+        {
           "path": "docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md",
           "sha256": "242fe91ed8b8945663975b538a6c8c0fcb99254c188038235d6c191d85e5fda4"
         },
@@ -179,14 +191,18 @@
           "sha256": "7953399db218e058607d4f2059e5cf77d7aa041c0c54d025051b234a86b4fb1c"
         },
         {
+          "path": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+          "sha256": "5e04b1b61765d25bc36b4e11bc8789daa977e6bbf618251116f3014484f2b84f"
+        },
+        {
           "path": "docs/beacon/v0.0.1/features/prism-title-lab-v1/truth.md",
           "sha256": "7173b87d58c589adf96c215bb791ac2c720b87a45503479c3d496076e90be883"
         }
       ]
     },
     "test_case": {
-      "hash": "e4e4f4830dfadc0121055f23242d95d701f64f56e12e4b9e3cb6f17cbd29583e",
-      "count": 38,
+      "hash": "45460b2f8a9c5725949688cfb85d2c2ae48ab0ca7a25271a902cc2a5dd71be29",
+      "count": 40,
       "files": [
         {
           "path": "docs/beacon/v0.0.1/.machine/qa/prism-adaptation-contracts-v1.ac-test-matrix.json",
@@ -297,6 +313,10 @@
           "sha256": "73e5ae1a2e67ee0878ac2e2fc9f01a89e5ce1be108b8415f3fe4edbd6394a667"
         },
         {
+          "path": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/tests.md",
+          "sha256": "149e7da645a782924238c846f88aecf64bce9947904898d2b71acbc6845676af"
+        },
+        {
           "path": "docs/beacon/v0.0.1/features/prism-learning-memory-v1/tests.md",
           "sha256": "11b18d8b67e860c6db3c99197fbac0f5d882b884cafb3841e2dcfd4857597486"
         },
@@ -337,11 +357,15 @@
           "sha256": "8c588e7b69e296142a94145a75c4ec506e617d01141140e932552ec3e33d5da1"
         },
         {
+          "path": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md",
+          "sha256": "65324637a3f5590272070ce4ed45ceaf8470059396ba0f91bc4be7d6b8f92ac5"
+        },
+        {
           "path": "docs/beacon/v0.0.1/features/prism-title-lab-v1/tests.md",
           "sha256": "ec9614acb979bea8f8a3c25ba7b1400518f14f1c8d7f43ab4008a4f9d229a466"
         }
       ]
     }
   },
-  "fingerprint_hash": "79c96e10820f810235970651fce833eceb22ab1fcf5b50df1d37230b169c2bb9"
+  "fingerprint_hash": "f60fd07589527b30cd7551f36374b57490d8c817d91f4d485e1b0edff48c3ef4"
 }

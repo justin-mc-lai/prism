@@ -5,7 +5,7 @@
   "truth_package_contract": "beacon-feature-package-v2",
   "machine_json_role": "generated_state_not_truth",
   "generated_by": "beacon.truth_map.resolver",
-  "generated_at": "2026-09-30T07:21:17.390198+00:00",
+  "generated_at": "2026-09-30T07:24:27.428030+00:00",
   "feature": "prism-ip-schema-v1",
   "feature_slug": "prism-ip-schema-v1",
   "version": "v0.0.1",
