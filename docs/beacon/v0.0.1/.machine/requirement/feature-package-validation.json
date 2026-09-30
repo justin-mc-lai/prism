@@ -6,7 +6,7 @@
   "status": "pass",
   "blocked": false,
   "reason_code": "",
-  "generated_at": "2026-09-30T01:34:24.628133+00:00",
+  "generated_at": "2026-09-30T03:57:52.024233+00:00",
   "package_dir": "docs/beacon/v0.0.1/features/prism-project-docs-v1",
   "truth_frontmatter": {
     "slug": "prism-project-docs-v1",

@@ -27,7 +27,7 @@
     "review_gates": [],
     "qa_coverage_hints": [],
     "evidence_lines": {},
-    "generated_at": "2026-09-30T01:34:22.852131+00:00",
+    "generated_at": "2026-09-30T03:57:52.946715+00:00",
     "feature": "prism-project-docs-v1",
     "feature_slug": "prism-project-docs-v1",
     "prd_ref": "docs/beacon/v0.0.1/prd/prism-project-docs-v1.md",
