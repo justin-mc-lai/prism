@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "artifact": "implementation_writeback_ledger",
+  "feature": "prism-project-docs-v1",
+  "feature_slug": "prism-project-docs-v1",
+  "version": "v0.0.1",
+  "entries": [
+    {
+      "recorded_at": "2026-09-30T00:51:12.439379+00:00",
+      "revision_id": "R3",
+      "run_id": "run-20260930T005112Z-08f7",
+      "implemented_item_ids": [
+        "TASK-001",
+        "TEST-001",
+        "AC-001"
+      ],
+      "changed_files": [
+        "scripts/ai_manga_drama.py",
+        "scripts/check_prism_project_docs.sh",
+        "scripts/install_public_surfaces.sh",
+        "contracts/form-manga-drama.contract.md",
+        "content/pipelines/ai-manga-drama/README.md",
+        "skills/prism-director/SKILL.md",
+        "skills/prism-produce/SKILL.md",
+        "skills/prism-qa/SKILL.md"
+      ]
+    }
+  ],
+  "last_recorded_at": "2026-09-30T00:51:12.439379+00:00"
+}

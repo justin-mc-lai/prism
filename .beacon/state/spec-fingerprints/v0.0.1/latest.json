@@ -1,16 +1,20 @@
 {
   "schema_version": "1.0",
-  "run_id": "run-20260812T193122703453",
+  "run_id": "run-20260930T115906965349",
   "version": "v0.0.1",
-  "generated_at": "2026-08-12T11:31:24.775930+00:00",
+  "generated_at": "2026-09-30T03:59:13.607304+00:00",
   "layers": {
     "user_story": {
-      "hash": "dac629c2438897d86adc8f0e874b0d14572a4fc9e7dd14ca1b7d74ff36d5711d",
-      "count": 14,
+      "hash": "5b952c12635e4a6076fe9e355a754ca3ed3c040dbf7c1b09528d4bf099eaaec1",
+      "count": 21,
       "files": [
         {
           "path": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
           "sha256": "9f3e1e25383a3bdf514e8b745a15fed1121e2c59e84fe5a1124d2aafcf55e787"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-asset-gate-rollout-v1/truth.md",
+          "sha256": "86d62ded98df91b9dc05b9ff44912a6b0b078e6baeabd87cfdc6e9af5ce88c6b"
         },
         {
           "path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
@@ -37,12 +41,20 @@
           "sha256": "7ae1f5e1dd123c0d6d9650abc7eeb9244c82d99b3a36ded727ea4f28edd3e02a"
         },
         {
+          "path": "docs/beacon/v0.0.1/features/prism-form-product-v1/truth.md",
+          "sha256": "28ef5b8788e6907d89fcc38369b3ff43789ef6cf6b4706c5fb88c0591439a361"
+        },
+        {
           "path": "docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
           "sha256": "8c3bb9466469141c43194d4b15aaed8a84676a476c2b98ee4b3d1b74e8ac1cb9"
         },
         {
           "path": "docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md",
           "sha256": "242fe91ed8b8945663975b538a6c8c0fcb99254c188038235d6c191d85e5fda4"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/truth.md",
+          "sha256": "dc51dcb9fe3a5ab9b924404b92579552549c754fe35b7fddbb278cc496b6918d"
         },
         {
           "path": "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md",
@@ -57,22 +69,42 @@
           "sha256": "7915bb9d008296d10b62b4fa283194dcadd72db07fb457bc6cbf0a9638fc89a2"
         },
         {
+          "path": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+          "sha256": "bf927a0dcfa5ad289aafb423b737721d846963bd4bd11a051b4d61a39029f195"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-prompt-compiler-v1/truth.md",
+          "sha256": "92b111b9f57fce8f38bc89865e9952fdfbb05b798e98f5a80ad9667e728f6c5c"
+        },
+        {
           "path": "docs/beacon/v0.0.1/features/prism-publish-bridge-v1/truth.md",
           "sha256": "5935c073f14bded15224a8eae64f1545fe8cc7e03c4097295f84f8ab71bda480"
         },
         {
+          "path": "docs/beacon/v0.0.1/features/prism-release-av-gate-v1/truth.md",
+          "sha256": "9d48ecd4d648099e107efce86843c462d04778b1a658dd696fb35185a6a21e2a"
+        },
+        {
           "path": "docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md",
           "sha256": "7953399db218e058607d4f2059e5cf77d7aa041c0c54d025051b234a86b4fb1c"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-title-lab-v1/truth.md",
+          "sha256": "7173b87d58c589adf96c215bb791ac2c720b87a45503479c3d496076e90be883"
         }
       ]
     },
     "prd": {
-      "hash": "dac629c2438897d86adc8f0e874b0d14572a4fc9e7dd14ca1b7d74ff36d5711d",
-      "count": 14,
+      "hash": "5b952c12635e4a6076fe9e355a754ca3ed3c040dbf7c1b09528d4bf099eaaec1",
+      "count": 21,
       "files": [
         {
           "path": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
           "sha256": "9f3e1e25383a3bdf514e8b745a15fed1121e2c59e84fe5a1124d2aafcf55e787"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-asset-gate-rollout-v1/truth.md",
+          "sha256": "86d62ded98df91b9dc05b9ff44912a6b0b078e6baeabd87cfdc6e9af5ce88c6b"
         },
         {
           "path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/truth.md",
@@ -99,12 +131,20 @@
           "sha256": "7ae1f5e1dd123c0d6d9650abc7eeb9244c82d99b3a36ded727ea4f28edd3e02a"
         },
         {
+          "path": "docs/beacon/v0.0.1/features/prism-form-product-v1/truth.md",
+          "sha256": "28ef5b8788e6907d89fcc38369b3ff43789ef6cf6b4706c5fb88c0591439a361"
+        },
+        {
           "path": "docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
           "sha256": "8c3bb9466469141c43194d4b15aaed8a84676a476c2b98ee4b3d1b74e8ac1cb9"
         },
         {
           "path": "docs/beacon/v0.0.1/features/prism-learning-memory-v1/truth.md",
           "sha256": "242fe91ed8b8945663975b538a6c8c0fcb99254c188038235d6c191d85e5fda4"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/truth.md",
+          "sha256": "dc51dcb9fe3a5ab9b924404b92579552549c754fe35b7fddbb278cc496b6918d"
         },
         {
           "path": "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/truth.md",
@@ -119,22 +159,42 @@
           "sha256": "7915bb9d008296d10b62b4fa283194dcadd72db07fb457bc6cbf0a9638fc89a2"
         },
         {
+          "path": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+          "sha256": "bf927a0dcfa5ad289aafb423b737721d846963bd4bd11a051b4d61a39029f195"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-prompt-compiler-v1/truth.md",
+          "sha256": "92b111b9f57fce8f38bc89865e9952fdfbb05b798e98f5a80ad9667e728f6c5c"
+        },
+        {
           "path": "docs/beacon/v0.0.1/features/prism-publish-bridge-v1/truth.md",
           "sha256": "5935c073f14bded15224a8eae64f1545fe8cc7e03c4097295f84f8ab71bda480"
         },
         {
+          "path": "docs/beacon/v0.0.1/features/prism-release-av-gate-v1/truth.md",
+          "sha256": "9d48ecd4d648099e107efce86843c462d04778b1a658dd696fb35185a6a21e2a"
+        },
+        {
           "path": "docs/beacon/v0.0.1/features/prism-review-loop-v1/truth.md",
           "sha256": "7953399db218e058607d4f2059e5cf77d7aa041c0c54d025051b234a86b4fb1c"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-title-lab-v1/truth.md",
+          "sha256": "7173b87d58c589adf96c215bb791ac2c720b87a45503479c3d496076e90be883"
         }
       ]
     },
     "test_case": {
-      "hash": "f9472ccc25ac3cd4c84e72d4792c5359da8e1626cb7d1351707174a48a2d594b",
-      "count": 28,
+      "hash": "e4e4f4830dfadc0121055f23242d95d701f64f56e12e4b9e3cb6f17cbd29583e",
+      "count": 38,
       "files": [
         {
           "path": "docs/beacon/v0.0.1/.machine/qa/prism-adaptation-contracts-v1.ac-test-matrix.json",
           "sha256": "c29a9efb3578fe45ddd0570269dd96d3471a43bb8a229f7280195c952a7f6e0f"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/.machine/qa/prism-asset-gate-rollout-v1.ac-test-matrix.json",
+          "sha256": "568799358292f1e4e989016e9c9964c9ad0c058a85e7b15f05f014faa56ebcfb"
         },
         {
           "path": "docs/beacon/v0.0.1/.machine/qa/prism-campaign-schema-v1.ac-test-matrix.json",
@@ -161,12 +221,20 @@
           "sha256": "6883926bc1693fea87003b5a04d2e21ead8f3311ad7f7c0531538b210d1feac3"
         },
         {
+          "path": "docs/beacon/v0.0.1/.machine/qa/prism-form-product-v1.ac-test-matrix.json",
+          "sha256": "a3608f32946315f25ca318f77c521f67594f729d9e6270f3c9095ce3384c80ab"
+        },
+        {
           "path": "docs/beacon/v0.0.1/.machine/qa/prism-form-writing-v1.ac-test-matrix.json",
           "sha256": "aad39e8139becacb0695b57ff9f2f7793961630d321dab3eab137740b145d338"
         },
         {
           "path": "docs/beacon/v0.0.1/.machine/qa/prism-learning-memory-v1.ac-test-matrix.json",
           "sha256": "f8774e501005be28fc5799ed5f1970e53cc3363a97c88da854b56331e76b5061"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/.machine/qa/prism-manga-asset-gate-v1.ac-test-matrix.json",
+          "sha256": "c450b73826decb475db002388b06e7e8b142fa6891823566a79a58d7097c5815"
         },
         {
           "path": "docs/beacon/v0.0.1/.machine/qa/prism-metrics-publication-v1.ac-test-matrix.json",
@@ -193,6 +261,10 @@
           "sha256": "6c9098cbbd1e0c391e6a3748efa1f58668d35fd031634894c25aa59c54d6f129"
         },
         {
+          "path": "docs/beacon/v0.0.1/features/prism-asset-gate-rollout-v1/tests.md",
+          "sha256": "8bbb117a2fae756cd698b18622d8b5dbe2bb61dd815e43b3a8c9cabb615bca5e"
+        },
+        {
           "path": "docs/beacon/v0.0.1/features/prism-campaign-schema-v1/tests.md",
           "sha256": "6070ec3897c91c2cfff571206bb19eda8adf87d4a6ac1852ad1184c9e7e430b9"
         },
@@ -217,12 +289,20 @@
           "sha256": "dcbe54207ee4195d28c3b4f15310446b9a72ec054f0c9c22255a04c4e7630055"
         },
         {
+          "path": "docs/beacon/v0.0.1/features/prism-form-product-v1/tests.md",
+          "sha256": "7dee73bbd354d87e3deaef3d4adeb51c1f4d1de4460b7376c82a9b2a47a657d9"
+        },
+        {
           "path": "docs/beacon/v0.0.1/features/prism-form-writing-v1/tests.md",
           "sha256": "73e5ae1a2e67ee0878ac2e2fc9f01a89e5ce1be108b8415f3fe4edbd6394a667"
         },
         {
           "path": "docs/beacon/v0.0.1/features/prism-learning-memory-v1/tests.md",
           "sha256": "11b18d8b67e860c6db3c99197fbac0f5d882b884cafb3841e2dcfd4857597486"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-manga-asset-gate-v1/tests.md",
+          "sha256": "2f65aa8212f2c29a6b56cd1ae73a1b2d80e2e9d242aebbe93719584a03c5239c"
         },
         {
           "path": "docs/beacon/v0.0.1/features/prism-metrics-publication-v1/tests.md",
@@ -237,15 +317,31 @@
           "sha256": "203e7e8fe5fef1faf6e03f4b1d93a230c7ea3d1098aa76f7e73d417d50d4be09"
         },
         {
+          "path": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md",
+          "sha256": "f20cf002df697354ea989aedbf6b7aa6f560c846045781b39554cdce4e1f3e84"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-prompt-compiler-v1/tests.md",
+          "sha256": "4e104fd0eefe7580f876a5d190384bea4add5df976e1de4ce2f1b95ec72153e1"
+        },
+        {
           "path": "docs/beacon/v0.0.1/features/prism-publish-bridge-v1/tests.md",
           "sha256": "dae945dc70db82922403787fe68fcff3190737f1a0a6b5e856e88222ccfdbf6c"
         },
         {
+          "path": "docs/beacon/v0.0.1/features/prism-release-av-gate-v1/tests.md",
+          "sha256": "64336bb5ff515dd8e588b066f8e9b4f923c3c4cfb0c0d5d455b3e749dad137cd"
+        },
+        {
           "path": "docs/beacon/v0.0.1/features/prism-review-loop-v1/tests.md",
           "sha256": "8c588e7b69e296142a94145a75c4ec506e617d01141140e932552ec3e33d5da1"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-title-lab-v1/tests.md",
+          "sha256": "ec9614acb979bea8f8a3c25ba7b1400518f14f1c8d7f43ab4008a4f9d229a466"
         }
       ]
     }
   },
-  "fingerprint_hash": "d4496576e07125bcd90bd7fbbe4b59f6a157fe4fd0038edff132f22cfcd38997"
+  "fingerprint_hash": "79c96e10820f810235970651fce833eceb22ab1fcf5b50df1d37230b169c2bb9"
 }

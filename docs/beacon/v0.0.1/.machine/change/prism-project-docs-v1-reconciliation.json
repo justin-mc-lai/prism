@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "artifact": "implementation_first_reconciliation",
+  "feature": "prism-project-docs-v1",
+  "feature_slug": "prism-project-docs-v1",
+  "version": "v0.0.1",
+  "status": "completed",
+  "reason_code": "",
+  "recovery_kind": "implementation_first_reconciliation",
+  "delivery_mode": "recovery_not_normal_delivery",
+  "drift_detected_at": "2026-09-30T03:59:13.530317+00:00",
+  "detected_revision_id": "R5",
+  "source_revision_id": "R4",
+  "implementation_artifacts": [
+    {
+      "revision_id": "R3",
+      "run_id": "run-20260930T005112Z-08f7",
+      "recorded_at": "2026-09-30T00:51:12.439379+00:00",
+      "implemented_item_ids": [
+        "TASK-001",
+        "TEST-001",
+        "AC-001"
+      ],
+      "changed_files": [
+        "scripts/ai_manga_drama.py",
+        "scripts/check_prism_project_docs.sh",
+        "scripts/install_public_surfaces.sh",
+        "contracts/form-manga-drama.contract.md",
+        "content/pipelines/ai-manga-drama/README.md",
+        "skills/prism-director/SKILL.md",
+        "skills/prism-produce/SKILL.md",
+        "skills/prism-qa/SKILL.md"
+      ]
+    }
+  ],
+  "missing_truth_surfaces": [
+    "prd",
+    "user-story",
+    "qa/test-cases"
+  ],
+  "recovery_reason": "implementation evidence exists on earlier revision lineage and must be reconciled through beacon-change without erasing provenance",
+  "truth_surfaces_backfilled": [
+    "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md"
+  ],
+  "re_freeze_status": "completed",
+  "reprojection_targets": [
+    "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md",
+    "qa_proof",
+    "release_facing_proof"
+  ],
+  "provenance": {
+    "post_hoc_writeback_occurred": true,
+    "preserve_drift_history": true,
+    "current_revision_id": "R5",
+    "current_delivery_status": "implemented"
+  },
+  "change_route": {
+    "action": "beacon-change",
+    "command": "beacon change \"prism-project-docs-v1\" --project-root /Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1 --version v0.0.1 --reason \"implementation-first-reconciliation\""
+  },
+  "completion_reason_code": "implementation_first_reconciliation_completed",
+  "completed_at": "2026-09-30T03:59:13.531041+00:00",
+  "resolution": {
+    "resolved_by": "change_refreeze_transaction",
+    "refreeze_transaction_ref": "docs/beacon/v0.0.1/.machine/change/prism-project-docs-v1.refreeze-transaction.json",
+    "current_revision_id": "R5",
+    "preserve_drift_history": true
+  }
+}

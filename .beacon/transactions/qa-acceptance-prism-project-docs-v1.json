@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "artifact": "qa_acceptance_runtime_projection",
+  "version": "v0.0.1",
+  "feature": "prism-project-docs-v1",
+  "feature_slug": "prism-project-docs-v1",
+  "revision_id": "R5",
+  "verdict": "passed",
+  "transaction_id": "tx-qa-acceptance-prism-project-docs-v1-b8a93b9136db",
+  "source_hash": "sha256:b8a93b9136db580ef89104f1e9f313ea1b9bb4253cce3ee7489bf8f64dccd461",
+  "projection_seq": 2,
+  "committed_at": "2026-09-30T03:59:13.648440+00:00",
+  "write_status": "applied",
+  "failed_sinks": [],
+  "machine_ref": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-project-docs-v1.json",
+  "markdown_ref": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-project-docs-v1.md",
+  "runtime_projection_ref": ".beacon/transactions/qa-acceptance-prism-project-docs-v1.json",
+  "sink_checksums": {
+    "machine": "sha256:2bec4c7b349f42657c051b9c422b3ec47783c67fc0963136dda3d99017956ce8",
+    "human": "sha256:9ce4eca892ac8793eccd514453d0d7cc4795065b6f5513e9407cac0b4154669f",
+    "runtime": "sha256:2143a8b0f6a22fa261c42b3062a518501799bd71e6ddef92d26ecf774fbe5dfd"
+  }
+}

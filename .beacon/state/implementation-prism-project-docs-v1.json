@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "run_id": "run-20260930T005112Z-08f7",
+  "import_id": "run-20260930T005112Z-08f7",
+  "feature": "prism-project-docs-v1",
+  "feature_slug": "prism-project-docs-v1",
+  "version": "v0.0.1",
+  "runner": "import-evidence",
+  "skill": "beacon-implement",
+  "status": "completed",
+  "imported": true,
+  "source_refs": [
+    ".beacon/evidence/implement/prism-project-docs-v1/AC-PDO-001.json",
+    ".beacon/evidence/implement/prism-project-docs-v1/AC-PDO-002.json",
+    ".beacon/evidence/implement/prism-project-docs-v1/AC-PDO-003.json",
+    ".beacon/evidence/implement/prism-project-docs-v1/AC-PDO-004.json",
+    ".beacon/evidence/implement/prism-project-docs-v1/AC-PDO-005.json"
+  ],
+  "changed_files": [
+    "scripts/ai_manga_drama.py",
+    "scripts/check_prism_project_docs.sh",
+    "scripts/install_public_surfaces.sh",
+    "contracts/form-manga-drama.contract.md",
+    "content/pipelines/ai-manga-drama/README.md",
+    "skills/prism-director/SKILL.md",
+    "skills/prism-produce/SKILL.md",
+    "skills/prism-qa/SKILL.md"
+  ],
+  "service_dirs": [],
+  "summary_ref": "docs/beacon/v0.0.1/features/prism-project-docs-v1/evidence.md",
+  "approved_by": "agent-opencode",
+  "prompt_boundary": {
+    "schema_version": "1.0",
+    "feature": "prism-project-docs-v1",
+    "feature_slug": "prism-project-docs-v1",
+    "version": "v0.0.1",
+    "required": false,
+    "prompt": "Import externally produced implementation evidence for the scoped Beacon feature. Read Beacon source of truth and bind the imported evidence to the frozen feature package truth. Implement only against the frozen feature package truth above. Evidence refs: .beacon/evidence/implement/prism-project-docs-v1/AC-PDO-001.json, .beacon/evidence/implement/prism-project-docs-v1/AC-PDO-002.json, .beacon/evidence/implement/prism-project-docs-v1/AC-PDO-003.json, .beacon/evidence/implement/prism-project-docs-v1/AC-PDO-004.json, .beacon/evidence/implement/prism-project-docs-v1/AC-PDO-005.json, docs/beacon/v0.0.1/features/prism-project-docs-v1/evidence.md. Changed files or service directories: scripts/ai_manga_drama.py, scripts/check_prism_project_docs.sh, scripts/install_public_surfaces.sh, contracts/form-manga-drama.contract.md, content/pipelines/ai-manga-drama/README.md, skills/prism-director/SKILL.md, skills/prism-produce/SKILL.md, skills/prism-qa/SKILL.md.",
+    "classification": "",
+    "blocked": false,
+    "status": "not_required",
+    "reason_code": "",
+    "next_action": "",
+    "recommended_command": "",
+    "matched_signals": [],
+    "frozen_refs": [
+      "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
+      "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md",
+      "docs/beacon/v0.0.1/features/prism-project-docs-v1/tasks.md",
+      "docs/beacon/v0.0.1/features/prism-project-docs-v1/evidence.md"
+    ],
+    "surface": "import-evidence"
+  },
+  "created_at": "2026-09-30T00:51:12.430850+00:00",
+  "generated_at": "2026-09-30T00:51:12.430858+00:00"
+}

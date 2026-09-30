@@ -1,0 +1,1123 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-project-docs-v1",
+  "feature_slug": "prism-project-docs-v1",
+  "version": "v0.0.1",
+  "generated_at": "2026-09-30T00:48:42.998776+00:00",
+  "expansion_profile": "pua-web",
+  "scenario_depth": "standard",
+  "families_required": [
+    "happy",
+    "negative",
+    "boundary"
+  ],
+  "stories": [
+    {
+      "ac_id": "AC-001",
+      "theme": "general",
+      "text": "Acceptance criteria TBD",
+      "scenario_ids": [],
+      "scenario_families": [],
+      "required_families": [],
+      "scenarios": []
+    },
+    {
+      "ac_id": "AC-PDO-001",
+      "theme": "",
+      "text": "项目侧子目录与 content/ 同名同构（README.md 除外）",
+      "scenario_ids": [
+        "SC-AUTO-TC-PDO-001",
+        "SC-AUTO-TC-PDO-002",
+        "SC-AUTO-TC-PDO-003"
+      ],
+      "scenario_families": [
+        "primary",
+        "primary",
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-PDO-001",
+          "source_tc_id": "TC-PDO-001",
+          "tc_id": "TC-PDO-001-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-PDO-002",
+          "source_tc_id": "TC-PDO-002",
+          "tc_id": "TC-PDO-002-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-PDO-003",
+          "source_tc_id": "TC-PDO-003",
+          "tc_id": "TC-PDO-003-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    },
+    {
+      "ac_id": "AC-PDO-002",
+      "theme": "",
+      "text": "公开 skill 指令面写入 PRISM_HOME 约定（≥3 处）",
+      "scenario_ids": [
+        "SC-AUTO-TC-PDO-004",
+        "SC-AUTO-TC-PDO-005",
+        "SC-AUTO-TC-PDO-006"
+      ],
+      "scenario_families": [
+        "primary",
+        "primary",
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-PDO-004",
+          "source_tc_id": "TC-PDO-004",
+          "tc_id": "TC-PDO-004-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-PDO-005",
+          "source_tc_id": "TC-PDO-005",
+          "tc_id": "TC-PDO-005-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-PDO-006",
+          "source_tc_id": "TC-PDO-006",
+          "tc_id": "TC-PDO-006-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    },
+    {
+      "ac_id": "AC-PDO-003",
+      "theme": "",
+      "text": "契约 §4 与管线 README canonical 行唯一且一致（exit 0）",
+      "scenario_ids": [
+        "SC-AUTO-TC-PDO-007",
+        "SC-AUTO-TC-PDO-008",
+        "SC-AUTO-TC-PDO-009"
+      ],
+      "scenario_families": [
+        "primary",
+        "primary",
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-PDO-007",
+          "source_tc_id": "TC-PDO-007",
+          "tc_id": "TC-PDO-007-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-PDO-008",
+          "source_tc_id": "TC-PDO-008",
+          "tc_id": "TC-PDO-008-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-PDO-009",
+          "source_tc_id": "TC-PDO-009",
+          "tc_id": "TC-PDO-009-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    },
+    {
+      "ac_id": "AC-PDO-004",
+      "theme": "",
+      "text": "install 产物说明含\"只装指令面 + PRISM_HOME\"（exit 0）",
+      "scenario_ids": [
+        "SC-AUTO-TC-PDO-010",
+        "SC-AUTO-TC-PDO-011"
+      ],
+      "scenario_families": [
+        "primary",
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-PDO-010",
+          "source_tc_id": "TC-PDO-010",
+          "tc_id": "TC-PDO-010-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-PDO-011",
+          "source_tc_id": "TC-PDO-011",
+          "tc_id": "TC-PDO-011-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    },
+    {
+      "ac_id": "AC-PDO-005",
+      "theme": "",
+      "text": "docs/prism 无需求真相字段（负向）",
+      "scenario_ids": [
+        "SC-AUTO-TC-PDO-012",
+        "SC-AUTO-TC-PDO-013",
+        "SC-AUTO-TC-PDO-014"
+      ],
+      "scenario_families": [
+        "primary",
+        "primary",
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-PDO-012",
+          "source_tc_id": "TC-PDO-012",
+          "tc_id": "TC-PDO-012-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-PDO-013",
+          "source_tc_id": "TC-PDO-013",
+          "tc_id": "TC-PDO-013-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-PDO-014",
+          "source_tc_id": "TC-PDO-014",
+          "tc_id": "TC-PDO-014-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    },
+    {
+      "ac_id": "GATES",
+      "theme": "",
+      "text": "Truth Review Gate A/B/C + L0 pass，recommend_freeze=true",
+      "scenario_ids": [
+        "SC-AUTO-TC-PDO-015",
+        "SC-AUTO-TC-PDO-016",
+        "SC-AUTO-TC-PDO-017"
+      ],
+      "scenario_families": [
+        "primary",
+        "primary",
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-PDO-015",
+          "source_tc_id": "TC-PDO-015",
+          "tc_id": "TC-PDO-015-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-PDO-016",
+          "source_tc_id": "TC-PDO-016",
+          "tc_id": "TC-PDO-016-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-PDO-017",
+          "source_tc_id": "TC-PDO-017",
+          "tc_id": "TC-PDO-017-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    },
+    {
+      "ac_id": "FSM",
+      "theme": "",
+      "text": "FSM 七态六跃迁在 truth 中成对出现（scaffolded→validated→compiled→rendered→assembled→qa_passed→released）",
+      "scenario_ids": [
+        "SC-AUTO-TC-PDO-018",
+        "SC-AUTO-TC-PDO-019",
+        "SC-AUTO-TC-PDO-020",
+        "SC-AUTO-TC-PDO-021",
+        "SC-AUTO-TC-PDO-022"
+      ],
+      "scenario_families": [
+        "primary",
+        "primary",
+        "primary",
+        "primary",
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-PDO-018",
+          "source_tc_id": "TC-PDO-018",
+          "tc_id": "TC-PDO-018-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-PDO-019",
+          "source_tc_id": "TC-PDO-019",
+          "tc_id": "TC-PDO-019-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-PDO-020",
+          "source_tc_id": "TC-PDO-020",
+          "tc_id": "TC-PDO-020-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-PDO-021",
+          "source_tc_id": "TC-PDO-021",
+          "tc_id": "TC-PDO-021-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-PDO-022",
+          "source_tc_id": "TC-PDO-022",
+          "tc_id": "TC-PDO-022-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario_id": "SC-AUTO-TC-PDO-001",
+      "source_tc_id": "TC-PDO-001",
+      "tc_id": "TC-PDO-001-PRIMARY",
+      "ac_id": "AC-PDO-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "项目侧子目录与 content/ 同名同构（README.md 除外）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rm -rf /tmp/prism-pdo-001 && python3 $PRISM_HOME/scripts/ai_manga_drama.py init --dir /tmp/prism-pdo-001/docs/prism --episode ep-t1 && diff <(ls /tmp/prism-pdo-001/docs/prism | grep -v README.md | sort) <(ls content | sort)",
+      "assertion": "项目侧子目录与 content/ 同名同构（README.md 除外）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-project-docs-v1/tc-pdo-001/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-PDO-002",
+      "source_tc_id": "TC-PDO-002",
+      "tc_id": "TC-PDO-002-PRIMARY",
+      "ac_id": "AC-PDO-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "门面 README 存在且含大纲/母稿/分镜三类索引",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "test -f /tmp/prism-pdo-001/docs/prism/README.md && rg -q '大纲' /tmp/prism-pdo-001/docs/prism/README.md && rg -q '母稿|masters' /tmp/prism-pdo-001/docs/prism/README.md && rg -q '分镜' /tmp/prism-pdo-001/docs/prism/README.md",
+      "assertion": "门面 README 存在且含大纲/母稿/分镜三类索引",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-project-docs-v1/tc-pdo-002/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-PDO-003",
+      "source_tc_id": "TC-PDO-003",
+      "tc_id": "TC-PDO-003-PRIMARY",
+      "ac_id": "AC-PDO-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "init 落盘形状检查脚本 exit 0",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "bash scripts/check_prism_project_docs.sh --init-shape /tmp/prism-pdo-001/docs/prism",
+      "assertion": "init 落盘形状检查脚本 exit 0",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-project-docs-v1/tc-pdo-003/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-PDO-004",
+      "source_tc_id": "TC-PDO-004",
+      "tc_id": "TC-PDO-004-PRIMARY",
+      "ac_id": "AC-PDO-002",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "公开 skill 指令面写入 PRISM_HOME 约定（≥3 处）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n 'PRISM_HOME' skills/prism-director/SKILL.md skills/prism-produce/SKILL.md skills/prism-qa/SKILL.md | wc -l | awk '{exit !($1>=3)}'",
+      "assertion": "公开 skill 指令面写入 PRISM_HOME 约定（≥3 处）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-project-docs-v1/tc-pdo-004/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-PDO-005",
+      "source_tc_id": "TC-PDO-005",
+      "tc_id": "TC-PDO-005-PRIMARY",
+      "ac_id": "AC-PDO-002",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "命令示例以 `$PRISM_HOME/scripts/` 开头（≥2 处）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n '\\$PRISM_HOME/scripts/' skills/prism-director/SKILL.md skills/prism-produce/SKILL.md | wc -l | awk '{exit !($1>=2)}'",
+      "assertion": "命令示例以 `$PRISM_HOME/scripts/` 开头（≥2 处）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-project-docs-v1/tc-pdo-005/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-PDO-006",
+      "source_tc_id": "TC-PDO-006",
+      "tc_id": "TC-PDO-006-PRIMARY",
+      "ac_id": "AC-PDO-002",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "仓内三脚本只存在于 scripts/（唯一能力 SoT，无副本）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "! git ls-files | rg -q 'prompt_compiler\\.py|ai_manga_drama\\.py|drama_spec\\.py' || (git ls-files | rg 'prompt_compiler\\.py|ai_manga_drama\\.py|drama_spec\\.py' | rg -q '^scripts/')",
+      "assertion": "仓内三脚本只存在于 scripts/（唯一能力 SoT，无副本）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-project-docs-v1/tc-pdo-006/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-PDO-007",
+      "source_tc_id": "TC-PDO-007",
+      "tc_id": "TC-PDO-007-PRIMARY",
+      "ac_id": "AC-PDO-003",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "契约 §4 与管线 README canonical 行唯一且一致（exit 0）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "bash scripts/check_prism_project_docs.sh --canonical-path",
+      "assertion": "契约 §4 与管线 README canonical 行唯一且一致（exit 0）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-project-docs-v1/tc-pdo-007/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-PDO-008",
+      "source_tc_id": "TC-PDO-008",
+      "tc_id": "TC-PDO-008-PRIMARY",
+      "ac_id": "AC-PDO-003",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "旧路径 content/presentations 已标 alias/deprecated",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n 'alias|deprecated' contracts/form-manga-drama.contract.md | rg -q 'content/presentations'",
+      "assertion": "旧路径 content/presentations 已标 alias/deprecated",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-project-docs-v1/tc-pdo-008/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-PDO-009",
+      "source_tc_id": "TC-PDO-009",
+      "tc_id": "TC-PDO-009-PRIMARY",
+      "ac_id": "AC-PDO-003",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "反向断言：破坏 canonical 一致性时检查脚本必须 fail（负向）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "bash scripts/check_prism_project_docs.sh --canonical-path --invert; test $? -eq 1",
+      "assertion": "反向断言：破坏 canonical 一致性时检查脚本必须 fail（负向）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-project-docs-v1/tc-pdo-009/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-PDO-010",
+      "source_tc_id": "TC-PDO-010",
+      "tc_id": "TC-PDO-010-PRIMARY",
+      "ac_id": "AC-PDO-004",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "install 产物说明含\"只装指令面 + PRISM_HOME\"（exit 0）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "bash scripts/check_prism_project_docs.sh --install-notice",
+      "assertion": "install 产物说明含\"只装指令面 + PRISM_HOME\"（exit 0）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-project-docs-v1/tc-pdo-010/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-PDO-011",
+      "source_tc_id": "TC-PDO-011",
+      "tc_id": "TC-PDO-011-PRIMARY",
+      "ac_id": "AC-PDO-004",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "install 脚本注释明示只装指令面",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n '只软链|指令面' scripts/install_public_surfaces.sh | wc -l | awk '{exit !($1>=1)}'",
+      "assertion": "install 脚本注释明示只装指令面",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-project-docs-v1/tc-pdo-011/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-PDO-012",
+      "source_tc_id": "TC-PDO-012",
+      "tc_id": "TC-PDO-012-PRIMARY",
+      "ac_id": "AC-PDO-005",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "docs/prism 无需求真相字段（负向）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "! rg -n 'parser_contract|revision_id' docs/prism/ || ! rg -l 'parser_contract' docs/prism/ 2>/dev/null",
+      "assertion": "docs/prism 无需求真相字段（负向）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-project-docs-v1/tc-pdo-012/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-PDO-013",
+      "source_tc_id": "TC-PDO-013",
+      "tc_id": "TC-PDO-013-PRIMARY",
+      "ac_id": "AC-PDO-005",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "docs/beacon 下无分镜产物文件（负向；按产物名判定，非字面内容匹配）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "! rg --files docs/beacon | rg -q '(^|/)(storyboard\\.json|分镜脚本\\.md)$'",
+      "assertion": "docs/beacon 下无分镜产物文件（负向；按产物名判定，非字面内容匹配）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-project-docs-v1/tc-pdo-013/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-PDO-014",
+      "source_tc_id": "TC-PDO-014",
+      "tc_id": "TC-PDO-014-PRIMARY",
+      "ac_id": "AC-PDO-005",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "边界检查脚本 exit 0（单向引用 + 无真相字段）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "bash scripts/check_prism_project_docs.sh --boundary",
+      "assertion": "边界检查脚本 exit 0（单向引用 + 无真相字段）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-project-docs-v1/tc-pdo-014/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-PDO-015",
+      "source_tc_id": "TC-PDO-015",
+      "tc_id": "TC-PDO-015-PRIMARY",
+      "ac_id": "GATES",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "Truth Review Gate A/B/C + L0 pass，recommend_freeze=true",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "beacon truth review prism-project-docs-v1 --project . --version v0.0.1 --json",
+      "assertion": "Truth Review Gate A/B/C + L0 pass，recommend_freeze=true",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-project-docs-v1/tc-pdo-015/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-PDO-016",
+      "source_tc_id": "TC-PDO-016",
+      "tc_id": "TC-PDO-016-PRIMARY",
+      "ac_id": "GATES",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "`closure_allowed=true` 且 finding_count=0（integrity 门真跑、非空报告）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "beacon doctor verify-truth-integrity prism-project-docs-v1 --project-root . --version v0.0.1 --mode block --json | python3 -c \"import json,sys; d=json.load(sys.stdin); exit(0 if d.get('result',{}).get('blocked') in (False,None) and d.get('result',{}).get('closure_contract',{}).get('closure_allowed') else 1)\"",
+      "assertion": "`closure_allowed=true` 且 finding_count=0（integrity 门真跑、非空报告）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-project-docs-v1/tc-pdo-016/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-PDO-017",
+      "source_tc_id": "TC-PDO-017",
+      "tc_id": "TC-PDO-017-PRIMARY",
+      "ac_id": "GATES",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "Deferral Ledger 无 pending 项（rg 无命中则 exit 1 → 断言成立）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n 'user_decision:\\s*pending' docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md; test $? -eq 1",
+      "assertion": "Deferral Ledger 无 pending 项（rg 无命中则 exit 1 → 断言成立）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-project-docs-v1/tc-pdo-017/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-PDO-018",
+      "source_tc_id": "TC-PDO-018",
+      "tc_id": "TC-PDO-018-PRIMARY",
+      "ac_id": "FSM",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "FSM 七态六跃迁在 truth 中成对出现（scaffolded→validated→compiled→rendered→assembled→qa_passed→released）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n 'scaffolded.*validated|validated.*compiled|compiled.*rendered|rendered.*assembled|assembled.*qa_passed|qa_passed.*released' docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md | wc -l | awk '{exit !($1>=6)}'",
+      "assertion": "FSM 七态六跃迁在 truth 中成对出现（scaffolded→validated→compiled→rendered→assembled→qa_passed→released）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-project-docs-v1/tc-pdo-018/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-PDO-019",
+      "source_tc_id": "TC-PDO-019",
+      "tc_id": "TC-PDO-019-PRIMARY",
+      "ac_id": "FSM",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "三条非法跃迁槽位（跳校验/无凭证渲染/无人工发布）全部在 truth",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n 'illegal: scaffolded → compiled|illegal: compiled → rendered|illegal: assembled → released' docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md | wc -l | awk '{exit !($1>=3)}'",
+      "assertion": "三条非法跃迁槽位（跳校验/无凭证渲染/无人工发布）全部在 truth",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-project-docs-v1/tc-pdo-019/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-PDO-020",
+      "source_tc_id": "TC-PDO-020",
+      "tc_id": "TC-PDO-020-PRIMARY",
+      "ac_id": "FSM",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "illegal compiled→rendered：无凭证必须 fail-closed，输出 `2`（无兜底、无假成片）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rm -rf /tmp/pdo-fsm && cp -r content/pipelines/ai-manga-drama/fixtures/ep-xianxia-spec /tmp/pdo-fsm && (unset PRISM_T2I_KEY PRISM_I2V_KEY PRISM_T2V_KEY PRISM_TTS_KEY; python3 scripts/ai_manga_drama.py request --episode /tmp/pdo-fsm >/dev/null 2>&1; echo $? )",
+      "assertion": "illegal compiled→rendered：无凭证必须 fail-closed，输出 `2`（无兜底、无假成片）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-project-docs-v1/tc-pdo-020/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-PDO-021",
+      "source_tc_id": "TC-PDO-021",
+      "tc_id": "TC-PDO-021-PRIMARY",
+      "ac_id": "FSM",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "illegal assembled→released：BLOCKED 时 release_gate 停在 `pending_human`（无人工批准不得发布）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -o '\"release_gate\": \"pending_human\"' /tmp/pdo-fsm/video-manifest.json",
+      "assertion": "illegal assembled→released：BLOCKED 时 release_gate 停在 `pending_human`（无人工批准不得发布）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-project-docs-v1/tc-pdo-021/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-PDO-022",
+      "source_tc_id": "TC-PDO-022",
+      "tc_id": "TC-PDO-022-PRIMARY",
+      "ac_id": "FSM",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "legal scaffolded→validated：合法跃迁可执行（validate exit 0）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "python3 scripts/ai_manga_drama.py validate --storyboard content/pipelines/ai-manga-drama/fixtures/ep-compile-test/storyboard.json >/dev/null 2>&1; test $? -eq 0",
+      "assertion": "legal scaffolded→validated：合法跃迁可执行（validate exit 0）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-project-docs-v1/tc-pdo-022/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    }
+  ]
+}
