@@ -390,7 +390,7 @@
         "truth_authority": false,
         "json_authority": false,
         "generated_governance_state": true,
-        "source_hash": "1a8505d410f2d2a99303e62db5c84b5b17c2085478151a918ae433521296a82f"
+        "source_hash": "e8cc06ce4d64d7f304ee8a5cec536c254be412abec176ddc10c9f0ed2d785157"
       },
       "qa_status": {
         "schema_version": "1.0",
@@ -407,7 +407,7 @@
         "truth_authority": false,
         "json_authority": false,
         "generated_governance_state": true,
-        "source_hash": "7fca380b6ae266783a7fe8f10e4dcc4f71490b84f84bbebb9c06c9e65c1cfbcf"
+        "source_hash": "c9c342aecaf696694eb354906adb7e3d7cae3fc723b1ec71991692e1a9c8307e"
       },
       "release_gate_report": {
         "schema_version": "1.0",
@@ -424,7 +424,7 @@
         "truth_authority": false,
         "json_authority": false,
         "generated_governance_state": true,
-        "source_hash": "e9a1e757e0a38d07dfe6362f93a67dd7d44b269656f2dd4681c7a3527d7eade4"
+        "source_hash": "2d7b9707f775be90a79f593c38e338e5cc6c6d7122bc2e50955105503931d350"
       }
     },
     "manifest_authority": false,
@@ -677,7 +677,7 @@
     ]
   },
   "generated_by": "beacon.truth_map.resolver",
-  "generated_at": "2026-09-30T07:21:17.389100+00:00",
+  "generated_at": "2026-09-30T07:24:27.426476+00:00",
   "truth_authority": false,
   "source_paths": {
     "truth": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/truth.md",

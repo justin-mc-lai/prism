@@ -4,13 +4,13 @@
   "feature": "prism-ip-schema-v1",
   "feature_slug": "prism-ip-schema-v1",
   "version": "v0.0.1",
-  "status": "required",
-  "reason_code": "implementation_first_reconciliation_required",
+  "status": "completed",
+  "reason_code": "",
   "recovery_kind": "implementation_first_reconciliation",
   "delivery_mode": "recovery_not_normal_delivery",
   "drift_detected_at": "2026-09-30T07:23:12.255889+00:00",
-  "detected_revision_id": "R2",
-  "source_revision_id": "R1",
+  "detected_revision_id": "R3",
+  "source_revision_id": "R2",
   "implementation_artifacts": [
     {
       "revision_id": "R1",
@@ -50,11 +50,19 @@
   "provenance": {
     "post_hoc_writeback_occurred": true,
     "preserve_drift_history": true,
-    "current_revision_id": "R2",
-    "current_delivery_status": "implemented"
+    "current_revision_id": "R3",
+    "current_delivery_status": "idle"
   },
   "change_route": {
     "action": "beacon-change",
-    "command": "beacon change \"prism-ip-schema-v1\" --project-root /Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-ip-schema-v1 --version v0.0.1 --reason \"implementation-first-reconciliation\""
+    "command": "beacon change \"prism-ip-schema-v1\" --project-root /Users/apple/Developer/Personal/selfmedia/prism --version v0.0.1 --reason \"implementation-first-reconciliation\""
+  },
+  "completion_reason_code": "implementation_first_reconciliation_completed",
+  "completed_at": "2026-09-30T07:24:48.296349+00:00",
+  "resolution": {
+    "resolved_by": "change_refreeze_transaction",
+    "refreeze_transaction_ref": "docs/beacon/v0.0.1/.machine/change/prism-ip-schema-v1.refreeze-transaction.json",
+    "current_revision_id": "R3",
+    "preserve_drift_history": true
   }
 }

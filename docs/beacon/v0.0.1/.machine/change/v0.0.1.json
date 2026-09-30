@@ -79,7 +79,7 @@
       "feature": "prism-ip-schema-v1",
       "feature_slug": "prism-ip-schema-v1",
       "summary": "Maintains release-facing version aggregate projection guards so QA accepted features are included in version change scope before release check.",
-      "status": "generated"
+      "status": "completed"
     },
     {
       "feature": "prism-learning-memory-v1",
@@ -158,8 +158,8 @@
       "prism-monetization-contracts-v1",
       "prism-adaptation-contracts-v1",
       "prism-project-docs-v1",
-      "prism-ip-schema-v1",
-      "prism-shot-iteration-budget-v1"
+      "prism-shot-iteration-budget-v1",
+      "prism-ip-schema-v1"
     ],
     "waves": [
       {
@@ -216,8 +216,8 @@
             "reason_code": "parallel_no_conflict"
           },
           {
-            "feature": "prism-ip-schema-v1",
-            "feature_slug": "prism-ip-schema-v1",
+            "feature": "prism-shot-iteration-budget-v1",
+            "feature_slug": "prism-shot-iteration-budget-v1",
             "depends_on_features": [],
             "direct_delivery_services": [],
             "writable_services": [],
@@ -225,8 +225,8 @@
             "reason_code": "parallel_no_conflict"
           },
           {
-            "feature": "prism-shot-iteration-budget-v1",
-            "feature_slug": "prism-shot-iteration-budget-v1",
+            "feature": "prism-ip-schema-v1",
+            "feature_slug": "prism-ip-schema-v1",
             "depends_on_features": [],
             "direct_delivery_services": [],
             "writable_services": [],
@@ -656,6 +656,7 @@
     "docs/beacon/v0.0.1/user-story/prism-ip-schema-v1.md",
     "docs/beacon/v0.0.1/qa/test-cases/prism-ip-schema-v1.md",
     "docs/beacon/v0.0.1/.machine/execution/prism-ip-schema-v1.revision.json",
+    "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-ip-schema-v1.json",
     "docs/beacon/v0.0.1/.machine/change/prism-ip-schema-v1.json",
     "docs/beacon/v0.0.1/change/prism-learning-memory-v1.md",
     "docs/beacon/v0.0.1/prd/prism-learning-memory-v1.md",
@@ -711,5 +712,5 @@
     "docs/beacon/v0.0.1/.machine/execution/prism-shot-iteration-budget-v1.revision.json",
     "docs/beacon/v0.0.1/.machine/change/prism-shot-iteration-budget-v1.json"
   ],
-  "generated_at": "2026-09-30 15:21"
+  "generated_at": "2026-09-30 15:24"
 }
