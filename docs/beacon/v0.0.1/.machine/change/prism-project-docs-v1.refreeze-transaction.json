@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "transaction_id": "tx-change-refreeze-prism-project-docs-v1-20260930t003254z",
+  "transaction_id": "tx-change-refreeze-prism-project-docs-v1-20260930t013316z",
   "feature": "prism-project-docs-v1",
   "feature_slug": "prism-project-docs-v1",
   "version": "v0.0.1",
@@ -72,16 +72,16 @@
     }
   },
   "truth_revision_before": {
-    "revision_id": "R3",
+    "revision_id": "R4",
     "doc_status": "draft",
     "lifecycle_status": "idle",
     "baseline_hash": ""
   },
   "truth_revision_after": {
-    "revision_id": "R3",
+    "revision_id": "R4",
     "doc_status": "frozen",
     "lifecycle_status": "frozen",
-    "baseline_hash": "sha256:1f32e2bdfd1d566173a7b6b8e69d6ee7121f41330762d660ea402d1ca13c5974"
+    "baseline_hash": "sha256:46d6aab02dab0565c24e6ef9c534bcdcb10ba5f838b01df5d9aa6bfa3fa6cc8c"
   },
   "refreeze_status": "complete",
   "next_route": {
@@ -95,21 +95,21 @@
     "qa_executed": false,
     "release_executed": false
   },
-  "created_at": "2026-09-30T00:32:54.878027+00:00",
+  "created_at": "2026-09-30T01:33:16.375137+00:00",
   "previous_revision": {
-    "revision_id": "R2",
+    "revision_id": "R3",
     "doc_status": "superseded",
     "lifecycle_status": "superseded",
     "baseline_hash": ""
   },
   "opened_revision": {
-    "revision_id": "R3",
+    "revision_id": "R4",
     "doc_status": "draft",
     "lifecycle_status": "idle",
     "baseline_hash": ""
   },
   "story_reopen": {
-    "current_revision_id": "R3",
+    "current_revision_id": "R4",
     "lifecycle_status": "draft"
   },
   "requirement_package": {
@@ -154,8 +154,8 @@
         "evidence": "docs/beacon/v0.0.1/features/prism-project-docs-v1/evidence.md"
       },
       "source_hashes": {
-        "truth": "0ae851b7c627964eda3ace42fb55daf959fa69fc4c07f328aff376a155135b08",
-        "tests": "62f1b19c90bf98c2ddcab2d3cf53d28cda064e3c06b7ca278ecc246b4d212784",
+        "truth": "5bf77c07cf110f552bc85734ca0cd4aa56d02c9ef0bded18d6562669c5d0c8e9",
+        "tests": "eb8595950a56961d4e0ff96d9f6ded2ce3b503cfa2c47f463e719e250b7427a8",
         "tasks": "90f8f16faf0443a8fc249cef30cb44147ec2570e03319b134f099d1271052f77",
         "evidence": "c8585f4664a160fcbe0a23e5d1c3191d0ac4e0ba64591524696fe592e8119b30"
       },
@@ -211,7 +211,7 @@
       "path": "docs/beacon/v0.0.1/.machine/user-story/prism-project-docs-v1.json",
       "feature": "prism-project-docs-v1",
       "version": "v0.0.1",
-      "revision_id": "R3",
+      "revision_id": "R4",
       "ac_count": 1,
       "test_count": 1,
       "story_ids": [
@@ -249,7 +249,7 @@
         "review_gates": [],
         "qa_coverage_hints": [],
         "evidence_lines": {},
-        "generated_at": "2026-09-30T00:32:55.417888+00:00",
+        "generated_at": "2026-09-30T01:33:16.833029+00:00",
         "feature": "prism-project-docs-v1",
         "feature_slug": "prism-project-docs-v1",
         "prd_ref": "docs/beacon/v0.0.1/prd/prism-project-docs-v1.md",
@@ -284,7 +284,7 @@
             "slug": "prism-project-docs-v1",
             "version": "v0.0.1",
             "status": "frozen",
-            "revision_id": "R2",
+            "revision_id": "R3",
             "language": "zh",
             "domain_required": "false",
             "ux_required": "false",
@@ -371,7 +371,7 @@
               "slug": "prism-project-docs-v1",
               "version": "v0.0.1",
               "status": "frozen",
-              "revision_id": "R2",
+              "revision_id": "R3",
               "language": "zh",
               "domain_required": "false",
               "ux_required": "false",
@@ -559,7 +559,7 @@
       "finding_count": 0,
       "run_id": "",
       "source": "change.refreeze-chain",
-      "written_at": "2026-09-30T00:32:55.429715+00:00",
+      "written_at": "2026-09-30T01:33:16.844996+00:00",
       "state_path": ".beacon/state/requirement-clarity-prism-project-docs-v1.json"
     }
   },
@@ -604,7 +604,7 @@
         "review_gates": [],
         "qa_coverage_hints": [],
         "evidence_lines": {},
-        "generated_at": "2026-09-30T00:32:55.436425+00:00",
+        "generated_at": "2026-09-30T01:33:16.849541+00:00",
         "feature": "prism-project-docs-v1",
         "feature_slug": "prism-project-docs-v1",
         "prd_ref": "docs/beacon/v0.0.1/prd/prism-project-docs-v1.md",
@@ -639,7 +639,7 @@
             "slug": "prism-project-docs-v1",
             "version": "v0.0.1",
             "status": "frozen",
-            "revision_id": "R2",
+            "revision_id": "R3",
             "language": "zh",
             "domain_required": "false",
             "ux_required": "false",
@@ -726,7 +726,7 @@
               "slug": "prism-project-docs-v1",
               "version": "v0.0.1",
               "status": "frozen",
-              "revision_id": "R2",
+              "revision_id": "R3",
               "language": "zh",
               "domain_required": "false",
               "ux_required": "false",
@@ -926,7 +926,7 @@
           "slug": "prism-project-docs-v1",
           "version": "v0.0.1",
           "status": "frozen",
-          "revision_id": "R2",
+          "revision_id": "R3",
           "language": "zh",
           "domain_required": "false",
           "ux_required": "false",
@@ -1013,7 +1013,7 @@
             "slug": "prism-project-docs-v1",
             "version": "v0.0.1",
             "status": "frozen",
-            "revision_id": "R2",
+            "revision_id": "R3",
             "language": "zh",
             "domain_required": "false",
             "ux_required": "false",
@@ -1111,13 +1111,13 @@
       "status": "pass",
       "blocked": false,
       "reason_code": "",
-      "generated_at": "2026-09-30T00:32:55.463718+00:00",
+      "generated_at": "2026-09-30T01:33:16.874652+00:00",
       "package_dir": "docs/beacon/v0.0.1/features/prism-project-docs-v1",
       "truth_frontmatter": {
         "slug": "prism-project-docs-v1",
         "version": "v0.0.1",
         "status": "frozen",
-        "revision_id": "R2",
+        "revision_id": "R3",
         "language": "zh",
         "domain_required": "false",
         "ux_required": "false",
@@ -1175,8 +1175,8 @@
     "feature": "prism-project-docs-v1",
     "feature_slug": "prism-project-docs-v1",
     "version": "v0.0.1",
-    "revision_id": "R3",
-    "source_revision_id": "R2",
+    "revision_id": "R4",
+    "source_revision_id": "R3",
     "status": "not_applicable",
     "cleanup_required": false,
     "removed_requirement_count": 0,
@@ -1185,10 +1185,10 @@
     "removed_requirement_surfaces": [],
     "added_requirement_surfaces": [],
     "retained_requirement_surfaces": [],
-    "current_baseline_hash": "sha256:1f32e2bdfd1d566173a7b6b8e69d6ee7121f41330762d660ea402d1ca13c5974",
+    "current_baseline_hash": "sha256:46d6aab02dab0565c24e6ef9c534bcdcb10ba5f838b01df5d9aa6bfa3fa6cc8c",
     "source_baseline_hash": "",
     "story_state_ref": "docs/beacon/v0.0.1/.machine/user-story/prism-project-docs-v1.json",
-    "generated_at": "2026-09-30T00:32:55.536280+00:00",
+    "generated_at": "2026-09-30T01:33:16.912539+00:00",
     "json_ref": "docs/beacon/v0.0.1/.machine/execution/revision-delta-prism-project-docs-v1.json",
     "markdown_ref": "docs/beacon/v0.0.1/execution/revision-delta-prism-project-docs-v1.md"
   },
@@ -1222,7 +1222,7 @@
         "summary": "Maintains release-facing version aggregate projection guards so QA accepted features are included in version change scope before release check.",
         "status": "generated",
         "accepted_at": "",
-        "revision_id": "R3",
+        "revision_id": "R4",
         "projection_role": {
           "artifact_role": "version_aggregate_projection",
           "truth_source": false,
@@ -1251,7 +1251,7 @@
           "docs/beacon/v0.0.1/qa/test-cases/prism-project-docs-v1.md",
           "docs/beacon/v0.0.1/.machine/execution/prism-project-docs-v1.revision.json"
         ],
-        "generated_at": "2026-09-30T00:32:55.537355+00:00"
+        "generated_at": "2026-09-30T01:33:16.912935+00:00"
       }
     },
     "version_aggregate_projection": {

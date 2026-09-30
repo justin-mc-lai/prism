@@ -151,7 +151,7 @@
     "fill_depth_pass": true,
     "note": "Polish L0/narrative only after A/B/C; preserve_machine_fields=true; freeze needs D+exec too"
   },
-  "evaluated_at": "2026-09-30T00:33:57.318727+00:00",
+  "evaluated_at": "2026-09-30T01:34:23.446839+00:00",
   "paths": {
     "truth": "docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md",
     "tests": "docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md",
