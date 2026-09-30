@@ -13,6 +13,16 @@ optional_files:
   - briefing.md
   - humanized.md
   - assets/
+imports:
+  field: imports
+  element_fields:
+    - from
+    - asset
+    - track
+    - revision
+  default_track: latest
+  resolved_field: resolved_revision
+  requires_source_frozen: true
 required_fields:
   meta.yaml:
     - vertical

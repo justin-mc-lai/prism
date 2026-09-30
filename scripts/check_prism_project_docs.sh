@@ -76,6 +76,10 @@ case "$MODE" in
     [ -n "$DIR" ] || { die "--init-shape requires a directory"; finish; }
     [ -d "$DIR" ] || { die "not a directory: $DIR"; finish; }
     [ -d "$ROOT/content" ] || { die "missing $ROOT/content"; finish; }
+    # prism-ip-schema-v1 (AC-IPM-007): the content-isomorphic tree must include ips/
+    if [ -d "$ROOT/content" ] && [ ! -d "$ROOT/content/ips" ]; then
+      die "missing $ROOT/content/ips (IP asset namespace)"
+    fi
     if ! diff <(ls "$DIR" | grep -v '^README\.md$' | sort) <(ls "$ROOT/content" | sort) >/dev/null; then
       die "tree is not content-isomorphic: $(diff <(ls "$DIR" | grep -v '^README\.md$' | sort) <(ls "$ROOT/content" | sort) | head -5 | tr '\n' ' ')"
     fi

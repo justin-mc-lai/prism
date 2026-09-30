@@ -1,0 +1,70 @@
+schema_id: ip
+schema_version: "1"
+entity: IP
+path_pattern: content/ips/{ip_id}/
+description: >
+  Durable creative identity (project / IP) and cross-project canonical asset namespace.
+  Assets are addressed by stable asset_id inside the IP; other works import them by reference
+  (zero copy) and inject the frozen identity block verbatim.
+required_files:
+  - ip.yaml
+  - assets/
+required_fields:
+  ip.yaml:
+    - ip_id
+    - title
+    - kind
+    - status
+    - canon_revision
+    - publish_identity_ref
+kind_enum:
+  - fact
+  - story
+  - brand
+status_enum:
+  - draft
+  - active
+  - paused
+  - archived
+asset_classes:
+  - characters
+  - scenes
+  - props
+  - styles
+asset_root: content/ips/{ip_id}/assets/{characters,scenes,props,styles}/<asset_id>/
+asset_entry_fields:
+  - asset_id
+  - canon_revision
+  - identity_block
+  - ref_image
+guards:
+  asset_id_unique_within_ip: true
+  cross_ip_reference_requires_from: true
+  import_requires_source_frozen: true
+  crossover_requires_all_sources_active_frozen: true
+imports:
+  field: imports
+  location: work side (master-content / storyworld / campaign / narrative-episode)
+  element_fields:
+    - from
+    - asset
+    - track
+    - revision
+  default_track: latest
+  resolved_field: resolved_revision
+  fail_closed_reason_codes:
+    - ip_not_found
+    - ip_unfrozen
+    - asset_missing
+    - revision_mismatch
+    - crossover_canon_unmet
+notes:
+  resolution: >
+    track=latest resolves to the source IP's current frozen canon_revision; the resolved
+    revision is written back as resolved_revision so any produced artifact stays reproducible.
+  no_silent_fallback: >
+    A missing/unfrozen source or asset must fail closed with a reason_code; silently
+    re-describing the asset locally is forbidden (it is the root cause of face drift).
+  crossover: >
+    When an imports list references two or more IPs the work is a crossover; every referenced
+    IP must be active with frozen canon, otherwise blocked (crossover_canon_unmet).

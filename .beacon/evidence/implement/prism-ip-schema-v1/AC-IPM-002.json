@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-IPM-002",
+  "pass": true,
+  "command": "for f in ip_id title kind status canon_revision publish_identity_ref; do rg -q \"$f\" contracts/ip.schema.yaml || exit 1; done && rg -q 'asset_id' contracts/ip.schema.yaml && rg -q 'identity block' contracts/ip.schema.yaml",
+  "assertion": "ip.yaml 必填字段 + 资产条目",
+  "last_line": "",
+  "at": "2026-09-30T07:08:49.011838"
+}

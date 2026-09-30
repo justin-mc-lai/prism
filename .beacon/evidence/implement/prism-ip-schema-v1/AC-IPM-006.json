@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-IPM-006",
+  "pass": true,
+  "command": "bash scripts/check_ip_model.sh --self-test && bash scripts/check_ip_model.sh --fixtures content/ips/_examples --expect pass",
+  "assertion": "校验脚本自检 + 样例通过",
+  "last_line": "check_ip_model: self-test pass",
+  "at": "2026-09-30T07:08:49.011838"
+}

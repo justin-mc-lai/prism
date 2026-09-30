@@ -14,6 +14,17 @@ optional_fields:
   - world_slug
   - target_profiles
   - endpoint_refs
+  - imports
+imports:
+  field: imports
+  element_fields:
+    - from
+    - asset
+    - track
+    - revision
+  default_track: latest
+  resolved_field: resolved_revision
+  requires_source_frozen: true
 lane_enum:
   - standard
   - canon
