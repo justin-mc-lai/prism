@@ -1,0 +1,12 @@
+{
+  "schema_version": "workspace-admission-v1",
+  "version": "v0.0.1",
+  "feature_slug": "prism-shot-iteration-budget-v1",
+  "project_root": "/Users/apple/Developer/Personal/selfmedia/prism",
+  "branch": "beacon/v0.0.1/prism-shot-iteration-budget-v1",
+  "worktree_path": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-shot-iteration-budget-v1",
+  "base_branch": "main",
+  "issued_at": "2026-09-30T06:58:35.209821+00:00",
+  "git_head": "ca4edda886e11af54de81fdb78e072e3c0bf5dba",
+  "status": "pass"
+}

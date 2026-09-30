@@ -4,6 +4,7 @@ version: v0.0.1
 status: frozen
 language: zh
 domain_required: false
+ux_required: false
 parser_contract: beacon-feature-package-v2
 materials_status: current
 truth_source_model: intent_first
