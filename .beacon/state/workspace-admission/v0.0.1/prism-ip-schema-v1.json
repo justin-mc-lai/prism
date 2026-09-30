@@ -1,0 +1,12 @@
+{
+  "schema_version": "workspace-admission-v1",
+  "version": "v0.0.1",
+  "feature_slug": "prism-ip-schema-v1",
+  "project_root": "/Users/apple/Developer/Personal/selfmedia/prism",
+  "branch": "beacon/v0.0.1/prism-ip-schema-v1",
+  "worktree_path": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-ip-schema-v1",
+  "base_branch": "main",
+  "issued_at": "2026-09-30T07:15:46.011955+00:00",
+  "git_head": "d5bebb10b99252472eb9b1e3c1114e4996a1092b",
+  "status": "pass"
+}

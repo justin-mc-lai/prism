@@ -5,7 +5,7 @@
   "truth_package_contract": "beacon-feature-package-v2",
   "machine_json_role": "generated_state_not_truth",
   "generated_by": "beacon.truth_map.resolver",
-  "generated_at": "2026-09-30T06:56:58.639596+00:00",
+  "generated_at": "2026-09-30T07:21:18.942541+00:00",
   "feature": "prism-shot-iteration-budget-v1",
   "feature_slug": "prism-shot-iteration-budget-v1",
   "version": "v0.0.1",
@@ -18,7 +18,7 @@
     "evidence": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/evidence.md"
   },
   "source_hashes": {
-    "truth": "5c3951236c55ce9d227062217069badc936b1fb1f2604c431965764e8494a2c4",
+    "truth": "5e04b1b61765d25bc36b4e11bc8789daa977e6bbf618251116f3014484f2b84f",
     "tests": "65324637a3f5590272070ce4ed45ceaf8470059396ba0f91bc4be7d6b8f92ac5",
     "tasks": "239ab247e8ddd3b42573329c07df861578ac1b6b42478254c00ad837a0ef6c52",
     "evidence": "a9b8ed6b291afad733ed74166b40d107e1629e31c6d19466392cafa9ddf0ca0e"
@@ -29,6 +29,7 @@
     "status": "frozen",
     "language": "zh",
     "domain_required": "false",
+    "ux_required": "false",
     "parser_contract": "beacon-feature-package-v2",
     "materials_status": "current",
     "truth_source_model": "intent_first",

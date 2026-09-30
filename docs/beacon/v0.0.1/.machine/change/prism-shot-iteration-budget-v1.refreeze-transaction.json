@@ -1,0 +1,1681 @@
+{
+  "schema_version": "1.0",
+  "transaction_id": "tx-change-refreeze-prism-shot-iteration-budget-v1-20260930t072118z",
+  "feature": "prism-shot-iteration-budget-v1",
+  "feature_slug": "prism-shot-iteration-budget-v1",
+  "version": "v0.0.1",
+  "change_reason": "frontmatter: ux_required=false",
+  "touched_surfaces": [
+    "change",
+    "truth",
+    "tests",
+    "tasks",
+    "evidence",
+    "requirement_clarity",
+    "freeze",
+    "feature_package_validation"
+  ],
+  "surface_statuses": {
+    "change": {
+      "path": "docs/beacon/v0.0.1/change/prism-shot-iteration-budget-v1.md",
+      "exists": false,
+      "status": "package_change_optional",
+      "required": false,
+      "authority": "change_record_not_requirement_truth"
+    },
+    "truth": {
+      "path": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+      "exists": true,
+      "status": "present",
+      "required": true,
+      "authority": "markdown_feature_package"
+    },
+    "tests": {
+      "path": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md",
+      "exists": true,
+      "status": "present",
+      "required": true,
+      "authority": "markdown_feature_package"
+    },
+    "tasks": {
+      "path": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tasks.md",
+      "exists": true,
+      "status": "present",
+      "required": true,
+      "authority": "markdown_feature_package"
+    },
+    "evidence": {
+      "path": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/evidence.md",
+      "exists": true,
+      "status": "present",
+      "required": true,
+      "authority": "markdown_feature_package"
+    },
+    "requirement_clarity": {
+      "path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-shot-iteration-budget-v1.json",
+      "exists": true,
+      "status": "passed",
+      "required": true
+    },
+    "freeze": {
+      "path": "docs/beacon/v0.0.1/.machine/change/prism-shot-iteration-budget-v1.refreeze-transaction.json",
+      "exists": true,
+      "status": "complete",
+      "required": true
+    },
+    "feature_package_validation": {
+      "path": "docs/beacon/v0.0.1/.machine/requirement/feature-package-validation.json",
+      "exists": true,
+      "status": "passed",
+      "required": true,
+      "diagnostics": []
+    }
+  },
+  "truth_revision_before": {
+    "revision_id": "R1",
+    "doc_status": "frozen",
+    "lifecycle_status": "idle",
+    "baseline_hash": "sha256:c20c5c3a3aff71dea493b604f96f7fff82242c53bd86a08afb9f21fab907a1f9"
+  },
+  "truth_revision_after": {
+    "revision_id": "R2",
+    "doc_status": "frozen",
+    "lifecycle_status": "frozen",
+    "baseline_hash": "sha256:484c7dcd07372a782c6f102242b040d1dbcc7cdef112f575b0054fc8a13b705b"
+  },
+  "refreeze_status": "complete",
+  "next_route": {
+    "target_surface": "beacon-implement",
+    "command": "beacon implement \"prism-shot-iteration-budget-v1\" --project /Users/apple/Developer/Personal/selfmedia/prism --version v0.0.1",
+    "why": "refreeze transaction completed; implementation may plan against the refreshed frozen truth"
+  },
+  "blocked_reason": "",
+  "delivery_execution": {
+    "implement_executed": false,
+    "qa_executed": false,
+    "release_executed": false
+  },
+  "created_at": "2026-09-30T07:21:18.419979+00:00",
+  "previous_revision": {
+    "revision_id": "R1",
+    "doc_status": "superseded",
+    "lifecycle_status": "superseded",
+    "baseline_hash": "sha256:c20c5c3a3aff71dea493b604f96f7fff82242c53bd86a08afb9f21fab907a1f9"
+  },
+  "opened_revision": {
+    "revision_id": "R2",
+    "doc_status": "draft",
+    "lifecycle_status": "draft",
+    "baseline_hash": ""
+  },
+  "story_reopen": {
+    "current_revision_id": "R2",
+    "lifecycle_status": "draft"
+  },
+  "requirement_package": {
+    "schema_version": "1.0",
+    "project_root": "/Users/apple/Developer/Personal/selfmedia/prism",
+    "version": "v0.0.1",
+    "feature": "prism-shot-iteration-budget-v1",
+    "status": "synced",
+    "authority_state": "feature_package_authoritative",
+    "truth_authority": "markdown_feature_package",
+    "requirement_refs": {
+      "source_of_truth_root": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1",
+      "prd": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md",
+      "truth": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+      "tests": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md",
+      "tasks": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tasks.md",
+      "evidence": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/evidence.md"
+    },
+    "story_path": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+    "qa_matrix_path": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md",
+    "qa9_matrix_path": "",
+    "story_scenario_map_path": "",
+    "machine_rebuild": {
+      "schema_version": "1.0",
+      "truth_map_contract": "beacon-truth-map-v1",
+      "truth_source_model": "feature_package_authoritative",
+      "truth_package_contract": "beacon-feature-package-v2",
+      "machine_json_role": "generated_state_not_truth",
+      "generated_by": "beacon.truth_map.resolver",
+      "feature": "prism-shot-iteration-budget-v1",
+      "feature_slug": "prism-shot-iteration-budget-v1",
+      "version": "v0.0.1",
+      "status": "rebuilt",
+      "blocked": false,
+      "validation_status": "pass",
+      "source_paths": {
+        "truth": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+        "tests": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md",
+        "tasks": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tasks.md",
+        "evidence": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/evidence.md"
+      },
+      "source_hashes": {
+        "truth": "5e04b1b61765d25bc36b4e11bc8789daa977e6bbf618251116f3014484f2b84f",
+        "tests": "65324637a3f5590272070ce4ed45ceaf8470059396ba0f91bc4be7d6b8f92ac5",
+        "tasks": "239ab247e8ddd3b42573329c07df861578ac1b6b42478254c00ad837a0ef6c52",
+        "evidence": "a9b8ed6b291afad733ed74166b40d107e1629e31c6d19466392cafa9ddf0ca0e"
+      },
+      "plan": {
+        "schema_version": "1.0",
+        "truth_map_contract": "beacon-truth-map-v1",
+        "truth_source_model": "feature_package_authoritative",
+        "truth_package_contract": "beacon-feature-package-v2",
+        "machine_json_role": "generated_state_not_truth",
+        "generated_by": "beacon.truth_map.resolver",
+        "feature": "prism-shot-iteration-budget-v1",
+        "feature_slug": "prism-shot-iteration-budget-v1",
+        "version": "v0.0.1",
+        "source_paths": {
+          "truth": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+          "tests": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md",
+          "tasks": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tasks.md",
+          "evidence": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/evidence.md"
+        },
+        "outputs": {
+          "truth_map_projection": "docs/beacon/v0.0.1/.machine/requirement/prism-shot-iteration-budget-v1.truth-map.json",
+          "requirement_package_state": "docs/beacon/v0.0.1/.machine/requirement/prism-shot-iteration-budget-v1.requirement-package.json",
+          "feature_package_validation": "docs/beacon/v0.0.1/.machine/requirement/feature-package-validation.json"
+        },
+        "runtime_json_exemption": {
+          "role": "runtime_process_record_not_requirement_truth",
+          "applies_to": [
+            ".beacon/runs/**",
+            ".beacon/qa/**",
+            "runtime/process execution records"
+          ],
+          "requires_markdown_twin": false,
+          "requirement_authority": false
+        },
+        "routes": {
+          "doctor_rebuild": {
+            "status": "legacy_output_only",
+            "command": "beacon truth-map rebuild-machine prism-shot-iteration-budget-v1 --version v0.0.1"
+          },
+          "change_absorb": {
+            "status": "package_truth_target_only",
+            "command": "beacon change prism-shot-iteration-budget-v1 --version v0.0.1 --reason absorb-legacy-truth-into-feature-package"
+          }
+        }
+      },
+      "written": [
+        "docs/beacon/v0.0.1/.machine/requirement/prism-shot-iteration-budget-v1.truth-map.json",
+        "docs/beacon/v0.0.1/.machine/requirement/prism-shot-iteration-budget-v1.requirement-package.json",
+        "docs/beacon/v0.0.1/.machine/requirement/feature-package-validation.json"
+      ]
+    },
+    "story_sync": {
+      "path": "docs/beacon/v0.0.1/.machine/user-story/prism-shot-iteration-budget-v1.json",
+      "feature": "prism-shot-iteration-budget-v1",
+      "version": "v0.0.1",
+      "revision_id": "R2",
+      "ac_count": 1,
+      "test_count": 1,
+      "story_ids": [
+        ""
+      ]
+    }
+  },
+  "requirement_clarity": {
+    "gate": {
+      "schema_version": "1.0",
+      "feature": "prism-shot-iteration-budget-v1",
+      "feature_slug": "prism-shot-iteration-budget-v1",
+      "version": "v0.0.1",
+      "runtime_version": "v1.6.19",
+      "runtime_capability_line": "v1.3.3",
+      "required": true,
+      "reason_code": "",
+      "blocked": false,
+      "status": "pass",
+      "findings": [],
+      "report_json_path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-shot-iteration-budget-v1.json",
+      "report_markdown_path": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-shot-iteration-budget-v1.md",
+      "state_path": ".beacon/state/requirement-clarity-prism-shot-iteration-budget-v1.json",
+      "diagram_truth": {
+        "schema_version": "1.0",
+        "version": "v0.0.1",
+        "supported": false,
+        "required": false,
+        "ready": false,
+        "diagram_types": [],
+        "state_axes": [],
+        "missing_diagram_types": [],
+        "missing_state_axes": false,
+        "complexity_signals": [],
+        "review_gates": [],
+        "qa_coverage_hints": [],
+        "evidence_lines": {},
+        "generated_at": "2026-09-30T07:21:18.955789+00:00",
+        "feature": "prism-shot-iteration-budget-v1",
+        "feature_slug": "prism-shot-iteration-budget-v1",
+        "prd_ref": "docs/beacon/v0.0.1/prd/prism-shot-iteration-budget-v1.md",
+        "user_story_ref": "docs/beacon/v0.0.1/user-story/prism-shot-iteration-budget-v1.md"
+      },
+      "domain_fsm_gate": {
+        "schema_version": "1.0",
+        "feature": "prism-shot-iteration-budget-v1",
+        "feature_slug": "prism-shot-iteration-budget-v1",
+        "version": "v0.0.1",
+        "truth_path": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+        "tests_path": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md",
+        "required": false,
+        "blocked": false,
+        "status": "not_required",
+        "reason_code": "",
+        "findings": [],
+        "requirement": {
+          "required": false,
+          "reason": "version_below_v1_6_7",
+          "explicit": false,
+          "partial": false,
+          "complexity": false,
+          "business_signal": false,
+          "version_supported": false
+        },
+        "projection": {
+          "schema_version": "1.0",
+          "domain_fsm_schema": "domain-fsm.v1",
+          "entity_precedence_schema": "entity-precedence.v1",
+          "frontmatter": {
+            "slug": "prism-shot-iteration-budget-v1",
+            "version": "v0.0.1",
+            "status": "frozen",
+            "language": "zh",
+            "domain_required": "false",
+            "ux_required": "false",
+            "parser_contract": "beacon-feature-package-v2",
+            "materials_status": "current",
+            "truth_source_model": "intent_first",
+            "canonical_refs": {
+              "prd": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+              "user_story": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+              "test_case": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md"
+            },
+            "provenance": {
+              "- ac_id": "AC-ITB-007",
+              "source_type": "source_evidence",
+              "source_ref": "contracts/drama-storyboard-spec.contract.md §5 阈值来源标注义务"
+            }
+          },
+          "frontmatter_errors": [],
+          "has_domain_model_section": false,
+          "has_domain_fsm_section": false,
+          "has_illegal_transition_section": false,
+          "entities": [],
+          "entity_precedence": [],
+          "aggregates": [],
+          "illegal_transition_slots": [],
+          "acceptance_criteria": [
+            {
+              "ac_id": "AC-ITB-001",
+              "description": "分镜/镜头 schema 含 `iteration_budget`（每镜生成上限，正整数）与 `attempts`（实际尝试次数）；当 `attempts` 大于 `iteration_budget` 且无合规降级记录时，判定为 blocked，reason_code 为 `iteration_budget_exceeded`"
+            },
+            {
+              "ac_id": "AC-ITB-002",
+              "description": "超预算的镜头必须附降级记录：`convergence` 取值限定在枚举 `simplified`（简化镜头）、`redesigned`（改镜头设计）内，并带具体降级动作；降级有次数上限（`max_downgrades`），超过即终止该镜（`shot_aborted`），防止无限降级循环"
+            },
+            {
+              "ac_id": "AC-ITB-003",
+              "description": "证据链中出现\"对白由后期合成（TTS / 配音）产生\"即 fail-closed，reason_code 为 `post_dub_fallback_forbidden`；provider 原生对白与改设计后无对白两种情形均为合规；与 `assemble` 的 no-fallback 总则一致"
+            },
+            {
+              "ac_id": "AC-ITB-004",
+              "description": "`prompt-syntax` 判定新增：画面元素描述若使用否定式（形如 `no <元素>` 、`不要 <元素>` 描述画面内容）即 blocked，reason_code 为 `image_negation_not_affirmative`；对字幕与音频的否定约束不在此列"
+            },
+            {
+              "ac_id": "AC-ITB-005",
+              "description": "能力域前置门：produce 前须声明目标 provider 与模型，并校验分镜动作与对白在该模型的 `reachable` 白名单内；动作不可达 → `action_outside_model_domain`，对白不可达 → `dialogue_outside_model_domain`；两类均在**设计期**退回（不进生成）"
+            },
+            {
+              "ac_id": "AC-ITB-006",
+              "description": "确定性校验脚本 `scripts/check_shot_iteration_budget.sh` 可对给定 storyboard 与证据判定两种合规情形：预算未超；预算已超但带合规降级记录。检出画面否定式即失败；检出后期配音兜底即失败；违规时非零退出并打印对应 reason_code"
+            },
+            {
+              "ac_id": "AC-ITB-007",
+              "description": "阈值来源义务：`iteration_budget`、`max_downgrades`、以及能力域 `reachable` 白名单必须标注来源与测试条件（题材 + 模型）；未标注来源的阈值，门报 `threshold_source_missing`"
+            }
+          ],
+          "bound_ac_ids": [],
+          "orphan_ac_ids": [],
+          "aggregates_missing_illegal_slots": [],
+          "raw_section_titles": [
+            "人话",
+            "User Intent",
+            "User Intent Snapshot",
+            "Intent Coverage Matrix",
+            "Acceptance Criteria",
+            "关键对象清单",
+            "FSM 五元组",
+            "invalid / illegal",
+            "Non-goals",
+            "Provenance",
+            "Source Excerpt",
+            "FSM mermaid（投影）"
+          ]
+        },
+        "validation": {
+          "schema_version": "1.0",
+          "required": false,
+          "blocked": false,
+          "status": "not_required",
+          "reason_code": "",
+          "findings": [],
+          "projection": {
+            "schema_version": "1.0",
+            "domain_fsm_schema": "domain-fsm.v1",
+            "entity_precedence_schema": "entity-precedence.v1",
+            "frontmatter": {
+              "slug": "prism-shot-iteration-budget-v1",
+              "version": "v0.0.1",
+              "status": "frozen",
+              "language": "zh",
+              "domain_required": "false",
+              "ux_required": "false",
+              "parser_contract": "beacon-feature-package-v2",
+              "materials_status": "current",
+              "truth_source_model": "intent_first",
+              "canonical_refs": {
+                "prd": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+                "user_story": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+                "test_case": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md"
+              },
+              "provenance": {
+                "- ac_id": "AC-ITB-007",
+                "source_type": "source_evidence",
+                "source_ref": "contracts/drama-storyboard-spec.contract.md §5 阈值来源标注义务"
+              }
+            },
+            "frontmatter_errors": [],
+            "has_domain_model_section": false,
+            "has_domain_fsm_section": false,
+            "has_illegal_transition_section": false,
+            "entities": [],
+            "entity_precedence": [],
+            "aggregates": [],
+            "illegal_transition_slots": [],
+            "acceptance_criteria": [
+              {
+                "ac_id": "AC-ITB-001",
+                "description": "分镜/镜头 schema 含 `iteration_budget`（每镜生成上限，正整数）与 `attempts`（实际尝试次数）；当 `attempts` 大于 `iteration_budget` 且无合规降级记录时，判定为 blocked，reason_code 为 `iteration_budget_exceeded`"
+              },
+              {
+                "ac_id": "AC-ITB-002",
+                "description": "超预算的镜头必须附降级记录：`convergence` 取值限定在枚举 `simplified`（简化镜头）、`redesigned`（改镜头设计）内，并带具体降级动作；降级有次数上限（`max_downgrades`），超过即终止该镜（`shot_aborted`），防止无限降级循环"
+              },
+              {
+                "ac_id": "AC-ITB-003",
+                "description": "证据链中出现\"对白由后期合成（TTS / 配音）产生\"即 fail-closed，reason_code 为 `post_dub_fallback_forbidden`；provider 原生对白与改设计后无对白两种情形均为合规；与 `assemble` 的 no-fallback 总则一致"
+              },
+              {
+                "ac_id": "AC-ITB-004",
+                "description": "`prompt-syntax` 判定新增：画面元素描述若使用否定式（形如 `no <元素>` 、`不要 <元素>` 描述画面内容）即 blocked，reason_code 为 `image_negation_not_affirmative`；对字幕与音频的否定约束不在此列"
+              },
+              {
+                "ac_id": "AC-ITB-005",
+                "description": "能力域前置门：produce 前须声明目标 provider 与模型，并校验分镜动作与对白在该模型的 `reachable` 白名单内；动作不可达 → `action_outside_model_domain`，对白不可达 → `dialogue_outside_model_domain`；两类均在**设计期**退回（不进生成）"
+              },
+              {
+                "ac_id": "AC-ITB-006",
+                "description": "确定性校验脚本 `scripts/check_shot_iteration_budget.sh` 可对给定 storyboard 与证据判定两种合规情形：预算未超；预算已超但带合规降级记录。检出画面否定式即失败；检出后期配音兜底即失败；违规时非零退出并打印对应 reason_code"
+              },
+              {
+                "ac_id": "AC-ITB-007",
+                "description": "阈值来源义务：`iteration_budget`、`max_downgrades`、以及能力域 `reachable` 白名单必须标注来源与测试条件（题材 + 模型）；未标注来源的阈值，门报 `threshold_source_missing`"
+              }
+            ],
+            "bound_ac_ids": [],
+            "orphan_ac_ids": [],
+            "aggregates_missing_illegal_slots": [],
+            "raw_section_titles": [
+              "人话",
+              "User Intent",
+              "User Intent Snapshot",
+              "Intent Coverage Matrix",
+              "Acceptance Criteria",
+              "关键对象清单",
+              "FSM 五元组",
+              "invalid / illegal",
+              "Non-goals",
+              "Provenance",
+              "Source Excerpt",
+              "FSM mermaid（投影）"
+            ]
+          }
+        },
+        "recommended_action": ""
+      },
+      "human_closure_contract": {
+        "required": false,
+        "research_path": "docs/beacon/v0.0.1/research/prism-shot-iteration-budget-v1.md",
+        "research_exists": true,
+        "source_architecture_path": "docs/beacon/v0.0.1/source-architecture/index.md",
+        "source_architecture_exists": true,
+        "required_sections": [
+          "architecture",
+          "business_flow"
+        ],
+        "missing_sections": [
+          "architecture",
+          "business_flow"
+        ],
+        "diagram_types": [],
+        "complexity_signals": []
+      },
+      "requirement_closure_contract": {
+        "required": true,
+        "chain_order": [
+          "research",
+          "prd",
+          "user_story",
+          "test_case",
+          "requirement_clarity",
+          "freeze"
+        ],
+        "human_closure_required": false,
+        "paths": {
+          "research": "docs/beacon/v0.0.1/research/prism-shot-iteration-budget-v1.md",
+          "prd": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+          "user_story": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+          "test_case": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md"
+        },
+        "exists": {
+          "research": true,
+          "prd": true,
+          "user_story": true,
+          "test_case": true
+        },
+        "required_research_sections": [],
+        "missing_research_sections": [],
+        "ac_projection": {
+          "prd_ac_ids": [],
+          "user_story_ac_ids": [],
+          "test_case_ac_ids": [],
+          "upstream_ac_ids": [],
+          "missing_test_case_ac_ids": []
+        }
+      },
+      "version_projection_truth_contract": {
+        "required": false,
+        "supported": false,
+        "projection_types": [
+          "business_flow",
+          "state_machine"
+        ],
+        "research_path": "docs/beacon/v0.0.1/research/prism-shot-iteration-budget-v1.md",
+        "research_exists": true,
+        "required_fields": [
+          "prd_refs",
+          "user_story_refs",
+          "test_case_refs",
+          "coverage_notes",
+          "out_of_scope_notes"
+        ],
+        "field_presence": {
+          "prd_refs": false,
+          "user_story_refs": false,
+          "test_case_refs": false,
+          "coverage_notes": false,
+          "out_of_scope_notes": false
+        },
+        "missing_fields": [],
+        "required_refs": {
+          "prd_refs": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+          "user_story_refs": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+          "test_case_refs": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md"
+        },
+        "missing_ref_targets": [],
+        "ready": false
+      },
+      "support_write_topology_contract": {
+        "schema_version": "1.0",
+        "supported": true,
+        "status": "pass",
+        "blocked": false,
+        "reason_code": "",
+        "diagnostics": []
+      },
+      "required_artifacts": [],
+      "scanned_files": [
+        "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+        "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md",
+        "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tasks.md",
+        "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/evidence.md",
+        "docs/beacon/v0.0.1/research/prism-shot-iteration-budget-v1.md"
+      ]
+    },
+    "report": {
+      "json": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-shot-iteration-budget-v1.json",
+      "markdown": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-shot-iteration-budget-v1.md"
+    },
+    "writeback": {
+      "schema_version": "1.0",
+      "feature": "prism-shot-iteration-budget-v1",
+      "feature_slug": "prism-shot-iteration-budget-v1",
+      "version": "v0.0.1",
+      "status": "pass",
+      "blocked": false,
+      "reason_code": "",
+      "report_json_path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-shot-iteration-budget-v1.json",
+      "report_markdown_path": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-shot-iteration-budget-v1.md",
+      "finding_count": 0,
+      "run_id": "",
+      "source": "change.refreeze-chain",
+      "written_at": "2026-09-30T07:21:18.966038+00:00",
+      "state_path": ".beacon/state/requirement-clarity-prism-shot-iteration-budget-v1.json"
+    }
+  },
+  "truth_integrity_gate": {
+    "schema_version": "1.0",
+    "feature": "prism-shot-iteration-budget-v1",
+    "feature_slug": "prism-shot-iteration-budget-v1",
+    "version": "v0.0.1",
+    "mode": "block",
+    "truth_status": "frozen",
+    "status": "pass",
+    "blocked": false,
+    "reason_code": "",
+    "findings": [],
+    "finding_count": 0,
+    "requirement_clarity": {
+      "schema_version": "1.0",
+      "feature": "prism-shot-iteration-budget-v1",
+      "feature_slug": "prism-shot-iteration-budget-v1",
+      "version": "v0.0.1",
+      "runtime_version": "v1.6.19",
+      "runtime_capability_line": "v1.3.3",
+      "required": true,
+      "reason_code": "",
+      "blocked": false,
+      "status": "pass",
+      "findings": [],
+      "report_json_path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-shot-iteration-budget-v1.json",
+      "report_markdown_path": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-shot-iteration-budget-v1.md",
+      "state_path": ".beacon/state/requirement-clarity-prism-shot-iteration-budget-v1.json",
+      "diagram_truth": {
+        "schema_version": "1.0",
+        "version": "v0.0.1",
+        "supported": false,
+        "required": false,
+        "ready": false,
+        "diagram_types": [],
+        "state_axes": [],
+        "missing_diagram_types": [],
+        "missing_state_axes": false,
+        "complexity_signals": [],
+        "review_gates": [],
+        "qa_coverage_hints": [],
+        "evidence_lines": {},
+        "generated_at": "2026-09-30T07:21:18.971068+00:00",
+        "feature": "prism-shot-iteration-budget-v1",
+        "feature_slug": "prism-shot-iteration-budget-v1",
+        "prd_ref": "docs/beacon/v0.0.1/prd/prism-shot-iteration-budget-v1.md",
+        "user_story_ref": "docs/beacon/v0.0.1/user-story/prism-shot-iteration-budget-v1.md"
+      },
+      "domain_fsm_gate": {
+        "schema_version": "1.0",
+        "feature": "prism-shot-iteration-budget-v1",
+        "feature_slug": "prism-shot-iteration-budget-v1",
+        "version": "v0.0.1",
+        "truth_path": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+        "tests_path": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md",
+        "required": false,
+        "blocked": false,
+        "status": "not_required",
+        "reason_code": "",
+        "findings": [],
+        "requirement": {
+          "required": false,
+          "reason": "version_below_v1_6_7",
+          "explicit": false,
+          "partial": false,
+          "complexity": false,
+          "business_signal": false,
+          "version_supported": false
+        },
+        "projection": {
+          "schema_version": "1.0",
+          "domain_fsm_schema": "domain-fsm.v1",
+          "entity_precedence_schema": "entity-precedence.v1",
+          "frontmatter": {
+            "slug": "prism-shot-iteration-budget-v1",
+            "version": "v0.0.1",
+            "status": "frozen",
+            "language": "zh",
+            "domain_required": "false",
+            "ux_required": "false",
+            "parser_contract": "beacon-feature-package-v2",
+            "materials_status": "current",
+            "truth_source_model": "intent_first",
+            "canonical_refs": {
+              "prd": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+              "user_story": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+              "test_case": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md"
+            },
+            "provenance": {
+              "- ac_id": "AC-ITB-007",
+              "source_type": "source_evidence",
+              "source_ref": "contracts/drama-storyboard-spec.contract.md §5 阈值来源标注义务"
+            }
+          },
+          "frontmatter_errors": [],
+          "has_domain_model_section": false,
+          "has_domain_fsm_section": false,
+          "has_illegal_transition_section": false,
+          "entities": [],
+          "entity_precedence": [],
+          "aggregates": [],
+          "illegal_transition_slots": [],
+          "acceptance_criteria": [
+            {
+              "ac_id": "AC-ITB-001",
+              "description": "分镜/镜头 schema 含 `iteration_budget`（每镜生成上限，正整数）与 `attempts`（实际尝试次数）；当 `attempts` 大于 `iteration_budget` 且无合规降级记录时，判定为 blocked，reason_code 为 `iteration_budget_exceeded`"
+            },
+            {
+              "ac_id": "AC-ITB-002",
+              "description": "超预算的镜头必须附降级记录：`convergence` 取值限定在枚举 `simplified`（简化镜头）、`redesigned`（改镜头设计）内，并带具体降级动作；降级有次数上限（`max_downgrades`），超过即终止该镜（`shot_aborted`），防止无限降级循环"
+            },
+            {
+              "ac_id": "AC-ITB-003",
+              "description": "证据链中出现\"对白由后期合成（TTS / 配音）产生\"即 fail-closed，reason_code 为 `post_dub_fallback_forbidden`；provider 原生对白与改设计后无对白两种情形均为合规；与 `assemble` 的 no-fallback 总则一致"
+            },
+            {
+              "ac_id": "AC-ITB-004",
+              "description": "`prompt-syntax` 判定新增：画面元素描述若使用否定式（形如 `no <元素>` 、`不要 <元素>` 描述画面内容）即 blocked，reason_code 为 `image_negation_not_affirmative`；对字幕与音频的否定约束不在此列"
+            },
+            {
+              "ac_id": "AC-ITB-005",
+              "description": "能力域前置门：produce 前须声明目标 provider 与模型，并校验分镜动作与对白在该模型的 `reachable` 白名单内；动作不可达 → `action_outside_model_domain`，对白不可达 → `dialogue_outside_model_domain`；两类均在**设计期**退回（不进生成）"
+            },
+            {
+              "ac_id": "AC-ITB-006",
+              "description": "确定性校验脚本 `scripts/check_shot_iteration_budget.sh` 可对给定 storyboard 与证据判定两种合规情形：预算未超；预算已超但带合规降级记录。检出画面否定式即失败；检出后期配音兜底即失败；违规时非零退出并打印对应 reason_code"
+            },
+            {
+              "ac_id": "AC-ITB-007",
+              "description": "阈值来源义务：`iteration_budget`、`max_downgrades`、以及能力域 `reachable` 白名单必须标注来源与测试条件（题材 + 模型）；未标注来源的阈值，门报 `threshold_source_missing`"
+            }
+          ],
+          "bound_ac_ids": [],
+          "orphan_ac_ids": [],
+          "aggregates_missing_illegal_slots": [],
+          "raw_section_titles": [
+            "人话",
+            "User Intent",
+            "User Intent Snapshot",
+            "Intent Coverage Matrix",
+            "Acceptance Criteria",
+            "关键对象清单",
+            "FSM 五元组",
+            "invalid / illegal",
+            "Non-goals",
+            "Provenance",
+            "Source Excerpt",
+            "FSM mermaid（投影）"
+          ]
+        },
+        "validation": {
+          "schema_version": "1.0",
+          "required": false,
+          "blocked": false,
+          "status": "not_required",
+          "reason_code": "",
+          "findings": [],
+          "projection": {
+            "schema_version": "1.0",
+            "domain_fsm_schema": "domain-fsm.v1",
+            "entity_precedence_schema": "entity-precedence.v1",
+            "frontmatter": {
+              "slug": "prism-shot-iteration-budget-v1",
+              "version": "v0.0.1",
+              "status": "frozen",
+              "language": "zh",
+              "domain_required": "false",
+              "ux_required": "false",
+              "parser_contract": "beacon-feature-package-v2",
+              "materials_status": "current",
+              "truth_source_model": "intent_first",
+              "canonical_refs": {
+                "prd": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+                "user_story": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+                "test_case": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md"
+              },
+              "provenance": {
+                "- ac_id": "AC-ITB-007",
+                "source_type": "source_evidence",
+                "source_ref": "contracts/drama-storyboard-spec.contract.md §5 阈值来源标注义务"
+              }
+            },
+            "frontmatter_errors": [],
+            "has_domain_model_section": false,
+            "has_domain_fsm_section": false,
+            "has_illegal_transition_section": false,
+            "entities": [],
+            "entity_precedence": [],
+            "aggregates": [],
+            "illegal_transition_slots": [],
+            "acceptance_criteria": [
+              {
+                "ac_id": "AC-ITB-001",
+                "description": "分镜/镜头 schema 含 `iteration_budget`（每镜生成上限，正整数）与 `attempts`（实际尝试次数）；当 `attempts` 大于 `iteration_budget` 且无合规降级记录时，判定为 blocked，reason_code 为 `iteration_budget_exceeded`"
+              },
+              {
+                "ac_id": "AC-ITB-002",
+                "description": "超预算的镜头必须附降级记录：`convergence` 取值限定在枚举 `simplified`（简化镜头）、`redesigned`（改镜头设计）内，并带具体降级动作；降级有次数上限（`max_downgrades`），超过即终止该镜（`shot_aborted`），防止无限降级循环"
+              },
+              {
+                "ac_id": "AC-ITB-003",
+                "description": "证据链中出现\"对白由后期合成（TTS / 配音）产生\"即 fail-closed，reason_code 为 `post_dub_fallback_forbidden`；provider 原生对白与改设计后无对白两种情形均为合规；与 `assemble` 的 no-fallback 总则一致"
+              },
+              {
+                "ac_id": "AC-ITB-004",
+                "description": "`prompt-syntax` 判定新增：画面元素描述若使用否定式（形如 `no <元素>` 、`不要 <元素>` 描述画面内容）即 blocked，reason_code 为 `image_negation_not_affirmative`；对字幕与音频的否定约束不在此列"
+              },
+              {
+                "ac_id": "AC-ITB-005",
+                "description": "能力域前置门：produce 前须声明目标 provider 与模型，并校验分镜动作与对白在该模型的 `reachable` 白名单内；动作不可达 → `action_outside_model_domain`，对白不可达 → `dialogue_outside_model_domain`；两类均在**设计期**退回（不进生成）"
+              },
+              {
+                "ac_id": "AC-ITB-006",
+                "description": "确定性校验脚本 `scripts/check_shot_iteration_budget.sh` 可对给定 storyboard 与证据判定两种合规情形：预算未超；预算已超但带合规降级记录。检出画面否定式即失败；检出后期配音兜底即失败；违规时非零退出并打印对应 reason_code"
+              },
+              {
+                "ac_id": "AC-ITB-007",
+                "description": "阈值来源义务：`iteration_budget`、`max_downgrades`、以及能力域 `reachable` 白名单必须标注来源与测试条件（题材 + 模型）；未标注来源的阈值，门报 `threshold_source_missing`"
+              }
+            ],
+            "bound_ac_ids": [],
+            "orphan_ac_ids": [],
+            "aggregates_missing_illegal_slots": [],
+            "raw_section_titles": [
+              "人话",
+              "User Intent",
+              "User Intent Snapshot",
+              "Intent Coverage Matrix",
+              "Acceptance Criteria",
+              "关键对象清单",
+              "FSM 五元组",
+              "invalid / illegal",
+              "Non-goals",
+              "Provenance",
+              "Source Excerpt",
+              "FSM mermaid（投影）"
+            ]
+          }
+        },
+        "recommended_action": ""
+      },
+      "human_closure_contract": {
+        "required": false,
+        "research_path": "docs/beacon/v0.0.1/research/prism-shot-iteration-budget-v1.md",
+        "research_exists": true,
+        "source_architecture_path": "docs/beacon/v0.0.1/source-architecture/index.md",
+        "source_architecture_exists": true,
+        "required_sections": [
+          "architecture",
+          "business_flow"
+        ],
+        "missing_sections": [
+          "architecture",
+          "business_flow"
+        ],
+        "diagram_types": [],
+        "complexity_signals": []
+      },
+      "requirement_closure_contract": {
+        "required": true,
+        "chain_order": [
+          "research",
+          "prd",
+          "user_story",
+          "test_case",
+          "requirement_clarity",
+          "freeze"
+        ],
+        "human_closure_required": false,
+        "paths": {
+          "research": "docs/beacon/v0.0.1/research/prism-shot-iteration-budget-v1.md",
+          "prd": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+          "user_story": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+          "test_case": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md"
+        },
+        "exists": {
+          "research": true,
+          "prd": true,
+          "user_story": true,
+          "test_case": true
+        },
+        "required_research_sections": [],
+        "missing_research_sections": [],
+        "ac_projection": {
+          "prd_ac_ids": [],
+          "user_story_ac_ids": [],
+          "test_case_ac_ids": [],
+          "upstream_ac_ids": [],
+          "missing_test_case_ac_ids": []
+        }
+      },
+      "version_projection_truth_contract": {
+        "required": false,
+        "supported": false,
+        "projection_types": [
+          "business_flow",
+          "state_machine"
+        ],
+        "research_path": "docs/beacon/v0.0.1/research/prism-shot-iteration-budget-v1.md",
+        "research_exists": true,
+        "required_fields": [
+          "prd_refs",
+          "user_story_refs",
+          "test_case_refs",
+          "coverage_notes",
+          "out_of_scope_notes"
+        ],
+        "field_presence": {
+          "prd_refs": false,
+          "user_story_refs": false,
+          "test_case_refs": false,
+          "coverage_notes": false,
+          "out_of_scope_notes": false
+        },
+        "missing_fields": [],
+        "required_refs": {
+          "prd_refs": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+          "user_story_refs": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+          "test_case_refs": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md"
+        },
+        "missing_ref_targets": [],
+        "ready": false
+      },
+      "support_write_topology_contract": {
+        "schema_version": "1.0",
+        "supported": true,
+        "status": "pass",
+        "blocked": false,
+        "reason_code": "",
+        "diagnostics": []
+      },
+      "required_artifacts": [],
+      "scanned_files": [
+        "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+        "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md",
+        "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tasks.md",
+        "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/evidence.md",
+        "docs/beacon/v0.0.1/research/prism-shot-iteration-budget-v1.md"
+      ]
+    },
+    "domain_fsm": {
+      "schema_version": "1.0",
+      "feature": "prism-shot-iteration-budget-v1",
+      "feature_slug": "prism-shot-iteration-budget-v1",
+      "version": "v0.0.1",
+      "truth_path": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+      "tests_path": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md",
+      "required": false,
+      "blocked": false,
+      "status": "not_required",
+      "reason_code": "",
+      "findings": [],
+      "requirement": {
+        "required": false,
+        "reason": "version_below_v1_6_7",
+        "explicit": false,
+        "partial": false,
+        "complexity": false,
+        "business_signal": false,
+        "version_supported": false
+      },
+      "projection": {
+        "schema_version": "1.0",
+        "domain_fsm_schema": "domain-fsm.v1",
+        "entity_precedence_schema": "entity-precedence.v1",
+        "frontmatter": {
+          "slug": "prism-shot-iteration-budget-v1",
+          "version": "v0.0.1",
+          "status": "frozen",
+          "language": "zh",
+          "domain_required": "false",
+          "ux_required": "false",
+          "parser_contract": "beacon-feature-package-v2",
+          "materials_status": "current",
+          "truth_source_model": "intent_first",
+          "canonical_refs": {
+            "prd": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+            "user_story": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+            "test_case": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md"
+          },
+          "provenance": {
+            "- ac_id": "AC-ITB-007",
+            "source_type": "source_evidence",
+            "source_ref": "contracts/drama-storyboard-spec.contract.md §5 阈值来源标注义务"
+          }
+        },
+        "frontmatter_errors": [],
+        "has_domain_model_section": false,
+        "has_domain_fsm_section": false,
+        "has_illegal_transition_section": false,
+        "entities": [],
+        "entity_precedence": [],
+        "aggregates": [],
+        "illegal_transition_slots": [],
+        "acceptance_criteria": [
+          {
+            "ac_id": "AC-ITB-001",
+            "description": "分镜/镜头 schema 含 `iteration_budget`（每镜生成上限，正整数）与 `attempts`（实际尝试次数）；当 `attempts` 大于 `iteration_budget` 且无合规降级记录时，判定为 blocked，reason_code 为 `iteration_budget_exceeded`"
+          },
+          {
+            "ac_id": "AC-ITB-002",
+            "description": "超预算的镜头必须附降级记录：`convergence` 取值限定在枚举 `simplified`（简化镜头）、`redesigned`（改镜头设计）内，并带具体降级动作；降级有次数上限（`max_downgrades`），超过即终止该镜（`shot_aborted`），防止无限降级循环"
+          },
+          {
+            "ac_id": "AC-ITB-003",
+            "description": "证据链中出现\"对白由后期合成（TTS / 配音）产生\"即 fail-closed，reason_code 为 `post_dub_fallback_forbidden`；provider 原生对白与改设计后无对白两种情形均为合规；与 `assemble` 的 no-fallback 总则一致"
+          },
+          {
+            "ac_id": "AC-ITB-004",
+            "description": "`prompt-syntax` 判定新增：画面元素描述若使用否定式（形如 `no <元素>` 、`不要 <元素>` 描述画面内容）即 blocked，reason_code 为 `image_negation_not_affirmative`；对字幕与音频的否定约束不在此列"
+          },
+          {
+            "ac_id": "AC-ITB-005",
+            "description": "能力域前置门：produce 前须声明目标 provider 与模型，并校验分镜动作与对白在该模型的 `reachable` 白名单内；动作不可达 → `action_outside_model_domain`，对白不可达 → `dialogue_outside_model_domain`；两类均在**设计期**退回（不进生成）"
+          },
+          {
+            "ac_id": "AC-ITB-006",
+            "description": "确定性校验脚本 `scripts/check_shot_iteration_budget.sh` 可对给定 storyboard 与证据判定两种合规情形：预算未超；预算已超但带合规降级记录。检出画面否定式即失败；检出后期配音兜底即失败；违规时非零退出并打印对应 reason_code"
+          },
+          {
+            "ac_id": "AC-ITB-007",
+            "description": "阈值来源义务：`iteration_budget`、`max_downgrades`、以及能力域 `reachable` 白名单必须标注来源与测试条件（题材 + 模型）；未标注来源的阈值，门报 `threshold_source_missing`"
+          }
+        ],
+        "bound_ac_ids": [],
+        "orphan_ac_ids": [],
+        "aggregates_missing_illegal_slots": [],
+        "raw_section_titles": [
+          "人话",
+          "User Intent",
+          "User Intent Snapshot",
+          "Intent Coverage Matrix",
+          "Acceptance Criteria",
+          "关键对象清单",
+          "FSM 五元组",
+          "invalid / illegal",
+          "Non-goals",
+          "Provenance",
+          "Source Excerpt",
+          "FSM mermaid（投影）"
+        ]
+      },
+      "validation": {
+        "schema_version": "1.0",
+        "required": false,
+        "blocked": false,
+        "status": "not_required",
+        "reason_code": "",
+        "findings": [],
+        "projection": {
+          "schema_version": "1.0",
+          "domain_fsm_schema": "domain-fsm.v1",
+          "entity_precedence_schema": "entity-precedence.v1",
+          "frontmatter": {
+            "slug": "prism-shot-iteration-budget-v1",
+            "version": "v0.0.1",
+            "status": "frozen",
+            "language": "zh",
+            "domain_required": "false",
+            "ux_required": "false",
+            "parser_contract": "beacon-feature-package-v2",
+            "materials_status": "current",
+            "truth_source_model": "intent_first",
+            "canonical_refs": {
+              "prd": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+              "user_story": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+              "test_case": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md"
+            },
+            "provenance": {
+              "- ac_id": "AC-ITB-007",
+              "source_type": "source_evidence",
+              "source_ref": "contracts/drama-storyboard-spec.contract.md §5 阈值来源标注义务"
+            }
+          },
+          "frontmatter_errors": [],
+          "has_domain_model_section": false,
+          "has_domain_fsm_section": false,
+          "has_illegal_transition_section": false,
+          "entities": [],
+          "entity_precedence": [],
+          "aggregates": [],
+          "illegal_transition_slots": [],
+          "acceptance_criteria": [
+            {
+              "ac_id": "AC-ITB-001",
+              "description": "分镜/镜头 schema 含 `iteration_budget`（每镜生成上限，正整数）与 `attempts`（实际尝试次数）；当 `attempts` 大于 `iteration_budget` 且无合规降级记录时，判定为 blocked，reason_code 为 `iteration_budget_exceeded`"
+            },
+            {
+              "ac_id": "AC-ITB-002",
+              "description": "超预算的镜头必须附降级记录：`convergence` 取值限定在枚举 `simplified`（简化镜头）、`redesigned`（改镜头设计）内，并带具体降级动作；降级有次数上限（`max_downgrades`），超过即终止该镜（`shot_aborted`），防止无限降级循环"
+            },
+            {
+              "ac_id": "AC-ITB-003",
+              "description": "证据链中出现\"对白由后期合成（TTS / 配音）产生\"即 fail-closed，reason_code 为 `post_dub_fallback_forbidden`；provider 原生对白与改设计后无对白两种情形均为合规；与 `assemble` 的 no-fallback 总则一致"
+            },
+            {
+              "ac_id": "AC-ITB-004",
+              "description": "`prompt-syntax` 判定新增：画面元素描述若使用否定式（形如 `no <元素>` 、`不要 <元素>` 描述画面内容）即 blocked，reason_code 为 `image_negation_not_affirmative`；对字幕与音频的否定约束不在此列"
+            },
+            {
+              "ac_id": "AC-ITB-005",
+              "description": "能力域前置门：produce 前须声明目标 provider 与模型，并校验分镜动作与对白在该模型的 `reachable` 白名单内；动作不可达 → `action_outside_model_domain`，对白不可达 → `dialogue_outside_model_domain`；两类均在**设计期**退回（不进生成）"
+            },
+            {
+              "ac_id": "AC-ITB-006",
+              "description": "确定性校验脚本 `scripts/check_shot_iteration_budget.sh` 可对给定 storyboard 与证据判定两种合规情形：预算未超；预算已超但带合规降级记录。检出画面否定式即失败；检出后期配音兜底即失败；违规时非零退出并打印对应 reason_code"
+            },
+            {
+              "ac_id": "AC-ITB-007",
+              "description": "阈值来源义务：`iteration_budget`、`max_downgrades`、以及能力域 `reachable` 白名单必须标注来源与测试条件（题材 + 模型）；未标注来源的阈值，门报 `threshold_source_missing`"
+            }
+          ],
+          "bound_ac_ids": [],
+          "orphan_ac_ids": [],
+          "aggregates_missing_illegal_slots": [],
+          "raw_section_titles": [
+            "人话",
+            "User Intent",
+            "User Intent Snapshot",
+            "Intent Coverage Matrix",
+            "Acceptance Criteria",
+            "关键对象清单",
+            "FSM 五元组",
+            "invalid / illegal",
+            "Non-goals",
+            "Provenance",
+            "Source Excerpt",
+            "FSM mermaid（投影）"
+          ]
+        }
+      },
+      "recommended_action": ""
+    },
+    "fake_delivery": {
+      "schema_version": "1.0",
+      "status": "pass",
+      "ok": true,
+      "closure_allowed": true,
+      "detected": [],
+      "policy_terms": [
+        "placeholder implementation",
+        "docs-only completion",
+        "fake runner evidence",
+        "zero assertions",
+        "placeholder evidence"
+      ],
+      "reason_code": ""
+    },
+    "feature_package_validation": {
+      "schema_version": "1.0",
+      "feature": "prism-shot-iteration-budget-v1",
+      "feature_slug": "prism-shot-iteration-budget-v1",
+      "version": "v0.0.1",
+      "status": "pass",
+      "blocked": false,
+      "reason_code": "",
+      "generated_at": "2026-09-30T07:21:18.996885+00:00",
+      "package_dir": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1",
+      "truth_frontmatter": {
+        "slug": "prism-shot-iteration-budget-v1",
+        "version": "v0.0.1",
+        "status": "frozen",
+        "language": "zh",
+        "domain_required": "false",
+        "ux_required": "false",
+        "parser_contract": "beacon-feature-package-v2",
+        "materials_status": "current",
+        "truth_source_model": "intent_first",
+        "canonical_refs": {
+          "prd": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+          "user_story": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md",
+          "test_case": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/tests.md"
+        },
+        "provenance": {
+          "- ac_id": "AC-ITB-007",
+          "source_type": "source_evidence",
+          "source_ref": "contracts/drama-storyboard-spec.contract.md §5 阈值来源标注义务"
+        }
+      },
+      "ac_count": 7,
+      "test_count": 19,
+      "checkbox_count": 9,
+      "evidence_row_count": 1,
+      "gate_authority": "canonical_surfaces_preserved",
+      "checkbox_gate_bypass": false,
+      "task_evidence_gate": {
+        "pass": true,
+        "checked_ok": 0,
+        "checked_bad": 0,
+        "unbound": 0,
+        "findings": [],
+        "reason_code": ""
+      },
+      "evidence_gate_truth": false,
+      "diagnostics": [],
+      "report_path": "docs/beacon/v0.0.1/.machine/requirement/feature-package-validation.json"
+    },
+    "determinism_check": {
+      "placeholder_count": 0,
+      "hollow_template_count": 0
+    },
+    "closure_contract": {
+      "closure_allowed": true,
+      "detected": []
+    },
+    "recommended_action": ""
+  },
+  "truth_frontmatter_sync": {
+    "updated": false,
+    "status": "frozen",
+    "path": "docs/beacon/v0.0.1/features/prism-shot-iteration-budget-v1/truth.md"
+  },
+  "revision_delta": {
+    "schema_version": "1.0",
+    "feature": "prism-shot-iteration-budget-v1",
+    "feature_slug": "prism-shot-iteration-budget-v1",
+    "version": "v0.0.1",
+    "revision_id": "R2",
+    "source_revision_id": "R1",
+    "status": "not_applicable",
+    "cleanup_required": false,
+    "removed_requirement_count": 0,
+    "added_requirement_count": 0,
+    "retained_requirement_count": 0,
+    "removed_requirement_surfaces": [],
+    "added_requirement_surfaces": [],
+    "retained_requirement_surfaces": [],
+    "current_baseline_hash": "sha256:484c7dcd07372a782c6f102242b040d1dbcc7cdef112f575b0054fc8a13b705b",
+    "source_baseline_hash": "",
+    "story_state_ref": "docs/beacon/v0.0.1/.machine/user-story/prism-shot-iteration-budget-v1.json",
+    "generated_at": "2026-09-30T07:21:19.040255+00:00",
+    "json_ref": "docs/beacon/v0.0.1/.machine/execution/revision-delta-prism-shot-iteration-budget-v1.json",
+    "markdown_ref": "docs/beacon/v0.0.1/execution/revision-delta-prism-shot-iteration-budget-v1.md"
+  },
+  "release_projection_sync": {
+    "status": "pass",
+    "truth_authority": false,
+    "lifecycle_stage": false,
+    "release_publish_action": false,
+    "feature_projection": {
+      "schema_version": "1.0",
+      "status": "pass",
+      "feature": "prism-shot-iteration-budget-v1",
+      "feature_slug": "prism-shot-iteration-budget-v1",
+      "version": "v0.0.1",
+      "json_path": "docs/beacon/v0.0.1/.machine/change/prism-shot-iteration-budget-v1.json",
+      "markdown_path": "docs/beacon/v0.0.1/change/prism-shot-iteration-budget-v1.md",
+      "json_written": true,
+      "markdown_exists": true,
+      "projection_role": {
+        "artifact_role": "version_aggregate_projection",
+        "truth_source": false,
+        "gate_source": false,
+        "lifecycle_stage": false,
+        "release_publish_action": false
+      },
+      "payload": {
+        "schema_version": "1.0",
+        "version": "v0.0.1",
+        "feature": "prism-shot-iteration-budget-v1",
+        "feature_slug": "prism-shot-iteration-budget-v1",
+        "summary": "Maintains release-facing version aggregate projection guards so QA accepted features are included in version change scope before release check.",
+        "status": "generated",
+        "accepted_at": "",
+        "revision_id": "R2",
+        "projection_role": {
+          "artifact_role": "version_aggregate_projection",
+          "truth_source": false,
+          "gate_source": false,
+          "lifecycle_stage": false,
+          "release_publish_action": false
+        },
+        "truth_authority": false,
+        "lifecycle_stage": false,
+        "added": [
+          "Feature-level release projection input for QA accepted current feature",
+          "Version aggregate projection inclusion guard and repair metadata",
+          "Repair-only projection rebuild path for release preflight artifacts"
+        ],
+        "removed": [
+          "Manual-only version aggregate projection repair before release check"
+        ],
+        "fixed": [
+          "Release check can route missing current feature projection to an actionable repair path",
+          "Version aggregate projection remains a read model instead of requirement truth"
+        ],
+        "traceability_refs": [
+          "docs/beacon/v0.0.1/change/prism-shot-iteration-budget-v1.md",
+          "docs/beacon/v0.0.1/prd/prism-shot-iteration-budget-v1.md",
+          "docs/beacon/v0.0.1/user-story/prism-shot-iteration-budget-v1.md",
+          "docs/beacon/v0.0.1/qa/test-cases/prism-shot-iteration-budget-v1.md",
+          "docs/beacon/v0.0.1/.machine/execution/prism-shot-iteration-budget-v1.revision.json"
+        ],
+        "generated_at": "2026-09-30T07:21:19.040784+00:00"
+      }
+    },
+    "version_aggregate_projection": {
+      "schema_version": "1.0",
+      "status": "pass",
+      "version": "v0.0.1",
+      "markdown_path": "docs/beacon/v0.0.1/change/v0.0.1.md",
+      "json_path": "docs/beacon/v0.0.1/.machine/change/v0.0.1.json",
+      "feature_count": 20,
+      "feature_slugs": [
+        "prism-adaptation-contracts-v1",
+        "prism-asset-gate-rollout-v1",
+        "prism-campaign-schema-v1",
+        "prism-extract-v1",
+        "prism-form-av-v1",
+        "prism-form-blog-thread-v1",
+        "prism-form-image-post-v1",
+        "prism-form-novel-v1",
+        "prism-form-product-v1",
+        "prism-form-writing-v1",
+        "prism-ip-schema-v1",
+        "prism-learning-memory-v1",
+        "prism-manga-asset-gate-v1",
+        "prism-metrics-publication-v1",
+        "prism-metrics-snapshot-v1",
+        "prism-monetization-contracts-v1",
+        "prism-project-docs-v1",
+        "prism-publish-bridge-v1",
+        "prism-review-loop-v1",
+        "prism-shot-iteration-budget-v1"
+      ],
+      "projection_role": {
+        "artifact_role": "version_aggregate_projection",
+        "truth_source": false,
+        "gate_source": false,
+        "lifecycle_stage": false,
+        "release_publish_action": false
+      },
+      "truth_authority": false,
+      "lifecycle_stage": false,
+      "release_publish_action": false,
+      "implementation_order": {
+        "status": "analyzed",
+        "feature_count": 20,
+        "ordered_feature_slugs": [
+          "prism-asset-gate-rollout-v1",
+          "prism-form-product-v1",
+          "prism-manga-asset-gate-v1",
+          "prism-extract-v1",
+          "prism-campaign-schema-v1",
+          "prism-form-writing-v1",
+          "prism-form-blog-thread-v1",
+          "prism-form-image-post-v1",
+          "prism-form-novel-v1",
+          "prism-form-av-v1",
+          "prism-publish-bridge-v1",
+          "prism-metrics-publication-v1",
+          "prism-metrics-snapshot-v1",
+          "prism-review-loop-v1",
+          "prism-learning-memory-v1",
+          "prism-monetization-contracts-v1",
+          "prism-adaptation-contracts-v1",
+          "prism-project-docs-v1",
+          "prism-ip-schema-v1",
+          "prism-shot-iteration-budget-v1"
+        ],
+        "waves": [
+          {
+            "wave": 1,
+            "parallelizable": true,
+            "features": [
+              {
+                "feature": "prism-asset-gate-rollout-v1",
+                "feature_slug": "prism-asset-gate-rollout-v1",
+                "depends_on_features": [],
+                "direct_delivery_services": [],
+                "writable_services": [],
+                "parallelizable": true,
+                "reason_code": "parallel_no_conflict"
+              },
+              {
+                "feature": "prism-form-product-v1",
+                "feature_slug": "prism-form-product-v1",
+                "depends_on_features": [],
+                "direct_delivery_services": [],
+                "writable_services": [],
+                "parallelizable": true,
+                "reason_code": "parallel_no_conflict"
+              },
+              {
+                "feature": "prism-manga-asset-gate-v1",
+                "feature_slug": "prism-manga-asset-gate-v1",
+                "depends_on_features": [],
+                "direct_delivery_services": [],
+                "writable_services": [],
+                "parallelizable": true,
+                "reason_code": "parallel_no_conflict"
+              },
+              {
+                "feature": "prism-extract-v1",
+                "feature_slug": "prism-extract-v1",
+                "depends_on_features": [],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": true,
+                "reason_code": "parallel_no_conflict"
+              },
+              {
+                "feature": "prism-project-docs-v1",
+                "feature_slug": "prism-project-docs-v1",
+                "depends_on_features": [],
+                "direct_delivery_services": [],
+                "writable_services": [],
+                "parallelizable": true,
+                "reason_code": "parallel_no_conflict"
+              },
+              {
+                "feature": "prism-ip-schema-v1",
+                "feature_slug": "prism-ip-schema-v1",
+                "depends_on_features": [],
+                "direct_delivery_services": [],
+                "writable_services": [],
+                "parallelizable": true,
+                "reason_code": "parallel_no_conflict"
+              },
+              {
+                "feature": "prism-shot-iteration-budget-v1",
+                "feature_slug": "prism-shot-iteration-budget-v1",
+                "depends_on_features": [],
+                "direct_delivery_services": [],
+                "writable_services": [],
+                "parallelizable": true,
+                "reason_code": "parallel_no_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 2,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-campaign-schema-v1",
+                "feature_slug": "prism-campaign-schema-v1",
+                "depends_on_features": [
+                  "prism-extract-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 3,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-form-writing-v1",
+                "feature_slug": "prism-form-writing-v1",
+                "depends_on_features": [
+                  "prism-campaign-schema-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 4,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-form-blog-thread-v1",
+                "feature_slug": "prism-form-blog-thread-v1",
+                "depends_on_features": [
+                  "prism-form-writing-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 5,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-form-image-post-v1",
+                "feature_slug": "prism-form-image-post-v1",
+                "depends_on_features": [
+                  "prism-form-blog-thread-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 6,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-form-novel-v1",
+                "feature_slug": "prism-form-novel-v1",
+                "depends_on_features": [
+                  "prism-form-image-post-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 7,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-form-av-v1",
+                "feature_slug": "prism-form-av-v1",
+                "depends_on_features": [
+                  "prism-form-novel-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 8,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-publish-bridge-v1",
+                "feature_slug": "prism-publish-bridge-v1",
+                "depends_on_features": [
+                  "prism-form-av-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 9,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-metrics-publication-v1",
+                "feature_slug": "prism-metrics-publication-v1",
+                "depends_on_features": [
+                  "prism-publish-bridge-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 10,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-metrics-snapshot-v1",
+                "feature_slug": "prism-metrics-snapshot-v1",
+                "depends_on_features": [
+                  "prism-metrics-publication-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 11,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-review-loop-v1",
+                "feature_slug": "prism-review-loop-v1",
+                "depends_on_features": [
+                  "prism-metrics-snapshot-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 12,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-learning-memory-v1",
+                "feature_slug": "prism-learning-memory-v1",
+                "depends_on_features": [
+                  "prism-review-loop-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 13,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-monetization-contracts-v1",
+                "feature_slug": "prism-monetization-contracts-v1",
+                "depends_on_features": [
+                  "prism-learning-memory-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 14,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-adaptation-contracts-v1",
+                "feature_slug": "prism-adaptation-contracts-v1",
+                "depends_on_features": [
+                  "prism-monetization-contracts-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
