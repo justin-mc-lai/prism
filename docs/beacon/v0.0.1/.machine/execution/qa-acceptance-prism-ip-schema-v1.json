@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "artifact": "qa_acceptance_envelope",
+  "version": "v0.0.1",
+  "feature": "prism-ip-schema-v1",
+  "feature_slug": "prism-ip-schema-v1",
+  "revision_id": "R2",
+  "verdict": "passed",
+  "accepted_at": "2026-09-30T07:23:12.359602+00:00",
+  "accepted_by": "qa",
+  "run_id": "run-20260930T152305985033",
+  "transaction_id": "tx-qa-acceptance-prism-ip-schema-v1-0c2c60c09163",
+  "source_hash": "sha256:0c2c60c09163d90b820361eb3f977c775348433222ba89db1ec4dacc973948f3",
+  "projection_seq": 2,
+  "source_command": "beacon qa run \"prism-ip-schema-v1\" --project-root /Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-ip-schema-v1 --version v0.0.1",
+  "requirement_refs": [
+    "docs/beacon/v0.0.1/features/prism-ip-schema-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-ip-schema-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-ip-schema-v1/tests.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-ip-schema-v1.revision.json"
+  ],
+  "test_case_refs": [],
+  "evidence_refs": [
+    ".beacon/auto-test-status.json",
+    ".beacon/qa/status.json",
+    ".beacon/coverage-summary.json",
+    ".beacon/qa/features/prism-ip-schema-v1/ac-closure.json",
+    ".beacon/qa/features/prism-ip-schema-v1/scorecard.json",
+    ".beacon/release-gate-report.json"
+  ],
+  "story_status": "implemented",
+  "revision_delivery_status": "implemented",
+  "required_ac_count": 0,
+  "required_test_count": 0,
+  "canonical_envelope_ref": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-ip-schema-v1.json",
+  "markdown_ref": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-ip-schema-v1.md",
+  "transaction_lineage": {
+    "current_transaction_id": "tx-qa-acceptance-prism-ip-schema-v1-0c2c60c09163",
+    "projection_seq": 2,
+    "source_hash": "sha256:0c2c60c09163d90b820361eb3f977c775348433222ba89db1ec4dacc973948f3",
+    "workflow_memory_ref": ".beacon/memory/workflow-lifecycle.json",
+    "memory_event_id": "",
+    "memory_entry_id": "7c76b333-db94-4d2c-9052-fb587319862f"
+  },
+  "sink_checksums": {
+    "machine": "sha256:d10cfe2e414508d80671179e91c8848a217e040eecdbb3a72dd3a6ee71b4c6cf",
+    "human": "sha256:508075137654bc62aa529b43b4ce45558416f3e1a0508294c956ad7d25039200",
+    "runtime": "sha256:a8f87731b5997ab6f4937f9ca59807e77683a0bb7f0973e2dcb6196434202b4a"
+  },
+  "runtime_projection_ref": ".beacon/transactions/qa-acceptance-prism-ip-schema-v1.json",
+  "transaction_status": "applied",
+  "failed_sinks": []
+}

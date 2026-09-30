@@ -1,0 +1,1251 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-ip-schema-v1",
+  "feature_slug": "prism-ip-schema-v1",
+  "version": "v0.0.1",
+  "generated_at": "2026-09-30T07:17:18.727842+00:00",
+  "expansion_profile": "pua-web",
+  "scenario_depth": "standard",
+  "families_required": [
+    "happy",
+    "negative",
+    "boundary"
+  ],
+  "stories": [
+    {
+      "ac_id": "AC-001",
+      "theme": "general",
+      "text": "Acceptance criteria TBD",
+      "scenario_ids": [],
+      "scenario_families": [],
+      "required_families": [],
+      "scenarios": []
+    },
+    {
+      "ac_id": "AC-IPM-001",
+      "theme": "",
+      "text": "IP 对象已注册且契约文件存在",
+      "scenario_ids": [
+        "SC-AUTO-TC-IPM-001",
+        "SC-AUTO-TC-IPM-002",
+        "SC-AUTO-TC-IPM-003"
+      ],
+      "scenario_families": [
+        "primary",
+        "primary",
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-IPM-001",
+          "source_tc_id": "TC-IPM-001",
+          "tc_id": "TC-IPM-001-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-IPM-002",
+          "source_tc_id": "TC-IPM-002",
+          "tc_id": "TC-IPM-002-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-IPM-003",
+          "source_tc_id": "TC-IPM-003",
+          "tc_id": "TC-IPM-003-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    },
+    {
+      "ac_id": "AC-IPM-002",
+      "theme": "",
+      "text": "IP 资产路径模式在契约中声明",
+      "scenario_ids": [
+        "SC-AUTO-TC-IPM-004",
+        "SC-AUTO-TC-IPM-005"
+      ],
+      "scenario_families": [
+        "primary",
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-IPM-004",
+          "source_tc_id": "TC-IPM-004",
+          "tc_id": "TC-IPM-004-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-IPM-005",
+          "source_tc_id": "TC-IPM-005",
+          "tc_id": "TC-IPM-005-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    },
+    {
+      "ac_id": "AC-IPM-003",
+      "theme": "",
+      "text": "四个作品侧契约均含 imports 字段",
+      "scenario_ids": [
+        "SC-AUTO-TC-IPM-006",
+        "SC-AUTO-TC-IPM-007"
+      ],
+      "scenario_families": [
+        "primary",
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-IPM-006",
+          "source_tc_id": "TC-IPM-006",
+          "tc_id": "TC-IPM-006-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-IPM-007",
+          "source_tc_id": "TC-IPM-007",
+          "tc_id": "TC-IPM-007-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    },
+    {
+      "ac_id": "AC-IPM-004",
+      "theme": "",
+      "text": "解析结果记录 resolved_revision（跨契约与脚本）",
+      "scenario_ids": [
+        "SC-AUTO-TC-IPM-008",
+        "SC-AUTO-TC-IPM-009",
+        "SC-AUTO-TC-IPM-010"
+      ],
+      "scenario_families": [
+        "primary",
+        "primary",
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-IPM-008",
+          "source_tc_id": "TC-IPM-008",
+          "tc_id": "TC-IPM-008-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-IPM-009",
+          "source_tc_id": "TC-IPM-009",
+          "tc_id": "TC-IPM-009-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-IPM-010",
+          "source_tc_id": "TC-IPM-010",
+          "tc_id": "TC-IPM-010-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    },
+    {
+      "ac_id": "AC-IPM-005",
+      "theme": "",
+      "text": "多源联名聚合正典门 reason_code 存在",
+      "scenario_ids": [
+        "SC-AUTO-TC-IPM-011",
+        "SC-AUTO-TC-IPM-012"
+      ],
+      "scenario_families": [
+        "primary",
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-IPM-011",
+          "source_tc_id": "TC-IPM-011",
+          "tc_id": "TC-IPM-011-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-IPM-012",
+          "source_tc_id": "TC-IPM-012",
+          "tc_id": "TC-IPM-012-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    },
+    {
+      "ac_id": "AC-IPM-006",
+      "theme": "",
+      "text": "校验脚本自检通过（exit 0）",
+      "scenario_ids": [
+        "SC-AUTO-TC-IPM-013",
+        "SC-AUTO-TC-IPM-014",
+        "SC-AUTO-TC-IPM-015"
+      ],
+      "scenario_families": [
+        "primary",
+        "primary",
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-IPM-013",
+          "source_tc_id": "TC-IPM-013",
+          "tc_id": "TC-IPM-013-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-IPM-014",
+          "source_tc_id": "TC-IPM-014",
+          "tc_id": "TC-IPM-014-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-IPM-015",
+          "source_tc_id": "TC-IPM-015",
+          "tc_id": "TC-IPM-015-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    },
+    {
+      "ac_id": "AC-IPM-007",
+      "theme": "",
+      "text": "同构校验纳入 ips/（脚本含 ips 处理）",
+      "scenario_ids": [
+        "SC-AUTO-TC-IPM-016"
+      ],
+      "scenario_families": [
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-IPM-016",
+          "source_tc_id": "TC-IPM-016",
+          "tc_id": "TC-IPM-016-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    },
+    {
+      "ac_id": "AC-IPM-008",
+      "theme": "",
+      "text": "迁移脚本覆盖 storyworld 与 masters 两个资产来源",
+      "scenario_ids": [
+        "SC-AUTO-TC-IPM-017",
+        "SC-AUTO-TC-IPM-018",
+        "SC-AUTO-TC-IPM-019"
+      ],
+      "scenario_families": [
+        "primary",
+        "primary",
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-IPM-017",
+          "source_tc_id": "TC-IPM-017",
+          "tc_id": "TC-IPM-017-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-IPM-018",
+          "source_tc_id": "TC-IPM-018",
+          "tc_id": "TC-IPM-018-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-IPM-019",
+          "source_tc_id": "TC-IPM-019",
+          "tc_id": "TC-IPM-019-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    },
+    {
+      "ac_id": "GATES",
+      "theme": "",
+      "text": "Truth Review Gate A/B/C + L0 pass，recommend_freeze=true",
+      "scenario_ids": [
+        "SC-AUTO-TC-IPM-020",
+        "SC-AUTO-TC-IPM-021"
+      ],
+      "scenario_families": [
+        "primary",
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-IPM-020",
+          "source_tc_id": "TC-IPM-020",
+          "tc_id": "TC-IPM-020-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-IPM-021",
+          "source_tc_id": "TC-IPM-021",
+          "tc_id": "TC-IPM-021-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    },
+    {
+      "ac_id": "FSM",
+      "theme": "",
+      "text": "非法跃迁槽位：archived 复活须人工批准",
+      "scenario_ids": [
+        "SC-AUTO-TC-IPM-022",
+        "SC-AUTO-TC-IPM-023",
+        "SC-AUTO-TC-IPM-024"
+      ],
+      "scenario_families": [
+        "primary",
+        "primary",
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-IPM-022",
+          "source_tc_id": "TC-IPM-022",
+          "tc_id": "TC-IPM-022-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-IPM-023",
+          "source_tc_id": "TC-IPM-023",
+          "tc_id": "TC-IPM-023-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-IPM-024",
+          "source_tc_id": "TC-IPM-024",
+          "tc_id": "TC-IPM-024-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario_id": "SC-AUTO-TC-IPM-001",
+      "source_tc_id": "TC-IPM-001",
+      "tc_id": "TC-IPM-001-PRIMARY",
+      "ac_id": "AC-IPM-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "IP 对象已注册且契约文件存在",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n 'schema_id:\\s*ip' registry/content-schema.yaml && rg -n 'root:\\s*content/ips/\\{ip_id\\}/' registry/content-schema.yaml && test -f contracts/ip.schema.yaml",
+      "assertion": "IP 对象已注册且契约文件存在",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-schema-v1/tc-ipm-001/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPM-002",
+      "source_tc_id": "TC-IPM-002",
+      "tc_id": "TC-IPM-002-PRIMARY",
+      "ac_id": "AC-IPM-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "ip.yaml 六个必填字段在契约中声明",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "for f in ip_id title kind status canon_revision publish_identity_ref; do rg -q \"$f\" contracts/ip.schema.yaml||exit 1; done",
+      "assertion": "ip.yaml 六个必填字段在契约中声明",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-schema-v1/tc-ipm-002/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPM-003",
+      "source_tc_id": "TC-IPM-003",
+      "tc_id": "TC-IPM-003-PRIMARY",
+      "ac_id": "AC-IPM-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "生命周期枚举含 paused / archived",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n 'archived' contracts/ip.schema.yaml && rg -n 'paused' contracts/ip.schema.yaml",
+      "assertion": "生命周期枚举含 paused / archived",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-schema-v1/tc-ipm-003/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPM-004",
+      "source_tc_id": "TC-IPM-004",
+      "tc_id": "TC-IPM-004-PRIMARY",
+      "ac_id": "AC-IPM-002",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "IP 资产路径模式在契约中声明",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n 'content/ips/\\{ip_id\\}/assets/\\{characters,scenes,props,styles\\}/<asset_id>/' contracts/ip.schema.yaml",
+      "assertion": "IP 资产路径模式在契约中声明",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-schema-v1/tc-ipm-004/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPM-005",
+      "source_tc_id": "TC-IPM-005",
+      "tc_id": "TC-IPM-005-PRIMARY",
+      "ac_id": "AC-IPM-002",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "资产条目含 asset_id 与冻结 identity block 要求",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n 'asset_id' contracts/ip.schema.yaml && rg -n 'identity block' contracts/ip.schema.yaml",
+      "assertion": "资产条目含 asset_id 与冻结 identity block 要求",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-schema-v1/tc-ipm-005/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPM-006",
+      "source_tc_id": "TC-IPM-006",
+      "tc_id": "TC-IPM-006-PRIMARY",
+      "ac_id": "AC-IPM-003",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "四个作品侧契约均含 imports 字段",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "for c in master-content storyworld campaign narrative-episode; do rg -q 'imports' contracts/$c.schema.yaml||exit 1; done",
+      "assertion": "四个作品侧契约均含 imports 字段",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-schema-v1/tc-ipm-006/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPM-007",
+      "source_tc_id": "TC-IPM-007",
+      "tc_id": "TC-IPM-007-PRIMARY",
+      "ac_id": "AC-IPM-003",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "import 支持 track 且声明 latest 缺省语义",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n 'track' contracts/ip.schema.yaml && rg -n 'latest' contracts/ip.schema.yaml",
+      "assertion": "import 支持 track 且声明 latest 缺省语义",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-schema-v1/tc-ipm-007/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPM-008",
+      "source_tc_id": "TC-IPM-008",
+      "tc_id": "TC-IPM-008-PRIMARY",
+      "ac_id": "AC-IPM-004",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "解析结果记录 resolved_revision（跨契约与脚本）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n 'resolved_revision' contracts/ip.schema.yaml scripts/check_ip_model.sh",
+      "assertion": "解析结果记录 resolved_revision（跨契约与脚本）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-schema-v1/tc-ipm-008/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPM-009",
+      "source_tc_id": "TC-IPM-009",
+      "tc_id": "TC-IPM-009-PRIMARY",
+      "ac_id": "AC-IPM-004",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "四类 fail-closed reason_code 均在解析校验中声明",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "for rc in ip_not_found ip_unfrozen asset_missing revision_mismatch; do rg -q \"$rc\" scripts/check_ip_model.sh||exit 1; done",
+      "assertion": "四类 fail-closed reason_code 均在解析校验中声明",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-schema-v1/tc-ipm-009/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPM-010",
+      "source_tc_id": "TC-IPM-010",
+      "tc_id": "TC-IPM-010-PRIMARY",
+      "ac_id": "AC-IPM-004",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "禁止静默本地重描述在脚本中显式声明（负向语义）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "! rg -n 'fallback.*redescrib|静默.*本地重描述' scripts/check_ip_model.sh || rg -n '禁止' scripts/check_ip_model.sh",
+      "assertion": "禁止静默本地重描述在脚本中显式声明（负向语义）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-schema-v1/tc-ipm-010/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPM-011",
+      "source_tc_id": "TC-IPM-011",
+      "tc_id": "TC-IPM-011-PRIMARY",
+      "ac_id": "AC-IPM-005",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "多源联名聚合正典门 reason_code 存在",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n 'crossover_canon_unmet' scripts/check_ip_model.sh",
+      "assertion": "多源联名聚合正典门 reason_code 存在",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-schema-v1/tc-ipm-011/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPM-012",
+      "source_tc_id": "TC-IPM-012",
+      "tc_id": "TC-IPM-012-PRIMARY",
+      "ac_id": "AC-IPM-005",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "联名语义在契约或校验中体现",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n 'crossover' contracts/ip.schema.yaml scripts/check_ip_model.sh | wc -l | awk '{exit !($1>=1)}'",
+      "assertion": "联名语义在契约或校验中体现",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-schema-v1/tc-ipm-012/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPM-013",
+      "source_tc_id": "TC-IPM-013",
+      "tc_id": "TC-IPM-013-PRIMARY",
+      "ac_id": "AC-IPM-006",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "校验脚本自检通过（exit 0）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "bash scripts/check_ip_model.sh --self-test 2>/dev/null; test $? -eq 0",
+      "assertion": "校验脚本自检通过（exit 0）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-schema-v1/tc-ipm-013/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPM-014",
+      "source_tc_id": "TC-IPM-014",
+      "tc_id": "TC-IPM-014-PRIMARY",
+      "ac_id": "AC-IPM-006",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "对合规样例判定通过",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "bash scripts/check_ip_model.sh --fixtures content/ips/_examples --expect pass; test $? -eq 0",
+      "assertion": "对合规样例判定通过",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-schema-v1/tc-ipm-014/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPM-015",
+      "source_tc_id": "TC-IPM-015",
+      "tc_id": "TC-IPM-015-PRIMARY",
+      "ac_id": "AC-IPM-006",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "反向断言：破坏引用时校验必须 fail（负向）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "bash scripts/check_ip_model.sh --fixtures content/ips/_examples --invert --expect fail; test $? -eq 1",
+      "assertion": "反向断言：破坏引用时校验必须 fail（负向）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-schema-v1/tc-ipm-015/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPM-016",
+      "source_tc_id": "TC-IPM-016",
+      "tc_id": "TC-IPM-016-PRIMARY",
+      "ac_id": "AC-IPM-007",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "同构校验纳入 ips/（脚本含 ips 处理）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "export PRISM_HOME=$(pwd); bash scripts/check_prism_project_docs.sh --init-shape /tmp/prism-ipm-shape-x 2>/dev/null; rg -n 'ips' scripts/check_prism_project_docs.sh",
+      "assertion": "同构校验纳入 ips/（脚本含 ips 处理）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-schema-v1/tc-ipm-016/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPM-017",
+      "source_tc_id": "TC-IPM-017",
+      "tc_id": "TC-IPM-017-PRIMARY",
+      "ac_id": "AC-IPM-008",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "迁移脚本覆盖 storyworld 与 masters 两个资产来源",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n 'storyworlds|masters' scripts/migrate_assets_to_ip.sh",
+      "assertion": "迁移脚本覆盖 storyworld 与 masters 两个资产来源",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-schema-v1/tc-ipm-017/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPM-018",
+      "source_tc_id": "TC-IPM-018",
+      "tc_id": "TC-IPM-018-PRIMARY",
+      "ac_id": "AC-IPM-008",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "迁移脚本幂等自检通过（exit 0）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "bash scripts/migrate_assets_to_ip.sh --self-test 2>/dev/null; test $? -eq 0",
+      "assertion": "迁移脚本幂等自检通过（exit 0）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-schema-v1/tc-ipm-018/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPM-019",
+      "source_tc_id": "TC-IPM-019",
+      "tc_id": "TC-IPM-019-PRIMARY",
+      "ac_id": "AC-IPM-008",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "迁移 dry-run 断言不丢资产（清单计数一致）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "bash scripts/migrate_assets_to_ip.sh --dry-run --expect no-loss 2>/dev/null; test $? -eq 0",
+      "assertion": "迁移 dry-run 断言不丢资产（清单计数一致）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-schema-v1/tc-ipm-019/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPM-020",
+      "source_tc_id": "TC-IPM-020",
+      "tc_id": "TC-IPM-020-PRIMARY",
+      "ac_id": "GATES",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "Truth Review Gate A/B/C + L0 pass，recommend_freeze=true",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "beacon truth review prism-ip-schema-v1 --project . --version v0.0.1 --json",
+      "assertion": "Truth Review Gate A/B/C + L0 pass，recommend_freeze=true",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-schema-v1/tc-ipm-020/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPM-021",
+      "source_tc_id": "TC-IPM-021",
+      "tc_id": "TC-IPM-021-PRIMARY",
+      "ac_id": "GATES",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "closure_allowed=true 且无 blocking finding（integrity 门真跑）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "beacon doctor verify-truth-integrity prism-ip-schema-v1 --project-root . --version v0.0.1 --mode block --json | python3 -c \"import json,sys; d=json.load(sys.stdin); exit(0 if d.get('result',{}).get('blocked') in (False,None) and d.get('result',{}).get('closure_contract',{}).get('closure_allowed') else 1)\"",
+      "assertion": "closure_allowed=true 且无 blocking finding（integrity 门真跑）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-schema-v1/tc-ipm-021/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPM-022",
+      "source_tc_id": "TC-IPM-022",
+      "tc_id": "TC-IPM-022-PRIMARY",
+      "ac_id": "FSM",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "非法跃迁槽位：archived 复活须人工批准",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n 'archived → active without human_approved' docs/beacon/v0.0.1/features/prism-ip-schema-v1/truth.md",
+      "assertion": "非法跃迁槽位：archived 复活须人工批准",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-schema-v1/tc-ipm-022/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPM-023",
+      "source_tc_id": "TC-IPM-023",
+      "tc_id": "TC-IPM-023-PRIMARY",
+      "ac_id": "FSM",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "非法跃迁槽位：引用非 active IP 被禁止",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n 'import 引用 .draft. 或 .archived. 状态的 IP' docs/beacon/v0.0.1/features/prism-ip-schema-v1/truth.md",
+      "assertion": "非法跃迁槽位：引用非 active IP 被禁止",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-schema-v1/tc-ipm-023/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPM-024",
+      "source_tc_id": "TC-IPM-024",
+      "tc_id": "TC-IPM-024-PRIMARY",
+      "ac_id": "FSM",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "非法跃迁槽位：静默改钉版引用被禁止",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n '已钉 revision 的 import 在源 revision 变更后静默改引用' docs/beacon/v0.0.1/features/prism-ip-schema-v1/truth.md",
+      "assertion": "非法跃迁槽位：静默改钉版引用被禁止",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-schema-v1/tc-ipm-024/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    }
+  ]
+}

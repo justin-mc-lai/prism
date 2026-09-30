@@ -238,5 +238,20 @@
       "flaky_rate": 0.0,
       "max_flaky_rate": 0.02
     }
+  },
+  {
+    "run_id": "run-20260930T152305985033",
+    "timestamp": "2026-09-30T15:23:05.985889",
+    "scope": "qa9",
+    "status": "passed",
+    "selected_layers": [
+      "contract"
+    ],
+    "flaky": {
+      "pass_count": 1,
+      "flaky_pass_count": 0,
+      "flaky_rate": 0.0,
+      "max_flaky_rate": 0.02
+    }
   }
 ]
