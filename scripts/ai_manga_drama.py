@@ -232,7 +232,39 @@ def validate_storyboard(storyboard: Path, *, verbose: bool = False) -> dict:
 
 def cmd_init(args: argparse.Namespace) -> None:
     parent = Path(args.dir).expanduser().resolve()
-    episode = parent / args.episode
+    # Project-root semantics (prism-project-docs-v1 AC-PDO-001): a `docs/prism`
+    # target gets the content-isomorphic tree + facade README; the episode then
+    # nests at masters/ai-manga-drama/<ep>/ per the directory contract. Any
+    # other --dir keeps legacy behavior: episode directly under parent.
+    is_project_root = parent.name == "prism" and parent.parent.name == "docs"
+    if is_project_root:
+        content_root = Path(__file__).resolve().parent.parent / "content"
+        if content_root.is_dir():
+            # ponytail: single source of truth — mirror content/'s top level
+            names = sorted(p.name for p in content_root.iterdir())
+        else:
+            names = ["briefings", "distribution", "masters", "pipelines", "presentations", "storyworlds"]
+        parent.mkdir(parents=True, exist_ok=True)
+        for name in names:
+            (parent / name).mkdir(exist_ok=True)
+        facade = parent / "README.md"
+        if not facade.exists():
+            facade.write_text(
+                "# docs/prism — Prism 作品目录（门面索引）\n\n"
+                "本目录由 `ai_manga_drama.py init` 建立，结构与 Prism 仓 `content/` 同构。\n"
+                "这里只放作品产物；需求真相在 `docs/beacon/`，两者互不越界。\n\n"
+                "| 索引 | 位置 |\n|------|------|\n"
+                "| 大纲 / 剧本 | `storyworlds/<world>/episodes/` |\n"
+                "| 母稿 | `masters/`（漫剧 episode：`masters/ai-manga-drama/<episode>/`） |\n"
+                "| 分镜剧本 | `pipelines/<form>/<slug>/`（`storyboard.json`、`分镜脚本.md`、提示词、srt） |\n"
+                "| 简报 | `briefings/` |\n"
+                "| 成片 / 发布 | `presentations/`、`distribution/` |\n\n"
+                "- 能力面在 Prism 仓：所有命令经 `$PRISM_HOME/scripts/...` 调用，项目内零脚本副本。\n",
+                encoding="utf-8",
+            )
+        episode = parent / "masters" / "ai-manga-drama" / args.episode
+    else:
+        episode = Path(args.dir).expanduser().resolve() / args.episode
     episode.mkdir(parents=True, exist_ok=True)
     (episode / "assets").mkdir(exist_ok=True)
     (episode / "clips").mkdir(exist_ok=True)

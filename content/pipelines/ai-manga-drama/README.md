@@ -37,8 +37,9 @@ story → storyboard JSON → prompt_compiler（资产/图片/视频提示词 + 
 > episode 目录由 `init --dir <parent> --episode <slug>` 决定：编译产物（资产/图片/视频提示词、
 > `{ep}.srt`、`分镜脚本.md`、`drama-spec.json`、`render-request.json`、`video-manifest.json`、
 > `cost-ledger.json`）全部落在该 episode 目录内；成片落在 `content/renders/`。
-> （契约 `contracts/form-manga-drama.contract.md` §4 写作 `content/presentations/{vertical}/{slug}/`，
-> 属迁移期口径，实际以 `--dir` 为准。）
+> episode 路径唯一正典见上表 `content/masters/ai-manga-drama/{slug}/`；
+> 契约 `contracts/form-manga-drama.contract.md` §4 中的 `content/presentations/{vertical}/{slug}/`
+> 已标注为 deprecated alias（迁移期旧口径，仅历史引用）。
 
 ## 命令索引
 

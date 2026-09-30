@@ -44,8 +44,11 @@
 
 ## 4. output
 
-- episode：`content/presentations/{vertical}/{slug}/manga-drama-{ep}/`
-  （storyboard.json、assets/、video-request.json、video-manifest.json、cost-ledger.json、README）
+- episode（canonical，唯一正典）：`content/masters/ai-manga-drama/{slug}/`
+  （storyboard.json、assets/、video-request.json、video-manifest.json、cost-ledger.json、README；
+  落盘由 `init --dir content/masters/ai-manga-drama --episode <slug>` 决定；
+  项目侧同构根为 `<project>/docs/prism/`，其内 episode 同样位于 `masters/ai-manga-drama/<slug>/`）
+- episode（deprecated alias，迁移期旧口径，仅历史引用，禁止新写）：`content/presentations/{vertical}/{slug}/manga-drama-{ep}/`
 - 成片：同目录 `draft/ep-{slug}-480p.mp4`（480x854、60–90 秒，ffprobe 可验）
 - 声音链（**交下游 provider**，`assemble` 不再本地合成）：配音与字幕状态写进 `video-manifest.json`；
   `{ep}.srt` 由编译器作为**纯文本产物**产出（台词 + 镜时长派生），不做本地 TTS 与音频 mux

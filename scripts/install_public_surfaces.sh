@@ -1,6 +1,10 @@
 #!/bin/bash
 # Prism public-surface installer for agent skill roots.
 #
+# 只软链指令面：本脚本只装 7 个公开 SKILL.md（指令面），能力面（scripts/、
+# content/pipelines/ 等）不随装、项目内零脚本副本；项目侧一律经 PRISM_HOME
+# （= Prism 仓根）调用：$PRISM_HOME/scripts/<tool>。
+#
 # Links the 7 public surfaces (skills/prism-{goal,intel,master,director,produce,qa,release})
 # into agent skill dirs so Codex / Claude / generic agents / Cursor can discover them.
 # `skills/_internal` is never exposed (repo rule: 不对人发现).

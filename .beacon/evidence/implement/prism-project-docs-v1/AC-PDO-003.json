@@ -1,0 +1,9 @@
+{
+ "schema_version": "1.0",
+ "ac_id": "AC-PDO-003",
+ "pass": true,
+ "command": "bash scripts/check_prism_project_docs.sh --canonical-path && rg -n \"alias|deprecated\" contracts/form-manga-drama.contract.md | rg -q \"content/presentations\"",
+ "assertion": "episode 路径唯一 canonical（masters）+ presentations 行 deprecated alias（TC-007..009）",
+ "last_line": "OK: canonical episode path is single and consistent; legacy presentations line is alias-marked",
+ "at": "2026-09-30T00:44:59"
+}

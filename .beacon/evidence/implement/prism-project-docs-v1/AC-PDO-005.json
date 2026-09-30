@@ -1,0 +1,9 @@
+{
+ "schema_version": "1.0",
+ "ac_id": "AC-PDO-005",
+ "pass": true,
+ "command": "bash scripts/check_prism_project_docs.sh --boundary && ! rg --files docs/beacon | rg -q \"(^|/)(storyboard\\.json|分镜脚本\\.md)\\$\" && ! rg -n \"parser_contract|revision_id\" docs/prism/",
+ "assertion": "边界：docs/prism 无真相字段、docs/beacon 无分镜产物文件（TC-012..014）",
+ "last_line": "OK: docs/prism carries no truth fields; docs/beacon carries no drama artifacts",
+ "at": "2026-09-30T00:44:59"
+}

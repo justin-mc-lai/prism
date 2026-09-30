@@ -46,6 +46,15 @@ Shared preamble:
 - Seven-seg template: `contracts/skill-contract-7seg.tpl.md`
 - Adapter stubs: `skills/_internal/adapters/` (internal only)
 
+## PRISM_HOME（能力面定位）
+
+本 skill 只装指令面；脚本能力面在 Prism 仓，项目侧一律经环境变量 `PRISM_HOME`（= Prism 仓根）调用，项目内零脚本副本：
+
+```bash
+$PRISM_HOME/scripts/ai_manga_drama.py init --dir <project>/docs/prism --episode <slug>
+$PRISM_HOME/scripts/prompt_compiler.py --episode <dir> --style <style_id>
+```
+
 ## Mandatory progressive load
 
 1. Select **exactly one** primary `mode_id` from the table.

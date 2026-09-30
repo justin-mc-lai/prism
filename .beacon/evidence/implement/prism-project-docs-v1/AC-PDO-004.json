@@ -1,0 +1,9 @@
+{
+ "schema_version": "1.0",
+ "ac_id": "AC-PDO-004",
+ "pass": true,
+ "command": "bash scripts/check_prism_project_docs.sh --install-notice && rg -n \"只软链|指令面\" scripts/install_public_surfaces.sh | wc -l",
+ "assertion": "安装器声明只装指令面 + PRISM_HOME 能力面（TC-010/011）",
+ "last_line": "       1",
+ "at": "2026-09-30T00:44:59"
+}

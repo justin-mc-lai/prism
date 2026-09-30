@@ -1,0 +1,9 @@
+{
+ "schema_version": "1.0",
+ "ac_id": "AC-PDO-002",
+ "pass": true,
+ "command": "rg -n \"PRISM_HOME\" skills/prism-director/SKILL.md skills/prism-produce/SKILL.md skills/prism-qa/SKILL.md | wc -l && rg -n \"\\/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-project-docs-v1/scripts/\" skills/prism-director/SKILL.md skills/prism-produce/SKILL.md | wc -l",
+ "assertion": "三个公开 SKILL 写入 PRISM_HOME 约定（TC-004/005：11 处 / 4 处命令示例）",
+ "last_line": "       0",
+ "at": "2026-09-30T00:44:59"
+}

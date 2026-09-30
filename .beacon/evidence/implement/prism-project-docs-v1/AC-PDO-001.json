@@ -1,0 +1,9 @@
+{
+ "schema_version": "1.0",
+ "ac_id": "AC-PDO-001",
+ "pass": true,
+ "command": "bash scripts/check_prism_project_docs.sh --init-shape /tmp/prism-pdo-001/docs/prism && diff <(ls /tmp/prism-pdo-001/docs/prism | grep -v README.md | sort) <(ls content | sort) && rg -q \"大纲\" /tmp/prism-pdo-001/docs/prism/README.md",
+ "assertion": "docs/prism 与 content/ 同构 + 门面索引（TC-001..003）",
+ "last_line": "OK: tree is content-isomorphic and facade index carries 大纲/母稿/分镜",
+ "at": "2026-09-30T00:44:59"
+}
