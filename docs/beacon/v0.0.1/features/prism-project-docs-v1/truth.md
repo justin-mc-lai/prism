@@ -2,7 +2,7 @@
 slug: prism-project-docs-v1
 version: v0.0.1
 status: frozen
-revision_id: R2
+revision_id: R3
 language: zh
 domain_required: false
 ux_required: false
@@ -120,7 +120,7 @@ intent_fidelity_note: |
 
 | AC ID | Description |
 |-------|-------------|
-| AC-PDO-001 | 项目侧 `init --dir <p>/docs/prism` 落盘的目录树与 prism 仓 `content/` 同构（同名子目录 `briefings/storyworlds/masters/pipelines/produced/distribution`），且生成门面 `docs/prism/README.md`，README 内含大纲/母稿/分镜剧本三类索引条目 |
+| AC-PDO-001 | 项目侧 `init --dir <p>/docs/prism` 落盘的目录树与 prism 仓 `content/` 同构（同名子目录 `briefings/storyworlds/masters/pipelines/presentations/distribution`，以 `content/` 实际清单为准），且生成门面 `docs/prism/README.md`，README 内含大纲/母稿/分镜剧本三类索引条目 |
 | AC-PDO-002 | 公开 skill 指令面写明 `PRISM_HOME` 约定：`skills/prism-director/SKILL.md`、`skills/prism-produce/SKILL.md`、`skills/prism-qa/SKILL.md` 三个文件内命令一律写成 `$PRISM_HOME/scripts/...` 形式；项目仓 `git ls-files` 中 `prompt_compiler.py` / `ai_manga_drama.py` / `drama_spec.py` 的命中路径全部位于 `scripts/` 之下（唯一能力 SoT，无副本） |
 | AC-PDO-003 | `contracts/form-manga-drama.contract.md §4` 与 `content/pipelines/ai-manga-drama/README.md` 对 episode 产物路径只保留一条 canonical 表述，另一条显式标注 alias/deprecated；存在 `scripts/check_*` 断言两处 canonical 一致（含反向断言：alias 行存在且 canonical 行唯一） |
 | AC-PDO-004 | `scripts/install_public_surfaces.sh` 文件头注释明确写出"只装指令面"，并写明能力面经 `PRISM_HOME` 获取；`skills/prism-director/SKILL.md` 含能力定位段（声明 `PRISM_HOME` 与 `scripts/` 关系）；`scripts/check_prism_project_docs.sh --install-notice` 对以上两点 exit 0 |

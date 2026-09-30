@@ -5,7 +5,7 @@
   "truth_package_contract": "beacon-feature-package-v2",
   "machine_json_role": "generated_state_not_truth",
   "generated_by": "beacon.truth_map.resolver",
-  "generated_at": "2026-09-29T16:39:57.007130+00:00",
+  "generated_at": "2026-09-30T00:33:57.578171+00:00",
   "feature": "prism-project-docs-v1",
   "feature_slug": "prism-project-docs-v1",
   "version": "v0.0.1",
@@ -18,8 +18,8 @@
     "evidence": "docs/beacon/v0.0.1/features/prism-project-docs-v1/evidence.md"
   },
   "source_hashes": {
-    "truth": "37af69edc7250814125b02d97db366b3b127deaf9ad8539ca560a0dc0a4fbe41",
-    "tests": "c65bf72635c6147b5315f60b4e8bd1a44b59578a002b4fb384929f03c4b2282c",
+    "truth": "5bf77c07cf110f552bc85734ca0cd4aa56d02c9ef0bded18d6562669c5d0c8e9",
+    "tests": "7351402124eec7822e5c84ec2e8012196bc487034489637ae9ddf6713bb8d27f",
     "tasks": "a4363056a1d5b7d68866dc75e56f3be8d9e883c0f3110eb5e30827665ffe32a0",
     "evidence": "c8585f4664a160fcbe0a23e5d1c3191d0ac4e0ba64591524696fe592e8119b30"
   },
@@ -27,7 +27,7 @@
     "slug": "prism-project-docs-v1",
     "version": "v0.0.1",
     "status": "frozen",
-    "revision_id": "R2",
+    "revision_id": "R3",
     "language": "zh",
     "domain_required": "false",
     "ux_required": "false",
@@ -51,7 +51,7 @@
   "acceptance_criteria": [
     {
       "ac_id": "AC-PDO-001",
-      "theme": "项目侧 `init --dir <p>/docs/prism` 落盘的目录树与 prism 仓 `content/` 同构（同名子目录 `briefings/storyworlds/masters/pipelines/produced/distribution`），且生成门面 `docs/prism/README.md`，README 内含大纲/母稿/分镜剧本三类索引条目",
+      "theme": "项目侧 `init --dir <p>/docs/prism` 落盘的目录树与 prism 仓 `content/` 同构（同名子目录 `briefings/storyworlds/masters/pipelines/presentations/distribution`，以 `content/` 实际清单为准），且生成门面 `docs/prism/README.md`，README 内含大纲/母稿/分镜剧本三类索引条目",
       "description": ""
     },
     {
@@ -188,8 +188,8 @@
       "ac_id": "AC-PDO-005",
       "tc_id": "TC-PDO-013",
       "layer": "",
-      "command": "`! rg -n 'storyboard\\.json\\|分镜脚本\\.md' docs/beacon/ -l`",
-      "assertion": "docs/beacon 下无分镜产物（负向）",
+      "command": "`! rg --files docs/beacon \\|rg -q '(^|/)(storyboard\\.json\\|分镜脚本\\.md)$'`",
+      "assertion": "docs/beacon 下无分镜产物文件（负向；按产物名判定，非字面内容匹配）",
       "evidence_path": "",
       "source": ""
     },

@@ -5,11 +5,11 @@
 - refreeze_status: `complete`
 - blocked_reason: ``
 - next_route: `beacon-implement`
-- revision_before: `R2`
-- revision_after: `R2`
+- revision_before: `R3`
+- revision_after: `R3`
 
 ## Surface Statuses
-- `change`: `package_change_optional` (docs/beacon/v0.0.1/change/prism-project-docs-v1.md)
+- `change`: `present` (docs/beacon/v0.0.1/change/prism-project-docs-v1.md)
 - `truth`: `present` (docs/beacon/v0.0.1/features/prism-project-docs-v1/truth.md)
 - `tests`: `present` (docs/beacon/v0.0.1/features/prism-project-docs-v1/tests.md)
 - `tasks`: `present` (docs/beacon/v0.0.1/features/prism-project-docs-v1/tasks.md)
@@ -20,7 +20,7 @@
 
 ## Refreshed Surfaces
 
-- truth, tests, tasks, evidence, requirement_clarity, freeze, feature_package_validation
+- change, truth, tests, tasks, evidence, requirement_clarity, freeze, feature_package_validation
 
 ## Boundary
 

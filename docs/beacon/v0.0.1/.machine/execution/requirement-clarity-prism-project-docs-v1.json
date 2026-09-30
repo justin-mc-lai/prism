@@ -27,7 +27,7 @@
     "review_gates": [],
     "qa_coverage_hints": [],
     "evidence_lines": {},
-    "generated_at": "2026-09-29T16:39:56.095604+00:00",
+    "generated_at": "2026-09-30T00:33:56.748386+00:00",
     "feature": "prism-project-docs-v1",
     "feature_slug": "prism-project-docs-v1",
     "prd_ref": "docs/beacon/v0.0.1/prd/prism-project-docs-v1.md",
@@ -62,7 +62,7 @@
         "slug": "prism-project-docs-v1",
         "version": "v0.0.1",
         "status": "frozen",
-        "revision_id": "R2",
+        "revision_id": "R3",
         "language": "zh",
         "domain_required": "false",
         "ux_required": "false",
@@ -93,7 +93,7 @@
       "acceptance_criteria": [
         {
           "ac_id": "AC-PDO-001",
-          "description": "项目侧 `init --dir <p>/docs/prism` 落盘的目录树与 prism 仓 `content/` 同构（同名子目录 `briefings/storyworlds/masters/pipelines/produced/distribution`），且生成门面 `docs/prism/README.md`，README 内含大纲/母稿/分镜剧本三类索引条目"
+          "description": "项目侧 `init --dir <p>/docs/prism` 落盘的目录树与 prism 仓 `content/` 同构（同名子目录 `briefings/storyworlds/masters/pipelines/presentations/distribution`，以 `content/` 实际清单为准），且生成门面 `docs/prism/README.md`，README 内含大纲/母稿/分镜剧本三类索引条目"
         },
         {
           "ac_id": "AC-PDO-002",
@@ -149,7 +149,7 @@
           "slug": "prism-project-docs-v1",
           "version": "v0.0.1",
           "status": "frozen",
-          "revision_id": "R2",
+          "revision_id": "R3",
           "language": "zh",
           "domain_required": "false",
           "ux_required": "false",
@@ -180,7 +180,7 @@
         "acceptance_criteria": [
           {
             "ac_id": "AC-PDO-001",
-            "description": "项目侧 `init --dir <p>/docs/prism` 落盘的目录树与 prism 仓 `content/` 同构（同名子目录 `briefings/storyworlds/masters/pipelines/produced/distribution`），且生成门面 `docs/prism/README.md`，README 内含大纲/母稿/分镜剧本三类索引条目"
+            "description": "项目侧 `init --dir <p>/docs/prism` 落盘的目录树与 prism 仓 `content/` 同构（同名子目录 `briefings/storyworlds/masters/pipelines/presentations/distribution`，以 `content/` 实际清单为准），且生成门面 `docs/prism/README.md`，README 内含大纲/母稿/分镜剧本三类索引条目"
           },
           {
             "ac_id": "AC-PDO-002",
