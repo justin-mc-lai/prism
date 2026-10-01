@@ -5,7 +5,7 @@
   "truth_package_contract": "beacon-feature-package-v2",
   "machine_json_role": "generated_state_not_truth",
   "generated_by": "beacon.truth_map.resolver",
-  "generated_at": "2026-10-01T05:03:19.788973+00:00",
+  "generated_at": "2026-10-01T09:29:54.510494+00:00",
   "feature": "prism-ip-continuity-v1",
   "feature_slug": "prism-ip-continuity-v1",
   "version": "v0.0.1",
@@ -19,7 +19,7 @@
   },
   "source_hashes": {
     "truth": "ae5645b2816b964c9e5f18eee1f96e09bc1140fe5e84da9dbe21d4b2a3c2311a",
-    "tests": "2eb4ad8d967d7fa6928e7e234ed5e43c03630c611ee453bcb39872999bcb3dfd",
+    "tests": "07732045622515f616907e6fbef1eff1dba76aad6a706715943871c935a5b879",
     "tasks": "39e1c38841d0add18d847e4ec2a404964beec0cbb3dd4d1999fc2985b65abea9",
     "evidence": "eee1d80671826162105650ca38086a2817ce6b53e0cf5e05dceb597e5a53f0ef"
   },
@@ -199,7 +199,7 @@
       "ac_id": "FSM",
       "tc_id": "TC-IPC-014",
       "layer": "",
-      "command": "`rg -n 'bump_revision without revisions/{R}.yaml record' docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md`",
+      "command": "`rg -nF 'bump_revision without revisions/{R}.yaml record' docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md`",
       "assertion": "非法跃迁槽位：无演进记录不得跳版本",
       "evidence_path": "",
       "source": ""
