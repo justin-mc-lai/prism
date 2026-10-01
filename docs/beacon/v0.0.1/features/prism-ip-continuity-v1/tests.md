@@ -21,7 +21,7 @@ materials_status: current
 | TC-IPC-011 | AC-IPC-006 | `bash scripts/check_ip_continuity.sh --fixtures content/ips/_examples/ip-demo --invert --expect fail; test $? -eq 1` | 反向断言：破坏演进链时门必须 fail（负向） |
 | TC-IPC-012 | GATES | `beacon truth review prism-ip-continuity-v1 --project . --version v0.0.1 --json` | Truth Review Gate A/B/C + L0 pass，recommend_freeze=true |
 | TC-IPC-013 | GATES | `beacon doctor verify-truth-integrity prism-ip-continuity-v1 --project-root . --version v0.0.1 --mode block --json \| python3 -c "import json,sys; d=json.load(sys.stdin); exit(0 if d.get('result',{}).get('blocked') in (False,None) and d.get('result',{}).get('closure_contract',{}).get('closure_allowed') else 1)"` | closure_allowed=true 且无 blocking finding（integrity 门真跑） |
-| TC-IPC-014 | FSM | `rg -n 'bump_revision without revisions/{R}.yaml record' docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md` | 非法跃迁槽位：无演进记录不得跳版本 |
+| TC-IPC-014 | FSM | `rg -nF 'bump_revision without revisions/{R}.yaml record' docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md` | 非法跃迁槽位：无演进记录不得跳版本 |
 | TC-IPC-015 | FSM | `rg -n 'open_season with campaign from another IP' docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md` | 非法跃迁槽位：跨 IP campaign 不得入 season |
 | TC-IPC-016 | FSM | `rg -n '审计结果直接修改 IP 正典' docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md` | 非法跃迁槽位：视图只读不得改正典 |
 

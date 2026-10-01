@@ -1,0 +1,12 @@
+{
+  "schema_version": "workspace-admission-v1",
+  "version": "v0.0.1",
+  "feature_slug": "prism-ip-import-gate-v1",
+  "project_root": "/Users/apple/Developer/Personal/selfmedia/prism",
+  "branch": "beacon/v0.0.1/prism-ip-import-gate-v1",
+  "worktree_path": "/Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-ip-import-gate-v1",
+  "base_branch": "main",
+  "issued_at": "2026-10-01T09:28:12.360601+00:00",
+  "git_head": "93e764a698e67132d29171ff2dbaea05ad6f8e47",
+  "status": "pass"
+}

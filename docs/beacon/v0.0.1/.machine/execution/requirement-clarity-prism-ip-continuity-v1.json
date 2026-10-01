@@ -27,7 +27,7 @@
     "review_gates": [],
     "qa_coverage_hints": [],
     "evidence_lines": {},
-    "generated_at": "2026-10-01T05:03:19.314047+00:00",
+    "generated_at": "2026-10-01T09:29:54.519015+00:00",
     "feature": "prism-ip-continuity-v1",
     "feature_slug": "prism-ip-continuity-v1",
     "prd_ref": "docs/beacon/v0.0.1/prd/prism-ip-continuity-v1.md",
@@ -61,7 +61,7 @@
       "frontmatter": {
         "slug": "prism-ip-continuity-v1",
         "version": "v0.0.1",
-        "status": "draft",
+        "status": "frozen",
         "language": "zh",
         "domain_required": "false",
         "ux_required": "false",
@@ -127,7 +127,8 @@
         "invalid / illegal",
         "Non-goals",
         "Provenance",
-        "Source Excerpt"
+        "Source Excerpt",
+        "FSM mermaid（投影）"
       ]
     },
     "validation": {
@@ -144,7 +145,7 @@
         "frontmatter": {
           "slug": "prism-ip-continuity-v1",
           "version": "v0.0.1",
-          "status": "draft",
+          "status": "frozen",
           "language": "zh",
           "domain_required": "false",
           "ux_required": "false",
@@ -210,7 +211,8 @@
           "invalid / illegal",
           "Non-goals",
           "Provenance",
-          "Source Excerpt"
+          "Source Excerpt",
+          "FSM mermaid（投影）"
         ]
       }
     },

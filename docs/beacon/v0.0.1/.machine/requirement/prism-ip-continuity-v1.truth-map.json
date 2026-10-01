@@ -65,7 +65,7 @@
     },
     "source_hashes": {
       "truth": "ae5645b2816b964c9e5f18eee1f96e09bc1140fe5e84da9dbe21d4b2a3c2311a",
-      "tests": "2eb4ad8d967d7fa6928e7e234ed5e43c03630c611ee453bcb39872999bcb3dfd",
+      "tests": "07732045622515f616907e6fbef1eff1dba76aad6a706715943871c935a5b879",
       "tasks": "39e1c38841d0add18d847e4ec2a404964beec0cbb3dd4d1999fc2985b65abea9",
       "evidence": "eee1d80671826162105650ca38086a2817ce6b53e0cf5e05dceb597e5a53f0ef"
     },
@@ -98,7 +98,7 @@
         "filename": "tests.md",
         "path": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md",
         "exists": true,
-        "source_hash": "2eb4ad8d967d7fa6928e7e234ed5e43c03630c611ee453bcb39872999bcb3dfd",
+        "source_hash": "07732045622515f616907e6fbef1eff1dba76aad6a706715943871c935a5b879",
         "authority": "markdown_feature_package",
         "json_authority": false
       },
@@ -218,7 +218,7 @@
         "truth_authority": true,
         "json_authority": false,
         "generated_governance_state": false,
-        "source_hash": "d6f082436545586c9068a5fc1f5bd3d6cbbd9c13191ae697f09bbaaba986c569"
+        "source_hash": "ba850946dbf6f7f711c16aaa664bdafa8d4a56e0aa293ff0b5dd4d4037a2129d"
       },
       "global_boundaries": {
         "schema_version": "1.0",
@@ -373,7 +373,7 @@
         "truth_authority": false,
         "json_authority": false,
         "generated_governance_state": true,
-        "source_hash": "02b574fca058fec298f2308c098137fc21888a99362688d5c7d05c16df04dd48"
+        "source_hash": "96f41637c626be6313d468a3cbfd16824bbb05786ee7829eaed14f3dbd790394"
       },
       "evidence_manifest": {
         "schema_version": "1.0",
@@ -390,7 +390,7 @@
         "truth_authority": false,
         "json_authority": false,
         "generated_governance_state": true,
-        "source_hash": "815fb4cb5f7bfc2c6ba2f7e962b7a878765805a3fbb4a0efd48cb6677b7ac380"
+        "source_hash": "36b0e593bd6a54988fad5aacc3a3a230b3d5cb2d86582255d5be22e03e1c8982"
       },
       "qa_status": {
         "schema_version": "1.0",
@@ -407,7 +407,7 @@
         "truth_authority": false,
         "json_authority": false,
         "generated_governance_state": true,
-        "source_hash": "4735dbf8853efe850deaba48a2f73b0b86e48525ad1f26712aa9b26fcfe7854f"
+        "source_hash": "5a7ad73d260a80c2ad3c948ddaf0ab24772941a72e75e473f3d95ec292b3adc7"
       },
       "release_gate_report": {
         "schema_version": "1.0",
@@ -424,7 +424,7 @@
         "truth_authority": false,
         "json_authority": false,
         "generated_governance_state": true,
-        "source_hash": "1446aea9298740798c690bbe6e36c9c62fae3f088ba2a4d8120d30b5db0f98b7"
+        "source_hash": "de772b771a86a9285ff37de6a92766c0d0aff69f7871059e50b0aa6fe2f1fe66"
       }
     },
     "manifest_authority": false,
@@ -677,7 +677,7 @@
     ]
   },
   "generated_by": "beacon.truth_map.resolver",
-  "generated_at": "2026-10-01T05:03:19.788071+00:00",
+  "generated_at": "2026-10-01T09:29:54.509044+00:00",
   "truth_authority": false,
   "source_paths": {
     "truth": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
@@ -687,7 +687,7 @@
   },
   "source_hashes": {
     "truth": "ae5645b2816b964c9e5f18eee1f96e09bc1140fe5e84da9dbe21d4b2a3c2311a",
-    "tests": "2eb4ad8d967d7fa6928e7e234ed5e43c03630c611ee453bcb39872999bcb3dfd",
+    "tests": "07732045622515f616907e6fbef1eff1dba76aad6a706715943871c935a5b879",
     "tasks": "39e1c38841d0add18d847e4ec2a404964beec0cbb3dd4d1999fc2985b65abea9",
     "evidence": "eee1d80671826162105650ca38086a2817ce6b53e0cf5e05dceb597e5a53f0ef"
   }

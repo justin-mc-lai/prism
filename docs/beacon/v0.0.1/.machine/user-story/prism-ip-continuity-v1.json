@@ -3,21 +3,35 @@
   "feature": "prism-ip-continuity-v1",
   "feature_slug": "prism-ip-continuity-v1",
   "version": "v0.0.1",
-  "current_revision_id": "R1",
+  "current_revision_id": "R2",
   "lifecycle_status": "frozen",
-  "updated_at": "2026-10-01T05:03:19.556525+00:00",
+  "updated_at": "2026-10-01T09:29:54.514989+00:00",
   "revisions": [
     {
       "revision_id": "R1",
       "feature_slug": "prism-ip-continuity-v1",
       "source_revision_id": null,
       "reason": "draft",
-      "doc_status": "frozen",
-      "delivery_status": "idle",
+      "doc_status": "superseded",
+      "delivery_status": "superseded",
       "baseline_hash": "sha256:503336b9fbc5ae1ed867ae50d7c69320e508b5373c777c60363813ad7aedcb15",
-      "superseded_by": null,
+      "superseded_by": "R2",
       "created_at": "2026-10-01T05:03:19.554788+00:00",
       "frozen_at": "2026-10-01T05:03:19.600798+00:00",
+      "accepted_at": null,
+      "accepted_by": null
+    },
+    {
+      "revision_id": "R2",
+      "feature_slug": "prism-ip-continuity-v1",
+      "source_revision_id": "R1",
+      "reason": "TC-IPC-014 rg -F 修正",
+      "doc_status": "frozen",
+      "delivery_status": "idle",
+      "baseline_hash": "sha256:0ffab7a34a9ad813e21c4ca7168af4bbc6adf5cc2fd47bce7063b4d5e9100867",
+      "superseded_by": null,
+      "created_at": "2026-10-01T09:29:54.320753+00:00",
+      "frozen_at": "2026-10-01T09:29:54.571459+00:00",
       "accepted_at": null,
       "accepted_by": null
     }
@@ -28,7 +42,7 @@
       "revision_id": "R1",
       "title": "prism-ip-continuity-v1",
       "priority": "medium",
-      "status": "frozen",
+      "status": "superseded",
       "items": [
         {
           "id": "AC-001",
@@ -66,6 +80,88 @@
           "verified_by_run_id": null,
           "accepted_at": null,
           "changed_in_revision": null,
+          "covers": [
+            "AC-001"
+          ],
+          "story_id": "",
+          "source": "fallback"
+        }
+      ],
+      "research_projection": {
+        "schema_version": "1.0",
+        "feature": "prism-ip-continuity-v1",
+        "version": "v0.0.1",
+        "source": "research:/Users/apple/Developer/Personal/selfmedia/prism/docs/beacon/v0.0.1/research/prism-ip-continuity-v1.md",
+        "present": true,
+        "section_count": 1,
+        "sections": {
+          "decision_priority": [
+            "契约 > 本地约定。",
+            "演进必须有记录（fail-closed）；连续性漂移记为 warning（审计，不阻断生产）。",
+            "复用 campaign 表达 season，不新造对象。",
+            "视图层只读，不改 truth / 不产内容。",
+            "最懒可用：复用 L1 的 `canon_revision`/`resolved_revision`，只新增 revisions/ 与 seasons/。"
+          ]
+        },
+        "derived_items": [
+          {
+            "theme": "decision_priority",
+            "text": "Decision priority remains deterministic",
+            "details": [
+              "契约 > 本地约定。",
+              "演进必须有记录（fail-closed）；连续性漂移记为 warning（审计，不阻断生产）。",
+              "复用 campaign 表达 season，不新造对象。",
+              "视图层只读，不改 truth / 不产内容。",
+              "最懒可用：复用 L1 的 `canon_revision`/`resolved_revision`，只新增 revisions/ 与 seasons/。"
+            ],
+            "source": "research:/Users/apple/Developer/Personal/selfmedia/prism/docs/beacon/v0.0.1/research/prism-ip-continuity-v1.md"
+          }
+        ]
+      }
+    },
+    {
+      "story_id": "US-001",
+      "revision_id": "R2",
+      "title": "prism-ip-continuity-v1",
+      "priority": "medium",
+      "status": "frozen",
+      "items": [
+        {
+          "id": "AC-001",
+          "kind": "ac",
+          "theme": "general",
+          "text": "Acceptance criteria TBD",
+          "required": true,
+          "status": "draft",
+          "implemented_by_run_id": null,
+          "verified_by_run_id": null,
+          "accepted_at": null,
+          "changed_in_revision": "R2",
+          "story_id": "",
+          "details": [],
+          "source": "fallback"
+        },
+        {
+          "id": "TASK-001",
+          "kind": "task",
+          "text": "Implement current frozen revision",
+          "required": true,
+          "status": "draft",
+          "implemented_by_run_id": null,
+          "verified_by_run_id": null,
+          "accepted_at": null,
+          "changed_in_revision": "R2"
+        },
+        {
+          "id": "TEST-001",
+          "kind": "test",
+          "text": "Verify AC-001 — Acceptance criteria TBD",
+          "required": true,
+          "status": "draft",
+          "implemented_by_run_id": null,
+          "verified_by_run_id": null,
+          "accepted_at": null,
+          "changed_in_revision": "R2",
           "covers": [
             "AC-001"
           ],

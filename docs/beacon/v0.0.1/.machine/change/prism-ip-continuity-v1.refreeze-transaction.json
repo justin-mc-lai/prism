@@ -1,0 +1,1662 @@
+{
+  "schema_version": "1.0",
+  "transaction_id": "tx-change-refreeze-prism-ip-continuity-v1-20261001t092954z",
+  "feature": "prism-ip-continuity-v1",
+  "feature_slug": "prism-ip-continuity-v1",
+  "version": "v0.0.1",
+  "change_reason": "TC-IPC-014 rg -F 修正",
+  "touched_surfaces": [
+    "change",
+    "truth",
+    "tests",
+    "tasks",
+    "evidence",
+    "requirement_clarity",
+    "freeze",
+    "feature_package_validation"
+  ],
+  "surface_statuses": {
+    "change": {
+      "path": "docs/beacon/v0.0.1/change/prism-ip-continuity-v1.md",
+      "exists": false,
+      "status": "package_change_optional",
+      "required": false,
+      "authority": "change_record_not_requirement_truth"
+    },
+    "truth": {
+      "path": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+      "exists": true,
+      "status": "present",
+      "required": true,
+      "authority": "markdown_feature_package"
+    },
+    "tests": {
+      "path": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md",
+      "exists": true,
+      "status": "present",
+      "required": true,
+      "authority": "markdown_feature_package"
+    },
+    "tasks": {
+      "path": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tasks.md",
+      "exists": true,
+      "status": "present",
+      "required": true,
+      "authority": "markdown_feature_package"
+    },
+    "evidence": {
+      "path": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/evidence.md",
+      "exists": true,
+      "status": "present",
+      "required": true,
+      "authority": "markdown_feature_package"
+    },
+    "requirement_clarity": {
+      "path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-ip-continuity-v1.json",
+      "exists": true,
+      "status": "passed",
+      "required": true
+    },
+    "freeze": {
+      "path": "docs/beacon/v0.0.1/.machine/change/prism-ip-continuity-v1.refreeze-transaction.json",
+      "exists": true,
+      "status": "complete",
+      "required": true
+    },
+    "feature_package_validation": {
+      "path": "docs/beacon/v0.0.1/.machine/requirement/feature-package-validation.json",
+      "exists": true,
+      "status": "passed",
+      "required": true,
+      "diagnostics": []
+    }
+  },
+  "truth_revision_before": {
+    "revision_id": "R1",
+    "doc_status": "frozen",
+    "lifecycle_status": "idle",
+    "baseline_hash": "sha256:503336b9fbc5ae1ed867ae50d7c69320e508b5373c777c60363813ad7aedcb15"
+  },
+  "truth_revision_after": {
+    "revision_id": "R2",
+    "doc_status": "frozen",
+    "lifecycle_status": "frozen",
+    "baseline_hash": "sha256:0ffab7a34a9ad813e21c4ca7168af4bbc6adf5cc2fd47bce7063b4d5e9100867"
+  },
+  "refreeze_status": "complete",
+  "next_route": {
+    "target_surface": "beacon-implement",
+    "command": "beacon implement \"prism-ip-continuity-v1\" --project /Users/apple/Developer/Personal/selfmedia/prism --version v0.0.1",
+    "why": "refreeze transaction completed; implementation may plan against the refreshed frozen truth"
+  },
+  "blocked_reason": "",
+  "delivery_execution": {
+    "implement_executed": false,
+    "qa_executed": false,
+    "release_executed": false
+  },
+  "created_at": "2026-10-01T09:29:54.155451+00:00",
+  "previous_revision": {
+    "revision_id": "R1",
+    "doc_status": "superseded",
+    "lifecycle_status": "superseded",
+    "baseline_hash": "sha256:503336b9fbc5ae1ed867ae50d7c69320e508b5373c777c60363813ad7aedcb15"
+  },
+  "opened_revision": {
+    "revision_id": "R2",
+    "doc_status": "draft",
+    "lifecycle_status": "draft",
+    "baseline_hash": ""
+  },
+  "story_reopen": {
+    "current_revision_id": "R2",
+    "lifecycle_status": "draft"
+  },
+  "requirement_package": {
+    "schema_version": "1.0",
+    "project_root": "/Users/apple/Developer/Personal/selfmedia/prism",
+    "version": "v0.0.1",
+    "feature": "prism-ip-continuity-v1",
+    "status": "synced",
+    "authority_state": "feature_package_authoritative",
+    "truth_authority": "markdown_feature_package",
+    "requirement_refs": {
+      "source_of_truth_root": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1",
+      "prd": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md",
+      "truth": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+      "tests": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md",
+      "tasks": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tasks.md",
+      "evidence": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/evidence.md"
+    },
+    "story_path": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+    "qa_matrix_path": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md",
+    "qa9_matrix_path": "",
+    "story_scenario_map_path": "",
+    "machine_rebuild": {
+      "schema_version": "1.0",
+      "truth_map_contract": "beacon-truth-map-v1",
+      "truth_source_model": "feature_package_authoritative",
+      "truth_package_contract": "beacon-feature-package-v2",
+      "machine_json_role": "generated_state_not_truth",
+      "generated_by": "beacon.truth_map.resolver",
+      "feature": "prism-ip-continuity-v1",
+      "feature_slug": "prism-ip-continuity-v1",
+      "version": "v0.0.1",
+      "status": "rebuilt",
+      "blocked": false,
+      "validation_status": "pass",
+      "source_paths": {
+        "truth": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+        "tests": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md",
+        "tasks": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tasks.md",
+        "evidence": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/evidence.md"
+      },
+      "source_hashes": {
+        "truth": "ae5645b2816b964c9e5f18eee1f96e09bc1140fe5e84da9dbe21d4b2a3c2311a",
+        "tests": "07732045622515f616907e6fbef1eff1dba76aad6a706715943871c935a5b879",
+        "tasks": "39e1c38841d0add18d847e4ec2a404964beec0cbb3dd4d1999fc2985b65abea9",
+        "evidence": "eee1d80671826162105650ca38086a2817ce6b53e0cf5e05dceb597e5a53f0ef"
+      },
+      "plan": {
+        "schema_version": "1.0",
+        "truth_map_contract": "beacon-truth-map-v1",
+        "truth_source_model": "feature_package_authoritative",
+        "truth_package_contract": "beacon-feature-package-v2",
+        "machine_json_role": "generated_state_not_truth",
+        "generated_by": "beacon.truth_map.resolver",
+        "feature": "prism-ip-continuity-v1",
+        "feature_slug": "prism-ip-continuity-v1",
+        "version": "v0.0.1",
+        "source_paths": {
+          "truth": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+          "tests": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md",
+          "tasks": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tasks.md",
+          "evidence": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/evidence.md"
+        },
+        "outputs": {
+          "truth_map_projection": "docs/beacon/v0.0.1/.machine/requirement/prism-ip-continuity-v1.truth-map.json",
+          "requirement_package_state": "docs/beacon/v0.0.1/.machine/requirement/prism-ip-continuity-v1.requirement-package.json",
+          "feature_package_validation": "docs/beacon/v0.0.1/.machine/requirement/feature-package-validation.json"
+        },
+        "runtime_json_exemption": {
+          "role": "runtime_process_record_not_requirement_truth",
+          "applies_to": [
+            ".beacon/runs/**",
+            ".beacon/qa/**",
+            "runtime/process execution records"
+          ],
+          "requires_markdown_twin": false,
+          "requirement_authority": false
+        },
+        "routes": {
+          "doctor_rebuild": {
+            "status": "legacy_output_only",
+            "command": "beacon truth-map rebuild-machine prism-ip-continuity-v1 --version v0.0.1"
+          },
+          "change_absorb": {
+            "status": "package_truth_target_only",
+            "command": "beacon change prism-ip-continuity-v1 --version v0.0.1 --reason absorb-legacy-truth-into-feature-package"
+          }
+        }
+      },
+      "written": [
+        "docs/beacon/v0.0.1/.machine/requirement/prism-ip-continuity-v1.truth-map.json",
+        "docs/beacon/v0.0.1/.machine/requirement/prism-ip-continuity-v1.requirement-package.json",
+        "docs/beacon/v0.0.1/.machine/requirement/feature-package-validation.json"
+      ]
+    },
+    "story_sync": {
+      "path": "docs/beacon/v0.0.1/.machine/user-story/prism-ip-continuity-v1.json",
+      "feature": "prism-ip-continuity-v1",
+      "version": "v0.0.1",
+      "revision_id": "R2",
+      "ac_count": 1,
+      "test_count": 1,
+      "story_ids": [
+        ""
+      ]
+    }
+  },
+  "requirement_clarity": {
+    "gate": {
+      "schema_version": "1.0",
+      "feature": "prism-ip-continuity-v1",
+      "feature_slug": "prism-ip-continuity-v1",
+      "version": "v0.0.1",
+      "runtime_version": "v1.6.19",
+      "runtime_capability_line": "v1.3.3",
+      "required": true,
+      "reason_code": "",
+      "blocked": false,
+      "status": "pass",
+      "findings": [],
+      "report_json_path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-ip-continuity-v1.json",
+      "report_markdown_path": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-ip-continuity-v1.md",
+      "state_path": ".beacon/state/requirement-clarity-prism-ip-continuity-v1.json",
+      "diagram_truth": {
+        "schema_version": "1.0",
+        "version": "v0.0.1",
+        "supported": false,
+        "required": false,
+        "ready": false,
+        "diagram_types": [],
+        "state_axes": [],
+        "missing_diagram_types": [],
+        "missing_state_axes": false,
+        "complexity_signals": [],
+        "review_gates": [],
+        "qa_coverage_hints": [],
+        "evidence_lines": {},
+        "generated_at": "2026-10-01T09:29:54.519015+00:00",
+        "feature": "prism-ip-continuity-v1",
+        "feature_slug": "prism-ip-continuity-v1",
+        "prd_ref": "docs/beacon/v0.0.1/prd/prism-ip-continuity-v1.md",
+        "user_story_ref": "docs/beacon/v0.0.1/user-story/prism-ip-continuity-v1.md"
+      },
+      "domain_fsm_gate": {
+        "schema_version": "1.0",
+        "feature": "prism-ip-continuity-v1",
+        "feature_slug": "prism-ip-continuity-v1",
+        "version": "v0.0.1",
+        "truth_path": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+        "tests_path": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md",
+        "required": false,
+        "blocked": false,
+        "status": "not_required",
+        "reason_code": "",
+        "findings": [],
+        "requirement": {
+          "required": false,
+          "reason": "version_below_v1_6_7",
+          "explicit": false,
+          "partial": false,
+          "complexity": false,
+          "business_signal": false,
+          "version_supported": false
+        },
+        "projection": {
+          "schema_version": "1.0",
+          "domain_fsm_schema": "domain-fsm.v1",
+          "entity_precedence_schema": "entity-precedence.v1",
+          "frontmatter": {
+            "slug": "prism-ip-continuity-v1",
+            "version": "v0.0.1",
+            "status": "frozen",
+            "language": "zh",
+            "domain_required": "false",
+            "ux_required": "false",
+            "parser_contract": "beacon-feature-package-v2",
+            "materials_status": "current",
+            "truth_source_model": "intent_first",
+            "canonical_refs": {
+              "prd": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+              "user_story": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+              "test_case": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md"
+            },
+            "provenance": {
+              "- ac_id": "AC-IPC-006",
+              "source_type": "source_evidence",
+              "source_ref": "scripts/check_ip_model.sh（确定性门脚本模式）"
+            }
+          },
+          "frontmatter_errors": [],
+          "has_domain_model_section": false,
+          "has_domain_fsm_section": false,
+          "has_illegal_transition_section": false,
+          "entities": [],
+          "entity_precedence": [],
+          "aggregates": [],
+          "illegal_transition_slots": [],
+          "acceptance_criteria": [
+            {
+              "ac_id": "AC-IPC-001",
+              "description": "IP 每次 `canon_revision` 跳变须有 `content/ips/{ip_id}/revisions/{R}.yaml`，含 `revision`、`reason`、`affected_assets[]`；从 `canon_revision` 起点到当前值的每一跳缺记录即 blocked，reason_code 为 `revision_chain_incomplete`"
+            },
+            {
+              "ac_id": "AC-IPC-002",
+              "description": "确定性脚本 `scripts/check_ip_continuity.sh view --ip {ip_id}` 输出该 IP 的版本链（R1→…→Rn）与作品引用清单（含各作品的 `resolved_revision`），输出为稳定排序的文本"
+            },
+            {
+              "ac_id": "AC-IPC-003",
+              "description": "连续性审计：同一 IP 资产被多于一个作品引用、且各自 `resolved_revision` 不一致、且不存在对应演进记录时，报告 `continuity_revision_drift` 并列出冲突项；该情形为 warning，退出码为 0（只审计不阻断）"
+            },
+            {
+              "ac_id": "AC-IPC-004",
+              "description": "`content/ips/{ip_id}/seasons/{season_id}.yaml` 含 `season_id` 与 `campaign_refs[]`（项数 ≥ 1），且每个引用的 campaign 同属该 IP；不满足即 blocked，reason_code 为 `season_ip_mismatch`"
+            },
+            {
+              "ac_id": "AC-IPC-005",
+              "description": "season 复用现有 `campaign` 对象（一个 IP 对应多个 campaign），不新增 series 对象；`contracts/ip.schema.yaml` 增补 `seasons` 段（可选）"
+            },
+            {
+              "ac_id": "AC-IPC-006",
+              "description": "确定性脚本 `scripts/check_ip_continuity.sh` 校验演进链与 season；违规时非零退出并打印 reason_code；须支持 `--self-test` 与 `--invert`"
+            }
+          ],
+          "bound_ac_ids": [],
+          "orphan_ac_ids": [],
+          "aggregates_missing_illegal_slots": [],
+          "raw_section_titles": [
+            "人话",
+            "User Intent",
+            "User Intent Snapshot",
+            "Intent Coverage Matrix",
+            "Acceptance Criteria",
+            "关键对象清单",
+            "FSM 五元组",
+            "invalid / illegal",
+            "Non-goals",
+            "Provenance",
+            "Source Excerpt",
+            "FSM mermaid（投影）"
+          ]
+        },
+        "validation": {
+          "schema_version": "1.0",
+          "required": false,
+          "blocked": false,
+          "status": "not_required",
+          "reason_code": "",
+          "findings": [],
+          "projection": {
+            "schema_version": "1.0",
+            "domain_fsm_schema": "domain-fsm.v1",
+            "entity_precedence_schema": "entity-precedence.v1",
+            "frontmatter": {
+              "slug": "prism-ip-continuity-v1",
+              "version": "v0.0.1",
+              "status": "frozen",
+              "language": "zh",
+              "domain_required": "false",
+              "ux_required": "false",
+              "parser_contract": "beacon-feature-package-v2",
+              "materials_status": "current",
+              "truth_source_model": "intent_first",
+              "canonical_refs": {
+                "prd": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+                "user_story": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+                "test_case": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md"
+              },
+              "provenance": {
+                "- ac_id": "AC-IPC-006",
+                "source_type": "source_evidence",
+                "source_ref": "scripts/check_ip_model.sh（确定性门脚本模式）"
+              }
+            },
+            "frontmatter_errors": [],
+            "has_domain_model_section": false,
+            "has_domain_fsm_section": false,
+            "has_illegal_transition_section": false,
+            "entities": [],
+            "entity_precedence": [],
+            "aggregates": [],
+            "illegal_transition_slots": [],
+            "acceptance_criteria": [
+              {
+                "ac_id": "AC-IPC-001",
+                "description": "IP 每次 `canon_revision` 跳变须有 `content/ips/{ip_id}/revisions/{R}.yaml`，含 `revision`、`reason`、`affected_assets[]`；从 `canon_revision` 起点到当前值的每一跳缺记录即 blocked，reason_code 为 `revision_chain_incomplete`"
+              },
+              {
+                "ac_id": "AC-IPC-002",
+                "description": "确定性脚本 `scripts/check_ip_continuity.sh view --ip {ip_id}` 输出该 IP 的版本链（R1→…→Rn）与作品引用清单（含各作品的 `resolved_revision`），输出为稳定排序的文本"
+              },
+              {
+                "ac_id": "AC-IPC-003",
+                "description": "连续性审计：同一 IP 资产被多于一个作品引用、且各自 `resolved_revision` 不一致、且不存在对应演进记录时，报告 `continuity_revision_drift` 并列出冲突项；该情形为 warning，退出码为 0（只审计不阻断）"
+              },
+              {
+                "ac_id": "AC-IPC-004",
+                "description": "`content/ips/{ip_id}/seasons/{season_id}.yaml` 含 `season_id` 与 `campaign_refs[]`（项数 ≥ 1），且每个引用的 campaign 同属该 IP；不满足即 blocked，reason_code 为 `season_ip_mismatch`"
+              },
+              {
+                "ac_id": "AC-IPC-005",
+                "description": "season 复用现有 `campaign` 对象（一个 IP 对应多个 campaign），不新增 series 对象；`contracts/ip.schema.yaml` 增补 `seasons` 段（可选）"
+              },
+              {
+                "ac_id": "AC-IPC-006",
+                "description": "确定性脚本 `scripts/check_ip_continuity.sh` 校验演进链与 season；违规时非零退出并打印 reason_code；须支持 `--self-test` 与 `--invert`"
+              }
+            ],
+            "bound_ac_ids": [],
+            "orphan_ac_ids": [],
+            "aggregates_missing_illegal_slots": [],
+            "raw_section_titles": [
+              "人话",
+              "User Intent",
+              "User Intent Snapshot",
+              "Intent Coverage Matrix",
+              "Acceptance Criteria",
+              "关键对象清单",
+              "FSM 五元组",
+              "invalid / illegal",
+              "Non-goals",
+              "Provenance",
+              "Source Excerpt",
+              "FSM mermaid（投影）"
+            ]
+          }
+        },
+        "recommended_action": ""
+      },
+      "human_closure_contract": {
+        "required": false,
+        "research_path": "docs/beacon/v0.0.1/research/prism-ip-continuity-v1.md",
+        "research_exists": true,
+        "source_architecture_path": "docs/beacon/v0.0.1/source-architecture/index.md",
+        "source_architecture_exists": true,
+        "required_sections": [
+          "architecture",
+          "business_flow"
+        ],
+        "missing_sections": [
+          "architecture",
+          "business_flow"
+        ],
+        "diagram_types": [],
+        "complexity_signals": []
+      },
+      "requirement_closure_contract": {
+        "required": true,
+        "chain_order": [
+          "research",
+          "prd",
+          "user_story",
+          "test_case",
+          "requirement_clarity",
+          "freeze"
+        ],
+        "human_closure_required": false,
+        "paths": {
+          "research": "docs/beacon/v0.0.1/research/prism-ip-continuity-v1.md",
+          "prd": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+          "user_story": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+          "test_case": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md"
+        },
+        "exists": {
+          "research": true,
+          "prd": true,
+          "user_story": true,
+          "test_case": true
+        },
+        "required_research_sections": [],
+        "missing_research_sections": [],
+        "ac_projection": {
+          "prd_ac_ids": [],
+          "user_story_ac_ids": [],
+          "test_case_ac_ids": [],
+          "upstream_ac_ids": [],
+          "missing_test_case_ac_ids": []
+        }
+      },
+      "version_projection_truth_contract": {
+        "required": false,
+        "supported": false,
+        "projection_types": [],
+        "research_path": "docs/beacon/v0.0.1/research/prism-ip-continuity-v1.md",
+        "research_exists": true,
+        "required_fields": [
+          "prd_refs",
+          "user_story_refs",
+          "test_case_refs",
+          "coverage_notes",
+          "out_of_scope_notes"
+        ],
+        "field_presence": {
+          "prd_refs": false,
+          "user_story_refs": false,
+          "test_case_refs": false,
+          "coverage_notes": false,
+          "out_of_scope_notes": false
+        },
+        "missing_fields": [],
+        "required_refs": {
+          "prd_refs": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+          "user_story_refs": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+          "test_case_refs": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md"
+        },
+        "missing_ref_targets": [],
+        "ready": false
+      },
+      "support_write_topology_contract": {
+        "schema_version": "1.0",
+        "supported": true,
+        "status": "pass",
+        "blocked": false,
+        "reason_code": "",
+        "diagnostics": []
+      },
+      "required_artifacts": [],
+      "scanned_files": [
+        "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+        "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md",
+        "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tasks.md",
+        "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/evidence.md",
+        "docs/beacon/v0.0.1/research/prism-ip-continuity-v1.md"
+      ]
+    },
+    "report": {
+      "json": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-ip-continuity-v1.json",
+      "markdown": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-ip-continuity-v1.md"
+    },
+    "writeback": {
+      "schema_version": "1.0",
+      "feature": "prism-ip-continuity-v1",
+      "feature_slug": "prism-ip-continuity-v1",
+      "version": "v0.0.1",
+      "status": "pass",
+      "blocked": false,
+      "reason_code": "",
+      "report_json_path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-ip-continuity-v1.json",
+      "report_markdown_path": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-ip-continuity-v1.md",
+      "finding_count": 0,
+      "run_id": "",
+      "source": "change.refreeze-chain",
+      "written_at": "2026-10-01T09:29:54.526459+00:00",
+      "state_path": ".beacon/state/requirement-clarity-prism-ip-continuity-v1.json"
+    }
+  },
+  "truth_integrity_gate": {
+    "schema_version": "1.0",
+    "feature": "prism-ip-continuity-v1",
+    "feature_slug": "prism-ip-continuity-v1",
+    "version": "v0.0.1",
+    "mode": "block",
+    "truth_status": "frozen",
+    "status": "pass",
+    "blocked": false,
+    "reason_code": "",
+    "findings": [],
+    "finding_count": 0,
+    "requirement_clarity": {
+      "schema_version": "1.0",
+      "feature": "prism-ip-continuity-v1",
+      "feature_slug": "prism-ip-continuity-v1",
+      "version": "v0.0.1",
+      "runtime_version": "v1.6.19",
+      "runtime_capability_line": "v1.3.3",
+      "required": true,
+      "reason_code": "",
+      "blocked": false,
+      "status": "pass",
+      "findings": [],
+      "report_json_path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-ip-continuity-v1.json",
+      "report_markdown_path": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-ip-continuity-v1.md",
+      "state_path": ".beacon/state/requirement-clarity-prism-ip-continuity-v1.json",
+      "diagram_truth": {
+        "schema_version": "1.0",
+        "version": "v0.0.1",
+        "supported": false,
+        "required": false,
+        "ready": false,
+        "diagram_types": [],
+        "state_axes": [],
+        "missing_diagram_types": [],
+        "missing_state_axes": false,
+        "complexity_signals": [],
+        "review_gates": [],
+        "qa_coverage_hints": [],
+        "evidence_lines": {},
+        "generated_at": "2026-10-01T09:29:54.529480+00:00",
+        "feature": "prism-ip-continuity-v1",
+        "feature_slug": "prism-ip-continuity-v1",
+        "prd_ref": "docs/beacon/v0.0.1/prd/prism-ip-continuity-v1.md",
+        "user_story_ref": "docs/beacon/v0.0.1/user-story/prism-ip-continuity-v1.md"
+      },
+      "domain_fsm_gate": {
+        "schema_version": "1.0",
+        "feature": "prism-ip-continuity-v1",
+        "feature_slug": "prism-ip-continuity-v1",
+        "version": "v0.0.1",
+        "truth_path": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+        "tests_path": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md",
+        "required": false,
+        "blocked": false,
+        "status": "not_required",
+        "reason_code": "",
+        "findings": [],
+        "requirement": {
+          "required": false,
+          "reason": "version_below_v1_6_7",
+          "explicit": false,
+          "partial": false,
+          "complexity": false,
+          "business_signal": false,
+          "version_supported": false
+        },
+        "projection": {
+          "schema_version": "1.0",
+          "domain_fsm_schema": "domain-fsm.v1",
+          "entity_precedence_schema": "entity-precedence.v1",
+          "frontmatter": {
+            "slug": "prism-ip-continuity-v1",
+            "version": "v0.0.1",
+            "status": "frozen",
+            "language": "zh",
+            "domain_required": "false",
+            "ux_required": "false",
+            "parser_contract": "beacon-feature-package-v2",
+            "materials_status": "current",
+            "truth_source_model": "intent_first",
+            "canonical_refs": {
+              "prd": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+              "user_story": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+              "test_case": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md"
+            },
+            "provenance": {
+              "- ac_id": "AC-IPC-006",
+              "source_type": "source_evidence",
+              "source_ref": "scripts/check_ip_model.sh（确定性门脚本模式）"
+            }
+          },
+          "frontmatter_errors": [],
+          "has_domain_model_section": false,
+          "has_domain_fsm_section": false,
+          "has_illegal_transition_section": false,
+          "entities": [],
+          "entity_precedence": [],
+          "aggregates": [],
+          "illegal_transition_slots": [],
+          "acceptance_criteria": [
+            {
+              "ac_id": "AC-IPC-001",
+              "description": "IP 每次 `canon_revision` 跳变须有 `content/ips/{ip_id}/revisions/{R}.yaml`，含 `revision`、`reason`、`affected_assets[]`；从 `canon_revision` 起点到当前值的每一跳缺记录即 blocked，reason_code 为 `revision_chain_incomplete`"
+            },
+            {
+              "ac_id": "AC-IPC-002",
+              "description": "确定性脚本 `scripts/check_ip_continuity.sh view --ip {ip_id}` 输出该 IP 的版本链（R1→…→Rn）与作品引用清单（含各作品的 `resolved_revision`），输出为稳定排序的文本"
+            },
+            {
+              "ac_id": "AC-IPC-003",
+              "description": "连续性审计：同一 IP 资产被多于一个作品引用、且各自 `resolved_revision` 不一致、且不存在对应演进记录时，报告 `continuity_revision_drift` 并列出冲突项；该情形为 warning，退出码为 0（只审计不阻断）"
+            },
+            {
+              "ac_id": "AC-IPC-004",
+              "description": "`content/ips/{ip_id}/seasons/{season_id}.yaml` 含 `season_id` 与 `campaign_refs[]`（项数 ≥ 1），且每个引用的 campaign 同属该 IP；不满足即 blocked，reason_code 为 `season_ip_mismatch`"
+            },
+            {
+              "ac_id": "AC-IPC-005",
+              "description": "season 复用现有 `campaign` 对象（一个 IP 对应多个 campaign），不新增 series 对象；`contracts/ip.schema.yaml` 增补 `seasons` 段（可选）"
+            },
+            {
+              "ac_id": "AC-IPC-006",
+              "description": "确定性脚本 `scripts/check_ip_continuity.sh` 校验演进链与 season；违规时非零退出并打印 reason_code；须支持 `--self-test` 与 `--invert`"
+            }
+          ],
+          "bound_ac_ids": [],
+          "orphan_ac_ids": [],
+          "aggregates_missing_illegal_slots": [],
+          "raw_section_titles": [
+            "人话",
+            "User Intent",
+            "User Intent Snapshot",
+            "Intent Coverage Matrix",
+            "Acceptance Criteria",
+            "关键对象清单",
+            "FSM 五元组",
+            "invalid / illegal",
+            "Non-goals",
+            "Provenance",
+            "Source Excerpt",
+            "FSM mermaid（投影）"
+          ]
+        },
+        "validation": {
+          "schema_version": "1.0",
+          "required": false,
+          "blocked": false,
+          "status": "not_required",
+          "reason_code": "",
+          "findings": [],
+          "projection": {
+            "schema_version": "1.0",
+            "domain_fsm_schema": "domain-fsm.v1",
+            "entity_precedence_schema": "entity-precedence.v1",
+            "frontmatter": {
+              "slug": "prism-ip-continuity-v1",
+              "version": "v0.0.1",
+              "status": "frozen",
+              "language": "zh",
+              "domain_required": "false",
+              "ux_required": "false",
+              "parser_contract": "beacon-feature-package-v2",
+              "materials_status": "current",
+              "truth_source_model": "intent_first",
+              "canonical_refs": {
+                "prd": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+                "user_story": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+                "test_case": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md"
+              },
+              "provenance": {
+                "- ac_id": "AC-IPC-006",
+                "source_type": "source_evidence",
+                "source_ref": "scripts/check_ip_model.sh（确定性门脚本模式）"
+              }
+            },
+            "frontmatter_errors": [],
+            "has_domain_model_section": false,
+            "has_domain_fsm_section": false,
+            "has_illegal_transition_section": false,
+            "entities": [],
+            "entity_precedence": [],
+            "aggregates": [],
+            "illegal_transition_slots": [],
+            "acceptance_criteria": [
+              {
+                "ac_id": "AC-IPC-001",
+                "description": "IP 每次 `canon_revision` 跳变须有 `content/ips/{ip_id}/revisions/{R}.yaml`，含 `revision`、`reason`、`affected_assets[]`；从 `canon_revision` 起点到当前值的每一跳缺记录即 blocked，reason_code 为 `revision_chain_incomplete`"
+              },
+              {
+                "ac_id": "AC-IPC-002",
+                "description": "确定性脚本 `scripts/check_ip_continuity.sh view --ip {ip_id}` 输出该 IP 的版本链（R1→…→Rn）与作品引用清单（含各作品的 `resolved_revision`），输出为稳定排序的文本"
+              },
+              {
+                "ac_id": "AC-IPC-003",
+                "description": "连续性审计：同一 IP 资产被多于一个作品引用、且各自 `resolved_revision` 不一致、且不存在对应演进记录时，报告 `continuity_revision_drift` 并列出冲突项；该情形为 warning，退出码为 0（只审计不阻断）"
+              },
+              {
+                "ac_id": "AC-IPC-004",
+                "description": "`content/ips/{ip_id}/seasons/{season_id}.yaml` 含 `season_id` 与 `campaign_refs[]`（项数 ≥ 1），且每个引用的 campaign 同属该 IP；不满足即 blocked，reason_code 为 `season_ip_mismatch`"
+              },
+              {
+                "ac_id": "AC-IPC-005",
+                "description": "season 复用现有 `campaign` 对象（一个 IP 对应多个 campaign），不新增 series 对象；`contracts/ip.schema.yaml` 增补 `seasons` 段（可选）"
+              },
+              {
+                "ac_id": "AC-IPC-006",
+                "description": "确定性脚本 `scripts/check_ip_continuity.sh` 校验演进链与 season；违规时非零退出并打印 reason_code；须支持 `--self-test` 与 `--invert`"
+              }
+            ],
+            "bound_ac_ids": [],
+            "orphan_ac_ids": [],
+            "aggregates_missing_illegal_slots": [],
+            "raw_section_titles": [
+              "人话",
+              "User Intent",
+              "User Intent Snapshot",
+              "Intent Coverage Matrix",
+              "Acceptance Criteria",
+              "关键对象清单",
+              "FSM 五元组",
+              "invalid / illegal",
+              "Non-goals",
+              "Provenance",
+              "Source Excerpt",
+              "FSM mermaid（投影）"
+            ]
+          }
+        },
+        "recommended_action": ""
+      },
+      "human_closure_contract": {
+        "required": false,
+        "research_path": "docs/beacon/v0.0.1/research/prism-ip-continuity-v1.md",
+        "research_exists": true,
+        "source_architecture_path": "docs/beacon/v0.0.1/source-architecture/index.md",
+        "source_architecture_exists": true,
+        "required_sections": [
+          "architecture",
+          "business_flow"
+        ],
+        "missing_sections": [
+          "architecture",
+          "business_flow"
+        ],
+        "diagram_types": [],
+        "complexity_signals": []
+      },
+      "requirement_closure_contract": {
+        "required": true,
+        "chain_order": [
+          "research",
+          "prd",
+          "user_story",
+          "test_case",
+          "requirement_clarity",
+          "freeze"
+        ],
+        "human_closure_required": false,
+        "paths": {
+          "research": "docs/beacon/v0.0.1/research/prism-ip-continuity-v1.md",
+          "prd": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+          "user_story": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+          "test_case": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md"
+        },
+        "exists": {
+          "research": true,
+          "prd": true,
+          "user_story": true,
+          "test_case": true
+        },
+        "required_research_sections": [],
+        "missing_research_sections": [],
+        "ac_projection": {
+          "prd_ac_ids": [],
+          "user_story_ac_ids": [],
+          "test_case_ac_ids": [],
+          "upstream_ac_ids": [],
+          "missing_test_case_ac_ids": []
+        }
+      },
+      "version_projection_truth_contract": {
+        "required": false,
+        "supported": false,
+        "projection_types": [],
+        "research_path": "docs/beacon/v0.0.1/research/prism-ip-continuity-v1.md",
+        "research_exists": true,
+        "required_fields": [
+          "prd_refs",
+          "user_story_refs",
+          "test_case_refs",
+          "coverage_notes",
+          "out_of_scope_notes"
+        ],
+        "field_presence": {
+          "prd_refs": false,
+          "user_story_refs": false,
+          "test_case_refs": false,
+          "coverage_notes": false,
+          "out_of_scope_notes": false
+        },
+        "missing_fields": [],
+        "required_refs": {
+          "prd_refs": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+          "user_story_refs": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+          "test_case_refs": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md"
+        },
+        "missing_ref_targets": [],
+        "ready": false
+      },
+      "support_write_topology_contract": {
+        "schema_version": "1.0",
+        "supported": true,
+        "status": "pass",
+        "blocked": false,
+        "reason_code": "",
+        "diagnostics": []
+      },
+      "required_artifacts": [],
+      "scanned_files": [
+        "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+        "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md",
+        "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tasks.md",
+        "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/evidence.md",
+        "docs/beacon/v0.0.1/research/prism-ip-continuity-v1.md"
+      ]
+    },
+    "domain_fsm": {
+      "schema_version": "1.0",
+      "feature": "prism-ip-continuity-v1",
+      "feature_slug": "prism-ip-continuity-v1",
+      "version": "v0.0.1",
+      "truth_path": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+      "tests_path": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md",
+      "required": false,
+      "blocked": false,
+      "status": "not_required",
+      "reason_code": "",
+      "findings": [],
+      "requirement": {
+        "required": false,
+        "reason": "version_below_v1_6_7",
+        "explicit": false,
+        "partial": false,
+        "complexity": false,
+        "business_signal": false,
+        "version_supported": false
+      },
+      "projection": {
+        "schema_version": "1.0",
+        "domain_fsm_schema": "domain-fsm.v1",
+        "entity_precedence_schema": "entity-precedence.v1",
+        "frontmatter": {
+          "slug": "prism-ip-continuity-v1",
+          "version": "v0.0.1",
+          "status": "frozen",
+          "language": "zh",
+          "domain_required": "false",
+          "ux_required": "false",
+          "parser_contract": "beacon-feature-package-v2",
+          "materials_status": "current",
+          "truth_source_model": "intent_first",
+          "canonical_refs": {
+            "prd": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+            "user_story": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+            "test_case": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md"
+          },
+          "provenance": {
+            "- ac_id": "AC-IPC-006",
+            "source_type": "source_evidence",
+            "source_ref": "scripts/check_ip_model.sh（确定性门脚本模式）"
+          }
+        },
+        "frontmatter_errors": [],
+        "has_domain_model_section": false,
+        "has_domain_fsm_section": false,
+        "has_illegal_transition_section": false,
+        "entities": [],
+        "entity_precedence": [],
+        "aggregates": [],
+        "illegal_transition_slots": [],
+        "acceptance_criteria": [
+          {
+            "ac_id": "AC-IPC-001",
+            "description": "IP 每次 `canon_revision` 跳变须有 `content/ips/{ip_id}/revisions/{R}.yaml`，含 `revision`、`reason`、`affected_assets[]`；从 `canon_revision` 起点到当前值的每一跳缺记录即 blocked，reason_code 为 `revision_chain_incomplete`"
+          },
+          {
+            "ac_id": "AC-IPC-002",
+            "description": "确定性脚本 `scripts/check_ip_continuity.sh view --ip {ip_id}` 输出该 IP 的版本链（R1→…→Rn）与作品引用清单（含各作品的 `resolved_revision`），输出为稳定排序的文本"
+          },
+          {
+            "ac_id": "AC-IPC-003",
+            "description": "连续性审计：同一 IP 资产被多于一个作品引用、且各自 `resolved_revision` 不一致、且不存在对应演进记录时，报告 `continuity_revision_drift` 并列出冲突项；该情形为 warning，退出码为 0（只审计不阻断）"
+          },
+          {
+            "ac_id": "AC-IPC-004",
+            "description": "`content/ips/{ip_id}/seasons/{season_id}.yaml` 含 `season_id` 与 `campaign_refs[]`（项数 ≥ 1），且每个引用的 campaign 同属该 IP；不满足即 blocked，reason_code 为 `season_ip_mismatch`"
+          },
+          {
+            "ac_id": "AC-IPC-005",
+            "description": "season 复用现有 `campaign` 对象（一个 IP 对应多个 campaign），不新增 series 对象；`contracts/ip.schema.yaml` 增补 `seasons` 段（可选）"
+          },
+          {
+            "ac_id": "AC-IPC-006",
+            "description": "确定性脚本 `scripts/check_ip_continuity.sh` 校验演进链与 season；违规时非零退出并打印 reason_code；须支持 `--self-test` 与 `--invert`"
+          }
+        ],
+        "bound_ac_ids": [],
+        "orphan_ac_ids": [],
+        "aggregates_missing_illegal_slots": [],
+        "raw_section_titles": [
+          "人话",
+          "User Intent",
+          "User Intent Snapshot",
+          "Intent Coverage Matrix",
+          "Acceptance Criteria",
+          "关键对象清单",
+          "FSM 五元组",
+          "invalid / illegal",
+          "Non-goals",
+          "Provenance",
+          "Source Excerpt",
+          "FSM mermaid（投影）"
+        ]
+      },
+      "validation": {
+        "schema_version": "1.0",
+        "required": false,
+        "blocked": false,
+        "status": "not_required",
+        "reason_code": "",
+        "findings": [],
+        "projection": {
+          "schema_version": "1.0",
+          "domain_fsm_schema": "domain-fsm.v1",
+          "entity_precedence_schema": "entity-precedence.v1",
+          "frontmatter": {
+            "slug": "prism-ip-continuity-v1",
+            "version": "v0.0.1",
+            "status": "frozen",
+            "language": "zh",
+            "domain_required": "false",
+            "ux_required": "false",
+            "parser_contract": "beacon-feature-package-v2",
+            "materials_status": "current",
+            "truth_source_model": "intent_first",
+            "canonical_refs": {
+              "prd": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+              "user_story": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+              "test_case": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md"
+            },
+            "provenance": {
+              "- ac_id": "AC-IPC-006",
+              "source_type": "source_evidence",
+              "source_ref": "scripts/check_ip_model.sh（确定性门脚本模式）"
+            }
+          },
+          "frontmatter_errors": [],
+          "has_domain_model_section": false,
+          "has_domain_fsm_section": false,
+          "has_illegal_transition_section": false,
+          "entities": [],
+          "entity_precedence": [],
+          "aggregates": [],
+          "illegal_transition_slots": [],
+          "acceptance_criteria": [
+            {
+              "ac_id": "AC-IPC-001",
+              "description": "IP 每次 `canon_revision` 跳变须有 `content/ips/{ip_id}/revisions/{R}.yaml`，含 `revision`、`reason`、`affected_assets[]`；从 `canon_revision` 起点到当前值的每一跳缺记录即 blocked，reason_code 为 `revision_chain_incomplete`"
+            },
+            {
+              "ac_id": "AC-IPC-002",
+              "description": "确定性脚本 `scripts/check_ip_continuity.sh view --ip {ip_id}` 输出该 IP 的版本链（R1→…→Rn）与作品引用清单（含各作品的 `resolved_revision`），输出为稳定排序的文本"
+            },
+            {
+              "ac_id": "AC-IPC-003",
+              "description": "连续性审计：同一 IP 资产被多于一个作品引用、且各自 `resolved_revision` 不一致、且不存在对应演进记录时，报告 `continuity_revision_drift` 并列出冲突项；该情形为 warning，退出码为 0（只审计不阻断）"
+            },
+            {
+              "ac_id": "AC-IPC-004",
+              "description": "`content/ips/{ip_id}/seasons/{season_id}.yaml` 含 `season_id` 与 `campaign_refs[]`（项数 ≥ 1），且每个引用的 campaign 同属该 IP；不满足即 blocked，reason_code 为 `season_ip_mismatch`"
+            },
+            {
+              "ac_id": "AC-IPC-005",
+              "description": "season 复用现有 `campaign` 对象（一个 IP 对应多个 campaign），不新增 series 对象；`contracts/ip.schema.yaml` 增补 `seasons` 段（可选）"
+            },
+            {
+              "ac_id": "AC-IPC-006",
+              "description": "确定性脚本 `scripts/check_ip_continuity.sh` 校验演进链与 season；违规时非零退出并打印 reason_code；须支持 `--self-test` 与 `--invert`"
+            }
+          ],
+          "bound_ac_ids": [],
+          "orphan_ac_ids": [],
+          "aggregates_missing_illegal_slots": [],
+          "raw_section_titles": [
+            "人话",
+            "User Intent",
+            "User Intent Snapshot",
+            "Intent Coverage Matrix",
+            "Acceptance Criteria",
+            "关键对象清单",
+            "FSM 五元组",
+            "invalid / illegal",
+            "Non-goals",
+            "Provenance",
+            "Source Excerpt",
+            "FSM mermaid（投影）"
+          ]
+        }
+      },
+      "recommended_action": ""
+    },
+    "fake_delivery": {
+      "schema_version": "1.0",
+      "status": "pass",
+      "ok": true,
+      "closure_allowed": true,
+      "detected": [],
+      "policy_terms": [
+        "placeholder implementation",
+        "docs-only completion",
+        "fake runner evidence",
+        "zero assertions",
+        "placeholder evidence"
+      ],
+      "reason_code": ""
+    },
+    "feature_package_validation": {
+      "schema_version": "1.0",
+      "feature": "prism-ip-continuity-v1",
+      "feature_slug": "prism-ip-continuity-v1",
+      "version": "v0.0.1",
+      "status": "pass",
+      "blocked": false,
+      "reason_code": "",
+      "generated_at": "2026-10-01T09:29:54.543685+00:00",
+      "package_dir": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1",
+      "truth_frontmatter": {
+        "slug": "prism-ip-continuity-v1",
+        "version": "v0.0.1",
+        "status": "frozen",
+        "language": "zh",
+        "domain_required": "false",
+        "ux_required": "false",
+        "parser_contract": "beacon-feature-package-v2",
+        "materials_status": "current",
+        "truth_source_model": "intent_first",
+        "canonical_refs": {
+          "prd": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+          "user_story": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+          "test_case": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md"
+        },
+        "provenance": {
+          "- ac_id": "AC-IPC-006",
+          "source_type": "source_evidence",
+          "source_ref": "scripts/check_ip_model.sh（确定性门脚本模式）"
+        }
+      },
+      "ac_count": 6,
+      "test_count": 16,
+      "checkbox_count": 8,
+      "evidence_row_count": 1,
+      "gate_authority": "canonical_surfaces_preserved",
+      "checkbox_gate_bypass": false,
+      "task_evidence_gate": {
+        "pass": true,
+        "checked_ok": 0,
+        "checked_bad": 0,
+        "unbound": 0,
+        "findings": [],
+        "reason_code": ""
+      },
+      "evidence_gate_truth": false,
+      "diagnostics": [],
+      "report_path": "docs/beacon/v0.0.1/.machine/requirement/feature-package-validation.json"
+    },
+    "determinism_check": {
+      "placeholder_count": 0,
+      "hollow_template_count": 0
+    },
+    "closure_contract": {
+      "closure_allowed": true,
+      "detected": []
+    },
+    "recommended_action": ""
+  },
+  "truth_frontmatter_sync": {
+    "updated": false,
+    "status": "frozen",
+    "path": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md"
+  },
+  "revision_delta": {
+    "schema_version": "1.0",
+    "feature": "prism-ip-continuity-v1",
+    "feature_slug": "prism-ip-continuity-v1",
+    "version": "v0.0.1",
+    "revision_id": "R2",
+    "source_revision_id": "R1",
+    "status": "not_applicable",
+    "cleanup_required": false,
+    "removed_requirement_count": 0,
+    "added_requirement_count": 0,
+    "retained_requirement_count": 0,
+    "removed_requirement_surfaces": [],
+    "added_requirement_surfaces": [],
+    "retained_requirement_surfaces": [],
+    "current_baseline_hash": "sha256:0ffab7a34a9ad813e21c4ca7168af4bbc6adf5cc2fd47bce7063b4d5e9100867",
+    "source_baseline_hash": "",
+    "story_state_ref": "docs/beacon/v0.0.1/.machine/user-story/prism-ip-continuity-v1.json",
+    "generated_at": "2026-10-01T09:29:54.573092+00:00",
+    "json_ref": "docs/beacon/v0.0.1/.machine/execution/revision-delta-prism-ip-continuity-v1.json",
+    "markdown_ref": "docs/beacon/v0.0.1/execution/revision-delta-prism-ip-continuity-v1.md"
+  },
+  "release_projection_sync": {
+    "status": "pass",
+    "truth_authority": false,
+    "lifecycle_stage": false,
+    "release_publish_action": false,
+    "feature_projection": {
+      "schema_version": "1.0",
+      "status": "pass",
+      "feature": "prism-ip-continuity-v1",
+      "feature_slug": "prism-ip-continuity-v1",
+      "version": "v0.0.1",
+      "json_path": "docs/beacon/v0.0.1/.machine/change/prism-ip-continuity-v1.json",
+      "markdown_path": "docs/beacon/v0.0.1/change/prism-ip-continuity-v1.md",
+      "json_written": true,
+      "markdown_exists": true,
+      "projection_role": {
+        "artifact_role": "version_aggregate_projection",
+        "truth_source": false,
+        "gate_source": false,
+        "lifecycle_stage": false,
+        "release_publish_action": false
+      },
+      "payload": {
+        "schema_version": "1.0",
+        "version": "v0.0.1",
+        "feature": "prism-ip-continuity-v1",
+        "feature_slug": "prism-ip-continuity-v1",
+        "summary": "Maintains release-facing version aggregate projection guards so QA accepted features are included in version change scope before release check.",
+        "status": "generated",
+        "accepted_at": "",
+        "revision_id": "R2",
+        "projection_role": {
+          "artifact_role": "version_aggregate_projection",
+          "truth_source": false,
+          "gate_source": false,
+          "lifecycle_stage": false,
+          "release_publish_action": false
+        },
+        "truth_authority": false,
+        "lifecycle_stage": false,
+        "added": [
+          "Feature-level release projection input for QA accepted current feature",
+          "Version aggregate projection inclusion guard and repair metadata",
+          "Repair-only projection rebuild path for release preflight artifacts"
+        ],
+        "removed": [
+          "Manual-only version aggregate projection repair before release check"
+        ],
+        "fixed": [
+          "Release check can route missing current feature projection to an actionable repair path",
+          "Version aggregate projection remains a read model instead of requirement truth"
+        ],
+        "traceability_refs": [
+          "docs/beacon/v0.0.1/change/prism-ip-continuity-v1.md",
+          "docs/beacon/v0.0.1/prd/prism-ip-continuity-v1.md",
+          "docs/beacon/v0.0.1/user-story/prism-ip-continuity-v1.md",
+          "docs/beacon/v0.0.1/qa/test-cases/prism-ip-continuity-v1.md",
+          "docs/beacon/v0.0.1/.machine/execution/prism-ip-continuity-v1.revision.json"
+        ],
+        "generated_at": "2026-10-01T09:29:54.573441+00:00"
+      }
+    },
+    "version_aggregate_projection": {
+      "schema_version": "1.0",
+      "status": "pass",
+      "version": "v0.0.1",
+      "markdown_path": "docs/beacon/v0.0.1/change/v0.0.1.md",
+      "json_path": "docs/beacon/v0.0.1/.machine/change/v0.0.1.json",
+      "feature_count": 21,
+      "feature_slugs": [
+        "prism-adaptation-contracts-v1",
+        "prism-asset-gate-rollout-v1",
+        "prism-campaign-schema-v1",
+        "prism-extract-v1",
+        "prism-form-av-v1",
+        "prism-form-blog-thread-v1",
+        "prism-form-image-post-v1",
+        "prism-form-novel-v1",
+        "prism-form-product-v1",
+        "prism-form-writing-v1",
+        "prism-ip-continuity-v1",
+        "prism-ip-schema-v1",
+        "prism-learning-memory-v1",
+        "prism-manga-asset-gate-v1",
+        "prism-metrics-publication-v1",
+        "prism-metrics-snapshot-v1",
+        "prism-monetization-contracts-v1",
+        "prism-project-docs-v1",
+        "prism-publish-bridge-v1",
+        "prism-review-loop-v1",
+        "prism-shot-iteration-budget-v1"
+      ],
+      "projection_role": {
+        "artifact_role": "version_aggregate_projection",
+        "truth_source": false,
+        "gate_source": false,
+        "lifecycle_stage": false,
+        "release_publish_action": false
+      },
+      "truth_authority": false,
+      "lifecycle_stage": false,
+      "release_publish_action": false,
+      "implementation_order": {
+        "status": "analyzed",
+        "feature_count": 21,
+        "ordered_feature_slugs": [
+          "prism-asset-gate-rollout-v1",
+          "prism-form-product-v1",
+          "prism-manga-asset-gate-v1",
+          "prism-extract-v1",
+          "prism-campaign-schema-v1",
+          "prism-form-writing-v1",
+          "prism-form-blog-thread-v1",
+          "prism-form-image-post-v1",
+          "prism-form-novel-v1",
+          "prism-form-av-v1",
+          "prism-publish-bridge-v1",
+          "prism-metrics-publication-v1",
+          "prism-metrics-snapshot-v1",
+          "prism-review-loop-v1",
+          "prism-learning-memory-v1",
+          "prism-monetization-contracts-v1",
+          "prism-adaptation-contracts-v1",
+          "prism-project-docs-v1",
+          "prism-ip-schema-v1",
+          "prism-shot-iteration-budget-v1",
+          "prism-ip-continuity-v1"
+        ],
+        "waves": [
+          {
+            "wave": 1,
+            "parallelizable": true,
+            "features": [
+              {
+                "feature": "prism-asset-gate-rollout-v1",
+                "feature_slug": "prism-asset-gate-rollout-v1",
+                "depends_on_features": [],
+                "direct_delivery_services": [],
+                "writable_services": [],
+                "parallelizable": true,
+                "reason_code": "parallel_no_conflict"
+              },
+              {
+                "feature": "prism-form-product-v1",
+                "feature_slug": "prism-form-product-v1",
+                "depends_on_features": [],
+                "direct_delivery_services": [],
+                "writable_services": [],
+                "parallelizable": true,
+                "reason_code": "parallel_no_conflict"
+              },
+              {
+                "feature": "prism-manga-asset-gate-v1",
+                "feature_slug": "prism-manga-asset-gate-v1",
+                "depends_on_features": [],
+                "direct_delivery_services": [],
+                "writable_services": [],
+                "parallelizable": true,
+                "reason_code": "parallel_no_conflict"
+              },
+              {
+                "feature": "prism-extract-v1",
+                "feature_slug": "prism-extract-v1",
+                "depends_on_features": [],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": true,
+                "reason_code": "parallel_no_conflict"
+              },
+              {
+                "feature": "prism-project-docs-v1",
+                "feature_slug": "prism-project-docs-v1",
+                "depends_on_features": [],
+                "direct_delivery_services": [],
+                "writable_services": [],
+                "parallelizable": true,
+                "reason_code": "parallel_no_conflict"
+              },
+              {
+                "feature": "prism-ip-schema-v1",
+                "feature_slug": "prism-ip-schema-v1",
+                "depends_on_features": [],
+                "direct_delivery_services": [],
+                "writable_services": [],
+                "parallelizable": true,
+                "reason_code": "parallel_no_conflict"
+              },
+              {
+                "feature": "prism-shot-iteration-budget-v1",
+                "feature_slug": "prism-shot-iteration-budget-v1",
+                "depends_on_features": [],
+                "direct_delivery_services": [],
+                "writable_services": [],
+                "parallelizable": true,
+                "reason_code": "parallel_no_conflict"
+              },
+              {
+                "feature": "prism-ip-continuity-v1",
+                "feature_slug": "prism-ip-continuity-v1",
+                "depends_on_features": [],
+                "direct_delivery_services": [],
+                "writable_services": [],
+                "parallelizable": true,
+                "reason_code": "parallel_no_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 2,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-campaign-schema-v1",
+                "feature_slug": "prism-campaign-schema-v1",
+                "depends_on_features": [
+                  "prism-extract-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 3,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-form-writing-v1",
+                "feature_slug": "prism-form-writing-v1",
+                "depends_on_features": [
+                  "prism-campaign-schema-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 4,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-form-blog-thread-v1",
+                "feature_slug": "prism-form-blog-thread-v1",
+                "depends_on_features": [
+                  "prism-form-writing-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 5,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-form-image-post-v1",
+                "feature_slug": "prism-form-image-post-v1",
+                "depends_on_features": [
+                  "prism-form-blog-thread-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 6,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-form-novel-v1",
+                "feature_slug": "prism-form-novel-v1",
+                "depends_on_features": [
+                  "prism-form-image-post-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 7,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-form-av-v1",
+                "feature_slug": "prism-form-av-v1",
+                "depends_on_features": [
+                  "prism-form-novel-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 8,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-publish-bridge-v1",
+                "feature_slug": "prism-publish-bridge-v1",
+                "depends_on_features": [
+                  "prism-form-av-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 9,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-metrics-publication-v1",
+                "feature_slug": "prism-metrics-publication-v1",
+                "depends_on_features": [
+                  "prism-publish-bridge-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 10,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-metrics-snapshot-v1",
+                "feature_slug": "prism-metrics-snapshot-v1",
+                "depends_on_features": [
+                  "prism-metrics-publication-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 11,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-review-loop-v1",
+                "feature_slug": "prism-review-loop-v1",
+                "depends_on_features": [
+                  "prism-metrics-snapshot-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 12,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-learning-memory-v1",
+                "feature_slug": "prism-learning-memory-v1",
+                "depends_on_features": [
+                  "prism-review-loop-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 13,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-monetization-contracts-v1",
+                "feature_slug": "prism-monetization-contracts-v1",
+                "depends_on_features": [
+                  "prism-learning-memory-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          },
+          {
+            "wave": 14,
+            "parallelizable": false,
+            "features": [
+              {
+                "feature": "prism-adaptation-contracts-v1",
+                "feature_slug": "prism-adaptation-contracts-v1",
+                "depends_on_features": [
+                  "prism-monetization-contracts-v1"
+                ],
+                "direct_delivery_services": [
+                  "."
+                ],
+                "writable_services": [
+                  "."
+                ],
+                "parallelizable": false,
+                "reason_code": "shared_delivery_service_conflict"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

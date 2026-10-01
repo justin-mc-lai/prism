@@ -1,15 +1,15 @@
 {
   "schema_version": "1.0",
-  "feature": "prism-ip-import-gate-v1",
-  "feature_slug": "prism-ip-import-gate-v1",
+  "feature": "prism-ip-continuity-v1",
+  "feature_slug": "prism-ip-continuity-v1",
   "version": "v0.0.1",
   "status": "pass",
   "blocked": false,
   "reason_code": "",
-  "generated_at": "2026-10-01T09:28:18.050355+00:00",
-  "package_dir": "docs/beacon/v0.0.1/features/prism-ip-import-gate-v1",
+  "generated_at": "2026-10-01T09:29:54.543685+00:00",
+  "package_dir": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1",
   "truth_frontmatter": {
-    "slug": "prism-ip-import-gate-v1",
+    "slug": "prism-ip-continuity-v1",
     "version": "v0.0.1",
     "status": "frozen",
     "language": "zh",
@@ -19,19 +19,19 @@
     "materials_status": "current",
     "truth_source_model": "intent_first",
     "canonical_refs": {
-      "prd": "docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/truth.md",
-      "user_story": "docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/truth.md",
-      "test_case": "docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/tests.md"
+      "prd": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md"
     },
     "provenance": {
-      "- ac_id": "AC-IPG-007",
+      "- ac_id": "AC-IPC-006",
       "source_type": "source_evidence",
-      "source_ref": "contracts/monetization.contract.md（F1）+ contracts/adaptation.contract.md（F2）"
+      "source_ref": "scripts/check_ip_model.sh（确定性门脚本模式）"
     }
   },
-  "ac_count": 7,
-  "test_count": 15,
-  "checkbox_count": 9,
+  "ac_count": 6,
+  "test_count": 16,
+  "checkbox_count": 8,
   "evidence_row_count": 1,
   "gate_authority": "canonical_surfaces_preserved",
   "checkbox_gate_bypass": false,
