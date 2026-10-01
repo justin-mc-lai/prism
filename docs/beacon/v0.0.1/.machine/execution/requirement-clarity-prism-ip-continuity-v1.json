@@ -1,0 +1,314 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-ip-continuity-v1",
+  "feature_slug": "prism-ip-continuity-v1",
+  "version": "v0.0.1",
+  "runtime_version": "v1.6.19",
+  "runtime_capability_line": "v1.3.3",
+  "required": true,
+  "reason_code": "",
+  "blocked": false,
+  "status": "pass",
+  "findings": [],
+  "report_json_path": "docs/beacon/v0.0.1/.machine/execution/requirement-clarity-prism-ip-continuity-v1.json",
+  "report_markdown_path": "docs/beacon/v0.0.1/execution/requirement-clarity-prism-ip-continuity-v1.md",
+  "state_path": ".beacon/state/requirement-clarity-prism-ip-continuity-v1.json",
+  "diagram_truth": {
+    "schema_version": "1.0",
+    "version": "v0.0.1",
+    "supported": false,
+    "required": false,
+    "ready": false,
+    "diagram_types": [],
+    "state_axes": [],
+    "missing_diagram_types": [],
+    "missing_state_axes": false,
+    "complexity_signals": [],
+    "review_gates": [],
+    "qa_coverage_hints": [],
+    "evidence_lines": {},
+    "generated_at": "2026-10-01T05:03:19.314047+00:00",
+    "feature": "prism-ip-continuity-v1",
+    "feature_slug": "prism-ip-continuity-v1",
+    "prd_ref": "docs/beacon/v0.0.1/prd/prism-ip-continuity-v1.md",
+    "user_story_ref": "docs/beacon/v0.0.1/user-story/prism-ip-continuity-v1.md"
+  },
+  "domain_fsm_gate": {
+    "schema_version": "1.0",
+    "feature": "prism-ip-continuity-v1",
+    "feature_slug": "prism-ip-continuity-v1",
+    "version": "v0.0.1",
+    "truth_path": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+    "tests_path": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md",
+    "required": false,
+    "blocked": false,
+    "status": "not_required",
+    "reason_code": "",
+    "findings": [],
+    "requirement": {
+      "required": false,
+      "reason": "version_below_v1_6_7",
+      "explicit": false,
+      "partial": false,
+      "complexity": false,
+      "business_signal": false,
+      "version_supported": false
+    },
+    "projection": {
+      "schema_version": "1.0",
+      "domain_fsm_schema": "domain-fsm.v1",
+      "entity_precedence_schema": "entity-precedence.v1",
+      "frontmatter": {
+        "slug": "prism-ip-continuity-v1",
+        "version": "v0.0.1",
+        "status": "draft",
+        "language": "zh",
+        "domain_required": "false",
+        "ux_required": "false",
+        "parser_contract": "beacon-feature-package-v2",
+        "materials_status": "current",
+        "truth_source_model": "intent_first",
+        "canonical_refs": {
+          "prd": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+          "user_story": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+          "test_case": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md"
+        },
+        "provenance": {
+          "- ac_id": "AC-IPC-006",
+          "source_type": "source_evidence",
+          "source_ref": "scripts/check_ip_model.sh（确定性门脚本模式）"
+        }
+      },
+      "frontmatter_errors": [],
+      "has_domain_model_section": false,
+      "has_domain_fsm_section": false,
+      "has_illegal_transition_section": false,
+      "entities": [],
+      "entity_precedence": [],
+      "aggregates": [],
+      "illegal_transition_slots": [],
+      "acceptance_criteria": [
+        {
+          "ac_id": "AC-IPC-001",
+          "description": "IP 每次 `canon_revision` 跳变须有 `content/ips/{ip_id}/revisions/{R}.yaml`，含 `revision`、`reason`、`affected_assets[]`；从 `canon_revision` 起点到当前值的每一跳缺记录即 blocked，reason_code 为 `revision_chain_incomplete`"
+        },
+        {
+          "ac_id": "AC-IPC-002",
+          "description": "确定性脚本 `scripts/check_ip_continuity.sh view --ip {ip_id}` 输出该 IP 的版本链（R1→…→Rn）与作品引用清单（含各作品的 `resolved_revision`），输出为稳定排序的文本"
+        },
+        {
+          "ac_id": "AC-IPC-003",
+          "description": "连续性审计：同一 IP 资产被多于一个作品引用、且各自 `resolved_revision` 不一致、且不存在对应演进记录时，报告 `continuity_revision_drift` 并列出冲突项；该情形为 warning，退出码为 0（只审计不阻断）"
+        },
+        {
+          "ac_id": "AC-IPC-004",
+          "description": "`content/ips/{ip_id}/seasons/{season_id}.yaml` 含 `season_id` 与 `campaign_refs[]`（项数 ≥ 1），且每个引用的 campaign 同属该 IP；不满足即 blocked，reason_code 为 `season_ip_mismatch`"
+        },
+        {
+          "ac_id": "AC-IPC-005",
+          "description": "season 复用现有 `campaign` 对象（一个 IP 对应多个 campaign），不新增 series 对象；`contracts/ip.schema.yaml` 增补 `seasons` 段（可选）"
+        },
+        {
+          "ac_id": "AC-IPC-006",
+          "description": "确定性脚本 `scripts/check_ip_continuity.sh` 校验演进链与 season；违规时非零退出并打印 reason_code；须支持 `--self-test` 与 `--invert`"
+        }
+      ],
+      "bound_ac_ids": [],
+      "orphan_ac_ids": [],
+      "aggregates_missing_illegal_slots": [],
+      "raw_section_titles": [
+        "人话",
+        "User Intent",
+        "User Intent Snapshot",
+        "Intent Coverage Matrix",
+        "Acceptance Criteria",
+        "关键对象清单",
+        "FSM 五元组",
+        "invalid / illegal",
+        "Non-goals",
+        "Provenance",
+        "Source Excerpt"
+      ]
+    },
+    "validation": {
+      "schema_version": "1.0",
+      "required": false,
+      "blocked": false,
+      "status": "not_required",
+      "reason_code": "",
+      "findings": [],
+      "projection": {
+        "schema_version": "1.0",
+        "domain_fsm_schema": "domain-fsm.v1",
+        "entity_precedence_schema": "entity-precedence.v1",
+        "frontmatter": {
+          "slug": "prism-ip-continuity-v1",
+          "version": "v0.0.1",
+          "status": "draft",
+          "language": "zh",
+          "domain_required": "false",
+          "ux_required": "false",
+          "parser_contract": "beacon-feature-package-v2",
+          "materials_status": "current",
+          "truth_source_model": "intent_first",
+          "canonical_refs": {
+            "prd": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+            "user_story": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+            "test_case": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md"
+          },
+          "provenance": {
+            "- ac_id": "AC-IPC-006",
+            "source_type": "source_evidence",
+            "source_ref": "scripts/check_ip_model.sh（确定性门脚本模式）"
+          }
+        },
+        "frontmatter_errors": [],
+        "has_domain_model_section": false,
+        "has_domain_fsm_section": false,
+        "has_illegal_transition_section": false,
+        "entities": [],
+        "entity_precedence": [],
+        "aggregates": [],
+        "illegal_transition_slots": [],
+        "acceptance_criteria": [
+          {
+            "ac_id": "AC-IPC-001",
+            "description": "IP 每次 `canon_revision` 跳变须有 `content/ips/{ip_id}/revisions/{R}.yaml`，含 `revision`、`reason`、`affected_assets[]`；从 `canon_revision` 起点到当前值的每一跳缺记录即 blocked，reason_code 为 `revision_chain_incomplete`"
+          },
+          {
+            "ac_id": "AC-IPC-002",
+            "description": "确定性脚本 `scripts/check_ip_continuity.sh view --ip {ip_id}` 输出该 IP 的版本链（R1→…→Rn）与作品引用清单（含各作品的 `resolved_revision`），输出为稳定排序的文本"
+          },
+          {
+            "ac_id": "AC-IPC-003",
+            "description": "连续性审计：同一 IP 资产被多于一个作品引用、且各自 `resolved_revision` 不一致、且不存在对应演进记录时，报告 `continuity_revision_drift` 并列出冲突项；该情形为 warning，退出码为 0（只审计不阻断）"
+          },
+          {
+            "ac_id": "AC-IPC-004",
+            "description": "`content/ips/{ip_id}/seasons/{season_id}.yaml` 含 `season_id` 与 `campaign_refs[]`（项数 ≥ 1），且每个引用的 campaign 同属该 IP；不满足即 blocked，reason_code 为 `season_ip_mismatch`"
+          },
+          {
+            "ac_id": "AC-IPC-005",
+            "description": "season 复用现有 `campaign` 对象（一个 IP 对应多个 campaign），不新增 series 对象；`contracts/ip.schema.yaml` 增补 `seasons` 段（可选）"
+          },
+          {
+            "ac_id": "AC-IPC-006",
+            "description": "确定性脚本 `scripts/check_ip_continuity.sh` 校验演进链与 season；违规时非零退出并打印 reason_code；须支持 `--self-test` 与 `--invert`"
+          }
+        ],
+        "bound_ac_ids": [],
+        "orphan_ac_ids": [],
+        "aggregates_missing_illegal_slots": [],
+        "raw_section_titles": [
+          "人话",
+          "User Intent",
+          "User Intent Snapshot",
+          "Intent Coverage Matrix",
+          "Acceptance Criteria",
+          "关键对象清单",
+          "FSM 五元组",
+          "invalid / illegal",
+          "Non-goals",
+          "Provenance",
+          "Source Excerpt"
+        ]
+      }
+    },
+    "recommended_action": ""
+  },
+  "human_closure_contract": {
+    "required": false,
+    "research_path": "docs/beacon/v0.0.1/research/prism-ip-continuity-v1.md",
+    "research_exists": true,
+    "source_architecture_path": "docs/beacon/v0.0.1/source-architecture/index.md",
+    "source_architecture_exists": true,
+    "required_sections": [
+      "architecture",
+      "business_flow"
+    ],
+    "missing_sections": [
+      "architecture",
+      "business_flow"
+    ],
+    "diagram_types": [],
+    "complexity_signals": []
+  },
+  "requirement_closure_contract": {
+    "required": true,
+    "chain_order": [
+      "research",
+      "prd",
+      "user_story",
+      "test_case",
+      "requirement_clarity",
+      "freeze"
+    ],
+    "human_closure_required": false,
+    "paths": {
+      "research": "docs/beacon/v0.0.1/research/prism-ip-continuity-v1.md",
+      "prd": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md"
+    },
+    "exists": {
+      "research": true,
+      "prd": true,
+      "user_story": true,
+      "test_case": true
+    },
+    "required_research_sections": [],
+    "missing_research_sections": [],
+    "ac_projection": {
+      "prd_ac_ids": [],
+      "user_story_ac_ids": [],
+      "test_case_ac_ids": [],
+      "upstream_ac_ids": [],
+      "missing_test_case_ac_ids": []
+    }
+  },
+  "version_projection_truth_contract": {
+    "required": false,
+    "supported": false,
+    "projection_types": [],
+    "research_path": "docs/beacon/v0.0.1/research/prism-ip-continuity-v1.md",
+    "research_exists": true,
+    "required_fields": [
+      "prd_refs",
+      "user_story_refs",
+      "test_case_refs",
+      "coverage_notes",
+      "out_of_scope_notes"
+    ],
+    "field_presence": {
+      "prd_refs": false,
+      "user_story_refs": false,
+      "test_case_refs": false,
+      "coverage_notes": false,
+      "out_of_scope_notes": false
+    },
+    "missing_fields": [],
+    "required_refs": {
+      "prd_refs": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+      "user_story_refs": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+      "test_case_refs": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md"
+    },
+    "missing_ref_targets": [],
+    "ready": false
+  },
+  "support_write_topology_contract": {
+    "schema_version": "1.0",
+    "supported": true,
+    "status": "pass",
+    "blocked": false,
+    "reason_code": "",
+    "diagnostics": []
+  },
+  "required_artifacts": [],
+  "scanned_files": [
+    "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md",
+    "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tasks.md",
+    "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/evidence.md",
+    "docs/beacon/v0.0.1/research/prism-ip-continuity-v1.md"
+  ]
+}

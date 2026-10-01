@@ -1,0 +1,167 @@
+{
+  "schema": "truth-review-gate.v1",
+  "schema_version": "1.0",
+  "feature": "prism-ip-import-gate-v1",
+  "version": "v0.0.1",
+  "pass": true,
+  "blocked": false,
+  "review_gate_pass": true,
+  "abc_pass": true,
+  "reason_code": "",
+  "domain_required": false,
+  "checks": {
+    "A_intent_coverage": {
+      "pass": true,
+      "check": "A",
+      "name": "intent_coverage",
+      "required": true,
+      "matrix_rows": 7,
+      "missing_must": [],
+      "reason": "",
+      "findings": [],
+      "matrix": [
+        {
+          "intent_id": "INT-001",
+          "source": "prompt",
+          "strength": "must",
+          "landing": "AC-IPG-001（联名对象与契约）",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-002",
+          "source": "prompt",
+          "strength": "must",
+          "landing": "AC-IPG-002（授权门）",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-003",
+          "source": "prompt",
+          "strength": "must",
+          "landing": "AC-IPG-003（披露门）",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-004",
+          "source": "prompt",
+          "strength": "must",
+          "landing": "AC-IPG-004（署名/分成门）",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-005",
+          "source": "prompt",
+          "strength": "must",
+          "landing": "AC-IPG-005（正典聚合门复用 L1）",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-006",
+          "source": "source_evidence",
+          "strength": "should",
+          "landing": "AC-IPG-006（校验脚本）",
+          "status": "covered"
+        },
+        {
+          "intent_id": "INT-007",
+          "source": "source_evidence",
+          "strength": "should",
+          "landing": "AC-IPG-007（与 F1/F2 叠加）",
+          "status": "covered"
+        }
+      ]
+    },
+    "B_fsm_audit": {
+      "pass": true,
+      "check": "B",
+      "name": "fsm_audit",
+      "required": false,
+      "skipped": true,
+      "reason": "",
+      "findings": []
+    },
+    "C_testability": {
+      "pass": true,
+      "check": "C",
+      "name": "testability",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "ac_count": 7,
+      "tc_count": 15,
+      "missing_ac": [],
+      "covered": {
+        "AC-IPG-001": [
+          "TC-IPG-001",
+          "TC-IPG-002"
+        ],
+        "AC-IPG-002": [
+          "TC-IPG-003"
+        ],
+        "AC-IPG-003": [
+          "TC-IPG-004"
+        ],
+        "AC-IPG-004": [
+          "TC-IPG-005"
+        ],
+        "AC-IPG-005": [
+          "TC-IPG-006"
+        ],
+        "AC-IPG-006": [
+          "TC-IPG-007",
+          "TC-IPG-008",
+          "TC-IPG-009"
+        ],
+        "AC-IPG-007": [
+          "TC-IPG-010"
+        ]
+      }
+    },
+    "C_domain_exec_layer": {
+      "pass": true,
+      "check": "C_exec",
+      "name": "domain_exec_layer",
+      "required": false,
+      "skipped": true,
+      "reason": "",
+      "findings": [],
+      "exec_tc_count": 0,
+      "domain_kind": "general"
+    },
+    "D_fill_depth": {
+      "pass": true,
+      "check": "D",
+      "name": "fill_depth",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "package_maturity": "unspecified",
+      "domain_kind": "general",
+      "business_domain": false
+    },
+    "E_vague_disjunction": {
+      "pass": true,
+      "check": "E",
+      "name": "vague_disjunction",
+      "required": true,
+      "reason": "",
+      "findings": [],
+      "ac_count": 7,
+      "vague_hits": 0
+    }
+  },
+  "findings": [],
+  "humanizer": {
+    "rule": "humanizer_only_after_abc_pass_before_freeze",
+    "abc_pass": true,
+    "allowed_now": true,
+    "fill_depth_pass": true,
+    "note": "Polish L0/narrative only after A/B/C; preserve_machine_fields=true; freeze needs D+exec too"
+  },
+  "evaluated_at": "2026-10-01T05:03:18.500171+00:00",
+  "paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/tests.md",
+    "report": "docs/beacon/v0.0.1/.machine/execution/prism-ip-import-gate-v1.truth-review-gate.json"
+  }
+}

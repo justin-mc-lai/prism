@@ -1,0 +1,278 @@
+{
+  "schema_version": "1.0",
+  "truth_map_contract": "beacon-truth-map-v1",
+  "truth_source_model": "feature_package_authoritative",
+  "truth_package_contract": "beacon-feature-package-v2",
+  "machine_json_role": "generated_state_not_truth",
+  "generated_by": "beacon.truth_map.resolver",
+  "generated_at": "2026-10-01T05:03:19.788973+00:00",
+  "feature": "prism-ip-continuity-v1",
+  "feature_slug": "prism-ip-continuity-v1",
+  "version": "v0.0.1",
+  "truth_authority": false,
+  "json_authority": false,
+  "source_paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md",
+    "tasks": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tasks.md",
+    "evidence": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/evidence.md"
+  },
+  "source_hashes": {
+    "truth": "ae5645b2816b964c9e5f18eee1f96e09bc1140fe5e84da9dbe21d4b2a3c2311a",
+    "tests": "2eb4ad8d967d7fa6928e7e234ed5e43c03630c611ee453bcb39872999bcb3dfd",
+    "tasks": "39e1c38841d0add18d847e4ec2a404964beec0cbb3dd4d1999fc2985b65abea9",
+    "evidence": "eee1d80671826162105650ca38086a2817ce6b53e0cf5e05dceb597e5a53f0ef"
+  },
+  "truth_frontmatter": {
+    "slug": "prism-ip-continuity-v1",
+    "version": "v0.0.1",
+    "status": "frozen",
+    "language": "zh",
+    "domain_required": "false",
+    "ux_required": "false",
+    "parser_contract": "beacon-feature-package-v2",
+    "materials_status": "current",
+    "truth_source_model": "intent_first",
+    "canonical_refs": {
+      "prd": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md"
+    },
+    "provenance": {
+      "- ac_id": "AC-IPC-006",
+      "source_type": "source_evidence",
+      "source_ref": "scripts/check_ip_model.sh（确定性门脚本模式）"
+    }
+  },
+  "frontmatter_errors": [],
+  "acceptance_criteria": [
+    {
+      "ac_id": "AC-IPC-001",
+      "theme": "IP 每次 `canon_revision` 跳变须有 `content/ips/{ip_id}/revisions/{R}.yaml`，含 `revision`、`reason`、`affected_assets[]`；从 `canon_revision` 起点到当前值的每一跳缺记录即 blocked，reason_code 为 `revision_chain_incomplete`",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-IPC-002",
+      "theme": "确定性脚本 `scripts/check_ip_continuity.sh view --ip {ip_id}` 输出该 IP 的版本链（R1→…→Rn）与作品引用清单（含各作品的 `resolved_revision`），输出为稳定排序的文本",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-IPC-003",
+      "theme": "连续性审计：同一 IP 资产被多于一个作品引用、且各自 `resolved_revision` 不一致、且不存在对应演进记录时，报告 `continuity_revision_drift` 并列出冲突项；该情形为 warning，退出码为 0（只审计不阻断）",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-IPC-004",
+      "theme": "`content/ips/{ip_id}/seasons/{season_id}.yaml` 含 `season_id` 与 `campaign_refs[]`（项数 ≥ 1），且每个引用的 campaign 同属该 IP；不满足即 blocked，reason_code 为 `season_ip_mismatch`",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-IPC-005",
+      "theme": "season 复用现有 `campaign` 对象（一个 IP 对应多个 campaign），不新增 series 对象；`contracts/ip.schema.yaml` 增补 `seasons` 段（可选）",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-IPC-006",
+      "theme": "确定性脚本 `scripts/check_ip_continuity.sh` 校验演进链与 season；违规时非零退出并打印 reason_code；须支持 `--self-test` 与 `--invert`",
+      "description": ""
+    }
+  ],
+  "test_rows": [
+    {
+      "ac_id": "AC-IPC-001",
+      "tc_id": "TC-IPC-001",
+      "layer": "",
+      "command": "`rg -q 'revision_chain_incomplete' scripts/check_ip_continuity.sh && rg -q 'revisions' contracts/ip.schema.yaml`",
+      "assertion": "演进链门 reason_code + 契约段存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IPC-001",
+      "tc_id": "TC-IPC-002",
+      "layer": "",
+      "command": "`rg -q 'affected_assets' contracts/ip.schema.yaml scripts/check_ip_continuity.sh`",
+      "assertion": "演进记录字段 affected_assets 存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IPC-002",
+      "tc_id": "TC-IPC-003",
+      "layer": "",
+      "command": "`bash scripts/check_ip_continuity.sh view --ip ip-demo 2>/dev/null; test $? -eq 0`",
+      "assertion": "按 IP 视图命令可用（exit 0）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IPC-002",
+      "tc_id": "TC-IPC-004",
+      "layer": "",
+      "command": "`rg -q 'resolved_revision' scripts/check_ip_continuity.sh`",
+      "assertion": "视图输出含 resolved_revision 引用清单",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IPC-003",
+      "tc_id": "TC-IPC-005",
+      "layer": "",
+      "command": "`rg -q 'continuity_revision_drift' scripts/check_ip_continuity.sh`",
+      "assertion": "漂移审计 reason_code 存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IPC-003",
+      "tc_id": "TC-IPC-006",
+      "layer": "",
+      "command": "`rg -q 'continuity_revision_drift' scripts/check_ip_continuity.sh && ! rg -q 'continuity_revision_drift.*exit 1' scripts/check_ip_continuity.sh`",
+      "assertion": "漂移为 warning（不在退出码 1 分支）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IPC-004",
+      "tc_id": "TC-IPC-007",
+      "layer": "",
+      "command": "`rg -q 'season_ip_mismatch' scripts/check_ip_continuity.sh && rg -q 'campaign_refs' contracts/ip.schema.yaml`",
+      "assertion": "season 门 reason_code + 契约字段存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IPC-005",
+      "tc_id": "TC-IPC-008",
+      "layer": "",
+      "command": "`rg -q 'seasons' contracts/ip.schema.yaml && ! rg -qF 'schema_id: series' registry/content-schema.yaml`",
+      "assertion": "season 复用 campaign，未新造 series 对象（负向）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IPC-006",
+      "tc_id": "TC-IPC-009",
+      "layer": "",
+      "command": "`bash scripts/check_ip_continuity.sh --self-test 2>/dev/null; test $? -eq 0`",
+      "assertion": "校验脚本自检通过（exit 0）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IPC-006",
+      "tc_id": "TC-IPC-010",
+      "layer": "",
+      "command": "`bash scripts/check_ip_continuity.sh --fixtures content/ips/_examples/ip-demo --expect pass; test $? -eq 0`",
+      "assertion": "对合规样例判定通过",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IPC-006",
+      "tc_id": "TC-IPC-011",
+      "layer": "",
+      "command": "`bash scripts/check_ip_continuity.sh --fixtures content/ips/_examples/ip-demo --invert --expect fail; test $? -eq 1`",
+      "assertion": "反向断言：破坏演进链时门必须 fail（负向）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "GATES",
+      "tc_id": "TC-IPC-012",
+      "layer": "",
+      "command": "`beacon truth review prism-ip-continuity-v1 --project . --version v0.0.1 --json`",
+      "assertion": "Truth Review Gate A/B/C + L0 pass，recommend_freeze=true",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "GATES",
+      "tc_id": "TC-IPC-013",
+      "layer": "",
+      "command": "`beacon doctor verify-truth-integrity prism-ip-continuity-v1 --project-root . --version v0.0.1 --mode block --json | python3 -c \"import json,sys; d=json.load(sys.stdin); exit(0 if d.get('result',{}).get('blocked') in (False,None) and d.get('result',{}).get('closure_contract',{}).get('closure_allowed') else 1)\"`",
+      "assertion": "closure_allowed=true 且无 blocking finding（integrity 门真跑）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "FSM",
+      "tc_id": "TC-IPC-014",
+      "layer": "",
+      "command": "`rg -n 'bump_revision without revisions/{R}.yaml record' docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md`",
+      "assertion": "非法跃迁槽位：无演进记录不得跳版本",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "FSM",
+      "tc_id": "TC-IPC-015",
+      "layer": "",
+      "command": "`rg -n 'open_season with campaign from another IP' docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md`",
+      "assertion": "非法跃迁槽位：跨 IP campaign 不得入 season",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "FSM",
+      "tc_id": "TC-IPC-016",
+      "layer": "",
+      "command": "`rg -n '审计结果直接修改 IP 正典' docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md`",
+      "assertion": "非法跃迁槽位：视图只读不得改正典",
+      "evidence_path": "",
+      "source": ""
+    }
+  ],
+  "task_rows": [
+    {
+      "id": "TASK-001",
+      "title": "Implement AC-IPC-001: IP 每次 `canon_revision` 跳变须有 `content/ips/{ip_id}/revisions/{R}.yaml`，... · ac=AC-IPC-001 · evidence=`.beacon/evidence/implement/prism-ip-continuity-v1/AC-IPC-001.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-002",
+      "title": "Implement AC-IPC-002: 确定性脚本 `scripts/check_ip_continuity.sh view --ip {ip_id}` 输出该 IP 的版本链（... · ac=AC-IPC-002 · evidence=`.beacon/evidence/implement/prism-ip-continuity-v1/AC-IPC-002.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-003",
+      "title": "Implement AC-IPC-003: 连续性审计：同一 IP 资产被多于一个作品引用、且各自 `resolved_revision` 不一致、且不存在对应演进记录时，报告 `c... · ac=AC-IPC-003 · evidence=`.beacon/evidence/implement/prism-ip-continuity-v1/AC-IPC-003.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-004",
+      "title": "Implement AC-IPC-004: `content/ips/{ip_id}/seasons/{season_id}.yaml` 含 `season_id` 与 `campa... · ac=AC-IPC-004 · evidence=`.beacon/evidence/implement/prism-ip-continuity-v1/AC-IPC-004.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-005",
+      "title": "Implement AC-IPC-005: season 复用现有 `campaign` 对象（一个 IP 对应多个 campaign），不新增 series 对象；`contrac... · ac=AC-IPC-005 · evidence=`.beacon/evidence/implement/prism-ip-continuity-v1/AC-IPC-005.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-006",
+      "title": "Implement AC-IPC-006: 确定性脚本 `scripts/check_ip_continuity.sh` 校验演进链与 season；违规时非零退出并打印 reaso... · ac=AC-IPC-006 · evidence=`.beacon/evidence/implement/prism-ip-continuity-v1/AC-IPC-006.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-007",
+      "title": "Validate package gates (truth review + freeze ack) · ac=GATES · evidence=`.beacon/evidence/implement/prism-ip-continuity-v1/GATES.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-008",
+      "title": "Run QA against AC↔TC matrix + exec-layer evidence · ac=QA · evidence=`.beacon/evidence/implement/prism-ip-continuity-v1/QA-MATRIX.json`",
+      "status": "unchecked"
+    }
+  ],
+  "checkbox_errors": [],
+  "evidence_rows": [
+    {
+      "surface": "qa",
+      "authority": "qa_verdict",
+      "canonical_artifact": "tests/",
+      "status": "linked",
+      "route": "qa"
+    }
+  ]
+}

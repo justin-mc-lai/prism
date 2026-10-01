@@ -1,0 +1,279 @@
+{
+  "schema_version": "1.0",
+  "truth_map_contract": "beacon-truth-map-v1",
+  "truth_source_model": "feature_package_authoritative",
+  "truth_package_contract": "beacon-feature-package-v2",
+  "machine_json_role": "generated_state_not_truth",
+  "generated_by": "beacon.truth_map.resolver",
+  "generated_at": "2026-10-01T05:03:18.716704+00:00",
+  "feature": "prism-ip-import-gate-v1",
+  "feature_slug": "prism-ip-import-gate-v1",
+  "version": "v0.0.1",
+  "truth_authority": false,
+  "json_authority": false,
+  "source_paths": {
+    "truth": "docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/truth.md",
+    "tests": "docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/tests.md",
+    "tasks": "docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/tasks.md",
+    "evidence": "docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/evidence.md"
+  },
+  "source_hashes": {
+    "truth": "582143a871c017fc7343351ea003bf24c864cd472733412f7a58a5a31c02c41d",
+    "tests": "226f7d2269e8e3119aa3a2e6c88c58dbd18aa8fca165e8715b5371f17531e234",
+    "tasks": "16c3ebad6c566fdb10413aba1b9c3c505eb1652484c75e2fd36382c1426dbe9d",
+    "evidence": "c16f84b87c7ace62f87522dceb6a6a8c0ba109c02d43f64b6619483bc9b8168c"
+  },
+  "truth_frontmatter": {
+    "slug": "prism-ip-import-gate-v1",
+    "version": "v0.0.1",
+    "status": "frozen",
+    "language": "zh",
+    "domain_required": "false",
+    "ux_required": "false",
+    "parser_contract": "beacon-feature-package-v2",
+    "materials_status": "current",
+    "truth_source_model": "intent_first",
+    "canonical_refs": {
+      "prd": "docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/truth.md",
+      "user_story": "docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/truth.md",
+      "test_case": "docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/tests.md"
+    },
+    "provenance": {
+      "- ac_id": "AC-IPG-007",
+      "source_type": "source_evidence",
+      "source_ref": "contracts/monetization.contract.md（F1）+ contracts/adaptation.contract.md（F2）"
+    }
+  },
+  "frontmatter_errors": [],
+  "acceptance_criteria": [
+    {
+      "ac_id": "AC-IPG-001",
+      "theme": "新增 `crossovers` 内容对象：`registry/content-schema.yaml` 含 `schema_id: crossovers`，`root: content/crossovers/{crossover_id}.yaml`，契约 `contracts/crossover.schema.yaml`；必填 `crossover_id`、`participant_ips`（项数 ≥ 2）、`work_ref`、`authorization`、`attribution`",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-IPG-002",
+      "theme": "当作品 `imports[]` 涉及的 `from` 去重后项数 ≥ 2 时，必须存在 `content/crossovers/{crossover_id}.yaml` 且该项 `authorization.status=approved`；不满足即 blocked，reason_code 为 `crossover_authorization_missing`",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-IPG-003",
+      "theme": "联名记录须含非空 `disclosure_note`；缺失即 blocked，reason_code 为 `crossover_disclosure_missing`",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-IPG-004",
+      "theme": "联名记录声明分成时，`royalty_split` 各项占比合计等于 100%；当 `non_royalty` 显式声明为 true 时豁免该合计约束；两项均不满足即 blocked，reason_code 为 `crossover_royalty_unrecorded`",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-IPG-005",
+      "theme": "联名须逐个校验参与 IP 正典冻结状态：`participant_ips` 中任一项不满足 `status=active` 且正典冻结，即 blocked，reason_code 为 `crossover_canon_unmet`（复用 L1 判定口径）",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-IPG-006",
+      "theme": "确定性校验脚本 `scripts/check_ip_import_gate.sh` 对给定作品与联名记录判定合规；违规时非零退出并打印对应 reason_code；须支持 `--self-test` 与 `--invert`",
+      "description": ""
+    },
+    {
+      "ac_id": "AC-IPG-007",
+      "theme": "与 F1/F2 叠加：联名涉变现时，`contracts/monetization.contract.md` 披露门同时适用；涉改编时，`contracts/adaptation.contract.md` 授权门同时适用；两门均记录 hook 引用且不互相替代",
+      "description": ""
+    }
+  ],
+  "test_rows": [
+    {
+      "ac_id": "AC-IPG-001",
+      "tc_id": "TC-IPG-001",
+      "layer": "",
+      "command": "`rg -qF 'schema_id: crossovers' registry/content-schema.yaml && rg -qF 'content/crossovers/{crossover_id}.yaml' registry/content-schema.yaml && test -f contracts/crossover.schema.yaml`",
+      "assertion": "crossovers 对象注册且契约存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IPG-001",
+      "tc_id": "TC-IPG-002",
+      "layer": "",
+      "command": "`for f in crossover_id participant_ips work_ref authorization attribution; do rg -q \"$f\" contracts/crossover.schema.yaml||exit 1; done`",
+      "assertion": "联名契约五个必填字段声明",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IPG-002",
+      "tc_id": "TC-IPG-003",
+      "layer": "",
+      "command": "`rg -q 'crossover_authorization_missing' scripts/check_ip_import_gate.sh`",
+      "assertion": "授权门 reason_code 存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IPG-003",
+      "tc_id": "TC-IPG-004",
+      "layer": "",
+      "command": "`rg -q 'crossover_disclosure_missing' scripts/check_ip_import_gate.sh && rg -q 'disclosure_note' contracts/crossover.schema.yaml`",
+      "assertion": "披露门 reason_code + 契约字段",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IPG-004",
+      "tc_id": "TC-IPG-005",
+      "layer": "",
+      "command": "`rg -q 'crossover_royalty_unrecorded' scripts/check_ip_import_gate.sh && rg -q 'royalty_split' contracts/crossover.schema.yaml`",
+      "assertion": "分成门 reason_code + 契约字段",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IPG-005",
+      "tc_id": "TC-IPG-006",
+      "layer": "",
+      "command": "`rg -q 'crossover_canon_unmet' scripts/check_ip_import_gate.sh`",
+      "assertion": "正典聚合门 reason_code 存在",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IPG-006",
+      "tc_id": "TC-IPG-007",
+      "layer": "",
+      "command": "`bash scripts/check_ip_import_gate.sh --self-test 2>/dev/null; test $? -eq 0`",
+      "assertion": "门脚本自检通过（exit 0）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IPG-006",
+      "tc_id": "TC-IPG-008",
+      "layer": "",
+      "command": "`bash scripts/check_ip_import_gate.sh --fixtures content/crossovers/_examples --expect pass; test $? -eq 0`",
+      "assertion": "对合规样例判定通过",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IPG-006",
+      "tc_id": "TC-IPG-009",
+      "layer": "",
+      "command": "`bash scripts/check_ip_import_gate.sh --fixtures content/crossovers/_examples --invert --expect fail; test $? -eq 1`",
+      "assertion": "反向断言：破坏联名记录时门必须 fail（负向）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "AC-IPG-007",
+      "tc_id": "TC-IPG-010",
+      "layer": "",
+      "command": "`rg -q 'monetization.contract' contracts/crossover.schema.yaml && rg -q 'adaptation.contract' contracts/crossover.schema.yaml`",
+      "assertion": "与 F1/F2 叠加 hook 在联名契约中引用",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "GATES",
+      "tc_id": "TC-IPG-011",
+      "layer": "",
+      "command": "`beacon truth review prism-ip-import-gate-v1 --project . --version v0.0.1 --json`",
+      "assertion": "Truth Review Gate A/B/C + L0 pass，recommend_freeze=true",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "GATES",
+      "tc_id": "TC-IPG-012",
+      "layer": "",
+      "command": "`beacon doctor verify-truth-integrity prism-ip-import-gate-v1 --project-root . --version v0.0.1 --mode block --json | python3 -c \"import json,sys; d=json.load(sys.stdin); exit(0 if d.get('result',{}).get('blocked') in (False,None) and d.get('result',{}).get('closure_contract',{}).get('closure_allowed') else 1)\"`",
+      "assertion": "closure_allowed=true 且无 blocking finding（integrity 门真跑）",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "FSM",
+      "tc_id": "TC-IPG-013",
+      "layer": "",
+      "command": "`rg -n 'draft → approved without authorization_recorded' docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/truth.md`",
+      "assertion": "非法跃迁槽位：无授权不得直接批准",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "FSM",
+      "tc_id": "TC-IPG-014",
+      "layer": "",
+      "command": "`rg -n 'approved → 发布 while disclosure_note 为空' docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/truth.md`",
+      "assertion": "非法跃迁槽位：无披露不得发布",
+      "evidence_path": "",
+      "source": ""
+    },
+    {
+      "ac_id": "FSM",
+      "tc_id": "TC-IPG-015",
+      "layer": "",
+      "command": "`rg -n '参与 IP 非 active 时提交 review' docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/truth.md`",
+      "assertion": "非法跃迁槽位：参与 IP 非 active 不得提交",
+      "evidence_path": "",
+      "source": ""
+    }
+  ],
+  "task_rows": [
+    {
+      "id": "TASK-001",
+      "title": "Implement AC-IPG-001: 新增 `crossovers` 内容对象：`registry/content-schema.yaml` 含 `schema_id: cro... · ac=AC-IPG-001 · evidence=`.beacon/evidence/implement/prism-ip-import-gate-v1/AC-IPG-001.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-002",
+      "title": "Implement AC-IPG-002: 当作品 `imports[]` 涉及的 `from` 去重后项数 ≥ 2 时，必须存在 `content/crossovers/{cros... · ac=AC-IPG-002 · evidence=`.beacon/evidence/implement/prism-ip-import-gate-v1/AC-IPG-002.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-003",
+      "title": "Implement AC-IPG-003: 联名记录须含非空 `disclosure_note`；缺失即 blocked，reason_code 为 `crossover_discl... · ac=AC-IPG-003 · evidence=`.beacon/evidence/implement/prism-ip-import-gate-v1/AC-IPG-003.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-004",
+      "title": "Implement AC-IPG-004: 联名记录声明分成时，`royalty_split` 各项占比合计等于 100%；当 `non_royalty` 显式声明为 true 时豁... · ac=AC-IPG-004 · evidence=`.beacon/evidence/implement/prism-ip-import-gate-v1/AC-IPG-004.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-005",
+      "title": "Implement AC-IPG-005: 联名须逐个校验参与 IP 正典冻结状态：`participant_ips` 中任一项不满足 `status=active` 且正典冻结，即... · ac=AC-IPG-005 · evidence=`.beacon/evidence/implement/prism-ip-import-gate-v1/AC-IPG-005.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-006",
+      "title": "Implement AC-IPG-006: 确定性校验脚本 `scripts/check_ip_import_gate.sh` 对给定作品与联名记录判定合规；违规时非零退出并打印对应... · ac=AC-IPG-006 · evidence=`.beacon/evidence/implement/prism-ip-import-gate-v1/AC-IPG-006.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-007",
+      "title": "Implement AC-IPG-007: 与 F1/F2 叠加：联名涉变现时，`contracts/monetization.contract.md` 披露门同时适用；涉改编时，`... · ac=AC-IPG-007 · evidence=`.beacon/evidence/implement/prism-ip-import-gate-v1/AC-IPG-007.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-008",
+      "title": "Validate package gates (truth review + freeze ack) · ac=GATES · evidence=`.beacon/evidence/implement/prism-ip-import-gate-v1/GATES.json`",
+      "status": "unchecked"
+    },
+    {
+      "id": "TASK-009",
+      "title": "Run QA against AC↔TC matrix + exec-layer evidence · ac=QA · evidence=`.beacon/evidence/implement/prism-ip-import-gate-v1/QA-MATRIX.json`",
+      "status": "unchecked"
+    }
+  ],
+  "checkbox_errors": [],
+  "evidence_rows": [
+    {
+      "surface": "qa",
+      "authority": "qa_verdict",
+      "canonical_artifact": "tests/",
+      "status": "linked",
+      "route": "qa"
+    }
+  ]
+}
