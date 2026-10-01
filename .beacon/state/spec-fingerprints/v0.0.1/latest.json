@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "run_id": "run-20260930T152543322207",
+  "run_id": "run-20261001T172815296699",
   "version": "v0.0.1",
-  "generated_at": "2026-09-30T07:25:50.501492+00:00",
+  "generated_at": "2026-10-01T09:28:18.577660+00:00",
   "layers": {
     "user_story": {
-      "hash": "945c57c375baeec12bb211f2a7d386d703a48f62d9e65f5887aac65a077a43b1",
-      "count": 23,
+      "hash": "6d2864a047609b233701f62632f48244f5b4da7c7f74467819df162ecf63518f",
+      "count": 25,
       "files": [
         {
           "path": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
@@ -47,6 +47,14 @@
         {
           "path": "docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
           "sha256": "8c3bb9466469141c43194d4b15aaed8a84676a476c2b98ee4b3d1b74e8ac1cb9"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+          "sha256": "ae5645b2816b964c9e5f18eee1f96e09bc1140fe5e84da9dbe21d4b2a3c2311a"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/truth.md",
+          "sha256": "582143a871c017fc7343351ea003bf24c864cd472733412f7a58a5a31c02c41d"
         },
         {
           "path": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/truth.md",
@@ -103,8 +111,8 @@
       ]
     },
     "prd": {
-      "hash": "945c57c375baeec12bb211f2a7d386d703a48f62d9e65f5887aac65a077a43b1",
-      "count": 23,
+      "hash": "6d2864a047609b233701f62632f48244f5b4da7c7f74467819df162ecf63518f",
+      "count": 25,
       "files": [
         {
           "path": "docs/beacon/v0.0.1/features/prism-adaptation-contracts-v1/truth.md",
@@ -145,6 +153,14 @@
         {
           "path": "docs/beacon/v0.0.1/features/prism-form-writing-v1/truth.md",
           "sha256": "8c3bb9466469141c43194d4b15aaed8a84676a476c2b98ee4b3d1b74e8ac1cb9"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+          "sha256": "ae5645b2816b964c9e5f18eee1f96e09bc1140fe5e84da9dbe21d4b2a3c2311a"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/truth.md",
+          "sha256": "582143a871c017fc7343351ea003bf24c864cd472733412f7a58a5a31c02c41d"
         },
         {
           "path": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/truth.md",
@@ -201,8 +217,8 @@
       ]
     },
     "test_case": {
-      "hash": "45460b2f8a9c5725949688cfb85d2c2ae48ab0ca7a25271a902cc2a5dd71be29",
-      "count": 40,
+      "hash": "29d656fd57329a0f49ee96e45bcda54a81ad1645a65aa650717a272ce9d5557f",
+      "count": 42,
       "files": [
         {
           "path": "docs/beacon/v0.0.1/.machine/qa/prism-adaptation-contracts-v1.ac-test-matrix.json",
@@ -313,6 +329,14 @@
           "sha256": "73e5ae1a2e67ee0878ac2e2fc9f01a89e5ce1be108b8415f3fe4edbd6394a667"
         },
         {
+          "path": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md",
+          "sha256": "2eb4ad8d967d7fa6928e7e234ed5e43c03630c611ee453bcb39872999bcb3dfd"
+        },
+        {
+          "path": "docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/tests.md",
+          "sha256": "226f7d2269e8e3119aa3a2e6c88c58dbd18aa8fca165e8715b5371f17531e234"
+        },
+        {
           "path": "docs/beacon/v0.0.1/features/prism-ip-schema-v1/tests.md",
           "sha256": "149e7da645a782924238c846f88aecf64bce9947904898d2b71acbc6845676af"
         },
@@ -367,5 +391,5 @@
       ]
     }
   },
-  "fingerprint_hash": "f60fd07589527b30cd7551f36374b57490d8c817d91f4d485e1b0edff48c3ef4"
+  "fingerprint_hash": "8cf58e1490f5c6534b604edda399c709747350577bf2bad9dad732eb0be5f4a3"
 }

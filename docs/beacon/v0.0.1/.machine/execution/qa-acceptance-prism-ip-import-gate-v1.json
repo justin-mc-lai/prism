@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "artifact": "qa_acceptance_envelope",
+  "version": "v0.0.1",
+  "feature": "prism-ip-import-gate-v1",
+  "feature_slug": "prism-ip-import-gate-v1",
+  "revision_id": "R1",
+  "verdict": "passed",
+  "accepted_at": "2026-10-01T09:28:18.596424+00:00",
+  "accepted_by": "qa",
+  "run_id": "run-20261001T172815296699",
+  "transaction_id": "tx-qa-acceptance-prism-ip-import-gate-v1-f90671ad02a3",
+  "source_hash": "sha256:f90671ad02a3cdfd330119d4f330086997c2b5db5a3695816068ae8fb33820cc",
+  "projection_seq": 1,
+  "source_command": "beacon qa run \"prism-ip-import-gate-v1\" --project-root /Users/apple/Developer/Personal/selfmedia/prism/.beacon/worktrees/v0.0.1/prism-ip-import-gate-v1 --version v0.0.1",
+  "requirement_refs": [
+    "docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/truth.md",
+    "docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/tests.md",
+    "docs/beacon/v0.0.1/.machine/execution/prism-ip-import-gate-v1.revision.json"
+  ],
+  "test_case_refs": [],
+  "evidence_refs": [
+    ".beacon/auto-test-status.json",
+    ".beacon/qa/status.json",
+    ".beacon/coverage-summary.json",
+    ".beacon/qa/features/prism-ip-import-gate-v1/ac-closure.json",
+    ".beacon/qa/features/prism-ip-import-gate-v1/scorecard.json",
+    ".beacon/release-gate-report.json"
+  ],
+  "story_status": "implemented",
+  "revision_delivery_status": "implemented",
+  "required_ac_count": 0,
+  "required_test_count": 0,
+  "canonical_envelope_ref": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-ip-import-gate-v1.json",
+  "markdown_ref": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-ip-import-gate-v1.md",
+  "transaction_lineage": {
+    "current_transaction_id": "tx-qa-acceptance-prism-ip-import-gate-v1-f90671ad02a3",
+    "projection_seq": 1,
+    "source_hash": "sha256:f90671ad02a3cdfd330119d4f330086997c2b5db5a3695816068ae8fb33820cc",
+    "workflow_memory_ref": ".beacon/memory/workflow-lifecycle.json",
+    "memory_event_id": "",
+    "memory_entry_id": "d25d1090-de55-44c3-a6b3-f5b45ea0fc52"
+  },
+  "sink_checksums": {
+    "machine": "sha256:94f9864f4399f135da1a502f68bcd4fd48554bc46eefc9b61965498fb3456080",
+    "human": "sha256:666815016cb3e020befedfa927c58211ba6d4479b82bec4574ffbc7dfbffddca",
+    "runtime": "sha256:77d6984900723243cae0ed0c3ebf19647334512c1408679da795bf08df93a802"
+  },
+  "runtime_projection_ref": ".beacon/transactions/qa-acceptance-prism-ip-import-gate-v1.json",
+  "transaction_status": "applied",
+  "failed_sinks": []
+}

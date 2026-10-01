@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "artifact": "implementation_writeback_ledger",
+  "feature": "prism-ip-import-gate-v1",
+  "feature_slug": "prism-ip-import-gate-v1",
+  "version": "v0.0.1",
+  "entries": [
+    {
+      "recorded_at": "2026-10-01T09:28:12.744688+00:00",
+      "revision_id": "R1",
+      "run_id": "run-20261001T092812Z-f4ca",
+      "implemented_item_ids": [
+        "TASK-001",
+        "AC-001",
+        "TEST-001"
+      ],
+      "changed_files": [
+        "contracts/crossover.schema.yaml",
+        "registry/content-schema.yaml",
+        "scripts/check_ip_import_gate.sh"
+      ]
+    }
+  ],
+  "last_recorded_at": "2026-10-01T09:28:12.744688+00:00"
+}
