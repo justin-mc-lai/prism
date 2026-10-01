@@ -49,9 +49,27 @@ def _chars(text: str) -> int:
     return len("".join(str(text).split()))
 
 
+def _looks_like_drama(shots: list) -> bool:
+    """Heuristic: storyboard carries drama content (dialogue or cast) but no spec."""
+    for s in shots:
+        if not isinstance(s, dict):
+            continue
+        if str(s.get("dialogue") or "").strip():
+            return True
+        if s.get("cast"):
+            return True
+    return False
+
+
 def validate_drama_spec(storyboard: dict) -> dict:
-    """Return {"valid": bool, "errors": [reason_codes], "stats": {...}}."""
+    """Return {"valid": bool, "errors": [reason_codes], "warnings": [reason_codes], "stats": {...}}.
+
+    2026-10-01: 未声明 spec 不再静默跳过。分镜呈漫剧形态（含台词/cast）却未声明
+    `spec: manju-drama` 时，产出 warning `drama_spec_undeclared_spec`（须人工确认；
+    `prompt_compiler.py --strict` 会拒绝编译）。warning 不阻断 validate（向后兼容）。
+    """
     errors: list[str] = []
+    warnings: list[str] = []
     spec = storyboard.get("spec")
     shots = storyboard.get("shots") or []
     has_beats = any(isinstance(s, dict) and s.get("beats") for s in shots)
@@ -59,7 +77,10 @@ def validate_drama_spec(storyboard: dict) -> dict:
     if has_beats and spec != "manju-drama":
         errors.append("drama_spec_spec_flag_missing")
     if spec != "manju-drama":
-        return {"valid": not errors, "errors": errors, "stats": {"applied": False}}
+        if _looks_like_drama(shots):
+            warnings.append("drama_spec_undeclared_spec")
+        return {"valid": not errors, "errors": errors, "warnings": warnings,
+                "stats": {"applied": False}}
 
     stats: dict = {"applied": True, "shots": []}
     for i, shot in enumerate(shots, 1):
@@ -143,7 +164,7 @@ def validate_drama_spec(storyboard: dict) -> dict:
             {"shot_id": sid, "beats": len(beats), "seconds": round(beat_seconds, 1),
              "closeups": closeups, "closeup_ratio": round(ratio, 2)}
         )
-    return {"valid": not errors, "errors": errors, "stats": stats}
+    return {"valid": not errors, "errors": errors, "warnings": warnings, "stats": stats}
 
 
 def main() -> None:
@@ -162,6 +183,8 @@ def main() -> None:
         )
     if args.json:
         print(json.dumps(result, ensure_ascii=False))
+    for w in result.get("warnings") or []:
+        print(f"WARNING: drama-storyboard-spec: {w} (needs human confirmation)", file=sys.stderr)
     if not result["valid"]:
         print("FAIL: drama-storyboard-spec: " + "; ".join(result["errors"]), file=sys.stderr)
         sys.exit(2)

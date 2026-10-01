@@ -262,3 +262,10 @@
 ```
 
 未过清单的分镜不进 prompt_compiler（fail-closed，同 `contracts/drama-storyboard-spec.contract.md`）。
+
+## 附：beats 填写提示词弹药库
+
+- `beats-prompt-templates.md`：分镜运镜公式（`[0-Xs]：运镜+景别+主体+动作链+环境+光影微调`）、
+  运镜/景别词库到本规范枚举的映射、8 套光影打法（色温/方向/氛围）、音频设计公式（环境音 dB/定点音效/人声约束）。
+- 填写 beats 前先读该文件；`description` 信息密度对标其中 §1.3 示例（每 beat 同时给足运镜、景别、主体、动作、环境、光影）。
+- 来源见该文件内 ATTRIBUTION（社区高手实践，非物理常数；换题材/换模型须重测）。

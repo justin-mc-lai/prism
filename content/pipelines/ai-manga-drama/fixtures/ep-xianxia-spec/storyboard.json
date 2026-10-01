@@ -48,7 +48,7 @@
   "shots": [
     {
       "shot_id": "shot-01",
-      "description": "虚空大殿开场：神女立于殿心，魔尊自阴影中现身，二人首次对峙。",
+      "description": "虚空大殿开场：极远景缓慢前推，神女白衣立于殿心法坛，魔尊自左前阴影中缓步现身，二人首次对峙，穹顶星纹流转，冷蓝幽光映照整座大殿。",
       "dialogue": "",
       "asset_ref": "assets/char-01-shennu.png",
       "duration_seconds": 15,
@@ -133,7 +133,7 @@
     },
     {
       "shot_id": "shot-02",
-      "description": "魔尊逼问，神女沉默，玉简光晕渐亮。",
+      "description": "魔尊逼问：中景急推，重甲踏地、血光自甲缝渗出，神女立于右后沉默不语，玉简悬浮掌心、光晕渐亮，殿内气流低鸣，顶部单硬光压顶，悬疑拉满。",
       "dialogue": "",
       "asset_ref": "assets/char-02-mozun.png",
       "duration_seconds": 15,
@@ -220,7 +220,7 @@
     },
     {
       "shot_id": "shot-03",
-      "description": "神女拔剑，剑光破殿，魔尊退了半步。",
+      "description": "神女拔剑：全景升降俯瞰大殿，神女居中拔剑，剑身星辉与地面纹路共鸣，剑光破殿、气浪翻卷，魔尊被迫退了半步，尘埃在光柱中飞扬。",
       "dialogue": "",
       "asset_ref": "assets/char-01-shennu.png",
       "duration_seconds": 15,
@@ -308,7 +308,7 @@
     },
     {
       "shot_id": "shot-04",
-      "description": "剑指咽喉，黑屏收束，留悬念。",
+      "description": "剑指咽喉：中景前推，剑尖直指魔尊咽喉，神女面容冷峻、魔尊垂眸不语，殿内骤然死寂唯余剑鸣余音，镜头黑屏收束，留下悬念。",
       "dialogue": "",
       "asset_ref": "assets/char-01-shennu.png",
       "duration_seconds": 15,

@@ -21,7 +21,7 @@ done
 
 # 3. qc-scorecard 蒸馏
 test -f skills/prism-director/references/qc-scorecard.md || fail "qc-scorecard.md missing"
-for pat in 生产门 treatment-approval 评分卡 满分 65 通过规则 自动阻断 失败响应; do
+for pat in 生产门 treatment-approval 评分卡 满分 70 通过规则 自动阻断 失败响应 分镜颗粒度; do
   rg -q "$pat" skills/prism-director/references/qc-scorecard.md || fail "qc-scorecard lacks $pat"
 done
 
