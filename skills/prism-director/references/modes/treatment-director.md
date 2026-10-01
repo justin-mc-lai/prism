@@ -20,9 +20,12 @@ Director treatment / presentation map from frozen masters
    冲突时按该文件 §3 择一侧（Toonflow 上限口径 / ai-comic-studio 下限口径）并在方案内声明。
 6. 落剧本/分镜文本按 `../script-templates.md`（完整剧本 / 分集剧本 / 镜头清单三模板）；
    **不手写成品提示词**——提示词由 `scripts/prompt_compiler.py` 编译（`contracts/asset-render.contract.md`）。
-7. 若分镜声明 `spec: manju-drama`（漫剧），落分镜脚本按 `../drama-storyboard-spec.md`（MJ-*）：
-   `shots[].beats[]` 填 5-8 子镜、每子镜 2-5s、音效必填 ≤10 字、字数/秒匹配情绪、在位站位锁定；
-   进编译器前过 `contracts/drama-storyboard-spec.contract.md`（`scripts/drama_spec.py`）。
+7. 漫剧分镜默认强制 `spec: manju-drama`（2026-10-01 起删除"若声明"可选口径）：落分镜脚本按
+   `../drama-storyboard-spec.md`（MJ-*）：`shots[].beats[]` 填 5-8 子镜、每子镜 2-5s、音效必填 ≤10 字、
+   字数/秒匹配情绪、在位站位锁定；beats 填写弹药库见 `../beats-prompt-templates.md`
+   （分镜公式 / 运镜景别词库 / 8 套光影 / 音频公式）；进编译器前过
+   `contracts/drama-storyboard-spec.contract.md`（`scripts/drama_spec.py`）。
+   非漫剧形态须在方案内显式声明并经人工确认，不得以"未声明 spec"绕过本门。
 8. Execute only this surface; write/read evidence paths explicitly.
 9. Default `recommended_next_harness`: `produce` unless blocked.
 10. Emit human card + machine face; stop at harness boundary.
@@ -54,7 +57,8 @@ map_ids_considered: ['MAP-002']
 - `../script-templates.md` — 完整剧本 / 分集剧本 / 镜头清单三模板 + storyboard 字段映射
 - `../asset-prompt-templates.md` — 资产 ref 提示词（7 段 identity block + 五类资产卡）
 - `../prompt-syntax-table.md` — 镜头提示词语法（8 段 / 7 字段 / 时长 / 切镜）
-- `../drama-storyboard-spec.md` — 漫剧分镜脚本规范（MJ-*：分镜 15s ⊃ 子镜 3-5s / 在位站位锁定 / 音效必填 / 字秒预算；`spec: manju-drama` 触发，门 `contracts/drama-storyboard-spec.contract.md`）
+- `../drama-storyboard-spec.md` — 漫剧分镜脚本规范（MJ-*：分镜 15s ⊃ 子镜 3-5s / 在位站位锁定 / 音效必填 / 字秒预算；漫剧默认声明 `spec: manju-drama`，门 `contracts/drama-storyboard-spec.contract.md`）
+- `../beats-prompt-templates.md` — beats 填写提示词弹药库（分镜公式 / 运镜景别词库 / 8 套光影 / 音频公式；源自社区高手实践，见文件内 ATTRIBUTION）
 - Kernel under `skills/_internal/orchestration/` when routing conflicts
 
 ## Director 侧硬门（Lake B′ 蒸馏后）

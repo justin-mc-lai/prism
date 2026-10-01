@@ -263,6 +263,32 @@ def _scene_frame(scene: dict) -> str:
     return f"{variant}/{kind}/{name}" if variant else f"{kind}/{name}"
 
 
+def _compile_warnings(storyboard: dict) -> list[str]:
+    """编译期非致命 warnings（打到 stderr）。
+
+    2026-10-01: 未声明 spec 的漫剧形态分镜不再静默降级为单镜头粗粒度编译。
+    命中时给出显式 warning；--strict 模式下直接拒绝编译。
+    """
+    spec = storyboard.get("spec")
+    if spec == "manju-drama":
+        return []  # validate 已强制 beats，进不到这里
+    shots = storyboard.get("shots") or []
+    drama_like = any(
+        isinstance(s, dict) and (str(s.get("dialogue") or "").strip() or s.get("cast"))
+        for s in shots
+    )
+    beatless = [str(s.get("shot_id")) for s in shots
+                if isinstance(s, dict) and not s.get("beats")]
+    if drama_like and beatless:
+        return [
+            "drama_spec_undeclared_spec: storyboard 未声明 spec: manju-drama，"
+            f"分镜 {beatless} 无 beats，将按单镜头粗粒度编译；"
+            "请声明 spec 并为每分镜填写 5-8 个 beats 子镜"
+            "（见 skills/prism-director/references/beats-prompt-templates.md）"
+        ]
+    return []
+
+
 def build_storyboard_script(storyboard: dict, by_id: dict[str, dict], style_name: str) -> str:
     """分镜脚本（MJ-TPL 模板格式）。spec=manju-drama 时产出。"""
     ep = storyboard.get("episode")
@@ -309,12 +335,18 @@ def build_storyboard_script(storyboard: dict, by_id: dict[str, dict], style_name
     return "\n".join(lines).rstrip() + "\n"
 
 
-def compile_episode(episode_dir: Path, style_id: str) -> dict[str, Path]:
+def compile_episode(episode_dir: Path, style_id: str, strict: bool = False) -> dict[str, Path]:
     storyboard_path = episode_dir / "storyboard.json"
     result = validate_storyboard(storyboard_path)
     if not result["valid"]:
         raise SystemExit("ERROR: storyboard invalid: " + "; ".join(result["errors"]))
     storyboard = load_json(storyboard_path)
+    for w in _compile_warnings(storyboard):
+        print(f"WARNING: {w}", file=sys.stderr)
+    if strict and _compile_warnings(storyboard):
+        raise SystemExit(
+            "ERROR: --strict refused to compile: " + "; ".join(_compile_warnings(storyboard))
+        )
     presets = load_presets()
     if style_id not in presets:
         raise SystemExit(f"ERROR: unknown style preset: {style_id} (available: {len(presets)})")
@@ -406,6 +438,8 @@ def main() -> None:
     parser.add_argument("--episode", required=True, help="episode directory containing storyboard.json")
     parser.add_argument("--style", required=True, help="style preset id (registry/style-presets.yaml + lumenx base)")
     parser.add_argument("--list-styles", action="store_true", help="list available preset ids and exit")
+    parser.add_argument("--strict", action="store_true",
+                        help="refuse to compile when beats/spec warnings fire (no silent downgrade)")
     args = parser.parse_args()
 
     if args.list_styles:
@@ -413,7 +447,7 @@ def main() -> None:
             print(pid)
         return
 
-    outputs = compile_episode(Path(args.episode).expanduser().resolve(), args.style)
+    outputs = compile_episode(Path(args.episode).expanduser().resolve(), args.style, strict=args.strict)
     print(json.dumps({k: str(v) for k, v in outputs.items()}, ensure_ascii=False))
 
 

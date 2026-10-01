@@ -2,7 +2,11 @@
 
 > 执行契约。判断框架蒸馏见 `skills/prism-director/references/drama-storyboard-spec.md`
 > （规则 ID `MJ-*`，源：神魔修仙漫剧分镜填写规范，未 vendor，见 `docs/ATTRIBUTION-drama-prompt-repos.md`）。
-> 适用**分镜脚本阶段**；`spec: manju-drama` 的分镜强制过本门，未声明则跳过（向后兼容）。
+> 适用**分镜脚本阶段**；`spec: manju-drama` 的分镜强制过本门。
+> **未声明 spec 不再静默跳过**（2026-10-01 起）：分镜呈漫剧形态（含台词或 cast）却未声明 `spec: manju-drama` 时，
+> `scripts/drama_spec.py` 产出 warning `drama_spec_undeclared_spec`，须人工确认后方可继续；
+> `prompt_compiler.py --strict` 遇到该 warning 直接拒绝编译。含 beats 却未声明 spec 仍为 blocked
+> （`drama_spec_spec_flag_missing`）。纯向后兼容：warning 本身不阻断 validate。
 > 与 `asset-consistency.contract.md` / `prompt-syntax.contract.md` **叠加**：资产门管跨镜事实，
 > 语法门管提示词语法，本门管**分镜脚本填写完整性**（子镜节拍 / 在位站位 / 音效 / 台词预算）。
 
@@ -20,7 +24,8 @@
 
 ## 3. intake（director handoff 必填）
 
-- `storyboard.json` 过 `storyboard-schema.json`（`spec` 字段为 `manju-drama` 时触发本门）
+- `storyboard.json` 过 `storyboard-schema.json`（`spec` 字段为 `manju-drama` 时触发本门；
+  未声明 spec 但呈漫剧形态 → warning `drama_spec_undeclared_spec`，须人工确认）
 - 每个分镜 `shots[]` 声明 `beats[]`（子镜）；子镜含 `shot_size`/`camera_move`/`vfx`/`sfx`/
   `emotion`/`speech_rate`，以及 `on_screen` 与 `blocking`（在位/站位）
 - 资产四视图在 `characters[].traits` 遵循 MJ-CHAR（无手持物 / 无戏剧光 / 不写瞳孔色）
@@ -75,6 +80,7 @@
 | reason_code | 触发 |
 |---|---|
 | `drama_spec_spec_flag_missing` | 含 `beats[]` 但未声明 `spec: manju-drama` |
+| `drama_spec_undeclared_spec` | 未声明 `spec: manju-drama` 但分镜呈漫剧形态（含台词/cast）→ warning，须人工确认 |
 | `drama_spec_beats_missing` | `spec: manju-drama` 的分镜缺 `beats[]` |
 | `drama_spec_beat_fields_missing` | 子镜六元组/情绪/语速/在位/站位字段缺失 |
 | `drama_spec_beat_count` | 子镜数不在 5-8 |

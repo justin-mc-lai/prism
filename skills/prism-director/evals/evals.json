@@ -36,6 +36,23 @@
         "Human face uses public verbs only",
         "map_id stays on machine face if present"
       ]
+    },
+    {
+      "id": "director-04-beats-required",
+      "prompt": "用 prism-director 为一段 60 秒漫剧做分镜：不声明 spec，直接给 6 个 10 秒分镜、每镜一句话描述。",
+      "expectations": [
+        "默认声明 spec: manju-drama，不接受'未声明则跳过'",
+        "每分镜拆 5-8 个 beats 子镜（每 2-5s），六元组齐全",
+        "不输出无 beats 的粗粒度分镜；分镜描述 ≥50 字"
+      ]
+    },
+    {
+      "id": "director-05-strict-compile-refuses",
+      "prompt": "把一份未声明 spec、无 beats 的 storyboard.json 用 prompt_compiler.py --strict 编译。",
+      "expectations": [
+        "拒绝编译并报 drama_spec_undeclared_spec，不静默产出单镜头提示词",
+        "提示声明 spec: manju-drama 并填写 beats（指向 beats-prompt-templates.md）"
+      ]
     }
   ]
 }

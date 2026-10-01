@@ -172,7 +172,12 @@ def validate_storyboard(storyboard: Path, *, verbose: bool = False) -> dict:
         errors.append("shots must be a non-empty list")
     else:
         if mode == "production":
-            lo, hi = (4, 12) if spec == "manju-drama" else (8, 12)
+            if spec == "manju-drama":
+                # 联动总时长：单分镜按 MJ-* 口径约 10-15s，避免"几个 10 秒大块 + 一句话描述"
+                lo = max(4, -(-duration // 15))
+                hi = min(12, max(lo, duration // 10))
+            else:
+                lo, hi = 8, 12
             if not (lo <= len(shots) <= hi):
                 errors.append(f"production storyboard requires {lo}-{hi} shots, got {len(shots)}")
         shot_ids = []
@@ -184,8 +189,11 @@ def validate_storyboard(storyboard: Path, *, verbose: bool = False) -> dict:
                 if field not in shot:
                     errors.append(f"shot {i} missing {field}")
             desc = str(shot.get("description") or "")
-            if len(desc) < 10:
-                errors.append(f"shot {i} description too short (<10 chars)")
+            if len(desc) < 50:
+                errors.append(
+                    f"shot {i} description too short (<50 chars): "
+                    "分镜描述需 ≥50 字，写清运镜/景别/主体/动作/环境/光影（见 beats-prompt-templates.md 分镜公式）"
+                )
             _check_ref_image(shot, f"shot {i}", base_dir, errors)
             scene_ref = shot.get("scene_ref")
             if scene_ref and scene_ref not in scene_ids:
@@ -208,8 +216,10 @@ def validate_storyboard(storyboard: Path, *, verbose: bool = False) -> dict:
         if len(set(shot_ids)) != len(shot_ids):
             errors.append("shot_id must be unique")
     # drama-storyboard-spec gate（MJ-*）：spec=manju-drama 时强制，含 beats 结构/音效/站位/特写配比
+    # 2026-10-01: 未声明 spec 但呈漫剧形态 → warning（drama_spec_undeclared_spec），须人工确认
     drama = validate_drama_spec(data)
     errors.extend(drama["errors"])
+    drama_warnings = drama.get("warnings") or []
     if errors:
         return {"valid": False, "errors": errors}
     if verbose:
@@ -220,6 +230,7 @@ def validate_storyboard(storyboard: Path, *, verbose: bool = False) -> dict:
     return {
         "valid": True,
         "errors": [],
+        "warnings": drama_warnings,
         "shot_count": len(shots),
         "duration_seconds": duration,
         "spec": spec,
@@ -314,6 +325,8 @@ def cmd_validate(args: argparse.Namespace) -> None:
     result = validate_storyboard(Path(args.storyboard).expanduser().resolve(), verbose=True)
     if args.json:
         print(json.dumps(result, ensure_ascii=False))
+    for w in result.get("warnings") or []:
+        print(f"WARNING: {w} (needs human confirmation)", file=sys.stderr)
     if not result["valid"]:
         fail("; ".join(result["errors"]))
 
