@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-IPC-006",
+  "pass": true,
+  "command": "bash scripts/check_ip_continuity.sh --self-test && bash scripts/check_ip_continuity.sh --fixtures content/ips/_examples/ip-demo --expect pass",
+  "assertion": "自检 + 样例通过",
+  "last_line": "check_ip_continuity: self-test pass",
+  "at": "2026-10-01T09:27:57.266813"
+}

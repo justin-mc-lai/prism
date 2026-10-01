@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-IPC-003",
+  "pass": true,
+  "command": "rg -q continuity_revision_drift scripts/check_ip_continuity.sh",
+  "assertion": "漂移审计 warning",
+  "last_line": "",
+  "at": "2026-10-01T09:27:57.266813"
+}

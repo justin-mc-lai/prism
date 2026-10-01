@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-IPC-001",
+  "pass": true,
+  "command": "rg -q revision_chain_incomplete scripts/check_ip_continuity.sh && rg -q revisions contracts/ip.schema.yaml && rg -q affected_assets scripts/check_ip_continuity.sh",
+  "assertion": "演进链门 + 字段",
+  "last_line": "",
+  "at": "2026-10-01T09:27:57.266813"
+}

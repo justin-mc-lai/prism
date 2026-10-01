@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-ip-continuity-v1",
+  "truth_integrity": "pass",
+  "truth_quality": "pass",
+  "materials_sync": "synced",
+  "all_exec_gates_pass": true,
+  "results": {
+    "AC-IPC-001": {
+      "pass": true,
+      "command": "rg -q revision_chain_incomplete scripts/check_ip_continuity.sh && rg -q revisions contracts/ip.schema.yaml && rg -q affected_assets scripts/check_ip_continuity.sh",
+      "note": "演进链门 + 字段",
+      "last_line": ""
+    },
+    "AC-IPC-002": {
+      "pass": true,
+      "command": "bash scripts/check_ip_continuity.sh view --ip ip-demo >/dev/null 2>&1 && rg -q resolved_revision scripts/check_ip_continuity.sh",
+      "note": "按 IP 视图 + resolved_revision 引用",
+      "last_line": ""
+    },
+    "AC-IPC-003": {
+      "pass": true,
+      "command": "rg -q continuity_revision_drift scripts/check_ip_continuity.sh",
+      "note": "漂移审计 warning",
+      "last_line": ""
+    },
+    "AC-IPC-004": {
+      "pass": true,
+      "command": "rg -q season_ip_mismatch scripts/check_ip_continuity.sh && rg -q campaign_refs contracts/ip.schema.yaml",
+      "note": "season 门 + campaign_refs",
+      "last_line": ""
+    },
+    "AC-IPC-005": {
+      "pass": true,
+      "command": "rg -q seasons contracts/ip.schema.yaml && ! rg -qF 'schema_id: series' registry/content-schema.yaml",
+      "note": "season 复用 campaign，无 series 对象",
+      "last_line": ""
+    },
+    "AC-IPC-006": {
+      "pass": true,
+      "command": "bash scripts/check_ip_continuity.sh --self-test && bash scripts/check_ip_continuity.sh --fixtures content/ips/_examples/ip-demo --expect pass",
+      "note": "自检 + 样例通过",
+      "last_line": "check_ip_continuity: self-test pass"
+    }
+  },
+  "at": "2026-10-01T09:27:57.266813"
+}

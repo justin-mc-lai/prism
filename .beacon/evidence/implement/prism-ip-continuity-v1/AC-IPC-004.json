@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-IPC-004",
+  "pass": true,
+  "command": "rg -q season_ip_mismatch scripts/check_ip_continuity.sh && rg -q campaign_refs contracts/ip.schema.yaml",
+  "assertion": "season 门 + campaign_refs",
+  "last_line": "",
+  "at": "2026-10-01T09:27:57.266813"
+}

@@ -1,0 +1,4 @@
+revision: R1
+reason: "IP 初始冻结：hero/street/lamp/anime 资产首版"
+affected_assets: [hero, street, lamp, anime]
+recorded_at: "2026-09-30"

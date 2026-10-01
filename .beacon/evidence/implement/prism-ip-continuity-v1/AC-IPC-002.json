@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-IPC-002",
+  "pass": true,
+  "command": "bash scripts/check_ip_continuity.sh view --ip ip-demo >/dev/null 2>&1 && rg -q resolved_revision scripts/check_ip_continuity.sh",
+  "assertion": "按 IP 视图 + resolved_revision 引用",
+  "last_line": "",
+  "at": "2026-10-01T09:27:57.266813"
+}

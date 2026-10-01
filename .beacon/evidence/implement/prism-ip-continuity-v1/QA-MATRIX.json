@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-ip-continuity-v1",
+  "ac_tc_matrix": {
+    "AC-IPC-001": "TC-IPC-001",
+    "AC-IPC-002": "TC-IPC-003",
+    "AC-IPC-003": "TC-IPC-005",
+    "AC-IPC-004": "TC-IPC-007",
+    "AC-IPC-005": "TC-IPC-008",
+    "AC-IPC-006": "TC-IPC-009"
+  },
+  "verdict": "pass",
+  "at": "2026-10-01T09:27:57.266813"
+}

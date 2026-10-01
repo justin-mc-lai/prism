@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-IPC-005",
+  "pass": true,
+  "command": "rg -q seasons contracts/ip.schema.yaml && ! rg -qF 'schema_id: series' registry/content-schema.yaml",
+  "assertion": "season 复用 campaign，无 series 对象",
+  "last_line": "",
+  "at": "2026-10-01T09:27:57.266813"
+}

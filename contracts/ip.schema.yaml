@@ -9,6 +9,28 @@ description: >
 required_files:
   - ip.yaml
   - assets/
+optional_dirs:
+  - revisions/
+  - seasons/
+revisions:
+  dir: content/ips/{ip_id}/revisions/
+  entry_pattern: "{R}.yaml"
+  entry_fields:
+    - revision
+    - reason
+    - affected_assets
+  guard: every canon_revision hop from R1 to the current value must have a revisions/{R}.yaml record
+  fail_closed_reason_codes:
+    - revision_chain_incomplete
+seasons:
+  dir: content/ips/{ip_id}/seasons/
+  entry_fields:
+    - season_id
+    - campaign_refs
+  reuses: campaign
+  guard: every referenced campaign must belong to the same IP
+  fail_closed_reason_codes:
+    - season_ip_mismatch
 required_fields:
   ip.yaml:
     - ip_id
