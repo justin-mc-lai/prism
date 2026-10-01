@@ -1,0 +1,859 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-ip-continuity-v1",
+  "feature_slug": "prism-ip-continuity-v1",
+  "version": "v0.0.1",
+  "generated_at": "2026-10-01T09:28:46.810639+00:00",
+  "expansion_profile": "pua-web",
+  "scenario_depth": "standard",
+  "families_required": [
+    "happy",
+    "negative",
+    "boundary"
+  ],
+  "stories": [
+    {
+      "ac_id": "AC-001",
+      "theme": "general",
+      "text": "Acceptance criteria TBD",
+      "scenario_ids": [],
+      "scenario_families": [],
+      "required_families": [],
+      "scenarios": []
+    },
+    {
+      "ac_id": "AC-IPC-001",
+      "theme": "",
+      "text": "演进链门 reason_code + 契约段存在",
+      "scenario_ids": [
+        "SC-AUTO-TC-IPC-001",
+        "SC-AUTO-TC-IPC-002"
+      ],
+      "scenario_families": [
+        "primary",
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-IPC-001",
+          "source_tc_id": "TC-IPC-001",
+          "tc_id": "TC-IPC-001-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-IPC-002",
+          "source_tc_id": "TC-IPC-002",
+          "tc_id": "TC-IPC-002-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    },
+    {
+      "ac_id": "AC-IPC-002",
+      "theme": "",
+      "text": "按 IP 视图命令可用（exit 0）",
+      "scenario_ids": [
+        "SC-AUTO-TC-IPC-003",
+        "SC-AUTO-TC-IPC-004"
+      ],
+      "scenario_families": [
+        "primary",
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-IPC-003",
+          "source_tc_id": "TC-IPC-003",
+          "tc_id": "TC-IPC-003-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-IPC-004",
+          "source_tc_id": "TC-IPC-004",
+          "tc_id": "TC-IPC-004-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    },
+    {
+      "ac_id": "AC-IPC-003",
+      "theme": "",
+      "text": "漂移审计 reason_code 存在",
+      "scenario_ids": [
+        "SC-AUTO-TC-IPC-005",
+        "SC-AUTO-TC-IPC-006"
+      ],
+      "scenario_families": [
+        "primary",
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-IPC-005",
+          "source_tc_id": "TC-IPC-005",
+          "tc_id": "TC-IPC-005-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-IPC-006",
+          "source_tc_id": "TC-IPC-006",
+          "tc_id": "TC-IPC-006-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    },
+    {
+      "ac_id": "AC-IPC-004",
+      "theme": "",
+      "text": "season 门 reason_code + 契约字段存在",
+      "scenario_ids": [
+        "SC-AUTO-TC-IPC-007"
+      ],
+      "scenario_families": [
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-IPC-007",
+          "source_tc_id": "TC-IPC-007",
+          "tc_id": "TC-IPC-007-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    },
+    {
+      "ac_id": "AC-IPC-005",
+      "theme": "",
+      "text": "season 复用 campaign，未新造 series 对象（负向）",
+      "scenario_ids": [
+        "SC-AUTO-TC-IPC-008"
+      ],
+      "scenario_families": [
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-IPC-008",
+          "source_tc_id": "TC-IPC-008",
+          "tc_id": "TC-IPC-008-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    },
+    {
+      "ac_id": "AC-IPC-006",
+      "theme": "",
+      "text": "校验脚本自检通过（exit 0）",
+      "scenario_ids": [
+        "SC-AUTO-TC-IPC-009",
+        "SC-AUTO-TC-IPC-010",
+        "SC-AUTO-TC-IPC-011"
+      ],
+      "scenario_families": [
+        "primary",
+        "primary",
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-IPC-009",
+          "source_tc_id": "TC-IPC-009",
+          "tc_id": "TC-IPC-009-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-IPC-010",
+          "source_tc_id": "TC-IPC-010",
+          "tc_id": "TC-IPC-010-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-IPC-011",
+          "source_tc_id": "TC-IPC-011",
+          "tc_id": "TC-IPC-011-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    },
+    {
+      "ac_id": "GATES",
+      "theme": "",
+      "text": "Truth Review Gate A/B/C + L0 pass，recommend_freeze=true",
+      "scenario_ids": [
+        "SC-AUTO-TC-IPC-012",
+        "SC-AUTO-TC-IPC-013"
+      ],
+      "scenario_families": [
+        "primary",
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-IPC-012",
+          "source_tc_id": "TC-IPC-012",
+          "tc_id": "TC-IPC-012-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-IPC-013",
+          "source_tc_id": "TC-IPC-013",
+          "tc_id": "TC-IPC-013-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    },
+    {
+      "ac_id": "FSM",
+      "theme": "",
+      "text": "非法跃迁槽位：无演进记录不得跳版本",
+      "scenario_ids": [
+        "SC-AUTO-TC-IPC-014",
+        "SC-AUTO-TC-IPC-015",
+        "SC-AUTO-TC-IPC-016"
+      ],
+      "scenario_families": [
+        "primary",
+        "primary",
+        "primary"
+      ],
+      "required_families": [],
+      "scenarios": [
+        {
+          "scenario_id": "SC-AUTO-TC-IPC-014",
+          "source_tc_id": "TC-IPC-014",
+          "tc_id": "TC-IPC-014-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-IPC-015",
+          "source_tc_id": "TC-IPC-015",
+          "tc_id": "TC-IPC-015-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        },
+        {
+          "scenario_id": "SC-AUTO-TC-IPC-016",
+          "source_tc_id": "TC-IPC-016",
+          "tc_id": "TC-IPC-016-PRIMARY",
+          "scenario_family": "primary",
+          "qa_type": "contract",
+          "browser_required": false,
+          "replay_required": false
+        }
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario_id": "SC-AUTO-TC-IPC-001",
+      "source_tc_id": "TC-IPC-001",
+      "tc_id": "TC-IPC-001-PRIMARY",
+      "ac_id": "AC-IPC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "演进链门 reason_code + 契约段存在",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -q 'revision_chain_incomplete' scripts/check_ip_continuity.sh && rg -q 'revisions' contracts/ip.schema.yaml",
+      "assertion": "演进链门 reason_code + 契约段存在",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-continuity-v1/tc-ipc-001/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPC-002",
+      "source_tc_id": "TC-IPC-002",
+      "tc_id": "TC-IPC-002-PRIMARY",
+      "ac_id": "AC-IPC-001",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "演进记录字段 affected_assets 存在",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -q 'affected_assets' contracts/ip.schema.yaml scripts/check_ip_continuity.sh",
+      "assertion": "演进记录字段 affected_assets 存在",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-continuity-v1/tc-ipc-002/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPC-003",
+      "source_tc_id": "TC-IPC-003",
+      "tc_id": "TC-IPC-003-PRIMARY",
+      "ac_id": "AC-IPC-002",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "按 IP 视图命令可用（exit 0）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "bash scripts/check_ip_continuity.sh view --ip ip-demo 2>/dev/null; test $? -eq 0",
+      "assertion": "按 IP 视图命令可用（exit 0）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-continuity-v1/tc-ipc-003/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPC-004",
+      "source_tc_id": "TC-IPC-004",
+      "tc_id": "TC-IPC-004-PRIMARY",
+      "ac_id": "AC-IPC-002",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "视图输出含 resolved_revision 引用清单",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -q 'resolved_revision' scripts/check_ip_continuity.sh",
+      "assertion": "视图输出含 resolved_revision 引用清单",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-continuity-v1/tc-ipc-004/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPC-005",
+      "source_tc_id": "TC-IPC-005",
+      "tc_id": "TC-IPC-005-PRIMARY",
+      "ac_id": "AC-IPC-003",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "漂移审计 reason_code 存在",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -q 'continuity_revision_drift' scripts/check_ip_continuity.sh",
+      "assertion": "漂移审计 reason_code 存在",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-continuity-v1/tc-ipc-005/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPC-006",
+      "source_tc_id": "TC-IPC-006",
+      "tc_id": "TC-IPC-006-PRIMARY",
+      "ac_id": "AC-IPC-003",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "漂移为 warning（不在退出码 1 分支）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -q 'continuity_revision_drift' scripts/check_ip_continuity.sh && ! rg -q 'continuity_revision_drift.*exit 1' scripts/check_ip_continuity.sh",
+      "assertion": "漂移为 warning（不在退出码 1 分支）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-continuity-v1/tc-ipc-006/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPC-007",
+      "source_tc_id": "TC-IPC-007",
+      "tc_id": "TC-IPC-007-PRIMARY",
+      "ac_id": "AC-IPC-004",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "season 门 reason_code + 契约字段存在",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -q 'season_ip_mismatch' scripts/check_ip_continuity.sh && rg -q 'campaign_refs' contracts/ip.schema.yaml",
+      "assertion": "season 门 reason_code + 契约字段存在",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-continuity-v1/tc-ipc-007/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPC-008",
+      "source_tc_id": "TC-IPC-008",
+      "tc_id": "TC-IPC-008-PRIMARY",
+      "ac_id": "AC-IPC-005",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "season 复用 campaign，未新造 series 对象（负向）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -q 'seasons' contracts/ip.schema.yaml && ! rg -qF 'schema_id: series' registry/content-schema.yaml",
+      "assertion": "season 复用 campaign，未新造 series 对象（负向）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-continuity-v1/tc-ipc-008/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPC-009",
+      "source_tc_id": "TC-IPC-009",
+      "tc_id": "TC-IPC-009-PRIMARY",
+      "ac_id": "AC-IPC-006",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "校验脚本自检通过（exit 0）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "bash scripts/check_ip_continuity.sh --self-test 2>/dev/null; test $? -eq 0",
+      "assertion": "校验脚本自检通过（exit 0）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-continuity-v1/tc-ipc-009/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPC-010",
+      "source_tc_id": "TC-IPC-010",
+      "tc_id": "TC-IPC-010-PRIMARY",
+      "ac_id": "AC-IPC-006",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "对合规样例判定通过",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "bash scripts/check_ip_continuity.sh --fixtures content/ips/_examples/ip-demo --expect pass; test $? -eq 0",
+      "assertion": "对合规样例判定通过",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-continuity-v1/tc-ipc-010/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPC-011",
+      "source_tc_id": "TC-IPC-011",
+      "tc_id": "TC-IPC-011-PRIMARY",
+      "ac_id": "AC-IPC-006",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "反向断言：破坏演进链时门必须 fail（负向）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "bash scripts/check_ip_continuity.sh --fixtures content/ips/_examples/ip-demo --invert --expect fail; test $? -eq 1",
+      "assertion": "反向断言：破坏演进链时门必须 fail（负向）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-continuity-v1/tc-ipc-011/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPC-012",
+      "source_tc_id": "TC-IPC-012",
+      "tc_id": "TC-IPC-012-PRIMARY",
+      "ac_id": "GATES",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "Truth Review Gate A/B/C + L0 pass，recommend_freeze=true",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "beacon truth review prism-ip-continuity-v1 --project . --version v0.0.1 --json",
+      "assertion": "Truth Review Gate A/B/C + L0 pass，recommend_freeze=true",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-continuity-v1/tc-ipc-012/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPC-013",
+      "source_tc_id": "TC-IPC-013",
+      "tc_id": "TC-IPC-013-PRIMARY",
+      "ac_id": "GATES",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "closure_allowed=true 且无 blocking finding（integrity 门真跑）",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "beacon doctor verify-truth-integrity prism-ip-continuity-v1 --project-root . --version v0.0.1 --mode block --json | python3 -c \"import json,sys; d=json.load(sys.stdin); exit(0 if d.get('result',{}).get('blocked') in (False,None) and d.get('result',{}).get('closure_contract',{}).get('closure_allowed') else 1)\"",
+      "assertion": "closure_allowed=true 且无 blocking finding（integrity 门真跑）",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-continuity-v1/tc-ipc-013/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPC-014",
+      "source_tc_id": "TC-IPC-014",
+      "tc_id": "TC-IPC-014-PRIMARY",
+      "ac_id": "FSM",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "非法跃迁槽位：无演进记录不得跳版本",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -nF 'bump_revision without revisions/{R}.yaml record' docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+      "assertion": "非法跃迁槽位：无演进记录不得跳版本",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-continuity-v1/tc-ipc-014/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPC-015",
+      "source_tc_id": "TC-IPC-015",
+      "tc_id": "TC-IPC-015-PRIMARY",
+      "ac_id": "FSM",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "非法跃迁槽位：跨 IP campaign 不得入 season",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n 'open_season with campaign from another IP' docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+      "assertion": "非法跃迁槽位：跨 IP campaign 不得入 season",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-continuity-v1/tc-ipc-015/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    },
+    {
+      "scenario_id": "SC-AUTO-TC-IPC-016",
+      "source_tc_id": "TC-IPC-016",
+      "tc_id": "TC-IPC-016-PRIMARY",
+      "ac_id": "FSM",
+      "qa_type": "contract",
+      "layer": "contract",
+      "scenario_family": "primary",
+      "title": "非法跃迁槽位：视图只读不得改正典",
+      "browser_required": false,
+      "replay_required": false,
+      "exploratory_runner": "native",
+      "deterministic_runner": "native",
+      "explore_command": "",
+      "replay_command": "",
+      "coverage_axes": [
+        "primary",
+        "contract",
+        "non-browser"
+      ],
+      "depends_on": [],
+      "stop_on_fail": false,
+      "automation": "auto",
+      "command": "rg -n '审计结果直接修改 IP 正典' docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
+      "assertion": "非法跃迁槽位：视图只读不得改正典",
+      "priority": "P1",
+      "evidence_path": ".beacon/evidence/qa-feature/prism-ip-continuity-v1/tc-ipc-016/__RUN_ID__.json",
+      "required_files": [
+        "command.txt",
+        "stdout.log",
+        "stderr.log",
+        "result.json",
+        "junit.xml"
+      ]
+    }
+  ]
+}

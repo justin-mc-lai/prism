@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "artifact": "implementation_writeback_ledger",
+  "feature": "prism-ip-continuity-v1",
+  "feature_slug": "prism-ip-continuity-v1",
+  "version": "v0.0.1",
+  "entries": [
+    {
+      "recorded_at": "2026-10-01T09:28:44.684452+00:00",
+      "revision_id": "R1",
+      "run_id": "run-20261001T092844Z-620f",
+      "implemented_item_ids": [
+        "TEST-001",
+        "AC-001",
+        "TASK-001"
+      ],
+      "changed_files": [
+        "contracts/ip.schema.yaml",
+        "scripts/check_ip_continuity.sh"
+      ]
+    },
+    {
+      "recorded_at": "2026-10-01T09:30:14.311703+00:00",
+      "revision_id": "R2",
+      "run_id": "run-20261001T093014Z-0270",
+      "implemented_item_ids": [
+        "AC-001",
+        "TEST-001",
+        "TASK-001"
+      ],
+      "changed_files": [
+        "contracts/ip.schema.yaml",
+        "scripts/check_ip_continuity.sh"
+      ]
+    }
+  ],
+  "last_recorded_at": "2026-10-01T09:30:14.311703+00:00"
+}

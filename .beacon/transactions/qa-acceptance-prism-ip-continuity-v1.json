@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "artifact": "qa_acceptance_runtime_projection",
+  "version": "v0.0.1",
+  "feature": "prism-ip-continuity-v1",
+  "feature_slug": "prism-ip-continuity-v1",
+  "revision_id": "R2",
+  "verdict": "passed",
+  "transaction_id": "tx-qa-acceptance-prism-ip-continuity-v1-6cebc9e2f11f",
+  "source_hash": "sha256:6cebc9e2f11f5f62eccf0e4a40d9b64bb9773cbfdd05eef40372f14c6d72b387",
+  "projection_seq": 1,
+  "committed_at": "2026-10-01T09:30:20.441150+00:00",
+  "write_status": "applied",
+  "failed_sinks": [],
+  "machine_ref": "docs/beacon/v0.0.1/.machine/execution/qa-acceptance-prism-ip-continuity-v1.json",
+  "markdown_ref": "docs/beacon/v0.0.1/execution/qa-acceptance-brief-prism-ip-continuity-v1.md",
+  "runtime_projection_ref": ".beacon/transactions/qa-acceptance-prism-ip-continuity-v1.json",
+  "sink_checksums": {
+    "machine": "sha256:b5343e7037f2dfd7e21159e721f2acd106ad0804c8380e3f800a121bc50fc568",
+    "human": "sha256:9b645fe5ea4583fa5c7f1f980516a53bec7ab97b0ea02cd9775c07f46708b68d",
+    "runtime": "sha256:542c37931c2262599bd6ce4202a8aa35035483c63b23b36402a347d44d22da83"
+  }
+}

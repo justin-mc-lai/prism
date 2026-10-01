@@ -150,7 +150,7 @@
     "fill_depth_pass": true,
     "note": "Polish L0/narrative only after A/B/C; preserve_machine_fields=true; freeze needs D+exec too"
   },
-  "evaluated_at": "2026-10-01T05:03:19.593694+00:00",
+  "evaluated_at": "2026-10-01T09:30:18.962603+00:00",
   "paths": {
     "truth": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/truth.md",
     "tests": "docs/beacon/v0.0.1/features/prism-ip-continuity-v1/tests.md",
