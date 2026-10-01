@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-ip-import-gate-v1",
+  "ac_tc_matrix": {
+    "AC-IPG-001": "TC-IPG-001",
+    "AC-IPG-002": "TC-IPG-003",
+    "AC-IPG-003": "TC-IPG-004",
+    "AC-IPG-004": "TC-IPG-005",
+    "AC-IPG-005": "TC-IPG-006",
+    "AC-IPG-006": "TC-IPG-007",
+    "AC-IPG-007": "TC-IPG-010"
+  },
+  "verdict": "pass",
+  "at": "2026-10-01T09:26:27.879647"
+}

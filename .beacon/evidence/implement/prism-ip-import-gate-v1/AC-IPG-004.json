@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-IPG-004",
+  "pass": true,
+  "command": "rg -q 'crossover_royalty_unrecorded' scripts/check_ip_import_gate.sh && rg -q royalty_split contracts/crossover.schema.yaml",
+  "assertion": "分成门",
+  "last_line": "",
+  "at": "2026-10-01T09:26:27.879647"
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "run_id": "run-20261001T092812Z-f4ca",
+  "import_id": "run-20261001T092812Z-f4ca",
+  "feature": "prism-ip-import-gate-v1",
+  "feature_slug": "prism-ip-import-gate-v1",
+  "version": "v0.0.1",
+  "runner": "import-evidence",
+  "skill": "beacon-implement",
+  "status": "completed",
+  "imported": true,
+  "source_refs": [
+    ".beacon/evidence/implement/prism-ip-import-gate-v1/AC-IPG-001.json",
+    ".beacon/evidence/implement/prism-ip-import-gate-v1/AC-IPG-002.json",
+    ".beacon/evidence/implement/prism-ip-import-gate-v1/AC-IPG-003.json",
+    ".beacon/evidence/implement/prism-ip-import-gate-v1/AC-IPG-004.json",
+    ".beacon/evidence/implement/prism-ip-import-gate-v1/AC-IPG-005.json",
+    ".beacon/evidence/implement/prism-ip-import-gate-v1/AC-IPG-006.json",
+    ".beacon/evidence/implement/prism-ip-import-gate-v1/AC-IPG-007.json"
+  ],
+  "changed_files": [
+    "contracts/crossover.schema.yaml",
+    "registry/content-schema.yaml",
+    "scripts/check_ip_import_gate.sh"
+  ],
+  "service_dirs": [],
+  "summary_ref": "docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/evidence.md",
+  "approved_by": "agent-opencode",
+  "prompt_boundary": {
+    "schema_version": "1.0",
+    "feature": "prism-ip-import-gate-v1",
+    "feature_slug": "prism-ip-import-gate-v1",
+    "version": "v0.0.1",
+    "required": false,
+    "prompt": "Import externally produced implementation evidence for the scoped Beacon feature. Read Beacon source of truth and bind the imported evidence to the frozen feature package truth. Implement only against the frozen feature package truth above. Evidence refs: .beacon/evidence/implement/prism-ip-import-gate-v1/AC-IPG-001.json, .beacon/evidence/implement/prism-ip-import-gate-v1/AC-IPG-002.json, .beacon/evidence/implement/prism-ip-import-gate-v1/AC-IPG-003.json, .beacon/evidence/implement/prism-ip-import-gate-v1/AC-IPG-004.json, .beacon/evidence/implement/prism-ip-import-gate-v1/AC-IPG-005.json, .beacon/evidence/implement/prism-ip-import-gate-v1/AC-IPG-006.json, .beacon/evidence/implement/prism-ip-import-gate-v1/AC-IPG-007.json, docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/evidence.md. Changed files or service directories: contracts/crossover.schema.yaml, registry/content-schema.yaml, scripts/check_ip_import_gate.sh.",
+    "classification": "",
+    "blocked": false,
+    "status": "not_required",
+    "reason_code": "",
+    "next_action": "",
+    "recommended_command": "",
+    "matched_signals": [],
+    "frozen_refs": [
+      "docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/truth.md",
+      "docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/tests.md",
+      "docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/tasks.md",
+      "docs/beacon/v0.0.1/features/prism-ip-import-gate-v1/evidence.md"
+    ],
+    "surface": "import-evidence"
+  },
+  "created_at": "2026-10-01T09:28:12.739810+00:00",
+  "generated_at": "2026-10-01T09:28:12.739815+00:00"
+}

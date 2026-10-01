@@ -1,0 +1,7 @@
+ip_id: ip-guest
+title: Guest IP
+kind: story
+status: active
+canon_revision: R1
+publish_identity_ref: brand:guest
+default_lane: standard

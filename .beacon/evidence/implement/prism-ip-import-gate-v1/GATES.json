@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "feature": "prism-ip-import-gate-v1",
+  "truth_integrity": "pass",
+  "truth_quality": "pass",
+  "materials_sync": "synced",
+  "all_exec_gates_pass": true,
+  "results": {
+    "AC-IPG-001": {
+      "pass": true,
+      "command": "rg -qF 'schema_id: crossovers' registry/content-schema.yaml && rg -qF 'content/crossovers/{crossover_id}.yaml' registry/content-schema.yaml && test -f contracts/crossover.schema.yaml && rg -q 'participant_ips' contracts/crossover.schema.yaml",
+      "note": "crossovers 对象注册 + 契约五必填",
+      "last_line": ""
+    },
+    "AC-IPG-002": {
+      "pass": true,
+      "command": "rg -q 'crossover_authorization_missing' scripts/check_ip_import_gate.sh",
+      "note": "授权门 reason_code",
+      "last_line": ""
+    },
+    "AC-IPG-003": {
+      "pass": true,
+      "command": "rg -q 'crossover_disclosure_missing' scripts/check_ip_import_gate.sh && rg -q disclosure_note contracts/crossover.schema.yaml",
+      "note": "披露门",
+      "last_line": ""
+    },
+    "AC-IPG-004": {
+      "pass": true,
+      "command": "rg -q 'crossover_royalty_unrecorded' scripts/check_ip_import_gate.sh && rg -q royalty_split contracts/crossover.schema.yaml",
+      "note": "分成门",
+      "last_line": ""
+    },
+    "AC-IPG-005": {
+      "pass": true,
+      "command": "rg -q 'crossover_canon_unmet' scripts/check_ip_import_gate.sh",
+      "note": "正典聚合门",
+      "last_line": ""
+    },
+    "AC-IPG-006": {
+      "pass": true,
+      "command": "bash scripts/check_ip_import_gate.sh --self-test && bash scripts/check_ip_import_gate.sh --fixtures content/crossovers/_examples --expect pass",
+      "note": "门脚本自检 + 样例通过",
+      "last_line": "check_ip_import_gate: self-test pass"
+    },
+    "AC-IPG-007": {
+      "pass": true,
+      "command": "rg -q 'monetization.contract' contracts/crossover.schema.yaml && rg -q 'adaptation.contract' contracts/crossover.schema.yaml",
+      "note": "F1/F2 叠加 hook",
+      "last_line": ""
+    }
+  },
+  "at": "2026-10-01T09:26:27.879647"
+}

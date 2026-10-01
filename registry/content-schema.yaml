@@ -26,8 +26,13 @@ objects:
     contract: contracts/ip.schema.yaml
     root: content/ips/{ip_id}/
     authority: canonical
+  - schema_id: crossovers
+    contract: contracts/crossover.schema.yaml
+    root: content/crossovers/{crossover_id}.yaml
+    authority: canonical
 guards:
   canon_lane_disables_fast_lane_skip: true
   episode_requires_canon_gate_before_generated: true
   cross_ip_reference_requires_from: true
   import_requires_source_frozen: true
+  crossover_requires_authorization: true

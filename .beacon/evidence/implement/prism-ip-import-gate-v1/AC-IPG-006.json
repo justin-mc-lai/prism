@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-IPG-006",
+  "pass": true,
+  "command": "bash scripts/check_ip_import_gate.sh --self-test && bash scripts/check_ip_import_gate.sh --fixtures content/crossovers/_examples --expect pass",
+  "assertion": "门脚本自检 + 样例通过",
+  "last_line": "check_ip_import_gate: self-test pass",
+  "at": "2026-10-01T09:26:27.879647"
+}

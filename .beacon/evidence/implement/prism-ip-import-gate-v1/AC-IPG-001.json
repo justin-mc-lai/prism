@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-IPG-001",
+  "pass": true,
+  "command": "rg -qF 'schema_id: crossovers' registry/content-schema.yaml && rg -qF 'content/crossovers/{crossover_id}.yaml' registry/content-schema.yaml && test -f contracts/crossover.schema.yaml && rg -q 'participant_ips' contracts/crossover.schema.yaml",
+  "assertion": "crossovers 对象注册 + 契约五必填",
+  "last_line": "",
+  "at": "2026-10-01T09:26:27.879647"
+}
