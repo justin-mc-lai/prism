@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-IPG-005",
+  "pass": true,
+  "command": "rg -q 'crossover_canon_unmet' scripts/check_ip_import_gate.sh",
+  "assertion": "正典聚合门",
+  "last_line": "",
+  "at": "2026-10-01T09:26:27.879647"
+}

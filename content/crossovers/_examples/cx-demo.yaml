@@ -1,0 +1,15 @@
+crossover_id: cx-demo
+participant_ips: [ip-demo, ip-guest]
+work_ref: masters/ai-manga-drama/ep-demo
+authorization:
+  status: approved
+  approved_by: demo-operator
+  approved_at: "2026-09-30"
+  scope: "single episode co-branding"
+disclosure_note: "本集由 Demo IP 与 Guest IP 联名出品"
+attribution:
+  - {ip: ip-demo, credit: "Demo IP"}
+  - {ip: ip-guest, credit: "Guest IP"}
+royalty_split:
+  - {ip: ip-demo, percent: 50}
+  - {ip: ip-guest, percent: 50}

@@ -1,0 +1,71 @@
+schema_id: crossovers
+schema_version: "1"
+entity: Crossover
+path_pattern: content/crossovers/{crossover_id}.yaml
+description: >
+  Crossover (联名) authorization record. A work whose imports[] references two or more IPs
+  is a crossover between independent creative subjects; it must be authorized, disclosed,
+  and attributed before it may be produced or published.
+required_fields:
+  - crossover_id
+  - participant_ips
+  - work_ref
+  - authorization
+  - attribution
+optional_fields:
+  - disclosure_note
+  - royalty_split
+  - canon_refs
+field_contract:
+  participant_ips:
+    type: list
+    min_items: 2
+    description: IP ids taking part in the crossover (must all resolve to content/ips/).
+  work_ref:
+    type: string
+    description: Path to the crossover work (master / episode / campaign).
+  authorization:
+    type: map
+    required: [status, approved_by, approved_at, scope]
+    status_enum: [draft, review, approved, rejected, revoked]
+    description: Consent of the participating subjects; only status=approved passes the gate.
+  disclosure_note:
+    type: string
+    description: Audience-facing disclosure text; must be non-empty before publish.
+  attribution:
+    type: list
+    description: Name/credit allocation across participants.
+  royalty_split:
+    type: list
+    description: Revenue split; percentages must total 100 unless non_royalty is true.
+  canon_refs:
+    type: list
+    description: Per-participant canon references used for protective validation.
+guards:
+  crossover_requires_all_sources_active_frozen: true
+  approval_required_before_produce: true
+  disclosure_required_before_publish: true
+  royalty_percentages_sum_to_100_unless_non_royalty: true
+fail_closed_reason_codes:
+  - crossover_authorization_missing
+  - crossover_disclosure_missing
+  - crossover_royalty_unrecorded
+  - crossover_canon_unmet
+hooks:
+  monetization: contracts/monetization.contract.md
+  adaptation: contracts/adaptation.contract.md
+  note: >
+    When a crossover is also monetized, the F1 disclosure gate applies on top; when it is an
+    adaptation, the F2 authorization gate applies on top. These hooks record the overlap and
+    never replace the F1/F2 gates.
+notes:
+  authorization: >
+    A work with two or more distinct `from` IPs must have a crossover record whose
+    authorization.status=approved; otherwise blocked with crossover_authorization_missing.
+  disclosure: >
+    disclosure_note must be non-empty before publish; otherwise crossover_disclosure_missing.
+  royalty: >
+    If the crossover declares a split, royalty_split percentages must total 100; non_royalty=true
+    explicitly waives the total. Otherwise crossover_royalty_unrecorded.
+  canon: >
+    Every participant IP must be status=active with frozen canon; otherwise crossover_canon_unmet.

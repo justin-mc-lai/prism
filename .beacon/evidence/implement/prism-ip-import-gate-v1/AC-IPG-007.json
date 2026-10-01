@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "ac_id": "AC-IPG-007",
+  "pass": true,
+  "command": "rg -q 'monetization.contract' contracts/crossover.schema.yaml && rg -q 'adaptation.contract' contracts/crossover.schema.yaml",
+  "assertion": "F1/F2 叠加 hook",
+  "last_line": "",
+  "at": "2026-10-01T09:26:27.879647"
+}
