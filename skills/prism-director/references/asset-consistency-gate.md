@@ -52,3 +52,4 @@
 `asset-prompt-templates.md`（7 段 identity block + 五类资产卡 + 风格正交 + 自查清单）。
 两者叠加：先按模板出 ref 图（中性平光、身份块逐字复用），再由本门做跨镜核对。
 模板自查未过的 ref 不进资产库，更不进分镜（fail-closed，同 AST-05）。
+谱系/尺寸冻结方法论见 `asset-lineage-scale.md`（LIN/SCL），由契约判据 7–8 强制执行。

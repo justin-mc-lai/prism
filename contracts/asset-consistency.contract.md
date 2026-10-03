@@ -1,7 +1,8 @@
 # Gate contract: asset-consistency（Lake D · 资产一致性门）
 
 > 执行契约。判断框架蒸馏见 `skills/prism-director/references/asset-consistency-gate.md`
-> （MAP-017）；适用 manga_drama 及后续多集 AV 形态。
+> （MAP-017）；谱系/尺寸方法论见 `skills/prism-director/references/asset-lineage-scale.md`
+> （LIN/SCL）；适用 manga_drama 及后续多集 AV 形态。
 
 ## 1. identity
 
@@ -26,13 +27,18 @@
   （每镜头 boundary-match 结果 + 每条变化 CON-04 五要素 + binding 表）
 - 证据: `.beacon/evidence/implement/prism-manga-asset-gate-v1/AC-MAG-003.json`
 
-## 5. gate（六判据，任一失败 fail-closed）
+## 5. gate（八判据，任一失败 fail-closed）
 
 1. 三分法完整：每个 asset_ref 归类身份/变体/瞬态，无未决流入分镜（AST-05）
 2. 识别锚点：身份条目含可见/可生成/可比对锚点，无空泛质量词
 3. 边界匹配（CON-01）：相邻镜头 end→start 逐字段一致或有变化记录支撑
 4. 变化记录（CON-04）：前态/后态/原因/范围/受影响 ID 五要素齐全
 5. 画风统一：全部镜头引用同一风格锚点版本；换版有生效记录
+7. 谱系标记（LIN-01）：evolution 资产必须声明 lineage markers；任一版本丢失 base 的任一
+   marker → blocked + `reason_code=asset_lineage_broken`（进化后观众认不出即失败）
+8. 尺寸冻结（SCL-01）：每个资产 traits 必须含尺度锚（人物 head units/身高，载具·神兽·道具
+   物理尺寸 + ref 图人形剪影尺度条）；evolution 链须附尺寸对照表；缺失 → blocked +
+   `reason_code=asset_scale_missing`
 6. 与既有门叠加：`asset_refs_exist` 仍必须通过；本门是加强不是替代
 
 ## 6. handoff

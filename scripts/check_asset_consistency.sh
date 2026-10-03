@@ -18,6 +18,14 @@ test -f contracts/asset-consistency.contract.md || fail "gate contract missing"
 for pat in identity "决策边界" intake output gate handoff "失败处理" "asset_identity_missing" "禁止自证通过"; do
   rg -q "$pat" contracts/asset-consistency.contract.md || fail "gate contract lacks $pat"
 done
+# AC-MAG-008 谱系/尺寸冻结（LIN/SCL，2026-10-03 落地）
+test -f skills/prism-director/references/asset-lineage-scale.md || fail "lineage-scale ref missing"
+for pat in "LIN-01" "LIN-02" "SCL-01" "SCL-02" "lineage markers" "尺度锚" "尺寸对照表"; do
+  rg -q "$pat" skills/prism-director/references/asset-lineage-scale.md || fail "lineage-scale ref lacks $pat"
+done
+for pat in "八判据" "asset_lineage_broken" "asset_scale_missing" "LIN-01" "SCL-01"; do
+  rg -q "$pat" contracts/asset-consistency.contract.md || fail "gate contract lacks lineage-scale $pat"
+done
 
 # AC-MAG-003 manga_drama wiring (intake anchor + gate upgrade)
 rg -q "asset-consistency.contract" contracts/form-manga-drama.contract.md || fail "manga contract lacks gate ref"
