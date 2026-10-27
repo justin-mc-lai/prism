@@ -92,3 +92,13 @@ bash scripts/check_bridges_installed.sh            # 校验 29 pin + 零源仓�
    `render-channel.sh` 渲染；公开发布走 `prism-release`，必须人工批准。
 
 示例：`content/masters/oss-picks/deepseek-harness-desktop/`（2026-08-16 新增，draft）。
+
+## License
+
+[MIT](LICENSE) © 2026 Kunqi Lai
+
+## Maintainer
+
+**Kunqi Lai** (<goodlive.lkq1128@gmail.com>)
+- GitHub: [@justin-mc-lai](https://github.com/justin-mc-lai)
+
